@@ -6,18 +6,18 @@ ms.author: daroth
 no-loc:
 - Blazor
 ms.date: 09/18/2019
-ms.openlocfilehash: 4fdf062fb719e62b53e47f79db1e93d0bf079350
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: fd560c84c095dffc3718a7709af904d9ba722a18
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267680"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512764"
 ---
 # <a name="build-reusable-ui-components-with-no-locblazor"></a>生成可重复使用的 UI 组件 Blazor
 
 ASP.NET Web 窗体的一项精彩功能是，它使用户界面) 代码的可重用部分 (UI 的封装成为可重复使用的 UI 控件。 可以使用 *.ascx* 文件在标记中定义自定义用户控件。 你还可以在代码中生成具有完全设计器支持的精致服务器控件。
 
-Blazor 还支持通过 *组件*进行 UI 封装。 组件：
+Blazor 还支持通过 *组件* 进行 UI 封装。 组件：
 
 - 是一个独立的 UI 块区。
 - 维护其自己的状态和呈现逻辑。
@@ -88,7 +88,7 @@ Razor 指令以字符开头 `@` ，通常在文件开头的新行的开头使用
 |`@namespace` |设置组件的命名空间|`@namespace MyNamespace`|无|
 |`@page`      |指定组件的路由|`@page "/product/{id}"`|`<%@ Page %>`|
 |`@typeparam` |指定组件的泛型类型参数|`@typeparam TItem`|使用代码隐藏|
-|`@using`     |指定要引入作用域的命名空间|`@using MyComponentNamespace`|在*web.config*中添加命名空间|
+|`@using`     |指定要引入作用域的命名空间|`@using MyComponentNamespace`|在 *web.config* 中添加命名空间|
 
 Razor 组件还广泛地用于元素上的 *指令属性* ，以控制组件 (事件处理、数据绑定、组件 & 元素引用等) 的编译方式。 指令特性都遵循通用通用语法，其中括号中的值是可选的：
 
@@ -108,9 +108,9 @@ Razor 组件还广泛地用于元素上的 *指令属性* ，以控制组件 (�
 
 Blazor (、、等) 使用的各种指令特性 `@onclick` `@bind` `@ref` 都将在以下章节和更高章节中介绍。
 
-*.Aspx*和 *.ascx*文件中使用的很多语法在 Razor 中具有并行语法。 下面是 ASP.NET Web 窗体和 Razor 语法的简单比较。
+*.Aspx* 和 *.ascx* 文件中使用的很多语法在 Razor 中具有并行语法。 下面是 ASP.NET Web 窗体和 Razor 语法的简单比较。
 
-|Feature                      |Web Forms — Web 窗体           |语法               |Razor         |语法 |
+|功能                      |Web Forms — Web 窗体           |语法               |Razor         |语法 |
 |-----------------------------|--------------------|---------------------|--------------|-------|
 |指令                   |`<%@ [directive] %>`|`<%@ Page %>`        |`@[directive]`|`@page`|
 |代码块                  |`<% %>`             |`<% int x = 123; %>` |`@{ }`        |`@{ int x = 123; }`|
@@ -131,7 +131,7 @@ Blazor (、、等) 使用的各种指令特性 `@onclick` `@bind` `@ref` 都将�
 }
 ```
 
-由于 Razor 基于 c #，因此必须从 c # 项目中 (*.csproj*) 编译。 不能从 Visual Basic 项目 (*.vbproj*) 编译*razor*文件。 你仍可以从项目中引用 Visual Basic 项目 Blazor 。 相反的情况也是如此。
+由于 Razor 基于 c #，因此必须从 c # 项目中 (*.csproj*) 编译。 不能从 Visual Basic 项目 (*.vbproj*) 编译 *razor* 文件。 你仍可以从项目中引用 Visual Basic 项目 Blazor 。 相反的情况也是如此。
 
 有关完整 Razor 语法引用，请参阅 [ASP.NET Core 的 Razor 语法参考](/aspnet/core/mvc/views/razor)。
 
@@ -146,7 +146,7 @@ Blazor (、、等) 使用的各种指令特性 `@onclick` `@bind` `@ref` 都将�
 不同于 ASP.NET Web 窗体，中的组件 Blazor ：
 
 - 不要使用元素前缀 (例如 `asp:`) 。
-- 不需要在页面或 *web.config*中注册。
+- 不需要在页面或 *web.config* 中注册。
 
 像您的 .NET 类型一样，可以像您这样做，因为这正是它们的作用。 如果引用包含组件的程序集，则可以使用该组件。 若要将组件的命名空间置于范围中，请应用 `@using` 指令：
 
@@ -446,7 +446,7 @@ protected override async Task OnInitializedAsync() { await ... }
 
 ### <a name="onparametersset"></a>OnParametersSet
 
-`OnParametersSet` `OnParametersSetAsync` 当组件已从其父级接收参数并且将值分配给属性时，将调用和方法。 这些方法在组件初始化之后以及 *每次呈现组件*时执行。
+`OnParametersSet` `OnParametersSetAsync` 当组件已从其父级接收参数并且将值分配给属性时，将调用和方法。 这些方法在组件初始化之后以及 *每次呈现组件* 时执行。
 
 ```csharp
 protected override void OnParametersSet() { ... }
@@ -474,7 +474,7 @@ protected override async Task OnAfterRenderAsync(bool firstRender)
 }
 ```
 
-`OnAfterRender` 在 `OnAfterRenderAsync` *服务器上预呈现时不调用*和。
+`OnAfterRender` 在 `OnAfterRenderAsync` *服务器上预呈现时不调用* 和。
 
 `firstRender`参数是 `true` 第一次呈现组件时; 否则，其值为 `false` 。
 
@@ -550,7 +550,9 @@ Blazor 组件可以将其子内容捕获为 `RenderFragment` ，并在呈现组�
 
 ```razor
 <ChildContentComponent>
-    <p>The time is @DateTime.Now</p>
+    <ChildContent>
+        <p>The time is @DateTime.Now</p>
+    </ChildContent>
 </ChildContentComponent>
 ```
 
@@ -609,7 +611,7 @@ Blazor 组件可以将其子内容捕获为 `RenderFragment` ，并在呈现组�
 
 ## <a name="code-behind"></a>代码隐藏
 
-Blazor通常，组件是在单个*razor*文件中创作的。 不过，也可以使用代码隐藏文件来分隔代码和标记。 若要使用组件文件，请添加与组件文件的文件名相匹配的 c # 文件，但添加了 (*Counter.razor.cs*) 的 *.cs 扩展名。* 使用 c # 文件定义组件的基类。 您可以将基类命名为任何所需的名称，但通常将类命名为与 component 类相同的名称，但将 `Base` 扩展添加 (`CounterBase`) 。 基于组件的类还必须派生自 `ComponentBase` 。 然后，在 Razor 组件文件中添加 `@inherits` 指令以指定组件的基类 (`@inherits CounterBase`) 。
+Blazor通常，组件是在单个 *razor* 文件中创作的。 不过，也可以使用代码隐藏文件来分隔代码和标记。 若要使用组件文件，请添加与组件文件的文件名相匹配的 c # 文件，但添加了 (*Counter.razor.cs*) 的 *.cs 扩展名。* 使用 c # 文件定义组件的基类。 您可以将基类命名为任何所需的名称，但通常将类命名为与 component 类相同的名称，但将 `Base` 扩展添加 (`CounterBase`) 。 基于组件的类还必须派生自 `ComponentBase` 。 然后，在 Razor 组件文件中添加 `@inherits` 指令以指定组件的基类 (`@inherits CounterBase`) 。
 
 *Counter*
 
