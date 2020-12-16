@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 150882f3e4c9ff7abe811e09da94b8141de75778
-ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
+ms.openlocfilehash: 4125df1d64fe7f3f2eb1eb4a821ed46c8270c95f
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97366855"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97531897"
 ---
 ### <a name="exclude-specific-types-and-their-derived-types"></a>排除特定类型及其派生类型
 
@@ -16,10 +16,10 @@ dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = MyType
 
 选项值中允许的符号名称格式 (用 `|`) 分隔：
 
-- 仅限类型名称 (包括名称相同的所有类型，而不管包含类型或命名空间) 。
+- 仅限类型名称 (包含名称的所有类型，而不管包含类型或命名空间) 。
 - 符号 [文档 ID 格式](../../docs/csharp/programming-guide/xmldoc/processing-the-xml-file.md#id-strings)的完全限定名称，带有可选 `T:` 前缀。
 
-示例：
+示例:
 
 | 选项值 | 总结 |
 | --- | --- |
