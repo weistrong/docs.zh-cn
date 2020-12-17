@@ -2,12 +2,12 @@
 title: DevOps
 description: 云本机应用程序的 DevOps 注意事项
 ms.date: 05/13/2020
-ms.openlocfilehash: e6e093a1847d3aec37ac5d4ca56f64e0091a9b6b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1a04f5178877f3fdde707753e94718ce0f0bb49d
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163994"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633710"
 ---
 # <a name="devops"></a>DevOps
 
@@ -118,11 +118,11 @@ GitHub 包含40000000多个用户，使其成为世界上最大的源代码宿�
 
 单个存储库方法也有很多缺点。 最担心的一点是，只有单个存储库引发了安全问题。 如果存储库中每个服务模型的内容泄漏，则丢失的代码量最小。 使用单个存储库，公司拥有的一切都可能会丢失。 在过去的这种情况下，有很多示例，将整个游戏开发工作。 如果有多个存储库公开了较少的外围应用，则这是大多数安全做法中所需的特征。
 
-单个存储库的大小可能无法快速进行管理。 这会带来一些有趣的性能影响。 可能需要使用专用的工具（例如 [用于 Git 的虚拟文件系统](https://vfsforgit.org/)），这种方法最初旨在改进 Windows 团队开发人员的体验。
+单个存储库的大小可能无法快速进行管理。 这会带来一些有趣的性能影响。 可能需要使用专用的工具（例如 [用于 Git 的虚拟文件系统](https://github.com/Microsoft/VFSForGit)），这种方法最初旨在改进 Windows 团队开发人员的体验。
 
 通常，使用单个存储库的参数会归结为 Facebook 或 Google 使用此方法进行源代码排列的参数。 如果这种方法对于这些公司来说是足够的，当然，这是适用于所有公司的正确方法。 这种情况的一个事实是，很少有公司对 Facebook 或 Google 的规模等内容进行操作。 在这些规模上出现的问题与大多数开发人员将面临的问题不同。 对于看，goose 的好处可能并不好。
 
-最终，可以使用解决方案来托管微服务的源代码。 但在大多数情况下，在单个存储库中运行的管理和工程开销不值得 meager。 将代码拆分在多个存储库上有助于更好地分离关注点并鼓励开发团队之间自治。  
+最终，可以使用解决方案来托管微服务的源代码。 但在大多数情况下，在单个存储库中运行的管理和工程开销不值得 meager。 将代码拆分在多个存储库上有助于更好地分离关注点并鼓励开发团队之间自治。
 
 ### <a name="standard-directory-structure"></a>标准目录结构
 
@@ -199,7 +199,7 @@ variables:
   artifactName: drop
   buildPlatform: any cpu
   buildConfiguration: release
-  
+
 pool:
   name: Hosted VS2017
   demands:

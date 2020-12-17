@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: cf9b8f4033e6774684b2b7e3b788ef3c157d95df
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0d64df42ffb1763afed3e883c4f043755e158489
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96591081"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633983"
 ---
 # <a name="configuration-files-for-code-analysis-rules"></a>代码分析规则的配置文件
 
@@ -68,7 +68,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## <a name="global-analyzerconfig"></a>全局 AnalyzerConfig
 
-从 .NET 5.0 SDK 开始 (这在 Visual Studio 2019 版本16.8 及更高版本中受支持) ，你还可以配置包含全局 _AnalyzerConfig_ 文件的分析器选项。 这些文件用于提供 **应用于项目中所有源文件的选项**，而不考虑它们的文件名或文件路径。
+从 .NET 5 SDK 开始 (在 Visual Studio 2019 版本16.8 及更高版本) 中受支持，你还可以配置包含全局 _AnalyzerConfig_ 文件的分析器选项。 这些文件用于提供 **应用于项目中所有源文件的选项**，而不考虑它们的文件名或文件路径。
 
 与 [EditorConfig](#editorconfig) 文件不同，全局配置文件不能用于为 ide 配置编辑器样式设置，如缩进大小或是否剪裁尾随空格。 相反，它们专用于指定项目级分析器配置选项。
 
