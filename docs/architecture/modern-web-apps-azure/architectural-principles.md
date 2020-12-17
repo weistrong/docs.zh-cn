@@ -3,13 +3,13 @@ title: 体系结构原则
 description: 使用 ASP.NET Core 和 Azure 构建新式 Web 应用程序 | 体系结构原则
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
-ms.openlocfilehash: a3444071abae89780304a9687e486f3842283a33
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.date: 12/01/2020
+ms.openlocfilehash: f4079e0409c1675e8f8a3e494303683daeef29c1
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396246"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851407"
 ---
 # <a name="architectural-principles"></a>体系结构原则
 
@@ -30,7 +30,7 @@ ms.locfileid: "83396246"
 
 应用程序的不同部分应通过封装与应用程序中的其他部分隔离开。 只要不违反外部协定，应用程序组件和层应能在不中断其协作者的情况下调整其内部实现。 正确使用封装有助于在应用程序设计中实现松散耦合及模块化，因为只要维持相同的接口，就可以用替代实现来替代对象和包。
 
-在类中实现封装的方式是限制对该类的内部状态的外部访问权限。 如果外部参与者想操作对象的状态，则应通过明确定义的函数（或属性 setter）来进行操作，而非直接访问该对象的私有状态。 同样，应用程序组件和应用程序本身应公开明确定义的接口供协作者使用，而非让协作者直接修改其状态。 这样一来，只要公共协定得到维护，你就可以不断改进应用程序的内部设计，而无需担心会中断协作者。
+在类中实现封装的方式是限制对该类的内部状态的外部访问权限。 如果外部参与者想操作对象的状态，则应通过明确定义的函数（或属性 setter）来进行操作，而非直接访问该对象的私有状态。 同样，应用程序组件和应用程序本身应公开明确定义的接口供协作者使用，而非让协作者直接修改其状态。 通过此方法，只要公共协定得到维护，你就可以不断改进应用程序的内部设计，而无需担心会中断协作者。
 
 ### <a name="dependency-inversion"></a>依赖关系反转
 

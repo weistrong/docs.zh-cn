@@ -6,13 +6,13 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 12/04/2019
-ms.openlocfilehash: 6241a9a3a51bd4d5228841caeaf3a7b652fc6eaa
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.date: 12/01/2020
+ms.openlocfilehash: 2a9e55250018352c8019d30a4d615ec39e619e31
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91608356"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851225"
 ---
 # <a name="characteristics-of-modern-web-applications"></a>新式 Web 应用程序的特征
 
@@ -42,7 +42,7 @@ ASP.NET Core 针对新式 Web 应用程序和基于云的托管方案进行了�
 
 ## <a name="cross-platform"></a>跨平台
 
-ASP.NET Core 具有跨平台性，可在 Linux、macOS 以及 Windows 上运行。 这为开发和部署通过 ASP.NET Core 构建的应用带来了新的选择。 Docker 容器（包括 Linux 和 Windows）可托管 ASP.NET Core 应用程序，从而使应用程序可利用[容器和微服务](../microservices/index.md)的优势。
+ASP.NET Core 具有跨平台性，可在 Linux、macOS 以及 Windows 上运行。 此功能为开发和部署通过 ASP.NET Core 构建的应用带来了新的选择。 Docker 容器（包括 Linux 和 Windows）可托管 ASP.NET Core 应用程序，从而使应用程序可利用[容器和微服务](../microservices/index.md)的优势。
 
 ## <a name="modular-and-loosely-coupled"></a>模块化和松散耦合
 

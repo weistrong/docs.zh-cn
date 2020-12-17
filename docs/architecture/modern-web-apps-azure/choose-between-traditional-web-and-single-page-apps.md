@@ -6,13 +6,13 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 07/27/2020
-ms.openlocfilehash: f04de5c350dfead4dad8c37eece7f16c9a9e00bc
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.date: 12/01/2020
+ms.openlocfilehash: c29e58fb4c748d6025b7c2fbe62a54a85cc71fba
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89515814"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851648"
 ---
 # <a name="choose-between-traditional-web-apps-and-single-page-apps-spas"></a>在传统 Web 应用和单页应用 (SPA) 之间选择
 
@@ -53,17 +53,17 @@ Blazor 提供了一个全新的第三个选项，可用于评估是生成纯服�
 
 - 与使用 JavaScript 或 TypeScript 开发相比，团队更喜欢使用 .NET 开发
 
-如果正在考虑将现有的 Web Forms 应用程序迁移到 .NET Core，不妨参阅免费的电子书《[面向 Web Forms 开发人员的 Blazor](../blazor-for-web-forms-developers/index.md)》，以了解是否有必要将其迁移到 Blazor。
+如果正在考虑将现有的 Web Forms 应用程序迁移到 .NET Core 或最新的 .NET，不妨参阅免费的电子书《[面向 Web Forms 开发人员的 Blazor](../blazor-for-web-forms-developers/index.md)》，以了解是否有必要将其迁移到 Blazor。
 
 有关 Blazor 的详细信息，请参阅 [Blazor 入门](https://blazor.net/docs/get-started.html)。
 
 ## <a name="when-to-choose-traditional-web-apps"></a>何时选择传统 Web 应用
 
-以下内容详细介绍前面提到的选择传统 Web 应用程序的原因。
+以下部分详细介绍前面提到的选择传统 Web 应用程序的原因。
 
 **应用程序的客户端要求简单，可能要求只读**
 
-对许多 Web 应用程序而言，其大部分用户的主要使用方式是只读。 只读（或以读取为主）应用程序往往比那些维护和操作大量状态的应用程序简单得多。 例如，搜索引擎可能由一个带有文本框的入口点和用于显示搜索结果的第二页组成。 匿名用户可以轻松提出请求，并且很少需要使用客户端逻辑。 同样，一般而言，博客或内容管理系统中面向公众的应用程序主要包含的内容与客户端行为关系不大。 此类应用程序容易构建为基于服务器的传统 Web 应用程序，在 Web 服务器上执行逻辑，并呈现要在浏览器中显示的 HTML。 事实上，网站的每个独特页面都有自己的 URL，搜索引擎可以将其存为书签和编入索引（默认设置，无需将其添加为应用程序的单独功能），这也是此类情况的一个明显优势。
+对许多 Web 应用程序而言，其大部分用户的主要使用方式是只读。 只读（或以读取为主）应用程序往往比那些维护和操作大量状态的应用程序简单得多。 例如，搜索引擎可能由一个带有文本框的入口点和用于显示搜索结果的第二页组成。 匿名用户可以轻松提出请求，并且很少需要使用客户端逻辑。 同样，一般而言，博客或内容管理系统中面向公众的应用程序主要包含的内容与客户端行为关系不大。 此类应用程序容易构建为基于服务器的传统 Web 应用程序，在 Web 服务器上执行逻辑，并呈现要在浏览器中显示的 HTML。 事实上，网站的每个独特页面都有自己的 URL，搜索引擎可以将其存为书签和编入索引（默认设置，无需将此功能添加为应用程序的单独功能），这也是此类情况的一个明显优势。
 
 **应用程序需在不支持 JavaScript 的浏览器中工作**
 
@@ -75,7 +75,7 @@ Blazor 提供了一个全新的第三个选项，可用于评估是生成纯服�
 
 ## <a name="when-to-choose-spas"></a>何时选择 SPA
 
-以下内容详细介绍何时为 Web 应用选择单页应用程序开发样式。
+以下部分详细介绍何时为 Web 应用选择单页应用程序开发样式。
 
 **应用程序必须公开具有许多功能的丰富用户界面**
 
@@ -102,7 +102,7 @@ SPA 可支持丰富客户端功能，当用户执行操作或在应用的各区�
 
 ## <a name="when-to-choose-no-locblazor"></a>何时选择 Blazor
 
-以下是有关何时为 Web 应用选择 Blazor 更加详细的说明。
+以下部分是有关何时为 Web 应用选择 Blazor 更加详细的说明。
 
 **应用程序必须公开丰富用户界面**
 

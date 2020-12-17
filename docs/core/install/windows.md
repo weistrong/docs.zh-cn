@@ -4,12 +4,12 @@ description: 了解可在其上安装 .NET 的 Windows 版本。
 author: adegeo
 ms.author: adegeo
 ms.date: 11/10/2020
-ms.openlocfilehash: 786814549724948fa69b18a05cee966e0940aaf4
-ms.sourcegitcommit: c6de55556add9f92af17e0f8d1da8f356a19a03d
+ms.openlocfilehash: b5c0949bbd591906536094a33d8583a265d8a4c8
+ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96549340"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97110229"
 ---
 # <a name="install-net-on-windows"></a>在 Windows 上安装 .NET
 
@@ -37,6 +37,7 @@ Windows 10 版本终止服务日期按版本分段。 下表中仅考虑家庭�
 
 | 操作系统            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
+| Windows 10 版本 20H2    | ✔️           | ✔️            | ✔️    |
 | Windows 10 版本 2004    | ✔️           | ✔️            | ✔️    |
 | Windows 10 版本 1909    | ✔️           | ✔️            | ✔️    |
 | Windows 10 版本 1903    | ✔️           | ✔️            | ✔️    |

@@ -6,12 +6,12 @@ ms.author: adegeo
 ms.date: 11/10/2020
 ms.custom: updateeachrelease
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: 39020a32cdea9b82dc9d30e62e663ebc4ee39ebb
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 2fc12c8c398b1a74d623e53884df666f4d4b85f1
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687436"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851609"
 ---
 # <a name="how-to-check-that-net-is-already-installed"></a>如何检查是否已安装 .NET
 
@@ -139,7 +139,7 @@ Microsoft.NETCore.App 5.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ## <a name="check-for-install-folders"></a>检查安装文件夹
 
-可以安装 .NET，但不能将其添加到操作系统或用户配置文件的 `PATH` 变量。 运行前面几节中的命令可能不起作用。 作为替代方法，可以检查 .NET 安装文件夹是否存在。
+可以安装 .NET，但不能将其添加到操作系统或用户配置文件的 `PATH` 变量。 在这种情况下，前面几节中的命令可能不起作用。 作为替代方法，可以检查 .NET 安装文件夹是否存在。
 
 从安装程序或脚本安装 .NET 时，会将其安装到标准文件夹中。 大多数时候，安装 .NET 时使用的安装程序或脚本会让你选择安装到另一个文件夹。 如果选择安装到其他文件夹，请调整文件夹路径的开头。
 
@@ -191,3 +191,7 @@ C:\\program files\\dotnet\\shared\\{runtime-type}\\{version}\\
 - [安装 .NET 运行时和适用于 Windows 的 SDK](windows.md)。
 - [安装 .NET 运行时和适用于 macOS 的 SDK](macos.md)。
 - [安装 .NET 运行时和适用于 Linux 的 SDK](linux.md)。
+
+## <a name="see-also"></a>请参阅
+
+- [确定已安装的 .NET Framework 版本](../../framework/migration-guide/how-to-determine-which-versions-are-installed.md)

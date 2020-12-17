@@ -4,12 +4,12 @@ description: .NET SDK 可以理解的 MSBuild 属性和项的引用。
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 14603ba98f00d46d0f167652500979f94de0ec9a
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 3b58fd080439c73ee30d5c8dc59c50c0410db164
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031684"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851570"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>.NET SDK 项目的 MSBuild 引用
 
@@ -204,7 +204,7 @@ ms.locfileid: "96031684"
 
 ### <a name="analysismode"></a>AnalysisMode
 
-从 .NET 5.0 RC2 开始，.NET SDK 附带了所有[“CA”代码质量规则](../../fundamentals/code-analysis/quality-rules/index.md)。 默认情况下，只有[一些规则作为生成警告启用](../../fundamentals/code-analysis/overview.md#enabled-rules)。 `AnalysisMode` 属性允许自定义默认启用的一组规则。 可以切换到更主动的（选择退出）分析模式，也可以切换到更保守的（选择加入）分析模式。 例如，如果要作为生成警告默认启用所有规则，请将值设置为 `AllEnabledByDefault`。
+从 .NET 5.0 开始，.NET SDK 附带了所有[“CA”代码质量规则](../../fundamentals/code-analysis/quality-rules/index.md)。 默认情况下，只有[一些规则作为生成警告启用](../../fundamentals/code-analysis/overview.md#enabled-rules)。 `AnalysisMode` 属性允许自定义默认启用的一组规则。 可以切换到更主动的（选择退出）分析模式，也可以切换到更保守的（选择加入）分析模式。 例如，如果要作为生成警告默认启用所有规则，请将值设置为 `AllEnabledByDefault`。
 
 ```xml
 <PropertyGroup>

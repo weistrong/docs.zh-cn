@@ -4,12 +4,12 @@ description: 演示在 RHEL 上安装 .NET SDK 和 .NET 运行时的各种方式
 author: adegeo
 ms.author: adegeo
 ms.date: 11/10/2020
-ms.openlocfilehash: 931cad51ff8e35ff16b67ff9b795feb36010a66b
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 0b6138185bfd3e2f50c1b31e82779165715a5b6e
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031749"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851635"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-rhel"></a>在 RHEL 上安装 .NET SDK 或 .NET 运行时
 
@@ -50,28 +50,51 @@ RHEL 支持 .NET。 本文介绍如何在 RHEL 上安装 .NET。
 
 ## <a name="rhel-8-"></a>RHEL 8 ✔️
 
-> [!TIP]
-> .NET 5.0 在 AppStream 存储库中尚不可用，但 .NET Core 3.1 可用。 若要安装 .NET Core 3.1，请对相应的包（如 `aspnetcore-runtime-3.1` 或 `dotnet-sdk-3.1`）使用 `dnf install` 命令。 下列说明适用于 .NET 5.0。
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/8/prod.repo
-```
+.NET 包含在 RHEL 8 的 AppStream 存储库中。
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## <a name="rhel-7--net-50"></a>RHEL 7 ✔️ .NET 5.0
 
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+以下命令安装 `scl-utils` 包：
 
 ```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+sudo yum install scl-utils
 ```
 
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-yum.md)]
+### <a name="install-the-sdk"></a>安装 SDK
+
+.NET SDK 使你可以通过 .NET 开发应用。 如果安装 .NET SDK，则无需安装相应的运行时。 若要安装 .NET SDK，请运行以下命令：
+
+```bash
+subscription-manager repos --enable=rhel-7-server-dotnet-rpms
+yum install rh-dotnet50 -y
+scl enable rh-dotnet50 bash
+```
+
+Red Hat 建议不要永久启用 `rh-dotnet50`，因为这可能会影响其他程序。 如果要永久启用 `rh-dotnet`，请将以下行添加到 ~/.bashrc 文件中。
+
+```bash
+source scl_source enable rh-dotnet50
+```
+
+### <a name="install-the-runtime"></a>安装运行时
+
+通过 .NET 运行时，可以运行使用 .NET 开发且未包含运行时的应用。 以下命令安装 ASP.NET Core 运行时，这是与 .NET Core 最兼容的运行时。 在终端中，运行以下命令。
+
+```bash
+subscription-manager repos --enable=rhel-7-server-dotnet-rpms
+yum install rh-dotnet50-aspnetcore-runtime-5.0 -y
+scl enable rh-dotnet50 bash
+```
+
+Red Hat 建议不要永久启用 `rh-dotnet50`，因为这可能会影响其他程序。 如果要永久启用 `rh-dotnet50`，请将以下行添加到 ~/.bashrc 文件中。
+
+```bash
+source scl_source enable rh-dotnet50
+```
+
+作为 ASP.NET Core 运行时的一种替代方法，你可以安装不包含 ASP.NET Core 支持的 .NET 运行时：将上述命令中的 `rh-dotnet50-aspnetcore-runtime-5.0` 替换为 `rh-dotnet50-dotnet-runtime-5.0`。
 
 ## <a name="rhel-7--net-core-31"></a>RHEL 7 ✔️ .NET Core 3.1
 
@@ -106,13 +129,13 @@ source scl_source enable rh-dotnet31
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
 yum install rh-dotnet31-aspnetcore-runtime-3.1 -y
-scl enable rh-dotnet31-aspnetcore-runtime-3.1 bash
+scl enable rh-dotnet31 bash
 ```
 
-Red Hat 建议不要永久启用 `rh-dotnet31-aspnetcore-runtime-3.1`，因为这可能会影响其他程序。 例如，`rh-dotnet31-aspnetcore-runtime-3.1` 包括与基本 RHEL 版本不同的 `libcurl` 版本。 这可能会导致不需要不同版本的 `libcurl` 的程序出现问题。 如果要永久启用 `rh-dotnet31-aspnetcore-runtime-3.1`，请将以下行添加到 ~/.bashrc 文件中。
+Red Hat 建议不要永久启用 `rh-dotnet31`，因为这可能会影响其他程序。 例如，`rh-dotnet31` 包括与基本 RHEL 版本不同的 `libcurl` 版本。 这可能会导致不需要不同版本的 `libcurl` 的程序出现问题。 如果要永久启用 `rh-dotnet31`，请将以下行添加到 ~/.bashrc 文件中。
 
 ```bash
-source scl_source enable rh-dotnet31-aspnetcore-runtime-3.1
+source scl_source enable rh-dotnet31
 ```
 
 作为 ASP.NET Core 运行时的一种替代方法，你可以安装不包含 ASP.NET Core 支持的 .NET Core 运行时：将上述命令中的 `rh-dotnet31-aspnetcore-runtime-3.1` 替换为 `rh-dotnet31-dotnet-runtime-3.1`。

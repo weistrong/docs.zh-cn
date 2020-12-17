@@ -5,16 +5,16 @@ ms.date: 02/08/2020
 helpviewer_keywords:
 - nested types [C#]
 ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
-ms.openlocfilehash: 9e1c6c1e8b22b5447d43915ab02984aa13146301
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 0741ae88103b16ce34fd5a38b789beaf428e734a
+ms.sourcegitcommit: 0014aa4d5cb2da56a70e03fc68f663d64df5247a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864938"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96918575"
 ---
 # <a name="nested-types-c-programming-guide"></a>嵌套类型（C# 编程指南）
 
-在[类](../../language-reference/keywords/class.md)、[构造](../../language-reference/builtin-types/struct.md)或[接口](../../language-reference/keywords/interface.md)中定义的类型称为嵌套类型。 例如
+在[类](../../language-reference/keywords/class.md)、[构造](../../language-reference/builtin-types/struct.md)、[委托](../../language-reference/builtin-types/reference-types.md#the-delegate-type)或[接口](../../language-reference/keywords/interface.md)中定义的类型称为嵌套类型。 例如
 
 [!code-csharp[DeclareNestedClass](~/samples/snippets/csharp/objectoriented/nestedtypes.cs#DeclareNestedClass)]
 

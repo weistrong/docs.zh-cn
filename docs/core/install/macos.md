@@ -4,12 +4,12 @@ description: 了解可在其上安装 .NET 的 macOS 版本。
 author: adegeo
 ms.author: adegeo
 ms.date: 11/10/2020
-ms.openlocfilehash: f926479227f11def5c8bb8c6bf29ad30a04e6ed2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b1434938a8e8e81da81e495a6b99e6c99467aae1
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715129"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009353"
 ---
 # <a name="install-net-on-macos"></a>在 macOS 上安装 .NET
 
@@ -35,6 +35,7 @@ ms.locfileid: "95715129"
 
 | 操作系统          | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |---------------------------|---------------|---------------|----------------|
+| macOS 11.0“Big Sur”        | ✔️ 2.1（[发行说明][release-notes-21]） | ✔️ 3.1（[发行说明][release-notes-31]） | ✔️ 5.0（[发行说明][release-notes-50]） |
 | macOS 10.15“Catalina”    | ✔️ 2.1（[发行说明][release-notes-21]） | ✔️ 3.1（[发行说明][release-notes-31]） | ✔️ 5.0（[发行说明][release-notes-50]） |
 | macOS 10.14“Mojave”      | ✔️ 2.1（[发行说明][release-notes-21]） | ✔️ 3.1（[发行说明][release-notes-31]） | ✔️ 5.0（[发行说明][release-notes-50]） |
 | macOS 10.13“High Sierra” | ✔️ 2.1（[发行说明][release-notes-21]） | ✔️ 3.1（[发行说明][release-notes-31]） | ✔️ 5.0（[发行说明][release-notes-50]） |

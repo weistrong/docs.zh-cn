@@ -3,13 +3,13 @@ title: Azure 的开发过程
 description: 使用 ASP.NET Core 和 Azure 构建新式 Web 应用程序 | Azure 的开发过程
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
-ms.openlocfilehash: 8907c63f8dcd57ec22c3c196cbb1db52d91a3b5f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.date: 12/01/2020
+ms.openlocfilehash: 2706a4091565e6f3cb795acf031a238ae55a1068
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "91169032"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851622"
 ---
 # <a name="development-process-for-azure"></a>Azure 的开发过程
 
@@ -30,9 +30,9 @@ ms.locfileid: "91169032"
 
 [下载 Visual Studio 2019](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
-**Visual Studio Code 和 dotnet CLI**（适用于 Mac、Linux 和 Windows 的跨平台工具）。 如果更青睐支持任何开发语言的轻量级跨平台编辑器，可以使用 Microsoft Visual Studio Code 和 the dotnet CLI。 这些产品提供简单但可靠的体验，可以简化开发人员工作流。 此外，Visual Studio Code 支持适用于 C\# 和 Web 开发的扩展，在该编辑器内提供智能感知和快捷任务。
+Visual Studio Code 和 dotnet CLI（适用于 Mac、Linux 和 Windows 的跨平台工具）。 如果更青睐支持任何开发语言的轻量级跨平台编辑器，可以使用 Microsoft Visual Studio Code 和 the dotnet CLI。 这些产品提供简单但可靠的体验，可以简化开发人员工作流。 此外，Visual Studio Code 支持适用于 C\# 和 Web 开发的扩展，在该编辑器内提供智能感知和快捷任务。
 
-[下载 .NET Core SDK](https://dotnet.microsoft.com/download)
+[下载 .NET SDK](https://dotnet.microsoft.com/download)
 
 [下载 Visual Studio Code](https://code.visualstudio.com/download)
 
@@ -56,13 +56,13 @@ ms.locfileid: "91169032"
 
 **图 10-1.** 在 Azure 门户中创建新的 Azure 应用服务 Web 应用。
 
-无论新代码何时提交至项目的源代码管理存储库，CI 生成过程均会执行自动生成。 由此你可获得即时反馈，知悉代码已生成（且理想情况下可通过自动测试），并且或许可进行部署。 此 CI 生成将生成一个 Web 部署包项目，并将其发布，以供 CD 进程使用。
+无论新代码何时提交至项目的源代码管理存储库，CI 生成过程均会执行自动生成。 由此过程你可获得即时反馈，知悉代码已生成（且理想情况下可通过自动测试），并且或许可进行部署。 此 CI 生成将生成一个 Web 部署包项目，并将其发布，以供 CD 进程使用。
 
 [定义 CI 生成过程](/azure/devops/pipelines/ecosystems/dotnet-core)
 
 请务必启用持续集成，从而使得无论何时团队成员提交新代码，系统均可将生成排队。 测试该生成，并验证其是否生成 Web 部署包作为其中一个项目。
 
-生成成功后，CD 过程会将 CI 生成结果部署到 Azure Web 应用。 如需对其配置，请创建并配置一个 Release（它将部署到 Azure 应用服务）。 
+生成成功后，CD 过程会将 CI 生成结果部署到 Azure Web 应用。 若要配置此步骤，请创建并配置一个版本，该版本将部署到 Azure 应用服务。
 
 [部署 Azure web 应用](/azure/devops/pipelines/targets/webapp)
 
@@ -78,7 +78,7 @@ ms.locfileid: "91169032"
 
 #### <a name="step-1-local-dev-environment-inner-loop"></a>步骤 1。 本地开发环境内循环
 
-开发要部署到 Azure 的 ASP.NET Core 应用程序与开发其他程序并无不同。 使用惯用的本地开发环境，无论是 Visual Studio 2017、dotnet CLI、Visual Studio Code 还是个人首选的编辑器。 在准备将更改推送到共享源代码存储库前，可以编写代码、运行并调试更改、运行自动测试以及本地提交到源代码管理。
+开发要部署到 Azure 的 ASP.NET Core 应用程序与开发其他程序并无不同。 使用惯用的本地开发环境，无论是 Visual Studio 2019、dotnet CLI、Visual Studio Code 还是个人首选的编辑器。 在准备将更改推送到共享源代码存储库前，可以编写代码、运行并调试更改、运行自动测试以及本地提交到源代码管理。
 
 #### <a name="step-2-application-code-repository"></a>步骤 2。 应用程序代码存储库
 
@@ -90,7 +90,7 @@ ms.locfileid: "91169032"
 
 #### <a name="step-4-build-server-continuous-delivery"></a>步骤 4。 生成服务器：持续交付
 
-生成成功后，CD 过程将选取产生的生成项目。 其中包括一个 Web 部署包。 生成服务器将此包部署到 Azure 应用服务，使用新创建的服务替换任何现有服务。 通常该步骤面向过渡环境，但是部分应用程序通过 CD 过程直接部署到生产。
+生成成功后，CD 过程将选取产生的生成项目。 此过程将包括一个 Web 部署包。 生成服务器将此包部署到 Azure 应用服务，使用新创建的服务替换任何现有服务。 通常该步骤面向过渡环境，但是部分应用程序通过 CD 过程直接部署到生产。
 
 #### <a name="step-5-azure-app-service-web-app"></a>步骤 5。 Azure 应用服务 Web 应用
 

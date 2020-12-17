@@ -2,12 +2,12 @@
 title: dotnet-counters 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-counter CLI 工具进行临时运行状况监视和初级性能调查。
 ms.date: 11/17/2020
-ms.openlocfilehash: 7dd4c06f3abe423552ba1d3eb82f6d0c35a84d0b
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 48e3b038ddb5c9421367612a592c5ba6b9459791
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822212"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009542"
 ---
 # <a name="investigate-performance-counters-dotnet-counters"></a>调查性能计数器 (dotnet-counters)
 
@@ -71,7 +71,7 @@ dotnet-counters [-h|--help] [--version] <command>
 ### <a name="synopsis"></a>摘要
 
 ```console
-dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
 ### <a name="options"></a>选项
@@ -83,6 +83,10 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 - **`-n|--name <name>`**
 
   要从中收集计数器数据的进程的名称。
+
+- **`--diagnostic-port`**
+
+  要创建的诊断端口的名称。 请参阅[使用诊断端口](#using-diagnostic-port)，了解如何使用此选项从应用启动时开始监视计数器。
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -106,6 +110,9 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
   > [!NOTE]
   > 使用此选项监视第一个 .NET 5.0 进程，该进程与该工具通信，这意味着如果命令启动多个 .NET 应用程序，它将仅收集第一个应用。 因此，建议在自包含应用程序上使用此选项，或使用 `dotnet exec <app.dll>` 选项。
+
+  > [!NOTE]
+  > 通过 dotnet-counters 启动 .NET 可执行文件将重定向其输入/输出，你将无法与其 stdin/stdout 进行交互。 通过 CTRL+C 或 SIGTERM 退出工具将安全地结束该工具和子进程。 如果子进程在工具之前退出，工具也将退出，应可安全查看跟踪。 如果需要使用 stdin/stdout，可以使用 `--diagnostic-port` 选项。 有关详细信息，请参阅[使用诊断端口](#using-diagnostic-port)。
 
 ### <a name="examples"></a>示例
 
@@ -180,7 +187,7 @@ Microsoft.AspNetCore.Hosting
 ### <a name="synopsis"></a>摘要
 
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters] [-- <command>]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters] [-- <command>]
 ```
 
 ### <a name="options"></a>选项
@@ -192,6 +199,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 - **`-n|--name <name>`**
 
   要监视的进程的名称。
+
+- **`--diagnostic-port`**
+
+  要创建的诊断端口的名称。 请参阅[使用诊断端口](#using-diagnostic-port)，了解如何使用此选项从应用启动时开始监视计数器。
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -207,6 +218,9 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
   > [!NOTE]
   > 使用此选项监视第一个 .NET 5.0 进程，该进程与该工具通信，这意味着如果命令启动多个 .NET 应用程序，它将仅收集第一个应用。 因此，建议在自包含应用程序上使用此选项，或使用 `dotnet exec <app.dll>` 选项。
+
+  > [!NOTE]
+  > 通过 dotnet-counters 启动 .NET 可执行文件将重定向其输入/输出，你将无法与其 stdin/stdout 进行交互。 通过 CTRL+C 或 SIGTERM 退出工具将安全地结束该工具和子进程。 如果子进程在工具之前退出，工具也将退出，应可安全查看跟踪。 如果需要使用 stdin/stdout，可以使用 `--diagnostic-port` 选项。 有关详细信息，请参阅[使用诊断端口](#using-diagnostic-port)。
 
 ### <a name="examples"></a>示例
 
@@ -313,6 +327,48 @@ dotnet-counters ps [-h|--help]
 ```console
 > dotnet-counters ps
   
-  15683 WebApi     /home/suwhang/repos/WebApi/WebApi
+  15683 WebApi     /home/user/repos/WebApi/WebApi
   16324 dotnet     /usr/local/share/dotnet/dotnet
 ```
+
+## <a name="using-diagnostic-port"></a>使用诊断端口
+
+  > [!IMPORTANT]
+  > 这仅适用于运行 .NET 5.0 或更高版本的应用。
+
+诊断端口是 .NET 5 中新增的运行时功能，你可以通过它从应用启动时开始监视或收集计数器。 若要使用 `dotnet-counters` 执行此操作，可以使用以上示例中所述的 `dotnet-counters <collect|monitor> -- <command>`，也可以使用 `--diagnostic-port` 选项。
+
+使用 `dotnet-counters <collect|monitor> -- <command>` 以子进程的形式启动应用程序，是从启动时开始对其进行快速监视的最简单方法。
+
+但是，如果想要更好地控制所监视应用的生存期（例如，仅在前 10 分钟内监视应用并继续执行），或者如果需要使用 CLI 与应用进行交互，则使用 `--diagnostic-port` 选项可以同时控制要监视的目标应用和 `dotnet-counters`。
+
+1. 以下命令使 dotnet-counters 创建一个名为 `myport.sock` 的诊断套接字并等待连接。
+
+    > ```dotnet-cli
+    > dotnet-counters collect --diagnostic-port myport.sock
+    > ```
+
+    输出：
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ```
+
+2. 在单独的控制台中，通过将环境变量 `DOTNET_DiagnosticPorts` 设置为 `dotnet-counters` 输出中的值，启动目标应用程序。
+
+    > ```bash
+    > export DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ./my-dotnet-app arg1 arg2
+    > ```
+
+    这应该会使 `dotnet-counters` 开始在 `my-dotnet-app` 上收集计数器：
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
+    > Starting a counter session. Press Q to quit.
+    > ```
+
+    > [!IMPORTANT]
+    > 通过 `dotnet run` 启动应用可能会产生问题，因为 dotnet CLI 可能会生成许多子进程，这些子程序不是应用，并且可以在应用之前连接到 `dotnet-counters`，从而导致应用在运行时挂起。 建议直接使用应用的独立版本或使用 `dotnet exec` 来启动应用程序。

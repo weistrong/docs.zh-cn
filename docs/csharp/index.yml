@@ -6,12 +6,12 @@ metadata:
   description: 了解 C# 编程 - 面向新手开发人员、刚开始接触 C# 的开发人员、以及经验丰富的 C# / .NET 开发人员
   ms.topic: landing-page
   ms.date: 11/19/2019
-  ms.openlocfilehash: bc75503b565020fb9966fd756d87890263f63533
-  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+  ms.openlocfilehash: 584db55455af54bcf7e91771e3598a7349091bee
+  ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96599442"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "97512146"
 landingContent:
 - title: 了解如何使用 C# 编程
   linkLists:
@@ -71,38 +71,20 @@ landingContent:
     links:
     - text: C# 9.0 中的新增功能
       url: whats-new/csharp-9.md
-- title: C# 8.0 中的新增功能
+- title: C# 9.0 中的新增功能
   linkLists:
   - linkListType: whats-new
     links:
-    - text: C# 8.0 中的新增功能
-      url: whats-new/csharp-8.md
-  - linkListType: overview
-    links:
-    - text: 模式匹配
-      url: pattern-matching.md
-    - text: 可为空引用类型
-      url: nullable-references.md
-  - linkListType: concept
-    links:
-    - text: 选择可为空迁移策略
-      url: nullable-migration-strategies.md
+    - text: C# 9.0 中的新增功能
+      url: whats-new/csharp-9.md
   - linkListType: tutorial
     links:
-    - text: 使用并生成异步流
-      url: tutorials/generate-consume-asynchronous-stream.md
-    - text: 使用可为空引用类型进行开发
-      url: tutorials/nullable-reference-types.md
-    - text: 使用可为空引用类型升级现有代码
-      url: tutorials/upgrade-to-nullable-references.md
-    - text: 使用模式匹配获得更多富于表现力的算法
-      url: tutorials/pattern-matching.md
-    - text: 具有默认接口成员的安全版本接口
-      url: tutorials/default-interface-methods-versions.md
-    - text: 混合默认接口成员功能
-      url: tutorials/mixins-with-default-interface-methods.md
-    - text: 使用范围和索引处理子集
-      url: tutorials/ranges-indexes.md
+    - text: 浏览记录类型
+      url: tutorials/exploration/records.md
+    - text: 探索顶级语句
+      url: tutorials/exploration/top-level-statements.md
+    - text: 探索新模式
+      url: tutorials/exploration/patterns-objects.md
   - linkListType: reference
     links:
     - text: C# 编译器中的重大更改

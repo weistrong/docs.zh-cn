@@ -2,12 +2,12 @@
 title: dotnet-trace 诊断工具 - .NET CLI
 description: 了解如何通过使用 .NET EventPipe 来安装和使用 dotnet-trace CLI 工具，以在没有本机探查器的情况下收集运行中的进程的 .NET 跟踪。
 ms.date: 11/17/2020
-ms.openlocfilehash: 6bc5ad449f62ed0080ff6b1f401f1871d90cf5ec
-ms.sourcegitcommit: c6de55556add9f92af17e0f8d1da8f356a19a03d
+ms.openlocfilehash: 868ce7828eee6bd7f2101d5d6a65c7f7bf87fe24
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96549327"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009529"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>dotnet-trace 性能分析实用工具
 
@@ -78,7 +78,7 @@ dotnet-trace [-h, --help] [--version] <command>
 ```console
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
-    [-n, --name <name>]  [-o|--output <trace-file-path>] [-p|--process-id <pid>]
+    [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
     [-- <command>] (for target applications running .NET 5.0 or later)
 ```
@@ -104,6 +104,10 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`-n, --name <name>`**
 
   从中收集跟踪的进程的名称。
+
+- **`--diagnostic-port <path-to-port>`**
+
+  要创建的诊断端口的名称。 请参阅[使用诊断端口从应用启动时开始收集跟踪](#use-diagnostic-port-to-collect-a-trace-from-app-startup)，以了解如何使用此选项从应用启动时开始收集跟踪。
 
 - **`-o|--output <trace-file-path>`**
 
@@ -250,6 +254,48 @@ Press <Enter> or <Ctrl+C> to exit...
 > 通过 dotnet-trace 启动 `hello.exe` 将重定向其输入/输出，你将无法与其 stdin/stdout 进行交互。
 > 通过 CTRL+C 或 SIGTERM 退出工具将安全地结束该工具和子进程。
 > 如果子进程在工具之前退出，工具也将退出，应可安全查看跟踪。
+
+## <a name="use-diagnostic-port-to-collect-a-trace-from-app-startup"></a>使用诊断端口从应用启动时开始收集跟踪
+
+  > [!IMPORTANT]
+  > 这仅适用于运行 .NET 5.0 或更高版本的应用。
+
+诊断端口是 .NET 5 中新增的运行时功能，你可以通过它从应用启动时开始跟踪。 若要使用 `dotnet-trace` 执行此操作，可以使用以上示例中所述的 `dotnet-trace collect -- <command>`，也可以使用 `--diagnostic-port` 选项。
+
+使用 `dotnet-trace <collect|monitor> -- <command>` 以子进程的形式启动应用程序，是从启动时开始对其进行快速跟踪的最简单方法。
+
+但是，如果想要更好地控制所跟踪应用的生存期（例如，仅在前 10 分钟内监视应用并继续执行），或者如果需要使用 CLI 与应用进行交互，则使用 `--diagnostic-port` 选项可以同时控制要监视的目标应用和 `dotnet-trace`。
+
+1. 以下命令使 `dotnet-trace` 创建一个名为 `myport.sock` 的诊断套接字并等待连接。
+
+    > ```dotnet-cli
+    > dotnet-trace collect --diagnostic-port myport.sock
+    > ```
+
+    输出：
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ```
+
+2. 在单独的控制台中，通过将环境变量 `DOTNET_DiagnosticPorts` 设置为 `dotnet-trace` 输出中的值，启动目标应用程序。
+
+    > ```bash
+    > export DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ./my-dotnet-app arg1 arg2
+    > ```
+
+    这应该会使 `dotnet-trace` 开始跟踪 `my-dotnet-app`：
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
+    > Starting a counter session. Press Q to quit.
+    > ```
+
+    > [!IMPORTANT]
+    > 通过 `dotnet run` 启动应用可能会产生问题，因为 dotnet CLI 可能会生成许多子进程，这些子程序不是应用，并且可以在应用之前连接到 `dotnet-trace`，从而导致应用在运行时挂起。 建议直接使用应用的独立版本或使用 `dotnet exec` 来启动应用程序。
 
 ## <a name="view-the-trace-captured-from-dotnet-trace"></a>查看由 dotnet-trace 捕获的跟踪
 

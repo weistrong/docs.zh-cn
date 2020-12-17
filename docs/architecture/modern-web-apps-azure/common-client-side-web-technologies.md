@@ -5,17 +5,17 @@ author: ardalis
 ms.author: wiwagn
 no-loc:
 - Blazor
-ms.date: 12/04/2019
-ms.openlocfilehash: e8ea035c491fad39d2932572255a19c7c1493418
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.date: 12/01/2020
+ms.openlocfilehash: a4549e48152b21af05c67f601c1db65029e346fa
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174349"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851661"
 ---
 # <a name="common-client-side-web-technologies"></a>常用客户端 Web 技术
 
-> “优秀的网站应表里如一。”  
+> “优秀的网站应表里如一。”
 > _- Paul Cookson_
 
 ASP.NET Core 应用程序属于 Web 应用程序，并且通常依赖于 HTML、CSS 和 JavaScript 等客户端 Web 技术。 通过将页面 (HTML) 内容从其布局和样式 (CSS) 以及行为 (JavaScript) 中分离出来，复杂的 Web 应用也可以利用“关注分离”原则。 将来，当这些关注点不相互交织时，可以更轻松地对应用程序的结构、设计或行为进行更改。
@@ -23,7 +23,7 @@ ASP.NET Core 应用程序属于 Web 应用程序，并且通常依赖于 HTML、
 尽管 HTML 和 CSS 相对稳定，但应用程序框架和实用程序开发人员用于生成基于 Web 的应用程序的 JavaScript，正以惊人的速度发展。 本章介绍 Web 开发人员使用 JavaScript 的几种方式，并提供 Angular 和 React 客户端库的简要概述。
 
 > [!NOTE]
-> Blazor 提供了 JavaScript 框架的替代方法，用于生成丰富的交互式客户端用户界面。 客户端 Blazor 支持仍处于预览状态，因此目前不在本章所讨论的范围之内。
+> Blazor 提供了 JavaScript 框架的替代方法，用于生成丰富的交互式客户端用户界面。
 
 ## <a name="html"></a>HTML
 
@@ -65,7 +65,7 @@ JavaScript 是动态的解释性编程语言，已在 ECMAScript 语言规范中
 
 尽管 jQuery 基于古老的 JavaScript 框架标准，但它仍然是常用的库，用于处理 HTML/CSS 和生成对 Web API 进行 AJAX 调用的应用程序。 但是，jQuery 按浏览器文档对象模型 (DOM) 级别操作，并默认只提供命令性，而不是声明性的模型。
 
-例如，假设一个文本框的值超过 10，则应使页面上的元素可见。 在 jQuery 中，此操作通常通过使用检查文本框的值，并根据该值设置目标元素可见性的代码编写事件处理程序来实现。 这是一种基于代码的命令性方法。 另一种框架可能转而使用数据绑定，以声明的方式将元素的可见性与文本框值绑定。 这种方法不需要编写任何代码，改为只需要修饰数据绑定属性涉及的元素。 随着客户端行为变得更加复杂，数据绑定方法经常成为更简单的解决方案，其包含的代码和条件复杂性也较少。
+例如，假设一个文本框的值超过 10，则应使页面上的元素可见。 在 jQuery 中，此功能通常通过使用检查文本框的值，并根据该值设置目标元素可见性的代码编写事件处理程序来实现。 此过程是一种基于代码的命令性方法。 另一种框架可能转而使用数据绑定，以声明的方式将元素的可见性与文本框值绑定。 此方法不需要编写任何代码，改为只需要修饰数据绑定属性涉及的元素。 随着客户端行为变得更加复杂，数据绑定方法经常成为更简单的解决方案，其包含的代码和条件复杂性也较少。
 
 ### <a name="jquery-vs-a-spa-framework"></a>jQuery 与 SPA Framework
 
@@ -80,11 +80,11 @@ JavaScript 是动态的解释性编程语言，已在 ECMAScript 语言规范中
 
 本质上，jQuery 缺少的大多数功能均可通过添加其他库进行添加。 但是，SPA 框架（如 Angular）以更集中的方式提供这些功能，因为它从一开始设计的时候就考虑到了这一点。 此外，jQuery 是一种命令性库，这意味着你需要调用 jQuery 函数才能使用 jQuery 执行任何任务。 SPA 框架提供的很多工作和功能都可以声明的方式完成，无需编写任何实际代码。
 
-数据绑定便是一个很好的示例。 在 jQuery 中，通常只需要一个代码行就能获得 DOM 元素的值或设置某元素的值。 但是，一旦需要更改元素值就需要编写此行代码，有时这会出现在一个页面上的多个函数中。 另一常见示例是元素可见性。 在 jQuery 中，可能需要在很多位置编写代码来控制特定元素是否可见。 每这两种情况中，如果使用数据绑定，便无需编写任何代码。 只需将相关元素的值或可见性绑定到页面上的 viewmodel 即可，对该 viewmodel 的任何更改都会自动反映在绑定的元素中。
+数据绑定是此功能的一个很好的示例。 在 jQuery 中，通常只需要一个代码行就能获得 DOM 元素的值或设置某元素的值。 但是，一旦需要更改元素值就需要编写此行代码，有时这会出现在一个页面上的多个函数中。 另一常见示例是元素可见性。 在 jQuery 中，可能需要在很多位置编写代码来控制特定元素是否可见。 每这两种情况中，如果使用数据绑定，便无需编写任何代码。 只需将相关元素的值或可见性绑定到页面上的 viewmodel 即可，对该 viewmodel 的任何更改都会自动反映在绑定的元素中。
 
 ### <a name="angular-spas"></a>Angular SPA
 
-Angular 仍是世界上最常用的一种 JavaScript 框架。 从 Angular 2 开始，团队彻底重建了框架（使用 [TypeScript](https://www.typescriptlang.org/)），并从最初的 AngularJS 名称重新命名为简单的 Angular。 经过数年的发展，重新设计的 Angular 仍是用于生成单页应用程序的可靠框架。
+Angular 仍是世界上最常用的一种 JavaScript 框架。 从 Angular 2 开始，团队彻底重建了框架（使用 [TypeScript](https://www.typescriptlang.org/)），并从最初的 AngularJS 名称重新命名为 Angular。 经过数年的发展，重新设计的 Angular 仍是用于生成单页应用程序的可靠框架。
 
 Angular 应用程序基于组件构建。 组件通过特殊对象与 HTML 模板进行组合，并控制页面的一部分。 下面是 Angular 文档中的简单组件：
 
@@ -105,7 +105,7 @@ export class AppComponent { name = 'Angular'; }
 
 可以使用 CLI 开发 Angular 应用。 从本地入门 Angular 开发（假设已安装 git 和 npm）包括简单地从 GitHub 中克隆存储库以及运行 `npm install` 和 `npm start`。 除此之外，Angular 附带自己的 CLI，可用于创建项目、添加工具，并协助测试、打包和部署任务。 这种 CLI 友好性也使 Angular 特别兼容 ASP.NET Core，后者也可提供很好的 CLI 支持。
 
-Microsoft 开发了一个参考应用程序，[eShopOnContainers](https://aka.ms/MicroservicesArchitecture)，其中包含 Angular SPA 实现。 此应用包含 Angular 模块，可用于管理在线商店的购物篮，加载和显示其目录中的商品并处理订单创建。 可以在 [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA) 中查看和下载该示例应用程序。
+Microsoft 开发了一个参考应用程序，eShopOnContainers，其中包含 Angular SPA 实现。 此应用包含 Angular 模块，可用于管理在线商店的购物篮，加载和显示其目录中的商品并处理订单创建。 可以在 [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA) 中查看和下载该示例应用程序。
 
 ### <a name="react"></a>React
 
@@ -161,9 +161,19 @@ var app = new Vue({
 
 当然，这里仅介绍 Vue 的简单功能。 在过去的几年中，它非常受欢迎，并且拥有一个庞大的社区。 有一个[庞大且不断增长的支持组件和库列表](https://github.com/vuejs/awesome-vue#redux)，它们可以与 Vue 一起扩展。 如果希望将客户端行为添加到 Web 应用程序中，或者正在考虑生成完整的 SPA，那么值得对 Vue 进行一番研究。
 
+### <a name="no-locblazor-webassembly"></a>Blazor WebAssembly
+
+与其他 JavaScript 框架不同，`Blazor WebAssembly` 是单页应用 (SPA) 框架，用于使用 .NET 生成交互式客户端 Web 应用。 Blazor WebAssembly 使用无插件或将代码重新编译为其他语言的开放式 Web 标准。 Blazor WebAssembly 适用于所有新式 Web 浏览器，包括移动浏览器。
+
+通过 WebAssembly（缩写为 `wasm`），可在 Web 浏览器内运行 .NET 代码。 WebAssembly 是针对快速下载和最大执行速度优化的压缩字节码格式。 WebAssembly 是开放的 Web 标准，且支持无插件的 Web 浏览器。
+
+WebAssembly 代码可通过 JavaScript（称为 JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS 互操作）访问浏览器的完整功能  。 通过浏览器中的 WebAssembly 执行的 .NET 代码在浏览器的 JavaScript 沙盒中运行，沙盒提供的保护可防御客户端计算机上的恶意操作。
+
+有关详细信息，请参阅 [ASP.NET Core Blazor 简介](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-5.0)
+
 ### <a name="choosing-a-spa-framework"></a>选择 SPA 框架
 
-考虑哪个 JavaScript 框架最适合支持 SPA 时，请注意以下几项：
+考虑哪个选项最适合支持 SPA 时，请注意以下几项：
 
 - 团队是否熟悉该框架及其依赖关系（某些情况下还包括 TypeScript）？
 
@@ -177,7 +187,7 @@ var app = new Vue({
 
 - 它的核心团队活跃程度如何？ 是否定期解决问题和发布新版本？
 
-JavaScript 框架仍以极快的速度发展。 使用上面列出的注意事项，可帮助减轻选择之后会后悔依赖的框架的风险。 如果你特别不愿意承担风险，请考虑提供商业支持和/或大型企业开发的框架。
+框架仍以极快的速度发展。 使用上面列出的注意事项，可帮助减轻选择之后会后悔依赖的框架的风险。 如果你特别不愿意承担风险，请考虑提供商业支持和/或大型企业开发的框架。
 
 > ### <a name="references--client-web-technologies"></a>参考 - 客户端 Web 技术
 >

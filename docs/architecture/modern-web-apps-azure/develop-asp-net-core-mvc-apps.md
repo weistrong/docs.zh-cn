@@ -3,20 +3,20 @@ title: 开发 ASP.NET Core MVC 应用
 description: 使用 ASP.NET Core 和 Azure 构建新式 Web 应用程序 | 开发 ASP.NET Core MVC 应用
 author: ardalis
 ms.author: wiwagn
-ms.date: 08/12/2020
+ms.date: 12/01/2020
 no-loc:
 - Blazor
 - WebAssembly
-ms.openlocfilehash: e746362657a25487e98ddac09fa4337b00dfe805
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c0fc92b2dbc25a1a48e0264b64c79fc8631fa8f0
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169123"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009659"
 ---
 # <a name="develop-aspnet-core-mvc-apps"></a>开发 ASP.NET Core MVC 应用
 
-> “第一次是否正确完成并不重要。 最后一次正确完成才至关重要。”  
+> “第一次是否正确完成并不重要。 最后一次正确完成才至关重要。”
 > — Andrew Hunt 和 David Thomas
 
 ASP.NET Core 是一个跨平台的开源框架，用于构建新式云优化 Web 应用程序。 ASP.NET Core 具有轻量级和模块化的特点，并且内置了对依赖关系注入的支持，因此具有更好的可测试性和可维护性。 而 MVC 支持构建新式 Web API 和基于视图的应用，ASP.NET Core 与之结合后将成为一个功能强大的框架，用于构建企业 Web 应用程序。
@@ -25,11 +25,11 @@ ASP.NET Core 是一个跨平台的开源框架，用于构建新式云优化 Web
 
 ASP.NET Core MVC 提供了许多对构建基于 Web 的 API 和应用有用的功能。 术语 MVC 代表“模型 - 视图 - 控制器”，这是一种 UI 模式，它将响应用户请求的职责分为几个部分。 除了遵循此模式之外，还可以将 ASP.NET Core 应用中的功能实现为 Razor Pages。 Razor Pages 内置于 ASP.NET Core MVC 中，并使用相同的功能进行路由、模型绑定、筛选和授权等。但是，Razor Pages 不会为控制器、模型和视图等提供单独的文件夹和文件，也不会使用基于属性的路由，而是将它们放置在一个文件夹（“/Pages”）中，根据它们在此文件夹中的相对位置进行路由，并使用处理程序而非控制器操作处理请求。 因此，在使用 Razor Pages 时，通常需要将所有需要的文件和类置于同一位置，而不是让其分散在整个 Web 项目中。
 
-在创建新的 ASP.NET Core 应用时，应考虑好要构建的应用类型。 在 Visual Studio 中，你可以从多个模板中进行选择。 三个最常见的项目模板是 Web API、Web 应用程序和 Web 应用程序（模型 - 视图 - 控制器）。 虽然只能在首次创建项目时做出此决定，但此决定可以撤销。 Web API 项目使用标准的“模型 - 视图 - 控制器”控制器（默认情况下，它只缺少视图）。 同样，默认的 Web 应用程序模板使用 Razor Pages，因此也缺少 Views 文件夹。 可以稍后向这些项目添加 Views 文件夹以支持基于视图的行为。 默认情况下，Web API 和模型 - 视图 - 控制器项目不包含 Pages 文件夹，但可以稍后添加一个以支持基于 Razor Pages 的行为。 可以将这三个模板视为支持三种不同类型的默认用户交互：数据 (Web API)、基于页面和基于视图。 但是，如果你愿意，可以在单个项目中混合和匹配任何或所有这些模板。
+在创建新的 ASP.NET Core 应用时，应考虑好要构建的应用类型。 在 Visual Studio 中，你可以从多个模板中进行选择。 三个最常见的项目模板是 Web API、Web 应用程序和 Web 应用程序（模型 - 视图 - 控制器）。 虽然只能在首次创建项目时做出此决定，但此决定可以撤销。 Web API 项目使用标准的“模型 - 视图 - 控制器”控制器（默认情况下，它只缺少视图）。 同样，默认的 Web 应用程序模板使用 Razor Pages，因此也缺少 Views 文件夹。 可以稍后向这些项目添加 Views 文件夹以支持基于视图的行为。 默认情况下，Web API 和模型 - 视图 - 控制器项目不包含 Pages 文件夹，但可以稍后添加一个以支持基于 Razor Pages 的行为。 可以将这三个模板视为支持三种不同类型的默认用户交互：数据 (Web API)、基于页面和基于视图。 但是，如果愿意，可以在单个项目中混合和匹配任何或所有这些模板。
 
 ### <a name="why-razor-pages"></a>为何选择 Razor Pages？
 
-Razor Pages 是 Visual Studio 中新 Web 应用程序的默认方法。 Razor Pages 提供了一种较为简单的方法来构建基于页面的应用程序功能，例如非 SPA 表单。 通过使用控制器和视图，应用程序通常拥有非常大的控制器，这些控制器处理许多不同的依赖项和视图模型，并返回许多不同的视图。 这大大增加了复杂性，并且经常导致控制器不能有效地遵循单一责任原则或打开/关闭原则。 Razor Pages 通过使用其 Razor 标记在 Web 应用程序中封装给定逻辑“页面”的服务器端逻辑来解决此问题。 没有服务器端逻辑的 Razor Page 可以只包含一个 Razor 文件（例如，“Index.cshtml”）。 但是，大多数重要的 Razor Pages 都有关联的页面模型类，按照惯例，它的名称与带有“.cs”扩展名的 Razor 文件相同（例如，“Index.cshtml.cs”）。
+Razor Pages 是 Visual Studio 中新 Web 应用程序的默认方法。 Razor Pages 提供了一种较为简单的方法来构建基于页面的应用程序功能，例如非 SPA 表单。 通过使用控制器和视图，应用程序通常拥有非常大的控制器，这些控制器处理许多不同的依赖项和视图模型，并返回许多不同的视图。 这大大增加了复杂性，并且经常导致控制器不能有效地遵循单一责任原则或打开/关闭原则。 Razor Pages 通过使用其 Razor 标记在 Web 应用程序中封装给定逻辑“页面”的服务器端逻辑来解决此问题。 没有服务器端逻辑的 Razor Page 只能包含一个 Razor 文件（例如“Index.cshtml”）。 但是，大多数重要的 Razor Pages 都有关联的页面模型类，按照惯例，它的名称与带有“.cs”扩展名的 Razor 文件相同（例如，“Index.cshtml.cs”）。
 
 Razor Page 的页面模型结合了 MVC 控制器和视图模型的职责。 不通过控制器操作方法执行请求，而是执行“OnGet()”等页面模型处理程序，默认情况下，呈现其关联页面。 Razor Pages 简化了在 ASP.NET Core 应用中构建单个页面的过程，同时仍然提供了 ASP.NET Core MVC 的所有体系结构功能。 对于基于页面的新功能，它们是很好的默认选择。
 
@@ -41,7 +41,7 @@ Razor Page 的页面模型结合了 MVC 控制器和视图模型的职责。 不
 
 ## <a name="mapping-requests-to-responses"></a>将请求映射到响应
 
-ASP.NET Core 应用的核心在于将传入请求映射到传出响应。 较低级别的实现方式是使用中间件，简单的 ASP.NET Core 应用和微服务可能只包含自定义中间件。 在某种程度上，使用 ASP.NET Core MVC 可以实现更高级别的操作，需要考虑路由、控制器和操作  。 每个传入请求都会和应用程序的路由表进行对比，如果找到匹配的路由，则调用关联的操作方法（属于控制器）来处理该请求。 如果未找到匹配的路由，则调用错误处理程序（此时返回 NotFound 结果）。
+ASP.NET Core 应用的核心在于将传入请求映射到传出响应。 详细说来，这种映射是通过中间件完成的，简单的 ASP.NET Core 应用和微服务可能只包含自定义中间件。 在某种程度上，使用 ASP.NET Core MVC 可以实现更高级别的操作，需要考虑路由、控制器和操作  。 每个传入请求都会和应用程序的路由表进行对比，如果找到匹配的路由，则调用关联的操作方法（属于控制器）来处理该请求。 如果未找到匹配的路由，则调用错误处理程序（此时返回 NotFound 结果）。
 
 ASP.NET Core MVC 应用可以使用传统路由或属性路由，或二者同时使用。 传统路由在代码中定义，使用类似以下示例中的语法指定路由约定：
 
@@ -52,9 +52,9 @@ app.UseEndpoints(endpoints =>
 });
 ```
 
-此示例向路由表添加了一个名为“default”的路由。 它定义了一个具有 controller、action 和 id 占位符的路由模板  。controller 和 action 占位符具有指定的默认值（分别为“Home”和“Index”），id 占位符则为可选项（通过应用“?”来实现）。 此处定义的约定规定，请求的第一部分应与控制器的名称对应，第二部分与操作对应，第三部分（如有）表示 id 参数。 通常在同一个位置定义应用程序的传统路由，例如在 Startup 类的 Configure 方法中。
+此示例向路由表添加了一个名为“default”的路由。 它定义了一个具有 `controller`、`action` 和 `id` 占位符的路由模板。 `controller` 和 `action` 占位符具有指定的默认值（分别为 `Home` 和 `Index`），`id` 占位符则是可选的（应为向其应用了“?”）。 此处定义的约定规定，请求的第一部分应与控制器的名称对应，第二部分与操作对应，第三部分（如有）表示 ID 参数。 通常在同一个位置定义应用程序的传统路由，例如在 `Configure` 类的 `Startup` 方法中。
 
-属性路由直接应用到控制器和操作，而不是在全局范围内指定。 其优势在于，查看特定方法时，属性路由更容易发现，但也意味着路由信息不会保存在应用程序中的同一个地方。 通过属性路由可以为给定操作轻松指定多个路由，并将控制器和操作之间的路由合并在一起。 例如：
+属性路由直接应用到控制器和操作，而不是在全局范围内指定。 此方法的优势在于，查看特定方法时，属性路由更容易发现，但也意味着路由信息不会保存在应用程序中的同一个地方。 通过属性路由可以为给定操作轻松指定多个路由，并将控制器和操作之间的路由合并在一起。 例如：
 
 ```csharp
 [Route("Home")]
@@ -91,11 +91,11 @@ Razor Pages 不使用属性路由。 可以作为 Razor Pages 的 `@page` 指令
 "/Products/123"
 ```
 
-给定请求与路由匹配之后，ASP.NET Core MVC 会对该请求执行[模型绑定](/aspnet/core/mvc/models/model-binding)和[模型验证](/aspnet/core/mvc/models/validation)，然后才调用操作方法。 模型绑定负责将传入到指定 .NET 类型的 HTTP 数据转换为要调用的操作方法的参数。 例如，如果操作方法需要一个 `int id` 参数，模型绑定将尝试根据请求中提供的值来提供此参数。 为此，模型绑定会查找已发布表单中的值、路由中的值和查询字符串值。 假设找到了 id 值，该值会被转换为整数，然后传入操作方法。
+给定请求与路由匹配之后，ASP.NET Core MVC 会对该请求执行[模型绑定](/aspnet/core/mvc/models/model-binding)和[模型验证](/aspnet/core/mvc/models/validation)，然后才调用操作方法。 模型绑定负责将传入到指定 .NET 类型的 HTTP 数据转换为要调用的操作方法的参数。 例如，如果操作方法需要一个 `int id` 参数，模型绑定将尝试根据请求中提供的值来提供此参数。 为此，模型绑定会查找已发布表单中的值、路由中的值和查询字符串值。 假设找到了 `id` 值，该值会被转换为整数，然后传入操作方法。
 
 模型验证发生在绑定模型之后，调用操作方法之前。 模型验证对模型类型使用可选属性，且有助于确保提供的模型对象符合特定数据要求。 可以将某些值指定为必需项，将其限制为特定长度，或将其限制在一定数值范围内，等等。如果指定了验证特性，但该模型不符合其要求，则属性 ModelState.IsValid 将为 false，并且失败的验证规则集将可被发送到发出请求的客户端。
 
-使用模型验证时，执行任何状态更改命令之前，务必确保模型有效，以防无效数据损坏应用。 使用[筛选器](/aspnet/core/mvc/controllers/filters)可避免在每个操作中都需要为此添加代码。 ASP.NET Core MVC 筛选器提供了一种拦截成组请求的方法，因此可以有针对性地应用通用策略和横切关注点。 筛选器可应用于单个操作、整个控制器或应用程序全局。
+使用模型验证时，执行任何状态更改命令之前，务必确保模型有效，以防无效数据损坏应用。 使用[筛选器](/aspnet/core/mvc/controllers/filters)可避免在每个操作中都需要为此验证添加代码。 ASP.NET Core MVC 筛选器提供了一种拦截成组请求的方法，因此可以有针对性地应用通用策略和横切关注点。 筛选器可应用于单个操作、整个控制器或应用程序全局。
 
 对于 Web API，ASP.NET Core MVC 支持 [_内容协商_](/aspnet/core/mvc/models/formatting)，允许对指定如何设置响应格式进行请求。 根据请求中提供的标头，操作返回的数据将采用 XML、JSON 或其他支持格式作为响应的格式。 借助此功能，同一个 API 可供数据格式要求不同的多个客户端使用。
 
@@ -105,7 +105,7 @@ Web API 项目应考虑使用 `[ApiController]` 属性，该属性可应用于�
 
 对于基于页面的应用程序，Razor Pages 可以很好地防止控制器变得太大。 每个单独的页面都有自己的文件和类，这些文件和类专用于其处理程序。 在引入 Razor Pages 之前，许多以视图为中心的应用程序可能会有负责许多不同操作和视图的大型控制器类。 这些类自然会扩展并具有许多职责和依赖项，从而使其难以维护。 如果发现基于视图的控制器变得过大，请考虑将其重构为使用 Razor Pages，或引入转存进程等模式。
 
-转存进程设计模式用于减少类之间的耦合度，同时允许它们之间进行通信。 在 ASP.NET Core MVC 应用程序中，经常使用此模式将控制器分解为较小的部分，方法是使用处理程序来完成操作方法的工作。 常用的 [MediatR NuGet 包](https://www.nuget.org/packages/MediatR/)通常用于实现此目的。 通常，控制器包括许多不同的操作方法，每种方法可能都需要某些依赖项。 必须将任何操作所需的所有依赖项集传递到控制器的构造函数中。 使用 Mediatr 时，控制器拥有的唯一依赖项是转存进程的实例。 然后，每个操作都使用转存进程实例来发送消息，该消息由处理程序处理。 该处理程序特定于单个操作，因此只需要该操作所需的依赖项。 下面显示了使用 MediatR 的控制器的示例：
+转存进程设计模式用于减少类之间的耦合度，同时允许它们之间进行通信。 在 ASP.NET Core MVC 应用程序中，经常使用此模式将控制器分解为较小的部分，方法是使用处理程序来完成操作方法的工作。 常用的 [MediatR NuGet 包](https://www.nuget.org/packages/MediatR/)通常用于实现此目的。 通常，控制器包括许多不同的操作方法，每种方法可能都需要某些依赖项。 必须将任何操作所需的所有依赖项集传递到控制器的构造函数中。 使用 MediatR 时，控制器的唯一依赖项是转存进程的实例。 然后，每个操作都使用转存进程实例来发送消息，该消息由处理程序处理。 该处理程序特定于单个操作，因此只需要该操作所需的依赖项。 下面显示了使用 MediatR 的控制器的示例：
 
 ```csharp
 public class OrderController : Controller
@@ -169,22 +169,22 @@ public class GetMyOrdersHandler : IRequestHandler<GetMyOrders, IEnumerable<Order
 
 > ### <a name="references--mapping-requests-to-responses"></a>参考 - 将请求映射到响应
 >
-> - **路由到控制器操作**
+> - **路由到控制器操作**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
-> - **模型绑定**
+> - **模型绑定**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
-> - **模型验证**
+> - **模型验证**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
-> - **筛选器**
+> - **筛选器**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **ApiController 属性**
+> - **ApiController 属性**\
  > <https://docs.microsoft.com/aspnet/core/web-api/>
 
 ## <a name="working-with-dependencies"></a>处理依赖关系
 
 ASP.NET Core 内置了对[依赖关系注入](/aspnet/core/fundamentals/dependency-injection)技术的支持，并且在内部使用这一技术。 依赖关系注入技术可以在应用程序的不同部分之间实现松散耦合。 比较松散的耦合更符合需要，因为它可以更轻松地将应用程序的某些部分隔离开，便于进行测试或替换。 它还可以降低对应用程序某个部分进行更改会对应用程序中的其他位置产生意外影响的可能性。 依赖关系注入的基础是依赖关系反转原则，并且通常是实现开放/闭合原则的关键。 评估应用程序对其依赖关系的处理方式时，请注意 [static cling](https://deviq.com/static-cling/)（静态粘附）这一代码味，并请记住这句格言：[新增即粘附](https://ardalis.com/new-is-glue)。
 
-类调用静态方法或访问静态属性时，会对基础结构造成负面影响或产生依赖关系，此时会发生静态粘附。 例如，如果一个方法调用静态方法，静态方法反过来又写入数据库，则该方法与该数据库紧密耦合。 破坏该数据库调用的任何内容都会破坏该方法。 测试此类方法非常困难，因为此类测试要么需要使用商业模拟库来模拟静态调用，要么只能使用已有测试数据库进行测试。 不依赖于任何基础结构的静态调用，尤其是完全无状态的静态调用可以进行正常调用，并且对耦合或可测试性没有任何影响（超越了将代码耦合到静态调用本身）。
+类调用静态方法或访问静态属性时，会对基础结构造成负面影响或产生依赖关系，此时会发生静态粘附。 例如，如果一个方法调用静态方法，静态方法反过来又写入数据库，则该方法与该数据库紧密耦合。 破坏该数据库调用的任何内容都会破坏该方法。 测试此类方法非常困难，因为此类测试要么需要使用商业模拟库来模拟静态调用，要么只能使用已有测试数据库进行测试。 不依赖于任何基础结构的静态调用，尤其是完全无状态的调用可以进行正常调用，并且对耦合或可测试性没有任何影响（超越了将代码耦合到静态调用本身）。
 
 许多开发人员知道静态粘附和全局状态的风险，但仍会通过直接实例化将其代码与具体实现紧密耦合。 “新增即粘附”旨在提醒注意这种耦合，并非一律谴责使用 `new` 关键字。 和静态方法调用一样，没有外部依赖关系的类型的新实例通常不会将代码紧密耦合到具体的实现，这会增加测试的难度。 但每次将类实例化时，应花一点时间来考虑在该特定位置硬编码该特定实例是否有意义，或者说如果将该实例作为依赖项进行请求会不会更好。
 
@@ -305,7 +305,7 @@ ASP.NET Core MVC 还使用约定来确定视图的位置。 可以使用自定�
 
 ### <a name="apis-and-no-locblazor-applications"></a>API 和 Blazor 应用程序
 
-如果应用程序包含一组必须受到保护的 Web API，最好将它们配置为独立于 View 或 Razor Pages 应用程序的项目。 从服务器端 Web 应用程序中分离 API（尤其是公共 API）有很多好处。 这些应用程序通常具有独特的部署和负载特征。 这些应用程序也很可能采用不同的安全机制，其中利用基于 Cookie 的身份验证和 API 的基于表单的标准应用程序很可能使用基于令牌的身份验证。
+如果应用程序包含一组必须受到保护的 Web API，最好将这些 apis 配置为独立于 View 或 Razor Pages 应用程序的项目。 从服务器端 Web 应用程序中分离 API（尤其是公共 API）有很多好处。 这些应用程序通常具有独特的部署和负载特征。 这些应用程序也很可能采用不同的安全机制，其中利用基于 Cookie 的身份验证和 API 的基于表单的标准应用程序很可能使用基于令牌的身份验证。
 
 此外，Blazor 应用程序（无论使用 Blazor Server 还是 Blazor WebAssembly）都应作为单独的项目进行构建。 这些应用程序具有不同的运行时特征以及安全模型。 这些应用程序可能与服务器端 Web 应用程序（或 API 项目）共享通用类型，这些类型应在通用的共享项目中进行定义。
 
@@ -321,7 +321,7 @@ Blazor WebAssembly 应用使用的 API 可能不会与 Blazor 完全共享其类
 
 ![请求通过授权过滤器、资源过滤器、模型绑定、操作过滤器、操作执行和操作结果转换、异常过滤器、结果过滤器和结果执行进行处理。 返回时，请求仅由结果过滤器和资源过滤器进行处理，变成发送到客户端的响应。](./media/image7-2.png)
 
-**图 7-2** 。 请求执行通过各过滤器和请求管道。
+**图 7-2**。 请求执行通过各过滤器和请求管道。
 
 筛选器通常作为属性实现，因此可应用于控制器或操作（甚至全局）。 以这种方式添加时，在操作级别指定的过滤器会覆盖在控制器级别指定的过滤器（会覆盖全局过滤器）或在其基础之上生成。 例如，\[Route\] 属性可用来生成控制器和操作之间的路由。 同样，可以在控制器级别配置授权，然后被各操作覆盖，如下所示：
 
@@ -391,13 +391,13 @@ public async Task<IActionResult> Put(int id, [FromBody]Author author)
 
 > ### <a name="references--structuring-applications"></a>参考 - 构建应用程序
 >
-> - **Areas**  
+> - **Areas**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
-> - **MSDN 杂志 - ASP.NET Core MVC 的功能切分**  
+> - **MSDN 杂志 - ASP.NET Core MVC 的功能切片**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc>
-> - **筛选器**  
+> - **筛选器**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **MSDN 杂志 - 真实的 ASP.NET Core MVC 筛选器**  
+> - **MSDN 杂志 - 真实的 ASP.NET Core MVC 筛选器**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters>
 
 ## <a name="security"></a>安全性
@@ -412,7 +412,7 @@ ASP.NET Core 标识是一个成员身份系统，可用于支持应用程序的�
 
 ![选择“个人用户帐户”以预配标识](./media/image7-3.png)
 
-**图 7-3** 。 选择“个人用户帐户”以预配标识。
+**图 7-3**。 选择“个人用户帐户”以预配标识。
 
 在 ConfigureServices 和 Configure 中，标识支持都在 Startup 中配置：
 
@@ -445,9 +445,9 @@ public void Configure(IApplicationBuilder app)
 
 ### <a name="authentication"></a>身份验证
 
-身份验证是确定谁在访问系统的过程。 如果使用的是上一部分中介绍的 ASP.NET Core 标识和配置方法，将在应用程序中自动配置一些身份验证默认值。 不过，你也可以手动配置这些默认值，或者替代由 AddIdentity 设置的默认值。 如果使用的是标识，它将基于 Cookie 的身份验证配置为默认的方案。
+身份验证是确定谁在访问系统的过程。 如果使用的是上一部分中介绍的 ASP.NET Core 标识和配置方法，将在应用程序中自动配置一些身份验证默认值。 不过，你也可以手动配置这些默认值，或者替代由 AddIdentity 设置的默认值。 如果使用的是标识，它会将基于 Cookie 的身份验证配置为默认的方案。
 
-在基于 Web 的身份验证中，通常可以在身份验证系统客户端的过程中最多执行 5 个操作。 它们是：
+在基于 Web 的身份验证中，通常可以在身份验证系统客户端的过程中最多执行五个操作。 它们是：
 
 - 身份验证。 使用客户端提供的信息创建标识，供其在应用程序中使用。
 - 质询。 此操作用于要求客户端标识它们自己。
@@ -501,18 +501,18 @@ Blazor Server 应用程序可以利用与任何其他 ASP.NET Core 应用程序�
 
 > ### <a name="references--authentication"></a>引用 - 身份验证
 >
-> - **身份验证操作和默认值**  
+> - **身份验证操作和默认值**\
 >   <https://stackoverflow.com/a/52493428>
-> - **SPA 的身份验证和授权**
+> - **SPA 的身份验证和授权**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization>
-> - **ASP.NET Core Blazor 身份验证和授权**
+> - **ASP.NET Core Blazor 身份验证和授权**\
 >   <https://docs.microsoft.com/aspnet/core/blazor/security/>
-> - **安全性：ASP.NET Web Forms 和 Blazor** 
->    中的身份验证和授权<https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
+> - **安全性：ASP.NET Web Forms 和 Blazor** \ 中的身份验证和授权
+>   <https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
 
 ### <a name="authorization"></a>授权
 
-最简单的授权方式包括限制匿名用户的访问权限。 只需对某些控制器和操作应用 \[Authorize\] 属性即可实现此目的。 如果正在使用角色，可进一步扩展该属性，用于限制属于特定角色的用户的访问权限，如下所示：
+最简单的授权方式包括限制匿名用户的访问权限。 只需对某些控制器和操作应用 \[Authorize\] 属性即可实现此功能。 如果正在使用角色，可进一步扩展该属性，用于限制属于特定角色的用户的访问权限，如下所示：
 
 ```csharp
 [Authorize(Roles = "HRManager,Finance")]
@@ -522,7 +522,7 @@ public class SalaryController : Controller
 }
 ```
 
-此示例中，属于 HRManager 或 Finance 角色（或同时属于这两个角色）的用户将有权访问 SalaryController。 如需要求用户属于多个角色，而不是属于多个角色中的某一个角色，可多次应用该属性，每次指定一个所需角色。
+在此示例中，属于 `HRManager` 或 `Finance` 角色（或同时属于这两个角色）的用户将有权访问 SalaryController。 如需要求用户属于多个角色，而不是属于多个角色中的某一个角色，可多次应用该属性，每次指定一个所需角色。
 
 在许多不同的控制器和操作中以字符串形式指定特定角色集可能会导致不必要的重复。 至少要为这些字符串文本定义常量，并在需要指定字符串的任何位置使用常量。 也可配置封装授权规则的授权策略，然后在应用 \[Authorize\] 属性时指定该策略，而不是各个角色：
 
@@ -565,7 +565,7 @@ public void ConfigureServices(IServiceCollection services)
 
 JWT 令牌可以嵌入有关用户的声明，该声明可在客户端或服务器上读取。 可以使用 [jwt.io](https://jwt.io/) 等工具来查看 JWT 令牌的内容。 请勿将敏感数据（例如密码或密钥）存储在 JTW 令牌中，因为它们的内容易于读取。
 
-在 SPA 或 Blazor WebAssembly 应用程序中使用 JWT 令牌时，必须将令牌存储在客户端上的某个位置，然后将其添加到每个 API 调用。 这通常以标头的形式完成，如以下代码所示：
+在 SPA 或 Blazor WebAssembly 应用程序中使用 JWT 令牌时，必须将令牌存储在客户端上的某个位置，然后将其添加到每个 API 调用。 此活动通常以标头的形式完成，如以下代码所示：
 
 ```csharp
 // AuthService.cs in BlazorAdmin project of eShopOnWeb
@@ -584,17 +584,17 @@ private async Task SetAuthorizationHeader()
 
 > ### <a name="references--security"></a>参考 - 安全
 >
-> - **安全性文档概述**  
+> - **安全性文档概述**\
 >   <https://docs.microsoft.com/aspnet/core/security/>
-> - **在 ASP.NET Core 应用中强制实施 SSL**  
+> - **在 ASP.NET Core 应用中强制执行 SSL**\
 >   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
-> - **标识简介**  
+> - **标识简介**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
-> - **授权简介**  
+> - **授权简介**\
 >   <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
-> - **Azure 应用服务中 API 应用的身份验证和授权**  
+> - **Azure 应用服务中 API 应用的身份验证和授权**\
 >   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
-> - **标识服务器**  
+> - **标识服务器**\
 >   <https://github.com/IdentityServer>
 
 ## <a name="client-communication"></a>客户端通信
@@ -653,9 +653,9 @@ public class Program
 
 > ### <a name="references--client-communication"></a>参考 - 客户端通信
 >
-> - **ASP.NET Core SignalR**  
+> - **ASP.NET Core SignalR**\
 >   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
-> - **WebSocket 管理器**  
+> - **WebSocket 管理器**\
 >   <https://github.com/radu-matei/websocket-manager>
 
 ## <a name="domain-driven-design--should-you-apply-it"></a>领域驱动设计 - 是否该使用？
@@ -702,12 +702,12 @@ DDD 需要在建模、体系结构和通信方面进行投资，这对于较小�
 
 > ### <a name="references--domain-driven-design"></a>参考 - 域驱动设计
 >
-> - **简明 DDD（StackOverflow 答案）**  
+> - **简明 DDD（StackOverflow 答案）** \
 >   <https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488>
 
 ## <a name="deployment"></a>部署
 
-无论在哪里托管 ASP.NET Core 应用，部署过程都包含以下几个步骤。 第一步，发布应用程序，这可以使用 `dotnet publish` CLI 命令来完成。 此操作将编译应用程序，并将运行应用程序所需的所有文件放到指定的文件夹中。 从 Visual Studio 部署时，系统将自动执行此步骤。 发布文件夹中包含应用程序的 .exe 和 .dll 文件及其依赖项。 自包含应用程序中还包含一个 .NET 运行时版本。 ASP.NET Core 应用程序还将包含配置文件、静态客户端资产和 MVC 视图。
+无论在哪里托管 ASP.NET Core 应用，部署过程都包含以下几个步骤。 第一步，发布应用程序，这可以使用 `dotnet publish` CLI 命令来完成。 此步骤将编译应用程序，并将运行应用程序所需的所有文件放到指定的文件夹中。 从 Visual Studio 部署时，系统将自动执行此步骤。 发布文件夹中包含应用程序的 .exe 和 .dll 文件及其依赖项。 自包含应用程序中还包含一个 .NET 运行时版本。 ASP.NET Core 应用程序还将包含配置文件、静态客户端资产和 MVC 视图。
 
 ASP.NET Core 应用程序是控制台应用程序，服务器启动时必须启动，应用程序（或服务器）崩溃时必须重新启动。 可以使用流程管理器自动执行此过程。 适用于 ASP.NET Core 的最常见的进程管理器是 Linux 上的 Nginx 和 Apache，以及 Windows 上的 IIS 或 Windows Service。
 
@@ -715,13 +715,13 @@ ASP.NET Core 应用程序是控制台应用程序，服务器启动时必须启�
 
 ![Kestrel 到 Internet](./media/image7-5.png)
 
-**图 7-5** 。 反向代理服务器背后托管在 Kestrel 中的 ASP.NET
+**图 7-5**。 反向代理服务器背后托管在 Kestrel 中的 ASP.NET
 
 反向代理发挥作用的其他情况包括使用 SSL/HTTPS 保护多个应用程序。 在这种情况下，只需要为反向代理服务器配置 SSL。 反向代理服务器和 Kestrel 之间的通信可以通过 HTTP 进行，如图 7-6 所示。
 
 ![HTTPS 保护的反向代理服务器后托管的 ASP.NET](./media/image7-6.png)
 
-**图7-6** 。 HTTPS 保护的反向代理服务器后托管的 ASP.NET
+**图7-6**。 HTTPS 保护的反向代理服务器后托管的 ASP.NET
 
 可以将 ASP.NET Core 应用程序托管在 Docker 容器中，然后该应用程序即可本地托管或部署到 Azure 进行基于云的托管，这种方法正日益普及。 Docker 容器可以包含应用程序代码（在 Kestrel 上运行），并部署在反向代理服务器后，如上所述。
 
@@ -745,13 +745,13 @@ ASP.NET Core 应用程序是控制台应用程序，服务器启动时必须启�
 
 > ### <a name="references--deployment"></a>参考 - 部署
 >
-> - **托管和部署概述**  
+> - **托管和部署概述**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/>
-> - **何时结合使用 Kestrel 和反向代理**  
+> - **何时结合使用 Kestrel 和反向代理**\
 >   <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
-> - **在 Docker 容器中托管 ASP.NET Core 应用**  
+> - **在 Docker 中托管 ASP.NET Core 应用**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/docker>
-> - **应用程序网关简介**  
+> - **Azure 应用程序网关简介**\
 >   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
 >[!div class="step-by-step"]
