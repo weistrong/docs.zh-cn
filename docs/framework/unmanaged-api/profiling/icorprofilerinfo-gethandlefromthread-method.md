@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 36cdc9f5-7579-4cd2-aa36-fc05c741584c
 topic_type:
 - apiref
-ms.openlocfilehash: 632a9070eab227bc48ce76c51ea08f98060d680d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94c2c6e01e4188f1fa13c3b6a9f638d4b79a502f
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722528"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678194"
 ---
 # <a name="icorprofilerinfogethandlefromthread-method"></a>ICorProfilerInfo::GetHandleFromThread 方法
 
@@ -42,9 +42,11 @@ HRESULT GetHandleFromThread(
  `phThread`  
  弄指向 Win32 线程句柄的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器必须 `DuplicateHandle` 先对句柄调用 Win32 函数，然后才能使用该句柄。  
+
+ 此方法返回的句柄由运行时所拥有，并且探查器不应将其关闭。
   
 ## <a name="requirements"></a>要求  
 

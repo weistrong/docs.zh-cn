@@ -6,16 +6,16 @@ ms.author: daroth
 no-loc:
 - Blazor
 ms.date: 10/11/2019
-ms.openlocfilehash: 639755dd78892df1b70ea5245a9584e575fbf691
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: dbb0a94b0401d58139c024fd8ca3e00353a19efa
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267875"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678032"
 ---
 # <a name="modules-handlers-and-middleware"></a>模块、处理程序和中间件
 
-ASP.NET Core 应用基于一系列 *中间件*构建。 中间件是排列到管道中的处理程序，用于处理请求和响应。 在 Web 窗体应用程序中，HTTP 处理程序和模块解决了类似的问题。 在 ASP.NET Core 中，模块、处理程序、 *Global.asax.cs*和应用程序生命周期替换为中间件。 在本章中，你将了解应用上下文中的中间件 Blazor 。
+ASP.NET Core 应用基于一系列 *中间件* 构建。 中间件是排列到管道中的处理程序，用于处理请求和响应。 在 Web 窗体应用程序中，HTTP 处理程序和模块解决了类似的问题。 在 ASP.NET Core 中，模块、处理程序、 *Global.asax.cs* 和应用程序生命周期替换为中间件。 在本章中，你将了解应用程序上下文中的中间件 Blazor 。
 
 ## <a name="overview"></a>概述
 
@@ -23,7 +23,7 @@ ASP.NET Core 请求管道包含一系列请求委托，依次调用。 下图演
 
 ![管道](media/middleware/request-delegate-pipeline.png)
 
-前面的关系图缺少生命周期事件的概念。 此概念是处理 ASP.NET Web 窗体请求的基础。 此系统使你可以更轻松地处理正在进行的过程，并允许在任意点插入中间件。 中间件按其添加到请求管道中的顺序执行。 它们还添加在代码中，而不是配置文件中，通常在 *Startup.cs*中。
+前面的关系图缺少生命周期事件的概念。 此概念是处理 ASP.NET Web 窗体请求的基础。 此系统使你可以更轻松地处理正在进行的过程，并允许在任意点插入中间件。 中间件按其添加到请求管道中的顺序执行。 它们还添加在代码中，而不是配置文件中，通常在 *Startup.cs* 中。
 
 ## <a name="katana"></a>Katana
 

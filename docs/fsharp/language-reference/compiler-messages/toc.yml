@@ -15,3 +15,5 @@
       href: ./fs0009.md
     - name: FS0025 - 不完整的模式匹配
       href: ./fs0025.md
+    - name: FS0052 - 防御性复制
+      href: ./fs0052.md
