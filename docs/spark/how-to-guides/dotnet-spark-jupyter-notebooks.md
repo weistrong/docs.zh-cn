@@ -7,14 +7,14 @@ author: luisquintanilla
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc, how-to
-ms.openlocfilehash: efebaf0a66863eae0f71fbf1158b80260d7469cf
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: cf19b4e4b7a7b9033fb97b2b2736ab0383c11f93
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688171"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96598928"
 ---
-# <a name="use-net-for-apache-spark-in-jupyter-notebooks"></a>在 Jupyter 笔记本中使用 .NET for Apache Spark
+# <a name="use-net-for-apache-spark-in-jupyter-notebooks"></a>在 Jupyter Notebook 中使用 .NET for Apache Spark
 
 本文介绍如何在 Jupyter Notebook 和 Visual Studio Code (VS Code) 中使用 .NET Interactive 以交互方式运行 .NET for Apache Spark。
 
@@ -27,7 +27,7 @@ ms.locfileid: "94688171"
 ## <a name="prerequisites"></a>先决条件
 
 - [.NET Core 3.1 SDK](../../core/install/index.yml)
-- [Apache Spark](https://spark.apache.org/downloads.html)
+- Apache Spark[](https://spark.apache.org/downloads.html)
 - [Apache Spark .NET 工作器](https://github.com/dotnet/spark/releases)
 
 请参阅[入门教程](../tutorials/get-started.md)，详细了解如何设置 .NET for Apache Spark 环境。
@@ -72,7 +72,7 @@ spark-submit ^
 
 ## <a name="create-a-notebook"></a>创建笔记本
 
-你可以使用不同的界面与 Jupyter 交互。 若要使用基于浏览器的界面，请使用 Jupyter Notebook 或 Jupyter Lab。 若要体验本地编辑器，请使用 VS Code。
+你可以使用不同的界面与 Jupyter 交互。 若要使用基于浏览器的界面，请使用 Jupyter Notebook 或 Jupyter Lab。 如果需要本地编辑器的体验，请使用 VS Code。
 
 ### <a name="jupyter-notebooks--jupyter-lab"></a>Jupyter Notebooks 和 Jupyter Lab
 
@@ -108,12 +108,12 @@ spark-submit ^
 > 若要在 VS Code 中使用 Jupyter Notebook，必须安装以下各项：
 >
 >- [VS Code Insiders](https://code.visualstudio.com/insiders/)
->- [ 扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
+>- [.NET 交互式笔记本扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
 
 1. 打开 VS Code。
 1. 打开命令面板“查看”>“命令面板”。
 
-    出现命令面板时，输入以下命令以创建新的 .NET Interactive 笔记本：
+    出现命令面板时，输入以下命令以创建新的 .NET 交互式笔记本：
 
     ```text
     >.NET Interactive: Create new blank notebook
