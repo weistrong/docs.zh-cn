@@ -2,12 +2,12 @@
 title: 如何对 .NET 运行时和 SDK 进行版本控制
 description: 本文介绍如何对 .NET SDK 和运行时进行版本控制（与语义版本控制类似）。
 ms.date: 12/07/2020
-ms.openlocfilehash: 2fe0b162b52f1e4500ec87f7d5d92054cd569552
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 2fbc2775f31b4eab1c9883282c58accd9bb2b9f5
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009301"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633619"
 ---
 # <a name="overview-of-how-net-is-versioned"></a>.NET 的版本控制方式概述
 
@@ -19,9 +19,9 @@ ms.locfileid: "97009301"
 
 .NET SDK 不遵循语义版本控制。 .NET SDK 发布速度更快，其版本必须显示相应的运行时和 SDK 自己的次要版本及补丁版本。
 
-.NET SDK 版本号的前两个位置被锁定，其中显示与之一起发布的 .NET 运行时。 每个版本的 SDK 都可以为此版本或任何更低版本的运行时创建应用程序。
+.NET SDK 版本号的前两个位置被锁定，其中显示与之一起发布的 .NET 运行时版本。 每个版本的 SDK 都可以为此版本或任何更低版本的运行时创建应用程序。
 
-SDK 版本号的第三个位置同时传达次要编号和修补程序编号。 次要版本乘以 100。 次要版本 1，修补程序版本 2 将表示为 102。 最后两位数代表修补程序号。 例如，下面是运行时和 SDK 版本号可能出现的序列：
+SDK 版本号的第三个位置同时传达次要编号和修补程序编号。 次要版本乘以 100。 最后两位数代表修补程序号。 次要版本 1，修补程序版本 2 将表示为 102。 例如，下面是运行时和 SDK 版本号可能出现的序列：
 
 | 更改                | .NET 运行时      | .NET SDK (\*)     |
 |-----------------------|-------------------|-------------------|
