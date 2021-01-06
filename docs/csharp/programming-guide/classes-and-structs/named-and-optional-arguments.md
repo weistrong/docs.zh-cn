@@ -2,7 +2,7 @@
 title: 命名参数和可选参数 - C# 编程指南
 description: C# 中的命名参数按名称而不是位置指定参数。 可以省略可选元素。
 ms.date: 09/25/2020
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 f1_keywords:
 - namedParameter_CSharpKeyword
 - cs_namedParameter
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - parameters [C#], optional
 - named and optional arguments [C#]
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
-ms.openlocfilehash: a0606d6acccb47347c663a9fe3ffb8ab65b0ecec
-ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
+ms.openlocfilehash: bb79d956124a610bac0de6825c1f42655789e98d
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91438004"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513102"
 ---
 # <a name="named-and-optional-arguments-c-programming-guide"></a>命名实参和可选实参（C# 编程指南）
 
-C# 4 介绍命名实参和可选实参。 通过命名实参，你可以为形参指定实参，方法是将实参与该形参的名称匹配，而不是与形参在形参列表中的位置匹配。 通过*可选参数*，你可以为某些形参省略实参。 这两种技术都可与方法、索引器、构造函数和委托一起使用。
+C# 4 介绍命名实参和可选实参。 通过命名实参，你可以为形参指定实参，方法是将实参与该形参的名称匹配，而不是与形参在形参列表中的位置匹配。 通过 *可选参数*，你可以为某些形参省略实参。 这两种技术都可与方法、索引器、构造函数和委托一起使用。
 
 使用命名参数和可选参数时，将按实参出现在实参列表（而不是形参列表）中的顺序计算这些实参。
 

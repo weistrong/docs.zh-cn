@@ -4,12 +4,12 @@ description: 了解从本机代码托管 .NET Core 运行时，以支持需要�
 author: mjrousos
 ms.topic: how-to
 ms.date: 12/21/2018
-ms.openlocfilehash: 79336396de3058e40cf7328e6d92e7e9e54296e9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 358cbff1ded3bd4ee9a3f78965eac1e1b1883ede
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242911"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633840"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>编写自定义 .NET Core 主机以从本机代码控制 .NET 运行时
 
@@ -30,7 +30,7 @@ ms.locfileid: "96242911"
 可以使用两种不同的 API 来承载 .NET Core。 本文（及其相关的[示例](https://github.com/dotnet/samples/tree/master/core/hosting)）涵盖这两个选项。
 
 * 在 .NET Core 3.0 及更高版本中托管 .NET Core 运行时的首选方法是借助 `nethost` 和 `hostfxr` 库的 API。 由这些入口点来处理查找和设置运行时进行初始化所遇到的复杂性；通过它们，还可启动托管应用程序和调用静态托管方法。
-* 托管低于 .NET Core 3.0 的 .NET Core 运行时的首选方法是使用 [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/master/src/coreclr/src/hosts/inc/coreclrhost.h) API。 此 API 公开一些函数，用于轻松地启动和停止运行时并调用托管代码（通过启动托管 exe 或通过调用静态托管方法）。
+* 托管低于 .NET Core 3.0 的 .NET Core 运行时的首选方法是使用 [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/master/src/coreclr/hosts/inc/coreclrhost.h) API。 此 API 公开一些函数，用于轻松地启动和停止运行时并调用托管代码（通过启动托管 exe 或通过调用静态托管方法）。
 
 ## <a name="sample-hosts"></a>示例主机
 
@@ -84,7 +84,7 @@ public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 
 以下步骤详细说明如何使用 `coreclrhost.h` API 在本机应用程序中启动 .NET Core 运行时并调用托管静态方法。 本文档中的代码片段使用一些特定于 Windows 的 API，但是[完整示例主机](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost)同时显示 Windows 和 Linux 的代码路径。
 
-[Unix CoreRun 主机](https://github.com/dotnet/runtime/tree/master/src/coreclr/src/hosts/unixcorerun)显示使用 `coreclrhost.h` 的更为复杂的真实托管示例。
+[Unix CoreRun 主机](https://github.com/dotnet/runtime/tree/master/src/coreclr/hosts/unixcorerun)显示使用 `coreclrhost.h` 的更为复杂的真实托管示例。
 
 ### <a name="step-1---find-and-load-coreclr"></a>步骤 1 - 查找和加载 CoreCLR
 

@@ -3,12 +3,12 @@ title: ML.NET CLI 命令参考
 description: ML.NET CLI 工具中 auto-train 命令的概述、示例和参考。
 ms.date: 06/03/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 4c6cb1346c16f6162077d3414140d693de9e0d8c
-ms.sourcegitcommit: 182c7b6c079ebcc0e1898dfd9e921b9ef472ea2c
+ms.openlocfilehash: 6f07cd8b4237f8931bbc0ec97bc0bbe18c488f16
+ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85946936"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97856063"
 ---
 # <a name="the-mlnet-cli-command-reference"></a>ML.NET CLI 命令参考
 
@@ -99,7 +99,7 @@ mlnet classification
 运行 `mlnet regression` 将训练回归模型。 如果希望 ML 模型预测数值（例如价格预测），请选择此命令。
 
 ```console
-mlnet classification
+mlnet regression
 
 --dataset <path> (REQUIRED)
 
@@ -134,7 +134,7 @@ mlnet classification
 运行 `mlnet recommendation` 将训练建议模型。  如果希望 ML 模型根据评级（例如产品建议）向用户推荐项，请选择此命令。
 
 ```console
-mlnet classification
+mlnet recommendation
 
 --dataset <path> (REQUIRED)
 

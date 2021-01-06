@@ -2,12 +2,12 @@
 title: .NET 5+ 中已过时的功能
 description: 了解在 .NET 5.0 和更高版本中标记为已过时并生成 SYSLIB 编译器警告的 API。
 ms.date: 10/20/2020
-ms.openlocfilehash: aa5716ba8fe46c7c4ae2faafe7cc963551eecef7
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 336958c93e3db8f66cfbec89476a666e5e103b70
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440759"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97593300"
 ---
 # <a name="obsolete-features-in-net-5"></a>.NET 5 中已过时的功能
 
@@ -25,18 +25,18 @@ ms.locfileid: "94440759"
 
 | 诊断 ID | 说明 |
 | - | - |
-| [SYSLIB0001](syslib0001.md) | UTF-7 编码不安全，因此不应使用。 请考虑改用 UTF-8。 |
-| [SYSLIB0002](syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> 不受运行时支持，不得使用。 |
-| [SYSLIB0003](syslib0003.md) | 运行时不支持或不接受代码访问安全性 (CAS)。 |
-| [SYSLIB0004](syslib0004.md) | 不支持受约束的执行区域 (CER) 功能。 |
-| [SYSLIB0005](syslib0005.md) | 不支持全局程序集缓存 (GAC)。 |
-| [SYSLIB0006](syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> 不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
-| [SYSLIB0007](syslib0007.md) | 不支持此加密算法的默认实现。 |
-| [SYSLIB0008](syslib0008.md) | <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API 不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
-| [SYSLIB0009](syslib0009.md) | <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> 和 <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> 方法都不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
-| [SYSLIB0010](syslib0010.md) | 某些远程处理 API 不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
-| [SYSLIB0011](syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 序列化已过时，不应使用。 |
-| [SYSLIB0012](syslib0012.md) | 包含 <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> 和 <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> 只是为了实现 .NET Framework 兼容性。 请改用 <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType>。 |
+| [SYSLIB0001](syslib-warnings/syslib0001.md) | UTF-7 编码不安全，因此不应使用。 请考虑改用 UTF-8。 |
+| [SYSLIB0002](syslib-warnings/syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> 不受运行时支持，不得使用。 |
+| [SYSLIB0003](syslib-warnings/syslib0003.md) | 运行时不支持或不接受代码访问安全性 (CAS)。 |
+| [SYSLIB0004](syslib-warnings/syslib0004.md) | 不支持受约束的执行区域 (CER) 功能。 |
+| [SYSLIB0005](syslib-warnings/syslib0005.md) | 不支持全局程序集缓存 (GAC)。 |
+| [SYSLIB0006](syslib-warnings/syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> 不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
+| [SYSLIB0007](syslib-warnings/syslib0007.md) | 不支持此加密算法的默认实现。 |
+| [SYSLIB0008](syslib-warnings/syslib0008.md) | <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API 不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
+| [SYSLIB0009](syslib-warnings/syslib0009.md) | <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> 和 <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> 方法都不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
+| [SYSLIB0010](syslib-warnings/syslib0010.md) | 某些远程处理 API 不受支持并会引发 <xref:System.PlatformNotSupportedException>。 |
+| [SYSLIB0011](syslib-warnings/syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 序列化已过时，不应使用。 |
+| [SYSLIB0012](syslib-warnings/syslib0012.md) | 包含 <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> 和 <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> 只是为了实现 .NET Framework 兼容性。 请改用 <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType>。 |
 
 ## <a name="suppress-warnings"></a>禁止显示警告
 

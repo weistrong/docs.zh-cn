@@ -2,12 +2,12 @@
 title: 实现复原 Entity Framework Core SQL 连接
 description: 了解如何实现复原 Entity Framework Core SQL 连接。 在云中使用 Azure SQL 数据库时，此技术尤为重要。
 ms.date: 10/16/2018
-ms.openlocfilehash: 7a047edca21d63a451e90f407b23f3358d461330
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cae3550ce301750949b042957d5d10f0167e614c
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78241060"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97899556"
 ---
 # <a name="implement-resilient-entity-framework-core-sql-connections"></a>实现复原 Entity Framework Core SQL 连接
 
@@ -134,11 +134,9 @@ public class ResilientTransaction
         var strategy = _context.Database.CreateExecutionStrategy();
         await strategy.ExecuteAsync(async () =>
         {
-            using (var transaction = _context.Database.BeginTransaction())
-            {
-                await action();
-                transaction.Commit();
-            }
+            await using var transaction = await _context.Database.BeginTransactionAsync();
+            await action();
+            await transaction.CommitAsync();
         });
     }
 }

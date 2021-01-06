@@ -3,12 +3,12 @@ title: 使用 NUnit 和 .NET Core 进行 C# 单元测试
 description: 使用 dotnet test 和 NUnit 分步构建一个示例解决方案，在此交互式体验中学习 C# 和 .NET Core 中的单元测试概念。
 author: rprouse
 ms.date: 08/31/2018
-ms.openlocfilehash: 90fd917fd980db6689195026a7524e0cacfc92bc
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 9c9982b047f7b3c5a03ecdd2fabfa2a0edce4558
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656366"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633931"
 ---
 # <a name="unit-testing-c-with-nunit-and-net-core"></a>使用 NUnit 和 .NET Core 进行 C# 单元测试
 
@@ -120,7 +120,33 @@ dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 
 编写一个失败测试，使其通过，然后重复此过程。 在 PrimeService.Tests  目录中，将 UnitTest1.cs  文件重命名为 PrimeService_IsPrimeShould.cs  ，并将其整个内容替换为以下代码：
 
-[!code-csharp[Sample_FirstTest](~/samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_FirstTest)]
+```csharp
+using NUnit.Framework;
+using Prime.Services;
+
+namespace Prime.UnitTests.Services
+{
+    [TestFixture]
+    public class PrimeService_IsPrimeShould
+    {
+        private PrimeService _primeService;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _primeService = new PrimeService();
+        }
+
+        [Test]
+        public void IsPrime_InputIs1_ReturnFalse()
+        {
+            var result = _primeService.IsPrime(1);
+
+            Assert.IsFalse(result, "1 should not be prime");
+        }
+    }
+}
+```
 
 `[TestFixture]` 属性表示包含单元测试的类。 `[Test]` 属性指示方法是测试方法。
 

@@ -2,12 +2,12 @@
 title: F# 代码格式设置准则
 description: '了解设置 F # 代码格式的准则。'
 ms.date: 08/31/2020
-ms.openlocfilehash: 7e20c76f4cfafa50a15b6501a498b228b526057e
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 01a5f9ce0c9b5a67bb0c70bce0829ac300032883
+ms.sourcegitcommit: c3093e9d106d8ca87cc86eef1f2ae4ecfb392118
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513063"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97737185"
 ---
 # <a name="f-code-formatting-guidelines"></a>F# 代码格式设置准则
 
@@ -180,11 +180,34 @@ async {
 
 ```fsharp
 module M =
-    let LongFunctionWithLotsOfParameters
+    let longFunctionWithLotsOfParameters
         (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         =
+        // ... the body of the method follows
+
+    let longFunctionWithLotsOfParametersAndReturnType
+        (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        : ReturnType =
+        // ... the body of the method follows
+
+    let longFunctionWithLongTupleParameter
+        (
+            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
+        ) =
+        // ... the body of the method follows
+
+    let longFunctionWithLongTupleParameterAndReturnType
+        (
+            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
+        ) : ReturnType =
         // ... the body of the method follows
 ```
 
@@ -588,10 +611,11 @@ type MyRecord =
 
 let foo a =
     a
-    |> Option.map (fun x ->
-        {
-            MyField = x
-        })
+    |> Option.map
+        (fun x ->
+            {
+                MyField = x
+            })
 ```
 
 相同的规则适用于列表和数组元素。
@@ -802,10 +826,11 @@ match lam with
 
 ```fsharp
 lambdaList
-|> List.map (function
-    | Abs(x, body) -> 1 + sizeLambda 0 body
-    | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
-    | Var v -> 1)
+|> List.map
+    (function
+        | Abs(x, body) -> 1 + sizeLambda 0 body
+        | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
+        | Var v -> 1)
 ```
 
 即使使用关键字，使用定义的函数中的模式匹配 `let` 也 `let rec` 应缩进四个空格 `let` `function` ：
@@ -838,11 +863,27 @@ with
 
 ## <a name="formatting-function-parameter-application"></a>格式化函数参数应用程序
 
-通常，大多数函数参数应用程序都在同一行中完成。
-
-如果希望将参数应用于新行中的函数，请按一个范围将它们缩进。
+通常，大多数参数在同一行中提供：
 
 ```fsharp
+let x = sprintf "\t%s - %i\n\r" x.IngredientName x.Quantity
+
+let printListWithOffset a list1 =
+    List.iter (fun elem -> printfn $"%d{a + elem}") list1
+```
+
+当管道相关时，通常情况下也是如此，在这种情况下，扩充函数作为参数应用于同一行：
+
+```
+let printListWithOffsetPiped a list1 =
+    list1
+    |> List.iter (fun elem -> printfn $"%d{a + elem}")
+```
+
+但是，你可能希望在新行上将参数传递给函数，这是一个可读性，或者参数列表太长。 在这种情况下，将缩进一个作用域：
+
+```fsharp
+
 // OK
 sprintf "\t%s - %i\n\r"
      x.IngredientName x.Quantity
@@ -860,23 +901,23 @@ let printVolumes x =
         (convertVolumeImperialPint x)
 ```
 
-Lambda 表达式同样适用于函数参数。 如果 lambda 表达式的主体，则正文可以有另一行，并按一个作用域缩进
+对于 lambda 表达式，你可能还需要考虑将 lambda 表达式的主体放置在新行上（如果足够长，则按一个范围缩进）：
 
 ```fsharp
-let printListWithOffset a list1 =
-    List.iter
-        (fun elem -> printfn $"%d{a + elem}")
-        list1
-
-// OK if lambda body is long enough
 let printListWithOffset a list1 =
     List.iter
         (fun elem ->
             printfn $"%d{a + elem}")
         list1
+
+let printListWithOffsetPiped a list1 =
+    list1
+    |> List.iter
+        (fun elem ->
+            printfn $"%d{a + elem}")
 ```
 
-但是，如果 lambda 表达式的主体为多行，请考虑将其分解为单独的函数，而不是将多行构造作为单个参数应用于函数。
+如果 lambda 表达式的主体长度为多行，则应考虑将其重构为本地范围内的函数。
 
 ### <a name="formatting-infix-operators"></a>格式化中缀运算符
 

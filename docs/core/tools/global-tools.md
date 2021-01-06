@@ -4,12 +4,12 @@ description: 如何安装、使用、更新和删除 .NET 工具。 包括全局
 author: KathleenDollard
 ms.topic: how-to
 ms.date: 02/12/2020
-ms.openlocfilehash: 3669ed17d58542aab0435ccea22700c82ba8ea26
-ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
+ms.openlocfilehash: 8839fd4fba72c9f973d906eabb72919306a847dd
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94556896"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633879"
 ---
 # <a name="how-to-manage-net-tools"></a>如何管理 .NET 工具
 
@@ -40,8 +40,6 @@ ms.locfileid: "94556896"
 
 * 使用 [dotnet tool search](dotnet-tool-search.md) 命令查找发布到 NuGet.org 的工具。
 * 使用“.NET 工具”包类型筛选器搜索 [NuGet](https://www.nuget.org) 网站。 有关详细信息，请参阅[查找和选择包](/nuget/consume-packages/finding-and-choosing-packages)。
-* 请参阅 [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub 存储库中的工具列表。
-* 使用 [ToolGet](https://www.toolget.net/) 搜索 .NET 工具。
 * 在 [dotnet/aspnetcore GitHub 存储库的工具目录](https://github.com/dotnet/aspnetcore/tree/master/src/Tools)中查看 ASP.NET Core 团队创建的工具的源代码。
 * 在 [.NET 诊断工具](../diagnostics/index.md#net-core-diagnostic-global-tools)中了解诊断工具。
 

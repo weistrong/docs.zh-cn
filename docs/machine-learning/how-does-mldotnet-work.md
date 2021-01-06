@@ -4,12 +4,12 @@ description: ML.NET 使你能够在联机或脱机场景中将机器学习添加
 ms.date: 11/5/2019
 ms.topic: overview
 ms.custom: mvc
-ms.openlocfilehash: d9a218e57756ad8b95248193325e902c1798cc37
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: 2c44a83b4d45c95cbe45f125523207811f6368c2
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679659"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97634061"
 ---
 # <a name="what-is-mlnet-and-how-does-it-work"></a>什么是 ML.NET 以及它如何工作？
 
@@ -111,7 +111,7 @@ ML.NET 模型是一个对象，它包含为了获得预测输出而要对输入�
 
 ![具有偏差和权重参数的线性回归模型](./media/linear-regression-model.svg)
 
-模型很简单：$Price = b + Size * w$。 参数 $b$ 和 $w$ 通过根据一组 (size, price) 对拟合一根直线来进行估算。 用于查找模型参数的数据称为**训练数据**。 机器学习模型的输入称为**特征**。 在此示例中，$Size$ 是唯一的特征。 用于训练机器学习模型的真值称为**标签**。 此处训练数据集中的 $Price$ 值是标签。
+模型很简单：$Price = b + Size * w$。 参数 $b$ 和 $w$ 通过根据一组 (size, price) 对拟合一根直线来进行估算。 用于查找模型参数的数据称为 **训练数据**。 机器学习模型的输入称为 **特征**。 在此示例中，$Size$ 是唯一的特征。 用于训练机器学习模型的真值称为 **标签**。 此处训练数据集中的 $Price$ 值是标签。
 
 ### <a name="more-complex"></a>更复杂
 
@@ -121,7 +121,7 @@ ML.NET 模型是一个对象，它包含为了获得预测输出而要对输入�
 
 ![文本分类模型](./media/text-classification-model.svg)
 
-房屋价格模型和文本分类模型均为**线性**模型。 根据数据的性质和要解决的问题，还可以使用**决策树**模型、**广义加性**模型和其他模型。 可以在[任务](./resources/tasks.md)中找到有关模型的详细信息。
+房屋价格模型和文本分类模型均为 **线性** 模型。 根据数据的性质和要解决的问题，还可以使用 **决策树** 模型、**广义加性** 模型和其他模型。 可以在[任务](./resources/tasks.md)中找到有关模型的详细信息。
 
 ## <a name="data-preparation"></a>数据准备
 
@@ -139,7 +139,7 @@ ML.NET 模型是一个对象，它包含为了获得预测输出而要对输入�
 
 每种类型的机器学习任务都具有用于根据测试数据集评估模型的准确性和精确性的指标。
 
-对于我们的房屋价格示例，我们使用了**回归**任务。 若要评估模型，请将以下代码添加到原始示例中。
+对于我们的房屋价格示例，我们使用了 **回归** 任务。 若要评估模型，请将以下代码添加到原始示例中。
 
 ```csharp
         HouseData[] testHouseData =
@@ -168,7 +168,7 @@ ML.NET 模型是一个对象，它包含为了获得预测输出而要对输入�
 
 在本部分中，我们将介绍 ML.NET 的体系结构模式。 如果你是一位经验丰富的 .NET 开发人员，则你对其中一些模式可能已经很熟悉，但对有些模式则不那么熟悉。 集中精神，让我们开始深入探索！
 
-ML.NET 应用程序从 <xref:Microsoft.ML.MLContext> 对象开始。 此单一实例对象包含**目录**。 目录是用于数据加载和保存、转换、训练程序和模型操作组件的工厂。 每个目录对象都具有创建不同类型的组件的方法：
+ML.NET 应用程序从 <xref:Microsoft.ML.MLContext> 对象开始。 此单一实例对象包含 **目录**。 目录是用于数据加载和保存、转换、训练程序和模型操作组件的工厂。 每个目录对象都具有创建不同类型的组件的方法：
 
 |||||
 |-|-|-|-|
@@ -210,7 +210,7 @@ ML.NET 应用程序从 <xref:Microsoft.ML.MLContext> 对象开始。 此单一�
     var model = pipeline.Fit(trainingData);
 ```
 
-调用 `Fit()` 使用输入训练数据来估算模型的参数。 这称为训练模型。 请记住，上述线性回归模型有两个模型参数：**偏差**和**权重**。 在 `Fit()` 调用后，参数的值是已知的。 大部分模型拥有的参数比这多得多。
+调用 `Fit()` 使用输入训练数据来估算模型的参数。 这称为训练模型。 请记住，上述线性回归模型有两个模型参数：**偏差** 和 **权重**。 在 `Fit()` 调用后，参数的值是已知的。 大部分模型拥有的参数比这多得多。
 
 可以在[如何训练模型](./how-to-guides/train-machine-learning-model-ml-net.md)中了解有关模型训练的详细信息。
 
@@ -236,7 +236,7 @@ ML.NET 应用程序从 <xref:Microsoft.ML.MLContext> 对象开始。 此单一�
 
 ML.NET 机器学习管道的核心是 [DataView](xref:Microsoft.ML.IDataView) 对象。
 
-管道中的每个转换都有一个输入架构（转换期望在其输入中看到的数据名称、类型和大小）；以及一个输出架构（转换在转换后生成的数据名称、类型和大小）。 下面的文档提供 [IDataView 接口及其类型系统](https://xadupre.github.io/machinelearningext/mlnetdocs/idataviewtypesystem.html)的深度解析。
+管道中的每个转换都有一个输入架构（转换期望在其输入中看到的数据名称、类型和大小）；以及一个输出架构（转换在转换后生成的数据名称、类型和大小）。
 
 如果管道中一个转换的输出架构与下一个转换的输入架构不匹配，ML.NET 将引发异常。
 
@@ -244,13 +244,13 @@ ML.NET 机器学习管道的核心是 [DataView](xref:Microsoft.ML.IDataView) �
 
    ![具有房屋价格预测数据的 ML.NET 数据视图示例](./media/ml-net-dataview.png)
 
-所有 ML.NET 算法都在寻找属于向量的输入列。 默认情况下，此向量列称为**特征**。 这就是我们在房屋价格示例中将**大小**列连接到名为**特征**的新列中的原因。
+所有 ML.NET 算法都在寻找属于向量的输入列。 默认情况下，此向量列称为 **特征**。 这就是我们在房屋价格示例中将 **大小** 列连接到名为 **特征** 的新列中的原因。
 
  ```csharp
     var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
  ```
 
-所有算法在执行预测后还会创建新列。 这些新列的固定名称取决于机器学习算法的类型。 对于回归任务，其中一个新列称为**分数**。 这就是我们将价格数据归为此名称的原因。
+所有算法在执行预测后还会创建新列。 这些新列的固定名称取决于机器学习算法的类型。 对于回归任务，其中一个新列称为 **分数**。 这就是我们将价格数据归为此名称的原因。
 
 ```csharp
     public class Prediction
@@ -262,7 +262,7 @@ ML.NET 机器学习管道的核心是 [DataView](xref:Microsoft.ML.IDataView) �
 
 可以在[机器学习任务](resources/tasks.md)指南中找到有关不同机器学习任务的输出列的详细信息。
 
-DataView 对象的一个​​重要属性是它们被**惰性**求值。 数据视图仅在模型训练和评估以及数据预测期间加载及运行。 在编写和测试 ML.NET 应用程序时，可以使用 Visual Studio 调试程序通过调用 [Preview](xref:Microsoft.ML.DebuggerExtensions.Preview%2A) 方法来浏览任何数据视图对象。
+DataView 对象的一个​​重要属性是它们被 **惰性** 求值。 数据视图仅在模型训练和评估以及数据预测期间加载及运行。 在编写和测试 ML.NET 应用程序时，可以使用 Visual Studio 调试程序通过调用 [Preview](xref:Microsoft.ML.DebuggerExtensions.Preview%2A) 方法来浏览任何数据视图对象。
 
 ```csharp
     var debug = testPriceDataView.Preview();

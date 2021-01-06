@@ -3,12 +3,12 @@ title: 在生产时使用 Azure Key Vault 保护机密
 description: .NET 微服务和 Web 应用程序中的安全性 - Azure Key Vault 是处理完全由管理员控制的应用程序机密的绝佳方式。 管理员甚至可以在不需要开发人员处理的情况下分配和撤销开发值。
 author: mjrousos
 ms.date: 01/30/2020
-ms.openlocfilehash: d2d3690c0c8787ace6bcdfacbdb612f9ef957b98
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: 5d024894fe1540df04514031bf0b6e0754ddc75c
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94916237"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633918"
 ---
 # <a name="use-azure-key-vault-to-protect-secrets-at-production-time"></a>在生产时使用 Azure Key Vault 保护机密
 
@@ -37,7 +37,7 @@ Azure.Extensions.AspNetCore.Configuration.Secrets 包允许 ASP.NET Core 应用�
 ## <a name="additional-resources"></a>其他资源
 
 - **使用 Azure Key Vault 保护应用程序机密** \
-  [https://docs.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity-keyvault)
+  [https://docs.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity)
 
 - **在开发期间安全存储应用机密** \
   [https://docs.microsoft.com/aspnet/core/security/app-secrets](/aspnet/core/security/app-secrets)

@@ -2,12 +2,12 @@
 title: 记录
 description: '了解 F # 记录如何表示命名值的简单聚合，还可以选择包含成员。'
 ms.date: 08/15/2020
-ms.openlocfilehash: 03de96b9c53bc21e7a7723a15d2a8451d100ba76
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2da31da0ec830d458a370e64ca105048181f5d74
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682024"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97899634"
 ---
 # <a name="records"></a>记录
 
@@ -163,7 +163,7 @@ let weirdString = p.WeirdToString()
 
 ## <a name="differences-between-records-and-classes"></a>记录和类之间的差异
 
-记录字段与类的不同之处在于，它们会自动作为属性公开，并在创建和复制记录时使用。 记录构造也不同于类构造。 在记录类型中，不能定义构造函数。 相反，本主题中介绍的构造语法适用。 类在构造函数参数、字段和属性之间没有直接关系。
+记录字段与类字段的不同之处在于，它们会自动作为属性公开，并在创建和复制记录时使用。 记录构造也不同于类构造。 在记录类型中，不能定义构造函数。 相反，本主题中介绍的构造语法适用。 类在构造函数参数、字段和属性之间没有直接关系。
 
 与联合和结构类型一样，记录具有结构相等性语义。 类具有引用相等性语义。 下面的代码示例展示了此操作。
 

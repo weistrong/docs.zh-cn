@@ -2,12 +2,12 @@
 title: F# 组件设计准则
 description: '了解用于编写用于其他调用方的使用的 F # 组件的准则。'
 ms.date: 05/14/2018
-ms.openlocfilehash: 590bda0660d54ea73c590d31e694f3d499e0fd9f
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 24be2a422c97b9334f749e3d9dfcccd0feec219b
+ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209131"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97856102"
 ---
 # <a name="f-component-design-guidelines"></a>F# 组件设计准则
 
@@ -22,9 +22,9 @@ ms.locfileid: "83209131"
 * F # 项目中的一个层，它在该项目中具有外部使用者。
 * 用于跨程序集边界的 F # 代码使用的库。
 * 用于跨程序集边界使用任意 .NET 语言的库。
-* 一个库，用于通过包存储库（如[NuGet](https://nuget.org)）进行分发。
+* 一个库，用于通过包存储库（如 [NuGet](https://nuget.org)）进行分发。
 
-本文中所述的方法遵循[良好 F # 代码的五个原则](index.md#five-principles-of-good-f-code)，并根据需要使用函数和对象编程。
+本文中所述的方法遵循 [良好 F # 代码的五个原则](index.md#five-principles-of-good-f-code)，并根据需要使用函数和对象编程。
 
 无论采用哪种方法，组件和库设计器都在尝试创建最能由开发人员使用的 API 时，会面临许多实际和 prosaic 的问题。 [.Net 库设计准则](../../standard/design-guidelines/index.md)的 Conscientious 应用程序将指导你创建一组一致的 api，这些 api 可供使用。
 
@@ -34,13 +34,13 @@ ms.locfileid: "83209131"
 
 ### <a name="learn-the-net-library-design-guidelines"></a>了解 .NET 库设计准则
 
-无论你正在执行哪种 F # 编码，都有必要了解[.Net 库设计准则](../../standard/design-guidelines/index.md)的工作知识。 大多数其他 F # 和 .NET 程序员都将熟悉这些准则，并且预计 .NET 代码符合这些准则。
+无论你正在执行哪种 F # 编码，都有必要了解 [.Net 库设计准则](../../standard/design-guidelines/index.md)的工作知识。 大多数其他 F # 和 .NET 程序员都将熟悉这些准则，并且预计 .NET 代码符合这些准则。
 
-.NET 库设计指南提供了有关命名、设计类和接口、成员设计（属性、方法、事件等）的一般指导，并是各种设计指导的有用的第一引用。
+.NET 库设计指南提供了有关命名、设计类和接口、成员设计 (属性、方法、事件 ) 等）的一般指南，它们是各种设计指南的一种有用的第一个参考点。
 
 ### <a name="add-xml-documentation-comments-to-your-code"></a>向代码添加 XML 文档注释
 
-有关公共 Api 的 XML 文档可确保用户可以在使用这些类型和成员时获得出色的 Intellisense 和 Quickinfo，并为库启用生成文档文件。 请参阅[Xml 文档](../language-reference/xml-documentation.md)，了解可用于 xmldoc 注释中的其他标记的各种 xml 标记。
+有关公共 Api 的 XML 文档可确保用户可以在使用这些类型和成员时获得出色的 Intellisense 和 Quickinfo，并为库启用生成文档文件。 请参阅 [Xml 文档](../language-reference/xml-documentation.md) ，了解可用于 xmldoc 注释中的其他标记的各种 xml 标记。
 
 ```fsharp
 /// A class for representing (x,y) coordinates
@@ -50,15 +50,15 @@ type Point =
     member DistanceTo: otherPoint:Point -> float
 ```
 
-您可以使用 short 形式 XML 注释（ `/// comment` ）或标准 xml 注释（ `///<summary>comment</summary>` ）。
+您可以使用缩写形式 XML 注释 (`/// comment`) 或标准 xml 注释 (`///<summary>comment</summary>`) 。
 
-### <a name="consider-using-explicit-signature-files-fsi-for-stable-library-and-component-apis"></a>请考虑对稳定库和组件 Api 使用显式签名文件（. fsi.exe）
+### <a name="consider-using-explicit-signature-files-fsi-for-stable-library-and-component-apis"></a>请考虑使用显式签名文件 ( fsi.exe) 用于稳定库和组件 Api
 
 在 F # 库中使用显式签名文件可提供公共 API 的简洁摘要，有助于确保了解库的完整公共表面，并提供公共文档和内部实现细节之间的完全分离。 签名文件通过要求在实现和签名文件中进行更改，增加了更改公共 API 的摩擦。 因此，通常只应在 API 变为日臻完善并且不再需要明显更改时才引入签名文件。
 
 ### <a name="always-follow-best-practices-for-using-strings-in-net"></a>始终遵循在 .NET 中使用字符串的最佳做法
 
-遵循[在 .net 指南中使用字符串的最佳做法](../../standard/base-types/best-practices-strings.md)。 特别是，应始终在转换和比较字符串（如果适用）时明确声明*区域性意图*。
+遵循 [在 .net 指南中使用字符串的最佳做法](../../standard/base-types/best-practices-strings.md) 。 具体而言，在适用)  (，应始终明确地说明字符串转换和比较中的 *区域性意向* 。
 
 ## <a name="guidelines-for-f-facing-libraries"></a>面向 F # 的库的准则
 
@@ -70,41 +70,41 @@ type Point =
 
 下表遵循 .NET 命名和大小写约定。 还增加了 F # 构造。
 
-| 构造 | 案例 | 组成部分 | 示例 | 注释 |
+| 构造 | 案例 | 组成部分 | 示例 | 备注 |
 |-----------|------|------|----------|-------|
 | 具体类型 | PascalCase | 名词/形容词 | List、Double、Complex | 具体类型为结构、类、枚举、委托、记录和联合。 尽管类型名称在 OCaml 中采用小写形式，但 F # 采用了用于类型的 .NET 命名方案。
-| DLL           | PascalCase |                 | Fabrikam |  |
-| 联合标记     | PascalCase | 名词 | 部分、添加、成功 | 不要在公共 Api 中使用前缀。 （可选）在内部使用前缀，如`type Teams = TAlpha | TBeta | TDelta.` |
-| 事件          | PascalCase | Verb | ValueChanged/ValueChanging |  |
+| DLL           | PascalCase |                 | Fabrikam.Core.dll |  |
+| 联合标记     | PascalCase | 名词 | 部分、添加、成功 | 不要在公共 Api 中使用前缀。 （可选）在内部使用前缀，如 `type Teams = TAlpha | TBeta | TDelta.` |
+| 事件          | PascalCase | 谓词 | ValueChanged/ValueChanging |  |
 | 例外     | PascalCase |      | WebException | 名称应以 "Exception" 结尾。 |
 | 字段          | PascalCase | 名词 | CurrentName  | |
 | 接口类型 |  PascalCase | 名词/形容词 | IDisposable | 名称应以 "I" 开头。 |
-| 方法 |  PascalCase |  Verb | ToString | |
+| 方法 |  PascalCase |  谓词 | ToString | |
 | 命名空间 | PascalCase | | Fsharp.core | 通常 `<Organization>.<Technology>[.<Subnamespace>]` 会使用，但如果该技术独立于组织，则删除组织。 |
 | 参数 | camelCase | 名词 |  类型名称，转换，范围 | |
-| let 值（内部） | camelCase 或 PascalCase | 名词/动词 |  getValue，myTable |
-| let 值（外部） | camelCase 或 PascalCase | 名词/动词  | 列出地图，日期. 今天 | 当遵循传统的函数设计模式时，允许绑定值通常是公共的。 但是，当标识符可用于其他 .NET 语言时，通常使用 PascalCase。 |
-| properties  | PascalCase  | 名词/形容词  | IsEndOfFile，背景色  | 布尔值属性通常使用 Is 和应为赞成，如 IsEndOfFile 中所示，not IsNotEndOfFile。
+| 允许值 (内部)  | camelCase 或 PascalCase | 名词/动词 |  getValue，myTable |
+| 允许值 (外部)  | camelCase 或 PascalCase | 名词/动词  | 列出地图，日期. 今天 | 当遵循传统的函数设计模式时，允许绑定值通常是公共的。 但是，当标识符可用于其他 .NET 语言时，通常使用 PascalCase。 |
+| 属性  | PascalCase  | 名词/形容词  | IsEndOfFile，背景色  | 布尔值属性通常使用 Is 和应为赞成，如 IsEndOfFile 中所示，not IsNotEndOfFile。
 
 #### <a name="avoid-abbreviations"></a>避免缩写
 
-.NET 准则不鼓励使用缩写（例如，"使用 `OnButtonClick` 而不是 `OnBtnClick` "）。 常见缩写（如 `Async` "异步"）是可接受的。 对于函数编程，有时会忽略此准则;例如， `List.iter` 使用 "迭代" 的缩写。 出于此原因，在 F # 对 F # 编程中使用缩写的程度往往更高，但在公共组件设计中通常不应避免。
+.NET 准则不鼓励使用缩写 (例如，"use `OnButtonClick` 而不是 `OnBtnClick` " ) 。 常见缩写（如 `Async` "异步"）是可接受的。 对于函数编程，有时会忽略此准则;例如， `List.iter` 使用 "迭代" 的缩写。 出于此原因，在 F # 对 F # 编程中使用缩写的程度往往更高，但在公共组件设计中通常不应避免。
 
 #### <a name="avoid-casing-name-collisions"></a>避免大小写名称冲突
 
-.NET 指导原则只是因为某些客户端语言（例如 Visual Basic）不区分大小写，因此不能使用单独的大小写。
+.NET 指导原则只使用大小写来区分名称冲突，因为某些客户端语言 (例如，Visual Basic) 不区分大小写。
 
 #### <a name="use-acronyms-where-appropriate"></a>在合适的位置使用首字母缩写
 
-XML 的首字母缩写词不是缩写词，在 uncapitalized 形式（Xml）的 .NET 库中广泛使用。 只应使用众所周知的、公认的首字母缩写词。
+XML 的首字母缩写词不是缩写词，在 uncapitalized 格式 (Xml) 的 .NET 库中广泛使用。 只应使用众所周知的、公认的首字母缩写词。
 
 #### <a name="use-pascalcase-for-generic-parameter-names"></a>对泛型参数名称使用 PascalCase
 
-请在公共 Api 中使用 PascalCase 作为泛型参数名称，包括面向 F # 的库。 特别是，使用、、 `T` `U` `T1` 、适用于 `T2` 任意泛型参数的名称，并且在特定名称有意义时，对于面向 F # 的库，使用的名称如 `Key` 、 `Value` 、 `Arg` （例如 `TKey` ）。
+请在公共 Api 中使用 PascalCase 作为泛型参数名称，包括面向 F # 的库。 特别是，使用、、 `T` `U` `T1` 、适用于 `T2` 任意泛型参数的名称，并且在特定名称有意义时，对于面向 F # 的库，使用类似于 `Key` 、、 (的名称， `Value` `Arg` 如 `TKey`) 。
 
 #### <a name="use-either-pascalcase-or-camelcase-for-public-functions-and-values-in-f-modules"></a>在 F # 模块中为公共函数和值使用 PascalCase 或 camelCase
 
-camelCase 用于设计为使用非限定（例如）的公共函数 `invalidArg` 和 "标准集合函数" （例如，List）。 在这两种情况下，函数名称的作用与语言中的关键字非常类似。
+camelCase 用于设计为使用非限定 (的公共函数，例如 `invalidArg`) 和 "标准集合函数" (例如，List. map) 。 在这两种情况下，函数名称的作用与语言中的关键字非常类似。
 
 ### <a name="object-type-and-module-design"></a>对象、类型和模块设计
 
@@ -191,8 +191,8 @@ type Counter() =
 
 ```fsharp
 type Serializer =
-    abstract Serialize<'T>: preserveRefEq: bool -> value: 'T -> string
-    abstract Deserialize<'T>: preserveRefEq: bool -> pickle: string -> 'T
+    abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
+    abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
 ```
 
 首选为：
@@ -208,7 +208,7 @@ type Serializer<'T> = {
 
 #### <a name="use-a-module-to-group-functions-that-act-on-collections"></a>使用模块对集合的函数进行分组
 
-定义集合类型时，请考虑 `CollectionType.map` 为新集合类型提供一组标准操作，如和 `CollectionType.iter` ）。
+定义集合类型时，请考虑 `CollectionType.map` 为新集合类型提供一组标准操作，例如和 `CollectionType.iter`) 。
 
 ```fsharp
 module CollectionType =
@@ -222,7 +222,7 @@ module CollectionType =
 
 #### <a name="use-a-module-to-group-functions-for-common-canonical-functions-especially-in-math-and-dsl-libraries"></a>使用模块将函数分组为常见的规范函数，特别是在数学和 DSL 库中
 
-例如， `Microsoft.FSharp.Core.Operators` 是一个自动打开的顶级函数（如和）的集合 `abs` ， `sin` 由 fsharp.core 提供。
+例如， `Microsoft.FSharp.Core.Operators` 是自动打开的顶级函数集合 (如 `abs` `sin` FSharp.Core.dll 提供的和) 。
 
 同样，统计信息库还可能包括一个模块， `erf` 其中包含函数和 `erfc` ，此模块设计为显式或自动打开。
 
@@ -234,7 +234,7 @@ module CollectionType =
 
 将 `[<AutoOpen>]` 属性添加到模块意味着当包含命名空间打开时将打开该模块。 `[<AutoOpen>]`特性还可以应用于程序集，以指示在引用程序集时自动打开的模块。
 
-例如，统计信息库**MathsHeaven**可能包含 `module MathsHeaven.Statistics.Operators` 包含函数 `erf` 和 `erfc` 。 将此模块标记为是合理的 `[<AutoOpen>]` 。 这意味着 `open MathsHeaven.Statistics` 还将打开此模块并将名称 `erf` 和 `erfc` 纳入范围。 的另一个好用法 `[<AutoOpen>]` 是适用于包含扩展方法的模块。
+例如，统计信息库 **MathsHeaven** 可能包含 `module MathsHeaven.Statistics.Operators` 包含函数 `erf` 和 `erfc` 。 将此模块标记为是合理的 `[<AutoOpen>]` 。 这意味着 `open MathsHeaven.Statistics` 还将打开此模块并将名称 `erf` 和 `erfc` 纳入范围。 的另一个好用法 `[<AutoOpen>]` 是适用于包含扩展方法的模块。
 
 过度 `[<AutoOpen>]` 使用受污染无法命名空间，并且应谨慎使用特性。 对于特定域中的特定库，明智 `[<AutoOpen>]` 地使用会导致更好的可用性。
 
@@ -260,7 +260,7 @@ let u = v * 10.0
 
 #### <a name="consider-using-compiledname-to-provide-a-net-friendly-name-for-other-net-language-consumers"></a>请考虑使用 CompiledName 来提供。其他 .NET 语言使用者的网络友好名称
 
-有时，你可能想要对 F # 使用者使用一种形式的内容（例如，小写的静态成员，使其看起来像是模块绑定函数），但在将其编译到程序集时，它具有不同的名称样式。 您可以使用 `[<CompiledName>]` 属性为使用程序集的非 F # 代码提供不同的样式。
+有时，你可能想要在一个样式中对 F # 使用方 (（例如，小写的静态成员）进行命名，使其看起来像是模块绑定函数) ，但在将其编译到程序集时，该名称的样式不同。 您可以使用 `[<CompiledName>]` 属性为使用程序集的非 F # 代码提供不同的样式。
 
 ```fsharp
 type Vector(x:float, y:float) =
@@ -329,7 +329,7 @@ type System.ServiceModel.Channels.IInputChannel with
 
 ### <a name="exceptions"></a>例外
 
-若要了解异常、结果和选项的适当用法，请参阅[错误管理](conventions.md#error-management)。
+若要了解异常、结果和选项的适当用法，请参阅 [错误管理](conventions.md#error-management) 。
 
 ### <a name="extension-members"></a>扩展成员
 
@@ -438,7 +438,7 @@ val inline highestCommonFactor : ^T -> ^T -> ^T
 
 #### <a name="avoid-type-abbreviations-for-public-types-whose-members-and-properties-should-be-intrinsically-different-to-those-available-on-the-type-being-abbreviated"></a>避免其成员和属性本质上不同于要缩写的类型上可用的公共类型的类型缩写
 
-在这种情况下，要缩写的类型会显示过多关于所定义的实际类型的表示形式。 相反，请考虑在类类型或单用例可区分联合中包装缩写（或者，如果性能非常重要，请考虑使用结构类型来包装缩写）。
+在这种情况下，要缩写的类型会显示过多关于所定义的实际类型的表示形式。 相反，请考虑在类类型或单用例可区分联合 (中包装缩写，如果性能非常重要，请考虑使用结构类型来包装缩写) 。
 
 例如，将多个地图定义为 F # map 的特殊情况，例如：
 
@@ -450,9 +450,9 @@ type MultiMap<'Key,'Value> = Map<'Key,'Value list>
 
 ## <a name="guidelines-for-libraries-for-use-from-other-net-languages"></a>用于其他 .NET 语言的库的指南
 
-设计用于其他 .NET 语言的库时，必须遵守[.Net 库设计准则](../../standard/design-guidelines/index.md)。 在本文档中，这些库标记为 vanilla .NET 库，而不是使用无限制的 F # 的面向 F # 构造的库。 设计 vanilla .NET 库意味着通过最大程度地减少在公共 API 中使用 F # 特定构造，使熟悉的惯用 Api 与 .NET Framework 的其余部分保持一致。 以下部分介绍了这些规则。
+设计用于其他 .NET 语言的库时，必须遵守 [.Net 库设计准则](../../standard/design-guidelines/index.md)。 在本文档中，这些库标记为 vanilla .NET 库，而不是使用无限制的 F # 的面向 F # 构造的库。 设计 vanilla .NET 库意味着通过最大程度地减少在公共 API 中使用 F # 特定构造，使熟悉的惯用 Api 与 .NET Framework 的其余部分保持一致。 以下部分介绍了这些规则。
 
-### <a name="namespace-and-type-design-for-libraries-for-use-from-other-net-languages"></a>命名空间和类型设计（适用于其他 .NET 语言的库）
+### <a name="namespace-and-type-design-for-libraries-for-use-from-other-net-languages"></a>命名空间和类型设计 (适用于其他 .NET 语言的库) 
 
 #### <a name="apply-the-net-naming-conventions-to-the-public-api-of-your-components"></a>将 .NET 命名约定应用于组件的公共 API
 
@@ -561,11 +561,11 @@ type PropLogic =
 
 .NET 中提供了许多不同的框架，如 WinForms、WPF 和 ASP.NET。 如果要设计在这些框架中使用的组件，则应该使用每个的命名和设计约定。 例如，对于 WPF 编程，为正在设计的类采用 WPF 设计模式。 对于用户界面编程中的模型，请使用设计模式，如事件和基于通知的集合（如中所述） <xref:System.Collections.ObjectModel> 。
 
-### <a name="object-and-member-design-for-libraries-for-use-from-other-net-languages"></a>对象和成员设计（适用于其他 .NET 语言的库）
+### <a name="object-and-member-design-for-libraries-for-use-from-other-net-languages"></a>用于从其他 .NET 语言使用的库的对象和成员设计 () 
 
 #### <a name="use-the-clievent-attribute-to-expose-net-events"></a>使用 CLIEvent 特性公开 .NET 事件
 
-构造 `DelegateEvent` 具有特定 .net 委托类型的，该类型采用对象和 `EventArgs` （而不是 `Event` ，默认情况下仅使用 `FSharpHandler` 类型），以便以熟悉的方式将事件发布到其他 .net 语言。
+构造一个 `DelegateEvent` 具有特定 .net 委托类型的，该类型采用对象并 `EventArgs` (而不是 `Event` ，后者仅 `FSharpHandler` 在默认情况下使用该类型) 以便将这些事件以熟悉的方式发布到其他 .net 语言。
 
 ```fsharp
 type MyBadType() =
@@ -628,9 +628,9 @@ member this.Transform(f: Func<int,int>) =
     ...
 ```
 
-F # 函数类型显示为 `class FSharpFunc<T,U>` 其他 .net 语言，并不适合理解委托类型的语言功能和工具。 在创作目标为 .NET Framework 3.5 或更高版本的高阶方法时， `System.Func` 和 `System.Action` 委托是正确发布的 api，以使 .net 开发人员能够以低的方式使用这些 api。 （目标为 .NET Framework 2.0 时，系统定义的委托类型会受到更多的限制; 请考虑使用预定义的委托类型，如 `System.Converter<T,U>` 或定义特定委托类型。）
+F # 函数类型显示为 `class FSharpFunc<T,U>` 其他 .net 语言，并不适合理解委托类型的语言功能和工具。 在创作目标为 .NET Framework 3.5 或更高版本的高阶方法时， `System.Func` 和 `System.Action` 委托是正确发布的 api，以使 .net 开发人员能够以低的方式使用这些 api。  (为 .NET Framework 2.0 时，系统定义的委托类型会受到更多的限制;请考虑使用预定义的委托类型，如 `System.Converter<T,U>` 或定义特定的委托类型。 ) 
 
-另一方面，.NET 委托并不自然用于面向 F # 的库（请参阅有关 F # 的库的下一节）。 因此，开发 vanilla .NET 库的高阶方法时，一种常见的实现策略是使用 F # 函数类型创作所有实现，然后使用委托作为实际 F # 实现顶部的瘦外观创建公共 API。
+在反向，.NET 委托并不是面向 F # 的库的自然 (参见面向 F # 的库) 的下一节。 因此，开发 vanilla .NET 库的高阶方法时，一种常见的实现策略是使用 F # 函数类型创作所有实现，然后使用委托作为实际 F # 实现顶部的瘦外观创建公共 API。
 
 #### <a name="use-the-trygetvalue-pattern-instead-of-returning-f-option-values-and-prefer-method-overloading-to-taking-f-option-values-as-arguments"></a>使用 TryGetValue 模式而不是返回 F # 选项值，并首选方法重载以将 F # 选项值作为参数
 
@@ -653,9 +653,9 @@ member this.ParamOverload(x: int) = x
 member this.ParamOverload(x: int, y: int) = x + y
 ```
 
-#### <a name="use-the-net-collection-interface-types-ienumerablet-and-idictionarykeyvalue-for-parameters-and-return-values"></a>使用 .NET 集合接口类型 IEnumerable \< T \> 和 IDictionary \< 键， \> 参数和返回值的值
+#### <a name="use-the-net-collection-interface-types-ienumerablet-and-idictionarykeyvalue-for-parameters-and-return-values"></a>使用 .NET 集合接口类型的 IEnumerable \<T\> 和 IDictionary \<Key,Value\> 作为参数和返回值
 
-避免使用具体的集合类型，如 .NET 数组 `T[]` 、F # 类型和 `list<T>` `Map<Key,Value>` `Set<T>` .net 具体集合类型 `Dictionary<Key,Value>` （如）。 .NET 库设计指南对于何时使用各种集合类型（如）有很好的建议 `IEnumerable<T>` 。 在 `T[]` 某些情况下，某些情况下使用数组（）是性能的。 请注意 `seq<T>` ，尤其是的 F # 别名 `IEnumerable<T>` ，因此，seq 通常是 VANILLA .net API 的合适类型。
+避免使用具体的集合类型，如 .NET 数组 `T[]` 、F # 类型和 `list<T>` `Map<Key,Value>` `Set<T>` .net 具体集合类型 `Dictionary<Key,Value>` （如）。 .NET 库设计指南对于何时使用各种集合类型（如）有很好的建议 `IEnumerable<T>` 。 某些 `T[]` 情况下，在某些情况下，某些情况下使用数组 () 是性能的。 请注意 `seq<T>` ，尤其是的 F # 别名 `IEnumerable<T>` ，因此，seq 通常是 VANILLA .net API 的合适类型。
 
 而不是 F # 列表：
 
@@ -704,7 +704,7 @@ let checkNonNull` argName (arg: obj) =
 
 #### <a name="avoid-using-tuples-as-return-values"></a>避免使用元组作为返回值
 
-相反，更倾向于返回保存聚合数据的命名类型，或使用 out 参数返回多个值。 虽然元组和结构元组存在于 .NET 中（包括对结构元组的 c # 语言支持），但它们通常不会为 .NET 开发人员提供理想和预期的 API。
+相反，更倾向于返回保存聚合数据的命名类型，或使用 out 参数返回多个值。 虽然元组和结构元组存在于 .NET (包括对结构元组) 的 c # 语言支持，但它们通常不会为 .NET 开发人员提供理想和预期的 API。
 
 #### <a name="avoid-the-use-of-currying-of-parameters"></a>避免使用参数的 currying
 

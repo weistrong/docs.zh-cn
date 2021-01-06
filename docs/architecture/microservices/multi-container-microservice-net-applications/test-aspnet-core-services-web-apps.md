@@ -2,12 +2,12 @@
 title: 测试 ASP.NET Core 服务和 Web 应用
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 探索用于在容器中测试 ASP.NET Core 服务和 Web 应用的体系结构。
 ms.date: 08/07/2020
-ms.openlocfilehash: af1187fb1e2afbb9fa953db5a280c9cc317ab6a8
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 67872668781d8ae5d79bf360aee73f744cf4404b
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91804765"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633944"
 ---
 # <a name="testing-aspnet-core-services-and-web-apps"></a>测试 ASP.NET Core 服务和 Web 应用
 
@@ -31,7 +31,7 @@ ms.locfileid: "91804765"
 
 单元测试基于 xUnit.net、MSTest、Moq 或 NUnit 等测试框架实现。 对于 eShopOnContainers 示例应用程序，我们使用 xUnit。
 
-为 Web API 控制器编写单元测试时，通过使用 C\# 中的新关键字直接实例化控制器类，以便尽快运行测试。 下面的示例演示如何将 [xUnit](https://xunit.github.io/) 作为测试框架执行此操作。
+为 Web API 控制器编写单元测试时，通过使用 C\# 中的新关键字直接实例化控制器类，以便尽快运行测试。 下面的示例演示如何将 [xUnit](https://xunit.net/) 作为测试框架执行此操作。
 
 ```csharp
 [Fact]
@@ -111,7 +111,7 @@ public class PrimeWebDefaultRequestShould
     [https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)
 
 - **xUnit.net**。 官方网站。 \
-    <https://xunit.github.io/>
+    <https://xunit.net/>
 
 -  单元测试基本信息。 \
     [https://docs.microsoft.com/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
