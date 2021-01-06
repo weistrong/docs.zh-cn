@@ -1,13 +1,13 @@
 ---
 title: F# 编码约定
 description: '编写 F # 代码时，了解一般准则和惯例。'
-ms.date: 01/15/2020
-ms.openlocfilehash: 87955c379f0abba929b0ced75d62d2601f37dc5a
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.date: 01/5/2021
+ms.openlocfilehash: e69ceb2f3c37404ca8d8ed972f985340e62ecb59
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739897"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938684"
 ---
 # <a name="f-coding-conventions"></a>F# 编码约定
 
@@ -135,7 +135,7 @@ open Internal.Utilities.Collections
 ```fsharp
 // This is bad!
 module MyApi =
-    let dep1 = File.ReadAllText "/Users/{your name}/connectionstring.txt"
+    let dep1 = File.ReadAllText "/Users/<name>/connectionstring.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
 
     let private r = Random()
@@ -190,9 +190,9 @@ type MoneyWithdrawalResult =
 let handleWithdrawal amount =
     let w = withdrawMoney amount
     match w with
-    | Success am -> printfn "Successfully withdrew %f{am}"
-    | InsufficientFunds balance -> printfn "Failed: balance is %f{balance}"
-    | CardExpired expiredDate -> printfn "Failed: card expired on %O{expiredDate}"
+    | Success am -> printfn $"Successfully withdrew %f{am}"
+    | InsufficientFunds balance -> printfn $"Failed: balance is %f{balance}"
+    | CardExpired expiredDate -> printfn $"Failed: card expired on {expiredDate}"
     | UndisclosedFailure -> printfn "Failed: unknown"
 ```
 
@@ -238,7 +238,7 @@ with
 
 ### <a name="do-not-use-monadic-error-handling-to-replace-exceptions"></a>不要使用一元错误处理来替换异常
 
-在函数编程中，异常会被视为有点 taboo。 事实上，例外违反了纯度，因此可以放心地将其视为不太有效。 但是，这会忽略必须运行代码的事实，并且可能会发生运行时错误。 一般情况下，编写代码假设大多数功能都既不是纯也不是总计，以最大程度减少意外的意外情况。
+异常在函数编程中通常被视为 taboo。 事实上，例外违反了纯度，因此可以放心地将其视为不太有效。 但是，这会忽略必须运行代码的事实，并且可能会发生运行时错误。 一般情况下，编写代码假设大多数功能都既不是纯也不是总计，以最大程度减少意外的意外情况。
 
 在 .NET 运行时和跨语言生态系统中，请务必考虑以下有关异常的核心优势/方面：
 
@@ -317,7 +317,7 @@ F # 支持部分应用程序，因此，可以使用各种方法来编程无点�
 
 ```fsharp
 let func name age =
-    printfn "My name is {name} and I am %d{age} years old!"
+    printfn $"My name is {name} and I am %d{age} years old!"
 
 let funcWithApplication =
     printfn "My name is %s and I am %d years old!"
@@ -331,7 +331,7 @@ val func : name:string -> age:int -> unit
 val funcWithApplication : (string -> int -> unit)
 ```
 
-在调用站点，工具（如 Visual Studio）中的工具提示将不会向你显示与 `string` `int` 输入类型实际表示的内容有关的有用信息。
+在调用站点上，工具（如 Visual Studio）中的工具提示将提供类型签名，但由于没有定义名称，因此不会显示名称。 名称对于良好的 API 设计至关重要，因为它们有助于调用者更好地理解 API 背后的含义。 在公共 API 中使用无点代码可以使调用方更难理解。
 
 如果遇到可公开使用的无点代码 `funcWithApplication` ，建议执行完整的η扩展，以便工具可以选取有意义的参数名称。
 

@@ -1,13 +1,13 @@
 ---
 title: 将 WCF 请求-答复服务迁移到 WCF 开发人员的 gRPC-gRPC
 description: 了解如何将简单的请求-答复服务从 WCF 迁移到 gRPC。
-ms.date: 09/02/2019
-ms.openlocfilehash: 29a7bc77bc3a4becd767fc7a50adff5b746f54bc
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.date: 12/15/2020
+ms.openlocfilehash: 38c6e33e7588dd7c1b263d813d06c088ab484948
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97512692"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938567"
 ---
 # <a name="migrate-a-wcf-request-reply-service-to-a-grpc-unary-rpc"></a>将 WCF 请求-答复服务迁移到 gRPC 一元 RPC
 
@@ -196,7 +196,7 @@ ASP.NET Core 中所有 gRPC 一元服务方法的签名都是一致的。 有两
 
 此方法的返回类型为 `Task<T>` ，其中 `T` 是响应消息类型。 所有 gRPC 服务方法都是异步的。
 
-## <a name="migrate-the-portfoliodata-library-to-net-core"></a>将 PortfolioData 库迁移到 .NET Core
+## <a name="migrate-the-portfoliodata-library-to-net"></a>将 PortfolioData 库迁移到 .NET
 
 此时，项目需要 WCF 解决方案的类库中包含的项目组合存储库和模型 `TraderSys.PortfolioData` 。 最简单的方法是通过使用 Visual Studio " **新建项目** " 对话框和 "类库" ( .NET Standard) "模板，或从命令行使用 .NET Core CLI 来创建新的类库，从包含该文件的目录运行以下命令 `TraderSys.sln` ：
 
@@ -395,7 +395,7 @@ public override async Task<GetAllResponse> GetAll(GetAllRequest request, ServerC
 在同一解决方案中创建 .NET Standard 类库，以包含客户端。 这主要是创建客户端代码的示例，但你可以使用 NuGet 打包此类库，并将其分发到供其他 .NET 团队使用的内部存储库中。 继续并向解决方案中添加一个名为的新 .NET Standard 类库 `TraderSys.Portfolios.Client` ，然后删除该 `Class1.cs` 文件。
 
 > [!CAUTION]
-> [Grpc](https://www.nuget.org/packages/Grpc.Net.Client) NuGet 包需要 .net Core 3.0 (或其他 .NET Standard 2.1 兼容的运行时) 。 [Grpc](https://www.nuget.org/packages/Grpc.Core) NuGet 包支持早期版本的 .NET FRAMEWORK 和 .net Core。
+> [Grpc](https://www.nuget.org/packages/Grpc.Net.Client) NuGet 包需要 .net Core 3.0 或更高版本 (或其他 .NET Standard 2.1 兼容的运行时) 。 [Grpc](https://www.nuget.org/packages/Grpc.Core) NuGet 包支持早期版本的 .NET FRAMEWORK 和 .net Core。
 
 在 Visual Studio 2019 中，可以通过类似于在 Visual Studio 早期版本中添加对 WCF 项目的服务引用的方式来添加对 gRPC 服务的引用。 现在，服务引用和连接服务都是在同一个 UI 下进行管理。 可以通过在解决方案资源管理器中右键单击项目中的 " **依赖项** " 节点 `TraderSys.Portfolios.Client` ，然后选择 " **添加连接的服务**" 来访问该 UI。 在出现的工具窗口中，选择 " **服务引用** " 部分，然后选择 " **添加新的 gRPC 服务引用**"：
 

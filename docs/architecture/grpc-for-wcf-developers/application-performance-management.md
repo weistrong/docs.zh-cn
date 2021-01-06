@@ -1,17 +1,17 @@
 ---
 title: 应用程序性能管理-适用于 WCF 开发人员的 gRPC
 description: ASP.NET Core gRPC 应用程序的日志记录、指标和跟踪。
-ms.date: 09/02/2019
-ms.openlocfilehash: 8a13d1c4df95768e55c90ac491150bfc78ec2bab
-ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
+ms.date: 12/15/2020
+ms.openlocfilehash: 8a2a89e268e3b2dffdcc945ac71b2de85b4d4964
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94982337"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938450"
 ---
 # <a name="application-performance-management"></a>应用程序性能管理
 
-在生产环境（如 Kubernetes）中，监视应用程序以确保它们以最佳状态运行非常重要。 日志记录和指标非常重要。 ASP.NET Core （包括 gRPC）为生成和管理日志消息和指标数据以及 *跟踪* 数据提供内置支持。
+在生产环境（如 Kubernetes）中，监视应用程序以确保它们以最佳状态运行非常重要。 日志记录和指标特别重要。 ASP.NET Core （包括 gRPC）为生成和管理日志消息和指标数据以及 *跟踪* 数据提供内置支持。
 
 ## <a name="the-difference-between-logging-and-metrics"></a>日志记录与度量值之间的差异
 
@@ -25,7 +25,7 @@ ms.locfileid: "94982337"
 
 ## <a name="logging-in-aspnet-core-grpc"></a>ASP.NET Core gRPC 中的日志记录
 
-ASP.NET Core 提供对日志记录的内置支持，采用的形式为： [记录](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet 包。 此库的核心部分随 Web SDK 一起提供，因此不需要手动安装它。 默认情况下，将日志消息写入 ("控制台" ) 和任何附加调试器中的标准输出。 若要将日志写入永久性外部数据存储，你可能需要导入 [可选的日志记录接收器包](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers)。
+ASP.NET Core 提供了针对日志记录的内置支持，采用的形式为： [记录](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet 包。 此库的核心部分随 Web SDK 一起提供，因此不需要手动安装它。 默认情况下，将日志消息写入 ("控制台" ) 和任何附加调试器中的标准输出。 若要将日志写入永久性外部数据存储，你可能需要导入 [可选的日志记录接收器包](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers)。
 
 ASP.NET Core gRPC 框架将详细的诊断日志记录消息写入到此日志记录框架，以便可以处理这些消息并将其与应用程序的消息一起存储。
 
@@ -65,7 +65,7 @@ public class StockData : Stocks.StocksBase
 | 仪表       | 记录随时间变化的单个值，如活动连接。 |
 | 直方图   | 度量跨任意限制的值的分布。 例如，直方图可以跟踪数据集的大小，计算包含多少 <10 条记录、包含的11-100 记录数、包含的101-1000 记录数以及包含的 >1000 记录数。 |
 | 计量       | 度量事件在不同时间范围内的发生速率。 |
-| 计时器       | 跟踪事件的持续时间以及事件发生的速率（以直方图形式存储）。 |
+| Timer       | 跟踪事件的持续时间以及事件发生的速率（以直方图形式存储）。 |
 
 通过使用 *应用指标*， `IMetrics` 可通过依赖关系注入获取接口，并用于记录 gRPC 服务的任何指标。 下面的示例演示如何计算一段 `Get` 时间内发出的请求数：
 
@@ -110,7 +110,7 @@ public class StockData : Stocks.StocksBase
 
 ## <a name="distributed-tracing"></a>分布式跟踪
 
-分布式跟踪是一种相对较新的监视开发，它怀疑于不断使用微服务和分布式体系结构。 来自客户端浏览器、应用程序或设备的单个请求可分解为多个步骤和子请求，并涉及到跨网络使用许多服务。 这使得难以将日志消息和指标与触发它们的特定请求关联起来。 分布式跟踪将标识符应用于请求，这允许日志和指标与特定操作相关联。 这类似于 [WCF 的端到端跟踪](../../framework/wcf/diagnostics/tracing/end-to-end-tracing.md)，但它是跨多个平台应用的。
+分布式跟踪是一种相对较新的监视开发，它怀疑于不断使用微服务和分布式体系结构。 来自客户端浏览器、应用程序或设备的单个请求可分解为多个步骤和子请求，并涉及到跨网络使用许多服务。 此活动使日志消息和度量值难以与触发它们的特定请求关联起来。 分布式跟踪将标识符应用于请求，并允许日志和指标与特定操作相关联。 此跟踪类似于 [WCF 的端到端跟踪](../../framework/wcf/diagnostics/tracing/end-to-end-tracing.md)，但它在多个平台上应用。
 
 分布式跟踪在受欢迎程度上迅速增长，开始实现标准化。 云本机计算基础创建了 [开放跟踪标准](https://opentracing.io)，尝试为使用后端（例如 [JAEGER](https://www.jaegertracing.io/) 和 [弹性 APM](https://www.elastic.co/products/apm)）提供与供应商无关的库。 同时，Google 创建了 [OpenCensus 项目](https://opencensus.io/) 来处理相同的一组问题。 这两个项目合并到一个新项目 [OpenTelemetry](https://opentelemetry.io)中，该项目旨在成为未来的行业标准。
 
@@ -120,9 +120,9 @@ public class StockData : Stocks.StocksBase
 
 ### <a name="distributed-tracing-with-diagnosticsource"></a>分布式跟踪与 `DiagnosticSource`
 
-.NET Core 有一个内部模块，该模块适用于分布式跟踪和跨越： [DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#diagnosticsource-users-guide)。 该 `DiagnosticSource` 模块具有 *活动* 的概念，并提供一种简单的方法来在进程内生成和使用诊断。 活动实际上是分布式跟踪的实现或跟踪内的跨度。 模块的内部机制负责父子活动（包括分配标识符）。 有关使用类型的详细信息 `Activity` ，请参阅 [GitHub 上的活动用户指南](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-user-guide)。
+.NET 有一个内部模块，可以很好地映射到分布式跟踪和跨越： [DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#diagnosticsource-users-guide)。 该 `DiagnosticSource` 模块具有 *活动* 的概念，并提供一种简单的方法来在进程内生成和使用诊断。 活动实际上是分布式跟踪的实现或跟踪内的跨度。 模块的内部机制负责父子活动（包括分配标识符）。 有关使用类型的详细信息 `Activity` ，请参阅 [GitHub 上的活动用户指南](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-user-guide)。
 
-由于 `DiagnosticSource` 是核心框架的一部分，因此支持多个核心组件。 其中包括 <xref:System.Net.Http.HttpClient> 、Entity Framework Core 和 ASP.NET Core，包括 gRPC 框架中的显式支持。 当 ASP.NET Core 收到请求时，它将检查与 [W3C 跟踪上下文](https://www.w3.org/TR/trace-context) 标准匹配的一对 HTTP 标头。 如果找到了标头，则将使用标头中的标识值和上下文启动活动。 如果未找到任何标头，则会启动一个活动，其中生成的标识值与标准格式匹配。 在此活动的生存期内，由框架或应用程序代码生成的任何诊断，都可以用 trace 和 span 标识符进行标记。 此 `HttpClient` 支持通过检查每个请求的当前活动，并自动将跟踪标头添加到传出请求，进一步扩展了此功能。
+由于 `DiagnosticSource` 是核心框架和更高版本的一部分，因此支持多个核心组件。 其中包括 <xref:System.Net.Http.HttpClient> 、Entity Framework Core 和 ASP.NET Core，包括 gRPC 框架中的显式支持。 当 ASP.NET Core 收到请求时，它将检查与 [W3C 跟踪上下文](https://www.w3.org/TR/trace-context) 标准匹配的一对 HTTP 标头。 如果找到了标头，则将使用标头中的标识值和上下文启动活动。 如果未找到任何标头，则会启动一个活动，其中生成的标识值与标准格式匹配。 在此活动的生存期内，由框架或应用程序代码生成的任何诊断，都可以用 trace 和 span 标识符进行标记。 `HttpClient`此支持通过检查每个请求的当前活动并自动将跟踪标头添加到传出请求，进一步扩展了此功能。
 
 ASP.NET Core gRPC 客户端和服务器库包括对和的显式支持 `DiagnosticSource` `Activity` ，并自动创建活动和应用和使用标头信息。
 

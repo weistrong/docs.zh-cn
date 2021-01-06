@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - public keyword [C#]
 ms.assetid: 0ae45d16-a551-4b74-9845-57208de1328e
-ms.openlocfilehash: 26edaf7538d11d082a4b8863228213c3ebc46937
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 90c1d2a1d9efcdf57f914f4318bf7a743d3f37ec
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89122337"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938463"
 ---
 # <a name="public-c-reference"></a>public（C# 参考）
 
@@ -30,7 +30,7 @@ class SampleClass
 
 ## <a name="example"></a>示例
 
-在下面的示例中，声明了两个类：`PointTest` 和 `MainClass`。 直接从 `MainClass` 访问 `PointTest` 的公共成员 `x` 和 `y`。
+在下面的示例中，声明了两个类：`PointTest` 和 `Program`。 直接从 `Program` 访问 `PointTest` 的公共成员 `x` 和 `y`。
 
 [!code-csharp[csrefKeywordsModifiers#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#13)]
 

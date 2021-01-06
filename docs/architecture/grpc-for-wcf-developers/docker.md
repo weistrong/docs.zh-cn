@@ -1,13 +1,13 @@
 ---
 title: 适用于 WCF 开发人员的 Docker gRPC
 description: 为 ASP.NET Core gRPC 应用程序创建 Docker 映像
-ms.date: 09/02/2019
-ms.openlocfilehash: 0a680d0918868829042e521506fa8c1a1628bf5c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 12/15/2020
+ms.openlocfilehash: f662dbd67f00b828f3e1dfa47359a450dd1c5900
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688440"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938411"
 ---
 # <a name="create-docker-images"></a>创建 Docker 映像
 
@@ -29,10 +29,10 @@ Microsoft 提供了一系列用于构建和运行 .NET Core 应用程序的基�
 
 | 图像标记 (s)  | Linux | 备注 |
 | --------- | ----- | ----- |
-| 3.0-buster、3。0 | Debian 10 | 如果未指定操作系统变体，则为默认映像。 |
-| 3.0-alpine | Alpine 3。9 | Alpine 基本映像比 Debian 或 Ubuntu 映像小得多。 |
-| 3.0-disco | Ubuntu 19.04 | |
-| 3.0-bionic | Ubuntu 18.04 | |
+| 5.0-buster、5。0 | Debian 10 | 如果未指定操作系统变体，则为默认映像。 |
+| 5.0-alpine | Alpine 3。9 | Alpine 基本映像比 Debian 或 Ubuntu 映像小得多。 |
+| 5.0-disco | Ubuntu 19.04 | |
+| 5.0-bionic | Ubuntu 18.04 | |
 
 对于 Debian 和 Ubuntu 映像，Alpine 基本映像约 100 MB，比较 200 MB。 某些软件包或库可能在 Alpine 的包管理中不可用。 如果你不确定要使用哪个映像，则应选择默认 Debian。
 
@@ -41,29 +41,31 @@ Microsoft 提供了一系列用于构建和运行 .NET Core 应用程序的基�
 
 ## <a name="create-a-docker-image"></a>创建 Docker 映像
 
-Docker 映像由 *Dockerfile* 定义。 这是一个文本文件，其中包含生成应用程序所需的所有命令，并安装生成或运行该应用程序所需的任何依赖项。 下面的示例演示 ASP.NET Core 3.0 应用程序的最简单的 Dockerfile：
+Docker 映像由 *Dockerfile* 定义。 此 *Dockerfile* 是一个文本文件，其中包含生成应用程序所需的所有命令，并安装生成或运行该应用程序所需的任何依赖项。 下面的示例演示 ASP.NET Core 5.0 应用程序的最简单的 Dockerfile：
 
 ```dockerfile
-# Application build steps
-FROM mcr.microsoft.com/dotnet/sdk:3.0 as builder
+FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
 
 WORKDIR /src
 
-COPY . .
+COPY ./StockKube.sln .
+COPY ./src/StockData/StockData.csproj ./src/StockData/
+COPY ./src/StockWeb/StockWeb.csproj ./src/StockWeb/
 
 RUN dotnet restore
 
-RUN dotnet publish -c Release -o /published src/StockData/StockData.csproj
+COPY . .
 
-# Runtime image creation
-FROM mcr.microsoft.com/dotnet/aspnet:3.0
+RUN dotnet publish --no-restore -c Release -o /published src/StockData/StockData.csproj
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 as runtime
 
 # Uncomment the line below if running with HTTPS
 # ENV ASPNETCORE_URLS=https://+:443
 
 WORKDIR /app
 
-COPY --from=builder /published .
+COPY --from=build /published .
 
 ENTRYPOINT [ "dotnet", "StockData.dll" ]
 ```
@@ -91,18 +93,18 @@ Dockerfile 包含两个部分：第一个部分使用 `sdk` 基本映像来生�
 
 ### <a name="https-in-docker"></a>Docker 中的 HTTPS
 
-用于 Docker 的 Microsoft 基本映像将 `ASPNETCORE_URLS` 环境变量设置为 `http://+:80` ，这意味着在该端口上运行的 Kestrel 不带 HTTPS。 如果对自定义证书使用 HTTPS (如) [自承载 gRPC 应用程序](self-hosted.md) 中所述），则应覆盖此项。 在 Dockerfile 的运行时映像创建部分设置环境变量。
+用于 Docker 的 Microsoft 基本映像将 `ASPNETCORE_URLS` 环境变量设置为 `http://+:80` ，这意味着在该端口上运行的 Kestrel 不带 HTTPS。 如果对自定义证书使用 HTTPS (如) [自承载 gRPC 应用程序](self-hosted.md) 中所述），则应重写此配置。 在 Dockerfile 的运行时映像创建部分设置环境变量。
 
 ```dockerfile
 # Runtime image creation
-FROM mcr.microsoft.com/dotnet/aspnet:3.0
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
 
 ENV ASPNETCORE_URLS=https://+:443
 ```
 
 ### <a name="the-dockerignore-file"></a>.Dockerignore 文件
 
-与 `.gitignore` 从源代码管理中排除某些文件和目录的文件非常相似， `.dockerignore` 文件可用于在生成过程中排除文件和目录被复制到映像。 这不仅会节省时间复制，还可以避免在将 `obj` 目录从 PC 复制到映像时出现的一些错误。 你至少应在文件中添加和的 `bin` 条目 `obj` `.dockerignore` 。
+与 `.gitignore` 从源代码管理中排除某些文件和目录的文件非常相似， `.dockerignore` 文件可用于在生成过程中排除文件和目录被复制到映像。 此文件不仅节省时间复制，还可以避免在将 `obj` 目录从 PC 复制到映像时出现的一些错误。 你至少应在文件中添加和的 `bin` 条目 `obj` `.dockerignore` 。
 
 ```console
 bin/
@@ -111,10 +113,10 @@ obj/
 
 ## <a name="build-the-image"></a>生成映像
 
-对于具有单个应用程序的解决方案，因此，如果是单个 Dockerfile，则最简单的方法是将 Dockerfile 放在基目录中。 换句话说，将其放在文件所在的目录中 `.sln` 。 在这种情况下，若要生成映像，请在包含 Dockerfile 的目录中使用以下 `docker build` 命令。
+对于 `StockKube.sln` 包含两个不同应用程序的解决方案 `StockData` `StockWeb` ，最简单的方法是将每个应用程序的 Dockerfile 放在基目录中。 在这种情况下，若要生成映像，请使用 `docker build` 文件所在的同一目录中的以下命令 `.sln` 。
 
 ```console
-docker build --tag stockdata .
+docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
 ```
 
 令困惑命名 `--tag` 标志 (可以缩短为 `-t`) 指定图像的整个名称，包括实际标记（如果指定）。 `.`结束时指定将在其中运行生成的上下文; `COPY` Dockerfile 中命令的当前工作目录。
@@ -122,7 +124,7 @@ docker build --tag stockdata .
 如果一个解决方案中有多个应用程序，则可以将每个应用程序的 Dockerfile 保存在其自己的文件夹中的 `.csproj` 文件旁边。 你仍应该 `docker build` 从基本目录运行命令，以确保将解决方案和所有项目都复制到映像中。 可以通过使用 `--file` (或) 标志，在当前目录下指定 Dockerfile `-f` 。
 
 ```console
-docker build --tag stockdata --file src/StockData/Dockerfile .
+docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
 ```
 
 ## <a name="run-the-image-in-a-container-on-your-machine"></a>在计算机上的容器中运行映像
@@ -130,27 +132,27 @@ docker build --tag stockdata --file src/StockData/Dockerfile .
 若要在本地 Docker 实例中运行映像，请使用 `docker run` 命令。
 
 ```console
-docker run -ti -p 5000:80 stockdata
+docker run -ti -p 5000:80 stockdata:1.0.0
 ```
 
 `-ti`标志将当前终端连接到容器的终端，并在交互模式下运行。 `-p 5000:80`发布 (将容器上的端口 80) 链接到 localhost 网络接口上的端口5000。
 
 ## <a name="push-the-image-to-a-registry"></a>将映像推送到注册表
 
-验证映像工作后，将其推送到 Docker 注册表，使其在其他系统上可用。 内部网络将需要预配 Docker 注册表。 这可以像运行 [docker 的 `registry` 映像](https://docs.docker.com/registry/deploying/) 一样简单， (Docker 注册表在 docker 容器中运行) ，但可以使用各种更全面的解决方案。 对于外部共享和云使用，有多种可用的托管注册表，如 [Azure 容器注册表](/azure/container-registry/) 或 [Docker Hub](https://docs.docker.com/docker-hub/repos/)。
+验证映像工作后，将其推送到 Docker 注册表，使其在其他系统上可用。 内部网络将需要预配 Docker 注册表。 此活动非常简单，只需运行 [docker 自己的 `registry` 映像](https://docs.docker.com/registry/deploying/) (docker 注册表即可在 docker 容器中运行) ，但可以使用各种更为全面的解决方案。 对于外部共享和云使用，有多种可用的托管注册表，如 [Azure 容器注册表](/azure/container-registry/) 或 [Docker Hub](https://docs.docker.com/docker-hub/repos/)。
 
 若要推送到 Docker Hub，请将映像名称作为你的用户或组织名称作为前缀。
 
 ```console
-docker tag stockdata myorg/stockdata
-docker push myorg/stockdata
+docker tag stockdata:1.0.0 <myorg>/stockdata:1.0.0
+docker push <myorg>/stockdata:1.0.0
 ```
 
 若要推送到专用注册表，请使用注册表主机名和组织名称作为映像名称的前缀。
 
 ```console
-docker tag stockdata internal-registry:5000/myorg/stockdata
-docker push internal-registry:5000/myorg/stockdata
+docker tag stockdata <internal-registry:5000>/<myorg>/stockdata:1.0.0
+docker push <internal-registry:5000>/<myorg>/stockdata:1.0.0
 ```
 
 映像位于注册表中后，可以将其部署到各个 Docker 主机或容器业务流程引擎（如 Kubernetes）。

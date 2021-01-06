@@ -1,17 +1,17 @@
 ---
 title: 用于字典的 Protobuf 映射-适用于 WCF 开发人员的 gRPC
 description: 了解如何使用 Protobuf 映射来表示 .NET 中的字典类型。
-ms.date: 09/09/2019
-ms.openlocfilehash: 2c2ae76d47b2309227d22235b5acbe2afa794158
-ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
+ms.date: 12/15/2020
+ms.openlocfilehash: d38270d4bc320cf1f758080c18843ed1d716b350
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88867460"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938541"
 ---
 # <a name="protobuf-maps-for-dictionaries"></a>词典的 Protobuf 映射
 
-可以在消息中表示命名值的任意集合，这一点很重要。 在 .NET 中，这通常通过字典类型来处理。 协议缓冲区中的 .NET 类型的等效项 <xref:System.Collections.Generic.IDictionary%602> (Protobuf) 为 `map<key_type, value_type>` 类型。 本部分演示如何 `map` 在 Protobuf 中声明类型，以及如何使用生成的代码。
+可以在消息中表示命名值的任意集合，这一点很重要。 在 .NET 中，此活动通常通过字典类型来处理。 协议缓冲区中的 .NET 类型的等效项 <xref:System.Collections.Generic.IDictionary%602> (Protobuf) 为 `map<key_type, value_type>` 类型。 本部分演示如何 `map` 在 Protobuf 中声明类型，以及如何使用生成的代码。
 
 ```protobuf
 message StockPrices {

@@ -1,34 +1,34 @@
 ---
 title: 创建 gRPC 客户端库-WCF 开发人员 gRPC
 description: 针对 gRPC services 的共享客户端库/包的讨论。
-ms.date: 09/02/2019
-ms.openlocfilehash: e47ccd958007f84d633bb9ad5808c5e97c231977
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.date: 12/15/2020
+ms.openlocfilehash: b1233bb40a5fa2119a325be2657b500a4c626c18
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89358838"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938424"
 ---
 # <a name="create-grpc-client-libraries"></a>创建 gRPC 客户端库
 
-不需要为 gRPC 应用程序分发客户端库。 你可以在组织中创建文件的共享库 `.proto` ，并且其他团队可以使用这些文件在其自己的项目中生成客户端代码。 但是，如果你有一个专用 NuGet 存储库，而其他许多团队正在使用 .NET Core，则可以创建并发布客户端 NuGet 包作为你的服务项目的一部分。 这可以是共享和升级服务的一种好方法。
+不需要为 gRPC 应用程序分发客户端库。 你可以在组织中创建文件的共享库 `.proto` ，并且其他团队可以使用这些文件在其自己的项目中生成客户端代码。 但是，如果你有一个专用 NuGet 存储库，并且许多其他团队正在使用 .NET，则可以创建并发布客户端 NuGet 包作为你的服务项目的一部分。 这种方法可以是共享和升级服务的好方法。
 
-分发客户端库的一个优点是，您可以使用有用的 "方便性" 方法和属性来增强生成的 gRPC 和 Protobuf 类。 在客户端代码中，与在服务器中一样，所有类都声明为 `partial` ，因此你可以在不编辑生成的代码的情况下扩展它们。 这意味着可以轻松地将构造函数、方法和计算属性添加到基本类型。
+分发客户端库的一个优点是，您可以使用有用的 "方便性" 方法和属性来增强生成的 gRPC 和 Protobuf 类。 在客户端代码中，与在服务器中一样，所有类都声明为 `partial` ，因此你可以在不编辑生成的代码的情况下扩展它们。 此行为意味着可以轻松地将构造函数、方法和计算属性添加到基本类型。
 
 > [!CAUTION]
 > 不应使用自定义代码来提供基本功能。 您不希望将这一基本功能限制为使用共享库的 .NET 团队，而不是将其提供给使用其他语言或平台（如 Python 或 Java）的团队。
 
-请确保尽可能多的团队可以访问你的 gRPC 服务。 实现此目的的最佳方式是共享 `.proto` 文件，使开发人员能够生成自己的客户端。 在多平台环境中尤其如此，在这种环境中，不同的团队经常使用不同的编程语言和框架，或者 API 可从外部访问。
+请确保尽可能多的团队可以访问你的 gRPC 服务。 实现此功能的最佳方式是共享 `.proto` 文件，使开发人员能够生成自己的客户端。 这种方法在多平台环境中尤其如此，在这种环境中，不同的团队常常使用不同的编程语言和框架，或者 API 可从外部访问。
 
 ## <a name="useful-extensions"></a>有用的扩展
 
 .NET 中有两种常用接口用于处理对象的流： <xref:System.Collections.Generic.IEnumerable%601> 和 <xref:System.IObservable%601> 。 从 .NET Core 3.0 和 c # 8.0 开始，有一个 <xref:System.Collections.Generic.IAsyncEnumerable%601> 用于异步处理流的接口，以及一个 `await foreach` 使用接口的语法。 本部分提供可重用的代码，用于将这些接口应用到 gRPC 流。
 
-使用 .NET Core gRPC 客户端库，可使用的 `ReadAllAsync` 扩展方法 `IAsyncStreamReader<T>` 创建 `IAsyncEnumerable<T>` 接口。 对于使用反应性编程的开发人员而言，创建接口的等效扩展方法 `IObservable<T>` 可能类似于以下部分中的示例。
+使用 .NET gRPC 客户端库，可使用的 `ReadAllAsync` 扩展方法 `IAsyncStreamReader<T>` 创建 `IAsyncEnumerable<T>` 接口。 对于使用反应性编程的开发人员而言，创建接口的等效扩展方法 `IObservable<T>` 可能类似于以下部分中的示例。
 
 ### <a name="iobservable"></a>IObservable
 
-`IObservable<T>`接口是的 "事后" 反转 `IEnumerable<T>` 。 反应方法不会从流中提取项，而是允许流将项推送到订阅服务器。 这非常类似于 gRPC 流，并且可以轻松地在 `IObservable<T>` 接口周围环绕接口 `IAsyncStreamReader<T>` 。
+`IObservable<T>`接口是的 "事后" 反转 `IEnumerable<T>` 。 反应方法不会从流中提取项，而是允许流将项推送到订阅服务器。 此行为与 gRPC 流非常类似，并且可以轻松地绕过接口的 `IObservable<T>` 接口 `IAsyncStreamReader<T>` 。
 
 此代码比 `IAsyncEnumerable<T>` 代码长，因为 c # 不支持使用可观察量。 必须手动创建实现类。 但它是一个泛型类，因此单个实现适用于所有类型。
 
@@ -63,7 +63,7 @@ namespace Grpc.Core
 ```
 
 > [!IMPORTANT]
-> 此可观察实现允许 `Subscribe` 只调用一次方法，因为尝试从流中读取多个订阅服务器会导致混乱。 有一些运算符（例如 `Replay` ，在可观察量[System.Reactive.Linq](https://www.nuget.org/packages/System.Reactive.Linq)中）支持缓冲和可重复共享的，可与此实现一起使用。
+> 此可观察实现允许 `Subscribe` 只调用一次方法，因为尝试从流中读取多个订阅服务器会导致混乱。 有一些运算符（例如 `Replay` ，在可观察量[](https://www.nuget.org/packages/System.Reactive.Linq)中）支持缓冲和可重复共享的，可与此实现一起使用。
 
 `GrpcStreamSubscription`类处理的枚举 `IAsyncStreamReader` ：
 
@@ -147,7 +147,7 @@ namespace Grpc.Core
 
 ## <a name="summary"></a>总结
 
-`IAsyncEnumerable`和 `IObservable` 模型都是支持良好的，并以详细的方式记录了如何处理 .net 中的数据数据流。 gRPC 流可以很好地映射到这两个范例，提供与 .NET Core 的紧密集成，并提供反应性和异步编程风格。
+<xref:System.IAsyncDisposable>和 <xref:System.IObservable%601> 模型都是支持良好的，并以详细的方式记录了如何处理 .net 中的数据数据流。 gRPC 流可以很好地映射到这两个范例，提供与 .NET 的紧密集成，并提供反应性和异步编程风格。
 
 >[!div class="step-by-step"]
 >[上一页](streaming-versus-repeated.md)

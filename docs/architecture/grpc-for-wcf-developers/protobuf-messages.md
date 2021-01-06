@@ -1,23 +1,23 @@
 ---
 title: Protobuf 消息-WCF 开发人员 gRPC
 description: '了解如何在 IDL 中定义 Protobuf 消息，并在 c # 中生成这些消息。'
-ms.date: 09/09/2019
-ms.openlocfilehash: 6fc7b9c34810abaa8d674af56d1517a5cf87521b
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.date: 12/15/2020
+ms.openlocfilehash: c1f2a3071d45dcbe4b98d747f19fed508bad102f
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85325033"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938099"
 ---
 # <a name="protobuf-messages"></a>Protobuf 消息
 
-本部分介绍如何在文件中声明协议缓冲区（Protobuf）消息 `.proto` 。 它介绍了字段编号和类型的基本概念，并探讨了编译器生成的 c # 代码 `protoc` 。
+本部分介绍如何在文件中声明协议缓冲区 (Protobuf) 消息 `.proto` 。 它介绍了字段编号和类型的基本概念，并探讨了编译器生成的 c # 代码 `protoc` 。
 
 本章的其余部分将更详细地介绍如何在 Protobuf 中表示不同类型的数据。
 
 ## <a name="declaring-a-message"></a>声明消息
 
-在 Windows Communication Foundation （WCF）中，可按 `Stock` 以下示例所示定义股票市场贸易应用程序的类：
+在 Windows Communication Foundation (WCF) ，可以按 `Stock` 以下示例所示定义股票市场贸易应用程序的类：
 
 ```csharp
 namespace TraderSys
@@ -68,10 +68,10 @@ message Stock {
 
 ## <a name="types"></a>类型
 
-类型声明使用 Protobuf 的本机标量数据类型，[下一部分](protobuf-data-types.md)将对此进行更详细的讨论。 本章的其余部分将介绍 Protobuf 的内置类型，并说明它们如何与常见的 .NET 类型相关。
+类型声明使用 Protobuf 的本机标量数据类型， [下一部分](protobuf-data-types.md)将对此进行更详细的讨论。 本章的其余部分将介绍 Protobuf 的内置类型，并说明它们如何与常见的 .NET 类型相关。
 
 > [!NOTE]
-> Protobuf 不本机支持 `decimal` 类型，因此 `double` 改用。 对于需要完全小数精度的应用程序，请参阅本章下一部分中[有关小数部分的部分](protobuf-data-types.md#decimals)。
+> Protobuf 不本机支持 `decimal` 类型，因此 `double` 改用。 对于需要完全小数精度的应用程序，请参阅本章下一部分中 [有关小数部分的部分](protobuf-data-types.md#decimals) 。
 
 ## <a name="the-generated-code"></a>生成的代码
 
