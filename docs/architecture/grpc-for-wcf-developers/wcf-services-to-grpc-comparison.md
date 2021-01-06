@@ -1,28 +1,28 @@
 ---
 title: 为 WCF 开发人员比较 WCF 与 gRPC-gRPC
 description: 用于生成分布式应用程序的 WCF 和 gRPC 框架比较。
-ms.date: 09/02/2019
-ms.openlocfilehash: 4f54db76c9512b770b4dd993496d95437dd89753
-ms.sourcegitcommit: f38e527623883b92010cf4760246203073e12898
+ms.date: 12/15/2020
+ms.openlocfilehash: 7dd41c3d6f248bb1ef5eacb323b1443c7bc575a7
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77503340"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938489"
 ---
-# <a name="comparing-wcf-to-grpc"></a><span data-ttu-id="20e9d-103">将 WCF 与 gRPC 进行比较</span><span class="sxs-lookup"><span data-stu-id="20e9d-103">Comparing WCF to gRPC</span></span>
+# <a name="comparing-wcf-to-grpc"></a><span data-ttu-id="258f2-103">将 WCF 与 gRPC 进行比较</span><span class="sxs-lookup"><span data-stu-id="258f2-103">Comparing WCF to gRPC</span></span>
 
-<span data-ttu-id="20e9d-104">上一章介绍了 Protobuf 和 gRPC 如何处理消息。</span><span class="sxs-lookup"><span data-stu-id="20e9d-104">The previous chapter gave you a good look at Protobuf and how gRPC handles messages.</span></span> <span data-ttu-id="20e9d-105">在处理从 Windows Communication Foundation （WCF）到 gRPC 的详细转换之前，请务必了解 WCF 中的功能在 gRPC 中的处理方式，以及在没有 gRPC 等效项时可以使用的解决方法。</span><span class="sxs-lookup"><span data-stu-id="20e9d-105">Before you work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it's important know how the features available in WCF are handled in gRPC and what workarounds you can use when there's no gRPC equivalent.</span></span> <span data-ttu-id="20e9d-106">具体而言，本章将涵盖以下主题：</span><span class="sxs-lookup"><span data-stu-id="20e9d-106">In particular, this chapter will cover the following subjects:</span></span>
+<span data-ttu-id="258f2-104">上一章介绍了 Protobuf 和 gRPC 如何处理消息。</span><span class="sxs-lookup"><span data-stu-id="258f2-104">The previous chapter gave you a good look at Protobuf and how gRPC handles messages.</span></span> <span data-ttu-id="258f2-105">在处理从 Windows Communication Foundation (WCF) 到 gRPC 的详细转换之前，请务必了解 WCF 中可用的功能在 gRPC 中的处理方式，以及在没有 gRPC 等效项时可以使用的解决方法。</span><span class="sxs-lookup"><span data-stu-id="258f2-105">Before you work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it's important know how the features available in WCF are handled in gRPC and what workarounds you can use when there's no gRPC equivalent.</span></span> <span data-ttu-id="258f2-106">具体而言，本章将涵盖以下主题：</span><span class="sxs-lookup"><span data-stu-id="258f2-106">In particular, this chapter will cover the following subjects:</span></span>
 
-- <span data-ttu-id="20e9d-107">操作和方法</span><span class="sxs-lookup"><span data-stu-id="20e9d-107">Operations and methods</span></span>
-- <span data-ttu-id="20e9d-108">绑定和传输</span><span class="sxs-lookup"><span data-stu-id="20e9d-108">Bindings and transports</span></span>
-- <span data-ttu-id="20e9d-109">RPC 类型</span><span class="sxs-lookup"><span data-stu-id="20e9d-109">RPC types</span></span>
-- <span data-ttu-id="20e9d-110">元数据</span><span class="sxs-lookup"><span data-stu-id="20e9d-110">Metadata</span></span>
-- <span data-ttu-id="20e9d-111">错误处理。</span><span class="sxs-lookup"><span data-stu-id="20e9d-111">Error handling</span></span>
-- <span data-ttu-id="20e9d-112">WS\* 协议</span><span class="sxs-lookup"><span data-stu-id="20e9d-112">WS-\* protocols</span></span>
+- <span data-ttu-id="258f2-107">操作和方法</span><span class="sxs-lookup"><span data-stu-id="258f2-107">Operations and methods</span></span>
+- <span data-ttu-id="258f2-108">绑定和传输</span><span class="sxs-lookup"><span data-stu-id="258f2-108">Bindings and transports</span></span>
+- <span data-ttu-id="258f2-109">RPC 类型</span><span class="sxs-lookup"><span data-stu-id="258f2-109">RPC types</span></span>
+- <span data-ttu-id="258f2-110">元数据</span><span class="sxs-lookup"><span data-stu-id="258f2-110">Metadata</span></span>
+- <span data-ttu-id="258f2-111">错误处理</span><span class="sxs-lookup"><span data-stu-id="258f2-111">Error handling</span></span>
+- <span data-ttu-id="258f2-112">WS \* 协议</span><span class="sxs-lookup"><span data-stu-id="258f2-112">WS-\* protocols</span></span>
 
-## <a name="grpc-example"></a><span data-ttu-id="20e9d-113">gRPC 示例</span><span class="sxs-lookup"><span data-stu-id="20e9d-113">gRPC example</span></span>
+## <a name="grpc-example"></a><span data-ttu-id="258f2-113">gRPC 示例</span><span class="sxs-lookup"><span data-stu-id="258f2-113">gRPC example</span></span>
 
-<span data-ttu-id="20e9d-114">当你从 Visual Studio 2019 或命令行创建新的 ASP.NET Core 3.0 gRPC 项目时，将为你生成 gRPC 等效的 "Hello World"。</span><span class="sxs-lookup"><span data-stu-id="20e9d-114">When you create a new ASP.NET Core 3.0 gRPC project from Visual Studio 2019 or the command line, the gRPC equivalent of "Hello World" is generated for you.</span></span> <span data-ttu-id="20e9d-115">它包含一个用于定义服务及其消息的 `greeter.proto` 文件，以及一个包含服务实现的 `GreeterService.cs` 文件。</span><span class="sxs-lookup"><span data-stu-id="20e9d-115">It consists of a `greeter.proto` file that defines the service and its messages, and a `GreeterService.cs` file with an implementation of the service.</span></span>
+<span data-ttu-id="258f2-114">当你从 Visual Studio 2019 或命令行创建新的 ASP.NET Core 5.0 gRPC 项目时，将为你生成 gRPC 等效的 "Hello World"。</span><span class="sxs-lookup"><span data-stu-id="258f2-114">When you create a new ASP.NET Core 5.0 gRPC project from Visual Studio 2019 or the command line, the gRPC equivalent of "Hello World" is generated for you.</span></span> <span data-ttu-id="258f2-115">它包含用于 `greeter.proto` 定义服务及其消息的文件，以及 `GreeterService.cs` 包含服务的实现的文件。</span><span class="sxs-lookup"><span data-stu-id="258f2-115">It consists of a `greeter.proto` file that defines the service and its messages, and a `GreeterService.cs` file with an implementation of the service.</span></span>
 
 ```protobuf
 syntax = "proto3";
@@ -74,9 +74,9 @@ namespace HelloGrpc
 }
 ```
 
-<span data-ttu-id="20e9d-116">本章介绍了 gRPC 的不同概念和功能。</span><span class="sxs-lookup"><span data-stu-id="20e9d-116">This chapter will refer to this example code when explaining different concepts and features of gRPC.</span></span>
+<span data-ttu-id="258f2-116">本章介绍了 gRPC 的不同概念和功能。</span><span class="sxs-lookup"><span data-stu-id="258f2-116">This chapter will refer to this example code when explaining different concepts and features of gRPC.</span></span>
 
 >[!div class="step-by-step"]
-><span data-ttu-id="20e9d-117">[上一页](protobuf-maps.md)
->[下一页](wcf-endpoints-grpc-methods.md)</span><span class="sxs-lookup"><span data-stu-id="20e9d-117">[Previous](protobuf-maps.md)
+><span data-ttu-id="258f2-117">[上一页](protobuf-maps.md)
+>[下一页](wcf-endpoints-grpc-methods.md)</span><span class="sxs-lookup"><span data-stu-id="258f2-117">[Previous](protobuf-maps.md)
 [Next](wcf-endpoints-grpc-methods.md)</span></span>
