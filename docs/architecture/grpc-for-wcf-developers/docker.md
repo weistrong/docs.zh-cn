@@ -1,13 +1,13 @@
 ---
 title: 适用于 WCF 开发人员的 Docker gRPC
 description: 为 ASP.NET Core gRPC 应用程序创建 Docker 映像
-ms.date: 12/15/2020
-ms.openlocfilehash: f662dbd67f00b828f3e1dfa47359a450dd1c5900
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.date: 01/06/2021
+ms.openlocfilehash: f59518a28b0a1dee75c792ba03bd4af826638502
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938411"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970084"
 ---
 # <a name="create-docker-images"></a>创建 Docker 映像
 
@@ -15,7 +15,7 @@ ms.locfileid: "97938411"
 
 ## <a name="microsoft-base-images-for-aspnet-core-applications"></a>用于 ASP.NET Core 应用程序的 Microsoft 基础映像
 
-Microsoft 提供了一系列用于构建和运行 .NET Core 应用程序的基本映像。 若要创建 ASP.NET Core 3.0 映像，请使用两个基本映像：
+Microsoft 提供了一系列用于构建和运行 .NET 应用程序的基本映像。 若要创建 ASP.NET Core 5.0 映像，请使用两个基本映像：
 
 - 用于生成和发布应用程序的 SDK 映像。
 - 用于部署的运行时映像。
@@ -30,9 +30,8 @@ Microsoft 提供了一系列用于构建和运行 .NET Core 应用程序的基�
 | 图像标记 (s)  | Linux | 备注 |
 | --------- | ----- | ----- |
 | 5.0-buster、5。0 | Debian 10 | 如果未指定操作系统变体，则为默认映像。 |
-| 5.0-alpine | Alpine 3。9 | Alpine 基本映像比 Debian 或 Ubuntu 映像小得多。 |
-| 5.0-disco | Ubuntu 19.04 | |
-| 5.0-bionic | Ubuntu 18.04 | |
+| 5.0-alpine | Alpine 3.12 | Alpine 基本映像比 Debian 或 Ubuntu 映像小得多。 |
+| 5.0-焦点| Ubuntu 20.04 | |
 
 对于 Debian 和 Ubuntu 映像，Alpine 基本映像约 100 MB，比较 200 MB。 某些软件包或库可能在 Alpine 的包管理中不可用。 如果你不确定要使用哪个映像，则应选择默认 Debian。
 
@@ -116,7 +115,7 @@ obj/
 对于 `StockKube.sln` 包含两个不同应用程序的解决方案 `StockData` `StockWeb` ，最简单的方法是将每个应用程序的 Dockerfile 放在基目录中。 在这种情况下，若要生成映像，请使用 `docker build` 文件所在的同一目录中的以下命令 `.sln` 。
 
 ```console
-docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 令困惑命名 `--tag` 标志 (可以缩短为 `-t`) 指定图像的整个名称，包括实际标记（如果指定）。 `.`结束时指定将在其中运行生成的上下文; `COPY` Dockerfile 中命令的当前工作目录。
@@ -124,7 +123,7 @@ docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
 如果一个解决方案中有多个应用程序，则可以将每个应用程序的 Dockerfile 保存在其自己的文件夹中的 `.csproj` 文件旁边。 你仍应该 `docker build` 从基本目录运行命令，以确保将解决方案和所有项目都复制到映像中。 可以通过使用 `--file` (或) 标志，在当前目录下指定 Dockerfile `-f` 。
 
 ```console
-docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 ## <a name="run-the-image-in-a-container-on-your-machine"></a>在计算机上的容器中运行映像

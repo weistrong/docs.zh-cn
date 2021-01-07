@@ -1,13 +1,13 @@
 ---
 title: 为 WCF 开发人员创建新的 ASP.NET Core gRPC 项目-gRPC
 description: 了解如何使用 Visual Studio 或命令行创建 gRPC 项目。
-ms.date: 12/15/2020
-ms.openlocfilehash: 960725a9507797f43b2c15283e384b0ad827c2b1
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.date: 01/06/2021
+ms.openlocfilehash: c9d66a773f0633c2ae93c42ce3ce53084032cd17
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938646"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970253"
 ---
 # <a name="create-a-new-aspnet-core-grpc-project"></a>创建新的 ASP.NET Core gRPC 项目
 
@@ -16,7 +16,7 @@ ms.locfileid: "97938646"
 ## <a name="create-the-project-by-using-visual-studio"></a>使用 Visual Studio 创建项目
 
 > [!IMPORTANT]
-> 若要开发任何 ASP.NET Core 5.0 应用，需要安装 **ASP.NET 和 web 开发** 工作负荷的 Visual Studio 2019 版本16.3 或更高版本。
+> 若要开发任何 ASP.NET Core 5.0 应用，需要安装 **ASP.NET 和 web 开发** 工作负荷的 Visual Studio 2019 版本16.8 或更高版本。
 
 从 *空白解决方案* 模板创建名为 **TraderSys** 的空解决方案。 添加一个名为的解决方案文件夹 `src` 。 然后，右键单击该文件夹，然后选择 "**添加**  >  **新项目**"。 `grpc`在模板搜索框中输入，应会看到名为的项目模板 `gRPC Service` 。
 

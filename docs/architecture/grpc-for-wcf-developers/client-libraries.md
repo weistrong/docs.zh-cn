@@ -1,13 +1,13 @@
 ---
 title: 创建 gRPC 客户端库-WCF 开发人员 gRPC
 description: 针对 gRPC services 的共享客户端库/包的讨论。
-ms.date: 12/15/2020
-ms.openlocfilehash: b1233bb40a5fa2119a325be2657b500a4c626c18
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.date: 01/06/2021
+ms.openlocfilehash: c55b6d1da2377af0b687e32e7776f12b96b0a2ba
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938424"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970123"
 ---
 # <a name="create-grpc-client-libraries"></a>创建 gRPC 客户端库
 
@@ -147,7 +147,7 @@ namespace Grpc.Core
 
 ## <a name="summary"></a>总结
 
-<xref:System.IAsyncDisposable>和 <xref:System.IObservable%601> 模型都是支持良好的，并以详细的方式记录了如何处理 .net 中的数据数据流。 gRPC 流可以很好地映射到这两个范例，提供与 .NET 的紧密集成，并提供反应性和异步编程风格。
+<xref:System.Collections.Generic.IAsyncEnumerable%601>和 <xref:System.IObservable%601> 模型都是支持良好的，并以详细的方式记录了如何处理 .net 中的数据数据流。 gRPC 流可以很好地映射到这两个范例，提供与 .NET 的紧密集成，并提供反应性和异步编程风格。
 
 >[!div class="step-by-step"]
 >[上一页](streaming-versus-repeated.md)
