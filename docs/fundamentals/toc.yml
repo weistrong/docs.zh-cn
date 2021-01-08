@@ -393,14 +393,28 @@ items:
               - name: 概述
                 displayName: dumps
                 href: ../core/diagnostics/dumps.md
+              - name: 调试 StackOverflow
+                href: ../core/diagnostics/debug-stackoverflow.md
               - name: Linux 转储
                 href: ../core/diagnostics/debug-linux-dumps.md
+              - name: SOS 调试程序扩展
+                href: ../core/diagnostics/sos-debugging-extension.md
           - name: EventCounters
-            href: ../core/diagnostics/event-counters.md
+            items:
+              - name: 概述
+                displayName: EventCounters
+                href: ../core/diagnostics/event-counters.md
+              - name: .NET 中的已知计数器
+                href: ../core/diagnostics/available-counters.md
           - name: EventPipe
             href: ../core/diagnostics/eventpipe.md
           - name: 日志记录和跟踪
-            href: ../core/diagnostics/logging-tracing.md
+            items:
+              - name: 概述
+                displayName: logging and tracing
+                href: ../core/diagnostics/logging-tracing.md
+              - name: 已知事件提供程序
+                href: ../core/diagnostics/well-known-event-providers.md
           - name: 运行时事件
             items:
               - name: 概述
@@ -579,8 +593,6 @@ items:
                         href: code-analysis/quality-rules/ca1069.md
                       - name: CA1070
                         href: code-analysis/quality-rules/ca1070.md
-                      - name: CA1071
-                        href: code-analysis/quality-rules/ca1071.md
                   - name: 文档规则
                     items:
                       - name: 概述

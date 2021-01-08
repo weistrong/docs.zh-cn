@@ -5,16 +5,18 @@
   items:
     - name: Azure 和 .NET 简介
       href: intro.md
-    - name: 开发人员工具
-      href: tools.md
-    - name: 身份验证
-      href: authentication.md
-    - name: Logging
-      href: logging.md
-    - name: package
-      href: packages.md
-    - name: SDK 示例
-      href: /samples/dotnet/samples/azure-identity-resource-management-storage/
+    - name: 面向 .NET 开发人员的主要 Azure 服务
+      href: key-azure-services.md
+    - name: 配置开发环境
+      items:
+        - name: 创建 Azure 帐户
+          href: create-azure-account.md
+        - name: 配置 Visual Studio for Azure 开发 (Windows)
+          href: configure-visual-studio.md
+        - name: 配置 VS Code for Azure 开发（跨平台）
+          href: configure-vs-code.md
+        - name: 安装 Azure CLI
+          href: install-azure-cli.md
 - name: 迁移到 Azure
   items:
     - name: 选择正确的 Azure 托管选项
@@ -25,6 +27,20 @@
       href: ./migration/vm.md
     - name: 将 SQL Server 数据库迁移到 Azure
       href: ./migration/sql.md
+- name: 用于 .NET 的 Azure SDK
+  items:
+    - name: 什么是 Azure SDK for .NET？
+      href: ./sdk/azure-sdk-for-dotnet.md
+    - name: 身份验证
+      href: authentication.md
+    - name: Logging
+      href: logging.md
+    - name: 配置代理服务器
+      href: ./sdk/azure-sdk-configure-proxy.md
+    - name: 包列表
+      href: packages.md
+    - name: SDK 示例
+      href: /samples/dotnet/samples/azure-identity-resource-management-storage/
 - name: 示例代码
   items:
     - name: Web 应用与无服务器
