@@ -2,12 +2,12 @@
 title: XML 文档
 description: '了解有关 F # 的支持，以便从注释生成文档。'
 ms.date: 09/15/2020
-ms.openlocfilehash: 24d9dbfb5e28d39e224ef9428f025298464fc7f4
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: 2f8788e79ea964143eecfaddbeb039474dd61f8e
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95099004"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025011"
 ---
 # <a name="document-your-code-with-xml-comments"></a>使用 XML 注释记录代码
 
@@ -53,7 +53,7 @@ XML 文档注释是一种特殊注释，添加在任何用户定义的类型或�
 
 如果使用的是 XML 标记，下表描述了在 F # XML 代码注释中识别的外部标记。
 
-| 标记语法                                  | 说明 |
+| 标记语法                                  | 描述 |
 |---------------------------------------------|-----------|
 | `<summary>`**_全文_**`</summary>`           | 指定 *文本* 为程序元素的简短说明。 描述通常是一两个句子。|
 | `<remarks>`**_全文_**`</remarks>`           | 指定 *文本* 包含有关程序元素的补充信息。|
@@ -65,7 +65,7 @@ XML 文档注释是一种特殊注释，添加在任何用户定义的类型或�
 
 下表描述了 "说明" 部分中使用的标记：
 
-| 标记语法                                | 说明 |
+| 标记语法                                | 描述 |
 |-------------------------------------------|-------------|
 | `<para>`**_全文_**`</para>`               | 指定文本段落。 用于分隔 **备注** 标记内的文本。|
 | `<code>`**_全文_**`</code>`               | 指定 *文本* 为多行代码。 文档生成器可以使用此标记以适用于代码的字体显示文本。|
@@ -101,7 +101,7 @@ type SomeType
 
 ## <a name="limitations"></a>限制
 
-C # 中不支持 c # 和其他 .NET 语言的 XML 文档的某些功能。
+F # 不支持 c # 和其他 .NET 语言中的 XML 文档的某些功能。
 
 - 在 F # 中，交叉引用必须使用相应符号的完整 XML 签名，例如 `cref="T:System.Console"` 。
   简单的 c # 样式交叉引用（如） `cref="Console"` 不会详细阐述为完整的 XML 签名，并且 F # 编译器不会检查这些元素。 某些文档工具可能允许通过后续处理使用这些交叉引用，但应使用完整的签名。
