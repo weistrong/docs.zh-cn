@@ -1,19 +1,19 @@
 ---
 title: 使用 Microsoft 平台和工具的容器化 Docker 应用程序的生命周期
 description: 在基本层面概要了解使用 Docker 和 Microsoft 平台及工具开发和部署容器化应用程序的过程。
-ms.date: 11/10/2020
-ms.openlocfilehash: cf20ea97ec252649cdb14add40ead67b6319520a
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.date: 01/06/2021
+ms.openlocfilehash: 94c277e349bacee9b9fc7b160043005dd4135958
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94506657"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970110"
 ---
 # <a name="containerized-docker-application-lifecycle-with-microsoft-platform-and-tools"></a>使用 Microsoft 平台和工具的容器化 Docker 应用程序的生命周期
 
 ![封面](./media/devops-book-cover-large-we.png)
 
-**版本 v3.1** - 已更新到 ASP.NET Core v3.1
+**EDITION v5.0** - 已更新到 ASP.NET Core 5.0
 
 请参阅[更改记录](https://aka.ms/DockerLifecycleEbookChangelog)了解书籍更新和社区贡献。
 
@@ -71,7 +71,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-版权所有 &copy; 2020 Microsoft Corporation
+版权所有 &copy; 2021 Microsoft Corporation
 
 保留所有权利。 未经发布者书面许可，不得以任何形式或任何方式复制或传播本书中的任何内容。
 

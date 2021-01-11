@@ -1,13 +1,13 @@
 ---
 title: 使用 Microsoft 工具的 Docker 应用程序 DevOps 工作流
 description: 通过 Microsoft 工具和 Microsoft 平台及工具 DevOps 工作流实现容器化的 Docker 应用程序生命周期
-ms.date: 08/06/2020
-ms.openlocfilehash: 30c5066fa90d8792d8eef8f760dc63c00ce32130
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.date: 01/06/2021
+ms.openlocfilehash: 7f2d380dec046804772ea7d13e764ab6f3224c12
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915201"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970149"
 ---
 # <a name="docker-application-devops-workflow-with-microsoft-tools"></a>使用 Microsoft 工具的 Docker 应用程序 DevOps 工作流
 
@@ -15,11 +15,11 @@ ms.locfileid: "87915201"
 
 借助云端的 Visual Studio 和 Azure DevOps Services，还有本地的 Team Foundation Server，开发团队可高效地构建、测试和发布面向 Windows 或 Linux 的容器化应用程序。
 
-Microsoft 工具可通过全局生成和持续集成 (CI)，还有通过 Azure DevOps Services 进行的测试，来针对容器化应用程序的特定实现（Docker、.NET Core 或与其他平台的任何组合）实现管道自动化，从而持续部署 (CD) 到 Docker 环境（开发、过渡、生产），并通过 Azure Monitor 将有关服务的分析信息传递给开发团队。 每个代码提交都能启动生成 (CI) 过程并自动将服务部署到特定的容器化环境 (CD)。
+Microsoft 工具可通过全局生成和持续集成 (CI)，还有通过 Azure DevOps Services 或 Team Foundation Server 进行的测试，来针对容器化应用程序的特定实现（Docker、.NET 或与其他平台的任何组合）实现管道自动化，从而持续部署 (CD) 到 Docker 环境（开发、过渡、生产），并通过 Azure Monitor 将有关服务的分析信息传递给开发团队。 每个代码提交都能启动生成 (CI) 过程并自动将服务部署到特定的容器化环境 (CD)。
 
 开发者和测试者可以使用 Microsoft Azure 中的模板快速轻松地配置生产环境，如基于 Docker 的开发和测试环境。
 
-容器化应用程序开发的复杂度根据业务复杂度和可伸缩性需要逐步增加。 这种复杂性的一个很好的例子就是基于微服务体系结构的应用程序。 要在此类环境中成功操作，你的项目必须自动处理整个生命周期 - 不仅是生成和部署，还必须收集遥测数据并管理版本。 Azure DevOps Service 和 Azure 提供了以下功能：
+容器化应用程序开发的复杂度根据业务复杂度和可伸缩性需要逐步增加。 这种复杂性的一个很好的例子就是基于微服务体系结构的应用程序。 要在此类环境中取得成功，你的项目必须在整个生命周期（而不仅是在生成和部署阶段）实现自动化，同时还必须管理版本并收集遥测数据。 Azure DevOps Service 和 Azure 提供了以下功能：
 
 - Azure DevOps Services/Team Foundation Server 源代码管理（基于 Git 或 Team Foundation 版本控制）、敏捷规划（支持 Agile、Scrum 和 CMMI）、CI、发布管理，以及适合敏捷团队的其他工具。
 
