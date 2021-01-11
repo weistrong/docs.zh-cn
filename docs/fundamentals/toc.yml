@@ -37,6 +37,10 @@ items:
                 href: ../core/install/linux-rhel.md
               - name: SLES
                 href: ../core/install/linux-sles.md
+              - name: 通过贴靠安装
+                href: ../core/install/linux-snap.md
+              - name: 安装脚本和二进制文件
+                href: ../core/install/linux-scripted-manual.md
           - name: 删除过时的运行时和 SDK
             href: ../core/install/remove-runtime-sdk-versions.md
           - name: 管理 .NET 模板
@@ -1644,6 +1648,8 @@ items:
                     href: ../standard/serialization/system-text-json-polymorphism.md
               - name: 如何从 Newtonsoft.Json 迁移
                 href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+              - name: 受支持的集合类型
+                href: ../standard/serialization/system-text-json-supported-collection-types.md
               - name: 高级
                 items:
                   - name: 自定义字符编码
@@ -2290,7 +2296,7 @@ items:
           - name: 整理 .NET Core 的项目
             href: ../core/porting/project-structure.md
           - name: 不可用的技术
-            href: ../core/porting/net-framework-tech-unavailable.md
+            href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: 工具
             href: ../core/porting/tools.md
           - name: 使用 Windows 兼容包
