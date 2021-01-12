@@ -1,21 +1,25 @@
 ---
-title: 通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序（第 2 版）
+title: 使用 Azure 云和 Windows 容器更新现有 .NET 应用程序
 description: 阅读此电子书，了解如何将现有应用程序直接迁移到 Azure 云和 Windows 容器以实现现代化。
-ms.date: 04/28/2018
-ms.openlocfilehash: f4ae4e2d24d343b55811955fb43e929c0db6f01b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/07/2021
+ms.openlocfilehash: bf6e6dff75c939508947aabeda14955b880f5a89
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705327"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025462"
 ---
-# <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers-2nd-edition"></a>通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序（第 2 版）
+# <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers"></a>使用 Azure 云和 Windows 容器现代化现有 .NET 应用程序
 
 ![现代化 .NET 应用程序指南的封面图像。](./media/index/web-application-guide-cover-image.png)
 
+**EDITION v5.0**
+
+请参阅[更改记录](https://aka.ms/modernize-ebook-changelog)了解书籍更新和社区贡献。
+
 由 Microsoft 出版社和 Microsoft Corporation 的 Microsoft DevDiv 部门出版，华盛顿州雷蒙德市 One Microsoft Way 98052-6399
 
-版权所有 © 2020 Microsoft Corporation
+版权所有 © 2021 Microsoft Corporation
 
 保留所有权利。 未经发布者书面许可，不得以任何形式或任何方式复制本书中的任何内容。
 
@@ -47,7 +51,7 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 ## <a name="about-this-guide"></a>关于本指南
 
-本指南主要重点介绍现有 Microsoft .NET Framework Web 应用程序或面向服务的应用程序的初始现代化，即将工作负荷移动到更新或更现代化的环境，而不会显著改变应用程序的代码和基本体系结构。
+本指南主要重点介绍现有 Microsoft .NET Framework Web 应用程序或面向服务的应用程序的初始现代化，即将工作负载移动到更新或更现代化的环境，而不会显著改变应用程序的代码和基本体系结构。
 
 本指南还强调使用一组特定的新技术和方法（如，Windows 容器和 Azure 中支持 Windows 容器的相关计算平台）将应用移动到云并部分现代化应用的益处。
 
@@ -69,10 +73,10 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 每个应用程序成熟度的定义和简短说明如下所示：
 
-**级别 1：云基础结构就绪** 的应用程序：使用此迁移方法，将当前本地应用程序迁移或重新托管到基础结构即服务 ([IaaS](https://azure.microsoft.com/overview/what-is-iaas/)) 平台即可。 应用的组成与之前基本一致，但现在可将它们部署到云中的 VM。
+**级别 1：云基础结构就绪** 的应用程序：使用此迁移方法，只需将当前本地应用程序迁移或重新托管到基础结构即服务 ([IaaS](https://azure.microsoft.com/overview/what-is-iaas/)) 平台。 应用的组成与之前基本一致，但现在可将它们部署到云中的 VM。
 这种简单类型的迁移在业内通常称为“直接迁移”。
 
-**级别 2：云优化** 的应用程序：在此级别，仍无需重新架构或改写大量代码，可以利用容器和其他云托管服务等现代化技术在云中运行应用，从而获得更多益处。 通过优化企业开发操作 (DevOps) 流程，可以提高应用程序的敏捷性，以实现更快交付。 这可以通过使用某种技术（如基于 Docker 引擎的 Windows 容器）实现。 分多个阶段部署时，容器可以消除因应用程序依赖项造成的冲突。 在此成熟度模型中，可以在 IaaS 或 PaaS 上部署容器，同时使用与数据库、缓存即服务、监视以及持续集成/持续部署 (CI/CD) 管道相关的其他云托管服务。
+**级别 2：云优化** 的应用程序：在此级别，仍无需重新架构或改写大量代码，可以利用容器和其他云托管服务等现代化技术在云中运行应用，从而获得更多益处。 通过优化企业开发操作 (DevOps) 流程，可以提高应用程序的敏捷性，以实现更快交付。 此功能可以通过使用某种技术（如基于 Docker 引擎的 Windows 容器）实现。 分多个阶段部署时，容器可以消除因应用程序依赖项造成的冲突。 在此成熟度模型中，可以在 IaaS 或 PaaS 上部署容器，同时使用与数据库、缓存即服务、监视以及持续集成/持续部署 (CI/CD) 管道相关的其他云托管服务。
 
 第三个成熟度级别是云中的最终目标，但对于很多应用它是可选的，并不是本指南的主要重点：
 
@@ -80,7 +84,7 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 表 1-1 介绍了选择每种迁移或更新方法的主要优点和原因。
 
-| **云基础结构就绪** <br /> *直接迁移* | **云优化** <br /> *现代化* | **云本机** <br /> *现代化、重新架构和重写* |
+| **云基础结构就绪** <br /> *直接迁移* | **云优化** <br /> *现代化* | **云本机** <br /> 现代化、重新架构和重写 |
 |---|---|---|
 | **应用程序的计算目标** |
 | 部署到 Azure 中 VM 的应用程序 | 部署到 Azure 应用服务、Azure 容器实例 (ACI)、包含容器的 VM 或 AKS（Azure Kubernetes 服务）的单层或 N 层应用 | Azure Kubernetes 服务 (AKS) 上的容器化的微服务和/或基于 Azure Functions 的无服务器微服务。 |
@@ -89,7 +93,7 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 | **优点**|
 | <li>无需重新架构，无需编写新代码 <li> 需要的工作量最少，实现快速迁移 <li> Azure 中支持最小公分母 <li> 保证基本可用性 <li> 移动到云后，更容易更新 | <li> 无需重新架构 <li> 极少代码/配置更改 <li> 由于容器的原因，改进了部署和 DevOps 发布敏捷性 <li> 增加了密度，降低了部署成本 <li> 应用的可移植性和依赖项 <li> 主机目标的灵活性：PaaS 方法或 IaaS | <li> 针对云进行架构，可以从云获得最大优势，但需要新代码 <li> 微服务云原生方法 <li> 现代化任务关键型应用程序，具有云复原能力，可实现超大规模缩放 <li> 完全托管服务 <li> 优化了规模 <li> 通过子系统优化了自主敏捷性 <li> 基于部署和 DevOps |
 | **挑战** |
-| <li> 除了转移运营费用或关闭数据中心之外，云价值较小 <li> 几乎无需管理：无 OS 或中间件修补；可使用基础架构解决方案，如 Terraform、Spinnaker 或 Puppet | <li> 容器化是开发者和 IT 运营学习曲线中一个额外的步骤 <li> DevOps 和 CI/CD 管道通常是此方法的“必备项”。 如果组织文化中当前没有这些必备品，这可能是一个额外的挑战| <li> 进行现代化时，需要重新架构云本机应用和微服务体系结构，并且通常需要进行大量的代码重构或重写（增加时间和预算）|
+| <li> 除转移运营费用或关闭数据中心之外，云价值较小 <li> 几乎无需管理：无 OS 或中间件修补；可使用基础架构解决方案，如 Terraform、Spinnaker 或 Puppet | <li> 容器化是开发者和 IT 运营学习曲线中一个额外的步骤 <li> DevOps 和 CI/CD 管道通常是此方法的“必备项”。 如果组织文化中当前没有这些必备品，这可能是一个额外的挑战| <li> 进行现代化时，需要重新架构云本机应用和微服务体系结构，并且通常需要进行大量的代码重构或重写（增加时间和预算）|
 > **表 1-1**。 现有 .NET 应用程序和服务的更新途径的优势和挑战
 
 ### <a name="key-technologies-and-architectures-by-maturity-level"></a>各成熟度级别使用的关键技术和体系结构
@@ -145,7 +149,7 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 **图 1-6**。 云优化应用方案示例，使用 Windows 容器和托管服务
 
-你可以通过为特定方案添加若干微服务来扩展现有的云优化应用程序。 这会将你部分移动到云本机级别，当前指南不重点介绍此部分。
+你可以通过为特定方案添加若干微服务来扩展现有的云优化应用程序。 此方法可将你部分移动到云本机模型级别，当前指南不重点介绍此部分。
 
 ## <a name="what-this-guide-does-not-cover"></a>本指南未涵盖的内容
 
@@ -184,7 +188,7 @@ Microsoft 和 <https://www.microsoft.com> 上“商标”网页列出的商标�
 
 ## <a name="sample-apps-for-modernizing-legacy-apps-eshopmodernizing"></a>用于更新旧版应用的示例应用：eShopModernizing
 
-GitHub 上的 [EShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) 存储库提供了两个示例应用程序，用以模拟旧版单片 Web 应用程序。 第一个 Web 应用是用 ASP.NET MVC 开发的；第二个 Web 应用是用 ASP.NET Web Forms 开发的；三个应用是一个 N 层应用，其 WinForms 客户端桌面应用使用 WCF 服务后端。 这些应用都基于传统 .NET Framework。 这些示例应用不使用 .NET Core 或 ASP.NET Core，它们是要更新的现有/旧版 .NET Framework 应用程序。
+GitHub 上的 [EShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) 存储库提供了两个示例应用程序，用以模拟旧版单片 Web 应用程序。 第一个 Web 应用是用 ASP.NET MVC 开发的；第二个 Web 应用是用 ASP.NET Web Forms 开发的；三个应用是一个 N 层应用，其 WinForms 客户端桌面应用使用 WCF 服务后端。 这些应用都基于传统 .NET Framework。 这些示例应用不使用 .NET Core/.NET 5.0 或 ASP.NET Core，它们是要更新的现有/旧版 .NET Framework 应用程序。
 
 这些示例应用都有第二个版本，它们使用现代化代码，十分直接。 两个应用版本之间最重要的差异是第二个版本使用 Windows 容器作为部署选项。 第二个版本中还新增了一些组件，如用于管理映像的 Azure 存储 Blobs、管理安全的 Azure Active Directory，以及用于监视和审核应用程序的 Azure Application Insights。
 

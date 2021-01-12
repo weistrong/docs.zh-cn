@@ -1,13 +1,13 @@
 ---
 title: 中断性变更：对于 WPF 和 WinForms 应用，OutputType 设置为 WinExe
-description: 了解 .NET 5.0 中的以下中断性变更：对于 Windows 窗体应用，OutputType 自动设置为 WinExe。
+description: 了解 .NET SDK 5.0.100 中的以下中断性变更：对于 Windows 窗体应用，OutputType 自动设置为 WinExe。
 ms.date: 09/18/2020
-ms.openlocfilehash: 072c5b11c8304eb540e176ce9747930789f28505
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0b56db57d5242f2fb001c4de339a7f696c088dfc
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759292"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633850"
 ---
 # <a name="outputtype-set-to-winexe-for-wpf-and-winforms-apps"></a>对于 WPF 和 WinForms 应用，OutputType 设置为 WinExe
 
@@ -15,7 +15,7 @@ ms.locfileid: "95759292"
 
 ## <a name="change-description"></a>更改说明
 
-在早期版本的 .NET 中，使用为项目文件中的 `OutputType` 指定的值。 例如：
+在早期版本的 .NET SDK 中，使用的是为项目文件中的 `OutputType` 指定的值。 例如：
 
 ```xml
 <PropertyGroup>
@@ -23,7 +23,7 @@ ms.locfileid: "95759292"
 </PropertyGroup>
 ```
 
-从 .NET 5.0 开始，对于 WPF 和 Windows 窗体应用，`OutputType` 自动设置为 `WinExe`。 例如：
+从 .NET SDK 的 5.0.100 版本开始，对于面向任何框架版本（包括 .NET Framework）的 WPF 和 Windows Forms 应用，`OutputType` 会自动设置为 `WinExe`。 例如：
 
 ```xml
 <PropertyGroup>
@@ -37,7 +37,7 @@ ms.locfileid: "95759292"
 
 ## <a name="version-introduced"></a>引入的版本
 
-.NET 5.0
+.NET 5.0.100
 
 ## <a name="recommended-action"></a>建议操作
 

@@ -3,30 +3,30 @@ title: 如何选择 ML.NET 算法
 description: 了解如何为机器学习模型选择 ML.NET 算法
 ms.topic: overview
 ms.date: 06/05/2019
-ms.openlocfilehash: 8af89800485f8f8ac35ee17df10a5e3c039da42d
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: 04cf191401c7c25f1fa341acaf9312dc19752260
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679633"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97593085"
 ---
 # <a name="how-to-choose-an-mlnet-algorithm"></a>如何选择 ML.NET 算法
 
 对于每个 [ML.NET 任务](resources/tasks.md)，有多种训练算法可供选择。 选择哪个算法取决于尝试解决的问题、数据的特征以及可用的计算和存储资源。 值得注意的是，训练机器学习模型是一个迭代过程。 可能需要尝试多种算法才能找到效果最好的算法。
 
-算法在**特征**上运行。 特征是根据输入数据进行计算的数字值。 它们是机器学习算法的最佳输入。 可以使用一个或多个[数据转换](resources/transforms.md)将原始输入数据转换为特征。 例如，文本数据被转换为一组字词计数和字词组合计数。 使用数据转换从原始数据类型中提取特征后，它们被称为**特征化**。 例如，特征化文本或特征化图像数据。
+算法在 **特征** 上运行。 特征是根据输入数据进行计算的数字值。 它们是机器学习算法的最佳输入。 可以使用一个或多个[数据转换](resources/transforms.md)将原始输入数据转换为特征。 例如，文本数据被转换为一组字词计数和字词组合计数。 使用数据转换从原始数据类型中提取特征后，它们被称为 **特征化**。 例如，特征化文本或特征化图像数据。
 
 ## <a name="trainer--algorithm--task"></a>训练程序 = 算法 + 任务
 
-算法是执行后可生成**模型**的数学运算。 不同的算法生成具有不同特征的模型。
+算法是执行后可生成 **模型** 的数学运算。 不同的算法生成具有不同特征的模型。
 
 借助 ML.NET，同一算法可以应用于不同的任务。 例如，随机双坐标上升可用于二元分类、多类分类和回归。 区别在于如何解释算法的输出来匹配任务。
 
-对于每个算法/任务组合，ML.NET 提供执行训练算法并进行解释的组件。 这些组件称为训练程序。 例如，<xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> 使用应用于**回归**任务的 **StochasticDualCoordinatedAscent** 算法。
+对于每种算法/任务组合，ML.NET 都提供用于执行训练算法并进行解释的组件。 这些组件称为训练程序。 例如，<xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> 使用应用于 **回归** 任务的 **StochasticDualCoordinatedAscent** 算法。
 
 ## <a name="linear-algorithms"></a>线性算法
 
-线性算法生成一个模型，该模型根据输入数据和一组**权重**的线性组合计算**分数**。 权重是训练期间估算的模型参数。
+线性算法生成一个模型，该模型根据输入数据和一组 **权重** 的线性组合计算 **分数**。 权重是训练期间估算的模型参数。
 
 线性算法适用于[线性可分](https://en.wikipedia.org/wiki/Linear_separability)的特征。
 

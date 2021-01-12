@@ -17,6 +17,10 @@
           href: configure-vs-code.md
         - name: 安装 Azure CLI
           href: install-azure-cli.md
+        - name: 安装其他工具
+          href: azure-tools.md
+        - name: 制定设置检查表
+          href: dotnet-dev-env-checklist.md
 - name: 迁移到 Azure
   items:
     - name: 选择正确的 Azure 托管选项

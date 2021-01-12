@@ -2,12 +2,12 @@
 title: 转储 - .NET
 description: 介绍 .NET 中的转储。
 ms.date: 10/12/2020
-ms.openlocfilehash: 56cf4085d10658c828bac39be93eed3f774e00d5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7a4c7bf54b3e9ea43e685eafbd00b4a373326520
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242768"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97764937"
 ---
 # <a name="dumps"></a>转储
 
@@ -53,7 +53,13 @@ ms.locfileid: "96242768"
 
 ## <a name="analyze-dumps"></a>分析转储
 
-可以使用 [`dotnet-dump`](dotnet-dump.md) 来分析转储。
+可以使用 [`dotnet-dump`](dotnet-dump.md) CLI 工具或 [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files) 分析转储。
+
+> [!NOTE]
+> Visual Studio 16.8 及更高版本允许[打开在 .NET Core 3.1.7 或更高版本上生成的 Linux 转储](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/)。  
+
+> [!NOTE]
+> 如果需要进行原生调试，则可以对 [Linux 和 macOS 上的 LLDB](debug-linux-dumps.md#analyze-dumps-on-linux) 使用 [SOS 调试器扩展](sos-debugging-extension.md)。 尽管建议使用 Visual Studio，但 Windows 上的 [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools) 也支持 SOS。
 
 ## <a name="see-also"></a>请参阅
 

@@ -2,12 +2,12 @@
 title: dotnet-dump 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-dump CLI 工具，以在没有任何本机调试器的情况下收集和分析 Windows 和 Linux 转储。
 ms.date: 11/17/2020
-ms.openlocfilehash: ea9a70c4dc47b5006339e9a197712092eb66b241
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: eaffbb1f2959dba5c25a603b6f785c7480e4a8c0
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822199"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97765041"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>转储收集和分析实用工具 (dotnet-dump)
 
@@ -146,34 +146,37 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `clrstack <arguments>`              | 仅提供托管代码的堆栈跟踪。                                                  |
 | `clrthreads <arguments>`            | 列出正在运行的托管线程。                                                            |
 | `dumpasync <arguments>`             | 显示有关垃圾回收堆上异步状态机的信息。                |
-| `dumpassembly <arguments>`          | 显示有关程序集的详细信息。                                                           |
-| `dumpclass <arguments>`             | 显示有关指定地址处的 EE 类结构的信息。                     |
-| `dumpdelegate <arguments>`          | 显示有关委托的信息。                                                        |
-| `dumpdomain <arguments>`            | 显示所有 AppDomain 和域中的所有程序集的信息。                |
+| `dumpassembly <arguments>`          | 显示有关指定地址处程序集的详细信息。                                 |
+| `dumpclass <arguments>`             | 显示有关指定地址处的 `EEClass` 结构的信息。                  |
+| `dumpdelegate <arguments>`          | 显示有关指定地址处的委托的信息。                             |
+| `dumpdomain <arguments>`            | 显示所有 AppDomain 和指定域中的所有程序集的信息。       |
 | `dumpheap <arguments>`              | 显示有关垃圾回收堆的信息和有关对象的收集统计信息。       |
 | `dumpil <arguments>`                | 显示与托管方法关联的 Microsoft 中间语言 (MSIL)。 |
 | `dumplog <arguments>`               | 将内存中压力日志的内容写入到指定文件。                         |
-| `dumpmd <arguments>`                | 显示有关指定地址处的 MethodDesc 结构的信息。                   |
-| `dumpmodule <arguments>`            | 显示有关指定地址处的 EE 模块结构的信息。                    |
-| `dumpmt <arguments>`                | 显示有关指定地址处的方法表的信息。                           |
-| `dumpobj <arguments>`               | 显示有关指定地址处的对象的信息。                                       |
+| `dumpmd <arguments>`                | 显示有关指定地址处的 `MethodDesc` 结构的信息。               |
+| `dumpmodule <arguments>`            | 显示有关指定地址处的模块的信息。                               |
+| `dumpmt <arguments>`                | 显示有关指定地址处的 `MethodTable` 的信息。                        |
+| `dumpobj <arguments>`               | 显示有关位于指定地址处的对象的信息。                                      |
 | `dso|dumpstackobjects <arguments>`  | 显示在当前堆栈的边界内找到的所有托管对象。                    |
 | `eeheap <arguments>`                | 显示有关内部运行时数据结构所使用的进程内存的信息。              |
 | `finalizequeue <arguments>`         | 显示所有已进行终结注册的对象。                                             |
-| `gcroot <arguments>`                | 显示有关对指定地址处的对象的引用（或根）的信息。              |
+| `gcroot <arguments>`                | 显示有关对指定地址处的对象的引用（或根）的信息。             |
 | `gcwhere <arguments>`               | 显示传入参数在 GC 堆中的位置。                               |
-| `ip2md <arguments>`                 | 显示 JIT 代码中指定地址处的 MethodDesc 结构。                       |
+| `ip2md <arguments>`                 | 显示 JIT 代码中指定地址处的 `MethodDesc` 结构。                     |
 | `histclear <arguments>`             | 释放由 `hist*` 命令系列使用的任何资源。                                |
 | `histinit <arguments>`              | 从保存在调试对象中的压力日志初始化 SOS 结构。                     |
 | `histobj <arguments>`               | 显示与 `<arguments>` 相关的垃圾回收压力日志重定位。              |
-| `histobjfind <arguments>`           | 显示在指定地址处引用对象的所有日志项。               |
+| `histobjfind <arguments>`           | 显示在指定地址处引用对象的所有日志项。              |
 | `histroot <arguments>`              | 显示与指定根的提升和重定位相关的信息。        |
 | `lm|modules`                        | 显示进程中的本机模块。                                                   |
-| `name2ee <arguments>`               | 显示 `<argument>` 的 MethodTable 结构和 EEClass 结构。                |
-| `pe|printexception <arguments>`     | 显示从地址 `<argument>` 处的 Exception 类派生的任何对象。             |
+| `name2ee <arguments>`               | 显示 `<argument>` 的 `MethodTable` 和 `EEClass` 结构。                     |
+| `pe|printexception <arguments>`     | 显示从 <xref:System.Exception> 类派生的 `<argument>` 的任何对象。      |
 | `setsymbolserver <arguments>`       | 启用符号服务器支持                                                             |
 | `syncblk <arguments>`               | 显示 SyncBlock 持有者信息。                                                           |
 | `threads|setthread <threadid>`      | 设置或显示 SOS 命令的当前线程 ID。                                  |
+
+> [!NOTE]
+> 可以在[适用于 .NET 的 SOS 调试扩展](sos-debugging-extension.md)中找到其他详细信息。
 
 ## <a name="using-dotnet-dump"></a>使用 `dotnet-dump`
 

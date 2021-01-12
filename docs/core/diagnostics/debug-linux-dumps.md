@@ -2,12 +2,12 @@
 title: 调试 Linux 转储
 description: 在本文中，你将了解如何从 Linux 环境收集和分析转储。
 ms.date: 08/27/2020
-ms.openlocfilehash: 94f923f2ec7b5fa20c2ebc9b83540094348dff03
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: e6f2eea3af718853ad7365a5209b397a66035dde
+ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95099141"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753596"
 ---
 # <a name="debug-linux-dumps"></a>调试 Linux 转储
 
@@ -15,7 +15,10 @@ ms.locfileid: "95099141"
 
 ## <a name="collect-dumps-on-linux"></a>在 Linux 上收集转储
 
-在 Linux 上收集转储的两种建议方法是使用 [`dotnet-dump`](dotnet-dump.md) 或 [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) 工具。
+在 Linux 上收集转储的两种建议方法是：
+
+* [`dotnet-dump`](dotnet-dump.md) CLI 工具
+* 用于在故障时收集转储的[环境变量](dumps.md#collecting-dumps-on-crash)
 
 ### <a name="managed-dumps-with-dotnet-dump"></a>使用 `dotnet-dump` 的托管转储
 

@@ -3,12 +3,12 @@ title: 使用 PerfCollect 跟踪 .NET 应用程序。
 description: 本教程引导你完成在 .NET 中使用 perfcollect 收集跟踪的过程。
 ms.topic: tutorial
 ms.date: 10/23/2020
-ms.openlocfilehash: 376c957833924a9991e574557671ea3c8503d7c2
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.openlocfilehash: 53e4584953d2af4e766daadfa757cca752ae7329
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94507236"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97593215"
 ---
 # <a name="trace-net-applications-with-perfcollect"></a>使用 PerfCollect 跟踪 .NET 应用程序
 
@@ -250,3 +250,31 @@ export COMPlus_ZapDisable=1
 ## <a name="collect-in-a-docker-container"></a>在 Docker 容器中收集信息
 
 有关如何在容器环境中使用 `perfcollect` 的详细信息，请参阅[在容器中收集诊断信息](./diagnostics-in-containers.md)。
+
+## <a name="learn-more-about-collection-options"></a>了解有关集合选项的详细信息
+
+你可以使用 `perfcollect` 指定以下可选标志，以更好地满足诊断需求。
+
+### <a name="collect-for-a-specific-duration"></a>在特定的时间内收集
+
+如果要收集特定时间内的跟踪，可以使用 `-collectsec` 选项后跟一个数字，该数字指定收集跟踪的总秒数。
+
+### <a name="collect-threadtime-traces"></a>收集线程时间跟踪
+
+使用 `perfcollect` 指定 `-threadtime` 可让你收集每个线程的 CPU 使用率数据。 从而分析每个线程将 CPU 时间用在何处。
+
+### <a name="collect-traces-for-managed-memory-and-garbage-collector-performance"></a>收集托管内存和垃圾回收器性能的跟踪
+
+以下选项可让你专门收集运行时中的 GC 事件。
+
+* `perfcollect collect -gccollectonly`
+
+仅收集一组最少的 GC 收集事件。 这是最不详细的 GC 事件收集配置文件，对目标应用性能的影响最小。 此命令类似于 PerfView 中的 `PerfView.exe /GCCollectOnly collect` 命令。
+
+* `perfcollect collect -gconly`
+
+收集更详细的 GC 收集事件，包括 JIT、加载程序和异常事件。 这会请求更详细的事件（例如分配信息和 GC 联接信息），对目标应用性能产生的影响比 `-gccollectonly` 选项产生的影响更大。 此命令类似于 PerfView 中的 `PerfView.exe /GCOnly collect` 命令。
+
+* `perfcollect collect -gcwithheap`
+
+收集最详细的 GC 收集事件（用于跟踪堆的存活和移动情况）。 这会对 GC 行为进行深入分析，但会对性能产生较大的影响，因为每个 GC 都可能需要两倍的时间。 建议在生产环境中进行跟踪时，了解使用此跟踪选项的性能影响。

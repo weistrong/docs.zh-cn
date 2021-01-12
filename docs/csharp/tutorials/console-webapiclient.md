@@ -3,12 +3,12 @@ title: 使用 .NET Core 创建 REST 客户端
 description: 此教程将介绍 .NET Core 和 C# 语言的许多功能。
 ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: 8db87440bb6e0995b1cc2c97b0d28995170ada8c
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: b537108bd77b3ed2248ca9e459044e09fa854ba9
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656939"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97899647"
 ---
 # <a name="rest-client"></a>REST 客户端
 
@@ -42,7 +42,7 @@ dotnet new console --name WebAPIClient
 
 这将为基本的“Hello World”应用程序创建起始文件。 项目名称为“WebAPIClient”。 这是一个新项目，因此没有部署任何依赖项。 第一次运行时将下载 .NET Core 框架、安装开发证书并运行 NuGet 包管理器来还原缺少的依赖项。
 
-在开始修改之前，在命令提示符中键入 `dotnet run`（[参见注释](#dotnet-restore-note)）以运行应用程序。 如果环境缺少依赖项，则 `dotnet run` 会自动执行 `dotnet restore`。 如果需要重新生成应用程序，它还会执行 `dotnet build`。
+开始修改之前，使用 `cd` 转到“WebAPIClient”目录，然后在命令提示符下键入 `dotnet run`（[参见注释](#dotnet-restore-note)）以运行应用程序。 如果环境缺少依赖项，则 `dotnet run` 会自动执行 `dotnet restore`。 如果需要重新生成应用程序，它还会执行 `dotnet build`。
 初始设置完成后，只需在对项目有意义的情况下运行 `dotnet restore` 或 `dotnet build`。
 
 ## <a name="adding-new-dependencies"></a>添加新的依赖项
@@ -296,7 +296,7 @@ public DateTime LastPushUtc { get; set; }
 public DateTime LastPush => LastPushUtc.ToLocalTime();
 ```
 
-让我们来看一下刚定义的新构造。 `LastPush` 属性使用 `get` 访问器的 expression-bodied member 进行定义。 不存在 `set` 访问器。 省略 `set` 访问器就是在 C# 中定义只读属性的方式。 （是的，可以在 C# 中创建*只写*属性，但属性值受限。）
+让我们来看一下刚定义的新构造。 `LastPush` 属性使用 `get` 访问器的 expression-bodied member 进行定义。 不存在 `set` 访问器。 省略 `set` 访问器就是在 C# 中定义只读属性的方式。 （是的，可以在 C# 中创建 *只写* 属性，但属性值受限。）
 
 最后，在控制台中再添加一个输出语句，然后就可以再次生成并运行此应用程序：
 

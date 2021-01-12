@@ -2,13 +2,13 @@
 title: 教程：创建 .NET 工具
 description: 了解如何创建 .NET 工具。 工具是一个通过使用 .NET CLI 安装的控制台应用程序。
 ms.topic: tutorial
-ms.date: 02/12/2020
-ms.openlocfilehash: 93d0567f3d73707f828f84fad6128804debf6579
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.date: 12/14/2020
+ms.openlocfilehash: dc5cf014336848ff1a3035647a386419653a083b
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94633773"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633892"
 ---
 # <a name="tutorial-create-a-net-tool-using-the-net-cli"></a>教程：使用 .NET CLI 创建 .NET 工具
 
@@ -18,14 +18,14 @@ ms.locfileid: "94633773"
 
 将创建的工具是一个控制台应用程序，它将消息作为输入，并显示消息以及用于创建机器人图像的文本行。
 
-这是一系列教程（包含三个教程）中的第一个。 在本教程中，将创建并打包工具。 在接下来的两个教程中，[使用该工具作为全局工具](global-tools-how-to-use.md)并[使用该工具作为本地工具](local-tools-how-to-use.md)。
+这是一系列教程（包含三个教程）中的第一个。 在本教程中，将创建并打包工具。 在接下来的两个教程中，[使用该工具作为全局工具](global-tools-how-to-use.md)并[使用该工具作为本地工具](local-tools-how-to-use.md)。 无论你是将工具用作全局工具还是用作本地工具，创建工具的过程都是相同的。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备知识
 
-- [.NET Core SDK 3.1](https://dotnet.microsoft.com/download) 或更高版本。
+- [.NET SDK 5.0.100](https://dotnet.microsoft.com/download) 或更高版本。
 
-  本教程和下面的[全局工具教程](global-tools-how-to-use.md)适用于 .NET Core SDK 2.1 及更高版本，因为全局工具从该版本开始可用。 但本教程假定你已安装 3.1 或更高版本，因此你可以选择继续学习[本地工具教程](local-tools-how-to-use.md)。 本地工具从 .NET Core SDK 3.0 开始可用。 无论你是将工具用作全局工具还是用作本地工具，创建工具的过程都是相同的。
-  
+  本教程使用 .NET SDK 5.0，但从 .NET Core SDK 2.1 开始，提供全局工具。 本地工具从 .NET Core SDK 3.0 开始可用。
+
 - 按需选择的文本编辑器或代码编辑器。
 
 ## <a name="create-a-project"></a>创建项目
@@ -35,10 +35,22 @@ ms.locfileid: "94633773"
 1. 导航到“repository”文件夹并输入以下命令  ：
 
    ```dotnetcli
-   dotnet new console -n microsoft.botsay
+   dotnet new console -n microsoft.botsay -f net5.0
    ```
 
    此命令将在“repository”文件夹下创建一个名为“microsoft.botsay”的新文件夹   。
+
+   > [!NOTE]
+   > 在本教程中，你将创建一个面向 .NET 5.0 的工具。 若要以其他框架为目标，请更改 `-f|--framework` 选项。 若要以多个框架为目标，请将 `TargetFramework` 元素更改为项目文件中的 `TargetFrameworks` 元素，如以下示例中所示：
+   >
+   > ```xml
+   > <Project Sdk="Microsoft.NET.Sdk">
+   >   <PropertyGroup>
+   >     <OutputType>Exe</OutputType>
+   >     <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
+   >   </PropertyGroup>
+   > </Project>
+   > ```
 
 1. 导航到“microsoft.botsay”文件夹  。
 
@@ -158,22 +170,22 @@ dotnet run -- Hello from the bot
 
    `<ToolCommandName>` 是一个可选元素，用于指定在安装工具后将调用该工具的命令。 如果未提供此元素，则该工具的命令名称为没有“.csproj”  扩展名的项目文件名。
 
-   `<PackageOutputPath>` 是一个可选元素，用于确定将在何处生成 NuGet 包。 NuGet 包是.NET Core CLI 用于安装你的工具的包。
+   `<PackageOutputPath>` 是一个可选元素，用于确定将在何处生成 NuGet 包。 NuGet 包是 .NET CLI 用于安装你的工具的包。
 
    项目文件现在类似于以下示例：
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
-  
+
      <PropertyGroup>
 
        <OutputType>Exe</OutputType>
-       <TargetFramework>netcoreapp3.1</TargetFramework>
-  
+       <TargetFramework>net5.0</TargetFramework>
+
        <PackAsTool>true</PackAsTool>
        <ToolCommandName>botsay</ToolCommandName>
        <PackageOutputPath>./nupkg</PackageOutputPath>
-  
+
      </PropertyGroup>
 
    </Project>
@@ -186,7 +198,7 @@ dotnet run -- Hello from the bot
    ```
 
    “microsoft.botsay.1.0.0.nupkg”文件在由 microsoft.botsay.csproj 文件的 `<PackageOutputPath>` 值标识的文件夹中创建，在本示例中为“./nupkg”文件夹    。
-  
+
    如果想要公开发布一个工具，你可以将其上传到 `https://www.nuget.org`。 该工具在 NuGet 上可用后，开发人员就可以使用 [dotnet tool install](dotnet-tool-install.md) 命令安装该工具。 在本教程中，你将直接从本地“nupkg”  文件夹安装包，因此无需将包上传到 NuGet。
 
 ## <a name="troubleshoot"></a>疑难解答

@@ -1,18 +1,18 @@
 ---
-title: 使用 .NET Core CLI 组织和测试项目
-description: 本教程介绍如何从命令行组织和测试 .NET Core 项目。
+title: 使用 .NET CLI 组织和测试项目
+description: 本教程介绍如何通过命令行组织和测试 .NET 项目。
 author: cartermp
 ms.date: 09/10/2018
-ms.openlocfilehash: 58c78c0f11ab1b275e4e4d05bf1da32562333c91
-ms.sourcegitcommit: 0a798a7e9680e2d0a5a81a3eaa203870ea782883
+ms.openlocfilehash: 263eaf15beac008de8bb353a385b8f3588a7fefc
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84325940"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633632"
 ---
-# <a name="organizing-and-testing-projects-with-the-net-core-cli"></a>使用 .NET Core CLI 组织和测试项目
+# <a name="organizing-and-testing-projects-with-the-net-cli"></a>使用 .NET CLI 组织和测试项目
 
-本教程遵循[教程：使用 Visual Studio Code 通过 .NET Core 创建控制台应用程序](with-visual-studio-code.md)，不仅介绍如何创建简单的控制台应用，还将介绍如何开发高级且结构完善的应用程序。 在演示如何使用文件夹来组织代码后，本教程还将说明如何使用 [xUnit](https://xunit.github.io/) 测试框架扩展控制台应用程序。
+本教程遵循[教程：使用 Visual Studio Code 通过 .NET 创建控制台应用程序](with-visual-studio-code.md)，不仅介绍如何创建简单的控制台应用，还将介绍如何开发高级且结构完善的应用程序。 在演示如何使用文件夹来组织代码后，本教程还将说明如何使用 [xUnit](https://xunit.net/) 测试框架扩展控制台应用程序。
 
 ## <a name="using-folders-to-organize-code"></a>使用文件夹组织代码
 
@@ -42,6 +42,10 @@ ms.locfileid: "84325940"
 按逻辑将文件分组到文件夹的项目易于导航和维护。 在下一节中，将创建一个更复杂的示例，它包含文件夹和单元测试。
 
 ## <a name="organizing-and-testing-using-the-newtypes-pets-sample"></a>使用 NewTypes Pets 示例进行组织和测试
+
+### <a name="prerequisites"></a>必备知识
+
+* [.NET 5.0 SDK](https://dotnet.microsoft.com/download) 或更高版本。
 
 ### <a name="building-the-sample"></a>生成示例
 
@@ -100,7 +104,7 @@ Meow!
 
 ### <a name="testing-the-sample"></a>测试示例
 
-`NewTypes` 项目已准备就绪，与宠物相关的类型均置于一个文件夹中，因此具有良好的组织。 接下来，创建测试项目，并使用 [xUnit](https://xunit.github.io/) 测试框架开始编写测试。 使用单元测试，可自动检查宠物类型的行为，确认其正常运行。
+`NewTypes` 项目已准备就绪，与宠物相关的类型均置于一个文件夹中，因此具有良好的组织。 接下来，创建测试项目，并使用 [xUnit](https://xunit.net/) 测试框架开始编写测试。 使用单元测试，可自动检查宠物类型的行为，确认其正常运行。
 
 导航回 src 文件夹并创建“test”文件夹，后者包含 NewTypesTests 文件夹  。 在 NewTypesTests 文件夹的命令提示符中，执行 `dotnet new xunit`。 这将生成两个文件：NewTypesTests.csproj 和 UnitTest1.cs 。
 
@@ -181,38 +185,27 @@ public class PetTests
       |__NewTypesTests.csproj
 ```
 
-在 test/NewTypesTests 目录中开始。 使用 [`dotnet restore`](../tools/dotnet-restore.md) 命令还原测试项目。 使用 [`dotnet test`](../tools/dotnet-test.md) 命令运行测试。 此命令启动项目文件中指定的测试运行程序。
-
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+在 test/NewTypesTests 目录中开始。 使用 [`dotnet test`](../tools/dotnet-test.md) 命令运行测试。 此命令启动项目文件中指定的测试运行程序。
 
 测试按预期失败，控制台显示以下输出：
 
 ```output
-Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
-Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Test run for C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\bin\Debug\net5.0\NewTypesTests.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
-[xUnit.net 00:00:00.77]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
-[xUnit.net 00:00:00.78]     PetTests.CatTalkToOwnerReturnsMeow [FAIL]
-Failed   PetTests.DogTalkToOwnerReturnsWoof
-Error Message:
- Assert.NotEqual() Failure
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.50]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
+  Failed PetTests.DogTalkToOwnerReturnsWoof [6 ms]
+  Error Message:
+   Assert.NotEqual() Failure
 Expected: Not "Woof!"
 Actual:   "Woof!"
-Stack Trace:
-   at PetTests.DogTalkToOwnerReturnsWoof() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 13
-Failed   PetTests.CatTalkToOwnerReturnsMeow
-Error Message:
- Assert.NotEqual() Failure
-Expected: Not "Meow!"
-Actual:   "Meow!"
-Stack Trace:
-   at PetTests.CatTalkToOwnerReturnsMeow() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 22
+  Stack Trace:
+     at PetTests.DogTalkToOwnerReturnsWoof() in C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\PetTests.cs:line 13
 
-Total tests: 2. Passed: 0. Failed: 2. Skipped: 0.
-Test Run Failed.
-Test execution time: 1.7000 Seconds
+Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2, Duration: 8 ms - NewTypesTests.dll (net5.0)
 ```
 
 将测试的断言从 `Assert.NotEqual` 更改为 `Assert.Equal`：
@@ -222,15 +215,14 @@ Test execution time: 1.7000 Seconds
 使用 `dotnet test` 命令重新运行测试，并获得以下输出：
 
 ```output
-Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
-Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Test run for C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\bin\Debug\net5.0\NewTypesTests.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
 
-Total tests: 2. Passed: 2. Failed: 0. Skipped: 0.
-Test Run Successful.
-Test execution time: 1.6029 Seconds
+Passed!  - Failed:     0, Passed:     2, Skipped:     0, Total:     2, Duration: 2 ms - NewTypesTests.dll (net5.0)
 ```
 
 测试通过。 在与所有者谈话时，宠物类型的方法返回正确的值。

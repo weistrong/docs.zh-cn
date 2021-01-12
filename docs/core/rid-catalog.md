@@ -1,13 +1,13 @@
 ---
 title: .NET Core 运行时标识符 (RID) 目录
 description: 了解运行时标识符 (RID) 及如何在 .NET Core 中使用 RID。
-ms.date: 02/22/2019
-ms.openlocfilehash: 096ce8e33a82df3b9de682ed16e10fbe9f07fd03
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 12/15/2020
+ms.openlocfilehash: f818ab2d503be7960d9eb8450a7dd749766637a6
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "90538219"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633606"
 ---
 # <a name="net-core-rid-catalog"></a>.NET Core RID 目录
 
@@ -114,15 +114,15 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 
 仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库上的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) 文件。 运行以下未列出的发行版的设备可能适用于其中一个可移植 RID。 例如，可以将运行未列出的 Linux 发行版的 Raspberry Pi 设备定向为使用 `linux-arm`。
 
-- 可移植（.NET Core 2.0 或更高版本）
+- 可移植
   - `linux-x64`（大多数桌面发行版，如 CentOS、Debian、Fedora、Ubuntu 及派生版本）
   - `linux-musl-x64`（使用 [musl](https://wiki.musl-libc.org/projects-using-musl.html) 的轻量级发行版，如 Alpine Linux）
   - `linux-arm`（在 ARM 上运行的 Linux 发行版本，如 Raspberry Pi Model 2 及更高版本上的 Raspbian）
   - `linux-arm64`（在 64 位 ARM 上运行的 Linux 发行版本，如 Raspberry Pi Model 3 及更高版本上的 Ubuntu 服务器 64 位）
 - Red Hat Enterprise Linux
   - `rhel-x64`（被 `linux-x64` 取代，适用于 RHEL 6 以上版本）
-  - `rhel.6-x64`（.NET Core 2.0 或更高版本）
-- Tizen（.NET Core 2.0 或更高版本）
+  - `rhel.6-x64`
+- Tizen
   - `tizen`
   - `tizen.4.0.0`
   - `tizen.5.0.0`
@@ -133,18 +133,23 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 
 macOS RID 使用较早的“OSX”品牌。 仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库上的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) 文件。
 
-- 可移植（.NET Core 2.0 或更高版本）
+- 可移植
   - `osx-x64`（最低 OS 版本为 macOS 10.12 Sierra）
 - macOS 10.10  Yosemite
   - `osx.10.10-x64`
 - macOS 10.11 El Capitan
   - `osx.10.11-x64`
-- macOS 10.12 Sierra（.NET Core 1.1 或更高版本）
+- macOS 10.12 Sierra
   - `osx.10.12-x64`
-- macOS 10.13 High Sierra（.NET Core 1.1 或更高版本）
+- macOS 10.13 High Sierra
   - `osx.10.13-x64`
-- macOS 10.14 Mojave（.NET Core 1.1 或更高版本）
+- macOS 10.14 Mojave
   - `osx.10.14-x64`
+- macOS 10.15 Catalina
+  - `osx.10.15-x64`
+- macOS 11.01 Big Sur
+  - `osx.11.0-x64`
+  - `osx.11.0-arm64`
 
 有关详细信息，请参阅 [.NET Core 依赖项和要求](./install/macos.md#dependencies)。
 

@@ -4,12 +4,12 @@ description: 了解有关编写单元测试的最佳做法，以提高 .NET Core
 author: jpreese
 ms.author: wiwagn
 ms.date: 07/28/2018
-ms.openlocfilehash: 6c1e9a665ad541bf6109634a6df857880ee47042
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 56f51cde0e52a9e6a38e5291c81470beee61adef
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281644"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678108"
 ---
 # <a name="unit-testing-best-practices-with-net-core-and-net-standard"></a>.NET Core 和 .NET Standard 单元测试最佳做法
 
@@ -67,7 +67,7 @@ Fake - Fake 是一个通用术语，可用于描述 stub 或 mock 对象。 它�
 
 Mock - Mock 对象是系统中的 fake 对象，用于确定单元测试是否通过。 Mock 起初为 Fake，直到对其断言。
 
-Stub - Stub 是系统中现有依赖项（或协作者）的可控制替代项。 通过使用 Stub，可以在无需使用依赖项的情况下直接测试代码。 默认情况下，fake 起初为 Stub。
+Stub - Stub 是系统中现有依赖项（或协作者）的可控制替代项。 通过使用 Stub，可以在无需使用依赖项的情况下直接测试代码。 默认情况下，存根起初为 fake。
 
 请思考以下代码片段：
 

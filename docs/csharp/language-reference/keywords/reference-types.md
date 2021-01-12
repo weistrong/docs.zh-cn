@@ -9,12 +9,12 @@ helpviewer_keywords:
 - C# language, reference types
 - types [C#], reference types
 ms.assetid: 801cf030-6e2d-4a0d-9daf-1431b0c31f47
-ms.openlocfilehash: 1a9df3c95d6f5052821be8db5ecf5a8ed99a8ba7
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 075ec5ecd8f71f5cb85bab0e2baff56409709191
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89137053"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97899608"
 ---
 # <a name="reference-types-c-reference"></a>引用类型（C# 参考）
 
@@ -27,6 +27,7 @@ C# 中有两种类型：引用类型和值类型。 引用类型的变量存储�
 - [interface](interface.md)
 
 - [delegate](../builtin-types/reference-types.md)
+- [record](../builtin-types/reference-types.md)
 
  C# 也提供了下列内置引用类型：
 

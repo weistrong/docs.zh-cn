@@ -4,12 +4,12 @@ description: 了解如何构建针对产品销售数据的异常检测应用程�
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-ms.openlocfilehash: cf61f197e4befebdbb1fbf2ca4cbcdc61c48780a
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 48a8b26409b20e2a01aa97425153336b34c9b5b7
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281662"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97594171"
 ---
 # <a name="tutorial-detect-anomalies-in-product-sales-with-mlnet"></a>教程：使用 ML.NET 检测产品销售中的异常
 
@@ -140,9 +140,9 @@ ML.NET 中的数据表示为 [IDataView 类](xref:Microsoft.ML.IDataView)。 `ID
 
 可以检测到两种类型的时序异常情况：
 
-* **峰值**指示系统中异常行为的临时突发。
+* **峰值** 指示系统中异常行为的临时突发。
 
-* **更改点**指示系统中一段时间内持续更改的开始。
+* **更改点** 指示系统中一段时间内持续更改的开始。
 
 在 ML.NET 中，IID 峰值检测或 IID 更改点检测算法适用于[独立且均匀分布的数据集](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)。
 
@@ -384,6 +384,6 @@ Alert   Score   P-Value Martingale value
 
 ## <a name="next-steps"></a>后续步骤
 
-请查看机器学习示例 GitHub 存储库，以探索能耗异常情况检测示例。
+请查看机器学习示例 GitHub 存储库，以探索周期性数据异常情况检测示例。
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub 存储库](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)
+> [dotnet/machinelearning-samples GitHub 存储库](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls)

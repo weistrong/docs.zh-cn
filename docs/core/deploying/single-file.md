@@ -3,13 +3,13 @@ title: 单文件应用程序
 description: 了解单文件应用程序的本质以及应考虑使用此应用程序部署模型的原因。
 author: lakshanf
 ms.author: lakshanf
-ms.date: 08/28/2020
-ms.openlocfilehash: 16e9586cfc29072fa2ca70dc482272a5a0e7306a
-ms.sourcegitcommit: 39b1d5f2978be15409c189a66ab30781d9082cd8
+ms.date: 12/17/2020
+ms.openlocfilehash: e2d2c9ed4c28d11a77e4f840602982a36cf1c80c
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050411"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678153"
 ---
 # <a name="single-file-deployment-and-executable"></a>单文件部署和可执行文件
 
@@ -96,6 +96,39 @@ ms.locfileid: "92050411"
 </PropertyGroup>
 ```
 
+## <a name="publish-a-single-file-app---sample-project-file"></a>发布单文件应用 - 示例项目文件
+
+下面是指定单文件发布的示例项目文件：
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>true</PublishTrimmed>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+</Project>
+```
+
+这些属性具有下列函数：
+
+* `PublishSingleFile` - 启用单文件发布。
+* `SelfContained` - 确定应用是独立的还是依赖于框架的。
+* `RuntimeIdentifier` - 指定目标 [OS 和 CPU 类型](../rid-catalog.md)。
+* `PublishTrimmed` - 启用[程序集剪裁](trim-self-contained.md)（只有独立应用才支持）。
+* `PublishReadyToRun` - 启用[预先 (AOT) 编译](ready-to-run.md)。
+
+**注意：**
+
+* 应用特定于 OS 和体系结构。 需要为每个配置发布，例如 Linux x64、Linux ARM64、Windows x64 等。
+* 单个文件中包含配置文件，例如 \*.runtimeconfig.json。 如果需要其他配置文件，可将其放在单个文件旁边。
+
 ## <a name="publish-a-single-file-app---cli"></a>发布单文件应用 - CLI
 
 使用 [dotnet publish](../tools/dotnet-publish.md) 命令发布单文件应用程序。 发布应用时，请设置以下属性：
@@ -129,7 +162,7 @@ Visual Studio 创建可重用的发布配置文件，用于控制应用程序的
 
 01. 选择“编辑”  。
 
-    :::image type="content" source="media/single-file/visual-studio-publish-edit-settings.png" alt-text="解决方案资源管理器，其中右键单击菜单突出显示了“发布”选项。":::
+    :::image type="content" source="media/single-file/visual-studio-publish-edit-settings.png" alt-text="带有“编辑”按钮的 Visual Studio 发布配置文件。":::
 
 01. 在“配置文件设置”对话框中，设置以下选项  ：
 
@@ -139,7 +172,7 @@ Visual Studio 创建可重用的发布配置文件，用于控制应用程序的
 
     选择“保存”保存设置并返回到“发布”对话框   。
 
-    :::image type="content" source="media/single-file/visual-studio-publish-single-file-properties.png" alt-text="解决方案资源管理器，其中右键单击菜单突出显示了“发布”选项。":::
+    :::image type="content" source="media/single-file/visual-studio-publish-single-file-properties.png" alt-text="“配置文件设置”对话框，其中突出显示了“部署模式”、“目标运行时”和“单个文件”选项。":::
 
 01. 选择“发布”，将应用作为单个文件发布。
 

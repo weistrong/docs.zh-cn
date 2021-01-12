@@ -5,12 +5,12 @@ ms.date: 11/06/2020
 ms.prod: dotnet
 ms.custom: updateeachrelease
 ms.technology: dotnet-standard
-ms.openlocfilehash: 1a0d6ef9d31b85fd6c083604dd11b9ca9ff09c79
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7a3dcd61c330607bacf0d05dbd775c62cfa15b37
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827914"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97765054"
 ---
 # <a name="target-frameworks-in-sdk-style-projects"></a>SDK 样式项目中的目标框架
 
@@ -22,7 +22,7 @@ ms.locfileid: "94827914"
 
 对于某些目标框架（例如 .NET Framework），API 由框架在系统上安装的程序集定义，并且可能包括应用程序框架 API（例如 ASP.NET）。
 
-对于基于包的目标框架（例如 .NET 5、.NET Core 和 .NET Standard），API 由包含在应用或库中的包定义。 元包  是一个 NuGet 包，NuGet 包本身不包含任何内容，只是一个依赖项列表（其他包）。 基于 NuGet 包的目标框架隐式指定一个元包，该元包引用一起构成框架的所有包。
+对于基于包的目标框架（例如 .NET 5、.NET Core 和 .NET Standard），API 由应用或库中包含的 NuGet 包定义。
 
 ## <a name="latest-versions"></a>最新版本
 

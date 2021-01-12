@@ -2,13 +2,13 @@
 title: 教程：安装和使用 .NET 本地工具
 description: 了解如何安装和使用 .NET 工具作为本地工具。
 ms.topic: tutorial
-ms.date: 02/12/2020
-ms.openlocfilehash: 2cb25443706293b66325d43136afcd3fd886294d
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.date: 12/11/2020
+ms.openlocfilehash: f32a5c4091ff63c7c50cf339dddd89b78e543c4c
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94633876"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512458"
 ---
 # <a name="tutorial-install-and-use-a-net-local-tool-using-the-net-cli"></a>教程：使用 .NET CLI 安装和使用 .NET 本地工具
 
@@ -172,7 +172,7 @@ dotnet tool run botsay hello from the bot
 
 ## <a name="update-a-local-tool"></a>更新本地工具
 
-本地工具 `dotnetsay` 的已安装版本为 2.1.3。  最新版本是 2.1.4。 使用 [dotnet tool update](dotnet-tool-update.md) 命令将工具更新到最新版本。
+本地工具 `dotnetsay` 的已安装版本为 2.1.3。  使用 [dotnet tool update](dotnet-tool-update.md) 命令将工具更新到最新版本。
 
 ```dotnetcli
 dotnet tool update dotnetsay
@@ -181,7 +181,7 @@ dotnet tool update dotnetsay
 输出指示新的版本号：
 
 ```console
-Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.4'
+Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.7'
 (manifest file /home/name/repository/.config/dotnet-tools.json).
 ```
 
@@ -205,4 +205,4 @@ dotnet tool uninstall dotnetsay
 
 ## <a name="see-also"></a>请参阅
 
-有关详细信息，请参阅 [.NET Core 工具](global-tools.md)
+有关详细信息，请参阅 [.NET 工具](global-tools.md)

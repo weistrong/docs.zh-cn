@@ -2,12 +2,12 @@
 title: dotnet-gcdump 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-gcdump CLI 工具，以使用 .NET EventPipe 收集实时 .NET 进程的 GC（垃圾回收器）转储。
 ms.date: 11/17/2020
-ms.openlocfilehash: 59de1845ada9e5bdd0b24bf4312517283324ce94
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 02e1a7c5d86b582289672a027464aefd67a6f490
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94826035"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97593365"
 ---
 # <a name="heap-analysis-tool-dotnet-gcdump"></a>堆分析工具 (dotnet-gcdump)
 
@@ -68,6 +68,9 @@ dotnet-gcdump [-h|--help] [--version] <command>
 ## `dotnet-gcdump collect`
 
 从当前正在运行的进程中收集 GC 转储。
+
+> [!WARNING]
+> 为了遍历 GC 堆，此命令将触发第 2 代（完整）垃圾回收，这可能会使运行时长时间挂起，尤其是在 GC 堆很大的情况下。 如果 GC 堆很大，请不要在对性能要求高的环境中使用此命令。
 
 ### <a name="synopsis"></a>摘要
 

@@ -2,12 +2,12 @@
 title: dotnet-trace 诊断工具 - .NET CLI
 description: 了解如何通过使用 .NET EventPipe 来安装和使用 dotnet-trace CLI 工具，以在没有本机探查器的情况下收集运行中的进程的 .NET 跟踪。
 ms.date: 11/17/2020
-ms.openlocfilehash: 868ce7828eee6bd7f2101d5d6a65c7f7bf87fe24
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: a3b5748cb2a6c2060971fbad0d81ade00dc83087
+ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009529"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753661"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>dotnet-trace 性能分析实用工具
 
@@ -144,6 +144,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   > [!NOTE]
   > 使用此选项监视第一个 .NET 5.0 进程，该进程与该工具通信，这意味着如果命令启动多个 .NET 应用程序，它将仅收集第一个应用。 因此，建议在自包含应用程序上使用此选项，或使用 `dotnet exec <app.dll>` 选项。
 
+> [!NOTE]
+> 对于大型应用程序，停止跟踪可能需要较长时间（可达数分钟）。 运行时需要为跟踪中捕获的所有托管代码发送类型缓存。
+
 ## <a name="dotnet-trace-convert"></a>dotnet-trace convert
 
 将 `nettrace` 跟踪转换为备用格式，以便用于备用跟踪分析工具。
@@ -169,6 +172,9 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 - **`-o|--output <output-filename>`**
 
   输出文件名。 将添加目标格式的扩展。
+
+> [!NOTE]
+> 将 `nettrace` 文件转换为 `chromium` 或 `speedscope` 文件是不可逆操作。 `speedscope` 和 `chromium` 文件不具备重新构造 `nettrace` 文件所需的全部信息。 但是，`convert` 命令保留了原始 `nettrace` 文件，因此，如果打算将来打开该文件，请不要将其删除。
 
 ## <a name="dotnet-trace-ps"></a>dotnet-trace ps
 
@@ -329,12 +335,31 @@ dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCoun
 
 以上命令会禁用运行时事件和托管堆栈探查器。
 
-## <a name="net-providers"></a>.NET 提供程序
+## <a name="use-rsp-file-to-avoid-typing-long-commands"></a>使用 .rsp 文件来避免键入长命令
 
-.NET Core 运行时支持以下 .NET 提供程序： .NET Core 使用相同的关键字来启用 `Event Tracing for Windows (ETW)` 和 `EventPipe` 跟踪。
+可以使用包含要传递的参数的 `.rsp` 文件启动 `dotnet-trace`。 当启用需要较长参数的提供程序时，或在使用可去除字符的 shell 环境时，这很有用。
 
-| 提供程序名称                            | 信息 |
-|------------------------------------------|-------------|
-| `Microsoft-Windows-DotNETRuntime`        | [运行时提供程序](../../framework/performance/clr-etw-providers.md#the-runtime-provider)<br>[CLR 运行时关键字](../../framework/performance/clr-etw-keywords-and-levels.md#runtime) |
-| `Microsoft-Windows-DotNETRuntimeRundown` | [断开提供程序](../../framework/performance/clr-etw-providers.md#the-rundown-provider)<br>[CLR 断开关键字](../../framework/performance/clr-etw-keywords-and-levels.md#rundown) |
-| `Microsoft-DotNETCore-SampleProfiler`    | 启用示例探查器。 |
+例如，以下提供程序在每次要跟踪时都可能要繁琐地键入内容：
+
+```cmd
+dotnet-trace collect --providers Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
+```
+
+此外，前一个示例包含 `"` 作为参数的一部分。 由于每个 shell 对引号的处理不同，因此在使用不同的 shell 时可能会遇到各种问题。 例如，在 `zsh` 中输入的命令与 `cmd` 中的命令不同。
+
+可以将以下文本保存到名为 `myprofile.rsp` 的文件中，而不必每次都键入此内容。
+
+```txt
+--providers
+Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
+```
+
+保存 `myprofile.rsp` 后，可以使用以下命令通过此配置启动 `dotnet-trace`：
+
+```bash
+dotnet-trace @myprofile.rsp
+```
+
+## <a name="see-also"></a>另请参阅
+
+- [.NET 的已知事件提供程序](well-known-event-providers.md)

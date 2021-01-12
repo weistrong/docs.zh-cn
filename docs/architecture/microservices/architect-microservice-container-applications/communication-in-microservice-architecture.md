@@ -2,12 +2,12 @@
 title: 微服务体系结构中的通信
 description: 探索微服务之间的不同通信方式，了解同步和异步方法的含义。
 ms.date: 01/30/2020
-ms.openlocfilehash: f1a240609b898fe8f365c39ba0c95f486377c445
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a918ea7573d7402a82d2df2c63301e4838fa66dc
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169253"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97899595"
 ---
 # <a name="communication-in-a-microservice-architecture"></a>微服务体系结构中的通信
 
@@ -103,7 +103,7 @@ ms.locfileid: "91169253"
 
 ![显示基于 SignalR 的推送和实时通信的关系图。](./media/communication-in-microservice-architecture/one-to-many-communication.png)
 
-**图 4-17**。 一对一实时异步消息通信
+**图 4-17**。 一对多实时异步消息通信
 
 SignalR 是实现用于将内容从后端服务器推送到客户端的实时通信的好方法。 由于通信是实时的，客户端应用几乎立即显示更改。 这通常由 WebSocket 之类的协议使用多个 WebSocket 连接（每个客户端一个）处理。 一个典型示例是将体育比赛的比分变化同时传送到多个客户端 Web 应用。
 

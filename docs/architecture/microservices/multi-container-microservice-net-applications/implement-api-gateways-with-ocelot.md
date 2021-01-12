@@ -2,12 +2,12 @@
 title: 通过 Ocelot 实现 API 网关
 description: 了解如何通过 Ocelot 实现 API 网关以及如何在基于容器的环境中使用 Ocelot。
 ms.date: 03/02/2020
-ms.openlocfilehash: 6d9229228e228b664a602ce9a682d435505a8107
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5da8533eff394b587d123970742727484a7236ad
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718093"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678127"
 ---
 # <a name="implement-api-gateways-with-ocelot"></a>通过 Ocelot 实现 API 网关
 
@@ -39,7 +39,7 @@ ms.locfileid: "95718093"
 
 上一节[创建基于微服务的复合 UI](../architect-microservice-container-applications/microservice-based-composite-ui-shape-layout.md) 中深入介绍许多详细信息。
 
-对于许多中型和大型应用程序，关键在于使用自定义生成的 API 网关产品，这通常是一种不错的方法，但不能作为单一聚合器或唯一的中央自定义 API 网关，除非该 API 网关允许多个开发团队在多个独立配置区域创建自主微服务。
+对于许多大中型应用程序，关键在于使用定制构建的 API 网关产品，这通常是一种不错的方法，但不能作为单一聚合器或唯一的中央定制 API 网关，除非该 API 网关允许多个开发团队在多个独立配置区域创建自主微服务。
 
 ### <a name="sample-microservicescontainers-to-reroute-through-the-api-gateways"></a>通过 API 网关重新路由的示例微服务/容器
 
@@ -97,7 +97,7 @@ EXPOSE 80
 
 客户端应用只能访问使用 `docker-compose` 进行部署时发布的外部端口（如有）。
 
-部署到生产环境时，不应发布这些外部端口。 这正是要使用 API 网关的原因，这样可避免客户端应用与微服务直接通信。
+部署到生产环境时，不应发布这些外部端口。 出于此特定原因，使用 API 网关是为了避免客户端应用与微服务直接通信。
 
 但是，在开发时，却要直接访问微服务/容器并通过 Swagger 运行它。 这就是为什么在 eShopOnContainers 中，即使 API 网关或客户端应用不使用外部端口，仍要指定外部端口。
 
@@ -155,7 +155,7 @@ Install-Package Ocelot
 
 图 6-32。 eShopOnContainers 中的 OcelotApiGw 基础项目
 
-此 ASP.NET Core WebHost 项目基本上由两个简单文件生成：`Program.cs` 和 `Startup.cs`。
+此 ASP.NET Core WebHost 项目由两个简单文件生成：`Program.cs` 和 `Startup.cs`。
 
 Program.cs 只需要创建和配置典型的 ASP.NET Core BuildWebHost。
 
@@ -267,7 +267,7 @@ DownstreamPathTemplate、Scheme 和 DownstreamHostAndPorts 构成要将此请求
 
 `Host` 是一个服务名称，取决于使用的服务名称解析。 使用 docker-compose 时，服务名称由 Docker 主机提供，它使用 docker-compose 文件中提供的服务名称。 如果使用 Kubernetes 或 Service Fabric 等业务流程协调程序，则应通过每个业务流程协调程序提供的 DNS 或名称解析来解析该名称。
 
-DownstreamHostAndPorts 是一个数组，包含要将请求转发到的任何下游服务的主机和端口。 通常这只包含一个条目，但有时可能想要将均衡请求加载到下游服务，而通过 Ocelot 即可添加多个条目，然后选择负载均衡器。 但是如果使用 Azure 和任何业务流程协调程序，那么通过云和业务流程协调程序基础结构进行负载均衡可能会更好。
+DownstreamHostAndPorts 是一个数组，包含要将请求转发到的任何下游服务的主机和端口。 通常，此配置只包含一个条目，但有时你可能想要对下游服务的请求进行负载均衡，这时便可通过 Ocelot 添加多个条目，然后选择负载均衡器。 但是如果使用 Azure 和任何业务流程协调程序，那么通过云和业务流程协调程序基础结构进行负载均衡可能会更好。
 
 UpstreamPathTemplate 是一个 URL，Ocelot 将其用来识别用于客户端中给定请求的 DownstreamPathTemplate。 最后，使用了 UpstreamHttpMethod，因此 Ocelot 可区分对相同 URL 的不同的请求（GET、POST、PUT）。
 
@@ -393,7 +393,7 @@ webmarketingapigw:
 
 图 6-38。 聚合器服务的放大影像
 
-可以看到，当关系图显示可能来自 API 网关的请求时，它可能变得复杂。 虽然可以看到如何简化蓝色箭头，但从客户端应用角度来看，通过减少通信中的干扰和延迟来使用聚合器模式时，尤其是远程应用（移动和 SPA 应用）的用户体验最终可获得显著改善。
+可以看到，当关系图显示可能来自 API 网关的请求时，它可能变得复杂。 另一方面，使用聚合器模式时，可以从客户端应用的角度看到蓝色箭头如何简化通信。 这种模式不仅有助于减少通信中的交互和延迟，还可以显著改进远程应用（移动和 SPA 应用）的用户体验。
 
 对于“营销”业务范围和微服务，它是一个简单的用例，因此不需要使用聚合器，但如果需要，也可使用。
 
@@ -527,7 +527,7 @@ Ocelot 的 ReRoute 层中的授权。  Ocelot 支持在进行身份验证后评�
 
 但是，如果使用入口方法，则 Internet 和服务（包括 API 网关）间会有一个中间层，充当反向代理。
 
-入口为规则的集合，允许入站连接到达群集服务。 入口通常配置为提供外部可访问的 URL、负载均衡流量、SSL 终止等服务。 用户通过将入口资源发布到 API 服务器来请求入口。
+入口为规则的集合，允许入站连接到达群集服务。 入口配置为提供外部可访问的 URL、负载均衡流量、SSL 终止等服务。 用户通过将入口资源发布到 API 服务器来请求入口。
 
 在 eShopOnContainers 中，在本地进行开发并仅使用开发计算机作为 Docker 主机时，不会使用任何入口，只使用多个 API 网关。
 
@@ -543,7 +543,7 @@ API 网关只是呈现服务的前端或外观，Web 应用通常不在其呈现
 
 图 6-41。 部署到 Kubernetes 时 eShopOnContainers 中的入口层
 
-Kubernetes 入口充当流向应用的所有流量的反向代理，包括通常在 Api 网关范围之外的 Web 应用程序。 将 eShopOnContainers 部署到 Kubernetes 时，它只通过入口公开一些服务或终结点，基本上是以下列出的 URL 上的后缀：
+Kubernetes Ingress 充当流向应用（包括在 API 网关范围之外的 Web 应用程序）的所有流量的反向代理。 将 eShopOnContainers 部署到 Kubernetes 时，它只通过入口公开一些服务或终结点，基本上是以下列出的 URL 上的后缀：
 
 - `/` 用于客户端 SPA Web 应用程序
 - `/webmvc` 用于客户端 MVC Web 应用程序

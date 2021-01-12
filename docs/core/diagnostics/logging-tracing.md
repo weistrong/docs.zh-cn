@@ -2,12 +2,12 @@
 title: 日志记录和跟踪 - .NET Core
 description: .NET Core 日志记录和跟踪简介。
 ms.date: 10/12/2020
-ms.openlocfilehash: 86444f2451079e54050f6698f3e45ddff0700acf
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: fac8eeed63e8737ad42699d81b421747b207c69a
+ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820574"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753622"
 ---
 # <a name="net-core-logging-and-tracing"></a>.NET Core 日志记录和跟踪
 
@@ -36,11 +36,11 @@ ms.locfileid: "94820574"
   - 这对于客户可能需要在版本中查看的信息非常有用。
   - 由于这是最简单的方法，所以常常用于临时调试。 此调试代码通常不会签入到源代码管理中。
 - <xref:System.Diagnostics.Trace?displayProperty=nameWithType>
-  - 仅在定义 `TRACE` 时启用。
+  - 仅在通过向源中添加 `#define TRACE` 或在编译时指定选项 `/d:TRACE` 来定义 `TRACE` 时启用。
   - 写入到附加 <xref:System.Diagnostics.Trace.Listeners>，默认情况下为 <xref:System.Diagnostics.DefaultTraceListener>。
   - 创建将在大多数生成中启用的日志时使用此 API。
 - <xref:System.Diagnostics.Debug?displayProperty=nameWithType>
-  - 仅在定义 `DEBUG` 时启用。
+  - 仅在通过向源中添加 `#define DEBUG` 或在编译时指定选项 `/d:DEBUG` 来定义 `DEBUG` 时启用。
   - 写入附加调试器。
   - 在 `*nix` 写入到 stderr 时（如果设置了 `COMPlus_DebugWriteToStdErr`）。
   - 创建将仅在调试生成中启用的日志时使用此 API。
@@ -95,6 +95,8 @@ ms.locfileid: "94820574"
 - [C# 字符串内插](../../csharp/language-reference/tokens/interpolated.md)可以简化日志记录代码的编写。
 
 - [运行时提供程序事件列表](../../fundamentals/diagnostics/runtime-events.md)
+
+- [.NET 中的已知事件提供程序](well-known-event-providers.md)
 
 - <xref:System.Exception.Message?displayProperty=nameWithType> 属性对日志记录异常很有用。
 

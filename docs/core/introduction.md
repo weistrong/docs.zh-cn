@@ -4,12 +4,12 @@ description: 了解用于构建多种应用的免费开源开发平台 .NET。
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: 1fd452ac9b7740c428e92cc6a510bab5f4d2d7d0
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 0adc348c1fc340fe481d9987cdbe28c6cf8b065d
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687512"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938671"
 ---
 # <a name="introduction-to-net"></a>.NET 简介
 
@@ -144,6 +144,13 @@ SDK 下载包括以下组件：
 * [运行时库](#runtime-libraries)。 提供基元数据类型和基本实用程序。
 * ASP.NET Core 运行时。 为连接 Internet 的应用（如 Web 应用、IoT 应用和移动后端）提供基本服务。
 * 桌面运行时。 为 Windows 桌面应用（包括 Windows 窗体和 WPF）提供基本服务。
+
+运行时下载包括以下组件：
+
+* （可选）桌面或 ASP.NET Core 运行时。
+* [.NET 运行时](#clr)。 提供类型系统、程序集加载、垃圾回收器、本机互操作和其他基本服务。
+* [运行时库](#runtime-libraries)。 提供基元数据类型和基本实用程序。
+* `dotnet` [驱动程序](tools/index.md#driver)。 用于运行依赖于框架的应用的 CLI 命令。
 
 有关详细信息，请参阅以下资源：
 

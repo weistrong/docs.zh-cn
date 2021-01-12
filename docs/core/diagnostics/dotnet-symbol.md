@@ -2,12 +2,12 @@
 title: dotnet-symbol 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-symbol CLI 工具来下载调试 .NET 转储和小型转储所需的文件。
 ms.date: 11/17/2020
-ms.openlocfilehash: 8ea694e5331f1e4e75b3b3ad644428568e515331
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 69c05544e886d9d41113c8a2383f760b85d01124
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825333"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97764989"
 ---
 # <a name="symbol-downloader-dotnet-symbol"></a>符号下载器 (dotnet-symbol)
 
@@ -15,7 +15,7 @@ ms.locfileid: "94825333"
 
 ## <a name="install"></a>安装
 
-若要安装最新版 `dotnet-trace` [NuGet 包](https://www.nuget.org/packages/dotnet-trace)，请使用 [dotnet tool install](../tools/dotnet-tool-install.md) 命令：
+若要安装最新版 `dotnet-symbol` [NuGet 包](https://www.nuget.org/packages/dotnet-symbol)，请使用 [dotnet tool install](../tools/dotnet-tool-install.md) 命令：
 
 ```dotnetcli
 dotnet tool install --global dotnet-symbol
@@ -98,3 +98,8 @@ dotnet-symbol --host-only --debugging <dump file path>
 - 下载符号时出现“404 未找到”。
 
    只有通过官方渠道（例如[官方网站](https://dotnet.microsoft.com/download/dotnet-core)和 [dotnet 安装脚本中的默认源](../tools/dotnet-install-script.md)）获得的官方 .NET Core 运行时版本才支持符号下载。 下载调试文件时出现 404 错误，这可能表示转储是使用来自其他源的 .NET Core 运行时创建的，例如，从本地源、特定 Linux 发行版或从社区站点（例如 archlinux）构建的转储。 在此类情况下，应从这些源或创建转储文件的环境复制调试所需的文件（dotnet、libcoreclr.so 和 libmscordaccore.so）。
+
+## <a name="see-also"></a>另请参阅
+
+* [使用符号进行调试](/windows/win32/dxtecharts/debugging-with-symbols)
+* [可移植 PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)

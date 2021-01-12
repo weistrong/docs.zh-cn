@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9544b65f31772d0f4cee918528a73171fec4de99
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: dcc64fe651b219ff1416c0afcdb4c6d275160f4b
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031968"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97911563"
 ---
 ### <a name="change-in-default-value-of-useshellexecute"></a>UseShellExecute 默认值更改
 
@@ -13,6 +13,13 @@ ms.locfileid: "96031968"
 #### <a name="change-description"></a>更改描述
 
 可以通过 <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> 直接启动应用程序，例如，使用 `Process.Start("mspaint.exe")` 代码启动画图。 如果 <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> 设置为 `true`，它还允许间接启动关联的应用程序。 在 .NET Framework 上，<xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> 的默认值 `true`，这意味着，如果已将 .txt  文件与该编辑器相关联，则 `Process.Start("mytextfile.txt")` 会启动记事本。 若要防止在 .NET Framework 上间接启动应用，必须将 <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> 显式设置为 `false`。 在 .NET Core 中，<xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> 的默认值为 `false`。 这意味着，默认情况下，在调用 `Process.Start` 时不会启动关联的应用程序。
+
+只有当 <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> 为 `true` 时，<xref:System.Diagnostics.ProcessStartInfo?displayProperty=nameWithType> 上的以下属性才起作用：
+
+- <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow?displayProperty=nameWithType>
+- <xref:System.Diagnostics.ProcessStartInfo.ErrorDialog?displayProperty=nameWithType>
+- <xref:System.Diagnostics.ProcessStartInfo.Verb?displayProperty=nameWithType>
+- <xref:System.Diagnostics.ProcessStartInfo.WindowStyle?displayProperty=nameWithType>.
 
 出于性能方面的考虑，.NET Core 中引入了此更改。 通常情况下，<xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> 用于直接启动应用程序。 直接启动应用并不需要使用 Windows shell，也不会产生关联的性能成本。 为了更快地使此情况默认化，.NET Core 将 <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> 的默认值更改为 `false`。 如果需要，可以选择慢速路径。
 
