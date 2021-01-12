@@ -3,12 +3,12 @@ title: 比较 project.json 和 csproj
 description: 查看 project.json 和 csproj 元素之间的映射。
 author: natemcmaster
 ms.date: 03/13/2017
-ms.openlocfilehash: c8638bc30ba09d8e8d464159aded60dcde4b8dc0
-ms.sourcegitcommit: 32f0d6f4c01ddc6ca78767c3a30e3305f8cd032c
+ms.openlocfilehash: 7de9f623a57a6a094debd3e018edc1560d837fc2
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87427016"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970871"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>project.json 和 csproj 属性之间的映射
 
@@ -144,7 +144,7 @@ And it's really great!</Description>
 ## <a name="dependencies"></a>依赖项
 
 > [!IMPORTANT]
-> 如果依赖项是一个**项目**而不是包，则格式不同。
+> 如果依赖项是一个 **项目** 而不是包，则格式不同。
 > 有关详细信息，请参阅[依赖项类型](#dependency-type)部分。
 
 ### <a name="netstandardlibrary-metapackage"></a>NETStandard.Library 元包
@@ -333,7 +333,7 @@ csproj 中没有等效项。
 ### <a name="standalone-apps-self-contained-deployment"></a>独立应用（独立部署）
 
 在 project.json 中，定义 `runtimes` 部分意味着应用在生成和发布期间独立。
-在 MSBuild 中，生成期间所有项目均*可移植*，但可发布为独立。
+在 MSBuild 中，生成期间所有项目均 *可移植*，但可发布为独立。
 
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
 
@@ -620,7 +620,7 @@ MSBuild 中没有 `owners` 元素的等效项。 对于 `summary`，可以使用
 ```
 
 > [!NOTE]
-> 许多默认 [glob 模式](https://en.wikipedia.org/wiki/Glob_(programming))由 .NET Core SDK 自动添加。 有关详细信息，请参阅[默认编译包括](../project-sdk/overview.md#default-compilation-includes)。
+> 许多默认 [glob 模式](https://en.wikipedia.org/wiki/Glob_(programming))由 .NET Core SDK 自动添加。 有关详细信息，请参阅[默认编译包括](../project-sdk/overview.md#default-includes-and-excludes)。
 
 所有 MSBuild `ItemGroup` 元素都支持`Include`、`Exclude` 和 `Remove`。
 

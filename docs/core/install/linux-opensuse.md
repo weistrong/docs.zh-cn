@@ -3,13 +3,13 @@ title: 在 openSUSE 上安装 .NET - .NET
 description: 演示在 openSUSE 上安装 .NET SDK 和 .NET 运行时的各种方式。
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: eb31e3109ccd40999c22a27607d48544bf117dc2
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 01/06/2021
+ms.openlocfilehash: 7a519f19f708e1f12af1e9715bad4f38a607f9c3
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031860"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970806"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-opensuse"></a>在 openSUSE 上安装 .NET SDK 或 .NET Runtime
 
@@ -41,10 +41,6 @@ openSUSE 支持 .NET。 本文介绍如何在 openSUSE 上安装 .NET。
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## <a name="how-to-install-other-versions"></a>如何安装其他版本
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## <a name="opensuse-15-"></a>openSUSE 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -59,6 +55,10 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
 
+## <a name="how-to-install-other-versions"></a>如何安装其他版本
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## <a name="troubleshoot-the-package-manager"></a>包管理器疑难解答
 
 本部分提供有关使用包管理器安装 .NET 时可能会遇到的常见错误的信息。
@@ -70,10 +70,6 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ### <a name="failed-to-fetch"></a>未能提取
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
-
-## <a name="snap"></a>对齐
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
 ## <a name="dependencies"></a>依赖项
 
@@ -94,14 +90,7 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
   > [!WARNING]
   > 可以通过将 Mono 存储库添加到系统来安装最新版 libgdiplus。 有关详细信息，请参阅 <https://www.mono-project.com/download/stable/>。
 
-## <a name="scripted-install"></a>脚本安装
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>手动安装
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## <a name="next-steps"></a>后续步骤
 
+- [如何为 .NET CLI 启用 Tab 自动补全](../tools/enable-tab-autocomplete.md)
 - [教程：使用 Visual Studio Code 通过 .NET SDK 创建控制台应用程序](../tutorials/with-visual-studio-code.md)

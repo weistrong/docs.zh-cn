@@ -3,13 +3,13 @@ title: 在 SLES 上安装 .NET - .NET
 description: 演示在 SLES 上安装 .NET SDK 和 .NET 运行时的各种方式。
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: f351a9b11ab16910963a1db88d88b6949b56ae11
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 01/06/2021
+ms.openlocfilehash: 80da69616dd1507b809ef56d439645d569a6a805
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031795"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970780"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-sles"></a>在 SLES 上安装 .NET SDK 或 .NET 运行时
 
@@ -40,10 +40,6 @@ SLES 支持 .NET。 本文介绍如何在 SLES 上安装 .NET。
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## <a name="how-to-install-other-versions"></a>如何安装其他版本
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## <a name="sles-15-"></a>SLES 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -72,6 +68,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
 
+## <a name="how-to-install-other-versions"></a>如何安装其他版本
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## <a name="troubleshoot-the-package-manager"></a>包管理器疑难解答
 
 本部分提供有关使用包管理器安装 .NET 时可能会遇到的常见错误的信息。
@@ -99,14 +99,7 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
   > [!WARNING]
   > 可以通过将 Mono 存储库添加到系统来安装最新版 libgdiplus。 有关详细信息，请参阅 <https://www.mono-project.com/download/stable/>。
 
-## <a name="scripted-install"></a>脚本安装
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>手动安装
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## <a name="next-steps"></a>后续步骤
 
+- [如何为 .NET CLI 启用 Tab 自动补全](../tools/enable-tab-autocomplete.md)
 - [教程：使用 Visual Studio Code 通过 .NET SDK 创建控制台应用程序](../tutorials/with-visual-studio-code.md)

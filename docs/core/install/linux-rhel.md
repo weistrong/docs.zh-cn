@@ -3,13 +3,13 @@ title: 在 RHEL 上安装 .NET - .NET
 description: 演示在 RHEL 上安装 .NET SDK 和 .NET 运行时的各种方式。
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: 0b6138185bfd3e2f50c1b31e82779165715a5b6e
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.date: 01/06/2021
+ms.openlocfilehash: d585017919507a8fdcbb24778a0ff3ab3d9049c2
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851635"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970793"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-rhel"></a>在 RHEL 上安装 .NET SDK 或 .NET 运行时
 
@@ -43,10 +43,6 @@ RHEL 支持 .NET。 本文介绍如何在 RHEL 上安装 .NET。
 ## <a name="remove-preview-versions"></a>删除预览版本
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
-
-## <a name="how-to-install-other-versions"></a>如何安装其他版本
-
-有关安装其他版本的 .NET 所需的步骤，请参阅[适用于 .NET 的 Red Hat 文档](https://access.redhat.com/documentation/net/5.0/)。
 
 ## <a name="rhel-8-"></a>RHEL 8 ✔️
 
@@ -140,22 +136,15 @@ source scl_source enable rh-dotnet31
 
 作为 ASP.NET Core 运行时的一种替代方法，你可以安装不包含 ASP.NET Core 支持的 .NET Core 运行时：将上述命令中的 `rh-dotnet31-aspnetcore-runtime-3.1` 替换为 `rh-dotnet31-dotnet-runtime-3.1`。
 
-## <a name="snap"></a>Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## <a name="dependencies"></a>依赖项
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## <a name="scripted-install"></a>脚本安装
+## <a name="how-to-install-other-versions"></a>如何安装其他版本
 
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>手动安装
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
+有关安装其他版本的 .NET 所需的步骤，请参阅[适用于 .NET 的 Red Hat 文档](https://access.redhat.com/documentation/net/5.0/)。
 
 ## <a name="next-steps"></a>后续步骤
 
+- [如何为 .NET CLI 启用 Tab 自动补全](../tools/enable-tab-autocomplete.md)
 - [教程：使用 Visual Studio Code 通过 .NET SDK 创建控制台应用程序](../tutorials/with-visual-studio-code.md)

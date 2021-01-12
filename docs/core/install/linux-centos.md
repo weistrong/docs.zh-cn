@@ -3,13 +3,13 @@ title: 在 CentOS 上安装 .NET - .NET
 description: 演示在 CentOS 上安装 .NET SDK 和 .NET 运行时的各种方式。
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: 2c3453c79a1dc31f01577bc0c1b9e320eb307c0a
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.date: 01/06/2021
+ms.openlocfilehash: 7e73f90a1f1f7e11e592b1b074f243c9f5b32ced
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851674"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970858"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-centos"></a>在 CentOS 上安装 .NET SDK 或 .NET 运行时
 
@@ -44,10 +44,6 @@ CentOS 支持 .NET。 本文介绍如何在 CentOS 上安装 .NET。
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## <a name="how-to-install-other-versions"></a>如何安装其他版本
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## <a name="centos-8-"></a>CentOS 8 ✔️
 
 .NET 5.0 在 CentOS 8 的默认包存储库中提供。
@@ -64,6 +60,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 [!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]
 
+## <a name="how-to-install-other-versions"></a>如何安装其他版本
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## <a name="troubleshoot-the-package-manager"></a>包管理器疑难解答
 
 本部分提供有关使用包管理器安装 .NET 时可能会遇到的常见错误的信息。
@@ -76,22 +76,11 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## <a name="snap"></a>Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## <a name="dependencies"></a>依赖项
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## <a name="scripted-install"></a>脚本安装
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>手动安装
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## <a name="next-steps"></a>后续步骤
 
+- [如何为 .NET CLI 启用 Tab 自动补全](../tools/enable-tab-autocomplete.md)
 - [教程：使用 Visual Studio Code 通过 .NET SDK 创建控制台应用程序](../tutorials/with-visual-studio-code.md)
