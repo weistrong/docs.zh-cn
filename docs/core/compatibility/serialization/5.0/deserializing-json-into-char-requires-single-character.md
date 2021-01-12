@@ -1,54 +1,56 @@
 ---
-title: 中断性变更：Deserialize 需要单字符的字符串
-description: 了解 .NET 5.0 中的以下中断性变更：JsonSerializer.Deserialize 需要单字符的字符串。
-ms.date: 10/18/2020
-ms.openlocfilehash: 780f2928d776ecb6db9a7fc05a720e889eb363e7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+title: 中断性变更：反序列化 char 需要单字符的字符串
+description: 了解 .NET 5.0 中的以下中断性变更：反序列化为 char 目标时，System.Text.Json 在 JSON 中需要单字符字符串。
+ms.date: 12/15/2020
+ms.openlocfilehash: 39a2d25b00bf8855cfbf46a4d78b8545052703e5
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759275"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633866"
 ---
-# <a name="jsonserializerdeserialize-requires-single-character-string"></a><span data-ttu-id="b566d-103">JsonSerializer.Deserialize 需要单字符的字符串</span><span class="sxs-lookup"><span data-stu-id="b566d-103">JsonSerializer.Deserialize requires single-character string</span></span>
+# <a name="systemtextjson-requires-single-char-string-to-deserialize-a-char"></a><span data-ttu-id="ecf58-103">System.Text.Json 需要使用单字符字符串才能反序列化 char</span><span class="sxs-lookup"><span data-stu-id="ecf58-103">System.Text.Json requires single-char string to deserialize a char</span></span>
 
-<span data-ttu-id="b566d-104">如果类型参数是 <xref:System.Char>，<xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> 的字符串参数必须包含单个字符才能成功进行反序列化。</span><span class="sxs-lookup"><span data-stu-id="b566d-104">When the type parameter is <xref:System.Char>, the string argument to <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> must contain a single character for deserialization to succeed.</span></span>
+<span data-ttu-id="ecf58-104">若要成功使用 <xref:System.Text.Json> 反序列化 <xref:System.Char>，JSON 字符串必须包含单字符。</span><span class="sxs-lookup"><span data-stu-id="ecf58-104">To successfully deserialize a <xref:System.Char> using <xref:System.Text.Json>, the JSON string must contain a single character.</span></span>
 
-## <a name="change-description"></a><span data-ttu-id="b566d-105">更改描述</span><span class="sxs-lookup"><span data-stu-id="b566d-105">Change description</span></span>
+## <a name="change-description"></a><span data-ttu-id="ecf58-105">更改描述</span><span class="sxs-lookup"><span data-stu-id="ecf58-105">Change description</span></span>
 
-<span data-ttu-id="b566d-106">在以前的 .NET 版本中，如果将多字符字符串传递到 <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>，并且类型参数为 <xref:System.Char>，则反序列化会成功，并且仅反序列化第一个字符。</span><span class="sxs-lookup"><span data-stu-id="b566d-106">In previous .NET versions, if you pass a multi-character string to <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> and the type parameter is <xref:System.Char>, the deserialization succeeds and only the first character is deserialized.</span></span>
-
-<span data-ttu-id="b566d-107">在 .NET 5.0 和更高版本中，如果类型参数为 <xref:System.Char>，传递除单字符字符串外的任何内容都会导致引发 <xref:System.Text.Json.JsonException>。</span><span class="sxs-lookup"><span data-stu-id="b566d-107">In .NET 5.0 and later, when the type parameter is <xref:System.Char>, passing anything other than a single-character string causes a <xref:System.Text.Json.JsonException> to be thrown.</span></span>
+<span data-ttu-id="ecf58-106">在 .NET 早期版本中，JSON 中的多 `char` 字符串会被成功地反序列化为 `char` 属性或字段。</span><span class="sxs-lookup"><span data-stu-id="ecf58-106">In previous .NET versions, a multi-`char` string in the JSON is successfully deserialized to a `char` property or field.</span></span> <span data-ttu-id="ecf58-107">只使用字符串的第一个 `char`，如以下示例所示：</span><span class="sxs-lookup"><span data-stu-id="ecf58-107">Only the first `char` of the string is used, as in the following example:</span></span>
 
 ```csharp
-// .NET Core 3.0 and 3.1: Returns the first character 'a'.
-// .NET 5.0 and later: Throws JsonException because payload has more than one character.
-JsonSerializer.Deserialize<char>("\"abc\"");
-
-// Correct usage.
-JsonSerializer.Deserialize<char>("\"a\"");
+// .NET Core 3.0 and 3.1: Returns the first char 'a'.
+// .NET 5.0 and later: Throws JsonException because payload has more than one char.
+char deserializedChar = JsonSerializer.Deserialize<char>("\"abc\"");
 ```
 
-## <a name="version-introduced"></a><span data-ttu-id="b566d-108">引入的版本</span><span class="sxs-lookup"><span data-stu-id="b566d-108">Version introduced</span></span>
+<span data-ttu-id="ecf58-108">在 .NET 5.0 和更高版本中，当反序列化目标为 `char` 时，除单 `char` 字符串以外的任何内容都会导致引发 <xref:System.Text.Json.JsonException>。</span><span class="sxs-lookup"><span data-stu-id="ecf58-108">In .NET 5.0 and later, anything other than a single-`char` string causes a <xref:System.Text.Json.JsonException> to be thrown when the deserialization target is a `char`.</span></span> <span data-ttu-id="ecf58-109">以下示例字符串在所有 .NET 版本中都已成功反序列化：</span><span class="sxs-lookup"><span data-stu-id="ecf58-109">The following example string is successfully deserialized in all .NET versions:</span></span>
 
-<span data-ttu-id="b566d-109">5.0</span><span class="sxs-lookup"><span data-stu-id="b566d-109">5.0</span></span>
+```csharp
+// Correct usage.
+char deserializedChar = JsonSerializer.Deserialize<char>("\"a\"");
+```
 
-## <a name="reason-for-change"></a><span data-ttu-id="b566d-110">更改原因</span><span class="sxs-lookup"><span data-stu-id="b566d-110">Reason for change</span></span>
+## <a name="version-introduced"></a><span data-ttu-id="ecf58-110">引入的版本</span><span class="sxs-lookup"><span data-stu-id="ecf58-110">Version introduced</span></span>
 
-<span data-ttu-id="b566d-111"><xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> 将表示单个 JSON 值的文本分析为泛型类型参数指定的类型的实例。</span><span class="sxs-lookup"><span data-stu-id="b566d-111"><xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> parses text that represents a single JSON value into an instance of the type specified by the generic type parameter.</span></span> <span data-ttu-id="b566d-112">仅当提供的有效负载对指定的泛型类型参数有效时，分析才会成功。</span><span class="sxs-lookup"><span data-stu-id="b566d-112">Parsing should only succeed when the provided payload is valid for the specified generic type parameter.</span></span> <span data-ttu-id="b566d-113">对于 <xref:System.Char> 值类型，有效的负载是单字符字符串。</span><span class="sxs-lookup"><span data-stu-id="b566d-113">For a <xref:System.Char> value type, a valid payload is a single character string.</span></span>
+<span data-ttu-id="ecf58-111">5.0</span><span class="sxs-lookup"><span data-stu-id="ecf58-111">5.0</span></span>
 
-## <a name="recommended-action"></a><span data-ttu-id="b566d-114">建议的操作</span><span class="sxs-lookup"><span data-stu-id="b566d-114">Recommended action</span></span>
+## <a name="reason-for-change"></a><span data-ttu-id="ecf58-112">更改原因</span><span class="sxs-lookup"><span data-stu-id="ecf58-112">Reason for change</span></span>
 
-<span data-ttu-id="b566d-115">使用 <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> 将字符串分析为 <xref:System.Char> 类型时，请确保字符串包含单个字符。</span><span class="sxs-lookup"><span data-stu-id="b566d-115">When parsing a string into a <xref:System.Char> type using <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>, make sure the string consists of a single character.</span></span>
+<span data-ttu-id="ecf58-113">仅在提供的有效负载对目标类型有效时，反序列化分析才会成功。</span><span class="sxs-lookup"><span data-stu-id="ecf58-113">Parsing for deserialization should only succeed when the provided payload is valid for the target type.</span></span> <span data-ttu-id="ecf58-114">对于 `char` 类型，唯一有效的有效负载是单 `char` 字符串。</span><span class="sxs-lookup"><span data-stu-id="ecf58-114">For a `char` type, the only valid payload is a single-`char` string.</span></span>
 
-## <a name="affected-apis"></a><span data-ttu-id="b566d-116">受影响的 API</span><span class="sxs-lookup"><span data-stu-id="b566d-116">Affected APIs</span></span>
+## <a name="recommended-action"></a><span data-ttu-id="ecf58-115">建议的操作</span><span class="sxs-lookup"><span data-stu-id="ecf58-115">Recommended action</span></span>
 
-- <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
+<span data-ttu-id="ecf58-116">将 JSON 反序列化为 `char` 目标时，请确保字符串包含单 `char`。</span><span class="sxs-lookup"><span data-stu-id="ecf58-116">When you deserialize JSON into a `char` target, make sure the string consists of a single `char`.</span></span>
+
+## <a name="affected-apis"></a><span data-ttu-id="ecf58-117">受影响的 API</span><span class="sxs-lookup"><span data-stu-id="ecf58-117">Affected APIs</span></span>
+
+- <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=fullName>
 
 <!--
 
 ### Affected APIs
 
-- `M:System.Text.Json.JsonSerializer.Deserialize``1(System.String,System.Text.Json.JsonSerializerOptions)`
+- `Overload:System.Text.Json.JsonSerializer.Deserialize`
 
 ### Category
 
