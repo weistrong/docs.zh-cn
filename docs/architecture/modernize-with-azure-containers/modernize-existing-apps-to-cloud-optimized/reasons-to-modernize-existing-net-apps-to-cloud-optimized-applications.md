@@ -1,13 +1,13 @@
 ---
 title: 将现有 .NET 应用现代化为云优化应用的原因
 description: 通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序 | 将现有 .NET 应用现代化为云优化应用的原因
-ms.date: 04/28/2018
-ms.openlocfilehash: 55eb3fb9b0b6c91e25bcdb23056a8a8e51463ef7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 12/21/2020
+ms.openlocfilehash: e9b3ad151cf0591783ada8a1ab87cb0f14423a7e
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73093633"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025207"
 ---
 # <a name="reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"></a>将现有 .NET 应用现代化为云优化应用的原因
 

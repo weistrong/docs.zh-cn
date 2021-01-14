@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ms.author: daberry
 author: daberry
-ms.openlocfilehash: 5d14bd0d9930d41a8c60b58b9f5b0522f0c0e398
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: b5766012b77da88ae9a696939b6e498ebc421522
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700765"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025037"
 ---
 # <a name="introduction-to-azure-and-net"></a>Azure 和 .NET 简介
 
 ## <a name="what-is-azure"></a>什么是 Azure？
 
-Azure 是一个云平台，旨在简化构建新式应用程序的过程。  无论是选择完全在 Azure 中托管应用程序，还是使用 Azure 服务扩展本地应用程序，Azure 都可以帮助你创建可缩放且可维护的可靠应用程序。  凭借对你已在使用的工具（如 Visual Studio 和 Visual Studio Code）和综合性 SDK 库的广泛支持，Azure 旨在使 .NET 开发人员从一开始就高效工作。
+Azure 是一个云平台，旨在简化构建新式应用程序的过程。  无论是选择完全在 Azure 中托管应用程序，还是使用 Azure 服务扩展本地应用程序，Azure 都可以帮助你创建可缩放且可维护的可靠应用程序。  凭借你已在使用的工具（如 Visual Studio 和 Visual Studio Code）和综合性 SDK 库中的广泛支持，Azure 旨在使 .NET 开发人员从一开始就高效工作。
 
 ## <a name="application-development-scenarios-on-azure"></a>Azure 上的应用程序开发方案
 

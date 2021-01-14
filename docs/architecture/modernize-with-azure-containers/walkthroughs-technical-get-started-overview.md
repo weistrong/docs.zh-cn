@@ -1,13 +1,13 @@
 ---
 title: 演练和技术入门概述
 description: 通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序 | 演练和技术入门概述
-ms.date: 04/28/2018
-ms.openlocfilehash: 98d33b13d2b28bfe1c35894df45e525cff0520c1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: 6bfa25e3eeeecf5a936f378df3ae548d6fa37a30
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172139"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025272"
 ---
 # <a name="walkthroughs-and-technical-get-started-overview"></a>演练和技术入门概述
 
@@ -117,7 +117,7 @@ ASP.NET 4.x 或早期版本中的依赖项（对于 MVC 或 Web Forms）意味�
 
 另一个优点是，开发人员可以在 Windows 容器提供的一致环境中运行应用程序。 仅某些版本中出现的问题会立即被发现，而不会出现在过渡或生产环境中。 应用程序在容器中运行后，开发团队的成员使用的开发环境之间的差异将不那么重要。
 
-容器化应用程序还具有较为平缓的的横向扩展曲线。 使用容器化应用，VM 或物理计算机可以拥有更多应用程序和服务实例（与每台计算机的常规应用程序部署相比）。 这将转换为更高的密度和更少的所需资源，尤其是在使用业务流程协调程序（如 Kubernetes）时。
+容器化应用程序还具有较为平缓的的横向扩展曲线。 使用容器化应用，VM 或物理计算机可以拥有更多应用程序和服务实例（与每台计算机的常规应用程序部署相比）。 此方法将转换为更高的密度和更少的所需资源，尤其是在使用业务流程协调程序（如 Kubernetes）时。
 
 在理想情况下，容器化不需要对应用程序代码 (C\#) 进行任何更改。 在大多数情况下，只需要 Docker 部署元数据文件（Dockerfile 和 Docker Compose 文件）。
 
@@ -228,7 +228,7 @@ eShopModernizing GitHub 存储库 wiki 中提供了完整的技术演练：
 
 ### <a name="overview"></a>概述
 
-基于 Windows 容器的应用程序很快需要使用平台，使其与 IaaS VM 离得更远。 这是为了轻松实现高可伸缩性和更好的自动可伸缩性，并显著改进自动化部署和版本控制。 可以使用 [Azure 容器服务](https://azure.microsoft.com/services/container-service/)中提供的业务流程协调程序 [Kubernetes](https://kubernetes.io/) 来实现这些目标。
+基于 Windows 容器的应用程序很快需要使用平台，使其与 IaaS VM 离得更远。 此方法是为了轻松实现高可伸缩性和更好的自动可伸缩性，并显著改进自动化部署和版本控制。 可以使用 [Azure 容器服务](https://azure.microsoft.com/services/container-service/)中提供的业务流程协调程序 [Kubernetes](https://kubernetes.io/) 来实现这些目标。
 
 ### <a name="goals"></a>目标
 

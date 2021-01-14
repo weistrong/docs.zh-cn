@@ -1,17 +1,17 @@
 ---
 title: 何时将 Windows 容器部署到 Azure 容器实例 (ACI)
 description: 通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序 | 何时将 Windows 容器部署到 Azure 容器实例 (ACI)
-ms.date: 04/29/2018
-ms.openlocfilehash: 6c889db6f0475f24a196144c7fb62faec4c173ed
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.date: 12/21/2020
+ms.openlocfilehash: 556fe7cbec7d259db9ec886b777feda9eed09116
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80989150"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025128"
 ---
 # <a name="when-to-deploy-windows-containers-to-azure-container-instances-aci"></a>何时将 Windows 容器部署到 Azure 容器实例 (ACI)
 
-Azure 容器实例的主要价值主张是，你可以立即将容器部署到该环境中，而无需维护该环境，无需升级/修补基础操作系统或 VM，所有这些都是透明的，你只需将容器部署到随时可用的环境中即可。
+Azure 容器实例的主要价值主张是，你可以立即将容器部署到该环境中，而无需维护该环境，无需升级/修补基础操作系统或 VM，所有这些操作都是透明的，你只需将容器部署到随时可用的环境中即可。
 
 想要使用 ACI 的原因和方案类似于将 Azure VM 与容器一起使用时的主要方案，因此，使用 Azure 容器实例的主要方案基本如下：
 

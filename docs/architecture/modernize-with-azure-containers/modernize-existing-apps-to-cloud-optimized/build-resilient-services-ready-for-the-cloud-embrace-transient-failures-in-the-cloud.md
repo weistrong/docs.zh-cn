@@ -1,13 +1,13 @@
 ---
 title: 生成适用于云的可复原服务。 在云中处理暂时性故障
 description: 通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序 | 生成适用于云的可复原服务。 在云中处理暂时性故障
-ms.date: 04/30/2018
-ms.openlocfilehash: 8e9f1eda71e4b98a56cbfc1c7a4ff34e67bee3f4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: 4d592a5761cdf696f3e57516d747cbd770512053
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172152"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025324"
 ---
 # <a name="build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"></a>生成适用于云的可复原服务：在云中处理暂时性故障
 
@@ -35,7 +35,7 @@ ms.locfileid: "91172152"
 
 实现访问数据库的可复原通信时，根据所使用的 .NET 版本，过程可能非常直接（例如[带有实体框架 6 或更高版本](/ef/ef6/fundamentals/connection-resiliency/retry-logic)。 只需配置数据库连接即可）。 或者，你可能需要使用其他库，如[暂时性故障处理应用程序块](/previous-versions/msp-n-p/hh680934(v=pandp.50))（适用于早期版本的 .NET），甚至实现你自己的库。
 
-实现 HTTP 重试和断路器时，适用于 .NET 的建议使用 [Polly](https://github.com/App-vNext/Polly) 库，此库面向 .NET Framework 4.0、.NET Framework 4.5 和 .NET Standard 1.1，其中包括 .NET Core 支持。
+实现 HTTP 重试和断路器时，建议 .NET 使用 [Polly](https://github.com/App-vNext/Polly) 库，此库面向 .NET Standard 1.1（包括 .NET Core 1.0、Mono、Xamarin、UWP、WP8.1+）和 .NET Standard 2.0+（包括 .NET Core 2.0+、.NET Core 3.0 及更高版本、Mono、Xamarin 和 UWP 目标）。 Nuget 包还包括适用于 .NET Framework 4.6.1 和 4.7.2 的直接目标。
 
 若要了解如何实现用于处理云中部分故障的策略，请参阅以下参考。
 

@@ -1,13 +1,13 @@
 ---
 title: 整体式应用程序
 description: 了解容器化整体式应用程序的核心概念。
-ms.date: 08/06/2020
-ms.openlocfilehash: c9a5baf209a47f62f421a236c0b04fe5dae37e3a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/06/2021
+ms.openlocfilehash: a66c76c473c116b303975040d893348182b96713
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163539"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970533"
 ---
 # <a name="monolithic-applications"></a>整体式应用程序
 
@@ -69,7 +69,7 @@ ms.locfileid: "91163539"
 
 使用 Azure 应用服务是直观的，并且可以快速启动和运行，因为它提供了很好的 Git 集成来获取代码，在 Microsoft Visual Studio 中生成代码，并直接将其部署到 Azure。 但是，传统上（没有 Docker），如果需要应用服务中不支持的其他功能、框架或依赖项，则需要等待，直到 Azure 团队在应用服务中更新这些依赖项，或者需要切换到你可以进一步控制并为应用程序安装所需组件或框架的其他服务（如 Service Fabric、云服务甚至普通 VM）。
 
-现在，如图 4-4 所示，在使用 Visual Studio 2017 时，Azure 应用服务中的容器支持使你能够在应用环境中包含任何所需内容。 如果在应用中添加了依赖项，由于在容器中运行它，因此可以在 Dockerfile 或 Docker 映像中包含这些依赖项。
+现在，如图 4-4 所示，在使用 Visual Studio 2019 时，Azure 应用服务中的容器支持使你能够在应用环境中包含任何所需内容。 如果在应用中添加了依赖项，由于在容器中运行它，因此可以在 Dockerfile 或 Docker 映像中包含这些依赖项。
 
 ![显示容器注册表的“创建应用服务”对话框的屏幕截图。](./media/monolithic-applications/publish-azure-app-service-container.png)
 

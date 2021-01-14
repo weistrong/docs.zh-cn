@@ -1,14 +1,14 @@
 ---
 title: 使用 .NET Core 创建 REST 客户端
-description: 此教程将介绍 .NET Core 和 C# 语言的许多功能。
+description: 此教程介绍 .NET Core 和 C# 语言的一些功能。
 ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: b537108bd77b3ed2248ca9e459044e09fa854ba9
-ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
+ms.openlocfilehash: a8490efbc954ca585a2a0fa9d571191095a4b24c
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97899647"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98024972"
 ---
 # <a name="rest-client"></a>REST 客户端
 
@@ -25,12 +25,12 @@ ms.locfileid: "97899647"
 
 此教程中介绍了多项功能。 我们将逐个生成这些功能。
 
-如果想要按照针对本主题的[最终示例](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient)操作，可以下载它。 有关下载说明，请参阅[示例和教程](../../samples-and-tutorials/index.md#view-and-download-samples)。
+如果想要按照用于本文的[最终示例](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient)操作，可以下载它。 有关下载说明，请参阅[示例和教程](../../samples-and-tutorials/index.md#view-and-download-samples)。
 
 ## <a name="prerequisites"></a>先决条件
 
-必须将计算机设置为运行 .Net Core。 有关安装说明，请访问 [.NET Core 下载](https://dotnet.microsoft.com/download)页。 可以在 Windows、Linux、macOS 或 Docker 容器中运行此应用程序。
-必须安装常用的代码编辑器。 在以下说明中，我们使用的是开放源代码跨平台编辑器 [Visual Studio Code](https://code.visualstudio.com/)。 不过，你可以使用习惯使用的任意工具。
+需要将计算机设置为运行 .Net Core。 有关安装说明，请访问 [.NET Core 下载](https://dotnet.microsoft.com/download)页。 可以在 Windows、Linux、macOS 或 Docker 容器中运行此应用程序。
+需要安装常用的代码编辑器。 在以下说明中，我们使用的是开放源代码跨平台编辑器 [Visual Studio Code](https://code.visualstudio.com/)。 不过，你可以使用习惯使用的任意工具。
 
 ## <a name="create-the-application"></a>创建应用程序
 
@@ -129,7 +129,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 ```
 
-第一个版本发出 Web 请求来读取 .NET Foundation 组织下的所有存储库列表。 （.NET Foundation 的 gitHub ID 为“dotnet”）。 前几行代码针对该请求设置 <xref:System.Net.Http.HttpClient>。 在第一行中，它被配置为接受 GitHub JSON 响应。
+第一个版本发出 Web 请求来读取 .NET Foundation 组织下的所有存储库列表。 （.NET Foundation 的 GitHub ID 为 `dotnet`。）前几行代码针对该请求设置 <xref:System.Net.Http.HttpClient>。 在第一行中，它被配置为接受 GitHub JSON 响应。
 此格式仅为 JSON。 下一代码行将用户代理标头添加到此对象发出的所有请求中。 这两个标头均由 GitHub 服务器代码进行检查，必须使用它们，才能检索 GitHub 中的信息。
 
 配置 <xref:System.Net.Http.HttpClient> 后，发出 Web 请求并检索响应。 在此第一个版本中，将使用 <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> 便捷方法。 此便捷方法先执行发出 Web 请求的任务，然后当返回请求时读取响应流，并从流中提取内容。 响应正文以 <xref:System.String> 的形式返回。 此字符串在任务完成时可用。
@@ -191,7 +191,7 @@ foreach (var repo in repositories)
     Console.WriteLine(repo.name);
 ```
 
-编译并运行该应用程序。 将打印输出属于 .NET Foundation 的存储库的名称。
+编译并运行该应用程序。 将打印属于 .NET Foundation 的存储库的名称。
 
 ## <a name="controlling-serialization"></a>控制序列化
 

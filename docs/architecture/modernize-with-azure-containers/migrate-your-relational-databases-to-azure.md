@@ -1,13 +1,13 @@
 ---
 title: 将关系数据库迁移到 Azure
-description: 通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序 | 将关系数据库迁移到 Azure
-ms.date: 04/28/2018
-ms.openlocfilehash: efd1548c3f74fc27450f4949d71a1c4d61907ba5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+description: 通过 Azure 云和 Windows 容器实现现有 .NET 应用程序的现代化 | 将关系数据库迁移到 Azure
+ms.date: 12/21/2020
+ms.openlocfilehash: c8dc92e1c5c5fb36a68bcad000c10e47c946ca0c
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73093617"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025376"
 ---
 # <a name="migrate-your-relational-databases-to-azure"></a>将关系数据库迁移到 Azure
 

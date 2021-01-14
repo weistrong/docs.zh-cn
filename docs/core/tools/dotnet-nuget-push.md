@@ -3,12 +3,12 @@ title: dotnet nuget push 命令
 description: dotnet nuget push 命令可将包推送到服务器并发布。
 author: karann-msft
 ms.date: 02/14/2020
-ms.openlocfilehash: 50a4a542c2d192bfbd927845489d04fd1b6c6cf3
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 99e735f7bb18b7af1c12c3ef77fc150a19083542
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555118"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970650"
 ---
 # <a name="dotnet-nuget-push"></a>dotnet nuget push
 
@@ -74,7 +74,9 @@ dotnet nuget push -h|--help
 
 - **`-s|--source <SOURCE>`**
 
-  指定服务器 URL。 除非在 NuGet 配置文件中设置了 `DefaultPushSource` 配置值，否则此选项是必需的。
+  指定服务器 URL。 NuGet 标识 UNC 或本地文件夹源，只在其中复制文件，而不会使用 HTTP 进行推送。
+  > [!IMPORTANT]
+  > 从 NuGet 3.4.2 开始，此参数为必需，除非 NuGet 配置文件指定了 `DefaultPushSource` 值。 有关详细信息，请参阅[配置 NuGet 行为](/nuget/consume-packages/configuring-nuget-behavior)。
 
 - **`--skip-duplicate`**
 
@@ -94,7 +96,7 @@ dotnet nuget push -h|--help
 
 ## <a name="examples"></a>示例
 
-- 将 foo.nupkg 推送到默认推送源（指定 API 密钥）  ：
+- 将 foo.nupkg 推送到 NuGet 配置文件中指定的默认推送源（使用 API 密钥）：
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
@@ -112,7 +114,7 @@ dotnet nuget push -h|--help
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
   ```
 
-- 将 foo.nupkg 推送到默认推送源  ：
+- 将 foo.nupkg 推送到 NuGet 配置文件中指定的默认推送源：
 
   ```dotnetcli
   dotnet nuget push foo.nupkg
@@ -124,13 +126,13 @@ dotnet nuget push -h|--help
   dotnet nuget push foo.symbols.nupkg
   ```
 
-- 将 foo.nupkg 推送到默认推送源（指定 360 秒超时）  ：
+- 将 foo.nupkg 推送到 NuGet 配置文件中指定的默认推送源（超时 360 秒）：
 
   ```dotnetcli
   dotnet nuget push foo.nupkg --timeout 360
   ```
 
-- 将当前目录中的所有 .nupkg 文件推送到默认推送源  ：
+- 将当前目录中的所有 .nupkg 文件推送到 NuGet 配置文件中指定的默认推送源：
 
   ```dotnetcli
   dotnet nuget push "*.nupkg"
@@ -143,7 +145,7 @@ dotnet nuget push -h|--help
   > [!NOTE]
   > 用于执行文件组合的 bash 等 shell 需要用引号括起来。 有关详细信息，请参阅 [NuGet/Home#4393](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120)。
 
-- 推送所有 .nupkg 文件，即使 HTTP(S) 服务器返回了 409 冲突响应也是如此  ：
+- 将所有 .nupkg 文件推送到 NuGet 配置文件中指定的默认推送源，即使 HTTP(S) 服务器返回“409 Conflict”响应也是如此：
 
   ```dotnetcli
   dotnet nuget push "*.nupkg" --skip-duplicate

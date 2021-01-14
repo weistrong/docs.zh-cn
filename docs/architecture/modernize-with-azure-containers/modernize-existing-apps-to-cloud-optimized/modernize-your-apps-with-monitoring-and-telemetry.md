@@ -1,13 +1,13 @@
 ---
 title: 通过监视和遥测对应用进行现代化
 description: 通过 Azure 云和 Windows 容器现代化现有 .NET 应用程序 | 通过监视和遥测现代化应用
-ms.date: 04/30/2018
-ms.openlocfilehash: a6094435eece661d99904876ac49b3ca85ec45a7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: c79a16400ce9dadca50fabb6c7df2859e4519a41
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91171996"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025233"
 ---
 # <a name="modernize-your-apps-with-monitoring-and-telemetry"></a>通过监视和遥测对应用进行现代化
 
@@ -15,7 +15,7 @@ ms.locfileid: "91171996"
 
 ## <a name="monitor-your-application-with-application-insights"></a>使用 Application Insights 监视应用程序
 
-Application Insights 是面向在多个平台上工作的 Web开发人员的可扩展应用程序性能管理 (APM) 服务。 使用它可以监视实时 Web 应用程序。 Application Insights 可以自动检测性能异常。 其中包含强大的分析工具来帮助诊断问题，帮助你了解用户在应用中实际执行了哪些操作。 Application Insights 旨在帮助持续提高性能与可用性。 它适用于各种平台（包括 .NET、Node.js 和 J2EE）中的应用，不管这些应用是托管在本地还是云中。 Application Insights 与 DevOps 进程集成，并且具有与不同开发工具的连接点。
+Application Insights 是面向在多个平台上工作的 Web开发人员的可扩展应用程序性能管理 (APM) 服务。 使用它可以监视实时 Web 应用程序。 Application Insights 可以自动检测性能异常。 其中包含强大的分析工具来帮助诊断问题，帮助你了解用户在应用中实际执行了哪些操作。 Application Insights 旨在帮助持续提高性能与可用性。 它适用于各种平台（包括 .NET、Node.js 和 J2EE）中的应用，不管这些应用是托管在本地还是云中。 Application Insights 与 DevOps 进程集成，并且具有与各种开发工具的连接点。
 
 图 4-10 显示的示例说明了 Application Insights 如何监视应用程序以及它如何将这些见解呈现给仪表板。
 

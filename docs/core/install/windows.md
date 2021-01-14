@@ -3,13 +3,13 @@ title: 在 Windows 上安装 .NET
 description: 了解可在其上安装 .NET 的 Windows 版本。
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: b5c0949bbd591906536094a33d8583a265d8a4c8
-ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
+ms.date: 01/06/2021
+ms.openlocfilehash: d8ca3eed3786a728002d8ffe80b774a0018eee82
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97110229"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025448"
 ---
 # <a name="install-net-on-windows"></a>在 Windows 上安装 .NET
 
@@ -182,28 +182,19 @@ SDK 用于生成和发布 .NET 应用和库。 安装 SDK 会包含三个[运行
 
 如果要在以下 Windows 版本上安装 .NET SDK 或运行时，则需要其他依赖项：
 
-- Windows 7 SP1 [ESU][esu]
-- Windows Vista SP 2
-- Windows 8.1
-- Windows Server 2008 R2
-- Windows Server 2012 R2
+| 操作系统         | 先决条件                                                                    |
+|--------------------------|----------------------------------------------------------------------------------|
+| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] <br> - KB3063858 [64 位][kb64] / [32 位][kb32] <br> - [MicrosoftRootCertificateAuthority2011.cer](https://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409)（仅限 .NET Core 2.1） |
+| Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] |
+| Windows 8.1              | Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] |
+| Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] |
+| Windows Server 2012 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] |
 
-安装以下组件：
+如果收到与以下 dll 之一相关的错误，也需要满足上述要求：
 
-- [Microsoft Visual C++ 2015 Redistributable 更新 3](https://www.microsoft.com/download/details.aspx?id=52685)。
-- [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
-
-如果遇到以下错误之一，也需要满足上述要求：
-
-> 此程序无法启动，因为计算机上缺少 api-ms-win-crt-runtime-l1-1-0.dll。 尝试重新安装该程序以解决此问题。
->
-> \- 或 -
->
-> 此程序无法启动，因为计算机上缺少 api-ms-win-cor-timezone-l1-1-0.dll。 尝试重新安装该程序以解决此问题。
->
-> \- 或 -
->
-> 已找到库 hostfxr.dll，但未能将其从 C:\\\<path_to_app>\\hostfxr.dll 中加载。
+- api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-cor-timezone-l1-1-0.dll
+- hostfxr.dll
 
 ## <a name="install-with-powershell-automation"></a>使用 PowerShell 自动化安装
 
@@ -318,3 +309,7 @@ Microsoft 提供适合特定场景的映像。 例如，[ASP.NET Core 存储库]
 - [教程：使 .NET Core 应用容器化](../docker/build-container.md)。
 
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
+[vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe
+[vcc32]: https://aka.ms/vs/16/release/vc_redist.x86.exe
+[kb64]: https://www.microsoft.com/en-us/download/details.aspx?id=47442
+[kb32]: https://www.microsoft.com/en-us/download/details.aspx?id=47409

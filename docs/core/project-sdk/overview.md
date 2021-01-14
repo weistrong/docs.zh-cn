@@ -4,12 +4,12 @@ titleSuffix: ''
 description: 了解 .NET 项目 SDK。
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 6b6651f674f09d5d0d18ddb873096037ad3b2ba5
-ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
+ms.openlocfilehash: 270735c9eef9f1930680687917317ac8bdf39e6d
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91247563"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970689"
 ---
 # <a name="net-project-sdks"></a>.NET 项目 SDK
 
@@ -83,9 +83,9 @@ ms.locfileid: "91247563"
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-### <a name="default-compilation-includes"></a>默认编译包括
+### <a name="default-includes-and-excludes"></a>默认包含和排除的内容
 
-编译项、嵌入资源和 `None` 项默认包含和排除的内容在 SDK 中定义。 与非 SDK .NET 框架项目不同，你无需在项目文件中指定这些项，因为默认设置涵盖了最常见的用例。 这使得项目文件更小、更易于理解和手动编辑（如需要）。
+SDK 中定义了 [`Compile` 项](/visualstudio/msbuild/common-msbuild-project-items#compile)、[嵌入的资源](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource)和 [`None` 项](/visualstudio/msbuild/common-msbuild-project-items#none)默认包含和排除的内容。 与非 SDK .NET 框架项目不同，你无需在项目文件中指定这些项，因为默认设置涵盖了最常见的用例。 此行为使得项目文件更小、更易于理解和手动编辑（如需要）。
 
 下表显示在 .NET SDK 中包含和排除的元素和 [glob](https://en.wikipedia.org/wiki/Glob_(programming))：
 
@@ -96,7 +96,7 @@ ms.locfileid: "91247563"
 | None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
-> 默认情况下，由 `$(BaseOutputPath)` 和 `$(BaseIntermediateOutputPath)` MSBuild 属性表示的 `./bin` 和 `./obj` 文件夹不包含在 glob 中。 排除由属性 `$(DefaultItemExcludes)` 表示。
+> 默认情况下，由 `$(BaseOutputPath)` 和 `$(BaseIntermediateOutputPath)` MSBuild 属性表示的 `./bin` 和 `./obj` 文件夹不包含在 glob 中。 排除由 [DefaultItemExcludes 属性](msbuild-props.md#defaultitemexcludes)表示。
 
 #### <a name="build-errors"></a>生成错误
 
@@ -110,7 +110,7 @@ ms.locfileid: "91247563"
 
 - 删除与上表中列出的隐式项匹配的显式 `Compile`、`EmbeddedResource` 或 `None` 项。
 
-- 若要禁用所有隐式文件包含，请将 `EnableDefaultItems` 属性设置为 `false`：
+- 若要禁用所有隐式文件包含，请将 [EnableDefaultItems 属性](msbuild-props.md#enabledefaultitems)设置为 `false`：
 
   ```xml
   <PropertyGroup>
@@ -120,7 +120,7 @@ ms.locfileid: "91247563"
 
   若要指定某些文件通过应用发布，仍可以使用相应的已知 MSBuild 机制来实现（例如 `Content` 元素）。
 
-- 将 `EnableDefaultCompileItems`、`EnableDefaultEmbeddedResourceItems` 或 `EnableDefaultNoneItems` 属性设置为 `false`，以选择性地仅禁用 `Compile`、`EmbeddedResource` 或 `None` glob：
+- 可选择仅禁用 `Compile`、`EmbeddedResource` 或 `None` glob，方法是将 [EnableDefaultCompileItems](msbuild-props.md#enabledefaultcompileitems)、[EnableDefaultEmbeddedResourceItems](msbuild-props.md#enabledefaultembeddedresourceitems) 或 [EnableDefaultNoneItems](msbuild-props.md#enabledefaultnoneitems) 属性设置为 `false`：
 
   ```xml
   <PropertyGroup>

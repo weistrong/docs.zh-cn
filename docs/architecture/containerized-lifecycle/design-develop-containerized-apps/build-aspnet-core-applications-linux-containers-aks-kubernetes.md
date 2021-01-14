@@ -1,13 +1,13 @@
 ---
 title: 构建作为 Linux 容器部署到 AKS/Kubernetes 群集中的 ASP.NET Core 应用程序
 description: 使用 Microsoft 平台和工具的容器化 Docker 应用程序的生命周期
-ms.date: 08/06/2020
-ms.openlocfilehash: 831d2372131e20788d0f48190eb8c600aa02485c
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.date: 01/06/2021
+ms.openlocfilehash: 7a8f8272ab2faabd0398aeeb2039b6f034b4dedb
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440824"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970615"
 ---
 # <a name="build-aspnet-core-applications-deployed-as-linux-containers-into-an-akskubernetes-orchestrator"></a>构建作为 Linux 容器部署到 AKS/Kubernetes 业务流程协调程序中的 ASP.NET Core 应用程序
 
@@ -21,13 +21,13 @@ AKS 主要功能如下：
 - 用户可配置的缩放
 - 针对开发人员和群集操作员提供的更简单的用户体验。
 
-以下示例探讨了如何创建在 Linux 上运行并部署到 Azure 中的 AKS 群集的 ASP.NET Core 3.1 应用程序，同时使用 Visual Studio 2019 完成开发。
+以下示例探讨了如何创建在 Linux 上运行并部署到 Azure 中的 AKS 群集的 ASP.NET Core 5.0 应用程序，同时使用 Visual Studio 2019 版本 16.8 完成开发。
 
 ## <a name="creating-the-aspnet-core-project-using-visual-studio-2019"></a>使用 Visual Studio 2019 创建 ASP.NET Core 项目
 
 ASP.NET Core 是一个通用开发平台，由 Microsoft 和 GitHub 上的 .NET 社区共同维护。 它跨平台支持 Windows、macOS 和 Linux，并且可用于设备、云和嵌入式/IoT 方案。
 
-此示例使用几个基于 Visual Studio Web API 模板的简单项目，因此你无需太多其他知识即可创建示例。 只需使用标准模板创建项目，该模板包含使用 ASP.NET Core 3.1 技术运行带有 REST API 和带有 Razor Pages 的 Web 应用的小项目的所有元素。
+此示例使用几个基于 Visual Studio Web API 模板的简单项目，因此你无需太多其他知识即可创建示例。 只需使用标准模板创建项目，该模板包含使用 ASP.NET Core 5.0 技术运行带有 REST API 的小项目和带有 Razor Pages 的 Web 应用的所有元素。
 
 ![Visual Studio 中的“添加新项目”窗口，已选择 ASP.NET Core Web 应用。](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-aspnet-core-application.png)
 
@@ -41,11 +41,11 @@ ASP.NET Core 是一个通用开发平台，由 Microsoft 和 GitHub 上的 .NET 
 
 图 4-36  . 在 Visual Studio 2019 中输入项目名称和位置。
 
-验证是否已选择 ASP.NET Core 3.1 作为框架。 .NET Core 3.1 包含在 Visual Studio 2019 的最新版本中，并在安装 Visual Studio 时自动安装和配置。
+验证是否已选择 ASP.NET Core 5.0 作为框架。 .NET 5.0 包含在 Visual Studio 2019 的最新版本中，并会在你安装 Visual Studio 时自动进行安装和配置。
 
 ![用于选择 ASP.NET Core Web 应用类型的 Visual Studio 对话框，已选择 API 选项。](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-web-api-application.png)
 
-图 4-37  . 选择 ASP.NET CORE 3.1 和 Web API 项目类型
+图 4-37  . 选择 ASP.NET CORE 5.0 和 Web API 项目类型
 
 注意，现在尚未启用 Docker 支持，只是为了表明它可以在项目创建后完成。
 
@@ -63,7 +63,7 @@ ASP.NET Core 是一个通用开发平台，由 Microsoft 和 GitHub 上的 .NET 
 
 图 4-39  . 选择 Linux 容器。
 
-通过这些简单的步骤，你就可以在 Linux 容器上运行 ASP.NET Core 3.1 应用程序。
+通过这些简单的步骤，你就可以在 Linux 容器上运行 ASP.NET Core 5.0 应用程序。
 
 同样，你还可以添加一个非常简单的 WebApp 项目（图 4-40）来使用 Web API 终结点，但此处不进行详细介绍。
 

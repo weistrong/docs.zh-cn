@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.topic: how-to
 ms.custom: contperf-fy21q2
 ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
-ms.openlocfilehash: 18021156af879f324993beca04531c8a822725db
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 35cf1af661071c70b8d68de2e47ce555be7b9fef
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513232"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025402"
 ---
 # <a name="how-to-convert-between-hexadecimal-strings-and-numeric-types-c-programming-guide"></a>如何在十六进制字符串与数值类型之间转换（C# 编程指南）
 
@@ -60,6 +60,12 @@ ms.locfileid: "97513232"
  下面的示例演示了如何使用 <xref:System.BitConverter?displayProperty=nameWithType> 类将[字节](../../language-reference/builtin-types/integral-numeric-types.md)数组转换为十六进制字符串。  
   
  [!code-csharp[csProgGuideTypes#38](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#38)]  
+  
+## <a name="example"></a>示例  
+
+ 下面的示例演示如何通过调用 .NET 5.0 中引入的 <xref:System.Convert.ToHexString%2A?displayProperty=nameWithType> 方法，将[字节](../../language-reference/builtin-types/integral-numeric-types.md)数组转换为十六进制字符串。
+  
+ [!code-csharp[csProgGuideTypes#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#47)]  
   
 ## <a name="see-also"></a>请参阅
 

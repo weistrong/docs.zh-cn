@@ -3,13 +3,13 @@ title: 在 Debian 上安装 .NET - .NET
 description: 演示在 Debian 上安装 .NET SDK 和 .NET 运行时的各种方式。
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: 683d0a9c47edf3cf9c47426d659e778eeb6f84df
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 01/06/2021
+ms.openlocfilehash: 913d8bffdd6c0b5e88a70dae0ec4c8d732e80cc0
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031886"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970832"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-debian"></a>在 Debian 上安装 .NET SDK 或 .NET 运行时
 
@@ -42,10 +42,6 @@ ms.locfileid: "96031886"
 ## <a name="remove-preview-versions"></a>删除预览版本
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
-
-## <a name="how-to-install-other-versions"></a>如何安装其他版本
-
-[!INCLUDE [hack-pkgname](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## <a name="debian-10-"></a>Debian 10 ✔️
 
@@ -90,7 +86,11 @@ sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
-## <a name="apt-update-sdk-or-runtime"></a>APT 更新 SDK 或运行时
+## <a name="how-to-install-other-versions"></a>如何安装其他版本
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## <a name="use-apt-to-update-net"></a>使用 APT 更新 .NET
 
 当新的修补程序版本适用于 .NET 时，只需使用以下命令通过 APT 进行升级：
 
@@ -129,10 +129,6 @@ sudo apt-get update; \
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 
-## <a name="snap"></a>对齐
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## <a name="dependencies"></a>依赖项
 
 使用包管理器进行安装时，将为你安装这些库。 但是，如果手动安装 .NET Core 或发布自包含的应用，则需要确保已安装以下库：
@@ -156,14 +152,7 @@ sudo apt-get update; \
   > [!WARNING]
   > 可以通过将 Mono 存储库添加到系统来安装最新版 libgdiplus。 有关详细信息，请参阅 <https://www.mono-project.com/download/stable/>。
 
-## <a name="scripted-install"></a>脚本安装
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>手动安装
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## <a name="next-steps"></a>后续步骤
 
+- [如何为 .NET CLI 启用 Tab 自动补全](../tools/enable-tab-autocomplete.md)
 - [教程：使用 Visual Studio Code 通过 .NET SDK 创建控制台应用程序](../tutorials/with-visual-studio-code.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - struct type [C#]
 - structure type [C#]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: 96a39609e9ae8b11e9872b049134136fe1ff3e2a
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: 2ceac94c04dd8deb169e836f09928dfd9a38ac35
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96599097"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025428"
 ---
 # <a name="structure-types-c-reference"></a>结构类型（C# 参考）
 
@@ -30,11 +30,7 @@ ms.locfileid: "96599097"
 
 ## <a name="readonly-struct"></a>`readonly` 结构
 
-从 C# 7.2 开始，可以使用 `readonly` 修饰符来声明结构类型不可变：
-
-[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
-
-`readonly` 结构的所有数据成员都必须是只读的，如下所示：
+从 C# 7.2 开始，可以使用 `readonly` 修饰符来声明结构类型为不可变。 `readonly` 结构的所有数据成员都必须是只读的，如下所示：
 
 - 任何字段声明都必须具有 [`readonly` 修饰符](../keywords/readonly.md)
 - 任何属性（包括自动实现的属性）都必须是只读的。 在 C# 9.0 和更高版本中，属性可以具有 [`init` 访问器](../../whats-new/csharp-9.md#init-only-setters)。
@@ -43,6 +39,10 @@ ms.locfileid: "96599097"
 
 > [!NOTE]
 > 在 `readonly` 结构中，可变引用类型的数据成员仍可改变其自身的状态。 例如，不能替换 <xref:System.Collections.Generic.List%601> 实例，但可以向其中添加新元素。
+
+下面的代码使用 init-only 属性资源库定义 `readonly` 结构，此内容在 C# 9.0 及更高版本中提供：
+
+[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
 
 ## <a name="readonly-instance-members"></a>`readonly` 实例成员
 

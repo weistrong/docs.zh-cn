@@ -2,12 +2,12 @@
 title: .NET Core 运行时标识符 (RID) 目录
 description: 了解运行时标识符 (RID) 及如何在 .NET Core 中使用 RID。
 ms.date: 12/15/2020
-ms.openlocfilehash: f818ab2d503be7960d9eb8450a7dd749766637a6
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 6b45c42d626de41c7d67c66aac7dc31c51c36a22
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633606"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970663"
 ---
 # <a name="net-core-rid-catalog"></a>.NET Core RID 目录
 
@@ -39,7 +39,7 @@ RID 是运行时标识符的缩写。 RID 值用于标识应用程序运行所�
 
 ## <a name="rid-graph"></a>RID 图表
 
-RID 图表或运行时回退图表是互相兼容的 RID 列表。 [Microsoft.NETCore.Platforms](https://www.nuget.org/packages/Microsoft.NETCore.Platforms/) 包中定义了 RID。 可以在 `dotnet/runtime` 存储库的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) 文件中查看支持的 RID 列表和 RID 图表。 在此文件中，可以看到除基 RID 以外的所有 RID 均包含 `"#import"` 语句。 这些语句指示的是兼容的 RID。
+RID 图表或运行时回退图表是互相兼容的 RID 列表。 [Microsoft.NETCore.Platforms](https://www.nuget.org/packages/Microsoft.NETCore.Platforms/) 包中定义了 RID。 可以在 `dotnet/runtime` 存储库的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) 文件中查看支持的 RID 列表和 RID 图表。 在此文件中，可以看到除基 RID 以外的所有 RID 均包含 `"#import"` 语句。 这些语句指示的是兼容的 RID。
 
 NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 如果未找到完全匹配项，NuGet 将返回此图表，直至它根据 RID 图表找到最相近的兼容系统。
@@ -80,7 +80,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 ## <a name="using-rids"></a>使用 RID
 
 若要使用 RID，必须知道有哪些 RID。 新值将定期添加到该平台。
-若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库上的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) 文件。
+若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库中的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) 文件。
 
 .NET Core 2.0 SDK 引入了可移植 RID 的概念。 它们是添加到 RID 图表的新值，并且未与特定版本或 OS 发行版本关联，是使用 .NET Core 2.0 及更高版本的首选值。 它们在处理多个 Linux 发行版时特别有用，因为大多数发行版 RID 都映射到可移植的 RID。
 
@@ -88,7 +88,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 
 ## <a name="windows-rids"></a>Windows RID
 
-仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库上的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) 文件。
+仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库中的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) 文件。
 
 - 可移植（.NET Core 2.0 或更高版本）
   - `win-x64`
@@ -112,7 +112,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 
 ## <a name="linux-rids"></a>Linux RID
 
-仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库上的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) 文件。 运行以下未列出的发行版的设备可能适用于其中一个可移植 RID。 例如，可以将运行未列出的 Linux 发行版的 Raspberry Pi 设备定向为使用 `linux-arm`。
+仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库中的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) 文件。 运行以下未列出的发行版的设备可能适用于其中一个可移植 RID。 例如，可以将运行未列出的 Linux 发行版的 Raspberry Pi 设备定向为使用 `linux-arm`。
 
 - 可移植
   - `linux-x64`（大多数桌面发行版，如 CentOS、Debian、Fedora、Ubuntu 及派生版本）
@@ -131,7 +131,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 
 ## <a name="macos-rids"></a>macOS RID
 
-macOS RID 使用较早的“OSX”品牌。 仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库上的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) 文件。
+macOS RID 使用较早的“OSX”品牌。 仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库中的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) 文件。
 
 - 可移植
   - `osx-x64`（最低 OS 版本为 macOS 10.12 Sierra）
@@ -155,4 +155,4 @@ macOS RID 使用较早的“OSX”品牌。 仅列出了公共值。 若要获�
 
 ## <a name="see-also"></a>请参阅
 
-- [运行时 ID](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/readme.md)
+- [运行时 ID](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/readme.md)

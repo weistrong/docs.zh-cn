@@ -3,17 +3,17 @@ title: 在 Ubuntu 上安装 .NET - .NET
 description: 演示在 Ubuntu 上安装 .NET SDK 和 .NET 运行时的各种方式。
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: 22ce3379e028f065528e1f507a2d8c1ae598f0e8
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 01/06/2021
+ms.openlocfilehash: 14e5e9548d4aa09a586e2038f3e35a489ee65cd2
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031836"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970756"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-ubuntu"></a>在 Ubuntu 上安装 .NET SDK 或 .NET 运行时
 
-Ubuntu 支持 .NET。 本文介绍如何在 Ubuntu 上安装 .NET。 如果 Ubuntu 版本不受支持，则该版本不再支持 .NET。 不过，可以按照这些说明在这些版本上运行 .NET，即使它不受支持。
+Ubuntu 支持 .NET。 本文介绍如何在 Ubuntu 上安装 .NET。 如果 Ubuntu 版本不受支持，则该版本不再支持 .NET。
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -50,14 +50,7 @@ Ubuntu 支持 .NET。 本文介绍如何在 Ubuntu 上安装 .NET。 如果 Ubun
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## <a name="how-to-install-other-versions"></a>如何安装其他版本
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## <a name="2010-"></a>20.10 ✔️
-
-> [!IMPORTANT]
-> .NET Core 2.1 在包源中尚不可用。
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -179,7 +172,11 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## <a name="apt-update-sdk-or-runtime"></a>APT 更新 SDK 或运行时
+## <a name="how-to-install-other-versions"></a>如何安装其他版本
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## <a name="use-apt-to-update-net"></a>使用 APT 更新 .NET
 
 当新的修补程序版本适用于 .NET 时，只需使用以下命令通过 APT 进行升级：
 
@@ -218,10 +215,6 @@ sudo apt-get update; \
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 
-## <a name="snap"></a>对齐
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## <a name="dependencies"></a>依赖项
 
 使用包管理器进行安装时，将为你安装这些库。 但是，如果手动安装 .NET 或发布自包含的应用，则需要确保已安装以下库：
@@ -245,14 +238,7 @@ sudo apt-get update; \
   > [!WARNING]
   > 可以通过将 Mono 存储库添加到系统来安装最新版 libgdiplus。 有关详细信息，请参阅 <https://www.mono-project.com/download/stable/>。
 
-## <a name="scripted-install"></a>脚本安装
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>手动安装
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## <a name="next-steps"></a>后续步骤
 
+- [如何为 .NET CLI 启用 Tab 自动补全](../tools/enable-tab-autocomplete.md)
 - [教程：使用 Visual Studio Code 通过 .NET SDK 创建控制台应用程序](../tutorials/with-visual-studio-code.md)

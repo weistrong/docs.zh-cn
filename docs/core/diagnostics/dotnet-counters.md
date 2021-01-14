@@ -2,12 +2,12 @@
 title: dotnet-counters 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-counter CLI 工具进行临时运行状况监视和初级性能调查。
 ms.date: 11/17/2020
-ms.openlocfilehash: 89695c77e7913d41f030890be7cc00947e42fa3a
-ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
+ms.openlocfilehash: 44d74cfaca7483b1506fe7ad762818e9b9ed7d63
+ms.sourcegitcommit: 0273f8845eb1ea8de64086bef2271b4f22182c91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97856050"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98058085"
 ---
 # <a name="investigate-performance-counters-dotnet-counters"></a>调查性能计数器 (dotnet-counters)
 
@@ -220,7 +220,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > 使用此选项监视第一个 .NET 5.0 进程，该进程与该工具通信，这意味着如果命令启动多个 .NET 应用程序，它将仅收集第一个应用。 因此，建议在自包含应用程序上使用此选项，或使用 `dotnet exec <app.dll>` 选项。
 
   > [!NOTE]
-  > 通过 dotnet-counters 启动 .NET 可执行文件将重定向其输入/输出，你将无法与其 stdin/stdout 进行交互。 通过 CTRL+C 或 SIGTERM 退出工具将安全地结束该工具和子进程。 如果子进程在工具之前退出，工具也将退出，应可安全查看跟踪。 如果需要使用 stdin/stdout，可以使用 `--diagnostic-port` 选项。 有关详细信息，请参阅[使用诊断端口](#using-diagnostic-port)。
+  > 通过 dotnet-counters 启动 .NET 可执行文件将重定向其输入/输出，你将无法与其 stdin/stdout 进行交互。 通过 CTRL+C 或 SIGTERM 退出工具将安全地结束该工具和子进程。 如果子进程在工具之前退出，工具也将退出。 如果需要使用 stdin/stdout，可以使用 `--diagnostic-port` 选项。 有关详细信息，请参阅[使用诊断端口](#using-diagnostic-port)。
 
 ### <a name="examples"></a>示例
 
