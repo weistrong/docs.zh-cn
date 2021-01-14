@@ -2,12 +2,12 @@
 title: 从 project.json 迁移 .NET Core
 description: 了解如何使用 project.json 迁移较旧的 .NET Core 项目
 ms.date: 07/19/2017
-ms.openlocfilehash: 73fbfed6943e3eb535e6eead3b3496edd3426c26
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 28da1723ed91d169305c2865c5346b8ce6e0b3d1
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970715"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189696"
 ---
 # <a name="migrating-net-core-projects-from-projectjson"></a>从 project.json 迁移 .NET Core 项目
 
@@ -78,7 +78,7 @@ Visual Studio 自动迁移所选的项目。 迁移解决方案时，如果不�
 - 从 `<Project>` 元素中删除 XML 命名空间 (`xmlns`)。
 - 如果不存在，请将 `Sdk` 属性添加到 `<Project>` 元素，并将其设置为 `Microsoft.NET.Sdk` 或 `Microsoft.NET.Sdk.Web`。 此属性指定项目使用要使用的 SDK。 `Microsoft.NET.Sdk.Web` 用于 Web 应用。
 - 从项目的顶部和底部删除 `<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />` 和 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` 语句。 SDK 隐含这些 import 语句，因此项目中不需要这些语句。
-- 如果项目中含 `Microsoft.NETCore.App` 或 `NETStandard.Library``<PackageReference>` 项，应将其删除。 [SDK 隐含](../tools/csproj.md)这些包引用。
+- 如果项目中含 `Microsoft.NETCore.App` 或 `NETStandard.Library``<PackageReference>` 项，应将其删除。 [SDK 隐含](../project-sdk/overview.md)这些包引用。
 - 删除 `Microsoft.NET.Sdk` `<PackageReference>` 元素（如果存在）。 SDK 引用来自 `<Project>` 元素上的 `Sdk` 属性。
 - 删除 [SDK](../project-sdk/overview.md#default-includes-and-excludes) 隐含的 [glob](https://en.wikipedia.org/wiki/Glob_(programming))。 在项目中留下这些 glob 会引发生成错误，因为编译项会发生重复。
 

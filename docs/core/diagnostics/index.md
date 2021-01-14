@@ -3,12 +3,12 @@ title: 诊断工具概述 - .NET Core
 description: 概述用于 .NET Core 应用程序的工具和技术。
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: d468ec5b9cc050cc54f6c53f8a4ea4531f8b58f5
-ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
+ms.openlocfilehash: ee79057e45700e17fdd37cc36288b790d64d7a09
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753609"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188473"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>.NET Core 中提供哪些诊断工具？
 
@@ -68,7 +68,7 @@ ms.locfileid: "97753609"
 
 ### <a name="dotnet-sos"></a>dotnet-sos
 
-[dotnet-sos](dotnet-sos.md) 在 Linux 和 macOS（如果使用的是 [Windbg/cdb](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)，则在 Windows 上）安装 [SOS调试扩展](sos-debugging-extension.md)。
+[dotnet-sos](dotnet-sos.md) 在 Linux 和 macOS（如果使用的是 [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools)，则在 Windows 上）安装 [SOS调试扩展](sos-debugging-extension.md)。
 
 ### <a name="perfcollect"></a>PerfCollect
 

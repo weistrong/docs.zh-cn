@@ -2,13 +2,13 @@
 title: 保护 .NET 微服务和 Web 应用程序
 description: .NET 微服务和 Web 应用中的安全性 - 了解 ASP.NET Core Web 应用中的身份验证选项。
 author: mjrousos
-ms.date: 08/07/2020
-ms.openlocfilehash: 01797189ce946c39bc7b8cafdff1e69ff9760e4e
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.date: 01/13/2021
+ms.openlocfilehash: 1bb03e8abdf6daa0b6c4570eb35643898f797cc0
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160667"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188038"
 ---
 # <a name="make-secure-net-microservices-and-web-applications"></a>确保 .NET 微服务和 Web 应用的安全性
 

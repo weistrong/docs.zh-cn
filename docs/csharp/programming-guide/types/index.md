@@ -12,12 +12,12 @@ helpviewer_keywords:
 - C# language, types
 - strong typing [C#]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.openlocfilehash: c347dbc6af46d4c334445d606d7cedfdf17e43f6
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: 6a1a5b230e427a4991162a702245f1a87352784d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95098705"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190242"
 ---
 # <a name="types-c-programming-guide"></a>类型（C# 编程指南）
 
@@ -74,8 +74,6 @@ C# 提供了一组标准的内置类型来表示整数、浮点值、布尔表�
 - CTS 中的每种类型被定义为值类型或引用类型。  这些类型包括 .NET 类库中的所有自定义类型以及你自己的用户定义类型。 使用 [struct](../../language-reference/builtin-types/struct.md) 关键字定义的类型是值类型；所有内置数值类型都是 `structs`。 使用 [class](../../language-reference/keywords/class.md) 关键字定义的类型是引用类型。 引用类型和值类型遵循不同的编译时规则和运行时行为。
 
 下图展示了 CTS 中值类型和引用类型之间的关系。
-
-下图显示 CTS 中的值类型和引用类型：
 
 ![屏幕截图显示了 CTS 值类型和引用类型。](./media/index/value-reference-types-common-type-system.png)
 
