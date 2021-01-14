@@ -5,19 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
-ms.openlocfilehash: 878e610bd1fe0b7e2496f251333a3ad21909788a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1505582e5ac7303a2df20539fdcf67435746b9d3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245089"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190489"
 ---
 # <a name="side-by-side-versioning-in-workflowservicehost"></a>WorkflowServiceHost 中的并行版本控制
 
 <xref:System.ServiceModel.Activities.WorkflowServiceHost>.NET Framework 4.5 中引入的并行版本控制提供了在单个终结点上承载工作流服务的多个版本的功能。 所提供的并行功能允许配置工作流服务，以便使用新的工作流定义来创建工作流服务的新实例，而对于正在运行的实例则使用现有的定义来完成。 本主题概述了使用 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 的工作流服务并行执行。  
-  
-> [!NOTE]
-> 若要下载示例并观看工作流服务并行版本控制的视频演练，请参阅 [使用 Web-Hosted .Xamlx 工作流服务的并行版本控制](https://go.microsoft.com/fwlink/?LinkId=393746)。  
   
 ## <a name="hosting-multiple-versions-in-a-workflow-service"></a>在工作流服务中承载多个版本  
 

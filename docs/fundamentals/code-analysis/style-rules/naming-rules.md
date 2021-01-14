@@ -16,12 +16,12 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 8ce209e64ee7f9f9028c221daedef8fc6a993ef7
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 0eea5e89ac5055a45d9ead14363cc2f2fc574401
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96591096"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191074"
 ---
 # <a name="naming-rules"></a>命名规则
 
@@ -75,11 +75,11 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 所有命名规则属性都是规则生效的必需属性。
 
-| Property | 描述 |
+| properties | 说明 |
 | -- | -- |
 | `symbols` | 符号组的标题，定义应应用此规则的符号 |
 | `style` | 应与此规则关联的命名样式的标题 |
-| `severity` |  设置用于强制执行命名规则的严重性。 将关联的值设置为一个可用的 [严重性级别](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-options#severity-level)。<sup>1</sup> |
+| `severity` |  设置用于强制执行命名规则的严重性。 将关联的值设置为一个可用的 [严重性级别](../configuration-options.md#severity-level)。<sup>1</sup> |
 
 **注意：**
 
@@ -97,7 +97,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 可以为符号组设置以下属性，以限制组中包含的符号。 若要在单个属性设置中指定多个值，请用逗号分隔它们。
 
-| Property | 说明 | 允许的值 | 必选 |
+| properties | 说明 | 允许的值 | 必须 |
 | -- | -- | -- | -- |
 | `applicable_kinds` | 组<sup>1</sup>中的符号类型 | `*`（使用此值可指定所有符号）<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | 是 |
 | `applicable_accessibilities` | 组中符号的可访问性级别 | `*`（使用此值可指定所有可访问性级别）<br/>`public`<br/>`internal` 或 `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` 或 `protected_friend`<br/>`private_protected`<br/>`local` 方法中定义的符号 ()  | 是 |
@@ -120,7 +120,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 您可以为命名样式设置以下属性：
 
-| Property | 说明 | 允许的值 | 必选 |
+| properties | 说明 | 允许的值 | 必须 |
 | -- | -- | -- | -- |
 | `capitalization` | 符号内的单词的大小写样式 | `pascal_case`<br/>`camel_case`<br/>`first_word_upper`<br/>`all_upper`<br/>`all_lower` | 是<sup>1</sup> |
 | `required_prefix` | 必须以这些字符开头 | | 否 |

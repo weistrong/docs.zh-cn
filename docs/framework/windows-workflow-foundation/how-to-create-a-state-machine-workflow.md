@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3ec60e8f-fad4-493e-a426-e7962d7aee8c
-ms.openlocfilehash: 9df911779422ca2710686963a040a95258db8891
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8e977a182d55143f8d877d61a0f0345bbe6bded4
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248914"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190463"
 ---
 # <a name="how-to-create-a-state-machine-workflow"></a>如何：创建状态机工作流
 
@@ -19,9 +19,6 @@ ms.locfileid: "96248914"
   
 > [!NOTE]
 > 入门教程中的每个主题都依赖于前面的主题。 若要完成本主题，必须先完成 [操作方法：创建活动](how-to-create-an-activity.md)。  
-  
-> [!NOTE]
-> 若要下载完整版教程，请参阅 [Windows Workflow Foundation (WF45) — 入门教程](https://go.microsoft.com/fwlink/?LinkID=248976)。  
   
 ### <a name="to-create-the-workflow"></a>创建工作流  
   
@@ -139,7 +136,6 @@ ms.locfileid: "96248914"
   
     > [!NOTE]
     > 还可以从转换设计器中创建共享的转换，方法是单击 "转换设计器" 底部的 " **添加共享触发器转换** "，然后从 " **可用状态到连接** " 下拉选择所需的目标状态。  
-  
     > [!NOTE]
     > 注意，如果转换的 <xref:System.Activities.Statements.Transition.Condition%2A> 计算结果为 `false`（或所有共享触发转换条件的计算结果均为 `false`），转换将不发生，并且此状态下的所有转换的所有触发将被重新计划。 在本教程中，由于配置条件的方式，这种情况不会发生（我们针对猜测是正确或者错误提供了具体的操作）。  
   

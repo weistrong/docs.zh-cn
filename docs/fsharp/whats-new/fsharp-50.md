@@ -2,12 +2,12 @@
 title: 'F # 5.0 中的新增功能-F # 指南'
 description: '获取 F # 5.0 中提供的新功能的概述。'
 ms.date: 11/06/2020
-ms.openlocfilehash: 2384f1a75f5e708dc6f170d82fa15c5e0f54c85d
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 9b138e4801a3e599db650990acd53c0f956b78b8
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96740180"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190723"
 ---
 # <a name="whats-new-in-f-50"></a>F# 5.0 中的新增功能
 
@@ -407,7 +407,7 @@ printfn $"DIM from C# but via Object Expression: %d{md'.Z}"
 
 ## <a name="simplified-interop-with-nullable-value-types"></a>具有可以为 null 的值类型的简化互操作
 
-[可以为 null 的 (值) 类型](https://docs.microsoft.com/dotnet/api/system.nullable-1) (早于 F # 支持的名称) 可以为 null 的类型，但与它们进行交互几乎有点困难，因为 `Nullable` `Nullable<SomeType>` 每次要传递值时都必须构造或包装。 现在， `Nullable<ThatValueType>` 如果目标类型匹配，则编译器会将值类型隐式转换为。 现在可以执行以下代码：
+[可以为 null 的 (值) 类型](/dotnet/api/system.nullable-1) (早于 F # 支持的名称) 可以为 null 的类型，但与它们进行交互几乎有点困难，因为 `Nullable` `Nullable<SomeType>` 每次要传递值时都必须构造或包装。 现在， `Nullable<ThatValueType>` 如果目标类型匹配，则编译器会将值类型隐式转换为。 现在可以执行以下代码：
 
 ```fsharp
 #r "nuget: Microsoft.Data.Analysis"

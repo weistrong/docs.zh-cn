@@ -3,12 +3,12 @@ title: 如何：创建工作流
 description: 完成此部分中三个选项中的一个，以在此 Workflow Foundation 教程中创建工作流。
 ms.date: 03/30/2017
 ms.assetid: 87234108-8e21-4cb3-9340-4a1a13f3f98c
-ms.openlocfilehash: 1b2b03d672f86a351bcf36343d6a17e351d40ed0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ea9fd023ba15ae23a10f5b8cf6f82c49ca9af6c8
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248781"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190437"
 ---
 # <a name="how-to-create-a-workflow"></a>如何：创建工作流
 
@@ -16,9 +16,6 @@ ms.locfileid: "96248781"
   
 > [!NOTE]
 > 入门教程中的每个主题都依赖于前面的主题。 若要完成本主题，必须先完成 [操作方法：创建活动](how-to-create-an-activity.md)。  
-  
-> [!NOTE]
-> 若要下载完整版教程，请参阅 [Windows Workflow Foundation (WF45) — 入门教程](https://go.microsoft.com/fwlink/?LinkID=248976)。  
   
 ## <a name="in-this-section"></a>本节内容  
 

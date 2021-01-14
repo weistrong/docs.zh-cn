@@ -5,19 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1b612c7e-2381-4a7c-b07a-77030415f2a3
-ms.openlocfilehash: 5f00997b059d7ea6f6ac6fb6d7bd83e4515ac02a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6fc8584b979c606a32e70e971be30a4bed89bdc2
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275796"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190502"
 ---
 # <a name="how-to-create-a-custom-tracking-participant"></a>如何：创建自定义跟踪参与者
 
 工作流跟踪用于查看工作流执行的状态。 工作流运行时发出跟踪记录，这些跟踪记录描述工作流生命周期事件、活动生命周期事件、书签摘要和故障。 这些跟踪记录供跟踪参与者使用。 Windows Workflow Foundation (WF) 包括一个标准跟踪参与者，该参与者将跟踪记录作为 Windows (ETW) 事件的事件跟踪来写入。 如果这不能满足您的需求，您还可以编写自定义跟踪参与者。 本教程步骤说明如何创建自定义跟踪参与者和跟踪配置文件，该配置文件捕获 `WriteLine` 活动的输出，以便将这些活动显示给用户。  
-  
-> [!NOTE]
-> 入门教程中的每个主题都依赖于前面的主题。 若要完成本主题，必须先完成前面的主题。 若要下载完整版本或观看教程的视频演练，请参阅 [Windows Workflow Foundation (WF45) -入门教程](https://go.microsoft.com/fwlink/?LinkID=248976)。  
   
 ## <a name="to-create-the-custom-tracking-participant"></a>创建自定义跟踪参与者  
   
