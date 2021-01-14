@@ -7,12 +7,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 11/20/2020
-ms.openlocfilehash: d91430eb654ee16934408bf064803b34ca700640
-ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
+ms.openlocfilehash: ba7113c88db728f30812821deaf7c06a80663d1f
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509801"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189084"
 ---
 # <a name="project-structure-for-no-locblazor-apps"></a>应用的项目结构 Blazor
 
@@ -93,7 +93,7 @@ Blazor 应用有一个 `Startup` 类，而不是一个 *global.asax* 文件，�
 
 与 ASP.NET Web 窗体项目不同，项目中的所有文件都不能 Blazor 被请求为静态文件。 只有 *wwwroot* 文件夹中的文件可通过 web 寻址。 此文件夹被称为应用程序的 "web 根目录"。 应用程序的 web 根目录之外的任何内容都 *无法* 进行 web 寻址。 此设置提供了额外的安全级别，可防止在 web 上意外公开项目文件。
 
-## <a name="configuration"></a>配置
+## <a name="configuration"></a>Configuration
 
 ASP.NET Web 窗体应用中的配置通常使用一个或多个 *web.config* 文件进行处理。 Blazor 应用通常不会有 *web.config* 的文件。 如果是这样，则在 IIS 上承载时，该文件仅用于配置 IIS 特定的设置。 相反， Blazor 服务器应用使用 ASP.NET Core 配置抽象 (Blazor WebAssembly 应用当前不支持相同的配置抽象，但这可能是将来) 中添加的一项功能。 例如，默认的 Blazor 服务器应用程序将 *appsettings.js上* 的设置。
 
@@ -132,7 +132,7 @@ ASP.NET Web 窗体应用中的配置通常使用一个或多个 *web.config* 文
 @using BlazorApp1.Shared
 ```
 
-## <a name="pages"></a>页
+## <a name="pages"></a>Pages
 
 应用中的页面位于何处 Blazor ？ Blazor 不为可寻址页面定义单独的文件扩展名，例如 ASP.NET Web Forms apps 中的 *.aspx* 文件。 而是通过将路由分配给组件来定义页面。 通常使用 `@page` Razor 指令分配路由。 例如， `Counter` 在 *Pages/Counter* 文件中编写的组件定义了以下路由：
 
@@ -223,7 +223,7 @@ ASP.NET Web 窗体应用中的配置通常使用一个或多个 *web.config* 文
 
 ```
 
-在应用程序的方法中配置要呈现的根组件， `Program.Main` 以便通过依赖关系注入注册不同服务。可以在中引用应用的 "添加服务[ Blazor WebAssembly ](https://docs.microsoft.com/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-5.0#blazor-webassembly) "
+在应用程序的方法中指定要呈现的根组件， `Program.Main` 以便通过依赖关系注入注册服务。 有关详细信息，请参阅 [ASP.NET Core Blazor 依赖关系注入](/aspnet/core/blazor/fundamentals/dependency-injection?pivots=webassembly)。
 
 ```csharp
 public class Program

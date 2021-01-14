@@ -2,12 +2,12 @@
 title: 迁移到 .NET Core 3.1 的示例
 description: 演示如何将目标 .NET Framework 的示例应用程序迁移到 .NET Core 3.1。
 ms.date: 05/12/2020
-ms.openlocfilehash: 6a0311e9aaeb25ac39f3394d3a62e17046fe03d8
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: dc0d3d825847bd72a38469615cfc5b2d793f1977
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "97866470"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188772"
 ---
 # <a name="example-of-migrating-to-net-core-31"></a>迁移到 .NET Core 3.1 的示例
 
@@ -65,7 +65,7 @@ ms.locfileid: "97866470"
 
 在大多数情况下，你需要将现有项目更新为新的 .NET Core 格式。 不过，您也可以创建一个新项目，同时保持旧项目。 更新旧项目的主要缺点是丢失设计器支持，这对您来说可能很重要。 如果要继续使用设计器，则必须与旧项目并行创建新的 .NET Core 项目并共享资产。 如果需要修改设计器中的 UI 元素，则可以切换到旧项目来执行该操作。 由于资源已链接，因此也会在 .NET Core 项目中对其进行更新。
 
-与 .NET Framework 的项目格式相比，适用于 .NET Core 的 [SDK 样式项目](../../core/project-sdk/msbuild-props.md) 要简单得多。 除了前面提到的 `PackageReference` 条目，你无需执行更多操作。 [默认情况](../../core/tools/csproj.md#default-compilation-includes-in-net-core-projects)下，新的项目格式包括某些文件扩展名（如 `.cs` 和 `.xaml` 文件），而无需在项目文件中显式包含它们。
+与 .NET Framework 的项目格式相比，适用于 .NET Core 的 [SDK 样式项目](../../core/project-sdk/msbuild-props.md) 要简单得多。 除了前面提到的 `PackageReference` 条目，你无需执行更多操作。 新的项目格式 [包括默认情况下具有特定扩展名的文件](../../core/project-sdk/overview.md#default-includes-and-excludes)（如 `.cs` 和 `.xaml` 文件），而无需在项目文件中显式包含这些文件。
 
 #### <a name="assemblyinfo-considerations"></a>Assembly.info 注意事项
 
@@ -208,7 +208,7 @@ ms.locfileid: "97866470"
 string image_name = Environment.CurrentDirectory + "\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;
 ```
 
-to
+实例部署到 Windows Azure 虚拟机 (VM) 中的
 
 ```csharp
 string image_name = Environment.CurrentDirectory + "\\..\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;
