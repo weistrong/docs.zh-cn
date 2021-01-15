@@ -1,17 +1,17 @@
 ---
 title: 构建基于微服务的容器化应用程序
 description: 构建基于微服务的容器化应用程序并不简单，不应掉以轻心。 了解本章的核心概念。
-ms.date: 09/20/2018
-ms.openlocfilehash: aff30c907f1140b94dbcae330ed7cb633b0a744b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 01/13/2021
+ms.openlocfilehash: d87633b6c5073a9098c34c1192bcca1abad00e5c
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "70295017"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189481"
 ---
 # <a name="architecting-container-and-microservice-based-applications"></a>构建基于微服务的容器化应用程序
 
-微服务提供很多优点，但也会引起新的巨大挑战。  创建基于微服务的应用程序时，微服务体系结构模式是基础支柱。
+微服务提供很多优点，但也会引起新的巨大挑战。创建基于微服务的应用程序时，微服务体系结构模式是基础支柱。
 
 本指南前面部分介绍了有关容器和 Docker 的基本概念。 要开始使用容器，至少要了解这些基本信息。 虽然容器为实现微服务提供可能，并且非常适用于微服务，但微服务体系结构并不强制使用容器。本节介绍体系结构，但即使不使用容器，其中许多体系结构概念仍然适用。 然而，由于已介绍容器的重要性，本指南将重点介绍两者交叉部分。
 
@@ -21,7 +21,7 @@ ms.locfileid: "70295017"
 
 在容器模型中，容器映像实例表示单个进程。 将容器映像定义为进程边界，可以创建可用于对进程进行缩放或批处理的基元。
 
-设计容器映像时，可在 Dockerfile 中看到[入口点](https://docs.docker.com/engine/reference/builder/#entrypoint)定义。 这定义了一个进程，其生命周期控制容器的生命周期。 该进程完成，则容器的生命周期结束。 容器可以表示 Web 服务器等长时间运行的进程，但也可表示批处理作业等生存期较短的进程，这些进程以前可能已实现为 Azure [WebJobs](https://github.com/Azure/azure-webjobs-sdk/wiki)。
+设计容器映像时，可在 Dockerfile 中看到[入口点](https://docs.docker.com/engine/reference/builder/#entrypoint)定义。 此定义定义了一个进程，其生命周期控制容器的生命周期。 该进程完成，则容器的生命周期结束。 容器可以表示 Web 服务器等长时间运行的进程，但也可表示批处理作业等生存期较短的进程，这些进程以前可能已实现为 Azure [WebJobs](https://github.com/Azure/azure-webjobs-sdk/wiki)。
 
 如果进程失败，则容器结束，Orchestrator 接管。 如果 Orchestrator 已配置为使五个实例保持运行，而其中一个实例失败，则 Orchestrator 会创建另一个容器实例，来替换失败的进程。 在批处理作业中，使用参数启动该进程。 进程完成，则工作完成。 本指南接下来将深入介绍业务流程协调程序。
 

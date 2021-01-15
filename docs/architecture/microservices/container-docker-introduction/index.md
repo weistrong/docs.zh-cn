@@ -1,13 +1,13 @@
 ---
 title: 容器和 Docker 简介
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 容器和 Docker 简介
-ms.date: 08/31/2018
-ms.openlocfilehash: 364cbc0ba8149be1873df628a1ca243f420e7d0b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 01/13/2021
+ms.openlocfilehash: 5e114ae893176954cae6eb4425459527b248c0ad
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73740065"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189325"
 ---
 # <a name="introduction-to-containers-and-docker"></a>容器和 Docker 简介
 

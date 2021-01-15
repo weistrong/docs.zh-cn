@@ -1,23 +1,23 @@
 ---
 title: .NET 微服务。 适用于容器化 .NET 应用程序的体系结构
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 微服务可是模块化且可独立部署的服务。 （适用于 Linux 和 Windows）的 Docker 容器可将服务及其依赖项绑定到单个单元，使该单元在一个独立的环境中运行，因而可简化部署和测试。
-ms.date: 11/10/2020
-ms.openlocfilehash: 2055dacd46f90ba3714edb1437bcacad4c175e65
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.date: 01/13/2021
+ms.openlocfilehash: a9017d2e9acbcbb861a35f0187632dc90c52e171
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94507262"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188369"
 ---
 # <a name="net-microservices-architecture-for-containerized-net-applications"></a>.NET 微服务：适用于容器化 .NET 应用程序的体系结构
 
 ![封面](./media/cover-small.png)
 
-**版本 v3.1** - 已更新到 ASP.NET Core v3.1
+**EDITION v5.0** - 已更新到 ASP.NET Core 5.0
 
 请参阅[更改记录](https://aka.ms/MicroservicesEbookChangelog)了解书籍更新和社区贡献。
 
-本指南介绍如何使用容器开发基于微服务的应用程序并对其进行管理。 本指南探讨使用 .NET Core 和 Docker 容器的体系结构设计和实现方法。
+本指南介绍如何使用容器开发基于微服务的应用程序并对其进行管理。 本指南探讨使用 .NET 和 Docker 容器的体系结构设计和实现方法。
 
 为了更加轻松地开始使用，本指南重点介绍一个容器化和基于微服务的参考应用程序（用户可获取该应用程序）。 可通过 [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub 存储库获取该参考应用程序。
 
@@ -41,15 +41,15 @@ Docker 正在逐渐成为容器行业的事实标准，受到 Windows 和 Linux 
 
 ## <a name="about-this-guide"></a>关于本指南
 
-本指南介绍如何使用容器开发基于微服务的应用程序并对其进行管理。 本指南探讨使用 .NET Core 和 Docker 容器的体系结构设计和实现方法。 为了更加轻松地开始使用容器和微服务，本指南重点介绍一个容器化和基于微服务的参考应用程序（用户可获取该应用程序）。 可通过 [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub 存储库获取该示例应用程序。
+本指南介绍如何使用容器开发基于微服务的应用程序并对其进行管理。 本指南探讨使用 .NET 和 Docker 容器的体系结构设计和实现方法。 为了更加轻松地开始使用容器和微服务，本指南重点介绍一个容器化和基于微服务的参考应用程序（用户可获取该应用程序）。 可通过 [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub 存储库获取该示例应用程序。
 
-本指南主要在开发环境级别提供基础开发和体系结构指导，重点介绍以下两种技术：Docker 和 .NET Core。 我们的目标是为用户在应用程序设计时提供指导，使用户无需将重点放在其生产环境的基础结构（云端或本地）上。 用户可在创建生产就绪的应用程序时，稍后制定有关基础结构的决策。 因此，本指南不区分基础结构，更侧重于考虑开发环境。
+本指南主要在开发环境级别提供基础开发和体系结构指导，重点介绍以下两种技术：Docker 和 .NET。 我们的目标是为用户在应用程序设计时提供指导，使用户无需将重点放在其生产环境的基础结构（云端或本地）上。 用户可在创建生产就绪的应用程序时，稍后制定有关基础结构的决策。 因此，本指南不区分基础结构，更侧重于考虑开发环境。
 
 学习本指南后，接下来将了解 Microsoft Azure 上的生产就绪微服务。
 
 ## <a name="version"></a>Version
 
-本指南已进行了修订，涵盖 .NET Core 3.1  版本以及与 .NET Core 3.1 同期的同一“批”技术（即 Azure 和其他第三方技术）的许多其他更新。 这就是书本版本也更新到 3.1 的原因  。
+本指南已经过修订，现涵盖 .NET 5 版本，还包含与.NET 5 同期的同一“批”技术（即 Azure 和其他第三方技术）的诸多其他更新。 这就是书本版本也更新到 5.0 的原因。
 
 ## <a name="what-this-guide-does-not-cover"></a>本指南未涵盖的内容
 
@@ -62,7 +62,7 @@ Docker 正在逐渐成为容器行业的事实标准，受到 Windows 和 Linux 
 
 ## <a name="who-should-use-this-guide"></a>本指南的目标读者
 
-本指南的目标读者是不熟悉以下内容的开发人员和解决方案架构师：基于 Docker 的应用程序开发和基于微服务的架构。 若要了解如何使用 Microsoft 开发技术（特别是 .NET Core）和 Docker 容器架构、设计和实现概念验证应用程序，本指南是理想之选。
+本指南的目标读者是不熟悉以下内容的开发人员和解决方案架构师：基于 Docker 的应用程序开发和基于微服务的架构。 若要了解如何使用 Microsoft 开发技术（特别是 .NET）和 Docker 容器架构、设计和实现概念验证应用程序，本指南是理想之选。
 
 如果企业架构师等技术决策制定者想要在综合了解体系结构和技术的基础上，作出有关新式和现代分布式应用程序应选择的方法的决策，则本指南也非常有用。
 
@@ -74,7 +74,7 @@ Docker 正在逐渐成为容器行业的事实标准，受到 Windows 和 Linux 
 
 ## <a name="related-microservice-and-container-based-reference-application-eshoponcontainers"></a>相关微服务和基于容器的参考应用程序：eShopOnContainers
 
-eShopOnContainers 应用程序是用于 .NET Core 和旨在使用 Docker 容器部署的微服务的开源参考应用。 该应用程序包含多个子系统，包括多个网上商店 UI 前端（一个 Web MVC 应用、一个 Web SPA 和一个本机移动应用）。 还包括用于所有所需服务器端操作的后端微服务和容器。
+eShopOnContainers 应用程序是用于 .NET 和旨在使用 Docker 容器部署的微服务的开源参考应用。 该应用程序包含多个子系统，包括多个网上商店 UI 前端（一个 Web MVC 应用、一个 Web SPA 和一个本机移动应用）。 还包括用于所有所需服务器端操作的后端微服务和容器。
 
 应用程序的用途是展示体系结构模式。 **它不是可直接用于生产的模板**，无法启动实际应用程序。 事实上，应用程序处于永久 beta 状态，因为它还用来在出现有趣的新技术时对其进行测试。
 
