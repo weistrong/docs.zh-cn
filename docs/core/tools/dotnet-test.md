@@ -2,12 +2,12 @@
 title: dotnet test 命令
 description: dotnet test 命令可用于在给定项目中执行单元测试。
 ms.date: 04/29/2020
-ms.openlocfilehash: a5666cfe4c09b2b88d77b256fac922154c7d6bd7
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 4834da766bd052f44127a72635b65866eb7e3352
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634378"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189149"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -146,7 +146,7 @@ dotnet test -h|--help
 
 - **`-l|--logger <LOGGER>`**
 
-  指定测试结果记录器。 与 MSBuild 不同，dotnet 测试不接受缩写，应使用 `-l "console;verbosity=detailed"`，而不使用 `-l "console;v=d"`。
+  指定测试结果记录器。 与 MSBuild 不同，dotnet 测试不接受缩写，应使用 `-l "console;verbosity=detailed"`，而不使用 `-l "console;v=d"`。 多次指定参数，以启用多个记录器。
 
 - **`--no-build`**
 

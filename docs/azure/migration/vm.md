@@ -3,12 +3,12 @@ title: 将 ASP.NET Web 应用迁移到 Azure VM
 description: 了解如何将 ASP.NET Web 应用程序从本地迁移到 Azure 虚拟机。
 ms.topic: how-to
 ms.date: 06/20/2020
-ms.openlocfilehash: 940243310c5e6ed13d2a42c8d9d87244200479f5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0bf591ce0bd02537414527c8f3ba22bd41cf51d6
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91171554"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189208"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>将 ASP.NET Web 应用程序迁移到 Azure 虚拟机
 
@@ -26,7 +26,7 @@ ms.locfileid: "91171554"
   - [为 ASP.NET 应用程序创建新的虚拟机](https://go.microsoft.com/fwlink/?linkid=863237)
   - [迁移现有的本地 VMWare 虚拟机](/azure/migrate/tutorial-migrate-vmware)
   - [迁移现有的本地 Hyper-V 虚拟机](/azure/migrate/tutorial-migrate-hyper-v)
-- [使用 Visual Studio 发布应用](https://go.microsoft.com/fwlink/?linkid=863240)
+- [使用 Visual Studio 发布应用](/azure/virtual-machines/windows/publish-web-app-from-visual-studio)
 - [为 VM 创建安全虚拟网络](/azure/virtual-network/virtual-network-get-started-vnet-subnet)
 - [为应用程序创建 CI/CD 管道](/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups)
 - [转移到 VM 规模集以实现高可用性和可伸缩性](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)

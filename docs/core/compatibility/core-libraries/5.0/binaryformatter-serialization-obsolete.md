@@ -2,12 +2,12 @@
 title: 中断性变更：BinaryFormatter 序列化方法已过时，并且已在 ASP.NET 应用中禁用
 description: 了解核心 .NET 库中的以下 .NET 5.0 中断性变更：BinaryFormatter、Formatter 和 IFormatter 上的序列化和反序列化方法已过时。
 ms.date: 11/01/2020
-ms.openlocfilehash: 5807a7d4e6beab26b9848b803922396dd893075b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1dca30d33f2aa0a6fe8f05fe728557092f836b2d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759165"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189839"
 ---
 # <a name="binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps"></a>BinaryFormatter 序列化方法已过时，并且已在 ASP.NET 应用中禁用
 
@@ -75,7 +75,7 @@ ms.locfileid: "95759165"
   </PropertyGroup>
   ```
 
-若要详细了解建议的操作，请参阅[修复 BinaryFormatter 过时和禁用错误](https://aka.ms/binaryformatter)。
+若要详细了解建议的操作，请参阅[修复 BinaryFormatter 过时和禁用错误](../../../../standard/serialization/binaryformatter-security-guide.md)。
 
 ## <a name="affected-apis"></a>受影响的 API
 

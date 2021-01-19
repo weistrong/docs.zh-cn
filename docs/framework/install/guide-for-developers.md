@@ -8,12 +8,12 @@ helpviewer_keywords:
 - installing .NET Framework
 - installation [.NET Framework]
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
-ms.openlocfilehash: 4ea1954841696ef28cceca2968e750d9771be038
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 45ae10a92b66bc1b487e3ed4e1e29b6905b895f5
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543706"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190775"
 ---
 # <a name="install-the-net-framework-for-developers"></a>安装面向开发人员的 .NET Framework
 
@@ -134,7 +134,7 @@ Web 和脱机安装程序均针对基于 x86 和 x64 的计算机而设计（请
 
 - .NET Framework 4.5 及更高版本替换 .NET Framework 4.0。 在安装了 .NET Framework 4 的系统上安装这些版本时，将会替换这些程序集。
 
-- 卸载 .NET Framework 4.5 或更高版本也会删除预先存在的 .NET Framework 4 文件。 若要返回到 .NET Framework 4，你必须重新安装它以及它的任何更新。 请参阅[安装 .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665)。
+- 卸载 .NET Framework 4.5 或更高版本也会删除预先存在的 .NET Framework 4 文件。 若要返回到 .NET Framework 4，你必须重新安装它以及它的任何更新。 请参阅[安装 .NET Framework 4](/previous-versions/dotnet/netframework-4.0/5a4x27ek(v=vs.100))。
 
 - 你必须拥有管理凭据才能安装 .NET Framework 4.5 或更高版本。
 

@@ -3,12 +3,12 @@ title: 生成自签名证书概述
 description: 简要介绍添加了 .NET Core 和 ASP.NET Core 项目功能的 Microsoft dotnet dev-certs 工具，以及使用自签名证书的其他选项。
 author: angee
 ms.date: 11/19/2020
-ms.openlocfilehash: b5bf4b719495c2d6ec248e8592367ac452be91c1
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: d1675abb7d584b72d981f9db739e02269abe662c
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96032172"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189136"
 ---
 # <a name="generate-self-signed-certificates-with-the-net-cli"></a>通过 .NET CLI 生成自签名证书
 
@@ -210,7 +210,7 @@ dotnet dev-certs https --clean
 
 ### <a name="with-powershell"></a>使用 PowerShell
 
-可以使用 PowerShell 来生成自签名证书。 可以使用 [PKI 客户端](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserver-view=true)来生成自签名证书。
+可以使用 PowerShell 来生成自签名证书。 可以使用 [PKI 客户端](/powershell/module/pkiclient/new-selfsignedcertificate?preserve-view=true&view=win10-ps)来生成自签名证书。
 
 ```powershell
 $cert = New-SelfSignedCertificate -DnsName @("contoso.com", "www.contoso.com") -CertStoreLocation "cert:\LocalMachine\My"

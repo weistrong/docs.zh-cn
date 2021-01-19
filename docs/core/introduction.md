@@ -4,12 +4,12 @@ description: 了解用于构建多种应用的免费开源开发平台 .NET。
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: 0adc348c1fc340fe481d9987cdbe28c6cf8b065d
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.openlocfilehash: e0c86b377d4ea73bb275bc48c0f0cccb2db249dd
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938671"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189995"
 ---
 # <a name="introduction-to-net"></a>.NET 简介
 
@@ -24,7 +24,7 @@ ms.locfileid: "97938671"
   * [Windows 窗体](/dotnet/desktop/winforms/)
   * [通用 Windows 平台 (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
 * [游戏](https://dotnet.microsoft.com/apps/games)
-* [物联网 (IoT)](/dotnet/iot)
+* [物联网 (IoT)](../iot/index.yml)
 * [机器学习](../machine-learning/index.yml)
 * [控制台应用](tutorials/with-visual-studio-code.md)
 * [Windows 服务](/aspnet/core/host-and-deploy/windows-service)

@@ -5,12 +5,12 @@ ms.date: 11/30/2020
 ms.custom: devx-track-dotnet
 ms.author: daberry
 author: daberry
-ms.openlocfilehash: 3ec1ee9e8da3a6e03581ce2a29a655ec0d68fe54
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: b547e105b13d380ffae049ab55e76aa25abe8cc3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700888"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189195"
 ---
 # <a name="azure-sdk-for-net-overview"></a>用于 .NET 的 Azure SDK 概述
 
@@ -26,10 +26,10 @@ ms.locfileid: "97700888"
 
 若要在某一款 .NET 应用程序中使用 Azure SDK 包，则需要按照以下步骤进行操作。
 
-1. **找到相应的 SDK 包 -** 使用[包列表](../packages.md)查找适合你正在使用的 Azure 服务的包。  请注意，大多数服务都具有用于处理服务的客户端包和用于创建和管理服务实例的管理包。  大多数情况下，你将需要客户端包。  使用 NuGet 在应用程序中安装此包。
+1. **找到相应的 SDK 包 -** 使用 [包列表](../packages.md)查找适合你正在使用的 Azure 服务的包。  请注意，大多数服务都具有用于处理服务的客户端包和用于创建和管理服务实例的管理包。  大多数情况下，你将需要客户端包。  使用 NuGet 在应用程序中安装此包。
 
 2. **为应用程序设置身份验证 -** 若要访问 Azure 资源，应用程序将需要具有在 Azure 中分配的适当凭据和访问权限。  在[向 Azure 对 .NET 应用程序进行身份验证](../authentication.md)中了解如何配置身份验证。
 
 3. **在应用程序中使用 SDK 编写代码 -** 使用 Azure 服务时，代码将首先创建一个客户端对象来处理服务，然后调用该客户端对象上的方法来与服务交互。  同时提供同步和异步方法。  Azure 文档中提供了有关使用每个 SDK 包的示例。
 
-4. **为 SDK 配置日志记录（可选）-** 如果需要诊断应用程序与 Azure 之间的问题，则可以[在用于 .NET 的 Azure SDK 中启用日志记录](./logging.md)。
+4. **为 SDK 配置日志记录（可选）-** 如果需要诊断应用程序与 Azure 之间的问题，则可以 [在用于 .NET 的 Azure SDK 中启用日志记录](../logging.md)。

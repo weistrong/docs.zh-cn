@@ -2,12 +2,12 @@
 title: 转储 - .NET
 description: 介绍 .NET 中的转储。
 ms.date: 10/12/2020
-ms.openlocfilehash: 7a4c7bf54b3e9ea43e685eafbd00b4a373326520
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.openlocfilehash: f68d9bd804350366625df014df4d9ca0641d5d4d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764937"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188551"
 ---
 # <a name="dumps"></a>转储
 
@@ -19,7 +19,6 @@ ms.locfileid: "97764937"
 
 > [!NOTE]
 > 在容器内收集转储需要 PTRACE 功能，可通过 `--cap-add=SYS_PTRACE` 或 `--privileged` 添加该功能。
-
 > [!NOTE]
 > 转储可能包含敏感信息，因为它们可以包含正在运行进程的全部内存。 处理它们时请考虑所有安全限制和指导。
 
@@ -53,11 +52,10 @@ ms.locfileid: "97764937"
 
 ## <a name="analyze-dumps"></a>分析转储
 
-可以使用 [`dotnet-dump`](dotnet-dump.md) CLI 工具或 [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files) 分析转储。
+可以使用 [`dotnet-dump`](dotnet-dump.md) CLI 工具或 [Visual Studio](/visualstudio/debugger/using-dump-files) 分析转储。
 
 > [!NOTE]
 > Visual Studio 16.8 及更高版本允许[打开在 .NET Core 3.1.7 或更高版本上生成的 Linux 转储](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/)。  
-
 > [!NOTE]
 > 如果需要进行原生调试，则可以对 [Linux 和 macOS 上的 LLDB](debug-linux-dumps.md#analyze-dumps-on-linux) 使用 [SOS 调试器扩展](sos-debugging-extension.md)。 尽管建议使用 Visual Studio，但 Windows 上的 [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools) 也支持 SOS。
 

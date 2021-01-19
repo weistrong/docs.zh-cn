@@ -3,12 +3,12 @@ title: 将 .NET Web 应用或服务迁移到 Azure 应用服务
 description: 了解如何将 .NET Web 应用或服务从本地迁移到 Azure 应用服务。
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: a5e193b2dbaedb86ff0e24bc8b70043896bbeea3
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0e2aaa23aedabef007878901ec7297711f140533
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539081"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189247"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>将 .NET Web 应用或服务迁移到 Azure 应用服务
 
@@ -24,7 +24,7 @@ ms.locfileid: "90539081"
 
 * 使用 [Azure 虚拟网络](/azure/app-service/web-sites-integrate-with-vnet)创建将应用服务连接到本地资源的 VPN。
 * 使用 [Azure 中继](/azure/service-bus-relay/relay-what-is-it)，在不更改防火墙的情况下，将本地服务安全地公开给云。
-* 将依赖项（如 [SQL 数据库](https://go.microsoft.com/fwlink/?linkid=863217)）迁移到 Azure。
+* 将依赖项（如 [SQL 数据库](./sql.md)）迁移到 Azure。
 * 在云中使用平台即服务产品/服务以减少依赖项。 例如，不要连接到本地邮件服务器，而应考虑使用 [SendGrid](/azure/sendgrid-dotnet-how-to-send-email)。
 
 ### <a name="port-bindings"></a>端口绑定

@@ -2,12 +2,12 @@
 title: dotnet build 命令
 description: dotnet build 命令可生成项目及其所有依赖项。
 ms.date: 02/14/2020
-ms.openlocfilehash: ea0291129aeaed3bebef5c454ff003131bd3562b
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: cc8c6ed30dbf8ff0602fb19e5001f618a8380f16
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634476"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189949"
 ---
 # <a name="dotnet-build"></a>dotnet build
 
@@ -83,7 +83,7 @@ dotnet build -h|--help
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  编译特定[框架](../../standard/frameworks.md)。 必须在[项目文件](csproj.md)中定义该框架。
+  编译特定[框架](../../standard/frameworks.md)。 必须在[项目文件](../project-sdk/overview.md)中定义该框架。
 
 - **`--force`**
 

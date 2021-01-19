@@ -7,12 +7,12 @@ author: luisquintanilla
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc, how-to
-ms.openlocfilehash: cf19b4e4b7a7b9033fb97b2b2736ab0383c11f93
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: 9c0e713731b5e2ad742bdd257a99f9029f244363
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96598928"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536107"
 ---
 # <a name="use-net-for-apache-spark-in-jupyter-notebooks"></a>在 Jupyter Notebook 中使用 .NET for Apache Spark
 
@@ -130,7 +130,7 @@ spark-submit ^
 1. 打开笔记本时，请安装 `Microsoft.Spark` NuGet 包。 请确保安装的版本与 .NET 工作器版本相同。
 
     ```text
-    #r "nuget:Microsoft.Spark, 0.12.1"
+    #r "nuget:Microsoft.Spark, 1.0.0"
     ```
 
 1. 向笔记本添加以下 using 语句。
