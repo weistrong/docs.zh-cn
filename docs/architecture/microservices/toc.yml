@@ -10,12 +10,12 @@
           href: container-docker-introduction/docker-terminology.md
         - name: Docker 容器、映像和注册表
           href: container-docker-introduction/docker-containers-images-registries.md
-    - name: 为 Docker 容器选择 .NET Core 或 .NET Framework
+    - name: 为 Docker 容器选择 .NET 5 或 .NET Framework
       href: net-core-net-framework-containers/index.md
       items:
-        - name: 通用指南
+        - name: 一般指南
           href: net-core-net-framework-containers/general-guidance.md
-        - name: 何时为 Docker 容器选择 .NET Core
+        - name: 何时为 Docker 容器选择 .NET
           href: net-core-net-framework-containers/net-core-container-scenarios.md
         - name: 何时为 Docker 容器选择 .NET Framework
           href: net-core-net-framework-containers/net-framework-container-scenarios.md
@@ -101,7 +101,7 @@
           href: microservice-ddd-cqrs-patterns/ddd-oriented-microservice.md
         - name: 设计微服务域模型
           href: microservice-ddd-cqrs-patterns/microservice-domain-model.md
-        - name: 使用 .NET Core 实现微服务域模型
+        - name: 使用 .NET 实现微服务域模型
           href: microservice-ddd-cqrs-patterns/net-core-microservice-domain-model.md
         - name: Seedwork（适用于域模型的可重用基类和接口）
           href: microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces.md
