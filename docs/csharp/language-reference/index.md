@@ -1,7 +1,8 @@
 ---
 description: C# 参考
 title: C# 参考
-ms.date: 02/14/2017
+ms.date: 01/13/2021
+ms.custom: updateeachrelease
 f1_keywords:
 - _CSharpKeyword
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - C# language, reference
 - reference, C# language
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
-ms.openlocfilehash: 317f375c46eee3bb9c719afb68993cd4720e54fe
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 663d08921b1fb6c5013ce8dddb044ba12ead8409
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89127186"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235230"
 ---
 # <a name="c-reference"></a>C# 参考
 
@@ -61,7 +62,10 @@ ms.locfileid: "89127186"
   
  [C# 8.0 规范建议](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md)  
  C# 8.0 可用于 .NET Core 3.0。 这些功能包括可为空引用类型、递归模式匹配、默认接口方法、异步流、范围和索引、基于模式的 using 和 using 声明、null 合并分配以及只读实例成员。
-  
+
+ [C# 9.0 规范建议](../../../_csharplang/proposals/csharp-9.0/records.md)  
+ C# 9.0 可用于 .NET 5.0。 这些功能包括记录、顶层语句、模式匹配增强、仅 init 资源库、目标类型的新表达式、模块初始化表达式、扩展部分方法、静态匿名函数、目标类型的条件表达式、协变返回类型、foreach 循环中的 GetEnumerator 扩展、Lambda 丢弃参数、本地函数的属性、本机大小的整数、函数指针、禁止发出 localsinit 标志和无约束类型参数注释。
+
 ## <a name="related-sections"></a>相关章节  
 
  [使用 Visual Studio C# 开发环境](/visualstudio/get-started/csharp)  
