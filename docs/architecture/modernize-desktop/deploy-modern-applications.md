@@ -2,12 +2,12 @@
 title: 部署新式桌面应用程序
 description: 部署新式桌面应用程序时需要了解的所有内容。
 ms.date: 05/12/2020
-ms.openlocfilehash: 4a4d93caf1c2f8f58d48ee3199bbe6983fa939f4
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ba47f09b27adf270734bbfff285fe44dd4175d29
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "97866422"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615849"
 ---
 # <a name="deploying-modern-desktop-applications"></a>部署新式桌面应用程序
 
@@ -115,7 +115,7 @@ AppManifest 声明了版本控制、设备目标，并为每个应用程序确�
 
 #### <a name="windows-application-packaging-project"></a>Windows 应用程序打包项目
 
-您可以使用 Visual Studio 中的 " **Windows 应用程序打包项目**"   项目为桌面应用程序生成包。 然后，你可以将该包发布到 Microsoft Store 或将其旁加载到一个或多个电脑上。
+你可以使用 Visual Studio 中的 **Windows 应用程序打包项目** 项目为桌面应用生成程序包。 然后，你可以将该包发布到 Microsoft Store 或将其旁加载到一个或多个电脑上。
 
 #### <a name="msix-packaging-tool"></a>MSIX 打包工具
 
@@ -226,4 +226,4 @@ Windows 应用商店使用 Windows 更新具有很好的更新机制。 在大�
 生成新的 .MSIX 包并将其移到部署服务器后，只需编辑 *appinstaller* 文件来反映这些更改，主要是版本和新 .msix 文件的路径。 用户下一次启动应用程序时，系统将检测更改，并在后台下载新版本的文件。 完成此操作后，将以透明方式对用户执行安装。
 
 >[!div class="step-by-step"]
->[上一页](example-migration-core.md)
+>[上一页](example-migration.md)

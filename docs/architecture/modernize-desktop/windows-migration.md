@@ -1,27 +1,27 @@
 ---
 title: Windows 10 迁移
 description: Windows 10 功能（如打包和 XAML 孤岛）深入探讨。
-ms.date: 09/16/2019
-ms.openlocfilehash: cd17088b086a32fd3bb37e617d3a1047acedde0e
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.date: 12/29/2020
+ms.openlocfilehash: 139a8f2354803dafeb0178b4dbfb57a95c4ddb34
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "97866416"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615940"
 ---
 # <a name="windows-10-migration"></a>Windows 10 迁移
 
 请考虑以下情况：你有在 Windows 7 天内开发的工作桌面应用程序。 它目前使用 WPF 技术，在 Windows 10 上运行时，它具有过时的 UI 和行为。 就像观看现在俨然电影（如 Matrix）时，可以使用 Nokia 8110 设备查看 Neo。 此电影在20年后工作良好，但它可以从设备现代化中获益。
 
-随着 Windows 10 的发布，Microsoft 引入了许多创新来支持诸如平板电脑和触摸设备之类的方案，并为 Microsoft 操作系统的用户提供最佳体验。 例如，你能够：
+随着 Windows 10 的发布，Microsoft 引入了许多创新来支持诸如平板电脑和触摸设备之类的方案，并为 Microsoft 操作系统的用户提供最佳体验。 例如，可以：
 
 - 使用 Windows Hello 通过你的面部登录。
 - 使用笔绘制或手写自动识别和 digitalized 的文本。
 - 使用 WinML 运行在云上构建的本地自定义 AI 模型。
 
-通过 Windows 运行时 (WinRT) 库为 Windows 开发人员启用所有这些功能。 可以在现有的桌面应用程序中利用这些功能，因为库也同时公开给 .NET Framework 和 .NET Core。 你甚至可以使用 XAML 孤岛来现代化 UI，并根据时间改进应用的视觉对象和行为。
+通过 Windows 运行时 (WinRT) 库为 Windows 开发人员启用所有这些功能。 可以在现有的桌面应用程序中利用这些功能，因为库也同时公开给 .NET Framework 和 .NET。 你甚至可以使用 XAML 孤岛来现代化 UI，并根据时间改进应用的视觉对象和行为。
 
-此处需要注意的一个重要事项是，无需放弃 .NET Framework 技术来遵循此现代化路径。 您可以安全地停留在那里，并拥有 Windows 10 的所有优点，而无需迁移到 .NET Core。 因此，您可以获得强大的功能和灵活性来选择您的现代化路径。
+此处需要注意的一个重要事项是，无需放弃 .NET Framework 技术来遵循此现代化路径。 您可以安全地停留在那里，并拥有 Windows 10 的所有优点，而无需迁移到 .NET。 因此，您可以获得强大的功能和灵活性来选择您的现代化路径。
 
 ## <a name="winrt-apis"></a>WinRT Api
 
@@ -40,19 +40,19 @@ UWP 应用有一个部署系统，其中操作系统管理应用程序的安装�
 
 某些 WinRT Api 要求此包标识按预期方式工作。 但是，经典桌面应用（如本机 c + + 或 .NET 应用）使用不需要包标识的不同部署系统。 如果要在桌面应用程序中使用这些 WinRT Api，则需要为其提供包标识。
 
-继续操作的一种方法是构建附加的打包项目。 在打包项目中，指向原始源代码项目，并指定要提供的标识信息。如果安装包并运行已安装的应用程序，它会自动获取标识，使代码可以调用需要标识的所有 WinRT Api。
+继续操作的一种方法是构建附加的打包项目。 在打包项目中，指向原始源代码项目，并指定要提供的标识信息。 如果安装包并运行已安装的应用程序，它会自动获取标识，使代码可以调用需要标识的所有 WinRT Api。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
-    <Identity Name="YOUR-APP-GUID "
-              Publisher="CN=YOUR COMPANY"
-              Version="1.x.x.x" />
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
+    <Identity Name="YOUR-APP-GUID "
+              Publisher="CN=YOUR COMPANY"
+              Version="1.x.x.x" />
 </Package>
 ```
 
-通过检查包含 API 的类型是否使用 [DualApiPartition](xref:Windows.Foundation.Metadata.DualApiPartitionAttribute) 属性进行标记，可以检查哪些 api 需要打包的应用程序标识。如果是，则可以从未打包的传统桌面应用程序调用。 否则，必须使用打包项目的帮助将经典桌面应用转换为 UWP。
+通过检查包含 API 的类型是否使用 [DualApiPartition](xref:Windows.Foundation.Metadata.DualApiPartitionAttribute) 属性进行标记，可以检查哪些 api 需要打包的应用程序标识。 如果是，则可以从未打包的传统桌面应用程序调用。 否则，必须使用打包项目的帮助将经典桌面应用转换为 UWP。
 
 <https://docs.microsoft.com/windows/desktop/apiindex/uwp-apis-callable-from-a-classic-desktop-app>
 
@@ -78,7 +78,7 @@ UWP 应用有一个部署系统，其中操作系统管理应用程序的安装�
 
 ##### <a name="installation"></a>安装
 
-应用包安装在 *% ProgramFiles% \\ WindowsApps \\ package_name* 下，其中包含名为的可执行文件  `app_name.exe` 。 每个包文件夹都包含一个名为 `AppxManifest.xml`) 的清单 (，其中包含打包应用程序的特殊 XML 命名空间。 在该清单文件中，是一个  `<EntryPoint>`   元素，它引用完全信任的应用程序。 当该应用程序启动时，它不会在应用程序容器内运行，而是以用户通常的方式运行。
+应用包安装在 *% ProgramFiles% \\ WindowsApps \\ package_name* 下，其中包含名为的可执行文件 `app_name.exe` 。 每个包文件夹都包含一个名为 `AppxManifest.xml`) 的清单 (，其中包含打包应用程序的特殊 XML 命名空间。 该清单文件内部是一个 `<EntryPoint>` 元素，该元素引用完全信任的应用。 当该应用程序启动时，它不会在应用程序容器内运行，而是以用户通常的方式运行。
 
 部署后，软件包文件由操作系统标记为只读并严格锁定。 如果这些文件遭到篡改，Windows 将阻止应用启动。
 
@@ -90,13 +90,13 @@ UWP 应用有一个部署系统，其中操作系统管理应用程序的安装�
 
 ##### <a name="registry"></a>注册表
 
-应用包包含注册表 .dat 文件，该文件  `HKLM\Software`   在实际注册表中充当的逻辑等效项。 在运行时，此虚拟注册表将此配置单元的内容合并到原生系统配置单元，以提供两者的单一视图。
+应用包包含注册表 .dat 文件，该文件 `HKLM\Software` 在实际注册表中充当的逻辑等效项。 在运行时，此虚拟注册表将此配置单元的内容合并到原生系统配置单元，以提供两者的单一视图。
 
 所有写入都将保留在包升级过程中，仅在卸载应用程序时删除。
 
 ##### <a name="uninstallation"></a>卸载
 
-当用户卸载包时，将删除位于下的所有文件和文件夹  `C:\Program Files\WindowsApps\package_name` ，以及对 AppData 或在该过程中捕获的注册表进行的任何重定向写入操作。
+当用户卸载包时，将删除位于下的所有文件和文件夹 `C:\Program Files\WindowsApps\package_name` ，以及对 AppData 或在该过程中捕获的注册表进行的任何重定向写入操作。
 
 有关打包应用程序如何处理安装、文件访问、注册表和卸载的详细信息，请参阅 <https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-behind-the-scenes> 。
 
@@ -118,7 +118,7 @@ UWP 应用有一个部署系统，其中操作系统管理应用程序的安装�
 
 ![Microsoft 文档中的通知类](./media/windows-migration/notification-class-documentation.png)
 
-若要访问 WinRT API，请添加对 NuGet 包的引用， `Microsoft.Windows.SDK.Contracts`   此包将在幕后执行神奇 (查看) 的详细信息 <https://blogs.windows.com/windowsdeveloper/2019/04/30/calling-windows-10-apis-from-a-desktop-application-just-got-easier/> 。
+若要访问 WinRT API，请添加对 NuGet 包的引用， `Microsoft.Windows.SDK.Contracts` 此包将在幕后执行神奇 (查看) 的详细信息 <https://blogs.windows.com/windowsdeveloper/2019/04/30/calling-windows-10-apis-from-a-desktop-application-just-got-easier/> 。
 
 你现在已准备好开始添加一些代码。
 
@@ -193,11 +193,11 @@ Windows 10 1903 更新引入了一组 Api，可用于在 Win32 窗口中承载 U
 
 ### <a name="how-it-works"></a>工作原理
 
-Windows 10 1903 更新引入了几个 XAML 宿主 Api。 其中两个是 `WindowsXamlManager`   和  `DesktopWindowXamlSource` 。
+Windows 10 1903 更新引入了几个 XAML 宿主 Api。 其中两个是 `WindowsXamlManager` 和 `DesktopWindowXamlSource` 。
 
- `WindowsXamlManager`   类处理 UWP XAML 框架。 它的 `InitializeForCurrentThread` 方法将 UWP XAML 框架加载到 Win32 应用程序的当前线程中。
+`WindowsXamlManager`类处理 UWP XAML 框架。 它的 `InitializeForCurrentThread` 方法将 UWP XAML 框架加载到 Win32 应用程序的当前线程中。
 
- `DesktopWindowXamlSource`   是 XAML 岛内容的实例。 它具有 `Content` 用于实例化和设置的属性。 `DesktopWindowXamlSource`   呈现并从 HWND 获取其输入。 它需要知道将 XAML 岛附加到哪些其他 HWND，并负责调整和定位父级的 HWND。
+`DesktopWindowXamlSource`是 XAML 岛内容的实例。 它具有 `Content` 用于实例化和设置的属性。 `DesktopWindowXamlSource`呈现并从 HWND 获取其输入。 它需要知道将 XAML 岛附加到哪些其他 HWND，并负责调整和定位父级的 HWND。
 
 WPF 或 Windows 窗体开发人员通常不会处理其代码中的 HWND，因此，很难理解并处理 HWND 指针和基础布线材料来与 Win32 和 UWP 的世界通信。
 
@@ -223,12 +223,12 @@ Windows 社区工具包提供了两种类型的控件：包装控件和宿主控
         ...
         xmlns:uwpControls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls">
 <Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"/>
-        <RowDefinition Height="\*"/>
-    </Grid.RowDefinitions>
-    <uwpControls:InkToolbar TargetInkCanvas="{x:Reference Name=inkCanvas}"/>
-    <uwpControls:InkCanvas Grid.Row="1" x:Name="inkCanvas" />
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="\*"/>
+    </Grid.RowDefinitions>
+    <uwpControls:InkToolbar TargetInkCanvas="{x:Reference Name=inkCanvas}"/>
+    <uwpControls:InkCanvas Grid.Row="1" x:Name="inkCanvas" />
 </Grid>
 ```
 
@@ -263,7 +263,7 @@ XAML 的核心功能之一是绑定，它在 Win32 代码和岛之间有效。 �
 
 XAML 自定义控件是由你或第三方) 创建的控件 (或用户控件， (包括 WinUI 1.x 控件) 。 若要在 Windows 窗体或 WPF 应用程序中托管自定义 UWP 控件，你将需要：
 
-- `WindowsXamlHost`在 .Net Core 2.x 应用中使用 UWP 控件。
+- 使用 `WindowsXamlHost` .net 应用中的 UWP 控件。
 - 若要创建定义对象的 UWP 应用项目，则为 `XamlApplication` 。
 
 WPF 或 Windows 窗体项目必须有权访问 `Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication` Windows 社区工具包提供的类的实例。 此对象用作根元数据提供程序，用于为应用程序的当前目录中的程序集中的自定义 UWP XAML 类型加载元数据。 执行此操作的建议方法是将 (通用 Windows) 项目的空白应用添加到与 WPF 或 Windows 窗体项目相同的解决方案，然后修改此项目中的默认应用类。
@@ -284,9 +284,9 @@ WinUI 2 是开源的，你可以在中找到信息 <https://github.com/microsoft
 
 ### <a name="do-you-need-xaml-islands"></a>是否需要 XAML 孤岛
 
-XAML 孤岛适用于那些希望通过利用新的 UWP 控件和行为而无需完全重写应用程序来改善用户体验的现有 Win32 应用程序。 你可以使用 [Windows 10 api](/windows/uwp/porting/desktop-to-uwp-enhance)，但在 XAML 孤岛之前，只需要使用非 UI 相关的 api。
+XAML 孤岛适用于那些希望通过利用新的 UWP 控件和行为而无需完全重写应用程序来改善用户体验的现有 Win32 应用程序。 你可以使用 [Windows 10 api](/windows/uwp/porting/desktop-to-uwp-enhance)，但在 XAML 孤岛之前，只需要使用非 UI 相关的 api。
 
-如果要开发新的 Windows 应用程序， [UWP 应用程序](/windows/uwp/get-started/universal-application-platform-guide)   可能是正确的方法。
+如果要开发新的 Windows 应用程序， [UWP 应用程序](/windows/uwp/get-started/universal-application-platform-guide) 可能是正确的方法。
 
 ### <a name="the-road-ahead-xaml-islands-winui-30"></a>更快的 XAML 孤岛： WinUI 3。0
 
@@ -300,7 +300,7 @@ WinUI 3 处于积极开发阶段，将极大地扩展 WinUI 的作用域，以�
 
 ![WinUI 3.0 的结构](./media/windows-migration/winui3.png)
 
-XAML 框架现在将在 GitHub 上开发，并以 [NuGet](/nuget/what-is-nuget)包的形式提供   。
+XAML 框架现在将在 GitHub 上开发，并以 [NuGet](/nuget/what-is-nuget) 包的形式提供。
 
 作为 OS 的一部分发布的现有 UWP XAML API 将不会再收到新的功能更新。 它们仍将根据 Windows 10 支持生命周期收到安全更新和关键修复程序。
 
@@ -315,7 +315,7 @@ WinUI 3 将解决 **在桌面应用中添加 WinUI 的** 关键反馈。 这将�
 在此聚合内，WinUI 3 将让开发人员轻松地混合和匹配的正确组合：
 
 * 应用模型： UWP，Win32
-* 平台： .NET Core 或本机
+* 平台： .NET 或本机
 * 语言： .NET (C \# ，Visual Basic) ，标准 c + +
 * 打包： .MSIX，AppX 用于 Microsoft Store，未打包
 * 互操作：使用 WinUI 3，使用 WinUI XAML 孤岛扩展现有 WPF、WinForms 和 MFC 应用。
@@ -324,4 +324,4 @@ WinUI 3 将解决 **在桌面应用中添加 WinUI 的** 关键反馈。 这将�
 
 >[!div class="step-by-step"]
 >[上一页](migrate-modern-applications.md)
->[下一页](example-migration-core.md)
+>[下一页](example-migration.md)
