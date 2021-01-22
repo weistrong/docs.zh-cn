@@ -1,17 +1,17 @@
 ---
 title: 在 CQRS 微服务中实现读取/查询
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 了解如何使用 Dapper 在 eShopOnContainers 中的订购微服务上实现 CQRS 查询端。
-ms.date: 10/08/2018
-ms.openlocfilehash: e6ea7b4b7b37df9ee972319f597ab045bf3bd215
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.date: 01/13/2021
+ms.openlocfilehash: 047fc3893dcaf72a17d29f5560c928879757d024
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90678798"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188915"
 ---
 # <a name="implement-readsqueries-in-a-cqrs-microservice"></a>在 CQRS 微服务中实现读取/查询
 
-对于读取/查询，来自 eShopOnContainers 引用应用程序的订购微服务独立于 DDD 模型和事务区域实现查询。 这主要是因为查询的需要和事务的需要有很大不同。 写入的执行事务必须符合域逻辑。 另一方面，查询是幂等的，可以与域规则分离。
+对于读取/查询，来自 eShopOnContainers 引用应用程序的订购微服务独立于 DDD 模型和事务区域实现查询。 此实现主要是因为查询的需要和事务的需要有很大不同。 写入的执行事务必须符合域逻辑。 另一方面，查询是幂等的，可以与域规则分离。
 
 如图 7-3 所示，这种方法很简单。 根据用户界面应用程序的要求，Web API 控制器使用任意基础结构（如 Dapper 等微观对象关系映射程序 (ORM)）并返回动态 ViewModel 就可实现 API 接口。
 
@@ -21,7 +21,7 @@ ms.locfileid: "90678798"
 
 可以通过使用微型 ORM（如 Dapper）查询数据库（返回动态 ViewModel），实现采用简化 CQRS 方法的最简单查询端方法。 查询定义查询数据库并返回为每个查询动态构建的动态 ViewModel。 因为查询是幂等的，所以无论查询运行多少次，数据都不会更改。 因此，不会受到事务端所用 DDD 模式的限制（如聚合和其他模式），这也是查询与事务区域分离的原因。 查询数据库以获取 UI 需要的数据，并返回动态 ViewModel，除在 SQL 语句中外，动态 ViewModel 不需要在任何地方静态定义（ViewModel 没有类）。
 
-因为这种方法很简单，因此查询端所需的代码（例如使用 [Dapper](https://github.com/StackExchange/Dapper) 等微型 ORM 的代码）可[在同一 Web API 项目](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Queries/OrderQueries.cs)中实现。 如图 7-4 所示。 查询在 eShopOnContainers 解决方案的“Ordering.API”微服务项目中定义。
+因为这种方法很简单，因此查询端所需的代码（例如使用 [Dapper](https://github.com/StackExchange/Dapper) 等微型 ORM 的代码）可[在同一 Web API 项目](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Queries/OrderQueries.cs)中实现。 图 7-4 显示了这种方法。 查询在 eShopOnContainers 解决方案的“Ordering.API”微服务项目中定义。
 
 ![Ordering.API 项目的“查询”文件夹的屏幕截图。](./media/cqrs-microservice-reads/ordering-api-queries-folder.png)
 

@@ -1,13 +1,13 @@
 ---
 title: 测试 ASP.NET Core 服务和 Web 应用
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 探索用于在容器中测试 ASP.NET Core 服务和 Web 应用的体系结构。
-ms.date: 08/07/2020
-ms.openlocfilehash: 67872668781d8ae5d79bf360aee73f744cf4404b
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.date: 01/13/2021
+ms.openlocfilehash: dfd0a320491f92154bc9e2804d56c00120224e62
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633944"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187998"
 ---
 # <a name="testing-aspnet-core-services-and-web-apps"></a>测试 ASP.NET Core 服务和 Web 应用
 
@@ -15,13 +15,13 @@ ms.locfileid: "97633944"
 
 需要根据有效或无效输入测试控制器的运行状况，并根据其执行的业务操作的结果测试控制器的响应情况。 但是，应对微服务进行这些类型的测试：
 
-- 单元测试。 这可确保应用程序的各个组件按预期工作。 断言测试组件 API。
+- 单元测试。 这些测试可确保应用程序的各个组件按预期运行。 断言测试组件 API。
 
-- 集成测试。 这可确保对于数据库等外部项目，组件交互按预期工作。 断言可以测试组件 API、UI 或数据库 I/O、登录等操作的副作用。
+- 集成测试。 这些测试可确保对于数据库等外部项目，组件交互按预期运行。 断言可以测试组件 API、UI 或数据库 I/O、登录等操作的副作用。
 
-- 每个微服务的的功能测试。 这可确保从用户角度，应用程序按预期运行。
+- 每个微服务的的功能测试。 这些测试可确保从用户角度，应用程序按预期运行。
 
-- 服务测试。 这可确保测试端到端服务用例，包括同时测试多个服务。 对于此类型的测试，需要首先准备环境。 在这种情况下，这意味着启动服务（例如，通过使用 docker-compose up）。
+- 服务测试。 这些测试可确保测试端到端服务用例，包括同时测试多个服务。 对于此类型的测试，需要首先准备环境。 在这种情况下，这意味着启动服务（例如，通过使用 docker-compose up）。
 
 ### <a name="implementing-unit-tests-for-aspnet-core-web-apis"></a>实现 ASP.NET Core Web API 的单元测试
 
@@ -70,7 +70,7 @@ public async Task Get_order_detail_success()
 
 ASP.NET Core 包括可用于处理 HTTP 请求且无网络费用的内置测试 web 主机，这意味着可比使用真正的 Web 主机时更快地运行这些测试。 NuGet 组件中，测试 web 主机 (TestServer) 作为 Microsoft.AspNetCore.TestHost 提供。 可将其添加到集成测试项目，并用于托管 ASP.NET Core 应用程序。
 
-如以下代码所示，创建 ASP.NET Core 控制器的集成测试时，通过测试主机实例化控制器。 这相当于 HTTP 请求，但它的运行速度更快。
+如以下代码所示，创建 ASP.NET Core 控制器的集成测试时，通过测试主机实例化控制器。 此功能相当于 HTTP 请求，但它的运行速度更快。
 
 ```csharp
 public class PrimeWebDefaultRequestShould
@@ -107,7 +107,7 @@ public class PrimeWebDefaultRequestShould
 - **Steve Smith.集成测试** (ASP.NET Core) \
     [https://docs.microsoft.com/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
 
-- **在 .NET Core 中使用 dotnet test 的单元测试** \
+- **在 .NET 中使用 dotnet test 的单元测试** \
     [https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)
 
 - **xUnit.net**。 官方网站。 \
@@ -146,7 +146,7 @@ compose 应用程序运行后，如果运行 Visual Studio，可利用断点和�
 
 **图 6-25**。 eShopOnContainers 中的测试文件夹结构
 
-微服务和应用程序功能/集成测试使用常规测试运行程序从 Visual Studio 运行，但首先需要启动所需基础结构服务（通过一组包含在解决方案测试文件夹中的 docker-compose 文件）：
+微服务和应用程序功能/集成测试使用常规测试运行程序从 Visual Studio 运行，但首先需要通过一组包含在解决方案测试文件夹中的 docker-compose 文件启动所需基础结构服务：
 
 docker-compose-test.yml 
 

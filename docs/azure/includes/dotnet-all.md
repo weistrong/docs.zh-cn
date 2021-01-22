@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 492576bd83053d9d4e44c56eda73fed3a4d56d0f
-ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
+ms.openlocfilehash: 6ec731725ad6f0a6093a9b0eeb7d55a5636868d5
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97911584"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98195311"
 ---
 | 名称 | 程序包 | Docs | 源 |
 | ---- | ------- | ---- | ------ |
@@ -13,12 +13,14 @@ ms.locfileid: "97911584"
 | ASP.NET 扩展 - 配置机密 | NuGet [1.0.2](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.Configuration.Secrets/1.0.2) | [docs](/dotnet/api/overview/azure/Extensions.AspNetCore.Configuration.Secrets-readme/) | GitHub [1.0.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Extensions.AspNetCore.Configuration.Secrets_1.0.2/sdk/extensions/Azure.Extensions.AspNetCore.Configuration.Secrets/) |
 | ASP.NET 扩展 - DataProtection Blob | NuGet [1.2.0](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.DataProtection.Blobs/1.2.0) | [docs](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Blobs-readme/) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Extensions.AspNetCore.DataProtection.Blobs_1.2.0/sdk/extensions/Azure.Extensions.AspNetCore.DataProtection.Blobs/) |
 | ASP.NET 扩展 - DataProtection 密钥 | NuGet [1.0.2](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.DataProtection.Keys/1.0.2) | [docs](/dotnet/api/overview/azure/Extensions.AspNetCore.DataProtection.Keys-readme/) | GitHub [1.0.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Extensions.AspNetCore.DataProtection.Keys_1.0.2/sdk/extensions/Azure.Extensions.AspNetCore.DataProtection.Keys/) |
+| 证明 | NuGet [0.10.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Attestation/0.10.0-preview) |  | GitHub [0.10.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Attestation_0.10.0-preview/sdk/attestation/Microsoft.Azure.Attestation/) |
+| Azure 安全性证明 | NuGet [1.0.0-alpha.1](https://www.nuget.org/packages/Azure.Security.Attestation/1.0.0-alpha.1) |  | GitHub [1.0.0-alpha.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.Attestation_1.0.0-alpha.1/sdk/attestation/Azure.Security.Attestation/) |
 | 认知搜索 | NuGet [11.1.1](https://www.nuget.org/packages/Azure.Search.Documents/11.1.1)<br>NuGet [11.2.0-beta.2](https://www.nuget.org/packages/Azure.Search.Documents/11.2.0-beta.2) | [docs](/dotnet/api/overview/azure/Search.Documents-readme/) | GitHub [11.1.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.1.1/sdk/search/Azure.Search.Documents/)<br>GitHub [11.2.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.2.0-beta.2/sdk/search/Azure.Search.Documents/) |
 | 通信管理 | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/Communication.Administration-readme-pre/) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Administration_1.0.0-beta.3/sdk/communication/Azure.Communication.Administration/) |
 | 通信聊天 | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Chat/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/Communication.Chat-readme-pre/) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Chat_1.0.0-beta.3/sdk/communication/Azure.Communication.Chat/) |
 | 通信通用 | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Common/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/Communication.Common-readme-pre/) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Common_1.0.0-beta.3/sdk/communication/Azure.Communication.Common/) |
 | 通信短信 | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Sms/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/Communication.Sms-readme-pre/) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Sms_1.0.0-beta.3/sdk/communication/Azure.Communication.Sms/) |
-| 核心版 | NuGet [1.7.0](https://www.nuget.org/packages/Azure.Core/1.7.0) | [docs](/dotnet/api/overview/azure/Core-readme/) | GitHub [1.7.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.7.0/sdk/core/Azure.Core/) |
+| 核心版 | NuGet [1.8.1](https://www.nuget.org/packages/Azure.Core/1.8.1) | [docs](/dotnet/api/overview/azure/Core-readme/) | GitHub [1.8.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.8.1/sdk/core/Azure.Core/) |
 | 核心 - AMQP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Core.Amqp/1.0.0) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme/) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.0.0/sdk/core/Azure.Core.Amqp/) |
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
 | 数字孪生 - 核心 | NuGet [1.2.0](https://www.nuget.org/packages/Azure.DigitalTwins.Core/1.2.0) | [docs](/dotnet/api/overview/azure/DigitalTwins.Core-readme/) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.DigitalTwins.Core_1.2.0/sdk/digitaltwins/Azure.DigitalTwins.Core/) |
@@ -58,30 +60,8 @@ ms.locfileid: "97911584"
 | 资源管理 - 网络 | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Network/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Network-readme-pre/) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Network_1.0.0-preview.2/sdk/network/Azure.ResourceManager.Network/) |
 | 资源管理 - 资源 | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Resources/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Resources-readme-pre/) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Resources_1.0.0-preview.2/sdk/resources/Azure.ResourceManager.Resources/) |
 | 资源管理 - 存储 | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Storage/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Storage-readme-pre/) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Storage_1.0.0-preview.2/sdk/storage/Azure.ResourceManager.Storage/) |
-| Azure.Security.Attestation | NuGet [1.0.0-alpha.1](https://www.nuget.org/packages/Azure.Security.Attestation/1.0.0-alpha.1) |  |  |
-| Microsoft.Azure.Amqp | NuGet [2.4.9](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.4.9) |  |  |
-| Microsoft.Azure.Devices | NuGet [1.28.1](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.28.1) |  |  |
-| Microsoft.Azure.Devices.Client | NuGet [1.33.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.33.1) |  |  |
-| Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |
-| Microsoft.Azure.Devices.DigitalTwin.Client | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.DigitalTwin.Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.ProtocolGateway.Core | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Core/2.0.1) |  |  |
-| Microsoft.Azure.Devices.ProtocolGateway.IotHubClient | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.IotHubClient/2.0.1) |  |  |
-| Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage/2.0.1) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Client | NuGet [1.17.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Client/1.17.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Security.Tpm | NuGet [1.13.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Security.Tpm/1.13.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Service | NuGet [1.17.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/1.17.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Transport.Amqp | NuGet [1.14.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Amqp/1.14.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.13.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.13.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.14.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.14.0-preview-001) |  |  |
-| Microsoft.Azure.Devices.Shared | NuGet [1.26.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.26.0) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.0.0-preview1) |  |  |
-| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.0.0-preview1) |  |  |
-| Microsoft.Azure.Management.RedisEnterprise | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RedisEnterprise/1.0.0-preview) |  |  |
-| Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
-| Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | 异常检测器 | NuGet [3.0.0-preview.2](https://www.nuget.org/packages/Azure.AI.AnomalyDetector/3.0.0-preview.2) | [docs](/dotnet/api/overview/azure/AI.AnomalyDetector-readme-pre/) | GitHub [3.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AnomalyDetector_3.0.0-preview.2/sdk/anomalydetector/Azure.AI.AnomalyDetector/) |
-| 异常检测器  | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0)<br>NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0-preview.1) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
+| 异常检测器 | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0)<br>NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0-preview.1) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | 应用程序配置 | NuGet [1.0.2](https://www.nuget.org/packages/Azure.Data.AppConfiguration/1.0.2) | [docs](/dotnet/api/overview/azure/Data.AppConfiguration-readme/) | GitHub [1.0.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Data.AppConfiguration_1.0.2/sdk/appconfiguration/Azure.Data.AppConfiguration/) |
 | 应用服务 | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
 | 应用服务 - API 应用通用 | NuGet [0.9.36](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Common/0.9.36) |  |  |
@@ -96,6 +76,7 @@ ms.locfileid: "97911584"
 | 自动建议 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.AutoSuggest/2.0.0) |  |  |
 | Azure Active Directory - 应用身份验证 | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Services.AppAuthentication/1.6.0) |  |  |
 | 适用于 OpenTelemetry 的 Azure Monitor 导出程序 | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.OpenTelemetry.Exporter.AzureMonitor/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Microsoft.OpenTelemetry.Exporter.AzureMonitor-readme-pre/) |  |
+| Azure 安全性证明 | NuGet [1.0.0-alpha.1](https://www.nuget.org/packages/Azure.Security.Attestation/1.0.0-alpha.1) |  | GitHub [1.0.0-alpha.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.Attestation_1.0.0-alpha.1/sdk/attestation/Azure.Security.Attestation/) |
 | Azure Stack - Azure 一致存储 | NuGet [0.10.8-preview](https://www.nuget.org/packages/Microsoft.AzureStack.AzureConsistentStorage/0.10.8-preview) |  |  |
 | Batch | NuGet [14.0.0](https://www.nuget.org/packages/Microsoft.Azure.Batch/14.0.0) | [docs](/dotnet/api/overview/azure/Microsoft.Batch-readme/) | GitHub [14.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Batch_14.0.0/sdk/batch/Microsoft.Azure.Batch/) |
 | Batch - 应用加密 | NuGet [1.1.1.4](https://www.nuget.org/packages/Microsoft.Azure.Batch.Apps.Cryptography/1.1.1.4) |  |  |
@@ -128,312 +109,19 @@ ms.locfileid: "97911584"
 | 通信短信 | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Sms/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/Communication.Sms-readme-pre/) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Sms_1.0.0-beta.3/sdk/communication/Azure.Communication.Sms/) |
 | 计算机视觉 | NuGet [6.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.ComputerVision/6.0.0)<br>NuGet [6.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.ComputerVision/6.0.0-preview.1) |  | GitHub [6.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.ComputerVision_6.0.0-preview.1/sdk/cognitiveservices/Vision.ComputerVision) |
 | Configuration Manager | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.ConfigurationManager/4.0.0) |  |  |
-| 连接器 - 动作 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Act/0.0.1-alpha) |  |  |
-| 连接器 - Acumatica | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Acumatica/0.0.1-alpha) |  |  |
-| 连接器 - Adobe Creative Cloud | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AdobeCreativeCloud/0.0.1-alpha) |  |  |
-| 连接器 - Agilite | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Agilite/0.0.1-alpha) |  |  |
-| 连接器 - Ahead | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Ahead/0.0.1-alpha) |  |  |
-| 连接器 - AirSlate | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AirSlate/0.0.1-alpha) |  |  |
-| 连接器 - 全部 | NuGet [0.0.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.All/0.0.2-alpha) |  |  |
-| 连接器 - Ally | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Ally/0.0.1-alpha) |  |  |
-| 连接器 - Amazon RedShift | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AmazonRedShift/0.0.1-alpha) |  |  |
-| 连接器 - Amazon SQS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AmazonSQS/0.0.1-alpha) |  |  |
-| 连接器 - Apache Impala | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ApacheImpala/0.0.1-alpha) |  |  |
-| 连接器 - Appfigures | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Appfigures/0.0.1-alpha) |  |  |
-| 连接器 - 预约计划 10To8 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AppointmentScheduling10To8/0.0.1-alpha) |  |  |
-| 连接器 - AppsForOps 时间线 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AppsForOpsTimeline/0.0.1-alpha) |  |  |
-| 连接器 - Apptigent PowerTools LITE | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ApptigentPowerToolsLITE/0.0.1-alpha) |  |  |
-| 连接器 - AS2 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AS2/0.0.1-alpha) |  |  |
-| 连接器 - AtBot 管理 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AtBotAdmin/0.0.1-alpha) |  |  |
-| 连接器 - AtBot 逻辑 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AtBotLogic/0.0.1-alpha) |  |  |
-| 连接器 - AuthentiseLineItem | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AuthentiseLineItem/0.0.1-alpha) |  |  |
-| 连接器 - AuthentiseOrder | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AuthentiseOrder/0.0.1-alpha) |  |  |
-| 连接器 - AWeber | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AWeber/0.0.1-alpha) |  |  |
-| 连接器 - Axtension 内容入口 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AxtensionContentGate/0.0.1-alpha) |  |  |
-| 连接器 - Azure AD 标识保护 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureADIdentityProtection/0.0.1-alpha) |  |  |
-| 连接器 - Azure 应用服务 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureAppService/0.0.1-alpha) |  |  |
-| 连接器 - Azure Application Insights | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureApplicationInsights/0.0.1-alpha) |  |  |
-| 连接器 - Azure 自动化 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureAutomation/0.0.1-alpha) |  |  |
-| 连接器 - Azure Blob 存储 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureBlobStorage/0.0.1-alpha) |  |  |
-| 连接器 - Azure 容器实例 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureContainerInstance/0.0.1-alpha) |  |  |
-| 连接器 - Azure Cosmos DB | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureCosmosDB/0.0.1-alpha) |  |  |
-| 连接器 - Azure 数据工厂 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureDataFactory/0.0.1-alpha) |  |  |
-| 连接器 - Azure 数据湖 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureDataLake/0.0.1-alpha) |  |  |
-| 连接器 - Azure DevOps | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureDevOps/0.0.1-alpha) |  |  |
-| 连接器 - Azure 事件网格发布 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureEventGridPublish/0.0.1-alpha) |  |  |
-| 连接器 - Azure 文件存储 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureFileStorage/0.0.1-alpha) |  |  |
-| 连接器 - Azure IoT Central | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureIoTCentral/0.0.1-alpha) |  |  |
-| 连接器 - Azure 密钥保管库 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureKeyVault/0.0.1-alpha) |  |  |
-| 连接器 - Azure Log Analytics | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureLogAnalytics/0.0.1-alpha) |  |  |
-| 连接器 - Azure Log Analytics 数据收集器 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureLogAnalyticsDataCollector/0.0.1-alpha) |  |  |
-| 连接器 - Azure Monitor 日志 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureMonitorLogs/0.0.1-alpha) |  |  |
-| 连接器 - Azure 表存储 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureTableStorage/0.0.1-alpha) |  |  |
-| 连接器 - Azure VM | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.AzureVM/0.0.1-alpha) |  |  |
-| 连接器 - Basecamp | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Basecamp/0.0.1-alpha) |  |  |
-| 连接器 - Basecamp 2 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Basecamp2/0.0.1-alpha) |  |  |
-| 连接器 - BillsPLS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.BillsPLS/0.0.1-alpha) |  |  |
-| 连接器 - 必应地图 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.BingMaps/0.0.1-alpha) |  |  |
-| 连接器 - 必应搜索 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.BingSearch/0.0.1-alpha) |  |  |
-| 连接器 - Bitbucket | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Bitbucket/0.0.1-alpha) |  |  |
-| 连接器 - Bitly | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Bitly/0.0.1-alpha) |  |  |
-| 连接器 - BizTalkServer | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.BizTalkServer/0.0.1-alpha) |  |  |
-| 连接器 - Blackbaud Raisers Edge NXT | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.BlackbaudRaisersEdgeNXT/0.0.1-alpha) |  |  |
-| 连接器 - Blogger | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Blogger/0.0.1-alpha) |  |  |
-| 连接器 - Box | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Box/0.0.1-alpha) |  |  |
-| 连接器 - bttn | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Bttn/0.0.1-alpha) |  |  |
-| 连接器 - Business Central | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.BusinessCentral/0.0.1-alpha) |  |  |
-| 连接器 - Campfire | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Campfire/0.0.1-alpha) |  |  |
-| 连接器 - Capsule CRM | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CapsuleCRM/0.0.1-alpha) |  |  |
-| 连接器 - Casper365 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Casper365/0.0.1-alpha) |  |  |
-| 连接器 - Chatter | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Chatter/0.0.1-alpha) |  |  |
-| 连接器 - Cisco Webex Meetings | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CiscoWebexMeetings/0.0.1-alpha) |  |  |
-| 连接器 - Cloud PKI Management | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CloudPKIManagement/0.0.1-alpha) |  |  |
-| 连接器 - Cloudmersive Data Validation | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CloudmersiveDataValidation/0.0.1-alpha) |  |  |
-| 连接器 - Cloudmersive NLP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CloudmersiveNLP/0.0.1-alpha) |  |  |
-| 连接器 - Cognito Forms | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CognitoForms/0.0.1-alpha) |  |  |
-| 连接器 - Commercient | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Commercient/0.0.1-alpha) |  |  |
-| 连接器 - Common Data Service | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CommonDataService/0.0.1-alpha) |  |  |
-| 连接器 - 计算机视觉 API | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ComputerVisionAPI/0.0.1-alpha) |  |  |
-| 连接器 - 内容转换 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ContentConversion/0.0.1-alpha) |  |  |
-| 连接器 - 内容审查器 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ContentModerator/0.0.1-alpha) |  |  |
-| 连接器 - Corda 区块链 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CordaBlockchain/0.0.1-alpha) |  |  |
-| 连接器 - CPQSync | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CPQSync/0.0.1-alpha) |  |  |
-| 连接器 - 自定义视觉 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.CustomVision/0.0.1-alpha) |  |  |
-| 连接器 - D7SMS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.D7SMS/0.0.1-alpha) |  |  |
-| 连接器 - Data8 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Data8/0.0.1-alpha) |  |  |
-| 连接器 - DB2 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.DB2/0.0.1-alpha) |  |  |
-| 连接器 - Derdack SIGNL4 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.DerdackSIGNL4/0.0.1-alpha) |  |  |
-| 连接器 - DnB 优化器 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.DnBOptimizer/0.0.1-alpha) |  |  |
-| 连接器 - DocFusion365 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.DocFusion365/0.0.1-alpha) |  |  |
-| 连接器 - DocuSign | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.DocuSign/0.0.1-alpha) |  |  |
-| 连接器 - Dropbox | NuGet [0.0.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Dropbox/0.0.2-alpha) |  |  |
-| 连接器 - Dynamic Signal | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.DynamicSignal/0.0.1-alpha) |  |  |
-| 连接器 - Dynamics 365 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Dynamics365/0.0.1-alpha) |  |  |
-| 连接器 - Dynamics 365 Customer Insights | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Dynamics365CustomerInsights/0.0.1-alpha) |  |  |
-| 连接器 - Dynamics 365 自定义语音 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Dynamics365CustomerVoice/0.0.1-alpha) |  |  |
-| 连接器 - Dynamics 365 财务和运营 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Dynamics365forFinOps/0.0.1-alpha) |  |  |
-| 连接器 - Dynamics 365 销售见解 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Dynamics365SalesInsights/0.0.1-alpha) |  |  |
-| 连接器 - Dynamics NAV | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.DynamicsNAV/0.0.1-alpha) |  |  |
-| 连接器 - Easy Redmine | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.EasyRedmine/0.0.1-alpha) |  |  |
-| 连接器 - Easyvista Self Help | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.EasyvistaSelfHelp/0.0.1-alpha) |  |  |
-| 连接器 - Edifact | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Edifact/0.0.1-alpha) |  |  |
-| 连接器 - Edufram | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Eduframe/0.0.1-alpha) |  |  |
-| 连接器 - Elastic Forms | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ElasticForms/0.0.1-alpha) |  |  |
-| 连接器 - ElasticOCR | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ElasticOCR/0.0.1-alpha) |  |  |
-| 连接器 - emfluence 营销平台 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.EmfluenceMarketingPlatform/0.0.1-alpha) |  |  |
-| 连接器 - Encodian | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Encodian/0.0.1-alpha) |  |  |
-| 连接器 - EntegrationsInvoicing | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.EntegrationsInvoicing/0.0.1-alpha) |  |  |
-| 连接器 - Envoy | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Envoy/0.0.1-alpha) |  |  |
-| 连接器 - 以太坊区块链 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.EthereumBlockchain/0.0.1-alpha) |  |  |
-| 连接器 - 事件中心 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.EventHubs/0.0.1-alpha) |  |  |
-| 连接器 - Eventbrite | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Eventbrite/0.0.1-alpha) |  |  |
-| 连接器 - Excel Online | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ExcelOnline/0.0.1-alpha) |  |  |
-| 连接器 - Excel Online One Drive | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ExcelOnlineOneDrive/0.0.1-alpha) |  |  |
-| 连接器 - ExghtsGenDocumentnMore | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ExghtsGenDocumentnMore/0.0.1-alpha) |  |  |
-| 连接器 - 人脸 API | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.FaceAPI/0.0.1-alpha) |  |  |
-| 连接器 - Facebook | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Facebook/0.0.1-alpha) |  |  |
-| 连接器 - 文件系统 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.FileSystem/0.0.1-alpha) |  |  |
-| 连接器 - FireText | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.FireText/0.0.1-alpha) |  |  |
-| 连接器 - FlowForma | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.FlowForma/0.0.1-alpha) |  |  |
-| 连接器 - FORCAM FORCE Bridge | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ForcamForceBridge/0.0.1-alpha) |  |  |
-| 连接器 - 表单识别器 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.FormRecognizer/0.0.1-alpha) |  |  |
-| 连接器 - FreshBooks | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.FreshBooks/0.0.1-alpha) |  |  |
-| 连接器 - Freshdesk | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Freshdesk/0.0.1-alpha) |  |  |
-| 连接器 - Freshservice | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Freshservice/0.0.1-alpha) |  |  |
-| 连接器 - FTP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.FTP/0.0.1-alpha) |  |  |
-| 连接器 - Fulcrum | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Fulcrum/0.0.1-alpha) |  |  |
-| 连接器 - GetMyInvoices | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GetMyInvoices/0.0.1-alpha) |  |  |
-| 连接器 - GitHub | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GitHub/0.0.1-alpha) |  |  |
-| 连接器 - Gmail | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Gmail/0.0.1-alpha) |  |  |
-| 连接器 - GoFileRoom | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoFileRoom/0.0.1-alpha) |  |  |
-| 连接器 - Google 日历 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoogleCalendar/0.0.1-alpha) |  |  |
-| 连接器 - Google 联系人 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoogleContacts/0.0.1-alpha) |  |  |
-| 连接器 - Google Drive | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoogleDrive/0.0.1-alpha) |  |  |
-| 连接器 - Google Sheets | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoogleSheets/0.0.1-alpha) |  |  |
-| 连接器 - GoToMeeting | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoToMeeting/0.0.1-alpha) |  |  |
-| 连接器 - GoToTraining | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoToTraining/0.0.1-alpha) |  |  |
-| 连接器 - GoToWebinar | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.GoToWebinar/0.0.1-alpha) |  |  |
-| 连接器 - Harvest | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Harvest/0.0.1-alpha) |  |  |
-| 连接器 - HelloSign | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.HelloSign/0.0.1-alpha) |  |  |
-| 连接器 - HipChat | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.HipChat/0.0.1-alpha) |  |  |
-| 连接器 - HotProfile | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.HotProfile/0.0.1-alpha) |  |  |
-| 连接器 - HouseRater QA | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.HouseRaterQA/0.0.1-alpha) |  |  |
-| 连接器 - HTTP 与 Azure AD | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.HTTPwithAzureAD/0.0.1-alpha) |  |  |
-| 连接器 - IBM 3270 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.IBM3270/0.0.1-alpha) |  |  |
-| 连接器 - Imprezian 360 CRM | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Imprezian360CRM/0.0.1-alpha) |  |  |
-| 连接器 - IN-D KYC India | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.INDKYCIndia/0.0.1-alpha) |  |  |
-| 连接器 - IN-D Payables | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.INDPayables/0.0.1-alpha) |  |  |
-| 连接器 - Industrial 应用商店 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.IndustrialAppStore/0.0.1-alpha) |  |  |
-| 连接器 - Infobip | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Infobip/0.0.1-alpha) |  |  |
-| 连接器 - Informix | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Informix/0.0.1-alpha) |  |  |
-| 连接器 - Infusionsoft | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Infusionsoft/0.0.1-alpha) |  |  |
-| 连接器 - Inoreader | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Inoreader/0.0.1-alpha) |  |  |
-| 连接器 - Instagram | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Instagram/0.0.1-alpha) |  |  |
-| 连接器 - Instapaper | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Instapaper/0.0.1-alpha) |  |  |
-| 连接器 - Integrable PDF | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.IntegrablePDF/0.0.1-alpha) |  |  |
-| 连接器 - Intercom | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Intercom/0.0.1-alpha) |  |  |
-| 连接器 - JIRA | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.JIRA/0.0.1-alpha) |  |  |
-| 连接器 - JungleMail 365 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.JungleMail365/0.0.1-alpha) |  |  |
-| 连接器 - kintone | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Kintone/0.0.1-alpha) |  |  |
-| 连接器 - KnowledgeLake | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.KnowledgeLake/0.0.1-alpha) |  |  |
-| 连接器 - Kusto | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Kusto/0.0.1-alpha) |  |  |
-| 连接器 - LatinShare 文档 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LatinShareDocuments/0.0.1-alpha) |  |  |
-| 连接器 - LatinShare SHP Management | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LatinShareSHPManagement/0.0.1-alpha) |  |  |
-| 连接器 - LatinShare SHP Permissions | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LatinShareSHPPermissions/0.0.1-alpha) |  |  |
-| 连接器 - LeadDesk | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LeadDesk/0.0.1-alpha) |  |  |
-| 连接器 - LeanKit | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LeanKit/0.0.1-alpha) |  |  |
-| 连接器 - LINK Mobility | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LINKMobility/0.0.1-alpha) |  |  |
-| 连接器 - LinkedIn | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LinkedInV2/0.0.1-alpha) |  |  |
-| 连接器 - LiveChat | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LiveChat/0.0.1-alpha) |  |  |
-| 连接器 - LiveTiles Bots | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LiveTilesBots/0.0.1-alpha) |  |  |
-| 连接器 - LUIS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.LUIS/0.0.1-alpha) |  |  |
-| 连接器 - MailChimp | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MailChimp/0.0.1-alpha) |  |  |
-| 连接器 - MailParser | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MailParser/0.0.1-alpha) |  |  |
-| 连接器 - Mandrill | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Mandrill/0.0.1-alpha) |  |  |
-| 连接器 - 营销内容中心 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MarketingContentHub/0.0.1-alpha) |  |  |
-| 连接器 - Marketo | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Marketo/0.0.1-alpha) |  |  |
-| 连接器 - Medium | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Medium/0.0.1-alpha) |  |  |
-| 连接器 - MeetingRoomMap | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MeetingRoomMap/0.0.1-alpha) |  |  |
-| 连接器 - Microblink | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Microblink/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft Defender ATP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MicrosoftDefenderATP/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft Forms | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MicrosoftForms/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft 学校数据同步 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MicrosoftSchoolDataSync/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft StaffHub | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MicrosoftStaffHub/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft Teams | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MicrosoftTeams/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft 待办 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MicrosoftToDo/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft Translator | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MicrosoftTranslatorV2/0.0.1-alpha) |  |  |
-| 连接器 - Mitto | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Mitto/0.0.1-alpha) |  |  |
-| 连接器 - MobilyWS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MobilyWS/0.0.1-alpha) |  |  |
-| 连接器 - MotaWord Translations | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MotaWordTranslations/0.0.1-alpha) |  |  |
-| 连接器 - MQ | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MQ/0.0.1-alpha) |  |  |
-| 连接器 - MSG91ForSMSTextnVoice | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MSG91ForSMSTextnVoice/0.0.1-alpha) |  |  |
-| 连接器 - MSN 天气 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MSNWeather/0.0.1-alpha) |  |  |
-| 连接器 - Mtarget 短信 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MtargetSMS/0.0.1-alpha) |  |  |
-| 连接器 - Muhimbi PDF | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MuhimbiPDF/0.0.1-alpha) |  |  |
-| 连接器 - MySQL | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.MySQL/0.0.1-alpha) |  |  |
-| 连接器 - Nexmo | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Nexmo/0.0.1-alpha) |  |  |
-| 连接器 - Nitro | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Nitro/0.0.1-alpha) |  |  |
-| 连接器 - Notiivy 浏览器通知 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.NotiivyBrowserNotifications/0.0.1-alpha) |  |  |
-| 连接器 - Office 365 组 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Office365Groups/0.0.1-alpha) |  |  |
-| 连接器 - Office 365 组邮件 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Office365GroupsMail/0.0.1-alpha) |  |  |
-| 连接器 - Office 365 Outlook | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Office365Outlook/0.0.1-alpha) |  |  |
-| 连接器 - Office 365 用户 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Office365Users/0.0.1-alpha) |  |  |
-| 连接器 - Office 365 视频 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Office365Video/0.0.1-alpha) |  |  |
-| 连接器 - OneDrive | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.OneDrive/0.0.1-alpha) |  |  |
-| 连接器 - OneDrive for Business | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.OneDriveForBusiness/0.0.1-alpha) |  |  |
-| 连接器 - OneNote | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.OneNote/0.0.1-alpha) |  |  |
-| 连接器 - OpenText CS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.OpenTextCS/0.0.1-alpha) |  |  |
-| 连接器 - OpenText eDOCS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.OpenTextEDOCS/0.0.1-alpha) |  |  |
-| 连接器 - Oracle 数据库 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.OracleDatabase/0.0.1-alpha) |  |  |
-| 连接器 - Outlook | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Outlook/0.0.1-alpha) |  |  |
-| 连接器 - Outlook Customer Manager | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.OutlookCustomerManager/0.0.1-alpha) |  |  |
-| 连接器 - PagerDuty | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PagerDuty/0.0.1-alpha) |  |  |
-| 连接器 - Parserr | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Parserr/0.0.1-alpha) |  |  |
-| 连接器 - Parsuer | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Parsuer/0.0.1-alpha) |  |  |
-| 连接器 - 合作伙伴中心事件 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PartnerCenterEvents/0.0.1-alpha) |  |  |
-| 连接器 - 合作伙伴中心引荐 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PartnerCenterReferrals/0.0.1-alpha) |  |  |
-| 连接器 - PDF4me | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PDF4me/0.0.1-alpha) |  |  |
-| 连接器 - Pinterest | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Pinterest/0.0.1-alpha) |  |  |
-| 连接器 - Pipedrive | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Pipedrive/0.0.1-alpha) |  |  |
-| 连接器 - Pitney Bowes Data Validation | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PitneyBowesDataValidation/0.0.1-alpha) |  |  |
-| 连接器 - Pivotal Tracker | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PivotalTracker/0.0.1-alpha) |  |  |
-| 连接器 - Planner | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Planner/0.0.1-alpha) |  |  |
-| 连接器 - Plivo | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Plivo/0.0.1-alpha) |  |  |
-| 连接器 - Plumsail 文档 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PlumsailDocuments/0.0.1-alpha) |  |  |
-| 连接器 - Plumsail HelpDesk | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PlumsailHelpDesk/0.0.1-alpha) |  |  |
-| 连接器 - Plumsail SP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PlumsailSP/0.0.1-alpha) |  |  |
-| 连接器 - PoliteMail | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PoliteMail/0.0.1-alpha) |  |  |
-| 连接器 - PostgreSQL | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PostgreSQL/0.0.1-alpha) |  |  |
-| 连接器 - Power BI | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PowerBI/0.0.1-alpha) |  |  |
-| 连接器 - Priority Matrix | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PriorityMatrix/0.0.1-alpha) |  |  |
-| 连接器 - Projectum Present It | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ProjectumPresentIt/0.0.1-alpha) |  |  |
-| 连接器 - Pure Leads | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.PureLeads/0.0.1-alpha) |  |  |
-| 连接器 - Pushcut | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Pushcut/0.0.1-alpha) |  |  |
-| 连接器 - QnA Maker | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.QnAMaker/0.0.1-alpha) |  |  |
-| 连接器 - Recorded Future | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.RecordedFuture/0.0.1-alpha) |  |  |
-| 连接器 - Redmine | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Redmine/0.0.1-alpha) |  |  |
-| 连接器 - 适用于 Clarity PPM 的 RegoLink | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.RegoLinkForClarityPPM/0.0.1-alpha) |  |  |
-| 连接器 - Rencore Code | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.RencoreCode/0.0.1-alpha) |  |  |
-| 连接器 - RiskIQ | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.RiskIQ/0.0.1-alpha) |  |  |
-| 连接器 - RSS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.RSS/0.0.1-alpha) |  |  |
-| 连接器 - Sage 100cloudCompta | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Sage100cloudCompta/0.0.1-alpha) |  |  |
-| 连接器 - Sage 100cloudVente | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Sage100cloudVente/0.0.1-alpha) |  |  |
-| 连接器 - Salesforce | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Salesforce/0.0.1-alpha) |  |  |
-| 连接器 - SAP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SAP/0.0.1-alpha) |  |  |
-| 连接器 - Scrive eSign | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ScriveESign/0.0.1-alpha) |  |  |
-| 连接器 - SeekTable | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SeekTable/0.0.1-alpha) |  |  |
-| 连接器 - Sendmode | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Sendmode/0.0.1-alpha) |  |  |
-| 连接器 - Serverless360 BAM 和跟踪 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Serverless360BAMTracking/0.0.1-alpha) |  |  |
-| 连接器 - 服务总线 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ServiceBus/0.0.1-alpha) |  |  |
-| 连接器 - ServiceNow | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ServiceNow/0.0.1-alpha) |  |  |
-| 连接器 - SerwerSMS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SerwerSMS/0.0.1-alpha) |  |  |
-| 连接器 - SFTP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SFTP/0.0.1-alpha) |  |  |
-| 连接器 - SFTP SSH | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SFTPSSH/0.0.1-alpha) |  |  |
-| 连接器 - ShareEffect | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ShareEffect/0.0.1-alpha) |  |  |
-| 连接器 - SharePoint | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SharePoint/0.0.1-alpha) |  |  |
-| 连接器 - Microsoft Teams 的排班 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ShiftsForMicrosoftTeams/0.0.1-alpha) |  |  |
-| 连接器 - 短 URL | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.ShortURL/0.0.1-alpha) |  |  |
-| 连接器 - SigningHub | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SigningHub/0.0.1-alpha) |  |  |
-| 连接器 - SignRequest | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SignRequest/0.0.1-alpha) |  |  |
-| 连接器 - Skype for Business Online | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SkypeForBusinessOnline/0.0.1-alpha) |  |  |
-| 连接器 - Slack | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Slack/0.0.1-alpha) |  |  |
-| 连接器 - Slascone | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Slascone/0.0.1-alpha) |  |  |
-| 连接器 - Smarp | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Smarp/0.0.1-alpha) |  |  |
-| 连接器 - Smartsheet | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Smartsheet/0.0.1-alpha) |  |  |
-| 连接器 - SMSLink | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SMSLink/0.0.1-alpha) |  |  |
-| 连接器 - SMTP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SMTP/0.0.1-alpha) |  |  |
-| 连接器 - Soft1 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Soft1/0.0.1-alpha) |  |  |
-| 连接器 - SOLYP | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SOLYP/0.0.1-alpha) |  |  |
-| 连接器 - SparkPost | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SparkPost/0.0.1-alpha) |  |  |
-| 连接器 - SproketPowerActions | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SproketPowerActions/0.0.1-alpha) |  |  |
-| 连接器 - SQL Server | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SQLServer/0.0.1-alpha) |  |  |
-| 连接器 - Stormboard | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Stormboard/0.0.1-alpha) |  |  |
-| 连接器 - Stripe | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Stripe/0.0.1-alpha) |  |  |
-| 连接器 - Survey123 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Survey123/0.0.1-alpha) |  |  |
-| 连接器 - SurveyMonkey | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.SurveyMonkey/0.0.1-alpha) |  |  |
-| 连接器 - Tallyfy | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Tallyfy/0.0.1-alpha) |  |  |
-| 连接器 - Teamwork Projects | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.TeamworkProjects/0.0.1-alpha) |  |  |
-| 连接器 - TeleSign SMS | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.TeleSignSMS/0.0.1-alpha) |  |  |
-| 连接器 - Teradata | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Teradata/0.0.1-alpha) |  |  |
-| 连接器 - 文本分析 | NuGet [0.0.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.TextAnalytics/0.0.2-alpha) |  |  |
-| 连接器 - Ticketing 事件 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.TicketingEvents/0.0.1-alpha) |  |  |
-| 连接器 - Tilkee | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Tilkee/0.0.1-alpha) |  |  |
-| 连接器 - Todoist | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Todoist/0.0.1-alpha) |  |  |
-| 连接器 - Traction Guest | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.TractionGuest/0.0.1-alpha) |  |  |
-| 连接器 - Trello | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Trello/0.0.1-alpha) |  |  |
-| 连接器 - TRIGGERcmd | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.TRIGGERcmd/0.0.1-alpha) |  |  |
-| 连接器 - Trustual | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Trustual/0.0.1-alpha) |  |  |
-| 连接器 - Twilio | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Twilio/0.0.1-alpha) |  |  |
-| 连接器 - Twitter | NuGet [0.0.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Twitter/0.0.2-alpha) |  |  |
-| 连接器 - TxtSync | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.TxtSync/0.0.1-alpha) |  |  |
-| 连接器 - UserVoice | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.UserVoice/0.0.1-alpha) |  |  |
-| 连接器 - Vantage 365 Imaging | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Vantage365Imaging/0.0.1-alpha) |  |  |
-| 连接器 - Ventipix 资产和库存 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.VentipixAssetAndInventory/0.0.1-alpha) |  |  |
-| 连接器 - Webex Teams | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.WebexTeams/0.0.1-alpha) |  |  |
-| 连接器 - WebMerge | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.WebMerge/0.0.1-alpha) |  |  |
-| 连接器 - Witivio | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Witivio/0.0.1-alpha) |  |  |
-| 连接器 - Word Online Business | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.WordOnlineBusiness/0.0.1-alpha) |  |  |
-| 连接器 - WordPress | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.WordPress/0.0.1-alpha) |  |  |
-| 连接器 - WorkPoint | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.WorkPoint/0.0.1-alpha) |  |  |
-| 连接器 - X12 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.X12/0.0.1-alpha) |  |  |
-| 连接器 - Xooa 区块链数据库 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.XooaBlockchainDatabase/0.0.1-alpha) |  |  |
-| 连接器 - Xooa 区块链智能合同 | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.XooaBlockchainSmartContract/0.0.1-alpha) |  |  |
-| 连接器 - Xpertdoc | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Xpertdoc/0.0.1-alpha) |  |  |
-| 连接器 - Zendesk | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Zendesk/0.0.1-alpha) |  |  |
-| 连接器 - Zenkraft | NuGet [0.0.1-alpha](https://www.nuget.org/packages/Microsoft.Azure.Connectors.Zenkraft/0.0.1-alpha) |  |  |
 | 容器注册表 | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.ContainerRegistry/1.0.0-preview.1) |  | GitHub [1.0.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.ContainerRegistry_1.0.0-preview.1/sdk/containerregistry/Microsoft.Azure.ContainerRegistry/) |
 | 内容审查器 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.ContentModerator/2.0.0) |  |  |
-| 核心 | NuGet [1.7.0](https://www.nuget.org/packages/Azure.Core/1.7.0) | [docs](/dotnet/api/overview/azure/Core-readme/) | GitHub [1.7.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.7.0/sdk/core/Azure.Core/) |
+| 核心 | NuGet [1.8.1](https://www.nuget.org/packages/Azure.Core/1.8.1) | [docs](/dotnet/api/overview/azure/Core-readme/) | GitHub [1.8.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core_1.8.1/sdk/core/Azure.Core/) |
 | 核心 - AMQP | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Core.Amqp/1.0.0) | [docs](/dotnet/api/overview/azure/Core.Amqp-readme/) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Amqp_1.0.0/sdk/core/Azure.Core.Amqp/) |
 | Core 实验 | NuGet [0.1.0-preview.7](https://www.nuget.org/packages/Azure.Core.Experimental/0.1.0-preview.7) | [docs](/dotnet/api/overview/azure/Core.Experimental-readme-pre/) | GitHub [0.1.0-preview.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Experimental_0.1.0-preview.7/sdk/core/Azure.Core.Experimental/) |
-| Core Newtonsoft Json | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Core.NewtonsoftJson/1.0.0-preview.1) | [docs](/dotnet/api/overview/azure/Microsoft.Core.NewtonsoftJson-readme-pre/) |  |
-| Core Spatial | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Core.Spatial/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Microsoft.Core.Spatial-readme-pre/) |  |
-| Core Spatial Newtonsoft Json | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Core.Spatial.NewtonsoftJson/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Microsoft.Core.Spatial.NewtonsoftJson-readme-pre/) |  |
+| Core Newtonsoft Json | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Core.NewtonsoftJson/1.0.0)<br>NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Core.NewtonsoftJson/1.0.0-preview.1) |  |  |
+| Core Spatial | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Core.Spatial/1.0.0)<br>NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Core.Spatial/1.0.0-beta.1) |  |  |
+| Core Spatial Newtonsoft Json | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Core.Spatial.NewtonsoftJson/1.0.0)<br>NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Core.Spatial.NewtonsoftJson/1.0.0-beta.1) |  |  |
 | Cosmos DB | NuGet [4.0.0-preview3](https://www.nuget.org/packages/Azure.Cosmos/4.0.0-preview3) | [docs](/dotnet/api/azure.cosmos) | GitHub [4.0.0-preview3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/4.0.0-preview3) |
 | Cosmos DB | NuGet [3.14.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.14.0)<br>NuGet [3.15.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.15.2-preview) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.14.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
 | Cosmos DB - Direct | NuGet [3.15.4](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.15.4) |  | GitHub [3.15.4](https://github.com/Azure/azure-cosmos-dotnet-v3) |
-| Cosmos DB - 加密 | NuGet [1.0.0-preview7](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/1.0.0-preview7) |  | GitHub [1.0.0-preview7](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
+| Cosmos DB - 加密 | NuGet [1.0.0-preview9](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/1.0.0-preview9) |  | GitHub [1.0.0-preview9](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | 自定义图像搜索 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
 | 自定义搜索 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomSearch/2.0.0) |  |  |
 | 自定义视觉预测 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction_2.0.0/sdk/cognitiveservices/Vision.CustomVision.Prediction) |
@@ -456,6 +144,7 @@ ms.locfileid: "97911584"
 | 事件中心 - 架构注册表 Apache Avro | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.Azure.Data.SchemaRegistry.ApacheAvro/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Microsoft.Data.SchemaRegistry.ApacheAvro-readme-pre/) |  |
 | 事件中心 - Service Fabric 处理器 | NuGet [0.5.4](https://www.nuget.org/packages/Microsoft.Azure.EventHubs.ServiceFabricProcessor/0.5.4) |  | GitHub [0.5.4](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.EventHubs.ServiceFabricProcessor_0.5.4/sdk/eventhub/Microsoft.Azure.EventHubs.ServiceFabricProcessor/) |
 | 扩展 - 缓存 Cosmos | NuGet [1.0.0-preview5](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.0.0-preview5) |  | GitHub [1.0.0-preview5](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
+| 人脸 | NuGet [2.6.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.Face/2.6.0-preview.1) |  | GitHub [2.6.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.Face_2.6.0-preview.1/sdk/cognitiveservices/Vision.Face) |
 | 表单识别器 | NuGet [3.0.0](https://www.nuget.org/packages/Azure.AI.FormRecognizer/3.0.0)<br>NuGet [3.1.0-beta.1](https://www.nuget.org/packages/Azure.AI.FormRecognizer/3.1.0-beta.1) | [docs](/dotnet/api/overview/azure/AI.FormRecognizer-readme/) | GitHub [3.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.FormRecognizer_3.0.0/sdk/formrecognizer/Azure.AI.FormRecognizer/)<br>GitHub [3.1.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.FormRecognizer_3.1.0-beta.1/sdk/formrecognizer/Azure.AI.FormRecognizer/) |
 | 表单识别器 | NuGet [0.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.FormRecognizer/0.8.0-preview) |  | GitHub [0.8.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/cognitiveservices/FormRecognizer) |
 | Functions - 扩展 | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions/1.1.0)<br>NuGet [1.1.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions/1.1.0-preview1) |  | GitHub [1.1.0](https://github.com/Azure/azure-functions-dotnet-extensions) |
@@ -486,6 +175,26 @@ ms.locfileid: "97911584"
 | LUIS - 运行时 | NuGet [3.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime/3.1.0-preview.1) |  | GitHub [3.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime_3.1.0-preview.1/sdk/cognitiveservices/Language.LUIS.Runtime) |
 | 媒体实时视频分析边缘 | NuGet [1.0.4-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Media.LiveVideoAnalytics.Edge/1.0.4-preview.1) |  | GitHub [1.0.4-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/mediaservices/Microsoft.Azure.Media.LiveVideoAnalytics.Edge) |
 | 指标顾问 | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.AI.MetricsAdvisor/1.0.0-beta.2) | [docs](/dotnet/api/overview/azure/AI.MetricsAdvisor-readme-pre/) | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.MetricsAdvisor_1.0.0-beta.2/sdk/metricsadvisor/Azure.AI.MetricsAdvisor/) |
+| Microsoft.Azure.Amqp | NuGet [2.4.9](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.4.9) |  |  |
+| Microsoft.Azure.Devices | NuGet [1.28.1](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.28.1) |  |  |
+| Microsoft.Azure.Devices.Client | NuGet [1.33.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client/1.33.1) |  |  |
+| Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |
+| Microsoft.Azure.Devices.DigitalTwin.Client | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Client/1.0.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.DigitalTwin.Service | NuGet [1.0.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.DigitalTwin.Service/1.0.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.ProtocolGateway.Core | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Core/2.0.1) |  |  |
+| Microsoft.Azure.Devices.ProtocolGateway.IotHubClient | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.IotHubClient/2.0.1) |  |  |
+| Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Devices.ProtocolGateway.Providers.CloudStorage/2.0.1) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Client | NuGet [1.17.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Client/1.17.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Security.Tpm | NuGet [1.13.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Security.Tpm/1.13.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Service | NuGet [1.17.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Service/1.17.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Transport.Amqp | NuGet [1.14.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Amqp/1.14.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Transport.Http | NuGet [1.13.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Http/1.13.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.Provisioning.Transport.Mqtt | NuGet [1.14.0-preview-001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Provisioning.Transport.Mqtt/1.14.0-preview-001) |  |  |
+| Microsoft.Azure.Devices.Shared | NuGet [1.26.0](https://www.nuget.org/packages/Microsoft.Azure.Devices.Shared/1.26.0) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.0.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.0.0-preview2) |  |  |
+| Microsoft.Azure.uamqp | NuGet [1.2.11](https://www.nuget.org/packages/Microsoft.Azure.uamqp/1.2.11) |  |  |
+| Microsoft.Azure.umqtt | NuGet [1.1.11](https://www.nuget.org/packages/Microsoft.Azure.umqtt/1.1.11) |  |  |
 | 移动服务器 - 跨域 | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server.CrossDomain/2.0.3) |  |  |
 | 移动服务 - 资源代理 | NuGet [1.0.2.1](https://www.nuget.org/packages/Microsoft.WindowsAzure.Mobile.Service.ResourceBroker/1.0.2.1) |  |  |
 | 新闻搜索 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.NewsSearch/2.0.0) |  |  |
@@ -540,7 +249,6 @@ ms.locfileid: "97911584"
 | 文本分析 | NuGet [4.1.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.TextAnalytics/4.1.0-preview.2) |  | GitHub [4.1.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.TextAnalytics_4.1.0-preview.2/sdk/cognitiveservices/Language.TextAnalytics) |
 | 视频搜索 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.VideoSearch/2.0.0) |  |  |
 | 视觉内容审查器 | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.ContentModerator/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.ContentModerator_2.1.0-preview.1/sdk/cognitiveservices/Vision.ContentModerator) |
-| 视觉人脸 | NuGet [2.6.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.Face/2.6.0-preview.1) |  | GitHub [2.6.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.Face_2.6.0-preview.1/sdk/cognitiveservices/Vision.Face) |
 | 视觉搜索 | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.VisualSearch/2.0.0) |  |  |
 | Wastorage | NuGet [4.0.0](https://www.nuget.org/packages/wastorage/4.0.0) |  |  |
 | Wastorage - Redist | NuGet [2.0.0](https://www.nuget.org/packages/wastorage.redist/2.0.0) |  |  |
@@ -669,7 +377,7 @@ ms.locfileid: "97911584"
 | 管理 - 容器服务 Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.ContainerService.Fluent/1.36.1) |  |  |
 | 管理 - 内容分发网络 | NuGet [5.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn/5.0.0-preview) |  | GitHub [5.0.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Cdn_5.0.0-preview/sdk/cdn/Microsoft.Azure.Management.Cdn/) |
 | 管理 - 内容分发网络 Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn.Fluent/1.36.1) | [docs](/dotnet/api/overview/azure/cdn) |  |
-| 管理 - Cosmos DB | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB/1.2.0)<br>NuGet [1.3.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB/1.3.2-preview) |  | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.CosmosDB_1.2.0/sdk/cosmosdb/Microsoft.Azure.Management.CosmosDB/)<br>GitHub [1.3.2-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.CosmosDB_1.3.2-preview/sdk/cosmosdb/Microsoft.Azure.Management.CosmosDB/) |
+| 管理 - Cosmos DB | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB/1.2.0)<br>NuGet [1.4.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB/1.4.0-preview) |  | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.CosmosDB_1.2.0/sdk/cosmosdb/Microsoft.Azure.Management.CosmosDB/)<br>GitHub [1.4.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.CosmosDB_1.4.0-preview/sdk/cosmosdb/Microsoft.Azure.Management.CosmosDB/) |
 | 管理 - Cosmos DB Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.CosmosDB.Fluent/1.36.1) |  |  |
 | 管理 - Customer Insights | NuGet [0.9.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.CustomerInsights/0.9.1-preview) |  | GitHub [0.9.1-preview](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/customer-insights/Microsoft.Azure.Management.CustomerInsights) |
 | 管理 - Customer Insights Fluent | NuGet [1.9.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Management.CustomerInsights.Fluent/1.9.1-beta) |  |  |
@@ -728,14 +436,14 @@ ms.locfileid: "97911584"
 | 管理 - Maps | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.Management.Maps/1.0.2) |  | GitHub [1.0.2](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/maps/Microsoft.Azure.Management.Maps) |
 | 管理 - 市场 | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Marketplace/1.1.0)<br>NuGet [2.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Marketplace/2.0.0-preview) |  | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Marketplace_1.1.0/sdk/marketplace/Microsoft.Azure.Management.Marketplace/)<br>GitHub [2.0.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Marketplace_2.0.0-preview/sdk/marketplace/Microsoft.Azure.Management.Marketplace/) |
 | 管理 - 市场排序 | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.MarketplaceOrdering/1.0.1) |  | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/marketplaceordering/Microsoft.Azure.Management.MarketplaceOrdering) |
-| 管理 - 媒体 | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.Management.Media/3.0.2) |  | GitHub [3.0.2](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Media_3.0.2/sdk/mediaservices/Microsoft.Azure.Management.Media/) |
+| 管理 - 媒体 | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.Management.Media/3.0.3) |  | GitHub [3.0.3](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Media_3.0.3/sdk/mediaservices/Microsoft.Azure.Management.Media/) |
 | 管理 - 迁移资源转移器 | NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Migrate.ResourceMover/1.0.1-preview) |  |  |
 | 管理 - 混合现实 | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.MixedReality/1.0.0) | [docs](/dotnet/api/overview/azure/mixed-reality) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.MixedReality_1.0.0/sdk/mixedreality/Microsoft.Azure.Management.MixedReality/) |
 | 管理 - 监视器 | NuGet [0.25.3-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor/0.25.3-preview) |  | GitHub [0.25.3-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Monitor_0.25.3-preview/sdk/monitor/Microsoft.Azure.Management.Monitor/) |
 | 管理 - 监视器 Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor.Fluent/1.36.1) | [docs](/dotnet/api/overview/azure/monitor) |  |
 | 管理 - MySQL | NuGet [0.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.MySQL/0.1.0-preview) |  |  |
 | 管理 - NetApp | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.Azure.Management.NetApp/1.8.0) |  | GitHub [1.8.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.NetApp_1.8.0/sdk/netapp/Microsoft.Azure.Management.NetApp/) |
-| 管理 - 网络 | NuGet [20.2.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Network/20.2.1) |  | GitHub [20.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Network_20.2.1/sdk/network/Microsoft.Azure.Management.Network/) |
+| 管理 - 网络 | NuGet [20.3.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Network/20.3.0) |  | GitHub [20.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Network_20.3.0/sdk/network/Microsoft.Azure.Management.Network/) |
 | 管理 - 网络 Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent/1.36.1) | [docs](/dotnet/api/overview/azure/virtual-network) |  |
 | 管理 - 通知中心 | NuGet [2.3.3-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs/2.3.3-preview) | [docs](/dotnet/api/overview/azure/notification-hubs) | GitHub [2.3.3-preview](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.NotificationHubs_2.3.3-preview/sdk/notificationhubs/Microsoft.Azure.Management.NotificationHubs/) |
 | 管理 - 通知中心 Fluent | NuGet [1.9.1-beta](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs.Fluent/1.9.1-beta) |  |  |
@@ -767,7 +475,6 @@ ms.locfileid: "97911584"
 | 管理 - 搜索 | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Management.Search/4.0.0) |  | GitHub [4.0.0](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/search/Microsoft.Azure.Management.Search) |
 | 管理 - 搜索 Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Search.Fluent/1.36.1) |  |  |
 | 管理 - 安全中心 | NuGet [2.2.0](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityCenter/2.2.0) |  | GitHub [2.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SecurityCenter_2.2.0/sdk/securitycenter/Microsoft.Azure.Management.SecurityCenter/) |
-| 管理 - 安全见解 | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityInsights/1.0.0-preview.1) |  |  |
 | 管理 - 服务器管理 | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServerManagement/1.1.0) |  | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/servermanagement/Microsoft.Azure.Management.ServerManagement) |
 | 管理 - 服务总线 | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus/2.1.0) |  | GitHub [2.1.0](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/servicebus/Microsoft.Azure.Management.ServiceBus) |
 | 管理 - 服务总线 Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus.Fluent/1.36.1) | [docs](/dotnet/api/overview/azure/service-bus) |  |
@@ -787,11 +494,12 @@ ms.locfileid: "97911584"
 | 管理 - 流分析 | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.StreamAnalytics/2.1.0)<br>NuGet [3.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.StreamAnalytics/3.0.0-preview) | [docs](/dotnet/api/overview/azure/stream-analytics) | GitHub [2.1.0](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/streamanalytics/Microsoft.Azure.Management.StreamAnalytics) |
 | 管理 - 订阅 | NuGet [1.1.5](https://www.nuget.org/packages/Microsoft.Azure.Management.Subscription/1.1.5) |  | GitHub [1.1.5](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Subscription_1.1.5/sdk/subscription/Microsoft.Azure.Management.Subscription/) |
 | 管理 - 支持 | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Management.Support/1.0.1) |  | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Support_1.0.1/sdk/support/Microsoft.Azure.Management.Support/) |
-| 管理 - Synapse | NuGet [1.0.0-preview.4](https://www.nuget.org/packages/Microsoft.Azure.Management.Synapse/1.0.0-preview.4) |  | GitHub [1.0.0-preview.4](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Synapse_1.0.0-preview.4/sdk/synapse/Microsoft.Azure.Management.Synapse/) |
+| 管理 - Synapse | NuGet [1.0.0-preview.5](https://www.nuget.org/packages/Microsoft.Azure.Management.Synapse/1.0.0-preview.5) |  | GitHub [1.0.0-preview.5](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.Synapse_1.0.0-preview.5/sdk/synapse/Microsoft.Azure.Management.Synapse/) |
 | 管理 - 流量管理器 | NuGet [2.5.3](https://www.nuget.org/packages/Microsoft.Azure.Management.TrafficManager/2.5.3) |  | GitHub [2.5.3](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/trafficmanager/Microsoft.Azure.Management.TrafficManager) |
 | 管理 - 流量管理器 Fluent | NuGet [1.36.1](https://www.nuget.org/packages/Microsoft.Azure.Management.TrafficManager.Fluent/1.36.1) | [docs](/dotnet/api/overview/azure/traffic-manager) |  |
 | 管理 - 网站 | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Management.WebSites/3.1.0) |  | GitHub [3.1.0](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/websites/Microsoft.Azure.Management.WebSites) |
 | 管理 - 工作负载监视器 | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.WorkloadMonitor/1.0.0-preview) |  |  |
+| Microsoft.Azure.Management.RedisEnterprise | NuGet [1.0.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.RedisEnterprise/1.0.0-preview) |  |  |
 | 配置文件 hybrid_2018_03_01 管理 - 授权 | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Authorization/0.9.0-preview) |  |  |
 | 配置文件 hybrid_2018_03_01 管理 - 计算 | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Compute/0.9.0-preview) |  |  |
 | 配置文件 hybrid_2018_03_01 管理 - DNS | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.Management.Profiles.hybrid_2018_03_01.Dns/0.9.0-preview) |  |  |
@@ -822,6 +530,7 @@ ms.locfileid: "97911584"
 | 资源管理 - 网络 | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Network/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Network-readme-pre/) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Network_1.0.0-preview.2/sdk/network/Azure.ResourceManager.Network/) |
 | 资源管理 - 资源 | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Resources/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Resources-readme-pre/) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Resources_1.0.0-preview.2/sdk/resources/Azure.ResourceManager.Resources/) |
 | 资源管理 - 存储 | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Azure.ResourceManager.Storage/1.0.0-preview.2) | [docs](/dotnet/api/overview/azure/ResourceManager.Storage-readme-pre/) | GitHub [1.0.0-preview.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Storage_1.0.0-preview.2/sdk/storage/Azure.ResourceManager.Storage/) |
+| 安全见解 | NuGet [1.0.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Management.SecurityInsights/1.0.0-preview.1) |  | GitHub [1.0.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Management.SecurityInsights_1.0.0-preview.1/sdk/securityinsights/Microsoft.Azure.Management.SecurityInsights/) |
 | SignalR 管理 | NuGet [1.6.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.6.1) |  | GitHub [1.6.1](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
 | SQL Server 管理 - Key Vault 提供程序 | NuGet [2.4.0](https://www.nuget.org/packages/Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider/2.4.0) |  |  |
 | WindowsAzure 管理 | NuGet [4.1.3](https://www.nuget.org/packages/Microsoft.WindowsAzure.Management/4.1.3) |  |  |

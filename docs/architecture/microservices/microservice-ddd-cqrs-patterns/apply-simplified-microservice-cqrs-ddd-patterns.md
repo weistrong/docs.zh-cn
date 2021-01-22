@@ -1,17 +1,17 @@
 ---
 title: 在微服务中应用简化的 CQRS 和 DDD 模式
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 了解 CQRS 与 DDD 模式之间的整体关系。
-ms.date: 10/08/2018
-ms.openlocfilehash: e4e36bafff39f5f30d6371ed7c113322a85c3362
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.date: 01/13/2021
+ms.openlocfilehash: c1a990689a446e2efba48beafe4b55d614b54427
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805590"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188954"
 ---
 # <a name="apply-simplified-cqrs-and-ddd-patterns-in-a-microservice"></a>在微服务中应用简化后的 CQRS 和 DDD 模式
 
-CQRS 是一种分离数据读取与写入模型的体系结构模式。 相关术语[命令查询分离 (CQS)](https://martinfowler.com/bliki/CommandQuerySeparation.html)最初由 Bertrand Meyer 在其《面向对象软件构造》一书中定义  。 基本思想是可以将系统操作划分为两个界限明显的类别：
+CQRS 是一种分离数据读取与写入模型的体系结构模式。 相关术语[命令查询分离 (CQS)](https://martinfowler.com/bliki/CommandQuerySeparation.html)最初由 Bertrand Meyer 在其《面向对象软件构造》一书中定义。 基本思想是可以将系统操作划分为两个界限明显的类别：
 
 - 查询。 这些查询返回结果，不改变系统的状态，且没有副作用。
 

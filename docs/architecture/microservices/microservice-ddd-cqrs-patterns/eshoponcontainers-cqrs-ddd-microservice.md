@@ -1,13 +1,13 @@
 ---
 title: 在 eShopOnContainers 的 DDD 微服务中应用 CQRS 和 CQS 方法
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 了解在 eShopOnContainers 中的订购微服务中实现 CQRS 的方式。
-ms.date: 03/03/2020
-ms.openlocfilehash: 2916df596a6d0f887411f3ef0074aed395ef58ba
-ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
+ms.date: 01/13/2021
+ms.openlocfilehash: 0c07ecad0fb2dfdaea85d47b519b858e0519f6bd
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84306937"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188252"
 ---
 # <a name="apply-cqrs-and-cqs-approaches-in-a-ddd-microservice-in-eshoponcontainers"></a>在 eShopOnContainers 的 DDD 微服务中应用 CQRS 和 CQS 方法
 
@@ -27,7 +27,7 @@ eShopOnContainers 引用应用程序处的订单微服务设计基于 CQRS 原�
 
 要实现“查询端”，成熟的 ORM 中有许多方法可供选择：EF Core、AutoMapper 投影、存储过程、视图、具体化视图或微型 ORM。
 
-在本指南和 eShopOnContainers （尤其是订单微服务）中，使用 [Dapper](https://github.com/StackExchange/dapper-dot-net) 等微型 ORM 实现直接查询。 得益于低开销的轻量级框架，这样可基于 SQL 语句实现任何查询以获得最佳性能。
+在本指南和 eShopOnContainers （尤其是订单微服务）中，使用 [Dapper](https://github.com/StackExchange/dapper-dot-net) 等微型 ORM 实现直接查询。 得益于低开销的轻量级框架，通过此指南可以基于 SQL 语句实现任何查询以获得最佳性能。
 
 使用此方法时，如果对模型进行任何更新，且该更新会影响实体持久保存到 SQL 数据库的方式，那么同时需要 对 Dapper 使用的或任何其他单独的查询方法（非 EF）使用的 SQL 查询进行单独更新。
 
@@ -37,7 +37,7 @@ eShopOnContainers 引用应用程序处的订单微服务设计基于 CQRS 原�
 
 不同的界定上下文 (BC) 采用不同的模式。 它们具有不同的功能，会形成不同的解决方案。 这里需强调的是，在任何情况下都使用相同模式会导致失败。 请勿滥用 CQRS 和 DDD 模式。 有许多更简单的子系统、BC 或微服务，可使用简单的 CRUD 服务或其他方法更轻松地实现。
 
-只有一个应用程序体系结构：你设计的系统或端到端应用程序的体系结构（如微服务体系结构）。 但该应用程序中的每个界定的上下文或微服务的设计反映有关其自身的折衷方案和体系结构模式级别的内部设计决策。 请勿尝试将相同的体系结构模式（如 CQRS 或 DDD）用于所有情况。
+只有一个应用程序体系结构：你设计的系统或端到端应用程序的体系结构（如微服务体系结构）。 但该应用程序中的每个界定的上下文或微服务的设计反映有关其自身的折衷方案和体系结构模式级别的内部设计决策。 请勿尝试将 CQRS 或 DDD 这样的体系结构模式用于所有情况。
 
 ### <a name="additional-resources"></a>其他资源
 

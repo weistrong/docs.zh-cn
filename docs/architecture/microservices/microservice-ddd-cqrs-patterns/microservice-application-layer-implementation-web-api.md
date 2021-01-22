@@ -1,13 +1,13 @@
 ---
 title: 使用 Web API 实现微服务应用层
 description: 了解依赖关系注入和转存进程模式及其在 Web API 应用层中的实现详细信息。
-ms.date: 08/17/2020
-ms.openlocfilehash: 45121026e06c55258a16f41aa801c06808a6919f
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.date: 01/13/2021
+ms.openlocfilehash: bf37b0bfc7d9438752673d1c617657822b2a48ad
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96437792"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188967"
 ---
 # <a name="implement-the-microservice-application-layer-using-the-web-api"></a>使用 Web API 实现微服务应用层
 
@@ -111,7 +111,7 @@ public void ConfigureServices(IServiceCollection services)
 
 #### <a name="use-the-scrutor-library-for-automatic-types-registration"></a>将 Scrutor 库用于自动类型注册
 
-在 .NET Core 中使用 DI 时，可能需要扫描程序集，并自动按约定注册其类型。 当前 ASP.NET Core 中未提供此功能。 但是，可以使用 [Scrutor](https://github.com/khellang/Scrutor) 库。 如果需要在 IoC 容器中注册许多类型，使用该方法很方便。
+在 .NET 中使用 DI 时，可能需要扫描程序集，并自动按约定注册其类型。 当前 ASP.NET Core 中未提供此功能。 但是，可以使用 [Scrutor](https://github.com/khellang/Scrutor) 库。 如果需要在 IoC 容器中注册许多类型，使用该方法很方便。
 
 #### <a name="additional-resources"></a>其他资源
 
@@ -503,7 +503,7 @@ public class CreateOrderCommandHandler
 
 作为示例实现，本指南建议基于转存进程模式使用进程内管道，驱动命令引入和路由命令（内存中）到正确的命令处理程序。 本指南还建议应用[行为](https://github.com/jbogard/MediatR/wiki/Behaviors)以分隔整合问题。
 
-有关 .NET Core 中的实现，可使用多个开发源代码库来实现转存进程模式。 本指南中使用的库是 [MediatR](https://github.com/jbogard/MediatR) 开放源代码库（由 Jimmy Bogard 创建），但也可使用其他方法。 MediatR 是一个小型的简单库，可处理命令等内存中消息，同时应用修饰器或行为。
+有关 .NET 中的实现，可使用多个开发源代码库来实现转存进程模式。 本指南中使用的库是 [MediatR](https://github.com/jbogard/MediatR) 开放源代码库（由 Jimmy Bogard 创建），但也可使用其他方法。 MediatR 是一个小型的简单库，可处理命令等内存中消息，同时应用修饰器或行为。
 
 使用转存进程模式有助于减小耦合度，并隔离请求工作的问题，同时自动连接到执行该工作的处理程序（在此情况下为命令处理程序）。
 

@@ -4,12 +4,12 @@ description: 了解如何将代码覆盖率功能用于 .NET 单元测试。
 author: IEvangelist
 ms.author: dapine
 ms.date: 07/01/2020
-ms.openlocfilehash: 4d2c8f3db26eaabcb973378a349ef57912e92bfa
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 98652de8e8b5c3765dfee8e1b511399bc5a0be25
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538142"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189650"
 ---
 # <a name="use-code-coverage-for-unit-testing"></a>将代码覆盖率用于单元测试
 

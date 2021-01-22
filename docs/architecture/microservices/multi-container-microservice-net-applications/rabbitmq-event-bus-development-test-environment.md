@@ -1,13 +1,13 @@
 ---
 title: 使用 RabbitMQ 实现用于开发或测试环境的事件总线
 description: 容器化 .NET 应用程序的 .NET 微服务架构 | 使用 RabbitMQ 实现用于开发或测试环境的集成事件的事件总线消息传递。
-ms.date: 10/02/2018
-ms.openlocfilehash: 1af72d18825eb610d6900178205450e2c2e34c25
-ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
+ms.date: 01/13/2021
+ms.openlocfilehash: a1e7d11e376080a03269f202fa6ae24ffeb0f4d2
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84306885"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188076"
 ---
 # <a name="implementing-an-event-bus-with-rabbitmq-for-the-development-or-test-environment"></a>使用 RabbitMQ 实现用于开发或测试环境的事件总线
 
@@ -21,7 +21,7 @@ eShopOnContainers 中的事件总线自定义实现之一基本上是一个使�
 
 **图 6-21。** 事件总线的 RabbitMQ 实现
 
-RabbitMQ 充当消息发布服务器和订阅者之间的中介，处理分发。 在代码中，EventBusRabbitMQ 类实现了泛型 IEventBus 接口。 这基于依赖项注入，以便可以从此开发/测试版本交换到生产版本。
+RabbitMQ 充当消息发布服务器和订阅者之间的中介，处理分发。 在代码中，EventBusRabbitMQ 类实现了泛型 IEventBus 接口。 此实现基于依赖项注入，以便可以从此开发/测试版本交换到生产版本。
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -63,7 +63,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 }
 ```
 
-eShopOnContainers 应用程序中发布方法的[实际代码](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs)通过使用 [Polly](https://github.com/App-vNext/Polly) 重试策略得到了改进，如果 RabbitMQ 容器尚未就绪，该策略会多次重试该任务。 这可能发生在 docker-compose 启动容器时；例如，RabbitMQ 容器的启动速度可能比其他容器慢。
+eShopOnContainers 应用程序中发布方法的[实际代码](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs)通过使用 [Polly](https://github.com/App-vNext/Polly) 重试策略得到了改进，如果 RabbitMQ 容器尚未就绪，该策略会多次重试该任务。 在 docker-compose 启动容器时可能出现此情况；例如，RabbitMQ 容器的启动速度可能比其他容器慢。
 
 如前面所述，RabbitMQ 中有许多可能的配置，因此此代码应仅用于开发/测试环境。
 
@@ -116,7 +116,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 
 支持 RabbitMQ 的生产就绪型解决方案。
 
-- **EasyNetQ** - 为 RabbitMQ 打开源 .NET API 客户端 \
+- EasyNetQ - 为 RabbitMQ 打开源 .NET API 客户端 \
   <https://easynetq.com/>
 
 - **MassTransit** \

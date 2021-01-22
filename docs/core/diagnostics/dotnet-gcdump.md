@@ -2,12 +2,12 @@
 title: dotnet-gcdump 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-gcdump CLI 工具，以使用 .NET EventPipe 收集实时 .NET 进程的 GC（垃圾回收器）转储。
 ms.date: 11/17/2020
-ms.openlocfilehash: 02e1a7c5d86b582289672a027464aefd67a6f490
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: fe7772eed642daadbd1754627751f58d0ab57b8e
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97593365"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188564"
 ---
 # <a name="heap-analysis-tool-dotnet-gcdump"></a>堆分析工具 (dotnet-gcdump)
 
@@ -34,6 +34,9 @@ ms.locfileid: "97593365"
   | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [arm](https://aka.ms/dotnet-gcdump/win-arm) \| [arm-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [arm](https://aka.ms/dotnet-gcdump/linux-arm) \| [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
+
+> [!NOTE]
+> 若要在 x86 应用上使用 `dotnet-gcdump`，需要使用相应的 x86 版本的工具。
 
 ## <a name="synopsis"></a>摘要
 
@@ -103,6 +106,12 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 - **`-n|--name <name>`**
 
   可从中收集 GC 转储的进程的名称。
+
+> [!NOTE]
+> 在 Linux 和 macOS 上，此命令需要目标应用程序和 `dotnet-gcdump` 使用同一 `TMPDIR` 环境变量。 否则，该命令将超时。
+
+> [!NOTE]
+> 若要使用 `dotnet-gcdump` 收集 GC 转储，需要以与运行目标进程的用户相同的用户身份或以根身份运行。 否则，该工具将无法与目标进程建立连接。
 
 ## `dotnet-gcdump ps`
 

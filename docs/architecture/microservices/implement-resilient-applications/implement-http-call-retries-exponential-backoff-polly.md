@@ -1,19 +1,19 @@
 ---
 title: 通过 Polly 实现使用指数退避算法的 HTTP 调用重试
 description: 了解如何使用 Polly 和 IHttpClientFactory 处理 HTTP 故障。
-ms.date: 03/03/2020
-ms.openlocfilehash: 49396dd545a05699278254474c77acf1483e0e0c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 01/13/2021
+ms.openlocfilehash: 8cffc644d73eaec5019e00c6a83de8635b569cde
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78846791"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189045"
 ---
 # <a name="implement-http-call-retries-with-exponential-backoff-with-ihttpclientfactory-and-polly-policies"></a>通过 IHttpClientFactory 和 Polly 策略实现使用指数退避算法的 HTTP 调用重试
 
 建议的使用指数退避算法的重试方法是利用更高级的 .NET 库，如开放源 [Polly](https://github.com/App-vNext/Polly) 库。
 
-Polly 是一个 .NET 库，提供恢复能力和瞬态故障处理功能。 通过应用 Polly 策略（如重试、断路器、舱壁隔离、超时和回退）即可实现这些功能。 Polly 面向 .NET Framework 4.x 和 .NET Standard 1.0、1.1 和 2.0（支持 .NET Core）。
+Polly 是一个 .NET 库，提供恢复能力和瞬态故障处理功能。 通过应用 Polly 策略（如重试、断路器、舱壁隔离、超时和回退）即可实现这些功能。 Polly 面向 .NET Framework 4.x 和 .NET Standard 1.0、1.1 和 2.0（支持 .NET Core 及更高版本）。
 
 以下步骤说明如何通过集成到 `IHttpClientFactory` 中的 Polly（已在上一部分中说明）使用 Http 重试。
 

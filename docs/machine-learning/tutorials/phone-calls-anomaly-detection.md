@@ -4,12 +4,12 @@ description: 了解如何为时序数据构建异常检测应用程序。 本教
 ms.date: 12/04/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 3451a44f8fa7ae85625687b7d52f120c411df1b6
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: f001cb912bb695a7edb0917f3306ca9bfbe311ac
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97634048"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187777"
 ---
 # <a name="tutorial-detect-anomalies-in-time-series-with-mlnet"></a>教程：使用 ML.NET 检测时序中的异常
 
@@ -28,7 +28,7 @@ ms.locfileid: "97634048"
 
 * 安装了“.NET Core 跨平台开发”工作负载的 [Visual Studio 2019 16.7.8 或更高版本](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。
 
-* [phone-calls.csv 数据集](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrCnnDetection/Data/phone-calls.csv)
+* [phone-calls.csv 数据集](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv)。
 
 ## <a name="create-a-console-application"></a>创建控制台应用程序
 
@@ -50,7 +50,7 @@ ms.locfileid: "97634048"
 
 1. 下载数据集并将其保存到之前创建的 *Data* 文件夹中：
 
-    右键单击 [phone-calls.csv](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrCnnDetection/Data/phone-calls.csv) 并选择“将链接(或目标)另存为…”
+    右键单击 [phone-calls.csv](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) 并选择“将链接(或目标)另存为…”
 
      确保将 \*.csv 文件保存到 *Data* 文件夹，或者在将其保存到其他位置后，将 \*.csv 文件移动到 *Data* 文件夹。
 

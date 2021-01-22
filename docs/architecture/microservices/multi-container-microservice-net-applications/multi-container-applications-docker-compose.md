@@ -1,13 +1,13 @@
 ---
 title: 使用 docker-compose.yml 定义多容器应用程序
 description: 如何使用 docker-compose.yml 指定多容器应用程序的微服务组合。
-ms.date: 01/30/2020
-ms.openlocfilehash: 81303be621da54b7336228585e86d1120a6b7598
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.date: 01/13/2021
+ms.openlocfilehash: 224b06c6a10834b42218746964f05b055d947235
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739784"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188785"
 ---
 # <a name="defining-your-multi-container-application-with-docker-composeyml"></a>使用 docker-compose.yml 定义多容器应用程序
 
@@ -17,7 +17,7 @@ ms.locfileid: "96739784"
 
 基本上，开发人员需定义想要部署的每个容器以及每个容器部署的某些特征。 拥有多容器部署说明文件后，即可通过由 [docker-compose up](https://docs.docker.com/compose/overview/) CLI 命令编制的单个操作部署整个解决方案，也可简单从 Visual Studio 进行部署。 否则，需要在命令行中使用 `docker run` 命令，通过 Docker CLI 经多个步骤逐个部署容器。 因此，docker-compose.yml 中定义的每个服务都必须指定一个映像或生成映像。 其他为可选密钥，且类似于其 `docker run` 命令行对应项。
 
-以下 YAML 代码是 eShopOnContainers 示例的单个 docker-compose.yml 文件的定义，文件可能是全局文件。 这不是来自 eShopOnContainers 的实际 docker-compose 文件。 相反，简化和合并后的单个文件，这不是使用 docker-compose 文件的最佳方式，稍后将对此进行解释。
+以下 YAML 代码是 eShopOnContainers 示例的单个 docker-compose.yml 文件的定义，文件可能是全局文件。 此代码不是来自 eShopOnContainers 的实际 docker-compose 文件。 相反，简化和合并后的单个文件，这不是使用 docker-compose 文件的最佳方式，稍后将对此进行解释。
 
 ```yml
 version: '3.4'
@@ -169,7 +169,7 @@ docker-compose -f docker-compose.yml -f docker-compose-test.override.yml down
 
 ### <a name="using-multiple-docker-compose-files-to-handle-several-environments"></a>使用多个 docker-compose 文件来处理多个环境
 
-针对不同环境时，应使用多个 compose 文件。 这样可以根据环境创建多个配置变体。
+针对不同环境时，应使用多个 compose 文件。 通过此方法可以根据环境创建多个配置变体。
 
 #### <a name="overriding-the-base-docker-compose-file"></a>重写基本 docker-compose 文件
 
@@ -434,10 +434,10 @@ Docker-compose 要求 .env 文件中的每行都是 \<variable\>=\<value\> 格�
 
 ### <a name="building-optimized-aspnet-core-docker-images"></a>生成优化的 ASP.NET Core Docker 映像
 
-如果查看 Internet 上源代码的 Docker 和 .NET Core ，则会发现 Dockerfiles 会将源代码源复制到容器，展现生成 Docker 映像的简单性。 这些示例表明，使用简单配置，即可拥有 Docker 映像，同时应用程序还会带有环境。 以下示例显示在此情况下的简单 Dockerfile。
+如果查看 Internet 上源代码的 Docker 和 .NET，则会发现 Dockerfiles 会将源代码复制到容器，以展现生成 Docker 映像的简单性。 这些示例表明，使用简单配置，即可拥有 Docker 映像，同时应用程序还会带有环境。 以下示例显示在此情况下的简单 Dockerfile。
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:3.1
+FROM mcr.microsoft.com/dotnet/sdk:5.0
 WORKDIR /app
 ENV ASPNETCORE_URLS http://+:80
 EXPOSE 80
@@ -448,9 +448,9 @@ ENTRYPOINT ["dotnet", "run"]
 
 这样的 Dockerfile 为有效 Dockerfile。 但开发人员可以大幅优化映像，尤其是生产映像。
 
-开发人员会在容器和微服务模型中不断启动容器。 使用容器时，通常不会重启睡眠容器，因为该容器为一次性容器。 业务流程协调程序（如 Kubernetes 和 Azure Service Fabric）只创建映像的新实例。 这意味着，需要在生成应用程序时，通过预编译应用程序进行优化，这样可加快实例化过程。 当容器启动时，它应已准备好运行。 请勿在运行时使用 `dotnet restore` 和 `dotnet build` CLI 命令进行还原和编译，如有关 .NET Core 和 Docker 的博客文章中所述。
+开发人员会在容器和微服务模型中不断启动容器。 使用容器时，通常不会重启睡眠容器，因为该容器为一次性容器。 业务流程协调程序（如 Kubernetes 和 Azure Service Fabric）创建映像的新实例。 这意味着，需要在生成应用程序时，通过预编译应用程序进行优化，这样可加快实例化过程。 当容器启动时，它应已准备好运行。 请勿在运行时使用 `dotnet restore` 和 `dotnet build` CLI 命令进行还原和编译，如有关 .NET 和 Docker 的博客文章中所述。
 
-.NET 团队一直致力于使 .NET Core 和 ASP.NET Core 成为容器优化的框架。 .NET Core 不仅是一个内存占用少的轻量级框架；该团队还致力于针对三种主要方案优化了 Docker 映像，并在版本 2.1 及更高版本中，在 dotnet/core  的 Docker 中心注册表中发布了这些映像：
+.NET 团队一直致力于使 .NET 和 ASP.NET Core 成为容器优化的框架。 .NET 不仅是一个内存占用少的轻量级框架，该团队还从版本 2.1 开始，致力于针对三种主要方案优化 Docker 映像，并在 dotnet/ 的 Docker 中心注册表中发布这些映像：
 
 1. **开发**：实现快速迭代和调试更改为优先事项，大小次之。
 
@@ -458,7 +458,7 @@ ENTRYPOINT ["dotnet", "run"]
 
 3. **生产**：重点是实现快速部署和容器启动，所以这些映像仅限于二进制文件和运行应用程序所需的内容。
 
-.NET 团队在 [dotnet/core](https://hub.docker.com/_/microsoft-dotnet/)（位于 Docker Hub）中提供了四个基本变体：
+.NET 团队在 [dotnet/](https://hub.docker.com/_/microsoft-dotnet/)（位于 Docker Hub）中提供了四个基本变体：
 
 1. **sdk**：用于开发和生成方案
 1. **aspnet**：用于 ASP.NET 生产方案
@@ -472,7 +472,7 @@ ENTRYPOINT ["dotnet", "run"]
 - **使用 ASP.NET Core 生成优化的 Docker 映像**
   <https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core>
 
-- **为 .NET Core 应用程序生成 Docker 映像**
+- **为 .NET 应用程序生成 Docker 映像**
   [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 > [!div class="step-by-step"]

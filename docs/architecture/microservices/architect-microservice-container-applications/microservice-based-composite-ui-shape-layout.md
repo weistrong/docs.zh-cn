@@ -1,13 +1,13 @@
 ---
 title: 创建基于微服务的复合 UI
 description: 微服务体系结构不仅针对后端。 了解微服务在前端中的使用。
-ms.date: 09/20/2018
-ms.openlocfilehash: 1861d3bb6e5d4a0226aa8f3f72a2e0d3e83be56f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 01/13/2021
+ms.openlocfilehash: 3d866172cf7d15486dd2cc0d5dbb286c77693cea
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72275737"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189404"
 ---
 # <a name="creating-composite-ui-based-on-microservices"></a>创建基于微服务的复合 UI
 
@@ -23,7 +23,7 @@ ms.locfileid: "72275737"
 
 客户端应用程序启动时，每个客户端 UI 组件（例如 TypeScript 类）自身都会注册一个基础结构微服务，该微服务能够为特定方案提供 ViewModel。 如果微服务形状发生更改，则 UI 也会更改。
 
-图 4-21 显示了一种复合 UI 方法。 这只是一个简化示例，因为可能还有其他微服务，它们将聚合基于不同技术的精细部件。 具体取决于构建的是传统 Web 方法 (ASP.NET MVC) 还是 SPA （单页应用程序）。
+图 4-21 显示了一种复合 UI 方法。 此方法只是一个简化的示例，因为可能还有其他微服务，它们将聚合基于不同技术的精细部件。 具体取决于构建的是传统 Web 方法 (ASP.NET MVC) 还是 SPA （单页应用程序）。
 
 ![由多个视图模型组成的复合 UI 的关系图。](./media/microservice-based-composite-ui-shape-layout/microservice-generate-composite-ui.png)
 

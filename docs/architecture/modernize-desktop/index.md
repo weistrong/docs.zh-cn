@@ -1,17 +1,21 @@
 ---
-title: 使用 .NET Core 3.1 在 Windows 10 上对桌面应用进行现代化改造
-description: 了解如何使用 .NET Core 3.1 对现有桌面应用进行现代化改造
-ms.date: 05/12/2020
-ms.openlocfilehash: 5861f806a9158ef761c47bc23e51327d4e2d0480
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+title: 使用 .NET 5 在 Windows 10 上对桌面应用进行现代化改造
+description: 了解如何使用 .NET 5 对现有桌面应用进行现代化改造
+ms.date: 01/06/2021
+ms.openlocfilehash: de8a451b0598b5eabd99028d377c161dace61623
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83422661"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615694"
 ---
-# <a name="modernizing-desktop-apps-on-windows-10-with-net-core-31"></a>使用 .NET Core 3.1 在 Windows 10 上对桌面应用进行现代化改造
+# <a name="modernizing-desktop-apps-on-windows-10-with-net-5"></a>使用 .NET 5 在 Windows 10 上对桌面应用进行现代化改造
 
 ![显示“对桌面应用进行现代化改造”电子书封面的屏幕截图。](./media/modernizing-existing-desktop-apps-ebook-cover.png)
+
+**版本 v1.0.1** - 已更新到 .NET 5
+
+请参阅[更改记录](https://aka.ms/desktop-ebook-changelog)了解书籍更新和社区贡献。
 
 发布者
 
@@ -23,7 +27,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-版权所有 © 2020 Microsoft Corporation
+版权所有 © 2021 Microsoft Corporation
 
 保留所有权利。 未经发布者书面许可，不得以任何形式或任何方式复制或传播本书中的任何内容。
 
@@ -75,13 +79,13 @@ Microsoft 对现有应用程序进行现代化改造的方法是让你能够灵�
 
 ## <a name="who-should-use-the-book"></a>本书的目标读者
 
-我们为希望通过对现有 Windows Forms 和 WPF 桌面应用程序进行现代化改造以利用 .NET Core 和 Windows 10 好处的开发人员和解决方案架构师编写本书。
+本书面向希望通过对现有 Windows 窗体和 WPF 桌面应用程序进行现代化改造以利用 .NET 和 Windows 10 好处的开发人员和解决方案架构师。
 
 如果你是一位技术决策制定者（例如需要大致了解更新现有桌面应用程序的好处的企业架构师、开发主管或主管），你也可能会发现本书非常有用。
 
 ## <a name="how-to-use-the-book"></a>如何使用本书
 
-本书介绍了需要对现有应用程序进行现代化改造的原因，以及使用 NET Core 3.1 和 MSIX 对桌面应用进行现代化改造的具体好处。 本书的内容适用于架构师和技术决策者，他们只需大概了解，不需要实现和技术分步细节。
+本书介绍了需要对现有应用程序进行现代化改造的原因，以及使用 NET 和 MSIX 对桌面应用进行现代化改造的具体好处。 本书的内容适用于架构师和技术决策者，他们只需大概了解，不需要实现和技术分步细节。
 
 不同的章节还提供了示例实现代码片段和屏幕截图，第 5 章专门介绍了示例应用程序的完整迁移过程。
 
@@ -89,11 +93,11 @@ Microsoft 对现有应用程序进行现代化改造的方法是让你能够灵�
 
 本书介绍了一些特定的场景（侧重于直接迁移场景），其中概述了利用现代化改造的好处且不需要重写代码的方法。
 
-本书并未介绍如何使用 .NET Core 从头开始开发新式应用程序，也未介绍 Windows 窗体和 WPF 使用入门。 它重点介绍如何通过最新的桌面开发技术来更新现有桌面应用程序。
+本书并未介绍如何使用 .NET 从头开始开发新式应用程序，也未介绍 Windows 窗体和 WPF 使用入门。 它重点介绍如何通过最新的桌面开发技术来更新现有桌面应用程序。
 
 ## <a name="samples-used-in-this-book"></a>本书中使用的示例
 
-为了强调执行现代化改造所需的步骤，我们将使用名为 `eShopModernizing` 的示例应用程序。 此应用程序有两种样式（Windows 窗体和 WPF），我们将分步介绍如何使用 .NET Core 针对这两种风格进行现代化改造。
+为了强调执行现代化改造所需的步骤，我们将使用名为 `eShopModernizing` 的示例应用程序。 此应用程序有两种样式（Windows 窗体和 WPF），我们将分步介绍如何使用 .NET 针对这两种风格进行现代化改造。
 
 此外，在本书的 GitHub 存储库中，你会发现该过程的结果，如果你决定按照分步教程操作，则可以将其用作参考。
 

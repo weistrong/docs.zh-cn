@@ -1,13 +1,13 @@
 ---
 title: 将 NoSQL 数据库用作持久性基础结构
 description: 大致了解 NoSQL 数据库（特别是 Azure Cosmos DB）作为持久性实现选项的使用情况。
-ms.date: 01/30/2020
-ms.openlocfilehash: 2877c7eaf08dccfdf6126939b195a6a9a7195dfa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 32f32a3fd247f49ac54deaf33605bcc2ac7b55dc
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173369"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188824"
 ---
 # <a name="use-nosql-databases-as-a-persistence-infrastructure"></a>将 NoSQL 数据库用作持久性基础结构
 
@@ -62,7 +62,7 @@ ms.locfileid: "91173369"
 
 ```csharp
 // C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH AZURE COSMOS DB API
-// *** Domain Model Code ***
+// **_ Domain Model Code _*_
 // Aggregate: Create an Order object with its child entities and/or value objects.
 // Then, use AggregateRoot's methods to add the nested objects so invariants and
 // logic is consistent across the nested properties (value objects and entities).
@@ -98,9 +98,9 @@ OrderItem orderItem1 = new OrderItem
 
 //Using methods with domain logic within the entity. No anemic-domain model
 orderAggregate.AddOrderItem(orderItem1);
-// *** End of Domain Model Code ***
+// _*_ End of Domain Model Code _*_
 
-// *** Infrastructure Code using Cosmos DB Client API ***
+// _*_ Infrastructure Code using Cosmos DB Client API _*_
 Uri collectionUri = UriFactory.CreateDocumentCollectionUri(databaseName,
     collectionName);
 
@@ -134,7 +134,7 @@ Cosmos DB 数据库支持 .NET 的 MongoDB API 以及本地 MongoDB 网络协议
 
 ![显示 Cosmos DB 支持 .NET 和 MongoDB Wire Protocol 的关系图。](./media/nosql-database-persistence-infrastructure/mongodb-api-wire-protocol.png)
 
-**图 7-20**。 使用 MongoDB API 和协议访问 Azure Cosmos DB
+图 7-20。 使用 MongoDB API 和协议访问 Azure Cosmos DB
 
 这对于含有 Linux 容器的 Docker 环境中的概念证明来说是一种非常便捷的方法，因为 [MongoDB Docker 映像](https://hub.docker.com/r/_/mongo/)是一种支持 Docker Linux 容器和 Docker Windows 容器的多体系映像。
 
@@ -146,7 +146,7 @@ Cosmos DB 数据库支持 .NET 的 MongoDB API 以及本地 MongoDB 网络协议
 
 生产 Azure Cosmos DB 将作为 PaaS 和可扩展服务在 Azure 云中运行。
 
-自定义 .NET Core 容器可以在本地开发 Docker 主机（在 Windows 10 计算机上使用用于 Windows 的 Docker）上运行，也可以被部署到生产环境中，如 Azure AKS 中的 Kubernetes 或 Azure Service Fabric。 在第二个环境中，只需部署 .NET Core 自定义容器，而不是 MongoDB 容器，因为将在云中使用 Azure Cosmos DB 来处理生产中的数据。
+自定义 .NET 容器可以在本地开发 Docker 主机（在 Windows 10 计算机上使用用于 Windows 的 Docker）上运行，也可以被部署到生产环境中，如 Azure AKS 中的 Kubernetes 或 Azure Service Fabric。 在第二个环境中，只需部署 .NET 自定义容器，而不是 MongoDB 容器，因为你将在云中使用 Azure Cosmos DB 来处理生产中的数据。
 
 使用 MongoDB API 的明显好处是解决方案可以在数据库引擎、MongoDB 或 Azure Cosmos DB 中运行，因此要迁移到不同环境应该很容易。 但是，有时为充分利用特定数据库引擎的功能，使用本机 API（即本机 Cosmos DB API）是值得的。
 
@@ -162,13 +162,13 @@ Cosmos DB 数据库支持 .NET 的 MongoDB API 以及本地 MongoDB 网络协议
 
 基本上，这只是指出不应总是针对 Azure Cosmos DB 使用 MongoDB API 的免责声明，就像在 eShopOnContainers 中所做的那样，因为这对于 Linux 容器来说是一个方便的选择。 应根据特定需求以及需要对生产应用程序执行的测试来做出决定。
 
-### <a name="the-code-use-mongodb-api-in-net-core-applications"></a>代码：在 .NET Core 应用程序中使用 MongoDB API
+### <a name="the-code-use-mongodb-api-in-net-applications"></a>代码：在 .NET 应用程序中使用 MongoDB API
 
 适用于 .NET 的 MongoDB API 是基于 NuGet 包的，你需要添加到类似于下图所示的 Locations.API 项目中。
 
 ![MongoDB NuGet 包中的依赖项的屏幕截图。](./media/nosql-database-persistence-infrastructure/mongodb-api-nuget-packages.png)
 
-**图 7-22**。 .NET Core 项目中的 MongoDB API NuGet 包引用
+**图 7-22**。 .NET 项目中的 MongoDB API NuGet 包引用
 
 让我们来研究下面几节中的代码。
 

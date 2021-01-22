@@ -2,12 +2,12 @@
 title: dotnet list package 命令
 description: 使用“dotnet list package”命令，可以方便地列出项目或解决方案的包引用。
 ms.date: 11/11/2020
-ms.openlocfilehash: ecb83e5485c9fb49a454a35091e1a7b753b1f291
-ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
+ms.openlocfilehash: 684b73dec553a424252e1368c265847622fb7850
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94556883"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189891"
 ---
 # <a name="dotnet-list-package"></a>dotnet list package
 
@@ -43,7 +43,7 @@ Project 'SentimentAnalysis' has the following package references
 (A) : Auto-referenced package.
 ```
 
-“已请求”列是指项目文件中指定的包版本，可以是一个范围。 “已解析”列列出了项目当前使用的版本，始终都是一个值。 紧靠名称旁边显示 `(A)` 的包表示从项目设置（`Sdk` 类型、`<TargetFramework>` 或 `<TargetFrameworks>` 属性等）推断出的[隐式包引用](csproj.md#implicit-package-references)。
+“已请求”列是指项目文件中指定的包版本，可以是一个范围。 “已解析”列列出了项目当前使用的版本，始终都是一个值。 紧靠名称旁边显示 `(A)` 的包表示从项目设置（`Sdk` 类型、`<TargetFramework>` 或 `<TargetFrameworks>` 属性）推断出的隐式包引用。
 
 使用 `--outdated` 选项，可以确定项目中正在使用的包是否有更高版本。 默认情况下，`--outdated` 列出最新稳定包，除非已解析版本也是预发行版本。 若要在列出更高版本时包含预发行版本，还请指定 `--include-prerelease` 选项。 下面的示例展示了上一个示例中相同项目的 `dotnet list package --outdated --include-prerelease` 命令输出：
 

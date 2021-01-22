@@ -1,13 +1,13 @@
 ---
 title: 创建、改进微服务 API 及协定并进行版本控制
 description: 在考虑演变和版本控制的情况下创建微服务 API 和协定，因为需要改变。
-ms.date: 09/20/2018
-ms.openlocfilehash: 9164bfd12df18a88ac187c8962f0afc80b702881
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.date: 01/13/2021
+ms.openlocfilehash: 84eeaa9776947abda6171949c730f8473e97b241
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557667"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189455"
 ---
 # <a name="creating-evolving-and-versioning-microservice-apis-and-contracts"></a>创建、改进微服务 API 及协定并进行版本控制
 
@@ -19,7 +19,7 @@ API 定义的本质取决于所使用的协议。 例如，如果使用的是消
 
 如果 API 改动较小，例如向 API 添加属性或参数，则使用较旧 API 的客户端应切换到服务的新版本。 你或许能够为任何缺少的必需属性提供默认值，并且客户端或许能够忽略任何额外响应属性。
 
-但是，有时需要对服务 API 作出重大但却不兼容的更改。 因为可能不能强制客户端应用程序或服务立即升级到最新版本，服务必须为旧版 API 提供一段时间的支持。 如果使用基于 HTTP 的机制，如 REST，一种方法是在 URL 中或 HTTP 标头中嵌入 API 版本号。 然后可以决定是在同一服务实例内同时实现两个版本的服务，还是部署不同实例，分别处理两个版本的 API。 解决此问题的一个好方法是使用[中介器模式](https://en.wikipedia.org/wiki/Mediator_pattern)（例如，[MediatR 库](https://github.com/jbogard/MediatR)），将不同的实现版本分离到独立的处理程序中去。
+但是，有时需要对服务 API 作出重大但却不兼容的更改。 因为可能不能强制客户端应用程序或服务立即升级到最新版本，服务必须为旧版 API 提供一段时间的支持。 如果使用基于 HTTP 的机制，如 REST，一种方法是在 URL 中或 HTTP 标头中嵌入 API 版本号。 然后可以决定是在同一服务实例内同时实现两个版本的服务，还是部署不同实例，分别处理两个版本的 API。 利用此功能的一个好方法是使用[中介器模式](https://en.wikipedia.org/wiki/Mediator_pattern)（例如，[MediatR 库](https://github.com/jbogard/MediatR)），将不同的实现版本分离到独立的处理程序中去。
 
 最后，如果使用的是 REST 体系结构，[超媒体](https://www.infoq.com/articles/mark-baker-hypermedia)是为服务提供版本控制并允许改进 API 的最佳解决方案。
 

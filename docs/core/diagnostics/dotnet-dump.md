@@ -2,12 +2,12 @@
 title: dotnet-dump 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-dump CLI 工具，以在没有任何本机调试器的情况下收集和分析 Windows 和 Linux 转储。
 ms.date: 11/17/2020
-ms.openlocfilehash: eaffbb1f2959dba5c25a603b6f785c7480e4a8c0
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.openlocfilehash: 84b3796f4ee92880e6d432df606a6addfd2471b0
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97765041"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189798"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>转储收集和分析实用工具 (dotnet-dump)
 
@@ -37,6 +37,9 @@ ms.locfileid: "97765041"
   | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [arm](https://aka.ms/dotnet-dump/win-arm) \| [arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [arm](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
+
+> [!NOTE]
+> 若要在 x86 应用上使用 `dotnet-dump`，需要使用相应的 x86 版本的工具。
 
 ## <a name="synopsis"></a>摘要
 
@@ -113,6 +116,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 - **`--diag`**
 
   启用转储收集诊断日志记录。
+
+> [!NOTE]
+> 在 Linux 和 macOS 上，此命令需要目标应用程序和 `dotnet-dump` 使用同一 `TMPDIR` 环境变量。 否则，该命令将超时。
+
+> [!NOTE]
+> 若要使用 `dotnet-dump` 收集转储，需要以与运行目标进程的用户相同的用户身份或以根身份运行。 否则，该工具将无法与目标进程建立连接。
 
 ## <a name="dotnet-dump-analyze"></a>dotnet-dump analyze
 

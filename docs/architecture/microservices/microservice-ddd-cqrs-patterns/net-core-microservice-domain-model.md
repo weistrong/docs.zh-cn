@@ -1,17 +1,17 @@
 ---
-title: 使用 .NET Core 实现微服务域模型
+title: 使用 .NET 实现微服务域模型
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 获取面向 DDD 的域模型的实现详细信息。
-ms.date: 10/08/2018
-ms.openlocfilehash: e24f4e643d258450a2b33ed4dc4aded718bebd82
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 9689058b77701eee35ef018ed2e3f18bd648b0f4
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152541"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188265"
 ---
 # <a name="implement-a-microservice-domain-model-with-net-core"></a>使用 .NET Core 实现微服务域模型
 
-上一节解释了域模型设计的基本设计原则和模式。 现在开始探索使用 .NET Core（纯 C\# 代码）和 EF Core 实现域模型的可能方式。 域模型将仅由代码组成。 它只有 EF Core 模型要求，并不真正依赖于 EF。 你不应该硬依赖或引用 EF Core 或域模型中的任何其他 ORM。
+上一节解释了域模型设计的基本设计原则和模式。 现在开始探索使用 .NET（纯 C\# 代码）和 EF Core 实现域模型的可能方式。 域模型将仅由代码组成。 它只有 EF Core 模型要求，并不真正依赖于 EF。 你不应该硬依赖或引用 EF Core 或域模型中的任何其他 ORM。
 
 ## <a name="domain-model-structure-in-a-custom-net-standard-library"></a>自定义 .NET Standard 库中的域模型结构
 
@@ -46,7 +46,7 @@ OrderAggregate 文件夹的详细视图：Address.cs 是值对象，IOrderReposi
 通过创建实现域实体的 POCO 类，可在 .NET 中实现域模型。 在下面的示例中，Order 类同时被定义为实体和聚合根。 Order 类派生自 Entity 基类，因此它可以重用与实体相关的通用代码。 请记住，这些基类和接口由你在域模型项目中定义，因此它是你的代码，而不是 ORM（例如 EF）中的基础结构代码。
 
 ```csharp
-// COMPATIBLE WITH ENTITY FRAMEWORK CORE 2.0
+// COMPATIBLE WITH ENTITY FRAMEWORK CORE 5.0
 // Entity is a custom base class with the ID
 public class Order : Entity, IAggregateRoot
 {
@@ -97,7 +97,7 @@ public class Order : Entity, IAggregateRoot
 
 值得注意的是，这是一个作为 POCO 类实现的域实体。 它不直接依赖于 Entity Framework Core 或任何其他基础结构框架。 DDD 中采用的就是这种实现方式，即完全通过 C# 代码来实现域模型。
 
-此外，该类用名为 IAggregateRoot 的接口修饰。 该接口是一个空接口，有时称为*标记接口*，仅用于指示此实体类也是聚合根。
+此外，该类用名为 IAggregateRoot 的接口修饰。 该接口是一个空接口，有时称为 *标记接口*，仅用于指示此实体类也是聚合根。
 
 标记接口有时被认为是一种反模式；然而，它也是一种对类进行标记的干净方式，尤其是当该接口可能正在不断演变时。 属性可以是标记的另一种选择，但是，将基类 (Entity) 放在 IAggregate 接口旁边比在该类上方放置一个 Aggregate 属性标记更为显眼。 在任何情况下，这都只是一个偏好问题。
 
@@ -170,7 +170,7 @@ myOrder.AddOrderItem(productId, productName, pictureUrl, unitPrice, discount, un
 
 ### <a name="additional-resources"></a>其他资源
 
-- **Vaughn Vernon。使用 DDD 和 Entity Framework 对聚合建模**。 请注意，*不*是 Entity Framework Core。 \
+- **Vaughn Vernon。使用 DDD 和 Entity Framework 对聚合建模**。 请注意，*不* 是 Entity Framework Core。 \
   <https://kalele.io/blog-posts/modeling-aggregates-with-ddd-and-entity-framework/>
 
 - **Julie Lerman.数据点 - 域驱动设计的编码：面向数据聚焦型开发人员的提示** \

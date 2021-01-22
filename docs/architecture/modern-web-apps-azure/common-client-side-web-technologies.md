@@ -6,12 +6,12 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 ms.date: 12/01/2020
-ms.openlocfilehash: a4549e48152b21af05c67f601c1db65029e346fa
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 75c696d881ad0586b11cdbd264f3ff90ec3bce8d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851661"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187959"
 ---
 # <a name="common-client-side-web-technologies"></a>常用客户端 Web 技术
 
@@ -169,7 +169,7 @@ var app = new Vue({
 
 WebAssembly 代码可通过 JavaScript（称为 JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS 互操作）访问浏览器的完整功能  。 通过浏览器中的 WebAssembly 执行的 .NET 代码在浏览器的 JavaScript 沙盒中运行，沙盒提供的保护可防御客户端计算机上的恶意操作。
 
-有关详细信息，请参阅 [ASP.NET Core Blazor 简介](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-5.0)
+有关详细信息，请参阅 [ASP.NET Core 简介Blazor](/aspnet/core/blazor/)。
 
 ### <a name="choosing-a-spa-framework"></a>选择 SPA 框架
 

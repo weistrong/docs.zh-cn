@@ -1,13 +1,13 @@
 ---
 title: 在微服务（集成事件）之间实现基于事件的通信
 description: 适用于容器化 .NET 应用程序的 .NET 微服务基础结构 | 了解集成事件以在微服务之间实现基于事件的通信。
-ms.date: 10/02/2018
-ms.openlocfilehash: a778acba3e17b084840b77d903533f9180ca01d9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 65c0414184fdd1bccfbc61ef4df8fdcb88284ebe
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152528"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188200"
 ---
 # <a name="implementing-event-based-communication-between-microservices-integration-events"></a>在微服务（集成事件）之间实现基于事件的通信
 
@@ -35,7 +35,7 @@ ms.locfileid: "91152528"
 
 ## <a name="integration-events"></a>集成事件
 
-集成事件用于跨多个微服务或外部系统保持域状态同步。 这可通过在微服务外发布集成事件完成。 将事件发布到多个接收方微服务（订阅到集成事件的尽可能多个微服务）时，每个接收方微服务中的相应事件处理程序会处理该事件。
+集成事件用于跨多个微服务或外部系统保持域状态同步。 此功能可通过在微服务外发布集成事件来实现。 将事件发布到多个接收方微服务（订阅到集成事件的尽可能多个微服务）时，每个接收方微服务中的相应事件处理程序会处理该事件。
 
 集成事件基本上是数据保持类，如以下示例所示：
 

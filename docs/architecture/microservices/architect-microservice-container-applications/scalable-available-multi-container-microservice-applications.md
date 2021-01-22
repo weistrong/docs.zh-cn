@@ -1,13 +1,13 @@
 ---
 title: 安排微服务和多容器应用应用程序的业务流程，以实现高可伸缩性和高可用性
 description: 发现用于安排微服务和多容器应用程序以便实现高可伸缩性和可用性的选项，以及 Azure Dev Spaces 在开发 Kubernetes 应用程序生命周期时的可能性。
-ms.date: 01/30/2020
-ms.openlocfilehash: a61e883ab0d27300e00b177c2621c6521e85ac84
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 7ba0367bca98edbab1be2059ee37e863359edad3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172497"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189405"
 ---
 # <a name="orchestrate-microservices-and-multi-container-applications-for-high-scalability-and-availability"></a>安排微服务和多容器应用应用程序的业务流程，以实现高可伸缩性和高可用性
 
@@ -21,9 +21,9 @@ ms.locfileid: "91172497"
 
 为每个服务实例使用一个容器。 Docker 容器是“部署单元”，一个容器代表 Docker 的一个实例。 一个主机可以处理多个容器。 它看上去类似于逻辑方法。 但是如何处理负载均衡、路由以及如何协调安排这些组合式应用程序呢？
 
-单个 Docker 主机中的普通 Docker 引擎能够满足在一台主机上管理单映像实例的需求，但若要管理针对更复杂的分布式应用程序而部署在多个主机上的多个容器，则无法满足需求。 大多数情况下，需要一个管理平台，该平台能自动启动容器、扩展容器（每个映像具有多个实例）、必要时暂停或关闭，并且在理想情况下还能控制资源（如网络和数据存储）访问方式。
+单个 Docker 主机中的普通 Docker 引擎能够满足在一台主机上管理单映像实例的需求，但若要管理针对更复杂的分布式应用程序而部署在多个主机上的多个容器，则无法满足需求。 大多数情况下，需要一个管理平台，该平台能自动启动容器、横向扩展容器（每个映像具有多个实例）、必要时暂停或关闭容器，并且在理想情况下还能控制资源（如网络和数据存储）访问方式。
 
-如果不仅要管理个别容器或非常简单的组合式应用，还要进一步管理使用微服务的较大型企业应用程序，则必须转向业务流程和群集平台。
+如果不仅要管理个别容器或简单的组合式应用，还要进一步管理使用微服务的较大型企业应用程序，则必须转向业务流程和群集平台。
 
 从体系结构和开发的角度来看，如果要生成由基于微服务的应用程序组成的大型企业应用程序，则务必了解清楚下面列出的支持高级方案的平台和产品：
 
@@ -56,11 +56,11 @@ Azure Kubernetes 服务优化了专门针对 Azure 的常用 Docker 群集开源
 
 图 4-24  。 Kubernetes 群集的简化结构和拓扑
 
-在图 4-24 中可以看到 Kubernetes 群集的结构，其中主节点（虚拟机）控制群集的大部分协调，可以将容器部署到其余节点，这些节点从应用程序角度来看是作为单个池进行管理，允许扩展到数千甚至是数万个容器。
+在图 4-24 中可以看到 Kubernetes 群集的结构，其中主节点 (VM) 控制群集的大部分协调，你可以将容器部署到其余节点，从应用程序角度来看这些节点是作为单个池进行管理的，使你可以扩展到数千甚至是数万个容器。
 
 ## <a name="development-environment-for-kubernetes"></a>Kubernetes 的开发环境
 
-在开发环境中，[Docker 于 2018 年 7 月宣布](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/)只需安装 [Docker 桌面](https://docs.docker.com/install/)，Kubernetes 便还可以在单个开发计算机（Windows 10 或 macOS）中运行。 可以在以后部署到云 (AKS) 进行进一步集成测试，如图 4-25 所示。
+在开发环境中，[Docker 于 2018 年 7 月宣布](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/)通过安装 [Docker Desktop](https://docs.docker.com/install/)，Kubernetes 也可以在单个开发计算机（Windows 10 或 macOS）中运行。 可以在以后部署到云 (AKS) 进行进一步集成测试，如图 4-25 所示。
 
 ![显示开发计算机上的 Kubernetes 随后部署到 AKS 的示意图](./media/scalable-available-multi-container-microservice-applications/kubernetes-development-environment.png)
 
@@ -78,7 +78,7 @@ Kubernetes 的默认生产部署选项是使用 Helm 图表，这将在下一部
 
 将应用程序部署到 Kubernetes 群集时，可以如上一节中已经提到的那样，通过基于本机格式（.yaml 文件）的部署文件来使用原始 kubectl.exe CLI 工具。 但是，对于更复杂的 Kubernetes 应用程序（如部署基于微服务的复杂应用程序时），建议使用 [Helm](https://helm.sh/)。
 
-Helm 图表可帮助对即使最复杂的 Kubernetes 应用程序进行定义、版本控制、安装、共享、升级或回滚。
+Helm 图表有助于对即使最复杂的 Kubernetes 应用程序进行定义、版本控制、安装、共享、升级或回滚。
 
 更进一步，也建议使用 Helm 用法，因为 Azure 中的其他 Kubernetes 环境（如 [Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces)）也基于 Helm 图表。
 
@@ -92,7 +92,7 @@ Helm 由 [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) 与 Mi
 
 如前所述，Azure Dev Spaces 在部署基于容器的应用程序时使用 Helm 图表。
 
-Azure Dev Spaces 可帮助开发团队在 Kubernetes 上提高工作效率，因为它允许只需使用 Visual Studio 2019 或 Visual Studio Code，便可直接在 Azure 中的全局 Kubernetes 群集中快速迭代和调试代码。 Azure 中的这一 Kubernetes 群集是共享的托管 Kubernetes 群集，因此团队可以通过协作方式一起工作。 可以独立开发代码，然后部署到全局群集并对其他组件进行端到端测试，无需复制或模拟依赖项。
+Azure Dev Spaces 可帮助开发团队在 Kubernetes 上提高工作效率，因为它使你可以通过使用 Visual Studio 2019 或 Visual Studio Code，直接在 Azure 中的全局 Kubernetes 群集中快速迭代和调试代码。 Azure 中的这一 Kubernetes 群集是共享的托管 Kubernetes 群集，因此团队可以通过协作方式一起工作。 可以独立开发代码，然后部署到全局群集并对其他组件进行端到端测试，无需复制或模拟依赖项。
 
 如图 4-26 所示，Azure Dev Spaces 中最独特的功能是能够创建可以运行的“空间”，它们会集成到群集中全局部署的其余部分。
 

@@ -1,13 +1,13 @@
 ---
 title: 创建简单的数据驱动 CRUD 微服务
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 了解如何在微服务应用程序的上下文中创建简单的 CRUD（数据驱动）微服务。
-ms.date: 08/14/2020
-ms.openlocfilehash: 27c9b331573ff08ea16c756552818df285156282
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.date: 01/13/2021
+ms.openlocfilehash: cf6540347771105ea2ee9cdcab0fa347bf0121cf
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739864"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188345"
 ---
 # <a name="creating-a-simple-data-driven-crud-microservice"></a>创建简单的数据驱动 CRUD 微服务
 
@@ -29,19 +29,19 @@ ms.locfileid: "96739864"
 
 上一个关系图显示了逻辑 Catalog 微服务包括其 Catalog 数据库，该数据库无论是否与其位于同一 Docker 主机均可。 若该数据库位于同一 Docker 主机，可能更利于开发，但不利于生产。 开发这种类型的服务时，只需要 [ASP.NET Core](/aspnet/core/) 和数据访问 API 或 ORM（如 [Entity Framework Core](/ef/core/index)）。 还可以通过 [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) 自动生成 [Swagger](https://swagger.io/) 元数据，用于提供有关服务功能的说明，如下一部分中所述。
 
-请注意，在 Docker 容器中运行 SQL Server 这样的数据库服务器十分适用于开发环境，因为可以设置和运行全部所需的依赖关系，而无需在云中或本地预配数据库。 这在运行集成测试时十分方便。 但是对于生产环境，则不建议在容器中运行数据库服务器，因为这种方法通常无法实现高可用性。 对于 Azure 中的生产环境，建议使用 Azure SQL 数据库或任何其他可提供高可用性和高扩展性的数据库技术。 例如，对于 NoSQL 方法，可选择 CosmosDB。
+请注意，在 Docker 容器中运行 SQL Server 这样的数据库服务器十分适用于开发环境，因为可以设置和运行全部所需的依赖关系，而无需在云中或本地预配数据库。 在运行集成测试时此方法十分方便。 但是对于生产环境，则不建议在容器中运行数据库服务器，因为这种方法通常无法实现高可用性。 对于 Azure 中的生产环境，建议使用 Azure SQL 数据库或任何其他可提供高可用性和高扩展性的数据库技术。 例如，对于 NoSQL 方法，可选择 CosmosDB。
 
 最后，通过编辑 Dockerfile 和 docker-compose.yml 元数据文件，可配置此容器的映像的创建方式—它使用哪种基映像，以及设计内部和外部名称及 TCP 端口等设置。
 
 ## <a name="implementing-a-simple-crud-microservice-with-aspnet-core"></a>使用 ASP.NET Core 实现简单 CRUD 微服务
 
-要使用 .NET Core 和 Visual Studio 实现简单 CRUD 微服务，需先创建一个简单的 ASP.NET Core Web API 项目（在 .NET Core 上运行以便可在 Linux Docker 主机上运行），如图 6 6 所示。
+要使用 .NET 和 Visual Studio 实现简单 CRUD 微服务，需先创建一个简单的 ASP.NET Core Web API 项目（在 .NET 上运行以便可在 Linux Docker 主机上运行），如图 6-6 所示。
 
 ![显示项目设置的 Visual studio 的屏幕截图。](./media/data-driven-crud-microservice/create-asp-net-core-web-api-project.png)
 
 图 6-6  。 在 Visual Studio 2019 中创建 ASP.NET Core Web API 项目
 
-要创建 ASP.NET Core Web API 项目，首先需选择 ASP.NET Core Web 应用程序，然后选择 API 类型。 创建该项目之后，便可使用 Entity Framework API 或其他 API 实现 MVC 控制器，与任何其他 Web API 项目中的操作一样。 在新的 Web API 项目中，可以看到该微服务中的唯一依赖关系在 ASP.NET Core 本身上。 在内部，Microsoft.AspNetCore.All 依赖项内引用的是实体框架和许多其他 .NET Core NuGet 包，如图 6-7 所示  。
+要创建 ASP.NET Core Web API 项目，首先需选择 ASP.NET Core Web 应用程序，然后选择 API 类型。 创建该项目之后，便可使用 Entity Framework API 或其他 API 实现 MVC 控制器，与任何其他 Web API 项目中的操作一样。 在新的 Web API 项目中，可以看到该微服务中的唯一依赖关系在 ASP.NET Core 本身上。 在内部，Microsoft.AspNetCore.All 依赖项内引用的是实体框架和许多其他 .NET NuGet 包，如图 6-7 所示。
 
 ![VS 显示 Catalog.Api 的 NuGet 依赖项的屏幕截图。](./media/data-driven-crud-microservice/simple-crud-web-api-microservice-dependencies.png)
 
@@ -270,7 +270,7 @@ catalog-api:
 
 Azure Key Vault 有助于存储和保护云应用程序和服务使用的加密密钥和机密。 机密是指需严格控制的任何内容（如 API 密钥、连接字符串和密码等），而使用记录、设置过期日期和管理访问 *等* 均涵盖于严控范围内。
 
-Azure Key Vault 允许对应用程序机密的使用情况进行非常详尽地控制，无需让任何人知晓这些内容。 甚至可轮换机密以增强安全性，且不会对开发或操作造成中断。
+通过 Azure Key Vault 可以对应用程序机密的使用情况进行详尽地控制，无需让任何人知晓这些内容。 甚至可轮换机密以增强安全性，且不会对开发或操作造成中断。
 
 必须在组织的 Active Directory 中注册应用程序，如此才可使用 Key Vault。
 
@@ -354,7 +354,7 @@ Swashbuckle 为 ASP.NET Web API 项目自动生成 Swagger 元数据。 它支�
 
 Swashbuckle 将 API 资源管理器和 Swagger 或 [swagger ui](https://github.com/swagger-api/swagger-ui) 结合起来，为 API 使用者提供更丰富的发现和文档体验。 除 Swagger 元数据生成器引擎外，Swashbuckle 还包含 swagger-ui 的嵌入版本，可在安装 Swashbuckle 后自动提供。
 
-这意味除 API 外，又有了一个好用的发现 UI，可帮助开发人员使用 API。 它只需要少量代码和维护，因为它自动生成，这让用户能够专注于生成 API。 API 资源管理器的结果如图 6-8 所示。
+这意味除 API 外，又有了一个好用的发现 UI，可帮助开发人员使用 API。 它只需要少量代码和维护，因为它是自动生成的，这让你能够专注于生成 API。 API 资源管理器的结果如图 6-8 所示。
 
 ![显示 eShopOContainers API 的 Swagger API 资源管理器的屏幕截图。](./media/data-driven-crud-microservice/swagger-metadata-eshoponcontainers-catalog-microservice.png)
 

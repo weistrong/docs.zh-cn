@@ -4,12 +4,12 @@ titleSuffix: ''
 description: 了解 .NET 项目 SDK。
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 270735c9eef9f1930680687917317ac8bdf39e6d
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 2adb0713fabda142d071425a2affe66cc9d4c172
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970689"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189663"
 ---
 # <a name="net-project-sdks"></a>.NET 项目 SDK
 
@@ -83,7 +83,7 @@ ms.locfileid: "97970689"
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-### <a name="default-includes-and-excludes"></a>默认包含和排除的内容
+## <a name="default-includes-and-excludes"></a>默认包含和排除的内容
 
 SDK 中定义了 [`Compile` 项](/visualstudio/msbuild/common-msbuild-project-items#compile)、[嵌入的资源](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource)和 [`None` 项](/visualstudio/msbuild/common-msbuild-project-items#none)默认包含和排除的内容。 与非 SDK .NET 框架项目不同，你无需在项目文件中指定这些项，因为默认设置涵盖了最常见的用例。 此行为使得项目文件更小、更易于理解和手动编辑（如需要）。
 
@@ -98,7 +98,7 @@ SDK 中定义了 [`Compile` 项](/visualstudio/msbuild/common-msbuild-project-it
 > [!NOTE]
 > 默认情况下，由 `$(BaseOutputPath)` 和 `$(BaseIntermediateOutputPath)` MSBuild 属性表示的 `./bin` 和 `./obj` 文件夹不包含在 glob 中。 排除由 [DefaultItemExcludes 属性](msbuild-props.md#defaultitemexcludes)表示。
 
-#### <a name="build-errors"></a>生成错误
+### <a name="build-errors"></a>生成错误
 
 如果在项目文件中显式定义这些项中的任何项，可能会出现类似于以下内容的“NETSDK1022”生成错误：
 
@@ -131,6 +131,31 @@ SDK 中定义了 [`Compile` 项](/visualstudio/msbuild/common-msbuild-project-it
   ```
 
   如果仅禁用 `Compile` glob，则 Visual Studio 中的解决方案资源管理器仍将 \*.cs 项显示为项目的一部分，并作为 `None` 项包含在内。 若要禁用隐式 `None` glob，请将 `EnableDefaultNoneItems` 也设置为 `false`。
+
+## <a name="build-events"></a>生成事件
+
+在 SDK 样式的项目中，请使用名为 `PreBuild` 或 `PostBuild` 的 MSBuild 目标，并设置 `PreBuild` 的 `BeforeTargets` 属性或 `PostBuild` 的 `AfterTargets` 属性。
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
+</Target>
+```
+
+> [!NOTE]
+>
+> - 可以为 MSBuild 目标使用任何名称。 但是，Visual Studio IDE 会识别 `PreBuild` 和 `PostBuild` 目标，因此通过使用这些名称，可以在 IDE 中编辑命令。
+> - 不建议在 SDK 样式的项目中使用属性 `PreBuildEvent` 和 `PostBuildEvent`，因为无法解析 `$(ProjectDir)` 这样的宏。 例如，以下代码是不受支持的：
+>
+> ```xml
+> <PropertyGroup>
+>   <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"</PreBuildEvent>
+> </PropertyGroup>
+> ```
 
 ## <a name="customize-the-build"></a>自定义生成
 
@@ -168,7 +193,7 @@ SDK 中定义了 [`Compile` 项](/visualstudio/msbuild/common-msbuild-project-it
     </ItemGroup>
   </Target>
   ...
-  
+
 </Project>
 ```
 

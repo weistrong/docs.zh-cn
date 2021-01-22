@@ -1,13 +1,13 @@
 ---
 title: switch 表达式 - C# 参考
 description: 了解如何将 C# switch 表达式用于模式匹配和其他数据自检
-ms.date: 03/19/2020
-ms.openlocfilehash: 2249afc1ff1cc81e9ad423d910ebb95df8c787d4
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.date: 01/14/2021
+ms.openlocfilehash: 55fef8d351b178fd0ec23847e81e6c56eb1367b0
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916657"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536081"
 ---
 # <a name="switch-expression-c-reference"></a>switch 表达式（C# 参考）
 
@@ -48,10 +48,13 @@ switch expression arm 支持许多模式。 前面的示例使用常量模式。
 
 前面的示例添加了 `null` 模式，并将 `IEnumerable<T>` 类型模式更改为 `_` 模式。 `null` 模式提供 null 检查作为 switch expression arm。 该 arm 的表达式引发 <xref:System.ArgumentNullException>。 `_` 模式与先前的 arm 未匹配的所有输入相匹配。 它必须在 `null` 检查之后执行，否则将与 `null` 输入匹配。
 
-可以参阅 C# 语言规范建议，了解有关[递归模式](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression)的详细信息。
+## <a name="non-exhaustive-switch-expressions"></a>非详尽的 switch 表达式
 
-## <a name="see-also"></a>请参阅
+如果 switch 表达式的模式均未捕获参数，则运行时将引发异常。 在 .NET Core 3.0 及更高版本中，异常是 <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>。 在 .NET Framework 中，异常是 <xref:System.InvalidOperationException>。
 
+## <a name="see-also"></a>另请参阅
+
+- [关于递归模式的 C# 语言规范建议](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression)
 - [C# 参考](../index.md)
 - [C# 运算符和表达式](index.md)
 - [模式匹配](../../pattern-matching.md)

@@ -1,19 +1,19 @@
 ---
 title: 使用 Entity Framework Core 实现基础结构持久性层
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 探索使用 Entity Framework Core 实现基础结构持久性层的细节。
-ms.date: 01/30/2020
-ms.openlocfilehash: 878d4d64e92ca92fd2393d60d496f1c5671e7029
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 2c7b6dbe2f59a26d33a4842e74aed2b7588bd14d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172347"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188889"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>使用 Entity Framework Core 实现基础结构持久性层
 
 当使用 SQL Server、Oracle 或 PostgreSQL 等关系数据库时，推荐的方法是基于 Entity Framework (EF) 实现持久性层。 EF 支持 LINQ，并为模型提供强类型化的对象，且为数据库提供简化的持久性。
 
-Entity Framework 很长一段时期作为 .NET Framework 的一部分。 使用 .NET Core 时，还应使用 Entity Framework Core，它在 Windows 或 Linux 上的运行方式与在 .NET Core 上的相同。 EF Core 完全重写了 Entity Framework，采用更小的占用空间来实现，且性能上具有重大改进。
+Entity Framework 很长一段时期作为 .NET Framework 的一部分。 使用 .NET 时，还应使用 Entity Framework Core，它在 Windows 或 Linux 上的运行方式与在 .NET 上的相同。 EF Core 完全重写了 Entity Framework，采用更小的占用空间来实现，且性能上具有重大改进。
 
 ## <a name="introduction-to-entity-framework-core"></a>Entity Framework Core 简介
 

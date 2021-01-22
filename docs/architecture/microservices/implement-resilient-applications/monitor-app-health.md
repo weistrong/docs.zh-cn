@@ -1,13 +1,13 @@
 ---
 title: 运行状况监视
 description: 了解实现运行状况监视的一种方法。
-ms.date: 03/02/2020
-ms.openlocfilehash: 3e3e8ec41de1469f0c397d8d80d224dd2f7a2bd2
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.date: 01/13/2021
+ms.openlocfilehash: 4b85193c260b950b0c7a1c97ca5c83dfc87e5fb3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267888"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189058"
 ---
 # <a name="health-monitoring"></a>运行状况监视
 
@@ -31,10 +31,10 @@ ms.locfileid: "88267888"
 
 首先，需要定义每个微服务的正常运行状况的必备条件。 在该示例应用程序中，如果可通过 HTTP 访问微服务 API 并且可以使用与其相关的 SQL Server 数据库，可定义该微服务处于正常运行状态。
 
-在 .NET Core 3.1 中，使用内置 API，可以通过以下方式配置服务、为微服务及其依赖的 SQL Server 数据库添加运行状况检查：
+在 .NET 5 中，使用内置 API，可以通过以下方式配置服务、为微服务及其依赖的 SQL Server 数据库添加运行状况检查：
 
 ```csharp
-// Startup.cs from .NET Core 3.1 Web API sample
+// Startup.cs from .NET 5 Web API sample
 //
 public void ConfigureServices(IServiceCollection services)
 {
@@ -109,7 +109,7 @@ public class SqlConnectionHealthCheck : IHealthCheck
 最后，添加对 URL 路径 `/hc` 进行响应的中间件：
 
 ```csharp
-// Startup.cs from .NET Core 3.1 Web Api sample
+// Startup.cs from .NET 5 Web Api sample
 //
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
@@ -130,7 +130,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 eShopOnContainers 中的微服务依赖多个服务来执行其任务。 例如，eShopOnContainers 中的 `Catalog.API` 微服务依赖许多服务，例如，Azure Blob 存储、SQL Server 和 RabbitMQ。 因此，它使用 `AddCheck()` 方法添加了多个运行状况检查。 对于每个依赖服务，需要添加自定义 `IHealthCheck` 实现，用于定义其各自的运行状况状态。
 
-开放源代码项目 [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) 可通过为基于 .NET Core 3.1 构建的每个企业服务提供自定义运行状况检查实现，解决此问题。 每个运行状况检查都可作为单独的 NuGet 包，可轻松添加到项目。 eShopOnContainers 将其广泛用于其所有微服务。
+开放源代码项目 [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) 可通过为基于 .NET 5 构建的每个企业服务提供自定义运行状况检查实现，解决此问题。 每个运行状况检查都可作为单独的 NuGet 包，可轻松添加到项目。 eShopOnContainers 将其广泛用于其所有微服务。
 
 例如，在 `Catalog.API` 微服务中，添加了以下 NuGet 包：
 

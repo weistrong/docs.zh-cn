@@ -2,12 +2,12 @@
 title: dotnet pack 命令
 description: dotnet pack 命令可为 .NET 项目创建 NuGet 包。
 ms.date: 04/28/2020
-ms.openlocfilehash: 3ca7947b4ed9902b163f09a7b57696f304610cce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a9a634c358f5de4f28c3de06edc9a2b4d2eb8d57
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674796"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190073"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
@@ -46,7 +46,7 @@ dotnet pack -h|--help
 > [!NOTE]
 > 在某些情况下，无法执行隐式生成。 设置 `GeneratePackageOnBuild` 以避免生成目标和包目标之间的循环依赖关系时可能会发生这种情况。 如果存在锁定文件或其他问题，生成也可能失败。
 
-可向 `dotnet pack` 命令提供 MSBuild 属性，用于打包进程。 有关详细信息，请参阅 [NuGet 元数据属性](csproj.md#nuget-metadata-properties)和 [MSBuild 命令行引用](/visualstudio/msbuild/msbuild-command-line-reference)。 [示例](#examples)部分介绍了如何在不同的情况下使用 MSBuild -p 开关。
+可向 `dotnet pack` 命令提供 MSBuild 属性，用于打包进程。 有关详细信息，请参阅 [NuGet 包目标属性](/nuget/reference/msbuild-targets#pack-target)和 [MSBuild 命令行引用](/visualstudio/msbuild/msbuild-command-line-reference)。 [示例](#examples)部分介绍了如何在不同的情况下使用 MSBuild `-p` 开关。
 
 默认情况下，Web 项目不可打包。 若要覆盖默认行为，请将以下属性添加到 .csproj 文件中：
 
@@ -64,7 +64,7 @@ dotnet pack -h|--help
 
 `PROJECT | SOLUTION`
 
-  要打包的项目或解决方案。 它可能是 [csproj 文件](csproj.md)、vbproj 文件、fsproj 文件、解决方案文件或目录的路径。 如果未指定，此命令会搜索当前目录，以获取项目文件或解决方案文件。
+  要打包的项目或解决方案。 它可能是 csproj 文件、vbproj 文件、fsproj 文件、解决方案文件或目录的路径。 如果未指定，此命令会搜索当前目录，以获取项目文件或解决方案文件。
 
 ## <a name="options"></a>选项
 

@@ -1,19 +1,19 @@
 ---
 title: 使用 IHostedService 和 BackgroundService 类在微服务中实现后台任务
 description: 用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 了解使用 IHostedService 和 BackgroundService 在微服务 .NET Core 中实现后台任务的新选项。
-ms.date: 08/14/2020
-ms.openlocfilehash: 279f9e0093deafab51e63d72dce233c8e9466a55
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 26bc06c4a63cddcd32bf7da705f6258fab8eaafa
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173349"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188798"
 ---
 # <a name="implement-background-tasks-in-microservices-with-ihostedservice-and-the-backgroundservice-class"></a>使用 IHostedService 和 BackgroundService 类在微服务中实现后台任务
 
 任何应用程序中都可能需要使用后台任务和计划作业，无论应用程序是否遵循微服务体系结构模式均是如此。 使用微服务体系结构的区别在于，你可以在一个单独的用于托管的进程/容器中实现后台任务，以便根据需要对其纵向缩减/扩展。
 
-一般在 .NET Core 中，我们将这些类型的任务称为托管服务  ，因为它们是托管在主机/应用程序/微服务中的服务/逻辑。 请注意，在这种情况下，托管服务仅表示具有后台任务逻辑的类。
+一般在 .NET 中，我们将这些类型的任务称为托管服务，因为它们是托管在主机/应用程序/微服务中的服务/逻辑。 请注意，在这种情况下，托管服务仅表示具有后台任务逻辑的类。
 
 自 .NET Core 2.0 开始，该框架提供名为 <xref:Microsoft.Extensions.Hosting.IHostedService> 的新接口，有助于轻松实现托管服务。 基本理念是，可以注册多个后台任务（托管服务），在 Web 主机或主机运行时在后台运行，如图 6-26 所示。
 
@@ -45,7 +45,7 @@ SignalR 是使用托管服务的项目的一个示例，但也可以将其用于
 
 基本上，可以将所有这些操作卸载至实现 `IHostedService` 的后台任务。
 
-向 `WebHost` 或 `Host` 添加一个或多个 `IHostedServices` 的方式是，通过 ASP.NET Core `WebHost`（或 .NET Core 2.1 及更高版本中的 `Host`）中的 <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>  扩展方法对它们进行注册。 基本上，必须在常见的 `Startup` 类的 `ConfigureServices()` 方法中注册托管服务，如以下典型的 ASP.NET WebHost 中的代码所示。
+向 `WebHost` 或 `Host` 添加一个或多个 `IHostedServices` 的方式是，通过 ASP.NET Core `WebHost`（或 .NET Core 2.1 及更高版本中的 `Host`）中的 <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> 扩展方法对它们进行注册。 基本上，必须在常见的 `Startup` 类的 `ConfigureServices()` 方法中注册托管服务，如以下典型的 ASP.NET WebHost 中的代码所示。
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -54,8 +54,8 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
     // Register Hosted Services
     services.AddHostedService<GracePeriodManagerService>();
-    services.AddHostedService<MyHostedServiceB>();
-    services.AddHostedService<MyHostedServiceC>();
+    services.AddHostedService<MyHostedServiceB>();
+    services.AddHostedService<MyHostedServiceC>();
     //...
 }
 ```
@@ -68,7 +68,7 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
 ## <a name="the-ihostedservice-interface"></a>IHostedService 接口
 
-当注册 `IHostedService` 时，.NET Core 会在应用程序启动和停止期间分别调用 `IHostedService` 类型的 `StartAsync()` 和 `StopAsync()` 方法。 有关详细信息，请参阅 [IHostedService 接口](/aspnet/core/fundamentals/host/hosted-services?tabs=visual-studio&view=aspnetcore-3.1#ihostedservice-interface)
+当注册 `IHostedService` 时，.NET 会在应用程序启动和停止期间分别调用 `IHostedService` 类型的 `StartAsync()` 和 `StopAsync()` 方法。 有关详细信息，请参阅 [IHostedService 接口](/aspnet/core/fundamentals/host/hosted-services?tabs=visual-studio&view=aspnetcore-3.1#ihostedservice-interface)
 
 如你所想，可以创建 IHostedService 的多个实现，并在 `ConfigureService()` 方法中将它们注册到 DI 容器中，如前所示。 所有这些托管服务将随应用程序/微服务一起启动和停止。
 
@@ -76,13 +76,13 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 
 ## <a name="implementing-ihostedservice-with-a-custom-hosted-service-class-deriving-from-the-backgroundservice-base-class"></a>使用从 BackgroundService 基类派生的自定义托管服务类来实现 IHostedService
 
-可以从头开始创建自定义托管服务类并实现 `IHostedService`，因为在使用 .NET Core 2.0 时需执行这些操作。
+可以从头开始创建自定义托管服务类并实现 `IHostedService`，因为在使用 .NET Core 2.0 或更高版本时需执行这些操作。
 
 但是，由于大多数后台任务在取消令牌管理和其他典型操作方面都有类似的需求，因此有一个非常方便且可以从中进行派生的抽象基类，名为 `BackgroundService`（自 .NET Core 2.1 起提供）。
 
 该类提供设置后台任务所需的主要工作。
 
-下一个代码是在 .NET Core 中实现的抽象 BackgroundService 基类。
+下一个代码是在 .NET 中实现的抽象 BackgroundService 基类。
 
 ```csharp
 // Copyright (c) .NET Foundation. Licensed under the Apache License, Version 2.0.
@@ -210,7 +210,7 @@ WebHost.CreateDefaultBuilder(args)
 
 ### <a name="deployment-considerations-and-takeaways"></a>部署注意事项和要点
 
-请务必注意，部署 ASP.NET Core `WebHost` 或 .NET Core `Host` 的方式可能会影响最终解决方案。 例如，如果在 IIS 或常规 Azure 应用服务上部署 `WebHost`，由于应用池回收，主机可能会被关闭。 但是，如果将主机作为容器部署到 Kubernetes 等业务流程协调程序中，则可以控制主机的实时实例数量。 此外，还可以考虑云中专门针对这些方案的其他方法，例如 Azure Functions。 最后，如果需要服务一直处于运行状态并在 Windows Server 上部署，可以使用 Windows 服务。
+请务必注意，部署 ASP.NET Core `WebHost` 或 .NET `Host` 的方式可能会影响最终解决方案。 例如，如果在 IIS 或常规 Azure 应用服务上部署 `WebHost`，由于应用池回收，主机可能会被关闭。 但是，如果将主机作为容器部署到 Kubernetes 等业务流程协调程序中，则可以控制主机的实时实例数量。 此外，还可以考虑云中专门针对这些方案的其他方法，例如 Azure Functions。 最后，如果需要服务一直处于运行状态并在 Windows Server 上部署，可以使用 Windows 服务。
 
 但即使对于部署到应用池中的 `WebHost`，也存在如重新填充或刷新应用程序的内存中缓存这样的情况，这仍然适用。
 

@@ -2,12 +2,12 @@
 title: dotnet publish 命令
 description: dotnet publish 命令可将 .NET 项目或解决方案发布到目录。
 ms.date: 11/11/2020
-ms.openlocfilehash: 9b5d00816e2f4f9557280175e4b016fe79af0673
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 3918c0708e207157ac33dd1a8fdefb993a1d6741
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634424"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190060"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -72,8 +72,8 @@ dotnet publish -p:PublishProfile=FolderProfile
 - **`PROJECT|SOLUTION`**
 
   要发布的项目或解决方案。
-  
-  * `PROJECT` 是 [C#](csproj.md)、F# 或 Visual Basic 项目文件的路径和文件名，或包含 C#、F# 或 Visual Basic 项目文件的目录的路径。 如果未指定目录，则默认为当前目录。
+
+  * `PROJECT` 是 C#、F# 或 Visual Basic 项目文件的路径和文件名，或包含 C#、F# 或 Visual Basic 项目文件的目录的路径。 如果未指定目录，则默认为当前目录。
 
   * `SOLUTION` 是解决方案文件（扩展名为 .sln）的路径和文件名，或包含解决方案文件的目录的路径。 如果未指定目录，则默认为当前目录。 自 .NET Core 3.0 SDK 起可用。
 
@@ -132,16 +132,16 @@ dotnet publish -p:PublishProfile=FolderProfile
   ```
 
   - .NET Core 3.x SDK 和更高版本
-  
-    如果在发布项目时指定了相对路径，则生成的输出目录相对于当前工作目录，而不是项目文件位置。
 
-    如果在发布解决方案时指定了相对路径，则所有项目的所有输出都会进入相对于当前工作目录的指定文件夹中。 若要使发布输出进入每个项目的单独文件夹，请使用 msbuild `PublishDir` 属性（而不是 `--output` 选项）指定相对路径。 例如，`dotnet publish -p:PublishDir=.\publish` 将每个项目的发布输出发送到包含项目文件的文件夹下的 `publish` 文件夹中。
+    如果在发布项目时指定相对路径，则生成的输出目录相对于当前工作目录，而不是项目文件位置。
+
+    如果在发布解决方案时指定相对路径，则所有项目的所有输出都会进入相对于当前工作目录的指定文件夹中。 若要使发布输出进入每个项目的单独文件夹，请使用 msbuild `PublishDir` 属性（而不是 `--output` 选项）指定相对路径。 例如，`dotnet publish -p:PublishDir=.\publish` 将每个项目的发布输出发送到包含项目文件的文件夹下的 `publish` 文件夹中。
 
   - .NET Core 2.x SDK
-  
-    如果在发布项目时指定了相对路径，则生成的输出目录相对于项目文件位置，而不是当前工作目录。
 
-    如果在发布解决方案时指定了相对路径，则每个项目的输出会进入相对于项目文件位置的单独文件夹中。 如果在发布解决方案时指定了绝对路径，则所有项目的所有发布输出都会进入指定文件夹中。
+    如果在发布项目时指定相对路径，则生成的输出目录相对于项目文件位置，而不是当前工作目录。
+
+    如果在发布解决方案时指定相对路径，则每个项目的输出会进入相对于项目文件位置的单独文件夹中。 如果在发布解决方案时指定绝对路径，则所有项目的所有发布输出都会进入指定文件夹中。
 
 - **`-p:PublishReadyToRun=true`**
 

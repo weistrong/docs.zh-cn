@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -deterministic compiler option [C#]
 - deterministic compiler option [C#]
 - /deterministic compiler option [C#]
-ms.openlocfilehash: 9d0bcc2957e5a666c21cdc2ce61e74fc90fe3530
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: d64f4d4b0d4e9b5ed2cc1ee40662dc669fc6660d
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125821"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235321"
 ---
 # <a name="-deterministic"></a>-deterministic
 
@@ -27,7 +27,7 @@ ms.locfileid: "89125821"
 
 ## <a name="remarks"></a>备注
 
-默认情况下，一组给定输入的编译器输出是唯一的，因为编译器会添加时间戳和随意数字生成的 GUID。 使用 `-deterministic` 选项生成确定性的程序集，只要输入保持不变，该程序集的二进制内容在整个编译中都是相同的  。
+默认情况下，一组给定输入的编译器输出是唯一的，因为编译器会添加时间戳和随意数字生成的 MVID。 使用 `-deterministic` 选项生成确定性的程序集，只要输入保持不变，该程序集的二进制内容在整个编译中都是相同的  。 在此类生成中，时间戳和 MVID 字段会被替换为从所有编译输入的哈希派生的值。
 
 出于确定性目的，编译器会考虑以下输入：
 

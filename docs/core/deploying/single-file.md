@@ -4,12 +4,12 @@ description: 了解单文件应用程序的本质以及应考虑使用此应用�
 author: lakshanf
 ms.author: lakshanf
 ms.date: 12/17/2020
-ms.openlocfilehash: e2d2c9ed4c28d11a77e4f840602982a36cf1c80c
-ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
+ms.openlocfilehash: 10ffc947f6a3adcf2889a03edd2616007ce236f3
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97678153"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536133"
 ---
 # <a name="single-file-deployment-and-executable"></a>单文件部署和可执行文件
 
@@ -56,6 +56,8 @@ ms.locfileid: "97678153"
 ## <a name="other-considerations"></a>其他注意事项
 
 默认情况下，单文件不捆绑本机库。 在 Linux 上，我们将运行时预链接到捆绑包中，并且仅将应用程序本机库部署到单文件应用所在的目录中。 在 Windows 上，我们仅预链接托管代码，而且运行时库和应用程序本机库都部署到单文件应用所在的目录中。 目的是确保提供良好的调试体验，这要求将本机文件从单文件中排除。 可选择设置标志 `IncludeNativeLibrariesForSelfExtract`，从而在单文件捆绑包中包含本机库，但在运行单文件应用程序时，这些文件将被提取到客户端计算机上的临时目录中。
+
+指定 `IncludeAllContentForSelfExtract` 将在运行可执行文件之前提取所有文件。 这将保留原始 .NET Core 单文件部署行为。
 
 单文件应用程序旁边将具有所有相关的 PDB 文件，并且默认情况下不会绑定。 如果要在生成的项目的程序集内包含 PDB，请将 `DebugType` 设置为 `embedded`，如[下方](#include-pdb-files-inside-the-bundle)所详述。
 

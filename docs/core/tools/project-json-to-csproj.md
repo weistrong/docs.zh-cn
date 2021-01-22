@@ -3,12 +3,12 @@ title: 比较 project.json 和 csproj
 description: 查看 project.json 和 csproj 元素之间的映射。
 author: natemcmaster
 ms.date: 03/13/2017
-ms.openlocfilehash: 7de9f623a57a6a094debd3e018edc1560d837fc2
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 3c9b2f266c2fcc3acdfbe40e19509edde20eec93
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970871"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190177"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>project.json 和 csproj 属性之间的映射
 
@@ -253,6 +253,9 @@ And it's really great!</Description>
 </ItemGroup>
 ```
 
+> [!NOTE]
+> `PackageTargetFallback` 属性已弃用。 改为使用 [AssetTargetFallback](../project-sdk/msbuild-props.md#assettargetfallback)。
+
 ### <a name="dependency-type"></a>依赖项类型
 
 #### <a name="type-project"></a>类型：项目
@@ -356,7 +359,9 @@ csproj 中没有等效项。
 ```
 
 > [!NOTE]
-> csproj 中不支持工具上的 `imports`。 需要导入的工具无法用于新的 `Microsoft.NET.Sdk`。
+>
+> - csproj 中不支持工具上的 `imports`。 需要导入的工具无法用于 `Microsoft.NET.Sdk`。
+> - 已弃用 `DotNetCliToolReference`，改用[本地工具](global-tools.md#install-a-local-tool)。
 
 ## <a name="buildoptions"></a>buildOptions
 
@@ -609,7 +614,7 @@ MSBuild 中没有 `owners` 元素的等效项。 对于 `summary`，可以使用
   <EmbeddedResource Include="..\Shared\*.resx" />
   <Content Include="Views\**\*" PackagePath="%(Identity)" />
   <None Include="some/path/in/project.txt" Pack="true" PackagePath="in/package.txt" />
-  
+
   <None Include="notes.txt" CopyToOutputDirectory="Always" />
   <!-- CopyToOutputDirectory = { Always, PreserveNewest, Never } -->
 
@@ -674,3 +679,4 @@ MSBuild 中没有 `owners` 元素的等效项。 对于 `summary`，可以使用
 ## <a name="see-also"></a>请参阅
 
 - [CLI 中更改的简要概述](cli-msbuild-architecture.md)
+- [.NET SDK 项目的 MSBuild 引用](../project-sdk/msbuild-props.md)

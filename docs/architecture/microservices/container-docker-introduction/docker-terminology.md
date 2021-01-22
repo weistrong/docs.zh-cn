@@ -1,13 +1,13 @@
 ---
 title: Docker 术语
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | Docker 术语
-ms.date: 01/30/2020
-ms.openlocfilehash: b30ea26ee174caf3484931945c832c72a1acf93d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/13/2021
+ms.openlocfilehash: 567635060502ec3b2293f5eee6dd8dfe4d934ff7
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707759"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189338"
 ---
 # <a name="docker-terminology"></a>Docker 术语
 
@@ -35,7 +35,7 @@ docker build
 
 **注册表**：提供存储库访问权限的服务。 大多数公共映像的默认注册表是 [Docker 中心](https://hub.docker.com/)（归作为组织的 Docker 所有）。 注册表通常包含来自多个团队的存储库。 公司通常使用私有注册表来存储和管理其创建的映像。 另一个示例是 Azure 容器注册表。
 
-**多体系结构映像**：对于多体系结构，此功能可根据运行 Docker 的平台简化选择适当映像的过程。 例如，当 Dockerfile 从注册表中请求基础映像 FROM mcr.microsoft.com/dotnet/sdk:3.1 时，它实际上获取 3.1-sdk-nanoserver-1909、3.1-sdk-nanoserver-1809 或 3.1-sdk-buster-slim，具体取决于运行 Docker 的操作系统和版本   。
+**多体系结构映像**：对于多体系结构，此功能可根据运行 Docker 的平台简化选择适当映像的过程。 例如，当 Dockerfile 从注册表中请求基础映像 mcr.microsoft.com/dotnet/sdk:5.0 时，它实际上获取 5.0-nanoserver-1909、5.0-nanoserver-1809 或 5.0-buster-slim，具体取决于运行 Docker 的操作系统和版本   。
 
 **Docker 中心**：上传并使用映像的公共注册表。 Docker 中心提供 Docker 映像托管、公共或私有注册表，生成触发器和 Web 挂钩，以及与 GitHub 和 Bitbucket 集成。
 
@@ -43,7 +43,7 @@ docker build
 
 **Docker 受信任注册表 (DTR)** ：Docker 注册表服务（来自 Docker），可以安装在本地，因此它存在于组织的数据中心和网络中。 这对于应该在企业内部管理的私有映像来说很方便。 Docker 受信任注册表是 Docker 数据中心产品的一部分。 有关详细信息，请参阅 [Docker 受信任注册表 (DTR)](https://docs.docker.com/docker-trusted-registry/overview/)。
 
-**Docker 社区版 (CE)** ：适用于 Windows 和 macOS、用于在本地生成、运行和测试容器的开发工具。 适用于 Windows 的 Docker CE 为 Linux 和 Windows 容器提供了开发环境。 Windows 上的 Linux Docker 主机基于 [Hyper-V](https://www.microsoft.com/cloud-platform/server-virtualization) 虚拟机。 适用于 Windows 容器的主机直接基于 Windows。 适用于 Mac 的 Docker CE 基于 Apple 虚拟机监控程序框架和 [xhyve 虚拟机监控程序](https://github.com/mist64/xhyve)，在 Mac OS X 上提供了 Linux Docker 主机虚拟机。适用于 Windows 和 Mac 的 Docker CE 替换了 Docker 工具箱，后者基于 Oracle VirtualBox。
+**Docker 社区版 (CE)** ：适用于 Windows 和 macOS、用于在本地生成、运行和测试容器的开发工具。 适用于 Windows 的 Docker CE 为 Linux 和 Windows 容器提供了开发环境。 Windows 上的 Linux Docker 主机基于 [Hyper-V](https://www.microsoft.com/cloud-platform/server-virtualization) 虚拟机。 适用于 Windows 容器的主机直接基于 Windows。 适用于 Mac 的 Docker CE 基于 Apple 虚拟机监控程序框架和 [xhyve 虚拟机监控程序](https://github.com/mist64/xhyve)，在 macOS X 上提供了 Linux Docker 主机虚拟机。适用于 Windows 和 Mac 的 Docker CE 替换了 Docker 工具箱，后者基于 Oracle VirtualBox。
 
 **Docker 企业版 (EE)** ：适用于 Linux 和 Windows 开发的 Docker 工具企业级版本。
 

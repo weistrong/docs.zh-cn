@@ -1,13 +1,13 @@
 ---
 title: 使用作为容器运行的数据库服务器
 description: 了解使用仅作为开发容器运行的数据库服务器的重要性。 从不用于生产。
-ms.date: 01/30/2020
-ms.openlocfilehash: 38f77e195b184d57dcad5904674a0025ef6c2bd8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 01/13/2021
+ms.openlocfilehash: 1292bf37e3baaeb6284f6fba15b4bc7c9c17b4a7
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539394"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188733"
 ---
 # <a name="use-a-database-server-running-as-a-container"></a>使用作为容器运行的数据库服务器
 
@@ -270,7 +270,7 @@ Redis 映像包含公开：6379（Redis 使用的端口），因此链接容器�
       - "6379"
 ```
 
-docker-compose.yml 中的此代码基于 redis 映像定义了一个名为 `basketdata` 的容器，并在内部发布端口 6379。 这意味着，只能从 Docker 主机中运行的其他容器访问它。
+docker-compose.yml 中的此代码基于 redis 映像定义了一个名为 `basketdata` 的容器，并在内部发布端口 6379。 此配置意味着只能从 Docker 主机中运行的其他容器访问它。
 
 最后，在 docker-compose.override.yml  文件中，eShopOnContainers 示例的 `basket-api` 微服务定义了用于该 Redis 容器的连接字符串：
 

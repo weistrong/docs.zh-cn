@@ -4,12 +4,12 @@ description: .NET SDK 可以理解的 MSBuild 属性和项的引用。
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: e7deb8c32fd01452524122e41f758ab037020ee4
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: e35ccc3540756a4cb7905d5864caf65cded4362b
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970702"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189970"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>.NET SDK 项目的 MSBuild 引用
 
@@ -79,15 +79,43 @@ ms.locfileid: "97970702"
 </PropertyGroup>
 ```
 
-## <a name="publish-properties-and-items"></a>发布属性和项
+## <a name="publish-properties-items-and-metadata"></a>发布属性、项和元数据
 
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [CopyToPublishDirectory](#copytopublishdirectory)
+- [LinkBase](#linkbase)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
+
+### <a name="copytopublishdirectory"></a>CopyToPublishDirectory
+
+MSBuild 项上的 `CopyToPublishDirectory` 元数据控制何时将项复制到发布目录。 允许的值为 `PreserveNewest`（仅在项已更改时复制项）、`Always`（始终复制项）和 `Never`（从不复制项）。 从性能角度来看，`PreserveNewest` 更为可取，因为它可实现增量生成。
+
+```xml
+<ItemGroup>
+  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+```
+
+### <a name="linkbase"></a>LinkBase
+
+对于项目目录及其子目录之外的项，发布目标使用项的[链接元数据](/visualstudio/msbuild/common-msbuild-item-metadata)来确定要将项复制到的位置。 `Link` 还将确定项目树外的项在 Visual Studio 的“解决方案资源管理器”窗口中的显示方式。
+
+如果没有为项目圆锥之外的项指定 `Link`，则默认为 `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`。 通过 `LinkBase`，可以为项目圆锥之外的项指定一个合理的基础文件夹。 基础文件夹下的文件夹层次结构通过 `RecursiveDir` 保留。 如果未指定 `LinkBase`，则将从 `Link` 路径中省略它。
+
+```xml
+<ItemGroup>
+  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
+</ItemGroup>
+```
+
+下图显示通过上一个项 `Include` glob 包含的文件在解决方案资源管理器中的显示方式。
+
+:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="解决方案资源管理器，显示具有 LinkBase 元数据的项。":::
 
 ### <a name="appendtargetframeworktooutputpath"></a>AppendTargetFrameworkToOutputPath
 
@@ -478,7 +506,7 @@ ms.locfileid: "97970702"
 
 ### <a name="assettargetfallback"></a>AssetTargetFallback
 
-使用 `AssetTargetFallback` 属性，可以为项目引用和 NuGet 包指定其他兼容的框架版本。 例如，如果使用 `PackageReference` 指定包依赖项，但该包不包含与项目的 `TargetFramework` 兼容的资源，则可使用 `AssetTargetFallback` 属性。 使用 `AssetTargetFallback` 中指定的每个目标框架重新检查引用包的兼容性。
+使用 `AssetTargetFallback` 属性，可以为项目引用和 NuGet 包指定其他兼容的框架版本。 例如，如果使用 `PackageReference` 指定包依赖项，但该包不包含与项目的 `TargetFramework` 兼容的资源，则可使用 `AssetTargetFallback` 属性。 使用 `AssetTargetFallback` 中指定的每个目标框架重新检查引用包的兼容性。 此属性替换已弃用的属性 `PackageTargetFallback`。
 
 可以将 `AssetTargetFallback` 属性设置为一个或多个[目标框架版本](../../standard/frameworks.md#supported-target-frameworks)。
 
@@ -504,7 +532,7 @@ ms.locfileid: "97970702"
 
 `PackageReference` 项定义了对 NuGet 包的引用。
 
-`Include` 属性指定包 ID。 `Version` 特性指定版本或版本范围。 若要了解如何指定最低版本、最高版本、范围或完全匹配，请参阅[版本范围](/nuget/concepts/package-versioning#version-ranges)。 还可以将下面的元数据添加到项目引用中：`IncludeAssets`、`ExcludeAssets` 和 `PrivateAssets`。
+`Include` 属性指定包 ID。 `Version` 特性指定版本或版本范围。 若要了解如何指定最低版本、最高版本、范围或完全匹配，请参阅[版本范围](/nuget/concepts/package-versioning#version-ranges)。 还可以将[资产特性](#asset-attributes)添加到包引用中。
 
 以下示例中的项目文件片段引用 [System.Runtime](https://www.nuget.org/packages/System.Runtime/) 包。
 
@@ -515,6 +543,30 @@ ms.locfileid: "97970702"
 ```
 
 有关详细信息，请参阅[项目文件中的包引用](/nuget/consume-packages/package-references-in-project-files)。
+
+#### <a name="asset-attributes"></a>资产特性
+
+可以将 `IncludeAssets`、`ExcludeAssets` 和 `PrivateAssets` 元数据添加到包引用中。
+
+| 属性 | 描述 |
+| - | - |
+| `IncludeAssets` | 指定应使用 `<PackageReference>` 指定的包中的哪些资产。 默认情况下，包含所有包资产。 |
+| `ExcludeAssets`| 指定不应使用 `<PackageReference>` 指定的包中的哪些资产。 |
+| `PrivateAssets` | 指定应使用 `<PackageReference>` 指定的包中的哪些资产，但不得将这些资产传递到下一个项目。 不存在此特性时，`Analyzers`、`Build` 和 `ContentFiles` 资产默认为私有。 |
+
+这些属性可以包含以下一个或多个项，如果列出多个项，则用分号 `;` 进行分隔：
+
+- `Compile` - 可对 lib 文件夹的内容进行编译  。
+- `Runtime` - 分发 runtime 文件夹的内容  。
+- `ContentFiles` - 使用 *contentfiles* 文件夹的内容。
+- `Build` - 使用 build 文件夹中的属性/目标  。
+- `Native` - 将本机资产内容复制到 output 文件夹  以供运行时使用。
+- `Analyzers` - 使用分析器。
+
+此属性也可以包含：
+
+- `None` - 不使用任何资产。
+- `All` - 使用所有资产。
 
 ### <a name="projectreference"></a>ProjectReference
 

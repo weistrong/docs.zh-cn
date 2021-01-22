@@ -3,12 +3,12 @@ title: 卸载工具
 description: .NET Core 卸载工具概述，它是一种可实现 .NET Core SDK 和运行时的受控清理的引导式工具。
 author: sfoslund
 ms.date: 05/27/2020
-ms.openlocfilehash: dcfa12a3ec5fe0e8a29c5897ee4c71bfc7352eda
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ed43b4ec8437ae0ccaf5f1234758dda9f16bd51e
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84590794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235347"
 ---
 # <a name="net-core-uninstall-tool"></a>.NET Core 卸载工具
 
@@ -23,7 +23,7 @@ ms.locfileid: "84590794"
 
 在 macOS 上，该工具只能卸载位于 /usr/local/share/dotnet 文件夹中的 SDK 和运行时。
 
-由于这些限制，该工具可能无法卸载计算机上的所有 .NET Core SDK 和运行时。 可以使用 `dotnet --info` 命令来查找所有安装的 .NET Core SDK 和运行时，包括此工具无法删除的 SDK 和运行时。 `dotnet-core-uninstall list` 命令显示可以通过该工具卸载的 SDK。
+由于这些限制，该工具可能无法卸载计算机上的所有 .NET Core SDK 和运行时。 可以使用 `dotnet --info` 命令来查找所有安装的 .NET Core SDK 和运行时，包括此工具无法删除的 SDK 和运行时。 `dotnet-core-uninstall list` 命令显示可以通过该工具卸载的 SDK。 版本 1.2 及更高版本可以卸载版本 5.0 或更早版本的 SDK 和运行时，而以前版本的工具可以卸载 3.1 及更早版本。
 
 ## <a name="install-the-tool"></a>安装工具
 
@@ -295,7 +295,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 ### <a name="step-3---uninstall-net-core-sdks-and-runtimes"></a>步骤 3 - 卸载 .NET Core SDK 和运行时
 
-`dotnet-core-uninstall remove` 卸载由选项集合指定的 .NET Core SDK 和运行时。 该工具不能用于卸载版本 5.0 或更高版本的 SDK 和运行时。
+`dotnet-core-uninstall remove` 卸载由选项集合指定的 .NET Core SDK 和运行时。 版本 1.2 及更高版本可以卸载版本 5.0 或更早版本的 SDK 和运行时，而以前版本的工具可以卸载 3.1 及更早版本。
 
 由于此工具具有破坏性行为，因此强烈建议在运行 remove 命令之前执行试运行。 使用 `remove` 命令时，试运行将显示要删除的 .NET Core SDK 和运行时。 请参阅[是否应删除版本？](../install/remove-runtime-sdk-versions.md#should-i-remove-a-version)了解哪些 SDK 和运行时可以安全删除。
 

@@ -2,12 +2,12 @@
 title: dotnet-trace 诊断工具 - .NET CLI
 description: 了解如何通过使用 .NET EventPipe 来安装和使用 dotnet-trace CLI 工具，以在没有本机探查器的情况下收集运行中的进程的 .NET 跟踪。
 ms.date: 11/17/2020
-ms.openlocfilehash: a3b5748cb2a6c2060971fbad0d81ade00dc83087
-ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
+ms.openlocfilehash: 93698882e94f58eda84abebc277e1eacfe22a3da
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753661"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189694"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>dotnet-trace 性能分析实用工具
 
@@ -34,6 +34,9 @@ ms.locfileid: "97753661"
   | Windows | [x86](https://aka.ms/dotnet-trace/win-x86) \| [x64](https://aka.ms/dotnet-trace/win-x64) \| [arm](https://aka.ms/dotnet-trace/win-arm) \| [arm-x64](https://aka.ms/dotnet-trace/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-trace/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-trace/linux-x64) \| [arm](https://aka.ms/dotnet-trace/linux-arm) \| [arm64](https://aka.ms/dotnet-trace/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-trace/linux-musl-arm64) |
+
+> [!NOTE]
+> 若要在 x86 应用上使用 `dotnet-trace`，需要使用相应的 x86 版本的工具。
 
 ## <a name="synopsis"></a>摘要
 
@@ -95,7 +98,47 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--clrevents <clrevents>`**
 
-  要发出的 CLR 运行时事件的列表。
+  要启用的 CLR 运行时提供程序关键字列表，以 `+` 符号分隔。 这是一个简单映射，支持通过字符串别名而不是其十六进制值指定事件关键字。 例如，`dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` 请求与 `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational` 相同的事件集。 下表显示可用关键字的列表：
+
+  | 关键字字符串别名 | 关键字十六进制值 |
+  | ------------ | ------------------- |
+  | `gc` | `0x1` |
+  | `gchandle` | `0x2` |
+  | `fusion` | `0x4` |
+  | `loader` | `0x8` |
+  | `jit` | `0x10` |
+  | `ngen` | `0x20` |
+  | `startenumeration` | `0x40` |
+  | `endenumeration` | `0x80` |
+  | `security` | `0x400` |
+  | `appdomainresourcemanagement` | `0x800` |
+  | `jittracing` | `0x1000` |
+  | `interop` | `0x2000` |
+  | `contention` | `0x4000` |
+  | `exception` | `0x8000` |
+  | `threading` | `0x10000` |
+  | `jittedmethodiltonativemap` | `0x20000` |
+  | `overrideandsuppressngenevents` | `0x40000` |
+  | `type` | `0x80000` |
+  | `gcheapdump` | `0x100000` |
+  | `gcsampledobjectallocationhigh` | `0x200000` |
+  | `gcheapsurvivalandmovement` | `0x400000` |
+  | `gcheapcollect` | `0x800000` |
+  | `gcheapandtypenames` | `0x1000000` |
+  | `gcsampledobjectallocationlow` | `0x2000000` |
+  | `perftrack` | `0x20000000` |
+  | `stack` | `0x40000000` |
+  | `threadtransfer` | `0x80000000` |
+  | `debugger` | `0x100000000` |
+  | `monitoring` | `0x200000000` |
+  | `codesymbols` | `0x400000000` |
+  | `eventsource` | `0x800000000` |
+  | `compilation` | `0x1000000000` |
+  | `compilationdiagnostic` | `0x2000000000` |
+  | `methoddiagnostic` | `0x4000000000` |
+  | `typediagnostic` | `0x8000000000` |
+
+  有关 CLR 提供程序的详细信息，请参阅 [.NET 运行时提供程序参考文档](../../fundamentals/diagnostics/runtime-events.md)。
 
 - **`--format {Chromium|NetTrace|Speedscope}`**
 
@@ -146,6 +189,12 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > [!NOTE]
 > 对于大型应用程序，停止跟踪可能需要较长时间（可达数分钟）。 运行时需要为跟踪中捕获的所有托管代码发送类型缓存。
+
+> [!NOTE]
+> 在 Linux 和 macOS 上，此命令需要目标应用程序和 `dotnet-trace` 使用同一 `TMPDIR` 环境变量。 否则，该命令将超时。
+
+> [!NOTE]
+> 若要使用 `dotnet-trace` 收集跟踪，需要以与运行目标进程的用户相同的用户身份或以根身份运行。 否则，该工具将无法与目标进程建立连接。
 
 ## <a name="dotnet-trace-convert"></a>dotnet-trace convert
 

@@ -1,20 +1,21 @@
 ---
 title: .NET Framework 中辅助功能的新增功能
+titleSuffix: ''
 description: 请参阅从 .NET Framework 4.7.1 开始的 .NET 辅助功能的新增功能。 利用辅助功能，应用可以为辅助技术用户提供正确的体验。
-ms.date: 04/18/2019
+ms.date: 01/05/2021
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - what's new [.NET Framework]
-ms.openlocfilehash: d204bea7f5ec1ed0c25b7b2dedd04d61c7f3e93d
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: c2ebaed8bf347eb8d8764f4bdf76dcc33db86bad
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679542"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536159"
 ---
-# <a name="whats-new-in-accessibility-in-the-net-framework"></a>.NET Framework 中辅助功能的新增功能
+# <a name="whats-new-in-accessibility-in-net-framework"></a>.NET Framework 中辅助功能的新增功能
 
 .NET Framework 旨在让用户更轻松地使用应用程序。 辅助功能使应用程序能够为辅助技术用户提供最佳体验。 从 .NET Framework 4.7.1 开始，.NET Framework 包括大量辅助功能改进，使开发人员能够创建易于访问的应用程序。
 
@@ -27,10 +28,11 @@ ms.locfileid: "90679542"
 |.NET Framework 4.7.1|"Switch.UseLegacyAccessibilityFeatures"|
 |.NET Framework 4.7.2|"Switch.UseLegacyAccessibilityFeatures.2"|
 |.NET Framework 4.8|"Switch.UseLegacyAccessibilityFeatures.3"|
+|.NET Framework 4.8 的 2020 年 8 月 11 日 KB4569746 累积更新|"Switch.UseLegacyAccessibilityFeatures.4"|
 
 ### <a name="taking-advantage-of-accessibility-enhancements"></a>利用辅助功能改进
 
-对于面向 .NET Framework 4.7.1 或更高版本的应用程序，新的辅助功能默认情况下处于启用状态。 此外，对于面向 .NET Framework 早期版本，但在 .NET Framework 4.7.1 或更高版本上运行的应用程序，可通过将开关添加到应用程序配置文件 [`<runtime>`](../configure-apps/file-schema/runtime/index.md) 部分中的 [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) 元素并将其值设为 `false` 来选择弃用旧辅助功能行为（因而利用辅助功能改进）。 以下代码演示如何选择使用 .NET Framework 4.7.1 中引入的辅助功能改进：
+对于面向 .NET Framework 4.7.1 或更高版本的应用程序，新的辅助功能默认情况下处于启用状态。 此外，对于面向 .NET Framework 早期版本，但在 .NET Framework 4.7.1 或更高版本上运行的应用程序，可通过将开关添加到应用程序配置文件 [`<runtime>`](../configure-apps/file-schema/runtime/index.md) 部分中的 [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) 元素并将其值设为 `false` 来选择弃用旧辅助功能行为（因而利用辅助功能改进）。 以下代码片段演示如何选择使用 .NET Framework 4.7.1 中推出的辅助功能改进：
 
 ```xml
 <runtime>
@@ -39,7 +41,7 @@ ms.locfileid: "90679542"
 </runtime>
 ```
 
-如果选择使用更高的 .NET Framework 版本中的辅助功能，还必须显式选择使用更低 .NET Framework 版本的功能。 通过配置应用以利用 .NET Framework 4.7.1 和 4.7.2 中的辅助功能改进需要以下 [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) 元素：
+如果选择使用更高的 .NET Framework 版本中的辅助功能，还必须显式选择使用更低版本的功能。 若要配置应用以利用 .NET Framework 4.7.1 和 4.7.2 中的辅助功能改进，请添加以下 [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) 元素：
 
 ```xml
 <runtime>
@@ -48,12 +50,12 @@ ms.locfileid: "90679542"
 </runtime>
 ```
 
-通过配置应用以利用 .NET Framework 4.7.1、4.7.2 和 4.8 中的辅助功能改进需要以下 [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) 元素：
+若要配置应用以利用 .NET Framework 4.7.1、4.7.2、4.8 和 .NET Framework 4.8 的 2020 年 8 月累积更新中的辅助功能改进，请添加以下 [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) 元素：
 
 ```xml
 <runtime>
     <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true|false;key2=true|false  -->
-    <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" />
+    <AppContextSwitchOverrides value=Switch.UseLegacyAccessibilityFeatures=false|Switch.UseLegacyAccessibilityFeatures.2=false|Switch.UseLegacyAccessibilityFeatures.3=false|Switch.UseLegacyAccessibilityFeatures.4=false"/>
 </runtime>
 ```
 
@@ -67,6 +69,20 @@ ms.locfileid: "90679542"
     <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures.2=true" />
 </runtime>
 ```
+
+## <a name="whats-new-in-accessibility-in-the-august-11-2020-cumulative-update-for-net-framework-48"></a>.NET Framework 4.8 的 2020 年 8 月 11 日累积更新中的新增辅助功能
+
+.NET Framework 4.8 的 2020 年 8 月 11 日 KB4569746 累积更新包括 Windows 窗体中的新增辅助功能：
+
+- 解决屏幕阅读器播报 `PropertyGrid` 控制项和类别的展开/折叠状态的问题。
+
+- 更新 `PropertyGrid` 控件及其内部元素的可访问模式。
+
+- 更新 `PropertyGrid` 控件内部元素的可访问名称，使屏幕阅读器可正确播报这些名称。
+
+- 解决 `PropertyGridView` 控件的边框可访问属性的问题。
+
+- 使屏幕阅读器可以正确地播报 `DataGridView` 组合框单元格的展开/折叠状态。
 
 ## <a name="whats-new-in-accessibility-in-net-framework-48"></a>.NET Framework 4.8 中辅助功能的新增功能
 
@@ -445,8 +461,8 @@ Windows 10 引入了两个新的 UIAutomation 属性（`SizeOfSet` 和 `Position
 
 - <xref:System.Windows.Automation.AutomationLiveSetting?displayProperty=nameWithType> 枚举，用于定义以下可能的 LiveSetting 值：
 
-  - <xref:System.Windows.Automation.AutomationLiveSetting.Off?displayProperty=nameWithType>。 如果活动区域的内容已更改，则该元素不会发送通知。
-  - <xref:System.Windows.Automation.AutomationLiveSetting.Polite?displayProperty=nameWithType>。 如果活动区域的内容已更改，则该元素将发送非中断通知。
+  - <xref:System.Windows.Automation.AutomationLiveSetting.Off?displayProperty=nameWithType>. 如果活动区域的内容已更改，则该元素不会发送通知。
+  - <xref:System.Windows.Automation.AutomationLiveSetting.Polite?displayProperty=nameWithType>. 如果活动区域的内容已更改，则该元素将发送非中断通知。
 
   - <xref:System.Windows.Automation.AutomationLiveSetting.Assertive?displayProperty=nameWithType>. 如果活动区域的内容已更改，则该元素将发送中断通知。
 

@@ -1,17 +1,17 @@
 ---
 title: 订阅事件
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 了解发布和订阅集成事件的详细信息。
-ms.date: 01/30/2020
-ms.openlocfilehash: 838aaebbd390a66142c2bcdfa2f3b0ee4c32b7f0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: c9146ddbdfbf00e743108c07af1f74d7690a17a8
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172204"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188720"
 ---
 # <a name="subscribing-to-events"></a>订阅事件
 
-使用事件总线的第一步是为微服务订阅它们想要接收的事件。 该操作应在接收者微服务中完成。
+使用事件总线的第一步是为微服务订阅它们想要接收的事件。 此功能应在接收者微服务中完成。
 
 下面的简单代码展示了每个接收者微服务在启动时（即，在 `Startup` 类中）必须实现哪些内容，才能订阅所需的事件。 在此示例中，`basket-api` 微服务需要订阅 `ProductPriceChangedIntegrationEvent` 和 `OrderStartedIntegrationEvent` 消息。
 
@@ -32,7 +32,7 @@ eventBus.Subscribe<OrderStartedIntegrationEvent,
 
 ## <a name="publishing-events-through-the-event-bus"></a>通过事件总线发布事件
 
-最后，消息发送者（源微服务）使用类似于以下示例的代码发布集成事件。 （这是一个简化的示例，不考虑原子性。）每当必须跨多个微服务传播事件时（通常就在从源微服务提交数据或事务之后），都会实现类似的代码。
+最后，消息发送者（源微服务）使用类似于以下示例的代码发布集成事件。 （此方法是一个简化的示例，不考虑原子性。）每当必须跨多个微服务传播事件时（通常就在从源微服务提交数据或事务之后），都会实现类似的代码。
 
 首先，在控制器构造函数中注入事件总线实现对象（基于 RabbitMQ 或基于服务总线），如以下代码所示：
 
@@ -91,25 +91,25 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
 
 ### <a name="designing-atomicity-and-resiliency-when-publishing-to-the-event-bus"></a>设计发布到事件总线时的原子性和复原能力
 
-如果通过分布式消息传递系统（如事件总线）发布集成事件，在以原子方式更新原始数据库和发布事件时会出现问题（即，两个操作都已完成，或者都没有完成）。 例如，在前面所示的简化示例中，代码在产品价格发生变动时向数据库提交数据，然后发布 ProductPriceChangedIntegrationEvent 消息。 最开始，这两个操作看起来可能必须以原子方式执行。 但是，如果像在 [Microsoft 消息队列 (MSMQ)](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) 等早期系统中那样，使用涉及数据库和消息代理的分布式事务，那么根据 [CAP 定理](https://www.quora.com/What-Is-CAP-Theorem-1)所描述的原因，并不推荐这样做。
+如果通过分布式消息传递系统（如事件总线）发布集成事件，在以原子方式更新原始数据库和发布事件时会出现问题（即，两个操作都已完成，或者都没有完成）。 例如，在前面所示的简化示例中，代码在产品价格发生变动时向数据库提交数据，然后发布 ProductPriceChangedIntegrationEvent 消息。 最开始，这两个操作看起来可能必须以原子方式执行。 但是，如果像在 [Microsoft 消息队列 (MSMQ)](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) 等早期系统中那样，使用涉及数据库和消息代理的分布式事务，那么根据 [CAP 定理](https://www.quora.com/What-Is-CAP-Theorem-1)所描述的原因，不建议使用此方法。
 
 微服务主要用于构建可缩放且高度可用的系统。 简单来说，CAP 定理认为你无法构建一个兼具  持续可用性、强一致性和分区容错性的（分布式）数据库（或拥有其模型的微服务）。 你只能选择这三种属性中的两种。
 
 在基于微服务的体系结构中，应选择可用性和容错性，而不再强调强一致性。 因此，在大多数基于微服务的现代应用程序中，你通常不希望像在使用 [MSMQ](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) 基于 Windows 分布式事务处理协调器 (DTC) 实现[分布式事务](/previous-versions/windows/desktop/ms681205(v=vs.85))时那样，在消息传递中使用分布式事务。
 
-让我们回到最初的问题及其示例。 如果服务在数据库更新之后（在本例中，也就是在运行 `_context.SaveChangesAsync()` 代码行之后）但在发布集成事件之前崩溃，则整个系统会变得不一致。 这对业务而言可能很关键，具体取决于你正在处理的具体业务操作。
+让我们回到最初的问题及其示例。 如果服务在数据库更新之后（在本例中，也就是在运行 `_context.SaveChangesAsync()` 代码行之后）但在发布集成事件之前崩溃，则整个系统会变得不一致。 此方法对业务而言可能很关键，具体取决于你正在处理的具体业务操作。
 
 正如前面在体系结构部分中提到的那样，可以通过以下几种方法来处理此问题：
 
 - 使用完整[事件溯源模式](/azure/architecture/patterns/event-sourcing)。
 
-- 使用[事务日志挖掘](https://www.scoop.it/t/sql-server-transaction-log-mining)。
+- 使用事务日志挖掘。
 
 - 使用[发件箱模式](https://www.kamilgrzybek.com/design/the-outbox-pattern/)。 这是用于存储集成事件（扩展本地事务）的事务表。
 
-在本案例中，使用完整事件溯源 (ES) 模式即使算不上*最好*的办法，也是最好的办法之一。 但是，在许多应用程序案例中，你可能无法实现完整的 ES 系统。 ES 意味着仅在事务数据库中存储域事件，而不存储当前状态数据。 仅存储域事件可以带来很大的好处，例如可以获得系统的历史记录，并且能够确定系统在过去任意时间点的状态。 但是，实现完整的 ES 系统需要重新构建大部分系统，并引入许多其他复杂性和要求。 例如，你希望使用专用于事件溯源的数据库（例如 [Event Store](https://eventstore.org/)）或面向文档的数据库（例如 Azure Cosmos DB、MongoDB、Cassandra、CouchDB 或 RavenDB）。 对于此问题，ES 是一种很好的解决方案，但不是最简单的解决方案，除非你已经熟悉事件溯源。
+在本案例中，使用完整事件溯源 (ES) 模式即使算不上 *最好* 的办法，也是最好的办法之一。 但是，在许多应用程序案例中，你可能无法实现完整的 ES 系统。 ES 意味着仅在事务数据库中存储域事件，而不存储当前状态数据。 仅存储域事件可以带来很大的好处，例如可以获得系统的历史记录，并且能够确定系统在过去任意时间点的状态。 但是，实现完整的 ES 系统需要重新构建大部分系统，并引入许多其他复杂性和要求。 例如，你希望使用专用于事件溯源的数据库（例如 [Event Store](https://eventstore.org/)）或面向文档的数据库（例如 Azure Cosmos DB、MongoDB、Cassandra、CouchDB 或 RavenDB）。 对于此问题，ES 是一种很好的解决方案，但不是最简单的解决方案，除非你已经熟悉事件溯源。
 
-使用事务日志挖掘的方法最初看起来很透明。 但是，若要使用此方法，微服务必须与 RDBMS 事务日志（例如 SQL Server 事务日志）耦合。 这种做法可能不可取。 还有一个缺点就是，事务日志中记录的低级别更新可能与高级别集成事件不在同一级别。 如果是这样，可能难以对这些事务日志操作执行反向工程操作。
+使用事务日志挖掘的方法最初看起来很透明。 但是，若要使用此方法，微服务必须与 RDBMS 事务日志（例如 SQL Server 事务日志）耦合。 此方法可能是不可取的。 还有一个缺点就是，事务日志中记录的低级别更新可能与高级别集成事件不在同一级别。 如果是这样，可能难以对这些事务日志操作执行反向工程操作。
 
 较平衡的一种方法是混合使用事务数据库表和简化的 ES 模式。 可以使用诸如“准备发布事件”之类的状态，在将原始事件提交到集成事件表时，可以在原始事件中设置该状态。 然后尝试将事件发布到事件总线。 如果 publish-event 操作成功，则在源服务中启动另一个事务，并将状态从“准备发布事件”更改为“已发布事件”。
 

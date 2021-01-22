@@ -1,13 +1,13 @@
 ---
 title: 设计面向 DDD 的微服务
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 了解面向 DDD 的订购微服务及其应用层的设计。
-ms.date: 10/08/2018
-ms.openlocfilehash: 583e103c8bd9d828731a658ea2fd2aa0758e7a12
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.date: 01/13/2021
+ms.openlocfilehash: 1d17f0842bb371ce65e96f33d25b2d6e94493396
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80988734"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188330"
 ---
 # <a name="design-a-ddd-oriented-microservice"></a>设计面向 DDD 的微服务
 
@@ -23,7 +23,7 @@ ms.locfileid: "80988734"
 
 它类似于实现类时的[不适当亲密关系代码异味](https://sourcemaking.com/refactoring/smells/inappropriate-intimacy)。 如果两个微服务之间需要大量相互配合，它们极可能是相同的微服务。
 
-另一种考量方法是观察自治性。 如果一个微服务必须依赖另一个服务才能处理请求，那它就不是真正自治。
+考量这一方面的另一种方法是自治。 如果一个微服务必须依赖另一个服务才能处理请求，那它就不是真正自治。
 
 ## <a name="layers-in-ddd-microservices"></a>DDD 微服务中的层
 
@@ -31,7 +31,7 @@ ms.locfileid: "80988734"
 
 例如，实体可从数据库进行加载。 相关信息的一部分或全部信息，包括来自其他实体的其他数据，可通过 REST Web API 发送到客户端 UI。 此处的重点是域实体限定在域模型层内，不应将其传播到其不属于的区域（如表示层）。
 
-此外，需要通过聚合根（根实体）控制始终有效的实体（请参阅[设计域模型层中的验证](domain-model-layer-validations.md)部分）。 因此，不应将实体绑定到客户端视图，因为在 UI 级别，某些数据可能仍未进行验证。 这正是 ViewModel（视图模式）的功能所在。 ViewModel 是专为解决表示层需要而创建的数据模型。 域实体并不直接属于 ViewModel。 相反，还需要在 Viewmodel 和域实体之间进行相互转换。
+此外，需要通过聚合根（根实体）控制始终有效的实体（请参阅[设计域模型层中的验证](domain-model-layer-validations.md)部分）。 因此，不应将实体绑定到客户端视图，因为在 UI 级别，某些数据可能仍未进行验证。 此原因正是 ViewModel 的功能所在。 ViewModel 是专为解决表示层需要而创建的数据模型。 域实体并不直接属于 ViewModel。 相反，还需要在 Viewmodel 和域实体之间进行相互转换。
 
 为解决复杂性，务必要通过聚合根来控制一个域模型，以确保与该组实体（聚合）相关的所有固定协定和规则通过单个入口点或入口（聚合根）来执行。
 
@@ -41,7 +41,7 @@ ms.locfileid: "80988734"
 
 **图 7-5**。 eShopOnContainers 订单微服务中的 DDD 层
 
-DDD 微服务（例如，订购）中的三个层。 每层都是一个 VS 项目：应用程序层是 Ordering.API，域层是 Ordering.Domain，基础结构层是 Ordering.Infrastructure。 需要将系统设计为每个层只与某个其他层进行通信。 为了更轻松的实现这种设计，应将层实现为不同的类库，因为这样可以清楚地确定库之间的依赖关系。 例如，域模型层不应在任何其他层（域模型类应为普通旧 CLR 对象（简称 [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object)）类）上设置依赖关系。 如图 7-6 所示，**Ordering.Domain** 层库只在 .NET Core 库或 NuGet 包上具有依赖项，而在任何其他自定义库（如数据库或持久性库）上不具有依赖项。
+DDD 微服务（例如，订购）中的三个层。 每层都是一个 VS 项目：应用程序层是 Ordering.API，域层是 Ordering.Domain，基础结构层是 Ordering.Infrastructure。 需要将系统设计为每个层只与某个其他层进行通信。 如果将层实现为不同的类库，则这种方法可能更易于实施，因为可以清楚地确定库之间设置了哪些依赖项。 例如，域模型层不应在任何其他层（域模型类应为普通旧 CLR 对象（简称 [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object)）类）上设置依赖关系。 如图 7-6 所示，Ordering.Domain 层库只在 .NET 库或 NuGet 包上具有依赖项，而在任何其他自定义库（如数据库或持久性库）上不具有依赖项。
 
 ![Ordering.Domain 依赖项的屏幕截图。](./media/ddd-oriented-microservice/ordering-domain-dependencies.png)
 
@@ -61,9 +61,9 @@ DDD 微服务（例如，订购）中的三个层。 每层都是一个 VS 项�
 
 大多数新式 ORM 框架（如 Entity Framework Core）允许使用这种方法，以确保域模型类不会耦合到基础结构。 但是使用某些 NoSQL 数据库和框架（如 Azure Service Fabric 中的执行组件和可靠集合）时，并不总是能够获得 POCO 实体。
 
-即使在需要为域模型遵循持久性无感知原则的情况下，也不应忽略对持久性的关注。 仍然十分有必要了解物理数据模型和模型映射到实体对象模型的方式。 否则就不可能创建设计。
+即使在需要为域模型遵循持久性无感知原则的情况下，也不应忽略对持久性的关注。 仍然很有必要了解物理数据模型和模型映射到实体对象模型的方式。 否则就不可能创建设计。
 
-但这并不意味可以采用为关系数据库设计的模型，并将其直接移到 NoSQL 或面向文档的数据库。 在某些实体模型中，该模型或许适用，但通常是不适用的。 实体模型仍须遵循某些约束，这些约束基于存储技术和 ORM 技术。
+但这种情况并不意味可以采用为关系数据库设计的模型，并将其直接移到 NoSQL 或面向文档的数据库。 在某些实体模型中，该模型或许适用，但通常是不适用的。 实体模型仍须遵循某些约束，这些约束基于存储技术和 ORM 技术。
 
 ### <a name="the-application-layer"></a>应用层
 

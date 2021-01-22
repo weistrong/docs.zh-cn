@@ -1,13 +1,13 @@
 ---
 title: Docker 容器、映像和注册表
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | Docker 容器、映像和注册表
-ms.date: 08/31/2018
-ms.openlocfilehash: 3b643a3bf4ca3ce1b8ba3fc40cd2f3ad8bbe5ffb
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 01/13/2021
+ms.openlocfilehash: 0dfde34cd9dab1ef47237746ca6ac2ed75379635
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73737763"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189364"
 ---
 # <a name="docker-containers-images-and-registries"></a>Docker 容器、映像和注册表
 
