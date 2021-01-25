@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# Language, access modifiers
 - access modifiers [C#], about
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
-ms.openlocfilehash: 557f5d9f302b08d32896b462e86ce1d96710ff36
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: d800116137e088a54edb221fb4f81ecd47b0278f
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474522"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757858"
 ---
 # <a name="access-modifiers-c-programming-guide"></a>访问修饰符（C# 编程指南）
 
@@ -32,7 +32,7 @@ ms.locfileid: "86474522"
 
 ## <a name="class-and-struct-accessibility"></a>类和结构可访问性  
 
-直接在命名空间中声明的类和结构（即，没有嵌套在其他类或结构中的类和结构）可以为 `public` 或 `internal`。 如果未指定任何访问修饰符，则默认设置为 `Internal`。  
+直接在命名空间中声明的类和结构（即，没有嵌套在其他类或结构中的类和结构）可以为 `public` 或 `internal`。 如果未指定任何访问修饰符，则默认设置为 `internal`。
 
 结构成员（包括嵌套的类和结构）可以声明为 `public`、`internal` 或 `private`。 类成员（包括嵌套的类和结构）可以声明为 `public`、`protected internal`、`protected`、`internal`、`private protected` 或 `private`。 默认情况下，类成员和结构成员（包括嵌套的类和结构）的访问级别为 `private`。 不能从包含类型的外部访问私有嵌套类型。
 
