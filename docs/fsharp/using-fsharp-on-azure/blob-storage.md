@@ -1,25 +1,25 @@
 ---
-title: 通过 F# 实现 Azure Blob 入门
+title: 使用 F 开始使用 Azure Blob 存储#
 description: 通过 Azure Blob 存储将非结构化数据存储在云中。
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: 91aec8fc2b57c71ce4ba47d62619912af6c71e59
-ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
+ms.openlocfilehash: 58c120c26a1e99481b49ae3a0fb096a2188f359e
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91756242"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794800"
 ---
 # <a name="get-started-with-azure-blob-storage-using-f"></a>使用 F 开始使用 Azure Blob 存储\#
 
-Azure Blob 存储是一种将非结构化数据作为对象/Blob 存储在云中的服务。 Blob 存储可以存储任何类型的文本或二进制数据，例如文档、媒体文件或应用程序安装程序。 Blob 存储也称为对象存储。
+Azure Blob 存储是一种将非结构化数据存储在云中的服务，作为对象/blob。 Blob 存储可以存储任何类型的文本或二进制数据，例如文档、媒体文件或应用程序安装程序。 Blob 存储也称为对象存储。
 
 本文介绍如何使用 Blob 存储执行常见任务。 使用用于 .NET 的 Azure 存储客户端库的 F # 编写示例。 涉及的任务包括如何上传、列出、下载和删除 blob。
 
 有关 blob 存储的概念性概述，请参阅 [blob 存储的 .net 指南](/azure/storage/blobs/storage-quickstart-blobs-dotnet)。
 
-## <a name="prerequisites"></a>必备知识
+## <a name="prerequisites"></a>先决条件
 
 若要使用本指南，必须先 [创建 Azure 存储帐户](/azure/storage/common/storage-account-create)。 还需要此帐户的存储访问密钥。
 
@@ -185,7 +185,7 @@ Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/
 
 ## <a name="concurrent-access"></a>并发访问
 
-若要允许从多个客户端或多个进程实例并发访问某个 Blob，可以使用 **ETag** 或**租约**。
+若要允许从多个客户端或多个进程实例并发访问某个 Blob，可以使用 **ETag** 或 **租约**。
 
 - **Etag** - 用于检测 Blob 或容器是否已被其他进程修改
 
