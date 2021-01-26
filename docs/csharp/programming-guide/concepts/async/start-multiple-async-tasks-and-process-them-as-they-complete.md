@@ -3,12 +3,12 @@ title: 在异步任务完成时对其进行处理
 description: 此示例演示如何使用 C# 中的 Task.WhenAny 启动多个任务并在完成时处理其结果，而不是按照它们的启动顺序进行处理。
 ms.date: 08/19/2020
 ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
-ms.openlocfilehash: 860e94a9c3973ce56e7321741a1136f752aa3d18
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 4cdd35af900863895911ea5c2c9772af362951ec
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805234"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615966"
 ---
 # <a name="process-asynchronous-tasks-as-they-complete-c"></a>在异步任务完成时对其进行处理 (C#)
 
@@ -128,13 +128,13 @@ List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
 1. 等待调用 `WhenAny`，以标识集合中首个已完成下载的任务。
 
     ```csharp
-    Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
+    Task<int> finishedTask = await Task.WhenAny(downloadTasks);
     ```
 
 1. 从集合中移除任务。
 
     ```csharp
-    downloadTasks.Remove(firstFinishedTask);
+    downloadTasks.Remove(finishedTask);
     ```
 
 1. 等待 `finishedTask`，由对 `ProcessUrlAsync` 的调用返回。 `finishedTask` 变量是 <xref:System.Threading.Tasks.Task%601>，其中 `TResult` 是整数。 任务已完成，但需等待它检索已下载网站的长度，如以下示例所示。 如果任务出错，`await` 将引发存储在 `AggregateException` 中的第一个子异常，这一点与读取 <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> 属性将引发 `AggregateException` 不同。
