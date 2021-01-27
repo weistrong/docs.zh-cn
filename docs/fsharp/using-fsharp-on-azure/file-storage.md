@@ -1,23 +1,23 @@
 ---
-title: 通过 F# 实现 Azure 文件存储入门
-description: 使用 Azure 文件存储在云中存储文件数据和从 Azure 虚拟机 (VM) 或从运行 Windows 的本地应用程序装载云文件共享。
+title: 使用 F 开始使用 Azure 文件存储#
+description: 使用 Azure 文件存储在云中存储文件数据，并从 Azure 虚拟机 (VM) 或从运行 Windows 的本地应用程序装载云文件共享。
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: dd19b156e73774f4eca63afd3f4c10a4a7b8d46c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: bcea58b4bf756fc9d696cd5a1010b0feffb127a7
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100121"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899419"
 ---
 # <a name="get-started-with-azure-file-storage-using-f"></a>使用 F 开始使用 Azure 文件存储\#
 
-Azure 文件存储是一种服务，它使用标准 [服务器消息块 (SMB) 协议](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview)在云中提供文件共享。 支持 SMB 2.1 和 SMB 3.0。 通过 Azure 文件存储，可以将依赖文件共享的旧版应用程序快速迁移到 Azure 且无成本高昂的重写。 在 Azure 虚拟机或云服务中或者从本地客户端运行的应用程序可以在云中装载文件共享，就像桌面应用程序装载典型的 SMB 共享一样。 之后，任意数量的应用程序组件可以装载并同时访问文件存储共享。
+Azure 文件存储是一种服务，它使用标准 [服务器消息块 (SMB) 协议](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview)在云中提供文件共享。 支持 SMB 2.1 和 SMB 3.0。 通过 Azure 文件存储，可以将依赖文件共享的旧版应用程序快速迁移到 Azure，而无需进行昂贵的重写。 在 Azure 虚拟机或云服务中或者从本地客户端运行的应用程序可以在云中装载文件共享，就像桌面应用程序装载典型的 SMB 共享一样。 之后，任意数量的应用程序组件可以装载并同时访问文件存储共享。
 
 有关文件存储的概念性概述，请参阅 [适用于文件存储的 .net 指南](/azure/storage/storage-dotnet-how-to-use-files)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 若要使用本指南，必须先 [创建 Azure 存储帐户](/azure/storage/storage-create-storage-account)。
 还需要此帐户的存储访问密钥。

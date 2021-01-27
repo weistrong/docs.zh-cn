@@ -1,15 +1,15 @@
 ---
-title: 通过 F# 实现 Azure 队列存储入门
+title: 使用 F 开始使用 Azure 队列存储#
 description: Azure 队列用于在应用程序组件之间进行可靠的异步消息传送。 应用程序组件可以利用云消息传送进行独立缩放。
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: daa5372b7903f10c0d966c5c92e35c8bf9d362d8
-ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
+ms.openlocfilehash: 0ab131647e37985d45073966ffc01b9a7f379e2f
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91756216"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899290"
 ---
 # <a name="get-started-with-azure-queue-storage-using-f"></a>使用 F 开始使用 Azure 队列存储\#
 
@@ -21,7 +21,7 @@ Azure 队列存储用于在应用程序组件之间进行云消息传送。 在�
 
 有关队列存储的概念性概述，请参阅 [队列存储的 .net 指南](/azure/storage/storage-dotnet-how-to-use-queues)。
 
-## <a name="prerequisites"></a>必备知识
+## <a name="prerequisites"></a>必备条件
 
 若要使用本指南，必须先 [创建 Azure 存储帐户](/azure/storage/storage-create-storage-account)。
 还需要此帐户的存储访问密钥。
@@ -78,7 +78,7 @@ Azure 队列存储用于在应用程序组件之间进行云消息传送。 在�
 
 ## <a name="insert-a-message-into-a-queue"></a>在队列中插入消息
 
-若要将消息插入现有队列，请先创建一个新的 `CloudQueueMessage` 。 接下来，调用 `AddMessage` 方法。 `CloudQueueMessage`可以使用 utf-8 格式的字符串 (创建) 或 `byte` 数组，如下所示：
+要将消息插入到现有队列中，请先创建新的 `CloudQueueMessage`。 接下来，调用 `AddMessage` 方法。 `CloudQueueMessage`可以使用 utf-8 格式的字符串 (创建) 或 `byte` 数组，如下所示：
 
 [!code-fsharp[QueueStorage](~/samples/snippets/fsharp/azure/queue-storage.fsx#L42-L44)]
 
@@ -104,7 +104,7 @@ Azure 队列存储用于在应用程序组件之间进行云消息传送。 在�
 
 ## <a name="de-queue-the-next-message"></a>取消对下一条消息的排队
 
-代码通过两个步骤来取消对队列中某条消息的排队。 调用时 `GetMessage` ，将获取队列中的下一条消息。 从 `GetMessage` 返回的消息对于从此队列读取消息的任何其他代码都是不可见的。 默认情况下，此消息持续 30 秒不可见。 若要完成从队列中删除消息，还必须调用 `DeleteMessage` 。 此删除消息的两步过程可确保，如果代码因硬件或软件故障而无法处理消息，则代码的其他实例可以获取相同消息并重试。 代码在处理消息后会立即调用 `DeleteMessage`。
+代码通过两个步骤来取消对队列中某条消息的排队。 调用 `GetMessage` 时，会获得队列中的下一条消息。 从 `GetMessage` 返回的消息对于从此队列读取消息的任何其他代码都是不可见的。 默认情况下，此消息持续 30 秒不可见。 若要完成从队列中删除消息，还必须调用 `DeleteMessage`。 此删除消息的两步过程可确保，如果代码因硬件或软件故障而无法处理消息，则代码的其他实例可以获取相同消息并重试。 代码在处理消息后会立即调用 `DeleteMessage`。
 
 [!code-fsharp[QueueStorage](~/samples/snippets/fsharp/azure/queue-storage.fsx#L75-L76)]
 
@@ -129,7 +129,7 @@ Azure 队列存储用于在应用程序组件之间进行云消息传送。 在�
 
 ## <a name="delete-a-queue"></a>删除队列
 
-若要删除队列及其中包含的所有消息，请对 `Delete` 队列对象调用方法。
+若要删除队列及其包含的所有消息，请对队列对象调用 `Delete` 方法。
 
 [!code-fsharp[QueueStorage](~/samples/snippets/fsharp/azure/queue-storage.fsx#L112-L113)]
 

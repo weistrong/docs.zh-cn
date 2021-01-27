@@ -1,19 +1,19 @@
 ---
-title: 通过 F# 实现 Azure 表格存储入门
-description: 使用 Azure 表存储或 Azure Cosmos DB 将结构化数据存储在云中。
+title: 使用 F 开始使用 Azure 表存储#
+description: 使用 Azure 表存储或 Azure Cosmos DB 在云中存储结构化数据。
 author: sylvanc
 ms.date: 03/26/2018
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: bf4f2e63c847e18d253fe5b6cf5dd7773c320fb7
-ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
+ms.openlocfilehash: bc8e111636013930f7c7d4f59d1ef0720298cb9f
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91756203"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899277"
 ---
 # <a name="get-started-with-azure-table-storage-and-the-azure-cosmos-db-table-api-using-f"></a>开始使用 Azure 表存储和 Azure Cosmos DB 表 API 使用 F\#
 
-Azure 表存储是一种将结构化的 NoSQL 数据存储在云中的服务。 表存储是采用无架构设计的键/属性存储。 因为表存储无架构，因此可以很容易地随着应用程序需求的发展使数据适应存储。 对于所有类型的应用程序，都可以快速并经济高效地访问数据。 对于相似的数据量，表存储的成本通常显著低于传统的 SQL。
+Azure 表存储是一项用于在云中存储结构化 NoSQL 数据的服务。 表存储是采用无架构设计的键/属性存储。 因为表存储无架构，因此可以很容易地随着应用程序需求的发展使数据适应存储。 对于所有类型的应用程序，都可以快速并经济高效地访问数据。 对于相似的数据量，表存储的成本通常显著低于传统的 SQL。
 
 可以使用表存储来存储灵活的数据集，例如 Web 应用程序的用户数据、通讯簿、设备信息，以及服务需要的任何其他类型的元数据。 可以在表中存储任意数量的实体，并且一个存储帐户可以包含任意数量的表，直至达到存储帐户的容量极限。
 
@@ -25,7 +25,7 @@ Azure Cosmos DB 提供了为 Azure 表存储编写的应用程序的表 API，�
 - 保证高可用性。
 - 自动编制辅助索引。
 
-为 Azure 表存储编写的应用程序无需更改代码便可使用表 API 迁移到 Azure Cosmos DB，并可充分利用高级功能。 表 API 包含可用于 .NET、Java、Python 和 Node.js 的客户端 SDK。
+为 Azure 表存储编写的应用程序可以通过使用表 API 迁移到 Azure Cosmos DB，无需更改代码并利用高级功能。 表 API 包含可用于 .NET、Java、Python 和 Node.js 的客户端 SDK。
 
 有关详细信息，请参阅 [Azure Cosmos DB 表 API 简介](/azure/cosmos-db/table-introduction)。
 
@@ -33,7 +33,7 @@ Azure Cosmos DB 提供了为 Azure 表存储编写的应用程序的表 API，�
 
 本教程演示如何使用 Azure 表存储或 Azure Cosmos DB 表 API 编写 F # 代码来执行一些常见任务，包括创建和删除表以及插入、更新、删除和查询表数据。
 
-## <a name="prerequisites"></a>必备知识
+## <a name="prerequisites"></a>必备条件
 
 若要使用本指南，必须先 [创建 Azure 存储帐户](/azure/storage/storage-create-storage-account) 或 [Azure Cosmos DB 帐户](https://azure.microsoft.com/try/cosmosdb/)。
 
@@ -55,7 +55,7 @@ Azure Cosmos DB 提供了为 Azure 表存储编写的应用程序的表 API，�
 
 ### <a name="get-your-azure-cosmos-db-connection-string"></a>获取 Azure Cosmos DB 连接字符串
 
-如果要连接到 Azure Cosmos DB，则需要此教程的连接字符串。 可以从 Azure 门户复制连接字符串。 在 Azure 门户的 Cosmos DB 帐户中， **Settings**  >  选择 "设置" "**连接字符串**"，并选择 "**复制**" 按钮复制主连接字符串。
+如果要连接到 Azure Cosmos DB，则需要此教程的连接字符串。 可以从 Azure 门户复制连接字符串。 在 Azure 门户的 Cosmos DB 帐户中，   >  选择 "设置" "**连接字符串**"，并选择 "**复制**" 按钮复制主连接字符串。
 
 对于本教程，请在脚本中输入连接字符串，如下面的示例所示：
 
