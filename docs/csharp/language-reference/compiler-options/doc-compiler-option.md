@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -doc compiler option [C#]
 - /doc compiler option [C#]
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-ms.openlocfilehash: b1d7fbbe98aaad16454fdd71c161f2a17a2f4f2e
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: e55b86e5b028fb871f309d80217477cfd164c106
+ms.sourcegitcommit: f0eb7eeedf3ceec726499fa678786d03083214ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91173251"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98629249"
 ---
 # <a name="-doc-c-compiler-options"></a>-doc（C# 编译器选项）
 
@@ -54,15 +54,19 @@ ms.locfileid: "91173251"
   
  有关从代码中的注释生成文档的方法，请参阅[建议的文档注释标记](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)。  
   
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>在 Visual Studio 开发环境中设置此编译器选项  
-  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-2019-development-environment"></a>在 Visual Studio 2019 开发环境中设置此编译器选项  
+
 1. 打开项目的“属性”页。  
+2. 单击“生成”选项卡。
+3. 修改“XML 文档文件”属性。
   
-2. 单击“生成”选项卡。  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-for-mac-development-environment"></a>在 Visual Studio for Mac 开发环境中设置此编译器选项  
   
-3. 修改“XML 文档文件”属性。  
-  
- 有关如何以编程方式设置此编译器选项的信息，请参阅 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>。  
+1. 打开项目的“选项”页。
+2. 选择“编译器”选项卡。
+3. 选择“生成 xml 文档”并在文本框中输入文件名。
+
+有关如何以编程方式设置此编译器选项的信息，请参阅 <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>。  
   
 ## <a name="see-also"></a>另请参阅
 

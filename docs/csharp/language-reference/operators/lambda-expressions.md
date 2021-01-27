@@ -9,16 +9,16 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: 51bf44af5ec3478f2b2557b047df270c0c22990d
-ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
+ms.openlocfilehash: 2ae63396c0b1bb0bf1fe5c33b1103f69f6dcf664
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94556837"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615862"
 ---
 # <a name="lambda-expressions-c-reference"></a>Lambda 表达式（C# 引用）
 
-“Lambda 表达式”是采用以下任意一种形式的表达式：
+使用 Lambda 表达式来创建匿名函数。 使用 [lambda 声明运算符`=>`](lambda-operator.md) 从其主体中分离 lambda 参数列表。 Lambda 表达式可采用以下任意一种形式：
 
 - [表达式 lambda](#expression-lambdas)，表达式为其主体：
 
@@ -32,7 +32,7 @@ ms.locfileid: "94556837"
   (input-parameters) => { <sequence-of-statements> }
   ```
 
-使用 [lambda 声明运算符`=>`](lambda-operator.md) 从其主体中分离 lambda 参数列表。 若要创建 Lambda 表达式，需要在 Lambda 运算符左侧指定输入参数（如果有），然后在另一侧输入表达式或语句块。
+若要创建 Lambda 表达式，需要在 Lambda 运算符左侧指定输入参数（如果有），然后在另一侧输入表达式或语句块。
 
 任何 Lambda 表达式都可以转换为[委托](../builtin-types/reference-types.md#the-delegate-type)类型。 Lambda 表达式可以转换的委托类型由其参数和返回值的类型定义。 如果 lambda 表达式不返回值，则可以将其转换为 `Action` 委托类型之一；否则，可将其转换为 `Func` 委托类型之一。 例如，有 2 个参数且不返回值的 Lambda 表达式可转换为 <xref:System.Action%602> 委托。 有 1 个参数且不返回值的 Lambda 表达式可转换为 <xref:System.Func%602> 委托。 以下示例中，lambda 表达式 `x => x * x`（指定名为 `x` 的参数并返回 `x` 平方值）将分配给委托类型的变量：
 
