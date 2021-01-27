@@ -2,12 +2,12 @@
 title: 运行时配置选项
 description: 了解如何使用运行时配置设置来配置 .NET Core 应用程序。
 ms.date: 01/21/2020
-ms.openlocfilehash: 21673a221d0f21202febf4730b955da66132d5f7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 5e9f292476cf953c3e63bb8e89268f7cc06b3bfc
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538193"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757845"
 ---
 # <a name="net-core-run-time-configuration-settings"></a>.NET Core 运行时配置设置
 
@@ -37,7 +37,7 @@ ms.locfileid: "90538193"
 
 ## <a name="runtimeconfigjson"></a>runtimeconfig.json
 
-[构建](../tools/dotnet-build.md)项目时，将在输出目录中生成 *[appname].runtimeconfig.json* 文件。 如果项目文件所在的文件夹中存在 *runtimeconfig.template.json* 文件，它包含的任何配置选项都将合并到 *[appname].runtimeconfig.json* 文件中。 如果自行构建应用，请将所有配置选项放在 *runtimeconfig.template.json* 文件中。 如果只是运行应用，请将其直接插入 [appname].runtimeconfig.template.json 文件中。
+[构建](../tools/dotnet-build.md)项目时，将在输出目录中生成 *[appname].runtimeconfig.json* 文件。 如果项目文件所在的文件夹中存在 *runtimeconfig.template.json* 文件，它包含的任何配置选项都将插入到 *[appname].runtimeconfig.json* 文件中。 如果自行构建应用，请将所有配置选项放在 *runtimeconfig.template.json* 文件中。 如果只是运行应用，请将其直接插入 [appname].runtimeconfig.template.json 文件中。
 
 > [!NOTE]
 > 后续生成中将覆盖 [appname].runtimeconfig.template.json 文件。
@@ -88,7 +88,7 @@ ms.locfileid: "90538193"
 
 ## <a name="msbuild-properties"></a>MSBuild 属性
 
-可以使用 SDK 样式 .NET Core 项目的 .csproj 或 .vbproj 文件中的 MSBuild 属性设置某些运行时配置选项。  MSBuild 属性优先于在 *runtimeconfig.template.json* 文件中设置的选项。 它们还会覆盖生成时在 [appname].runtimeconfig.json 文件中设置的任何选项。
+可以使用 SDK 样式 .NET Core 项目的 .csproj 或 .vbproj 文件中的 MSBuild 属性设置某些运行时配置选项。  MSBuild 属性优先于在 *runtimeconfig.template.json* 文件中设置的选项。
 
 下面是一个示例 SDK 样式项目文件，其中包含用于配置运行时行为的 MSBuild 属性：
 
