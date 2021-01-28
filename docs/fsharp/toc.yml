@@ -282,13 +282,13 @@
 - name: 在 Azure 上使用 F#
   href: using-fsharp-on-azure/index.md
   items:
-    - name: 通过 F# 实现 Azure Blob 入门
+    - name: 通过 F# 实现 Azure Blob 存储入门
       href: using-fsharp-on-azure/blob-storage.md
     - name: 通过 F# 实现 Azure 文件存储入门
       href: using-fsharp-on-azure/file-storage.md
     - name: 通过 F# 实现 Azure 队列存储入门
       href: using-fsharp-on-azure/queue-storage.md
-    - name: 通过 F# 实现 Azure 表格存储入门
+    - name: 通过 F# 实现 Azure 表存储入门
       href: using-fsharp-on-azure/table-storage.md
     - name: F# Azure 依赖项的包管理
       href: using-fsharp-on-azure/package-management.md
