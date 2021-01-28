@@ -1,17 +1,17 @@
 ---
 title: 数组 - C# 编程指南
 description: 用 C# 将同一类型的多个变量存储在数组数据结构中。 通过指定类型或指定要存储任何类型的对象来声明数组。
-ms.date: 07/20/2015
+ms.date: 01/22/2021
 helpviewer_keywords:
 - arrays [C#]
 - C# language, arrays
 ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
-ms.openlocfilehash: e302ff2e4c2488c4899c4eb99a666d2d322119ce
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 203d8b86da4e74d8c5397132a0ba68618eedf348
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474730"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794770"
 ---
 # <a name="arrays-c-programming-guide"></a>数组（C# 编程指南）
 
@@ -39,17 +39,25 @@ type[] arrayName;
 - 数组元素可以是任何类型，其中包括数组类型。
 - 数组类型是从抽象的基类型 <xref:System.Array> 派生的[引用类型](../../language-reference/keywords/reference-types.md)。 由于此类型实现 <xref:System.Collections.IEnumerable> 和 <xref:System.Collections.Generic.IEnumerable%601>，因此可以在 C# 中的所有数组上使用 [foreach](../../language-reference/keywords/foreach-in.md) 迭代。
 
-## <a name="related-sections"></a>相关章节
+### <a name="arrays-as-objects"></a>作为对象的数组
 
-- [作为对象的数组](arrays-as-objects.md)
+在 C# 中，数组实际上是对象，而不只是如在 C 和 C++ 中的连续内存的可寻址区域。 <xref:System.Array> 是所有数组类型的抽象基类型。 可以使用 <xref:System.Array> 具有的属性和其他类成员。 例如，使用 <xref:System.Array.Length%2A> 属性来获取数组的长度。 以下代码可将 `numbers` 数组的长度 `5` 分配给名为 `lengthOfNumbers` 的变量：
+
+[!code-csharp[csProgGuideArrays#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#3)]
+
+<xref:System.Array> 类可提供多种其他有用的方法和属性，用于对数组进行排序、搜索和复制。 以下示例使用 <xref:System.Array.Rank%2A> 属性显示数组的维数。
+
+[!code-csharp[csProgGuideArrays#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#2)]
+
+## <a name="see-also"></a>另请参阅
+
+- [如何使用一维数组](single-dimensional-arrays.md)
+- [如何使用多维数组](multidimensional-arrays.md)
+- [如何使用交错数组](jagged-arrays.md)
 - [对数组使用 foreach](using-foreach-with-arrays.md)
 - [将数组作为参数传递](passing-arrays-as-arguments.md)
-
-## <a name="c-language-specification"></a>C# 语言规范
-
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-
-## <a name="see-also"></a>请参阅
-
+- [隐式类型的数组](implicitly-typed-arrays.md)
 - [C# 编程指南](../index.md)
 - [集合](../concepts/collections.md)
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
