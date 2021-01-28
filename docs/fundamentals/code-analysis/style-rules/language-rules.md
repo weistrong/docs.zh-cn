@@ -12,12 +12,12 @@ helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
 - EditorConfig language conventions
-ms.openlocfilehash: b77d9aa2a528a6cf540babd5e5acc148e48c489c
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 2aa2261534363f1da6a2109f092e08d210ebd915
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96591097"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957970"
 ---
 # <a name="language-rules"></a>语言规则
 
@@ -31,10 +31,21 @@ ms.locfileid: "96591097"
 
 可在 EditorConfig 文件中指定语言规则的选项，格式如下：
 
+`option_name = value` (Visual Studio 2019 版本 16.9 Preview 2 及更高版本) 
+
+或
+
 `option_name = value:severity`
 
-- **值**：对于每个语言规则，指定一个值，用于定义是否喜欢样式。 许多规则都接受 `true` 值（以此样式为首选项）或 `false` 值（不以此样式为首选项）。 其他规则接受 `when_on_single_line` 或 `never` 等值。
-- **严重性**：规则的第二部分指定规则的 [严重性级别](../configuration-options.md#severity-level) 。 作为上述选项语法的一部分的严重性规范仅适用于开发 Ide （如 Visual Studio）。 C # 或 VB 编译器不理解此设置，因此在生成过程中不会考虑此设置。 相反，若要强制生成代码样式规则，应使用分析器的基于规则 ID 的严重性配置语法来设置严重性。 语法采用形式 `dotnet_diagnostic.<rule ID>.severity = <severity>`（例如，`dotnet_diagnostic.IDE0040.severity = silent`）。 有关详细信息，请参阅此 [GitHub 问题](https://github.com/dotnet/roslyn/issues/44201)。
+- 值
+
+  对于每个语言规则，指定一个值，该值定义是否喜欢样式。 许多规则都接受 `true` 值（以此样式为首选项）或 `false` 值（不以此样式为首选项）。 其他规则接受 `when_on_single_line` 或 `never` 等值。
+
+- **严重性** (Visual Studio 2019 版本 16.9 Preview 2 及更高版本中的可选) 
+
+  规则的第二部分指定规则的 [严重性级别](../configuration-options.md#severity-level) 。 以这种方式指定时，"严重性" 设置仅适用于开发 Ide （如 Visual Studio）。 在生成过程中 *不* 会考虑这一点。
+
+  若要在生成时强制代码样式规则，请改为使用分析器的基于规则 ID 的严重性配置语法来设置严重性。 语法采用形式 `dotnet_diagnostic.<rule ID>.severity = <severity>`（例如，`dotnet_diagnostic.IDE0040.severity = silent`）。 有关详细信息，请参阅 [严重性级别](../configuration-options.md#severity-level)。
 
 > [!TIP]
 >
