@@ -3,12 +3,12 @@ title: .NET Compiler Platform SDK (Roslyn API)
 description: 了解如何使用 .NET Compiler Platform SDK（亦称为“Roslyn API”）来理解 .NET 代码、发现并修复错误。
 ms.date: 10/10/2017
 ms.custom: mvc
-ms.openlocfilehash: 872bfd388f6974a6d99f769c43e5d341454518cc
-ms.sourcegitcommit: 67cf756b033c6173a1bbd1cbd5aef1fccac99e34
+ms.openlocfilehash: cd81551234a1bc955323e392f473cd01180f6dc5
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86226668"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899238"
 ---
 # <a name="the-net-compiler-platform-sdk"></a>.NET Compiler Platform SDK
 
@@ -19,17 +19,18 @@ ms.locfileid: "86226668"
 
 .NET Compiler Platform SDK 极大地降低了创建以代码为中心的工具和应用的门槛。 它将在元编程、代码生成和转换、C# 和 Visual Basic 语言的交互式使用，以及在域特定语言中嵌入 C# 和 Visual Basic 等方面，创造许多创新的机遇。
 
-使用 .NET Compiler Platform SDK，可以生成分析器和代码修补程序，从而发现和更正编码错误。 分析器不仅理解代码的语法和结构，还能检测应更正的做法。 代码修补程序建议一处或多处修复，以修复分析器发现的编码错误。 通常情况下，分析器和关联的代码修补程序一起打包在一个项目中。
+使用 .NET Compiler Platform SDK，可以生成分析器和 __*代码修补程序*__，从而发现和更正编码错误。 __*分析器*__ 理解语法（代码的结构）和语义，以检测应更正的做法。 __*代码修补程序*__ 建议一处或多处修复，以修复分析器或编译器诊断发现的编码错误。 通常情况下，分析器和关联的代码修补程序一起打包在一个项目中。
 
 分析器和代码修补程序通过静态分析来理解代码。 它们既不运行代码，也未带来其他测试方面的好处。 但是，它们可以指出经常导致 bug 的做法、无法维护的代码或标准原则冲突。
 
-.NET Compiler Platform SDK 提供了一组 API，可便于检查和理解 C# 或 Visual Basic 基准代码。 由于可以使用这一基准代码，因此能够利用 .NET Compiler Platform SDK 提供的语法和语义分析 API，更轻松地编写分析器和代码修补程序。 从复制由编译器执行的分析的繁重任务中解放出来，可以将精力放在为项目或库查找常见编码错误并进行修复的更为重要的任务上。
+除了分析器和代码修补程序外，.NET Compiler Platform SDK 还允许你生成 __*代码重构*__。
+它还提供了一组 API，可便于检查和理解 C# 或 Visual Basic 代码库。 由于可以使用这一基准代码，因此能够利用 .NET Compiler Platform SDK 提供的语法和语义分析 API，更轻松地编写分析器和代码修补程序。 从复制由编译器执行的分析的繁重任务中解放出来，可以将精力放在为项目或库查找常见编码错误并进行修复的更为重要的任务上。
 
 这带来的一个小小的好处是，分析器和代码修补程序较小，在 Visual Studio 中加载时占用的内存比为了理解项目中的代码而编写自己的基准代码占用的内存少得多。 利用编译器和 Visual Studio 使用的相同类，可以创建自己的静态分析工具。 也就是说，团队可以使用分析器和代码修补程序，而不会对 IDE 的性能造成显著影响。
 
 在下列三个主要方案中，需要编写分析器和代码修补程序：
 
-1. [*强制执行团队编码标准*](#enforce-team-coding-standards)
+1. [强制执行团队编码标准](#enforce-team-coding-standards)
 1. [*提供库包方面的指导*](#provide-guidance-with-library-packages)
 1. [*提供常规指南*](#provide-general-guidance)
 
@@ -40,6 +41,9 @@ ms.locfileid: "86226668"
 分析器在开发人员编写代码的同时运行。 这样，开发人员就可以获得即时反馈，从而立即遵循相关指南。 只要开始原型设计，开发人员就养成了编写符合标准的代码的习惯。 当功能可供人员评审时，所有标准指南就已强制执行。
 
 团队可以生成分析器和代码修补程序，以发现违反团队编码做法的最常见做法。 这些分析器和代码修补程序可以安装到每个开发人员的计算机上，以强制执行标准。
+
+> [!TIP]
+> 在构建你自己的分析器之前，请先查看内置分析器。 有关详细信息，请参阅[代码样式规则](../../fundamentals/code-analysis/overview.md#code-style-analysis)。
 
 ## <a name="provide-guidance-with-library-packages"></a>提供库包方面的指导
 
@@ -52,7 +56,7 @@ NuGet 上有大量适用于 .NET 开发人员的库。
 
 ## <a name="provide-general-guidance"></a>提供常规指南
 
-.NET 开发人员社区已发现效果理想的体验模式和最好避免使用的模式。 一些社区成员已创建分析器来强制执行这些推荐模式。 随着掌握的信息越来越多，新见解是无止境的。
+.NET 开发者社区已发现效果理想的体验模式和最好避免使用的模式。 一些社区成员已创建分析器来强制执行这些推荐模式。 随着掌握的信息越来越多，新见解是无止境的。
 
 这些分析器可以上传到 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) 中，并由开发人员使用 Visual Studio 进行下载。 语言和平台的新手可以快速了解公认做法，并尽早在 .NET 之旅中高效工作。 随着使用越来越广泛，这些做法就会被社区采用。
 

@@ -4,12 +4,12 @@ description: 有关结合使用 F# 和 Azure 服务的指南
 author: sylvanc
 ms.date: 07/29/2020
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: c3235db9274065f81e5476d8d0e06b99d7c987a0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 16599aa48776acee05edf8201cdd148a87507cdb
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100134"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899400"
 ---
 # <a name="using-f-on-azure"></a>在 Azure 上使用 F#
 
@@ -42,10 +42,10 @@ Azure Functions 支持 F# 作为第一类语言，它执行 F# 代码时高效�
 
 Azure 存储是一种基层存储服务，用于依赖于持久性、可用性和可缩放性来满足其客户需求的现代应用程序。 F# 程序可使用以下文章中所述的技术，直接与 Azure 存储服务交互。
 
-* [通过 F# 实现 Azure Blob 入门](blob-storage.md)
+* [通过 F# 实现 Azure Blob 存储入门](blob-storage.md)
 * [通过 F# 实现 Azure 文件存储入门](file-storage.md)
 * [通过 F# 实现 Azure 队列存储入门](queue-storage.md)
-* [通过 F# 实现 Azure 表格存储入门](table-storage.md)
+* [通过 F# 实现 Azure 表存储入门](table-storage.md)
 
 Azure 存储还可以通过声明性配置（而非显式 API 调用）与 Azure Functions 结合使用。 请参阅 [Azure Functions triggers and bindings for Azure Storage](/azure/azure-functions/functions-bindings-storage)（用于 Azure 存储的 Azure Functions 触发器和绑定），其中包括 F# 示例。
 
