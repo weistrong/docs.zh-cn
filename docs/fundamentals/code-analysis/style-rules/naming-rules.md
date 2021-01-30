@@ -16,42 +16,40 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 0eea5e89ac5055a45d9ead14363cc2f2fc574401
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 1fce275204b729b4d23729ca432e06a5a249620d
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191074"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065130"
 ---
 # <a name="naming-rules"></a>命名规则
 
-命名规则涉及 .NET 编程语言代码元素的命名，如类、属性和方法。 例如，可以指定公共成员必须采用大写形式，或者私有字段必须以 `_` 开头。
+在 `.editorconfig` 文件中，可以定义 .net 编程语言代码元素 &mdash; （例如类、属性和方法）的命名规则 &mdash; 。 例如，你可以指定公共成员必须大写，或者私有字段必须以开头 `_` 。
 
-命名规则有三个部分：
+命名规则有三个组件：
 
-* 它应用于的符号组。
-* 要与规则关联的命名样式。
+* **符号组** &mdash; 规则应用到的符号组。
+* 要与规则关联的 **命名样式** 。
 * 强制实施约定的严重性。
-
-在 EditorConfig 文件中定义命名规则。
 
 ## <a name="general-syntax"></a>常规语法
 
 若要定义命名规则、符号组或命名样式，请使用以下语法设置一个或多个属性：
 
 ```ini
-<prefix>.<title>.<propertyName> = <propertyValue>
+<kind>.<title>.<propertyName> = <propertyValue>
 ```
 
 每个属性只能设置一次，但某些设置允许以逗号分隔的多个值。
 
 属性的顺序并不重要。
 
-### \<prefix>
+### \<kind>
 
-**\<prefix>** 指定正在定义的元素类型（ &mdash; 命名规则、符号组或命名样式）， &mdash; 必须为下列类型之一：
+**\<kind>** 指定正在定义的元素类型（ &mdash; 命名规则、符号组或命名样式）， &mdash; 必须为下列类型之一：
 
-| 设置属性 | 使用前缀 | 示例 |
+| 设置属性 | 使用 \<kind> 值 | 示例 |
 | --- | --- | -- |
 | 命名规则 | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion` |
 | 符号组 | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |
@@ -77,25 +75,17 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 | properties | 说明 |
 | -- | -- |
-| `symbols` | 符号组的标题，定义应应用此规则的符号 |
+| `symbols` | 符号组的标题;命名规则将应用到此组中的符号 |
 | `style` | 应与此规则关联的命名样式的标题 |
 | `severity` |  设置用于强制执行命名规则的严重性。 将关联的值设置为一个可用的 [严重性级别](../configuration-options.md#severity-level)。<sup>1</sup> |
 
 **注意：**
 
-1. 命名规则内的严重性规范仅适用于开发 Ide （如 Visual Studio）。 C # 或 VB 编译器不理解此设置，因此在生成过程中不会考虑此设置。 相反，若要在生成时强制命名样式规则，应使用 [本部分](#rule-id-ide1006-naming-rule-violation)中所述的基于规则 ID 的严重性配置来设置严重性。 有关详细信息，请参阅此 [GitHub 问题](https://github.com/dotnet/roslyn/issues/44201)。
-
-## <a name="rule-order"></a>规则顺序
-
-命名规则在 EditorConfig 文件中的定义顺序并不重要。 命名规则根据规则本身的定义自动排序。 [EditorConfig 语言服务扩展](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)可以分析 EditorConfig 文件，如果文件中的规则顺序与编译器在运行时使用的规则不同，该扩展还会进行报告。
-
-> [!NOTE]
->
-> 如果使用早于 Visual Studio 2019 版本16.2 的 Visual Studio 版本，则应在 EditorConfig 文件中按从最特定到最小的顺序对命名规则进行排序。 遇到的第一个可应用规则是唯一应用的规则。 但是，如果有多个具有相同名称的规则属性  ，则最近找到的具有该名称的属性具有优先权。 有关详细信息，请参阅[文件层次结构和优先级](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence)。
+1. 命名规则内的严重性规范仅适用于开发 Ide （如 Visual Studio）。 C # 或 VB 编译器不理解此设置，因此在生成过程中不会考虑此设置。 若要在生成时强制命名样式规则，应改为使用 " [代码规则严重性配置](#rule-id-ide1006-naming-rule-violation)" 设置严重性。 有关详细信息，请参阅此 [GitHub 问题](https://github.com/dotnet/roslyn/issues/44201)。
 
 ## <a name="symbol-group-properties"></a>符号组属性
 
-可以为符号组设置以下属性，以限制组中包含的符号。 若要在单个属性设置中指定多个值，请用逗号分隔它们。
+可以为符号组设置以下属性，以限制组中包含的符号。 若要为单个属性指定多个值，请用逗号分隔这些值。
 
 | properties | 说明 | 允许的值 | 必须 |
 | -- | -- | -- | -- |
@@ -131,6 +121,14 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 1. 必须在命名样式中指定大写样式，否则会忽略命名样式。
 
+## <a name="rule-order"></a>规则顺序
+
+命名规则在 EditorConfig 文件中的定义顺序并不重要。 命名规则根据规则本身的定义自动排序。 [EditorConfig 语言服务扩展](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)可以分析 EditorConfig 文件，如果文件中的规则顺序与编译器在运行时使用的规则不同，该扩展还会进行报告。
+
+> [!NOTE]
+>
+> 如果使用早于 Visual Studio 2019 版本16.2 的 Visual Studio 版本，则应在 EditorConfig 文件中按从最特定到最小的顺序对命名规则进行排序。 遇到的第一个可应用规则是唯一应用的规则。 但是，如果有多个具有相同名称的规则属性  ，则最近找到的具有该名称的属性具有优先权。 有关详细信息，请参阅[文件层次结构和优先级](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence)。
+
 ## <a name="default-naming-styles"></a>默认命名样式
 
 如果未指定任何自定义命名规则，则使用以下默认样式：
@@ -138,6 +136,16 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 - 对于可访问性为 `public`、`private`、`internal`、`protected` 或 `protected_internal` 的类、结构、枚举、属性以及事件，默认的命名样式为帕斯卡拼写法。
 
 - 对于可访问性为 `public`、`private`、`internal`、`protected` 或 `protected_internal` 的接口，默认的命名样式为帕斯卡拼写法并必须附加 l 前缀。 
+
+## <a name="code-rule-id-ide1006-naming-rule-violation"></a><a name="rule-id-ide1006-naming-rule-violation"></a>代码规则 ID： `IDE1006 (Naming rule violation)`
+
+所有命名选项都有规则 ID `IDE1006` 和标题 `Naming rule violation` 。 你可以使用以下语法在 EditorConfig 文件中全局配置命名冲突的严重性：
+
+```ini
+dotnet_diagnostic.IDE1006.severity = <severity value>
+```
+
+严重性值必须是 `warning` 或 `error` 才能 [在生成时强制执行](../overview.md#code-style-analysis)。 对于所有可能的严重性值，请参阅 [严重性级别](../configuration-options.md#severity-level)。
 
 ## <a name="example"></a>示例
 
@@ -162,17 +170,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-## <a name="rule-id-ide1006-naming-rule-violation"></a><a name="rule-id-ide1006-naming-rule-violation"></a>规则 ID： "IDE1006" (命名规则冲突) 
-
-所有命名选项都有规则 ID `IDE1006` 和标题 `Naming rule violation` 。 你可以使用以下语法在 EditorConfig 文件中全局配置命名冲突的严重性：
-
-```ini
-dotnet_diagnostic.IDE1006.severity = <severity value>
-```
-
-严重性值必须是 `warning` 或 `error` 才能 [在生成时强制执行](../overview.md#code-style-analysis)。 对于所有可能的严重性值，请参阅 [严重性级别](../configuration-options.md#severity-level)。
-
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [语言规则](language-rules.md)
 - [格式设置规则](formatting-rules.md)
