@@ -8,12 +8,12 @@ metadata:
   ms.topic: hub-page
   ms.prod: azure-dotnet
   ms.date: 08/12/2020
-  ms.openlocfilehash: 6e86c1001cb5d62ae727da549e7d70e51552a17e
-  ms.sourcegitcommit: f0eb7eeedf3ceec726499fa678786d03083214ea
+  ms.openlocfilehash: 2d745137aa3de029490465d89724bc8583806119
+  ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/21/2021
-  ms.locfileid: "98629242"
+  ms.lasthandoff: 01/29/2021
+  ms.locfileid: "99065110"
 highlightedContent:
   items:
   - itemType: overview
@@ -37,9 +37,9 @@ highlightedContent:
   - itemType: learn
     title: 使用 Microsoft 标识保护自定义 API
     url: /learn/modules/identity-secure-custom-api/
-  - itemType: learn
-    title: Azure 基础
-    url: /learn/paths/azure-fundamentals/
+  - itemType: get-started
+    title: 用于 .NET 的 Azure SDK
+    url: sdk/azure-sdk-for-dotnet
 conceptualContent:
   title: 特别推荐的内容
   summary: 学习开发利用各种 Azure 服务的 .NET 应用。
