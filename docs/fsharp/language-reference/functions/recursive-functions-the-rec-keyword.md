@@ -2,12 +2,12 @@
 title: 递归函数：rec 关键字
 description: '了解如何使用 F # "rec" 关键字来定义递归函数。'
 ms.date: 08/12/2020
-ms.openlocfilehash: 1ab00ff9400129e531fd7320861b3d9625cad08c
-ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
+ms.openlocfilehash: 27f215f7b6f09646e847898c2618cfac10175e6e
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91438080"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99215707"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>递归函数：rec 关键字
 
@@ -33,12 +33,12 @@ and function2-nameparameter-list =
 
 递归函数-调用自身的函数-在 F # 语言中显式标识为 `rec` 关键字。 `rec`关键字可使绑定的名称 `let` 在其主体中可用。
 
-下面的示例演示一个使用数学定义计算第*n*<sup>th</sup>个斐波那契数的递归函数。
+下面的示例演示一个使用数学定义计算第 *n*<sup></sup>个斐波那契数的递归函数。
 
 ```fsharp
 let rec fib n =
     match n with
-    | 0 | 1 -> 1
+    | 0 | 1 -> n
     | n -> fib (n-1) + fib (n-2)
 ```
 
@@ -51,7 +51,7 @@ let rec fib n =
 type MyClass() =
     member this.Fib(n) =
         match n with
-        | 0 | 1 -> 1
+        | 0 | 1 -> n
         | n -> this.Fib(n-1) + this.Fib(n-2)
 ```
 
@@ -86,7 +86,7 @@ let fib n =
 
 ## <a name="mutually-recursive-functions"></a>相互递归函数
 
-有时，函数是 *相互递归*的，这意味着，调用会形成一个圆圈，其中一个函数调用另一个函数，而后者又调用第一个，并在之间进行任意数量的调用。 必须在一个绑定中一起定义此类函数 `let` ，使用 `and` 关键字将它们链接在一起。
+有时，函数是 *相互递归* 的，这意味着，调用会形成一个圆圈，其中一个函数调用另一个函数，而后者又调用第一个，并在之间进行任意数量的调用。 必须在一个绑定中一起定义此类函数 `let` ，使用 `and` 关键字将它们链接在一起。
 
 下面的示例演示两个相互递归函数。
 

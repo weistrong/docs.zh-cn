@@ -1,5 +1,6 @@
 ---
 title: 很抱歉，我们没有关于此 C# 错误的具体信息
+description: 尚未记录的编译器错误和警告的可能的资源列表。
 ms.date: 08/04/2020
 f1_keywords:
 - CS0181
@@ -736,12 +737,12 @@ f1_keywords:
 helpviewer_keywords:
 - errors [C#], additional information
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-ms.openlocfilehash: 16420ee5889779e3aefdbc15f1050aeeeea8f624
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: c16698fbbf42e0967978a3502243793835f541c5
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91804607"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216897"
 ---
 # <a name="sorry-we-dont-have-specifics-on-this-c-error"></a>很抱歉，我们没有关于此 C# 错误的具体信息
 
@@ -753,11 +754,9 @@ ms.locfileid: "91804607"
  [Stack Overflow](https://stackoverflow.com/questions/tagged/c%23)  
 提供 QA 网站来了解有关 Visual c # 的问题和问题。  
 
- 另请参见：  
- [为 Visual C# 程序员提供的附加资源](../getting-started/index.md)  
-  
 ## <a name="see-also"></a>请参阅
 
 - [C# 编程指南](../programming-guide/index.md)
 - [C# 参考](../language-reference/index.md)
 - [与我们交流](/visualstudio/ide/feedback-options)
+- [为 Visual C# 程序员提供的附加资源](../tour-of-csharp/index.md)

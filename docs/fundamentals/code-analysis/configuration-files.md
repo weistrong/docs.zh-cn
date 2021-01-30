@@ -5,19 +5,19 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 0d64df42ffb1763afed3e883c4f043755e158489
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: b98fdd48f2373bd23fcd3273834860a60c682969
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633983"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216377"
 ---
 # <a name="configuration-files-for-code-analysis-rules"></a>代码分析规则的配置文件
 
 代码分析规则具有各种 [配置选项](configuration-options.md)。 在以下任一分析器配置文件中，将这些选项指定为键值对：
 
 - [EditorConfig](#editorconfig) 文件：基于文件或基于文件夹的配置选项。
-- [全局 AnalyzerConfig](#global-analyzerconfig) 文件：项目级别配置选项。
+- [全局 AnalyzerConfig](#global-analyzerconfig) 文件：项目级别配置选项。 当某些项目文件位于项目文件夹之外时，此方法非常有用。
 
 ## EditorConfig
 
@@ -58,7 +58,7 @@ tab_width = 4
 #### .NET Coding Conventions ####
 
 # this. and Me. preferences
-dotnet_style_qualification_for_method = true:warning
+dotnet_style_qualification_for_method = true
 
 #### Diagnostic configuration ####
 
@@ -68,7 +68,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## <a name="global-analyzerconfig"></a>全局 AnalyzerConfig
 
-从 .NET 5 SDK 开始 (在 Visual Studio 2019 版本16.8 及更高版本) 中受支持，你还可以配置包含全局 _AnalyzerConfig_ 文件的分析器选项。 这些文件用于提供 **应用于项目中所有源文件的选项**，而不考虑它们的文件名或文件路径。
+从 .NET 5 SDK 开始 (这在 Visual Studio 2019 版本16.8 和更高版本中受支持) ，你还可以配置包含全局 _AnalyzerConfig_ 文件的分析器选项。 这些文件用于提供 **应用于项目中所有源文件的选项**，而不考虑它们的文件名或文件路径。
 
 与 [EditorConfig](#editorconfig) 文件不同，全局配置文件不能用于为 ide 配置编辑器样式设置，如缩进大小或是否剪裁尾随空格。 相反，它们专用于指定项目级分析器配置选项。
 
@@ -141,6 +141,6 @@ EditorConfig文件和全局 AnalyzerConfig 文件都为每个选项指定键值�
 
 - 有关具有不同键的相关严重性选项的优先规则的信息（例如，为单个规则指定了不同的严重性，并为规则所属的类别指定了不同的严重性），请参阅 [代码分析的配置选项](configuration-options.md#precedence)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EditorConfig vs global AnalyzerConfig 设计问题](https://github.com/dotnet/roslyn/issues/47707)

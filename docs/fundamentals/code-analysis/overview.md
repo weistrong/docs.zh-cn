@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: 80815b5913ad72756de503209b52e8848dd708bf
-ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
+ms.openlocfilehash: efc440adb59da1ef9838ec5445d9c55544c14380
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98025076"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216468"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>.NET 源代码分析概述
 
@@ -40,7 +40,7 @@ ms.locfileid: "98025076"
 
 默认情况下，在 .NET 5.0 中启用以下规则。
 
-| 诊断 ID | Category | 严重性 | 说明 |
+| 诊断 ID | 类别 | 严重性 | 说明 |
 | - | - | - | - |
 | [CA1416](/visualstudio/code-quality/ca1416) | 互操作性 | 警告 | 平台兼容性分析器 |
 | [CA1417](/visualstudio/code-quality/ca1417) | 互操作性 | 警告 | 不要 `OutAttribute` 在 P/invoke 的字符串参数上使用 |
@@ -60,7 +60,7 @@ ms.locfileid: "98025076"
 
 *分析模式* 是指预定义的代码分析配置，其中未启用任何、部分或全部规则。 在默认分析模式下，仅将少量规则 [作为生成警告启用](#enabled-rules)。 可以通过在项目文件中设置 [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) 属性来更改项目的分析模式。 允许的值为：
 
-| “值” | 描述 |
+| 值 | 说明 |
 | - | - |
 | `AllDisabledByDefault` | 这是最保守的模式。 默认情况下，所有规则都处于禁用状态。 可以选择[选择加入](configuration-options.md)各条规则，以启用它们。<br /><br />`<AnalysisMode>AllDisabledByDefault</AnalysisMode>` |
 | `AllEnabledByDefault` | 这是最严格的模式。 所有规则都作为生成警告启用。 您可以选择性地 [选择退出](configuration-options.md) 个别规则来禁用它们。<br /><br />`<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |
@@ -127,7 +127,7 @@ ms.locfileid: "98025076"
    dotnet_diagnostic.IDE0040.severity = warning
    ```
 
-   或者，您也可以将整个 "样式" 类别配置为警告或错误，默认情况下，您可以选择关闭您不想在生成时运行的规则。 例如：
+   或者，你可以将整个类别配置为警告或错误，默认情况下，你可以在不希望在生成时运行的那一类别中选择关闭规则。 例如：
 
    ```ini
    [*.{cs,vb}]
@@ -158,7 +158,7 @@ Visual Studio 提供了其他方式来禁止显示代码分析规则中的警告
 
 除了官方 .NET 分析器外，还可以安装第三方分析器，如 [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、 [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、 [XUnit 分析器](https://www.nuget.org/packages/xunit.analyzers/)和 [sonar.projectname Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [代码质量分析规则参考](quality-rules/index.md)
 - [代码样式分析规则引用](style-rules/index.md)
