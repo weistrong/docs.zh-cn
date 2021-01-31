@@ -1,21 +1,16 @@
 items:
   - name: C# 文档
     href: index.yml
-  - name: 入门
+  - name: C# 教程
     items:
-      - name: C# 语言和 .NET 简介
-        displayName: get started
-        href: getting-started/index.md
-      - name: C# 教程
-        items:
-          - name: 简介
-            href: tour-of-csharp/index.md
-          - name: 类型
-            href: tour-of-csharp/types.md
-          - name: 程序构建基块
-            href: tour-of-csharp/program-building-blocks.md
-          - name: 主要语言区域
-            href: tour-of-csharp/features.md
+      - name: 简介
+        href: tour-of-csharp/index.md
+      - name: 类型
+        href: tour-of-csharp/types.md
+      - name: 程序构建基块
+        href: tour-of-csharp/program-building-blocks.md
+      - name: 主要语言区域
+        href: tour-of-csharp/features.md
   - name: 教程
     items:
       - name: 概述
