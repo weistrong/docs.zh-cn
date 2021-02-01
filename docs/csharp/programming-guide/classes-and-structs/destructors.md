@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C# language, finalizers
 - finalizers [C#]
 ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
-ms.openlocfilehash: 61a00e766b0f975691b9f2a7c7561bb4f1d33c02
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a2f4f5f9342d5df1f9fa741c86cfe6f8b1d88bd1
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174298"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899056"
 ---
 # <a name="finalizers-c-programming-guide"></a>终结器（C# 编程指南）
 
@@ -32,7 +32,7 @@ ms.locfileid: "91174298"
   
  例如，以下是类 `Car` 的终结器声明。
   
- [!code-csharp[csProgGuideObjects#86](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#86)]  
+ [!code-csharp[csProgGuideObjects#86](snippets/destructors/Program.cs#2)]
 
 终结器也可以作为表达式主体定义实现，如下面的示例所示。
 
@@ -85,7 +85,7 @@ protected override void Finalize()
 
  以下示例创建了三个类，并且这三个类构成了一个继承链。 类 `First` 是基类，`Second` 派生自 `First`，`Third` 派生自 `Second`。 这三个类都具有终结器。 在 `Main` 中，已创建派生程度最高的类的一个实例。 程序运行时，请注意，将按顺序（从派生程度最高到派生程度最低）自动调用这三个类的终结器。  
   
- [!code-csharp[csProgGuideObjects#85](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#85)]  
+ [!code-csharp[Destructors#1](snippets/destructors/Program.cs#1)]
   
 ## <a name="c-language-specification"></a>C# 语言规范  
 

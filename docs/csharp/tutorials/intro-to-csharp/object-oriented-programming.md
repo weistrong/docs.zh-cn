@@ -2,12 +2,12 @@
 title: 面向对象的编程 (C#)
 description: C# 提供针对面向对象的编程（包括抽象、封装、继承和多态性）的完整支持。
 ms.date: 09/30/2020
-ms.openlocfilehash: 4ae31e18fcd88870f511e77bb0c555f35394fd1b
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: b778b7c42bbfb1f20bdd2d83b9cb10512ea3f41b
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687989"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794841"
 ---
 # <a name="object-oriented-programming-c"></a>面向对象的编程 (C#)
 
@@ -99,7 +99,16 @@ public BankAccount(string name, decimal initialBalance)
 
 验证结果。 现在，为 `LineOfCreditAccount` 添加一组类似的测试代码：
 
-:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" ID="TestLineOfCredit":::
+```
+    var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
+    // How much is too much to borrow?
+    lineOfCredit.MakeWithdrawal(1000m, DateTime.Now, "Take out monthly advance");
+    lineOfCredit.MakeDeposit(50m, DateTime.Now, "Pay back small amount");
+    lineOfCredit.MakeWithdrawal(5000m, DateTime.Now, "Emergency funds for repairs");
+    lineOfCredit.MakeDeposit(150m, DateTime.Now, "Partial restoration on repairs");
+    lineOfCredit.PerformMonthEndTransactions();
+    Console.WriteLine(lineOfCredit.GetAccountHistory());
+ ```
 
 添加前面的代码并运行程序时，你将看到类似于以下错误的内容：
 

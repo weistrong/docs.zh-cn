@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, constants
 - constants [C#]
 ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
-ms.openlocfilehash: 9eff44f3260f0f50fef956ba60b01e2497d7d2dd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4783aff8e9424c90e46cb52692a3e645e995d914
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91199206"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899069"
 ---
 # <a name="constants-c-programming-guide"></a>常量（C# 编程指南）
 
@@ -23,7 +23,7 @@ ms.locfileid: "91199206"
   
  常量在声明时必须初始化。 例如：  
   
- [!code-csharp[csProgGuideObjects#64](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#64)]  
+ [!code-csharp[Calendar#1](snippets/constants/Calendar.cs#1)]
   
  在此示例中，常量 `Months` 始终为 12，即使类本身也无法更改它。 实际上，当编译器遇到 C# 源代码中的常量标识符（例如，`Months`）时，它直接将文本值替换到它生成的中间语言 (IL) 代码中。 因为运行时没有与常量相关联的变量地址，所以 `const` 字段不能通过引用传递，并且不能在表达式中显示为左值。  
   
@@ -32,17 +32,17 @@ ms.locfileid: "91199206"
   
  可以同时声明多个同一类型的常量，例如：  
   
- [!code-csharp[csProgGuideObjects#65](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#65)]  
+ [!code-csharp[Calendar#2](snippets/constants/Calendar.cs#2)]
   
  如果不创建循环引用，则用于初始化常量的表达式可以引用另一个常量。 例如：  
   
- [!code-csharp[csProgGuideObjects#66](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#66)]  
+ [!code-csharp[Calendar#3](snippets/constants/Calendar.cs#3)]
   
  可以将常量标记为[public](../../language-reference/keywords/public.md)、[private](../../language-reference/keywords/private.md)、[protected](../../language-reference/keywords/protected.md)、[internal](../../language-reference/keywords/internal.md)、[protected internal](../../language-reference/keywords/protected-internal.md) 或 [private protected](../../language-reference/keywords/private-protected.md)。 这些访问修饰符定义该类的用户访问该常量的方式。 有关详细信息，请参阅[访问修饰符](./access-modifiers.md)。  
   
  常量是作为[静态](../../language-reference/keywords/static.md)字段访问的，因为常量的值对于该类型的所有实例都是相同的。 不使用 `static` 关键字来声明这些常量。 不在定义常量的类中的表达式必须使用类名、句点和常量名称来访问该常量。 例如：  
   
- [!code-csharp[csProgGuideObjects#67](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#67)]  
+ [!code-csharp[Calendar#4](snippets/constants/Calendar.cs#4)]
   
 ## <a name="c-language-specification"></a>C# 语言规范  
 

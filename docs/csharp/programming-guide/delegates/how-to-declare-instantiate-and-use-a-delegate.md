@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - delegates [C#], declaring and instantiating
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
-ms.openlocfilehash: 83dbd2dc497fafaf1922f8ad53208d0ab14f14a9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 08d8e10b4aba3fd75e200b2c8c14bb3d1825b318
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185894"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898874"
 ---
 # <a name="how-to-declare-instantiate-and-use-a-delegate-c-programming-guide"></a>如何声明、实例化和使用委托（C# 编程指南）
 
@@ -34,7 +34,7 @@ ms.locfileid: "91185894"
   
  有关详细信息，请参阅 [Lambda 表达式](../../language-reference/operators/lambda-expressions.md)。  
   
- 下面的示例演示如何声明、实例化和使用委托。 `BookDB` 类封装用来维护书籍数据库的书店数据库。 它公开一个方法 `ProcessPaperbackBooks`，用于在数据库中查找所有平装书并为每本书调用委托。 使用的 `delegate` 类型名为 `ProcessBookDelegate`。 `Test` 类使用此类打印平装书的书名和平均价格。  
+ 下面的示例演示如何声明、实例化和使用委托。 `BookDB` 类封装用来维护书籍数据库的书店数据库。 它公开一个方法 `ProcessPaperbackBooks`，用于在数据库中查找所有平装书并为每本书调用委托。 使用的 `delegate` 类型名为 `ProcessBookCallback`。 `Test` 类使用此类打印平装书的书名和平均价格。  
   
  使用委托提升书店数据库和客户端代码之间的良好分隔功能。 客户端代码程序不知道如何存储书籍或书店代码如何查找平装书。 书店代码不知道它在找到平装书之后对其执行什么处理。  
   

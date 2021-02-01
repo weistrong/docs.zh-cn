@@ -2,12 +2,12 @@
 title: 使用 .NET 容器时定位的操作系统
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 使用 .NET 容器时定位的操作系统
 ms.date: 01/13/2021
-ms.openlocfilehash: 1b914d9afca9ade37f13e639f73001b91f338d26
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: b128a7b98d7f46034a56314bd8cc6b4f5731f121
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98187973"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957905"
 ---
 # <a name="what-os-to-target-with-net-containers"></a>使用 .NET 容器时定位的操作系统
 
@@ -27,9 +27,6 @@ ms.locfileid: "98187973"
 
 如果想使用不同的 Linux 发行版本或要使用 Microsoft 不支持的映像版本，还可以创建自己的 Docker 映像。 例如，可以使用 ASP.NET Core 创建一个在传统 .NET Framework 和 Windows Server Core 上运行的映像，但这不是常见的 Docker 方案。
 
-> [!IMPORTANT]
-> 与完整的 Windows 映像相比，使用 Windows Server Core 映像时，你可能会发现缺少某些 DLL。 可以通过创建自定义 Server Core 映像，在映像构建时添加缺失的文件来解决此问题，如本 [GitHub 注释](https://github.com/microsoft/dotnet-framework-docker/issues/299#issuecomment-511537448)中所述。
-
 将映像名称添加到 Dockerfile 文件后，可根据所使用的标记选择操作系统和版本，如下例所示：
 
 | 图像 | 注释 |
@@ -38,11 +35,6 @@ ms.locfileid: "98187973"
 | mcr.microsoft.com/dotnet/aspnet:5.0 | ASP.NET Core 5.0 多体系结构：支持 Linux 和 Windows Nano Server，具体取决于 Docker 主机。 <br/> ASP.NET Core 的 aspnetcore 映像具有多个优化。 |
 | mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim | Linux Debian 发行版上的 .NET 5 仅运行时 |
 | mcr.microsoft.com/dotnet/aspnet:5.0-nanoserver-1809 | Windows Nano Server（Windows Server 版本 1809）上的 .NET 5 仅运行时 |
-
-## <a name="additional-resources"></a>其他资源
-
-- **由于缺少 WindowsCodecsExt.dll 而导致 BitmapDecoder 产生故障（GitHub 问题）**  
-  <https://github.com/microsoft/dotnet-framework-docker/issues/299>
 
 > [!div class="step-by-step"]
 > [上一页](container-framework-choice-factors.md)
