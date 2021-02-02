@@ -1,23 +1,37 @@
 ---
 title: C# 介绍 - C# 指南
-description: 刚开始接触 C#？ 了解 C# 语言的基础知识。
-ms.date: 08/06/2020
-ms.openlocfilehash: 84775a436deb0958d3c05ec7d0207e76be28f27c
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+description: 刚开始接触 C#？ 了解 C# 语言的基础知识。 从此概述开始。
+ms.date: 01/28/2021
+ms.openlocfilehash: 016edf331d8cbdca2902cb033963b6aea11df513
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89464995"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216637"
 ---
 # <a name="a-tour-of-the-c-language"></a>C# 语言介绍
 
-C#（读作“See Sharp”）是一种新式编程语言，不仅面向对象，还类型安全。 C# 源于 C 语言系列，C、C++、Java 和 JavaScript 程序员很快就可以上手使用。 本教程概述了 C# 8 及更高版本中该语言的主要组件。 如果想要通过交互式示例探索语言，请尝试 [C# 简介](../tutorials/intro-to-csharp/index.md)教程。
+C#（读作“See Sharp”）是一种新式编程语言，不仅面向对象，还类型安全。 开发人员利用 C# 能够生成在 .NET 生态系统中运行的多种安全可靠的应用程序。 C# 源于 C 语言系列，C、C++、Java 和 JavaScript 程序员很快就可以上手使用。 本教程概述了 C# 8 及更高版本中该语言的主要组件。 如果想要通过交互式示例探索语言，请尝试 [C# 简介](../tutorials/intro-to-csharp/index.md)教程。
 
 C# 是面向对象的、面向组件的编程语言。 C# 提供了语言构造来直接支持这些概念，让 C# 成为一种非常自然的语言，可用于创建和使用软件组件。 自诞生之日起，C# 就添加了支持新工作负载和新兴软件设计实践的功能。
 
-多项 C# 功能有助于构造可靠耐用的应用程序。 [垃圾回收](../../standard/garbage-collection/index.md)会自动回收无法访问的未使用对象所占用的内存。 [异常处理](../programming-guide/exceptions/index.md)提供了一种结构化且可扩展的方法来进行错误检测和恢复。 [Lambda 表达式](../language-reference/operators/lambda-expressions.md)支持函数编程技术。 [查询语法](../linq/index.md)创建一个公共模式，用于处理来自任何源的数据。 [异步操作](../programming-guide/concepts/async/index.md)语言支持提供用于构建分布式系统的语法。 [模式匹配](..//pattern-matching.md)提供语法，可轻松地将数据从新式分布式系统中的算法中分离出来。 C# 采用[统一的类型系统](../programming-guide/types/index.md)。 所有 C# 类型（包括 `int` 和 `double` 等基元类型）均继承自一个根 `object` 类型。 所有类型共用一组通用运算。 任何类型的值都可以一致地进行存储、传输和处理。 此外，C# 还支持用户定义的引用类型和值类型。 C# 允许动态分配轻型结构的对象和内嵌存储。
+多项 C# 功能有助于创建可靠且持久的应用程序。 [垃圾回收](../../standard/garbage-collection/index.md)会自动回收无法访问的未使用对象所占用的内存。 [可以为 null 的类型](../nullable-references.md)可防范不引用已分配对象的变量。 [异常处理](../programming-guide/exceptions/index.md)提供了一种结构化且可扩展的方法来进行错误检测和恢复。 [Lambda 表达式](../language-reference/operators/lambda-expressions.md)支持函数编程技术。 [语言集成查询 (LINQ)](../linq/index.md) 语法创建一个公共模式，用于处理来自任何源的数据。 [异步操作](../programming-guide/concepts/async/index.md)语言支持提供用于构建分布式系统的语法。 C# 采用[统一的类型系统](../programming-guide/types/index.md)。 所有 C# 类型（包括 `int` 和 `double` 等基元类型）均继承自一个根 `object` 类型。 所有类型共用一组通用运算。 任何类型的值都可以一致地进行存储、传输和处理。 此外，C# 还支持用户定义的[引用类型](../language-reference/builtin-types/reference-types.md)和[值类型](../language-reference/builtin-types/value-types.md)。 C# 允许动态分配轻型结构的对象和内嵌存储。 C# 支持泛型方法和类型，因此增强了类型安全性和性能。 C# 可提供迭代器，使集合类的实现者可以定义客户端代码的自定义行为。
 
 C# 强调版本控制，以确保程序和库以兼容方式随时间推移而变化。 C# 设计中受版本控制加强直接影响的方面包括：单独的 `virtual` 和 `override` 修饰符，关于方法重载决策的规则，以及对显式接口成员声明的支持。
+
+## <a name="net-architecture"></a>.NET 体系结构
+
+C# 程序在 .NET 上运行，而 .NET 是名为公共语言运行时 (CLR) 的虚执行系统和一组类库。 CLR 是 Microsoft 对公共语言基础结构 (CLI) 国际标准的实现。 CLI 是创建执行和开发环境的基础，语言和库可以在其中无缝地协同工作。
+
+用 C# 编写的源代码被编译成符合 CLI 规范的[中间语言 (IL)](../../standard/managed-code.md)。 IL 代码和资源（如位图和字符串）存储在程序集中，扩展名通常为 .dll。 程序集包含一个介绍程序集的类型、版本和区域性的清单。
+
+执行 C# 程序时，程序集将加载到 CLR。 CLR 会直接执行实时 (JIT) 编译，将 IL 代码转换成本机指令。 CLR 可提供其他与自动垃圾回收、异常处理和资源管理相关的服务。 CLR 执行的代码有时称为“托管代码”（而不是“非托管代码”），被编译成面向特定平台的本机语言。
+
+语言互操作性是 .NET 的一项重要功能。 C# 编译器生成的 IL 代码符合公共类型规范 (CTS)。 通过 C# 生成的 IL 代码可以与通过 .NET 版本的 F#、Visual Basic、C++ 或其他 20 多种与 CTS 兼容的任何语言所生成的代码进行交互。 一个程序集可能包含多个用不同 .NET 语言编写的模块，且类型可以相互引用，就像是用同一种语言编写的一样。
+
+除了运行时服务之外，.NET 还包含大量库。 这些库支持多种不同的工作负载。 它们已整理到命名空间中，这些命名空间提供各种实用功能，包括文件输入输出、字符串控制、XML 分析、Web 应用程序框架和 Windows 窗体控件。 典型的 C# 应用程序广泛使用 .NET 类库来处理常见的“管道”零碎工作。
+
+有关 .NET 的详细信息，请参阅 [.NET 概述](../../core/introduction.md)。
 
 ## <a name="hello-world"></a>Hello world
 
@@ -33,11 +47,11 @@ C# 强调版本控制，以确保程序和库以兼容方式随时间推移而�
 
 ## <a name="types-and-variables"></a>类型和变量
 
-C# 有两种类型：*值类型*和*引用类型*。 值类型的变量直接包含数据，而引用类型的变量则存储对数据（称为“对象”）的引用。 对于引用类型，两个变量可以引用同一个对象；对一个变量执行的运算可能会影响另一个变量引用的对象。 借助值类型，每个变量都有自己的数据副本；因此，对一个变量执行的运算不会影响另一个变量（`ref` 和 `out` 参数变量除外）。
+C# 有两种类型：*值类型* 和 *引用类型*。 值类型的变量直接包含它们的数据。 引用类型的变量存储对数据（称为“对象”）的引用。 对于引用类型，两个变量可以引用同一个对象；对一个变量执行的运算可能会影响另一个变量引用的对象。 借助值类型，每个变量都有自己的数据副本；因此，对一个变量执行的运算不会影响另一个变量（`ref` 和 `out` 参数变量除外）。
 
-标识符为变量名称。 标识符是不包含任何空格的 unicode 字符序列。 如果标识符的前缀为 `@`，则该标识符可以是 C# 保留字。 这在与其他语言交互时非常有用。
+标识符是变量名称 标识符是不包含任何空格的 unicode 字符序列。 如果标识符的前缀为 `@`，则该标识符可以是 C# 保留字。 在与其他语言交互时，使用保留字作为标识符很有用。
 
-C# 值类型又细分为简单类型、枚举类型、结构类型、可以为 null 的值类型和元组值类型。 C# 引用类型又细分为类类型、接口类型、数组类型和委托类型。    
+C# 值类型又细分为简单类型、枚举类型、结构类型、可以为 null 的值类型和元组值类型   。 C# 引用类型又细分为类类型、接口类型、数组类型和委托类型。    
 
 以下大纲概述了 C# 的类型系统。
 
@@ -69,7 +83,7 @@ C# 值类型又细分为简单类型、枚举类型、结构类型、可以为 n
   - [委托类型](../language-reference/builtin-types/reference-types.md#the-delegate-type)
     - 格式为 `delegate int D(...)` 的用户定义类型
 
-C# 程序使用*类型声明*创建新类型。 类型声明指定新类型的名称和成员。 用户可定义以下六种 C# 类型：类类型、结构类型、接口类型、枚举类型、委托类型和元组值类型。
+C# 程序使用 *类型声明* 创建新类型。 类型声明指定新类型的名称和成员。 用户可定义以下六种 C# 类型：类类型、结构类型、接口类型、枚举类型、委托类型和元组值类型。
 
 - `class` 类型定义包含数据成员（字段）和函数成员（方法、属性及其他）的数据结构。 类类型支持单一继承和多形性，即派生类可以扩展和专门针对基类的机制。
 - `struct` 类型定义包含数据成员和函数成员的结构，这一点与类类型相似。 不过，与类不同的是，结构是值类型，通常不需要进行堆分配。 结构类型不支持用户指定的继承，并且所有结构类型均隐式继承自类型 `object`。
@@ -82,7 +96,7 @@ C# 支持任意类型的一维和多维数组。 与上述类型不同，数组�
 
 可以为 null 的类型不需要单独定义。 对于所有不可以为 null 的类型 `T`，都有对应的可以为 null 的类型 `T?`，后者可以包含附加值 `null`。 例如，`int?` 是可保存任何 32 位整数或 `null` 值的类型，`string?` 是可以保存任何 `string` 或 `null` 值的类型。
 
-C# 采用统一的类型系统，因此任意类型的值都可视为 `object`。 每种 C# 类型都直接或间接地派生自 `object` 类类型，而 `object` 是所有类型的最终基类。 只需将值视为类型 `object`，即可将引用类型的值视为对象。 通过执行*装箱*和*取消装箱操作*，可以将值类型的值视为对象。 在以下示例中，`int` 值被转换成 `object`，然后又恢复成 `int`。
+C# 采用统一的类型系统，因此任意类型的值都可视为 `object`。 每种 C# 类型都直接或间接地派生自 `object` 类类型，而 `object` 是所有类型的最终基类。 只需将值视为类型 `object`，即可将引用类型的值视为对象。 通过执行 *装箱* 和 *取消装箱操作*，可以将值类型的值视为对象。 在以下示例中，`int` 值被转换成 `object`，然后又恢复成 `int`。
 
 :::code language="csharp" source="./snippets/shared/Program.cs" ID="boxing" :::
 
@@ -90,7 +104,7 @@ C# 采用统一的类型系统，因此任意类型的值都可视为 `object`�
 
 C# 的统一类型系统实际上意味着“按需”将值类型视为 `object` 引用。 鉴于这种统一性，使用类型 `object` 的常规用途库可以与派生自 `object` 的所有类型结合使用，包括引用类型和值类型。
 
-C# 有多种*变量*，其中包括字段、数组元素、局部变量和参数。 变量表示存储位置。 每个变量都具有一种类型，用于确定可以在变量中存储哪些值，如下文所述。
+C# 有多种 *变量*，其中包括字段、数组元素、局部变量和参数。 变量表示存储位置。 每个变量都具有一种类型，用于确定可以在变量中存储哪些值，如下文所述。
 
 - 不可以为 null 的值类型
   - 具有精确类型的值
@@ -109,7 +123,7 @@ C# 有多种*变量*，其中包括字段、数组元素、局部变量和参数
 
 ## <a name="program-structure"></a>程序结构
 
-C# 中的关键组织结构概念包括[程序](../programming-guide/inside-a-program/index.md)、[命名空间](../programming-guide/namespaces/index.md)、[类型](../programming-guide/types/index.md)、[成员](../programming-guide/classes-and-structs/members.md)和[程序集](../../standard/assembly/index.md)。 程序声明类型，而类型则包含成员，并被整理到命名空间中。 类型示例包括类、结构和接口。 成员示例包括字段、方法、属性和事件。 编译完的 C# 程序实际上会打包到程序集中。 程序集的文件扩展名通常为 `.exe` 或 `.dll`，具体取决于实现的是***应用程序***还是***库***。
+C# 中的关键组织结构概念包括[程序](../programming-guide/inside-a-program/index.md)、[命名空间](../programming-guide/namespaces/index.md)、[类型](../programming-guide/types/index.md)、[成员](../programming-guide/classes-and-structs/members.md)和[程序集](../../standard/assembly/index.md)*    。 程序声明类型，而类型则包含成员，并被整理到命名空间中。 类型示例包括类、结构和接口。 成员示例包括字段、方法、属性和事件。 编译完的 C# 程序实际上会打包到程序集中。 程序集的文件扩展名通常为 `.exe` 或 `.dll`，具体取决于实现的是应用程序还是库 。
 
 作为一个小示例，请考虑包含以下代码的程序集：
 

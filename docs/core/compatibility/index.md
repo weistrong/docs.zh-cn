@@ -1,27 +1,27 @@
 ---
 title: 重大更改的类型
-description: 了解 .NET Core 如何试着保证开发人员在不同的 .NET 版本中享有兼容性，以及哪种类型的变更被视为中断性变更。
-ms.date: 06/10/2019
-ms.openlocfilehash: bc93316141ae99d8cfedc5e6d88a9e91216f9c6e
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+description: 了解 .NET 如何试着保证开发人员在不同的 .NET 版本中享有兼容性，以及哪种类型的变更被视为中断性变更。
+ms.date: 01/28/2021
+ms.openlocfilehash: d539a82b21abc4df8d726673ef728020f36551bf
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415740"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216033"
 ---
 # <a name="changes-that-affect-compatibility"></a>会影响兼容性的变更
 
-在 .NET 的整个历史记录中，它都尝试在版本之间以及 .NET 各个风格之间保持高级别的兼容性。 .NET Core 将继续坚守这个准则。 尽管可以将 .NET Core 视为独立于 .NET Framework 的新技术，但下面的两个因素使 .NET Core 无法脱离 .NET Framework：
+在 .NET 的整个历史记录中，它都尝试在版本之间以及 .NET 各个实现之间保持高级别的兼容性。 与 .NET Framework 相比，尽管可以将 .NET 5（和 .NET Core）以及更高版本视为一种新技术，但下面的两个因素使 .NET 的此种实现无法脱离 .NET Framework：
 
 - 有许多最初开发过或在继续开发 .NET Framework 应用程序的开发人员。 他们希望各个 .NET 实现中的行为保持一致。
 
-- .NET Standard 库项目允许开发人员创建面向 .NET Core 和 .NET Framework 共享的通用 API 的库。 开发人员希望用于 .NET Core 应用程序的库与用于 .NET Framework 应用程序的同一个库的行为相同。
+- .NET Standard 库项目允许开发人员创建面向 .NET 5（和 .NET Core）以及更高版本和 .NET Framework 共享的通用 API 的库。 开发人员希望用于 .NET 5 应用程序的库与用于 .NET Framework 应用程序的同一个库的行为相同。
 
-在希望保持各个 .NET 实现之间的兼容性的同时，开发人员还希望在各个 .NET Core 版本之间保持高级别的兼容性。 具体而言，为 .NET Core 早期版本编写的代码应在较高版本的 .NET Core 上无缝运行。 实际上，许多开发人员都希望新发布的 .NET Core 版本中的新 API 也应该与引入这些 API 的预发布版本兼容。
+在希望保持各个 .NET 实现之间的兼容性的同时，开发人员还希望在 .NET 的给定实现的版本之间保持高级别的兼容性。 具体而言，为 .NET Core 早期版本编写的代码应在 .NET 5 或更高版本上无缝运行。 实际上，许多开发人员都希望新发布的 .NET 版本中的新 API 也应该与引入这些 API 的预发布版本兼容。
 
 本文概述了会影响兼容性的变更，以及 .NET 评估每种变更的方式。 如果开发人员需打开要求修改 [现有 .NET API](https://github.com/dotnet/runtime) 的行为的拉取请求，则了解 .NET 团队如何处理可能的中断性变更对他们来说尤其有用。
 
-以下各个部分说明了 .NET Core API 的变更类别，以及它们对应用程序兼容性的影响。 ✔️ 表示允许更改；❌ 表示不允许更改；❓ 表示需要评判之前行为的可预测性、显著性和一致性。
+以下各个部分说明了 .NET API 的变更类别，以及它们对应用程序兼容性的影响。 ✔️ 表示允许更改；❌ 表示不允许更改；❓ 表示需要评判之前行为的可预测性、显著性和一致性。
 
 > [!NOTE]
 >

@@ -197,7 +197,7 @@ items:
                 href: ../core/tools/sdk-errors/netsdk1079.md
               - name: NETSDK1145
                 href: ../core/tools/sdk-errors/netsdk1145.md
-      - name: .NET Core CLI
+      - name: .NET CLI
         items:
           - name: 概述
             displayName: '.net cli,command-line interface,cli,tool'
@@ -439,7 +439,7 @@ items:
                 href: ../fundamentals/diagnostics/runtime-type-events.md
           - name: 收集容器中的诊断
             href: ../core/diagnostics/diagnostics-in-containers.md
-          - name: .NET Core CLI 全局工具
+          - name: .NET CLI 全局工具
             items:
               - name: dotnet-counters
                 href: ../core/diagnostics/dotnet-counters.md
@@ -453,7 +453,7 @@ items:
                 href: ../core/diagnostics/dotnet-symbol.md
               - name: dotnet-sos
                 href: ../core/diagnostics/dotnet-sos.md
-          - name: .NET Core 诊断教程
+          - name: .NET 诊断教程
             items:
               - name: 在 Linux 中通过 PerfCollect 收集性能跟踪
                 href: ../core/diagnostics/trace-perfcollect-lttng.md
@@ -478,6 +478,8 @@ items:
                 href: code-analysis/configuration-options.md
               - name: 配置文件
                 href: code-analysis/configuration-files.md
+              - name: 如何禁止显示警告
+                href: code-analysis/suppress-warnings.md
               - name: 代码质量规则
                 items:
                   - name: 规则选项
@@ -1296,15 +1298,15 @@ items:
                 href: ../core/dependency-loading/loading-unmanaged.md
           - name: 教程
             items:
-              - name: 使用插件创建 .NET Core 应用程序
+              - name: 使用插件创建 .NET 应用程序
                 href: ../core/tutorials/creating-app-with-plugin-support.md
-              - name: 如何在 .NET Core 中使用和调试程序集可卸载性
+              - name: 如何在 .NET 中使用和调试程序集可卸载性
                 href: ../core/../standard/assembly/unloadability.md
       - name: 版本控制
         items:
           - name: 概述
             href: ../core/versions/index.md
-          - name: .NET Core 版本选择
+          - name: .NET 版本选择
             href: ../core/versions/selection.md
       - name: 运行时配置
         items:
@@ -1354,7 +1356,7 @@ items:
         items:
           - name: .NET 和 Docker 简介
             href: ../core/docker/introduction.md
-          - name: 使 .NET Core 应用程序容器化
+          - name: 使 .NET 应用容器化
             href: ../core/docker/build-container.md
           - name: Visual Studio 中的容器工具
             href: /visualstudio/containers/overview
@@ -1836,6 +1838,8 @@ items:
             displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
           - name: 选项模式
             href: ../core/extensions/options.md
+          - name: 面向库创建者的选项模式指南
+            href: ../core/extensions/options-library-authors.md
       - name: Logging
         items:
           - name: 概述
@@ -2054,7 +2058,7 @@ items:
         href: ../core/testing/unit-testing-code-coverage.md
       - name: 对已发布的输出进行单元测试
         href: ../core/testing/unit-testing-published-output.md
-      - name: 使用 Visual Studio 对 .NET Core 项目进行实时单元测试
+      - name: 使用 Visual Studio 对 .NET 项目进行实时单元测试
         href: /visualstudio/test/live-unit-testing-start
   - name: 安全性
     href: ../standard/security/
@@ -2133,9 +2137,9 @@ items:
             href: ../standard/native-interop/best-practices.md
           - name: 字符集和封送
             href: ../standard/native-interop/charset.md
-          - name: 向 COM 公开 .NET Core 组件
+          - name: 向 COM 公开 .NET 组件
             href: ../core/native-interop/expose-components-to-com.md
-          - name: 从本机代码承载 .NET Core
+          - name: 从本机代码承载 .NET
             href: ../core/tutorials/netcore-hosting.md
           - name: COM 互操作
             items:
@@ -2157,7 +2161,7 @@ items:
             href: ../standard/native-interop/apply-interop-attributes.md
           - name: 异常
             href: ../standard/native-interop/exceptions-interoperability.md
-      - name: .NET Core 分发打包
+      - name: .NET 分发打包
         href: ../core/distribution-packaging.md
       - name: 全球化和本地化
         href: ../standard/globalization-localization/
@@ -2295,7 +2299,7 @@ items:
             href: ../core/porting/third-party-deps.md
           - name: 移植库
             href: ../core/porting/libraries.md
-          - name: 整理 .NET Core 的项目
+          - name: 整理 .NET 的项目
             href: ../core/porting/project-structure.md
           - name: 不可用的技术
             href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
