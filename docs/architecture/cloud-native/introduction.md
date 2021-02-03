@@ -2,13 +2,13 @@
 title: 云本机应用程序简介
 description: 了解云本机计算
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 6ec02a1388d6e0f26cdaa1f728f23a22ba52d735
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.date: 01/19/2021
+ms.openlocfilehash: 852eed27d4cfcaefdfa89a73c54414a6306ed28d
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613936"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506092"
 ---
 # <a name="introduction-to-cloud-native-applications"></a>云本机应用程序简介
 
@@ -42,7 +42,7 @@ ms.locfileid: "83613936"
 - 相关
 - scale
 
-目前存在的许多成功应用都创建为固化结构。 该应用程序是点击的，在迭代后将继续发展，增加了更多的功能。
+目前存在的许多成功应用都创建为固化结构。 该应用程序是点击的，在迭代后将继续发展，增加了更多功能。
 
 但在某些时候，你会感到不安。 你发现自己失去了对应用程序的控制。 随着时间的推出，感觉就会变得更加重要，最终会输入一个称为的状态 `Fear Cycle` 。
 
@@ -58,7 +58,7 @@ ms.locfileid: "83613936"
 
 许多组织都采用了一种用于构建系统的云本机方法来解决了单一的恐惧。 图1-2 显示了一种在应用程序本机技术和实践的同时构建的系统。
 
-![云-本机设计](./media/cloud-native-design.png)
+![Cloud-Native 设计](./media/cloud-native-design.png)
 
 **图 1-2**。 云-本机设计
 
@@ -66,13 +66,13 @@ ms.locfileid: "83613936"
 
 ### <a name="cloud-native-computing"></a>云本机计算
 
-嗯 .。。我们只是使用了_云本机_这一术语。 您的第一个想法可能是 "这是什么意思呢？" 软件供应商 concocted 的另一个行业流行用语？
+嗯 .。。我们只是使用了 _云本机_ 这一术语。 您的第一个想法可能是 "这是什么意思呢？" 软件供应商 concocted 的另一个行业流行用语？
 
 幸运的是，这种方法并不是很容易的，因此，这本书有助于说服你。
 
 在短期内，云本机已成为软件行业中的推动趋势。 这是一种新的方法，可用于构建大型复杂系统，这是一种充分利用新式软件开发做法、技术和云基础结构的方法。 此方法会改变您设计、实施、部署和操作系统的方式。
 
-与推动我们的行业的连续夸大宣传不同，云本地是_真实的_。 请考虑[云本机计算基础](https://www.cncf.io/)（CNCF），这是一位超过300的主要企业，旨在使云本机计算跨技术和云堆栈。 作为最具影响力的开源组之一，它在 GitHub 中托管了许多增长最快的开放源代码项目。 其中包括[Kubernetes](https://kubernetes.io/)、 [Prometheus](https://prometheus.io/)、 [Helm](https://helm.sh/)、 [Envoy](https://www.envoyproxy.io/)和[gRPC](https://grpc.io/)等项目。
+与推动我们的行业的连续夸大宣传不同，云本地是 _真实的_。 请考虑 [云本机计算基础](https://www.cncf.io/) (CNCF) ，这是一位超过300家大型企业的联盟，旨在实现跨技术和云堆栈的云本机计算。 作为最具影响力的开源组之一，它在 GitHub 中托管了许多增长最快的开放源代码项目。 其中包括 [Kubernetes](https://kubernetes.io/)、 [Prometheus](https://prometheus.io/)、 [Helm](https://helm.sh/)、 [Envoy](https://www.envoyproxy.io/)和 [gRPC](https://grpc.io/)等项目。
 
 CNCF 促进开源和供应商中立的生态系统。 在此之后，这本书介绍了与技术无关的云本机原则、模式和最佳实践。 同时，我们讨论 Microsoft Azure 云中提供的服务和基础结构，用于构造云本机系统。
 

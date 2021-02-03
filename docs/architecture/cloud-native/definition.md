@@ -2,13 +2,13 @@
 title: 定义云本机
 description: 了解提供适用于云原生系统成为的基础支柱
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 1f0d842a2369ae04ffc1c634f9de60398a88e86f
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+ms.date: 01/19/2021
+ms.openlocfilehash: 180b32d753fea5071174830be4ff3b8a81527a75
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654687"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506209"
 ---
 # <a name="defining-cloud-native"></a>定义云本机
 
@@ -54,7 +54,7 @@ ms.locfileid: "91654687"
 
 请考虑被广泛接受的 [宠物与毕竟现在](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313)的 DevOps 概念。 在传统的数据中心，将服务器视为 *宠物*：物理计算机，为其指定有意义的名称，为关心。 可以通过将更多资源添加到相同的计算机来进行缩放 (增加) 。 如果服务器变成病假，你会将它改回运行状况。 如果服务器不可用，则会通知所有人。
 
-*毕竟现在*服务模型不同。 将每个实例设置为虚拟机或容器。 它们是相同的，并分配有服务-01、Service-02 等的系统标识符。 可以通过创建更多 (扩展) 来进行缩放。 当一个不可用时，无人通知。
+*毕竟现在* 服务模型不同。 将每个实例设置为虚拟机或容器。 它们是相同的，并分配有服务-01、Service-02 等的系统标识符。 可以通过创建更多 (扩展) 来进行缩放。 当一个不可用时，无人通知。
 
 毕竟现在模型涵盖 *不可变的基础结构*。 不修复或修改服务器。 如果一个失败或需要更新，则会将其销毁并预配一个新的-所有操作都通过自动化完成。
 
@@ -66,13 +66,13 @@ Azure 云平台支持这种类型的高度弹性基础结构，具有自动缩�
 
 如何设计云本机应用？ 您的体系结构是什么样子？ 你将遵守哪些原则、模式和最佳实践？ 什么是重要的基础结构和操作问题？
 
-### <a name="the-twelve-factor-application"></a>十二因素应用程序
+### <a name="the-twelve-factor-application"></a>Twelve-Factor 应用程序
 
 构建基于云的应用程序的广泛接受的方法是使用 [十二个应用程序](https://12factor.net/)。 它介绍了开发人员构建针对新式云环境优化的应用程序的一系列原则和实践。 特别注意跨环境和声明性自动化的可移植性。
 
-尽管适用于任何基于 web 的应用程序，但许多专业人员都将十二个因素视为构建云本机应用程序的坚实基础。 基于这些原则构建的系统可以快速部署和缩放，并添加功能以快速应对市场变化。
+在适用于任何基于 web 的应用程序的情况下，很多专业人员会将 Twelve-Factor 视为构建云本机应用程序的坚实基础。 基于这些原则构建的系统可以快速部署和缩放，并添加功能以快速应对市场变化。
 
-下表突出显示了十二因素方法：
+下表重点介绍 Twelve-Factor 方法：
 
 |    |  因素 | 说明  |
 | :-------- | :-------- | :-------- |
@@ -89,12 +89,12 @@ Azure 云平台支持这种类型的高度弹性基础结构，具有自动缩�
 | 11 | 日志记录 | 将微服务生成的日志视为事件流。 使用事件聚合器处理这些数据，并将数据传播到 Azure Monitor 或 Splunk 等数据挖掘/日志管理工具，最终长期存档。 |
 | 12 | 管理进程 | 以一次性进程的形式运行管理/管理任务。 任务可以包含报表的数据清理和拉取分析。 执行这些任务的工具应从生产环境中调用，而不是与应用程序一起调用。 |
 
-在本指南中，在 [12 个因素的应用程序之外](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)，创作 Hoffman 的每个原始12个因素都 (用 2011) 编写的。 此外，他还讨论了三个反映当今新式云应用程序设计的其他因素。
+本书中 [除了 Twelve-Factor 应用外](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)， (以 2011) 编写的所有原始12个因素都创作 Hoffman 详细信息。 此外，他还讨论了三个反映当今新式云应用程序设计的其他因素。
 
 |    |  新因素 | 说明  |
 | :-------- | :-------- | :-------- |
 | 13 | API 优先 | 使所有内容成为服务。 假设你的代码将由前端客户端、网关或其他服务使用。 |
-| 14 | 遥测 | 在工作站上，你可以深入了解应用程序及其行为。 在云中，你不能。 请确保您的设计包括监视、特定于域的和健康/系统数据的收集。 |
+| 14 | 遥测技术 | 在工作站上，你可以深入了解应用程序及其行为。 在云中，你不能。 请确保您的设计包括监视、特定于域的和健康/系统数据的收集。 |
 | 15 | 身份验证/授权  | 开始实现标识。 请考虑 RBAC (公有云中提供的 [基于角色的访问控制) ](/azure/role-based-access-control/overview) 功能。  |
 
 我们将参考本章和整个书籍中的众多12个因素。
@@ -171,15 +171,15 @@ Azure 云平台支持这种类型的高度弹性基础结构，具有自动缩�
 
 可在任何新式开发平台上创建微服务。
 
-Microsoft .NET 核心平台是一种很好的选择。 免费和开源，它具有许多内置功能，可简化微服务开发。 .NET Core 是跨平台的。 应用程序可以在 Windows、macOS 和 Linux 的大多数风格上生成和运行。
+Microsoft .NET 平台是一种很好的选择。 免费和开源，它具有许多内置功能，可简化微服务开发。 .NET 是跨平台的。 应用程序可以在 Windows、macOS 和 Linux 的大多数风格上生成和运行。
 
-.NET Core 具有高性能，并与 Node.js 和其他竞争性平台进行了比较。 有趣的是， [TechEmpower](https://www.techempower.com/) 对许多 web 应用程序平台和框架执行了一组全面的 [性能基准](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) 。 在上面10个 Node.js 及其他竞争性平台上评分的 .NET Core。
+.NET 具有高性能，并与 Node.js 和其他竞争性平台进行了比较。 有趣的是， [TechEmpower](https://www.techempower.com/) 对许多 web 应用程序平台和框架执行了一组全面的 [性能基准](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) 。 上面10个 Node.js 及其他竞争性平台上的 .NET 评分。
 
-.NET Core 由 Microsoft 和 GitHub 上的 .NET 社区维护。
+.NET 由 Microsoft 和 GitHub 上的 .NET 社区维护。
 
 ## <a name="containers"></a>容器
 
-如今，听一下与*云本机*有关的任何讨论中提到的术语*容器*是一种很自然的。 在本指南中， [Cloud 本机模式](https://www.manning.com/books/cloud-native-patterns)、作者 Cornelia Davis 观察到，"容器是云本机软件的极佳启用程序。" 云本机计算基础将微服务容器化作为其 [云本机线索映射](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) 的第一步，即企业开始其云原生旅程的指南。
+如今，听一下与 *云本机* 有关的任何讨论中提到的术语 *容器* 是一种很自然的。 在本指南中， [Cloud 本机模式](https://www.manning.com/books/cloud-native-patterns)、作者 Cornelia Davis 观察到，"容器是云本机软件的极佳启用程序。" 云本机计算基础将微服务容器化作为其 [云本机线索映射](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) 的第一步，即企业开始其云原生旅程的指南。
 
 容器化微服务简单明了。 代码、其依赖项和运行时打包到称为 [容器映像](https://docs.docker.com/glossary/?term=image)的二进制文件中。 映像存储在 [容器注册表](https://caylent.com/container-registries/)中，该注册表用作映像的存储库或库。 注册表可以位于开发计算机上、数据中心或公有云中。 Docker 本身通过 [Docker 中心](https://hub.docker.com/)维护公共注册表。 Azure 云使用 [容器注册表](https://azure.microsoft.com/services/container-registry/) 来存储与将运行它们的云应用程序接近的容器映像。
 
@@ -207,7 +207,7 @@ Microsoft .NET 核心平台是一种很好的选择。 免费和开源，它具�
 
 可以在具有 Docker 运行时引擎的任何环境中部署相同的容器。 容器化工作负荷还消除了通过框架、软件库和运行时引擎预配置每个环境的费用。
 
-通过共享基础操作系统和主机资源，容器的占用空间比完整虚拟机少很多。 较小的大小增加了给定主机一次可以运行的 *密度*或微服务数。
+通过共享基础操作系统和主机资源，容器的占用空间比完整虚拟机少很多。 较小的大小增加了给定主机一次可以运行的 *密度* 或微服务数。
 
 ### <a name="container-orchestration"></a>容器业务流程
 
@@ -227,7 +227,7 @@ Microsoft .NET 核心平台是一种很好的选择。 免费和开源，它具�
 | 相关性/反相关性 | 每个附近或附近预配容器，有助于实现可用性和性能。 |
 | 运行状况监视 | 自动检测并更正失败。|
 | 故障转移 | 自动重新设置失败的实例恢复到正常运行的计算机。|
-| 扩展 | 自动添加或删除容器实例以满足需求。|
+| 缩放 | 自动添加或删除容器实例以满足需求。|
 | 网络 | 管理用于容器通信的网络覆盖区。|
 | 服务发现 | 使容器相互定位。|
 | 滚动升级 | 协调增量升级，并部署零停机时间。 自动回滚有问题的更改。|
@@ -242,7 +242,7 @@ Microsoft .NET 核心平台是一种很好的选择。 免费和开源，它具�
 
 您可以托管自己的 Kubernetes 实例，但随后需要负责预配和管理其资源，这可能很复杂。 Azure 云功能 Kubernetes 作为托管服务， [Azure Kubernetes service (AKS) ](https://azure.microsoft.com/services/kubernetes-service/)。 托管服务使你可以充分利用其功能，而无需安装和维护它。
 
-Azure Kubernetes Services 在第2章中详细介绍了如何 *扩展云本机应用程序*。
+Azure Kubernetes Services 在第2章中详细介绍了如何 *缩放 Cloud-Native 应用程序*。
 
 ## <a name="backing-services"></a>支持服务
 
@@ -266,15 +266,15 @@ Azure Kubernetes Services 在第2章中详细介绍了如何 *扩展云本机应
 
 最佳做法是将后备服务视为 *附加资源*，动态绑定到微服务信息 (URL 和凭据) 存储在外部配置中的信息。 本指南在这一章前面讨论过的 [十二因素应用程序](https://12factor.net/)中进行了介绍。
 
->* \# 4 系数 4* 指定应通过可寻址 URL 公开后备服务。 这样做会使资源与应用程序分离，使其能够互相替换。 "
+>*\# 4 系数 4* 指定应通过可寻址 URL 公开后备服务。 这样做会使资源与应用程序分离，使其能够互相替换。 "
 
->* \# 第3个因素* ：指定 "通过代码外的配置管理工具将配置信息移出微服务和外部化。"
+>*\# 第3个因素* ：指定 "通过代码外的配置管理工具将配置信息移出微服务和外部化。"
 
 使用此模式，可附加和分离后备服务，无需更改代码。 可以将微服务从问答升级到过渡环境。 将微服务配置更新为指向暂存中的后备服务，并通过环境变量将设置注入到容器中。
 
 云供应商提供了 Api，使你能够与其专有支持服务进行通信。 这些库封装了管道和复杂性。 直接与这些 Api 进行通信会将你的代码紧密地耦合到支持服务。 更好的做法是，隔离供应商 API 的实现细节。 引入 intermediation 层或中间 API，将一般操作公开给你的服务代码。 这种松散耦合使你可以将另一个后备服务换出，或将代码移到不同的公有云，而无需更改主线服务代码。
 
-支持服务的详细信息，请参见第5章、 *云本机数据模式*和第4章 *-本机通信模式*。
+支持服务的详细信息，请参见第5章、 *云本机数据模式* 和第4章 *-本机通信模式*。
 
 ## <a name="automation"></a>自动化
 

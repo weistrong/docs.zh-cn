@@ -5,13 +5,13 @@ author: robvet
 no-loc:
 - Blazor
 - Blazor WebAssembly
-ms.date: 05/13/2020
-ms.openlocfilehash: 9ed6906bd388a1ddef7f97bbaac001b4274853f9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 8667f2d3a7a19aa6dffdd8ce8bef103eab5cc54f
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158079"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505695"
 ---
 # <a name="grpc"></a>gRPC
 
@@ -61,11 +61,11 @@ gRPC 集成到 .NET Core 3.0 SDK 和更高版本中。 以下工具支持它：
 - Visual Studio Code
 - dotnet CLI
 
-SDK 包括用于终结点路由、内置 IoC 和日志记录的工具。 开源 Kestrel web 服务器支持 HTTP/2 连接。 图4-20 显示了一个 Visual Studio 2019 模板，该模板基架了 gRPC 服务的主干项目。 请注意 .NET Core 如何完全支持 Windows、Linux 和 macOS。
+SDK 包括用于终结点路由、内置 IoC 和日志记录的工具。 开源 Kestrel web 服务器支持 HTTP/2 连接。 图4-20 显示了一个 Visual Studio 2019 模板，该模板基架了 gRPC 服务的主干项目。 请注意 .NET 如何完全支持 Windows、Linux 和 macOS。
 
 ![Visual Studio 2019 中的 gRPC 支持](./media/visual-studio-2019-grpc-template.png)
 
-图 4-20****。 Visual Studio 2019 中的 gRPC 支持
+图 4-20  。 Visual Studio 2019 中的 gRPC 支持
   
 图4-21 显示了 Visual Studio 2019 中包含的内置基架生成的主干 gRPC 服务。  
 
@@ -93,19 +93,19 @@ SDK 包括用于终结点路由、内置 IoC 和日志记录的工具。 开源 
 
 ## <a name="grpc-implementation"></a>gRPC 实现
 
-Microsoft 的 [容器上](https://github.com/dotnet-architecture/eShopOnContainers)的微服务参考体系结构 eShop，演示了如何在 .net Core 应用程序中实现 gRPC 服务。 图4-22 显示后端体系结构。
+微服务参考体系结构（ [容器上的 eShop](https://github.com/dotnet-architecture/eShopOnContainers)）显示了如何在 .net 应用程序中实现 gRPC 服务。 图4-22 显示后端体系结构。
 
 ![容器上的 eShop 的后端体系结构](./media/eshop-with-aggregators.png)
 
 **图 4-22**。 容器上的 eShop 的后端体系结构
 
-在上图中，请注意 eShop 如何通过公开多个 API 网关来通过 [前端模式](/azure/architecture/patterns/backends-for-frontends) (BFF) 。 本章前面介绍了 BFF 模式。 请注意，聚合微服务 (以灰色) ，位于 Web 购物 API 网关和后端购物微服务之间。 聚合器接收来自客户端的单个请求，将其调度到不同的微服务，聚合结果并将其发送回发出请求的客户端。 此类操作通常需要同步通信，才能生成立即响应。 在 eShop 中，使用 gRPC 执行从聚合器的后端调用，如图4-23 所示。
+在上图中，请注意 eShop 如何通过公开多个 API 网关来通过 [前端模式](/azure/architecture/patterns/backends-for-frontends) (BFF) 。 本章前面介绍了 BFF 模式。 请密切注意位于 Web-Shopping API 网关和后端购物微服务之间的聚合器微服务 (灰色) 。 聚合器接收来自客户端的单个请求，将其调度到不同的微服务，聚合结果并将其发送回发出请求的客户端。 此类操作通常需要同步通信，才能生成立即响应。 在 eShop 中，使用 gRPC 执行从聚合器的后端调用，如图4-23 所示。
 
 ![容器的 eShop 中的 gRPC](./media/grpc-implementation.png)
 
 图 4-23  。 容器的 eShop 中的 gRPC
 
-gRPC 通信需要客户端和服务器组件。 在上图中，请注意购物聚合器如何实现 gRPC 客户端。 客户端将 (以红色) 对后端微服务进行同步调用，其中每个调用都实现 gRPC 服务器。 客户端和服务器都利用 .NET Core SDK 中内置的 gRPC 管道。 客户端 *存根* 提供用于调用远程 gRPC 调用的管道。 服务器端组件提供自定义服务类可以继承和使用的 gRPC 管道。
+gRPC 通信需要客户端和服务器组件。 在上图中，请注意购物聚合器如何实现 gRPC 客户端。 客户端将 (以红色) 对后端微服务进行同步调用，其中每个调用都实现 gRPC 服务器。 客户端和服务器都利用 .NET SDK 中的内置 gRPC 管道。 客户端 *存根* 提供用于调用远程 gRPC 调用的管道。 服务器端组件提供自定义服务类可以继承和使用的 gRPC 管道。
 
 同时公开 RESTful API 和 gRPC 通信的微服务需要使用多个终结点来管理流量。 你将打开一个终结点，该终结点侦听 RESTful 调用的 HTTP 流量，另一个用于 gRPC 调用。 必须为 gRPC 通信所需的 HTTP/2 协议配置 gRPC 终结点。
 

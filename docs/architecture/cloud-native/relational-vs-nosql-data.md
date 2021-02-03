@@ -2,21 +2,21 @@
 title: 关系与NoSQL 数据
 description: 了解云本机应用程序中的关系数据和 NoSQL 数据
 author: robvet
-ms.date: 05/17/2020
-ms.openlocfilehash: 11db5cdca06b9c2c8ce12598456c4b147ac379ba
-ms.sourcegitcommit: 98d20cb038669dca4a195eb39af37d22ea9d008e
+ms.date: 01/19/2021
+ms.openlocfilehash: 1148778b68c90586187d927eccd9b733403ede44
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434869"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505506"
 ---
 # <a name="relational-vs-nosql-data"></a>关系与NoSQL 数据
 
-关系型和 NoSQL 是通常在云本机应用程序中实现的两种类型的数据库系统。 它们的构建方式不同，以不同的方式存储数据，并以不同的方式进行访问。 在本部分中，我们将介绍这两种情况。 本章稍后将介绍一种名为 *NewSQL*的新兴数据库技术。
+关系型和 NoSQL 是通常在云本机应用程序中实现的两种类型的数据库系统。 它们的构建方式不同，以不同的方式存储数据，并以不同的方式进行访问。 在本部分中，我们将介绍这两种情况。 本章稍后将介绍一种名为 *NewSQL* 的新兴数据库技术。
 
 *关系数据库* 是数十年的普遍技术。 它们是成熟、经过验证且广泛实现的。 竞争的数据库产品、工具和专业知识 abound。 关系数据库提供相关数据表的存储区。 这些表具有固定架构，使用 SQL (结构化查询语言) 管理数据，并支持 ACID 保证。
 
-非*SQL 数据库指的*是高性能、非关系型数据存储。 它们采用易用性、可伸缩性、复原能力和可用性特征提供了方便。 NoSQL 存储非结构化或半结构化数据，而不是联接规范化数据的表，通常在键值对或 JSON 文档中。 非 SQL 数据库通常不会提供超出单一数据库分区范围的 ACID 保证。 需要第二次响应时间的高容量服务倾向于 NoSQL 数据存储。
+非 *SQL 数据库指的* 是高性能、非关系型数据存储。 它们采用易用性、可伸缩性、复原能力和可用性特征提供了方便。 NoSQL 存储非结构化或半结构化数据，而不是联接规范化数据的表，通常在键值对或 JSON 文档中。 非 SQL 数据库通常不会提供超出单一数据库分区范围的 ACID 保证。 需要第二次响应时间的高容量服务倾向于 NoSQL 数据存储。
 
 [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/)技术对于分布式云本机系统的影响不能言过其实。 这一领域新数据技术的激增导致了只依赖于关系数据库的解决方案。
 
@@ -26,7 +26,7 @@ NoSQL 数据库包含用于访问和管理数据的多个不同的模型，每�
 
 **图 5-9**： NoSQL 数据库的数据模型
 
-| 型号 | 特征 |
+| 建模 | 特征 |
 | :-------- | :-------- |
 | 文档存储 | 数据和元数据以分层形式存储在数据库中基于 JSON 的文档中。 |
 | 键值存储 | 最简单的 NoSQL 数据库数据以键值对的集合表示。 |
@@ -107,7 +107,7 @@ NoSQL 数据库通常支持高可用性和分区容差。 它们通常跨商用�
 这些功能对于预配大量数据库的组织尤其重要，但对于管理这些数据库的资源有限。
 通过选择处理核心、内存和基础存储量，你可以在数分钟内预配 Azure 数据库。 你可以动态缩放数据库，并动态调整资源，只需很少的停机时间。
 
-## <a name="azure-sql-database"></a>Azure SQL 数据库
+## <a name="azure-sql-database"></a>Azure SQL Database
 
 Microsoft SQL Server 的专业技能的开发团队应考虑 [AZURE SQL 数据库](/azure/sql-database/)。 这是一种完全托管的关系数据库即服务 (DBaaS) 基于 Microsoft SQL Server 的数据库引擎。 该服务共享 SQL Server 的本地版本中发现的许多功能，并运行 SQL Server 数据库引擎的最新稳定版本。
 
@@ -262,14 +262,14 @@ Azure Cosmos DB 采用自动 [分区](/azure/cosmos-db/partitioning-overview) �
 
 云本机计算基础 (CNCF) 功能 NewSQL 多个数据库项目。
 
-| Project | 特征 |
+| 项目 | 特征 |
 | :-------- | :-------- |
 | 蟑螂 DB |全局缩放的 ACID 兼容的关系数据库。 将新节点添加到群集，CockroachDB 负责跨实例和地理区域平衡数据。 它创建、管理和分发副本以确保可靠性。 它是开源的，免费提供。  |
 | TiDB | 支持混合事务和分析处理的开源数据库 (HTAP) 工作负荷。 它是与 MySQL 兼容的功能，可提供水平伸缩性、强一致性和高可用性。  TiDB 的作用类似于 MySQL 服务器。 你可以继续使用现有 MySQL 客户端库，而无需对应用程序进行大量代码更改。 |
 | YugabyteDB | 开源、高性能分布式 SQL 数据库。 它支持较低的查询延迟、针对故障的恢复能力和全局数据分布。 YugabyteDB 是 PostgressSQL 兼容的，可处理横向扩展 RDBMS 和 internet 缩放 OLTP 工作负载。 该产品还支持 NoSQL，并与 Cassandra 兼容。 |
 |Vitess | Vitess 是用于部署、缩放和管理 MySQL 实例的大型群集的数据库解决方案。 它可以在公共或私有云体系结构中运行。 Vitess 结合了许多重要的 MySQL 功能和功能，同时提供了垂直和水平分片支持。 源自 YouTube，Vitess 一直在为所有 YouTube 数据库流量提供服务，2011。 |
 
-可从云本机计算基础获取上图中的开源项目。 其中三个产品是完整的数据库产品，其中包括 .NET Core 支持。 另一种是 Vitess，它是一种数据库群集系统，可用于水平缩放 MySQL 实例的大型群集。
+可从云本机计算基础获取上图中的开源项目。 其中三个产品是完整的数据库产品，其中包括 .NET 支持。 另一种是 Vitess，它是一种数据库群集系统，可用于水平缩放 MySQL 实例的大型群集。
 
 NewSQL 数据库的关键设计目标是在 Kubernetes 中以本机方式工作，利用平台的复原能力和可伸缩性。
 

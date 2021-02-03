@@ -2,19 +2,19 @@
 title: 应用程序复原能力模式
 description: 构建适用于 Azure 的云本机 .NET 应用 |应用程序复原模式
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: e81d6e1d6b95cf0053de3ba557068ff458a59dc9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 9a59a7d93b61b0dea11680f6caf0bd3b68a0f853
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161147"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505916"
 ---
 # <a name="application-resiliency-patterns"></a>应用程序复原能力模式
 
 第一道防线是应用程序复原能力。
 
-虽然您可以投入大量时间来编写自己的复原框架，此类产品已经存在。 [Polly](http://www.thepollyproject.org/) 是一个全面的 .net 复原和暂时性故障处理库，使开发人员能够以流畅且线程安全的方式表达复原策略。 Polly 以 .NET Framework 或 .NET Core 生成的目标应用程序为目标。 下表介绍了 Polly 库中提供的复原功能（称为 `policies` ）。 它们可单独应用或组合在一起。
+虽然您可以投入大量时间来编写自己的复原框架，此类产品已经存在。 [Polly](http://www.thepollyproject.org/) 是一个全面的 .net 复原和暂时性故障处理库，使开发人员能够以流畅且线程安全的方式表达复原策略。 Polly 面向用 .NET Framework 或 .NET 5 构建的应用程序。 下表介绍了 Polly 库中提供的复原功能（称为 `policies` ）。 它们可单独应用或组合在一起。
 
 | 策略 | 体验 |
 | :-------- | :-------- |
@@ -36,9 +36,9 @@ ms.locfileid: "91161147"
 | 503 | 服务不可用 |
 | 504 | 网关超时 |
 
-问：是否要重试 HTTP 状态代码 403-禁止访问？ 不是。 此时，系统将正常运行，但通知调用方他们无权执行所请求的操作。 必须注意仅重试由失败导致的操作。
+问：是否要重试 HTTP 状态代码 403-禁止访问？ 不能。 此时，系统将正常运行，但通知调用方他们无权执行所请求的操作。 必须注意仅重试由失败导致的操作。
 
-如第1章所述，Microsoft 开发云本机应用程序的开发人员应以 .NET Core 平台为目标。 版本2.1 引入了 [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) 库，用于创建用于与基于 URL 的资源交互的 HTTP 客户端实例。 工厂类取代了原始 HTTPClient 类，它支持许多增强功能，其中一个功能与 Polly 复原库 [紧密集成](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) 。 利用它，你可以轻松地在应用程序启动类中定义复原策略来处理部分故障和连接问题。
+如第1章所述，Microsoft 开发云本机应用程序的开发人员应以 .NET 平台为目标。 版本2.1 引入了 [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) 库，用于创建用于与基于 URL 的资源交互的 HTTP 客户端实例。 工厂类取代了原始 HTTPClient 类，它支持许多增强功能，其中一个功能与 Polly 复原库 [紧密集成](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) 。 利用它，你可以轻松地在应用程序启动类中定义复原策略来处理部分故障和连接问题。
 
 接下来，让我们展开重试和断路器模式。
 
@@ -50,7 +50,7 @@ ms.locfileid: "91161147"
 
 ![操作中的重试模式](./media/retry-pattern.png)
 
-**图 6-2**。 操作中的重试模式
+**图 6-2**. 操作中的重试模式
 
 在上图中，已为请求操作实现重试模式。 它配置为允许最多四次重试，而不能使用回退时间间隔 (等待时间，) 从两秒开始，每次后续尝试都呈指数级增长。
 
@@ -82,7 +82,7 @@ ms.locfileid: "91161147"
 
 ## <a name="testing-for-resiliency"></a>测试复原能力
 
-针对复原的测试始终无法通过运行单元测试、集成测试等)  (测试应用程序功能。 必须在故障状态下测试端到端工作负荷的执行情况，而这种状态只能间歇性地出现。 例如：通过使进程崩溃、过期证书，使从属服务不可用等来注入故障。混乱的框架（如 [混乱）](https://github.com/Netflix/chaosmonkey) 可用于这样的混乱测试。
+针对复原的测试始终无法通过运行单元测试、集成测试等)  (测试应用程序功能。 相反，你必须测试端到端工作负荷在故障条件下的执行情况，这种情况仅间歇发生。 例如：通过使进程崩溃、过期证书，使从属服务不可用等来注入故障。混乱的框架（如 [混乱）](https://github.com/Netflix/chaosmonkey) 可用于这样的混乱测试。
 
 应用程序复原能力是处理请求的操作时必须执行的操作。 但这只是故事的一半。 接下来，我们介绍 Azure 云中提供的复原功能。
 

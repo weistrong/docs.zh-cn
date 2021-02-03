@@ -1,19 +1,19 @@
 ---
 title: 集中式配置
 description: 使用 Azure 应用配置和 AzureKey 保管库集中使用云本机应用程序的配置。
-ms.date: 05/13/2020
-ms.openlocfilehash: 0d40c5b2d70f30beb17489dfd55900f7c5fc1a75
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 770c0c19a6de01250c59a586badb6a4afa2e9ae5
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160874"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505708"
 ---
 # <a name="centralized-configuration"></a>集中式配置
 
 不同于单个应用，其中的所有内容都在单个实例中运行，云本机应用程序由跨虚拟机、容器和地理区域分布的独立服务构成。 管理数十个相互依赖的服务的配置设置可能非常困难。 不同位置上的配置设置重复的副本容易出错并且难于管理。 集中式配置是分布式云本机应用程序的关键要求。
 
-如 [第1章](introduction.md)所述，十二因素应用建议要求严格分隔代码和配置。 必须根据需要从应用程序外部存储配置并进行读取。 将配置值存储为代码中的常量或文本值是一个冲突。 同一应用程序中的许多服务通常使用相同的配置值。 此外，我们必须跨多个环境（如开发、测试和生产）支持相同的值。 最佳做法是将它们存储在集中式配置存储中。
+如 [第1章](introduction.md)所述，Twelve-Factor 应用建议要求严格分隔代码和配置。 必须根据需要从应用程序外部存储配置并进行读取。 将配置值存储为代码中的常量或文本值是一个冲突。 同一应用程序中的许多服务通常使用相同的配置值。 此外，我们必须跨多个环境（如开发、测试和生产）支持相同的值。 最佳做法是将它们存储在集中式配置存储中。
 
 Azure 云提供了几个不错的选项。
 

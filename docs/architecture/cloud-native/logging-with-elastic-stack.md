@@ -1,13 +1,13 @@
 ---
 title: 使用弹性堆栈进行日志记录
 description: 使用弹性堆栈、Logstash 和 Kibana 进行日志记录
-ms.date: 05/13/2020
-ms.openlocfilehash: 3f10b0d06c87b7bed6d3e302742b1dc52e2c9d3b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: ebe7eef16d3b1a73d0fd3a010a509bbaf7be3fd5
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155336"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505812"
 ---
 # <a name="logging-with-elastic-stack"></a>使用弹性堆栈进行日志记录
 
@@ -26,10 +26,10 @@ KUBE_ENABLE_NODE_LOGGING=true
 
 **图 7-5**。 Kubernetes 的配置变量
 
-这会在群集上安装 Elasticsearch，并将所有群集日志发送到该群集。
+此步骤将在群集上安装 Elasticsearch，并将所有群集日志发送到该群集。
 
 ![Kibana 仪表板的一个示例，显示针对 Kubernetes ](./media/kibana-dashboard.png)
- **图 7-6**中的日志引入的查询结果。 Kibana 仪表板的一个示例，显示针对引入 from Kubernetes 中的日志查询的结果
+ **图 7-6** 中的日志引入的查询结果。 Kibana 仪表板的一个示例，显示针对引入 from Kubernetes 中的日志查询的结果
 
 ## <a name="what-are-the-advantages-of-elastic-stack"></a>弹性堆栈的优点是什么？
 
@@ -39,7 +39,7 @@ KUBE_ENABLE_NODE_LOGGING=true
 
 第一个组件为 [Logstash](https://www.elastic.co/products/logstash)。 此工具用于从大量不同的源收集日志信息。 例如，Logstash 可以从磁盘读取日志，还可以从日志记录库（如 [Serilog](https://serilog.net/)）接收消息。 Logstash 可以在日志到达时对其执行一些基本筛选和扩展。 例如，如果日志包含 IP 地址，则可以将 Logstash 配置为执行地理查找，并获取该邮件的国家/地区或甚至是源城市。
 
-Serilog 是用于 .NET 语言的日志记录库，用于实现参数化日志记录。 参数不会生成嵌入字段的文本日志消息，而是将参数保持独立。 这允许更智能的筛选和搜索。 图7-7 显示了用于写入 Logstash 的示例 Serilog 配置。
+Serilog 是用于 .NET 语言的日志记录库，用于实现参数化日志记录。 参数不会生成嵌入字段的文本日志消息，而是将参数保持独立。 此库允许进行更智能的筛选和搜索。 图7-7 显示了用于写入 Logstash 的示例 Serilog 配置。
 
 ```csharp
 var log = new LoggerConfiguration()

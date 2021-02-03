@@ -1,13 +1,13 @@
 ---
 title: 利用容器和协调器
 description: 利用 Azure 中的 Docker 容器和 Kubernetes 协调器
-ms.date: 05/31/2020
-ms.openlocfilehash: 0ca69b71aa7d414a7bc55253b123020d49468dee
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/19/2021
+ms.openlocfilehash: 63ac91b05a88dc13b7c62e6e04eecb0550cd4652
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672508"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505736"
 ---
 # <a name="leveraging-containers-and-orchestrators"></a>利用容器和协调器
 
@@ -27,7 +27,7 @@ ms.locfileid: "95672508"
 
 此外，他们还需要重新启动应用程序，如果在部署时没有应用零停机方法，这可能会暂时影响可用性。
 
-### <a name="scaling"></a>扩展
+### <a name="scaling"></a>缩放
 
 整体应用程序完全承载于单个计算机实例上，通常需要高容量的硬件。 如果单体架构的任何部分需要缩放，则必须将整个应用程序的另一个副本部署到另一台计算机。 使用单体架构时，不能单独缩放应用程序组件-它是全部或无。 缩放不需要缩放的组件会导致资源利用率低下且成本高昂。
 
@@ -184,12 +184,12 @@ Visual Studio 支持基于 web 的应用程序的 Docker 开发。 创建新的 
 如果选择此选项，则会 `Dockerfile` 在其根中创建项目，该项目可用于在 Docker 容器中生成和托管应用。 图 3-6 中显示了一个示例 Dockerfile
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
 COPY ["eShopWeb/eShopWeb.csproj", "eShopWeb/"]
 RUN dotnet restore "eShopWeb/eShopWeb.csproj"

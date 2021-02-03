@@ -1,13 +1,13 @@
 ---
 title: 在 Azure Kubernetes 服务中进行监视
 description: 在 Azure Kubernetes 服务中进行监视
-ms.date: 05/13/2020
-ms.openlocfilehash: 3900f169b9be4f807e72392da38a1224d6ce28e3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: d044337150edddac9e24218ccaeaace1f413e654
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163695"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506027"
 ---
 # <a name="monitoring-in-azure-kubernetes-services"></a>在 Azure Kubernetes 服务中进行监视
 
@@ -26,10 +26,10 @@ Kubernetes 中的内置日志记录为基元。 但是，有一些极佳的选�
 
 安装日志收集器不同于 [Windows](/azure/azure-monitor/insights/containers#configure-a-log-analytics-windows-agent-for-kubernetes) 和 [Linux](/azure/azure-monitor/insights/containers#configure-a-log-analytics-linux-agent-for-kubernetes) 群集。 但在这两种情况下，日志集合都作为 Kubernetes [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)实现，这意味着日志收集器将作为容器在每个节点上运行。
 
-无论哪个协调器或操作系统运行 Azure Monitor 守护程序，日志信息都将转发到与用户熟悉的 Azure Monitor 工具。 这可确保在混合不同的日志源（如混合 Kubernetes/Azure Functions 环境）的环境中获得并行体验。
+无论哪个协调器或操作系统运行 Azure Monitor 守护程序，日志信息都将转发到与用户熟悉的 Azure Monitor 工具。 这种方法可确保在混合不同日志源（如混合 Kubernetes/Azure Functions 环境）的环境中获得并行体验。
 
 ![显示多个正在运行的容器中的日志记录和指标信息的示例仪表板。 ](./media/containers-dashboard.png)
-**图 7-11**。 显示多个正在运行的容器中的日志记录和指标信息的示例仪表板。
+**图 7-11**。 显示来自多个正在运行的容器的日志记录和指标信息的示例仪表板。
 
 ## <a name="logfinalize"></a>Log. Finalize ( # A1
 

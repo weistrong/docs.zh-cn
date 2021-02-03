@@ -2,13 +2,13 @@
 title: 前端客户端通信
 description: 了解前端客户端如何与云本机系统进行通信
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 147adb3d0375f8bf5dadf14e1237aa93e9e42908
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 089f55f8f6b9320fe552602eb40bb83be28f119b
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158105"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506235"
 ---
 # <a name="front-end-client-communication"></a>前端客户端通信
 
@@ -35,7 +35,7 @@ ms.locfileid: "91158105"
 
 ![API 网关模式](./media/api-gateway-pattern.png)
 
-**图4-3。** API 网关模式
+**图 4-3.** API 网关模式
 
 在上图中，请注意 API 网关服务如何抽象后端核心微服务。 作为 web API 实现，它充当 *反向代理*，将传入流量路由到内部微服务。
 
@@ -45,7 +45,7 @@ ms.locfileid: "91158105"
 
 ![API 网关模式](./media/backend-for-frontend-pattern.png)
 
-**图4-4。** 前端模式
+**图 4-4.** 前端模式
 
 请注意，在上图中，如何将传入流量发送到特定的 API 网关（基于客户端类型）： web、移动或桌面应用。 这种方法非常合理，因为每个设备的功能在外形规格、性能和显示限制方面的差异大不相同。 通常，移动应用程序的功能与浏览器或桌面应用程序的功能不同。 可以对每个网关进行优化，以匹配相应设备的功能和功能。
 
@@ -55,7 +55,7 @@ ms.locfileid: "91158105"
 
 对于简单的 .NET 云本机应用程序，你可能会考虑到 [Ocelot 网关](https://github.com/ThreeMammals/Ocelot)。 Ocelot 是为 .NET 微服务创建的开源 API 网关，需要在其系统中提供统一的入口点。 它是轻型、快速、可缩放的。
 
-与任何 API 网关一样，其主要功能是将传入的 HTTP 请求转发到下游服务。 此外，它还支持 .NET Core 中间件管道中可配置的各种功能。 下表中提供了其功能集。
+与任何 API 网关一样，其主要功能是将传入的 HTTP 请求转发到下游服务。 此外，它还支持 .NET 中间件管道中可配置的各种功能。 下表中提供了其功能集。
 
 |Ocelot 功能  | |
 | :-------- | :-------- |
@@ -64,7 +64,7 @@ ms.locfileid: "91158105"
 | 服务发现 (与 Consul 和 Eureka)  | 限制 |
 | 负载平衡 | 日志记录、跟踪 |
 | Caching | 标头/查询字符串转换 |
-| 相关传递 | 自定义中间件 |
+| 相关 Pass-Through | 自定义中间件 |
 | 服务质量 | 重试策略 |
 
 每个 Ocelot 网关指定 JSON 配置文件中的上游和下游地址和可配置功能。 客户端将 HTTP 请求发送到 Ocelot 网关。 接收后，Ocelot 通过其管道将 HttpRequest 对象传递到其配置所指定的状态。 管道结束时，Ocelot 会创建一个新的 HTTPResponseObject，并将其传递给下游服务。 对于响应，Ocelot 会反转管道，并将响应发送回客户端。
@@ -117,7 +117,7 @@ Azure API 管理跨 [四个不同的层](https://azure.microsoft.com/pricing/det
 
 - 开发人员
 - 基本
-- Standard
+- 标准
 - 高级
 
 开发人员层适用于非生产工作负荷和评估。 其他层提供越来越多的功能、功能和更高的服务级别协议， (Sla) 。 高级层提供了 [Azure 虚拟网络](/azure/virtual-network/virtual-networks-overview) 和 [多区域支持](/azure/api-management/api-management-howto-deploy-multi-region)。 所有层都具有固定的每小时价格。
@@ -128,7 +128,7 @@ Azure 云还为 Azure API 管理提供 [无服务器层](https://azure.microsoft
 
 - 使用 [Azure Functions](/azure/azure-functions/functions-overview) 和 [Azure 逻辑应用](https://azure.microsoft.com/services/logic-apps/)等无服务器技术实现了微服务。
 - Azure 后备服务资源（如服务总线队列和主题、Azure 存储等）。
-- 微服务：流量偶尔出现大的峰值，但大部分时间都不变。
+- 微服务：流量偶尔出现大的峰值，但仍保持较低的时间。
 
 消耗层使用相同的基础服务 API 管理组件，但基于动态分配的资源使用完全不同的体系结构。 它与无服务器计算模型完全一致：
 
@@ -148,7 +148,7 @@ Azure 云还为 Azure API 管理提供 [无服务器层](https://azure.microsoft
 
 [Azure SignalR 服务](https://azure.microsoft.com/services/signalr-service/) 是一项完全托管的 azure 服务，可简化云本机应用程序的实时通信。 精简的技术实现细节，如容量预配、缩放和持续连接。 使用99.9% 的服务级别协议处理它们。 你专注于应用程序功能，而不是基础结构管道。
 
-启用后，基于云的 HTTP 服务可以直接将内容更新推送到连接的客户端，包括浏览器、移动和桌面应用程序。 无需轮询服务器就可以更新客户端。 Azure SignalR 对创建实时连接的传输技术（包括 Websocket、服务器端事件和长轮询）进行了抽象。 开发人员重点介绍如何将消息发送到连接的客户端的所有或特定子集。
+启用后，基于云的 HTTP 服务可以直接将内容更新推送到连接的客户端，包括浏览器、移动和桌面应用程序。 无需轮询服务器就可以更新客户端。 Azure SignalR 对创建实时连接的传输技术（包括 Websocket、Server-Side 事件和长轮询）进行了抽象。 开发人员重点介绍如何将消息发送到连接的客户端的所有或特定子集。
 
 图4-7 显示了一组 HTTP 客户端，这些客户端连接到启用了 Azure SignalR 的云本机应用程序。
 

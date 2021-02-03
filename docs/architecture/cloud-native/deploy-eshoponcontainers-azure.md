@@ -1,13 +1,13 @@
 ---
 title: 将 eShopOnContainers 部署到 Azure
 description: 使用 Azure Kubernetes 服务、Helm 和 DevSpaces 部署 eShopOnContainers 应用程序。
-ms.date: 05/13/2020
-ms.openlocfilehash: b3871dae2b414709bfe24b6f7bdbf06de1689d12
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 8fc1343eac7f03c984c3a279d5a8c7908e37f0d1
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160718"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505786"
 ---
 # <a name="deploying-eshoponcontainers-to-azure"></a>将 eShopOnContainers 部署到 Azure
 
@@ -15,9 +15,9 @@ ms.locfileid: "91160718"
 
 ## <a name="azure-kubernetes-service"></a>Azure Kubernetes 服务
 
-若要将 eShop 托管在 AKS 中，第一步是创建 AKS 群集。 为此，你可以使用 Azure 门户，这将指导你完成所需的步骤。 你还可以从 Azure CLI 创建群集，注意启用基于角色的访问控制 (RBAC) 和应用程序路由。 EShopOnContainers 文档详细介绍了创建你自己的 AKS 群集的步骤。 创建后，可以从 Kubernetes 仪表板访问和管理群集。
+若要将 eShop 托管在 AKS 中，第一步是创建 AKS 群集。 为此，你可以使用 Azure 门户，这将指导你完成所需的步骤。 你还可以从 Azure CLI 创建群集，注意启用 Role-Based Access Control (RBAC) 和应用程序路由。 EShopOnContainers 文档详细介绍了创建你自己的 AKS 群集的步骤。 创建后，可以从 Kubernetes 仪表板访问和管理群集。
 
-你现在可以利用 Helm 和 Tiller 将 eShop 应用程序部署到群集。
+你现在可以使用 Helm 将 eShop 应用程序部署到群集。
 
 ## <a name="deploying-to-azure-kubernetes-service-using-helm"></a>使用 Helm 部署到 Azure Kubernetes 服务
 

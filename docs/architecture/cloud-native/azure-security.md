@@ -1,13 +1,13 @@
 ---
 title: 适用于云原生应用的 Azure 安全性
 description: 构建适用于 Azure 的云本机 .NET 应用 |适用于云原生应用的 Azure 安全性
-ms.date: 12/01/2020
-ms.openlocfilehash: 5e541606c762ea192ab8767e78e9b7346b3ec9c1
-ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
+ms.date: 01/19/2021
+ms.openlocfilehash: 1e2dce97a43479d49aecf220893efcc19bb00a8c
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509814"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505877"
 ---
 # <a name="azure-security-for-cloud-native-apps"></a>适用于云原生应用的 Azure 安全性
 
@@ -117,7 +117,7 @@ RBAC 中的第一个组件是一个安全主体。 安全主体可以是用户�
 - 服务主体-在其下运行服务或应用程序的安全标识。
 - 托管标识-由 Azure 管理的 Azure Active Directory 标识。 托管标识通常在开发云应用程序时使用，这些应用程序管理用于对 Azure 服务进行身份验证的凭据。
 
-安全主体可以应用于大多数资源。 这意味着，可以将安全主体分配给在 Azure Kubernetes 中运行的容器，使其能够访问存储在 Key Vault 中的机密。 Azure Function 可以获取权限，使其能够与 Active Directory 实例通信，以验证调用用户的 JWT。 启用服务主体的服务后，即可使用角色和作用域对其权限进行粒度管理。
+安全主体可以应用于大多数资源。 此方面意味着可以将安全主体分配给在 Azure Kubernetes 中运行的容器，使其能够访问存储在 Key Vault 中的机密。 Azure Function 可以获取权限，使其能够与 Active Directory 实例通信，以验证调用用户的 JWT。 启用服务主体的服务后，即可使用角色和作用域对其权限进行粒度管理。
 
 ## <a name="roles"></a>角色
 

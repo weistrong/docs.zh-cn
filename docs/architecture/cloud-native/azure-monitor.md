@@ -1,13 +1,13 @@
 ---
 title: Azure Monitor
 description: 使用 Azure Monitor 来了解系统的运行情况。
-ms.date: 07/05/2020
-ms.openlocfilehash: 65e17740dba49c3ac3f6e13462897b5342da6710
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: a93b71db642e05a830b20b80d8387c24d35ea8c1
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160965"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506170"
 ---
 # <a name="azure-monitor"></a>Azure Monitor
 
@@ -52,7 +52,7 @@ StormEvents
 有多种不同的仪表板技术可用于从 Azure Monitor 显示信息。 最简单的情况是，只需在 Application Insights 中运行查询，然后将 [数据绘制到图表](/azure/azure-monitor/learn/tutorial-app-dashboards)中。
 
 ![在 Azure 主仪表板 ](./media/azure_dashboard.png)
- **图 7-14**中嵌入 Application Insights 图表的示例。 在 Azure 主仪表板中嵌入 Application Insights 图表的示例。
+ **图 7-14** 中嵌入 Application Insights 图表的示例。 在 Azure 主仪表板中嵌入 Application Insights 图表的示例。
 
 然后，可以通过使用 "仪表板" 功能，将这些图表嵌入到 Azure 门户中。 对于具有更严格要求的用户（例如，能够向下钻取多个数据层），可以 [Power BI](https://powerbi.microsoft.com/)Azure Monitor 数据。 Power BI 是行业领先的企业级商业智能工具，可从多个不同的数据源聚合数据。
 
@@ -74,7 +74,7 @@ StormEvents
 
 当发现警报的常见原因时，可以使用警报的常见原因和解决方法的步骤来增强警报。 高度成熟的云本机应用程序部署可以选择启动自愈任务，这些任务可执行一些操作，例如从规模集中删除失败节点或触发自动缩放活动。 最终，可能不再需要唤醒2AM 上的待命人员来解决实时站点问题，因为系统将能够自行调整以进行补偿或至少 limp，直到在某个时间早上进入工作为止。
 
-Azure Monitor 会自动利用机器学习来了解部署的应用程序的正常运行参数。 这使它能够检测到其正常参数外操作的服务。 例如，站点上典型的工作日流量可能是每分钟10000请求。 然后，在给定的一周突然，每分钟遇到的请求数非常罕见的20000请求。 [智能检测](/azure/azure-monitor/app/proactive-diagnostics) 会注意到与标准的偏差，并触发警报。 同时，趋势分析非常智能，可避免在预计流量负载时触发误报。
+Azure Monitor 会自动利用机器学习来了解部署的应用程序的正常运行参数。 此方法使它能够检测到其正常参数外操作的服务。 例如，站点上典型的工作日流量可能是每分钟10000请求。 然后，在给定的一周突然，每分钟遇到的请求数非常罕见的20000请求。 [智能检测](/azure/azure-monitor/app/proactive-diagnostics) 会注意到与标准的偏差，并触发警报。 同时，趋势分析非常智能，可避免在预计流量负载时触发误报。
 
 ## <a name="references"></a>参考
 
