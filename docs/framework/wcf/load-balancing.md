@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - load balancing [WCF]
 ms.assetid: 148e0168-c08d-4886-8769-776d0953b80f
-ms.openlocfilehash: ccafce51cadba588dc6c4e8fc8b476f3cd8ee699
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ccb915c33be217d2a8d00a54c5bd57384286140f
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262705"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548092"
 ---
 # <a name="load-balancing"></a>负载平衡
 
@@ -85,7 +85,9 @@ ms.locfileid: "96262705"
 
  如果对默认的绑定配置进行一些修改，则 <xref:System.ServiceModel.WSHttpBinding> 和 <xref:System.ServiceModel.WSDualHttpBinding> 都可以使用 HTTP 负载平衡技术来实现负载平衡。  
   
-- 关闭安全上下文的建立：这可以通过将 <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> 上的 <xref:System.ServiceModel.WSHttpBinding> 属性设置为 `false` 来完成。 或者，如果需要安全会话，则可以使用 [安全会话](./feature-details/secure-sessions.md) 主题中所述的有状态安全会话。 有状态安全会话使服务保持无状态，因为安全会话的所有状态都随每个请求作为保护安全令牌的一部分进行传输。 请注意，若要启用有状态安全会话，必须使用 <xref:System.ServiceModel.Channels.CustomBinding> 或用户定义的 <xref:System.ServiceModel.Channels.Binding>，因为系统提供的 <xref:System.ServiceModel.WSHttpBinding> 和 <xref:System.ServiceModel.WSDualHttpBinding> 上并不会公开必需的配置设置。  
+- 关闭安全上下文建立或使用有状态的安全会话。 通过将 <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> 的属性设置为，可以关闭安全上下文的建立 <xref:System.ServiceModel.WSHttpBinding> `false` 。 如果你使用的是 <xref:System.ServiceModel.WSDualHttpBinding> 或需要安全会话，则可以使用 [安全会话](./feature-details/secure-sessions.md)中所述的有状态安全会话。 有状态安全会话使服务保持无状态，因为安全会话的所有状态都作为保护安全令牌的一部分与每个请求一起传输。 若要启用有状态安全会话，你必须使用 <xref:System.ServiceModel.Channels.CustomBinding> 或用户定义的 <xref:System.ServiceModel.Channels.Binding> ，因为所需的配置设置不会在系统提供的和中公开 <xref:System.ServiceModel.WSHttpBinding> <xref:System.ServiceModel.WSDualHttpBinding> 。
+
+- 如果关闭安全上下文建立，还需要关闭服务凭据协商。 若要将其关闭，请将 <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential> 的属性设置 <xref:System.ServiceModel.WSHttpBinding> 为 `false` 。 若要禁用服务凭据协商，你可能需要在客户端上显式指定终结点标识。
   
 - 不要使用可靠会话。 默认情况下此功能处于关闭状态。  
   

@@ -2,12 +2,12 @@
 title: 使用弹性堆栈进行日志记录
 description: 使用弹性堆栈、Logstash 和 Kibana 进行日志记录
 ms.date: 01/19/2021
-ms.openlocfilehash: ebe7eef16d3b1a73d0fd3a010a509bbaf7be3fd5
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: f8dbcd68bf809715a10d0ea1ab36cf5ceb6a96a9
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99505812"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548079"
 ---
 # <a name="logging-with-elastic-stack"></a>使用弹性堆栈进行日志记录
 
@@ -17,7 +17,7 @@ ms.locfileid: "99505812"
 
 ## <a name="elastic-stack"></a>弹性堆栈
 
-弹性堆栈是一个功能强大的选项，可用于从 Kubernetes 群集中收集信息。 Kubernetes 支持将日志发送到 Elasticsearch 终结点，而在 [大多数情况](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/)下，你只需设置环境变量，如图7-5 所示：
+弹性堆栈是一个功能强大的选项，可用于从 Kubernetes 群集中收集信息。 Kubernetes 支持将日志发送到 Elasticsearch 终结点，而在 [大多数情况](https://v1-19.docs.kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/)下，你只需设置环境变量，如图7-5 所示：
 
 ```kubernetes
 KUBE_LOGGING_DESTINATION=elasticsearch
