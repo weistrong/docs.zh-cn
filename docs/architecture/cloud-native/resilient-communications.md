@@ -3,12 +3,12 @@ title: 可复原通信
 description: 构建适用于 Azure 的云本机 .NET 应用 |弹性通信
 author: robvet
 ms.date: 05/13/2020
-ms.openlocfilehash: 18b26223634efc5c05f680d0cbb7c8cbc2490a59
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 52f08c066767175c699f5a058267cb42d2b1d4aa
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166035"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99547689"
 ---
 # <a name="resilient-communications"></a>弹性通信
 
@@ -30,7 +30,7 @@ ms.locfileid: "91166035"
 
 ## <a name="service-mesh"></a>服务网格
 
-一种更好的方法是以 *服务网格*为依据的技术。 [服务网格](https://www.nginx.com/blog/what-is-a-service-mesh/)是一种可配置的基础结构层，其中内置了用于处理服务通信的功能以及上述其他难题。 它通过将这些问题移到服务代理中来分离这些问题。 代理部署到一个单独的进程中 (称为 [挎斗](/azure/architecture/patterns/sidecar)) ，以提供与业务代码的隔离。 但是，挎斗链接到服务-它是用它创建的并共享其生命周期。 图6-7 显示了这种情况。
+一种更好的方法是以 *服务网格* 为依据的技术。 [服务网格](https://www.nginx.com/blog/what-is-a-service-mesh/)是一种可配置的基础结构层，其中内置了用于处理服务通信的功能以及上述其他难题。 它通过将这些问题移到服务代理中来分离这些问题。 代理部署到一个单独的进程中 (称为 [挎斗](/azure/architecture/patterns/sidecar)) ，以提供与业务代码的隔离。 但是，挎斗链接到服务-它是用它创建的并共享其生命周期。 图6-7 显示了这种情况。
 
 ![使用侧面汽车的服务网格](./media/service-mesh-with-side-car.png)
 
@@ -79,7 +79,7 @@ Azure 云支持 Istio，并在 Azure Kubernetes 服务中提供对该服务的�
 
 ### <a name="references"></a>参考
 
-- [Polly](http://www.thepollyproject.org/)
+- [Polly](https://dotnetfoundation.org/projects/polly)
 
 - [重试模式](/azure/architecture/patterns/retry)
 

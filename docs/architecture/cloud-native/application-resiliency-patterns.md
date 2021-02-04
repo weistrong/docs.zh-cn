@@ -3,18 +3,18 @@ title: 应用程序复原能力模式
 description: 构建适用于 Azure 的云本机 .NET 应用 |应用程序复原模式
 author: robvet
 ms.date: 01/19/2021
-ms.openlocfilehash: 9a59a7d93b61b0dea11680f6caf0bd3b68a0f853
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: 655df16ef58f1deb2d2f4d0487c47658499f2108
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99505916"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99547715"
 ---
 # <a name="application-resiliency-patterns"></a>应用程序复原能力模式
 
 第一道防线是应用程序复原能力。
 
-虽然您可以投入大量时间来编写自己的复原框架，此类产品已经存在。 [Polly](http://www.thepollyproject.org/) 是一个全面的 .net 复原和暂时性故障处理库，使开发人员能够以流畅且线程安全的方式表达复原策略。 Polly 面向用 .NET Framework 或 .NET 5 构建的应用程序。 下表介绍了 Polly 库中提供的复原功能（称为 `policies` ）。 它们可单独应用或组合在一起。
+虽然您可以投入大量时间来编写自己的复原框架，此类产品已经存在。 [Polly](https://dotnetfoundation.org/projects/polly) 是一个全面的 .net 复原和暂时性故障处理库，使开发人员能够以流畅且线程安全的方式表达复原策略。 Polly 面向用 .NET Framework 或 .NET 5 构建的应用程序。 下表介绍了 Polly 库中提供的复原功能（称为 `policies` ）。 它们可单独应用或组合在一起。
 
 | 策略 | 体验 |
 | :-------- | :-------- |
