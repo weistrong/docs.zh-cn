@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 21271167-fe7f-46ba-a81f-a6812ea649d4
 author: jkoritzinsky
 ms.author: jekoritz
-ms.openlocfilehash: 346776ebae3a6077fd39f26d5bd19d599d163db2
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 13c91e5cb6728c5669642d1b5f7bb461efdd44f8
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608348"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065046"
 ---
 # <a name="exposing-net-core-components-to-com"></a>向 COM 公开 .NET Core 组件
 
@@ -92,6 +92,9 @@ GitHub 上的 dotnet/samples 存储库中有一个正常运行的 [COM 服务器
 ## <a name="additional-notes"></a>附加说明
 
 与 .NET Framework 不同，.NET Core 不支持从 .NET Core 程序集生成 COM 类型库 (TLB)。 本指南旨在说明如何为 COM 接口的本机声明手动编写 IDL 文件或 C/C++ 标头。
+
+> [!IMPORTANT]
+> 在 .NET Framework 中，32 位和 64 位客户端可以使用“任何 CPU”程序集。 默认情况下，在 .NET Core、.NET 5 和更高版本中，“任何 CPU”程序集附带了 64 位的 \*.comhost.dll。 因此，它们只能由 64 位客户端使用。 这是默认的，因为这是 SDK 表示的内容。 此行为与发布“自包含”功能的方式相同：默认情况下，它使用 SDK 提供的内容。 `NETCoreSdkRuntimeIdentifier` MSBuild 属性确定 \*.comhost.dll 的位数。 正如预期的那样，托管部分的位数实际上是不可知的，而随附的本机资产默认为目标 SDK。
 
 不支持 COM 组件的[自包含部署](../deploying/index.md#publish-self-contained)。 仅支持 COM 组件的[依赖框架的部署](../deploying/index.md#publish-framework-dependent)。
 

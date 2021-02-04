@@ -4,12 +4,12 @@ description: 本高级教程展示了如何使用模式匹配技术，通过单�
 ms.date: 10/06/2020
 ms.technology: csharp-whats-new
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 730098bf599dfc855676c86ab7a6e7f3ef7658f1
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: be1c330973859df62cd4706e5f6f9ca4326fb221
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513219"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794820"
 ---
 # <a name="tutorial-use-pattern-matching-to-build-type-driven-and-data-driven-algorithms"></a>教程：使用模式匹配来构建类型驱动和数据驱动的算法。
 
@@ -152,7 +152,7 @@ namespace toll_calculator
 - 乘客数不到满载量 50% 的巴士需额外支付 2.00 美元。
 - 乘客数超过满载量 90% 的巴士可享受 1.00 美元折扣。
 
-可使用属性模式在同一 switch 表达式中实现这些规则。 属性模式在类型已确定后检查对象的属性。 `Car` 的一个子句扩展为四个不同的子句：
+可使用属性模式在同一 switch 表达式中实现这些规则。 属性模式是将属性值与常数值进行比较的 `when` 子句。 属性模式在类型已确定后检查对象的属性。 `Car` 的一个子句扩展为四个不同的子句：
 
 ```csharp
 vehicle switch

@@ -1,13 +1,13 @@
 ---
 title: C# 教程 - 主要语言区域
-description: 刚开始接触 C#？ 了解 C# 语言的基础知识。
+description: 刚开始接触 C#？ 了解 C# 语言的基础知识。 本文包含主要语言功能的调查。
 ms.date: 08/06/2020
-ms.openlocfilehash: a73399643ada05a4bfb17fadd17bf3267514e99d
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 943701b544dd3495fa2286e804e2566da146cb45
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "93400743"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216650"
 ---
 # <a name="major-language-areas"></a>主要语言区域
 
@@ -21,7 +21,7 @@ C# 和 .NET 提供了许多不同的集合类型。 数组包含由语言定义�
 
 数组类型是引用类型，声明数组变量只是为引用数组实例预留空间。 实际的数组实例是在运行时使用 `new` 运算符动态创建而成。 `new` 运算指定了新数组实例的长度，然后在此实例的生存期内固定使用这个长度。 数组元素的索引介于 `0` 到 `Length - 1` 之间。 `new` 运算符自动将数组元素初始化为其默认值（例如，所有数值类型的默认值为 0，所有引用类型的默认值为 `null`）。
 
-以下示例创建 `int` 元素数组，初始化此数组，然后打印输出此数组的内容。
+以下示例创建 `int` 元素数组，初始化此数组，然后打印此数组的内容。
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="ArraysSample":::
 
@@ -110,7 +110,7 @@ C# 程序中的类型、成员和其他实体支持使用修饰符来控制其�
 
 此示例将 `HelpAttribute` 附加到 `Widget` 类。 还向此类中的 `Display` 方法附加了另一个 `HelpAttribute`。 特性类的公共构造函数控制了将特性附加到程序实体时必须提供的信息。 可以通过引用特性类的公共读写属性（如上面示例对 `Topic` 属性的引用），提供其他信息。
 
-可以在运行时使用反射来读取和操纵特性定义的元数据。 如果使用这种方法请求获取特定特性，便会调用特性类的构造函数（在程序源中提供信息），并返回生成的特性实例。 如果是通过属性提供其他信息，那么在特性实例返回前，这些属性会设置为给定值。
+可以在运行时使用反射来读取和操纵特性定义的元数据。 如果使用这种方法请求获取特定特性，便会调用特性类的构造函数（在程序源中提供信息）。 返回生成的特性实例。 如果是通过属性提供其他信息，那么在特性实例返回前，这些属性会设置为给定值。
 
 下面的代码示例展示了如何获取与 `Widget` 类及其 `Display` 方法相关联的 `HelpAttribute` 实例。
 

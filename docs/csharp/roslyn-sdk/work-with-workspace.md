@@ -3,12 +3,12 @@ title: 使用 .NET Compiler Platform SDK 工作区模型
 description: 此概述介绍了用于查询和操作代码的工作区和项目的类型。
 ms.date: 10/15/2017
 ms.custom: mvc
-ms.openlocfilehash: d21873b132d5f0788033693a319e556feeac59a9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b613c85c01cc054dea9dd4bb9cf0062ffedb08bf
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156878"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899108"
 ---
 # <a name="work-with-a-workspace"></a>使用工作区
 
@@ -24,7 +24,7 @@ ms.locfileid: "79156878"
 
 此外，还可创建与主机环境断开连接或用于没有主机环境的应用程序的独立工作区。
 
-## <a name="solutions-projects-documents"></a>解决方案、项目、文档
+## <a name="solutions-projects-and-documents"></a>解决方案、项目和文档
 
 尽管每次按下一个键时工作区都可能会更改，仍可以隔离方式使用解决方案模型。
 

@@ -4,12 +4,12 @@ description: 有关将企业体系结构部署到云的不同方式的指南，�
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 7e91412600e8e4e5a0dca2a454f1cb0680c881b2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 89a8e6a52331b563be334a867f563e9ded8d8cc4
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173336"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957957"
 ---
 # <a name="architecture-deployment-approaches"></a>体系结构部署方法
 
@@ -144,11 +144,11 @@ PaaS 解决了 IaaS 常见的挑战。 PaaS 使开发人员可以专注于代码
 |**生存期**|数月|数天到数月|数分钟到数天|数毫秒到数分钟|
 |**责任**|应用程序、依赖项、运行时和操作系统|应用程序和依赖项|应用程序、依赖项和运行时|函数
 
-- **缩放**是指用于缩放应用程序的单位
-- **摘要**是指实现所抽象的层
-- **单元**是指所部署内容的范围
-- **生存期**是指特定实例的典型运行时
-- **责任**是指生成、部署和维护应用程序的开销
+- **缩放** 是指用于缩放应用程序的单位
+- **摘要** 是指实现所抽象的层
+- **单元** 是指所部署内容的范围
+- **生存期** 是指特定实例的典型运行时
+- **责任** 是指生成、部署和维护应用程序的开销
 
 下一章将重点介绍无服务器体系结构、用例和设计模式。
 

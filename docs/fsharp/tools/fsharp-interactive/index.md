@@ -4,12 +4,12 @@ description: 了解如何使用 F# 交互窗口 (dotnet fsi) 在控制台以交�
 ms.date: 11/29/2020
 f1_keywords:
 - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
-ms.openlocfilehash: fe8ee2ebb97f4a47e80f39d5be8d95ba5b72ddc7
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: fe48d4d7de92eea800a489b12342e3ae181e8cb1
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739302"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99426966"
 ---
 # <a name="interactive-programming-with-f"></a>使用 F\# 进行交互式编程
 
@@ -91,7 +91,7 @@ F# 脚本在 [Visual Studio](../../get-started/get-started-visual-studio.md)、[
 ## <a name="referencing-packages-in-f-interactive"></a>在 F# 交互窗口中引用包
 
 > [!NOTE]
-> 程序包管理系统是可扩展的；详细了解[其他扩展](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager)。
+> 程序包管理系统是可扩展的；详细了解[其他扩展](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html)。
 
 F# 交互窗口支持使用 `#r "nuget:"` 语法和可选版本来引用 NuGet 包：
 
@@ -126,7 +126,7 @@ printfn $"{f (dsharp.tensor 1.2)}"
 还可通过 `#i` 命令指定包源。 以下示例指定一个远程源和一个本地源：
 
 ```fsharp
-#i "nuget:https://my-remote-package-source/index.json
+#i "nuget:https://my-remote-package-source/index.json"
 #i @"path-to-my-local-source"
 ```
 

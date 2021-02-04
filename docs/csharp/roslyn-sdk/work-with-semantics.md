@@ -3,12 +3,12 @@ title: 使用 .NET Compiler Platform SDK 语义模型
 description: 此概述介绍了用于理解和操作代码的语义节点的类型。
 ms.date: 10/15/2017
 ms.custom: mvc
-ms.openlocfilehash: 8575988cd98a4c0ba3f24107788f065f7472f55d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f0d254045a168f82888c5cc77a34f194a68aed0e
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156930"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899121"
 ---
 # <a name="work-with-semantics"></a>使用语义
 
@@ -41,7 +41,7 @@ ms.locfileid: "79156930"
 
 <xref:Microsoft.CodeAnalysis.Compilation> 类型的各种方法和属性可帮助查找符号。 例如，可以通过声明的类型的通用元数据名称来查找该类型的符号。 还可以访问整个符号表，该表是以全局命名空间为根的符号树。
 
-符号还包含编译器根据源或元数据（如其他引用的符号）确定的其他信息。 每种类型的符号都由派生自 <xref:Microsoft.CodeAnalysis.ISymbol> 的单独接口表示，每种符号都有其自己的方法和属性，详细说明了编译器收集的信息。 其中许多属性直接引用了其他符号。 例如，可通过 <xref:Microsoft.CodeAnalysis.IMethodSymbol.ReturnType?displayProperty=nameWithType> 属性得知方法声明引用的实际类型符号。
+符号还包含编译器根据源或元数据（如其他引用的符号）确定的其他信息。 每种类型的符号都由派生自 <xref:Microsoft.CodeAnalysis.ISymbol> 的单独接口表示，每种符号都有其自己的方法和属性，详细说明了编译器收集的信息。 其中许多属性直接引用了其他符号。 例如，<xref:Microsoft.CodeAnalysis.IMethodSymbol.ReturnType?displayProperty=nameWithType> 属性指示该方法返回的实际类型符号。
 
 符号提供了源代码与元数据之间命名空间、类型和成员的共同表示形式。 例如，在源代码中声明的方法以及从元数据导入的方法均由具有相同属性的 <xref:Microsoft.CodeAnalysis.IMethodSymbol> 表示。
 

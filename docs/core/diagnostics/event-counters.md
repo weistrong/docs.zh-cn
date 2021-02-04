@@ -2,12 +2,12 @@
 title: .NET Core 中的 EventCounters
 description: 本文将介绍什么是 EventCounters，如何实现它们，以及如何使用它们。
 ms.date: 08/07/2020
-ms.openlocfilehash: 08180b5580d2e7fe782fbd531a26872715825cdf
-ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
+ms.openlocfilehash: 843f1ec645bf7f52fd4f85e30d183e6e21fee5c6
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97678201"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065059"
 ---
 # <a name="eventcounters-in-net-core"></a>.NET Core 中的 EventCounters
 
@@ -195,11 +195,11 @@ EventCounters 可由 Azure Monitor 使用，特别是 Azure Application Insights
 
 首先，需要启用生成计数器值的 <xref:System.Diagnostics.Tracing.EventSource>。 替代 <xref:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated%2A?displayProperty=nameWithType> 方法以在创建 <xref:System.Diagnostics.Tracing.EventSource> 时获取通知，如果对于 EventCounters 这是正确的 <xref:System.Diagnostics.Tracing.EventSource>，则可在其上调用 <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A?displayProperty=nameWithType>。 下面是示例替代：
 
-:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="16-27":::
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="11-22":::
 
 #### <a name="sample-code"></a>代码示例
 
-下面是一个示例 <xref:System.Diagnostics.Tracing.EventListener> 类，它打印出 .NET 运行时的 <xref:System.Diagnostics.Tracing.EventSource> 的所有计数器名称和值，用于在一定间隔内发布其内部计数器 (`System.Runtime`)。
+下面是一个示例 <xref:System.Diagnostics.Tracing.EventListener> 类，它打印出 .NET 运行时的 <xref:System.Diagnostics.Tracing.EventSource> 的所有计数器名称和值，用于每秒发布其内部计数器 (`System.Runtime`)。
 
 :::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs":::
 

@@ -1,21 +1,21 @@
 ---
-title: .NET Core 运行时标识符 (RID) 目录
-description: 了解运行时标识符 (RID) 及如何在 .NET Core 中使用 RID。
-ms.date: 12/15/2020
-ms.openlocfilehash: 6b45c42d626de41c7d67c66aac7dc31c51c36a22
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+title: .NET 运行时标识符 (RID) 目录
+description: 了解运行时标识符 (RID) 及如何在 .NET 中使用 RID。
+ms.date: 01/28/2021
+ms.openlocfilehash: e5e1c4712965211b25a02b14a7cf2c91d74d8306
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970663"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216000"
 ---
-# <a name="net-core-rid-catalog"></a>.NET Core RID 目录
+# <a name="net-rid-catalog"></a>.NET RID 目录
 
 RID 是运行时标识符的缩写。 RID 值用于标识应用程序运行所在的目标平台。
 .NET 包使用它们来表示 NuGet 包中特定于平台的资产。 以下值是 RID 的示例：`linux-x64`、`ubuntu.14.04-x64`、`win7-x64` 或 `osx.10.12-x64`。
 对于具有本机依赖项的包，RID 将指定在其中可以还原包的平台。
 
-可以在项目文件的 `<RuntimeIdentifier>` 元素中设置一个 RID。 可以将多个 RID 定义为项目文件的 `<RuntimeIdentifiers>` 元素中的列表（以分号分隔）。 也可使用以下 [.NET Core CLI 命令](./tools/index.md) 通过 `--runtime` 选项使用它们：
+可以在项目文件的 `<RuntimeIdentifier>` 元素中设置一个 RID。 可以将多个 RID 定义为项目文件的 `<RuntimeIdentifiers>` 元素中的列表（以分号分隔）。 也可使用以下 [.NET CLI 命令](./tools/index.md) 通过 `--runtime` 选项使用它们：
 
 - [dotnet build](./tools/dotnet-build.md)
 - [dotnet clean](./tools/dotnet-clean.md)
@@ -82,7 +82,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 若要使用 RID，必须知道有哪些 RID。 新值将定期添加到该平台。
 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库中的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) 文件。
 
-.NET Core 2.0 SDK 引入了可移植 RID 的概念。 它们是添加到 RID 图表的新值，并且未与特定版本或 OS 发行版本关联，是使用 .NET Core 2.0 及更高版本的首选值。 它们在处理多个 Linux 发行版时特别有用，因为大多数发行版 RID 都映射到可移植的 RID。
+可移植 RID 是添加到 RID 图表的值，未绑定到特定的版本或 OS 发行。 它们是首选选项，尤其是在处理多个 Linux 发行版时，因为大多数发行版 RID 都映射到可移植的 RID。
 
 以下列表显示了一小部分用于每个 OS 的最常见 RID。
 
@@ -90,7 +90,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
 
 仅列出了公共值。 若要获取最新的完整版，请参阅 `dotnet/runtime` 存储库中的 [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) 文件。
 
-- 可移植（.NET Core 2.0 或更高版本）
+- 可移植
   - `win-x64`
   - `win-x86`
   - `win-arm`
@@ -108,7 +108,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
   - `win10-arm`
   - `win10-arm64`
 
-有关详细信息，请参阅 [.NET Core 依赖项和要求](./install/windows.md#dependencies)。
+有关详细信息，请参阅 [.NET 依赖项和要求](./install/windows.md#dependencies)。
 
 ## <a name="linux-rids"></a>Linux RID
 
@@ -127,7 +127,7 @@ NuGet 还原包时，它将尝试找到指定运行时的完全匹配项。
   - `tizen.4.0.0`
   - `tizen.5.0.0`
 
-有关详细信息，请参阅 [.NET Core 依赖项和要求](./install/linux.md)。
+有关详细信息，请参阅 [.NET 依赖项和要求](./install/linux.md)。
 
 ## <a name="macos-rids"></a>macOS RID
 
@@ -151,7 +151,7 @@ macOS RID 使用较早的“OSX”品牌。 仅列出了公共值。 若要获�
   - `osx.11.0-x64`
   - `osx.11.0-arm64`
 
-有关详细信息，请参阅 [.NET Core 依赖项和要求](./install/macos.md#dependencies)。
+有关详细信息，请参阅 [.NET 依赖项和要求](./install/macos.md#dependencies)。
 
 ## <a name="see-also"></a>请参阅
 

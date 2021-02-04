@@ -3,20 +3,19 @@ title: .NET Framework 技术在 .NET Core 和 .NET 5+ 上不可用
 titleSuffix: ''
 description: 了解在 .NET Core 和 .NET 5.0 及更高版本上不可用的 .NET Framework 技术。
 author: cartermp
-ms.date: 10/13/2020
-ms.openlocfilehash: 492aace9db3dc3acef18e995f10b7b5fbe251558
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.date: 01/26/2021
+ms.openlocfilehash: d5926d2c0cfe6d2073ac6ad74046ca48b9cb18f1
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161031"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898770"
 ---
 # <a name="net-framework-technologies-unavailable-on-net-core-and-net-5"></a>.NET Framework 技术在 .NET Core 和 .NET 5+ 上不可用
 
-一些适用于 .NET Framework 库的技术不可用于 .NET Core 和 .NET 5.0 及更高版本，例如应用域、远程处理、代码访问安全性 (CAS)、安全透明度和 <xref:System.EnterpriseServices?displayProperty=fullName>。 如果库依赖于这些技术中的一个或多个，请考虑使用下面所述的替代方法。 有关 API 兼容性的详细信息，请参阅 [.NET 中断性变更](../compatibility/breaking-changes.md)。
+一些适用于 .NET Framework 库的技术不可用于 .NET Core 和 .NET 5.0 及更高版本，例如应用域、远程处理和代码访问安全性 (CAS)。 如果库依赖于本页中列出的一项或多项技术，请考虑使用提及的替代方法。
 
-> [!TIP]
-> 当前未实现某个 API 或技术并不因此意味着有意不对其提供支持。 搜索 .NET GitHub 存储库，查看所遇到的特定问题是否是特意设计的。 如果找不到此类指示器，请在 [dotnet/runtime 存储库](https://github.com/dotnet/runtime/issues)中提出问题，请求提供特定 API 和技术。
+有关 API 兼容性的详细信息，请参阅 [.NET 中断性变更](../compatibility/breaking-changes.md)。
 
 ## <a name="application-domains"></a>应用程序域
 
@@ -47,6 +46,10 @@ ms.locfileid: "92161031"
 ## <a name="systementerpriseservices"></a>System.EnterpriseServices
 
 .NET Core 和 .NET 5+ 不支持 <xref:System.EnterpriseServices?displayProperty=fullName> (COM+)。
+
+## <a name="workflow-foundation-and-wcf"></a>Workflow Foundation 和 WCF
+
+.NET 5+（包括 .NET Core）不支持 Windows Workflow Foundation (WF) 和 Windows Communication Foundation (WCF)。 有关替代方法，请参阅 [CoreWF](https://github.com/UiPath/corewf) 和 [CoreWCF](https://github.com/CoreWCF/CoreWCF)。
 
 ## <a name="see-also"></a>请参阅
 

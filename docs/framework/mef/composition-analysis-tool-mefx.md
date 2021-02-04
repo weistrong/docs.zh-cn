@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MEF, Composition Analysis Tool
 - Mefx [MEF], Composition Analysis Tool
 ms.assetid: c48a7f93-83bb-4a06-aea0-d8e7bd1502ad
-ms.openlocfilehash: d3f3a282cfa9274a1939d312987dd58b24eab2af
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a7c76bfe169a23322a5a0cdfe0d2e2e5d82f0346
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255788"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957867"
 ---
 # <a name="composition-analysis-tool-mefx"></a>结构分析工具 (Mefx)
 
@@ -130,9 +130,9 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
   
 <a name="white_lists"></a>
 
-## <a name="white-lists"></a>白名单  
+## <a name="allow-lists"></a>允许列表
 
- 使用 `/whitelist` 选项可以指定一个文本文件，其中列出预期将被拒绝的部件。 意外的拒绝则将被标记出来。 在分析不完整的库或分析缺少某些依赖关系的子库时，这将很有帮助。 `/whitelist` 选项可应用于 `/rejected` 或 `/causes` 操作。  
+ 使用 `/whitelist` 选项可以指定一个文本文件，其中列出预期将被拒绝的部件。 意外的拒绝则将被标记出来。 在分析不完整的库或分析缺少某些依赖项的子库时，这将很有帮助。 `/whitelist` 选项可应用于 `/rejected` 或 `/causes` 操作。  
   
  请考虑名为 test.txt 且包含文本“ClassLibrary1.ChainOne”的文件。 如果在前面的示例中将 `/rejected` 操作用于 `/whitelist` 选项，它将生成以下输出：  
   

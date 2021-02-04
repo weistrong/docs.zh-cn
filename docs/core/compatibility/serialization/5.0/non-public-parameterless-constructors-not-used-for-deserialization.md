@@ -2,12 +2,12 @@
 title: 中断性变更：非公共的无参数构造函数不用于反序列化
 description: 了解 .NET 5.0 中的以下中断性变更：非公共的无参数构造函数不再用于 JsonSerializer 的反序列化。
 ms.date: 10/18/2020
-ms.openlocfilehash: 6bdcc92c61008aa4ee27370bbac4dbf4ee3ef7c8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a2ea54b6a76692dae7d6e01b06b11218d66b1cd7
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759274"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794705"
 ---
 # <a name="non-public-parameterless-constructors-not-used-for-deserialization"></a>非公共的无参数构造函数不用于反序列化
 
@@ -37,7 +37,7 @@ ms.locfileid: "95759274"
 ## <a name="recommended-action"></a>建议的操作
 
 - 如果你拥有该类型并且这样可行，则将无参数构造函数设为公共。
-- 否则，针对该类型实现 `JsonConverter<T>`，并控制反序列化行为。
+- 否则，针对该类型实现 <xref:System.Text.Json.Serialization.JsonConverter%601>，并控制反序列化行为。 如果该方案的 C# 可访问性规则允许，则可以从 <xref:System.Text.Json.Serialization.JsonConverter%601> 实现中调用非公共构造函数。
 
 ## <a name="affected-apis"></a>受影响的 API
 

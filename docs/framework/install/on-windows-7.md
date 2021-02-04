@@ -2,12 +2,12 @@
 title: 在 Windows 7 SP1 上安装 .NET Framework
 description: 了解如何在 Windows 7 SP1 上安装 .NET Framework。
 ms.date: 04/18/2019
-ms.openlocfilehash: 3f94562f2a14c108a021343b89a8279e95215f30
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 900b38110626a93f37829045a8676ea87101d7e9
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558850"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899082"
 ---
 # <a name="install-the-net-framework-on-windows-7-sp1-and-windows-server-2008-r2"></a>在 Windows 7 SP1 和 Windows Server 2008 R2 上安装 .NET Framework
 
@@ -23,6 +23,16 @@ ms.locfileid: "88558850"
 > [下载 .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
 [.NET Framework 4.8](https://github.com/Microsoft/dotnet/tree/master/releases/net48) 可用于运行针对 .NET Framework 4.0 或更高版本生成的应用程序。
+
+### <a name="offline-installer"></a>脱机安装程序
+
+在 Windows 7 上执行 .NET Framework 的脱机安装时，首先需要确保目标计算机上已安装最新的 [Microsoft 根证书颁发机构 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm)。
+
+certmgr.exe 工具可以自动安装证书，并从 Visual Studio 或 Windows SDK 获取该证书。 以下命令用于在运行 .NET Framework 安装程序之前安装证书：
+
+```console
+certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
+```
 
 ## <a name="net-framework-35"></a>.NET Framework 3.5
 

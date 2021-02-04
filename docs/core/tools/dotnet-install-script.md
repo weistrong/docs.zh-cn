@@ -2,12 +2,12 @@
 title: dotnet-install 脚本
 description: 了解用于安装 .NET SDK 和共享运行时的 dotnet-install 脚本。
 ms.date: 09/22/2020
-ms.openlocfilehash: a1598a84aa31aeac970f0493d1481651164d733e
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 1904d0322774de25aeba7e7a53ab36ce135d685d
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634437"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957868"
 ---
 # <a name="dotnet-install-scripts-reference"></a>dotnet-install 脚本引用
 
@@ -157,9 +157,15 @@ bash 脚本也读取 PowerShell 开关。因此，可以在 Linux/macOS 系统�
   - `aspnetcore` - `Microsoft.AspNetCore.App` 共享运行时。
   - `windowsdesktop` - `Microsoft.WindowsDesktop.App` 共享运行时。
 
-- **`--runtime-id <RID>`**
+- **`--runtime-id <RID>` [已弃用]**
 
-  指定要为其安装工具的[运行时标识符](../rid-catalog.md)。 使用适用于可移植 Linux 的 `linux-x64`。 （仅适用于 Linux/macOS。）
+  指定要为其安装工具的[运行时标识符](../rid-catalog.md)。 使用适用于可移植 Linux 的 `linux-x64`。 （仅适用于 Linux/macOS 和低于 .NET Core 2.1 的版本。）
+
+  **`--os <OPERATING_SYSTEM>`**
+
+  指定要为其安装工具的操作系统。 可能的值包括：`osx`、`linux`、`linux-musl`、`freebsd`、`rhel.6`。 （适用于 .NET Core 2.1 及更高版本。）
+
+  此参数是可选的，只应在需要替代脚本检测到的操作系统时使用。
 
 - **`-SharedRuntime|--shared-runtime`**
 

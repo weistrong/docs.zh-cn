@@ -3,16 +3,16 @@ title: 使用 .NET Compiler Platform SDK 语法模型
 description: 此概述介绍了用于理解和操作语法节点的类型。
 ms.date: 10/15/2017
 ms.custom: mvc
-ms.openlocfilehash: fdb13095c2b91e54d58988a51a51b05652e57ea6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 3666b0ec875b465954780c3c313ca87c9a4e6676
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83208390"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899134"
 ---
 # <a name="work-with-syntax"></a>使用语法
 
-“语法树”是一种由编译器 API 公开的基础数据结构。 这些树表示源代码的词法和语法结构。 它们有两个重要用途：
+“语法树”是一种由编译器 API 公开的基础的不可变数据结构。 这些树表示源代码的词法和语法结构。 它们有两个重要用途：
 
 - 支持使用工具（如 IDE、加载项、代码分析工具和重构）查看和处理用户项目中源代码的语法结构。
 - 支持使用工具（如重构和 IDE）以自然的方式创建、修改和重新排列源代码，而无需直接编辑文本。 通过创建和操作语法树，可轻松使用工具创建和重新排列源代码。
@@ -21,11 +21,11 @@ ms.locfileid: "83208390"
 
 语法树是用于编译、代码分析、绑定、重构、IDE 功能和代码生成的主要结构。 要理解任意部分的源代码，都必须先加以识别，然后将其分类为众多已知结构化语言元素之一。
 
-语法树具有三个关键特性。 第一个特性是语法树完全保真地保留所有源代码信息。 完全保真意味着语法树包含可在源文本中找到的每份信息、每个语法结构、每个词法标记，以及它们之间的所有其他内容，包括空格、注释和预处理器指令。 例如，源中提及的所有文本都完全按照键入的形式表示。 语法树还可在程序不完整或格式错误时，通过表示出已跳过或缺少的标记，来捕获源代码中的错误。
+语法树具有三个关键特性：
 
-语法树的第二个特性是它们可以生成从中进行分析的确切文本。 可从任何语法节点获取以该节点为根的子树的文本表示形式。 此功能意味着语法树可以用作一种构造和编辑源文本的方法。 创建树即会隐式创建等效文本，编辑语法树会创建新的树，而不会更改现有树，通过这些操作，可高效编辑文本。
-
-语法树的第三个特性是它们是恒定不变的，也是线程安全的。 获取的树是代码当前状态的快照，不会更改。 这可让多个用户同时在不同线程中与同一语法树进行交互，而不会锁定或重复。 由于语法树恒定不变，并且不可直接对其进行修改，因此工厂方法可通过创建树的另一个快照来帮助创建和修改语法树。 语法树可高效重用基础节点，因此几乎无需使用额外的内存便可快速重新生成新版本。
+- 它们完全保真地保存所有源信息。 完全保真意味着语法树包含可在源文本中找到的每份信息、每个语法结构、每个词法标记，以及它们之间的所有其他内容，包括空格、注释和预处理器指令。 例如，源中提及的所有文本都完全按照键入的形式表示。 语法树还可在程序不完整或格式错误时，通过表示出已跳过或缺少的标记，来捕获源代码中的错误。
+- 它们可以生成其分析源的确切文本。 可从任何语法节点获取以该节点为根的子树的文本表示形式。 此功能意味着语法树可以用作一种构造和编辑源文本的方法。 创建树即会隐式创建等效文本，对现有树进行更改会创建新树，可高效地编辑文本。
+- 它们是不可变的，并且是线程安全的。 获取的树是代码当前状态的快照，不会更改。 这可让多个用户同时在不同线程中与同一语法树进行交互，而不会锁定或重复。 由于语法树恒定不变，并且不可直接对其进行修改，因此工厂方法可通过创建树的另一个快照来帮助创建和修改语法树。 语法树可高效重用基础节点，因此几乎无需使用额外的内存便可快速重新生成新版本。
 
 语法树实际上是一个树形数据结构，其中非终端结构化元素是其他元素的父元素。 每个语法树都由节点、标记和琐碎内容组成。
 
@@ -90,6 +90,9 @@ ms.locfileid: "83208390"
 <xref:Microsoft.CodeAnalysis.SyntaxToken.RawKind> 属性可轻松消除共享同一节点类的语法节点类型的歧义。 对于标记和琐碎内容，此属性是区分不同元素类型的唯一方法。
 
 例如，一个 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax> 类具有 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left>、<xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken> 和 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right> 作为子级。 <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind%2A> 属性可辨别它是 <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.AddExpression>、<xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.SubtractExpression> 还是 <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.MultiplyExpression> 类型的语法节点。
+
+> [!TIP]
+> 建议使用 <xref:Microsoft.CodeAnalysis.CSharpExtensions.IsKind%2A>（对于 C#）或 <xref:Microsoft.CodeAnalysis.VisualBasicExtensions.IsKind%2A>（对于 VB）扩展方法来检查类别。
 
 ## <a name="errors"></a>错误
 

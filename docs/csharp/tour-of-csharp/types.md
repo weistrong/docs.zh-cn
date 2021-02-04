@@ -2,14 +2,16 @@
 title: 定义类型及其成员 - C# 教程
 description: 程序的构建基块是类型。 了解如何使用 C# 创建类、结构、接口等。
 ms.date: 08/06/2020
-ms.openlocfilehash: efd353fe8c1e6a57952bcb2586a05ad38ecd52b9
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: b1ce24611fec6fdf01d5ecb8d6ae974e147c78c5
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88559110"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216598"
 ---
 # <a name="types-and-members"></a>类型和成员
+
+作为面向对象的语言，C# 支持封装、继承和多态性这些概念。 类可能会直接继承一个父类，并且可以实现任意数量的接口。 若要用方法重写父类中的虚方法，必须使用 `override` 关键字，以免发生意外重定义。 在 C# 中，结构就像是轻量级类，是可以实现接口但不支持继承的堆栈分配类型。 C# 还可提供记录，这些记录是主要用于存储数据值的类类型。
 
 ## <a name="classes-and-objects"></a>类和对象
 
@@ -32,7 +34,7 @@ ms.locfileid: "88559110"
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="CreatePoints":::
 
-当无法再访问对象时，对象占用的内存会被自动回收。 既没必要，也无法在 C# 中显式解除分配对象。
+当无法再访问对象时，对象占用的内存会被自动回收。 没有必要也无法在 C# 中显式解除分配对象。
 
 ### <a name="type-parameters"></a>类型参数
 

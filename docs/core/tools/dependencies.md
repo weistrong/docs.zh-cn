@@ -1,20 +1,20 @@
 ---
-title: 管理 .NET Core 中的依赖项
-description: 介绍如何管理 .NET Core 应用程序的项目依赖项。
+title: 管理 .NET 中的依赖项
+description: 介绍如何管理 .NET 应用程序的项目依赖项。
 no-loc:
 - dotnet add package
 - dotnet remove package
 - dotnet list package
 ms.topic: how-to
-ms.date: 02/25/2020
-ms.openlocfilehash: 2aeedb56f774b51076764c2772eb02b2fa095d92
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.date: 01/28/2021
+ms.openlocfilehash: 9f5f814d0b4dc7aa3ff1a938c172475169a55bf2
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062855"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216123"
 ---
-# <a name="manage-dependencies-in-net-core-applications"></a>管理 .NET Core 应用程序中的依赖项
+# <a name="manage-dependencies-in-net-applications"></a>管理 .NET 应用程序中的依赖项
 
 本文介绍如何通过编辑项目文件或使用 CLI 来添加和删除依赖项。
 
@@ -37,7 +37,7 @@ ms.locfileid: "88062855"
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
-上述示例中的依赖项只有在对给定目标生成时才有效。 条件中的 `$(TargetFramework)` 是将在项目中设置的 MSBuild 属性。 对于大多数常见的 .NET Core 应用程序，无需这样做。
+上述示例中的依赖项只有在对给定目标生成时才有效。 条件中的 `$(TargetFramework)` 是将在项目中设置的 MSBuild 属性。 对于大多数常见的 .NET 应用程序，无需这样做。
 
 ## <a name="add-a-dependency-by-editing-the-project-file"></a>通过编辑项目文件添加依赖项
 

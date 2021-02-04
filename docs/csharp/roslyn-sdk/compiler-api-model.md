@@ -3,12 +3,12 @@ title: .NET Compiler Platform SDK 概念和对象模型
 description: 此概述提供了高效使用 .NET 编译器 SDK 所需的背景。 介绍了 API 层、涉及的主要类型以及总体对象模型。
 ms.date: 07/13/2020
 ms.custom: mvc
-ms.openlocfilehash: a65d282dd3c58279bbfd635c0386d50ce3f30055
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.openlocfilehash: f4b2163c3bf8824b6ad93f0b144a6b02d870f50a
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374463"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899160"
 ---
 # <a name="understand-the-net-compiler-platform-sdk-model"></a>了解 .NET Compiler Platform SDK 模型
 
@@ -42,7 +42,7 @@ ms.locfileid: "86374463"
 
 ### <a name="diagnostic-apis"></a>诊断 API
 
-在编译器分析过程中，编译器会生成一组诊断，包括语法、语义、明确赋值以及各种警告和信息性诊断。 编译器 API 层通过一个可扩展 API 公开诊断，该可扩展 API 允许将用户定义的分析器插入编译过程。 它支持随编译器定义的诊断一起，生成用户定义的诊断，例如由 StyleCop 或 FxCop 等工具生成的诊断。 以这种方式生成诊断有以下优势：与 MSBuild 和 Visual Studio 等工具（具体取决于对根据策略停止生成等体验进行的诊断）自然地集成、在编辑器中显示实时波形曲线，以及建议代码修复。
+在编译器分析过程中，编译器会生成一组诊断，包括语法、语义、明确赋值以及各种警告和信息性诊断的所有内容。 编译器 API 层通过一个可扩展 API 公开诊断，该可扩展 API 允许将用户定义的分析器插入编译过程。 它支持随编译器定义的诊断一起生成用户定义的诊断，例如由 StyleCop 等工具生成的诊断。 以这种方式生成诊断有以下优势：与 MSBuild 和 Visual Studio 等工具（具体取决于对根据策略停止生成等体验进行的诊断）自然地集成、在编辑器中显示实时波形曲线，以及建议代码修复。
 
 ### <a name="scripting-apis"></a>脚本 API
 

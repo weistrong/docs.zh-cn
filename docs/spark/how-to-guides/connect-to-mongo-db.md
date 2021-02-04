@@ -6,12 +6,12 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 945e494e8a027d438bf4659d989da6033a13f6f0
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 3889088ce32046f72a9a3392e28a5a36cda4745e
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687598"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957840"
 ---
 # <a name="connect-net-for-apache-spark-to-mongodb"></a>将 .NET for Apache Spark 连接到 MongoDB
 
@@ -19,7 +19,7 @@ ms.locfileid: "94687598"
 
 ## <a name="prerequisites"></a>先决条件
 
-1. 启动并运行 MongoDB 服务器，向其添加一个[数据库和一些集合](https://docs.mongodb.com/manual/core/databases-and-collections/)（对于本地服务器，请下载[此社区服务器](https://www.mongodb.com/try/download/community)，或者对于 MongoDB 云服务，可以尝试 [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)。）
+- 启动并运行 MongoDB 服务器，向其添加一个[数据库和一些集合](https://docs.mongodb.com/manual/core/databases-and-collections/)（对于本地服务器，请下载[此社区服务器](https://www.mongodb.com/try/download/community)，或者对于 MongoDB 云服务，可以尝试 [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)。）
 
 ## <a name="set-up-your-mongodb-instance"></a>设置 MongoDB 实例
 
@@ -38,7 +38,7 @@ ms.locfileid: "94687598"
     )
     ```
 
-2. 请确保运行 .NET for Apache Spark 应用程序的计算机的 IP 地址已列入允许清单，以便 MongoDB 服务器能够连接。 你可以参考[本指南](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/)了解如何执行此操作。
+2. 请确保运行 .NET for Apache Spark 应用程序的计算机的 IP 地址已加入允许列表，以便 MongoDB 服务器能够连接。 你可以参考[本指南](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/)了解如何执行此操作。
 
 ## <a name="configure-your-net-for-apache-spark-application"></a>配置 .NET for Apache Spark 应用程序
 

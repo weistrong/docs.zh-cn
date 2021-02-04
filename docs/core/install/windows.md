@@ -4,12 +4,12 @@ description: 了解可在其上安装 .NET 的 Windows 版本。
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 57cebc562949627be70aabe24e75ad4567d072fd
-ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
+ms.openlocfilehash: 33492cc6fa6c64ec3a1d745a4fa0c6cc418f87bd
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98536120"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898783"
 ---
 # <a name="install-net-on-windows"></a>在 Windows 上安装 .NET
 
@@ -174,6 +174,18 @@ SDK 用于生成和发布 .NET 应用和库。 安装 SDK 会包含三个[运行
 
 有关 .NET Core 2.1 支持的操作系统、发行版和生命周期策略的详细信息，请参阅 [.NET Core 2.1 支持的 OS 版本](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)。
 
+### <a name="offline-install-for-windows-7"></a>Windows 7 的脱机安装
+
+在 Windows 7 上执行 .NET Core 2.1 的脱机安装时，首先需要确保目标计算机上已安装最新的 [Microsoft 根证书颁发机构 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm)。
+
+certmgr.exe 工具可以自动安装证书，并从 Visual Studio 或 Windows SDK 获取该证书。 以下命令用于在运行 .NET Core 2.1 安装程序之前安装证书：
+
+```console
+certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
+```
+
+请务必查看[下面 Windows 7](#additional-deps) 所需的依赖项。
+
 ---
 
 <!-- markdownlint-disable MD001 -->
@@ -184,7 +196,7 @@ SDK 用于生成和发布 .NET 应用和库。 安装 SDK 会包含三个[运行
 
 | 操作系统         | 先决条件                                                                    |
 |--------------------------|----------------------------------------------------------------------------------|
-| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] <br> - KB3063858 [64 位][kb64] / [32 位][kb32] <br> - [MicrosoftRootCertificateAuthority2011.cer](https://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409)（仅限 .NET Core 2.1） |
+| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] <br> - KB3063858 [64 位][kb64] / [32 位][kb32] <br> - [Microsoft 根证书颁发机构 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm)（仅限 .NET Core 2.1 脱机安装程序） |
 | Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] |
 | Windows 8.1              | Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] |
 | Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64 位][vcc64] / [32 位][vcc32] |
@@ -331,5 +343,5 @@ Microsoft 提供适合特定场景的映像。 例如，[ASP.NET Core 存储库]
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
 [vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe
 [vcc32]: https://aka.ms/vs/16/release/vc_redist.x86.exe
-[kb64]: https://www.microsoft.com/en-us/download/details.aspx?id=47442
-[kb32]: https://www.microsoft.com/en-us/download/details.aspx?id=47409
+[kb64]: https://www.microsoft.com/download/details.aspx?id=47442
+[kb32]: https://www.microsoft.com/download/details.aspx?id=47409
