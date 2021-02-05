@@ -28,6 +28,8 @@
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: TableLayoutSettings 属性引发 InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: 如果节点被分配到其他地方，则 TreeNodeCollection.Item 抛出异常
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
         - name: .NET 5.0
           items:
             - name: 概述
@@ -260,6 +262,8 @@
                   href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
             - name: Windows 窗体
               items:
+                - name: 本机代码无法访问 Windows 窗体对象
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
                 - name: OutputType 已设置为 WinExe
                   href: windows-forms/5.0/automatically-infer-winexe-output-type.md
                 - name: DataGridView 未重置自定义字体
@@ -566,8 +570,12 @@
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: TableLayoutSettings 属性引发 InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: 如果节点被分配到其他地方，则 TreeNodeCollection.Item 抛出异常
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
             - name: .NET 5.0
               items:
+                - name: 本机代码无法访问 Windows 窗体对象
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
                 - name: OutputType 已设置为 WinExe
                   href: windows-forms/5.0/automatically-infer-winexe-output-type.md
                 - name: DataGridView 未重置自定义字体

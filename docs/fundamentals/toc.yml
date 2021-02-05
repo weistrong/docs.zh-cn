@@ -1296,6 +1296,8 @@ items:
                 href: ../core/dependency-loading/loading-resources.md
               - name: 加载非托管库
                 href: ../core/dependency-loading/loading-unmanaged.md
+              - name: 收集详细的程序集加载信息
+                href: ../core/dependency-loading/collect-details.md
           - name: 教程
             items:
               - name: 使用插件创建 .NET 应用程序
@@ -2133,6 +2135,8 @@ items:
             href: ../standard/native-interop/customize-struct-marshaling.md
           - name: 自定义参数封送
             href: ../standard/native-interop/customize-parameter-marshaling.md
+          - name: 跨平台 P/Invoke
+            href: ../standard/native-interop/cross-platform.md
           - name: 互操作指南
             href: ../standard/native-interop/best-practices.md
           - name: 字符集和封送

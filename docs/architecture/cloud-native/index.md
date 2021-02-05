@@ -2,19 +2,19 @@
 title: 为 Azure 构建云本机 .NET 应用程序
 description: 构建利用 Azure 的容器、微服务和无服务器功能的云本机应用程序的指南。
 author: ardalis
-ms.date: 11/10/2020
-ms.openlocfilehash: 673bfef27c3767f68b1c30d4383cee010ba377f0
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.date: 01/19/2021
+ms.openlocfilehash: ad641517f9dc24aed9180cf6a092f4754739bceb
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94506644"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506118"
 ---
 # <a name="architecting-cloud-native-net-applications-for-azure"></a>为 Azure 构建云本机 .NET 应用程序
 
 ![封面图像](./media/cover.png)
 
-**版本 v1.0**
+**版本 v1.0.2**
 
 请参阅[更改记录](https://aka.ms/cn-ebook-changelog)了解书籍更新和社区贡献。
 
@@ -28,7 +28,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-版权所有 &copy; 2020 Microsoft Corporation
+版权所有 &copy; 2021 Microsoft Corporation
 
 保留所有权利。 未经发布者书面许可，不得以任何形式或任何方式复制或传播本书中的任何内容。
 
@@ -54,19 +54,23 @@ Docker 的鲸鱼徽标是 Docker Inc. 的注册商标经许可方可使用。
 
 > **Cesar De Torre**，Microsoft .NET 团队首席项目经理
 >
-> Nish Anil，Microsoft .NET 团队高级项目经理
+> Nish Anil，Microsoft .NET 团队高级项目经理 
 >
 > Jeremy Likness，Microsoft .NET 团队高级项目经理
 >
 > Cecil Phillip，Microsoft 高级云大使
+>
+> Sumit Ghosh，Neudesic 的首席顾问
 
 编辑：
 
 > Maira Wenzel，Microsoft .NET 团队高级项目经理
 
-## <a name="version"></a>Version
+> Microsoft .NET 文档资深内容开发人员 David Pine
 
-本指南的编写涵盖 .NET Core 3.1 版本以及与 .NET Core 3.1 同期的同一“批”技术（即 Azure 和其他第三方技术）的许多其他更新。
+## <a name="version"></a>版本
+
+本指南涵盖了 .NET 5 版本，以及与 .NET 5 发布时间同步的同一波技术（即 Azure 和额外第三方技术）相关的许多额外更新。
 
 ## <a name="who-should-use-this-guide"></a>本指南的目标读者
 
