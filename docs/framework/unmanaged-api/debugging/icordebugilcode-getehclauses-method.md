@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugILCode：： GetEHClauses 方法
 title: ICorDebugILCode::GetEHClauses 方法
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: cf7a0e00-06ae-47a5-8037-598b26196802
 topic_type:
 - apiref
-ms.openlocfilehash: 38936a57944e9a0920c374f473c4cbe8e8d70abb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e790f0f1f69a38d3a1be9e98eacfc5e37be0fd05
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728662"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660656"
 ---
 # <a name="icordebugilcodegetehclauses-method"></a>ICorDebugILCode::GetEHClauses 方法
 
@@ -45,7 +46,7 @@ HRESULT GetEHClauses(
  子句  
  弄一个 [CorDebugEHClause](cordebugehclause-structure.md) 对象数组，其中包含有关为此 IL 定义的异常处理子句的信息。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `cClauses` 为0且 `pcClauses` 为非 **null**， `pcClauses` 则将设置为可用的异常处理子句数。 如果  为非零，则它表示  数组的存储容量。 当该方法返回时，`clauses` 将包含最大的 `cClauses` 项，并且 `pcClauses` 将设置为实际写入 `clauses` 数组的子句数。  
   
@@ -59,7 +60,7 @@ HRESULT GetEHClauses(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugILCode 接口](icordebugilcode-interface.md)
 - [CorDebugEHClause 结构](cordebugehclause-structure.md)

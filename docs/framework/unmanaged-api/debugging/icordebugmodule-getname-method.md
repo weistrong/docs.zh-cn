@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule：： GetName 方法
 title: ICorDebugModule::GetName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: db499637-7ba9-421e-b8b1-35856995e80b
 topic_type:
 - apiref
-ms.openlocfilehash: c2aecadf8688e763a69bd40ca877e44bc0ce5c29
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0f81271b2be283621027f4c835b6f220a383d771
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660175"
 ---
 # <a name="icordebugmodulegetname-method"></a>ICorDebugModule::GetName 方法
 
@@ -47,7 +48,7 @@ HRESULT GetName(
  `szName`  
  弄存储返回的名称的数组。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetName`如果模块的文件名与磁盘上的名称匹配，则该方法将返回 S_OK HRESULT。 `GetName` 如果名称是虚构的，则返回 S_FALSE HRESULT，如用于动态或内存中的模块。  
   
@@ -61,4 +62,4 @@ HRESULT GetName(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

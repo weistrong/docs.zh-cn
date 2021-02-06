@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： LoadClass 方法
 title: ICorDebugManagedCallback::LoadClass 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e58dac7b-85c3-41ca-b9aa-3a7fc9ae6680
 topic_type:
 - apiref
-ms.openlocfilehash: 6f1672d40cd495d3ec099abc703639cf52460703
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6f670a2f0798c7edfdc4292334cf9534e59a3007
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660601"
 ---
 # <a name="icordebugmanagedcallbackloadclass-method"></a>ICorDebugManagedCallback::LoadClass 方法
 
@@ -43,7 +44,7 @@ HRESULT LoadClass (
  `c`  
  中指向 ICorDebugClass 对象的指针，该对象表示类。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  只有在为包含类的模块启用了类加载的情况下，才会发生此回调。 对于动态模块，始终启用类加载。  
   
@@ -59,7 +60,7 @@ HRESULT LoadClass (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [UnloadClass 方法](icordebugmanagedcallback-unloadclass-method.md)
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

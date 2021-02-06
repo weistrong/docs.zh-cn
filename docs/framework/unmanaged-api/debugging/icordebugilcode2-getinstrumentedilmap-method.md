@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugILCode2：： GetInstrumentedILMap 方法
 title: ICorDebugILCode2::GetInstrumentedILMap 方法
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 7a4e3085-8f95-40ef-a4be-7d6146f47ce2
 topic_type:
 - apiref
-ms.openlocfilehash: 097502f4321531922d6c4385e2eccbf32f66f026
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6892b059e1774d7b0a61d7a8dd7df69bc2e8c569
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688349"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660565"
 ---
 # <a name="icordebugilcode2getinstrumentedilmap-method"></a>ICorDebugILCode2::GetInstrumentedILMap 方法
 
@@ -46,7 +47,7 @@ HRESULT GetInstrumentedILMap(
  map  
  [out] 一个 COR_IL_MAP 值的数组，提供了有关从探查器检测到的 IL 到原始方法的 IL 的映射信息。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果探查器通过调用 [ICorProfilerInfo：： SetILInstrumentedCodeMap](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md) 方法设置映射，则调试器可以调用此方法来检索映射，并在计算堆栈跟踪和变量生存期的 IL 偏移量时在内部使用该映射。  
   
@@ -64,7 +65,7 @@ HRESULT GetInstrumentedILMap(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo::SetILInstrumentedCodeMap](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md)
 - [ICorDebugILCode2 接口](icordebugilcode2-interface.md)

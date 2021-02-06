@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： UnloadClass 方法
 title: ICorDebugManagedCallback::UnloadClass 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 66a59b18-ce9a-41f4-b23b-4dd6753d6d36
 topic_type:
 - apiref
-ms.openlocfilehash: 6efd451c6895e8fef443e2e86afa6e98279c6493
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b76caf39611b0f59c74b4ae47d167e6f232a6dbc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660196"
 ---
 # <a name="icordebugmanagedcallbackunloadclass-method"></a>ICorDebugManagedCallback::UnloadClass 方法
 
@@ -43,7 +44,7 @@ HRESULT UnloadClass (
  `c`  
  中指向 ICorDebugClass 对象的指针，该对象表示类。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  不应在此调用后引用此类。  
   
@@ -57,7 +58,7 @@ HRESULT UnloadClass (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LoadClass 方法](icordebugmanagedcallback-loadclass-method.md)
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule2：： GetJITCompilerFlags 方法
 title: ICorDebugModule2::GetJITCompilerFlags 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7212d9f4-989b-44e3-b8d4-ffc35922f6a0
 topic_type:
 - apiref
-ms.openlocfilehash: c443fba711a3d122ed5f8f1566a220c79211631e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f1aa01bf2bc92a6fc20687b726ef1c0a6f860a97
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709669"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659967"
 ---
 # <a name="icordebugmodule2getjitcompilerflags-method"></a>ICorDebugModule2::GetJITCompilerFlags 方法
 

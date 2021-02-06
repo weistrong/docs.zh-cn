@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule2 接口
 title: ICorDebugModule2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0847e64f-fdbe-4c96-8168-da20fdc84d80
 topic_type:
 - apiref
-ms.openlocfilehash: 2b8e6048dd6b8df71ac3dddcc4397f6d512127c7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 28de1f0d3411218ac92991d4fceda0612c8199bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695873"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659928"
 ---
 # <a name="icordebugmodule2-interface"></a>ICorDebugModule2 接口
 
@@ -35,7 +36,7 @@ ms.locfileid: "95695873"
 |[SetJITCompilerFlags 方法](icordebugmodule2-setjitcompilerflags-method.md)|设置控制此的 JIT 编译的标志 `ICorDebugModule2` 。|  
 |[SetJMCStatus 方法](icordebugmodule2-setjmcstatus-method.md)|将此仅我的代码 (的所有类的所有方法的) 状态设置 `ICorDebugModule2` 为指定的值（数组中的所有方法 `pTokens` ，将其设置为相反的值）。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -50,6 +51,6 @@ ms.locfileid: "95695873"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

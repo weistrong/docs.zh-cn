@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： UnloadAssembly 方法
 title: ICorDebugManagedCallback::UnloadAssembly 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6734321c-c8a9-401f-a558-cad715ec4a77
 topic_type:
 - apiref
-ms.openlocfilehash: e89b425afb63de8ef496fe545873ce33e5ff828c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b1860e90ba2bab1428a0f8559d18801136bbbb39
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724008"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660331"
 ---
 # <a name="icordebugmanagedcallbackunloadassembly-method"></a>ICorDebugManagedCallback::UnloadAssembly 方法
 
@@ -43,7 +44,7 @@ HRESULT UnloadAssembly (
  `pAssembly`  
  中指向表示程序集的 ICorDebugAssembly 对象的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  不应在此回调后使用该程序集。  
   
@@ -57,7 +58,7 @@ HRESULT UnloadAssembly (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LoadAssembly 方法](icordebugmanagedcallback-loadassembly-method.md)
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

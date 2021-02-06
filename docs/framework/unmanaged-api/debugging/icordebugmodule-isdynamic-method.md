@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule：： IsDynamic 方法
 title: ICorDebugModule::IsDynamic 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5eefe716-5025-4a4c-970c-c823cdc7bb87
 topic_type:
 - apiref
-ms.openlocfilehash: 98c01993a85ed07d961902d8a098a96df4702c76
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 06ecb7aaffbe73da29bbdbba9446839db54c58c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660097"
 ---
 # <a name="icordebugmoduleisdynamic-method"></a>ICorDebugModule::IsDynamic 方法
 
@@ -39,7 +40,7 @@ HRESULT IsDynamic(
  `pDynamic`  
  [out] `true` 如果此模块是动态的，则为;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  即使在模块加载后，动态模块也可以添加新类和删除现有类。 添加或删除类时， [ICorDebugManagedCallback：： LoadClass](icordebugmanagedcallback-loadclass-method.md) 和 [ICorDebugManagedCallback：： UnloadClass](icordebugmanagedcallback-unloadclass-method.md) 回调会通知调试器。  
   

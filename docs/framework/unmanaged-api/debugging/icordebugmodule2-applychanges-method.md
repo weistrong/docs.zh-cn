@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule2：： ApplyChanges 方法
 title: ICorDebugModule2::ApplyChanges 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
 topic_type:
 - apiref
-ms.openlocfilehash: a6b1a7c9be821890a3f15d8c3297273607f5bedd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 09cbc395c8d656d1dc27de86305432b26308c885
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660071"
 ---
 # <a name="icordebugmodule2applychanges-method"></a>ICorDebugModule2::ApplyChanges 方法
 
@@ -53,7 +54,7 @@ HRESULT ApplyChanges (
  `pbIL`  
  中包含更新的 MSIL 代码的缓冲区。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `pbMetadata`参数采用特殊的增量元数据格式， (为[IMetaDataEmit2：： SaveDeltaToMemory](../metadata/imetadataemit2-savedeltatomemory-method.md)) 输出。 `pbMetadata` 采用以前的元数据作为基础，并描述要应用于该基的各个更改。  
   
