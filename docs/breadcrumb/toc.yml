@@ -581,3 +581,6 @@ items:
           - name: .NET IoT 库
             tocHref: /dotnet/iot/
             topicHref: /dotnet/iot/index
+          - name: 新增功能
+            tocHref: /dotnet/whats-new/
+            topicHref: /dotnet/whats-new/index
