@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息：数据集和数据表安全指南
 title: 数据集和 DataTable 安全指南
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: 8798c4542acc578c8f7f00c9b26cd01a0db20c42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ec0130d5b5ad106cc3a0a26b45ebff34f73e31d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726062"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651634"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>数据集和 DataTable 安全指南
 
@@ -35,7 +36,7 @@ ms.locfileid: "95726062"
 如果传入的 XML 数据包含其类型不在此列表中的对象：
 
 * 使用以下消息和堆栈跟踪引发异常。
-此处不允许出现错误消息： "InvalidOperationException： Type" \<Type Name\> 、Version = \<n.n.n.n\> 、Culture = \<culture\> 、PublicKeyToken = \<token value\> '。 [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227)有关更多详细信息，请参阅。
+此处不允许出现错误消息： "InvalidOperationException： Type" \<Type Name\> 、Version = \<n.n.n.n\> 、Culture = \<culture\> 、PublicKeyToken = \<token value\> '。 有关更多详细信息，请参阅 [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227)。
 Stack 跟踪：在 TypeLimiter. EnsureTypeIsAllowed (Type type，TypeLimiter capturedLimiter) 在 (Type，UpdateColumnType StorageType) ，System.Data.DataColumn.set_DataType (类型值) 
 
 * 反序列化操作失败。
@@ -68,7 +69,7 @@ table.ReadXml(xmlReader); // this call will succeed
 
 ### <a name="extend-the-list-of-allowed-types"></a>扩展允许的类型列表
 
-除了上面列出的内置类型外，应用程序还可以扩展允许的类型列表以包括自定义类型。 如果扩展允许的类型列表，则更改会 _all_ 影响 `DataSet` `DataTable` 应用内的所有和实例。 不能从内置允许类型列表中删除类型。
+除了上面列出的内置类型外，应用程序还可以扩展允许的类型列表以包括自定义类型。 如果扩展允许的类型列表，则更改会影响 `DataSet` `DataTable` 应用内的所有和实例。 不能从内置允许类型列表中删除类型。
 
 #### <a name="extend-through-configuration-net-framework-40---48"></a>通过配置 ( 扩展 .NET Framework 4.0-4.8) 
 
@@ -174,7 +175,7 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 </configuration>
 ```
 
-一旦启用了审核模式，就可以使用 _App.config_ 将您首选的内置 `TraceListener` `DataSet` `TraceSource.` 跟踪 _System.Data.DataSet_ 源名称连接到 "system.string"。 下面的示例演示如何将跟踪事件写入控制台 _和_ 磁盘上的日志文件。
+一旦启用了审核模式，就可以使用 _App.config_ 将您首选的内置 `TraceListener` `DataSet` `TraceSource.` 跟踪源名称连接到 "system.string"。 下面的示例演示如何将跟踪事件写入控制台 _和_ 磁盘上的日志文件。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -274,12 +275,12 @@ AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation"
 * 管理员必须配置注册表。
 * 使用注册表是计算机范围的更改，将影响计算机上运行的 _所有_ 应用。
 
-| 类型  |  Value |
+| 类型  |  值 |
 |---|---|
 | **注册表项** | `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` |
 | **值名称** | `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation` |
 | **值类型** | `REG_SZ` |
-| **值数据** | `true` |
+| **“数值数据”** | `true` |
 
 在64位操作系统中，需要为上面显示的64位密钥 (添加此值) 和32位密钥。 32位键位于 `HKLM\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\AppContext` 。
 
@@ -475,9 +476,9 @@ public class MyClass
 
 ## <a name="deserialize-a-dataset-or-datatable-via-binaryformatter"></a>通过 BinaryFormatter 反序列化 DataSet 或 DataTable
 
-开发人员决不能使用 `BinaryFormatter` 、 `NetDataContractSerializer` 、 `SoapFormatter` 或相关的 ***unsafe** _ 格式化 `DataSet` `DataTable` 程序从不受信任的负载反序列化或实例：
+开发人员决不能使用 `BinaryFormatter` 、 `NetDataContractSerializer` 、 `SoapFormatter` 或相关的 ***unsafe*** 格式化 `DataSet` `DataTable` 程序从不受信任的负载反序列化或实例：
 
-_ 这容易遭受完全远程代码执行攻击。
+* 这很容易受到完全远程代码执行攻击。
 * 使用自定义 `SerializationBinder` 并不足以防止这种攻击。
 
 ## <a name="safe-replacements"></a>安全替换

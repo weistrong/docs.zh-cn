@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <roleClaimType>
 title: <roleClaimType>
 ms.date: 03/30/2017
 ms.assetid: 69a49deb-6369-41ba-806b-ae8d21fac64b
 author: BrucePerlerMS
-ms.openlocfilehash: 36d727f97597df816779da1c1f7ed5da1a1697f2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 69b86489b0a970addb7fc7c11dd88be52ac68e95
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652674"
 ---
 # \<roleClaimType>
 
@@ -47,7 +48,7 @@ ms.locfileid: "91164930"
   
 |属性|说明|  
 |---------------|-----------------|  
-|值|一个字符串，指定表示要用于角色声明类型的声明的声明类型的 URI。|  
+|value|一个字符串，指定表示要用于角色声明类型的声明的声明类型的 URI。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -55,7 +56,7 @@ ms.locfileid: "91164930"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<samlSecurityTokenRequirement>](samlsecuritytokenrequirement.md)|为 <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> 类、 <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> 类或其中任何一个类的派生类提供配置。|  
   

@@ -1,22 +1,23 @@
 ---
+description: 了解详细信息：处理 DataTable 事件
 title: 处理数据表事件
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 62f404a5-13ea-4b93-a29f-55b74a16c9d3
-ms.openlocfilehash: c00e5e42508160a210d16f058c46afbf62ae0ee0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 89519345ec0c9f2348153c480366396a66d37ae0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164722"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652349"
 ---
 # <a name="handling-datatable-events"></a>处理数据表事件
 
 <xref:System.Data.DataTable> 对象提供一系列可以由应用程序处理的事件。 下表描述了 `DataTable` 事件。  
   
-|事件|描述|  
+|事件|说明|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.Initialized>|在调用 <xref:System.Data.DataTable.EndInit%2A> 的 `DataTable` 方法后发生。 此事件主要用于支持设计时方案。|  
 |<xref:System.Data.DataTable.ColumnChanged>|在成功更改 <xref:System.Data.DataColumn> 中的值后发生。|  

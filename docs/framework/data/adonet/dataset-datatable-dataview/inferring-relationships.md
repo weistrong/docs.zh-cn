@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：推断关系
 title: 推断关系
 ms.date: 03/30/2017
 ms.assetid: 8fa86a9d-6545-4a9d-b1f5-58d9742179c7
-ms.openlocfilehash: ee691eee95c34afdb6374cdd7448d4b44ece3055
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a117581d512c1427c638ea862169ab3c7623d783
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652141"
 ---
 # <a name="inferring-relationships"></a>推断关系
 
-如果被推断为表的元素具有一个同样被推断为表的子元素，则将在这两个表之间创建 <xref:System.Data.DataRelation>。 名称为 " **ParentTableName_Id** " 的新列将添加到为父元素创建的表和为子元素创建的表中。 此标识列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。 列将是父表的自动递增主键，并将用于这两个表之间的 **DataRelation** 。 添加的标识列的数据类型将为 system.exception，这与所有其他推断列的数据类型 **不同，后者**为 **system.string**。 <xref:System.Data.ForeignKeyConstraint>还将**DeleteRule**  =  使用父表和子表中的新列来创建具有 DeleteRule**级联**的。  
+如果被推断为表的元素具有一个同样被推断为表的子元素，则将在这两个表之间创建 <xref:System.Data.DataRelation>。 名称为 " **ParentTableName_Id** " 的新列将添加到为父元素创建的表和为子元素创建的表中。 此标识列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。 列将是父表的自动递增主键，并将用于这两个表之间的 **DataRelation** 。 添加的标识列的数据类型将为 system.exception，这与所有其他推断列的数据类型 **不同，后者** 为 **system.string**。 <xref:System.Data.ForeignKeyConstraint>还将  =  使用父表和子表中的新列来创建具有 DeleteRule **级联** 的。  
   
  例如，考虑以下 XML：  
   
@@ -26,11 +27,11 @@ ms.locfileid: "91177561"
   
  推理过程将生成两个表： **Element1** 和 **ChildElement1**。  
   
- **Element1**表包含两列： **Element1_Id**和**ChildElement2**。 **Element1_Id**列的**ColumnMapping**属性将设置为**mappingtype.attribute**。 **ChildElement2**列的**ColumnMapping**属性将设置为**mappingtype.attribute**。 **Element1_Id**列将设置为**Element1**表的主键。  
+ **Element1** 表包含两列： **Element1_Id** 和 **ChildElement2**。 **Element1_Id** 列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。 **ChildElement2** 列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。 **Element1_Id** 列将设置为 **Element1** 表的主键。  
   
- **ChildElement1**表包含三列： **attr1**、 **attr2**和**Element1_Id**。 **Attr1**和**Attr2**列的**ColumnMapping**属性将设置为**mappingtype.attribute**。 **Element1_Id**列的**ColumnMapping**属性将设置为**mappingtype.attribute**。  
+ **ChildElement1** 表包含三列： **attr1**、 **attr2** 和 **Element1_Id**。 **Attr1** 和 **Attr2** 列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。 **Element1_Id** 列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。  
   
- 将使用两个表中的**Element1_Id**列创建**DataRelation**和**ForeignKeyConstraint** 。  
+ 将使用两个表中的 **Element1_Id** 列创建 **DataRelation** 和 **ForeignKeyConstraint** 。  
   
  **数据集：** DocumentElement  
   

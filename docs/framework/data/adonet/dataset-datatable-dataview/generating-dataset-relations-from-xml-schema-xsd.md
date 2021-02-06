@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：从 XML 架构生成数据集关系 (XSD) '
 title: 从 XML 架构生成数据集关系 (XSD)
 ms.date: 03/30/2017
 ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
-ms.openlocfilehash: 2673280ebb94dcc10c130f3969f3e3250d3706a2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e18ae451085f536e7fe35053fadab35e30dbc225
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198582"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652453"
 ---
 # <a name="generating-dataset-relations-from-xml-schema-xsd"></a>从 XML 架构生成数据集关系 (XSD)
 
@@ -17,7 +18,7 @@ ms.locfileid: "91198582"
   
 - 使用 **msdata： Relationship** 批注。  
   
-- 指定不带**msdata： ConstraintOnly**批注的**xs： keyref** 。  
+- 指定不带 **msdata： ConstraintOnly** 批注的 **xs： keyref** 。  
   
 ## <a name="nested-complex-types"></a>嵌套的复杂类型  
 
@@ -39,7 +40,7 @@ ms.locfileid: "91198582"
   
 ## <a name="msdatarelationship-annotation"></a>msdata:Relationship 批注  
 
- **Msdata： Relationship**批注允许您显式指定架构中未嵌套的元素之间的父子关系。 下面的示例显示了 **关系** 元素的结构。  
+ **Msdata： Relationship** 批注允许您显式指定架构中未嵌套的元素之间的父子关系。 下面的示例显示了 **关系** 元素的结构。  
   
 ```xml  
 <msdata:Relationship name="CustOrderRelationship"
@@ -49,7 +50,7 @@ msdata:parentkey=""
 msdata:childkey="" />  
 ```  
   
- **Msdata： Relationship**批注的属性标识父子关系中涉及的元素，以及关系中涉及的**parentkey**和**childkey**元素和属性。 映射过程使用此信息在 **数据集中** 生成表，并在这些表之间创建主键/外键关系。  
+ **Msdata： Relationship** 批注的属性标识父子关系中涉及的元素，以及关系中涉及的 **parentkey** 和 **childkey** 元素和属性。 映射过程使用此信息在 **数据集中** 生成表，并在这些表之间创建主键/外键关系。  
   
  例如，下面的架构片段指定 (未嵌套) 的同一级别的 **Order** 和 **OrderDetail** 元素。 该架构指定 **msdata： Relationship** 批注，该批注指定这两个元素之间的父子关系。 在这种情况下，必须使用 **msdata： relationship** 批注指定显式关系。  
   
@@ -81,7 +82,7 @@ msdata:childkey="" />
   </xs:annotation>  
 ```  
   
- 映射过程使用**Relationship**元素在**Order**表的**OrderNumber**列和**数据集**的**OrderDetail**表中的**OrderNo**列之间创建父子关系。 映射进程仅指定关系；与关系数据库中的主键/外键约束不同，它并不会自动为这些列中的值指定任何约束。  
+ 映射过程使用 **Relationship** 元素在 **Order** 表的 **OrderNumber** 列和 **数据集** 的 **OrderDetail** 表中的 **OrderNo** 列之间创建父子关系。 映射进程仅指定关系；与关系数据库中的主键/外键约束不同，它并不会自动为这些列中的值指定任何约束。  
   
 ### <a name="in-this-section"></a>本节内容  
 
@@ -100,7 +101,7 @@ msdata:childkey="" />
  描述从 XML 架构定义语言 (XSD) 架构创建的 **数据集** 的关系结构（或架构）。  
   
  [将关键 XML 架构 (XSD) 约束映射到数据集约束](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
- 介绍用于在 **数据集中**创建唯一约束和外键约束的 XML 架构元素。  
+ 介绍用于在 **数据集中** 创建唯一约束和外键约束的 XML 架构元素。  
   
 ## <a name="see-also"></a>请参阅
 

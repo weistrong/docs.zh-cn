@@ -1,21 +1,22 @@
 ---
+description: '了解详细信息：下载示例数据库 (LINQ to DataSet) '
 title: 下载示例数据库 (LINQ to DataSet)
 ms.date: 03/30/2017
 ms.assetid: eb42a7af-d410-4b7f-b4a8-13c72ce6fd09
-ms.openlocfilehash: 53f4457052df899a3f9582f6e850965d3112ecd2
-ms.sourcegitcommit: 43cbde34970f5f38f30c43cd63b9c7e2e83717ae
+ms.openlocfilehash: da4020304b89f046bb9fcb88ea9916597e02ca27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "81121572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651088"
 ---
-# <a name="download-sample-databases-linq-to-dataset"></a>下载示例数据库（LINQ 到数据集）
+# <a name="download-sample-databases-linq-to-dataset"></a> (LINQ to DataSet 下载示例数据库) 
 
-LINQ 到 DataSet 文档中的示例和演练使用 AdventureWorks 示例数据库。 您可以免费下载此示例数据库。 浏览到[AdventureWorks 示例数据库](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)以下载数据库。 然后，按照该页上的说明进行附加或还原数据库。
+LINQ to DataSet 文档中的示例和演练使用 AdventureWorks 示例数据库。 可以免费下载此示例数据库。 浏览到 [AdventureWorks 示例数据库](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) 来下载数据库。 然后，按照该页面上的说明来附加或还原数据库。
   
 ## <a name="sql-server-express"></a>SQL Server Express
 
-LINQ 到 DataSet 部分中的示例和演练使用 SQL Server 2005 作为数据存储，但您可以修改它们以改用[SQL Server Express。](https://go.microsoft.com/fwlink/?linkid=866658) SQL Server Express 是免费的，您可以使用应用程序重新分发它。
+LINQ to DataSet 节中的示例和演练使用 SQL Server 2005 作为数据存储区，但您可以修改它们以改用 [SQL Server Express](https://go.microsoft.com/fwlink/?linkid=866658) 。 SQL Server Express 免费，你可以将其与应用程序一起分发。
   
 ## <a name="see-also"></a>请参阅
 

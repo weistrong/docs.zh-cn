@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：数据集架构推断过程摘要
 title: 数据集架构接口过程摘要
 ms.date: 03/30/2017
 ms.assetid: fd0891c8-d068-4e30-a76f-7c375f078bf7
-ms.openlocfilehash: 8d517487b96aa7f204ea9f25d326500db7df413a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 637e4325558708c15d6d4eb17de9c0cf13b3b256
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651556"
 ---
 # <a name="summary-of-the-dataset-schema-inference-process"></a>数据集架构接口过程摘要
 
@@ -27,7 +28,7 @@ ms.locfileid: "91198504"
   
 - 不具有属性或子元素且不重复的元素会被推断为列。  
   
-- 对于在其他元素中推断为嵌套表的元素，这些元素也被推断为表，则在这两个表之间创建嵌套的 **DataRelation** 。 名为 **TableName_Id** 的新主键列将添加到这两个表中，并由 **DataRelation**使用。 使用**TableName_Id**列在两个表之间创建一个**ForeignKeyConstraint** 。  
+- 对于在其他元素中推断为嵌套表的元素，这些元素也被推断为表，则在这两个表之间创建嵌套的 **DataRelation** 。 名为 **TableName_Id** 的新主键列将添加到这两个表中，并由 **DataRelation** 使用。 使用 **TableName_Id** 列在两个表之间创建一个 **ForeignKeyConstraint** 。  
   
 - 对于推断为表并包含文本但没有子元素的元素，将为每个元素的文本创建一个名为 **TableName_Text** 的新列。 如果元素被推断为表并包含文本和子元素，则将忽略文本。  
   

@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用 XmlDataDocument 同步数据集
 title: 将数据集和 XmlDataDocument 同步
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fbc96fa9-b5d1-4f97-b099-c89b0e14ce2c
-ms.openlocfilehash: 95f1d21805dde86cd4eb59147f2fd012279b6dc1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5b5d95ef78746bb5b78146557a6ebd307895db13
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651543"
 ---
 # <a name="synchronizing-a-dataset-with-an-xmldatadocument"></a>将数据集和 XmlDataDocument 同步
 
@@ -158,11 +159,11 @@ ms.locfileid: "91173739"
 </xs:schema>  
 ```  
   
- 请注意，只有来自原始 XML 文档的 **OrderDetails** 和 **Products** 元素中的信息才会包含在该 **数据集**的架构中。 将 **数据集** 与 **XmlDataDocument** 同步可以确保 **数据集中** 未包含的元素将与 XML 文档保持不变。  
+ 请注意，只有来自原始 XML 文档的 **OrderDetails** 和 **Products** 元素中的信息才会包含在该 **数据集** 的架构中。 将 **数据集** 与 **XmlDataDocument** 同步可以确保 **数据集中** 未包含的元素将与 XML 文档保持不变。  
   
- 使用从 XML 架构生成的强类型化 **数据集** (带有 **FillOrder**) 的命名空间时，可以通过将 **数据集** 与从源 XML 文档加载的 **XmlDataDocument** 同步，来公开原始 xml 文档的一部分。 请注意，从架构生成的 **数据集** 包含结构，但不包含数据。 当你将 XML 加载到 **XmlDataDocument**中时，数据将填充。 如果尝试加载的 **XmlDataDocument** 已与已经包含数据的数据 **集** 同步，则会引发异常。  
+ 使用从 XML 架构生成的强类型化 **数据集** (带有 **FillOrder**) 的命名空间时，可以通过将 **数据集** 与从源 XML 文档加载的 **XmlDataDocument** 同步，来公开原始 xml 文档的一部分。 请注意，从架构生成的 **数据集** 包含结构，但不包含数据。 当你将 XML 加载到 **XmlDataDocument** 中时，数据将填充。 如果尝试加载的 **XmlDataDocument** 已与已经包含数据的数据 **集** 同步，则会引发异常。  
   
- **数据集** (并更新了**XmlDataDocument**) 后， **XmlDataDocument**可以使用**数据集**忽略的元素来写出修改后的 XML 文档，如下所示。 在订单方案中，当填充订单项后，经过修改的 XML 文档将传递到订单过程的下一步（可能会传递到公司货运部）。  
+ **数据集** (并更新了 **XmlDataDocument**) 后， **XmlDataDocument** 可以使用 **数据集** 忽略的元素来写出修改后的 XML 文档，如下所示。 在订单方案中，当填充订单项后，经过修改的 XML 文档将传递到订单过程的下一步（可能会传递到公司货运部）。  
   
 ```vb  
 Imports System  

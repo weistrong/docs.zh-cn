@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：执行返回复杂类型的查询
 title: 如何：执行返回复杂类型的查询
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c2209fdb-70ef-4dea-8bb8-097fe96f5563
-ms.openlocfilehash: e5358e3a1295b180356ed6c127111313b44de277
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9a7fb3ea695115529b69def9f95281bac7f33273
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650672"
 ---
 # <a name="how-to-execute-a-query-that-returns-complex-types"></a>如何：执行返回复杂类型的查询
 

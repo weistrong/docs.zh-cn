@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：在数据集中使用 XML
 title: 在数据集中使用 XML
 ms.date: 03/30/2017
 ms.assetid: 35138159-e199-49ec-baf7-1ec6777e171e
-ms.openlocfilehash: e133da727887271af3bc5330a5779df4af58a37e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5c4216fce9c1512c95da8e27a622ba228411b641
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201182"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651413"
 ---
 # <a name="using-xml-in-a-dataset"></a>在数据集中使用 XML
 

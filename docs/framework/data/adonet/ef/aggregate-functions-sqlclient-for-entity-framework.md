@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：聚合函数 (SqlClient for 实体框架) '
 title: 聚合函数（用于实体框架的 SqlClient）
 ms.date: 03/30/2017
 ms.assetid: 03303f01-b591-4efc-9875-f9c608edff0b
-ms.openlocfilehash: 1c32ccfe18c67c9baeb7df0f981c9129b3bbc8bb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b9f1ff8c75fc09de7532b459090b0b5cd1d47262
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651075"
 ---
 # <a name="aggregate-functions-sqlclient-for-entity-framework"></a>聚合函数（用于实体框架的 SqlClient）
 
@@ -41,7 +42,7 @@ SQL Server .NET Framework 数据提供程序 (SqlClient) 提供聚合函数。 �
 
  **返回值**
 
- 一个 `Int32`。
+ `Int32`。
 
  **示例**
 
@@ -62,7 +63,7 @@ SQL Server .NET Framework 数据提供程序 (SqlClient) 提供聚合函数。 �
 
 **返回值**
 
-一个 `Int32`。
+`Int32`。
 
 **示例**
 
@@ -83,7 +84,7 @@ SQL Server .NET Framework 数据提供程序 (SqlClient) 提供聚合函数。 �
 
 **返回值**
 
-一个 `Int64`。
+`Int64`。
 
 **示例**
 

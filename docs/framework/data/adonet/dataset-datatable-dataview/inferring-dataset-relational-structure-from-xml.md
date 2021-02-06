@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：从 XML 推断数据集关系结构
 title: 从 XML 推断数据集关系结构
 ms.date: 03/30/2017
 ms.assetid: cd2f41c6-6785-420e-aa43-3ceb0bdccdce
-ms.openlocfilehash: fca50491120346dea3e09c82324225f2114380fc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d89b6a42e7e1bc3d7514f180329e9c1d877a67ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652219"
 ---
 # <a name="inferring-dataset-relational-structure-from-xml"></a>从 XML 推断数据集关系结构
 
 <xref:System.Data.DataSet> 的关系结构（即架构）由表、列、约束和关系组成。 当从 XML 中加载 <xref:System.Data.DataSet> 时，可以预定义架构，也可以从所加载的 XML 显式（或通过推断）创建架构。 有关从 xml 加载的架构和内容的详细信息 <xref:System.Data.DataSet> ，请参阅从 Xml [加载数据集](loading-a-dataset-from-xml.md) 和 [从 Xml 加载数据集架构信息](loading-dataset-schema-information-from-xml.md)。  
   
- 如果 <xref:System.Data.DataSet> 是从 xml 创建的架构，则首选方法是使用 Xml 架构定义语言 (xsd) 来显式指定架构 (如 [从 xml 架构中派生数据集关系结构 (XSD) ](deriving-dataset-relational-structure-from-xml-schema-xsd.md) 或 xml 数据缩减) XDR (中所述。 如果 XML 中没有可用的 XML 架构或 XDR 架构，则可以从 XML 元素和属性的结构推断 <xref:System.Data.DataSet> 的架构。  
+ 如果 <xref:System.Data.DataSet> 是从 xml 创建的架构，首选方法是使用 Xml 架构定义语言 (xsd) 来显式指定架构 (如 [从 Xml 架构派生数据集关系结构 (xsd) ](deriving-dataset-relational-structure-from-xml-schema-xsd.md)) 或 XML-Data 减小了 XDR (。 如果 XML 中没有可用的 XML 架构或 XDR 架构，则可以从 XML 元素和属性的结构推断 <xref:System.Data.DataSet> 的架构。  
   
  本节通过显示 XML 元素和属性及其结构以及生成的推断 <xref:System.Data.DataSet> 架构来描述推断 <xref:System.Data.DataSet> 架构的规则。  
   

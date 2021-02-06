@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：从 XML 架构派生数据集关系结构 (XSD) '
 title: 从 XML 架构派生数据集关系结构 (XSD)
 ms.date: 03/30/2017
 ms.assetid: 8f6cd04d-6197-4bc4-9096-8c51c7e4acae
-ms.openlocfilehash: 878e39af575328fb0abba096c327d36203a52231
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c2d2dc8ab9c8a1cf77c79fbde38a06de6f120c82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164800"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652518"
 ---
 # <a name="deriving-dataset-relational-structure-from-xml-schema-xsd"></a>从 XML 架构派生数据集关系结构 (XSD)
 

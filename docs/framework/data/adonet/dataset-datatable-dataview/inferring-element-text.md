@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：推断元素文本
 title: 推断元素文本
 ms.date: 03/30/2017
 ms.assetid: 789799e5-716f-459f-a168-76c5cf22178b
-ms.openlocfilehash: 7389e24f39902edf041c3cd3502303b17fd008ba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5d0d9b1b3bb6164cd3cf26b429a4c7d658ee4128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164683"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652206"
 ---
 # <a name="inferring-element-text"></a>推断元素文本
 
@@ -21,7 +22,7 @@ ms.locfileid: "91164683"
 </DocumentElement>  
 ```  
   
- 推理过程将生成一个名为 **Element1** 的表，该表包含两列： **attr1** 和 **Element1_Text**。 **Attr1**列的**ColumnMapping**属性将设置为**mappingtype.attribute**。 **Element1_Text**列的**ColumnMapping**属性将设置为**mappingtype.attribute**。  
+ 推理过程将生成一个名为 **Element1** 的表，该表包含两列： **attr1** 和 **Element1_Text**。 **Attr1** 列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。 **Element1_Text** 列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。  
   
  **数据集：** DocumentElement  
   
@@ -41,7 +42,7 @@ ms.locfileid: "91164683"
 </Element1>  
 ```  
   
- 推理过程将生成一个名为 **Element1** 的表，该表包含一个名为 **ChildElement1**的列。 **ChildElement1**元素的文本将包含在表的行中。 其他文本则将被忽略。 **ChildElement1**列的**ColumnMapping**属性将设置为**mappingtype.attribute**。  
+ 推理过程将生成一个名为 **Element1** 的表，该表包含一个名为 **ChildElement1** 的列。 **ChildElement1** 元素的文本将包含在表的行中。 其他文本则将被忽略。 **ChildElement1** 列的 **ColumnMapping** 属性将设置为 **mappingtype.attribute**。  
   
  **数据集：** DocumentElement  
   

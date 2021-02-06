@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：指定没有嵌套的元素之间的关系
 title: 指定无嵌套的元素之间的关系
 ms.date: 03/30/2017
 ms.assetid: e31325da-7691-4d33-acf4-99fccca67006
-ms.openlocfilehash: 6684e992242d5c695f3c237f70de61b4dae1c48f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 68f6edad0c282091529bf9182f5161d0808a47aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183398"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651621"
 ---
 # <a name="specify-relations-between-elements-with-no-nesting"></a>指定无嵌套的元素之间的关系
 
 当元素不嵌套时，将不创建任何隐式关系。 但是，可以使用 **msdata： Relationship** 批注显式指定未嵌套的元素之间的关系。  
   
- 下面的示例显示一个 XML 架构，该架构在不嵌套的**Order**和**OrderDetail**元素之间指定**msdata： Relationship**批注。 **Msdata： Relationship**批注指定为**Schema**元素的子元素。  
+ 下面的示例显示一个 XML 架构，该架构在不嵌套的 **Order** 和 **OrderDetail** 元素之间指定 **msdata： Relationship** 批注。 **Msdata： Relationship** 批注指定为 **Schema** 元素的子元素。  
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：推断列
 title: 推断列
 ms.date: 03/30/2017
 ms.assetid: 0e022699-c922-454c-93e2-957dd7e7247a
-ms.openlocfilehash: 45d27b78b5d83d333c16192e172e7b7e3dd88c10
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 528d4ea20260b5f1fbf30536eafcaec8c5f9215a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164696"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652245"
 ---
 # <a name="inferring-columns"></a>推断列
 
@@ -15,7 +16,7 @@ ADO.NET 从 XML 文档中确定了哪些元素要作为 <xref:System.Data.DataSe
   
 ## <a name="migration-and-backward-compatibility"></a>迁移和向后兼容性  
 
- **ReadXml**方法采用**InferSchema**类型的参数。 使用此自变量可以指定与以前的版本兼容的推断行为。 下表显示了 **InferSchema** 枚举的可用值。  
+ **ReadXml** 方法采用 **InferSchema** 类型的参数。 使用此自变量可以指定与以前的版本兼容的推断行为。 下表显示了 **InferSchema** 枚举的可用值。  
   
  <xref:System.Data.XmlReadMode.InferSchema>  
  通过始终将简单类型作为 <xref:System.String> 进行推断，提供向后兼容性。  

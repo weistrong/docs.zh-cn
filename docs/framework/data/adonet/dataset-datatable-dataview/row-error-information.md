@@ -1,20 +1,21 @@
 ---
+description: 了解详细信息：行错误信息
 title: 行错误信息
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8b1f9070-d032-48c7-b030-bd8fbb2ca59a
-ms.openlocfilehash: 8673b7fbc2e4238f7047698376c53af991de9f1b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d3eb8b20893ad47720ebb03ad4ab61940f014bd3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651686"
 ---
 # <a name="row-error-information"></a>行错误信息
 
-为了避免在编辑 <xref:System.Data.DataTable> 中的值时对行错误做出响应，可以将错误信息添加到该行，供以后使用。 因此，<xref:System.Data.DataRow> 对象在每行上提供 <xref:System.Data.DataRow.RowError%2A> 属性。 将数据添加到**datarow**的**RowError**属性会将 <xref:System.Data.DataRow.HasErrors%2A> **datarow**的属性设置为**true**。 如果 **datarow** 是 **DataTable**的一部分，并且 **HasErrors** 为 **true**，则 **HasErrors** 属性也是 **true**。 这也适用于**DataTable**所属的**数据集**。 测试错误时，可以检查 **HasErrors** 属性以确定是否已将错误信息添加到任何行。 如果 **HasErrors** 为 **true**，则可以使用 <xref:System.Data.DataTable.GetErrors%2A> **DataTable** 的方法返回并仅检查出现错误的行，如下面的示例中所示。  
+为了避免在编辑 <xref:System.Data.DataTable> 中的值时对行错误做出响应，可以将错误信息添加到该行，供以后使用。 因此，<xref:System.Data.DataRow> 对象在每行上提供 <xref:System.Data.DataRow.RowError%2A> 属性。 将数据添加到 **datarow** 的 **RowError** 属性会将 <xref:System.Data.DataRow.HasErrors%2A> **datarow** 的属性设置为 **true**。 如果 **datarow** 是 **DataTable** 的一部分，并且 **HasErrors** 为 **true**，则 **HasErrors** 属性也是 **true**。 这也适用于 **DataTable** 所属的 **数据集**。 测试错误时，可以检查 **HasErrors** 属性以确定是否已将错误信息添加到任何行。 如果 **HasErrors** 为 **true**，则可以使用 <xref:System.Data.DataTable.GetErrors%2A> **DataTable** 的方法返回并仅检查出现错误的行，如下面的示例中所示。  
   
 ```vb  
 Dim workTable As DataTable = New DataTable("Customers")  

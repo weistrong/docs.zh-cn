@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：行状态和行版本
 title: 行状态和行版本
 ms.date: 07/19/2018
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2e6642c9-bfc6-425c-b3a7-e4912ffa6c1f
-ms.openlocfilehash: 1b80ae78fad22989f99fb1e992d4978a192e0c66
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7d436ffcfcf59f5daa4fc6eaa9f9018b92e5c608
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204523"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651673"
 ---
 # <a name="row-states-and-row-versions"></a>行状态和行版本
 
@@ -18,7 +19,7 @@ ADO.NET 用行状态和行版本管理表中的行。 行状态指示行的状�
   
  每个 <xref:System.Data.DataRow> 对象都具有 <xref:System.Data.DataRow.RowState%2A> 属性，您可以检查此属性来确定行的当前状态。 下表提供了对每个 `RowState` 枚举值的简短说明。  
   
-|RowState 值|描述|  
+|RowState 值|说明|  
 |--------------------|-----------------|  
 |<xref:System.Data.DataRowState.Unchanged>|自上次调用 `AcceptChanges` 以来或由 `DataAdapter.Fill` 创建该行以来，没有进行任何更改。|  
 |<xref:System.Data.DataRowState.Added>|已将该行添加到表中，但尚未调用 `AcceptChanges`。|  
@@ -42,7 +43,7 @@ string custID = custRow["CustomerID", DataRowVersion.Original].ToString();
   
  下表提供了对每个 `DataRowVersion` 枚举值的简短说明。  
   
-|DataRowVersion 值|描述|  
+|DataRowVersion 值|说明|  
 |--------------------------|-----------------|  
 |<xref:System.Data.DataRowVersion.Current>|行的当前值。 如果行的 `RowState` 为 `Deleted`，则不存在此行版本。|  
 |<xref:System.Data.DataRowVersion.Default>|特定行的默认行版本。 `Added`、`Modified` 或 `Deleted` 行的默认行版本是 `Current`。 `Detached` 行的默认行版本是 `Proposed`。|  

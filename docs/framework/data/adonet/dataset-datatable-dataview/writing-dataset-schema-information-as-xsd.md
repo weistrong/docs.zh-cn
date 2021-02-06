@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：以 XSD 形式编写数据集架构信息
 title: 写入数据集架构信息作为 XSD
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4e530831-695e-49ff-8f0b-e5b0c526b8eb
-ms.openlocfilehash: 7634dfc8415b6f73fc60f2ebe59c92a0c31f83a2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e05188c74ca21e73ee5151da817e143102640a13
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651348"
 ---
 # <a name="writing-dataset-schema-information-as-xsd"></a>写入数据集架构信息作为 XSD
 
@@ -18,7 +19,7 @@ ms.locfileid: "91173726"
   
  您可以使用对象的 **ColumnMapping** 属性来指定如何在 XML 架构中表示表的列 <xref:System.Data.DataColumn> 。 有关详细信息，请参阅以 [Xml 数据形式编写数据集内容](writing-dataset-contents-as-xml-data.md)中的 "将列映射到 xml 元素、属性和文本"。  
   
- 若要将**数据集**的架构作为 XML 架构写入文件、流或**XmlWriter**，请使用**DataSet**的**WriteXmlSchema**方法。 **WriteXmlSchema** 使用一个参数来指定生成的 XML 架构的目标。 下面的代码示例演示如何通过传递包含文件名和对象的字符串，将 **数据集** 的 XML 架构写入文件 <xref:System.IO.StreamWriter> 。  
+ 若要将 **数据集** 的架构作为 XML 架构写入文件、流或 **XmlWriter**，请使用 **DataSet** 的 **WriteXmlSchema** 方法。 **WriteXmlSchema** 使用一个参数来指定生成的 XML 架构的目标。 下面的代码示例演示如何通过传递包含文件名和对象的字符串，将 **数据集** 的 XML 架构写入文件 <xref:System.IO.StreamWriter> 。  
   
 ```vb  
 dataSet.WriteXmlSchema("Customers.xsd")  

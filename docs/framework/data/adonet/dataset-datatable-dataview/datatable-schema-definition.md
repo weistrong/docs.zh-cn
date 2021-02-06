@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： DataTable 架构定义
 title: 数据表架构定义
 ms.date: 03/30/2017
 ms.assetid: efbcdda4-f5a9-421d-8be2-4c194c74552f
-ms.openlocfilehash: 0c14c6012c65039e1e2e7e2d2d8c38c4202b45a7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1a48c8a129607dc8d683aa4735ea0e86ed32cc2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153243"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652609"
 ---
 # <a name="datatable-schema-definition"></a>数据表架构定义
 
@@ -18,7 +19,7 @@ ms.locfileid: "91153243"
  如果某个特定名称只存在一个列、关系或约束，则不应用区分大小写规则。 也就是说，如果表中没有其他的列、关系或约束对象与该特定列、关系或约束对象的名称匹配，您就可以使用任意的大小写来按名称引用该对象，并且不会引发异常。 例如，如果表只有 **Col1**，则可以使用 my 来引用它 **。列 ["COL1"]**。  
   
 > [!NOTE]
-> <xref:System.Data.DataTable.CaseSensitive%2A> **DataTable**的属性不影响此行为。 **CaseSensitive**属性应用于表中的数据，并影响排序、搜索、筛选、强制约束等，但不影响对列、关系和约束的引用。  
+> <xref:System.Data.DataTable.CaseSensitive%2A> **DataTable** 的属性不影响此行为。 **CaseSensitive** 属性应用于表中的数据，并影响排序、搜索、筛选、强制约束等，但不影响对列、关系和约束的引用。  
   
 ## <a name="in-this-section"></a>本节内容  
 

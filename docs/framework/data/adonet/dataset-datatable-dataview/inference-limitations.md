@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：推理限制
 title: 推断限制
 ms.date: 03/30/2017
 ms.assetid: 78517994-5d57-44f8-9d20-38812977de09
-ms.openlocfilehash: 9d8191be137661200e1a6b84d68328c1202880ca
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 926e456acfc5eac2598be40490b72523facfd058
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652258"
 ---
 # <a name="inference-limitations"></a>推断限制
 
@@ -53,7 +54,7 @@ ms.locfileid: "91172770"
   
  这两个 XML 文档可能本应生成相同的架构，但根据每个文档中包含的不同元素，推断过程生成了极不相同的结果。  
   
- 若要避免在从 XML 文档生成架构时可能出现的差异，建议使用 XML 架构定义语言（ (XSD) 或 XML 数据在从 XML 加载 **数据集** 时减少 (XDR) ）显式指定架构。 有关使用 XML 架构显式指定 **数据集** 架构的详细信息，请参阅 [从 Xml 架构派生数据集关系结构 (XSD) ](deriving-dataset-relational-structure-from-xml-schema-xsd.md)。  
+ 若要避免在从 XML 文档生成架构时可能出现的差异，建议使用 XML 架构定义语言 (XSD) 或 XML-Data 降低从 XML 加载 **数据集** 时的 (XDR) 来显式指定架构。 有关使用 XML 架构显式指定 **数据集** 架构的详细信息，请参阅 [从 Xml 架构派生数据集关系结构 (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)。  
   
 ## <a name="see-also"></a>请参阅
 
