@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetCodeInfo 方法
 title: ICorProfilerInfo::GetCodeInfo 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 90140b0f-a926-4a7e-b6fa-23e05f703cce
 topic_type:
 - apiref
-ms.openlocfilehash: da3b0acefa68be3506567ad4742784943f4ec5ab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e965e9c21b7add0367b08f152bf509ad6b6ed4cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722513"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647656"
 ---
 # <a name="icorprofilerinfogetcodeinfo-method"></a>ICorProfilerInfo::GetCodeInfo 方法
 
@@ -48,7 +49,7 @@ HRESULT GetCodeInfo(
  `pcSize`  
  [out] 指向以字节为单位指定本机代码大小的整数的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  为了优化性能，.NET Framework 2.0 版中的运行时将函数的预编译本机代码拆分为多个部分。 因此，`GetCodeInfo` 方法在.NET Framework 2.0 中已过时，因为它无法处理函数的本机代码的范围。 探查器应切换为使用更常规的 `ICorProfilerInfo2::GetCodeInfo2` 方法。  
   
@@ -64,7 +65,7 @@ HRESULT GetCodeInfo(
   
  **.NET Framework 版本：** 1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [分析接口](profiling-interfaces.md)

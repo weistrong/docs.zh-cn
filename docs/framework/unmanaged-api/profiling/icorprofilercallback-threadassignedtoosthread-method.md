@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ThreadAssignedToOSThread 方法
 title: ICorProfilerCallback::ThreadAssignedToOSThread 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f9671e5a-7b14-4f5b-8404-58136422c8b2
 topic_type:
 - apiref
-ms.openlocfilehash: 2d6f34d88dd79fe350f1c018e3afa55e5b180c46
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 04fba4cabb0ac58b3afeaae1fd579865335a9e14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647981"
 ---
 # <a name="icorprofilercallbackthreadassignedtoosthread-method"></a>ICorProfilerCallback::ThreadAssignedToOSThread 方法
 
@@ -42,7 +43,7 @@ HRESULT ThreadAssignedToOSThread(
  `osThreadId`  
  中操作系统线程的标识符。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ThreadAssignedToOSThread`回调存在，以便探查器能够在操作系统线程的纤程之间保持准确映射到托管线程。  
   
@@ -56,6 +57,6 @@ HRESULT ThreadAssignedToOSThread(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

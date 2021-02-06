@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRProfiling：： AttachProfiler 方法
 title: ICLRProfiling::AttachProfiler 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type:
 - apiref
-ms.openlocfilehash: 94495ca0ea75bd41996d430159474c707a3e68b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 11b53b39d3332d1f72304352fad525e5881e05a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685417"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648449"
 ---
 # <a name="iclrprofilingattachprofiler-method"></a>ICLRProfiling::AttachProfiler 方法
 
@@ -83,7 +84,7 @@ HRESULT AttachProfiler(
 |E_FAIL|出现其他未指定错误。|  
 |其他错误代码|如果探查器的 [ICorProfilerCallback3：： InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) 方法返回一个指示失败的 hresult，则 `AttachProfiler` 返回相同的 hresult。 在这种情况下，E_NOTIMPL 将转换为 CORPROF_E_PROFILER_NOT_ATTACHABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 ## <a name="memory-management"></a>内存管理  
 
@@ -99,7 +100,7 @@ HRESULT AttachProfiler(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ICorProfilerInfo3 接口](icorprofilerinfo3-interface.md)

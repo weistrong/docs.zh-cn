@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetModuleInfo 方法
 title: ICorProfilerInfo::GetModuleInfo 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5a90d16f-7929-4987-8f83-a631becf564d
 topic_type:
 - apiref
-ms.openlocfilehash: 863fa1bf50830bb46e5c2939c99fe1e15897ac3d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 003f40e6637490be23e8bf87a6bac8ab76bc50e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724125"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647188"
 ---
 # <a name="icorprofilerinfogetmoduleinfo-method"></a>ICorProfilerInfo::GetModuleInfo 方法
 
@@ -59,7 +60,7 @@ HRESULT GetModuleInfo(
  `pAssemblyId`  
  [out] 指向模块的父程序集的 ID 的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  对于动态模块，`szName` 参数是空字符串，并且基址是 0（零）。  
   
@@ -79,7 +80,7 @@ HRESULT GetModuleInfo(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [分析接口](profiling-interfaces.md)

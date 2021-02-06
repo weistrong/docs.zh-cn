@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： AppDomainCreationFinished 方法
 title: ICorProfilerCallback::AppDomainCreationFinished 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
 topic_type:
 - apiref
-ms.openlocfilehash: 688b9975cc68463de066e5225c6ab1e04cbb5337
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6995c6cda168b5be5815e6f7b2b4d900ae0d4d67
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685365"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648358"
 ---
 # <a name="icorprofilercallbackappdomaincreationfinished-method"></a>ICorProfilerCallback::AppDomainCreationFinished 方法
 
@@ -44,7 +45,7 @@ HRESULT AppDomainCreationFinished(
 
   \[in] 一个 HRESULT，指示是否已成功完成创建应用程序域。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在调用方法之前，应用程序 ID 对于任何信息请求均无效 `AppDomainCreationFinished` 。  
   
@@ -60,6 +61,6 @@ HRESULT AppDomainCreationFinished(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

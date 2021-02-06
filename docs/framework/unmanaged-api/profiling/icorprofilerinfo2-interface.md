@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo2 接口
 title: ICorProfilerInfo2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 91bd49b6-4d12-494f-a8f1-2f251e8c65e3
 topic_type:
 - apiref
-ms.openlocfilehash: 6c146f3deed31601411bef39ab12b52dfec8cd39
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07828c6f55b72068e9021991600ed17eb6ffe6ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681569"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647006"
 ---
 # <a name="icorprofilerinfo2-interface"></a>ICorProfilerInfo2 接口
 
@@ -51,7 +52,7 @@ ms.locfileid: "95681569"
 |[GetThreadStaticAddress 方法](icorprofilerinfo2-getthreadstaticaddress-method.md)|获取指定线程范围内的指定线程静态字段的地址。|  
 |[SetEnterLeaveFunctionHooks2 方法](icorprofilerinfo2-setenterleavefunctionhooks2-method.md)|指定在托管函数的 "enter"、"leave" 和 "tailcall" 挂钩上调用的探查器实现函数。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器调用接口中的方法 `ICorProfilerInfo2` ，以便与 CLR 通信以控制事件监视和请求信息。  
   
@@ -69,7 +70,7 @@ ms.locfileid: "95681569"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

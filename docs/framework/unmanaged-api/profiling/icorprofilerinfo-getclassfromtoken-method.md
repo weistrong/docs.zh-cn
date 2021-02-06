@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetClassFromToken 方法
 title: ICorProfilerInfo::GetClassFromToken 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0afc1197-2a5b-424f-8b82-9cb59a7e00db
 topic_type:
 - apiref
-ms.openlocfilehash: 7d9fe7d6d5c5af32be22ba19b52e7d40033a6eb2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0460a9b767f29f108a2b290b848f4cc6b6394ecb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647747"
 ---
 # <a name="icorprofilerinfogetclassfromtoken-method"></a>ICorProfilerInfo::GetClassFromToken 方法
 
@@ -46,7 +47,7 @@ HRESULT GetClassFromToken(
  `cTypeArgs`  
  弄指向类 ID 的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法已过时;而是将 `ICorProfilerInfo2::GetClassFromTokenAndTypeArgs` 用于所有类型。  
   
@@ -60,6 +61,6 @@ HRESULT GetClassFromToken(
   
  **.NET Framework 版本：** 1.0、1。1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

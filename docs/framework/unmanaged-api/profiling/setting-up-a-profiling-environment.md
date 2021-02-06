@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：设置分析环境
 title: 设置分析环境
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - COR_ENABLE_PROFILING environment variable
 - profiling API [.NET Framework], enabling
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
-ms.openlocfilehash: 9c712c5efe8d6d79454b70d0bf4f3ca2fa83b637
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88bfb50b02874bf79f03414213329c5dcc79a9fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722474"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646343"
 ---
 # <a name="setting-up-a-profiling-environment"></a>设置分析环境
 
@@ -99,6 +100,6 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
   
  此技术也会导致对每个 CLR 进程进行分析。 探查器应将逻辑添加到它的 [ICorProfilerCallback：： Initialize](icorprofilercallback-initialize-method.md) 回调以检测当前进程是否感兴趣。 如果不相关，探查器可使回调失败而不执行初始化。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析概述](profiling-overview.md)

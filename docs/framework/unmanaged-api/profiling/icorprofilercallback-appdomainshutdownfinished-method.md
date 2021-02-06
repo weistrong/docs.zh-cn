@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： AppDomainShutdownFinished 方法
 title: ICorProfilerCallback::AppDomainShutdownFinished 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52794819-0a59-4bb1-a265-0f158cd5cd65
 topic_type:
 - apiref
-ms.openlocfilehash: ddb2d6eeb75a118a12f681b354f6feccd1231c64
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e08a4f7e03bfd18d9c6a2fdf56bfab8c68f9c379
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685370"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648202"
 ---
 # <a name="icorprofilercallbackappdomainshutdownfinished-method"></a>ICorProfilerCallback::AppDomainShutdownFinished 方法
 
@@ -44,7 +45,7 @@ HRESULT AppDomainShutdownFinished(
 
   \[in] 一个 HRESULT，指示是否已成功卸载应用程序域。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 `appDomainId` [ICorProfilerCallback：： AppDomainShutdownStarted](icorprofilercallback-appdomainshutdownstarted-method.md) 方法返回后，的值对信息请求无效。  
   
@@ -60,6 +61,6 @@ HRESULT AppDomainShutdownFinished(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

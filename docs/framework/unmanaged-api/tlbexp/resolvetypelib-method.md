@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ResolveTypeLib 方法
 title: ResolveTypeLib 方法
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 95d2aa0d-8eeb-4a9f-a216-5249f7e2c167
 topic_type:
 - apiref
-ms.openlocfilehash: 84eea78b9c2e73e24238a5ecbc9442f3d63dbd4e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ca7f94f630479d30bb9129497b38bcf04e759e5d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646278"
 ---
 # <a name="resolvetypelib-method"></a>ResolveTypeLib 方法
 
@@ -60,11 +61,11 @@ HRESULT ResolveTypeLib(
  `pbstrResolvedTlbName`  
  弄指向包含在参数中命名的类型库的完整路径的 [BSTR](/previous-versions/windows/desktop/automat/bstr) 的指针 `bstrSimpleName` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ResolveTypeLib`方法由[LoadTypeLibWithResolver 函数](loadtypelibwithresolver-function.md)在[Tlbexp.exe (类型库导出程序) ](../../tools/tlbexp-exe-type-library-exporter.md)处理期间调用。  
   
- 此接口的自定义实现必须返回[BSTR](/previous-versions/windows/desktop/automat/bstr)包含参数中名为的类型库的完整路径的 BSTR `bstrSimpleName` 。  
+ 此接口的自定义实现必须返回[](/previous-versions/windows/desktop/automat/bstr)包含参数中名为的类型库的完整路径的 BSTR `bstrSimpleName` 。  
   
 ## <a name="requirements"></a>要求  
 
@@ -76,7 +77,7 @@ HRESULT ResolveTypeLib(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Tlbexp Helper 函数](index.md)
 - [LoadTypeLibEx](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

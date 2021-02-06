@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionTailcall3WithInfo 函数
 title: FunctionTailcall3WithInfo 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 46380fcc-0198-43ae-a1f5-2d4939425886
 topic_type:
 - apiref
-ms.openlocfilehash: c23c791197c9925038f71e70409e4ca3ebabb23e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: efa8b2e965ba4a365bbd72db4c5af69db006f6d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722852"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648488"
 ---
 # <a name="functiontailcall3withinfo-function"></a>FunctionTailcall3WithInfo 函数
 
@@ -43,7 +44,7 @@ void __stdcall FunctionTailcall3WithInfo(
 
   \[in] 一个表示有关给定堆栈帧的信息的不透明的句柄。 此句柄仅在其传递到的回调期间有效。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `FunctionTailcall3WithInfo`回调方法会在调用函数时通知探查器，并允许探查器使用[ICorProfilerInfo3：： GetFunctionTailcall3Info 方法](icorprofilerinfo3-getfunctiontailcall3info-method.md)检查堆栈帧。 若要访问堆栈帧信息， `COR_PRF_ENABLE_FRAME_INFO` 必须设置标志。 探查器可以使用 [ICorProfilerInfo：： SetEventMask 方法](icorprofilerinfo-seteventmask-method.md) 来设置事件标志，然后使用 [ICorProfilerInfo3：： SetEnterLeaveFunctionHooks3WithInfo 方法](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) 来注册此函数的实现。  
   
@@ -69,7 +70,7 @@ void __stdcall FunctionTailcall3WithInfo(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [FunctionEnter3](functionenter3-function.md)
 - [FunctionLeave3](functionleave3-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetILToNativeMapping 方法
 title: ICorProfilerInfo::GetILToNativeMapping 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6a5431ef-22fb-4e53-bac5-703986297eb1
 topic_type:
 - apiref
-ms.openlocfilehash: 1eb9b3af4c0e77fd1548de194d064eb85b86cdce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce3473365eb98beca4d2e9116251200d7539e4c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647383"
 ---
 # <a name="icorprofilerinfogetiltonativemapping-method"></a>ICorProfilerInfo::GetILToNativeMapping 方法
 
@@ -51,7 +52,7 @@ HRESULT GetILToNativeMapping(
  `map`  
  [out] `COR_DEBUG_IL_TO_NATIVE_MAP` 结构的数组，其中每个结构均指定偏移量。 `GetILToNativeMapping` 方法返回后，`map` 将包含部分或全部 `COR_DEBUG_IL_TO_NATIVE_MAP` 结构。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetILToNativeMapping` 方法返回 `COR_DEBUG_IL_TO_NATIVE_MAP` 结构的数组。 为了传达特定范围的本机指令与代码的特殊区域 (例如，prolog) ，数组中的条目可以 `ilOffset` 将其字段设置为 [CorDebugIlToNativeMappingTypes](../debugging/cordebugiltonativemappingtypes-enumeration.md) 枚举的值。  
   
@@ -69,7 +70,7 @@ HRESULT GetILToNativeMapping(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [GetILToNativeMapping2 方法](icorprofilerinfo4-getiltonativemapping2-method.md)

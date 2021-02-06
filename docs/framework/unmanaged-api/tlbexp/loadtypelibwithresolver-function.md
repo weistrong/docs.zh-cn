@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： LoadTypeLibWithResolver 函数
 title: LoadTypeLibWithResolver 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7123a89b-eb9b-463a-a552-a081e33b0a3a
 topic_type:
 - apiref
-ms.openlocfilehash: 6497dd3e720874e47de9dfda74e483a642cbb181
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6747199364a549d922ad73bfac3e93b329d1172a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708226"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646213"
 ---
 # <a name="loadtypelibwithresolver-function"></a>LoadTypeLibWithResolver 函数
 
@@ -70,7 +71,7 @@ HRESULT LoadTypeLibWithResolver(
 |`TYPE_E_INVALIDSTATE`|无法打开类型库。|  
 |`TYPE_E_CANTLOADLIBRARY`|未能加载类型库或 DLL。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ (类型库导出程序)Tlbexp.exe](../../tools/tlbexp-exe-type-library-exporter.md)在 `LoadTypeLibWithResolver` 程序集到类型库转换过程中调用该函数。  
   
@@ -96,7 +97,7 @@ HRESULT LoadTypeLibWithResolver(
   
  **.NET Framework 版本：** 3.5、3.0、2。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Tlbexp Helper 函数](index.md)
 - [LoadTypeLibEx 函数](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

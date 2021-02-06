@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback2：： GarbageCollectionStarted 方法
 title: ICorProfilerCallback2::GarbageCollectionStarted 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 44eef087-f21f-4fe2-b481-f8a0ee022e7d
 topic_type:
 - apiref
-ms.openlocfilehash: 63a8d212a61bd73f44995f0e057eeff96f9a5554
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2b57a21dc3a1751b5d4767ea940f64df61af4318
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731938"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647877"
 ---
 # <a name="icorprofilercallback2garbagecollectionstarted-method"></a>ICorProfilerCallback2::GarbageCollectionStarted 方法
 
@@ -48,7 +49,7 @@ HRESULT GarbageCollectionStarted(
  `reason`  
  中一个 [COR_PRF_GC_REASON](cor-prf-gc-reason-enumeration.md) 枚举的值，该值指示导致垃圾回收的原因。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  与此垃圾回收相关的所有回调都将在 `GarbageCollectionStarted` 回调和相应的 [ICorProfilerCallback2：： GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md) 回调之间发生。 这些回调不需要在同一线程上发生。  
   
@@ -64,7 +65,7 @@ HRESULT GarbageCollectionStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 接口](icorprofilercallback2-interface.md)

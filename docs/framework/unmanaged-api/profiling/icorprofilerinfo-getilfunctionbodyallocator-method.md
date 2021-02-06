@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetILFunctionBodyAllocator 方法
 title: ICorProfilerInfo::GetILFunctionBodyAllocator 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5da1bf3d-dddf-4892-b266-578ee54d570b
 topic_type:
 - apiref
-ms.openlocfilehash: b18de87cf89985e0f7ec11edf58b43d67720251c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 25d059d784fe64231d4d2ff3d23b4820443873cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718015"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647422"
 ---
 # <a name="icorprofilerinfogetilfunctionbodyallocator-method"></a>ICorProfilerInfo::GetILFunctionBodyAllocator 方法
 
@@ -42,7 +43,7 @@ HRESULT GetILFunctionBodyAllocator(
  `ppMalloc`  
  弄指向 [IMethodMalloc](imethodmalloc-interface.md) 接口的指针，该接口提供分配内存的方法。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  MSIL 代码中的方法体必须位于 RVA)  (RVA 上（相对于已加载的模块），这意味着它遵循 4 GB 内的模块。 为了使工具能够更轻松地调换方法的主体， `GetILFunctionBodyAllocator` 方法可确保在该范围内分配内存。  
   
@@ -56,6 +57,6 @@ HRESULT GetILFunctionBodyAllocator(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

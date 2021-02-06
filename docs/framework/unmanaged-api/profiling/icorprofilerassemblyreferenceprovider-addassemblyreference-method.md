@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerAssemblyReferenceProvider：： AddAssemblyReference 方法
 title: ICorProfilerAssemblyReferenceProvider::AddAssemblyReference 方法
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 3d5af8e7-c337-48f4-9fa6-97c83878b9b1
 topic_type:
 - apiref
-ms.openlocfilehash: 56468fd38bc110318e04d9b1beda61e279f731d1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 343e76dd64329c88bf4b52e24d45a1e7c8b639bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648371"
 ---
 # <a name="icorprofilerassemblyreferenceprovideraddassemblyreference-method"></a>ICorProfilerAssemblyReferenceProvider::AddAssemblyReference 方法
 
@@ -39,7 +40,7 @@ HRESULT AddAssemblyReference(
 
   指向 [COR_PRF_ASSEMBLY_REFERENCE_INFO](cor-prf-assembly-reference-info-structure.md) 结构的指针，该结构为 CLR 提供有关在执行程序集引用闭包审核时应考虑的程序集引用的信息。
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器为其计划从 `wszAssemblyPath` [ICorProfilerCallback6：： GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md) 回调的参数中指定的程序集引用的每个目标程序集调用此方法。 [ICorProfilerAssemblyReferenceProvider](icorprofilerassemblyreferenceprovider-interface.md)接口对象传递给探查器的[ICorProfilerCallback6：： GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md)回调，同时传递给参数中的程序集路径和名称 `wszAssemblyPath` 。  
   
@@ -53,7 +54,7 @@ HRESULT AddAssemblyReference(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerAssemblyReferenceProvider 方法](icorprofilerassemblyreferenceprovider-interface.md)
 - [GetAssemblyReferences 方法](icorprofilercallback6-getassemblyreferences-method.md)

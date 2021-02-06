@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetInprocInspectionIThisThread 方法
 title: ICorProfilerInfo::GetInprocInspectionIThisThread 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: badddccd-f85c-416e-9f0f-419eab2c9d42
 topic_type:
 - apiref
-ms.openlocfilehash: 8daa84e3abbbc64c9a48d8957b4ad9c6756d0d8b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07ff904170750976e54e623101a2552db0c7f290
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682076"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647240"
 ---
 # <a name="icorprofilerinfogetinprocinspectionithisthread-method"></a>ICorProfilerInfo::GetInprocInspectionIThisThread 方法
 
@@ -38,7 +39,7 @@ HRESULT GetInprocInspectionIThisThread(
  `ppicd`  
  可在接口上查询的[输出](/cpp/atl/iunknown)对象 `ICorDebugThread` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  公共语言运行时 (CLR) 调试服务在 .NET Framework 版本1.0 中支持有限的进程内调试。 进程内调试使探查器能够使用调试 API 的检查部分。 由于客户反馈，已从版本2.0 中的 .NET Framework 中删除进程内调试，并将其替换为一组功能，这些功能与分析 API 是一种更多的功能。  
   
@@ -52,6 +53,6 @@ HRESULT GetInprocInspectionIThisThread(
   
  **.NET Framework 版本：** 1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

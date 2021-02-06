@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： AssemblyLoadStarted 方法
 title: ICorProfilerCallback::AssemblyLoadStarted 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 67e8209d-a0ca-4118-a6e6-c1ee0abc2221
 topic_type:
 - apiref
-ms.openlocfilehash: c2fbc0ae8cdeb79b65cbad9a055a8051acf67e50
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f771008b9aed9322f0c5fd279fa9dfb3086755e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647999"
 ---
 # <a name="icorprofilercallbackassemblyloadstarted-method"></a>ICorProfilerCallback::AssemblyLoadStarted 方法
 
@@ -39,7 +40,7 @@ HRESULT AssemblyLoadStarted(
 
   \[in] 标识要加载的程序集。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 `assemblyId` 调用 [ICorProfilerCallback：： AssemblyLoadFinished](icorprofilercallback-assemblyloadfinished-method.md) 方法之前，的值对信息请求无效。  
   
@@ -53,6 +54,6 @@ HRESULT AssemblyLoadStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
