@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRValidator 接口
 title: ICLRValidator 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2edd0a10-77fb-4173-91eb-f2970cc364d0
 topic_type:
 - apiref
-ms.openlocfilehash: d9ccd5c6c91b1ab2166ff40a0fb2048e15927d3a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 72ff94915d35967b6a8a87b022789ca697f61711
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636745"
 ---
 # <a name="iclrvalidator-interface"></a>ICLRValidator 接口
 
@@ -42,7 +43,7 @@ ms.locfileid: "95723943"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRErrorReportingManager 接口](iclrerrorreportingmanager-interface.md)
 - [承载接口](hosting-interfaces.md)

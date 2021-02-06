@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameKeyGen 函数
 title: StrongNameKeyGen 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 883e413a-ad2f-4f7f-b1b9-aeb8fe5b65f8
 topic_type:
 - apiref
-ms.openlocfilehash: 4844701784a3e6a1008a5deb2bdff3b3ba47aa7e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c5f4cfcfa9030ae856acf5fd59ab34a2b8338670
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95691404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636244"
 ---
 # <a name="strongnamekeygen-function"></a>StrongNameKeyGen 函数
 
@@ -60,7 +61,7 @@ BOOLEAN StrongNameKeyGen (
 
  `true` 成功完成时;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `StrongNameKeyGen`函数创建1024位键。 检索到密钥后，应调用 [StrongNameFreeBuffer](strongnamefreebuffer-function.md) 函数以释放已分配的内存。  
   
@@ -76,7 +77,7 @@ BOOLEAN StrongNameKeyGen (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameKeyGen 方法](../hosting/iclrstrongname-strongnamekeygen-method.md)
 - [StrongNameKeyGenEx 方法](../hosting/iclrstrongname-strongnamekeygenex-method.md)

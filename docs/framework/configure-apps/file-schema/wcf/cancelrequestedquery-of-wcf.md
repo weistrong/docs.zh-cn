@@ -1,19 +1,20 @@
 ---
-title: <cancelRequestedQuery>WCF 的
+description: 了解有关 WCF 的详细信息： <cancelRequestedQuery>
+title: <cancelRequestedQuery> WCF 的
 ms.date: 03/30/2017
 ms.assetid: b690d870-02eb-4c56-8bc3-e5ca99d7097b
-ms.openlocfilehash: 0ac8b87afc44927ab6653dd6fcdc09cd61436a9b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e477e33650eb901cf2e9275570d8538196c52b6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639167"
 ---
-# <a name="cancelrequestedquery-of-wcf"></a>\<cancelRequestedQuery>WCF 的
+# <a name="cancelrequestedquery-of-wcf"></a>\<cancelRequestedQuery> WCF 的
 
 表示一个查询，该查询用于跟踪父活动取消子活动的请求。 跟踪参与者需要用此查询来订阅取消请求记录对象。  
   
-有关跟踪配置文件查询的详细信息，请参阅[跟踪配置文件](../../../windows-workflow-foundation/tracking-profiles.md)。
+有关跟踪配置文件查询的详细信息，请参阅 [跟踪配置文件](../../../windows-workflow-foundation/tracking-profiles.md)。
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -58,11 +59,11 @@ ms.locfileid: "70850051"
   
 ### <a name="parent-elements"></a>父元素
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<cancelRequestedQueries>](cancelrequestedqueries-of-wcf.md)|表示一个查询集合，这些查询用于跟踪父活动取消子活动的请求。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=nameWithType>

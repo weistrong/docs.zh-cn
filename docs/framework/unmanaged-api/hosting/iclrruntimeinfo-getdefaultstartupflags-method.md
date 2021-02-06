@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeInfo：： GetDefaultStartupFlags 方法
 title: ICLRRuntimeInfo::GetDefaultStartupFlags 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 35c2173e-3b0b-4b2a-950d-e0a01c6df052
 topic_type:
 - apiref
-ms.openlocfilehash: 2f828a3720f7313ee9cb851c6adae78bd5ea4fe8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6afb19319fd24d499c2c216f2ce0adc2e7a886c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637166"
 ---
 # <a name="iclrruntimeinfogetdefaultstartupflags-method"></a>ICLRRuntimeInfo::GetDefaultStartupFlags 方法
 
@@ -54,7 +55,7 @@ HRESULT GetDefaultStartupFlags(
 |-------------|-----------------|  
 |S_OK|该方法已成功完成。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法返回 (和) 的默认标志值 `STARTUP_CONCURRENT_GC` `NULL` ，或者通过对 [ICLRRuntimeInfo：： SetDefaultStartupFlags 方法](iclrruntimeinfo-setdefaultstartupflags-method.md)的前一次调用提供的值或任何 `CorBind*` 方法（如果它们绑定到此运行时）所设置的值。  
   
@@ -68,7 +69,7 @@ HRESULT GetDefaultStartupFlags(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRRuntimeInfo 接口](iclrruntimeinfo-interface.md)
 - [承载接口](hosting-interfaces.md)

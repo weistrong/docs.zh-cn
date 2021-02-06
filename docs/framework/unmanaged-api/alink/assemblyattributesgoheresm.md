@@ -1,5 +1,6 @@
 ---
-title: AssemblyAttributesGoHereSM 类（System.runtime.compilerservices）
+description: 了解详细信息： AssemblyAttributesGoHereSM 类
+title: 'AssemblyAttributesGoHereSM 类 (System.runtime.compilerservices) '
 ms.date: 03/30/2017
 api_name:
 - System.Runtime.CompilerServices.AssemblyAttributesGoHereSM
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4cf9bf39-1527-49e0-a0e9-55e7a018bf66
 topic_type:
 - apiref
-ms.openlocfilehash: 379ba20ebf675bec71e6e5f5bcfc0dc2fbd1f92c
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ac38017b6ae9169b853da1daa8533d4c1cf44d97
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638517"
 ---
 # <a name="assemblyattributesgoheresm-class"></a>AssemblyAttributesGoHereSM 类
 
@@ -44,7 +45,7 @@ internal sealed class AssemblyAttributesGoHereSM
 
 mscorlib.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AssemblyAttributesGoHere](assemblyattributesgohere.md)
 - [AssemblyAttributesGoHereM](assemblyattributesgoherem.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRMetaHost：： GetRuntime 方法
 title: ICLRMetaHost::GetRuntime 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a10749f1-ab91-47cf-982f-d8ccd2e81bd2
 topic_type:
 - apiref
-ms.openlocfilehash: 093fa64a7d51e0c2fdc304d2bb4f1c9f7b03e2ec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a2ada652dbb139337150cb8ed20986ebf8ae7f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637516"
 ---
 # <a name="iclrmetahostgetruntime-method"></a>ICLRMetaHost::GetRuntime 方法
 
@@ -61,7 +62,7 @@ HRESULT GetRuntime (
 |S_OK|该方法已成功完成。|  
 |E_POINTER|`pwzVersion` 或 `ppRuntime` 为 null。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法与旧接口（如 [ICorRuntimeHost](icorruntimehost-interface.md) 接口）和旧功能（如不推荐使用的函数）一致地交互 `CorBindTo*` (参阅 .NET FRAMEWORK 2.0 托管 API) 中 [弃用的 CLR 承载函数](deprecated-clr-hosting-functions.md) 。 也就是说，用旧版 API 加载的运行时对新 API 可见，而与新 API 一起加载的运行时对旧 API 可见。  
   
@@ -75,7 +76,7 @@ HRESULT GetRuntime (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRMetaHost 接口](iclrmetahost-interface.md)
 - [弃用的 CLR 承载接口和 Coclass](deprecated-clr-hosting-interfaces-and-coclasses.md)

@@ -1,23 +1,24 @@
 ---
+description: 了解有关以下方面的详细信息： System.servicemodel.comintegration。 ComIntegrationServiceHostCreatedServiceEndpoint
 title: System.ServiceModel.ComIntegration.ComIntegrationServiceHostCreatedServiceEndpoint
 ms.date: 03/30/2017
 ms.assetid: 79aa2eee-b65d-4ae3-971a-acb5db4547b9
-ms.openlocfilehash: 37d98956e441490b5cd1695f1b68e9366436bee4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 83fe2c005a58e8bc680c5e4575c18d07bf71ab41
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248625"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635488"
 ---
 # <a name="systemservicemodelcomintegrationcomintegrationservicehostcreatedserviceendpoint"></a>System.ServiceModel.ComIntegration.ComIntegrationServiceHostCreatedServiceEndpoint
 
 System.ServiceModel.ComIntegration.ComIntegrationServiceHostCreatedServiceEndpoint  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  ComPlus：已创建服务终结点。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

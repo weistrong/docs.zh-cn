@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <clientVia>
 title: <clientVia>
 ms.date: 03/30/2017
 ms.assetid: c27ee94e-babd-459b-9574-2a6d67d11314
-ms.openlocfilehash: 5e62201a38dc4dc251996531a4af5f294dd2395f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 651af0c310504f7672ca172d7df609365c319506
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151098"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638765"
 ---
 # \<clientVia>
 
@@ -32,7 +33,7 @@ ms.locfileid: "91151098"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`viaUri`|一个指定 URI 的字符串，此 URI 指示消息应采用的路由。|  
   
@@ -42,7 +43,7 @@ ms.locfileid: "91151098"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定终结点行为。|  
   

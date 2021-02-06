@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugNativeFrame：： GetIP 方法
 title: ICorDebugNativeFrame::GetIP 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 99f693f3-d3b9-4fd8-9d09-b8efd03f7b67
 topic_type:
 - apiref
-ms.openlocfilehash: c9c0598f8e7b3e8654124f50663c912f3cd61659
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f36a14c38aa6c3754cf78eca8c657adc76469067
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709294"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637828"
 ---
 # <a name="icordebugnativeframegetip-method"></a>ICorDebugNativeFrame::GetIP 方法
 
@@ -39,7 +40,7 @@ HRESULT GetIP (
  `pnOffset`  
  弄指向本机代码中的偏移位置的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果此 "ICorDebugNativeFrame" 表示的堆栈帧处于活动状态，则偏移量是要执行的下一条指令的地址。 如果此堆栈帧不处于活动状态，则偏移量是在重新激活堆栈帧时要执行的下一条指令的地址。  
   
@@ -53,4 +54,4 @@ HRESULT GetIP (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

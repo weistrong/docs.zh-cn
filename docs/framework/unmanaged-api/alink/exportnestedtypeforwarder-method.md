@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ExportNestedTypeForwarder 方法
 title: ExportNestedTypeForwarder 方法
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 886ea6c5-6b26-4b88-8bf6-448d6d191950
 topic_type:
 - apiref
-ms.openlocfilehash: 45adda6551e1cec994f59acbb0e8d2b5c56c4df6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd791e3fea76338f191fcf924d56720d257d2e8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684806"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638101"
 ---
 # <a name="exportnestedtypeforwarder-method"></a>ExportNestedTypeForwarder 方法
 
@@ -70,7 +71,7 @@ HRESULT ExportNestedTypeForwarder(
 
  需要 alink  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink 接口](ialink-interface.md)
 - [IALink2 接口](ialink2-interface.md)

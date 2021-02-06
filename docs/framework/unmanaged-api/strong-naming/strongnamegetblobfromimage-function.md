@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameGetBlobFromImage 函数
 title: StrongNameGetBlobFromImage 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1de658e6-da32-4d01-9097-6f43c92222e1
 topic_type:
 - apiref
-ms.openlocfilehash: 3a84221f94bad76d69f0dc67fe695ada3f3862f4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c68d6914d47fbb711c49c1e8432cae1bf33e771f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732237"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636320"
 ---
 # <a name="strongnamegetblobfromimage-function"></a>StrongNameGetBlobFromImage 函数
 
@@ -56,7 +57,7 @@ BOOLEAN StrongNameGetBlobFromImage (
 
  `true` 成功完成时;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `StrongNameGetBlobFromImage` 函数未成功完成，请调用 [StrongNameErrorInfo](strongnameerrorinfo-function.md) 函数来检索上次生成的错误。  
   
@@ -70,7 +71,7 @@ BOOLEAN StrongNameGetBlobFromImage (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameGetBlobFromImage 方法](../hosting/iclrstrongname-strongnamegetblobfromimage-method.md)
 - [StrongNameGetBlob 方法](../hosting/iclrstrongname-strongnamegetblob-method.md)

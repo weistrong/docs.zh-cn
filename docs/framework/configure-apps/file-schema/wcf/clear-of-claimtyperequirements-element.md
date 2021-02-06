@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <clear> 元素的详细 <claimTypeRequirements> 信息
 title: <clear> of <claimTypeRequirements> 元素
 ms.date: 03/30/2017
 ms.assetid: ef42fde7-f292-4610-9111-9fea382c3b5f
-ms.openlocfilehash: aa94a012da11bcec6fb5fe270ad9f3574f88e6d7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d25dad5afcec352f040ea4f8c08e5ffa2bc16d19
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638881"
 ---
 # <a name="clear-of-claimtyperequirements-element"></a>\<clear> of \<claimTypeRequirements> 元素
 
@@ -45,7 +46,7 @@ ms.locfileid: "91172900"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](claimtyperequirements-for-message.md)|指定所需声明类型的集合。 每个元素的类型都为 <xref:System.ServiceModel.Configuration.ClaimTypeElement>。<br /><br /> 在联合方案中，服务规定有关传入凭据的要求。 例如，传入凭据必须具有某组声明类型。 此集合中的每个元素都指定希望出现在联合凭据中的必选和可选的声明类型。|  
   

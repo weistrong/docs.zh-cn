@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：有关跟踪的安全注意事项和有用提示
 title: 有关跟踪的安全注意事项和有用提示
 ms.date: 03/30/2017
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
-ms.openlocfilehash: 415b27f5ac40d097c5bdf7b09d63ce901003f83f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 112ce91278e948f9b1ef540e12af7d14b34cd698
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635566"
 ---
 # <a name="security-concerns-and-useful-tips-for-tracing"></a>有关跟踪的安全注意事项和有用提示
 
@@ -93,6 +94,6 @@ ms.locfileid: "96243872"
   
  另外，对于面向连接的传输，每次连接时会记录一次消息发送方的 IP 地址；对于非面向连接的传输，每发送一条消息会记录一次消息发送方的 IP 地址。 这是在未经发送方同意的情况下进行的。 不过，只有在“信息”或“详细”跟踪级别才会发生此日志记录，这些级别不是生产中的默认或推荐跟踪级别（现场调试时除外）。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)

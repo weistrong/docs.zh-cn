@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <clientCertificate> 信息： <serviceCredentials>
 title: <clientCertificate> 的 <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
-ms.openlocfilehash: 9df49777efc80f425cad3b353f95db523a027214
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c3e6378f9646ec30188e2de3d1c832f363904ad0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638816"
 ---
 # <a name="clientcertificate-of-servicecredentials"></a>\<clientCertificate> 的 \<serviceCredentials>
 
@@ -40,14 +41,14 @@ ms.locfileid: "91148912"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<authentication>](authentication-of-clientcertificate-element.md)|指定客户端证书的身份验证选项。|  
 |[\<certificate>](certificate-of-clientcertificate-element.md)|指定要使用的证书。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceCredentials>](servicecredentials.md)|指定要用于对服务进行身份验证的凭据以及与客户端凭据验证相关的设置。|  
   

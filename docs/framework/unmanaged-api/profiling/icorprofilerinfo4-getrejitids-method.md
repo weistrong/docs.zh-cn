@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo4：： GetReJITIDs 方法
 title: ICorProfilerInfo4::GetReJITIDs 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 634ac28c-a5b7-4fc3-af84-256c24ca8177
 topic_type:
 - apiref
-ms.openlocfilehash: 2ac645cbaaa45554568874653be016e4691bbd2f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 60df4cb6023bbee68d2909e1cc0e9de5595ac0b9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636395"
 ---
 # <a name="icorprofilerinfo4getrejitids-method"></a>ICorProfilerInfo4::GetReJITIDs 方法
 
@@ -50,7 +51,7 @@ HRESULT GetReJITIDs (
  `reJitIds`  
  弄调用方分配的数组，其中包含指定函数的 JIT 重新编译的 Id。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetReJITIDs` 枚举给定函数实例的活动 JIT 重新编译的 Id。 它遵循与 `ICorProfilerInfo` 接受调用方分配的缓冲区的其他函数相同的使用模式。  
   
@@ -64,7 +65,7 @@ HRESULT GetReJITIDs (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo4 接口](icorprofilerinfo4-interface.md)
 - [分析接口](profiling-interfaces.md)

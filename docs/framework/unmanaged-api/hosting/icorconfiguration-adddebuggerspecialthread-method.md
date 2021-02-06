@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorConfiguration：： AddDebuggerSpecialThread 方法
 title: ICorConfiguration::AddDebuggerSpecialThread 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1f1e3239-438e-4be9-a3bb-7d0722d3a76d
 topic_type:
 - apiref
-ms.openlocfilehash: bd89db3fa0b1814a98b016fcf9d1aeeabfff718b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b6904c2e4d5c265244ac096e0d64c2fc7f5d1be5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715844"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636697"
 ---
 # <a name="icorconfigurationadddebuggerspecialthread-method"></a>ICorConfiguration::AddDebuggerSpecialThread 方法
 
@@ -39,7 +40,7 @@ HRESULT AddDebuggerSpecialThread (
  `dwSpecialThreadId`  
  中应该允许继续执行的线程的 ID。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  不允许指定的线程运行托管代码或以任何方式进入运行时。 此类线程的一个示例就是支持旧版脚本调试器的进程内线程。  
   
@@ -53,6 +54,6 @@ HRESULT AddDebuggerSpecialThread (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorConfiguration 接口](icorconfiguration-interface.md)

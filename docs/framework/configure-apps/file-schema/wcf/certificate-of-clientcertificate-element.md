@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <certificate> 元素的详细 <clientCertificate> 信息
 title: <certificate> of <clientCertificate> 元素
 ms.date: 03/30/2017
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
-ms.openlocfilehash: 35ea3814e208921abaf44e6ef431c4e1b44cde60
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a677c04055016c77794dd99a8c237b5eb6c13f5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151136"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639089"
 ---
 # <a name="certificate-of-clientcertificate-element"></a>\<certificate> of \<clientCertificate> 元素
 
@@ -37,9 +38,9 @@ ms.locfileid: "91151136"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|`findValue`|一个字符串，包含要在 X.509 证书存储中搜索的值。 此属性中包含的类型必须满足指定 X509FindType 的需求。 默认值为空字符串。|  
+|`findValue`|一个字符串，包含要在 X.509 证书存储中搜索的值。 此属性中包含的类型必须满足指定 X509FindType 的需求。 默认值为一个空字符串。|  
 |`storeLocation`|指定客户端可用于验证服务器证书的 X.509 证书存储的位置。 有效值包括以下值：<br /><br /> -LocalMachine：分配给本地计算机的证书存储区。<br />-CurrentUser：分配给当前用户的证书存储区。<br /><br /> 默认值为 LocalMachine。|  
 |`storeName`|指定要打开的 X.509 证书存储区的名称。 有效值包括以下值：<br /><br /> -通讯簿：其他用户的证书存储区。<br />-AuthRoot：第三方证书颁发机构的证书存储 (Ca) 。<br />-证书颁发机构：用于中间证书颁发机构的证书存储 (Ca) 。<br />-不允许：吊销的证书的证书存储区。<br />-My：个人证书的证书存储区。<br />-Root：受信任的根证书颁发机构的证书存储 (Ca) 。<br />-TrustedPeople：直接受信任的人和资源的证书存储区。<br />-TrustedPublisher：直接受信任的发布者的证书存储区。<br /><br /> 默认值为 My。|  
 |`X509FindType`|定义要执行的 X.509 搜索的类型。 有效值包括以下值：<br /><br /> -FindByThumbPrint<br />-Findbysubjectname) <br />-FindBySubjectDistinguishedName<br />- FindByIssuerName<br />- FindByIssuerDistinguishedName<br />-FindBySerialNumber<br />- FindByTimeValid<br />- FindByTimeNotYetValid<br />- FindByTemplateName<br />- FindByApplicationPolicy<br />- FindByCertificatePolicy<br />- FindByExtension<br />- FindByKeyUsage<br />- FindBySubjectKeyIdentifier<br /><br /> `findValue` 属性中包含的类型必须满足指定 X509FindType 的要求。<br /><br /> 默认值为 FindBySubjectDistinguishedName。|  

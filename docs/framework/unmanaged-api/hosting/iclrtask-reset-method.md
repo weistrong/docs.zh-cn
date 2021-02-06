@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTask：： Reset 方法
 title: ICLRTask::Reset 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1bfb5d3a-0ffd-4bb4-9bf6-aec00cb675b7
 topic_type:
 - apiref
-ms.openlocfilehash: b87bc026a2cac2d0b913128c43142d56aee03025
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d30738b98003e0543c1a2a31c7471b15811efe5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636983"
 ---
 # <a name="iclrtaskreset-method"></a>ICLRTask::Reset 方法
 
@@ -52,7 +53,7 @@ HRESULT Reset (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 可以回收以前创建的 `ICLRTask` 实例，以避免在每次需要全新任务时重复创建新实例的系统开销。 主机完成任务后，将通过调用 `ICLRTask::Reset` 而不是 [ICLRTask：： ExitTask](iclrtask-exittask-method.md) 来启用此功能。 下面的列表总结了实例的正常生命周期 `ICLRTask` ：  
   
@@ -80,7 +81,7 @@ HRESULT Reset (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

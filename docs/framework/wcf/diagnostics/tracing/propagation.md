@@ -1,13 +1,14 @@
 ---
+description: 了解更多：传播
 title: 传播
 ms.date: 03/30/2017
 ms.assetid: f8181e75-d693-48d1-b333-a776ad3b382a
-ms.openlocfilehash: be010178d8f0face8f6c7e986107e4ea90d91953
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 43ecbf7b8db66f26accc058501730300a2891284
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240129"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635592"
 ---
 # <a name="propagation"></a>传播
 
@@ -81,7 +82,7 @@ ms.locfileid: "96240129"
 
  为了同步不同计算机上运行的各终结点之间的事件，向在消息中传播的 ActivityId 标头中添加了一个 CorrelationId。 工具可使用此 ID 来同步计算机之间具有时钟差的事件。 具体地说，服务跟踪查看器工具可使用此 ID 显示终结点之间的消息流。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [配置跟踪](configuring-tracing.md)
 - [使用服务跟踪查看器查看相关跟踪和进行故障诊断](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorConfiguration：： SetGCThreadControl 方法
 title: ICorConfiguration::SetGCThreadControl 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 72e38e61-3d56-4ae3-b8f6-0ab7922aaf11
 topic_type:
 - apiref
-ms.openlocfilehash: 28b012bbe3f8c11ecd0afb8b5905336bd99c349c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8b9388bdefb9da2ce51b62ab68eeee54645e43ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636619"
 ---
 # <a name="icorconfigurationsetgcthreadcontrol-method"></a>ICorConfiguration::SetGCThreadControl 方法
 
@@ -39,7 +40,7 @@ HRESULT SetGCThreadControl (
  `pGCThreadControl`  
  中指向 [IGCThreadControl](igcthreadcontrol-interface.md) 对象的指针，该对象向宿主通知非运行时任务的线程挂起。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主可以在 [IGCThreadControl：： ThreadIsBlockingForSuspension](igcthreadcontrol-threadisblockingforsuspension-method.md) 回调中选择是否重新计划线程。  
   
@@ -53,6 +54,6 @@ HRESULT SetGCThreadControl (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorConfiguration 接口](icorconfiguration-interface.md)

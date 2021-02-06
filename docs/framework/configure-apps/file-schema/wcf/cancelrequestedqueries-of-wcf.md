@@ -1,13 +1,14 @@
 ---
+description: 了解有关 WCF 的详细信息： <cancelRequestedQueries>
 title: <cancelRequestedQueries> WCF 的
 ms.date: 03/30/2017
 ms.assetid: a7cc7125-9ea3-4d3f-99c0-878cdeb1258a
-ms.openlocfilehash: 205399330c1aa69b332c2149ee32d9b6098ccdbe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3850d7efd01f9092312567a0eba68a6e9547baad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151163"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639180"
 ---
 # <a name="cancelrequestedqueries-of-wcf"></a>\<cancelRequestedQueries> WCF 的
 
@@ -50,13 +51,13 @@ ms.locfileid: "91151163"
   
 ### <a name="child-elements"></a>子元素
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<cancelRequestedQuery>](cancelrequestedquery-of-wcf.md)|一个查询，用于跟踪父活动取消子活动的请求|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<workflow>](../windows-workflow-foundation/workflow.md)|一个配置元素，包含 <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId> 属性所标识的特定工作流的所有查询。|  
   

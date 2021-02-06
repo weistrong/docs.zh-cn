@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EnumImportTypes 方法
 title: EnumImportTypes 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 83a0e4e7-ec06-40cb-9b63-700b9695bb04
 topic_type:
 - apiref
-ms.openlocfilehash: ca7c7570aff63aa328dddc0626648fa74397addc
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 39570740f3560f5bfef8ba80b95c0eb2aca41f59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448733"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638114"
 ---
 # <a name="enumimporttypes-method"></a>EnumImportTypes 方法
 
@@ -46,10 +47,10 @@ HRESULT EnumImportTypes(
 要检索的类型的最大数目。
 
 `aTypeDefs`\
-接收类型标记，而不是超过 `dwMax`。
+接收类型标记，而不是超出 `dwMax` 。
 
 `pdwCount`\
-接收 `aTypeDefs`中类型的实际数量。
+接收中类型的实际数量 `aTypeDefs` 。
 
 ## <a name="return-value"></a>返回值
 
@@ -59,7 +60,7 @@ HRESULT EnumImportTypes(
 
 需要 alink
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink 接口](ialink-interface.md)
 - [IALink2 接口](ialink2-interface.md)

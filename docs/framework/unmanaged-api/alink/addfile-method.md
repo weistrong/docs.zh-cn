@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： AddFile 方法
 title: AddFile 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9e707abb-f905-4568-9356-12aa21d1b11c
 topic_type:
 - apiref
-ms.openlocfilehash: 53ca4005f5681cfc5d550301d8aad1406aceb3a2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5e1253587298b2c1559c72dced43ec70dc169090
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717196"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638621"
 ---
 # <a name="addfile-method"></a>AddFile 方法
 
@@ -63,7 +64,7 @@ HRESULT AddFile(
 
  需要 alink。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink 接口](ialink-interface.md)
 - [IALink2 接口](ialink2-interface.md)

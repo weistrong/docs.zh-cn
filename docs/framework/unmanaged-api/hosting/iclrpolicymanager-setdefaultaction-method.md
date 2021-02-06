@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRPolicyManager：： SetDefaultAction 方法
 title: ICLRPolicyManager::SetDefaultAction 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f9411e7a-27df-451f-9f6c-d643d6a7a7ce
 topic_type:
 - apiref
-ms.openlocfilehash: 93070690ea6b30b22949953f1ed0b8c5b1e92764
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cedf29f6217660493b151e06220158e931385d79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732471"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637360"
 ---
 # <a name="iclrpolicymanagersetdefaultaction-method"></a>ICLRPolicyManager::SetDefaultAction 方法
 
@@ -55,7 +56,7 @@ HRESULT SetDefaultAction (
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_INVALIDARG|为指定了无效的 `action` `operation` ，或者为提供的值无效 `operation` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  并非所有策略操作值都可以指定为 CLR 操作的默认行为。 `SetDefaultAction` 通常只能用于升级行为。 例如，主机可以指定线程中止进入强制线程中止，但不能指定相反的。 下表描述了 `action` 每个可能值的有效值 `operation` 。  
   
@@ -78,7 +79,7 @@ HRESULT SetDefaultAction (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrOperation 枚举](eclroperation-enumeration.md)
 - [EPolicyAction 枚举](epolicyaction-enumeration.md)

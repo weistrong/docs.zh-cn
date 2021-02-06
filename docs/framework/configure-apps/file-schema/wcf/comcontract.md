@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <comContract>
 title: <comContract>
 ms.date: 03/30/2017
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
-ms.openlocfilehash: 35596f32bf0e0de9081bc0d4c33fb370c7ab708b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fde1188a087f13da6629460bcebcea16ceefc0e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173778"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638660"
 ---
 # \<comContract>
 
@@ -51,7 +52,7 @@ ms.locfileid: "91173778"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |contract|一个包含协定类型的字符串。|  
 |name|一个包含协定名称的字符串。|  
@@ -60,7 +61,7 @@ ms.locfileid: "91173778"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |persistableTypes|所有持久类型。|  
 |userDefinedTypes|一个要包括在服务协定中的用户定义的类型 (UDT) 的集合。|  
@@ -68,7 +69,7 @@ ms.locfileid: "91173778"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |comContracts|包含 `comContract` 元素的集合。|  
   

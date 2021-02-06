@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeInfo：： GetRuntimeDirectory 方法
 title: ICLRRuntimeInfo::GetRuntimeDirectory 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4401546e-4d48-453f-a1fb-b2ebda54df5c
 topic_type:
 - apiref
-ms.openlocfilehash: 24679118e4255282f7da3ff8be2ce9c08250e181
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1e833887568d0a61e9ff9ec358b6979a4bacce41
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637087"
 ---
 # <a name="iclrruntimeinfogetruntimedirectory-method"></a>ICLRRuntimeInfo::GetRuntimeDirectory 方法
 
@@ -65,7 +66,7 @@ HRESULT GetRuntimeDirectory(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRRuntimeInfo 接口](iclrruntimeinfo-interface.md)
 - [承载](index.md)

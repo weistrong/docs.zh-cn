@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EnumerateCLRs 函数
 title: EnumerateCLRs 函数
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
 topic_type:
 - apiref
-ms.openlocfilehash: 8fe0df3ee08f9915ed43990b6f9686e25b183a0b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 75124ef1e1e8588cb3d709161c3c1119e960be9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676096"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637776"
 ---
 # <a name="enumerateclrs-function"></a>EnumerateCLRs 函数
 
@@ -66,7 +67,7 @@ HRESULT EnumerateCLRs (
  E_FAIL（或其他 E_ 返回代码）  
  无法枚举加载的 CLR。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  对于由 `debuggeePID` 标识的目标进程，函数将路径数组 `ppStringArrayOut` 返回到进程中加载的 CLR；并返回事件句柄数组 `ppHandleArrayOut`（其中可能包含相同索引处 CLR 的继续启动事件）以及数组的大小 `pdwArrayLengthOut`（它指定已加载的 CLR 的数目）。  
   

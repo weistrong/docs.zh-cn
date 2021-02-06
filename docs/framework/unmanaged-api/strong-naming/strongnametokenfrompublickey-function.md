@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameTokenFromPublicKey 函数
 title: StrongNameTokenFromPublicKey 函数
 ms.date: 03/30/2017
 api_name:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
 topic_type:
 - apiref
-ms.openlocfilehash: 89556cf0e1ef65c35278a526e10fc791063ea2c6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f978c9b2727db4b293b9c92a8789fbf9ba749d41
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636254"
 ---
 # <a name="strongnametokenfrompublickey-function"></a>StrongNameTokenFromPublicKey 函数
 
@@ -34,7 +35,7 @@ ms.locfileid: "95708343"
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-BOOLEANStrongNameTokenFromPublicKey (
+BOOLEAN StrongNameTokenFromPublicKey (
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  
@@ -60,7 +61,7 @@ BOOLEANStrongNameTokenFromPublicKey (
 
  `true` 成功完成时;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  强名称标记是在元数据中存储密钥信息时用于节省空间的公钥的缩写形式。 具体而言，强名称令牌在程序集引用中用于引用依赖程序集。  
   
@@ -76,7 +77,7 @@ BOOLEANStrongNameTokenFromPublicKey (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameTokenFromPublicKey 方法](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
 - [StrongNameGetPublicKey 方法](../hosting/iclrstrongname-strongnamegetpublickey-method.md)

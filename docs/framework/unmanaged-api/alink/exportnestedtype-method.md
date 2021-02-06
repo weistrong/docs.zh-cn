@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ExportNestedType 方法
 title: ExportNestedType 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dec7df60-4d30-47c8-99db-72e0419e5f76
 topic_type:
 - apiref
-ms.openlocfilehash: 69c99e2facfcb9077c3fc4131186ba3882c7cef6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66cf4c3572857a0e7e99efa966cdb0b9ae2be673
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638135"
 ---
 # <a name="exportnestedtype-method"></a>ExportNestedType 方法
 
@@ -71,7 +72,7 @@ HRESULT ExportNestedType(
 
  需要 alink  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink 接口](ialink-interface.md)
 - [IALink2 接口](ialink2-interface.md)

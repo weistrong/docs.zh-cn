@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRMetaHost 接口
 title: ICLRMetaHost 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c627fcdd-fc4f-4b1c-8e91-df8536f627d8
 topic_type:
 - apiref
-ms.openlocfilehash: 75c8d550e572795a291f4639f9f28bd5214ff188
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5dc50af85c067bcb525414e47cddd34070b83a27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637503"
 ---
 # <a name="iclrmetahost-interface"></a>ICLRMetaHost 接口
 
@@ -37,7 +38,7 @@ ms.locfileid: "95714011"
 |[QueryLegacyV2RuntimeBinding 方法](iclrmetahost-querylegacyv2runtimebinding-method.md)|返回一个接口，该接口表示已绑定旧式激活策略的运行时，例如通过使用 `useLegacyV2RuntimeActivationPolicy` [ \<startup> 元素](../../configure-apps/file-schema/startup/startup-element.md)配置文件项上的特性，通过直接使用旧的激活 Api 或通过调用[ICLRRuntimeInfo：： BindAsLegacyV2Runtime](iclrruntimeinfo-bindaslegacyv2runtime-method.md)方法来实现。|  
 |[RequestRuntimeLoadedNotification 方法](iclrmetahost-requestruntimeloadednotification-method.md)|当首次加载 CLR 版本但尚未启动时，保证对指定函数指针的回调。 此方法取代 [LockClrVersion](lockclrversion-function.md)|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  获取此接口实例的唯一方法是调用 [CLRCreateInstance](clrcreateinstance-function.md) 函数，如下所示：  
   
@@ -57,7 +58,7 @@ HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHost,
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)
 - [承载](index.md)

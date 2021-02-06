@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRReferenceAssemblyEnum：： Get 方法
 title: ICLRReferenceAssemblyEnum::Get 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f21c1612-9c5d-4abc-a337-577086d29c17
 topic_type:
 - apiref
-ms.openlocfilehash: 3968adf418fcea847ee2be5a412385d041a53544
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea4e71631a9ebb381f721b78f17507603891a032
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637295"
 ---
 # <a name="iclrreferenceassemblyenumget-method"></a>ICLRReferenceAssemblyEnum::Get 方法
 
@@ -60,7 +61,7 @@ HRESULT Get (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 如果方法返回 E_FAIL，则 CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `Get` 通常称为两次。 第一次调用为提供 null 值 `pwzBuffer` ，并将设置 `pcchBufferSize` 为适合的大小 `pwzBuffer` 。 第二个调用提供适当大小的 `pwzBuffer` ，并在完成时包含规范程序集标识数据。  
   
@@ -74,7 +75,7 @@ HRESULT Get (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)
 - [ICLRReferenceAssemblyEnum 接口](iclrreferenceassemblyenum-interface.md)
