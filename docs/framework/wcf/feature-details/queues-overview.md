@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：队列概述
 title: 队列概述
 ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], MSMQ integration
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
-ms.openlocfilehash: 464b82c41fe1268d53d77f7bf3cb9463cf235072
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8414a8f9121c30a97f5fef5e1f26dfe57abc7956
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99633018"
 ---
 # <a name="queues-overview"></a>队列概述
 
@@ -79,7 +80,7 @@ ms.locfileid: "96244634"
 
  在将消息传送到目标队列后，服务在处理该消息时可能会反复出现故障。 例如，从事务的队列中读取消息和更新数据库的应用程序可能会发现数据库暂时已断开连接。 在这种情况下，事务将回滚，会创建一个新的事务，并从队列中重新读取消息。 第二次尝试可能成功，也可能失败。 在某些情况下，根据错误产生的原因，消息传送到应用程序时可能会反复出现故障。 在这种情况下，该消息被认为是“病毒”。 这些消息将移动到可以通过病毒处理应用程序读取的病毒队列中。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 WCF 中排队](queuing-in-wcf.md)
 - [会话和队列](../samples/sessions-and-queues.md)

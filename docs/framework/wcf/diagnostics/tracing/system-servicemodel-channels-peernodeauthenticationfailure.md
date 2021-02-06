@@ -1,19 +1,20 @@
 ---
+description: 了解有关以下方面的详细信息： PeerNodeAuthenticationFailure
 title: System.ServiceModel.Channels.PeerNodeAuthenticationFailure
 ms.date: 03/30/2017
 ms.assetid: 0b50f782-ca06-4a82-aa7f-71f78ddc5177
-ms.openlocfilehash: d8abfe6e34439ccf399e37c1285b7b71cebf9870
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 751202abd3e199a03fc4ee0bf1252d4a8027e0cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258031"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99634929"
 ---
 # <a name="systemservicemodelchannelspeernodeauthenticationfailure"></a>System.ServiceModel.Channels.PeerNodeAuthenticationFailure
 
 与潜在邻居的安全握手没有成功。  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  此跟踪在尝试建立安全邻居连接时发生。 凭据不充足或不正确可以导致出现此情况。  
   
@@ -23,7 +24,7 @@ ms.locfileid: "96258031"
 
  确保所有邻居都具有适当的安全凭据。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对等通道安全性](../../feature-details/peer-channel-security.md)
 - [跟踪](index.md)

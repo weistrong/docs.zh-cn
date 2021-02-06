@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用传输安全保护消息
 title: 使用传输安全保护消息
 ms.date: 03/30/2017
 ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
-ms.openlocfilehash: b3931d594b585a176be7a9a2e2779df5d844c56b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0d8e84982f68eb8c067d54ac1b0451b17fd03a84
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632758"
 ---
 # <a name="securing-messages-using-transport-security"></a>使用传输安全保护消息
 
@@ -71,7 +72,7 @@ ms.locfileid: "96288589"
   
 ### <a name="msmq-protection-level"></a>MSMQ 保护级别  
 
- 保护级别指示如何保护 MSMQ 消息以确保该消息不会被篡改。 保护级别是在 <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> 属性中指定的。 默认值为 <xref:System.Net.Security.ProtectionLevel.Sign>。  
+ 保护级别指示如何保护 MSMQ 消息以确保该消息不会被篡改。 保护级别是在 <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> 属性中指定的。 默认值是 <xref:System.Net.Security.ProtectionLevel.Sign>。  
   
 #### <a name="sign-protection-level"></a>“签名”保护级别  
 
@@ -109,8 +110,8 @@ ms.locfileid: "96288589"
 
  由于 MD5/SHA1 出现冲突，Microsoft 建议 SHA256 或更好。
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [队列概述](queues-overview.md)
-- [安全性概念](security-concepts.md)
+- [安全概念](security-concepts.md)
 - [保护服务和客户端的安全](securing-services-and-clients.md)

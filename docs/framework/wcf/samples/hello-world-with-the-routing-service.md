@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：与路由服务 Hello World
 title: 通过路由服务进行通信
 ms.date: 03/30/2017
 ms.assetid: 0f4b0d5b-6522-4ad5-9f3a-baa78316d7d1
-ms.openlocfilehash: 3d91634d72481427f04e958f6dc2734829b6158b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1741c7d1f1e474864d66220fd160633997744876
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631965"
 ---
 # <a name="hello-world-with-the-routing-service"></a>通过路由服务进行通信
 
@@ -28,7 +29,7 @@ ms.locfileid: "96253851"
 
 3. 按 Enter 启动客户端。
 
-     你应该会看到以下输出：
+     应会看到以下输出：
 
     ```console
      Add(100,15.99) = 115.99
@@ -44,7 +45,7 @@ ms.locfileid: "96253851"
 
  所提供的示例配置为使用 App.config 文件来定义路由器行为。 也可将 App.config 文件的名称更改为无法识别的其他名称，并将对 ConfigureRouterViaCode() 的方法调用取消注释。 以上任一方法都可产生相同的路由器行为。
 
-### <a name="scenario"></a>场景
+### <a name="scenario"></a>方案
 
  此示例演示作为基本消息泵的路由器。 路由服务用作透明的代理节点，该节点配置为将消息直接传递到目标终结点的预配置集。
 
@@ -61,6 +62,6 @@ ms.locfileid: "96253851"
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AppFabric 承载和持久性示例](/previous-versions/appfabric/ff383418(v=azure.10))

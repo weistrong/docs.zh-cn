@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用模拟和传输安全
 title: 将模拟用于传输安全
 ms.date: 03/30/2017
 ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
-ms.openlocfilehash: 14914bc65d5033c54640e06b79713ea1871daf18
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 49b454369e6bf02c5c3f20661f4116f51c64c6eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632316"
 ---
 # <a name="using-impersonation-with-transport-security"></a>将模拟用于传输安全
 
@@ -17,7 +18,7 @@ ms.locfileid: "96289498"
 
  传输安全使用五级模拟，如下表所述。  
   
-|模拟级别|描述|  
+|模拟级别|说明|  
 |-------------------------|-----------------|  
 |无|服务器应用程序不尝试模拟客户端。|  
 |匿名|服务器应用程序可以对照客户端凭据执行访问检查，但不接收有关客户端标识的任何信息。 此模拟级别仅对计算机上的通信（例如命名管道）有意义。 将 `Anonymous` 用于远程连接会将模拟级别提高到 Identify。|  
@@ -59,7 +60,7 @@ ms.locfileid: "96289498"
   
  有关 HTTP 传输的详细信息，请参阅 [选择传输](choosing-a-transport.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [委托和模拟](delegation-and-impersonation-with-wcf.md)
 - [授权](authorization-in-wcf.md)

@@ -1,15 +1,16 @@
 ---
+description: 了解更多相关信息：如何：在不注册的情况下使用 Windows Communication Foundation 服务名字对象
 title: 如何：使用未注册的 Windows Communication Foundation 服务名字对象
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], service monikers without registration
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8
-ms.openlocfilehash: 41761313fae68a1a348a73f104e21dc19e07eb65
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ed3ea221bc32c4334f609b6740fa10bb63cb2830
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632381"
 ---
 # <a name="how-to-use-the-windows-communication-foundation-service-moniker-without-registration"></a>如何：使用未注册的 Windows Communication Foundation 服务名字对象
 
@@ -59,6 +60,6 @@ binding=WSHttpBinding_IAffiliate, bindingNamespace=http://tempuri.org/
 > [!NOTE]
 > 如果标记格式不正确或者服务不可用，则对 `GetObject` 的调用将返回一个错误，指示“语法无效”。 如果您收到此错误，请确保所使用的标记正确无误且服务可用。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：注册和配置服务名字对象](how-to-register-and-configure-a-service-moniker.md)

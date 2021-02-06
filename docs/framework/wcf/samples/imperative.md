@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：命令式
 title: 命令性
 ms.date: 03/30/2017
 ms.assetid: 4f7ce807-c0e4-407a-92a6-22abafb40b51
-ms.openlocfilehash: 2484b6a6a8e5a62676eb9e9830a91f91ac923eff
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ceaaf6d2bb196a50c0a9a096e39f9b6f78d63a11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144677"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631835"
 ---
 # <a name="imperative"></a>命令性
 
-此示例演示如何使用代码为服务定义 <xref:System.ServiceModel.WSHttpBinding>，而不是在配置中定义 `wsHttpBinding` 绑定。 此示例基于实现计算器服务的[入门](getting-started-sample.md)。
+此示例演示如何使用代码为服务定义 <xref:System.ServiceModel.WSHttpBinding>，而不是在配置中定义 `wsHttpBinding` 绑定。 此示例基于实现计算器服务的 [入门](getting-started-sample.md) 。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
@@ -80,17 +81,17 @@ Press <ENTER> to terminate client.
 
 ## <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 请确保您已为 Windows[通信基础示例执行了一次性设置过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+1. 请确保已 [为 Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
 2. 若要生成 C# 或 Visual Basic .NET 版本的解决方案，请按照 [Building the Windows Communication Foundation Samples](building-the-samples.md)中的说明进行操作。
 
-3. 要在单机或跨计算机配置中运行示例，请按照[运行 Windows 通信基础示例中的](running-the-samples.md)说明操作。
+3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请转到[Windows 通信基础 （WCF） 和 Windows 工作流基础 （WF） 示例 .NET 框架 4](https://www.microsoft.com/download/details.aspx?id=21459)以下载[!INCLUDE[wf1](../../../../includes/wf1-md.md)]所有 Windows 通信基础 （WCF） 和示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Imperative`

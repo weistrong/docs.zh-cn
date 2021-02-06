@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：将自定义绑定用于发现客户端通道
 title: 通过 Discovery 客户端通道使用自定义绑定
 ms.date: 03/30/2017
 ms.assetid: 36f95e75-04f7-44f3-a995-a0d623624d7f
-ms.openlocfilehash: d84739a0021262826c541ab3ff9df663adabf44a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a4dd823aed01785aab4127e4323cdc0a0a6d952a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632368"
 ---
 # <a name="using-a-custom-binding-with-the-discovery-client-channel"></a>通过 Discovery 客户端通道使用自定义绑定
 
@@ -47,7 +48,7 @@ customBinding.Elements.Insert(0, discoveryBindingElement);
   
  有关使用发现客户端通道的详细信息，请参阅 [使用发现客户端通道](using-the-discovery-client-channel.md)。
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF Discovery 概述](wcf-discovery-overview.md)
 - [使用 Discovery 客户端通道](using-the-discovery-client-channel.md)

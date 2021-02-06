@@ -1,23 +1,24 @@
 ---
+description: 了解有关以下方面的详细信息： SocketConnectionAbort
 title: System.ServiceModel.Channels.SocketConnectionAbort
 ms.date: 03/30/2017
 ms.assetid: 5e1a7716-b23a-46c5-952a-19c53b447a71
-ms.openlocfilehash: c05238afd081368b835078815586e022bf2cd554
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d897196f27a99b24db254f3cf23edf7617e3d90f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291942"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99634630"
 ---
 # <a name="systemservicemodelchannelssocketconnectionabort"></a>System.ServiceModel.Channels.SocketConnectionAbort
 
 System.ServiceModel.Channels.SocketConnectionAbort  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  SocketConnection 中止。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

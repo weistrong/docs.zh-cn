@@ -1,23 +1,24 @@
 ---
+description: 了解有关以下方面的详细信息： System.servicemodel.comintegration。 ComIntegrationInvokingMethod
 title: System.ServiceModel.ComIntegration.ComIntegrationInvokingMethod
 ms.date: 03/30/2017
 ms.assetid: dea076f0-1c05-40af-a329-c3e3f7a805c1
-ms.openlocfilehash: bf6395ba6f317c3a9797bf1f26682429e3d61786
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d8115792d85213e1881a6a82d1fa445a7909ff79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99633980"
 ---
 # <a name="systemservicemodelcomintegrationcomintegrationinvokingmethod"></a>System.ServiceModel.ComIntegration.ComIntegrationInvokingMethod
 
 System.ServiceModel.ComIntegration.ComIntegrationInvokingMethod  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  ComPlus: 正在调用方法。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

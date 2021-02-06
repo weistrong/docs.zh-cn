@@ -1,16 +1,17 @@
 ---
+description: 了解更多：有关数据的安全注意事项
 title: 数据的安全考虑事项
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
-ms.openlocfilehash: b9b033f779b083be8bcec195caf8e55607f14d31
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 6e0bf681ad8dd141ad030ef850c3e50c1d6e65c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93188310"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632615"
 ---
 # <a name="security-considerations-for-data"></a>数据的安全考虑事项
 
@@ -44,7 +45,7 @@ Windows Communication Foundation 中的多个位置 (WCF) 基础结构运行用�
 
 当在考虑到安全性的情况下设计可序列化类型时，信息泄露是一个可能需要考虑的问题。
 
-请考虑以下要点：
+请考虑以下几点：
 
 - <xref:System.Runtime.Serialization.DataContractSerializer> 编程模型允许在序列化期间，在类型或程序集的外部公开私有数据和内部数据。 此外，在导出架构的过程中也可以公开类型的形状。 请务必了解类型的序列化工程。 如果您不希望公开任何内容，应禁止对它进行序列化（例如，如果是数据协定，则不应用 <xref:System.Runtime.Serialization.DataMemberAttribute> 属性即可实现此禁止）。
 
@@ -161,7 +162,7 @@ XML 信息集构成 WCF 中所有消息处理的基础。 当接受来自不受�
 
 #### <a name="maxnametablecharcount"></a>MaxNameTableCharCount
 
-此配额限制读取器的名称表  的大小。 名称表包含在处理 XML 文档时遇到的一些字符串（例如，命名空间和前缀）。 因为这些字符串缓冲在内存中，所以设置此配额可防止在预计使用流模式时进行过度缓冲。
+此配额限制读取器的名称表 的大小。 名称表包含在处理 XML 文档时遇到的一些字符串（例如，命名空间和前缀）。 因为这些字符串缓冲在内存中，所以设置此配额可防止在预计使用流模式时进行过度缓冲。
 
 #### <a name="maxstringcontentlength"></a>MaxStringContentLength
 
@@ -242,7 +243,7 @@ XML 信息集构成 WCF 中所有消息处理的基础。 当接受来自不受�
 
 上述每个机制都引入了反序列化程序可加载的更多类型，从而增加了外围应用。 应控制其中的每个机制，确保不会有任何恶意类型或意外的类型添加到已知类型列表中。
 
-一旦已知类型在范围之内，那么即使协定实际禁止使用它，也可以随时加载它，并且可以创建该类型的实例。 例如，假定使用上述某个机制将类型“MyDangerousType”添加到了已知类型列表中。 这表示：
+一旦已知类型在范围之内，那么即使协定实际禁止使用它，也可以随时加载它，并且可以创建该类型的实例。 例如，假定使用上述某个机制将类型“MyDangerousType”添加到了已知类型列表中。 这意味着：
 
 - `MyDangerousType` 已加载并且它的类构造函数已运行。
 

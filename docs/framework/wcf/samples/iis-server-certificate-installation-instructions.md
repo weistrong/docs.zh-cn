@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： Internet Information Services (IIS) 服务器证书安装说明
 title: Internet Information Services (IIS) 服务器证书安装说明
 ms.date: 03/30/2017
 ms.assetid: 11281490-d2ac-4324-8f33-e7714611a34b
-ms.openlocfilehash: 597af9873b4a5c042aec817ac0d26a86bac9ea82
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1ac5209e9ff82911b0631c190e16ff457fea0db6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253786"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631848"
 ---
 # <a name="internet-information-services-iis-server-certificate-installation-instructions"></a>Internet Information Services (IIS) 服务器证书安装说明
 
@@ -21,7 +22,7 @@ ms.locfileid: "96253786"
 makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exchange -sk ServiceModelSamples-HTTPS-Key  
 ```  
   
-## <a name="step-2-installing-certificates"></a>步骤 2。 安装证书  
+## <a name="step-2-installing-certificates"></a>步骤 2. 安装证书  
 
  安装刚刚创建的证书所需执行的步骤取决于您所使用的 IIS 版本。  
   

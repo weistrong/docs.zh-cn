@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Request-Reply 服务
 title: 请求-答复服务
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - WCF [WCF], request-reply services
 - request-reply contracts [WCF]
 ms.assetid: 2fa710f1-47f4-4598-b063-3ab3bd22ebba
-ms.openlocfilehash: 10b82e859369dae4f57e0e13782e2375a304ab02
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 804441d91577623b2a5fac9292f183628f9e542e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295517"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632823"
 ---
 # <a name="request-reply-services"></a>请求-答复服务
 
@@ -31,7 +32,7 @@ public interface IRequestReplyCalculator
   
  您不必将 <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> 属性设置为 `false`，因为这是默认行为。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [单向服务](one-way-services.md)
 - [双工服务](duplex-services.md)

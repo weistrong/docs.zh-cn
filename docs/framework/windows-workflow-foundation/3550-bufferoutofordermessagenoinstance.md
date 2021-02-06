@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3550-BufferOutOfOrderMessageNoInstance
 title: 3550 - BufferOutOfOrderMessageNoInstance
 ms.date: 03/30/2017
 ms.assetid: 1299d294-99b8-430e-98b1-55f5f17002f3
-ms.openlocfilehash: 61605d666911cce277bcebbb0a2f803e9a5dcfeb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cb51f9fa32de1b56560f9593dae2ec82c100dc65
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261301"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631445"
 ---
 # <a name="3550---bufferoutofordermessagenoinstance"></a>3550 - BufferOutOfOrderMessageNoInstance
 
@@ -17,10 +18,10 @@ ms.locfileid: "96261301"
 |-|-|  
 |ID|3550|  
 |关键字|WFServices|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示缓冲接收已失败。 服务实例准备好处理此特定操作时，将再次尝试该操作。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96261301"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |OperationName|xs:string|操作的名称。|  
 |应用程序域|xs:string|由 AppDomain.CurrentDomain.FriendlyName 返回的字符串。|

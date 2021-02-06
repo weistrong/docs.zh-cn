@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：安全会话的安全注意事项
 title: 安全会话的安全注意事项
 ms.date: 03/30/2017
 ms.assetid: 0d5be591-9a7b-4a6f-a906-95d3abafe8db
-ms.openlocfilehash: abfbb565e06059e05eda3900ba9b8769e3657af8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 565797d9354d4c274dd843350d7c9035e5413c07
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276030"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632602"
 ---
 # <a name="security-considerations-for-secure-sessions"></a>安全会话的安全注意事项
 
@@ -23,7 +24,7 @@ ms.locfileid: "96276030"
   
  这意味着，如果希望派生自定义令牌，应该将其子句类型包装在 `SecurityTokenReference` 元素中。 有一个选项可关闭派生，但是默认为派生密钥。 如果无法封装密钥，则对派生密钥令牌进行序列化将成功，但是尝试对其进行反序列化将引发异常。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：在 WSFederationHttpBinding 上禁用安全会话](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
 - [安全注意事项](security-considerations-in-wcf.md)

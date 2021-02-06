@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3507-ServiceEndpointAdded
 title: 3507 - ServiceEndpointAdded
 ms.date: 03/30/2017
 ms.assetid: c068fc0e-07ee-4551-9824-ea7216e1fe37
-ms.openlocfilehash: 903071e7b1f89dc3489b8d3ac05427d699a33a7e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7de51cb8908d3bf4b450c545c1a4c0f2bdc6a453
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631471"
 ---
 # <a name="3507---serviceendpointadded"></a>3507 - ServiceEndpointAdded
 
@@ -17,10 +18,10 @@ ms.locfileid: "96240753"
 |-|-|  
 |ID|3507|  
 |关键字|WFServices|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示添加了服务终结点。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96240753"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |地址|xs:string|终结点的地址。|  
 |绑定|xs:string|终结点的绑定。|  

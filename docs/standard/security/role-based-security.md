@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Role-Based 安全性
 title: 基于角色的安全性
 ms.date: 07/15/2020
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - authentication [.NET], principals
 - role-based security, principals
 ms.assetid: 578cc32b-5654-4d8b-9d8c-ebcbc5c75390
-ms.openlocfilehash: a03cda3aac06cc247818ccea5c61c673225d7929
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 66457248ccfaa8535ce150e7654cd5be20fb6a68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629521"
 ---
 # <a name="role-based-security"></a>基于角色的安全性
 
@@ -29,7 +30,7 @@ ms.locfileid: "94824130"
   
  阅读本部分之前，请确保了解 [关键安全概念](key-security-concepts.md)中介绍的内容。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
   
 - [主体和标识对象](principal-and-identity-objects.md)
 - [安全性的基础概念](key-security-concepts.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 2576-TryCatchExceptionFromTry
 title: 2576 - TryCatchExceptionFromTry
 ms.date: 03/30/2017
 ms.assetid: 47e48973-b17c-4a16-8338-c84b54aa0a6e
-ms.openlocfilehash: 722d5206322c2a9abacbca554d489ba2f6efe357
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 83e26726377a9f8bbedda2a310dcf4ee6928d3a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235826"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631512"
 ---
 # <a name="2576---trycatchexceptionfromtry"></a>2576 - TryCatchExceptionFromTry
 
@@ -17,10 +18,10 @@ ms.locfileid: "96235826"
 |-|-|  
 |ID|2576|  
 |关键字|WFActivities|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示 TryCatch 活动捕获了异常。  
   

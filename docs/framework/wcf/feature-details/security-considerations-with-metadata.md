@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：元数据的安全注意事项
 title: 元数据的安全注意事项
 ms.date: 03/30/2017
 ms.assetid: e78ef8ab-4f63-4656-ab93-b1deab2666d5
-ms.openlocfilehash: c7a00d5abc9cc88b60208bd76fa8874f1fe00af9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 219222c2a7b6032684e6368a7907c43ef112aa5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632459"
 ---
 # <a name="security-considerations-with-metadata"></a>元数据的安全注意事项
 
@@ -45,7 +46,7 @@ ms.locfileid: "96275991"
 
  服务的应用程序配置文件可以控制是否发布元数据以及如何发布元数据。 最好利用适当的访问控制列表 (ACL) 来保护应用程序配置文件，以确保攻击者无法修改此类设置。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：保护元数据终结点](how-to-secure-metadata-endpoints.md)
 - [安全性](security.md)

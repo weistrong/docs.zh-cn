@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：默认服务行为
 title: 默认服务行为
 ms.date: 03/30/2017
 helpviewer_keywords:
 - service behaviors, defaults
 - Default Service Behavior Sample [Windows Communication Foundation]
 ms.assetid: 442d4f71-c64e-4c62-816a-a66c38e7d3ec
-ms.openlocfilehash: acdb4652c0f49b610b8e7cad2aa5c0074fe00511
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a0b83180c9ab758cb7a8db7f92a8bf0c081e4489
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292748"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631978"
 ---
 # <a name="default-service-behavior"></a>默认服务行为
 
@@ -48,7 +49,7 @@ public class CalculatorService : ICalculator
   
  服务行为是使用 <xref:System.ServiceModel.ServiceBehaviorAttribute> 属性指定的。 下表描述了其中的一些行为。  
   
-|服务行为|描述|  
+|服务行为|说明|  
 |----------------------|-----------------|  
 |<xref:System.ServiceModel.ServiceBehaviorAttribute.AutomaticSessionShutdown%2A>|在客户端的请求下自动关闭会话。|  
 |<xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>|指定每个服务实例的并发模式。|  
@@ -60,7 +61,7 @@ public class CalculatorService : ICalculator
   
  操作行为是使用 <xref:System.ServiceModel.OperationBehaviorAttribute> 属性指定的。 下表描述了其中的一些行为。  
   
-|操作行为|描述|  
+|操作行为|说明|  
 |------------------------|-----------------|  
 |<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A>|确定服务操作的完成是否提交当前事务。|  
 |<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A>|确定服务操作是否在客户端流动的事务中登记。|  

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 39460-TrackingValueNotSerializable
 title: 39460 - TrackingValueNotSerializable
 ms.date: 03/30/2017
 ms.assetid: 476a29ad-24d8-4359-8c17-d4e20c1e1c15
-ms.openlocfilehash: 0ffa33f78f0f3c4eaf2c7519ac27207c095d8c17
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d53406344b4683876615c3859721891ef7588ee9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275848"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631263"
 ---
 # <a name="39460---trackingvaluenotserializable"></a>39460 - TrackingValueNotSerializable
 
@@ -17,10 +18,10 @@ ms.locfileid: "96275848"
 |-|-|  
 |ID|39460|  
 |关键字|WFTracking|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示所提取的自变量/变量不可序列化。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96275848"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
-|“属性”|xs:string|项的名称。|  
+|名称|xs:string|项的名称。|  
 |应用程序域|xs:string|由 AppDomain.CurrentDomain.FriendlyName 返回的字符串。|

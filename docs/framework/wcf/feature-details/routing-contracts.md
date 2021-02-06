@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：路由约定
 title: 路由协定
 ms.date: 03/30/2017
 ms.assetid: 9ceea7ae-ea19-4cf9-ba4f-d071e236546d
-ms.openlocfilehash: 4c75034a8fdbf02bf568bc5392361113a37427be
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7ccdb281402bdf61d3ba27f97019fd3126bdf29b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632784"
 ---
 # <a name="routing-contracts"></a>路由协定
 
@@ -28,7 +29,7 @@ ms.locfileid: "96295491"
 |<xref:System.ServiceModel.Routing.IRequestReplyRouter>|SessionMode = SessionMode.Allowed<br /><br /> AsyncPattern = true|IReplyChannel-> IRequestChannel|  
 |<xref:System.ServiceModel.Routing.IDuplexSessionRouter>|SessionMode=SessionMode.Required<br /><br /> CallbackContract=typeof(ISimplexSession)<br /><br /> AsyncPattern = true<br /><br /> IsOneWay = true<br /><br /> TransactionFlow(TransactionFlowOption.Allowed)|IDuplexSessionChannel-> IDuplexSessionChannel|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [路由服务](routing-service.md)
 - [路由简介](routing-introduction.md)

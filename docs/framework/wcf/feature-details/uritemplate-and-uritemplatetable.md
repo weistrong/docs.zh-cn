@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： UriTemplate 和 UriTemplateTable
 title: UriTemplate 和 UriTemplateTable
 ms.date: 03/30/2017
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
-ms.openlocfilehash: 212cc0a7f90ac2e74837118a905519148ddc089d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7abcf0125108e4f48e392e8bb817dda77dfedd38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632407"
 ---
 # <a name="uritemplate-and-uritemplatetable"></a>UriTemplate 和 UriTemplateTable
 
@@ -336,7 +337,7 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 > [!NOTE]
 > 作为 URI 路径或 <xref:System.UriTemplate> 路径段文本的组成部分时，字符 á 和 Á 视为不同的字符（但字符 a 和 A 视为相同的字符）。 如果字符作为 {variableName} 或查询字符串的一部分出现，则将其视为相同的字符 <xref:System.UriTemplate> ，并且 (和也被视为相同的字符) 。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF Web HTTP 编程模型概述](wcf-web-http-programming-model-overview.md)
 - [WCF Web HTTP 编程对象模型](wcf-web-http-programming-object-model.md)
