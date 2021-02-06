@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugType：： EnumerateTypeParameters 方法
 title: ICorDebugType::EnumerateTypeParameters 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1ee1f6e6-1bd7-4ebb-83b8-ff9a08ca03de
 topic_type:
 - apiref
-ms.openlocfilehash: 3717497ab6e72f0ce67f688813ee7264206e8c84
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5189394cbb39cd133ebce494107f4ca65660bb5b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727947"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658407"
 ---
 # <a name="icordebugtypeenumeratetypeparameters-method"></a>ICorDebugType::EnumerateTypeParameters 方法
 
@@ -39,7 +40,7 @@ HRESULT EnumerateTypeParameters (
  `ppTyParEnum`  
  弄指向 `ICorDebugTypeEnum` 包含类型参数的的地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `EnumerateTypeParameters`如果[ICorDebugType：： GetType](icordebugtype-gettype-method.md)返回的 CorElementType 值为 ELEMENT_TYPE_CLASS、ELEMENT_TYPE_VALUETYPE、ELEMENT_TYPE_ARRAY、ELEMENT_TYPE_SZARRAY、ELEMENT_TYPE_BYREF、ELEMENT_TYPE_PTR 或 ELEMENT_TYPE_FNPTR，则可以使用。 参数的数量及其顺序取决于类型：  
   

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugThread2：： GetActiveFunctions 方法
 title: ICorDebugThread2::GetActiveFunctions 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 27fae01a-ecec-423a-973e-24f8de55826c
 topic_type:
 - apiref
-ms.openlocfilehash: 2d5674d6b5962ca539de02cda1e5658daed83622
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 841e8ff17f15cfb14e1c1bf65c651a5177db2eaa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658758"
 ---
 # <a name="icordebugthread2getactivefunctions-method"></a>ICorDebugThread2::GetActiveFunctions 方法
 
@@ -50,7 +51,7 @@ HRESULT GetActiveFunctions (
   
  第一个元素将用于叶帧，并回到堆栈的根目录。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `pFunctions` 在输入时为 null，则 `GetActiveFunctions` 仅返回堆栈上的函数数目。 也就是说，如果在 `pFunctions` 输入时为 null，则 `GetActiveFunctions` 仅返回中的值 `pcFunctions` 。  
   

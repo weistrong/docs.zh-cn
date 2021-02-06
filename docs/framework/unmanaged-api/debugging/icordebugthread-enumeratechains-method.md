@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugThread：： EnumerateChains 方法
 title: ICorDebugThread::EnumerateChains 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ec00bc21-117e-4acd-9301-2cfafd5be8d3
 topic_type:
 - apiref
-ms.openlocfilehash: 76b231f00651186518d3bccfafa5780f258c4f75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b9184a1b298e1d29970c5e56ceca76715b0ed096
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688180"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659291"
 ---
 # <a name="icordebugthreadenumeratechains-method"></a>ICorDebugThread::EnumerateChains 方法
 
@@ -39,7 +40,7 @@ HRESULT EnumerateChains (
  `ppChains`  
  弄指向对象地址的指针，该 `ICorDebugChainEnum` 对象允许枚举此线程中的所有堆栈链，从活动 (开始，即最近的) 链。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  堆栈链表示线程的物理调用堆栈。 以下情况会创建堆栈链边界：  
   

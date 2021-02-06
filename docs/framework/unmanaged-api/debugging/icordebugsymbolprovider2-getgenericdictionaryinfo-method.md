@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugSymbolProvider2：： GetGenericDictionaryInfo 方法
 title: ICorDebugSymbolProvider2::GetGenericDictionaryInfo 方法
 ms.date: 03/30/2017
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593
-ms.openlocfilehash: a6c32b72c5924399aeb13d56ddf9242fe7990f35
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 3488cab9ee21ea027e16089f066369ab8c6c69d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659538"
 ---
 # <a name="icordebugsymbolprovider2getgenericdictionaryinfo-method"></a>ICorDebugSymbolProvider2::GetGenericDictionaryInfo 方法
 
@@ -24,7 +25,7 @@ HRESULT GetGenericDictionaryInfo(
 ## <a name="parameters"></a>参数
 
 `ppMemoryBuffer`\
-弄指向包含泛型字典映射的[ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md)对象地址的指针。 有关详细信息，请参阅“备注”部分。
+弄指向包含泛型字典映射的 [ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md) 对象地址的指针。 有关详细信息，请参阅备注部分。
 
 ## <a name="remarks"></a>备注
 
@@ -33,9 +34,9 @@ HRESULT GetGenericDictionaryInfo(
 
 该映射由两个顶级部分组成：
 
-- 一个[目录](#Directory)，其中包含此映射中包含的所有字典的相对虚拟地址（RVA）。
+- 包含此地图中包含的所有字典的相对虚拟地址 (RVA) 的 [目录](#Directory) 。
 
-- 一个字节对齐的[堆](#Heap)，其中包含对象实例化信息。 在最后一个目录输入后立即开始。
+- 一个字节对齐的 [堆](#Heap) ，其中包含对象实例化信息。 在最后一个目录输入后立即开始。
 
 <a name="Directory"></a>
 
@@ -45,9 +46,9 @@ HRESULT GetGenericDictionaryInfo(
 
 泛型字典映射的目录部分具有以下结构：
 
-- 前 4 个字节包含字典条目的数量（也就是说，字典中的相对虚拟地址数）。 我们将此值称为*N*。如果设置了高位，则按相对虚拟地址（升序）对项进行排序。
+- 前 4 个字节包含字典条目的数量（也就是说，字典中的相对虚拟地址数）。 我们将此值称为 *N*。如果设置了高位，则按相对虚拟地址（升序）对项进行排序。
 
-- *N*目录项跟随。 每个条目由 8 个字节（两个 4 字节段）构成：
+- *N* 目录项跟随。 每个条目由 8 个字节（两个 4 字节段）构成：
 
   - 字节 0-3：RVA；字典的相对虚拟地址。
 
@@ -57,7 +58,7 @@ HRESULT GetGenericDictionaryInfo(
 
 ## <a name="the-heap"></a>堆
 
-可用流读取器计算堆的大小，计算方法是目录大小 + 4 再减去流的长度。 换言之：
+可用流读取器计算堆的大小，计算方法是目录大小 + 4 再减去流的长度。 换句话说：
 
 ```csharp
 Heap Size = Stream.Length – (Directory Size + 4)
@@ -69,15 +70,15 @@ Heap Size = Stream.Length – (Directory Size + 4)
 
 - 此实例化信息项的长度（采用压缩 ECMA 元数据格式，以字节为单位）。 该值不包括此长度信息。
 
-- 采用压缩 ECMA 元数据格式的泛型实例化类型或*T*的数目。
+- 采用压缩 ECMA 元数据格式的泛型实例化类型或 *T* 的数目。
 
-- *T*类型，每个类型都以 ECMA 类型签名格式表示。
+- *T* 类型，每个类型都以 ECMA 类型签名格式表示。
 
 包含每个堆元素的长度使目录部分实现简单排序，而不对堆造成影响。
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
 
 **标头**：CorDebug.idl、CorDebug.h
 

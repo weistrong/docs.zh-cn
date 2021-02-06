@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugSymbolProvider 接口
 title: ICorDebugSymbolProvider 接口
 ms.date: 03/30/2017
 ms.assetid: 85b24196-b6c6-4bda-9de3-47180bd6ff96
-ms.openlocfilehash: ff1f39be3d3db43f70cfa4a0711a3f42c180bc1a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bd47f294092ee87fc1f34bc68fe744b447e21f20
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659570"
 ---
 # <a name="icordebugsymbolprovider-interface"></a>ICorDebugSymbolProvider 接口
 
@@ -29,7 +30,7 @@ ms.locfileid: "95672079"
 |[GetStaticFieldSymbols 方法](icordebugsymbolprovider-getstaticfieldsymbols-method.md)|获取与 Typespec 签名相对应的静态字段符号。|  
 |[GetTypeProps 方法](icordebugsymbolprovider-gettypeprops-method.md)|给定 vtable 中的相对虚拟地址 (RVA)，返回类型的属性信息（例如其泛型参数的签名数量）。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口仅适用于 .NET Native。 如果在 .NET Native 外为 ICorDebug 方案实现此接口，则公共语言运行时将忽略此接口。  
@@ -44,7 +45,7 @@ ms.locfileid: "95672079"
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugSymbolProvider：： GetTypeProps 方法
 title: ICorDebugSymbolProvider::GetTypeProps 方法
 ms.date: 03/30/2017
 ms.assetid: 35ac4140-91ea-4c77-b1c4-1daf41986ca5
-ms.openlocfilehash: 4738d35aabbc2197c796405e0657607f75ff685d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b6a4a5a68e1e377fa839940832dfc49574009641
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95694498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659655"
 ---
 # <a name="icordebugsymbolprovidergettypeprops-method"></a>ICorDebugSymbolProvider::GetTypeProps 方法
 
@@ -38,7 +39,7 @@ HRESULT GetTypeProps(
  `signature`  
  [out] 保存所有泛型参数的 typespec 签名的缓冲区。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  若要获取类型的数组的所需大小 `signature` ，请将 `cbSignature` 参数设置为0，将设置 `signature` 为 **null**。 当该方法返回时，`pcbSignature` 将包含 `signature` 数组所需的字节数。  
   
@@ -55,7 +56,7 @@ HRESULT GetTypeProps(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetMethodProps 方法](icordebugsymbolprovider-getmethodprops-method.md)
 - [ICorDebugSymbolProvider 接口](icordebugsymbolprovider-interface.md)

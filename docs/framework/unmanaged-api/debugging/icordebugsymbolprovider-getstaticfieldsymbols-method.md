@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugSymbolProvider：： GetStaticFieldSymbols 方法
 title: ICorDebugSymbolProvider::GetStaticFieldSymbols 方法
 ms.date: 03/30/2017
 ms.assetid: b178367f-a6e4-413c-b06f-daf3804b456b
-ms.openlocfilehash: 09e68c751da6500c5580f4945e8dd1c486a09217
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e95f77be86ef88a73ca4c833b242617a0d405e21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659695"
 ---
 # <a name="icordebugsymbolprovidergetstaticfieldsymbols-method"></a>ICorDebugSymbolProvider::GetStaticFieldSymbols 方法
 
@@ -42,7 +43,7 @@ HRESULT GetStaticFieldSymbols(
  `pSymbols`  
  弄指向 [ICorDebugStaticFieldSymbol](icordebugstaticfieldsymbol-interface.md) 数组的指针，该数组包含请求的静态字段符号。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -57,7 +58,7 @@ HRESULT GetStaticFieldSymbols(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetInstanceFieldSymbols 方法](icordebugsymbolprovider-getinstancefieldsymbols-method.md)
 - [ICorDebugSymbolProvider 接口](icordebugsymbolprovider-interface.md)

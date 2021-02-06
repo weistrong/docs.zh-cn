@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugThread：： GetUserState 方法
 title: ICorDebugThread::GetUserState 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ae0cfd73-8ead-4d36-9310-dccaac9db0bd
 topic_type:
 - apiref
-ms.openlocfilehash: dd3936656ce1c9482b7f07a5780fcf651356b4be
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b63b474525534f9e934954ebe660691db90b8b67
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727960"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658862"
 ---
 # <a name="icordebugthreadgetuserstate-method"></a>ICorDebugThread::GetUserState 方法
 
@@ -39,7 +40,7 @@ HRESULT GetUserState (
  `pState`  
  弄一个指针，指向用于描述此线程当前用户状态的 CorDebugUserState 枚举值的按位组合。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  线程的用户状态是由正在调试的程序检查的线程的状态。 线程可能会设置多个状态位。  
   

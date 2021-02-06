@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugSymbolProvider：： GetMethodProps 方法
 title: ICorDebugSymbolProvider::GetMethodProps 方法
 ms.date: 03/30/2017
 ms.assetid: 8f836b80-b7a5-460b-bf76-5f0e45652aea
-ms.openlocfilehash: 5412b2f06445627c1240d6c8f4efb3ce6bbbec54
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 53a329426ecadfe5559c0e6a08ffbd250163e177
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659720"
 ---
 # <a name="icordebugsymbolprovidergetmethodprops-method"></a>ICorDebugSymbolProvider::GetMethodProps 方法
 
@@ -46,7 +47,7 @@ HRESULT GetMethodProps(
  `signature`  
  [out] 保存所有泛型参数的 typespec 签名的缓冲区。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  若要获取方法的数组的所需大小 `signature` ，请将 `cbSignature` 参数设置为0，将设置 `signature` 为 **null**。 当该方法返回时，`pcbSignature` 将包含 `signature` 数组所需的字节数。  
   
@@ -63,7 +64,7 @@ HRESULT GetMethodProps(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetTypeProps 方法](icordebugsymbolprovider-gettypeprops-method.md)
 - [ICorDebugSymbolProvider 接口](icordebugsymbolprovider-interface.md)

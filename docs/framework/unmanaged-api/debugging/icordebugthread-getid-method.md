@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugThread：： GetID 方法
 title: ICorDebugThread::GetID 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f1de4584-92df-42f3-9da4-fca03a1c6821
 topic_type:
 - apiref
-ms.openlocfilehash: 85cfd7ba648f21721f1a9689843eac232489cb42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d089201527da67299b64cdf074bdd331f22375a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659070"
 ---
 # <a name="icordebugthreadgetid-method"></a>ICorDebugThread::GetID 方法
 
@@ -39,7 +40,7 @@ HRESULT GetID (
  `pdwThreadId`  
  弄线程的标识符。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  操作系统标识符在进程执行期间可能会发生更改，并且可以是线程的不同部分的不同值。  
   
