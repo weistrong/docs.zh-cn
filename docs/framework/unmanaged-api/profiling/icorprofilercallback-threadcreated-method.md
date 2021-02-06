@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ThreadCreated 方法
 title: ICorProfilerCallback::ThreadCreated 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cca0f799-09b8-4689-a33c-6d6537943a9b
 topic_type:
 - apiref
-ms.openlocfilehash: 72b074d1794a6039060cbd84aabb0bc0155c154e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8b6208856b78298f643161cd6bb78773ac86bc3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657195"
 ---
 # <a name="icorprofilercallbackthreadcreated-method"></a>ICorProfilerCallback::ThreadCreated 方法
 
@@ -38,7 +39,7 @@ HRESULT ThreadCreated(
  `threadId`  
  中已创建的线程的 ID。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `threadId`值立即有效。  
   
@@ -52,7 +53,7 @@ HRESULT ThreadCreated(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ThreadDestroyed 方法](icorprofilercallback-threaddestroyed-method.md)

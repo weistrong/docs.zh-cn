@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4016-MessageQueueDuplicatedSocketError
 title: 4016 - MessageQueueDuplicatedSocketError
 ms.date: 03/30/2017
 ms.assetid: 4c35cf2c-e6fc-48e2-bc40-3af01cb5d31e
-ms.openlocfilehash: 0869bba55a92d6ca555ea4f4ee2fc4b2bcc4ec66
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 93f2f18b6e761a52c42d766cf904c53559c0b56e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292423"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656808"
 ---
 # <a name="4016---messagequeueduplicatedsocketerror"></a>4016 - MessageQueueDuplicatedSocketError
 
@@ -17,10 +18,10 @@ ms.locfileid: "96292423"
 |-|-|  
 |ID|4016|  
 |关键字|ActivationServices|  
-|Level|错误|  
+|级别|错误|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当消息队列复制套接字失败时，将发出此事件。  
   

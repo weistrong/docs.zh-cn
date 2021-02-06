@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4015-MessageQueueRegisterCompleted
 title: 4015 - MessageQueueRegisterCompleted
 ms.date: 03/30/2017
 ms.assetid: d8d65570-9dcc-436c-b446-a33404e31652
-ms.openlocfilehash: ae45ccf730077ddabbd09d94b63ebd060a9c7ddb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f02675c8e0f4740d1b13fd28eb166ef6b6324789
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656821"
 ---
 # <a name="4015---messagequeueregistercompleted"></a>4015 - MessageQueueRegisterCompleted
 
@@ -17,10 +18,10 @@ ms.locfileid: "96266124"
 |-|-|  
 |ID|4015|  
 |关键字|ActivationServices|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当消息队列注册完成时，将发出此事件。  
   

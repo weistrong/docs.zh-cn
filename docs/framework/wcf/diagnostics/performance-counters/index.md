@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： WCF 性能计数器
 title: WCF 性能计数器
 ms.date: 03/30/2017
 helpviewer_keywords:
 - performance counters [WCF]
 ms.assetid: f559b2bd-ed83-4988-97a1-e88f06646609
-ms.openlocfilehash: a5b00980cb8c2b06b224630e766e49bafe343c76
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c6572ece289fb550dd4974a8f8e957f7d3ef51b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266098"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655339"
 ---
 # <a name="wcf-performance-counters"></a>WCF 性能计数器
 
@@ -79,7 +80,7 @@ config.Save();
 
  性能计数器可分为三个不同级别：服务、终结点和操作。  
   
- 可以使用 WMI 检索性能计数器实例的名称。 例如，  
+ 可以使用 WMI 检索性能计数器实例的名称。 例如，应用于对象的  
   
 - 可以通过 WMI [服务](../wmi/service.md) 实例的 "CounterInstanceName" 属性获取服务计数器实例名称。  
   
@@ -137,6 +138,6 @@ SDK 安装文件夹中安装了几个文件，以便您可以通过编程方式�
   
 有关如何以编程方式访问计数器的详细信息，请参阅 [性能计数器编程体系结构](/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90))。
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [管理和诊断](../index.md)

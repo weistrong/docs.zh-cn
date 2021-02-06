@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4023-WasCloseAllListenerChannelInstancesCompleted
 title: 4023 - WasCloseAllListenerChannelInstancesCompleted
 ms.date: 03/30/2017
 ms.assetid: 95dd5810-78a5-4183-98ef-77267dd64aac
-ms.openlocfilehash: 65e25d04b6d230b6cc14d2a422971590e86d3ff6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 77289a82f5b2ac950f357ee7f9f9f8b4e87385c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242508"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656626"
 ---
 # <a name="4023---wasclosealllistenerchannelinstancescompleted"></a>4023 - WasCloseAllListenerChannelInstancesCompleted
 
@@ -17,10 +18,10 @@ ms.locfileid: "96242508"
 |-|-|  
 |ID|4023|  
 |关键字|ActivationServices|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当所有侦听器通道实例关闭完成时，发出此事件。  
   

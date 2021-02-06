@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4028-PipeTransportListenerListeningStart
 title: 4028 - PipeTransportListenerListeningStart
 ms.date: 03/30/2017
 ms.assetid: 75f83342-09bc-4ab5-b363-01b3cebcc821
-ms.openlocfilehash: 9b407c2a00fd57c0a4bec3f25e16242d71e1836d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7cb140ec130e5f32b7f4ccb80c1223c9b2be1940
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238361"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656444"
 ---
 # <a name="4028---pipetransportlistenerlisteningstart"></a>4028 - PipeTransportListenerListeningStart
 
@@ -20,7 +21,7 @@ ms.locfileid: "96238361"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当开始管道传输侦听器侦听时，发出此事件。  
   

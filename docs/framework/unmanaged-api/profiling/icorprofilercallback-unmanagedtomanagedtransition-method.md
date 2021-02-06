@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： UnmanagedToManagedTransition 方法
 title: ICorProfilerCallback::UnmanagedToManagedTransition 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ade2cc01-9b81-4e09-a5f9-b3b9dda27e96
 topic_type:
 - apiref
-ms.openlocfilehash: 446de663d437c950f3a9be968e7dcbe8d25ed2b0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2b2bd86798df8b8c46506c924ee201c191e6cb82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717223"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657118"
 ---
 # <a name="icorprofilercallbackunmanagedtomanagedtransition-method"></a>ICorProfilerCallback::UnmanagedToManagedTransition 方法
 
@@ -42,7 +43,7 @@ HRESULT UnmanagedToManagedTransition(
  `reason`  
  中一个 [COR_PRF_TRANSITION_REASON](cor-prf-transition-reason-enumeration.md) 枚举的值，该值指示是否由于从非托管代码调用托管代码而发生了转换，或是否是由托管函数调用的非托管函数返回。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果的值 `reason` 为 COR_PRF_TRANSITION_RETURN 且不为 `functionId` null，则函数 ID 将为非托管函数的，并且永远不会使用实时 (JIT) 编译器进行编译。 非托管函数有一些与之关联的基本信息，如名称和某些元数据。  
   
@@ -58,7 +59,7 @@ HRESULT UnmanagedToManagedTransition(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ManagedToUnmanagedTransition 方法](icorprofilercallback-managedtounmanagedtransition-method.md)

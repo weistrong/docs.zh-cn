@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo2：： GetFunctionInfo2 方法
 title: ICorProfilerInfo2::GetFunctionInfo2 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0aa60f24-8bbd-4c83-83c5-86ad191b1d82
 topic_type:
 - apiref
-ms.openlocfilehash: e44b8afe22fdb10077048dc7bc2ccb1f605edd75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f0534a2e8cc8a9ce24f2c2b3deaade6215e15b5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657068"
 ---
 # <a name="icorprofilerinfo2getfunctioninfo2-method"></a>ICorProfilerInfo2::GetFunctionInfo2 方法
 
@@ -66,7 +67,7 @@ HRESULT GetFunctionInfo2(
  `typeArgs`  
  [out] 一个由 `ClassID` 值构成的数组，其中的每个值都是函数的类型参数的 ID。 方法返回时，`typeArgs` 将包含部分或全部 `ClassID` 值。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器代码可调用 [ICorProfilerInfo：： GetModuleMetaData](icorprofilerinfo-getmodulemetadata-method.md) 以获取给定模块的 [元数据](../metadata/index.md) 接口。 然后，返回到 `pToken` 所引用位置的元数据标记便可用于访问该函数的元数据。  
   
@@ -76,7 +77,7 @@ HRESULT GetFunctionInfo2(
 |----------------------------------------|------------|  
 |从 `FunctionEnter2` 回调中获得的 `COR_PRF_FRAME_INFO` 值|在 `pClassId` 所引用位置中返回的 `ClassID` 以及在 `typeArgs` 数组中返回的所有类型参数都将是准确的。|  
 |从 `FunctionEnter2` 回调以外的源中获得的 `COR_PRF_FRAME_INFO`|无法确定准确的 `ClassID` 和类型参数。 也就是说，`ClassID` 可能为 NULL，并且某些类型参数可能作为 <xref:System.Object> 返回。|  
-|零个|无法确定准确的 `ClassID` 和类型参数。 也就是说，`ClassID` 可能为 NULL，并且某些类型参数可能作为 <xref:System.Object> 返回。|  
+|零|无法确定准确的 `ClassID` 和类型参数。 也就是说，`ClassID` 可能为 NULL，并且某些类型参数可能作为 <xref:System.Object> 返回。|  
   
  `GetFunctionInfo2` 返回后，必须验证 `typeArgs` 缓冲区是否足够大，可包含所有 `ClassID` 值。 为此，请比较 `pcTypeArgs` 指向的值和 `cTypeArgs` 参数的值。 如果 `pcTypeArgs` 指向大于`cTypeArgs` 除以 `ClassID` 值大小的值，请分配更大的 `pcTypeArgs` 缓冲区，使用新的、更大的大小更新 `cTypeArgs`，然后再次调用 `GetFunctionInfo2`。  
   
@@ -92,7 +93,7 @@ HRESULT GetFunctionInfo2(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 接口](icorprofilerinfo2-interface.md)
