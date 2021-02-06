@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ExceptionOSHandlerLeave 方法
 title: ICorProfilerCallback::ExceptionOSHandlerLeave 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,34 +16,34 @@ helpviewer_keywords:
 ms.assetid: 4d164676-0ee9-4f67-a8ea-cb474db09053
 topic_type:
 - apiref
-ms.openlocfilehash: 37e3c9139a202e3cb31bd824d182389ae10b7389
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 809f9440510bc0b55c9cae9827757eb61e61b257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699919"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657549"
 ---
-# <a name="icorprofilercallbackexceptionoshandlerleave-method"></a><span data-ttu-id="4bf60-102">ICorProfilerCallback::ExceptionOSHandlerLeave 方法</span><span class="sxs-lookup"><span data-stu-id="4bf60-102">ICorProfilerCallback::ExceptionOSHandlerLeave Method</span></span>
+# <a name="icorprofilercallbackexceptionoshandlerleave-method"></a><span data-ttu-id="ca7aa-103">ICorProfilerCallback::ExceptionOSHandlerLeave 方法</span><span class="sxs-lookup"><span data-stu-id="ca7aa-103">ICorProfilerCallback::ExceptionOSHandlerLeave Method</span></span>
 
-<span data-ttu-id="4bf60-103">未实现。</span><span class="sxs-lookup"><span data-stu-id="4bf60-103">Not implemented.</span></span> <span data-ttu-id="4bf60-104">需要非托管异常信息的探查器必须通过其他方式获取此信息。</span><span class="sxs-lookup"><span data-stu-id="4bf60-104">A profiler that needs unmanaged exception information must obtain this information through other means.</span></span>  
+<span data-ttu-id="ca7aa-104">未实现。</span><span class="sxs-lookup"><span data-stu-id="ca7aa-104">Not implemented.</span></span> <span data-ttu-id="ca7aa-105">需要非托管异常信息的探查器必须通过其他方式获取此信息。</span><span class="sxs-lookup"><span data-stu-id="ca7aa-105">A profiler that needs unmanaged exception information must obtain this information through other means.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4bf60-105">语法</span><span class="sxs-lookup"><span data-stu-id="4bf60-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ca7aa-106">语法</span><span class="sxs-lookup"><span data-stu-id="ca7aa-106">Syntax</span></span>  
   
 ```cpp  
 HRESULT ExceptionOSHandlerLeave(  
     [in] UINT_PTR __unused);  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="4bf60-106">要求</span><span class="sxs-lookup"><span data-stu-id="4bf60-106">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="ca7aa-107">要求</span><span class="sxs-lookup"><span data-stu-id="ca7aa-107">Requirements</span></span>  
 
- <span data-ttu-id="4bf60-107">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="4bf60-107">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="ca7aa-108">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="ca7aa-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="4bf60-108">**头文件：** CorProf.idl、CorProf.h</span><span class="sxs-lookup"><span data-stu-id="4bf60-108">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="ca7aa-109">**头文件：** CorProf.idl、CorProf.h</span><span class="sxs-lookup"><span data-stu-id="ca7aa-109">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="4bf60-109">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="4bf60-109">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="ca7aa-110">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="ca7aa-110">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="4bf60-110">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4bf60-110">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="ca7aa-111">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ca7aa-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4bf60-111">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4bf60-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ca7aa-112">请参阅</span><span class="sxs-lookup"><span data-stu-id="ca7aa-112">See also</span></span>
 
-- [<span data-ttu-id="4bf60-112">ICorProfilerCallback 接口</span><span class="sxs-lookup"><span data-stu-id="4bf60-112">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
+- [<span data-ttu-id="ca7aa-113">ICorProfilerCallback 接口</span><span class="sxs-lookup"><span data-stu-id="ca7aa-113">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
