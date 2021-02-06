@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：创建 WS-I 基本配置文件1.1 互操作服务
 title: 创建 WS-I 基本配置文件 1.1 可互操作服务
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - configuration [WCF], interoperable services
 ms.assetid: 91b70a21-8f5c-4679-808c-2ed5fa6b2013
-ms.openlocfilehash: b5d262c3e0443503ccbf49a1a468c82843799a61
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 46e2d925dfe431957198b1d53b40d28adf6fb1c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646174"
 ---
 # <a name="creating-ws-i-basic-profile-11-interoperable-services"></a>创建 WS-I 基本配置文件 1.1 可互操作服务
 
@@ -34,7 +35,7 @@ ms.locfileid: "96255047"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的代码示例演示如何在代码中添加与 ASP.NET Web 服务客户端兼容的 WCF 终结点，也可以在配置文件中添加。  
   

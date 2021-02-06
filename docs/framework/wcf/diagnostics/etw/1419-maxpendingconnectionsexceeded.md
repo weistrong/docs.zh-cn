@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1419-MaxPendingConnectionsExceeded
 title: 1419 - MaxPendingConnectionsExceeded
 ms.date: 03/30/2017
 ms.assetid: e48e438e-f4c1-4f4f-85d6-c6c820a81df9
-ms.openlocfilehash: 51996ca825d1aa810c8121110a1b893f6bfde420
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 91b0c5380a67bd840dbfc4c36c499a763d92276e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241325"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645576"
 ---
 # <a name="1419---maxpendingconnectionsexceeded"></a>1419 - MaxPendingConnectionsExceeded
 
@@ -17,10 +18,10 @@ ms.locfileid: "96241325"
 |-|-|  
 |ID|1419|  
 |关键字|Quota|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当超过最大挂起连接数时，将发出此事件。  
   

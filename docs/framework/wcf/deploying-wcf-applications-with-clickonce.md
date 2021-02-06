@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：用 ClickOnce 部署 WCF 应用程序
 title: 使用 ClickOnce 部署 WCF 应用程序
 ms.date: 03/30/2017
 ms.assetid: 1a11feee-2a47-4d3e-a28a-ad69d5ff93e0
-ms.openlocfilehash: ad4c603d07885aa16640b71d43038746d3702b05
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f0a78bab6bbe7ddfd431e8e12bfe1ca9c9143143
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96260849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646083"
 ---
 # <a name="deploying-wcf-applications-with-clickonce"></a>使用 ClickOnce 部署 WCF 应用程序
 
@@ -15,7 +16,7 @@ ms.locfileid: "96260849"
   
  有关配置 ClickOnce 应用程序和受信任的发布者的信息，请参阅 [配置 Clickonce 受信任的发布者](/previous-versions/dotnet/articles/ms996418(v=msdn.10))。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [受信任的应用程序部署概述](/visualstudio/deployment/trusted-application-deployment-overview)
 - [Windows 窗体应用程序的 ClickOnce 部署](/previous-versions/visualstudio/visual-studio-2008/wh45kb66(v=vs.90))

@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：设计和实现服务
 title: 设计和实现服务
 ms.date: 03/30/2017
 helpviewer_keywords:
 - defining service contracts [WCF]
 ms.assetid: 036fae20-7c55-4002-b71d-ac4466e167a3
-ms.openlocfilehash: ea32855a3a512b8e96b8d6d72f101523b5d16107
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fde63fb6d1256b3c9e1fdd69932e378de95d508b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248768"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646070"
 ---
 # <a name="designing-and-implementing-services"></a>设计和实现服务
 
@@ -71,7 +72,7 @@ ms.locfileid: "96248768"
   
  在设计、实现、配置和承载 Windows Communication Foundation (WCF) 服务应用程序时，必须记住这一附加要求过程。 例如，协定可能会指定需要支持某一会话。 如果是这样，您必须配置绑定以支持该协定性需求，否则服务实现将无法正常工作。 或者，如果您的服务要求 Windows 集成身份验证并寄宿在 Internet 信息服务 (IIS) 中，则服务所在的 Web 应用程序必须打开 Windows 集成身份验证并关闭匿名支持。 有关不同服务主机应用程序类型的功能和影响的详细信息，请参阅 [托管服务](hosting-services.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [设计服务协定](designing-service-contracts.md)
 - [实现服务协定](implementing-service-contracts.md)

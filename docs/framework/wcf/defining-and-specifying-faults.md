@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：定义和指定错误
 title: 定义和指定错误
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - handling faults [WCF], specifying
 - handling faults [WCF], defining
 ms.assetid: c00c84f1-962d-46a7-b07f-ebc4f80fbfc1
-ms.openlocfilehash: 67096c4531d13bc66f584c09c458c0a5a2a41c6b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cf8c4dafaf3958cbb0be6fd096049d13f70685bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96260898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646109"
 ---
 # <a name="defining-and-specifying-faults"></a>定义和指定错误
 
@@ -91,7 +92,7 @@ End Class
   
  在访问生成错误的非服务时，存在某些限制。 WCF 仅支持架构描述并且与数据协定兼容的详细信息类型的错误。 例如，如上所述，WCF 不支持在其详细信息类型中使用 XML 属性的错误，或在详细信息部分中具有多个顶级元素的错误。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.FaultContractAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>

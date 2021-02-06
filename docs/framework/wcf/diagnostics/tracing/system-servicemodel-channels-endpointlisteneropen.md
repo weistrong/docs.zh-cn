@@ -1,23 +1,24 @@
 ---
+description: 了解有关以下方面的详细信息： EndpointListenerOpen
 title: System.ServiceModel.Channels.EndpointListenerOpen
 ms.date: 03/30/2017
 ms.assetid: c911fa53-e0ad-4313-aab5-e596f3567a50
-ms.openlocfilehash: 8ae1a31d084bf8b1d8e3f4d7b1a7cbe075991a53
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ef021f7212fa32c06c22f2caead3f38a381eab08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644484"
 ---
 # <a name="systemservicemodelchannelsendpointlisteneropen"></a>System.ServiceModel.Channels.EndpointListenerOpen
 
 System.ServiceModel.Channels.EndpointListenerOpen  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  终结点侦听器已打开。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

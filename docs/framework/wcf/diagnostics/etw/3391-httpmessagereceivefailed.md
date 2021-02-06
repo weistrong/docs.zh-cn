@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3391-HttpMessageReceiveFailed
 title: 3391 - HttpMessageReceiveFailed
 ms.date: 03/30/2017
 ms.assetid: 9fc527ed-57ad-46fe-8b81-940f4b992368
-ms.openlocfilehash: c628d201d53f250bef9f34cc89fca94847b6f13b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a6a894b50d282f1d5deb93bcfd3a83a0039b2ee6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247639"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644939"
 ---
 # <a name="3391---httpmessagereceivefailed"></a>3391 - HttpMessageReceiveFailed
 
@@ -17,10 +18,10 @@ ms.locfileid: "96247639"
 |-|-|  
 |ID|3391|  
 |关键字|HTTP|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  在 Http 消息接收失败时发出此事件。  
   
