@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_FINALIZER_FLAGS 枚举
 title: COR_PRF_FINALIZER_FLAGS 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 297d7721-3911-4f36-9e34-d9da0c33e22a
 topic_type:
 - apiref
-ms.openlocfilehash: 2b766715d6d87ab17a7cdabf721bbebf67e1ff13
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 96430b1ba3a38cce2801ed55f030395154c78dab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649164"
 ---
 # <a name="cor_prf_finalizer_flags-enumeration"></a>COR_PRF_FINALIZER_FLAGS 枚举
 
@@ -39,7 +40,7 @@ typedef enum {
 |------------|-----------------|  
 |`COR_PRF_FINALIZER_CRITICAL`|终结器至关重要。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `COR_PRF_FINALIZER_FLAGS` [ICorProfilerCallback2：： FinalizeableObjectQueued](icorprofilercallback2-finalizeableobjectqueued-method.md)方法使用枚举来描述对象的终结器。  
   
@@ -53,6 +54,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析枚举](profiling-enumerations.md)

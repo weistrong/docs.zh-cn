@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess2：： SetDesiredNGENCompilerFlags 方法
 title: ICorDebugProcess2::SetDesiredNGENCompilerFlags 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 98320175-7c5e-4dbb-8683-86fa82e2641f
 topic_type:
 - apiref
-ms.openlocfilehash: 40b944f6a1204bfe506ed64408be30f68adf3170
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a4749ad26e88d1a602876f28a52754323093fce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675251"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650075"
 ---
 # <a name="icordebugprocess2setdesiredngencompilerflags-method"></a>ICorDebugProcess2::SetDesiredNGENCompilerFlags 方法
 
@@ -39,7 +40,7 @@ HRESULT SetDesiredNGENCompilerFlags (
  `pdwFlags`  
  中 [CorDebugJITCompilerFlags](cordebugjitcompilerflags-enumeration.md) 枚举的一个值，该值指定用于选择正确预编译图像的编译器标志。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `SetDesiredNGENCompilerFlags`方法指定必须嵌入到预编译的映像中的标志，以使运行时将该图像加载到此进程中。 此方法设置的标志仅用于选择正确的预编译映像。 如果不存在这样的图像，则运行时将 (MSIL) 映像和实时 (JIT) 编译器加载 Microsoft 中间语言。 在这种情况下，调试器仍必须使用 [ICorDebugModule2：： SetJITCompilerFlags](icordebugmodule2-setjitcompilerflags-method.md) 方法根据需要为 JIT 编译设置标志。  
   
@@ -57,7 +58,7 @@ HRESULT SetDesiredNGENCompilerFlags (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebug 接口](icordebug-interface.md)
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

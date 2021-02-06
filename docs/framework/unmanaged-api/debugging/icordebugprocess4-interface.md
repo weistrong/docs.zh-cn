@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess4 接口
 title: ICorDebugProcess4 接口
 ms.date: 02/07/2019
 api_name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: fcf725ea98fa4351e72cf592f92968ee2233ecb0
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 16c7f3fbd1a79b1406fe0c19a9d922964667a2a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649983"
 ---
 # <a name="icordebugprocess4-interface"></a>ICorDebugProcess4 接口
 
@@ -28,7 +29,7 @@ ms.locfileid: "83213577"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                                 | 描述                                                                                             |
+| 方法                                                                 | 说明                                                                                             |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | [ProcessStateChanged](icordebugprocess4-processstatechanged-method.md) | 通知 ICorDebug 管道进程外调试器正在继续执行调试对象的执行。 |
 
@@ -38,7 +39,7 @@ ms.locfileid: "83213577"
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
 
 **标头：** 内容
 

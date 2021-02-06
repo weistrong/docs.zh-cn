@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5：： EnableNGENPolicy 方法
 title: ICorDebugProcess5::EnableNGENPolicy 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3b8e15ca-3c72-4685-a937-da4c739cb9e9
 topic_type:
 - apiref
-ms.openlocfilehash: e3dfd3cae83c7891d246ff3a81427c161cc0e2d1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0f3194893665bfe9fff802a293aaafed8254f2e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649918"
 ---
 # <a name="icordebugprocess5enablengenpolicy-method"></a>ICorDebugProcess5::EnableNGENPolicy 方法
 
@@ -39,7 +40,7 @@ HRESULT EnableNGENPolicy(
  `ePolicy`  
  中确定应用程序在托管调试器下运行时如何加载本机映像的 [CorDebugNGenPolicy](cordebugngenpolicy-enumeration.md) 常量。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果策略设置成功，则该方法将返回 `S_OK` 。 如果 `ePolicy` 超出了 [CorDebugNGenPolicy](cordebugngenpolicy-enumeration.md)定义的枚举值的范围，则方法将返回 `E_INVALIDARG` ，并且方法调用不起作用。 如果无法更新本地映像生成器 ( # A0) 的策略，该方法将返回 `E_FAIL` 。  
   
@@ -55,7 +56,7 @@ HRESULT EnableNGENPolicy(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugProcess5 接口](icordebugprocess5-interface.md)
 - [调试接口](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_EX_CLAUSE_INFO 结构
 title: COR_PRF_EX_CLAUSE_INFO 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7d0d6fb7-bc9d-40f0-8163-c0d162eaba7d
 topic_type:
 - apiref
-ms.openlocfilehash: e8dd9f21803021975f4651ba3e6e5f4d3da0ea82
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: af8d404e55a8996abc69923924e87c95e3c5eae8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649187"
 ---
 # <a name="cor_prf_ex_clause_info-structure"></a>COR_PRF_EX_CLAUSE_INFO 结构
 
@@ -45,7 +46,7 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 |`framePointer`|指向子句处理程序的逻辑帧的指针，例如 X86 EBP 寄存器的内容。|  
 |`shadowStackPointer`|指向阴影堆栈的指针。 此值为 BSP 寄存器的内容，并且仅适用于 IA64。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  收到异常通知时， [ICorProfilerInfo2：： GetNotifiedExceptionClauseInfo](icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)可用于获取异常子句的本机地址和帧信息， (要 `catch` / `finally` 运行或刚刚运行的/filter) 。  
   
@@ -73,6 +74,6 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析结构](profiling-structures.md)

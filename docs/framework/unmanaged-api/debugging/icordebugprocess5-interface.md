@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5 接口
 title: ICorDebugProcess5 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 30a39d79-1f10-4328-9c5d-094ed824e2ba
 topic_type:
 - apiref
-ms.openlocfilehash: cef69ac7e3572b67dd676ce8408e4210d93accf0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 880c305c1d9786f87d9727836a973696aa686ecf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717573"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649762"
 ---
 # <a name="icordebugprocess5-interface"></a>ICorDebugProcess5 接口
 
@@ -42,7 +43,7 @@ ms.locfileid: "95717573"
 |[GetTypeID 方法](icordebugprocess5-gettypeid-method.md)|获取指定地址处的对象的类型标识符。|  
 |[GetTypeLayout 方法](icordebugprocess5-gettypelayout-method.md)|根据对象的类型标识符获取有关该对象在内存中的布局的信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此接口以逻辑方式扩展了 ICorDebugProcess、ICorDebugProcess2 和 [ICorDebugProcess3](icordebugprocess3-interface.md) 接口。  
   
@@ -59,7 +60,7 @@ ms.locfileid: "95717573"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

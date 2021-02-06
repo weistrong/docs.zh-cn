@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionEnter3 函数
 title: FunctionEnter3 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ef782c53-dae7-4990-b4ad-fddb1e690d4e
 topic_type:
 - apiref
-ms.openlocfilehash: 98a821eabb393d8b5042647e6ef6ffce7ab10783
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 664b0ca5b40937eaa129e6843e55024802befbb7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648670"
 ---
 # <a name="functionenter3-function"></a>FunctionEnter3 函数
 
@@ -37,7 +38,7 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
 
   \[in] 控件传递到的函数的标识符。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `FunctionEnter3`回调函数将在调用函数时通知探查器，但不支持参数检查。 使用 [ICorProfilerInfo3：： SetEnterLeaveFunctionHooks3 方法](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) 注册此函数的实现。  
   
@@ -59,7 +60,7 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [FunctionLeave3](functionleave3-function.md)
 - [FunctionTailcall3](functiontailcall3-function.md)

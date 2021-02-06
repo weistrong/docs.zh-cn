@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5：： EnumerateHandles 方法
 title: ICorDebugProcess5::EnumerateHandles 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7d7fa796-0dc6-4ee8-9d56-40166246d91d
 topic_type:
 - apiref
-ms.openlocfilehash: 607847180cca039d4c71f26e446a17a14dc2fb9e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 62ca1390ceec634e6651dc013345688fe5892bcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724333"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649905"
 ---
 # <a name="icordebugprocess5enumeratehandles-method"></a>ICorDebugProcess5::EnumerateHandles 方法
 
@@ -41,7 +42,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
  `ppENum`  
  弄一个指针，指向 [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md) 的地址，该地址是要进行垃圾回收的对象的枚举器。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `EnumerateHandles` 是支持对句柄表的检查的 helper 函数。 它类似于 [ICorDebugProcess5：： EnumerateGCReferences](icordebugprocess5-enumerategcreferences-method.md) 方法，不同之处在于，它不是用所有要进行垃圾回收的对象填充 [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md) 集合，只包括具有句柄表中的句柄的对象。  
   
@@ -63,7 +64,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_FUNCTION_ARGUMENT_INFO 结构
 title: COR_PRF_FUNCTION_ARGUMENT_INFO 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 07cf3bab-e193-4991-8205-3f41cf2d67b3
 topic_type:
 - apiref
-ms.openlocfilehash: 5feda2ce6dc97576d0b1d4f16ca2b9dd5f3fb05e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c40c9b20dad79fa36a1ed4471106a54f2c55b422
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718537"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649060"
 ---
 # <a name="cor_prf_function_argument_info-structure"></a>COR_PRF_FUNCTION_ARGUMENT_INFO 结构
 
@@ -43,7 +44,7 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {
 |`totalArgumentSize`|所有参数的总大小。 换言之，此值是自变量长度之和。|  
 |`ranges`|结构的数组 `COR_PRF_FUNCTION_ARGUMENT_RANGE` ，其中每个结构都表示一个函数参数块。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  函数可以包含多个参数。 这些参数可能不会连续存储在内存中。 在一个位置，您可能有一个包含三个自变量的块、另一个位置中的两个参数块，以及在不同位置中的一个自变量的最后一个块。 这些参数全部用于相同的函数;它们只是存储在不同的位置。  
   
@@ -61,6 +62,6 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析结构](profiling-structures.md)

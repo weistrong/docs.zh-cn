@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： COR_PRF_ASSEMBLY_REFERENCE_INFO 结构
 title: COR_PRF_ASSEMBLY_REFERENCE_INFO 结构
 ms.date: 03/30/2017
 dev_langs:
 - cpp
 ms.assetid: c8c1d916-8d1a-4f82-8128-9fd3732383fc
-ms.openlocfilehash: 7c7d447afcb5a8617aa92212f3325719d5f43bf5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fc384e0a302c83af510deefc6f9f3b9cd5a2f77f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649216"
 ---
 # <a name="cor_prf_assembly_reference_info-structure"></a>COR_PRF_ASSEMBLY_REFERENCE_INFO 结构
 
@@ -43,11 +44,11 @@ typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {
 |`cbHashValue`|哈希 BLOB 中的字节数。|  
 |`dwAssemblyRefFlags`|程序集的标志。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  当 `COR_PRF_EX_CLAUSE_INFO` 结构声明在执行程序集引用闭包审核时公共语言运行时应考虑的附加程序集引用时，该结构将由探查器进行填充。  
   
- 如果探查器注册了 [ICorProfilerCallback6：： GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md) 回调方法，则运行时将传递要加载的程序集的路径和名称以及指向该方法的指向 [ICorProfilerAssemblyReferenceProvider](icorprofilerassemblyreferenceprovider-interface.md) 接口对象的指针。 然后，探查器可以[ICorProfilerAssemblyReferenceProvider::AddAssemblyReference](icorprofilerassemblyreferenceprovider-addassemblyreference-method.md) `COR_PRF_ASSEMBLY_REFERENCE_INFO` 为它计划从[ICorProfilerCallback6：： GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md)回调中指定的程序集引用的每个目标程序集调用 ICorProfilerAssemblyReferenceProvider：： AddAssemblyReference 方法和一个对象。  
+ 如果探查器注册了 [ICorProfilerCallback6：： GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md) 回调方法，则运行时将传递要加载的程序集的路径和名称以及指向该方法的指向 [ICorProfilerAssemblyReferenceProvider](icorprofilerassemblyreferenceprovider-interface.md) 接口对象的指针。 然后，探查器可以[](icorprofilerassemblyreferenceprovider-addassemblyreference-method.md) `COR_PRF_ASSEMBLY_REFERENCE_INFO` 为它计划从[ICorProfilerCallback6：： GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md)回调中指定的程序集引用的每个目标程序集调用 ICorProfilerAssemblyReferenceProvider：： AddAssemblyReference 方法和一个对象。  
   
 ## <a name="requirements"></a>要求  
 
@@ -59,7 +60,7 @@ typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析结构](profiling-structures.md)
 - [GetAssemblyReferences 方法](icorprofilercallback6-getassemblyreferences-method.md)

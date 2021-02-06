@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_GC_ROOT_FLAGS 枚举
 title: COR_PRF_GC_ROOT_FLAGS 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4611ee6f-0f05-4d84-91e1-e83d5e7dd7e4
 topic_type:
 - apiref
-ms.openlocfilehash: 6b4c71a099e1ddb03b8a5287b56b750f7119e34e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d566ed5ac1d0b4e15a855fbbb8a0fca3a5a429e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682349"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648794"
 ---
 # <a name="cor_prf_gc_root_flags-enumeration"></a>COR_PRF_GC_ROOT_FLAGS 枚举
 
@@ -45,7 +46,7 @@ typedef enum {
 |`COR_PRF_GC_ROOT_INTERIOR`|根引用的是对象的字段，而不是对象本身。|  
 |`COR_PRF_GC_ROOT_REFCOUNTED`|如果对象的引用计数为特定值，则根禁止垃圾回收。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `COR_PRF_GC_ROOT_FLAGS` 是一个位掩码，提供有关特殊根的附加信息。 但是，并非所有的根都是特殊的。 例如，某些根不是弱引用、内部指针、固定或引用计数的。 对于这类根，没有要传达的标志。 因此，使用此枚举的方法（如 [ICorProfilerCallback2：： RootReferences2](icorprofilercallback2-rootreferences2-method.md) 方法）为标志位掩码发送0，指示所有标志都处于关闭状态。  
   
@@ -59,6 +60,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析枚举](profiling-enumerations.md)

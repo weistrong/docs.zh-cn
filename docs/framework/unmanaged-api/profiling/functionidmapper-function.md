@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionIDMapper 函数
 title: FunctionIDMapper 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b8205b60-1893-4303-8cff-7ac5a00892aa
 topic_type:
 - apiref
-ms.openlocfilehash: 17396d3038578c16b74c3717174dc0fa4dc17631
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dca39d9d5269148fda12c50130f35bdeb10cb19d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648644"
 ---
 # <a name="functionidmapper-function"></a>FunctionIDMapper 函数
 
@@ -48,7 +49,7 @@ UINT_PTR __stdcall FunctionIDMapper (
 
  探查器返回一个执行引擎用作替代函数标识符的值。 返回值不能为 null，除非在 `pbHookFunction` 中返回 `false`。 否则，空返回值将产生不可预知的结果，包括可能停止进程。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `FunctionIDMapper`函数是回调。 它由探查器实现，用于将函数 ID 重新映射到其他更适用于探查器的标识符。 `FunctionIDMapper`返回要用于任何给定函数的备用 ID。 然后，执行引擎通过将此备用 ID （除了传统函数 ID）传递回探查器的参数中的探查器来实现探查器的请求，以 `clientData` `FunctionEnter2` `FunctionLeave2` `FunctionTailcall2` 标识调用挂钩的函数。  
   
@@ -68,7 +69,7 @@ UINT_PTR __stdcall FunctionIDMapper (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [SetFunctionIDMapper 方法](icorprofilerinfo-setfunctionidmapper-method.md)
 - [FunctionIDMapper2 函数](functionidmapper2-function.md)

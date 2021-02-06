@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionIDMapper2 函数
 title: FunctionIDMapper2 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 466ad51b-8f0c-41d9-81f7-371aac3374cb
 topic_type:
 - apiref
-ms.openlocfilehash: 7aa90b92d129f1269d901f1cbb5c6a0750de9a90
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1fd6680ffaa7b28e679dc3eaeb9840981ead5c45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648566"
 ---
 # <a name="functionidmapper2-function"></a>FunctionIDMapper2 函数
 
@@ -53,7 +54,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
 
  探查器返回一个执行引擎用作替代函数标识符的值。 返回值不能为 null，除非在 `pbHookFunction` 中返回 `false`。 否则为 null 的返回值将产生不可预知的结果，包括可能停止该过程。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法使用用于传递客户端数据的附加参数对 [FunctionIDMapper](functionidmapper-function.md) 函数进行扩展。 客户端数据用于消除运行时之间的歧义。  
   
@@ -67,7 +68,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo::SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [ICorProfilerInfo3::SetFunctionIDMapper2](icorprofilerinfo3-setfunctionidmapper2-method.md)

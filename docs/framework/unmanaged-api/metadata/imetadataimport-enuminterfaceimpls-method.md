@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumInterfaceImpls 方法
 title: IMetaDataImport::EnumInterfaceImpls 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ba6e178f-128b-4e47-a13c-b4be73eb106c
 topic_type:
 - apiref
-ms.openlocfilehash: 0b040a2741a44b9d361dabc38c26b8934659003b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5276d1edb3be0cae76b18a06241dc6b9952e1a72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649398"
 ---
 # <a name="imetadataimportenuminterfaceimpls-method"></a>IMetaDataImport::EnumInterfaceImpls 方法
 
@@ -62,7 +63,7 @@ HRESULT EnumInterfaceImpls (
 |`S_OK`|`EnumInterfaceImpls` 已成功返回。|  
 |`S_FALSE`|没有要枚举的 MethodDef 标记。 在这种情况下， `pcImpls` 设置为零。|  
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 枚举返回 `mdInterfaceImpl` 由指定的实现的每个接口的令牌集合 `TypeDef` 。 通过或)  (指定接口的顺序来返回接口令牌 `DefineTypeDef` `SetTypeDefProps` 。 `mdInterfaceImpl`可以使用[GetInterfaceImplProps](imetadataimport-getinterfaceimplprops-method.md)查询返回的标记的属性。
   
@@ -76,7 +77,7 @@ HRESULT EnumInterfaceImpls (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

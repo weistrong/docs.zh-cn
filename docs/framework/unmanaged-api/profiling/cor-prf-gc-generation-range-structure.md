@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_GC_GENERATION_RANGE 结构
 title: COR_PRF_GC_GENERATION_RANGE 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e7e07273-8d10-4a68-807e-59634e3f8c5e
 topic_type:
 - apiref
-ms.openlocfilehash: a0ee2c9ce38272caef4960bfe5949c11083c12dd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea67a6e6b972b9406b84ad331e8af6189327c5ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648891"
 ---
 # <a name="cor_prf_gc_generation_range-structure"></a>COR_PRF_GC_GENERATION_RANGE 结构
 
@@ -45,7 +46,7 @@ typedef struct COR_PRF_GC_GENERATION_RANGE {
 |`rangeLength`|一个指向整数的指针，该整数指定内存块的已使用部分的大小， (即块中使用的内存量) 。|  
 |`rangeLengthReserved`|指向一个整数的指针，该整数指定内存块的大小 (即，为块) 预留的内存量。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `rangeLength`仅当[ICorProfilerInfo2：： GetGenerationBounds](icorprofilerinfo2-getgenerationbounds-method.md)或[ICorProfilerInfo2：： GetObjectGeneration](icorprofilerinfo2-getobjectgeneration-method.md)（这两个均使用该 `COR_PRF_GC_GENERATION_RANGE` 结构）从[ICorProfilerCallback2：： GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md)或[ICorProfilerCallback2：： GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md)方法调用时，此值才是准确的。  
   
@@ -59,6 +60,6 @@ typedef struct COR_PRF_GC_GENERATION_RANGE {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析结构](profiling-structures.md)

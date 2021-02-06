@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_GC_GENERATION 枚举
 title: COR_PRF_GC_GENERATION 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d6ece160-26ad-4d39-abd7-05acd6f78c48
 topic_type:
 - apiref
-ms.openlocfilehash: 1d7489e997868a9486f77d176580cee18213a99d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 108bb4b2b4cba57235d354efe3b815a0e0df17ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718536"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648930"
 ---
 # <a name="cor_prf_gc_generation-enumeration"></a>COR_PRF_GC_GENERATION 枚举
 
@@ -47,7 +48,7 @@ typedef enum {
 |`COR_PRF_GC_LARGE_OBJECT_HEAP`|对象存储在大型对象堆中。|  
 |`COR_PRF_GC_PINNED_OBJECT_HEAP`|对象存储在固定对象堆中。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  垃圾回收器通过将对象划分为基于年龄的代来改善内存管理性能。 垃圾回收器当前使用三个代，编号为0、1和2，以及两个特殊堆段，一个用于大型对象，一个用于固定的对象。
   
@@ -67,6 +68,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析枚举](profiling-enumerations.md)

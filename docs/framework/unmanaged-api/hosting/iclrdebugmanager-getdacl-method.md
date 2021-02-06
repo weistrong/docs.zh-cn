@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDebugManager：： GetDacl 方法
 title: ICLRDebugManager::GetDacl 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7115e920-aaff-440a-824e-39497139c6f6
 topic_type:
 - apiref
-ms.openlocfilehash: 8a7de5a900bc1af219924b6a83f83cf7e2ef6150
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a1b747851d0c5104dbe18e5a66742d57b09aa22
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649463"
 ---
 # <a name="iclrdebugmanagergetdacl-method"></a>ICLRDebugManager::GetDacl 方法
 
@@ -55,7 +56,7 @@ HRESULT GetDacl (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRControl 接口](iclrcontrol-interface.md)
 - [ICLRDebugManager 接口](iclrdebugmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CLR 探查器和 Windows 应用商店应用
 title: CLR 探查器和 Windows 应用商店应用
 ms.date: 03/30/2017
 dev_langs:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - profiling managed code
 - profiling managed code [Windows Store Apps]
 ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
-ms.openlocfilehash: 04b4b529a5a1adaa40e804988dee506942c863c4
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: e864f67aff106659194b91814bc2509d50cbf701
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440075"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649271"
 ---
 # <a name="clr-profilers-and-windows-store-apps"></a>CLR 探查器和 Windows 应用商店应用
 
 本主题讨论编写分析 Windows 应用商店应用内运行的托管代码的诊断工具时需要考虑的事项。 它还提供了修改现有开发工具的指导原则，使其在针对 Windows 应用商店应用程序运行时继续运行。 若要了解此信息，最好是在熟悉公共语言运行时分析 API 的情况下，已在可对 Windows 桌面应用程序正常运行的诊断工具中使用此 API，并且现在有兴趣修改该工具，以便正确地针对 Windows 应用商店应用程序运行。
 
-## <a name="introduction"></a>介绍
+## <a name="introduction"></a>简介
 
 如果您在介绍的段落之后进行了介绍，那么您就会熟悉 CLR 分析 API。 你已经编写了一个适合托管桌面应用程序的诊断工具。 现在，您想知道如何使用托管的 Windows 应用商店应用程序。 也许您已经尝试过此工作，并发现它并不是一个简单的任务。 事实上，对于所有工具开发人员而言，可能不会有很多注意事项。 例如：
 
@@ -47,7 +48,7 @@ ms.locfileid: "94440075"
 
 本主题中使用了以下术语：
 
-应用程序
+**应用程序**
 
 这是探查器正在分析的应用程序。 通常，此应用程序的开发人员现在使用探查器来帮助诊断应用程序的问题。 通常，此应用程序将是 Windows 桌面应用程序，但在本主题中，我们将查看 Windows 应用商店应用。
 
@@ -249,7 +250,7 @@ pkgDebugSettings.EnableDebugging(packageFullName, null /* debuggerCommandLine */
 
 ### <a name="stick-to-the-windows-store-app-apis"></a>坚持 Windows 应用商店应用 Api
 
-浏览 Windows API 时，你会注意到，每个 API 都记录为适用于桌面应用、Windows 应用商店应用或两者。 例如， [InitializeCriticalSectionAndSpinCount](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionandspincount)函数文档的 " **要求** " 部分指示该函数仅适用于桌面应用程序。 与此相反， [InitializeCriticalSectionEx](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionex) 函数可用于桌面应用和 Windows 应用商店应用。
+浏览 Windows API 时，你会注意到，每个 API 都记录为适用于桌面应用、Windows 应用商店应用或两者。 例如， [InitializeCriticalSectionAndSpinCount](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionandspincount)函数文档的 "**要求**" 部分指示该函数仅适用于桌面应用程序。 与此相反， [InitializeCriticalSectionEx](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionex) 函数可用于桌面应用和 Windows 应用商店应用。
 
 在开发探查器 DLL 时，将它视为 Windows 应用商店应用程序，并且仅使用 Windows 应用商店应用程序所记录的 Api。 分析依赖关系 (例如，你可以 `link /dump /imports` 针对探查器 DLL 运行审核) ，然后在文档中搜索，以查看哪些依赖项正常，哪些依赖项不正常。 在大多数情况下，只需将冲突替换为一种较新的 API 形式，将其替换为安全 (（例如，将 [InitializeCriticalSectionAndSpinCount](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionandspincount) 替换为 [InitializeCriticalSectionEx](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionex)) ，即可解决冲突。
 
@@ -408,7 +409,7 @@ WinMD 文件（如常规模块）包含可通过 [元数据 api](../metadata/ind
 
 - [.NET Framework 对 Windows 应用商店应用和 Windows 运行时的支持情况](../../cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
 
-**Windows 应用商店应用程序**
+**Windows 应用商店应用**
 
 - [Windows 运行时应用 (的文件访问和权限](/previous-versions/windows/apps/hh967755(v=win.10))
 

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorExitProcess 函数
 title: CorExitProcess 函数
 ms.date: 03/30/2017
 api_name:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
 topic_type:
 - apiref
-ms.openlocfilehash: f6d8114732a3b7c15d0a0258a28a362d661b030a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 68d33dec76387e103a34e99c529a4e7aff7535b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649580"
 ---
 # <a name="corexitprocess-function"></a>CorExitProcess 函数
 
@@ -44,7 +45,7 @@ void STDMETHODCALLTYPE CorExitProcess (
  `exitCode`  
  一个整数，指定进程退出代码。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 从 .NET Framework 4 开始， `CorExitProcess` 退出进程中的每个已启动的运行时，而不只是旧 api 所绑定到的运行时。  
@@ -59,6 +60,6 @@ void STDMETHODCALLTYPE CorExitProcess (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [弃用的 CLR 承载函数](deprecated-clr-hosting-functions.md)

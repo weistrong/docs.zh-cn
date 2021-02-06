@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5：： EnumerateHeapRegions 方法
 title: ICorDebugProcess5::EnumerateHeapRegions 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b1edba68-9c36-4f69-be9f-678ce0b33480
 topic_type:
 - apiref
-ms.openlocfilehash: 5a51670200f8fc8a98ff7b80334253b37c7d89ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 034b1ebcd003e6854fa4f308b0464aac0a8c4839
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671117"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649840"
 ---
 # <a name="icordebugprocess5enumerateheapregions-method"></a>ICorDebugProcess5::EnumerateHeapRegions 方法
 
@@ -39,7 +40,7 @@ HRESULT EnumerateHeapRegions(
  `ppRegions`  
  弄指向 [ICorDebugHeapSegmentEnum](icordebugheapsegmentenum-interface.md) 接口对象地址的指针，该对象是对象驻留在托管堆中的内存范围的枚举器。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在调用 `ICorDebugProcess5::EnumerateHeapRegions` 方法之前，应调用 [ICorDebugProcess5：： GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) 方法，并检查 `areGCStructuresValid` 返回 [COR_HEAPINFO](cor-heapinfo-structure.md) 对象的字段值，以确保其当前状态的垃圾回收堆可枚举。 此外，如果在 `ICorDebugProcess5::EnumerateHeapRegions` 进程的 `E_FAIL` 生存期内附加过早，则在创建内存区域之前，此方法返回。  
   
@@ -57,7 +58,7 @@ HRESULT EnumerateHeapRegions(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugProcess5 接口](icordebugprocess5-interface.md)
 - [调试接口](debugging-interfaces.md)
