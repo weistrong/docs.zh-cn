@@ -1,24 +1,25 @@
 ---
+description: 了解有关以下方面的详细信息： PeerNodeClosed
 title: System.ServiceModel.Channels.PeerNodeClosed
 ms.date: 03/30/2017
 ms.assetid: c1cf92c3-3d31-4978-b0df-750fcd21909f
-ms.openlocfilehash: 346f8b72063677824f80474bab6495e31d9a903b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89a548d7180a4e57188ae0091097ac7673c2231f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99634903"
 ---
-# <a name="systemservicemodelchannelspeernodeclosed"></a><span data-ttu-id="4dd44-102">System.ServiceModel.Channels.PeerNodeClosed</span><span class="sxs-lookup"><span data-stu-id="4dd44-102">System.ServiceModel.Channels.PeerNodeClosed</span></span>
+# <a name="systemservicemodelchannelspeernodeclosed"></a><span data-ttu-id="c8839-103">System.ServiceModel.Channels.PeerNodeClosed</span><span class="sxs-lookup"><span data-stu-id="c8839-103">System.ServiceModel.Channels.PeerNodeClosed</span></span>
 
-<span data-ttu-id="4dd44-103">PeerNode 已关闭。</span><span class="sxs-lookup"><span data-stu-id="4dd44-103">The PeerNode has been closed.</span></span>  
+<span data-ttu-id="c8839-104">PeerNode 已关闭。</span><span class="sxs-lookup"><span data-stu-id="c8839-104">The PeerNode has been closed.</span></span>  
   
-## <a name="description"></a><span data-ttu-id="4dd44-104">描述</span><span class="sxs-lookup"><span data-stu-id="4dd44-104">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="c8839-105">说明</span><span class="sxs-lookup"><span data-stu-id="c8839-105">Description</span></span>  
 
- <span data-ttu-id="4dd44-105">在运行“在 PeerNode 处关闭”结束时进行此跟踪。</span><span class="sxs-lookup"><span data-stu-id="4dd44-105">This trace occurs at the conclusion of running Close on the PeerNode.</span></span>  
+ <span data-ttu-id="c8839-106">在运行“在 PeerNode 处关闭”结束时进行此跟踪。</span><span class="sxs-lookup"><span data-stu-id="c8839-106">This trace occurs at the conclusion of running Close on the PeerNode.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4dd44-106">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4dd44-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c8839-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="c8839-107">See also</span></span>
 
-- [<span data-ttu-id="4dd44-107">跟踪</span><span class="sxs-lookup"><span data-stu-id="4dd44-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="4dd44-108">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="4dd44-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="4dd44-109">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="4dd44-109">Administration and Diagnostics</span></span>](../index.md)
+- [<span data-ttu-id="c8839-108">跟踪</span><span class="sxs-lookup"><span data-stu-id="c8839-108">Tracing</span></span>](index.md)
+- [<span data-ttu-id="c8839-109">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="c8839-109">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="c8839-110">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="c8839-110">Administration and Diagnostics</span></span>](../index.md)
