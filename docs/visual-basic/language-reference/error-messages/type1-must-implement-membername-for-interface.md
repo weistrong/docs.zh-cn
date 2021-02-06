@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30154： <type1> " <typename> " 必须 <membername> 为接口 "" 实现 ""<interfacename>
 title: <type1>“<typename>”必须为接口“<interfacename>”实现“<membername>”
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30154
 ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
-ms.openlocfilehash: a036097d778daae59ef3bbd74ab8507cd16e6e24
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: fc47aaef0477638e0e1a566bca23e9c35cf514f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641136"
 ---
 # <a name="bc30154-type1typename-must-implement-membername-for-interface-interfacename"></a>BC30154： \<type1> " \<typename> " 必须 \<membername> 为接口 "" 实现 " \<interfacename> "
 
@@ -36,7 +37,7 @@ ms.locfileid: "92161850"
 
 4. 在实现属性时，请 `Get` `Set` 根据需要声明和过程。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Implements 语句](../statements/implements-statement.md)
 - [接口](../../programming-guide/language-features/interfaces/index.md)

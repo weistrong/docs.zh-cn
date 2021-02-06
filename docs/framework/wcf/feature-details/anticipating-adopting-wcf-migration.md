@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：预见采用 Windows Communication Foundation：简化未来迁移
 title: Windows Communication Foundation 使用展望：轻松实现未来的迁移
 ms.date: 03/30/2017
 ms.assetid: f49664d9-e9e0-425c-a259-93f0a569d01b
-ms.openlocfilehash: bf3155f19e42787746d59ce7b593273522e2840a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6ea81b1dd01ed45ff62fa50c1b17442f88fc05af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245050"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643808"
 ---
 # <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-migration"></a>Windows Communication Foundation 使用展望：轻松实现未来的迁移
 
@@ -120,7 +121,7 @@ throw new SoapException(
   
  这些异常类将随时与 WCF 类结合使用 <xref:System.ServiceModel.FaultException%601> ，以引发新的 `FaultException<AnticipatedException>(anticipatedException);`  
   
-## <a name="security"></a>安全性  
+## <a name="security"></a>安全  
 
  下面是一些安全建议。  
   
@@ -130,6 +131,6 @@ throw new SoapException(
   
 - 请务必考虑使用 ASP.NET 2.0 角色提供程序来授权对服务资源的访问。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Communication Foundation 使用展望：轻松实现未来的集成](anticipating-adopting-the-wcf-easing-future-integration.md)

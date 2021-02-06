@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：设置签名确认
 title: 如何：设置签名确认
 ms.date: 03/30/2017
 dev_langs:
@@ -8,30 +9,30 @@ helpviewer_keywords:
 - signature confirmation
 - WCF, security
 ms.assetid: 2424c137-c7c2-4aa9-8d5d-a066e12fefda
-ms.openlocfilehash: 9423922753efee7aac32e430f97307c715e43464
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 158ec2a5f74038f5c1ca1af847f57457a8881974
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586905"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643184"
 ---
 # <a name="how-to-set-up-a-signature-confirmation"></a>如何：设置签名确认
 
-*签名确认*是一种机制，用于消息发起方确保收到的答复是为了响应发送方的原始消息。 WS-Security 1.1 规范中对签名确认进行了定义。 如果终结点支持 WS-Security 1.0，则不能使用签名确认。
+*签名确认* 是一种机制，用于消息发起方确保收到的答复是为了响应发送方的原始消息。 WS-Security 1.1 规范中对签名确认进行了定义。 如果终结点支持 WS-Security 1.0，则不能使用签名确认。
 
-下面的过程指定如何使用 <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> 来启用签名确认。 可以对 <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> 使用相同的过程。 此过程基于[如何：使用 SecurityBindingElement 创建自定义绑定](how-to-create-a-custom-binding-using-the-securitybindingelement.md)中的基本步骤。
+下面的过程指定如何使用 <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> 来启用签名确认。 可以对 <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> 使用相同的过程。 此过程基于 [如何：使用 SecurityBindingElement 创建自定义绑定](how-to-create-a-custom-binding-using-the-securitybindingelement.md)中的基本步骤。
 
 ### <a name="to-enable-signature-confirmation-in-code"></a>在代码中启用签名确认
 
-1. 创建 <xref:System.ServiceModel.Channels.BindingElementCollection> 类的一个实例。
+1. 创建的 <xref:System.ServiceModel.Channels.BindingElementCollection> 类的实例。
 
-2. 创建类的实例 <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> 。
+2. 创建类的实例  <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> 。
 
 3. 将 <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> 设置为 `true`。
 
 4. 将安全元素添加到绑定集合中。
 
-5. 按照[如何：使用 SecurityBindingElement 创建自定义绑定](how-to-create-a-custom-binding-using-the-securitybindingelement.md)中的说明创建自定义绑定。
+5. 按照 [如何：使用 SecurityBindingElement 创建自定义绑定](how-to-create-a-custom-binding-using-the-securitybindingelement.md)中的说明创建自定义绑定。
 
 ### <a name="to-enable-signature-confirmation-in-configuration"></a>在配置中启用签名确认
 
@@ -68,7 +69,7 @@ ms.locfileid: "84586905"
 [!code-csharp[c_SignatureConfirmation#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_signatureconfirmation/cs/source.cs#1)]
 [!code-vb[c_SignatureConfirmation#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_signatureconfirmation/vb/source.vb#1)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>

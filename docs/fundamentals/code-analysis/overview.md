@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: efc440adb59da1ef9838ec5445d9c55544c14380
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 2cda5a23bbc90ca5dc2305b5d7023e8ea6120b79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216468"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643067"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>.NET 源代码分析概述
 
@@ -144,15 +144,13 @@ ms.locfileid: "99216468"
 
 ## <a name="suppress-a-warning"></a>禁止显示警告
 
-若要取消规则冲突，请 `none` 在 EditorConfig 文件中将该规则 ID 的严重性选项设置为。 例如：
+禁止规则冲突的一种方法是 `none` 在 EditorConfig 文件中将该规则 ID 的严重性选项设置为。 例如：
 
 ```ini
 dotnet_diagnostic.CA1822.severity = none
 ```
 
-Visual Studio 提供了其他方式来禁止显示代码分析规则中的警告。 有关详细信息，请参阅 [取消冲突](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations)。
-
-有关规则严重性的详细信息，请参阅 [配置规则严重性](configuration-options.md#severity-level)。
+有关取消警告的详细信息和其他方式，请参阅 [如何取消显示代码分析警告](suppress-warnings.md)。
 
 ## <a name="third-party-analyzers"></a>第三方分析器
 

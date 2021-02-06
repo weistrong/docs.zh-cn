@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <listeners> 的元素 <source>
 title: <source> 的 <listeners> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - listeners element for <source>
 - <listeners> element for <source>
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
-ms.openlocfilehash: b7144b0a7004ba32b21cbc98513df574a5a9e1d9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6b857d4b114366d268eec1859afc7f33cc5b04a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195176"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639635"
 ---
 # <a name="listeners-element-for-source"></a>\<source> 的 \<listeners> 元素
 
@@ -44,7 +45,7 @@ ms.locfileid: "91195176"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add-element-for-listeners-for-source.md)|将侦听器添加到 `Listeners` 集合中。|  
 |[\<remove>](remove-element-for-listeners-for-source.md)|从集合中移除侦听器 `Listeners` 。|  
@@ -52,7 +53,7 @@ ms.locfileid: "91195176"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.diagnostics`|指定用于收集、存储和路由消息的跟踪侦听器以及对跟踪开关设置的级别。|  

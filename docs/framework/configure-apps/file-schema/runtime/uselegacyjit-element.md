@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <useLegacyJit> 元素
 title: <useLegacyJit> 元素
 ms.date: 04/26/2017
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
-ms.openlocfilehash: a126b8c0050a8d1fd96a3d090f9b018a9faa07a7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a1449cbc69f0aa1b91cc427fbfc5b984bf605169
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73968856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639999"
 ---
 # <a name="uselegacyjit-element"></a>\<useLegacyJit> 元素
 
@@ -31,7 +32,7 @@ ms.locfileid: "73968856"
   
 ### <a name="attributes"></a>特性  
   
-| 属性 | 说明                                                                                   |  
+| 属性 | 描述                                                                                   |  
 | --------- | --------------------------------------------------------------------------------------------- |  
 | `enabled` | 必需的特性。<br><br>指定运行时是否使用旧版64位 JIT 编译器。 |  
   
@@ -48,14 +49,14 @@ ms.locfileid: "73968856"
   
 ### <a name="parent-elements"></a>父元素  
   
-| 元素         | 描述                                                                                                       |  
+| 元素         | 说明                                                                                                       |  
 | --------------- | ----------------------------------------------------------------------------------------------------------------- |  
 | `configuration` | 公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。 |  
 | `runtime`       | 包含有关运行时初始化选项的信息。                                                        |  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
-从 .NET Framework 4.6 开始，默认情况下，公共语言运行时为实时（JIT）编译使用新的64位编译器。 在某些情况下，这可能会导致应用程序代码的行为与以前版本的64位 JIT 编译器进行 JIT 编译的行为不同。 通过将 `enabled` 元素的属性设置 `<useLegacyJit>` 为 `1` ，可以禁用新的64位 jit 编译器，而使用旧的64位 jit 编译器编译应用程序。  
+从 .NET Framework 4.6 开始，公共语言运行时默认使用新的64位编译器来实时 (JIT) 编译。 在某些情况下，这可能会导致应用程序代码的行为与以前版本的64位 JIT 编译器进行 JIT 编译的行为不同。 通过将 `enabled` 元素的属性设置 `<useLegacyJit>` 为 `1` ，可以禁用新的64位 jit 编译器，而使用旧的64位 jit 编译器编译应用程序。  
   
 > [!NOTE]
 > `<useLegacyJit>`元素仅影响64位 JIT 编译。 与32位 JIT 编译器的编译不受影响。  
@@ -64,13 +65,13 @@ ms.locfileid: "73968856"
   
 - 设置环境变量
 
-  将 `COMPLUS_useLegacyJit` 环境变量设置为 `0` （使用新的64位 jit 编译器）或 `1` （使用较旧的64位 jit 编译器）：
+  将 `COMPLUS_useLegacyJit` 环境变量设置为 `0` (使用新的64位 jit 编译器) 或 `1` (使用较旧的64位 jit 编译器) ：
   
   ```env  
   COMPLUS_useLegacyJit=0|1  
   ```  
   
-  环境变量具有*全局作用域*，这意味着它会影响计算机上运行的所有应用程序。 如果已设置，则它可以被应用程序配置文件设置重写。 环境变量名称不区分大小写。
+  环境变量具有 *全局作用域*，这意味着它会影响计算机上运行的所有应用程序。 如果已设置，则它可以被应用程序配置文件设置重写。 环境变量名称不区分大小写。
   
 - 添加注册表项
 
@@ -91,8 +92,8 @@ ms.locfileid: "73968856"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [\<runtime>Element](runtime-element.md)
-- [\<configuration>Element](../configuration-element.md)
+- [\<runtime> 元素](runtime-element.md)
+- [\<configuration> 元素](../configuration-element.md)
 - [缓解：新的 64 位 JIT 编译器](../../../migration-guide/mitigation-new-64-bit-jit-compiler.md)

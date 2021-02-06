@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <add> <listeners> 的元素 <source>
 title: <add>的元素 <listeners><source>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - add element for <listeners> for <source>
 - <add> element for <listeners> for <source>
 ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
-ms.openlocfilehash: a5abaffbad986785b8879297883da9614f0a8103
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: cb2145738b81574397a8de13f68d0d4e572f20cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201689"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639830"
 ---
 # <a name="add-element-for-listeners-for-source"></a>\<add>的元素 \<listeners>\<source>
 
@@ -40,7 +41,7 @@ ms.locfileid: "91201689"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`type`|必需的属性，除非引用集合中的侦听器 `sharedListeners` ，在这种情况下，你只需按名称引用它 (请参阅 [示例](#example)) 。<br /><br /> 指定侦听器的类型。 必须使用满足指定 [完全限定的类型名称](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)中指定的要求的字符串。|  
 |`initializeData`|可选特性。<br /><br /> 传递到指定类的构造函数的字符串。 <xref:System.Configuration.ConfigurationException>如果类不具有采用字符串的构造函数，则会引发。|  
@@ -50,13 +51,13 @@ ms.locfileid: "91201689"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<filter>](filter-element-for-add-for-listeners-for-source.md)|将筛选器添加到跟踪源的 `Listeners` 集合中的侦听器。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.diagnostics`|指定用于收集、存储和路由消息的跟踪侦听器以及对跟踪开关设置的级别。|  

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：服务数据分区
 title: 如何：服务数据分区
 ms.date: 03/30/2017
 ms.assetid: 1ccff72e-d76b-4e36-93a2-e51f7b32dc83
-ms.openlocfilehash: 7bb5eb6bda8bb2be3dfaaa88eb4b5ad787f47aa7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fd40ee37a80a8d5039231c6efe6369006022afad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268919"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643236"
 ---
 # <a name="how-to-service-data-partitioning"></a>如何：服务数据分区
 
@@ -175,6 +176,6 @@ ms.locfileid: "96268919"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [路由服务](../samples/routing-services.md)

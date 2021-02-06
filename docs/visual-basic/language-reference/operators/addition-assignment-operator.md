@@ -1,4 +1,5 @@
 ---
+description: '详细了解： + = 运算符 (Visual Basic) '
 title: += 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - += operator [Visual Basic], appending strings
 - compound assignment statements [Visual Basic]
 ms.assetid: d3e959f4-85d4-4e47-87c4-77b62335a5b3
-ms.openlocfilehash: a3a37798a3ddb480ac5322c4b2d3e9396e739aa6
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e5a6b8fcc75e44c00ee18fec9cd57e68b1218de7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640467"
 ---
 # <a name="-operator-visual-basic"></a>+= 运算符 (Visual Basic)
 
@@ -50,7 +51,7 @@ variableorproperty += expression
   
 ## <a name="overloading"></a>重载  
 
- `+`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `+` 运算符会影响运算符的行为 `+=` 。 如果你的代码 `+=` 在重载的类或结构上使用 `+` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ `+`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `+` 运算符会影响运算符的行为 `+=` 。 如果你的代码 `+=` 在重载的类或结构上使用 `+` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -62,7 +63,7 @@ variableorproperty += expression
   
  的值 `num1` 现在为13，的值 `str1` 现在为 "103"。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [+ 运算符](addition-operator.md)
 - [赋值运算符](assignment-operators.md)

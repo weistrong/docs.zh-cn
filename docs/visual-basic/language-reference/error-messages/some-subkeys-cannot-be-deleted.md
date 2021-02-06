@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：无法删除某些子项
 title: 无法删除某些子项
 ms.date: 07/20/2015
 ms.assetid: 14562137-af43-4972-84c1-a380a90f7d6c
-ms.openlocfilehash: c00ce9f8e6b47573ea780ceb334697ad7cac3a53
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 7f28626d6d8337e955c45a56fde91419669984b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90870758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641494"
 ---
 # <a name="some-subkeys-cannot-be-deleted"></a>无法删除某些子项
 
@@ -17,7 +18,7 @@ ms.locfileid: "90870758"
   
 - 请确保您有足够的权限删除指定的子项。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>
 - <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>

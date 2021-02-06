@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：导入 WCF 扩展的自定义元数据
 title: 导入 WCF 扩展的自定义元数据
 ms.date: 03/30/2017
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
-ms.openlocfilehash: b231ff676ffc81666713987a24605b8ae98bb6d6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f8fc0517298a7170941e7d3ed34b3ddfd9834c7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644185"
 ---
 # <a name="importing-custom-metadata-for-a-wcf-extension"></a>导入 WCF 扩展的自定义元数据
 
@@ -52,7 +53,7 @@ ms.locfileid: "96254618"
 > [!IMPORTANT]
 > 可能将无效或不正确的元数据传递给导入程序。 请确保自定义导入程序对所有形式的 XML 都能保持可靠性。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：导入自定义 WSDL](how-to-import-custom-wsdl.md)
 - [如何：导人自定义策略断言](how-to-import-custom-policy-assertions.md)

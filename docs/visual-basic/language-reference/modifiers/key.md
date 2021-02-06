@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：密钥 (Visual Basic) '
 title: 密钥
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Key [Visual Basic]
 - Key keyword [Visual Basic]
 ms.assetid: 7697a928-7d14-4430-a72a-c9e96e8d6c11
-ms.openlocfilehash: 582ed5bb67b9c7504e736710aa4649cffb12ef45
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5ec918da661144053824ca2a734cdec11873b0e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867998"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640792"
 ---
 # <a name="key-visual-basic"></a>Key (Visual Basic)
 
@@ -25,7 +26,7 @@ ms.locfileid: "90867998"
   
  创建新的匿名类型时，它会直接从继承 <xref:System.Object> 。 编译器会重写三个继承成员： <xref:System.Object.Equals%2A> 、 <xref:System.Object.GetHashCode%2A> 和 <xref:System.Object.ToString%2A> 。 为和生成的替代代码 <xref:System.Object.Equals%2A> <xref:System.Object.GetHashCode%2A> 基于键属性。 如果类型中没有键属性，则不会 <xref:System.Object.GetHashCode%2A> <xref:System.Object.Equals%2A> 重写这些属性。  
   
-## <a name="equality"></a>等式  
+## <a name="equality"></a>相等  
 
  如果两个匿名类型实例是同一类型的实例，并且它们的键属性的值相等，则这两个实例相等。 在下面的示例中，与 `flight2` `flight1` 上一示例中的相等，因为它们是相同匿名类型的实例，并且它们的键属性具有匹配的值。 但是， `flight3` 不等于， `flight1` 因为它的键属性具有不同的值 `FlightNo` 。 实例 `flight4` 的类型 `flight1` 不同，因为它们将不同的属性指定为键属性。  
   
@@ -51,13 +52,13 @@ ms.locfileid: "90867998"
   
  [!code-vb[VbVbalrAnonymousTypes#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#39)]  
   
-## <a name="read-only-values"></a>只读值  
+## <a name="read-only-values"></a>Read-Only 值  
 
  键属性的值不能更改。 例如，在 `flight1` 前面的示例中， `Airline` 和 `FlightNo` 字段是只读的，但 `Gate` 可以更改。  
   
  [!code-vb[VbVbalrAnonymousTypes#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#28)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [匿名类型定义](../../programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)
 - [如何：推断匿名类型声明中的属性名和类型](../../programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)

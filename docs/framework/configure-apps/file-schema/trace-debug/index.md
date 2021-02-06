@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：跟踪和调试设置架构
 title: 跟踪和调试设置架构
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - configuration sections [.NET Framework]
 - elements [.NET Framework], trace and debug settings
 ms.assetid: 277ca5f6-e1c4-41b6-a47f-3a67ce5b94ac
-ms.openlocfilehash: ae089e941d75df7ba1cd87b5b92a514a33bfbf85
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2429585c44952d2ee12547dab8f51662295bf02f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195189"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639645"
 ---
 # <a name="trace-and-debug-settings-schema"></a>跟踪和调试设置架构
 
@@ -24,7 +25,7 @@ ms.locfileid: "91195189"
   
  下表介绍每个跟踪和调试设置元素的功能。  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add-element-for-listeners-for-source.md)|将侦听器添加到跟踪源的 `Listeners` 集合中。|  
 |[\<add>](add-element-for-listeners-for-trace.md)|将侦听器添加到 `Listeners` 集合中。|  

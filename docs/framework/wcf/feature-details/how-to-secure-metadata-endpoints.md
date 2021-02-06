@@ -1,28 +1,29 @@
 ---
+description: 了解详细信息：如何：保护元数据终结点
 title: 如何：保护元数据终结点
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9f71b6ae-737c-4382-8d89-0a7b1c7e182b
-ms.openlocfilehash: c5efd921d3826ef814bf45d6895255981101d992
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bcce3fd0708049435c791cae5064f84133dfd612
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592952"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643301"
 ---
 # <a name="how-to-secure-metadata-endpoints"></a>如何：保护元数据终结点
 
 服务的元数据中可能包含恶意用户可以利用的关于您的应用程序的敏感信息。 服务使用者可能还要求一种用于获取关于服务的元数据的安全机制。 因此，有时需要使用安全终结点来发布元数据。
 
-通常使用 Windows Communication Foundation （WCF）中定义的标准安全机制来保护元数据终结点，以保护应用程序终结点。 有关详细信息，请参阅[安全性概述](security-overview.md)。
+通常使用 Windows Communication Foundation 中定义的标准安全机制来保护元数据终结点， (WCF) 用于保护应用程序终结点。 有关详细信息，请参阅[安全性概述](security-overview.md)。
 
 本主题演示创建由安全套接字层 (SSL) 证书保护的终结点（换言之，HTTPS 终结点）的步骤。
 
 ### <a name="to-create-a-secure-https-get-metadata-endpoint-in-code"></a>在代码中创建安全的 HTTPS GET 元数据终结点
 
-1. 使用适当的 X.509 证书配置端口。 该证书必须来自受信任的颁发机构，而且还必须有既定的“服务授权”用途。 必须使用 HttpCfg.exe 工具将该证书附加到该端口。 请参阅[如何：使用 SSL 证书配置端口](how-to-configure-a-port-with-an-ssl-certificate.md)。
+1. 使用适当的 X.509 证书配置端口。 该证书必须来自受信任的颁发机构，而且还必须有既定的“服务授权”用途。 必须使用 HttpCfg.exe 工具将该证书附加到该端口。 请参阅 [如何：使用 SSL 证书配置端口](how-to-configure-a-port-with-an-ssl-certificate.md)。
 
     > [!IMPORTANT]
     > 该证书或其域名系统 (DNS) 的主题必须与计算机的名称匹配。 这一点非常重要，原因是 HTTPS 机制所执行的前几个步骤之一是检查是否将证书颁发给了在其上调用了该证书的地址的统一资源标识符 (URI)。
@@ -95,7 +96,7 @@ ms.locfileid: "84592952"
 
 - <xref:System.ServiceModel.Description?displayProperty=nameWithType>
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>

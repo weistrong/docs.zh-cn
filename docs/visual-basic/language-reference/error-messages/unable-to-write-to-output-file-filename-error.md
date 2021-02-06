@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC31019：无法写入输出文件 " <filename> "： <error>
 title: 无法写入输出文件“<filename>”：<error>
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC31019
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
-ms.openlocfilehash: 5f4add95da7c996513ffb291a7794ea0e345ac94
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 4a1feff6429a5b82968d3a87e4c9c9ef80e6612a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640896"
 ---
 # <a name="bc31019-unable-to-write-to-output-file-filename-error"></a>BC31019：无法写入输出文件 " \<filename> "： \<error>
 
@@ -52,12 +53,12 @@ ms.locfileid: "92161538"
 
 ### <a name="to-change-the-attributes-of-a-file-or-folder"></a>更改文件或文件夹的特性
 
-1. 在 **文件资源管理器**中，右键单击文件或文件夹，然后选择 " **属性**"。
+1. 在 **文件资源管理器** 中，右键单击文件或文件夹，然后选择 " **属性**"。
 
 2. 在 "**常规**" 选项卡的 "**属性**" 部分中，清除 "**只读**" 复选框。
 
 3. 按“确定”。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [与我们交流](/visualstudio/ide/feedback-options)

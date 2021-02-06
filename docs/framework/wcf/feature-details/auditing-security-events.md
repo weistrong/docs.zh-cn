@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：审核安全事件
 title: 审核安全事件
 ms.date: 03/30/2017
 helpviewer_keywords:
 - auditing security events [WCF]
 ms.assetid: 5633f61c-a3c9-40dd-8070-1c373b66a716
-ms.openlocfilehash: 985004313c7d9843f2e9960805a6c0623d43a41f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 84eebeec5ebeec047d840e9902d52b4ae409599f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643717"
 ---
 # <a name="auditing-security-events"></a>审核安全事件
 
@@ -49,7 +50,7 @@ ms.locfileid: "96234812"
 
  下表描述了用于对审核行为进行编程的类和属性。  
   
-|实例|描述|  
+|实例|说明|  
 |-----------|-----------------|  
 |<xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>|将设置审核选项作为服务行为启用。|  
 |<xref:System.ServiceModel.AuditLogLocation>|枚举值，用于指定要写入的日志。 可能的值为 Default、Application 和 Security。 选择 Default 时，操作系统将确定实际日志位置。 请参见本主题后面的“Application 或 Security 事件日志选择”部分。|  
@@ -108,7 +109,7 @@ ms.locfileid: "96234812"
 |审核策略管理|不适用。|除配置以外，Security 日志还受到本地安全机构 (LSA) 策略的控制。 还必须启用“审核对象访问”类别。|  
 |默认用户体验|所有通过身份验证的用户都可以写入 Application 日志，因此对于应用程序进程，不需要执行其他权限步骤。|应用程序进程（上下文）必须具有 `SeAuditPrivilege`。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：将服务名字对象用于元数据交换协定
 title: 如何：将服务名字对象与元数据交换协定一起使用
 ms.date: 03/30/2017
 ms.assetid: c41a07e5-cb9d-45d6-9ea4-34511e227faf
-ms.openlocfilehash: 194caf6a48e64a4358a77ecd514dda456cc35e0b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 220132a10cb637be9e3724232d0ddaf80a13551a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643093"
 ---
 # <a name="how-to-use-a-service-moniker-with-metadata-exchange-contracts"></a>如何：将服务名字对象与元数据交换协定一起使用
 
@@ -40,7 +41,7 @@ ms.locfileid: "96265955"
     > [!NOTE]
     > 如果标记格式不正确，或如果服务不可用，则对 `GetObject` 的调用将返回一个错误，指示“语法无效”。  如果您收到此错误，请确保所使用的标记正确无误且服务可用。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：使用未注册的 Windows Communication Foundation 服务名字对象](use-the-wcf-service-moniker-without-registration.md)
 - [如何：将服务名字对象用于 WSDL 协定](how-to-use-a-service-moniker-with-wsdl-contracts.md)

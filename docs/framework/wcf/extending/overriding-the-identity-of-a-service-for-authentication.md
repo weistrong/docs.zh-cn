@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：重写服务标识以便进行身份验证
 title: 重写服务标识以便进行身份验证
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
-ms.openlocfilehash: a02e5a2f69ad1819e6ab98b0454dd64599382cd0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f83c10d75c4ea71170a76a7fd10efb33958f5b52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644159"
 ---
 # <a name="override-the-identity-of-a-service-for-authentication"></a>重写服务标识以便进行身份验证
 
@@ -22,7 +23,7 @@ ms.locfileid: "96262770"
   
 ## <a name="kerberos-authentication-and-identity"></a>Kerberos 身份验证和标识  
 
- 默认情况下，将服务配置为使用 Windows 凭据时， [\<identity>](../../configure-apps/file-schema/wcf/identity.md) [\<userPrincipalName>](../../configure-apps/file-schema/wcf/userprincipalname.md) [\<servicePrincipalName>](../../configure-apps/file-schema/wcf/serviceprincipalname.md) 会在 WSDL 中生成包含或元素的元素。 如果服务正在 `LocalSystem` 、或帐户下运行 `LocalService` ，则 `NetworkService` 默认情况下会以形式生成服务主体名称 (SPN) ， `host/` \<*hostname*> 因为这些帐户有权访问计算机的 SPN 数据。 如果服务正在其他帐户下运行，则 Windows Communication Foundation (WCF) 将以 domainName 形式生成 UPN \<*username*> @< *domainName* `>` 。 发生这种情况的原因是 Kerberos 身份验证要求向客户端提供 UPN 或 SPN，以便对服务进行身份验证。  
+ 默认情况下，将服务配置为使用 Windows 凭据时， [\<identity>](../../configure-apps/file-schema/wcf/identity.md) [\<userPrincipalName>](../../configure-apps/file-schema/wcf/userprincipalname.md) [\<servicePrincipalName>](../../configure-apps/file-schema/wcf/serviceprincipalname.md) 会在 WSDL 中生成包含或元素的元素。 如果服务正在 `LocalSystem` 、或帐户下运行 `LocalService` ，则 `NetworkService` 默认情况下会以形式生成服务主体名称 (SPN) ， `host/` \<*hostname*> 因为这些帐户有权访问计算机的 SPN 数据。 如果服务正在其他帐户下运行，则 Windows Communication Foundation (WCF) 将以 domainName 形式生成 UPN \<*username*> @<  `>` 。 发生这种情况的原因是 Kerberos 身份验证要求向客户端提供 UPN 或 SPN，以便对服务进行身份验证。  
   
  你还可以使用 [Setspn](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731241(v=ws.10)) 工具向域中的服务帐户注册附加 SPN。 然后，可以使用该 SPN 作为服务的标识。 有关该工具的详细信息，请参阅 [Setspn 概述](/previous-versions/windows/it-pro/windows-server-2003/cc773257(v=ws.10))。  
   
@@ -62,7 +63,7 @@ ms.locfileid: "96262770"
  [!code-csharp[C_Identity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#5)]
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：创建自定义客户端标识验证工具](how-to-create-a-custom-client-identity-verifier.md)
 - [服务标识和身份验证](../feature-details/service-identity-and-authentication.md)

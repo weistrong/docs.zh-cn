@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： My .Resources 对象
 title: My.Resources 对象
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Resources object
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
-ms.openlocfilehash: 3d12524706f680434d5b6d8da39c89042bea3281
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ecd8e79aacea85080dc341ae36b362a595893034
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867337"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640623"
 ---
 # <a name="myresources-object"></a>My.Resources 对象
 
@@ -29,11 +30,11 @@ ms.locfileid: "90867337"
   
 ## <a name="properties"></a>属性  
 
- 对象的属性 `My.Resources` 提供对应用程序资源的只读访问。 若要添加或删除资源，请使用 " **项目设计器**"。 您可以使用资源中心访问通过**项目设计器**添加 `My.Resources.` *的资源*。  
+ 对象的属性 `My.Resources` 提供对应用程序资源的只读访问。 若要添加或删除资源，请使用 " **项目设计器**"。 您可以使用资源中心访问通过 **项目设计器** 添加 `My.Resources.` *的资源*。  
   
- 还可以通过在**解决方案资源管理器**中选择项目，然后在 "**项目**" 菜单中单击 "**添加新项**" 或 "**添加现有项**"，来添加或删除资源文件。 你可以使用 resourceFileName 资源中心访问以这种方式添加的资源 `My.Resources.` *resourceFileName* `.` *resourceName*。  
+ 还可以通过在 **解决方案资源管理器** 中选择项目，然后在 "**项目**" 菜单中单击 "**添加新项**" 或 "**添加现有项**"，来添加或删除资源文件。 你可以使用 resourceFileName 资源中心访问以这种方式添加的资源 `My.Resources.`  `.` 。  
   
- 每个资源都有一个名称、类别和值，这些资源设置决定了访问资源的属性在对象中的显示方式 `My.Resources` 。 对于在 **项目设计器**中添加的资源：  
+ 每个资源都有一个名称、类别和值，这些资源设置决定了访问资源的属性在对象中的显示方式 `My.Resources` 。 对于在 **项目设计器** 中添加的资源：  
   
 - 名称确定属性的名称。  
   
@@ -86,7 +87,7 @@ ms.locfileid: "90867337"
   
  [!code-vb[VbVbalrMyResources#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#10)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [管理应用程序资源 (.NET)](/visualstudio/ide/managing-application-resources-dotnet)
 - [桌面应用中的资源](../../../framework/resources/index.md)

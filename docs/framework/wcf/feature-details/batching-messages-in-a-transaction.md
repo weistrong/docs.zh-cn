@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：在事务中批处理消息
 title: 在事务中对消息进行批处理
 ms.date: 03/30/2017
 helpviewer_keywords:
 - batching messages [WCF]
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
-ms.openlocfilehash: c18d5a36f4263a93589b75129517d66df80ce463
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0c84d87bc043f4ce1ae4d0a7674e862aa10011ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643691"
 ---
 # <a name="batching-messages-in-a-transaction"></a>在事务中对消息进行批处理
 
@@ -90,7 +91,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [队列概述](queues-overview.md)
 - [在 WCF 中排队](queuing-in-wcf.md)

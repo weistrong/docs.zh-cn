@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <listeners> 的元素 <trace>
 title: <trace> 的 <listeners> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - <listeners> element
 - listeners element
 ms.assetid: 1394c2c3-6304-46db-87c1-8e8b16f5ad5b
-ms.openlocfilehash: 59d078f8dc573a1ce949d225f497dd4500fe808f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 25f6d4b49eeb57b25b4afbbdfdba484d6d7eea3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639622"
 ---
 # <a name="listeners-element-for-trace"></a>\<trace> 的 \<listeners> 元素
 
@@ -43,7 +44,7 @@ ms.locfileid: "91173856"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add-element-for-listeners-for-trace.md)|将侦听器添加到 `Listeners` 集合中。|  
 |[\<clear>](clear-element-for-listeners-for-trace.md)|清除跟踪的 `Listeners` 集合。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91173856"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.diagnostics`|为 ASP.NET 配置节指定根元素。|  
@@ -59,7 +60,7 @@ ms.locfileid: "91173856"
   
 ## <a name="remarks"></a>备注  
 
- <xref:System.Diagnostics.Debug>和 <xref:System.Diagnostics.Trace> 类共享相同的**侦听器**集合。 如果将侦听器对象添加到其中一个类的集合中，则其他类将使用同一侦听器。 随 .NET Framework 附带的侦听器类派生自 <xref:System.Diagnostics.TraceListener> 类。  
+ <xref:System.Diagnostics.Debug>和 <xref:System.Diagnostics.Trace> 类共享相同的 **侦听器** 集合。 如果将侦听器对象添加到其中一个类的集合中，则其他类将使用同一侦听器。 随 .NET Framework 附带的侦听器类派生自 <xref:System.Diagnostics.TraceListener> 类。  
   
 ## <a name="configuration-file"></a>配置文件  
 

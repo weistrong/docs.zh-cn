@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：此数组是固定的或临时锁定的 (Visual Basic) '
 title: 此数组是固定数组或被临时锁定
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID10
 ms.assetid: de6713a6-51d7-4edb-8515-d5fb544e2091
-ms.openlocfilehash: 05fb8e2ef788920fd200d79a75eec3d7c252b123
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 034bcc23055f7fb3f707e1105589a4526e6f9009
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641208"
 ---
 # <a name="this-array-is-fixed-or-temporarily-locked-visual-basic"></a>此数组被固定或临时锁定 (Visual Basic)
 

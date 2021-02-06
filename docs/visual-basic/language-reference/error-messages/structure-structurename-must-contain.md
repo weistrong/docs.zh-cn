@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30941：结构 " <structurename> " 必须至少包含一个实例成员变量或至少包含一个未标记为 "Custom" 的实例事件声明
 title: 结构“<structurename>”至少必须包含一个实例成员变量或至少必须包含一个未标记为“Custom”的实例事件声明
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30941
 ms.assetid: 7054cc1e-bac3-4c3d-82f3-35772bd8dd3b
-ms.openlocfilehash: 4e7ef82659c43be08ee444eaf3f4df663f7aaa53
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 08596997decd9d739ac95ad3e4191cb126b3efb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641442"
 ---
 # <a name="bc30941-structure-structurename-must-contain-at-least-one-instance-member-variable-or-at-least-one-instance-event-declaration-not-marked-custom"></a>BC30941：结构 " \<structurename> " 必须包含至少一个实例成员变量或至少包含一个未标记为 "Custom" 的实例事件声明
 
@@ -26,7 +27,7 @@ ms.locfileid: "92159646"
 
 - 定义至少一个不是的变量或事件 `Shared` 。 如果只定义了一个事件，则它必须是非自定义以及非共享的。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [结构](../../programming-guide/language-features/data-types/structures.md)
 - [如何：声明结构](../../programming-guide/language-features/data-types/how-to-declare-a-structure.md)

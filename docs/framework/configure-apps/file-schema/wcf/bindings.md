@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息： <bindings>
 title: <bindings>
 ms.date: 01/22/2018
 ms.assetid: b62cd369-5409-4030-8490-9759a462dd3a
-ms.openlocfilehash: fe8f620668e35183890b8bba1f254a74c962f8d3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2cf5b42b8478e34a528cd36435023cac62bf0c1e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74139659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639375"
 ---
 # \<bindings>
 
-您可以使用 `bindings` 元素来配置 Windows Communication Foundation （WCF）的标准绑定和自定义绑定的集合。 每一项都是一个可由其唯一 `binding` 进行标识的 `name` 元素。 服务通过用 `name` 与绑定进行链接来使用绑定。 从 .NET Framework 4 开始，绑定和行为不需要具有名称。 有关默认配置和无值绑定和行为的详细信息，请参阅[WCF 服务的](../../../wcf/samples/simplified-configuration-for-wcf-services.md)[简化配置](../../../wcf/simplified-configuration.md)和简化配置。
+您可以使用 `bindings` 元素为 Windows Communication Foundation (WCF) 配置标准绑定和自定义绑定的集合。 每一项都是一个可由其唯一 `binding` 进行标识的 `name` 元素。 服务通过用 `name` 与绑定进行链接来使用绑定。 从 .NET Framework 4 开始，绑定和行为不需要具有名称。 有关默认配置和无值绑定和行为的详细信息，请参阅[WCF 服务的](../../../wcf/samples/simplified-configuration-for-wcf-services.md)[简化配置](../../../wcf/simplified-configuration.md)和简化配置。
 
 ## <a name="system-provided-bindings"></a>系统提供的绑定
 
@@ -19,9 +20,9 @@ ms.locfileid: "74139659"
 
 每个系统提供的绑定的配置节可以定义用于配置此绑定的一些配置。 每个配置均由唯一的名称进行标识。
 
-无法将元素或特性添加到系统提供的绑定。 为此，应实现自[定义](#custom-bindings)绑定部分中所述的自定义绑定。 可以定义一个自定义绑定，该绑定将模拟系统提供的绑定，并添加用户应用程序要控制的一些设置。  
+无法将元素或特性添加到系统提供的绑定。 为此，应实现自 [定义](#custom-bindings) 绑定部分中所述的自定义绑定。 可以定义一个自定义绑定，该绑定将模拟系统提供的绑定，并添加用户应用程序要控制的一些设置。  
 
-有关系统提供的绑定的列表，请参阅[系统提供的绑定](../../../wcf/system-provided-bindings.md)。
+有关系统提供的绑定的列表，请参阅 [系统提供的绑定](../../../wcf/system-provided-bindings.md)。
 
 ## <a name="custom-bindings"></a>自定义绑定
 
@@ -31,7 +32,7 @@ ms.locfileid: "74139659"
 
 1. 事务（可选）  
 
-2. 可靠消息传送（可选）  
+2. 可靠消息 (可选)   
 
 3. 安全（可选）  
 
@@ -39,9 +40,9 @@ ms.locfileid: "74139659"
 
 5. Transport  
 
- 自定义绑定由其 `name` 特性来标识。 有关自定义绑定的详细信息，请参阅[自定义绑定](../../../wcf/extending/custom-bindings.md)。
+ 自定义绑定由其 `name` 特性来标识。 有关自定义绑定的详细信息，请参阅 [自定义绑定](../../../wcf/extending/custom-bindings.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Configuration.BindingsSection?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType>

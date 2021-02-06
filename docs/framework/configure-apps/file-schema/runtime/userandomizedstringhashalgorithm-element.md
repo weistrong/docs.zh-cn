@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <UseRandomizedStringHashAlgorithm> 元素
 title: <UseRandomizedStringHashAlgorithm> 元素
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - UseRandomizedStringHashAlgorithm element
 - <UseRandomizedStringHashAlgorithm> element
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-ms.openlocfilehash: 148d55c8b8a63737867c4bfdf3ab118dfdefd6f9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bb651fc9c9f6f3df448ed5ce19e81c1ae092838c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639973"
 ---
 # <a name="userandomizedstringhashalgorithm-element"></a>\<UseRandomizedStringHashAlgorithm> 元素
 
@@ -42,7 +43,7 @@ ms.locfileid: "91174090"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`0`|公共语言运行时不会为每个应用程序域计算字符串的哈希代码;单个算法用于计算字符串哈希代码。 这是默认设置。|  
 |`1`|公共语言运行时基于每个应用程序域计算字符串的哈希代码。 不同应用程序域和不同进程中的相同字符串具有不同的哈希代码。|  
@@ -53,7 +54,7 @@ ms.locfileid: "91174090"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关运行时初始化选项的信息。|  

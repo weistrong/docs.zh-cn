@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <requiredRuntime> 元素
 title: <requiredRuntime> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - <requiredRuntime> element
 - container tags, <requiredRuntime> element
 ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
-ms.openlocfilehash: 19fa1561ca3acd845918d952379c5227121465b4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e9d0a88a65f72ec03f3b2b124920d8265b8bf0c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174064"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639843"
 ---
 # <a name="requiredruntime-element"></a>\<requiredRuntime> 元素
 
@@ -45,7 +46,7 @@ safemode="true|false"/>
 
 ## <a name="safemode-attribute"></a>安全模式特性
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |`false`|运行时启动代码在注册表中查找。 这是默认值。|
 |`true`|运行时启动代码不会在注册表中查找。|
@@ -56,7 +57,7 @@ safemode="true|false"/>
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|
 |`startup`|包含 `<requiredRuntime>` 元素。|

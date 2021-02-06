@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：使用日历
 title: 使用日历
 ms.date: 04/01/2019
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - international applications [.NET], calendars
 - culture, calendars
 ms.assetid: 0c1534e5-979b-4c8a-a588-1c24301aefb3
-ms.openlocfilehash: c30af36b3426c4abbdf9c55f6c9062a5d8fc8c23
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 978b084906573a18e19cca20db0740ba2a1276cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642469"
 ---
 # <a name="work-with-calendars"></a>使用日历
 
@@ -240,10 +241,10 @@ ms.locfileid: "94824247"
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ 。NETFramework\AppContext** |
-   | **Name** | Switch.System。EnforceJapaneseEraYearRanges |
-   | 类型 | REG_SZ |
-   | **值** | true |
+   | **键** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ 。NETFramework\AppContext** |
+   | 名称 | Switch.System。EnforceJapaneseEraYearRanges |
+   | **类型** | REG_SZ |
+   | **值** | 是 |
 
 启用严格范围检查后，上面的示例将引发 <xref:System.ArgumentOutOfRangeException> ，并显示以下输出：
 
@@ -315,10 +316,10 @@ Parameter name: year
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ 。NETFramework\AppContext** |
-   | **Name** | Switch.System。FormatJapaneseFirstYearAsANumber |
-   | 类型 | REG_SZ |
-   | **值** | true |
+   | **键** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ 。NETFramework\AppContext** |
+   | 名称 | Switch.System。FormatJapaneseFirstYearAsANumber |
+   | **类型** | REG_SZ |
+   | **值** | 是 |
 
 如果禁用格式设置操作中的 gannen 支持，上一个示例将显示以下输出：
 
@@ -353,12 +354,12 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ 。NETFramework\AppContext** |
-   | **Name** | Switch.System。EnforceLegacyJapaneseDateParsing |
-   | 类型 | REG_SZ |
-   | **值** | true |
+   | **键** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ 。NETFramework\AppContext** |
+   | 名称 | Switch.System。EnforceLegacyJapaneseDateParsing |
+   | **类型** | REG_SZ |
+   | **值** | 是 |
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：用非公历日历显示日期](../base-types/how-to-display-dates-in-non-gregorian-calendars.md)
 - [示例：日历周范围实用工具](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)

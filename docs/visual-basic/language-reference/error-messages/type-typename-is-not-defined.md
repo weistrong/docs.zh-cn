@@ -1,4 +1,5 @@
 ---
+description: 了解更多相关信息： BC30002： <typename> 未定义类型 ""
 title: 未定义类型“<typename>”
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30002
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
-ms.openlocfilehash: 195e749e29494d438dbd052e8e308250f4cce1ca
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 48ee0c38492769aea8c1be2e9d54eaa537e35766
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161889"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641118"
 ---
 # <a name="bc30002-type-typename-is-not-defined"></a>BC30002： \<typename> 未定义类型 ""
 
@@ -32,7 +33,7 @@ ms.locfileid: "92161889"
 
 - 确保该类型位于作为目标 .NET Framework 配置文件的一部分的程序集中。 有关详细信息，请参阅 [.NET Framework 目标错误疑难解答](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的命名空间](../../programming-guide/program-structure/namespaces.md)
 - [Enum 语句](../statements/enum-statement.md)

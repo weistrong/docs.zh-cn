@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30251：类型 " <typename> " 没有构造函数
 title: 类型“<typename>”没有构造函数
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30251
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
-ms.openlocfilehash: 249bcb7020f26c7c43d560e91ef7a34e4dc64470
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 32ae854e9f1b037a17d9c378ce7ee4a3f9b43ad2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161174"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641169"
 ---
 # <a name="bc30251-type-typename-has-no-constructors"></a>BC30251：类型 " \<typename> " 没有构造函数
 
@@ -30,7 +31,7 @@ ms.locfileid: "92161174"
 
 4. 如果仍然出现错误，则收集有关该情况的信息并通知 Microsoft 产品支持服务。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对象和类](../../programming-guide/language-features/objects-and-classes/index.md)
 - [与我们交流](/visualstudio/ide/feedback-options)

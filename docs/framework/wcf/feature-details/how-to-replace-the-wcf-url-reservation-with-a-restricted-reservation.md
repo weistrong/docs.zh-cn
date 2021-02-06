@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：用受限保留替换 WCF URL 保留项
 title: 如何：用受限预留替换 WCF URL 预留
 ms.date: 03/30/2017
 ms.assetid: 2754d223-79fc-4e2b-a6ce-989889f2abfa
-ms.openlocfilehash: 52dc74ea1f8e86d6a92a2894b888b8d150ebf47c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b3fec02e6bf041430dfb7082453b33c7f448bb28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643418"
 ---
 # <a name="how-to-replace-the-wcf-url-reservation-with-a-restricted-reservation"></a>如何：用受限预留替换 WCF URL 预留
 

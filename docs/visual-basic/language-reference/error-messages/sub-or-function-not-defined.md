@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：未定义 (Visual Basic 的 Sub 或 Function) '
 title: 未定义 Sub 或 Function
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID35
 ms.assetid: 661fdb90-ee7d-40ce-b30b-5e7267bd957a
-ms.openlocfilehash: 24e290ce1193cd6bc6a0ec8985902576332423f2
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5726e8b23283b419577c468eee2344b234493425
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90870525"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641377"
 ---
 # <a name="sub-or-function-not-defined-visual-basic"></a>未定义 Sub 或 Function (Visual Basic)
 
@@ -31,7 +32,7 @@ ms.locfileid: "90870525"
   
 3. 检查例程的名称。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [错误类型](../../programming-guide/language-features/error-types.md)
 - [管理项目中的引用](/visualstudio/ide/managing-references-in-a-project)

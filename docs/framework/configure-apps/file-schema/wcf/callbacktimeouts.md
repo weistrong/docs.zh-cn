@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <callbackTimeouts>
 title: <callbackTimeouts>
 ms.date: 03/30/2017
 ms.assetid: d7fcfc5f-6d35-491e-8fa6-2f964c1e792f
-ms.openlocfilehash: 98523489aacebf910bcf5d81c479819183887dff
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8e2e05ad23f661c38430ccddc615c37705e6fc44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198881"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639193"
 ---
 # \<callbackTimeouts>
 
@@ -36,7 +37,7 @@ ms.locfileid: "91198881"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`transactionTimeout`|一个 <xref:System.TimeSpan> 值，指定时间间隔，事务必须在此期间完成，否则会自动终止。 默认值为 "00:00:00"。|  
   
@@ -46,7 +47,7 @@ ms.locfileid: "91198881"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定终结点行为。|  
   

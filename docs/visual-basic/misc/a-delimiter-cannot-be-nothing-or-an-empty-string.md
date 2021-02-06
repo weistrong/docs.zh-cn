@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：分隔符不能为 Nothing 或空字符串
 title: 分隔符不能为 Nothing 或空字符串
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_DelimiterNothing
 ms.assetid: 8885fcd1-c201-409d-9a32-6ff2b13c0c13
-ms.openlocfilehash: 786eb2bddc967e9b5b8fd6afec3ffbe264814834
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b48e1b2fdf1fd1026d56944f37ac17c90c14685c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640194"
 ---
 # <a name="a-delimiter-cannot-be-nothing-or-an-empty-string"></a>分隔符不能为 Nothing 或空字符串
 

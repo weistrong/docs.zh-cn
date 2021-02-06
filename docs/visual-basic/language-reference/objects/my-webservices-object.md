@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： WebServices 对象
 title: My.WebServices 对象
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.WebServices object
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
-ms.openlocfilehash: 0b63b44c2cd9d55094fb83fed6c04e4de528a25c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e8d7ef8b349fef6d69b92d9df4a23222bd3c912e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867209"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640532"
 ---
 # <a name="mywebservices-object"></a>My.WebServices 对象
 
@@ -31,7 +32,7 @@ ms.locfileid: "90867209"
  对象的每个属性都 `My.WebServices` 提供对当前项目所引用的 Web 服务的实例的访问。 属性的名称与属性所访问的 Web 服务的名称相同，属性类型与 Web 服务的类型相同。  
   
 > [!NOTE]
-> 如果存在名称冲突，则用于访问 Web 服务的属性名称为*RootNamespace*_*Namespace* \_ *ServiceName*。 例如，请考虑两个名为 `Service1` 的 Web 服务。 如果这些服务之一位于根命名空间 `WindowsApplication1` 和命名空间中 `Namespace1` ，则可以使用来访问该服务 `My.WebServices.WindowsApplication1_Namespace1_Service1` 。  
+> 如果存在名称冲突，则用于访问 Web 服务的属性名称为 *RootNamespace* _ *Namespace* \_ *ServiceName*。 例如，请考虑两个名为 `Service1` 的 Web 服务。 如果这些服务之一位于根命名空间 `WindowsApplication1` 和命名空间中 `Namespace1` ，则可以使用来访问该服务 `My.WebServices.WindowsApplication1_Namespace1_Service1` 。  
   
  首次访问某个 `My.WebServices` 对象的属性时，它将创建 Web 服务的新实例并将其存储。 此属性的后续访问将返回该 Web 服务的实例。  
   

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：指定通道安全凭据
 title: 如何：指定通道安全凭据
 ms.date: 03/30/2017
 ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119
-ms.openlocfilehash: 9236985ef461044e480847003d9d249b7e232783
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 18cbb1ea1113e5b31f5adb43556db03d91c618ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643145"
 ---
 # <a name="how-to-specify-channel-security-credentials"></a>如何：指定通道安全凭据
 
@@ -132,7 +133,7 @@ Windows Communication Foundation (WCF) 服务标记允许 COM 应用程序调用
   
      有关用于此方法的参数的更多信息，请参见 <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [联合](federation.md)
 - [如何：在联合身份验证服务上配置凭据](how-to-configure-credentials-on-a-federation-service.md)

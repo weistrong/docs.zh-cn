@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： My. Settings 对象
 title: My.Settings 对象
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Settings object
 ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
-ms.openlocfilehash: f3348e9eea5bdd7f4fd911150877c9aefdd66bcc
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 92323c5379d0c5a4dbf96cfdbe0becccc2bad7cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867289"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640597"
 ---
 # <a name="mysettings-object"></a>My.Settings 对象
 
@@ -26,7 +27,7 @@ ms.locfileid: "90867289"
 
  `My.Settings` 对象的属性提供对应用程序设置的访问。 若要添加或删除设置，请使用 " **设置设计器**"。  
   
- 每个设置都具有 **名称**、 **类型**、 **作用域**和 **值**，并且这些设置确定如何在对象中显示每个设置的属性 `My.Settings` ：  
+ 每个设置都具有 **名称**、 **类型**、 **作用域** 和 **值**，并且这些设置确定如何在对象中显示每个设置的属性 `My.Settings` ：  
   
 - **名称** 确定属性的名称。  
   
@@ -64,7 +65,7 @@ ms.locfileid: "90867289"
   
  若要使此示例正常工作，应用程序必须具有类型为 `String` 的 `Nickname` 设置。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Configuration.ApplicationSettingsBase>
 - [如何：在 Visual Basic 中读取应用程序设置](../../developing-apps/programming/app-settings/how-to-read-application-settings.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <behavior> 信息： <serviceBehaviors>
 title: <behavior> 的 <serviceBehaviors>
 ms.date: 03/30/2017
 ms.assetid: 78fc0a08-55de-416a-ac12-a5e6ffc9a987
-ms.openlocfilehash: 739f95f527fd73062c8cec43efc6777efeb077f3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e34254661026ad6dcb3429ad1b381cc3e6718f27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639531"
 ---
 # <a name="behavior-of-servicebehaviors"></a>\<behavior> 的 \<serviceBehaviors>
 
@@ -46,7 +47,7 @@ ms.locfileid: "91195150"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<dataContractSerializer>](datacontractserializer-element.md)|包含 DataContractSerializer 的配置数据。|  
 |[\<persistenceProvider>](persistenceprovider.md)|指定要使用的持久性提供程序实现的类型以及用于持久性操作的超时值。|  
@@ -65,6 +66,6 @@ ms.locfileid: "91195150"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceBehaviors>](servicebehaviors.md)|服务行为元素的集合。|

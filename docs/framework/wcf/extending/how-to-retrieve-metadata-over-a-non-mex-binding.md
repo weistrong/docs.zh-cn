@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：通过非 MEX 绑定检索元数据
 title: 如何：通过非 MEX 绑定检索元数据
 ms.date: 03/30/2017
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
-ms.openlocfilehash: db4bad81241295e168685c8b80546f2305021066
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 521e48d90e9dbed2e0ded61c60af59d063d2b3dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249015"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644211"
 ---
 # <a name="how-to-retrieve-metadata-over-a-non-mex-binding"></a>如何：通过非 MEX 绑定检索元数据
 
@@ -124,6 +125,6 @@ ms.locfileid: "96249015"
   
 5. 此时，您拥有服务终结点的集合。 有关导入元数据的详细信息，请参阅 [如何：将元数据导入服务终结点](../feature-details/how-to-import-metadata-into-service-endpoints.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - Metadata 

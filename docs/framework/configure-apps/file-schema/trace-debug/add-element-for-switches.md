@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <add> 的元素 <switches>
 title: <switches> 的 <add> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - <add> element for <switches>
 - add element for <switches>
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
-ms.openlocfilehash: 5be39425363cb6d2a0eca6a0fa3f4154ce857bb5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fc47a8518aca1e4e6390d9d7eba97d5fb7a7664e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639713"
 ---
 # <a name="add-element-for-switches"></a>\<switches> 的 \<add> 元素
 
@@ -36,9 +37,9 @@ ms.locfileid: "91173934"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|name|必需的特性。<br /><br /> 指定开关的名称。 此属性的值对应于传递给 switch 构造函数的 *displayName* 参数。|  
+|**name**|必需的特性。<br /><br /> 指定开关的名称。 此属性的值对应于传递给 switch 构造函数的 *displayName* 参数。|  
 |**value**|必需的特性。<br /><br /> 指定开关的级别。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -47,7 +48,7 @@ ms.locfileid: "91173934"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`switches`|包含跟踪开关和对该跟踪开关设置的级别。|  

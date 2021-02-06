@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息，请参阅如何：测试发现代理
 title: 如何：测试发现代理
 ms.date: 03/30/2017
 ms.assetid: d96e3fa2-3c42-4e5d-8244-2694081bdc32
-ms.openlocfilehash: b08e8561ceff9f0a427a9ea9acb2309772579853
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 32360fd1f3724f2a557182ce2e11d346ba5c959d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643106"
 ---
 # <a name="how-to-test-the-discovery-proxy"></a>如何：测试发现代理
 
@@ -15,7 +16,7 @@ ms.locfileid: "96294659"
   
 ### <a name="run-the-discovery-proxy"></a>运行发现代理  
   
-1. 以管理员身份打开命令提示符。  
+1. 作为管理员打开命令提示。  
   
 2. 您可能会看到显示如下内容的对话框：Windows 防火墙已经阻止此程序的部分功能。 如果看到此消息，请单击 " **解除阻止** " 按钮。  
   
@@ -25,7 +26,7 @@ ms.locfileid: "96294659"
   
 ### <a name="run-the-discoverable-service"></a>运行可检测服务  
   
-1. 以管理员身份打开命令提示符。  
+1. 作为管理员打开命令提示。  
   
 2. 在命令提示中，运行 Service.exe 可检测服务。  
   
@@ -51,7 +52,7 @@ ms.locfileid: "96294659"
   
 3. 关闭发现代理。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF Discovery 概述](wcf-discovery-overview.md)
 - [如何：实现发现代理](how-to-implement-a-discovery-proxy.md)

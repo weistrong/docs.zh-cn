@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：预测采用 Windows Communication Foundation：简化未来的集成
 title: Windows Communication Foundation 使用展望：轻松实现未来的集成
 ms.date: 03/30/2017
 ms.assetid: 3028bba8-6355-4ee0-9ecd-c56e614cb474
-ms.openlocfilehash: ead28354a3687bcca22a1a0eb5ccc9f15f0c69d2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 512e35e8a4cd6057c96e96a1474f393c3f006525
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266566"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643873"
 ---
 # <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-integration"></a>Windows Communication Foundation 使用展望：轻松实现未来的集成
 
@@ -45,10 +46,10 @@ public interface IEcho
   
  通过采用此方法，以后可将 .NET 类转换为附加了 <xref:System.Runtime.Serialization.DataContractAttribute> 和 <xref:System.Runtime.Serialization.DataMemberAttribute> 的数据协定，而无需为了传输而对类序列化成的 XML 进行重大更改。 ASP.NET Web 服务在消息中使用的类型将能够由 WCF 应用程序作为数据协定进行处理，从而实现了其他好处，从而提高了 WCF 应用程序的性能。  
   
-## <a name="security"></a>安全性  
+## <a name="security"></a>安全  
 
  避免使用 Internet Information Services (IIS) 提供的身份验证选项。 WCF 客户端不支持它们。 如果某个服务需要安全，请使用 WCF 提供的选项，因为这些选项更丰富并且基于标准协议。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Communication Foundation 使用展望：轻松实现未来的迁移](anticipating-adopting-wcf-migration.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：通过自定义绑定发布和检索元数据
 title: 通过自定义绑定发布和检索元数据
 ms.date: 03/30/2017
 ms.assetid: 904e11b4-d90e-45c6-9ee5-c3472c90008c
-ms.openlocfilehash: 2c88ab92bb9cbe2fc07240d0934d246fa4de5cc0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 26532c3478d8250e9f6ec7dbb9431be5052239b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262757"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644120"
 ---
 # <a name="publishing-and-retrieving-metadata-over-a-custom-binding"></a>通过自定义绑定发布和检索元数据
 
@@ -27,11 +28,11 @@ ms.locfileid: "96262757"
   
  如果 MEX 元数据终结点使用与标准 MEX 绑定之一不同的其他绑定，则您可以使用代码或通过提供 <xref:System.ServiceModel.Description.MetadataExchangeClient> 客户端终结点配置来配置由 <xref:System.ServiceModel.Description.IMetadataExchange> 所使用的绑定。 Svcutil.exe 工具可自动从其配置文件中加载一个 <xref:System.ServiceModel.Description.IMetadataExchange> 客户端终结点配置，该配置具有与元数据终结点地址的 URI 方案相同的名称。  
   
-## <a name="security"></a>安全性  
+## <a name="security"></a>安全  
 
  通过自定义绑定发布元数据时，请确保该绑定提供你的元数据所要求的安全支持。 例如，若要防止信息泄漏，并确保客户端具有获取元数据的权限，您可以通过将 <xref:System.ServiceModel.Description.IMetadataExchange> 终结点配置为要求身份验证和加密的方式使元数据和应用程序更加安全。 示例 [自定义安全元数据终结点](../samples/custom-secure-metadata-endpoint.md) 演示了这种情况。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [保证服务的安全](../securing-services.md)
 - [WS-MetadataExchange 绑定](ws-metadataexchange-bindings.md)

@@ -1,16 +1,17 @@
 ---
+description: 了解有关详细信息，请参阅如何：使用 x.509 证书保护服务
 title: 如何：使用 X.509 证书保证服务的安全
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2d06c2aa-d0d7-4e5e-ad7e-77416aa1c10b
-ms.openlocfilehash: bf498ee373f2d637a7a93fbc36225a38ff7744c0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 57c8e78777c620fd3078651dbafbbf010fbd3768
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643379"
 ---
 # <a name="how-to-secure-a-service-with-an-x509-certificate"></a>如何：使用 X.509 证书保证服务的安全
 
@@ -85,6 +86,6 @@ ms.locfileid: "96293892"
   
 - <xref:System.Runtime.Serialization>  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用证书](working-with-certificates.md)

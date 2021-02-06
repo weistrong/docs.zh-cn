@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC42110：不会推断变量 "" 的类型， <variablename> 因为它绑定到封闭范围中的某个字段
 title: 无法推断出变量“<variablename>”的类型，因为它绑定到封闭范围中的某个字段
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42110
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
-ms.openlocfilehash: 3e76ffea283de2843fc5586179074c01a053ece8
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: db31f1a6e87a2fd133f095e2fbdde7bc6bded97e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161278"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641234"
 ---
 # <a name="bc42110-the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>BC42110：不会推断变量 "" 的类型， \<variablename> 因为它绑定到封闭范围中的某个字段
 
@@ -83,7 +84,7 @@ Class Customer
 End Class
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Option Infer 语句](../statements/option-infer-statement.md)
 - [For Each...Next 语句](../statements/for-each-next-statement.md)

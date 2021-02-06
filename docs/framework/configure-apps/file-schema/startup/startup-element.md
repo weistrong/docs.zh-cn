@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <startup> 元素
 title: <startup> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - <startup> element
 - startup element
 ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
-ms.openlocfilehash: cd91abb288c1cfb281f17f2fce95d4956908468f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 82ece56aaa05376237922b3bd54b6f15967adf8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550841"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639817"
 ---
 # <a name="startup-element"></a>\<startup> 元素
 
@@ -42,10 +43,10 @@ ms.locfileid: "90550841"
 
 ## <a name="uselegacyv2runtimeactivationpolicy-attribute"></a>useLegacyV2RuntimeActivationPolicy 特性
 
-|“值”|说明|
+|值|说明|
 |-----------|-----------------|
 |`true`|为所选运行时启用 .NET Framework 2.0 运行时激活策略，这是为了将旧的运行时激活 (技术（如 [CorBindToRuntimeEx 函数](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) ）) 到从配置文件中选择的运行时，而不是在 CLR 版本2.0 上覆盖它们。 因此，如果从配置文件中选择了 CLR 版本4或更高版本，则将用所选的 CLR 版本加载随 .NET Framework 早期版本创建的混合模式程序集。 设置此值可防止 CLR 版本1.1 或 CLR 版本2.0 加载到同一进程中，从而有效禁用进程内并行功能。|
-|`false`|使用 .NET Framework 4 和更高版本的默认激活策略，这是为了允许旧的运行时激活技术将 CLR 版本1.1 或2.0 加载到进程中。 设置此值可防止混合模式程序集加载到 .NET Framework 4 或更高版本中，除非它们是用 .NET Framework 4 或更高版本生成的。 这是默认值。|
+|`false`|使用 .NET Framework 4 和更高版本的默认激活策略，这是为了允许旧的运行时激活技术将 CLR 版本1.1 或2.0 加载到进程中。 设置此值可防止混合模式程序集加载到 .NET Framework 4 或更高版本中，除非它们是用 .NET Framework 4 或更高版本生成的。 此值为默认值。|
 
 ### <a name="child-elements"></a>子元素
 

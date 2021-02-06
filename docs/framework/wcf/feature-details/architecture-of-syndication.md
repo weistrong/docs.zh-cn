@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：联合体系结构
 title: 联合体系结构
 ms.date: 03/30/2017
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
-ms.openlocfilehash: bc8c9cfbdc4f5d8ee01dfcf5098cfbc74afc2467
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 274ec121629bcb4e596401ad989309d3ef02c128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643730"
 ---
 # <a name="architecture-of-syndication"></a>联合体系结构
 
@@ -42,7 +43,7 @@ ms.locfileid: "96234799"
   
  格式设置类：  
   
-|实例|描述|  
+|实例|说明|  
 |-----------|-----------------|  
 |<xref:System.ServiceModel.Syndication.Atom10FeedFormatter>|用于将 <xref:System.ServiceModel.Syndication.SyndicationFeed> 实例序列化为 Atom 1.0 格式的类。|  
 |<xref:System.ServiceModel.Syndication.Atom10FeedFormatter%601>|用于将 <xref:System.ServiceModel.Syndication.SyndicationFeed> 派生类序列化为 Atom 1.0 格式的类。|  
@@ -55,7 +56,7 @@ ms.locfileid: "96234799"
   
  对象模型类：  
   
-|实例|描述|  
+|实例|说明|  
 |-----------|-----------------|  
 |<xref:System.ServiceModel.Syndication.SyndicationCategory>|一个表示联合源类别的类。|  
 |<xref:System.ServiceModel.Syndication.SyndicationContent>|一个表示联合内容的基类。|  
@@ -79,7 +80,7 @@ ms.locfileid: "96234799"
   
 - 联合协议的一个主要功能是扩展性。 Atom 1.0 和 RSS 2.0 都允许您向联合源中添加规范中没有定义的属性和元素。 WCF 联合编程模型提供了两种使用自定义属性和扩展的方法：派生新类和松散类型访问。 有关详细信息，请参阅 [联合扩展性](syndication-extensibility.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF 联合概述](wcf-syndication-overview.md)
 - [WCF 联合对象模型如何映射到 Atom 和 RSS](how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md)

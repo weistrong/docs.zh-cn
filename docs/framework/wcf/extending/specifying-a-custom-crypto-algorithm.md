@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：指定自定义加密算法
 title: 指定自定义加密算法
 ms.date: 03/30/2017
 ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d
-ms.openlocfilehash: bdb7d45752be94c4c81e27161f57f765d64bd94a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4d4cb525b46b33a0d0df8dd6a3db9e9fafe84f8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643964"
 ---
 # <a name="specifying-a-custom-crypto-algorithm"></a>指定自定义加密算法
 
@@ -129,9 +130,9 @@ WSHttpBinding binding = new WSHttpBinding();
   
  有关完整的代码示例，请参阅 [WCF 安全中的加密灵活性](../samples/cryptographic-agility-in-wcf-security.md) 示例。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [保护服务和客户端的安全](../feature-details/securing-services-and-clients.md)
 - [保证服务的安全](../securing-services.md)
 - [安全性概述](../feature-details/security-overview.md)
-- [安全性概念](../feature-details/security-concepts.md)
+- [安全概念](../feature-details/security-concepts.md)
