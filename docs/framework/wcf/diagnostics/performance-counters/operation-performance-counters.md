@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：操作性能计数器
 title: 操作性能计数器
 ms.date: 03/30/2017
 ms.assetid: 333a51e0-f56e-4e1a-b359-5c91ff390568
-ms.openlocfilehash: 01f3ed7b2722f7ff4bdbb50e352920bdc277330f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e0a503d4d8b178d5d3f4ef240bf84c4b02a581ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295219"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655196"
 ---
 # <a name="operation-performance-counters"></a>操作性能计数器
 
@@ -20,6 +21,6 @@ ms.locfileid: "96295219"
 > [!CAUTION]
 > 性能计数器实例的名称长度存在限制。 当 Windows Communication Foundation (WCF) 计数器实例名称超出最大长度时，WCF 会将部分实例名称替换为哈希值。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [性能计数器](index.md)
