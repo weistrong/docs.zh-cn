@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ExceptionOSHandlerEnter 方法
 title: ICorProfilerCallback::ExceptionOSHandlerEnter 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 09238b9b-9359-4780-89dc-2f5e4f57920e
 topic_type:
 - apiref
-ms.openlocfilehash: 273c3cefa2e67a7d8c429982b4da4126168b2830
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88dfd062451c63265716e7cf4c04292aa15f91ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699958"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657601"
 ---
 # <a name="icorprofilercallbackexceptionoshandlerenter-method"></a>ICorProfilerCallback::ExceptionOSHandlerEnter 方法
 
@@ -43,6 +44,6 @@ HRESULT ExceptionOSHandlerEnter(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

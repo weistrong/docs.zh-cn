@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： RuntimeSuspendStarted 方法
 title: ICorProfilerCallback::RuntimeSuspendStarted 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8461cac-e31b-4efa-ad2c-26598173eb96
 topic_type:
 - apiref
-ms.openlocfilehash: b778088f53a3c49def95d715f5fefcb26af81489
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f7ba6a2a8523589b025d98ea925b77d05d8a59d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657406"
 ---
 # <a name="icorprofilercallbackruntimesuspendstarted-method"></a>ICorProfilerCallback::RuntimeSuspendStarted 方法
 
@@ -38,7 +39,7 @@ HRESULT RuntimeSuspendStarted(
  `suspendReason`  
  中一个 [COR_PRF_SUSPEND_REASON](cor-prf-suspend-reason-enumeration.md) 枚举的值，该值指示挂起的原因。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  允许非托管代码中的所有运行时线程继续运行，直到它们尝试重新进入运行时。 此时，它们也将被挂起，直到运行时恢复。 这也适用于输入运行时的新线程。 如果运行时中的所有线程已处于中断的代码中，则会立即将其挂起，或者当它们到达中断的代码时要求它们挂起。  
   
@@ -52,7 +53,7 @@ HRESULT RuntimeSuspendStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [RuntimeSuspendAborted 方法](icorprofilercallback-runtimesuspendaborted-method.md)

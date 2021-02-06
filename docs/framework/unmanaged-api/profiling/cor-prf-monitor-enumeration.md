@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_MONITOR 枚举
 title: COR_PRF_MONITOR 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9294d702-b4e5-441c-a930-e63d27b86bfd
 topic_type:
 - apiref
-ms.openlocfilehash: e5e850e2464c310697c1cd1797d2207958591907
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5b0bd17713e47e40982e88f33721bf7d6d27fd00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657783"
 ---
 # <a name="cor_prf_monitor-enumeration"></a>COR_PRF_MONITOR 枚举
 
@@ -137,7 +138,7 @@ typedef enum {
 |`COR_PRF_MONITOR_ENTERLEAVE`|控制 `FunctionEnter*` 、 `FunctionLeave*` 和 `FunctionTailCall*` [分析全局静态函数](profiling-global-static-functions.md)。|  
 |`COR_PRF_MONITOR_EXCEPTIONS`|控制 [ExceptionThrown](icorprofilercallback-exceptionthrown-method.md) 回调，并控制 `ExceptionSearch*` `ExceptionOSHandler*` `ExceptionUnwind*` `ExceptionCatcher*` [ICorProfilerCallback](icorprofilercallback-interface.md) 接口中的、、和回调。|  
 |`COR_PRF_MONITOR_FUNCTION_UNLOADS`|控制[ICorProfilerCallback](icorprofilercallback-interface.md)接口中的[FunctionUnloadStarted](icorprofilercallback-functionunloadstarted-method.md)回调。|  
-|`COR_PRF_MONITOR_GC`|控制接口中的[GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md)、 [GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md)、 [MovedReferences](icorprofilercallback-movedreferences-method.md)、 [MovedReferences2](icorprofilercallback4-movedreferences2-method.md)、 [SurvivingReferences](icorprofilercallback2-survivingreferences-method.md)、 [SurvivingReferences2](icorprofilercallback4-survivingreferences2-method.md)、ObjectReferences、 [ObjectsAllocatedByClass](icorprofilercallback-objectsallocatedbyclass-method.md)、 [RootReferences](icorprofilercallback-rootreferences-method.md)、 [HandleCreated](icorprofilercallback2-handlecreated-method.md) [RootReferences2](icorprofilercallback2-rootreferences2-method.md) [、HandleCreated、](icorprofilercallback-objectreferences-method.md) [HandleDestroyed 和](icorprofilercallback2-handledestroyed-method.md) [FinalizeableObjectQueued](icorprofilercallback2-finalizeableobjectqueued-method.md)回调 `ICorProfilerCallback*` 。 当 `COR_PRF_MONITOR_GC` 分配时，将关闭并发垃圾回收。|  
+|`COR_PRF_MONITOR_GC`|控制接口中的[GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md)、 [GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md)、 [MovedReferences](icorprofilercallback-movedreferences-method.md)、 [MovedReferences2](icorprofilercallback4-movedreferences2-method.md)、 [SurvivingReferences](icorprofilercallback2-survivingreferences-method.md)、 [SurvivingReferences2](icorprofilercallback4-survivingreferences2-method.md)、ObjectReferences、 [ObjectsAllocatedByClass](icorprofilercallback-objectsallocatedbyclass-method.md)、 [RootReferences](icorprofilercallback-rootreferences-method.md)、 [](icorprofilercallback2-handlecreated-method.md) [RootReferences2](icorprofilercallback2-rootreferences2-method.md) [、HandleCreated、](icorprofilercallback-objectreferences-method.md) [HandleDestroyed 和](icorprofilercallback2-handledestroyed-method.md) [FinalizeableObjectQueued](icorprofilercallback2-finalizeableobjectqueued-method.md)回调 `ICorProfilerCallback*` 。 当 `COR_PRF_MONITOR_GC` 分配时，将关闭并发垃圾回收。|  
 |`COR_PRF_MONITOR_JIT_COMPILATION`|控制 `JITCompilation*` [ICorProfilerCallback](icorprofilercallback-interface.md)接口中的、 [JITFunctionPitched](icorprofilercallback-jitfunctionpitched-method.md)和[JITInlining](icorprofilercallback-jitinlining-method.md)回调。|  
 |`COR_PRF_MONITOR_MODULE_LOADS`|控制 `ModuleLoad*` `ModuleUnload*` [ICorProfilerCallback](icorprofilercallback-interface.md)接口中的、和[ModuleAttachedToAssembly](icorprofilercallback-moduleattachedtoassembly-method.md)回调。|  
 |`COR_PRF_MONITOR_OBJECT_ALLOCATED`|控制[ICorProfilerCallback](icorprofilercallback-interface.md)接口中的[ObjectAllocated](icorprofilercallback-objectallocated-method.md)回调。|  
@@ -153,7 +154,7 @@ typedef enum {
   
 |成员|说明|  
 |------------|-----------------|  
-|`COR_PRF_ENABLE_FRAME_INFO`|`ClassID`通过使用 FunctionEnter2 回调返回的值调用[GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md)方法，实现对泛型函数的准确检索 `COR_PRF_FRAME_INFO` 。 [FunctionEnter2](functionenter2-function.md)|  
+|`COR_PRF_ENABLE_FRAME_INFO`|`ClassID`通过使用 FunctionEnter2 回调返回的值调用[GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md)方法，实现对泛型函数的准确检索 `COR_PRF_FRAME_INFO` 。 [](functionenter2-function.md)|  
 |`COR_PRF_ENABLE_FUNCTION_ARGS`|使用 [FunctionEnter2](functionenter2-function.md) 回调或 [FunctionEnter3WithInfo](functionenter3withinfo-function.md) 回调和 [GetFunctionEnter3Info](icorprofilerinfo3-getfunctionenter3info-method.md) 方法启用参数跟踪。|  
 |`COR_PRF_ENABLE_FUNCTION_RETVAL`|启用使用 [FunctionLeave2](functionleave2-function.md) 回调或 [FunctionLeave3WithInfo](functionleave3withinfo-function.md) 回调和 [GetFunctionLeave3Info](icorprofilerinfo3-getfunctionleave3info-method.md) 方法跟踪返回值。|  
 |`COR_PRF_ENABLE_INPROC_DEBUGGING`|已弃用。<br /><br /> 不支持进程内调试。 此标志无效。|  
@@ -186,7 +187,7 @@ typedef enum {
 |`COR_PRF_MONITOR_IMMUTABLE`|表示只能在初始化过程中进行设置的所有 `COR_PRF_MONITOR` 标志。 如果在初始化后尝试更改这些标志中的任一标志，则会返回一个指示失败的 `HRESULT` 值。|  
 |`COR_PRF_REQUIRE_PROFILE_IMAGE`|表示需要配置增强的映像的所有 `COR_PRF_MONITOR` 标志。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  将 `COR_PRF_MONITOR` 值与 [ICorProfilerInfo：： GetEventMask](icorprofilerinfo-geteventmask-method.md) 和 [ICorProfilerInfo：： SetEventMask](icorprofilerinfo-seteventmask-method.md) 方法一起使用，以定义公共语言运行时对探查器发出的事件通知。  
   
@@ -200,7 +201,7 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析枚举](profiling-enumerations.md)
 - [GetEventMask 方法](icorprofilerinfo-geteventmask-method.md)

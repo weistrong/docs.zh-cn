@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugType：： GetStaticFieldValue 方法
 title: ICorDebugType::GetStaticFieldValue 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 62eb5d55-53ee-4fb3-8d47-7b6c96808f9e
 topic_type:
 - apiref
-ms.openlocfilehash: 281b9f46194e93220f47ef8aadbf29ce03084582
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 378c72f24fedd76f40704ff684781bed124055bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711939"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658225"
 ---
 # <a name="icordebugtypegetstaticfieldvalue-method"></a>ICorDebugType::GetStaticFieldValue 方法
 
@@ -47,7 +48,7 @@ HRESULT GetStaticFieldValue (
  `ppValue`  
  弄指向的地址的指针 `ICorDebugValue` ，该地址包含静态字段的值。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetStaticFieldValue`仅当类型是 ELEMENT_TYPE_CLASS 或 ELEMENT_TYPE_VALUETYPE 时，才可以使用方法，如[ICorDebugType：： GetType](icordebugtype-gettype-method.md)方法所示。  
   
@@ -55,7 +56,7 @@ HRESULT GetStaticFieldValue (
   
  对于泛型类型，静态字段值将与特定实例化相关。 此外，如果静态字段可能是相对于线程、上下文或应用程序域的，则堆栈帧将有助于调试器确定正确的值。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetStaticFieldValue` 仅当对的调用 `ICorDebugType::GetType` 返回 ELEMENT_TYPE_CLASS 或 ELEMENT_TYPE_VALUETYPE 的值时才可使用。  
   

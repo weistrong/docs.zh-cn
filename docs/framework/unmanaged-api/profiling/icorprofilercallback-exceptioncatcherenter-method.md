@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ExceptionCatcherEnter 方法
 title: ICorProfilerCallback::ExceptionCatcherEnter 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41462329-a648-46f0-ae6d-728b94c31aa9
 topic_type:
 - apiref
-ms.openlocfilehash: 97b9f517a24a7d82b7697cd0723628ede073b537
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a813936a7d1f3a5041e192c85d02b37976e3388
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657627"
 ---
 # <a name="icorprofilercallbackexceptioncatcherenter-method"></a>ICorProfilerCallback::ExceptionCatcherEnter 方法
 
@@ -44,7 +45,7 @@ HRESULT ExceptionCatcherEnter(
 
   \[in] 正在处理的异常的标识符。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ExceptionCatcherEnter`仅当 catch 点位于用实时 (JIT) 编译器编译的代码中时，才会调用方法。 在非托管代码中或在运行时的内部代码中捕获的异常将不会调用此通知。 由于 `objectId` 垃圾回收可能已在通知后移动了对象，因此会再次传递该值 `ExceptionThrown` 。  
   
@@ -62,7 +63,7 @@ HRESULT ExceptionCatcherEnter(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ExceptionCatcherLeave 方法](icorprofilercallback-exceptioncatcherleave-method.md)
