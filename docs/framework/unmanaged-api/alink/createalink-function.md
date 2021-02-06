@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CreateALink 函数
 title: CreateALink 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: fc73bcb9-6af6-44d8-bc39-2f4400325dae
 topic_type:
 - apiref
-ms.openlocfilehash: 98c6ed4657dc69554a9fcca27145f65c621492f4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf34ae8d38a8339f539c770df8f5dd14e4a3e4b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638361"
 ---
-# <a name="createalink-function"></a><span data-ttu-id="3e784-102">CreateALink 函数</span><span class="sxs-lookup"><span data-stu-id="3e784-102">CreateALink Function</span></span>
+# <a name="createalink-function"></a><span data-ttu-id="16f10-103">CreateALink 函数</span><span class="sxs-lookup"><span data-stu-id="16f10-103">CreateALink Function</span></span>
 
-<span data-ttu-id="3e784-103">创建程序集链接器的实例，并设置指向指定接口的指针。</span><span class="sxs-lookup"><span data-stu-id="3e784-103">Creates an instance of the Assembly Linker and sets a pointer to the specified interface.</span></span>  
+<span data-ttu-id="16f10-104">创建程序集链接器的实例，并设置指向指定接口的指针。</span><span class="sxs-lookup"><span data-stu-id="16f10-104">Creates an instance of the Assembly Linker and sets a pointer to the specified interface.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="3e784-104">语法</span><span class="sxs-lookup"><span data-stu-id="3e784-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="16f10-105">语法</span><span class="sxs-lookup"><span data-stu-id="16f10-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT CreateALink (  
@@ -35,17 +36,17 @@ HRESULT CreateALink (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="3e784-105">参数</span><span class="sxs-lookup"><span data-stu-id="3e784-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="16f10-106">参数</span><span class="sxs-lookup"><span data-stu-id="16f10-106">Parameters</span></span>  
   
-|<span data-ttu-id="3e784-106">参数</span><span class="sxs-lookup"><span data-stu-id="3e784-106">Parameter</span></span>|<span data-ttu-id="3e784-107">说明</span><span class="sxs-lookup"><span data-stu-id="3e784-107">Description</span></span>|  
+|<span data-ttu-id="16f10-107">参数</span><span class="sxs-lookup"><span data-stu-id="16f10-107">Parameter</span></span>|<span data-ttu-id="16f10-108">说明</span><span class="sxs-lookup"><span data-stu-id="16f10-108">Description</span></span>|  
 |---------------|-----------------|  
-|`riid`|<span data-ttu-id="3e784-108">某个程序集链接器接口的物理名称。</span><span class="sxs-lookup"><span data-stu-id="3e784-108">The physical name of one of the Assembly Linker interfaces.</span></span>|  
-|`ppInterface`|<span data-ttu-id="3e784-109">成功完成后的位置包含指向接口的指针 `riid` 。</span><span class="sxs-lookup"><span data-stu-id="3e784-109">The location that on successful completion contains a pointer to the `riid` interface.</span></span>|  
+|`riid`|<span data-ttu-id="16f10-109">某个程序集链接器接口的物理名称。</span><span class="sxs-lookup"><span data-stu-id="16f10-109">The physical name of one of the Assembly Linker interfaces.</span></span>|  
+|`ppInterface`|<span data-ttu-id="16f10-110">成功完成后的位置包含指向接口的指针 `riid` 。</span><span class="sxs-lookup"><span data-stu-id="16f10-110">The location that on successful completion contains a pointer to the `riid` interface.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="3e784-110">要求</span><span class="sxs-lookup"><span data-stu-id="3e784-110">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="16f10-111">要求</span><span class="sxs-lookup"><span data-stu-id="16f10-111">Requirements</span></span>  
 
- <span data-ttu-id="3e784-111">**库**： alink.dll</span><span class="sxs-lookup"><span data-stu-id="3e784-111">**Library**: alink.dll</span></span>  
+ <span data-ttu-id="16f10-112">**库**： alink.dll</span><span class="sxs-lookup"><span data-stu-id="16f10-112">**Library**: alink.dll</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3e784-112">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3e784-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="16f10-113">请参阅</span><span class="sxs-lookup"><span data-stu-id="16f10-113">See also</span></span>
 
-- [<span data-ttu-id="3e784-113">Al.exe（程序集链接器）</span><span class="sxs-lookup"><span data-stu-id="3e784-113">Al.exe (Assembly Linker)</span></span>](../../tools/al-exe-assembly-linker.md)
+- [<span data-ttu-id="16f10-114">Al.exe（程序集链接器）</span><span class="sxs-lookup"><span data-stu-id="16f10-114">Al.exe (Assembly Linker)</span></span>](../../tools/al-exe-assembly-linker.md)
