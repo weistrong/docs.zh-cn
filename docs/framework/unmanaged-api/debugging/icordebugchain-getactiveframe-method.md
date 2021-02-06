@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugChain：： GetActiveFrame 方法
 title: ICorDebugChain::GetActiveFrame 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 36887017-670b-4f21-b406-8fab956f84a3
 topic_type:
 - apiref
-ms.openlocfilehash: daecd216b4d7e9c23336b8956c13735549be901b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d46906d9d6c671880d9446d889cdf9f83f3b4366
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661388"
 ---
-# <a name="icordebugchaingetactiveframe-method"></a><span data-ttu-id="9053c-102">ICorDebugChain::GetActiveFrame 方法</span><span class="sxs-lookup"><span data-stu-id="9053c-102">ICorDebugChain::GetActiveFrame Method</span></span>
+# <a name="icordebugchaingetactiveframe-method"></a><span data-ttu-id="3f419-103">ICorDebugChain::GetActiveFrame 方法</span><span class="sxs-lookup"><span data-stu-id="3f419-103">ICorDebugChain::GetActiveFrame Method</span></span>
 
-<span data-ttu-id="9053c-103">获取当前链上的活动 (，即最近) 的帧。</span><span class="sxs-lookup"><span data-stu-id="9053c-103">Gets the active (that is, most recent) frame on the chain.</span></span>  
+<span data-ttu-id="3f419-104">获取当前链上的活动 (，即最近) 的帧。</span><span class="sxs-lookup"><span data-stu-id="3f419-104">Gets the active (that is, most recent) frame on the chain.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="9053c-104">语法</span><span class="sxs-lookup"><span data-stu-id="9053c-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3f419-105">语法</span><span class="sxs-lookup"><span data-stu-id="3f419-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetActiveFrame (  
@@ -34,23 +35,23 @@ HRESULT GetActiveFrame (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="9053c-105">参数</span><span class="sxs-lookup"><span data-stu-id="9053c-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="3f419-106">参数</span><span class="sxs-lookup"><span data-stu-id="3f419-106">Parameters</span></span>  
 
  `ppFrame`  
- <span data-ttu-id="9053c-106">弄指向 ICorDebugFrame 对象的地址的指针，该对象表示活动 (，即链上最近) 的帧。</span><span class="sxs-lookup"><span data-stu-id="9053c-106">[out] A pointer to the address of an ICorDebugFrame object that represents the active (that is, most recent) frame on the chain.</span></span>  
+ <span data-ttu-id="3f419-107">弄指向 ICorDebugFrame 对象的地址的指针，该对象表示活动 (，即链上最近) 的帧。</span><span class="sxs-lookup"><span data-stu-id="3f419-107">[out] A pointer to the address of an ICorDebugFrame object that represents the active (that is, most recent) frame on the chain.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="9053c-107">注解</span><span class="sxs-lookup"><span data-stu-id="9053c-107">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="3f419-108">备注</span><span class="sxs-lookup"><span data-stu-id="3f419-108">Remarks</span></span>  
 
- <span data-ttu-id="9053c-108">如果没有可用的托管堆栈帧， `ppFrame` 则将设置为 null。</span><span class="sxs-lookup"><span data-stu-id="9053c-108">If no managed stack frame is available, `ppFrame` is set to null.</span></span>  
+ <span data-ttu-id="3f419-109">如果没有可用的托管堆栈帧， `ppFrame` 则将设置为 null。</span><span class="sxs-lookup"><span data-stu-id="3f419-109">If no managed stack frame is available, `ppFrame` is set to null.</span></span>  
   
- <span data-ttu-id="9053c-109">如果活动帧不可用，则调用将成功，并且 `ppFrame` 将为 null。</span><span class="sxs-lookup"><span data-stu-id="9053c-109">If the active frame is not available, the call will succeed and `ppFrame` will be null.</span></span> <span data-ttu-id="9053c-110">由于 CHAIN_ENTER_UNMANAGED，活动帧将不可用于发起的链，并且由于 CHAIN_CLASS_INIT 而导致的某些链启动了。</span><span class="sxs-lookup"><span data-stu-id="9053c-110">Active frames will not be available for chains initiated due to CHAIN_ENTER_UNMANAGED, and for some chains initiated due to CHAIN_CLASS_INIT.</span></span> <span data-ttu-id="9053c-111">请参阅 CorDebugChainReason 枚举。</span><span class="sxs-lookup"><span data-stu-id="9053c-111">See the CorDebugChainReason enumeration.</span></span>  
+ <span data-ttu-id="3f419-110">如果活动帧不可用，则调用将成功，并且 `ppFrame` 将为 null。</span><span class="sxs-lookup"><span data-stu-id="3f419-110">If the active frame is not available, the call will succeed and `ppFrame` will be null.</span></span> <span data-ttu-id="3f419-111">由于 CHAIN_ENTER_UNMANAGED，活动帧将不可用于发起的链，并且由于 CHAIN_CLASS_INIT 而导致的某些链启动了。</span><span class="sxs-lookup"><span data-stu-id="3f419-111">Active frames will not be available for chains initiated due to CHAIN_ENTER_UNMANAGED, and for some chains initiated due to CHAIN_CLASS_INIT.</span></span> <span data-ttu-id="3f419-112">请参阅 CorDebugChainReason 枚举。</span><span class="sxs-lookup"><span data-stu-id="3f419-112">See the CorDebugChainReason enumeration.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="9053c-112">要求</span><span class="sxs-lookup"><span data-stu-id="9053c-112">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="3f419-113">要求</span><span class="sxs-lookup"><span data-stu-id="3f419-113">Requirements</span></span>  
 
- <span data-ttu-id="9053c-113">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="9053c-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="3f419-114">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="3f419-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="9053c-114">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="9053c-114">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="3f419-115">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="3f419-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="9053c-115">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="9053c-115">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="3f419-116">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="3f419-116">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="9053c-116">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="9053c-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="3f419-117">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3f419-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>

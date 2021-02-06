@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： DacpGetModuleAddress 结构
 title: DacpGetModuleAddress 结构
 ms.date: 01/16/2019
 api.name:
@@ -15,20 +16,20 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: a65fa9974165fa36e59a7fb83dca6dd902f7d8dc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3de76cc4f15bffd35d7a43ae25a313eb2fe59b82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661592"
 ---
-# <a name="dacpgetmoduleaddress-structure"></a><span data-ttu-id="32e32-102">DacpGetModuleAddress 结构</span><span class="sxs-lookup"><span data-stu-id="32e32-102">DacpGetModuleAddress Structure</span></span>
+# <a name="dacpgetmoduleaddress-structure"></a><span data-ttu-id="d044f-103">DacpGetModuleAddress 结构</span><span class="sxs-lookup"><span data-stu-id="d044f-103">DacpGetModuleAddress Structure</span></span>
 
-<span data-ttu-id="32e32-103">定义模块地址请求的容器。</span><span class="sxs-lookup"><span data-stu-id="32e32-103">Defines the container for a module address request.</span></span>
+<span data-ttu-id="d044f-104">定义模块地址请求的容器。</span><span class="sxs-lookup"><span data-stu-id="d044f-104">Defines the container for a module address request.</span></span>
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
-## <a name="syntax"></a><span data-ttu-id="32e32-104">语法</span><span class="sxs-lookup"><span data-stu-id="32e32-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d044f-105">语法</span><span class="sxs-lookup"><span data-stu-id="d044f-105">Syntax</span></span>
 
 ```cpp
 struct DacpGetModuleAddress
@@ -37,30 +38,30 @@ struct DacpGetModuleAddress
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="32e32-105">成员</span><span class="sxs-lookup"><span data-stu-id="32e32-105">Members</span></span>
+## <a name="members"></a><span data-ttu-id="d044f-106">成员</span><span class="sxs-lookup"><span data-stu-id="d044f-106">Members</span></span>
 
-| <span data-ttu-id="32e32-106">成员</span><span class="sxs-lookup"><span data-stu-id="32e32-106">Member</span></span>      | <span data-ttu-id="32e32-107">说明</span><span class="sxs-lookup"><span data-stu-id="32e32-107">Description</span></span>                |
+| <span data-ttu-id="d044f-107">成员</span><span class="sxs-lookup"><span data-stu-id="d044f-107">Member</span></span>      | <span data-ttu-id="d044f-108">说明</span><span class="sxs-lookup"><span data-stu-id="d044f-108">Description</span></span>                |
 | ----------- | -------------------------- |
-| `ModulePtr` | <span data-ttu-id="32e32-108">指向模块的指针。</span><span class="sxs-lookup"><span data-stu-id="32e32-108">The pointer to the module.</span></span> |
+| `ModulePtr` | <span data-ttu-id="d044f-109">指向模块的指针。</span><span class="sxs-lookup"><span data-stu-id="d044f-109">The pointer to the module.</span></span> |
 
-## <a name="methods"></a><span data-ttu-id="32e32-109">方法</span><span class="sxs-lookup"><span data-stu-id="32e32-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="d044f-110">方法</span><span class="sxs-lookup"><span data-stu-id="d044f-110">Methods</span></span>
 
-| <span data-ttu-id="32e32-110">方法</span><span class="sxs-lookup"><span data-stu-id="32e32-110">Method</span></span>                                                                                               | <span data-ttu-id="32e32-111">说明</span><span class="sxs-lookup"><span data-stu-id="32e32-111">Description</span></span>                                                                    |
+| <span data-ttu-id="d044f-111">方法</span><span class="sxs-lookup"><span data-stu-id="d044f-111">Method</span></span>                                                                                               | <span data-ttu-id="d044f-112">说明</span><span class="sxs-lookup"><span data-stu-id="d044f-112">Description</span></span>                                                                    |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [<span data-ttu-id="32e32-112">请求</span><span class="sxs-lookup"><span data-stu-id="32e32-112">Request</span></span>](dacpgetmoduleaddress-request-method.md) | <span data-ttu-id="32e32-113">执行从给定的运行时结构填充结构的请求。</span><span class="sxs-lookup"><span data-stu-id="32e32-113">Performs a request to populate the structure from the given runtime structure.</span></span> |
+| [<span data-ttu-id="d044f-113">请求</span><span class="sxs-lookup"><span data-stu-id="d044f-113">Request</span></span>](dacpgetmoduleaddress-request-method.md) | <span data-ttu-id="d044f-114">执行从给定的运行时结构填充结构的请求。</span><span class="sxs-lookup"><span data-stu-id="d044f-114">Performs a request to populate the structure from the given runtime structure.</span></span> |
 
-## <a name="remarks"></a><span data-ttu-id="32e32-114">注解</span><span class="sxs-lookup"><span data-stu-id="32e32-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d044f-115">备注</span><span class="sxs-lookup"><span data-stu-id="d044f-115">Remarks</span></span>
 
-<span data-ttu-id="32e32-115">此结构存在于运行时中，并且不会通过任何标头或库文件公开。</span><span class="sxs-lookup"><span data-stu-id="32e32-115">This structure lives inside the runtime and is not exposed through any headers or library files.</span></span> <span data-ttu-id="32e32-116">若要使用它，请定义上面指定的结构，其中 `CLRDATA_ADDRESS` 是一个64位无符号整数。</span><span class="sxs-lookup"><span data-stu-id="32e32-116">To use it, define the structure as specified above, where `CLRDATA_ADDRESS` is a 64-bit unsigned integer.</span></span>
+<span data-ttu-id="d044f-116">此结构存在于运行时中，并且不会通过任何标头或库文件公开。</span><span class="sxs-lookup"><span data-stu-id="d044f-116">This structure lives inside the runtime and is not exposed through any headers or library files.</span></span> <span data-ttu-id="d044f-117">若要使用它，请定义上面指定的结构，其中 `CLRDATA_ADDRESS` 是一个64位无符号整数。</span><span class="sxs-lookup"><span data-stu-id="d044f-117">To use it, define the structure as specified above, where `CLRDATA_ADDRESS` is a 64-bit unsigned integer.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="32e32-117">要求</span><span class="sxs-lookup"><span data-stu-id="32e32-117">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="d044f-118">要求</span><span class="sxs-lookup"><span data-stu-id="d044f-118">Requirements</span></span>
 
-<span data-ttu-id="32e32-118">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="32e32-118">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-<span data-ttu-id="32e32-119">**标头：** 内容</span><span class="sxs-lookup"><span data-stu-id="32e32-119">**Header:** None</span></span>  
-<span data-ttu-id="32e32-120">**库：** 内容</span><span class="sxs-lookup"><span data-stu-id="32e32-120">**Library:** None</span></span>  
-<span data-ttu-id="32e32-121">**.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span><span class="sxs-lookup"><span data-stu-id="32e32-121">**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span></span>  
+<span data-ttu-id="d044f-119">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="d044f-119">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+<span data-ttu-id="d044f-120">**标头：** 内容</span><span class="sxs-lookup"><span data-stu-id="d044f-120">**Header:** None</span></span>  
+<span data-ttu-id="d044f-121">**库：** 内容</span><span class="sxs-lookup"><span data-stu-id="d044f-121">**Library:** None</span></span>  
+<span data-ttu-id="d044f-122">**.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span><span class="sxs-lookup"><span data-stu-id="d044f-122">**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="32e32-122">另请参阅</span><span class="sxs-lookup"><span data-stu-id="32e32-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d044f-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="d044f-123">See also</span></span>
 
-- [<span data-ttu-id="32e32-123">调试</span><span class="sxs-lookup"><span data-stu-id="32e32-123">Debugging</span></span>](index.md)
-- [<span data-ttu-id="32e32-124">调试结构</span><span class="sxs-lookup"><span data-stu-id="32e32-124">Debugging Structures</span></span>](debugging-structures.md)
+- [<span data-ttu-id="d044f-124">调试</span><span class="sxs-lookup"><span data-stu-id="d044f-124">Debugging</span></span>](index.md)
+- [<span data-ttu-id="d044f-125">调试结构</span><span class="sxs-lookup"><span data-stu-id="d044f-125">Debugging Structures</span></span>](debugging-structures.md)

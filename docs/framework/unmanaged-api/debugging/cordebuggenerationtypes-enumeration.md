@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugGenerationTypes 枚举
 title: CorDebugGenerationTypes 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
 topic_type:
 - apiref
-ms.openlocfilehash: 189a276b4228038ab1d70620ce3a4a0f4342b245
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f86b2bc9bf947c6b285c50678f46494005bb5537
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662125"
 ---
-# <a name="cordebuggenerationtypes-enumeration"></a><span data-ttu-id="ee27b-102">CorDebugGenerationTypes 枚举</span><span class="sxs-lookup"><span data-stu-id="ee27b-102">CorDebugGenerationTypes Enumeration</span></span>
+# <a name="cordebuggenerationtypes-enumeration"></a><span data-ttu-id="b632b-103">CorDebugGenerationTypes 枚举</span><span class="sxs-lookup"><span data-stu-id="b632b-103">CorDebugGenerationTypes Enumeration</span></span>
 
-<span data-ttu-id="ee27b-103">指定托管堆上内存区域的生成。</span><span class="sxs-lookup"><span data-stu-id="ee27b-103">Specifies the generation of a region of memory on the managed heap.</span></span>  
+<span data-ttu-id="b632b-104">指定托管堆上内存区域的生成。</span><span class="sxs-lookup"><span data-stu-id="b632b-104">Specifies the generation of a region of memory on the managed heap.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ee27b-104">语法</span><span class="sxs-lookup"><span data-stu-id="ee27b-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="b632b-105">语法</span><span class="sxs-lookup"><span data-stu-id="b632b-105">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorDebugGenerationTypes {  
@@ -36,27 +37,27 @@ typedef enum CorDebugGenerationTypes {
 } CorDebugRegionTypes;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="ee27b-105">成员</span><span class="sxs-lookup"><span data-stu-id="ee27b-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="b632b-106">成员</span><span class="sxs-lookup"><span data-stu-id="b632b-106">Members</span></span>  
   
-|<span data-ttu-id="ee27b-106">成员名称</span><span class="sxs-lookup"><span data-stu-id="ee27b-106">Member name</span></span>|<span data-ttu-id="ee27b-107">说明</span><span class="sxs-lookup"><span data-stu-id="ee27b-107">Description</span></span>|  
+|<span data-ttu-id="b632b-107">成员名称</span><span class="sxs-lookup"><span data-stu-id="b632b-107">Member name</span></span>|<span data-ttu-id="b632b-108">描述</span><span class="sxs-lookup"><span data-stu-id="b632b-108">Description</span></span>|  
 |-----------------|-----------------|  
-|`CorDebug_Gen0`|<span data-ttu-id="ee27b-108">第 0 代。</span><span class="sxs-lookup"><span data-stu-id="ee27b-108">Generation 0.</span></span>|  
-|`CorDebug_Gen1`|<span data-ttu-id="ee27b-109">第 1 代。</span><span class="sxs-lookup"><span data-stu-id="ee27b-109">Generation 1.</span></span>|  
-|`CorDebug_Gen2`|<span data-ttu-id="ee27b-110">第 2 代。</span><span class="sxs-lookup"><span data-stu-id="ee27b-110">Generation 2.</span></span>|  
-|`CorDebug_LOH`|<span data-ttu-id="ee27b-111">大型对象堆。</span><span class="sxs-lookup"><span data-stu-id="ee27b-111">The large object heap.</span></span>|  
+|`CorDebug_Gen0`|<span data-ttu-id="b632b-109">第 0 代。</span><span class="sxs-lookup"><span data-stu-id="b632b-109">Generation 0.</span></span>|  
+|`CorDebug_Gen1`|<span data-ttu-id="b632b-110">第 1 代。</span><span class="sxs-lookup"><span data-stu-id="b632b-110">Generation 1.</span></span>|  
+|`CorDebug_Gen2`|<span data-ttu-id="b632b-111">第 2 代。</span><span class="sxs-lookup"><span data-stu-id="b632b-111">Generation 2.</span></span>|  
+|`CorDebug_LOH`|<span data-ttu-id="b632b-112">大型对象堆。</span><span class="sxs-lookup"><span data-stu-id="b632b-112">The large object heap.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="ee27b-112">备注</span><span class="sxs-lookup"><span data-stu-id="ee27b-112">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="b632b-113">备注</span><span class="sxs-lookup"><span data-stu-id="b632b-113">Remarks</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="ee27b-113">要求</span><span class="sxs-lookup"><span data-stu-id="ee27b-113">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="b632b-114">要求</span><span class="sxs-lookup"><span data-stu-id="b632b-114">Requirements</span></span>  
 
- <span data-ttu-id="ee27b-114">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="ee27b-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="b632b-115">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="b632b-115">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="ee27b-115">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="ee27b-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="b632b-116">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="b632b-116">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="ee27b-116">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="ee27b-116">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="b632b-117">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b632b-117">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="ee27b-117">**.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ee27b-117">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
+ <span data-ttu-id="b632b-118">**.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b632b-118">**.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ee27b-118">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ee27b-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b632b-119">请参阅</span><span class="sxs-lookup"><span data-stu-id="b632b-119">See also</span></span>
 
-- [<span data-ttu-id="ee27b-119">调试枚举</span><span class="sxs-lookup"><span data-stu-id="ee27b-119">Debugging Enumerations</span></span>](debugging-enumerations.md)
+- [<span data-ttu-id="b632b-120">调试枚举</span><span class="sxs-lookup"><span data-stu-id="b632b-120">Debugging Enumerations</span></span>](debugging-enumerations.md)
