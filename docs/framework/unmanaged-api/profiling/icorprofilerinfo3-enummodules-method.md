@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo3：： EnumModules 方法
 title: ICorProfilerInfo3::EnumModules 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,43 +16,43 @@ helpviewer_keywords:
 ms.assetid: 1bf00b42-69da-4019-91b3-bf88026e83fb
 topic_type:
 - apiref
-ms.openlocfilehash: 698f6abc872a7e072ae47520386aa9c7ddfb44fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9cdb76b77f78fa68eafa111e60b31b738173d658
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681465"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646850"
 ---
-# <a name="icorprofilerinfo3enummodules-method"></a><span data-ttu-id="9378d-102">ICorProfilerInfo3::EnumModules 方法</span><span class="sxs-lookup"><span data-stu-id="9378d-102">ICorProfilerInfo3::EnumModules Method</span></span>
+# <a name="icorprofilerinfo3enummodules-method"></a><span data-ttu-id="fd6a3-103">ICorProfilerInfo3::EnumModules 方法</span><span class="sxs-lookup"><span data-stu-id="fd6a3-103">ICorProfilerInfo3::EnumModules Method</span></span>
 
-<span data-ttu-id="9378d-103">返回一个枚举器，此枚举器提供方法以按顺序循环访问加载到应用程序的托管模块集合。</span><span class="sxs-lookup"><span data-stu-id="9378d-103">Returns an enumerator that provides methods to sequentially iterate through a collection of managed modules that are loaded into the application.</span></span>  
+<span data-ttu-id="fd6a3-104">返回一个枚举器，此枚举器提供方法以按顺序循环访问加载到应用程序的托管模块集合。</span><span class="sxs-lookup"><span data-stu-id="fd6a3-104">Returns an enumerator that provides methods to sequentially iterate through a collection of managed modules that are loaded into the application.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="9378d-104">语法</span><span class="sxs-lookup"><span data-stu-id="9378d-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="fd6a3-105">语法</span><span class="sxs-lookup"><span data-stu-id="fd6a3-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT EnumModules([out] ICorProfilerModuleEnum** ppEnum);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="9378d-105">参数</span><span class="sxs-lookup"><span data-stu-id="9378d-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="fd6a3-106">参数</span><span class="sxs-lookup"><span data-stu-id="fd6a3-106">Parameters</span></span>  
 
  `ppEnum`  
- <span data-ttu-id="9378d-106">弄指向 [ICorProfilerModuleEnum](icorprofilermoduleenum-interface.md) 接口的指针。</span><span class="sxs-lookup"><span data-stu-id="9378d-106">[out] A pointer to an [ICorProfilerModuleEnum](icorprofilermoduleenum-interface.md) interface.</span></span>  
+ <span data-ttu-id="fd6a3-107">弄指向 [ICorProfilerModuleEnum](icorprofilermoduleenum-interface.md) 接口的指针。</span><span class="sxs-lookup"><span data-stu-id="fd6a3-107">[out] A pointer to an [ICorProfilerModuleEnum](icorprofilermoduleenum-interface.md) interface.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="9378d-107">备注</span><span class="sxs-lookup"><span data-stu-id="9378d-107">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="fd6a3-108">备注</span><span class="sxs-lookup"><span data-stu-id="fd6a3-108">Remarks</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="9378d-108">要求</span><span class="sxs-lookup"><span data-stu-id="9378d-108">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="fd6a3-109">要求</span><span class="sxs-lookup"><span data-stu-id="fd6a3-109">Requirements</span></span>  
 
- <span data-ttu-id="9378d-109">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="9378d-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="fd6a3-110">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="fd6a3-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="9378d-110">**头文件：** CorProf.idl、CorProf.h</span><span class="sxs-lookup"><span data-stu-id="9378d-110">**Header:** CorProf.idl, CorProf.h</span></span>  
+ <span data-ttu-id="fd6a3-111">**头文件：** CorProf.idl、CorProf.h</span><span class="sxs-lookup"><span data-stu-id="fd6a3-111">**Header:** CorProf.idl, CorProf.h</span></span>  
   
- <span data-ttu-id="9378d-111">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="9378d-111">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="fd6a3-112">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="fd6a3-112">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="9378d-112">**.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="9378d-112">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+ <span data-ttu-id="fd6a3-113">**.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="fd6a3-113">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="9378d-113">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9378d-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fd6a3-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="fd6a3-114">See also</span></span>
 
-- [<span data-ttu-id="9378d-114">ICorProfilerFunctionEnum 接口</span><span class="sxs-lookup"><span data-stu-id="9378d-114">ICorProfilerFunctionEnum Interface</span></span>](icorprofilerfunctionenum-interface.md)
-- [<span data-ttu-id="9378d-115">ICorProfilerInfo3 接口</span><span class="sxs-lookup"><span data-stu-id="9378d-115">ICorProfilerInfo3 Interface</span></span>](icorprofilerinfo3-interface.md)
-- [<span data-ttu-id="9378d-116">分析接口</span><span class="sxs-lookup"><span data-stu-id="9378d-116">Profiling Interfaces</span></span>](profiling-interfaces.md)
-- [<span data-ttu-id="9378d-117">分析</span><span class="sxs-lookup"><span data-stu-id="9378d-117">Profiling</span></span>](index.md)
+- [<span data-ttu-id="fd6a3-115">ICorProfilerFunctionEnum 接口</span><span class="sxs-lookup"><span data-stu-id="fd6a3-115">ICorProfilerFunctionEnum Interface</span></span>](icorprofilerfunctionenum-interface.md)
+- [<span data-ttu-id="fd6a3-116">ICorProfilerInfo3 接口</span><span class="sxs-lookup"><span data-stu-id="fd6a3-116">ICorProfilerInfo3 Interface</span></span>](icorprofilerinfo3-interface.md)
+- [<span data-ttu-id="fd6a3-117">分析接口</span><span class="sxs-lookup"><span data-stu-id="fd6a3-117">Profiling Interfaces</span></span>](profiling-interfaces.md)
+- [<span data-ttu-id="fd6a3-118">分析</span><span class="sxs-lookup"><span data-stu-id="fd6a3-118">Profiling</span></span>](index.md)
