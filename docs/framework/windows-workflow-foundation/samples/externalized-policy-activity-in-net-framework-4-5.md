@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： .NET Framework 4.5 中的外部化策略活动
 title: .NET Framework 4.5 中的外部化策略活动
 ms.date: 03/30/2017
 ms.assetid: 92fd6f92-23a1-4adf-b96a-2754ea93ad3e
-ms.openlocfilehash: 00b671f169696728610e8ee32f874b44fbff9e33
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 52dad208aacf2993acffa605b896c14c0a906d4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631211"
 ---
 # <a name="externalized-policy-activity-in-net-framework-45"></a>.NET Framework 4.5 中的外部化策略活动
 
@@ -42,7 +43,7 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 }
 ```
 
-|properties|说明|
+|属性|说明|
 |-|-|
 |RuleSetFilePath|执行活动时要计算的 .NET Framework 3.5 <xref:System.Workflow.Activities.Rules.RuleSet> 文件的路径。|
 |RuleSetName|要在 .rules 文件中使用的 <xref:System.Workflow.Activities.Rules.RuleSet> 的名称。|
@@ -68,19 +69,19 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 
 1. 使用 Visual Studio 打开 *policy4sample.sln* 解决方案文件。
 
-2. 在 **解决方案资源管理器**中，右键单击 **ImperativeCodeClientSample** 项目，然后选择 " **设为启动项目**"。
+2. 在 **解决方案资源管理器** 中，右键单击 **ImperativeCodeClientSample** 项目，然后选择 " **设为启动项目**"。
 
-3. 若要运行项目，请按**Ctrl** + **F5**。
+3. 若要运行项目，请按 **Ctrl** + **F5**。
 
 ### <a name="run-the-designerclientsample-application"></a>运行 DesignerClientSample 应用程序
 
 1. 使用 Visual Studio 打开 *policy4sample.sln* 解决方案文件。
 
-2. 在 **解决方案资源管理器**中，右键单击 **DesignerClientSample** 项目，然后选择 " **设为启动项目**"。
+2. 在 **解决方案资源管理器** 中，右键单击 **DesignerClientSample** 项目，然后选择 " **设为启动项目**"。
 
-3. 按**Ctrl** + **Shift** + **B**来编译项目。
+3. 按 **Ctrl** + **Shift** + **B** 来编译项目。
 
-4. 按**Ctrl** + **F5**运行项目。
+4. 按 **Ctrl** + **F5** 运行项目。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
