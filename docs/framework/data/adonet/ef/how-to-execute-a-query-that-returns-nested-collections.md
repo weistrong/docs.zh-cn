@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：执行返回嵌套集合的查询
 title: 如何：执行返回嵌套集合的查询
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f7f385f3-ffcf-4f3b-af35-de8818938e5f
-ms.openlocfilehash: 3bf6e08e7842fbf235b519680b81f79fba4a7228
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 941b7471820c09224e6828fac6e17b92f70ff57e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198400"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650620"
 ---
 # <a name="how-to-execute-a-query-that-returns-nested-collections"></a>如何：执行返回嵌套集合的查询
 
@@ -27,7 +28,7 @@ ms.locfileid: "91198400"
   
 ## <a name="example"></a>示例  
 
- *嵌套集合*是指位于另一个集合内的集合。 以下代码检索 `Contacts` 的集合以及与每个 `SalesOrderHeaders` 关联的 `Contact` 的嵌套集合。  
+ *嵌套集合* 是指位于另一个集合内的集合。 以下代码检索 `Contacts` 的集合以及与每个 `SalesOrderHeaders` 关联的 `Contact` 的嵌套集合。  
   
  [!code-csharp[DP EntityServices Concepts#ReturnNestedCollectionWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#returnnestedcollectionwithentitycommand)]
  [!code-vb[DP EntityServices Concepts#ReturnNestedCollectionWithEntityCommand](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#returnnestedcollectionwithentitycommand)]  
