@@ -1,14 +1,14 @@
 ---
 title: C# 简介 - 交互式教程
 description: 通过浏览器了解 C#，并开始使用自己的开发环境
-ms.date: 08/22/2019
+ms.date: 02/02/2021
 ms.custom: mvc
-ms.openlocfilehash: 6037862c52fd59ba540e1f65297d787f0a964762
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 62856206c30afac04346d150560c458c6795077d
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162149"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585645"
 ---
 # <a name="introduction-to-c"></a>C\# 简介
 
