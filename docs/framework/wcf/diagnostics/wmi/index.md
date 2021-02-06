@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用诊断 Windows Management Instrumentation
 title: 使用 Windows Management Instrumentation 进行诊断
 ms.date: 03/30/2017
 ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a
-ms.openlocfilehash: cb015096f9e7cb815e5bd4e4e5487c03fea49bc8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 508422e8e060e608032d7ed22c5736c56c838f10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267931"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653870"
 ---
 # <a name="using-windows-management-instrumentation-for-diagnostics"></a>使用 Windows Management Instrumentation 进行诊断
 
@@ -48,7 +49,7 @@ Windows Communication Foundation (WCF) 会通过 WCF Windows Management Instrume
   
  **警告** WMI 仅支持 <xref:System.TimeSpan> 最多3个小数位数的值。 例如，如果您的服务将其中一个属性设置为 <xref:System.TimeSpan.MaxValue>，当通过 WMI 查看时，它的值将保留 3 位小数。  
   
-## <a name="security"></a>安全性  
+## <a name="security"></a>安全  
 
  因为 WCF WMI 提供程序允许发现环境中的服务，所以，您应该非常小心地授予对该服务的访问权限。 如果您放宽了默认的仅管理员访问，就可能允许不完全受信任方访问您的环境中的敏感数据。 特别是，如果您放宽了对远程 WMI 访问的权限，可能会发生洪泛攻击。 如果某个进程被大量 WMI 请求溢满，其性能将有所下降。  
   
@@ -175,7 +176,7 @@ Whoami /user
   
 1. 单击窗口右上角的 " **连接** " 按钮。  
   
-2. 在新窗口中，为 "**命名空间**" 字段输入 **root\ServiceModel** ，并为 "**身份验证级别**" 选择 "**数据包隐私**"。 单击“连接”。  
+2. 在新窗口中，为 "**命名空间**" 字段输入 **root\ServiceModel** ，并为 "**身份验证级别**" 选择 "**数据包隐私**"。 单击“连接”  。  
   
 ### <a name="using-managed-code"></a>使用托管代码  
 

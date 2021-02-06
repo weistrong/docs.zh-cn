@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅 Take 子句 (Visual Basic) '
 title: Take 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - queries [Visual Basic], Take
 - Take clause [Visual Basic]
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
-ms.openlocfilehash: f2377d8d1635912885a310b2b0429a6a00083b47
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6542d262490d9d4acff893b2a99ffb60dd1446a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869668"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653532"
 ---
 # <a name="take-clause-visual-basic"></a>Take 子句 (Visual Basic)
 
@@ -46,7 +47,7 @@ Take count
   
  [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

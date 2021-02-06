@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <httpListener> 元素 (网络设置) '
 title: <httpListener> 元素（网络设置）
 ms.date: 03/30/2017
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-ms.openlocfilehash: 78526559164939667eab8848bc5fd2af6749d474
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 18c139ad7767370ecd3a4116e352b7614914d199
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652856"
 ---
 # <a name="httplistener-element-network-settings"></a>\<httpListener> 元素（网络设置）
 
@@ -34,7 +35,7 @@ ms.locfileid: "91195436"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |unescapeRequestUrl|一个布尔值，该值指示 <xref:System.Net.HttpListener> 实例是否使用未转义的原始 uri 而不是已转换的 uri。|  
   
@@ -50,7 +51,7 @@ ms.locfileid: "91195436"
   
 ## <a name="remarks"></a>备注  
 
- **UnescapeRequestUrl**特性指示是否 <xref:System.Net.HttpListener> 使用原始非转义 uri 而不是转换的 uri （其中任何百分比编码值都已转换）并执行其他规范化步骤。  
+ **UnescapeRequestUrl** 特性指示是否 <xref:System.Net.HttpListener> 使用原始非转义 uri 而不是转换的 uri （其中任何百分比编码值都已转换）并执行其他规范化步骤。  
   
  当某个 <xref:System.Net.HttpListener> 实例通过该服务收到请求时 `http.sys` ，它将创建由提供的 URI 字符串的实例 `http.sys` ，并将其公开为 <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> 属性。  
   
@@ -86,7 +87,7 @@ ms.locfileid: "91195436"
   
  因此 `http.sys` ，提供了两个用于修改进程的注册表项：  
   
-|注册表项|默认值|描述|  
+|注册表项|默认值|说明|  
 |------------------|-------------------|-----------------|  
 |EnableNonUTF8|1|如果为零，则 `http.sys` 只接受 utf-8 编码的 url。<br /><br /> 如果非零，则 `http.sys` 还接受请求中 ANSI 编码或 DBCS 编码的 url。|  
 |FavorUTF8|1|如果非零，则 `http.sys` 始终首先尝试将 URL 解码为 utf-8; 如果该转换失败并且 EnableNonUTF8 为非零，Http.sys 则尝试将其解码为 ANSI 或 DBCS。<br /><br /> 如果 0 (和 EnableNonUTF8 为非零) ，则 `http.sys` 尝试将它解码为 ANSI 或 DBCS; 如果不成功，则它将尝试 utf-8 转换。|  
@@ -113,9 +114,9 @@ ms.locfileid: "91195436"
   
  如果将 **unescapeRequestUrl** 特性设置为 **false**，则当 <xref:System.Net.HttpListener> 收到请求时，它将使用原始 URI，而不是转换的 uri `http.sys` 作为属性的输入 <xref:System.Net.HttpListenerRequest.Url%2A> 。  
   
- **UnescapeRequestUrl**属性的默认值为**true**。  
+ **UnescapeRequestUrl** 属性的默认值为 **true**。  
   
- <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A>属性可用于从适用的配置文件中获取**unescapeRequestUrl**特性的当前值。  
+ <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A>属性可用于从适用的配置文件中获取 **unescapeRequestUrl** 特性的当前值。  
   
 ## <a name="example"></a>示例  
 

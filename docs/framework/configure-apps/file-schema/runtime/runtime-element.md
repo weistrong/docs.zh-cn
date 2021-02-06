@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <runtime> 元素
 title: <runtime> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - runtime element
 - container tags, <runtime> element
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
-ms.openlocfilehash: 3825ae7c3e35193cb835981600fe1ef83097cd2d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: eeffc8de4eeb6fb53ef3829b8c5b078be4cee83a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74430455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652765"
 ---
 # <a name="runtime-element"></a>\<runtime> 元素
 
@@ -91,13 +92,13 @@ ms.locfileid: "74430455"
 |-------------|-----------------|
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 [\<runtime>](runtime-element.md)公共语言运行时使用配置文件部分中的子元素来配置应用程序的执行方式。 例如， [\<gcServer>](gcserver-element.md) 元素确定垃圾回收器是否使用工作站垃圾回收或服务器垃圾回收， [\<UseRandomizedStringHashAlgorithm>](userandomizedstringhashalgorithm-element.md) 元素确定公共语言运行时是否在每个应用程序或每个应用程序域计算字符串的哈希代码，以及 `AppContextSwitchOverrides` 元素是否允许库用户选择加入或选择退出库提供的已更改功能。
 
 在 [\<runtime>](runtime-element.md) 应用程序启动时，公共语言运行时将自动读取部分中的元素。 你还可以通过向属性提供其名称来定义非默认应用程序域的配置文件 <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType> ; 在加载应用程序域时，将自动读取其设置。 如果需要，您很少需要直接阅读 [\<runtime>](runtime-element.md) 应用程序配置文件的部分中的设置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时设置架构](index.md)
 - [配置文件架构](../index.md)

@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅 Order By 子句 (Visual Basic) '
 title: Order By 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Order By clause [Visual Basic]
 - Order By statement [Visual Basic]
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
-ms.openlocfilehash: 05fa720237f4b0185b5c07217362c99b5dbf4303
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: b5e7cc93b11393ef2f256e90e402975fbf6633a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869786"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653610"
 ---
 # <a name="order-by-clause-visual-basic"></a>Order By 子句 (Visual Basic)
 
@@ -56,7 +57,7 @@ Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]
   
  [!code-vb[VbSimpleQuerySamples#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#26)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

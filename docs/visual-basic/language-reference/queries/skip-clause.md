@@ -1,4 +1,5 @@
 ---
+description: '详细了解： Skip 子句 (Visual Basic) '
 title: Skip 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Skip statement [Visual Basic]
 - Skip clause [Visual Basic]
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
-ms.openlocfilehash: 40e89160baf663f7d6785e5d3e09ad6cc4eefbde
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6af702f65a724ea8c3d5a6122fb5f7a0ed5f6755
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653545"
 ---
 # <a name="skip-clause-visual-basic"></a>Skip 子句 (Visual Basic)
 
@@ -46,7 +47,7 @@ Skip count
   
  [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

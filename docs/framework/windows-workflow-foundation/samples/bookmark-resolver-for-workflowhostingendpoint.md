@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WorkflowHostingEndpoint 的书签解析程序
 title: WorkflowHostingEndpoint 的书签解析程序
 ms.date: 03/30/2017
 ms.assetid: 97fd5816-935e-4625-ad04-e6f6befa07de
-ms.openlocfilehash: 6bcf1c1ac7c0ac9e385c4259ba085ab63afd7cfa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fc2a21a33560452b141069e88b4d7ff816712d96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653805"
 ---
 # <a name="bookmark-resolver-for-workflowhostingendpoint"></a>WorkflowHostingEndpoint 的书签解析程序
 
@@ -31,7 +32,7 @@ ms.locfileid: "96274603"
   
 1. 生成解决方案。  
   
-2. 运行该应用程序。 当创建工作流实例时，`CreationEndpoint` 控制台会显示一条消息，其中包含该工作流实例 ID。 消息 "Hello World！" 由工作流实例打印。  
+2. 运行应用程序。 当创建工作流实例时，`CreationEndpoint` 控制台会显示一条消息，其中包含该工作流实例 ID。 消息 "Hello World！" 由工作流实例打印。  
   
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：  
