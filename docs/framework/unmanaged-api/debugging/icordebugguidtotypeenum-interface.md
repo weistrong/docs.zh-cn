@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugGuidToTypeEnum 接口
 title: ICorDebugGuidToTypeEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa32b12b-05fc-4ea8-a904-adae25034269
 topic_type:
 - apiref
-ms.openlocfilehash: 149c5b09639c8809e736ade09566e7b1b530e3eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: abcdc9537f6f6ff2e0ac9b2be86734efbf303493
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705704"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660981"
 ---
 # <a name="icordebugguidtotypeenum-interface"></a>ICorDebugGuidToTypeEnum 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95705704"
 |------------|-----------------|  
 |[ICorDebugGuidToTypeEnum：： Next](icordebugguidtotypeenum-next-method.md)|获取指定数量的 [CorDebugGuidToTypeMapping](cordebugguidtotypemapping-structure.md) 实例，这些实例将 guid 映射到类型信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugGuidToTypeEnum`可以通过调用[ICorDebugAppDomain3：： GetCachedWinRTTypes](icordebugappdomain3-getcachedwinrttypes-method.md)方法来检索 interface 对象。 调试器可以调用此接口的 [下一](icordebugguidtotypeenum-next-method.md) 方法来检索 [CorDebugGuidToTypeMapping](cordebugguidtotypemapping-structure.md) 对象，这些对象表示在用于调用 [ICorDebugAppDomain3：： GetCachedWinRTTypes](icordebugappdomain3-getcachedwinrttypes-method.md) 方法的应用程序域中加载的 Windows 运行时类型的托管表示形式的映射。  
   
@@ -45,6 +46,6 @@ ms.locfileid: "95705704"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

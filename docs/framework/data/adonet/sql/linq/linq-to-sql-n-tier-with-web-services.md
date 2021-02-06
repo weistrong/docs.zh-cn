@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： LINQ to SQL N 层与 Web 服务
 title: 具有 Web 服务的 LINQ to SQL N 层
 ms.date: 03/30/2017
 ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
-ms.openlocfilehash: dd1f756fae99fbae591b27aaefc7cc4ad7501bd6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7c97cc80f071ae964f329265f5c3d0e68e12b84f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175286"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663100"
 ---
 # <a name="linq-to-sql-n-tier-with-web-services"></a>具有 Web 服务的 LINQ to SQL N 层
 
@@ -19,7 +20,7 @@ ms.locfileid: "91175286"
   
  随后可以使用客户端为进行检索、插入和更新数据而调用的方法来定义接口。 接口方法包装 LINQ 查询。 可以使用任何类型的序列化机制处理远程方法调用和数据的序列化。 唯一的要求是如果您的对象模型中具有循环或双向关系（如标准 Northwind 对象模型中的 Customers 与 Orders 之间的关系），则必须使用支持这种关系的序列化程序。 Windows Communication Foundation (WCF) <xref:System.Runtime.Serialization.DataContractSerializer> 支持双向关系，但是使用非 WCF Web 服务的 XmlSerializer 不支持这种关系。 如果您选择使用 XmlSerializer，则必须确保您的对象模型没有循环关系。  
   
- 有关 Windows Communication Foundation 的详细信息，请参阅 [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)。  
+ 有关 Windows Communication Foundation 的详细信息，请参阅 [Visual Studio 中的 Windows Communication Foundation 服务和 WCF Data Services](/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)。  
   
  通过使用 <xref:System.Data.Linq.DataContext> 和实体类上的分部类和方法挂钩到 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 运行时事件，来实现您的业务规则或其他特定于域的逻辑。 有关详细信息，请参阅 [实现 N 层业务逻辑](implementing-business-logic-linq-to-sql.md)。  
   

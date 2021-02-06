@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorpubPublish 组件类
 title: CorpubPublish Coclass
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 191015da-f54a-4bac-a28a-1de7ab3c3428
 topic_type:
 - apiref
-ms.openlocfilehash: c73eab14bf6f9f9599bed79f4c5f85ed035c0518
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdf4be6ff2d20391e989998cd0045ed27d602561
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661683"
 ---
 # <a name="corpubpublish-coclass"></a>CorpubPublish Coclass
 
@@ -47,7 +48,7 @@ coclass CorpubPublish {
 |[ICorPublishProcess 接口](icorpublishprocess-interface.md)|表示在计算机上运行的进程。|  
 |[ICorPublishProcessEnum 接口](icorpublishprocessenum-interface.md)|提供遍历计算机上运行的进程集合的方法。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  典型的发布方案涉及到需要调试在应用程序域中的计算机上运行的托管代码的开发人员。 宿主环境可能会在一个进程内运行多个应用程序域。 开发人员希望使用图形用户界面或其他一些方法列出计算机上运行的所有进程，并选择特定的进程。 此列表应包括正在运行托管代码的进程中的所有应用程序域。 然后，开发人员可以确定特定的应用程序域，并将调试器附加到该域。  
   
@@ -61,6 +62,6 @@ coclass CorpubPublish {
   
  **.NET Framework 版本：**  [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试](index.md)

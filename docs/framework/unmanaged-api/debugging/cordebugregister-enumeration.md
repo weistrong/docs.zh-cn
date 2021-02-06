@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugRegister 枚举
 title: CorDebugRegister 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 003bb138-7960-4291-ac88-0d87e470ff70
 topic_type:
 - apiref
-ms.openlocfilehash: 85df98e83396c9439c28dd41a3ffa02b820c9c3e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7a5dc771a239a82448f898e2f518e920993ec35a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661865"
 ---
 # <a name="cordebugregister-enumeration"></a>CorDebugRegister 枚举
 
@@ -190,7 +191,7 @@ typedef enum CorDebugRegister {
 |`REGISTER_ARM_R12`|ARM 处理器上的寄存器 R12。|  
 |`REGISTER_ARM_LR`|ARM 处理器上的链接寄存器 (R14)。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  IA-64 处理器上共有 128 种通用数据寄存器和 128 种浮点数据寄存器，但只提供了值 `REGISTER_IA64_R0` 和 `REGISTER_IA64_F0`。 可按如下方式确定其他值：  
   
@@ -210,6 +211,6 @@ typedef enum CorDebugRegister {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)

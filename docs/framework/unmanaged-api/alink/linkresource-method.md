@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： LinkResource 方法
 title: LinkResource 方法
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c404acb3-4c59-4100-9a4c-483cbdb1d736
 topic_type:
 - apiref
-ms.openlocfilehash: 4f2f13976dfd4e5601bf8b54bed7b851884fbb9d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff12138433577eccbb313b8e64a329be1358ba70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662541"
 ---
 # <a name="linkresource-method"></a>LinkResource 方法
 
@@ -62,7 +63,7 @@ HRESULT LinkResource(
 
  需要 alink。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink 接口](ialink-interface.md)
 - [IALink2 接口](ialink2-interface.md)

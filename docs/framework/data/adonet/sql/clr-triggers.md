@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： CLR 触发器
 title: CLR 触发器
 ms.date: 03/30/2017
 ms.assetid: defe379c-30c7-487f-9abd-9c5e12ff49be
-ms.openlocfilehash: 1f454dd59b8e3df90f53ca89d0953c14c40364c3
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 5d518ca4822aa552493fb9f1124f3245e4ad8c7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559071"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663386"
 ---
 # <a name="clr-triggers"></a>CLR 触发器
 
@@ -15,6 +16,6 @@ ms.locfileid: "88559071"
   
 有关详细信息，请参阅 [创建 CLR 触发器](/sql/relational-databases/triggers/create-clr-triggers)。
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ADO.NET 概述](../ado-net-overview.md)

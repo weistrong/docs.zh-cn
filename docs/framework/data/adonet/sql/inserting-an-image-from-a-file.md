@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：从文件中插入图像
 title: 从文件中插入图像
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 35900aa2-5615-4174-8212-ba184c6b82fb
-ms.openlocfilehash: e70576637d44e874532aa06da4fe94115ac8ed9c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 009b652988a6ce5dc532d3af926f865f7fc806e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194578"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663191"
 ---
 # <a name="inserting-an-image-from-a-file"></a>从文件中插入图像
 

@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <Parameter> 元素 ( .NET Native) '
 title: <Parameter>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
-ms.openlocfilehash: 7e812ab60eb0a89eb868346733a8ea74e2f76d3e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 53b84027e8393e0a799d9652767d173c2787cd27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662788"
 ---
 # <a name="parameter-element-net-native"></a>\<Parameter>元素 (.NET Native)
 
@@ -35,7 +36,7 @@ ms.locfileid: "96287860"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 参数名称。 例如，对于方法签名 `String.CompareTo(Object value)`，`Name` 特性的值为“值”。|  
 |`Activate`|反射|可选特性。 控制运行时对构造函数的访问，以启用实例激活。|  
@@ -51,13 +52,13 @@ ms.locfileid: "96287860"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*parameter_name*|策略应用到的方法参数的名称。 例如，对于方法签名 `String.CompareTo(Object value)`，`Name` 特性的值为“值”。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这种策略类型。 可能值为 `All`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
@@ -67,7 +68,7 @@ ms.locfileid: "96287860"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Method>](method-element-net-native.md)|将运行时反射策略应用到一个构造函数或方法。|  
   

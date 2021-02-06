@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：大型 Udt
 title: 大型 UDT
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 420ae24e-762b-4e09-b4c3-2112c470ee49
-ms.openlocfilehash: 032093244f51893cd3b0cf50ad81c79413aaa32e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e1a40330bb48d6320dc96533e764f1b856e0f410
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663178"
 ---
 # <a name="large-udts"></a>大型 UDT
 
@@ -25,7 +26,7 @@ ms.locfileid: "91194539"
   
  **SQL Server 文档**  
   
-1. [CLR 用户定义类型](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
+1. [CLR 用户定义的类型](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
   
 ## <a name="retrieving-udt-schemas-using-getschema"></a>使用 GetSchema 检索 UDT 架构  
 
@@ -35,7 +36,7 @@ ms.locfileid: "91194539"
 
  <xref:System.Data.SqlClient.SqlDataReader> 的 <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> 方法返回描述列元数据的 <xref:System.Data.DataTable>。 下表描述了 SQL Server 2005 和 SQL Server 2008 之间大型 UDT 的列元数据的区别。  
   
-|SqlDataReader 列|SQL Server 2005|SQL Server 2008 和更高版本|  
+|SqlDataReader 列|SQL Server 2005|SQL Server 2008 及更高版本|  
 |--------------------------|---------------------|-------------------------------|  
 |`ColumnSize`|多种多样|多种多样|  
 |`NumericPrecision`|255|255|  
@@ -44,7 +45,7 @@ ms.locfileid: "91194539"
 |`ProviderSpecificDataType`|`SqlTypes.SqlBinary`|UDT 实例|  
 |`ProviderType`|21 (`SqlDbType.VarBinary`)|29 (`SqlDbType.Udt`)|  
 |`NonVersionedProviderType`|29 (`SqlDbType.Udt`)|29 (`SqlDbType.Udt`)|  
-|`DataTypeName`|`SqlDbType.VarBinary`|以 Database.SchemaName.TypeName 形式指定的由三部分组成的名称**。|  
+|`DataTypeName`|`SqlDbType.VarBinary`|以 Database.SchemaName.TypeName 形式指定的由三部分组成的名称。|  
 |`IsLong`|多种多样|多种多样|  
   
 ## <a name="sqldatareader-considerations"></a>SqlDataReader 注意事项  
@@ -75,7 +76,7 @@ ms.locfileid: "91194539"
 
  已扩展以下 <xref:System.Data.SqlClient.SqlParameter> 属性以适用于大型 UDT。  
   
-|SqlParameter 属性|描述|  
+|SqlParameter 属性|说明|  
 |---------------------------|-----------------|  
 |<xref:System.Data.SqlClient.SqlParameter.Value%2A>|获取或设置表示参数值的对象。 默认值为 NULL。 此属性可以是 `SqlBinary`、`Byte[]` 或托管对象。|  
 |<xref:System.Data.SqlClient.SqlParameter.SqlValue%2A>|获取或设置表示参数值的对象。 默认值为 NULL。 此属性可以是 `SqlBinary`、`Byte[]` 或托管对象。|  

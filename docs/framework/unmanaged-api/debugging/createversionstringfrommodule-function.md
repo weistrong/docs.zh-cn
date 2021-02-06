@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CreateVersionStringFromModule 函数
 title: CreateVersionStringFromModule 函数
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type:
 - apiref
-ms.openlocfilehash: 1b944034251b34350057866b2a52e63e934d72d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 45ae3ec31cf77e4c96e42a58b23e1f52dcf7c54b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661540"
 ---
 # <a name="createversionstringfrommodule-function"></a>CreateVersionStringFromModule 函数
 
@@ -74,7 +75,7 @@ HRESULT CreateVersionStringFromModule (
  E_FAIL（或其他 E_ 返回代码）  
  `pidDebuggee` 不引用有效进程，或其他故障。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此函数接受由 `pidDebuggee` 标识的 CLR 进程和由 `szModuleName` 指定的字符串路径。 版本字符串返回 `pBuffer` 指向的缓冲区。 此字符串对函数用户是不透明的；这就是说，该版本字符串本身不具有任何实质意义。 它仅用于此函数和 [CreateDebuggingInterfaceFromVersion 函数](createdebugginginterfacefromversion-function-for-silverlight.md)的上下文中。  
   

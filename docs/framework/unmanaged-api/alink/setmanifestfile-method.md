@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： SetManifestFile 方法
 title: SetManifestFile 方法
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1b33de4c-19cb-4a36-a93f-8675b2a36d58
 topic_type:
 - apiref
-ms.openlocfilehash: a4518e93db887dbdc4397636479be8bf5a705c2d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fe91c7f2b4e6f58a0a740de84e055ead49adb77d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733719"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662320"
 ---
 # <a name="setmanifestfile-method"></a>SetManifestFile 方法
 
@@ -43,7 +44,7 @@ HRESULT SetManifestFile(
 
  如果方法成功，则返回 S_OK。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在请求 Win32ResBlob 之前调用此。 参数的值 `pszFile` 是清单文件的名称，其内容读取并放入 Win32 资源中，其 ID 为 RT_MANIFEST。 使用 NULL 的参数调用时，将清除任何以前的读取清单。 这样一来，就可以将链接器的状态重置为初始化时的状态。  
   
@@ -51,7 +52,7 @@ HRESULT SetManifestFile(
 
  需要 aLink  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink3 接口](ialink3-interface.md)
 - [ALink API](index.md)

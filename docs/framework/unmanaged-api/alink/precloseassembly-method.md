@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： PreCloseAssembly 方法
 title: PreCloseAssembly 方法
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6d23ac54-15ea-4027-a172-9ebef43e8f56
 topic_type:
 - apiref
-ms.openlocfilehash: 31c0c5e23d1a985c2005693e25ca91379037482a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 088a5bba654b3442da64672991d76537e9b4722c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662515"
 ---
 # <a name="precloseassembly-method"></a>PreCloseAssembly 方法
 
@@ -46,7 +47,7 @@ HRESULT PreCloseAssembly(
 
  需要 alink。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink 接口](ialink-interface.md)
 - [IALink2 接口](ialink2-interface.md)

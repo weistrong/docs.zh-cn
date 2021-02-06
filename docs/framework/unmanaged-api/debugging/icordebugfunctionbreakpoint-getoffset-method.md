@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugFunctionBreakpoint：： GetOffset 方法
 title: ICorDebugFunctionBreakpoint::GetOffset 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e619eae4-3ac3-4c37-bba4-55e59989b9cb
 topic_type:
 - apiref
-ms.openlocfilehash: 8b9e483e24068656ddda0a3ecfee5934a2df962d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94238b761e0a42a72037f7d44d5e9609f86ac03b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695889"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661157"
 ---
 # <a name="icordebugfunctionbreakpointgetoffset-method"></a>ICorDebugFunctionBreakpoint::GetOffset 方法
 

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ImportTypes 方法
 title: ImportTypes 方法
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 351d4b4c-c939-486d-9471-51914a55f471
 topic_type:
 - apiref
-ms.openlocfilehash: 762f78900add70238971978ceecda089d0c725ce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9a30c735ca2c9ad0f945628c3de1eb1bb56efe2c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705106"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662619"
 ---
 # <a name="importtypes-method"></a>ImportTypes 方法
 
@@ -66,7 +67,7 @@ HRESULT ImportTypes(
 
  需要 alink  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IALink 接口](ialink-interface.md)
 - [IALink2 接口](ialink2-interface.md)

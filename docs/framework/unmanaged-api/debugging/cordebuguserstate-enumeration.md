@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugUserState 枚举
 title: CorDebugUserState 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5f6c2bcd-8102-4e3b-abc5-86ab0bd62def
 topic_type:
 - apiref
-ms.openlocfilehash: 968874a46279b7eac651d45c3890429a326651b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c556e7943751fb8e159e3e0d0b9a71baf1f6b5b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726946"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661735"
 ---
 # <a name="cordebuguserstate-enumeration"></a>CorDebugUserState 枚举
 
@@ -43,7 +44,7 @@ typedef enum CorDebugUserState {
   
 ## <a name="members"></a>成员  
   
-|Value|说明|  
+|值|说明|  
 |-----------|-----------------|  
 |`USER_STOP_REQUESTED`|已请求终止线程。|  
 |`USER_SUSPEND_REQUESTED`|已请求挂起线程。|  
@@ -55,7 +56,7 @@ typedef enum CorDebugUserState {
 |`USER_UNSAFE_POINT`|线程在不安全的点上。 也就是说，线程在执行时可能会阻止垃圾回收。<br /><br /> 调试事件可以从不安全的点进行调度，但在不安全点挂起线程很有可能会导致死锁，直到线程恢复。 安全点和不安全点由实时 (JIT) 和垃圾回收实现确定。|  
 |`USER_THREADPOOL`|线程来自线程池。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  线程的用户状态是调试器在检查线程时具有的状态。 一个线程可能会组合用户状态。  
   
@@ -71,6 +72,6 @@ typedef enum CorDebugUserState {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)
