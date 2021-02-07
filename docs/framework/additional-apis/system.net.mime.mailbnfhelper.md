@@ -1,5 +1,6 @@
 ---
-title: MailBnfHelper 类（System.Net）
+description: 了解详细信息： MailBnfHelper 类
+title: 'MailBnfHelper 类 (System.Net) '
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type:
@@ -20,16 +21,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 86c98726a7886285917b6be8c7631ca1e9e425e6
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 942b5c423d2f63985a8f7840f69d956bbade7582
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699644"
 ---
 # <a name="mailbnfhelper-class"></a>MailBnfHelper 类
 
-包含用于分析 internet 邮件格式字符串的实用工具方法。 无法继承此类。
+包含用于分析 internet 邮件格式字符串的实用工具方法。 此类不能被继承。
 
 ```csharp
 internal static class MailBnfHelper
@@ -74,7 +75,7 @@ internal static bool[] Ctext
 
 ## <a name="dot-field"></a>点字段
 
-表示全停止字符（ `.` ）。
+表示 () 的全停止字符 `.` 。
 
 ```csharp
 internal static readonly char Dot
@@ -124,4 +125,4 @@ internal static readonly char Tab
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 

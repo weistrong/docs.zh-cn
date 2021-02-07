@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的声明上下文和默认访问级别) '
 title: 声明上下文和默认访问级别
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - access levels, Visual Basic
 - access levels, default levels
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
-ms.openlocfilehash: a659481b34b8b44f1f387b464d5d9656ed98ab3f
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: c550db39862fbe9f69e5651b6e9fc7fdfcc88513
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700333"
 ---
 # <a name="declaration-contexts-and-default-access-levels-visual-basic"></a>声明上下文和默认访问级别 (Visual Basic)
 
@@ -53,7 +54,7 @@ ms.locfileid: "90874954"
   
  有关详细信息，请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Friend](../modifiers/friend.md)
 - [专用](../modifiers/private.md)

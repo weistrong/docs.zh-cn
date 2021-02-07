@@ -1,4 +1,5 @@
 ---
+description: '详细了解：部分 (Visual Basic) '
 title: 部分
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - Partial keyword [Visual Basic]
 - type promotion
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
-ms.openlocfilehash: 2482facadd0e0528ed1b71df6edb4a447947a902
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bf2d8b06b83f4a90ec2f4edd52405b58695c26e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867782"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701009"
 ---
 # <a name="partial-visual-basic"></a>分部 (Visual Basic)
 
@@ -64,11 +65,11 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
   
 ## <a name="remarks"></a>备注  
 
- Visual Basic 使用分部类定义将生成的代码与单独的源文件中用户编写的代码分开。 例如，“Windows 窗体设计器”**** 定义了控件的分部类，如 <xref:System.Windows.Forms.Form>。 不应修改这些控件中生成的代码。  
+ Visual Basic 使用分部类定义将生成的代码与单独的源文件中用户编写的代码分开。 例如，“Windows 窗体设计器”定义了控件的分部类，如 <xref:System.Windows.Forms.Form>。 不应修改这些控件中生成的代码。  
   
  创建分部类型时，将应用类、结构、接口和模块创建的所有规则（如用于修饰符的使用和继承的规则）。  
   
-## <a name="best-practices"></a>最佳实践  
+## <a name="best-practices"></a>最佳方案  
   
 - 正常情况下，不应将单个类型的开发分跨两个或多个声明。 因此，在大多数情况下不需要 `Partial` 关键字。  
   
@@ -96,7 +97,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
   
  前面示例中的两个分部定义可能在同一源文件中或在两个不同的源文件中。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Class 语句](../statements/class-statement.md)
 - [Structure 语句](../statements/structure-statement.md)

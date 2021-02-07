@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Distinct 子句 (Visual Basic) '
 title: Distinct 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Distinct statement [Visual Basic]
 - queries [Visual Basic], Distinct
 ms.assetid: 86f42614-0d8f-4ffc-b888-ce8a37a8d36a
-ms.openlocfilehash: 49eaab2e6a8c48d61518ea51ef2f644b6eb48314
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: df1cdc58f7af406533e67a396a958a26b0c79635
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700645"
 ---
 # <a name="distinct-clause-visual-basic"></a>Distinct 子句 (Visual Basic)
 
@@ -35,7 +36,7 @@ Distinct
   
  [!code-vb[VbSimpleQuerySamples#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#20)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

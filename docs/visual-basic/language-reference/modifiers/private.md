@@ -1,5 +1,6 @@
 ---
-title: Private
+description: '了解详细信息：私有 (Visual Basic) '
+title: 专用
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Private
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Private keyword [Visual Basic]
 - Private keyword [Visual Basic], syntax
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
-ms.openlocfilehash: 59f1c1666ce38923a2861244fb377007cd0fa992
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 20dcd943856e20ccb1b7cb5c0603fa5f313d2421
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700944"
 ---
 # <a name="private-visual-basic"></a>Private (Visual Basic)
 
@@ -61,12 +62,12 @@ ms.locfileid: "90874986"
   
  [Sub 语句](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [公共](public.md)
-- [避免](protected.md)
+- [Protected](protected.md)
 - [Friend](friend.md)
-- [私有受保护](./private-protected.md)
+- [Private Protected](./private-protected.md)
 - [Protected Friend](./protected-friend.md)
 - [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)
 - [过程](../../programming-guide/language-features/procedures/index.md)

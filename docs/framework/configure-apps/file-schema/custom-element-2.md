@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： NameValueSectionHandler 和 DictionarySectionHandler 的自定义元素
 title: NameValueSectionHandler 和 DictionarySectionHandler 的自定义元素
 ms.date: 05/01/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom element
 ms.assetid: 2303031f-4c1d-4df4-bca1-e9bd96ca40dc
-ms.openlocfilehash: e5c5c6cf5744aa385e6f6700cad623751a4d7427
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c1bb5b2fb321e2cc9235e02be2158c0875d42032
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77215476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698721"
 ---
 # <a name="custom-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>NameValueSectionHandler 和 DictionarySectionHandler 的自定义元素
 
@@ -34,11 +35,11 @@ ms.locfileid: "77215476"
 
 |     | 说明 |
 | --- | ----------- |
-| [**\<add>**](add-element-for-custom-2.md)对于 <xref:System.Configuration.NameValueSectionHandler> 和<xref:System.Configuration.DictionarySectionHandler>  | 添加自定义应用程序设置。 |
-| [**\<remove>**](remove-element-for-custom-2.md)对于 <xref:System.Configuration.NameValueSectionHandler> 和<xref:System.Configuration.DictionarySectionHandler> | 删除以前定义的设置。 |
-| [**\<clear>**](clear-element-for-custom-2.md)对于 <xref:System.Configuration.NameValueSectionHandler> 和<xref:System.Configuration.DictionarySectionHandler> | 清除节中所有先前定义的设置。 |
+| [**\<add>**](add-element-for-custom-2.md) 对于 <xref:System.Configuration.NameValueSectionHandler> 和 <xref:System.Configuration.DictionarySectionHandler>  | 添加自定义应用程序设置。 |
+| [**\<remove>**](remove-element-for-custom-2.md) 对于 <xref:System.Configuration.NameValueSectionHandler> 和 <xref:System.Configuration.DictionarySectionHandler> | 删除以前定义的设置。 |
+| [**\<clear>**](clear-element-for-custom-2.md) 对于 <xref:System.Configuration.NameValueSectionHandler> 和 <xref:System.Configuration.DictionarySectionHandler> | 清除节中所有先前定义的设置。 |
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 **\<sectionName>** 元素是由元素中的标记定义的自定义元素 **\<section>** **\<configSections>** 。
 
@@ -76,8 +77,8 @@ ms.locfileid: "77215476"
 
 ## <a name="configuration-file"></a>配置文件
 
-此元素可用于应用程序配置文件、计算机配置文件（*machine.config*）和不在应用程序目录级别的*web.config 文件。*
+此元素可用于应用程序配置文件、计算机配置文件 (*Machine.config*) 和 *Web.config* 不在应用程序目录级别的文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [.NET Framework 的配置文件架构](index.md)

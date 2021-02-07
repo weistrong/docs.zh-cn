@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：应用设置架构
 title: 应用设置架构
 ms.date: 05/01/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Windows Forms, app settings schema
 - configuration schema [.NET Framework], app settings
 ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
-ms.openlocfilehash: a67689bd9757f7586881fd910ef6103b1dffeab8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a98a60b0470e0fa2c03313f25de9b310f5fce785
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699345"
 ---
 # <a name="app-settings-schema"></a>应用设置架构
 
@@ -26,18 +27,18 @@ ms.locfileid: "90550444"
 
 | 元素 | 说明 |
 | ------- | ----------- |
-| [**\<appSettings>**](appsettings-element-for-configuration.md) | 包含 **\<add>** 、 **\<clear>** 和 **\<remove>** 标记以控制应用程序设置。 具有可选的“file”**** 属性。 |
-| [**\<add>**](add-element-for-appsettings.md) | 定义设置。 的子项 **\<appSettings>** 。 需要“key”**** 和“value”**** 属性。 |
+| [**\<appSettings>**](appsettings-element-for-configuration.md) | 包含 **\<add>** 、 **\<clear>** 和 **\<remove>** 标记以控制应用程序设置。 具有可选的“file”属性。 |
+| [**\<add>**](add-element-for-appsettings.md) | 定义设置。 的子项 **\<appSettings>** 。 需要“key”和“value”属性。 |
 | [**\<clear>**](clear-element-for-appsettings.md) | 清除所有设置。 的子项 **\<appSettings>** 。 不具有属性。 |
-| [**\<remove>**](remove-element-for-appsettings.md) | 删除设置。 的子项 **\<appSettings>** 。 需要“key”**** 属性。 |
+| [**\<remove>**](remove-element-for-appsettings.md) | 删除设置。 的子项 **\<appSettings>** 。 需要“key”属性。 |
 
 ## <a name="appsettings-element"></a>\<appSettings> 元素
 
-此元素包含 **\<add>** 、 **\<clear>** 和 **\<remove>** 标记以控制应用程序设置。 它定义“file”**** 的一个可选属性。
+此元素包含 **\<add>** 、 **\<clear>** 和 **\<remove>** 标记以控制应用程序设置。 它定义“file”的一个可选属性。
 
 ## <a name="add-element"></a>\<add> 元素
 
-将自定义应用程序设置作为名称/值对添加到应用程序设置集合。 它定义“key”**** 和“value”**** 的属性。
+将自定义应用程序设置作为名称/值对添加到应用程序设置集合。 它定义“key”和“value”的属性。
 
 ## <a name="clear-element"></a>\<clear> 元素
 
@@ -45,11 +46,11 @@ ms.locfileid: "90550444"
 
 ## <a name="remove-element"></a>\<remove> 元素
 
-删除对应用程序设置集合中继承的自定义应用程序设置的引用。 定义“key”**** 的属性。
+删除对应用程序设置集合中继承的自定义应用程序设置的引用。 定义“key”的属性。
 
 ## <a name="example"></a>示例
 
-下面的示例演示外部应用程序设置文件 (custom.config**)，该文件定义自定义应用程序设置：
+下面的示例演示外部应用程序设置文件 (custom.config)，该文件定义自定义应用程序设置：
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

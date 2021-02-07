@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： MustInherit (Visual Basic) '
 title: MustInherit
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - abstract classes [Visual Basic], MustInherit class
 - MustInherit keyword [Visual Basic]
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
-ms.openlocfilehash: 6502da947ae331a26e66d8ce2dbcda46e4172a6e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6ca11dd3fee8240f39ea1a3d278870d167d283d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867956"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701035"
 ---
 # <a name="mustinherit-visual-basic"></a>MustInherit (Visual Basic)
 
@@ -23,7 +24,7 @@ ms.locfileid: "90867956"
   
 ## <a name="remarks"></a>备注  
 
- *基类*的目的 (也称为*抽象类*) 是定义派生自它的所有类所共有的功能。 这会保存派生类，使其不必重新定义公共元素。 在某些情况下，这种通用功能不够完整，无法生成可用的对象，并且每个派生类都定义了缺少的功能。 在这种情况下，你希望使用代码仅在派生类中创建对象。 在 `MustInherit` 基类上使用可以强制执行此类。  
+ *基类* 的目的 (也称为 *抽象类*) 是定义派生自它的所有类所共有的功能。 这会保存派生类，使其不必重新定义公共元素。 在某些情况下，这种通用功能不够完整，无法生成可用的对象，并且每个派生类都定义了缺少的功能。 在这种情况下，你希望使用代码仅在派生类中创建对象。 在 `MustInherit` 基类上使用可以强制执行此类。  
   
  类的另一种用法 `MustInherit` 是将变量限制为一组相关的类。 你可以定义一个基类，并从其派生所有这些相关的类。 基类不需要提供所有派生类共有的任何功能，但它可以充当用于向变量赋值的筛选器。 如果你使用的代码将变量声明为基类，则 Visual Basic 允许你仅将一个派生类中的对象分配给该变量。  
   
@@ -51,7 +52,7 @@ ms.locfileid: "90867956"
   
  [Class 语句](../statements/class-statement.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Inherits Statement](../statements/inherits-statement.md)
 - [NotInheritable](notinheritable.md)

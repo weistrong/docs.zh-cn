@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：阴影 (Visual Basic) '
 title: Shadows
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Shadows keyword [Visual Basic]
 - names [Visual Basic], shadowing
 ms.assetid: 6bf687cd-0544-4797-b51b-911125ec57c6
-ms.openlocfilehash: 7aed6bec21bd484cca019b061bd5915de13a9eb8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4a455a78c36e15db977936b81c22e7a5b03d107e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402702"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700840"
 ---
 # <a name="shadows-visual-basic"></a>Shadows (Visual Basic)
 
@@ -24,9 +25,9 @@ ms.locfileid: "84402702"
 
 ## <a name="remarks"></a>备注
 
-隐藏（也称为*按名称隐藏*）的主要目的是保留类成员的定义。 基类可能会发生更改，该更改将创建一个与已定义的元素同名的元素。 如果发生这种情况， `Shadows` 修饰符会强制通过类的引用解析为你定义的成员而不是新的基类元素。
+隐藏 (（也称为 *按) 名称隐藏* ）的主要目的是保留类成员的定义。 基类可能会发生更改，该更改将创建一个与已定义的元素同名的元素。 如果发生这种情况， `Shadows` 修饰符会强制通过类的引用解析为你定义的成员而不是新的基类元素。
 
-隐藏和重写操作都可重新定义继承的元素，但这两种方法之间又具有很大的差异。 有关详细信息，请参阅[Visual Basic 中的隐藏](../../programming-guide/language-features/declared-elements/shadowing.md)。
+隐藏和重写操作都可重新定义继承的元素，但这两种方法之间又具有很大的差异。 有关详细信息，请参阅 [Visual Basic 中的隐藏](../../programming-guide/language-features/declared-elements/shadowing.md)。
 
 ## <a name="rules"></a>规则
 
@@ -70,11 +71,11 @@ ms.locfileid: "84402702"
 
 - [Sub 语句](../statements/sub-statement.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [共享](shared.md)
 - [静态](static.md)
-- 专用 
+- [专用](private.md)
 - [Me、My、MyBase 和 MyClass](../../programming-guide/program-structure/me-my-mybase-and-myclass.md)
 - [继承基础知识](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
 - [New](mustoverride.md)

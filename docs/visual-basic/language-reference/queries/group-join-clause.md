@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：组联接子句 (Visual Basic) '
 title: Group Join 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Group Join statement [Visual Basic]
 - queries [Visual Basic], Group Join
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
-ms.openlocfilehash: 8d5f3ec80cb39825a3a283907d614b9be28e6e91
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 177dc2b41c923bc8c1ae0477c3905e8adad36fbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700476"
 ---
 # <a name="group-join-clause-visual-basic"></a>Group Join 子句 (Visual Basic)
 
@@ -58,7 +59,7 @@ Group Join element [As type] In collection _
   
  [!code-vb[VbSimpleQuerySamples#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#14)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

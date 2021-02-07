@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <mscorlib> 密码设置的元素
 title: Cryptography 设置的 <mscorlib> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - mscorlib element
 - <mscorlib> element
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
-ms.openlocfilehash: 1788205997d0dc49df172c9dfe48faceb8fc3290
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7606cdd1349c7594b5303832eed59ac51c1ddfe6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698890"
 ---
 # <a name="mscorlib-element-for-cryptography-settings"></a>Cryptography 设置的 \<mscorlib> 元素
 
@@ -39,13 +40,13 @@ ms.locfileid: "91201780"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`cryptographySettings`|包含加密设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
   

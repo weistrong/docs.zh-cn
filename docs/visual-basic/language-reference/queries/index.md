@@ -1,20 +1,21 @@
 ---
+description: '了解详细信息：查询 (Visual Basic) '
 title: 查询
 ms.date: 07/20/2015
 helpviewer_keywords:
 - queries [Visual Basic]
 - LINQ, queries
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
-ms.openlocfilehash: 006a4b67094b258d440c2046fe3ae02274e1c337
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: f816078ea7a8a02b84ebf2d23940c67e54997091
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700424"
 ---
 # <a name="queries-visual-basic"></a>查询 (Visual Basic)
 
-Visual Basic 使你能够在代码中 (LINQ) 表达式创建语言集成查询。  
+Visual Basic 使你能够在代码中 (LINQ) 表达式创建 Language-Integrated 查询。  
   
 ## <a name="in-this-section"></a>本节内容  
 

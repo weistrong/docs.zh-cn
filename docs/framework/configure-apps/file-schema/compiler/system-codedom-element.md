@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <system.web> 元素
 title: <system.codedom> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - system.codedom element
 - <system.codedom> element
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
-ms.openlocfilehash: 6c35e24696be040788a0c44cbb100ebb35d37157
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4761f971255b8ff7d60edfb8d9f5789c2e545aef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149564"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699007"
 ---
 # <a name="systemcodedom-element"></a>\<system.codedom> 元素
 
@@ -41,13 +42,13 @@ ms.locfileid: "91149564"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<compilers>](compilers-element.md)|编译器配置元素的容器;包含零个或多个 [\<compiler>](compiler-element.md) 元素。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<configuration>](../configuration-element.md)|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
   

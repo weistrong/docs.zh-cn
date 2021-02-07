@@ -1,5 +1,6 @@
 ---
-title: SslState. SslProtocol 属性（系统 .Net）
+description: 了解详细信息： SslState. SslProtocol 属性
+title: SslState)  (系统 .Net。安全
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
 topic_type:
@@ -11,12 +12,12 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 6983ac071dad29b240308031ecd0a3562a6856e4
-ms.sourcegitcommit: 337bdc5a463875daf2cc6883e5a2da97d56f5000
+ms.openlocfilehash: b0b9bebf23fcd8d643d06f1cff10c260c77a7c08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72847246"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699618"
 ---
 # <a name="sslstatesslprotocol-property"></a>SslState. SslProtocol 属性
 
@@ -36,7 +37,7 @@ internal SslProtocols SslProtocol { get; }
 ## <a name="remarks"></a>备注
 
 > [!WARNING]
-> `SslState.SslProtocol` 属性是内部的，不应在代码中直接使用。
+> `SslState.SslProtocol`属性是内部的，不应在代码中直接使用。
 >
 > 在任何情况下，Microsoft 不支持在生产应用程序中使用此属性。
 
@@ -44,6 +45,6 @@ internal SslProtocols SslProtocol { get; }
 
 **命名空间：** <xref:System.Net.Security>
 
-**程序集：** 系统（在 System.web 中）
+**程序集：** System.dll 中的系统 () 
 
 **.NET Framework 版本：** 自2.0 起可用。

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <linkedConfiguration> 元素
 title: <linkedConfiguration> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - linked configuration files
 - linkedConfiguration Element
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
-ms.openlocfilehash: 14ee2275ecf690ab16ffaabd71fbbe7e1a4897bc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e4312cf788784241efc35304b632dfe1fdef1bc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74087966"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698656"
 ---
 # <a name="linkedconfiguration-element"></a>\<linkedConfiguration> 元素
 
@@ -32,17 +33,17 @@ ms.locfileid: "74087966"
 <linkedConfiguration href="URL of linked configuration file" />
 ```
 
-## <a name="attribute"></a>属性
+## <a name="attribute"></a>Attribute
 
 |           | 说明 |
 | --------- | ----------- |
-| **href**  | 必需的特性。<br><br>要包含的配置文件的 URL。 **Href**特性支持的唯一格式为 `file://` 。 支持本地文件和 UNC 文件。 |
+| **href**  | 必需的特性。<br><br>要包含的配置文件的 URL。 **Href** 特性支持的唯一格式为 `file://` 。 支持本地文件和 UNC 文件。 |
 
 ## <a name="parent-element"></a>父元素
 
-|     | 说明 |
+|     | 描述 |
 | --- | ----------- |
-| [**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md) | 指定配置级的程序集绑定策略。 |
+| [**\<assemblyBinding>** 元素](assemblybinding-element-for-configuration.md) | 指定配置级的程序集绑定策略。 |
 
 ## <a name="child-elements"></a>子元素
 
@@ -65,7 +66,7 @@ ms.locfileid: "74087966"
 
 - 所有链接的配置文件合并到一个文件中，这与 `#include` c/c + + 中指令的行为类似。
 
-- **\<linkedConfiguration>** 仅允许在应用程序配置文件中使用元素; 它在*machine.config*中被忽略。
+- **\<linkedConfiguration>** 仅允许在应用程序配置文件中使用元素; 它在 *Machine.config* 中将被忽略。
 
 - 检测和终止循环引用。 也就是说，如果 **\<linkedConfiguration>** 一系列配置文件的元素形成循环，则检测并停止循环。
 
@@ -81,7 +82,7 @@ ms.locfileid: "74087966"
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [**\<assemblyBinding>** Element](assemblybinding-element-for-configuration.md)
+- [**\<assemblyBinding>** 元素](assemblybinding-element-for-configuration.md)
 - [.NET Framework 的配置文件架构](index.md)

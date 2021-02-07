@@ -1,13 +1,14 @@
 ---
+description: '详细了解： <add> schemeSettings 的元素 (Uri 设置) '
 title: schemeSettings 的 <add> 元素（Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
-ms.openlocfilehash: 55fcba41d4dabf8937ebaa11235e9309bcb57952
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c372577af1c7fbfe669455b50c8b55c82da4fc52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698613"
 ---
 # <a name="add-element-for-schemesettings-uri-settings"></a>schemeSettings 的 \<add> 元素（Uri 设置）
 
@@ -39,7 +40,7 @@ ms.locfileid: "91149456"
   
 ## <a name="attribute-name-attribute"></a>{Attribute name}Attribute  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |genericUriParserOptions|此方案的分析器选项。 唯一受支持的值为 genericUriParserOptions = "DontUnescapePathDotsAndSlashes"。|  
   
@@ -49,7 +50,7 @@ ms.locfileid: "91149456"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<schemeSettings> 元素 (Uri 设置) ](schemesettings-element-uri-settings.md)|指定如何分析特定方案的 <xref:System.Uri>。|  
   

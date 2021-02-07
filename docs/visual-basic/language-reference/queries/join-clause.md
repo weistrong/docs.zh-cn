@@ -1,4 +1,5 @@
 ---
+description: '详细了解： Join 子句 (Visual Basic) '
 title: Join 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Join statement [Visual Basic]
 - Join clause [Visual Basic]
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
-ms.openlocfilehash: f73dc31bbbb9014a8a1a315de406c53fa58d1c65
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 69d808e68a32b3f8799dabbbc8abc53acae42b57
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700437"
 ---
 # <a name="join-clause-visual-basic"></a>Join 子句 (Visual Basic)
 
@@ -44,7 +45,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 可选。 `Group Join`用于进一步优化查询的一个或多个其他子句。
 
 `key1` `Equals` `key2`  
-必需。 标识要联接的集合的键。 必须使用 `Equals` 运算符来比较要联接的集合中的键。 可以通过使用 `And` 运算符来标识多个键，从而组合联接条件。 `key1`必须是位于运算符左侧的集合中 `Join` 。 `key2`必须来自运算符右侧的集合 `Join` 。
+必需。 标识要联接的集合的键。 必须使用 `Equals` 运算符来比较要联接的集合中的键。 可以通过使用 `And` 运算符来标识多个键，从而组合联接条件。 `key1` 必须是位于运算符左侧的集合中 `Join` 。 `key2` 必须来自运算符右侧的集合 `Join` 。
 
 联接条件中使用的键可以是包含集合中多个项的表达式。 但是，每个键表达式只能包含其各自集合中的项。
 
@@ -92,7 +93,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
 
 `explorer (2424), File Explorer, Priority = 8`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

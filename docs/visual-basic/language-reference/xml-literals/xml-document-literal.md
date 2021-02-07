@@ -1,4 +1,5 @@
 ---
+description: '详细了解： XML 文档文字 (Visual Basic) '
 title: XML 文档文本
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - XML documents [Visual Basic], creating
 - document literal [Visual Basic]
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
-ms.openlocfilehash: bd1b2f43fce563af431d67b3817b05c7c1048314
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d268f205c9357598a631216879b424dd8155268a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700307"
 ---
 # <a name="xml-document-literal-visual-basic"></a>XML 文档文本 (Visual Basic)
 
@@ -59,7 +60,7 @@ rootElement
   
  [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Xml.Linq.XElement>
 - <xref:System.Xml.Linq.XProcessingInstruction>

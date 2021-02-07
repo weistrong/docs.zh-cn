@@ -1,4 +1,5 @@
 ---
+description: '详细了解： CType 函数 (Visual Basic) '
 title: CType Function
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - CType function
 - conversions [Visual Basic], expression
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
-ms.openlocfilehash: 88d609146648fe1b0c3124b99a65e85293fc0707
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9732f52b40e5f762769ba5dc340c000e7e1ba17a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701256"
 ---
 # <a name="ctype-function-visual-basic"></a>CType 函数 (Visual Basic)
 
@@ -28,9 +29,9 @@ CType(expression, typename)
 
 ## <a name="parts"></a>组成部分
 
-`expression`任何有效的表达式。 如果的值 `expression` 超出了所允许的范围 `typename` ，Visual Basic 会引发异常。
+`expression` 任何有效的表达式。 如果的值 `expression` 超出了所允许的范围 `typename` ，Visual Basic 会引发异常。
 
-`typename`语句中子句内合法的任何表达式，即 `As` `Dim` 任何数据类型、对象、结构、类或接口的名称。
+`typename` 语句中子句内合法的任何表达式，即 `As` `Dim` 任何数据类型、对象、结构、类或接口的名称。
 
 ## <a name="remarks"></a>备注
 
@@ -38,11 +39,11 @@ CType(expression, typename)
 > 你还可以使用以下函数来执行类型转换：
 >
 > - 类型转换函数，例如 `CByte` 、 `CDbl` 和， `CInt` 它们执行到特定数据类型的转换。 有关详细信息，请参阅 [Type Conversion Functions](type-conversion-functions.md)（类型转换函数）。
-> - [DirectCast 运算符](../operators/directcast-operator.md)或[TryCast 运算符](../operators/trycast-operator.md)。 这些运算符要求一个类型继承自或实现另一个类型。 与在 `CType` 数据类型之间进行转换相比，它们可以提供更好的性能 `Object` 。
+> - [DirectCast 运算符](../operators/directcast-operator.md) 或 [TryCast 运算符](../operators/trycast-operator.md)。 这些运算符要求一个类型继承自或实现另一个类型。 与在 `CType` 数据类型之间进行转换相比，它们可以提供更好的性能 `Object` 。
 
-`CType`是内联编译的，这意味着转换代码是计算表达式的代码的一部分。 在某些情况下，代码运行速度更快，因为没有调用任何过程来执行转换。
+`CType` 是内联编译的，这意味着转换代码是计算表达式的代码的一部分。 在某些情况下，代码运行速度更快，因为没有调用任何过程来执行转换。
 
-如果未定义从到的 `expression` 转换 `typename` （例如，从到 `Integer` `Date` ），Visual Basic 将显示编译时错误消息。
+如果未定义从到的 `expression` 转换 `typename` (例如，从 `Integer` 到 `Date`) ，Visual Basic 将显示编译时错误消息。
 
 如果转换在运行时失败，则会引发相应的异常。 如果收缩转换失败， <xref:System.OverflowException> 最常见的结果是。 如果未定义转换，则会 <xref:System.InvalidCastException> 引发。 例如，如果 `expression` 的类型为 `Object` 且其运行时类型没有转换为，则可能会发生这种情况 `typename` 。
 
@@ -62,9 +63,9 @@ CType(expression, typename)
 
 [!code-vb[VbVbalrFunctions#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#24)]
 
-有关其他示例，请参阅[隐式和显式转换](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)。
+有关其他示例，请参阅 [隐式和显式转换](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.OverflowException>
 - <xref:System.InvalidCastException>

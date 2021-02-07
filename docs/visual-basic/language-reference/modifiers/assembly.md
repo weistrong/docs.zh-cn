@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下方面的详细信息：程序集 (Visual Basic) '
 title: 程序集
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Assembly keyword [Visual Basic]
 - attribute blocks, Assembly keyword
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
-ms.openlocfilehash: 34d6b94f31336e3e99b8ca981a9c4899e5a3d912
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 60b8ce4ed2b8b5cb7deeabb702c33d1e561d765f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701178"
 ---
 # <a name="assembly-visual-basic"></a>程序集 (Visual Basic)
 
@@ -29,7 +30,7 @@ ms.locfileid: "90875531"
   
  你还可以在 AssemblyInfo 文件中将属性应用于程序集，在这种情况下，你不必在主源代码文件中使用属性块。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [模块 \<keyword>](module-keyword.md)
 - [属性概述](../../programming-guide/concepts/attributes/index.md)

@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：参数 " <argumentname> " 必须大于零
 title: 参数“<argumentname>”必须大于零
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_GTZero1
 ms.assetid: f9939fbd-6c4f-4871-9452-9ea0267e948e
-ms.openlocfilehash: 41d56616abc7782dd4beed44e5bb083eba09a76c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2ce2337e4a5232e0c23c9f4c65821f0bc773900a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91079875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699865"
 ---
 # <a name="argument-argumentname-must-be-greater-than-zero"></a>参数“\<argumentname>”必须大于零
 

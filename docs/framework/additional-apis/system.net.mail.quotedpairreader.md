@@ -1,5 +1,6 @@
 ---
-title: QuotedPairReader 类（System.Net）
+description: 了解详细信息： QuotedPairReader 类
+title: 'QuotedPairReader 类 (System.Net) '
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type:
@@ -11,15 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 898c6e9d2d5dd02f3d5f9c096ad470b5dd445d1d
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 810a7b02948a1b7aa542a179563af9a6d79dd763
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699657"
 ---
 # <a name="quotedpairreader-class"></a>QuotedPairReader 类
 
-确定在带引号的字符串中用引号（转义）括起来的字符。 无法继承此类。
+确定在带引号的字符串中 (转义) 的引号字符。 此类不能被继承。
 
 ```csharp
 internal static class QuotedPairReader
@@ -50,15 +52,15 @@ internal static int CountQuotedChars(string data, int index, bool permitUnicodeE
 
 - `permitUnicodeEscaping` <xref:System.Boolean>
 
-  `true`允许转义 Unicode 字符;否则为 `false` 。
+  `true` 允许转义 Unicode 字符;否则为 `false` 。
 
 ### <a name="return-value"></a>返回值
 
 <xref:System.Int32?displayProperty=nameWithType>
 
-`0`如果指定索引处的字符未转义，则为; 否则为。否则，则为，最多包含中的字符（包括字符） `index` 。
+`0` 如果指定索引处的字符未转义，则为; 否则为。否则，则为，最多包含中的字符（包括字符） `index` 。
 
-### <a name="exceptions"></a>例外
+### <a name="exceptions"></a>异常
 
 <xref:System.FormatException?displayProperty=nameWithType>
 
@@ -68,4 +70,4 @@ internal static int CountQuotedChars(string data, int index, bool permitUnicodeE
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <cryptoClass> 元素
 title: <cryptoClass> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - cryptoClass element
 - <cryptoClass> element
 ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
-ms.openlocfilehash: f7fe6d02b4697af3a1d0d04471a2736045fc9ecc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 503a079ea78a71a11e4c750a629cf67c9244a25d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698930"
 ---
 # <a name="cryptoclass-element"></a>\<cryptoClass> 元素
 
@@ -48,7 +49,7 @@ ms.locfileid: "91181799"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`cryptoClasses`|包含加密类的列表，这些类具有到元素中的友好名称的映射 [\<nameEntry>](nameentry-element.md) 。|  

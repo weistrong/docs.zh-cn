@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <configSections> 的元素 <configuration>
 title: <configuration> 的 <configSections> 元素
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - configSections Element
 - <configSections> Element
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
-ms.openlocfilehash: 1e4bb7a7cfb0b140ca6d13c162708c3c30bd496d
-ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
+ms.openlocfilehash: 543ceed8d53fd299e8a0b65594592b64d6b833a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86441682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698981"
 ---
 # <a name="configsections-element-for-configuration"></a>\<configuration> 的 \<configSections> 元素
 
@@ -20,7 +21,7 @@ ms.locfileid: "86441682"
 
 [**\<configuration>**](configuration-element.md) &nbsp;&nbsp;**\<configSections>**
 
-## <a name="attributes"></a>属性
+## <a name="attributes"></a>特性
 
 无
 
@@ -59,7 +60,7 @@ ms.locfileid: "86441682"
 
 ## <a name="configuration-file"></a>配置文件
 
-此元素可用于应用程序配置文件、计算机配置文件（*Machine.config*）以及不在应用程序目录级别的*Web.config*文件。
+此元素可用于应用程序配置文件、计算机配置文件 (*Machine.config*) 和 *Web.config* 不在应用程序目录级别的文件。
 
 ## <a name="see-also"></a>请参阅
 

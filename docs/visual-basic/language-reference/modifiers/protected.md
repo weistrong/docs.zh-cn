@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：受保护的 (Visual Basic) '
 title: Protected
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Protected access modifier
 - Protected keyword [Visual Basic]
 ms.assetid: 74ad3d56-309f-49d2-b60c-1d0157d010e8
-ms.openlocfilehash: d66ed68004f8b6ef21ae703f02b317589814764b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 74a695e7c8ff06543a7118c935365e31af258171
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700931"
 ---
 # <a name="protected-visual-basic"></a>Protected (Visual Basic)
 
@@ -41,7 +42,7 @@ ms.locfileid: "84398215"
 
      受保护的访问不是友元访问的超集或子集。
 
-- **访问修饰符。** 指定访问级别的关键字称为*访问修饰符*。 有关访问修饰符的比较，请参阅[Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
+- **访问修饰符。** 指定访问级别的关键字称为 *访问修饰符*。 有关访问修饰符的比较，请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
 
 `Protected` 修饰符可用于下面的上下文中：
 
@@ -69,12 +70,12 @@ ms.locfileid: "84398215"
 
 - [Sub 语句](../statements/sub-statement.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [公共](public.md)
-- [友好](friend.md)
-- 专用 
-- [私有受保护](private-protected.md)
+- [Friend](friend.md)
+- [专用](private.md)
+- [Private Protected](private-protected.md)
 - [Protected Friend](protected-friend.md)
 - [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)
 - [过程](../../programming-guide/language-features/procedures/index.md)

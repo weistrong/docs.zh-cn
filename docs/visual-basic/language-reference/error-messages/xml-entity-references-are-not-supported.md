@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC31180：不支持 XML 实体引用
 title: 不支持 XML 实体引用
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC31180
 ms.assetid: 2a393327-d8e2-4187-85b1-642b4f53b4ae
-ms.openlocfilehash: 37e72dbd6de61a50b4192a0151db40cb4be49d1c
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: c45202fbd97d2343caf6bf4cdccf9368d0a7a295
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701412"
 ---
 # <a name="bc31180-xml-entity-references-are-not-supported"></a>BC31180：不支持 XML 实体引用
 
@@ -24,7 +25,7 @@ ms.locfileid: "92163267"
 
 - 删除不受支持的实体引用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [XML 文本和 XML 1.0 规范](../../programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)
 - [XML 文本](../xml-literals/index.md)

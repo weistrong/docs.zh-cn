@@ -1,5 +1,6 @@
 ---
-title: 公用
+description: '了解详细信息：公用 (Visual Basic) '
+title: 公共
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Public
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Public keyword [Visual Basic], syntax
 - Public access modifier
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
-ms.openlocfilehash: f2b6a126435b111ef56ee2a9870ea6fbddf87901
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 1083ca877cf99917291523fe10f6561784ff06a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867683"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700918"
 ---
 # <a name="public-visual-basic"></a>Public (Visual Basic)
 
@@ -67,12 +68,12 @@ ms.locfileid: "90867683"
   
  [Sub 语句](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [避免](protected.md)
+- [Protected](protected.md)
 - [Friend](friend.md)
 - [专用](private.md)
-- [私有受保护](private-protected.md)
+- [Private Protected](private-protected.md)
 - [Protected Friend](protected-friend.md)
 - [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)
 - [过程](../../programming-guide/language-features/procedures/index.md)

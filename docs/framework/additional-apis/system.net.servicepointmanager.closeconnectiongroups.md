@@ -1,5 +1,6 @@
 ---
-title: ServicePointManager. CloseConnectionGroups 方法（System.Net）
+description: 了解详细信息： ServicePointManager. CloseConnectionGroups 方法
+title: 'ServicePointManager. CloseConnectionGroups 方法 (System.Net) '
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type:
@@ -10,12 +11,12 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: aae9a389ae35e249d43c9dc830a68ec32cf4afef
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 8cd1a1f0f4dbdaeaee117e6a7ae4219680363a6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699553"
 ---
 # <a name="servicepointmanagercloseconnectiongroups-method"></a>ServicePointManager. CloseConnectionGroups 方法
 
@@ -40,4 +41,4 @@ internal static void CloseConnectionGroups(string connectionGroupName)
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的聚合子句) '
 title: Aggregate Clause
 ms.date: 08/28/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Aggregate statement [Visual Basic]
 - queries [Visual Basic], Aggregate
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
-ms.openlocfilehash: be2e401c7931b2637c14a3ea3b742a2c09917939
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 404cb4091bc11132450cf0d8d001ce426439ece7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869983"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700658"
 ---
 # <a name="aggregate-clause-visual-basic"></a>Aggregate 子句 (Visual Basic)
 
@@ -54,29 +55,29 @@ Aggregate element [As type] In collection _
   
 ### <a name="all"></a>全部
 
-`true`如果集合中的所有元素都满足指定的条件，则返回; 否则返回 `false` 。 下面是一个示例：
+`true`如果集合中的所有元素都满足指定的条件，则返回; 否则返回 `false` 。 以下是一个示例：
 
  [!code-vb[VbSimpleQuerySamples#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#5)]
 
-### <a name="any"></a>任意
+### <a name="any"></a>任何
 
-`true`如果集合中的任何元素满足指定的条件，则返回; 否则返回 `false` 。 下面是一个示例：
+`true`如果集合中的任何元素满足指定的条件，则返回; 否则返回 `false` 。 以下是一个示例：
 
  [!code-vb[VbSimpleQuerySamples#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#6)]
 
 ### <a name="average"></a>平均值
 
-计算集合中所有元素的平均值，或为集合中的所有元素计算提供的表达式。 下面是一个示例：
+计算集合中所有元素的平均值，或为集合中的所有元素计算提供的表达式。 以下是一个示例：
 
  [!code-vb[VbSimpleQuerySamples#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#7)]
 
-### <a name="count"></a>Count
+### <a name="count"></a>计数
 
-计算集合中元素的数目。 您可以提供一个可选 `Boolean` 表达式，以便仅对集合中满足条件的元素数进行计数。 下面是一个示例：
+计算集合中元素的数目。 您可以提供一个可选 `Boolean` 表达式，以便仅对集合中满足条件的元素数进行计数。 以下是一个示例：
 
  [!code-vb[VbSimpleQuerySamples#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#8)]
 
-### <a name="group"></a>组
+### <a name="group"></a>Group
 
 指作为 or 子句的结果进行分组的查询结果 `Group By` `Group Join` 。 `Group`函数仅在 `Into` 或子句的子句中有效 `Group By` `Group Join` 。 有关详细信息和示例，请参阅 [Group By 子句](group-by-clause.md) 和 [group Join 子句](group-join-clause.md)。
 
@@ -84,21 +85,21 @@ Aggregate element [As type] In collection _
 
 计算集合中元素的数目。 您可以提供一个可选 `Boolean` 表达式，以便仅对集合中满足条件的元素数进行计数。 以的形式返回结果 `Long` 。 有关示例，请参阅 `Count` 聚合函数。
 
-### <a name="max"></a>最大值
+### <a name="max"></a>Max
 
-计算集合中的最大值，或为集合中的所有元素计算提供的表达式。 下面是一个示例：
+计算集合中的最大值，或为集合中的所有元素计算提供的表达式。 以下是一个示例：
 
  [!code-vb[VbSimpleQuerySamples#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#9)]
 
 ### <a name="min"></a>Min
 
-计算集合中的最小值，或为集合中的所有元素计算提供的表达式。 下面是一个示例：
+计算集合中的最小值，或为集合中的所有元素计算提供的表达式。 以下是一个示例：
 
  [!code-vb[VbSimpleQuerySamples#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#10)]
 
 ### <a name="sum"></a>Sum
 
-计算集合中所有元素的和，或为集合中的所有元素计算提供的表达式。 下面是一个示例：
+计算集合中所有元素的和，或为集合中的所有元素计算提供的表达式。 以下是一个示例：
 
  [!code-vb[VbSimpleQuerySamples#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#15)]
 
@@ -108,7 +109,7 @@ Aggregate element [As type] In collection _
   
  [!code-vb[VbSimpleQuerySamples#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#4)]  
   
-## <a name="creating-user-defined-aggregate-functions"></a>创建用户定义聚合函数
+## <a name="creating-user-defined-aggregate-functions"></a>创建 User-Defined 聚合函数
 
  您可以通过向类型添加扩展方法，在查询表达式中包含您自己的自定义聚合函数 <xref:System.Collections.Generic.IEnumerable%601> 。 然后，您的自定义方法可以对引用了聚合函数的可枚举集合执行计算或操作。 有关扩展方法的详细信息，请参阅[扩展方法](../../programming-guide/language-features/procedures/extension-methods.md)。  
   
@@ -120,7 +121,7 @@ Aggregate element [As type] In collection _
   
  [!code-vb[VbSimpleQuerySamples#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/UserDefinedAggregates.vb#19)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

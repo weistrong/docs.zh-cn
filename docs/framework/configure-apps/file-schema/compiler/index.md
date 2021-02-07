@@ -1,4 +1,5 @@
 ---
+description: 了解更多：编译器和语言提供程序设置架构
 title: 编译器和语言提供程序设置架构
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - language providers, settings schema
 - compiler configuration settings
 ms.assetid: c020b139-8699-4f0d-9ac9-70d0c5b2a8c8
-ms.openlocfilehash: 457e90c92530e04070575e42e3fc282ce45b3d03
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 64dd57581711358c9051cda5609e0c5ff4fc05bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699189"
 ---
 # <a name="compiler-and-language-provider-settings-schema"></a>编译器和语言提供程序设置架构
 
@@ -29,7 +30,7 @@ ms.locfileid: "91153945"
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<compiler>**](compiler-element.md)
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<system.codedom>](system-codedom-element.md)|指定可用语言提供程序的编译器配置设置。|  
 |[\<compilers>](compilers-element.md)|编译器配置元素的容器;包含零个或多个 [\<compiler>](compiler-element.md) 元素。|  

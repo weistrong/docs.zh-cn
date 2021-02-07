@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <oidEntry> 元素
 title: <oidEntry> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <oidEntry> element
 - oidEntry element
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
-ms.openlocfilehash: 2207c934f5864890d9b7a5e22c43a1d53e29aaa5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d5fe22018377e247ffa0b6addb58cbeee7119e66
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91187103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698747"
 ---
 # <a name="oidentry-element"></a>\<oidEntry> 元素
 
@@ -37,10 +38,10 @@ ms.locfileid: "91187103"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |**OID**|必需的特性。<br /><br /> 指定与您的类实现的算法相对应的第1个 OID。|  
-|name|必需的特性。<br /><br /> 指定标记中 **name** 属性的值 [\<nameEntry>](nameentry-element.md) 。|  
+|**name**|必需的特性。<br /><br /> 指定标记中 **name** 属性的值 [\<nameEntry>](nameentry-element.md) 。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -48,7 +49,7 @@ ms.locfileid: "91187103"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`cryptographySettings`|包含加密设置。|  

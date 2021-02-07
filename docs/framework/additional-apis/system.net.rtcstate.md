@@ -1,5 +1,6 @@
 ---
-title: RtcState 类 （System.Net）
+description: 了解详细信息： RtcState 类
+title: 'RtcState 类 (System.Net) '
 ms.date: 11/01/2019
 ms.technology: dotnet-networking
 topic_type:
@@ -11,16 +12,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
-ms.openlocfilehash: 861bf2fc0dfef8f836e98e45ba22c7e2e24e19f4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ea16b46a918387d2333124ad82ec7b707627575e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699605"
 ---
 # <a name="rtcstate-class"></a>RtcState 类
 
-类`RtcState`表示实时通信 （RTC） 请求的状态数据。
+`RtcState`类表示实时通信 (RTC) 请求的状态数据。
 
 ## <a name="syntax"></a>语法
   
@@ -29,14 +30,14 @@ internal class RtcState
 ```
 
 > [!WARNING]
-> 该`RtcState`类是内部的，不应直接在代码中使用。
+> `RtcState`类是内部的，不应在代码中直接使用。
 >
-> 在任何情况下，Microsoft 都不支持在生产应用程序中使用此类。
+> 在任何情况下，Microsoft 不支持在生产应用程序中使用此类。
 
 ## <a name="requirements"></a>要求
 
-**命名空间：**<xref:System.Net>
+**命名空间：** <xref:System.Net>
 
-**装配：** 系统（系统中）
+**程序集：** System.dll 中的系统 () 
 
-**.NET 框架版本：** 自 4.5 起可用。
+**.NET Framework 版本：** 自4.5 起可用。

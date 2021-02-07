@@ -1,5 +1,6 @@
 ---
-title: UnsafeNclNativeMethods 类（System.Net）
+description: 了解详细信息： UnsafeNclNativeMethods 类
+title: 'UnsafeNclNativeMethods 类 (System.Net) '
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type:
@@ -12,16 +13,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 46756a0d1d69b4768dbb8dcdd7ab098d3f1849bf
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: fa1084efddae0ba5cbfc9a949dcd94d2c64f3272
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699488"
 ---
 # <a name="unsafenclnativemethods-class"></a>UnsafeNclNativeMethods 类
 
-包含导入不安全的本机网络方法的类。 无法继承此类。
+包含导入不安全的本机网络方法的类。 此类不能被继承。
 
 ```csharp
 internal static class UnsafeNclNativeMethods
@@ -34,7 +35,7 @@ internal static class UnsafeNclNativeMethods
 
 ## <a name="nativepki-class"></a>NativePKI 类
 
-包含从 crypt32.dll 导入的方法。 使用超文本传输协议（HTTPS）时，这些方法会处理证书。 无法继承此类。
+包含从 crypt32.dll 导入的方法。 使用超文本传输协议 (HTTPS) 安全时，这些方法将处理证书。 此类不能被继承。
 
 ```csharp
 internal static class NativePKI
@@ -58,4 +59,4 @@ internal static X509CertificateCollection FindClientCertificates
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 
