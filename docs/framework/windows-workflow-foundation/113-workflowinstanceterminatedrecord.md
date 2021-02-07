@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 113-WorkflowInstanceTerminatedRecord
 title: 113 - WorkflowInstanceTerminatedRecord
 ms.date: 03/30/2017
 ms.assetid: f53204ee-4ea2-45e1-8859-e86d07305efd
-ms.openlocfilehash: 780841e50763d313debbfea6b84f7c6f412b5590
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0e380aa557d8eddc7cb9ff1f62fa56fd1b9f5441
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667325"
 ---
 # <a name="113---workflowinstanceterminatedrecord"></a>113 - WorkflowInstanceTerminatedRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96294191"
 |-|-|  
 |ID|113|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|错误|  
+|级别|错误|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例发出 WorkflowInstanceTerminatedRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96294191"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  

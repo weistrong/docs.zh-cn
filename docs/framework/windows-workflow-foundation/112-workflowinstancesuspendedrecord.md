@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 112-WorkflowInstanceSuspendedRecord
 title: 112 - WorkflowInstanceSuspendedRecord
 ms.date: 03/30/2017
 ms.assetid: bc825c7c-8c90-48f7-9336-9a978a8246c6
-ms.openlocfilehash: 697dfe18fdb4ae6c05ae758077c1c2d9198e053c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6d2088da6e395476bba05d5e2f4557ea527ecdd8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667390"
 ---
 # <a name="112---workflowinstancesuspendedrecord"></a>112 - WorkflowInstanceSuspendedRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96265812"
 |-|-|  
 |ID|112|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例发出 WorkflowInstanceSuspended Record 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96265812"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  

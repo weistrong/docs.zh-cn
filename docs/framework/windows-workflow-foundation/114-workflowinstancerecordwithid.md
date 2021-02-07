@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 114-WorkflowInstanceRecordWithId
 title: 114 - WorkflowInstanceRecordWithId
 ms.date: 03/30/2017
 ms.assetid: 2bd8b4a1-b210-4c07-8156-f19392318c08
-ms.openlocfilehash: ebeff6af6d18d2794723250bceeecd682d0af6df
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 77d39cd91476d9de41bbb00b5df034fc79cdec08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667247"
 ---
 # <a name="114---workflowinstancerecordwithid"></a>114 - WorkflowInstanceRecordWithId
 
@@ -17,10 +18,10 @@ ms.locfileid: "96261847"
 |-|-|  
 |ID|114|  
 |关键字|HealthMonitoring、WFTracking|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  工作流实例发出以下工作流状态的 WorkflowInstanceRecord 时，ETW 跟踪参与者将发出此事件：已启动、已继续、已持久保存、空闲、已删除、已完成、已取消、已卸载和已取消挂起。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96261847"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  

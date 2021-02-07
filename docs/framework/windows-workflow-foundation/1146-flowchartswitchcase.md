@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1146-FlowchartSwitchCase
 title: 1146 - FlowchartSwitchCase
 ms.date: 03/30/2017
 ms.assetid: 274e9209-1720-4512-a615-e742f00895f4
-ms.openlocfilehash: 9636e5371440229ced965cf125ffb2ce4e314f72
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f6e9b33f9c068b51695d3ac46cda51fb6d9f8b3f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667065"
 ---
 # <a name="1146---flowchartswitchcase"></a>1146 - FlowchartSwitchCase
 
@@ -17,10 +18,10 @@ ms.locfileid: "96286105"
 |-|-|  
 |ID|1146|  
 |关键字|WFActivities|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示在 Flowchart 开关中已选择的大小写。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96286105"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |FlowChart|xs:string|FlowChart 的显示名称。|  
 |案例|xs:string|所选的开关大小写。|  
