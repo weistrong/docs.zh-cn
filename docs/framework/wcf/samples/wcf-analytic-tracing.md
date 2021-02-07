@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WCF 分析跟踪
 title: WCF 分析跟踪
 ms.date: 03/30/2017
 ms.assetid: 6029c7c7-3515-4d36-9d43-13e8f4971790
-ms.openlocfilehash: 490c67c92407626a67ea8561a378ef3e70266fe2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1f5ec26828bba99a127fea6a81f57fed717943a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755689"
 ---
 # <a name="wcf-analytic-tracing"></a>WCF 分析跟踪
 
@@ -39,7 +40,7 @@ ms.locfileid: "96243659"
 
  WCF 的 ETW 事件提供程序清单定义了三个事件，这些事件旨在由 WCF 服务作者从服务代码中发出。 下表显示了这三个事件的分类。  
   
-|事件|描述|事件 ID|  
+|事件|说明|事件 ID|  
 |-----------|-----------------|--------------|  
 |UserDefinedInformationEventOccurred|服务中发生的说明内容不是一个问题时发出此事件。 例如，可以在对数据库成功进行调用后发出一个事件。|301|  
 |UserDefinedWarningOccurred|发生的问题可能导致将来出现错误时发出此事件。 例如，如果调用数据库失败，但能够通过回退到冗余数据存储区进行恢复，则可以发出一个警告事件。|302|  
@@ -122,6 +123,6 @@ ms.locfileid: "96243659"
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTrace`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AppFabric 监视示例](/previous-versions/appfabric/ff383407(v=azure.10))

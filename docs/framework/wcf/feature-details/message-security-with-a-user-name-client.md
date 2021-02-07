@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用用户名客户端的消息安全性
 title: 用户名客户端的消息安全
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-ms.openlocfilehash: 7168b393bde626c8c413cda3c7422e0eee4ce267
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4502635df3b52ba069c19fca7a73cc9395dd105d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292865"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756105"
 ---
 # <a name="message-security-with-a-user-name-client"></a>用户名客户端的消息安全
 
@@ -131,7 +132,7 @@ ms.locfileid: "96292865"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全性概述](security-overview.md)
 - [用户名消息安全](../samples/message-security-user-name.md)

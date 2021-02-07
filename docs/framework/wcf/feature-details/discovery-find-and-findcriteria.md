@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：发现查找和 s
 title: Discovery Find 和 FindCriteria
 ms.date: 03/30/2017
 ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
-ms.openlocfilehash: 1d6a0e3fcca45c3fe57aab84b0f2b6b86fabb404
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3a4428a89ba4122f528d1c01e4b5a6b8ea8d2935
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756313"
 ---
 # <a name="discovery-find-and-findcriteria"></a>Discovery Find 和 FindCriteria
 
-发现查找操作是发现功能中的主要操作之一，它由客户端启动，用于发现一个或多个服务。 执行查找时将通过网络发送一条 WS-Discovery Probe 消息。 与指定条件匹配的服务通过 WS-Discovery ProbeMatch 消息进行答复。 有关发现消息的详细信息，请参阅[WS 发现规范](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf)。
+发现查找操作是发现功能中的主要操作之一，它由客户端启动，用于发现一个或多个服务。 执行查找时将通过网络发送一条 WS-Discovery Probe 消息。 与指定条件匹配的服务通过 WS-Discovery ProbeMatch 消息进行答复。 有关发现消息的详细信息，请参阅 [WS 发现规范](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf)。
 
 ## <a name="discoveryclient"></a>DiscoveryClient
 
@@ -31,7 +32,7 @@ ms.locfileid: "84599173"
 
   - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=nameWithType> 执行区分大小写的基本字符串比较。
 
-  - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType>按由 "/" 分隔的段匹配。 搜索与 `http://contoso/building1` 作用域的服务匹配 `http://contoso/building/floor1` 。 请注意，它不匹配， `http://contoso/building100` 因为最后两个段不匹配。
+  - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=nameWithType> 按由 "/" 分隔的段匹配。 搜索与 `http://contoso/building1` 作用域的服务匹配 `http://contoso/building/floor1` 。 请注意，它不匹配， `http://contoso/building100` 因为最后两个段不匹配。
 
   - <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=nameWithType> 按使用 LDAP URL 的段来匹配范围。
 
@@ -68,7 +69,7 @@ FindResponse findResponse = discoveryClient.Find(findCriteria);
 Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endpoints.Count)
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF Discovery 概述](wcf-discovery-overview.md)
 - [使用 Discovery 客户端通道](using-the-discovery-client-channel.md)

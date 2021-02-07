@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：更改 x.509 证书的私钥的加密提供程序
 title: 如何：更改 X.509 证书私钥的加密提供程序
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - cryptographic provider [WCF], changing
 - cryptographic provider [WCF]
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
-ms.openlocfilehash: 33d42f26407787b26e1447f8b8f619dd6fc15229
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e68f4ffb5626a2c332853bd97eb513516401a185
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262107"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756703"
 ---
 # <a name="how-to-change-the-cryptographic-provider-for-an-x509-certificates-private-key"></a>如何：更改 X.509 证书私钥的加密提供程序
 
@@ -78,7 +79,7 @@ ms.locfileid: "96262107"
      [!code-csharp[c_CustomX509Token#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customx509token/cs/source.cs#7)]
      [!code-vb[c_CustomX509Token#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#7)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>
 - <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>

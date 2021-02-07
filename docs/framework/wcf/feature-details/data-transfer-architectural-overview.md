@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：数据传输体系结构概述
 title: 数据传输体系结构概述
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - data transfer [WCF], architectural overview
 ms.assetid: 343c2ca2-af53-4936-a28c-c186b3524ee9
-ms.openlocfilehash: efb6933ba90975d5ba35deb2bf22af12fc7c2cdc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3064797b41e146505062a07dc1786dd492a01298
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756495"
 ---
 # <a name="data-transfer-architectural-overview"></a>数据传输体系结构概述
 
@@ -159,7 +160,7 @@ Windows Communication Foundation (WCF) 可视为消息传递基础结构。 它�
 
  为了说明编码器的典型操作，有必要考虑以下四种情况。  
   
-|操作|注释|  
+|操作|评论|  
 |---------------|-------------|  
 |编码，缓冲|在缓冲模式中，编码器通常创建可变大小的缓冲区，然后在其上创建 XML 编写器。 然后，编码器在编码的消息上调用 <xref:System.ServiceModel.Channels.Message.WriteMessage%28System.Xml.XmlWriter%29> ，使用 <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29>依次写出标头和正文，如本主题前面有关 `Message` 的一节所述。 然后为要使用的传输通道返回缓冲区的内容（表示为字节数组）。|  
 |编码，流处理|在流处理模式中，操作与上面类似，但更简单。 不需要使用缓冲区。 通常在流上创建 XML 编写器并在 <xref:System.ServiceModel.Channels.Message.WriteMessage%28System.Xml.XmlWriter%29> 上调用 `Message` 以将消息写出到此编写器。|  
@@ -296,6 +297,6 @@ Windows Communication Foundation (WCF) 可视为消息传递基础结构。 它�
   
  <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> 和 <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> 是分别负责为 `DataContractSerializer` 和 `XmlSerializer`插入消息格式化程序的操作行为。 <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> 行为实际上可操作从 <xref:System.Runtime.Serialization.XmlObjectSerializer>派生的任何序列化程序，包括 <xref:System.Runtime.Serialization.NetDataContractSerializer> （在“使用独立序列化”中进行详细说明）。 此行为调用 `CreateSerializer` 虚拟方法重载之一以获取序列化程序。 若要插入其他序列化程序，请创建一个新的 <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> 子类并重写两个 `CreateSerializer` 重载。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在服务协定中指定数据传输](specifying-data-transfer-in-service-contracts.md)

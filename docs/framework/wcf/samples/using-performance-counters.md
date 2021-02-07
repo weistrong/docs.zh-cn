@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用性能计数器
 title: 使用性能计数器
 ms.date: 03/30/2017
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
-ms.openlocfilehash: d3e6b9805bd0b9c5eea991fce4dde2035f8f5c1b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f2305310238df9c11ebc2612248f2d7d1b6ea6f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294906"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755728"
 ---
 # <a name="using-performance-counters"></a>使用性能计数器
 
@@ -77,6 +78,6 @@ ms.locfileid: "96294906"
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AppFabric 监视示例](/previous-versions/appfabric/ff383407(v=azure.10))

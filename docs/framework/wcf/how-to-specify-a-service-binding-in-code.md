@@ -1,16 +1,17 @@
 ---
+description: 了解有关详细信息，请参阅如何：在代码中指定服务绑定
 title: 如何：在代码中指定服务绑定
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 67ab5dd8-79c1-4e62-aa75-828ea918a53a
-ms.openlocfilehash: 7cf54754661182dca1e91c75b158d9b0a34a1f5e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 744919fee4ec28d7df4581ac1d608d1fa9e99a29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755936"
 ---
 # <a name="how-to-specify-a-service-binding-in-code"></a>如何：在代码中指定服务绑定
 
@@ -49,7 +50,7 @@ ms.locfileid: "96236476"
      [!code-csharp[C_HowTo_CodeServiceBinding#5](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_codeservicebinding/cs/source.cs#5)]
      [!code-vb[C_HowTo_CodeServiceBinding#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_codeservicebinding/vb/source.vb#5)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用绑定配置服务和客户端](using-bindings-to-configure-services-and-clients.md)
 - [指定终结点地址](specifying-an-endpoint-address.md)

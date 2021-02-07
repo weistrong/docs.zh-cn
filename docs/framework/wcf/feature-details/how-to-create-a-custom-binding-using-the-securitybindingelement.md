@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：使用 SecurityBindingElement 创建自定义绑定
 title: 如何：使用 SecurityBindingElement 创建自定义绑定
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], creating custom bindings
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
-ms.openlocfilehash: 9aaaf6a10e0c51db35720d72512c1a91cfbb9720
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 69fa09b89c2eda871663ce10a265efa4f3b356f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256737"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756183"
 ---
 # <a name="how-to-create-a-custom-binding-using-the-securitybindingelement"></a>如何：使用 SecurityBindingElement 创建自定义绑定
 
@@ -103,7 +104,7 @@ Windows Communication Foundation (WCF) 包含多个系统提供的绑定，这�
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的示例为创建使用 的自定义绑定提供了一个完整的函数。  
   

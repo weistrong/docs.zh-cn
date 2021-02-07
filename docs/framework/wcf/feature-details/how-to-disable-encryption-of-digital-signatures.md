@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：禁用数字签名的加密
 title: 如何：禁用数字签名的加密
 ms.date: 03/30/2017
 ms.assetid: fd174313-ad81-4dca-898a-016ccaff8187
-ms.openlocfilehash: 6d9102ab7676a8e751e608b6081da751464e6ee0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95e9bd18b480f5fdf9c98fdb3447610e0d4e3c75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237386"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756131"
 ---
 # <a name="how-to-disable-encryption-of-digital-signatures"></a>如何：禁用数字签名的加密
 
@@ -26,6 +27,6 @@ ms.locfileid: "96237386"
   
 3. 将 <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> 属性设置为 <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>，或将 <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> 属性设置为 <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用自定义绑定的安全功能](security-capabilities-with-custom-bindings.md)

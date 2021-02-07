@@ -1,13 +1,14 @@
 ---
+description: 了解有关： TransportBindingElement 的详细信息
 title: TransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 54ecfbee-53c0-410c-a7fa-a98f2e40c545
-ms.openlocfilehash: 45bfcd069391156bc85cc4c26f2b172770197a9e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: de08feaf8abec3a0dfee97e92d68d5223cd0de44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757106"
 ---
 # <a name="transportbindingelement"></a>TransportBindingElement
 
@@ -71,6 +72,6 @@ class TransportBindingElement : BindingElement
 |---------|-----------------------------------|  
 |命名空间|已在 root\ServiceModel 中定义|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.TransportBindingElement>

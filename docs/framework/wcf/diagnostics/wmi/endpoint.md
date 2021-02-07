@@ -1,13 +1,14 @@
 ---
+description: 了解更多：终结点
 title: 终结点
 ms.date: 03/30/2017
 ms.assetid: fe63370d-81a1-40f3-97c2-59cb357c78d2
-ms.openlocfilehash: ceb4e4b41502b00d7bb21f1ecbd8249fccf1ce3b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1c28be37d1b1abfe1813e6da8903809affd309e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757457"
 ---
 # <a name="endpoint"></a>终结点
 
@@ -37,7 +38,7 @@ class Endpoint
 
  该终结点类定义以下方法。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |[GetOperationCounterInstanceName](getoperationcounterinstancename.md)|检索操作性能计数器实例名称|  
   
@@ -117,7 +118,7 @@ class Endpoint
   
  终结点在其上侦听的 Uri。  
   
-### <a name="name"></a>“属性”  
+### <a name="name"></a>名称  
 
  数据类型：字符串  
   

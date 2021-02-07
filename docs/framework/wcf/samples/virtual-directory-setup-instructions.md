@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：虚拟目录设置说明
 title: 虚拟目录设置说明
 ms.date: 03/30/2017
 ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
-ms.openlocfilehash: dba6547888935ccf36ec0924fd3c95e8fbda5688
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b1a68fb657a59e9858c6efa7931c5d106231605
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755702"
 ---
 # <a name="virtual-directory-setup-instructions"></a>虚拟目录设置说明
 
@@ -34,7 +35,7 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
   
 6. 将物理路径设置为 %SystemDrive%\inetpub\wwwroot\servicemodelsamples。  大多数 WCF 示例在生成后都将服务可执行文件复制到此位置。  
   
-7. 单击" **确定**"。 现在已为 WCF 示例创建 Web 应用程序。  
+7. 单击“确定”。 现在已为 WCF 示例创建 Web 应用程序。  
   
     > [!NOTE]
     > 此任务仅需执行一次，因为所有 WCF 示例都使用相同的 servicemodelsamples Web 应用程序。  
@@ -42,7 +43,7 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
     > [!NOTE]
     > 在本文档中，术语`virtual directory`和 `Web application`是同义词。  
   
-     除了创建虚拟目录以外，还必须设置其属性以使 WCF 服务能够运行。 有关详细信息，请参阅下文。  
+     除了创建虚拟目录以外，还必须设置其属性以使 WCF 服务能够运行。 有关详细信息，请参见以下内容。  
   
 #### <a name="to-create-a-virtual-directory-in-iis-51-or-60"></a>在 IIS 5.1 或 6.0 中创建虚拟目录  
   
@@ -56,7 +57,7 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
   
 5. 将路径设置为 %SystemDrive%\inetpub\wwwroot\servicemodelsamples。 大多数 WCF 示例在生成后都将服务可执行文件复制到此位置。  
   
-6. 单击“下一步”。  
+6. 单击 **“下一步”** 。  
   
 7. 默认情况下，已选中以下复选框：  
   
@@ -77,7 +78,7 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
   
 3. 在 "操作" 窗格中，选择 " **启用** " 选项。 这样，您将能够使用 Internet Explorer 访问目录的目录，这在调试服务时将很有帮助。  
   
- 最后，您必须设置 servicemodelsamples 文件夹的安全属性，以允许其他人访问该文件夹。 有关详细信息，请参阅下文。  
+ 最后，您必须设置 servicemodelsamples 文件夹的安全属性，以允许其他人访问该文件夹。 有关详细信息，请参见以下内容。  
   
 #### <a name="to-set-additional-virtual-directory-properties-in-iis-51-or-60"></a>在 IIS 5.1 或 6.0 中设置附加虚拟目录属性  
   
@@ -103,7 +104,7 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
   
 4. 选择 " **查找** " 条目。 此时将打开 " **选择用户或组** " 窗口。  
   
-5. 单击“高级”。  
+5. 单击“高级”。   
   
 6. 单击“位置”。 此时会打开 " **位置** " 窗口。  
   
@@ -125,7 +126,7 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
   
 2. 右键单击 **servicemodelsamples** 文件夹，然后单击 " **共享和安全"。**  
   
-3. 单击“安全”选项卡。   
+3. 单击 **“安全”** 选项卡。  
   
 4. 如果使用的是 IIS 6.0，请在 " **组或用户名** " 框中检查是否列出了 " **Internet 来宾帐户** "。  
   
@@ -141,7 +142,7 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
   
     5. 在 " **用户帐户** " 对话框中，单击 " **高级** " 选项卡。  
   
-    6. 单击“高级”。  
+    6. 单击“高级”。   
   
     7. 在 " **本地用户和组** " 对话框中，单击以展开 " **用户** " 文件夹。  
   
@@ -191,6 +192,6 @@ Windows Communication Foundation (WCF) 示例旨在共享一个名为 servicemod
   
     3. 在 " **组** " 列中，检查 **ASPNET** 的值是否为 "用户"。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Internet 信息服务承载说明](internet-information-service-hosting-instructions.md)

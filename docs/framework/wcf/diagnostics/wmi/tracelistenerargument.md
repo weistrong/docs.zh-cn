@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： TraceListenerArgument
 title: TraceListenerArgument
 ms.date: 03/30/2017
 ms.assetid: b6c84090-bf96-43f4-9fb0-1ce8fd9c8efe
-ms.openlocfilehash: 5d052d2a74e8da81c18d4ee70b2197232ba8871d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8a7b9fa39f16316b4fca859cefbb7a9dbe33f9d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239167"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757288"
 ---
 # <a name="tracelistenerargument"></a>TraceListenerArgument
 
@@ -31,7 +32,7 @@ class TraceListenerArgument
 
  TraceListenerArgument 类具有以下属性：  
   
-### <a name="name"></a>“属性”  
+### <a name="name"></a>名称  
 
  数据类型：字符串  
   

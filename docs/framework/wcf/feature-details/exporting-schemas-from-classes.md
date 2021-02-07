@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：从类导出架构
 title: 从类导出架构
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - XsdDataContractExporter class
 - XsdDataContractImporter class
 ms.assetid: bb57b962-70c1-45a9-93d5-e721e340a13f
-ms.openlocfilehash: 8105ada41a2ec9dac962f5029ac89b66c69893ab
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f9ca33bb26237b3af9ff26b1ed693088c62e3b13
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255554"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756274"
 ---
 # <a name="exporting-schemas-from-classes"></a>从类导出架构
 
@@ -52,7 +53,7 @@ ms.locfileid: "96255554"
   
 ## <a name="helper-methods"></a>帮助器方法  
 
- 除了具有导出架构的主要作用， `XsdDataContractExporter` 还具有几个有用的帮助器方法，它们可提供有关类型的信息。 其中包括:  
+ 除了具有导出架构的主要作用， `XsdDataContractExporter` 还具有几个有用的帮助器方法，它们可提供有关类型的信息。 其中包括：  
   
 - <xref:System.Runtime.Serialization.XsdDataContractExporter.GetRootElementName%2A> 方法。 此方法采用 `Type` 并返回表示根元素名称和命名空间的 <xref:System.Xml.XmlQualifiedName> ，此名称和命名空间可在此类型被序列化为根对象时使用。  
   
@@ -62,7 +63,7 @@ ms.locfileid: "96255554"
   
  导出选项会影响所有这些方法。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>

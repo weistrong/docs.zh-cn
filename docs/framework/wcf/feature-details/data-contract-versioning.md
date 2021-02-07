@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：数据协定版本控制
 title: 数据协定版本管理
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - versioning [WCF]
 - data contracts [WCF], versioning
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
-ms.openlocfilehash: 6f8623c9d8e9e7ba1f7c762c929f986b523c2f90
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89b99ccad1671d33383cfce8d25b241d71788670
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756599"
 ---
 # <a name="data-contract-versioning"></a>数据协定版本管理
 
@@ -124,7 +125,7 @@ ms.locfileid: "96285195"
  大多数集合更改是非重大更改，这是因为在数据协定模型中，大多数集合类型可以彼此互换。 但是，将非自定义集合更改为自定义集合是重大更改，反之亦然。 此外，更改集合的自定义设置（即，更改其数据协定名称和命名空间、重复元素名称、键元素名称以及值元素名称）也是重大更改。 有关集合自定义的详细信息，请参阅 [数据协定中的集合类型](collection-types-in-data-contracts.md)。  
 更改集合内容的数据协定（例如，从整数列表更改为字符串列表）自然也是重大更改。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

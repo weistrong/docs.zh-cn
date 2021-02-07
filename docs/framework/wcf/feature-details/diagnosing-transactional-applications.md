@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：诊断事务性应用程序
 title: 诊断事务应用程序
 ms.date: 03/30/2017
 ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
-ms.openlocfilehash: 696ebe7249a8388eaaf38a678581e28d472e821a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b80dd5273781feaad0ef1c964c737a1cd470c75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756443"
 ---
 # <a name="diagnosing-transactional-applications"></a>诊断事务应用程序
 
@@ -54,36 +55,36 @@ ms.locfileid: "96290239"
   
  在服务上，`ServiceBehaviorAttribute` 具有以下属性。  
   
-|名称|类型|描述|  
+|名称|类型|说明|  
 |----------|----------|-----------------|  
-|ReleaseServiceInstanceOnTransactionComplete|Boolean|指定当前事务完成后，是否回收服务对象。|  
-|TransactionAutoCompleteOnSessionClose|Boolean|指定当前会话关闭时，挂起的事务是否已完成。|  
+|ReleaseServiceInstanceOnTransactionComplete|布尔|指定当前事务完成后，是否回收服务对象。|  
+|TransactionAutoCompleteOnSessionClose|布尔|指定当前会话关闭时，挂起的事务是否已完成。|  
 |TransactionIsolationLevel|一个字符串，它包含 <xref:System.Transactions.IsolationLevel> 枚举的一个有效值。|指定此服务支持的事务隔离级别。|  
 |TransactionTimeout|<xref:System.DateTime>|指定必须完成事务处理的期限。|  
   
  `ServiceTimeoutsBehavior` 具有以下属性。  
   
-|名称|类型|描述|  
+|名称|类型|说明|  
 |----------|----------|-----------------|  
 |TransactionTimeout|<xref:System.DateTime>|指定必须完成事务处理的期限。|  
   
  在绑定上，`TransactionFlowBindingElement` 具有以下属性。  
   
-|名称|类型|描述|  
+|名称|类型|说明|  
 |----------|----------|-----------------|  
 |TransactionProtocol|一个字符串，它包含 <xref:System.ServiceModel.TransactionProtocol> 类型的一个有效值。|指定在流动事务时使用的事务处理协议。|  
-|TransactionFlow|Boolean|指定是否启用传入事务流。|  
+|TransactionFlow|布尔|指定是否启用传入事务流。|  
   
  在操作上，`OperationBehaviorAttribute` 具有以下属性。  
   
-|名称|类型|描述|  
+|名称|类型|说明|  
 |----------|----------|-----------------|  
-|TransactionAutoComplete|Boolean|指定如果未发生未处理的异常，是否自动提交当前事务。|  
-|TransactionScopeRequired|Boolean|指定操作是否需要事务。|  
+|TransactionAutoComplete|布尔|指定如果未发生未处理的异常，是否自动提交当前事务。|  
+|TransactionScopeRequired|布尔|指定操作是否需要事务。|  
   
  在操作上，`TransactionFlowAttribute` 具有以下属性。  
   
-|名称|类型|描述|  
+|名称|类型|说明|  
 |----------|----------|-----------------|  
 |TransactionFlowOption|一个字符串，它包含 <xref:System.ServiceModel.TransactionFlowOption> 枚举的一个有效值。|指定需要事务流的范围。|  
   
@@ -124,7 +125,7 @@ ms.locfileid: "96290239"
   
      这还启用了 WCF 跟踪功能，因为 WCF 还利用 <xref:System.Transactions> 基础结构。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [管理和诊断](../diagnostics/index.md)
 - [配置跟踪](../diagnostics/tracing/configuring-tracing.md)

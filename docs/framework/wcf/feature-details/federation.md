@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：联合身份验证
 title: 联合
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation [WCF]
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
-ms.openlocfilehash: 5b5e944b96fc5e56fbb4d19a582ba9dd245904b4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 069017097b46ef0b86e74fb94c2e2823172fb1e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756326"
 ---
 # <a name="federation"></a>联合
 
@@ -29,7 +30,7 @@ ms.locfileid: "96286742"
 
  联合安全体系结构有三个关键元素，如下表所述。  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |域/领域|安全管理或信任的单个单位。 典型的域可能包括单个组织。|  
 |联合|已建立信任的域的集合。 信任级别可能有所不同，但通常包括身份验证，几乎始终包括授权。 典型的联合可能包括为了对一组资源进行共享访问而建立信任的许多组织。|  

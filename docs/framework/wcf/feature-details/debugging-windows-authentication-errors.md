@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：调试 Windows 身份验证错误
 title: 调试 Windows 身份验证错误
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, authentication
 - WCF, Windows authentication
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-ms.openlocfilehash: c8aa87bdbf9488bce8e1a62f6d1a3898f923d349
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cfc8bf8ce9b9c5da3d9b25949321ed1ac2b62d98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756482"
 ---
 # <a name="debug-windows-authentication-errors"></a>调试 Windows 身份验证错误
 
@@ -157,11 +158,11 @@ ms.locfileid: "96291656"
 
  如果在一台计算机上开发应用程序，并在另一台计算机上部署它，然后在每台计算机上使用不同的帐户类型进行身份验证，则可能遇到不同的行为。 例如，假定使用 `SSPI Negotiated` 身份验证模式，在 Windows XP Pro 计算机上开发应用程序。 如果使用本地用户帐户进行身份验证，则会使用 NTLM 协议。 在开发应用程序后，将服务部署到使用域帐户运行它的 Windows Server 2003 计算机。 此时，客户端将无法对服务进行身份验证，因为它将使用 Kerberos 和域控制器。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.Security.WindowsServiceCredential>
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.ClientBase%601>
 - [委托和模拟](delegation-and-impersonation-with-wcf.md)
-- [不支持的方案](unsupported-scenarios.md)
+- [不受支持的方案](unsupported-scenarios.md)

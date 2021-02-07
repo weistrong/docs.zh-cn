@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：使用 HTTPS 创建自定义可靠会话绑定
 title: 如何：使用 HTTPS 创建自定义可靠会话绑定
 ms.date: 03/30/2017
 ms.assetid: fa772232-da1f-4c66-8c94-e36c0584b549
-ms.openlocfilehash: 70f8f4f33626ab0d1705e03750bfd9baa324e60a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 97e0386c3694552099a623a319f566fa4db2a39b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756170"
 ---
 # <a name="how-to-create-a-custom-reliable-session-binding-with-https"></a>如何：使用 HTTPS 创建自定义可靠会话绑定
 
@@ -15,7 +16,7 @@ ms.locfileid: "84598991"
 
 此过程的关键部分是 **\<endpoint>** 配置元素包含一个 `bindingConfiguration` 属性，该属性引用名为的自定义绑定配置 `reliableSessionOverHttps` 。 [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md)配置元素引用此名称以指定通过包括和元素来使用可靠会话和 HTTPS 传输 **\<reliableSession>** **\<httpsTransport>** 。
 
-有关此示例的源副本，请参阅[通过 HTTPS 自定义绑定可靠会话](../samples/custom-binding-reliable-session-over-https.md)。
+有关此示例的源副本，请参阅 [通过 HTTPS 自定义绑定可靠会话](../samples/custom-binding-reliable-session-over-https.md)。
 
 ### <a name="configure-the-service-with-a-custombinding-to-use-a-reliable-session-with-https"></a>使用 CustomBinding 配置服务，以便将可靠会话与 HTTPS 一起使用
 
@@ -27,19 +28,19 @@ ms.locfileid: "84598991"
 
    [!code-csharp[c_HowTo_CreateReliableSessionHTTPS#1122](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/cs/service.cs#1122)]
 
-1. 创建一个*web.config*文件，以便 `CalculatorService` 使用一个名为的自定义绑定（ `reliableSessionOverHttps` 使用可靠会话和 HTTPS 传输）为设置终结点。
+1. 使用名为 `CalculatorService` 的自定义绑定 `reliableSessionOverHttps` （使用可靠会话和 HTTPS 传输）为配置终结点，从而创建一个Web.config文件。
 
    [!code-xml[c_HowTo_CreateReliableSessionHTTPS#2111](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/web.config#2111)]
 
-1. 创建包含以下行的*服务 .svc*文件：
+1. 创建包含以下行的 *服务 .svc* 文件：
 
    `<%@ServiceHost language=c# Service="CalculatorService" %>`
 
-1. 将*服务 .svc*文件放在 INTERNET INFORMATION SERVICES （IIS）虚拟目录中。
+1. 将 *服务 .svc* 文件放入 INTERNET INFORMATION SERVICES (IIS) 虚拟目录。
 
 ### <a name="configure-the-client-with-a-custombinding-to-use-a-reliable-session-with-https"></a>使用 CustomBinding 配置客户端以使用与 HTTPS 的可靠会话
 
-1. 使用[*Svcutil.exe*元数据实用工具（）](../servicemodel-metadata-utility-tool-svcutil-exe.md)从命令行生成服务元数据中的代码。
+1. 使用 "工作的元数据实用工具" 工具，从命令行 [ (*Svcutil.exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) ，以便从服务元数据生成代码。
 
    ```console
    Svcutil.exe <Metadata Exchange (MEX) address or HTTP GET address>
@@ -65,8 +66,8 @@ ms.locfileid: "84598991"
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
 
-由于本示例中使用的证书是用*Makecert*创建的测试证书，因此当你尝试从浏览器访问 HTTPS 地址（例如）时，会出现安全警报。 `https://localhost/servicemodelsamples/service.svc`
+由于本示例中使用的证书是使用 *Makecert.exe* 创建的测试证书，因此当你尝试从浏览器访问 HTTPS 地址（例如）时，会出现安全警报 `https://localhost/servicemodelsamples/service.svc` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [可靠会话](reliable-sessions.md)

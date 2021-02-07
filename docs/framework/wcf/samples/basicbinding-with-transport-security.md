@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息： BasicBinding 和传输安全
 title: 使用传输安全的 BasicBinding
 ms.date: 03/30/2017
 ms.assetid: f49b1de6-0254-4362-8ef2-fccd8ff9688b
-ms.openlocfilehash: 822a7dcb20c6559a70ba77719b6e7a62633bb31c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e3d196136fcf91e3e61f82cee7e16421db221192
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575662"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755897"
 ---
 # <a name="basicbinding-with-transport-security"></a>使用传输安全的 BasicBinding
 
-本示例演示对基本绑定使用 SSL 传输安全。 此示例基于实现计算器服务的[入门](getting-started-sample.md)。
+本示例演示对基本绑定使用 SSL 传输安全。 此示例基于实现计算器服务的 [入门](getting-started-sample.md) 。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Basic\TransportSecurity`
 
@@ -29,7 +30,7 @@ ms.locfileid: "84575662"
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
 
-示例中的程序代码与[入门](getting-started-sample.md)服务的程序代码相同。 配置文件设置中的终结点定义和绑定定义已进行修改，可以启用安全通信，如下面的示例配置所示。
+示例中的程序代码与 [入门](getting-started-sample.md) 服务的程序代码相同。 配置文件设置中的终结点定义和绑定定义已进行修改，可以启用安全通信，如下面的示例配置所示。
 
 ```xml
 <system.serviceModel>
@@ -56,7 +57,7 @@ ms.locfileid: "84575662"
 </system.serviceModel>
 ```
 
-由于本示例中使用的证书是用 Makecert 创建的测试证书，因此，当你尝试在浏览器中访问 HTTPS：地址（例如）时，将出现安全 `https://localhost/servicemodelsamples/service.svc` 警报。 若要允许 Windows Communication Foundation （WCF）客户端使用测试证书，则会向客户端添加一些额外的代码以禁止显示安全警报。 使用真正的证书时不需要此代码和附带的类。
+由于本示例中使用的证书是使用 Makecert.exe 创建的测试证书，因此，当你尝试在浏览器中访问 HTTPS：地址（例如）时，将出现安全警报 `https://localhost/servicemodelsamples/service.svc` 。 若要允许 Windows Communication Foundation (WCF) 客户端使用测试证书，请将一些额外的代码添加到客户端以禁止显示安全警报。 使用真正的证书时不需要此代码和附带的类。
 
 ```csharp
 // This code is required only for test certificates such as those
@@ -83,10 +84,10 @@ Press <ENTER> to terminate client.
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
-2. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+2. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
-3. 确保已执行[Internet Information Services （IIS）服务器证书安装说明](iis-server-certificate-installation-instructions.md)。
+3. 请确保已执行 [Internet Information Services (IIS) 服务器证书安装说明](iis-server-certificate-installation-instructions.md)。
 
 4. 若要生成 C# 或 Visual Basic .NET 版本的解决方案，请按照 [Building the Windows Communication Foundation Samples](building-the-samples.md)中的说明进行操作。
 
-5. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+5. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。

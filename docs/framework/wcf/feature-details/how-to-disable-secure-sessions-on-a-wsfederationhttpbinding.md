@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：在 WSFederationHttpBinding 上禁用安全会话
 title: 如何：在 WSFederationHttpBinding 上禁用安全会话
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 675fa143-6a4e-4be3-8afc-673334ab55ec
-ms.openlocfilehash: df057d64feb89d1e43b938b36cb48f2f103b17d0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 73fb25c55cb6f7be13a286cf8e16701095739827
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756118"
 ---
 # <a name="how-to-disable-secure-sessions-on-a-wsfederationhttpbinding"></a>如何：在 WSFederationHttpBinding 上禁用安全会话
 
@@ -44,6 +45,6 @@ ms.locfileid: "84595383"
 
 - 若要编译代码示例，请创建一个引用 System.ServiceModel.dll 程序集的项目。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [绑定与安全](bindings-and-security.md)

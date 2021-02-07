@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：双工
 title: 双工
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Duplex Service Contract
 ms.assetid: bc5de6b6-1a63-42a3-919a-67d21bae24e0
-ms.openlocfilehash: 77eab6a4975fc67c20558a53f399c7e709215587
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2681506e186cb38eedc1888987fa46ddf2c0b7b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755780"
 ---
 # <a name="duplex"></a>双工
 
-“双工”示例演示如何定义和实现双工协定。 当客户端与服务建立会话并为服务提供可用来将消息发送回客户端的通道时，就会发生双工通信。 此示例基于[入门](getting-started-sample.md)。 双工协定以一对接口形式定义：一个从客户端到服务的主接口和一个从服务到客户端的回调接口。 在本示例中，`ICalculatorDuplex` 接口允许客户端执行数学运算，通过会话计算结果。 服务在 `ICalculatorDuplexCallback` 接口上返回结果。 双工协定需要会话，因为必须建立上下文才能将客户端和服务之间发送的一组消息关联在一起。
+“双工”示例演示如何定义和实现双工协定。 当客户端与服务建立会话并为服务提供可用来将消息发送回客户端的通道时，就会发生双工通信。 此示例基于 [入门](getting-started-sample.md)。 双工协定以一对接口形式定义：一个从客户端到服务的主接口和一个从服务到客户端的回调接口。 在本示例中，`ICalculatorDuplex` 接口允许客户端执行数学运算，通过会话计算结果。 服务在 `ICalculatorDuplexCallback` 接口上返回结果。 双工协定需要会话，因为必须建立上下文才能将客户端和服务之间发送的一组消息关联在一起。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
@@ -164,11 +165,11 @@ client.Close();
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+1. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
-2. 若要生成 c #、c + + 或 Visual Basic .NET 版本的解决方案，请按照[生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
+2. 若要生成 c #、c + + 或 Visual Basic .NET 版本的解决方案，请按照 [生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
 
-3. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
     > [!IMPORTANT]
     > 在跨计算机配置中运行客户端时，请确保 `address` 使用相应计算机的名称，将元素的属性[ \<endpoint> \<client> ](../../configure-apps/file-schema/wcf/endpoint-of-client.md)中的 "localhost" 替换为该元素的元素的属性 `clientBaseAddress` ，如下 [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) [\<wsDualHttpBinding>](../../configure-apps/file-schema/wcf/wsdualhttpbinding.md) 所示：
@@ -191,6 +192,6 @@ client.Close();
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\Duplex`

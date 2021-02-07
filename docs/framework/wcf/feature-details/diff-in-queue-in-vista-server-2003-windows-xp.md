@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： Windows Vista、Windows Server 2003 和 Windows XP 中的队列功能之间的差异
 title: Windows Vista、Windows Server 2003 和 Windows XP 在排队功能方面的差异
 ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], differences in operating systems
 ms.assetid: aa809d93-d0a3-4ae6-a726-d015cca37c04
-ms.openlocfilehash: 6ec20a0d9512b1f80da1fd423282fc1538c750ef
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6a6206b3033454528797f3c8f4276add9c35023d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756378"
 ---
 # <a name="differences-in-queuing-features-in-windows-vista-windows-server-2003-and-windows-xp"></a>Windows Vista、Windows Server 2003 和 Windows XP 在排队功能方面的差异
 
@@ -39,7 +40,7 @@ ms.locfileid: "96254267"
 
  Windows Vista 上的 MSMQ 支持远程事务读取。 这允许从队列中进行读取的应用程序与该队列承载在不同的计算机上。 这样可以确保服务场能够从中心队列进行读取，从而增加系统的总体吞吐量。 另外，还可以确保在读取和处理消息时一旦出现故障，事务能够回滚并且消息保留在队列中以供以后处理。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用死信队列处理消息传输故障](using-dead-letter-queues-to-handle-message-transfer-failures.md)
 - [病毒消息处理](poison-message-handling.md)

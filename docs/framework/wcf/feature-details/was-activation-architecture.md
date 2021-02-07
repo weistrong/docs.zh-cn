@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WAS 激活体系结构
 title: WAS 激活体系结构
 ms.date: 03/30/2017
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
-ms.openlocfilehash: 46f9f9b0e951d363200cf41b5119b13ca921a3b5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 616b3b404258356bcd5600c68b6f70aaf096e978
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281633"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756014"
 ---
 # <a name="was-activation-architecture"></a>WAS 激活体系结构
 
@@ -35,7 +36,7 @@ ms.locfileid: "96281633"
 
  侦听器适配器是一些单独的 Windows 服务，这些服务可以实现用于通过其侦听的网络协议接收消息的网络通信逻辑。 下表列出了 Windows Communication Foundation (WCF) 协议的侦听器适配器。  
   
-|侦听器适配器服务名称|协议|注释|  
+|侦听器适配器服务名称|协议|说明|  
 |-----------------------------------|--------------|-----------|  
 |W3SVC|http|提供 IIS 7.0 和 WCF HTTP 激活的通用组件。|  
 |NetTcpActivator|net.tcp|取决于 NetTcpPortSharing 服务。|  
@@ -89,7 +90,7 @@ ms.locfileid: "96281633"
 </system.web>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [配置 WAS 以用于 WCF](configuring-the-wpa--service-for-use-with-wcf.md)
 - [Windows Server App Fabric 承载功能](/previous-versions/appfabric/ee677189(v=azure.10))

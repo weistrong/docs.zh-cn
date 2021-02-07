@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：使用 WS-AtomicTransaction
 title: 使用 WS-AtomicTransaction
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-AT protocol [WCF]
 ms.assetid: 04a4c200-0af0-4c5d-a3d9-87cb7339e054
-ms.openlocfilehash: 22b84dc49ab723953ce36402ac14221f410dda11
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c79a5912289d0dca9f671e614e69e54b82bba854
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756027"
 ---
 # <a name="using-ws-atomictransaction"></a>使用 WS-AtomicTransaction
 
@@ -27,6 +28,6 @@ WS-AtomicTransaction (WS-AT) 是一种可互操作的事务协议。 它使您�
   
  如果使用 WCF 编写服务器和客户端，则无需使用 WS-AT。 可以改为使用 `NetTcpBinding` 的默认设置并启用 `TransactionFlow` 属性，此设置将使用 `OleTransactions` 协议。 有关详细信息，请参阅 [\<netTcpBinding>](../../configure-apps/file-schema/wcf/nettcpbinding.md)。 否则，如果你要使事务流动到使用第三方技术生成的 Web 服务，则必须使用 WS-AT。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [配置 WS-Atomic 事务支持](configuring-ws-atomic-transaction-support.md)

@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：数据传输和序列化
 title: 数据传输和序列化
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data serialization [WCF]
 - data transfer [WCF]
 ms.assetid: 0f03c635-f3e7-4c5c-9463-3cb0135e221e
-ms.openlocfilehash: 490c89f5cfbecd4b2cc0c0e639aa97849132a809
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 50e5068efc10d706fb9ce2634998408e48037ded
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756560"
 ---
 # <a name="data-transfer-and-serialization"></a>数据传输和序列化
 
@@ -64,7 +65,7 @@ ms.locfileid: "96261977"
 
  [扩展编码器和序列化程序](../extending/extending-encoders-and-serializers.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [最佳做法：数据协定版本管理](../best-practices-data-contract-versioning.md)
 - [服务版本控制](../service-versioning.md)

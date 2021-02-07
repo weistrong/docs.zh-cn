@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：数据协定架构引用
 title: 数据协定架构参考
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: 04d1f753e5788460404942a21a29e1612f674e90
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3449340600ea5c55ef46433031e53266a218bd6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756638"
 ---
 # <a name="data-contract-schema-reference"></a>数据协定架构参考
 
@@ -17,7 +18,7 @@ ms.locfileid: "84593563"
 
 ## <a name="datacontractserializer-mappings"></a>DataContractSerializer 映射
 
-`DataContractSerializer`使用元数据终结点或工作的[元数据实用工具（svcutil.exe）](../servicemodel-metadata-utility-tool-svcutil-exe.md)从 Windows Communication Foundation （WCF）服务导出元数据时，将 CLR 类型映射到 XSD。 有关详细信息，请参阅[数据协定序列化程序](data-contract-serializer.md)。
+`DataContractSerializer`使用元数据终结点或 "Windows Communication Foundation (WCF) 服务从 WCF 服务" 导出元数据时，将 CLR 类型映射到 XSD， [ ( # A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md)。 有关详细信息，请参阅 [数据协定序列化程序](data-contract-serializer.md)。
 
 在使用 Svcutil.exe 访问 Web 服务描述语言 (WSDL) 或 XSD 并生成服务或客户端的数据协定时， `DataContractSerializer` 还会将 XSD 映射到 CLR 类型。
 
@@ -27,9 +28,9 @@ ms.locfileid: "84593563"
 
 `DataContractSerializer` 提供对于给定的 XML 架构功能提供以下支持级别：
 
-- **支持**。 从此功能到使用 `DataContractSerializer`的 CLR 类型或属性（或二者）具有显式映射。
+- **受支持**。 从此功能到使用 `DataContractSerializer`的 CLR 类型或属性（或二者）具有显式映射。
 
-- 已**忽略**。 在 `DataContractSerializer`导入的架构中允许此功能，当对代码生成无任何影响。
+- 已 **忽略**。 在 `DataContractSerializer`导入的架构中允许此功能，当对代码生成无任何影响。
 
 - **禁止**。 `DataContractSerializer` 不支持导入使用此功能的架构。 例如，Svcutil.exe 在访问带有使用这类功能的架构的 WSDL 时会转而改用 <xref:System.Xml.Serialization.XmlSerializer> 。 这是默认设置。
 
@@ -43,7 +44,7 @@ ms.locfileid: "84593563"
 
 ### <a name="xsschema-attributes"></a>\<xs:schema>：特性
 
-|属性|DataContract|
+|Attribute|DataContract|
 |---------------|------------------|
 |`attributeFormDefault`|已忽略。|
 |`blockDefault`|已忽略。|
@@ -68,7 +69,7 @@ ms.locfileid: "84593563"
 |`attribute`|已忽略。 `DataContractSerializer` 不支持使用 `xs:group`、 `xs:attributeGroup`和 `xs:attribute`。 这些声明将作为 `xs:schema`子级被忽略，但无法从 `complexType` 或其他支持的结构内引用。|
 |`notation`|已忽略。|
 
-## <a name="complex-types--xscomplextype"></a>复杂类型–\<xs:complexType>
+## <a name="complex-types--xscomplextype"></a>复杂类型– \<xs:complexType>
 
 ### <a name="general-information"></a>常规信息
 
@@ -76,7 +77,7 @@ ms.locfileid: "84593563"
 
 ### <a name="xscomplextype-attributes"></a>\<xs:complexType>：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`abstract`|必须是 false（默认值）。|
 |`block`|已禁止。|
@@ -98,17 +99,17 @@ ms.locfileid: "84593563"
 |`attribute`|已禁止，即使 use="prohibited"（但有一个例外）。 只支持标准序列化架构命名空间中的可选属性。 这些属性不映射到数据协定编程模型中的数据成员。 当前，仅有一个这样的属性有意义，将在“ISerializable”一节讨论。 将忽略所有其他成员。|
 |`attributeGroup`|已禁止。 在 WCF v1 版本中， `DataContractSerializer` 将忽略内部的 `attributeGroup` 存在 `xs:complexType` 。|
 |`anyAttribute`|已禁止。|
-|（空）|映射到没有数据成员的数据协定。|
+|(empty)|映射到没有数据成员的数据协定。|
 
-### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence>在复杂类型中：特性
+### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence> 在复杂类型中：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`id`|已忽略。|
 |`maxOccurs`|必须是 1（默认值）。|
 |`minOccurs`|必须是 1（默认值）。|
 
-### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence>在复杂类型中：内容
+### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence> 在复杂类型中：内容
 
 |目录|架构|
 |--------------|------------|
@@ -117,9 +118,9 @@ ms.locfileid: "84593563"
 |`choice`|已禁止。|
 |`sequence`|已禁止。|
 |`any`|已禁止。|
-|（空）|映射到没有数据成员的数据协定。|
+|(empty)|映射到没有数据成员的数据协定。|
 
-## <a name="elements--xselement"></a>单元\<xs:element>
+## <a name="elements--xselement"></a>单元 \<xs:element>
 
 ### <a name="general-information"></a>常规信息
 
@@ -131,9 +132,9 @@ ms.locfileid: "84593563"
 
 - 在作为全局元素声明 (GED) 的 `<xs:schema>` 内发生。
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs:element>在 \<xs:sequence> （数据成员）中使用 maxOccurs = 1
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs:element> 在 (的数据成员内使用 maxOccurs = 1 \<xs:sequence>) 
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`ref`|已禁止。|
 |`name`|支持，映射到数据成员名称。|
@@ -147,7 +148,7 @@ ms.locfileid: "84593563"
 |`minOccurs`|映射到数据成员的 <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> 属性（当`IsRequired` 为 1 时， `minOccurs` 为 true）。|
 |`nillable`|影响类型映射。 请参见“类型/基元映射”。|
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs:element>使用 maxOccurs>1 \<xs:sequence> （集合）
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs:element> 在 (集合内使用 maxOccurs>1 \<xs:sequence>) 
 
 - 映射到 <xref:System.Runtime.Serialization.CollectionDataContractAttribute>。
 
@@ -163,7 +164,7 @@ ms.locfileid: "84593563"
 
 `ref`、 `block`、 `default`、 `fixed`, `form`和 `id` 属性的规则与非集合情况下的规则相同。 其他属性包含下表中的规则。
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`name`|支持，映射到 <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> 属性 (Attribute) 中的 `CollectionDataContractAttribute` 属性 (Property)。|
 |`type`|支持，映射到集合中存储的类型。|
@@ -171,7 +172,7 @@ ms.locfileid: "84593563"
 |`minOccurs`|已忽略。|
 |`nillable`|影响类型映射。 对于字典集合，忽略此属性。|
 
-### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs:element>在 \<xs:schema> 全局元素声明中
+### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs:element> 在 \<xs:schema> 全局元素声明中
 
 - 在架构中的某个类型时具有相同的名称和命名空间的全局元素声明 (GED) 或在其内部指定匿名类型的全局元素声明 (GED) 可认为是与该类型相关联。
 
@@ -181,7 +182,7 @@ ms.locfileid: "84593563"
 
 - 架构导入：当关联的 GED 遵循以下规则时，将不是必需的并可忽略（除非它们定义了类型）。
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`abstract`|对于关联的 GED 必须是 false。|
 |`block`|在关联的 GED 中禁止。|
@@ -205,7 +206,7 @@ ms.locfileid: "84593563"
 |`keyref`|已忽略。|
 |(空白)|支持。|
 
-\*对 `simpleType` `complexType,` 匿名类型使用和映射与非匿名类型的映射相同，不同之处在于不存在匿名数据协定，因此创建命名的数据协定，并使用从元素名称派生的生成名称。 下面的列表中是匿名类型的规则：
+\* 对 `simpleType` `complexType,` 匿名类型使用和映射与非匿名类型的映射相同，不同之处在于不存在匿名数据协定，因此创建命名的数据协定，并使用从元素名称派生的生成名称。 下面的列表中是匿名类型的规则：
 
 - WCF 实现详细信息：如果 `xs:element` 名称不包含句点，则匿名类型映射到外部数据协定类型的内部类型。 如果名称包含句点，则结果数据协定类型是独立的（不是内部类型）。
 
@@ -213,11 +214,11 @@ ms.locfileid: "84593563"
 
 - 如果已存在具有这个名称的数据协定，则通过在该名称后追加“1”、“2”、“3”等以使名称具有唯一性，从而创建一个唯一的名称。
 
-## <a name="simple-types---xssimpletype"></a>简单类型-\<xs:simpleType>
+## <a name="simple-types---xssimpletype"></a>简单类型- \<xs:simpleType>
 
 ### <a name="xssimpletype-attributes"></a>\<xs:simpleType>：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`final`|已忽略。|
 |`id`|已忽略。|
@@ -241,12 +242,12 @@ ms.locfileid: "84593563"
 
 ### <a name="xsrestriction-attributes"></a>\<xs:restriction>：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`base`|必须是一个支持的简单类型或 `xs:anyType`。|
 |`id`|已忽略。|
 
-### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs:restriction>对于所有其他情况：内容
+### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs:restriction> 对于所有其他情况：内容
 
 |目录|架构|
 |--------------|------------|
@@ -267,14 +268,14 @@ ms.locfileid: "84593563"
 
 ## <a name="enumeration"></a>枚举
 
-### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs:restriction>对于枚举：特性
+### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs:restriction> 对于枚举：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`base`|如果存在，必须是 `xs:string`。|
 |`id`|已忽略。|
 
-### <a name="xsrestriction-for-enumerations-contents"></a>\<xs:restriction>对于枚举：内容
+### <a name="xsrestriction-for-enumerations-contents"></a>\<xs:restriction> 对于枚举：内容
 
 |目录|架构|
 |--------------|------------|
@@ -291,7 +292,7 @@ ms.locfileid: "84593563"
 |`enumeration`|支持。 忽略枚举“id”，并且“值”映射到枚举数据协定上的值名称。|
 |`whiteSpace`|已禁止。|
 |`pattern`|已禁止。|
-|（空）|支持，映射到空枚举类型。|
+|(empty)|支持，映射到空枚举类型。|
 
  下面的代码演示 C# 枚举类。
 
@@ -337,7 +338,7 @@ public enum MyEnum
 
 ### <a name="xslist-attributes"></a>\<xs:list>：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`itemType`|已禁止。|
 |`id`|已忽略。|
@@ -441,7 +442,7 @@ public class Employee : Person
 
 ### <a name="xscomplexcontent-attributes"></a>\<xs:complexContent>：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`id`|已忽略。|
 |`mixed`|必须是 false。|
@@ -453,14 +454,14 @@ public class Employee : Person
 |`restriction`|已禁止，除了 base="`xs:anyType`"。 后者等效于将 `xs:restriction` 的内容直接放到 `xs:complexContent`的容器下。|
 |`extension`|支持。 映射到数据协定继承。|
 
-### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs:extension>in \<xs:complexContent> ：特性
+### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs:extension> in \<xs:complexContent> ：特性
 
-|属性|架构|
+|Attribute|架构|
 |---------------|------------|
 |`id`|已忽略。|
 |`base`|支持。 映射到此类型继承自的基数据协定类型。|
 
-### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs:extension>在中 \<xs:complexContent> ：内容
+### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs:extension> 在中 \<xs:complexContent> ：内容
 
 规则与 `<xs:complexType>` 内容的规则相同。
 
@@ -541,7 +542,7 @@ public class Employee : Person
 </xs:complexType>
 ```
 
-数据协定序列化架构中声明的可选属性 `ser:FactoryType` 引用可以反序列化类型的工厂类。 工厂类必须是正在使用的 `DataContractSerializer` 实例的已知类型集合的一部分。 有关已知类型的详细信息，请参阅[数据协定已知类型](data-contract-known-types.md)。
+数据协定序列化架构中声明的可选属性 `ser:FactoryType` 引用可以反序列化类型的工厂类。 工厂类必须是正在使用的 `DataContractSerializer` 实例的已知类型集合的一部分。 有关已知类型的详细信息，请参阅 [数据协定已知类型](data-contract-known-types.md)。
 
 ## <a name="datacontract-serialization-schema"></a>DataContract 序列化架构
 

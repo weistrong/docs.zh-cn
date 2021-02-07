@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Version-Tolerant 序列化回调
 title: 版本容错序列化回调
 ms.date: 03/30/2017
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - serialization [WCF], setting default values
 - OnSerializedAttribute [WCF]
 ms.assetid: aa4a3a6f-05ec-4efd-bdbf-2181e13e6468
-ms.openlocfilehash: ad162f24042f30eabee7a1fad2025072b26d9af5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8ee53e96b90ae6b0f2993a543fc129d75eb3481f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289368"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756001"
 ---
 # <a name="version-tolerant-serialization-callbacks"></a>版本容错序列化回调
 
@@ -44,7 +45,7 @@ ms.locfileid: "96289368"
  [!code-csharp[C_DataContract#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs/source.cs#9)]
  [!code-vb[C_DataContract#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontract/vb/source.vb#9)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.OnSerializingAttribute>
 - <xref:System.Runtime.Serialization.OnSerializedAttribute>

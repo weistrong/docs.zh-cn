@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： PeerTransportBindingElement
 title: PeerTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 40bf6be2-8087-4cb3-a66c-408d53eb9269
-ms.openlocfilehash: ae6a3448896cb206bce8867daf7104c3e484ecc8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b1ca8020f51a5f9b121f7d238d82b9971d13cdd4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96269010"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757327"
 ---
 # <a name="peertransportbindingelement"></a>PeerTransportBindingElement
 
@@ -40,7 +41,7 @@ class PeerTransportBindingElement : TransportBindingElement
   
  对等节点在其上侦听消息的 IP 地址。  
   
-### <a name="port"></a>端口  
+### <a name="port"></a>Port  
 
  数据类型：sint32  
   
@@ -48,7 +49,7 @@ class PeerTransportBindingElement : TransportBindingElement
   
  网络接口端口，此绑定在该端口上处理对等通道消息。  
   
-### <a name="security"></a>安全性  
+### <a name="security"></a>安全  
 
  数据类型：PeerSecuritySettings  
   
@@ -62,6 +63,6 @@ class PeerTransportBindingElement : TransportBindingElement
 |---------|-----------------------------------|  
 |命名空间|已在 root\ServiceModel 中定义|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.PeerTransportBindingElement>

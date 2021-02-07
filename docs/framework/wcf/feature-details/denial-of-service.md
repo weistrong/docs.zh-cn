@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：拒绝服务
 title: 拒绝服务
 ms.date: 03/30/2017
 helpviewer_keywords:
 - denial of service [WCF]
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
-ms.openlocfilehash: 6bf0dd8af32f50164138092684c4b82f12134718
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1f1b40f717453f3e55bedc48aa00ead31adb8725
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756465"
 ---
 # <a name="denial-of-service"></a>拒绝服务
 
@@ -90,7 +91,7 @@ ms.locfileid: "96291591"
   
  若要缓解此问题，请通过设置 <xref:System.ServiceModel.Channels.SecurityBindingElement> 类的 <xref:System.ServiceModel.Channels.SecurityBindingElement> 属性来设置活动会话的最大数目限制以及会话的最长生存期限制。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全注意事项](security-considerations-in-wcf.md)
 - [信息泄露](information-disclosure.md)
@@ -98,4 +99,4 @@ ms.locfileid: "96291591"
 - [拒绝服务](denial-of-service.md)
 - [重播攻击](replay-attacks.md)
 - [篡改](tampering.md)
-- [不支持的方案](unsupported-scenarios.md)
+- [不受支持的方案](unsupported-scenarios.md)

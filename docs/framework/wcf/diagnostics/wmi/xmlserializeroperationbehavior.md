@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： XmlSerializerOperationBehavior
 title: XmlSerializerOperationBehavior
 ms.date: 03/30/2017
 ms.assetid: 8911aa1b-e34b-4161-a3ae-7468d89a6861
-ms.openlocfilehash: cf2e935172af959ead57502f02d3820d51d66196
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e8e94a80bd4d1ef7388ec6ab1379df01e8170701
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756846"
 ---
 # <a name="xmlserializeroperationbehavior"></a>XmlSerializerOperationBehavior
 
@@ -39,7 +40,7 @@ class XmlSerializerOperationBehavior : Behavior
   
  定义 SOAP 消息的样式。  
   
-### <a name="use"></a>使用  
+### <a name="use"></a>用途  
 
  数据类型：字符串  
   
@@ -53,6 +54,6 @@ class XmlSerializerOperationBehavior : Behavior
 |---------|-----------------------------------|  
 |命名空间|已在 root\ServiceModel 中定义|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior>

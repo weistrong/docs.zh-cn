@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：指定客户端 Run-Time 行为
 title: 指定客户端运行时行为
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - behaviors [WCF], system-provided client
 ms.assetid: d16d3405-be70-4edb-8f62-b5f614ddeca5
-ms.openlocfilehash: 17031f2100c6760cd14aae57cd4efab7428eb362
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 66d7e33ae0e12cadb9532ad523fd806b35e2aa7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755663"
 ---
 # <a name="specifying-client-run-time-behavior"></a>指定客户端运行时行为
 
@@ -47,6 +48,6 @@ Windows Communication Foundation 可以将 (WCF) 客户端（如 Windows Communi
 
  可以使用 <xref:System.ServiceModel.Description.ClientViaBehavior> 行为指定应为其创建传输通道的统一资源标识符。 当直接网络目标不是消息的预期处理者时，可使用此行为。 当调用应用程序不需要知道最终目标时，或者当目标 `Via` 标头不是地址时，使用此行为可启用多跃点对话。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [指定服务运行时行为](specifying-service-run-time-behavior.md)
