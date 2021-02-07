@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataTables：： GetNextBlob 方法
 title: IMetaDataTables::GetNextBlob 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 017c8ab4-4c09-4754-9935-5b0b49cabecb
 topic_type:
 - apiref
-ms.openlocfilehash: ba694f485d5a51870a1283b6ccbcb7b042a14501
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 99126ab5c3891ee09346bb54096a4fce3ca44bc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685625"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688125"
 ---
-# <a name="imetadatatablesgetnextblob-method"></a><span data-ttu-id="4d5ed-102">IMetaDataTables::GetNextBlob 方法</span><span class="sxs-lookup"><span data-stu-id="4d5ed-102">IMetaDataTables::GetNextBlob Method</span></span>
+# <a name="imetadatatablesgetnextblob-method"></a><span data-ttu-id="871eb-103">IMetaDataTables::GetNextBlob 方法</span><span class="sxs-lookup"><span data-stu-id="871eb-103">IMetaDataTables::GetNextBlob Method</span></span>
 
-<span data-ttu-id="4d5ed-103">获取表中 (BLOB) 的下一个二进制大型对象的索引。</span><span class="sxs-lookup"><span data-stu-id="4d5ed-103">Gets the index of the next binary large object (BLOB) in the table.</span></span>  
+<span data-ttu-id="871eb-104">获取表中 (BLOB) 的下一个二进制大型对象的索引。</span><span class="sxs-lookup"><span data-stu-id="871eb-104">Gets the index of the next binary large object (BLOB) in the table.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="4d5ed-104">语法</span><span class="sxs-lookup"><span data-stu-id="4d5ed-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="871eb-105">语法</span><span class="sxs-lookup"><span data-stu-id="871eb-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetNextBlob (  
@@ -35,25 +36,25 @@ HRESULT GetNextBlob (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="4d5ed-105">参数</span><span class="sxs-lookup"><span data-stu-id="4d5ed-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="871eb-106">参数</span><span class="sxs-lookup"><span data-stu-id="871eb-106">Parameters</span></span>  
 
  `ixBlob`  
- <span data-ttu-id="4d5ed-106">中从 Blob 的列中返回的索引。</span><span class="sxs-lookup"><span data-stu-id="4d5ed-106">[in] The index, as returned from a column of BLOBs.</span></span>  
+ <span data-ttu-id="871eb-107">中从 Blob 的列中返回的索引。</span><span class="sxs-lookup"><span data-stu-id="871eb-107">[in] The index, as returned from a column of BLOBs.</span></span>  
   
  `pNext`  
- <span data-ttu-id="4d5ed-107">弄指向下一个 BLOB 的索引的指针。</span><span class="sxs-lookup"><span data-stu-id="4d5ed-107">[out] A pointer to the index of the next BLOB.</span></span>  
+ <span data-ttu-id="871eb-108">弄指向下一个 BLOB 的索引的指针。</span><span class="sxs-lookup"><span data-stu-id="871eb-108">[out] A pointer to the index of the next BLOB.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="4d5ed-108">要求</span><span class="sxs-lookup"><span data-stu-id="4d5ed-108">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="871eb-109">要求</span><span class="sxs-lookup"><span data-stu-id="871eb-109">Requirements</span></span>  
 
- <span data-ttu-id="4d5ed-109">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="4d5ed-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="871eb-110">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="871eb-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="4d5ed-110">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="4d5ed-110">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="871eb-111">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="871eb-111">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="4d5ed-111">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="4d5ed-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="871eb-112">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="871eb-112">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="4d5ed-112">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4d5ed-112">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="871eb-113">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="871eb-113">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4d5ed-113">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4d5ed-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="871eb-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="871eb-114">See also</span></span>
 
-- [<span data-ttu-id="4d5ed-114">IMetaDataTables 接口</span><span class="sxs-lookup"><span data-stu-id="4d5ed-114">IMetaDataTables Interface</span></span>](imetadatatables-interface.md)
-- [<span data-ttu-id="4d5ed-115">IMetaDataTables2 接口</span><span class="sxs-lookup"><span data-stu-id="4d5ed-115">IMetaDataTables2 Interface</span></span>](imetadatatables2-interface.md)
+- [<span data-ttu-id="871eb-115">IMetaDataTables 接口</span><span class="sxs-lookup"><span data-stu-id="871eb-115">IMetaDataTables Interface</span></span>](imetadatatables-interface.md)
+- [<span data-ttu-id="871eb-116">IMetaDataTables2 接口</span><span class="sxs-lookup"><span data-stu-id="871eb-116">IMetaDataTables2 Interface</span></span>](imetadatatables2-interface.md)
