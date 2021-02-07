@@ -1,22 +1,23 @@
 ---
+description: 了解详细信息：批注类型化数据集
 title: 为类型化的数据集进行批注
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
-ms.openlocfilehash: 79d3913827d5df6f0ac4e77bfdb8f37b553a86d2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6f5838e94d88fd6c9b3a1991d4c8023d5892b784
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739698"
 ---
 # <a name="annotating-typed-datasets"></a>为类型化的数据集进行批注
 
 批注使您能够在不修改基础架构的情况下修改类型化 <xref:System.Data.DataSet> 中元素的名称。 修改基础架构中元素的名称将导致类型化 **数据集** 引用数据源中不存在的对象，并丢失对数据源中存在的对象的引用。  
   
- 使用批注，你可以使用更有意义的名称来自定义类型化 **数据集中** 的对象的名称，从而使代码更易于阅读，并且你的类型化 **数据集** 更易于供客户端使用，同时保持基础架构不变。 例如， **Northwind**数据库的**Customers**表的以下 Schema 元素会导致**DataRow**对象名称**CustomersRow**和 <xref:System.Data.DataRowCollection> 命名**客户**。  
+ 使用批注，你可以使用更有意义的名称来自定义类型化 **数据集中** 的对象的名称，从而使代码更易于阅读，并且你的类型化 **数据集** 更易于供客户端使用，同时保持基础架构不变。 例如， **Northwind** 数据库的 **Customers** 表的以下 Schema 元素会导致 **DataRow** 对象名称 **CustomersRow** 和 <xref:System.Data.DataRowCollection> 命名 **客户**。  
   
 ```xml  
 <xs:element name="Customers">  
@@ -28,7 +29,7 @@ ms.locfileid: "91203743"
 </xs:element>  
 ```  
   
- 客户端代码中**客户**端代码的**DataRowCollection**名称是有意义的，但**DataRow**名称**CustomersRow**会产生误导，因为它是单个对象。 此外，在常见情况下，对象会被称为没有 **行** 标识符，而只是将其称为 **Customer** 对象。 解决方法是为该架构添加注释并标识 **DataRow** 和 **DataRowCollection** 对象的新名称。 下面是上一架构的批注版本。  
+ 客户端代码中 **客户** 端代码的 **DataRowCollection** 名称是有意义的，但 **DataRow** 名称 **CustomersRow** 会产生误导，因为它是单个对象。 此外，在常见情况下，对象会被称为没有 **行** 标识符，而只是将其称为 **Customer** 对象。 解决方法是为该架构添加注释并标识 **DataRow** 和 **DataRowCollection** 对象的新名称。 下面是上一架构的批注版本。  
   
 ```xml  
 <xs:element name="Customers" codegen:typedName="Customer" codegen:typedPlural="Customers">  
@@ -40,11 +41,11 @@ ms.locfileid: "91203743"
 </xs:element>  
 ```  
   
- 将 **typedName** 值指定为 **Customer** 将导致 **DataRow** 对象名称为 **customer**。 指定**客户**的**typedPlural**值将保留**客户**的**DataRowCollection**名称。  
+ 将 **typedName** 值指定为 **Customer** 将导致 **DataRow** 对象名称为 **customer**。 指定 **客户** 的 **typedPlural** 值将保留 **客户** 的 **DataRowCollection** 名称。  
   
  下表显示可用的批注。  
   
-|Annotation|描述|  
+|Annotation|说明|  
 |----------------|-----------------|  
 |**typedName**|对象的名称。|  
 |**typedPlural**|对象集合的名称。|  
@@ -54,7 +55,7 @@ ms.locfileid: "91203743"
   
  下表显示了可为 **nullValue** 批注指定的值。  
   
-|nullValue 值|描述|  
+|nullValue 值|说明|  
 |---------------------|-----------------|  
 |*替换值*|指定要返回的值。 所返回的值必须匹配该元素的类型。 例如，使用 `nullValue="0"` 可为空整数字段返回 0。|  
 |**_throw**|引发异常。 这是默认设置。|  
@@ -63,7 +64,7 @@ ms.locfileid: "91203743"
   
  下表显示了类型化 **数据集中** 的对象的默认值和可用的批注。  
   
-|对象/方法/事件|默认|Annotation|  
+|对象/方法/事件|默认|批注|  
 |---------------------------|-------------|----------------|  
 |**DataTable**|TableNameDataTable|typedPlural|  
 |**DataTable** 方法|NewTableNameRow<br /><br /> AddTableNameRow<br /><br /> DeleteTableNameRow|typedName|  
@@ -81,7 +82,7 @@ ms.locfileid: "91203743"
 xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  
 ```  
   
- 下面是一个示例批注的架构，它公开**Northwind**数据库的**Customers**表，其中包含与**Orders**表的关系。  
+ 下面是一个示例批注的架构，它公开 **Northwind** 数据库的 **Customers** 表，其中包含与 **Orders** 表的关系。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

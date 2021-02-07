@@ -1,20 +1,21 @@
 ---
+description: 了解详细信息： Childview 和关系
 title: ChildView 和关系
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d475d356-6abb-4701-8fd1-2906fb93dfba
-ms.openlocfilehash: 74b2de7a9ee62ae42a932c94261cf425d6a94808
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f27526ef0ad5bee70b0c67542e2611ff85b156f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203730"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739711"
 ---
 # <a name="childviews-and-relations"></a>ChildView 和关系
 
-如果 <xref:System.Data.DataSet> 中的表之间存在关系，则可以使用 <xref:System.Data.DataView> 的 <xref:System.Data.DataRowView.CreateChildView%2A> 方法为父表中的行创建一个 <xref:System.Data.DataRowView>，包含相关子表中的行。 例如，以下代码按分类**名称**和**ProductName**排序按字母顺序显示**类别**及其相关的**产品**。  
+如果 <xref:System.Data.DataSet> 中的表之间存在关系，则可以使用 <xref:System.Data.DataView> 的 <xref:System.Data.DataRowView.CreateChildView%2A> 方法为父表中的行创建一个 <xref:System.Data.DataRowView>，包含相关子表中的行。 例如，以下代码按分类 **名称** 和 **ProductName** 排序按字母顺序显示 **类别** 及其相关的 **产品**。  
   
 ```vb  
 Dim catTable As DataTable = catDS.Tables("Categories")  

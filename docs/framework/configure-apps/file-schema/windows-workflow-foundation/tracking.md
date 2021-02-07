@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <tracking>
 title: <tracking>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: fd9b50ed-98a1-4518-836d-e4e02c670822
-ms.openlocfilehash: 0b00780dedc15fe90163145f23c57f62369c401f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6301d3c6e472010e3ab78f7d85193f17adb15a1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739728"
 ---
 # \<tracking>
 
@@ -88,14 +89,14 @@ ms.locfileid: "91198738"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<participants>](participants.md)|一个配置元素集合，这些元素定义了订阅跟踪记录的参与者。 跟踪参与者包含用于处理跟踪记录中负载的逻辑（例如，它们可以选择向某个文件中写入）。|  
 |[\<trackingProfile>](trackingprofile.md)|一个跟踪配置文件，用于筛选从工作流实例发出的跟踪记录。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |system.ServiceModel|所有工作流配置元素的根元素。|  
   
