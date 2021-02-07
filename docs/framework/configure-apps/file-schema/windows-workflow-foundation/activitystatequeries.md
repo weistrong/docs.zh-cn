@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <activityStateQueries>
 title: <activityStateQueries>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: bdd3c8ae-a13f-4df1-9b3c-a9d6c4bb1b5f
-ms.openlocfilehash: 4663ccedcafb6b151de75568afd3743c83c75224
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ad324d88c481016d85b8e58ccc0857b7773d8328
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748955"
 ---
 # \<activityStateQueries>
 
@@ -56,13 +57,13 @@ ms.locfileid: "91189820"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<activityStateQuery>](activitystatequery.md)|一个查询，用于跟踪在活动中发生的错误的处理。  每次 FaultHandler 处理错误时，都会发生此事件。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<workflow>](workflow.md)|一个配置元素，该元素包含由 **activityDefinitionId** 属性标识的特定工作流的所有查询。|  
   

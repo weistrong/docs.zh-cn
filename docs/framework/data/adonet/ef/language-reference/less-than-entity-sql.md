@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： < (小于)  (实体 SQL) '
 title: '< (小于)  (实体 SQL) '
 ms.date: 03/30/2017
 ms.assetid: 1fc2a039-3ad6-4b3c-b41d-09932e803f86
-ms.openlocfilehash: 389c50a697c90dadb075369fe696f7382caf3cff
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 523defa6c19ca43a5827258277bbe3f489b9b8c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161914"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748279"
 ---
 # <a name="-less-than-entity-sql"></a>\<（小于）(Entity SQL)
 
@@ -22,7 +23,7 @@ expression < expression
 ## <a name="arguments"></a>参数  
 
  `expression`  
- 任何有效表达式。 两个表达式都必须包含可隐式转换的数据类型。  
+ 任何有效的表达式。 两个表达式都必须包含可隐式转换的数据类型。  
   
 ## <a name="result-types"></a>结果类型  
 

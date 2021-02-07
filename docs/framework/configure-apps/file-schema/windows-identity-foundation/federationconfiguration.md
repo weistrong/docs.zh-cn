@@ -1,18 +1,19 @@
 ---
+description: 了解详细信息： <federationConfiguration>
 title: <federationConfiguration>
 ms.date: 03/30/2017
 ms.assetid: 8b14054c-6d07-46ab-ab58-03f14beac0f2
 author: BrucePerlerMS
-ms.openlocfilehash: 39e96a161a2e75d5f00b73f6b08b1e4a0c109aee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f8793a8fbd6fc6d5e6994c8e368f587b740e5973
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748981"
 ---
 # \<federationConfiguration>
 
-<xref:System.IdentityModel.Services.WSFederationAuthenticationModule> <xref:System.IdentityModel.Services.SessionAuthenticationModule> 通过 WS 联合身份验证协议使用联合身份验证时，配置 (WSFAM) 和 (SAM) 。 <xref:System.Security.Claims.ClaimsAuthorizationManager>当使用 <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> 或 <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> 类提供基于声明的访问控制时，配置。  
+<xref:System.IdentityModel.Services.WSFederationAuthenticationModule> <xref:System.IdentityModel.Services.SessionAuthenticationModule> 使用联合身份验证通过 WS-Federation 协议配置 (WSFAM) 和 (SAM) 。 <xref:System.Security.Claims.ClaimsAuthorizationManager>当使用 <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> 或 <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> 类提供基于声明的访问控制时，配置。  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
@@ -40,23 +41,23 @@ ms.locfileid: "91201351"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<cookieHandler>](cookiehandler.md)|配置 SAM 使用的 cookie 处理程序。 可选。|  
 |[\<serviceCertificate>](servicecertificate.md)|配置用于加密和解密令牌的证书。 可选。|  
-|[\<wsFederation>](wsfederation.md)|配置 WS 联合身份验证模块 (WSFAM) 。 可选。|  
+|[\<wsFederation>](wsfederation.md)|配置 WS-Federation Authentication 模块 (WSFAM) 。 可选。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
-|[\<system.identityModel.services>](system-identitymodel-services.md)|使用 WS 联合身份验证协议进行身份验证的配置节。|  
+|[\<system.identityModel.services>](system-identitymodel-services.md)|使用 WS-Federation 协议进行身份验证的配置节。|  
   
 ## <a name="remarks"></a>备注  
 
  \<federationConfiguration>元素在两个不同的方案中提供设置：  
   
-- 在被动 Web 应用程序中使用 WS 联合身份验证时，元素包含配置 <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) 和 <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) 的设置。 它还引用了用于配置安全令牌处理程序和证书的标识配置，以及声明授权管理器和声明身份验证管理器等组件。  
+- 在被动 Web 应用程序中使用 WS-Federation 时，元素包含配置 <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) 和 <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) 的设置。 它还引用了用于配置安全令牌处理程序和证书的标识配置，以及声明授权管理器和声明身份验证管理器等组件。  
   
 - 当使用 <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> 或 <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> 类在代码中提供基于声明的访问控制时，元素会引用标识配置，该配置将用于做出授权决定的声明授权管理器和策略。 即使在非被动 Web 应用场景的情况下，也是如此。例如，Windows Communication Foundation (WCF) 应用程序或不是基于 Web 的应用程序。 如果应用程序不是被动 Web 应用程序，则 [\<claimsAuthorizationManager>](claimsauthorizationmanager.md) 元素 (及其子策略元素，如果仅应用元素所引用的标识配置) ，则为 `<federationConfiguration>` 。 将忽略所有其他成员。  
   

@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <arguments>
 title: <arguments>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 0f327196-f468-4be3-b6c4-68ba981a1bd6
-ms.openlocfilehash: cb1f96cb6ba2643e28552c354bdd5caf4d43285c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3887fc6f4a106c8f76a76fcb768ef1376f9c7e7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189638"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748851"
 ---
 # \<arguments>
 
@@ -52,13 +53,13 @@ ms.locfileid: "91189638"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<argument>](argument.md)|与活动状态查询相关联的参数。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<activityStateQuery>](activitystatequery.md)|表示一个配置元素，该元素用于跟踪父活动取消子活动的请求。 跟踪参与者需要用此查询来订阅取消请求记录对象。|  
   

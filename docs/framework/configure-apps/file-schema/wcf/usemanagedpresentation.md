@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <useManagedPresentation>
 title: <useManagedPresentation>
 ms.date: 03/30/2017
 ms.assetid: 17a0dd77-af54-41db-a9d0-4b17ff42878f
-ms.openlocfilehash: 86a6f975b05133d5f9f21fcfb82ef4c23d2ffaba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9203daedcc0553c7a1308b2763b9e818ca6560c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749033"
 ---
 # \<useManagedPresentation>
 
@@ -40,7 +41,7 @@ ms.locfileid: "91148807"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

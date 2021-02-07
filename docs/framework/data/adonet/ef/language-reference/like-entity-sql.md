@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息，如 (实体 SQL) '
 title: LIKE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 8300e6d2-875b-481e-9ef4-e1e7c12d46fa
-ms.openlocfilehash: c4c2d6020e5355930dfa8880b0966dfe015baa51
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 932ddfcf8a8ab8b32f6a097f92ff2979e32239da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748266"
 ---
 # <a name="like-entity-sql"></a>LIKE (Entity SQL)
 
@@ -43,7 +44,7 @@ match [NOT] LIKE pattern [ESCAPE escape]
   
  下表说明模式 `string` 的语法。  
   
-|通配符|描述|示例|  
+|通配符|说明|示例|  
 |------------------------|-----------------|-------------|  
 |%|包含零个或零个以上字符的任何 `string`。|`title like '%computer%'``"computer"`在标题中的任意位置查找所有标题。|  
 |_（下划线）|任何单个字符。|`firstname like '_ean'` 查找以开头的所有四个字母的名字 `"ean` ，如 "Dean" 或小红。|  

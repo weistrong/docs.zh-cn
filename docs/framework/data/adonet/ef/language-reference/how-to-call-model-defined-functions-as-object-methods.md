@@ -1,20 +1,21 @@
 ---
+description: 了解有关详细信息，请参阅如何：调用 Model-Defined 函数作为对象方法
 title: 如何：调用模型定义的函数作为对象方法
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 33bae8a8-4ed8-4a1f-85d1-c62ff288cc61
-ms.openlocfilehash: 5e5ae2fd838a34d7f665b23a14db2a599367e801
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 46f171d5785bf715382e87c3fb7dae932db0bb65
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748669"
 ---
 # <a name="how-to-call-model-defined-functions-as-object-methods"></a>如何：调用模型定义的函数作为对象方法
 
-本主题介绍如何将模型定义函数作为 <xref:System.Data.Objects.ObjectContext> 对象的方法调用或作为自定义类的静态方法调用。 *模型定义的函数*是在概念模型中定义的函数。 本主题中的过程介绍如何直接调用这些函数，而不是从 LINQ to Entities 查询中调用它们。 有关在 LINQ to Entities 查询中调用模型定义函数的信息，请参阅 [如何：在查询中调用模型定义的函数](how-to-call-model-defined-functions-in-queries.md)。  
+本主题介绍如何将模型定义函数作为 <xref:System.Data.Objects.ObjectContext> 对象的方法调用或作为自定义类的静态方法调用。 *模型定义的函数* 是在概念模型中定义的函数。 本主题中的过程介绍如何直接调用这些函数，而不是从 LINQ to Entities 查询中调用它们。 有关在 LINQ to Entities 查询中调用模型定义函数的信息，请参阅 [如何：在查询中调用 Model-Defined 函数](how-to-call-model-defined-functions-in-queries.md)。  
   
  无论您是将模型定义函数作为 <xref:System.Data.Objects.ObjectContext> 方法调用，还是作为自定义类的静态方法调用，首先都必须使用 <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> 将该方法映射到模型定义函数。 但是，当您定义 <xref:System.Data.Objects.ObjectContext> 类的方法时，必须使用 <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> 属性公开 LINQ 提供程序，而当您定义自定义类的静态方法时，必须使用 <xref:System.Linq.IQueryable.Provider%2A> 属性公开 LINQ 提供程序。 有关更多信息，请参见下述过程后面的示例。  
   

@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <activityStateQuery>
 title: <activityStateQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 9f8c3e4f-e2e3-4402-9760-03bf918ece7b
-ms.openlocfilehash: fdb173f6d16087e921fc7f2edbb30fa901545eac
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1fff356436e5c55ba8b423b20589d234050fcda1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748942"
 ---
 # \<activityStateQuery>
 
@@ -53,13 +54,13 @@ ms.locfileid: "91177756"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |activityName|一个字符串，指定要对其筛选 <xref:System.Activities.Tracking.ActivityStateRecord> 实例的活动的名称。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<arguments>](arguments.md)|与此活动查询关联的自变量的集合。|  
 |[\<states>](states.md)|一个配置元素集合，这些元素包含应为其发出跟踪记录的已订阅活动的状态。|  
@@ -67,7 +68,7 @@ ms.locfileid: "91177756"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<faultPropagationQuery>](faultpropagationquery.md)|表示一个配置元素列表，这些元素用于跟踪父活动取消子活动的请求。 跟踪参与者需要用此查询来订阅取消请求记录对象。|  
   

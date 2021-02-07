@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <x509SecurityTokenHandlerRequirement>
 title: <x509SecurityTokenHandlerRequirement>
 ms.date: 03/30/2017
 ms.assetid: aca22c2c-5ae7-42af-9bbd-15c2524692ce
 author: BrucePerlerMS
-ms.openlocfilehash: a6a8185297e1345de9fa20c7d4d0dffbdcd8620f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 21a05cfeee6365bd677a6f35e984cb64fa4dd078
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748968"
 ---
 # \<x509SecurityTokenHandlerRequirement>
 
@@ -47,7 +48,7 @@ ms.locfileid: "91185387"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |certificateValidationMode|一个 <xref:System.ServiceModel.Security.X509CertificateValidationMode> 值，该值指定要用于 x.509 证书的验证模式。 默认值为 "PeerOrChainTrust"。|  
 |mapToWindows|指定令牌处理程序是否应使用传入 UPN 声明将验证令牌映射到 Windows 帐户。 默认值为“false”。|  
@@ -61,7 +62,7 @@ ms.locfileid: "91185387"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add.md)|将指定的安全令牌处理程序添加到令牌处理程序集合。|  
   
