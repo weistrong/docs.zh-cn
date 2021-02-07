@@ -1,4 +1,5 @@
 ---
+description: '详细了解： <remove> bypasslist 的元素 (网络设置) '
 title: bypasslist 的 <remove> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - bypasslist, remove element
 - remove element, bypasslist
 ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
-ms.openlocfilehash: 97b49a8a520d6a4f72945366874991d2deb18710
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 48441f1b402b339a1bd2ea069678afb4b1d5f2e1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "71697894"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740283"
 ---
 # <a name="remove-element-for-bypasslist-network-settings"></a>bypasslist 的 \<remove> 元素（网络设置）
 
@@ -41,7 +42,7 @@ ms.locfileid: "71697894"
 
 ### <a name="attributes"></a>特性
 
-|**特性**|**描述**|
+|**Attribute**|**说明**|
 |-------------------|---------------------|
 |`address`|描述 IP 地址或 DNS 名称的正则表达式。|
 
@@ -51,11 +52,11 @@ ms.locfileid: "71697894"
 
 ### <a name="parent-elements"></a>父元素
 
-|**元素**|**描述**|
+|**元素**|**说明**|
 |-----------------|---------------------|
 |[bypasslist](bypasslist-element-network-settings.md)|提供了一组正则表达式，描述不使用代理的地址。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `remove`元素从绕过代理服务器的地址列表中删除描述 IP 地址或 DNS 服务器名称的正则表达式。 地址在配置文件中或配置层次结构中的更高级别定义。
 
@@ -84,7 +85,7 @@ ms.locfileid: "71697894"
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [网络设置架构](index.md)

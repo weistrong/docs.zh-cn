@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： <defaultHttpCachePolicy> 元素 (网络设置) '
 title: <defaultHttpCachePolicy> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - defaultHttpCachePolicy element
 - <defaultHttpCachePolicy> element
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
-ms.openlocfilehash: 4120c57fbb65da1c124414cbe9cfba7ae64388f8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d2df27c9b140c9bdb4def49aef7de1a3d80f4a11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740322"
 ---
 # <a name="defaulthttpcachepolicy-element-network-settings"></a>\<defaultHttpCachePolicy> 元素（网络设置）
 
@@ -41,7 +42,7 @@ ms.locfileid: "91190314"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`maximumAge`|指定将缓存的对象标记为过期之前的最大时间间隔。|  
 |`maximumStale`|指定在将缓存对象标记为过期之前计算的新鲜度时间之后的最长时间。|  
@@ -54,7 +55,7 @@ ms.locfileid: "91190314"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[requestCaching](requestcaching-element-network-settings.md)|控制网络请求的缓存机制。|  
   
@@ -62,7 +63,7 @@ ms.locfileid: "91190314"
 
  特性的值 `policyLevel` 为 `BypassCache` 或 `Default` 。  
   
- `maximumAge`、 `maximumStale` 和元素的值 `minimumFresh` 是格式为*d*的显式时间间隔。*hh*：*mm*：*ss* (天、小时、分钟和秒) ，或相应的常量 `minValue` 或 `maxValue` 。  
+ `maximumAge`、 `maximumStale` 和元素的值 `minimumFresh` 是格式为 *d* 的显式时间间隔。*hh*：*mm*：*ss* (天、小时、分钟和秒) ，或相应的常量 `minValue` 或 `maxValue` 。  
   
 ## <a name="configuration-files"></a>配置文件  
 

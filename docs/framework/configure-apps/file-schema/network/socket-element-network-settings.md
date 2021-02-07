@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： <socket> 元素 (网络设置) '
 title: <socket> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <socket> element
 - socket element
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-ms.openlocfilehash: b8df32745007b2a145d35b8cfcc4cbd2bd17eb33
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 564d6566bf6f6b1997b986cb6c0d85f841195e55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201728"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740127"
 ---
 # <a name="socket-element-network-settings"></a>\<socket> 元素（网络设置）
 
@@ -76,14 +77,14 @@ ms.locfileid: "91201728"
   
  属性设置的可能值与 `ipProtectionLevel` 枚举中指定的已定义保护级别相对应，如下所示 <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> ：  
   
-|**属性值**|**说明**|  
+|**特性值**|**说明**|  
 |-|-|  
 |EdgeRestricted|IP 保护级别是“边缘受限的”。 此值应由设计为在 Internet 上运行的应用程序使用。 此设置不允许使用 Windows Teredo 实现的网络地址转换 (NAT) 遍历。 这些应用程序可能会绕过 IPv4 防火墙，因此，必须加强应用程序的安全性以防范针对开放端口的 Internet 攻击。 在 Windows Server 2003 和 Windows XP 中，针对套接字的 IP 保护级别的默认值是“边缘受限的”。|  
-|受限|IP 保护级别是“受限的”。 此值应由未实现 Internet 方案的 Intranet 应用程序使用。 一般情况下，不会针对 Internet 样式的攻击来对这些应用程序进行测试或加强安全性。 此设置将限制仅接收链接本地的通信。|  
+|受限制|IP 保护级别是“受限的”。 此值应由未实现 Internet 方案的 Intranet 应用程序使用。 一般情况下，不会针对 Internet 样式的攻击来对这些应用程序进行测试或加强安全性。 此设置将限制仅接收链接本地的通信。|  
 |非受限|IP 保护级别是“不受限的”。 此值应由设计为在 Internet 上运行的应用程序使用，包括利用 Windows 中内置的 IPv6 NAT 遍历功能（例如，Teredo）的应用程序。 这些应用程序可能会绕过 IPv4 防火墙，因此，必须加强应用程序的安全性以防范针对开放端口的 Internet 攻击。 在 Windows Server 2008 R2 和 Windows Vista 中，针对套接字的 IP 保护级别的默认值是“不受限的”。|  
 |未指定|IP 保护级别是“未指定的”。 在 Windows 7 和 Windows Server 2008 R2 中，针对套接字的 IP 保护级别的默认值是“未指定的”。|  
   
- `ipProtectionLevel`**未指定**该属性的默认值。  
+ `ipProtectionLevel`**未指定** 该属性的默认值。  
   
  <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A>属性可用于 `ipProtectionLevel` 从适用的配置文件中获取特性的当前值。  
   

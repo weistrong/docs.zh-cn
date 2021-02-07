@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <uri> 元素 (Uri 设置) '
 title: <uri> 元素（Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
-ms.openlocfilehash: 2f22d70407d10dbb38f0cb8d3a8ac74ff3fe8763
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: dc30778fdf5babfb87da0e32829ed9a3ae412c2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190197"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740114"
 ---
 # <a name="uri-element-uri-settings"></a>\<uri> 元素（Uri 设置）
 
@@ -51,7 +52,7 @@ ms.locfileid: "91190197"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的示例演示类使用的配置， <xref:System.Uri> 以支持 IRI 分析和 IDN 名称。 该示例还会清除所有方案设置，然后添加对 http 方案不转义百分号编码路径分隔符的支持。  
   

@@ -1,5 +1,6 @@
 ---
-title: <remove>NameValueSectionHandler 和 DictionarySectionHandler 的元素
+description: 了解详细信息： <remove> NameValueSectionHandler 和 DictionarySectionHandler 的元素
+title: <remove> NameValueSectionHandler 和 DictionarySectionHandler 的元素
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/remove
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - remove Element
 - <remove> Element
 ms.assetid: 8d8af7f5-26c9-4db9-bbe4-b2a4e6949568
-ms.openlocfilehash: d1e4f3478f6afd6a20c01c6b57a137020ee88f5f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bf1434b257aa014c8f46e34f2d57d109bd510452
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77214760"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740075"
 ---
-# <a name="remove-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<remove>NameValueSectionHandler 和 DictionarySectionHandler 的元素
+# <a name="remove-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<remove> NameValueSectionHandler 和 DictionarySectionHandler 的元素
 
 删除以前定义的设置。
 
@@ -28,17 +29,17 @@ ms.locfileid: "77214760"
 <add remove="key" />
 ```
 
-## <a name="attribute"></a>属性
+## <a name="attribute"></a>Attribute
 
 |           | 说明 |
 | --------- | ----------- |
-| **键**   | 必需的特性。<br><br>指定要删除的设置的名称。 |
+| key    | 必需的特性。<br><br>指定要删除的设置的名称。 |
 
 ## <a name="parent-element"></a>父元素
 
-| 元素 | 描述 |
+| 元素 | 说明 |
 | ------- | ------------|
-| [**\<sectionName>** Element](custom-element-2.md) | 定义使用和类的自定义配置节的设置 <xref:System.Configuration.NameValueSectionHandler> <xref:System.Configuration.DictionarySectionHandler> 。 |
+| [**\<sectionName>** 元素](custom-element-2.md) | 定义使用和类的自定义配置节的设置 <xref:System.Configuration.NameValueSectionHandler> <xref:System.Configuration.DictionarySectionHandler> 。 |
 
 ## <a name="child-elements"></a>子元素
 
@@ -80,8 +81,8 @@ ms.locfileid: "77214760"
 
 ## <a name="configuration-file"></a>配置文件
 
-此元素可用于应用程序配置文件、计算机配置文件（*machine.config*）和不在应用程序目录级别的*web.config 文件。*
+此元素可用于应用程序配置文件、计算机配置文件 (*Machine.config*) 和 *Web.config* 不在应用程序目录级别的文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [.NET Framework 的配置文件架构](index.md)

@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <shadowCopyVerifyByTimestamp> 元素
 title: <shadowCopyVerifyByTimestamp> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <shadowCopyTimeStampVerification> element
 - shadowCopyTimeStampVerification element
 ms.assetid: 2f1648e5-997b-435e-a4f9-d236c574c66c
-ms.openlocfilehash: c0dc190e69ca9650d518ee297b12f79f8c47d58b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 273bf4c5b01b300cfd564de4ee29c402c6f3e7ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183970"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740088"
 ---
 # <a name="shadowcopyverifybytimestamp-element"></a>\<shadowCopyVerifyByTimestamp> 元素
 
@@ -38,7 +39,7 @@ ms.locfileid: "91183970"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |是|在启动时，仅复制自上次复制到卷影复制目录以来已更新的程序集。 这是 .NET Framework 4 的默认值。|  
 |false|恢复到 .NET Framework 以前版本的启动行为，该行为是在启动时复制所有文件。|  
@@ -49,7 +50,7 @@ ms.locfileid: "91183970"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

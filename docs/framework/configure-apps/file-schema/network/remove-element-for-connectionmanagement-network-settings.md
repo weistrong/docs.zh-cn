@@ -1,4 +1,5 @@
 ---
+description: '详细了解： <remove> connectionManagement 的元素 (网络设置) '
 title: connectionManagement 的 <remove> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - <connectionManagement>, remove element
 - remove element, connectionManagement
 ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
-ms.openlocfilehash: 46157482d7ceb42b352c68dc9b0eab4f7688bc5c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 98916846fb5de93ee93a7e25530e983cbd3719ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740244"
 ---
 # <a name="remove-element-for-connectionmanagement-network-settings"></a>connectionManagement 的 \<remove> 元素（网络设置）
 

@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <certificateValidation>
 title: <certificateValidation>
 ms.date: 03/30/2017
 ms.assetid: 6c54c704-b55e-4631-88ff-4d4a5621554c
 author: BrucePerlerMS
-ms.openlocfilehash: 583fef7eb364c39890b3f9304770b383c1ea6d2a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a12e46487b4fb2ac8071ba1cf9bc5c6057ded060
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740062"
 ---
 # \<certificateValidation>
 
@@ -39,7 +40,7 @@ ms.locfileid: "91183502"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |certificateValidationMode|一个 <xref:System.ServiceModel.Security.X509CertificateValidationMode> 值，该值指定要用于 x.509 证书的验证模式。 默认值为 "PeerOrChainTrust"。 若要指定自定义验证程序，请将此特性设置为 "Custom"，并使用元素指定验证程序 [\<certificateValidator>](certificatevalidator.md) 。 可选。|  
 |revocationMode|一个 <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> 值，该值指定要用于 x.509 证书的吊销模式。 默认值为 "Online"。 可选。|  
@@ -47,13 +48,13 @@ ms.locfileid: "91183502"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<certificateValidator>](certificatevalidator.md)|指定证书验证的自定义类型。 仅当 `certificateValidationMode` 元素的属性 [\<certificateValidation>](certificatevalidation.md) 设置为 "Custom" 时才使用此类型。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<identityConfiguration>](identityconfiguration.md)|指定服务级别标识设置。|  
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|为安全标记处理程序的集合提供配置。|  

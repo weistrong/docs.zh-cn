@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <sendMessageChannelCache>
 title: <sendMessageChannelCache>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 241e428e-5030-4b13-8a0a-69f05288d3d9
-ms.openlocfilehash: c1775ddabffda58c7529a64b89c9c53ff3da7b99
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2c77372bb44df74a1d2186500367c5164e1e5042
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164917"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739776"
 ---
 # \<sendMessageChannelCache>
 
@@ -46,20 +47,20 @@ ms.locfileid: "91164917"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |allowUnsafeCaching|一个布尔值，该值指示是否启用缓存。 如果工作流服务具有自定义绑定或自定义行为，缓存会变得不安全，因此默认情况下禁用缓存。 但是，如果要启用缓存，请将此属性设置为 **true**。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<channelSettings>](channelsettings.md)|指定通道缓存的设置。|  
 |[\<factorySettings>](factorysettings.md)|指定通道工厂缓存的设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceBehaviors> 的 \<behavior>](behavior-of-servicebehaviors-of-workflow.md)|指定行为元素。|  
   

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： <defaultFtpCachePolicy> 元素 (网络设置) '
 title: <defaultFtpCachePolicy> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <defaultFtpCachePolicy> element
 - defaultFtpCachePolicy element
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
-ms.openlocfilehash: e081882aa8df89c0a1bf5d4c60f1395a3319c417
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77150ce0980e96dd949df4b5ad7e4557ed1b991a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190366"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740361"
 ---
 # <a name="defaultftpcachepolicy-element-network-settings"></a>\<defaultFtpCachePolicy> 元素（网络设置）
 
@@ -38,13 +39,13 @@ ms.locfileid: "91190366"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`policyLevel`|指定 FTP 缓存策略。 默认值是 `Default`。|  
   
 ## <a name="policylevel-attribute"></a>policyLevel 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`Default`|如果资源是最新的，则返回缓存的资源，内容长度准确，并且存在过期、修改和内容长度属性。|  
 |`BypassCache`|从服务器返回资源。|  
@@ -61,7 +62,7 @@ ms.locfileid: "91190366"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[requestCaching](requestcaching-element-network-settings.md)|控制网络请求的缓存机制。|  
   

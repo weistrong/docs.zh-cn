@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <iriParsing> 元素 (Uri 设置) '
 title: <iriParsing> 元素（Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce
-ms.openlocfilehash: ec2610e47957d5560bc7f51e0641afc9ba60c814
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 460216b64056cd9c9f769c5bcd1b651d249e98b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740296"
 ---
 # <a name="iriparsing-element-uri-settings"></a>\<iriParsing> 元素（Uri 设置）
 
@@ -67,7 +68,7 @@ ms.locfileid: "91158885"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的示例演示类使用的配置， <xref:System.Uri> 以支持 IRI 分析和 IDN 名称。  
   
