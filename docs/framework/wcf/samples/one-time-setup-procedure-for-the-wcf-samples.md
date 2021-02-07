@@ -1,22 +1,23 @@
 ---
+description: 了解详细信息： One-Time Windows Communication Foundation 示例的设置过程
 title: Windows Communication Foundation 示例的一次性安装过程
 ms.date: 03/30/2017
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
-ms.openlocfilehash: bf25ea4734bad007fa3ac19df0664932d981519c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8d57da5e018a61c6d11c9a9dc319ee74ec19d2ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548112"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752088"
 ---
 # <a name="one-time-setup-procedure-for-the-windows-communication-foundation-samples"></a>Windows Communication Foundation 示例的一次性安装过程
 
-大多数 Windows Communication Foundation (WCF) 示例承载在 Internet Information Services (IIS) 中，并从公共虚拟目录中运行。 此一次性安装过程在磁盘上创建一个文件夹;它还向 IIS 添加一个名为 **ServiceModelSamples**的虚拟目录。
+大多数 Windows Communication Foundation (WCF) 示例承载在 Internet Information Services (IIS) 中，并从公共虚拟目录中运行。 此一次性安装过程在磁盘上创建一个文件夹;它还向 IIS 添加一个名为 **ServiceModelSamples** 的虚拟目录。
 
-**ServiceModelSamples**虚拟目录用于生成和运行使用 IIS 承载的服务的所有示例。 这是运行示例所需的唯一虚拟目录。 绑定示例将替换以前在此虚拟目录部署的所有服务；只有最近生成的示例将在此虚拟目录中部署并可用。
+**ServiceModelSamples** 虚拟目录用于生成和运行使用 IIS 承载的服务的所有示例。 这是运行示例所需的唯一虚拟目录。 绑定示例将替换以前在此虚拟目录部署的所有服务；只有最近生成的示例将在此虚拟目录中部署并可用。
 
 > [!NOTE]
-> 必须在本地管理员帐户下运行所有命令。 如果你使用的是 Windows 7、Windows Vista 或 Windows Server 2008 R2，则还必须使用提升的权限运行命令提示符。 为此，请右键单击 "命令提示符" 图标，然后单击 "以 **管理员身份运行**"。 本主题中的所有命令都必须在具有合适路径设置的命令提示中运行。  确保这一点的最简单方法是使用 Visual Studio 命令提示。 若要打开此提示，请单击 " **开始**"，选择 " **所有程序**"，向下滚动到 " **visual studio 2010**"，选择 **Visual Studio Tools**，右键单击 " **visual studio 命令提示符" (2010) **"，然后单击" 以 **管理员身份运行**"。 如果安装了 Visual Studio 学习版，但此命令提示不可用，则必须向系统路径添加“C:\Windows\Microsoft.Net\Framework\v4.0”。
+> 必须在本地管理员帐户下运行所有命令。 如果你使用的是 Windows 7、Windows Vista 或 Windows Server 2008 R2，则还必须使用提升的权限运行命令提示符。 为此，请右键单击 "命令提示符" 图标，然后单击 "以 **管理员身份运行**"。 本主题中的所有命令都必须在具有合适路径设置的命令提示中运行。  确保这一点的最简单方法是使用 Visual Studio 命令提示。 若要打开此提示，请单击 " **开始**"，选择 " **所有程序**"，向下滚动到 " **visual studio 2010**"，选择 **Visual Studio Tools**，右键单击 " **visual studio 命令提示符" (2010)**"，然后单击" 以 **管理员身份运行**"。 如果安装了 Visual Studio 学习版，但此命令提示不可用，则必须向系统路径添加“C:\Windows\Microsoft.Net\Framework\v4.0”。
 
 ### <a name="one-time-setup-procedure-for-wcf-samples"></a>WCF 示例的一次性安装过程
 
@@ -45,7 +46,7 @@ ms.locfileid: "90548112"
 
 7. 如果未安装这些示例，请从 [ (WCF) Windows Communication Foundation 安装它们，并 Windows Workflow Foundation () 的 WF .NET Framework 示例](https://www.microsoft.com/download/details.aspx?id=21459)。
 
-8. 安装示例后，请参阅： \<InstallDrive> ：**\ WF_WCF_Samples \wcf\setup \\ **
+8. 安装示例后，请参阅： \<InstallDrive> ：**\ WF_WCF_Samples \wcf\setup \\**
 
 9. 运行 **Setupvroot.bat** 的批处理文件。 将执行以下步骤：
 

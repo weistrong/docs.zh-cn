@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: af2984e73c554e8a1e1b32df9460933f86cc41be
-ms.sourcegitcommit: 2e4adc490c1d2a705a0592b295d606b10b9f51f1
+ms.openlocfilehash: 2721d4e8fda6012b304637477c3618ee0ff2ea18
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "96590227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752062"
 ---
 # <a name="code-quality-rule-configuration-options"></a>代码质量规则配置选项
 
@@ -30,7 +30,7 @@ ms.locfileid: "96590227"
 
 ### <a name="category-of-rules"></a>规则类别
 
-为规则 *类别* 配置选项的语法 (如命名、设计或性能) ，如下所示：
+为 [规则 *类别*](categories.md)配置选项的语法如下所示：
 
 |语法|示例|
 |-|-|
