@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugClass：： GetStaticFieldValue 方法
 title: ICorDebugClass::GetStaticFieldValue 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 56e718b4-fabd-418b-a5b3-3cc33c745683
 topic_type:
 - apiref
-ms.openlocfilehash: dd1608badf553650b05b7de98d9bbcd76b2f3edf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a5406e44491ce89030731c35752066e4943cebfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728428"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711513"
 ---
 # <a name="icordebugclassgetstaticfieldvalue-method"></a>ICorDebugClass::GetStaticFieldValue 方法
 
@@ -49,7 +50,7 @@ HRESULT GetStaticFieldValue (
  `ppValue`  
  弄指向 ICorDebugValue 对象的地址的指针，该对象表示静态字段的值。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  对于参数化类型，静态字段的值是相对于特定实例化的。 因此，如果类构造函数采用类型的参数 <xref:System.Type> ，请调用 [ICorDebugType：： GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) 而不是 `ICorDebugClass::GetStaticFieldValue` 。  
   

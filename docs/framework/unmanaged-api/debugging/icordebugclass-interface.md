@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugClass 接口
 title: ICorDebugClass 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 03a6facb-f12f-49be-9839-e73b9c791cd5
 topic_type:
 - apiref
-ms.openlocfilehash: 4f488741f4233f06c128e0a262ce798ef27af3ff
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5ded26a8b3a98bd273bbfe1bfa9efd1bb70d5595
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711500"
 ---
 # <a name="icordebugclass-interface"></a>ICorDebugClass 接口
 
@@ -33,7 +34,7 @@ ms.locfileid: "95699620"
 |[GetStaticFieldValue 方法](icordebugclass-getstaticfieldvalue-method.md)|获取指定的静态字段的值。|  
 |[GetToken 方法](icordebugclass-gettoken-method.md)|获取 `TypeDef` 此类的元数据标记。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugClass`接口表示未实例化的泛型类型。 ICorDebugType 接口表示一个实例化的泛型类型。 例如，将由 `Hashtable<K, V>` 表示 `ICorDebugClass` ，而将由 `Hashtable<Int32, String>` 表示 `ICorDebugType` 。  
   
@@ -52,6 +53,6 @@ ms.locfileid: "95699620"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

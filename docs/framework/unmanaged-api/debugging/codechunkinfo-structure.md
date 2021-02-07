@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CodeChunkInfo 结构
 title: CodeChunkInfo 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0f482454-8517-48de-ba7a-d7aedab13bb5
 topic_type:
 - apiref
-ms.openlocfilehash: 11197246662a93f6a8b57c6e61e49505a9999d00
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 017a9ee8c608d4efae98eb0a342a3371ef8ec310
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712345"
 ---
 # <a name="codechunkinfo-structure"></a>CodeChunkInfo 结构
 
@@ -41,7 +42,7 @@ typedef struct _CodeChunkInfo {
 |`startAddr`|一个 `CORDB_ADDRESS` 值，该值指定块区的起始地址。|  
 |`length`|块区的大小（以字节为单位）。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  单个代码块是本机代码区域，它是代码对象（例如函数）的一部分。  
   
@@ -55,7 +56,7 @@ typedef struct _CodeChunkInfo {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetCodeChunks 方法](icordebugcode2-getcodechunks-method.md)
 - [调试结构](debugging-structures.md)

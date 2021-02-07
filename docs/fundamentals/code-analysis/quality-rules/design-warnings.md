@@ -11,18 +11,18 @@ helpviewer_keywords:
 - rules, design
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 7b49403b1aa3d48008e6f7448ab0ed5a84468373
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 548e0eaaa6239a9b9ee6a08677cd720710bb48c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99714126"
 ---
 # <a name="design-rules"></a>设计规则
 
 设计规则支持遵循 [.NET Framework 设计准则](../../../standard/design-guidelines/index.md)。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 
 | 规则 | 描述 |
 | - | - |
@@ -75,4 +75,3 @@ ms.locfileid: "96851524"
 | [CA1068:CancellationToken 参数必须最后出现](ca1068.md) | 方法具有一个不是最后一个参数的 CancellationToken 参数。 |
 | [CA1069:枚举不得具有重复值](ca1069.md) | 枚举具有多个显式分配相同常数值的成员。 |
 | [CA1070:不要将事件字段声明为“虚拟”](ca1070.md) | [类似字段的事件](../../../csharp/event-pattern.md#defining-and-raising-field-like-events)被声明为 virtual。 |
-| [CA1071：重写基。当实现 IEquatable 时等于](ca1071.md) | 派生类型实现 <xref:System.IEquatable%601> ，但不重写基类 <xref:System.IEquatable%601.Equals%2A> 方法。 |

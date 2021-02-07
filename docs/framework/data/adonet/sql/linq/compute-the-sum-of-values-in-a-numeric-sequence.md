@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：计算数值序列中值的和
 title: 计算数值序列中值的和
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 24e335b0-984e-4825-8721-0a91b533b7c3
-ms.openlocfilehash: 3d160e2cce5f3e0a7eea305657260b6fa4ded7fe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c4eb066b9286335111d96d32437291da9ea2d49a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712540"
 ---
 # <a name="compute-the-sum-of-values-in-a-numeric-sequence"></a>计算数值序列中值的和
 

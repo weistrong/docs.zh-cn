@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_IL_MAP 结构
 title: COR_IL_MAP 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 534ebc17-963d-4b26-8375-8cd940281db3
 topic_type:
 - apiref
-ms.openlocfilehash: fb6b5d43e60b52c867535c42d59a098ef3c959bc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff3d636429f51119342baea5d71163eb9d764e03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726377"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712310"
 ---
 # <a name="cor_il_map-structure"></a>COR_IL_MAP 结构
 
@@ -43,7 +44,7 @@ typedef struct _COR_IL_MAP {
 |`newOffset`|相对于函数开头的新 MSIL 偏移量。|  
 |`fAccurate`|`true` 如果已知正确的映射，则为;否则为 `false` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  映射的格式如下所示：调试器将假设，这 `oldOffset` 是在原始的未修改的 msil 代码内引用 msil 偏移量。 `newOffset`参数引用新的、经过检测的代码中的相应 MSIL 偏移量。  
   
@@ -91,7 +92,7 @@ typedef struct _COR_IL_MAP {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

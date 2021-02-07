@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebug：： CreateProcess 方法
 title: ICorDebug::CreateProcess 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b6128694-11ed-46e7-bd4e-49ea1914c46a
 topic_type:
 - apiref
-ms.openlocfilehash: aeb39782c4c0624501a0e2a71960f5d16ab3c03e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b504b5f7a60fd0fd4a8f8f1c5d8e3c3b8dcfd858
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723475"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712111"
 ---
 # <a name="icordebugcreateprocess-method"></a>ICorDebug::CreateProcess 方法
 
@@ -83,7 +84,7 @@ HRESULT CreateProcess (
  `ppProcess`  
  弄指向表示进程的 ICorDebugProcess 对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法的参数与 Win32 方法的参数相同 `CreateProcess` 。  
   
@@ -103,6 +104,6 @@ HRESULT CreateProcess (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebug 接口](icordebug-interface.md)

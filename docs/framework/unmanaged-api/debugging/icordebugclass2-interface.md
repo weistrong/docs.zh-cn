@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugClass2 接口
 title: ICorDebugClass2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5416de70-43f2-4cdf-a11f-d570759c9c0c
 topic_type:
 - apiref
-ms.openlocfilehash: ce3f289ae914817071fad5274c45d1e5fae71a06
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 80aa8e59ccc774141e7fcea130d1fc6a38fa37da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717976"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711435"
 ---
 # <a name="icordebugclass2-interface"></a>ICorDebugClass2 接口
 
@@ -32,7 +33,7 @@ ms.locfileid: "95717976"
 |[GetParameterizedType 方法](icordebugclass2-getparameterizedtype-method.md)|获取此类的类型声明。|  
 |[SetJMCStatus 方法](icordebugclass2-setjmcstatus-method.md)|对于此类的每个方法，设置一个值，该值指示该方法是否为用户定义的代码。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -47,7 +48,7 @@ ms.locfileid: "95717976"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugClass 接口](icordebugclass-interface.md)
 - [调试接口](debugging-interfaces.md)

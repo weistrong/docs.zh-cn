@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_HEAPINFO 结构
 title: COR_HEAPINFO 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bfb2cd39-3e0b-4d51-ba0c-f009755c1456
 topic_type:
 - apiref
-ms.openlocfilehash: 5400350e1c489ec4c2ff3cddf83a4f1a8a0c7947
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0841739172b3eaf807813af28e0b20fbb54608b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726595"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712307"
 ---
 # <a name="cor_heapinfo-structure"></a>COR_HEAPINFO 结构
 
@@ -47,7 +48,7 @@ typedef struct _COR_HEAPINFO {
 |`concurrent`|`TRUE` 如果启用了并发 (后台) 垃圾回收，则为;否则为 `FALSE` 。|  
 |`gcType`|[CorDebugGCType](cordebuggctype-enumeration.md)枚举的成员，它指示垃圾回收器是在工作站上运行还是在服务器上运行。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  使用 `COR_HEAPINFO` [ICorDebugProcess5：： GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) 方法返回结构的实例。  
   
@@ -63,7 +64,7 @@ typedef struct _COR_HEAPINFO {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_SEGMENT 结构
 title: COR_SEGMENT 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 93aeecb9-7fef-4545-8daf-f566dfc47084
 topic_type:
 - apiref
-ms.openlocfilehash: 738e29fa15340c76b055b608140f3c3bfbd29611
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9bbc452b2c2036d019175ac1be8b9917ffa07b6a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712176"
 ---
 # <a name="cor_segment-structure"></a>COR_SEGMENT 结构
 
@@ -45,7 +46,7 @@ typedef struct _COR_SEGMENT {
 |`gen`|显示内存区域生成的 [CorDebugGenerationTypes](cordebuggenerationtypes-enumeration.md) 枚举成员。|  
 |`heap`|内存区域驻留的堆数。 有关详细信息，请参阅备注部分。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `COR_SEGMENTS` 结构表示托管堆中的内存区域。  `COR_SEGMENTS` 对象是 [ICorDebugHeapRegionEnum](icordebugheapsegmentenum-interface.md) 集合对象的成员，通过调用 [ICorDebugProcess5::EnumerateHeapRegions](icordebugprocess5-enumerateheapregions-method.md) 方法填充。  
   
@@ -61,7 +62,7 @@ typedef struct _COR_SEGMENT {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

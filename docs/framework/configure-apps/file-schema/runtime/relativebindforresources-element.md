@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <relativeBindForResources> 元素
 title: <relativeBindForResources> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - RelativeBindForResources element
 - <relativeBindForResources> element
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
-ms.openlocfilehash: daf576488e38bed28c7c0e5222bc053659372ff0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f08d8f8a8fc4bb14d28762254dca99788d44a858
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712917"
 ---
 # <a name="relativebindforresources-element"></a>\<relativeBindForResources> 元素
 
@@ -39,7 +40,7 @@ ms.locfileid: "91183996"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`false`|运行时不会优化附属程序集的探测。 这是默认值。|  
 |`true`|运行时优化附属程序集的探测。|  
@@ -50,7 +51,7 @@ ms.locfileid: "91183996"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关运行时初始化选项的信息。|  

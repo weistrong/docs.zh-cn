@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_TYPEID 结构
 title: COR_TYPEID 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1e172b14-ee22-4943-b3b8-3740e7bdcd2e
 topic_type:
 - apiref
-ms.openlocfilehash: 5eeb5aef7edaa23385190a309144e1477da741e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fe246d544697275ffc4ea3ab6ed21c0f33863881
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712203"
 ---
 # <a name="cor_typeid-structure"></a>COR_TYPEID 结构
 
@@ -41,7 +42,7 @@ typedef struct COR_TYPEID{
 |`token1`|第一个标记。|  
 |`token2`|第二个标记。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `COR_TYPEID`结构由若干调试方法返回，这些方法提供有关要进行垃圾回收的对象的信息。 然后，可以将其作为参数传递给其他调试方法，这些方法提供了有关该项的附加信息。 例如，通过枚举 [ICorDebugHeapEnum](icordebugheapenum-interface.md) 对象，您可以检索单个 [COR_HEAPOBJECT](cor-heapobject-structure.md) 对象，这些对象表示托管堆上的单个对象。 然后，可以将该 `COR_TYPEID` 字段中的值传递 `COR_HEAPOBJECT.type` 给 [ICorDebugProcess5：： GetTypeForTypeID](icordebugprocess5-gettypefortypeid-method.md) 方法，以检索一个 ICorDebugType 对象，该对象提供有关对象的类型信息。  
   
@@ -57,7 +58,7 @@ typedef struct COR_TYPEID{
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

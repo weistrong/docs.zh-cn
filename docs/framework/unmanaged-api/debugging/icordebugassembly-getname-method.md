@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugAssembly：： GetName 方法
 title: ICorDebugAssembly::GetName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cdeda721-b214-4503-a291-c70b68b5f36b
 topic_type:
 - apiref
-ms.openlocfilehash: 3794a3b308bd5c96a38337d8b81e61167e4dc988
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c2ffa910eaf97c5539a33dbcd3486b7dfb117b51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734044"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711981"
 ---
 # <a name="icordebugassemblygetname-method"></a>ICorDebugAssembly::GetName 方法
 
@@ -47,7 +48,7 @@ HRESULT GetName (
  `szName`  
  弄存储名称的数组。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetName`方法返回程序集的完整路径和文件名。  
   

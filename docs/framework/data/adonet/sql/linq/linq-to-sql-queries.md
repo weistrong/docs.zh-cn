@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： LINQ to SQL 查询
 title: LINQ to SQL 查询
 ms.date: 03/30/2017
 ms.assetid: f4897aaa-7f44-4c20-a471-b948c2971aae
-ms.openlocfilehash: c49644a866a6e245c6be1f9a8e8f95d003fd0191
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5b5df2095043b01eb426de86e4add91941bb74c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175221"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712475"
 ---
 # <a name="linq-to-sql-queries"></a>LINQ to SQL 查询
 
@@ -24,7 +25,7 @@ ms.locfileid: "91175221"
 |----------|----------------|----------------------------------------------------------------------|  
 |保存查询的局部变量的返回类型（对于返回序列的查询而言）|泛型 `IEnumerable`|泛型 `IQueryable`|  
 |指定数据源|使用 `From` (Visual Basic) 或 `from` (c # ) 子句|相同|  
-|Filtering|使用 `Where` / `where` 子句|相同|  
+|筛选|使用 `Where` / `where` 子句|相同|  
 |分组|使用 `Group…By` / `groupby` 子句|相同|  
 |选择（投影）|使用 `Select` / `select` 子句|相同|  
 |延迟执行与立即执行|请参阅 [c # (的 LINQ 查询简介 ) ](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)|相同|  

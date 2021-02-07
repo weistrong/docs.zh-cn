@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugBlockingObject 结构
 title: CorDebugBlockingObject 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5944edd1-0914-4efa-aba0-d5a277c38b1a
 topic_type:
 - apiref
-ms.openlocfilehash: b16feb1af0d4975411876e78940d21096750d2ae
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2b16af5eecb01067c2ee6811613f964af391f345
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712204"
 ---
 # <a name="cordebugblockingobject-structure"></a>CorDebugBlockingObject 结构
 
@@ -56,7 +57,7 @@ CorDebugBlockingReason blockingReason;
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

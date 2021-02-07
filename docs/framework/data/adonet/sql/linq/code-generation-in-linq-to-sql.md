@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息： LINQ to SQL 中的代码生成
 title: LINQ to SQL 中的代码生成
 ms.date: 03/30/2017
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
-ms.openlocfilehash: f58448e0fc0c22795005b55a737b42374a750ec3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b523a84c6ee0d165673035073b6a5c5adf716641
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712579"
 ---
 # <a name="code-generation-in-linq-to-sql"></a>LINQ to SQL 中的代码生成
 
 您可以使用对象关系设计器或 SQLMetal 命令行工具生成代码以表示数据库。 在任一情况下，端到端代码生成都分成三个阶段：  
   
-1. *DBML 提取*程序从数据库中提取架构信息，并将信息重新组合到 XML 格式的 DBML 文件中。  
+1. *DBML 提取* 程序从数据库中提取架构信息，并将信息重新组合到 XML 格式的 DBML 文件中。  
   
 2. Dbml *验证* 器会扫描 dbml 文件以查找错误。  
   

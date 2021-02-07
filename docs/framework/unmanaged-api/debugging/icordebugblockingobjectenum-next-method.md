@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugBlockingObjectEnum：： Next 方法
 title: ICorDebugBlockingObjectEnum::Next 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0121753f-ebea-48d0-aeb2-ed7fda76dc60
 topic_type:
 - apiref
-ms.openlocfilehash: 232068a5fee8f7bd3dfbddf4d9452e80d6fd6170
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66999ebf333c7115790b56afc1dc1d1ab7c47d69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711812"
 ---
 # <a name="icordebugblockingobjectenumnext-method"></a>ICorDebugBlockingObjectEnum::Next 方法
 
@@ -55,7 +56,7 @@ HRESULT Next([in] ULONG  celt,
 |S_OK|该方法已成功完成。|  
 |S_FALSE|`pceltFetched` 不等于 `celt`。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法的功能类似于典型的 COM 枚举器。  
   
@@ -74,7 +75,7 @@ HRESULT Next([in] ULONG  celt,
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugDataTarget 接口](icordebugdatatarget-interface.md)
 - [调试接口](debugging-interfaces.md)

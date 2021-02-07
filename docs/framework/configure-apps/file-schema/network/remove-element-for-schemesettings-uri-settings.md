@@ -1,13 +1,14 @@
 ---
+description: '详细了解： <remove> schemeSettings 的元素 (Uri 设置) '
 title: schemeSettings 的 <remove> 元素（Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
-ms.openlocfilehash: 018a08693a39bb297bdaa468ba59d4bf097f6922
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 125a347cfcbb1393ea70032b7e1b198a1a5a4ed0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713021"
 ---
 # <a name="remove-element-for-schemesettings-uri-settings"></a>schemeSettings 的 \<remove> 元素（Uri 设置）
 
@@ -42,7 +43,7 @@ ms.locfileid: "91151384"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<schemeSettings> 元素 (Uri 设置) ](schemesettings-element-uri-settings.md)|指定如何分析特定方案的 <xref:System.Uri>。|  
   

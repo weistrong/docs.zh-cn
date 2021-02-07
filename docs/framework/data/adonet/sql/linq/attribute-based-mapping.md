@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： Attribute-Based 映射
 title: 基于特性的映射
 ms.date: 03/30/2017
 ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
-ms.openlocfilehash: 986a5022ea9e70868689c898649067135eac944b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9dfe9fce10d7ba76281afd843385c734e86af245
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712722"
 ---
 # <a name="attribute-based-mapping"></a>基于特性的映射
 
@@ -50,16 +51,16 @@ ms.locfileid: "91156103"
   
  下表介绍了此属性 (Attribute) 的属性 (Property)。  
   
-|属性|类型|默认|描述|  
+|属性|类型|默认|说明|  
 |--------------|----------|-------------|-----------------|  
 |<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>|AutoSync|从不|指示公共语言运行库 (CLR) 在执行插入或更新操作后检索值。<br /><br /> 可供选择的值：Always、Never、OnUpdate、OnInsert。|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.CanBeNull%2A>|Boolean|`true`|指示列可以包含 null 值。|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.CanBeNull%2A>|布尔|`true`|指示列可以包含 null 值。|  
 |<xref:System.Data.Linq.Mapping.ColumnAttribute.DbType%2A>|字符串|推断出的数据库列类型|使用数据库类型和修饰符来指定数据库列的类型。|  
 |<xref:System.Data.Linq.Mapping.ColumnAttribute.Expression%2A>|字符串|空|定义数据库中计算所得的列。|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>|Boolean|`false`|指示列包含数据库自动生成的值。|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator%2A>|Boolean|`false`|指示列包含 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 继承层次结构的鉴别器值。|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey%2A>|Boolean|`false`|指定此类成员表示作为表主键或表主键一部分的列。|  
-|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>|Boolean|`false`|将成员的列类型标识为数据库时间戳或版本号。|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>|布尔|`false`|指示列包含数据库自动生成的值。|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDiscriminator%2A>|布尔|`false`|指示列包含 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 继承层次结构的鉴别器值。|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsPrimaryKey%2A>|布尔|`false`|指定此类成员表示作为表主键或表主键一部分的列。|  
+|<xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>|布尔|`false`|将成员的列类型标识为数据库时间戳或版本号。|  
 |<xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>|UpdateCheck|除非对某个成员而言 `Always` 为 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>，否则为 `true`|指定 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 如何实现开放式并发冲突的检测。|  
   
  有关详细信息，请参阅 <xref:System.Data.Linq.Mapping.ColumnAttribute>。  
@@ -77,8 +78,8 @@ ms.locfileid: "91156103"
 |--------------|----------|-------------|-----------------|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteOnNull%2A>|Boolean|`false`|当放置在其外键成员均不可以为 null 的关联上时，如果该关联设置为 null，则删除对象。|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteRule%2A>|字符串|无|向关联添加删除行为。|  
-|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsForeignKey%2A>|Boolean|`false`|如果为 true，则将成员指定为表示数据库关系的关联中的外键。|  
-|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsUnique%2A>|Boolean|`false`|如果为 true，则指示对外键的唯一性约束。|  
+|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsForeignKey%2A>|布尔|`false`|如果为 true，则将成员指定为表示数据库关系的关联中的外键。|  
+|<xref:System.Data.Linq.Mapping.AssociationAttribute.IsUnique%2A>|布尔|`false`|如果为 true，则指示对外键的唯一性约束。|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.OtherKey%2A>|字符串|相关类的 ID|将目标实体类的一个或多个成员指定为关联的另一端上的键值。|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.ThisKey%2A>|字符串|包含类的 ID|指定此实体类的成员表示关联的此端上的键值。|  
   
@@ -96,7 +97,7 @@ ms.locfileid: "91156103"
 |属性|类型|默认|说明|  
 |--------------|----------|-------------|-----------------|  
 |<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code%2A>|字符串|无。 必须提供值。|指定鉴别器的代码值。|  
-|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A>|Boolean|`false`|如果为 true，则在存储区中没有与指定值中的任何一个值匹配的鉴别器值时实例化此类型的对象。|  
+|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A>|布尔|`false`|如果为 true，则在存储区中没有与指定值中的任何一个值匹配的鉴别器值时实例化此类型的对象。|  
 |<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Type%2A>|类型|无。 必须提供值。|指定层次结构中的类的类型。|  
   
  有关详细信息，请参阅 <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute>。  
@@ -133,7 +134,7 @@ ms.locfileid: "91156103"
   
  下表介绍了此属性 (Attribute) 的属性 (Property)。  
   
-|属性|类型|默认|描述|  
+|属性|类型|默认|说明|  
 |--------------|----------|-------------|-----------------|  
 |<xref:System.Data.Linq.Mapping.ResultTypeAttribute.Type%2A>|类型|（无）|用于映射到返回 <xref:System.Data.Linq.IMultipleResults> 的存储过程的方法。 为存储过程声明有效的或预期的类型映射。|  
   

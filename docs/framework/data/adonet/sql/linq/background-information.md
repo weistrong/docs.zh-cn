@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：背景信息
 title: 背景信息
 ms.date: 03/30/2017
 ms.assetid: 724888f2-d3f1-4bea-b9a1-a0adb8a00f3b
-ms.openlocfilehash: 56ba323aee3b559fbb8afd506be4c23595df6d2d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8e2027319145a5e88049c66fb2b8935128115e43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712657"
 ---
 # <a name="background-information"></a>背景信息
 
@@ -19,7 +20,7 @@ ms.locfileid: "91156090"
   
 - 参与 [LINQ 论坛](https://social.msdn.microsoft.com/forums/home?forum=linqtosql)，可以在其中与专家详细讨论更复杂的主题。  
   
-- 学习详细介绍技术的白皮书 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] ，其中包含 Visual Basic 和 c # 代码示例。 有关详细信息，请参阅 [LINQ to SQL：用于关系数据的 .Net 语言集成查询](/previous-versions/dotnet/articles/bb425822(v=msdn.10))。  
+- 学习详细介绍技术的白皮书 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] ，其中包含 Visual Basic 和 c # 代码示例。 有关详细信息，请参阅 [LINQ to SQL：用于关系数据的 .net Language-Integrated 查询](/previous-versions/dotnet/articles/bb425822(v=msdn.10))。  
   
 ## <a name="in-this-section"></a>本节内容  
 
