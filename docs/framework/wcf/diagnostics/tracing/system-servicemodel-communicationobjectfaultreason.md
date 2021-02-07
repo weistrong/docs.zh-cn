@@ -1,24 +1,25 @@
 ---
+description: 了解有关以下方面的详细信息： CommunicationObjectFaultReason
 title: System.ServiceModel.CommunicationObjectFaultReason
 ms.date: 03/30/2017
 ms.assetid: d2530933-bfba-4b20-aba6-b1f99e97699d
-ms.openlocfilehash: 0da888104818d91b679e6d29c105627f670a9225
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 49c0ca7cbe72ceff431909abfdd48094e3d4220b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256906"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676633"
 ---
-# <a name="systemservicemodelcommunicationobjectfaultreason"></a><span data-ttu-id="151b5-102">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="151b5-102">System.ServiceModel.CommunicationObjectFaultReason</span></span>
+# <a name="systemservicemodelcommunicationobjectfaultreason"></a><span data-ttu-id="be800-103">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="be800-103">System.ServiceModel.CommunicationObjectFaultReason</span></span>
 
-<span data-ttu-id="151b5-103">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="151b5-103">System.ServiceModel.CommunicationObjectFaultReason</span></span>  
+<span data-ttu-id="be800-104">System.ServiceModel.CommunicationObjectFaultReason</span><span class="sxs-lookup"><span data-stu-id="be800-104">System.ServiceModel.CommunicationObjectFaultReason</span></span>  
   
-## <a name="description"></a><span data-ttu-id="151b5-104">描述</span><span class="sxs-lookup"><span data-stu-id="151b5-104">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="be800-105">说明</span><span class="sxs-lookup"><span data-stu-id="be800-105">Description</span></span>  
 
- <span data-ttu-id="151b5-105">由于出现异常，通信对象出错。</span><span class="sxs-lookup"><span data-stu-id="151b5-105">A communication object faulted due to exception.</span></span>  
+ <span data-ttu-id="be800-106">由于出现异常，通信对象出错。</span><span class="sxs-lookup"><span data-stu-id="be800-106">A communication object faulted due to exception.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="151b5-106">另请参阅</span><span class="sxs-lookup"><span data-stu-id="151b5-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="be800-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="be800-107">See also</span></span>
 
-- [<span data-ttu-id="151b5-107">跟踪</span><span class="sxs-lookup"><span data-stu-id="151b5-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="151b5-108">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="151b5-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="151b5-109">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="151b5-109">Administration and Diagnostics</span></span>](../index.md)
+- [<span data-ttu-id="be800-108">跟踪</span><span class="sxs-lookup"><span data-stu-id="be800-108">Tracing</span></span>](index.md)
+- [<span data-ttu-id="be800-109">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="be800-109">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="be800-110">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="be800-110">Administration and Diagnostics</span></span>](../index.md)
