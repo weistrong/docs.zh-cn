@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule：： GetGlobalVariableValue 方法
 title: ICorDebugModule::GetGlobalVariableValue 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: bbc0881c-6a59-41a0-b5ee-2f3d1b71684c
 topic_type:
 - apiref
-ms.openlocfilehash: 94fe7deb10c23ea0bc824bb2244e8d1d87f831e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a4efe2f56387be7351fd5bc16716bcd1f34f7d7a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691661"
 ---
-# <a name="icordebugmodulegetglobalvariablevalue-method"></a><span data-ttu-id="22132-102">ICorDebugModule::GetGlobalVariableValue 方法</span><span class="sxs-lookup"><span data-stu-id="22132-102">ICorDebugModule::GetGlobalVariableValue Method</span></span>
+# <a name="icordebugmodulegetglobalvariablevalue-method"></a><span data-ttu-id="1e032-103">ICorDebugModule::GetGlobalVariableValue 方法</span><span class="sxs-lookup"><span data-stu-id="1e032-103">ICorDebugModule::GetGlobalVariableValue Method</span></span>
 
-<span data-ttu-id="22132-103">获取指定全局变量的值。</span><span class="sxs-lookup"><span data-stu-id="22132-103">Gets the value of the specified global variable.</span></span>  
+<span data-ttu-id="1e032-104">获取指定全局变量的值。</span><span class="sxs-lookup"><span data-stu-id="1e032-104">Gets the value of the specified global variable.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="22132-104">语法</span><span class="sxs-lookup"><span data-stu-id="22132-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="1e032-105">语法</span><span class="sxs-lookup"><span data-stu-id="1e032-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetGlobalVariableValue(  
@@ -35,20 +36,20 @@ HRESULT GetGlobalVariableValue(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="22132-105">参数</span><span class="sxs-lookup"><span data-stu-id="22132-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="1e032-106">参数</span><span class="sxs-lookup"><span data-stu-id="1e032-106">Parameters</span></span>  
 
  `fieldDef`  
- <span data-ttu-id="22132-106">中 `mdFieldDef` 引用描述全局变量的元数据的令牌。</span><span class="sxs-lookup"><span data-stu-id="22132-106">[in] An `mdFieldDef` token that references the metadata describing the global variable.</span></span>  
+ <span data-ttu-id="1e032-107">中 `mdFieldDef` 引用描述全局变量的元数据的令牌。</span><span class="sxs-lookup"><span data-stu-id="1e032-107">[in] An `mdFieldDef` token that references the metadata describing the global variable.</span></span>  
   
  `ppValue`  
- <span data-ttu-id="22132-107">弄指向 ICorDebugValue 对象的地址的指针，该对象表示指定的全局变量的值。</span><span class="sxs-lookup"><span data-stu-id="22132-107">[out] A pointer to the address of an ICorDebugValue object that represents the value of the specified global variable.</span></span>  
+ <span data-ttu-id="1e032-108">弄指向 ICorDebugValue 对象的地址的指针，该对象表示指定的全局变量的值。</span><span class="sxs-lookup"><span data-stu-id="1e032-108">[out] A pointer to the address of an ICorDebugValue object that represents the value of the specified global variable.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="22132-108">要求</span><span class="sxs-lookup"><span data-stu-id="22132-108">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="1e032-109">要求</span><span class="sxs-lookup"><span data-stu-id="1e032-109">Requirements</span></span>  
 
- <span data-ttu-id="22132-109">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="22132-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="1e032-110">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="1e032-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="22132-110">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="22132-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="1e032-111">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="1e032-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="22132-111">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="22132-111">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="1e032-112">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="1e032-112">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="22132-112">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="22132-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="1e032-113">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1e032-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
