@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用对象
 title: 使用对象
 ms.date: 03/30/2017
 ms.assetid: 338d8a55-05cc-46b0-bbb8-1379d77068e9
-ms.openlocfilehash: 4802949ac8c0fd40de1cef9dfbbc1be05bbcfb24
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c567b8665750ce4ef682bd0ecccdafcd1f139217
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200805"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672954"
 ---
-# <a name="working-with-objects"></a><span data-ttu-id="b2fdb-102">使用对象</span><span class="sxs-lookup"><span data-stu-id="b2fdb-102">Working with Objects</span></span>
+# <a name="working-with-objects"></a><span data-ttu-id="088c2-103">使用对象</span><span class="sxs-lookup"><span data-stu-id="088c2-103">Working with Objects</span></span>
 
-<span data-ttu-id="b2fdb-103">实体框架可用于查询、插入、更新和删除数据，这些数据表示为类型化公共语言运行时 (CLR) 对象，这些对象是实体类型的实例。</span><span class="sxs-lookup"><span data-stu-id="b2fdb-103">The Entity Framework enables you to query, insert, update, and delete data, which is expressed as typed common language runtime (CLR) objects that are instances of entity types.</span></span> <span data-ttu-id="b2fdb-104">实体类型表示概念模型中定义的实体。</span><span class="sxs-lookup"><span data-stu-id="b2fdb-104">The entity types represent the entities defined in the conceptual model.</span></span> <span data-ttu-id="b2fdb-105">实体框架会将概念模型中定义的实体和关系映射到数据源。</span><span class="sxs-lookup"><span data-stu-id="b2fdb-105">The Entity Framework maps entities and relationships that are defined in a conceptual model to a data source.</span></span> <span data-ttu-id="b2fdb-106">实体框架提供了执行以下操作的工具：具体化作为对象从数据源返回的数据;跟踪对对象所做的更改;处理并发;将对象更改传播回数据源;和将对象绑定到控件。</span><span class="sxs-lookup"><span data-stu-id="b2fdb-106">The Entity Framework provides facilities to do the following: materialize data returned from the data source as objects; track changes that were made to the objects; handle concurrency; propagate object changes back to the data source; and bind objects to controls.</span></span>  
+<span data-ttu-id="088c2-104">实体框架可用于查询、插入、更新和删除数据，这些数据表示为类型化公共语言运行时 (CLR) 对象，这些对象是实体类型的实例。</span><span class="sxs-lookup"><span data-stu-id="088c2-104">The Entity Framework enables you to query, insert, update, and delete data, which is expressed as typed common language runtime (CLR) objects that are instances of entity types.</span></span> <span data-ttu-id="088c2-105">实体类型表示概念模型中定义的实体。</span><span class="sxs-lookup"><span data-stu-id="088c2-105">The entity types represent the entities defined in the conceptual model.</span></span> <span data-ttu-id="088c2-106">实体框架会将概念模型中定义的实体和关系映射到数据源。</span><span class="sxs-lookup"><span data-stu-id="088c2-106">The Entity Framework maps entities and relationships that are defined in a conceptual model to a data source.</span></span> <span data-ttu-id="088c2-107">实体框架提供了执行以下操作的工具：具体化作为对象从数据源返回的数据;跟踪对对象所做的更改;处理并发;将对象更改传播回数据源;和将对象绑定到控件。</span><span class="sxs-lookup"><span data-stu-id="088c2-107">The Entity Framework provides facilities to do the following: materialize data returned from the data source as objects; track changes that were made to the objects; handle concurrency; propagate object changes back to the data source; and bind objects to controls.</span></span>  
   
- <span data-ttu-id="b2fdb-107">有关使用最新版本的中的对象的详细信息，请参阅使用 [对象](/previous-versions/gg696163(v=vs.103))实体框架。</span><span class="sxs-lookup"><span data-stu-id="b2fdb-107">For more information about working with objects in the latest version of the Entity Framework see, [Working with Objects](/previous-versions/gg696163(v=vs.103)).</span></span>
+ <span data-ttu-id="088c2-108">有关使用最新版本的中的对象的详细信息，请参阅使用 [对象](/previous-versions/gg696163(v=vs.103))实体框架。</span><span class="sxs-lookup"><span data-stu-id="088c2-108">For more information about working with objects in the latest version of the Entity Framework see, [Working with Objects](/previous-versions/gg696163(v=vs.103)).</span></span>
