@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugReferenceValue：： IsNull 方法
 title: ICorDebugReferenceValue::IsNull 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 99e8c8d7-a1c0-47c8-9dbd-03e0b2bcb4d5
 topic_type:
 - apiref
-ms.openlocfilehash: bcd4c8ba4b81821ae7dd9deaf0f76a76d335aff8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9fffc869e20d1d3aa3a347ff2e026e6b55e6bd4f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691012"
 ---
-# <a name="icordebugreferencevalueisnull-method"></a><span data-ttu-id="97ca1-102">ICorDebugReferenceValue::IsNull 方法</span><span class="sxs-lookup"><span data-stu-id="97ca1-102">ICorDebugReferenceValue::IsNull Method</span></span>
+# <a name="icordebugreferencevalueisnull-method"></a><span data-ttu-id="279f0-103">ICorDebugReferenceValue::IsNull 方法</span><span class="sxs-lookup"><span data-stu-id="279f0-103">ICorDebugReferenceValue::IsNull Method</span></span>
 
-<span data-ttu-id="97ca1-103">获取一个值，该值指示此 ICorDebugReferenceValue 是否为 null 值，在这种情况下，不 `ICorDebugReferenceValue` 指向对象。</span><span class="sxs-lookup"><span data-stu-id="97ca1-103">Gets a value that indicates whether this ICorDebugReferenceValue is a null value, in which case the `ICorDebugReferenceValue` does not point to an object.</span></span>  
+<span data-ttu-id="279f0-104">获取一个值，该值指示此 ICorDebugReferenceValue 是否为 null 值，在这种情况下，不 `ICorDebugReferenceValue` 指向对象。</span><span class="sxs-lookup"><span data-stu-id="279f0-104">Gets a value that indicates whether this ICorDebugReferenceValue is a null value, in which case the `ICorDebugReferenceValue` does not point to an object.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="97ca1-104">语法</span><span class="sxs-lookup"><span data-stu-id="97ca1-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="279f0-105">语法</span><span class="sxs-lookup"><span data-stu-id="279f0-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT IsNull (  
@@ -34,17 +35,17 @@ HRESULT IsNull (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="97ca1-105">参数</span><span class="sxs-lookup"><span data-stu-id="97ca1-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="279f0-106">参数</span><span class="sxs-lookup"><span data-stu-id="279f0-106">Parameters</span></span>  
 
  `pbNull`  
- <span data-ttu-id="97ca1-106">弄 `true` 如果此对象为 null，则为指向布尔值的指针 `ICorDebugReferenceValue` ; 否则为 `pbNull` `false` 。</span><span class="sxs-lookup"><span data-stu-id="97ca1-106">[out] A pointer to a Boolean value that is `true` if this `ICorDebugReferenceValue` object is null; otherwise, `pbNull` is `false`.</span></span>  
+ <span data-ttu-id="279f0-107">弄 `true` 如果此对象为 null，则为指向布尔值的指针 `ICorDebugReferenceValue` ; 否则为 `pbNull` `false` 。</span><span class="sxs-lookup"><span data-stu-id="279f0-107">[out] A pointer to a Boolean value that is `true` if this `ICorDebugReferenceValue` object is null; otherwise, `pbNull` is `false`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="97ca1-107">要求</span><span class="sxs-lookup"><span data-stu-id="97ca1-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="279f0-108">要求</span><span class="sxs-lookup"><span data-stu-id="279f0-108">Requirements</span></span>  
 
- <span data-ttu-id="97ca1-108">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="97ca1-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="279f0-109">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="279f0-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="97ca1-109">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="97ca1-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="279f0-110">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="279f0-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="97ca1-110">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="97ca1-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="279f0-111">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="279f0-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="97ca1-111">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="97ca1-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="279f0-112">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="279f0-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
