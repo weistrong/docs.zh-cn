@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <commonParameters>
 title: <commonParameters>
 ms.date: 03/30/2017
 ms.assetid: ffc20832-34d6-4622-8174-81924fd53514
-ms.openlocfilehash: 16d7a983f0f55801248cb01ea235322250b76625
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a9d230fb0f205315dc52357119e6b35752abc96d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176027"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698370"
 ---
 # \<commonParameters>
 
@@ -42,13 +43,13 @@ ms.locfileid: "91176027"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add-of-commonparameters.md)|将服务使用的公共参数的名称/值对添加到集合。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<workflowRuntime>](workflowruntime.md)|指定 <xref:System.Workflow.Runtime.WorkflowRuntime> 用于承载基于工作流的 Windows Communication Foundation (WCF) 服务的设置。|  
   

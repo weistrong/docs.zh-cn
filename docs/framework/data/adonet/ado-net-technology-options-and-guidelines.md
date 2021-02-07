@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ADO.NET 技术选项和指导原则
 title: 技术选项和指南
 ms.date: 03/30/2017
 ms.assetid: c8577281-38e6-4ce5-b036-572039a4c3d8
-ms.openlocfilehash: c91eff55a322bfbe5675395a54c2b294d67d909a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0cd26162c70e1cad8a08488f0705a8aebf2fab96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697746"
 ---
 # <a name="adonet-technology-options-and-guidelines"></a>ADO.NET 技术选项和准则
 
@@ -47,7 +48,7 @@ ADO.NET 数据平台是一种多版本策略，通过使开发人员能够针对
   
 ## <a name="wcf-data-services"></a>WCF 数据服务  
 
- WCF 数据服务在 Web 或 intranet 上部署数据服务。 这些数据将按照实体数据模型的规范组织成不同的实体和关系。 在此模型上部署的数据可通过标准的 HTTP 协议进行寻址。 有关详细信息，请参阅 [WCF Data Services 4.5](../wcf/index.md)。  
+ WCF Data Services 在 Web 或 intranet 上部署数据服务。 这些数据将按照实体数据模型的规范组织成不同的实体和关系。 在此模型上部署的数据可通过标准的 HTTP 协议进行寻址。 有关详细信息，请参阅 [WCF Data Services 4.5](../wcf/index.md)。  
   
 ## <a name="see-also"></a>请参阅
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <diagnostics> 激活
 title: <diagnostics> 用于激活
 ms.date: 03/30/2017
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
-ms.openlocfilehash: c16f32357d40b9b69d52c525ce8a395a3de8fdb1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aa1529a478ac367ea89c8926571c6c6f2f57cf74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698357"
 ---
 # <a name="diagnostics-for-activation"></a>\<diagnostics> 用于激活
 
@@ -37,7 +38,7 @@ ms.locfileid: "91192316"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`performanceCountersEnabled`|一个布尔值，指示是否启用用于诊断目的的性能计数器。|  
   
@@ -47,7 +48,7 @@ ms.locfileid: "91192316"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<system.serviceModel.activation>](system-servicemodel-activation.md)|包含侦听器进程 SMSvcHost.exe 的配置设置。|  
   

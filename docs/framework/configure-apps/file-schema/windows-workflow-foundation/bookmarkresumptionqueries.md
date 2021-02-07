@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <bookmarkResumptionQueries>
 title: <bookmarkResumptionQueries>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 8ed61a7f-4254-439c-bdd8-b474971533f7
-ms.openlocfilehash: 047d13bc8477214fa1e3c9ffdbed6785b29da637
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e8ff21e2183fe31411674e9d4de6bf3d99d14836
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189573"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698149"
 ---
 # \<bookmarkResumptionQueries>
 
@@ -47,13 +48,13 @@ ms.locfileid: "91189573"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<bookmarkResumptionQuery>](bookmarkresumptionquery.md)|一个查询，用于跟踪工作流实例中的书签恢复。 跟踪参与者需要用此查询来订阅书签恢复记录。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<workflow>](workflow.md)|一个配置元素，该元素包含由 **activityDefinitionId** 属性标识的特定工作流的所有查询。|  
   

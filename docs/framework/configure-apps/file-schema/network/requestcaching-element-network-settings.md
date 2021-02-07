@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： <requestCaching> 元素 (网络设置) '
 title: <requestCaching> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - requestCaching element
 - <requestCaching> element
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
-ms.openlocfilehash: 3eb32b7ae643efdb19892410b669c1e7ff80e0ad
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d09da8ad7a38ac363aaa740cca4de25e33fa8c56
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698552"
 ---
 # <a name="requestcaching-element-network-settings"></a>\<requestCaching> 元素（网络设置）
 
@@ -42,7 +43,7 @@ ms.locfileid: "91174155"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`isPrivateCache`|指定缓存是否在不同用户的信息之间提供隔离。 默认值是 `true`。 此值应该 `false` 适用于中间层应用程序。|  
 |`disableAllCaching`|指定为所有 Web 响应禁用缓存，且不能以编程方式重写。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91174155"
   
 ## <a name="policylevel-attribute"></a>policyLevel 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`Default`|如果资源是最新的，则返回缓存的资源，内容长度准确，并且存在过期、修改和内容长度属性。|  
 |`BypassCache`|从服务器返回资源。|  
@@ -64,14 +65,14 @@ ms.locfileid: "91174155"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[defaultHttpCachePolicy](defaulthttpcachepolicy-element-network-settings.md)|可选元素。<br /><br /> 描述 HTTP 缓存是否处于活动状态，并描述默认缓存策略。|  
 |[\<defaultFtpCachePolicy> 元素（网络设置）](defaultftpcachepolicy-element-network-settings.md)|可选元素。<br /><br /> 介绍 FTP 缓存是否处于活动状态，并描述默认缓存策略。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[system.net](system-net-element-network-settings.md)|包含指定 .NET Framework 如何连接到网络的设置。|  
   

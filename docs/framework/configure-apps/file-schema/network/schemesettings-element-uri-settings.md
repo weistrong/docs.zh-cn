@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <schemeSettings> 元素 (Uri 设置) '
 title: <schemeSettings> 元素（Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
-ms.openlocfilehash: 5a146b854239fd516125e66e05312e27b90c73ec
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 218676c10a8acaa79c2eb2146214e77beee9a972
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91187012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698435"
 ---
 # <a name="schemesettings-element-uri-settings"></a>\<schemeSettings> 元素（Uri 设置）
 
@@ -38,7 +39,7 @@ ms.locfileid: "91187012"
 |-----------------|---------------------|  
 |[add](add-element-for-schemesettings-uri-settings.md)|为方案名称添加方案设置。|  
 |[clear](clear-element-for-schemesettings-uri-settings.md)|清除所有现有方案设置。|  
-|[remove](remove-element-for-schemesettings-uri-settings.md)|删除方案名称的方案设置。|  
+|[删除](remove-element-for-schemesettings-uri-settings.md)|删除方案名称的方案设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   

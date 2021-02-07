@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： <webRequestModules> 元素 (网络设置) '
 title: <webRequestModules> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - webRequestModules element
 - <webRequestModules> element
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
-ms.openlocfilehash: 9396ca393523dce5593531f332e5c07241987947
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 851aec2bf38910239874cb5792239a48de6efb70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698422"
 ---
 # <a name="webrequestmodules-element-network-settings"></a>\<webRequestModules> 元素（网络设置）
 
@@ -44,7 +45,7 @@ ms.locfileid: "91186999"
 |-----------------|---------------------|  
 |[add](add-element-for-webrequestmodules-network-settings.md)|向应用程序添加自定义 Web 请求模块。|  
 |[clear](clear-element-for-webrequestmodules-network-settings.md)|从应用程序中删除所有已注册的 Web 请求模块。|  
-|[remove](remove-element-for-webrequestmodules-network-settings.md)|从应用程序中移除自定义 Web 请求模块。|  
+|[删除](remove-element-for-webrequestmodules-network-settings.md)|从应用程序中移除自定义 Web 请求模块。|  
   
 ### <a name="parent-elements"></a>父元素  
   

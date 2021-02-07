@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <workflowInstanceManagement>
 title: <workflowInstanceManagement>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 63ac89ba-c844-4ae2-96ae-cd752a90a109
-ms.openlocfilehash: 532d4c31a582b2b0cd90f6f42b20e00790f9ab02
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 528c0c923be93d9581b8e3bfccc382eab11c5da1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697915"
 ---
 # \<workflowInstanceManagement>
 
@@ -39,7 +40,7 @@ ms.locfileid: "91148654"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |authorizedWindowsGroup||  
   
@@ -49,7 +50,7 @@ ms.locfileid: "91148654"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceBehaviors> 的 \<behavior>](behavior-of-servicebehaviors-of-workflow.md)|指定行为元素。|  
   

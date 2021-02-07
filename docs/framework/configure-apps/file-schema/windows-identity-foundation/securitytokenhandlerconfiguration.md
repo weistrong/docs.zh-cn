@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <securityTokenHandlerConfiguration>
 title: <securityTokenHandlerConfiguration>
 ms.date: 03/30/2017
 ms.assetid: 28724cc6-020c-4a06-9a1f-d7594f315019
 author: BrucePerlerMS
-ms.openlocfilehash: 4c6affbc24a58424158e466fb732e9a3b3d6f1ed
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8c014d971d3e8cc640a3b7042e3a0266d902de7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698305"
 ---
 # \<securityTokenHandlerConfiguration>
 
@@ -40,14 +41,14 @@ ms.locfileid: "91157013"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |saveBootstrapContext|指定是否应在会话令牌中包含启动令牌。 还可以通过在元素上设置属性，在令牌处理程序集合上设置值 `saveBootstrapContext` [\<identityConfiguration>](identityconfiguration.md) 。 标记处理程序集合上设置的值将覆盖在服务上设置的值。|  
 |maximumClockSkew|一个 <xref:System.TimeSpan> ，它指定允许的最大时钟偏差。 控制执行区分时间的操作时允许的最大时钟偏差，如验证登录会话的过期时间。 默认值为5分钟 "00:05:00"。 有关如何指定值的详细信息 <xref:System.TimeSpan> ，请参阅 [Timespan 值](../windows-workflow-foundation/index.md)。 通过在元素上设置属性，还可以在服务级别设置最大时钟偏差 `maximumClockSkew` [\<identityConfiguration>](identityconfiguration.md) 。 标记处理程序集合上设置的值将覆盖在服务上设置的值。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<audienceUris>](audienceuris.md)|指定作为此信赖方的可接受标识符的 Uri 集。 可选。|  
 |[\<caches>](caches.md)|注册用于会话令牌和令牌重播检测的缓存。 可在服务级别或安全标记处理程序集合上指定。 可选。|  
@@ -59,7 +60,7 @@ ms.locfileid: "91157013"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<securityTokenHandlers>](securitytokenhandlers.md)|指定注册到终结点的安全令牌处理程序的集合。|  
   

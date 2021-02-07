@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <workflow>
 title: <workflow>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 560aa9b6-9cf3-460e-b798-f87d14b1d2de
-ms.openlocfilehash: fdfaf234b5dda5703da7fc1ca1fe4554d57405f5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2d35f03c2715fcba7cf868a3550855066d747d82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148680"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697967"
 ---
 # \<workflow>
 
@@ -86,13 +87,13 @@ ms.locfileid: "91148680"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |activityDefinitionId|一个字符串，指定所跟踪的工作流的活动定义 ID。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<activityScheduledQueries>](activityscheduledqueries.md)|表示一个查询集合，这些查询用于跟踪安排给父活动来执行的活动。 跟踪参与者需要用此查询来订阅活动安排记录。|  
 |[\<activityStateQueries>](activitystatequeries.md)|表示一个查询集合，这些查询用于跟踪构成工作流实例的活动的生命周期更改。 例如，你可能想要跟踪每次在工作流实例中完成 "发送电子邮件" 活动的时间。 跟踪参与者需要用此查询来订阅活动状态记录对象。 在 ActivityStates 中指定了要订阅的可用状态。|  
@@ -104,7 +105,7 @@ ms.locfileid: "91148680"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<trackingProfile>](trackingprofile.md)|表示一个配置节，用于创建对跟踪参与者中的工作流跟踪记录的订阅。 跟踪配置文件包含跟踪查询，这些查询允许跟踪参与者订阅当工作流实例的状态在运行时发生更改时发出的工作流事件。 跟踪配置文件节中定义的查询用于定义订阅返回的事件类型。|  
   

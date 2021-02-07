@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <workflowInstanceQuery>
 title: <workflowInstanceQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 9096e812-626a-409a-9eda-c31a60b84c55
-ms.openlocfilehash: 6d8859db5faf84698b8984341dfff1444e7fc0ed
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 39949b99e7c6c12ff8618e6aa3a43582d15d4133
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697785"
 ---
 # \<workflowInstanceQuery>
 
@@ -52,13 +53,13 @@ ms.locfileid: "91148552"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<states>](states.md)|创建跟踪记录时已跟踪工作流实例中已订阅状态的集合。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<workflowInstanceQueries>](workflowinstancequeries.md)|表示配置元素的集合，这些配置元素跟踪工作流实例生命周期的更改，例如已开始或已完成的事件。|  
   
