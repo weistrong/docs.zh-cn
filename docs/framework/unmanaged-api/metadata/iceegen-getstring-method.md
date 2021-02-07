@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICeeGen：： GetString 方法
 title: ICeeGen::GetString 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,20 +16,20 @@ helpviewer_keywords:
 ms.assetid: 7cc22562-128c-440a-9147-55ff20f173d7
 topic_type:
 - apiref
-ms.openlocfilehash: 9d14ec33128596a148ca3509a49c8c97fafe82d6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 227b4badff3265fc22f1c76301ba03e58fea34c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723098"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706885"
 ---
-# <a name="iceegengetstring-method"></a><span data-ttu-id="5f48b-102">ICeeGen::GetString 方法</span><span class="sxs-lookup"><span data-stu-id="5f48b-102">ICeeGen::GetString Method</span></span>
+# <a name="iceegengetstring-method"></a><span data-ttu-id="1bfeb-103">ICeeGen::GetString 方法</span><span class="sxs-lookup"><span data-stu-id="1bfeb-103">ICeeGen::GetString Method</span></span>
 
-<span data-ttu-id="5f48b-103">获取存储在指定的相对虚拟地址的字符串。</span><span class="sxs-lookup"><span data-stu-id="5f48b-103">Gets the string stored at the specified relative virtual address.</span></span>  
+<span data-ttu-id="1bfeb-104">获取存储在指定的相对虚拟地址的字符串。</span><span class="sxs-lookup"><span data-stu-id="1bfeb-104">Gets the string stored at the specified relative virtual address.</span></span>  
   
- <span data-ttu-id="5f48b-104">此方法已过时，不应使用。</span><span class="sxs-lookup"><span data-stu-id="5f48b-104">This method is obsolete and should not be used.</span></span>  
+ <span data-ttu-id="1bfeb-105">此方法已过时，不应使用。</span><span class="sxs-lookup"><span data-stu-id="1bfeb-105">This method is obsolete and should not be used.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5f48b-105">语法</span><span class="sxs-lookup"><span data-stu-id="5f48b-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="1bfeb-106">语法</span><span class="sxs-lookup"><span data-stu-id="1bfeb-106">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetString (  
@@ -37,24 +38,24 @@ HRESULT GetString (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="5f48b-106">参数</span><span class="sxs-lookup"><span data-stu-id="5f48b-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="1bfeb-107">参数</span><span class="sxs-lookup"><span data-stu-id="1bfeb-107">Parameters</span></span>  
 
  `RVA`  
- <span data-ttu-id="5f48b-107">中要返回的字符串的相对虚拟地址。</span><span class="sxs-lookup"><span data-stu-id="5f48b-107">[in] The relative virtual address of the string to return.</span></span>  
+ <span data-ttu-id="1bfeb-108">中要返回的字符串的相对虚拟地址。</span><span class="sxs-lookup"><span data-stu-id="1bfeb-108">[in] The relative virtual address of the string to return.</span></span>  
   
  `lpString`  
- <span data-ttu-id="5f48b-108">弄返回的字符串。</span><span class="sxs-lookup"><span data-stu-id="5f48b-108">[out] The returned string.</span></span>  
+ <span data-ttu-id="1bfeb-109">弄返回的字符串。</span><span class="sxs-lookup"><span data-stu-id="1bfeb-109">[out] The returned string.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="5f48b-109">要求</span><span class="sxs-lookup"><span data-stu-id="5f48b-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="1bfeb-110">要求</span><span class="sxs-lookup"><span data-stu-id="1bfeb-110">Requirements</span></span>  
 
- <span data-ttu-id="5f48b-110">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="5f48b-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="1bfeb-111">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="1bfeb-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="5f48b-111">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="5f48b-111">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="1bfeb-112">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="1bfeb-112">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="5f48b-112">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="5f48b-112">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="1bfeb-113">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="1bfeb-113">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="5f48b-113">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5f48b-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="1bfeb-114">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1bfeb-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="5f48b-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5f48b-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1bfeb-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="1bfeb-115">See also</span></span>
 
-- [<span data-ttu-id="5f48b-115">ICeeGen 接口</span><span class="sxs-lookup"><span data-stu-id="5f48b-115">ICeeGen Interface</span></span>](iceegen-interface.md)
+- [<span data-ttu-id="1bfeb-116">ICeeGen 接口</span><span class="sxs-lookup"><span data-stu-id="1bfeb-116">ICeeGen Interface</span></span>](iceegen-interface.md)
