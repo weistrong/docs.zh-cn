@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDebugManager：： BeginConnection 方法
 title: ICLRDebugManager::BeginConnection 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bdd98146-ff4d-4150-a264-a4c1a32d31f3
 topic_type:
 - apiref
-ms.openlocfilehash: c5b41e4209141c0396ec8a1da766b80043be8807
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9b4ee64ad96bddfd5d7d650b657c6691b27d8c69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726153"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746121"
 ---
 # <a name="iclrdebugmanagerbeginconnection-method"></a>ICLRDebugManager::BeginConnection 方法
 
@@ -56,7 +57,7 @@ HRESULT BeginConnection (
 |E_INVALIDARG|`dwConnectionId` 为零，或 `BeginConnection` 已使用此值调用 `dwConnectionId` ，或为 `szConnectionName` null。|  
 |E_OUTOFMEMORY|无法分配足够的内存来保存与此连接关联的任务列表。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRDebugManager](iclrdebugmanager-interface.md) 提供了三种方法： `BeginConnection` 、 [SetConnectionTasks](iclrdebugmanager-setconnectiontasks-method.md)和 [EndConnection](iclrdebugmanager-endconnection-method.md)，用于将任务列表与标识符和友好名称关联起来。  
   
@@ -73,7 +74,7 @@ HRESULT BeginConnection (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRControl 接口](iclrcontrol-interface.md)
 - [ICLRDebugManager 接口](iclrdebugmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess4：:P rocessStateChanged 方法
 title: ICorDebugProcess4：:P rocessStateChanged 方法
 ms.date: 02/07/2019
 api_name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: 910c411d2c63ce2c6cf262e28e08546657dc2a4c
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 35a76b3c6dd9b37d3f06f23bc2ffea82f125a29e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213564"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746446"
 ---
 # <a name="icordebugprocess4processstatechanged-method"></a>ICorDebugProcess4：:P rocessStateChanged 方法
 
@@ -37,7 +38,7 @@ HRESULT ProcessStateChanged(
 ## <a name="parameters"></a>参数
 
  `eChange`\
-中描述进程的执行状态更改的[CorDebugStateChange 枚举](cordebugstatechange-enumeration.md)的成员。
+中描述进程的执行状态更改的 [CorDebugStateChange 枚举](cordebugstatechange-enumeration.md) 的成员。
 
 ## <a name="remarks"></a>备注
 
@@ -45,7 +46,7 @@ HRESULT ProcessStateChanged(
 
 ## <a name="requirements"></a>要求
 
- **平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
+ **平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
 
  **标头：** 内容
 

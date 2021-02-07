@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRAssemblyIdentityManager：： GetReferencedAssembliesFromStream 方法
 title: ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fe9849c1-c3fc-477b-a31f-e8619f5516f5
 topic_type:
 - apiref
-ms.openlocfilehash: a5e71d6ca90c8d0aa489176eb5a90bfe6896b1cb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9173587125e7b528e203dcb7e6a19d3e3f2fb990
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746082"
 ---
 # <a name="iclrassemblyidentitymanagergetreferencedassembliesfromstream-method"></a>ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream 方法
 
@@ -62,7 +63,7 @@ HRESULT GetReferencedAssembliesFromStream (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 如果方法返回 E_FAIL，则 CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用方可以选择从返回的列表中排除一组已知的程序集引用。 此集由定义 `pExcludeAssembliesList` 。  
   
@@ -76,7 +77,7 @@ HRESULT GetReferencedAssembliesFromStream (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyIdentityManager 接口](iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)

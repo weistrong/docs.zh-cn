@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5：： EnumerateGCReferences 方法
 title: ICorDebugProcess5::EnumerateGCReferences 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
 topic_type:
 - apiref
-ms.openlocfilehash: 0f2f5acfc6a23398b15af3a63345050eb0dfd5b4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5145fd072b083ed107b874fe99403984915233ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746407"
 ---
 # <a name="icordebugprocess5enumerategcreferences-method"></a>ICorDebugProcess5::EnumerateGCReferences 方法
 
@@ -43,7 +44,7 @@ HRESULT EnumerateGCReferences(
  `ppEnum`  
  弄一个指针，指向 [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md) 的地址，该地址是要进行垃圾回收的对象的枚举器。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法提供了一种方法，用于确定进程中任何托管对象的完整根链，并可用于确定对象仍处于活动状态的原因。  
   
@@ -57,7 +58,7 @@ HRESULT EnumerateGCReferences(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugProcess5 接口](icordebugprocess5-interface.md)
 - [调试接口](debugging-interfaces.md)

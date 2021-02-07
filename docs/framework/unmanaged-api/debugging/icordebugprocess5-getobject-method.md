@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5：： GetObject 方法
 title: ICorDebugProcess5::GetObject 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8111502-5a20-447f-9dc2-76e8acd7ed5a
 topic_type:
 - apiref
-ms.openlocfilehash: ff2913399e1dbeb33bbfb697058db3caf2a8d1fb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4e295e1afc19cc5b9ca763b04b05097d48f0302c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713101"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746355"
 ---
 # <a name="icordebugprocess5getobject-method"></a>ICorDebugProcess5::GetObject 方法
 
@@ -43,7 +44,7 @@ HRESULT GetObject(
  `ppObject`  
  弄一个指向 "ICorDebugObjectValue" 对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果不 `addr` 指向有效的托管对象，该方法将 `GetObject` 返回 `E_FAIL` 。  
   
@@ -57,7 +58,7 @@ HRESULT GetObject(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugProcess5 接口](icordebugprocess5-interface.md)
 - [调试接口](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5：： GetTypeForTypeID 方法
 title: ICorDebugProcess5::GetTypeForTypeID 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e0eed5a8-fa6d-4818-bd00-7babcea30325
 topic_type:
 - apiref
-ms.openlocfilehash: 0ed83005bd4ab23124a458a024985d011dfce8c1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a18543b0afc867dc3796264ac1d08a775c73ca59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717595"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746368"
 ---
 # <a name="icordebugprocess5gettypefortypeid-method"></a>ICorDebugProcess5::GetTypeForTypeID 方法
 
@@ -43,7 +44,7 @@ HRESULT GetTypeForTypeID(
  `ppType`  
  弄指向 ICorDebugType 对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在某些情况下，返回类型标识符的方法可能返回 null `COR_TYPEID` 值。 如果此值作为 `id` 参数传递，则 `GetTypeForTypeID` 方法将失败，并返回 `E_FAIL` 。  
   
@@ -57,7 +58,7 @@ HRESULT GetTypeForTypeID(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugProcess5 接口](icordebugprocess5-interface.md)
 - [调试接口](debugging-interfaces.md)

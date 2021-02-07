@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： _CorValidateImage 函数
 title: _CorValidateImage 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
 topic_type:
 - apiref
-ms.openlocfilehash: 2d49a40610bd0e1a7629594e245bde9eacfcc06d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f3d91c2d7e05786f7bfb0ab94b64e2cfb84a21d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687972"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746238"
 ---
 # <a name="_corvalidateimage-function"></a>_CorValidateImage 函数
 
@@ -51,7 +52,7 @@ STDAPI _CorValidateImage (
 |`STATUS_INVALID_IMAGE_FORMAT`|图像无效。 此值具有 HRESULT 0xC000007BL。|  
 |`STATUS_SUCCESS`|图像有效。 此值具有 HRESULT 0x00000000L。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 Windows XP 和更高版本中，操作系统加载程序通过检查公共对象文件格式 (COFF) 标头的 COM 描述符目录位来检查托管模块。 设置位表示托管模块。 如果加载程序检测到托管模块，它将加载 MsCorEE.dll 和调用 `_CorValidateImage` ，这会执行以下操作：  
   
@@ -85,6 +86,6 @@ STDAPI _CorValidateImage (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据全局静态函数](../metadata/metadata-global-static-functions.md)

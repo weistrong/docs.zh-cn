@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDebugManager：： EndConnection 方法
 title: ICLRDebugManager::EndConnection 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89dc7363-2f29-4eb2-8f23-fccdda6a76a6
 topic_type:
 - apiref
-ms.openlocfilehash: d6f22d6185f4063078463043a6ffd46e56289267
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 06dc9e20ec02c3e3040090babcc443a2ae59848b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719848"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746027"
 ---
 # <a name="iclrdebugmanagerendconnection-method"></a>ICLRDebugManager::EndConnection 方法
 
@@ -51,7 +52,7 @@ HRESULT EndConnection (
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_INVALIDARG|[BeginConnection](iclrdebugmanager-beginconnection-method.md) 从不使用调用 `dwConnectionId` ，或为 `dwConnectionId` 零。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRDebugManager](iclrdebugmanager-interface.md) 提供了三种方法：、 `BeginConnection` [SetConnectionTasks](iclrdebugmanager-setconnectiontasks-method.md)和 `EndConnection` ，以将任务列表与标识符和友好名称关联起来。  
   
@@ -68,7 +69,7 @@ HRESULT EndConnection (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRControl 接口](iclrcontrol-interface.md)
 - [ICLRDebugManager 接口](iclrdebugmanager-interface.md)
