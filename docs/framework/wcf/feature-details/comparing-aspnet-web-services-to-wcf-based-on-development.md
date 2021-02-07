@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：基于开发将 ASP.NET Web 服务与 WCF 进行比较
 title: 从开发的角度比较 ASP.NET Web 服务与 WCF
 ms.date: 03/30/2017
 ms.assetid: f362d00e-ce82-484f-9d4f-27e579d5c320
-ms.openlocfilehash: c6e83bb234751dc477776f0fa540ffa8688dc667
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fa9db35070bdde32d509f0e9c25dbf179d64da32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743455"
 ---
 # <a name="comparing-aspnet-web-services-to-wcf-based-on-development"></a>从开发的角度比较 ASP.NET Web 服务与 WCF
 
-Windows Communication Foundation （WCF）具有 ASP.NET 兼容模式选项，可对 WCF 应用程序进行编程和配置（如 ASP.NET Web 服务）并模拟它们的行为。 以下各节基于使用这两种技术开发应用程序所需的内容，对 ASP.NET Web 服务和 WCF 进行比较。
+Windows Communication Foundation (WCF) 具有 ASP.NET 兼容模式选项，以便对 WCF 应用程序进行编程和配置（如 ASP.NET Web 服务），并模拟它们的行为。 以下各节基于使用这两种技术开发应用程序所需的内容，对 ASP.NET Web 服务和 WCF 进行比较。
 
 ## <a name="data-representation"></a>数据表示形式
 
@@ -201,7 +202,7 @@ public class LineItem
 }
 ```
 
-Windows 软件开发工具包（SDK）包含一个名为 "Svcutil.exe" 的[元数据实用工具（）](../servicemodel-metadata-utility-tool-svcutil-exe.md)的命令行工具。 与用于 ASP.NET Web 服务的 xsd.exe 工具一样，Svcutil.exe 可以从 XML 架构生成 .NET 数据类型的定义。 如果 <xref:System.Runtime.Serialization.DataContractSerializer> 可发出由 XML 架构定义的格式的 XML，类型将为数据协定；否则，它们专用于通过 <xref:System.Xml.Serialization.XmlSerializer> 进行序列化。 Svcutil.exe 还可以通过使用数据协定的开关从数据协定生成 XML 架构 `dataContractOnly` 。
+Windows 软件开发工具包 (SDK) 包含一个命令行工具，该工具称为[)  ( ](../servicemodel-metadata-utility-tool-svcutil-exe.md) 与 ASP.NET Web 服务使用的 xsd.exe 工具一样，Svcutil.exe 可以从 XML 架构生成 .NET 数据类型的定义。 如果 <xref:System.Runtime.Serialization.DataContractSerializer> 可发出由 XML 架构定义的格式的 XML，类型将为数据协定；否则，它们专用于通过 <xref:System.Xml.Serialization.XmlSerializer> 进行序列化。 Svcutil.exe 还可以通过使用数据协定的开关从数据协定生成 XML 架构 `dataContractOnly` 。
 
 > [!NOTE]
 > 尽管 ASP.NET Web 服务使用 <xref:System.Xml.Serialization.XmlSerializer> ，并且 wcf ASP.NET 兼容模式使 wcf 服务能够模仿 ASP.NET Web 服务的行为，但 ASP.NET 兼容性选项不会限制一个使用 <xref:System.Xml.Serialization.XmlSerializer> 。 用户仍然可以将 <xref:System.Runtime.Serialization.DataContractSerializer> 用于以 ASP.NET 兼容模式运行的服务。
@@ -328,7 +329,7 @@ ASP.NET Web 服务编译为类库程序集。 将提供一个称为服务文件�
 
 在 Internet 信息服务 (IIS) 中，服务文件将复制到 ASP.NET 应用程序根目录下，程序集则复制到此应用程序根目录的 \bin 子目录下。 然后，您可以在应用程序根目录下使用服务文件的统一资源定位符 (URL) 访问此应用程序。
 
-WCF 服务可随时在 IIS 5.1 或6.0 中托管，Windows 进程激活服务（WAS）作为 IIS 7.0 的一部分提供，并且在任何 .NET 应用程序中提供。 若要在 IIS 5.1 或 6.0 中承载某项服务，此服务必须使用 HTTP 作为通信传输协议。
+WCF 服务可以轻松地托管在 IIS 5.1 或6.0 中，Windows 进程激活服务 (是作为 IIS 7.0 和任何 .NET 应用程序的一部分提供) 的。 若要在 IIS 5.1 或 6.0 中承载某项服务，此服务必须使用 HTTP 作为通信传输协议。
 
 若要在 IIS 5.1、6.0 或 WAS 中承载某项服务，请使用下列步骤：
 
@@ -418,11 +419,11 @@ typeof(Service), //"Service" is the name of the service type baseAddresses))
 
 ## <a name="client-development"></a>客户端开发
 
-ASP.NET Web 服务的客户端通过使用命令行工具 WSDL.exe 生成，该工具可将 .asmx 文件的 URL 作为输入提供。 WCF 提供的相应工具为 " [Svcutil.exe 元数据实用工具（）](../servicemodel-metadata-utility-tool-svcutil-exe.md)"。 它使用服务协定的定义和 WCF 客户端类的定义生成代码模块。 它还使用服务的地址和绑定生成一个配置文件。
+ASP.NET Web 服务的客户端通过使用命令行工具 WSDL.exe 生成，该工具可将 .asmx 文件的 URL 作为输入提供。 WCF 提供的相应工具为 " [ ("，# A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md)。 它使用服务协定的定义和 WCF 客户端类的定义生成代码模块。 它还使用服务的地址和绑定生成一个配置文件。
 
-通常，建议您基于异步模式对远程服务的客户端进行编程。 默认情况下，不论是同步模式还是异步模式，始终都会提供由 WSDL.exe 工具生成的代码。 可为任一模式提供 " [svcutil.exe" 元数据实用工具（）](../servicemodel-metadata-utility-tool-svcutil-exe.md)生成的代码。 默认为对同步模式提供。 如果执行该工具时使用 `/async` 开关，则将为异步模式提供生成的代码。
+通常，建议您基于异步模式对远程服务的客户端进行编程。 默认情况下，不论是同步模式还是异步模式，始终都会提供由 WSDL.exe 工具生成的代码。 [ ( # A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md) ，由 "工作的元数据实用工具" 工具生成的代码可以为任一模式提供。 默认为对同步模式提供。 如果执行该工具时使用 `/async` 开关，则将为异步模式提供生成的代码。
 
-不保证 ASP.NET 生成的 WCF 客户端类中的名称。默认情况下，NET 的 WSDL.EXE 工具与 Svcutil.exe 工具生成的 WCF 客户端类中的名称相匹配。 尤其是，在默认情况下，必须使用 <xref:System.Xml.Serialization.XmlSerializer> 序列化的类的属性名将在 Svcutil.exe 工具生成的代码中获得后缀 Property，这与 WSDL.exe 工具的情况并不一样。
+不保证 ASP.NET 生成的 WCF 客户端类中的名称。默认情况下，NET WSDL.exe 工具与 Svcutil.exe 工具生成的 WCF 客户端类中的名称相匹配。 尤其是，在默认情况下，必须使用 <xref:System.Xml.Serialization.XmlSerializer> 序列化的类的属性名将在 Svcutil.exe 工具生成的代码中获得后缀 Property，这与 WSDL.exe 工具的情况并不一样。
 
 ## <a name="message-representation"></a>消息表示形式
 
@@ -551,7 +552,7 @@ public interface IEcho
 
 使用在 IIS 51、6.0 或中承载的 HTTP 终结点的 WCF 服务的 .svc 文件的查询 WSDL 发出 HTTP GET 请求会导致 WCF 使用 WSDL 进行响应，以描述该服务。 如果 httpGetEnabled 设置为 true，则使用查询 WSDL 对 .NET 应用程序所承载服务的 HTTP 基址发出 HTTP GET 请求具有相同的效果。
 
-但是，WCF 还会使用其生成的用于描述服务的 WSDL 响应 Ws-metadataexchange 请求。 ASP.NET Web 服务没有对 WS-MetadataExchange 请求的内置支持。
+但是，WCF 还会使用生成的用于描述服务的 WSDL 响应 WS-MetadataExchange 请求。 ASP.NET Web 服务没有对 WS-MetadataExchange 请求的内置支持。
 
 WCF 生成的 WSDL 可以广泛地自定义。 <xref:System.ServiceModel.Description.ServiceMetadataBehavior> 类提供了一些用于自定义 WSDL 的功能。 也可以将 WCF 配置为不生成 WSDL，而是使用给定 URL 处的静态 WSDL 文件。
 
@@ -673,7 +674,7 @@ void ITradingService.AddTrade(Trade trade)
 
 尽管 ASP.NET 提供了对类中状态信息的 <xref:System.Web.HttpContext> 实际存储位置的控制，但 WCF 至少在其初始版本中不提供对存储可扩展对象的位置的控制。 这构成了为 WCF 服务选择 ASP.NET 兼容模式的最佳理由。 如果必须管理可配置状态，则选择 ASP.NET 兼容模式使您可以按照它们在 ASP.NET 中的使用方式使用 <xref:System.Web.HttpContext> 类的功能，而且还可以通过使用存储的 <xref:System.Web.HttpContext> 类配置状态信息的管理位置。
 
-## <a name="security"></a>安全性
+## <a name="security"></a>安全
 
 用于保证 ASP.NET Web 服务安全的选项就是那些用于保证任意 IIS 应用程序安全的选项。 因为 WCF 应用程序不仅可以在 IIS 中托管，也可以在任何 .NET 可执行文件中托管，所以用于保护 WCF 应用程序的选项必须与 IIS 的功能无关。 但是，为 ASP.NET Web 服务提供的功能也可用于在 ASP.NET 兼容模式下运行的 WCF 服务。
 
@@ -757,12 +758,12 @@ WCF 自动将来自任何类型的安全令牌的声明组合在一起，这是�
 
 ### <a name="security-confidentiality"></a>安全性：机密性
 
-通过将 IIS 中的应用程序配置为使用安全超文本传输协议 (HTTPS)，可以在传输级别确保与 ASP.NET Web 服务交换的消息的机密性。 对于在 IIS 中承载的 WCF 应用程序也是如此。 但是，托管在 IIS 之外的 WCF 应用程序也可以配置为使用安全传输协议。 更重要的是，还可以使用 WS 安全协议将 WCF 应用程序配置为在传输消息之前对其进行保护。 如果使用 WS-Security 协议保护消息正文的安全，则消息正文到达最终目的地之前在中介中加密传输。
+通过将 IIS 中的应用程序配置为使用安全超文本传输协议 (HTTPS)，可以在传输级别确保与 ASP.NET Web 服务交换的消息的机密性。 对于在 IIS 中承载的 WCF 应用程序也是如此。 但是，托管在 IIS 之外的 WCF 应用程序也可以配置为使用安全传输协议。 更重要的是，也可以配置 WCF 应用程序，以便在使用 WS-Security 协议传输消息之前对其进行保护。 如果使用 WS-Security 协议保护消息正文的安全，则消息正文到达最终目的地之前在中介中加密传输。
 
 ## <a name="globalization"></a>全球化
 
 通过 ASP.NET 配置语言，您可以为这些服务单独指定区域性。 WCF 不支持 ASP.NET 兼容模式下的该配置设置。 若要本地化不使用 ASP.NET 兼容模式的 WCF 服务，请将服务类型编译为区域性特定的程序集，并为每个区域性特定的程序集提供单独的区域性特定的终结点。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [基于目标和使用的标准比较 ASP.NET Web 服务与 WCF](comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： LocalServiceSecuritySettings
 title: LocalServiceSecuritySettings
 ms.date: 03/30/2017
 ms.assetid: 490aa0e5-5242-4f8d-b505-5ec6287633b4
-ms.openlocfilehash: eecf2b0bf459fd14236c550e393149553183b3ac
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f7220e8253c6ab218414c1be7ed90e5d593b4692
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743936"
 ---
 # <a name="localservicesecuritysettings"></a>LocalServiceSecuritySettings
 
@@ -161,6 +162,6 @@ class LocalServiceSecuritySettings
 |---------|-----------------------------------|  
 |命名空间|已在 root\ServiceModel 中定义|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>

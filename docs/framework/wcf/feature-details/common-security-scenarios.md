@@ -1,15 +1,16 @@
 ---
+description: 了解更多：常见安全方案
 title: 常用安全方案
 ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], scenarios
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
-ms.openlocfilehash: 21c8279890d1d1cf746e98f875efb6b1ff869c73
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ad4e3964a4a018793653b5eb48b91ca566840abb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295075"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743507"
 ---
 # <a name="common-security-scenarios"></a>常用安全方案
 
@@ -83,7 +84,7 @@ ms.locfileid: "96295075"
   
  [审核](auditing-security-events.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全指导和最佳做法](security-guidance-and-best-practices.md)
 - [Windows Server App Fabric 的安全模型](/previous-versions/appfabric/ee677202(v=azure.10))

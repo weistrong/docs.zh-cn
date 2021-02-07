@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：从工作流应用程序访问服务
 title: 如何：从工作流应用程序访问服务
 ms.date: 03/30/2017
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad
-ms.openlocfilehash: 13fae7dec3026e96e3c196467da29fe768a3655f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f8972bf7755c0103d164633d53d8d32508ce2efe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743091"
 ---
 # <a name="how-to-access-a-service-from-a-workflow-application"></a>如何：从工作流应用程序访问服务
 
@@ -53,7 +54,7 @@ ms.locfileid: "96257927"
 
      ![将自变量绑定到变量](./media/how-to-access-a-service-from-a-workflow-application/bind-arguments-variables.jpg)
 
-10. 将 " **WriteLine** " 活动拖放到 **回响** 活动下面以显示服务调用返回的字符串。 " **WriteLine** " 活动位于 "工具箱" 的 " **基元** " 节点中。 **Text** **WriteLine** `outString` 通过 `outString` 在 **writeline** 活动的文本框中键入内容，将 WriteLine 活动的 text 参数绑定到变量。 现在，此工作流应该如以下插图所示。
+10. 将 " **WriteLine** " 活动拖放到 **回响** 活动下面以显示服务调用返回的字符串。 " **WriteLine** " 活动位于 "工具箱" 的 " **基元** " 节点中。   `outString` 通过 `outString` 在 **writeline** 活动的文本框中键入内容，将 WriteLine 活动的 text 参数绑定到变量。 现在，此工作流应该如以下插图所示。
 
      ![已完成的客户端工作流](./media/how-to-access-a-service-from-a-workflow-application/complete-client-workflow.jpg)
 
@@ -63,7 +64,7 @@ ms.locfileid: "96257927"
 
 12. 按 Ctrl+F5 启动服务和客户端。 ASP.NET 开发服务器承载服务，Internet Explorer 将显示 WCF 帮助页，客户端工作流应用程序在控制台窗口中启动，并显示从服务返回的字符串 "Hello，world" )  (。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务](workflow-services.md)
 - [如何：使用消息传递活动创建工作流服务](how-to-create-a-workflow-service-with-messaging-activities.md)

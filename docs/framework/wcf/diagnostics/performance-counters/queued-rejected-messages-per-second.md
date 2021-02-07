@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：每秒排队拒绝的消息数
 title: 每秒拒绝的排队消息数
 ms.date: 03/30/2017
 ms.assetid: 77ea9aa3-b9e2-4a1d-a65e-5ca115ba0567
-ms.openlocfilehash: 2b7686ee94ab051bc255bdb71681c8d1c473094c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d0d227a26a49921449786d2c9f885fac13a82bde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276199"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744066"
 ---
 # <a name="queued-rejected-messages-per-second"></a>每秒拒绝的排队消息数
 
 计数器名称：Queued Messages Rejected Per Second（每秒拒绝的排队消息数）。  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  此服务中每秒被排队传输拒绝的消息数。  
   

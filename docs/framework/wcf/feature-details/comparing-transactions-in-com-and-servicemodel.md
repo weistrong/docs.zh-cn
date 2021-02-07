@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：比较 COM + 和 System.servicemodel 中的事务
 title: 比较 COM+ 和 ServiceModel 中的事务
 ms.date: 03/30/2017
 ms.assetid: e493bcdd-b91a-4486-853f-83dbcd1931b7
-ms.openlocfilehash: 30ecbd374e909141dbc944740f90c1b41ac44ed2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9b4e8e0940297e887ec9a3085ebe521afe4d000d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264903"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743416"
 ---
 # <a name="comparing-transactions-in-com-and-servicemodel"></a>比较 COM+ 和 ServiceModel 中的事务
 
@@ -20,7 +21,7 @@ ms.locfileid: "96264903"
 |COM+ 属性|WCF 特性|  
 |---------------------|------------------------------------------------------------------------|  
 |RequiresNew|将 <xref:System.ServiceModel.TransactionFlowAttribute> 设置为 <xref:System.ServiceModel.TransactionFlowOption.NotAllowed>。<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> 为 `true`。<br /><br /> 绑定元素中的 `TransactionFlow` 属性为 `false`。|  
-|必选|将 <xref:System.ServiceModel.TransactionFlowAttribute> 设置为 <xref:System.ServiceModel.TransactionFlowOption.Allowed>。<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> 为 `true`。<br /><br /> 绑定元素中的 `TransactionFlow` 属性为 `true`。|  
+|必须|将 <xref:System.ServiceModel.TransactionFlowAttribute> 设置为 <xref:System.ServiceModel.TransactionFlowOption.Allowed>。<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> 为 `true`。<br /><br /> 绑定元素中的 `TransactionFlow` 属性为 `true`。|  
 |支持|没有直接等效项。 通常，您应采用为 `Required` 指定的行为。|  
 |NotSupported|<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> 为 `false`。<br /><br /> 绑定元素中的 `TransactionFlow` 属性为 `false`。|  
 |已禁用|没有直接等效项。 通常，您应采用为 `NotSupported` 指定的行为。|

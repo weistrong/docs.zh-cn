@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ObjectsAllocatedByClass 方法
 title: ICorProfilerCallback::ObjectsAllocatedByClass 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 91d688f3-a80e-419d-9755-ff94bc04188a
 topic_type:
 - apiref
-ms.openlocfilehash: 70d43d7526376c40d0f8358ebd65e4a00a41b969
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: df9f3dde27664de7db4afb264b221f640753ddb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745055"
 ---
 # <a name="icorprofilercallbackobjectsallocatedbyclass-method"></a>ICorProfilerCallback::ObjectsAllocatedByClass 方法
 
@@ -46,7 +47,7 @@ HRESULT ObjectsAllocatedByClass(
  `cObjects`  
  中一个整数数组，其中每个整数指定数组中相应类的实例数 `classIds` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `classIds`和 `cObjects` 数组是并行数组。 例如， `classIds[i]` 和 `cObjects[i]` 引用相同的类。 如果自上次垃圾回收后未创建类的任何实例，则忽略类。 `ObjectsAllocatedByClass`回调不会报告在大型对象堆中分配的对象。  
   
@@ -64,6 +65,6 @@ HRESULT ObjectsAllocatedByClass(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

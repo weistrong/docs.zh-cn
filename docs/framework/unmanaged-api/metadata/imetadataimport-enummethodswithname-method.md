@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumMethodsWithName 方法
 title: IMetaDataImport::EnumMethodsWithName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a8624913-2e23-46ad-a0c1-bb8eccbbf20f
 topic_type:
 - apiref
-ms.openlocfilehash: 5b5345fc4819716dc6c2a00323f94546cfc67f32
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b77fc15bd7752b5b6b2b95d66a6bf04518616884
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745601"
 ---
 # <a name="imetadataimportenummethodswithname-method"></a>IMetaDataImport::EnumMethodsWithName 方法
 
@@ -59,7 +60,7 @@ HRESULT EnumMethodsWithName (
  `pcTokens`  
  弄中返回的 MethodDef 标记的数目 `rMethods` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法枚举字段和方法，而不是属性或事件。 与 [IMetaDataImport：： EnumMethods](imetadataimport-enummethods-method.md)不同，会 `EnumMethodsWithName` 丢弃所有不具有指定名称的方法标记。  
   
@@ -80,7 +81,7 @@ HRESULT EnumMethodsWithName (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

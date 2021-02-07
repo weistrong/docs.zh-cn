@@ -1,20 +1,21 @@
 ---
+description: 了解详细信息：如何：配置自定义 WS-Metadata Exchange 绑定
 title: 如何：配置自定义 WS-Metadata Exchange 绑定
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-Metadata Exchange [WCF]
 - WS-Metadata Exchange [WCF], configuring a custom binding
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
-ms.openlocfilehash: 6459e3f0cf0ab72af8027bd6802a0e7aa574aece
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: ae9d1932e7539d25c117a98bd130d1def8e691fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635782"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743728"
 ---
 # <a name="how-to-configure-a-custom-ws-metadata-exchange-binding"></a>如何：配置自定义 WS-Metadata Exchange 绑定
 
-本文介绍如何配置自定义 WS-元数据交换绑定。 Windows 通信基础 （WCF） 包括四个系统定义的元数据绑定，但您可以使用所需的任何绑定发布元数据。 本文介绍如何使用 发布元数据`wsHttpBinding`。 此绑定提供了以安全方式公开元数据的选择。 本文中的代码基于[入门](../samples/getting-started-sample.md)。  
+本文介绍如何配置自定义 WS-Metadata exchange 绑定。 Windows Communication Foundation (WCF) 包括四个系统定义的元数据绑定，但您可以使用所需的任何绑定来发布元数据。 本文说明如何使用发布元数据 `wsHttpBinding` 。 此绑定提供了以安全方式公开元数据的选择。 本文中的代码基于 [入门](../samples/getting-started-sample.md)。  
   
 ### <a name="using-a-configuration-file"></a>使用配置文件  
   
@@ -45,7 +46,7 @@ ms.locfileid: "80635782"
               contract="IMetadataExchange" />  
     ```  
   
-4. 要验证元数据交换终结点是否正常工作，请在客户端配置文件中添加终结点标记：  
+4. 若要验证元数据交换终结点是否正常工作，请在客户端配置文件中添加一个终结点标记：  
   
     ```xml  
     <endpoint name="MyMexEndpoint"               address="http://localhost:8000/servicemodelsamples/service/mex"  
@@ -118,6 +119,6 @@ ms.locfileid: "80635782"
 
 - [元数据发布行为](../samples/metadata-publishing-behavior.md)
 - [检索元数据](../samples/retrieve-metadata.md)
-- [元数据](../feature-details/metadata.md)
+- Metadata 
 - [发布元数据](../feature-details/publishing-metadata.md)
 - [发布元数据终结点](../publishing-metadata-endpoints.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： MovedReferences 方法
 title: ICorProfilerCallback::MovedReferences 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 996c71ae-0676-4616-a085-84ebf507649d
 topic_type:
 - apiref
-ms.openlocfilehash: 4da09be6816174a1d4a131086d5e98b881c27b9c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: da77ace52e19540e30488d3304d2822500c90391
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680255"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745185"
 ---
 # <a name="icorprofilercallbackmovedreferences-method"></a>ICorProfilerCallback::MovedReferences 方法
 
@@ -54,7 +55,7 @@ HRESULT MovedReferences(
   
  `oldObjectIDRangeStart` 和 `newObjectIDRangeStart` 数组中引用的每个块均有指定的大小。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!IMPORTANT]
 > 此方法将 64 位平台上大于 4 GB 的对象的大小报告为 `MAX_ULONG`。 若要获取大于 4 GB 的对象的大小，请改用 [ICorProfilerCallback4：： MovedReferences2](icorprofilercallback4-movedreferences2-method.md) 方法。  
@@ -89,7 +90,7 @@ HRESULT MovedReferences(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [MovedReferences2 方法](icorprofilercallback4-movedreferences2-method.md)

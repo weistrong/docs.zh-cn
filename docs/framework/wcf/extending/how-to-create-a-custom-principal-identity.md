@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：创建自定义主体标识
 title: 如何：创建自定义主体标识
 ms.date: 03/30/2017
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - PrincipalPermissionMode
 - PrincipalPermissionAttribute
 ms.assetid: c4845fca-0ed9-4adf-bbdc-10812be69b61
-ms.openlocfilehash: 6c50d6b0ac2baa2dc61431af4afb8dca3860456a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0967257021ba6cdb68426dfa48f9078afe1256fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249301"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743676"
 ---
 # <a name="how-to-create-a-custom-principal-identity"></a>如何：创建自定义主体标识
 
@@ -52,7 +53,7 @@ ms.locfileid: "96249301"
   
 - <xref:System.IdentityModel.Policy>  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description.PrincipalPermissionMode>
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：为 Windows Communication Foundation 配置 Internet Information Services 7。0
 title: 为 Windows Communication Foundation 配置 Internet Information Services 7.0
 ms.date: 03/30/2017
 ms.assetid: 1050d395-092e-44d3-b4ba-66be3b039ffb
-ms.openlocfilehash: 865e19d6626846481347274774d3ea59f2f7ecdd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e76918d70a922cb32c9bbacd5779aa4f8e991b2c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743260"
 ---
 # <a name="configuring-internet-information-services-70-for-windows-communication-foundation"></a>为 Windows Communication Foundation 配置 Internet Information Services 7.0
 
@@ -71,7 +72,7 @@ Internet Information Services (IIS) 7.0 具有模块化设计，允许有选择�
  </system.webServer>
  ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WAS 激活体系结构](was-activation-architecture.md)
 - [配置 WAS 以用于 WCF](configuring-the-wpa--service-for-use-with-wcf.md)

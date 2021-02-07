@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： WCF 中的事件日志记录
 title: WCF 中的事件日志记录
 ms.date: 03/30/2017
 helpviewer_keywords:
 - event logging [WCF]
 ms.assetid: aac0530d-f44c-45a1-bada-e30e0677b41f
-ms.openlocfilehash: 535b3570f41cbfb277eeb14fb07242b528acea46
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 741e6efce9f5fffec607d511f04a400e1292b682
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236151"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744209"
 ---
 # <a name="event-logging-in-wcf"></a>WCF 中的事件日志记录
 
@@ -53,7 +54,7 @@ Windows Communication Foundation (WCF) 跟踪 Windows 事件日志中的内部�
   
  在事件查看器中查看事件时单击 "详细信息" 时，事件查看器可能会通过 Internet 发送信息。 有关更多信息，请参见事件查看器帮助。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [管理和诊断](../index.md)
 - [事件常规参考](events-general-reference.md)

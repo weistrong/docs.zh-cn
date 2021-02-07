@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：配置 WCF 服务以便与 ASP.NET Web 服务客户端进行互操作
 title: 如何：配置 WCF 服务以与 ASP.NET Web 服务客户端进行互操作
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 48e1cd90-de80-4d6c-846e-631878955762
-ms.openlocfilehash: 9c241c06f153e4f85c70459ff3c50889057103f5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 180307763054f8dfe5696fb0bbf294ec2b5ee3db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743390"
 ---
 # <a name="how-to-configure-wcf-service-to-interoperate-with-aspnet-web-service-clients"></a>如何：配置 WCF 服务以与 ASP.NET Web 服务客户端进行互操作
 
@@ -48,7 +49,7 @@ ms.locfileid: "96295036"
  [!code-vb[C_HowTo-WCFServiceAndASMXClient#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/vb/program.vb#0)]
  [!code-xml[C_HowTo-WCFServiceAndASMXClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/common/app.config#1)]
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：在代码中创建服务终结点](how-to-create-a-service-endpoint-in-code.md)
 - [如何：使用代码发布服务的元数据](how-to-publish-metadata-for-a-service-using-code.md)

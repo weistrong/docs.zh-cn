@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：客户端
 title: 客户端
 ms.date: 03/30/2017
 ms.assetid: cce50025-0318-4a5e-9ce8-c67feab83b06
-ms.openlocfilehash: 55cb3cac30ccaabec39823e9ba0629a6088b1508
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a518236ffedae8d7a76eb570a94898906d8b3d33
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295088"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743546"
 ---
 # <a name="clients"></a>客户端
 
@@ -27,6 +28,6 @@ ms.locfileid: "96295088"
  [保证客户端的安全](../securing-clients.md)  
  描述 WCF 客户端的一些安全注意事项。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [客户端示例](../samples/client.md)

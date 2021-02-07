@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：分布式应用程序安全性
 title: 分布式应用程序安全
 ms.date: 03/30/2017
 helpviewer_keywords:
 - distributed application security [WCF]
 - security [WCF], transfer
 ms.assetid: 53928a10-e474-46d0-ab90-5f98f8d7b668
-ms.openlocfilehash: 80878857145c7a4e09106b6e1c4cb9ad68b7680a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 79e206157e7bb0a242b66064d345038d4272cf3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743156"
 ---
 # <a name="distributed-application-security"></a>分布式应用程序安全
 
@@ -32,7 +33,7 @@ Windows Communication Foundation (WCF) 安全性分为三个主要功能区域�
 
  三项功能 — 完整性、保密性和身份验证 — 合称为传输安全。 传输安全提供的这些功能，有助于减轻对分布式应用程序的威胁。 下表简要介绍构成传输安全的三项功能。  
   
-|函数|描述|  
+|函数|说明|  
 |--------------|-----------------|  
 |完整性|*完整性* 是指数据是完整且准确的，尤其是在从一个点到另一个点并可能被多个参与者读取后。 完整性必须得到维护，以免数据被篡改，这通常是由消息的数字签名实现的。|  
 |机密性|*机密性* 是指确保消息尚未被预期读者之外的任何人读取。 例如，信用卡号在通过 Internet 发送时必须保密。 保密性通常是用公钥/私钥方案进行数据加密实现的。|  
@@ -68,7 +69,7 @@ Windows Communication Foundation (WCF) 安全性分为三个主要功能区域�
 
  下表列出了在创建使用传输安全的应用程序时可能使用的值。 在代码或绑定设置中，可以使用这些值。  
   
-|设置|描述|  
+|设置|说明|  
 |-------------|-----------------|  
 |无|指定客户端不需要提供任何凭据。 这相当于匿名客户端。|  
 |基本|指定基本身份验证。 有关详细信息，请参阅 RFC2617 "[HTTP Authentication：基本和摘要式身份验证](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf)"。|  
@@ -81,7 +82,7 @@ Windows Communication Foundation (WCF) 安全性分为三个主要功能区域�
 
  下表列出了在创建使用消息安全的应用程序时可能使用的值。 在代码或绑定设置中，可以使用这些值。  
   
-|设置|描述|  
+|设置|说明|  
 |-------------|-----------------|  
 |无|允许服务与匿名客户端交互。|  
 |Windows|允许在 Windows 凭据的已通过身份验证的上下文中执行 SOAP 消息交换。 使用 SSPI 协商机制选择 Kerberos 协议或 NTLM 作为身份验证服务。|  
@@ -103,7 +104,7 @@ Windows Communication Foundation (WCF) 安全性分为三个主要功能区域�
   
  在消息安全模式中，通过执行传输安全，还可以与客户端交换服务凭据，作为初始协商的一部分。 若要启用协商，请将 <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> 属性设置为 `true`。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [终结点创建概述](../endpoint-creation-overview.md)
 - [系统提供的绑定](../system-provided-bindings.md)

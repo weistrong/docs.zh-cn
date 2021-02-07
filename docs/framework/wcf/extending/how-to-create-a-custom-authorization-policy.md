@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：创建自定义授权策略
 title: 如何：创建自定义授权策略
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 05b0549b-882d-4660-b6f0-5678543e5475
-ms.openlocfilehash: fef7aa531c946ecacef30bb79f2362bad4d375ed
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 41158944aec9b0a5b8cb28c51922b8a1b103317c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743702"
 ---
 # <a name="how-to-create-a-custom-authorization-policy"></a>如何：创建自定义授权策略
 
@@ -77,7 +78,7 @@ Windows Communication Foundation (WCF) 中的标识模型基础结构支持基�
  [!code-csharp[c_CustomAuthPol#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthpol/cs/c_customauthpol.cs#5)]
  [!code-vb[c_CustomAuthPol#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#5)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.ServiceAuthorizationManager>
 - [如何：比较声明](how-to-compare-claims.md)

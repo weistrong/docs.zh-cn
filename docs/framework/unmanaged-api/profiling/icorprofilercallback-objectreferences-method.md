@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ObjectReferences 方法
 title: ICorProfilerCallback::ObjectReferences 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dd5e9b64-b4a3-4ba6-9be6-ddb540f4ffcf
 topic_type:
 - apiref
-ms.openlocfilehash: 9485e3ca657ab108d2bcc9d00b1c475f8ee3c086
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 55ea6fae87ecb6534af322fc9d5055c8a247f37a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745107"
 ---
 # <a name="icorprofilercallbackobjectreferences-method"></a>ICorProfilerCallback::ObjectReferences 方法
 
@@ -50,7 +51,7 @@ HRESULT ObjectReferences(
  `objectRefIds`  
  中由引用的对象的 Id 数组 `objectId` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ObjectReferences`完成垃圾回收后，将为堆中剩余的每个对象调用方法。 如果探查器从此回调返回错误，则分析服务将停止调用此回调，直到下一次垃圾回收。  
   
@@ -70,6 +71,6 @@ HRESULT ObjectReferences(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

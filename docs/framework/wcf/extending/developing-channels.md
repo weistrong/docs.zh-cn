@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：开发通道
 title: 开发通道
 ms.date: 03/30/2017
 ms.assetid: 0513af9f-a0c2-457b-9a50-5b6bfee48513
-ms.openlocfilehash: 11e7a78282a3c9f7cd221e2ef44bc43c625e447b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7fd6dc68a72d5167868c3ccee0f53c1ba3090322
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743741"
 ---
 # <a name="developing-channels"></a>开发通道
 
@@ -35,6 +36,6 @@ ms.locfileid: "96286794"
   
 4. 添加一个绑定部分和绑定配置元素，以便将该绑定公开到配置系统。 有关详细信息，请参阅 [配置和元数据支持](configuration-and-metadata-support.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展绑定](extending-bindings.md)

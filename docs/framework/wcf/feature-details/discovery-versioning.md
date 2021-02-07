@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：发现版本控制
 title: 发现版本控制
 ms.date: 03/30/2017
 ms.assetid: f91c6d0a-3af2-45c5-9a5c-e75390619836
-ms.openlocfilehash: 4a1ca07fc6773ce6f883d654abfedab4986341e1
-ms.sourcegitcommit: 9b1ac36b6c80176fd4e20eb5bfcbd9d56c3264cf
+ms.openlocfilehash: 075fefce0477810336c8b857343984070ed89b37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67425252"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743182"
 ---
 # <a name="discovery-versioning"></a>发现版本控制
 
@@ -29,11 +30,11 @@ ms.locfileid: "67425252"
 
 ### <a name="discoveryversionwsdiscoveryapril2005"></a>DiscoveryVersion.WSDiscoveryApril2005
 
-提供<xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005>作为构造函数参数可使实现使用 Ws-discovery 协议的 April2005 版本。 此版本对应于 WS-Discovery 协议规范的已发布版本。 此版本应当用于与使用 April2005 版 WS-Discovery 的旧版应用程序进行互操作。
+<xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005>作为构造函数参数提供可使实现使用 WS-Discovery 协议的 April2005 版本。 此版本对应于 WS-Discovery 协议规范的已发布版本。 此版本应当用于与使用 April2005 版 WS-Discovery 的旧版应用程序进行互操作。
 
 ### <a name="discoveryversionwsdiscovery11"></a>DiscoveryVersion.WSDiscovery11
 
-Api 使用的默认发现版本是<xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11>。 这是 WS-Discovery 协议的当前标准化版本。
+Api 使用的默认发现版本是 <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11> 。 这是 WS-Discovery 协议的当前标准化版本。
 
 ## <a name="discoveryversionwsdiscoverycd1"></a>DiscoveryVersion.WSDiscoveryCD1
 
@@ -41,7 +42,7 @@ Api 使用的默认发现版本是<xref:System.ServiceModel.Discovery.DiscoveryV
 
 ## <a name="supporting-multiple-udp-discovery-endpoints-for-different-discovery-versions-on-a-single-service-host"></a>支持单一服务主机上不同发现版本的多个 UDP 发现终结点
 
-您可能希望在单一服务主机上对不同发现版本公开多个 UDP 发现终结点。 为此，必须为每个 UDP 发现终结点指定唯一的地址。 下面的示例演示如何执行此操作。
+您可能希望在单一服务主机上对不同发现版本公开多个 UDP 发现终结点。 为此，必须为每个 UDP 发现终结点指定唯一的地址。 以下示例演示如何执行此操作。
 
 ```csharp
 UdpDiscoveryEndpoint newVersionUdpEndpoint = new UdpDiscoveryEndpoint(DiscoveryVersion.WSDiscovery11);

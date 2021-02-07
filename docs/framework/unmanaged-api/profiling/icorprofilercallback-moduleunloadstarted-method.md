@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ModuleUnloadStarted 方法
 title: ICorProfilerCallback::ModuleUnloadStarted 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2debcaab-6005-4245-afdb-4268bb7e74bd
 topic_type:
 - apiref
-ms.openlocfilehash: 12d5f7e073337af6034b8f313a2e0161620a65ea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3d10654e23481fe6f8956129a0aef7ed4206bba9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720948"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745211"
 ---
 # <a name="icorprofilercallbackmoduleunloadstarted-method"></a>ICorProfilerCallback::ModuleUnloadStarted 方法
 
@@ -38,7 +39,7 @@ HRESULT ModuleUnloadStarted(
  `moduleId`  
  中正在卸载的模块的 ID。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 `moduleId` 方法返回后，的值对信息请求无效 `ModuleUnloadStarted` -这是探查器获取有关此模块的信息的最后机会。  
   
@@ -52,7 +53,7 @@ HRESULT ModuleUnloadStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ModuleUnloadFinished 方法](icorprofilercallback-moduleunloadfinished-method.md)
