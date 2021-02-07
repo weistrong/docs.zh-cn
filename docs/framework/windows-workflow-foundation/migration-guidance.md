@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：迁移指南
 title: 迁移指南
 ms.date: 03/30/2017
 ms.assetid: cb65c132-58c9-4028-b3d4-1efc71d5e60e
-ms.openlocfilehash: b9b90aedc06fb4a4564596d61aa0ac2dc4c6143f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 05aede02d7ad615ddeeceab6d71a545db9bcf5ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755346"
 ---
 # <a name="migration-guidance"></a>迁移指南
 
@@ -47,6 +48,6 @@ ms.locfileid: "95733589"
 
  [WF 指南：工作流服务](/previous-versions/appfabric/ff383417(v=azure.10)) 提供面向示例的分步说明，介绍如何将实现 Windows Communication Foundation (WCF) web 服务的工作流 (通常称为工作流服务) 在 WF3 中创建为使用 WF4，适用于全新活动方案。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Activities.Statements.Interop>

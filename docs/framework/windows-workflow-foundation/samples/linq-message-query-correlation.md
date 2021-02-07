@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息： LINQ 消息查询相关性
 title: LINQ 消息查询相关性
 ms.date: 03/30/2017
 ms.assetid: b746872e-57b1-4514-b337-53398a0e0deb
-ms.openlocfilehash: 83ffc80bd1944681da29e9058de454636aa7405b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7b979e3bdc2c0ede8f4f9d4595957f90581a0ecc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291097"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755273"
 ---
 # <a name="linq-message-query-correlation"></a>LINQ 消息查询相关性
 
@@ -35,7 +36,7 @@ ms.locfileid: "96291097"
   
     2. 通过右键单击解决方案并选择 " **设置启动项目**" 来设置多个启动项目。 将 **服务** 和 **客户端** (按顺序添加) 为多个启动项目。  
   
-    3. 运行该应用程序。 客户端控制台演示工作流如何发送订单、接收订购单 ID 以及随后确认订单。 服务窗口将显示正在处理的请求。  
+    3. 运行应用程序。 客户端控制台演示工作流如何发送订单、接收订购单 ID 以及随后确认订单。 服务窗口将显示正在处理的请求。  
   
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：  

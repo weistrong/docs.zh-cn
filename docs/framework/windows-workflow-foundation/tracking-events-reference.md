@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：跟踪事件参考
 title: 跟踪事件参考
 ms.date: 03/30/2017
 ms.assetid: c1c1ee87-f80a-449b-acd0-50d81eef116e
-ms.openlocfilehash: 7a1bbabbbc122429908b0f9c038c145a5d4a1e7e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 64df938dc7e37ebc8b3da8f10939bebe1e638be1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755182"
 ---
 # <a name="tracking-events-reference"></a>跟踪事件参考
 
@@ -49,36 +50,36 @@ ms.locfileid: "96293346"
 |[1008 - WorkflowApplicationUnloaded](1008-workflowapplicationunloaded.md)|信息|WorkflowInstance Id“%1”已卸载。|WFRuntime|  
 |[1009 - ActivityScheduled](1009-activityscheduled.md)|信息|父 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了子 Activity“%4”、DisplayName“%5”、InstanceId“%6”。|WFRuntime|  
 |[1010 - ActivityCompleted](1010-activitycompleted.md)|信息|父 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了子 Activity“%4”、DisplayName“%5”、InstanceId“%6”。|WFRuntime|  
-|[1011 - ScheduleExecuteActivityWorkItem](1011-scheduleexecuteactivityworkitem.md)|“详细”|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了 ExecuteActivityWorkItem。|WFRuntime|  
-|[1012 - StartExecuteActivityWorkItem](1012-startexecuteactivityworkitem.md)|“详细”|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 ExecuteActivityWorkItem。|WFRuntime|  
-|[1013 - CompleteExecuteActivityWorkItem](1013-completeexecuteactivityworkitem.md)|“详细”|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 ExecuteActivityWorkItem 已经完成。|WFRuntime|  
-|[1014 - ScheduleCompletionWorkItem](1014-schedulecompletionworkitem.md)|“详细”|已为父 Activity "%1"、DisplayName "%2"、InstanceId "%3" 安排了 CompletionWorkItem。  已完成的活动“%4”、DisplayName：“%5”、InstanceId：“%6”。|WFRuntime|  
-|[1015 - StartCompletionWorkItem](1015-startcompletionworkitem.md)|“详细”|开始为父 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 CompletionWorkItem。 已完成的活动“%4”、DisplayName：“%5”、InstanceId：“%6”。|WFRuntime|  
-|[1016 - CompleteCompletionWorkItem](1016-completecompletionworkitem.md)|“详细”|父 Activity“%1”、DisplayName“'%2”、InstanceId“%3”已完成了 CompletionWorkItem。 已完成的活动“%4”、DisplayName：“%5”、InstanceId：“%6”。|WFRuntime|  
-|[1017 - ScheduleCancelActivityWorkItem](1017-schedulecancelactivityworkitem.md)|“详细”|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了 CancelActivityWorkItem。|WFRuntime|  
-|[1018 - StartCancelActivityWorkItem](1018-startcancelactivityworkitem.md)|“详细”|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 CancelActivityWorkItem。|WFRuntime|  
-|[1019 - CompleteCancelActivityWorkItem](1019-completecancelactivityworkitem.md)|“详细”|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 CancelActivityWorkItem 已经完成。|WFRuntime|  
-|[1020 - CreateBookmark](1020-createbookmark.md)|“详细”|已为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 创建了书签。  BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
-|[1021 - ScheduleBookmarkWorkItem](1021-schedulebookmarkworkitem.md)|“详细”|已为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 安排了 BookmarkWorkItem。  BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
-|[1022 - StartBookmarkWorkItem](1022-startbookmarkworkitem.md)|“详细”|开始为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 执行 BookmarkWorkItem。  BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
-|[1023 - CompleteBookmarkWorkItem](1023-completebookmarkworkitem.md)|“详细”|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 BookmarkWorkItem 已经完成。 BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
-|[1024 - CreateBookmarkScope](1024-createbookmarkscope.md)|“详细”|已创建 BookmarkScope: %1。|WFRuntime|  
-|[1025 - BookmarkScopeInitialized](1025-bookmarkscopeinitialized.md)|“详细”|TemporaryId 为“%1”的 BookmarkScope 已初始化，ID 为:“%2”。|WFRuntime|  
-|[1026 - ScheduleTransactionContextWorkItem](1026-scheduletransactioncontextworkitem.md)|“详细”|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了 TransactionContextWorkItem。|WFRuntime|  
-|[1027 - StartTransactionContextWorkItem](1027-starttransactioncontextworkitem.md)|“详细”|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 TransactionContextWorkItem。|WFRuntime|  
-|[1028 - CompleteTransactionContextWorkItem](1028-completetransactioncontextworkitem.md)|“详细”|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 TransactionContextWorkItem 已经完成。|WFRuntime|  
-|[1029 - ScheduleFaultWorkItem](1029-schedulefaultworkitem.md)|“详细”|已为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 安排了 FaultWorkItem。  异常是从 Activity“%4”、DisplayName“%5”、InstanceId“%6”传播的。|WFRuntime|  
-|[1030 - StartFaultWorkItem](1030-startfaultworkitem.md)|“详细”|开始为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 执行 FaultWorkItem。  异常是从 Activity“%4”、DisplayName“%5”、InstanceId“%6”传播的。|WFRuntime|  
-|[1031 - CompleteFaultWorkItem](1031-completefaultworkitem.md)|“详细”|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 FaultWorkItem 已经完成。 异常是从 Activity“%4”、DisplayName“%5”、InstanceId“%6”传播的。|WFRuntime|  
-|[1032 - ScheduleRuntimeWorkItem](1032-scheduleruntimeworkitem.md)|“详细”|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了运行时工作项。|WFRuntime|  
-|[1033 - StartRuntimeWorkItem](1033-startruntimeworkitem.md)|“详细”|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行运行时工作项。|WFRuntime|  
-|[1034 - CompleteRuntimeWorkItem](1034-completeruntimeworkitem.md)|“详细”|Activity“%1”、DisplayName“%2”、InstanceId“%3”的运行时工作项已经完成。|WFRuntime|  
-|[1035 - RuntimeTransactionSet](1035-runtimetransactionset.md)|“详细”|运行时事务已由 Activity "%1"、DisplayName "%2"、InstanceId "%3" 设置。  执行操作与 Activity "%4"、DisplayName "%5"、InstanceId "%6" 隔离。|WFRuntime|  
-|[1036 - RuntimeTransactionCompletionRequested](1036-runtimetransactioncompletionrequested.md)|“详细”|Activity“%1”、DisplayName“%2”、InstanceId“%3”已安排了运行时事务的完成。|WFRuntime|  
-|[1037 - RuntimeTransactionComplete](1037-runtimetransactioncomplete.md)|“详细”|运行时事务已完成，状态为“%1”。|WFRuntime|  
-|[1038 - EnterNoPersistBlock](1038-enternopersistblock.md)|“详细”|正在进入非持久块。|WFRuntime|  
-|[1039 - ExitNoPersistBlock](1039-exitnopersistblock.md)|“详细”|正在退出非持久块。|WFRuntime|  
-|[1040 - InArgumentBound](1040-inargumentbound.md)|“详细”|Activity“%2”、DisplayName“%3”、InstanceId“%4”中的 In 自变量“%1”已经与值 %5 绑定。|WFActivities|  
+|[1011 - ScheduleExecuteActivityWorkItem](1011-scheduleexecuteactivityworkitem.md)|详细|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了 ExecuteActivityWorkItem。|WFRuntime|  
+|[1012 - StartExecuteActivityWorkItem](1012-startexecuteactivityworkitem.md)|详细|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 ExecuteActivityWorkItem。|WFRuntime|  
+|[1013 - CompleteExecuteActivityWorkItem](1013-completeexecuteactivityworkitem.md)|详细|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 ExecuteActivityWorkItem 已经完成。|WFRuntime|  
+|[1014 - ScheduleCompletionWorkItem](1014-schedulecompletionworkitem.md)|详细|已为父 Activity "%1"、DisplayName "%2"、InstanceId "%3" 安排了 CompletionWorkItem。  已完成的活动“%4”、DisplayName：“%5”、InstanceId：“%6”。|WFRuntime|  
+|[1015 - StartCompletionWorkItem](1015-startcompletionworkitem.md)|详细|开始为父 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 CompletionWorkItem。 已完成的活动“%4”、DisplayName：“%5”、InstanceId：“%6”。|WFRuntime|  
+|[1016 - CompleteCompletionWorkItem](1016-completecompletionworkitem.md)|详细|父 Activity“%1”、DisplayName“'%2”、InstanceId“%3”已完成了 CompletionWorkItem。 已完成的活动“%4”、DisplayName：“%5”、InstanceId：“%6”。|WFRuntime|  
+|[1017 - ScheduleCancelActivityWorkItem](1017-schedulecancelactivityworkitem.md)|详细|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了 CancelActivityWorkItem。|WFRuntime|  
+|[1018 - StartCancelActivityWorkItem](1018-startcancelactivityworkitem.md)|详细|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 CancelActivityWorkItem。|WFRuntime|  
+|[1019 - CompleteCancelActivityWorkItem](1019-completecancelactivityworkitem.md)|详细|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 CancelActivityWorkItem 已经完成。|WFRuntime|  
+|[1020 - CreateBookmark](1020-createbookmark.md)|详细|已为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 创建了书签。  BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
+|[1021 - ScheduleBookmarkWorkItem](1021-schedulebookmarkworkitem.md)|详细|已为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 安排了 BookmarkWorkItem。  BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
+|[1022 - StartBookmarkWorkItem](1022-startbookmarkworkitem.md)|详细|开始为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 执行 BookmarkWorkItem。  BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
+|[1023 - CompleteBookmarkWorkItem](1023-completebookmarkworkitem.md)|详细|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 BookmarkWorkItem 已经完成。 BookmarkName: %4、BookmarkScope: %5。|WFRuntime|  
+|[1024 - CreateBookmarkScope](1024-createbookmarkscope.md)|详细|已创建 BookmarkScope: %1。|WFRuntime|  
+|[1025 - BookmarkScopeInitialized](1025-bookmarkscopeinitialized.md)|详细|TemporaryId 为“%1”的 BookmarkScope 已初始化，ID 为:“%2”。|WFRuntime|  
+|[1026 - ScheduleTransactionContextWorkItem](1026-scheduletransactioncontextworkitem.md)|详细|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了 TransactionContextWorkItem。|WFRuntime|  
+|[1027 - StartTransactionContextWorkItem](1027-starttransactioncontextworkitem.md)|详细|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行 TransactionContextWorkItem。|WFRuntime|  
+|[1028 - CompleteTransactionContextWorkItem](1028-completetransactioncontextworkitem.md)|详细|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 TransactionContextWorkItem 已经完成。|WFRuntime|  
+|[1029 - ScheduleFaultWorkItem](1029-schedulefaultworkitem.md)|详细|已为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 安排了 FaultWorkItem。  异常是从 Activity“%4”、DisplayName“%5”、InstanceId“%6”传播的。|WFRuntime|  
+|[1030 - StartFaultWorkItem](1030-startfaultworkitem.md)|详细|开始为 Activity "%1"、DisplayName "%2"、InstanceId "%3" 执行 FaultWorkItem。  异常是从 Activity“%4”、DisplayName“%5”、InstanceId“%6”传播的。|WFRuntime|  
+|[1031 - CompleteFaultWorkItem](1031-completefaultworkitem.md)|详细|Activity“%1”、DisplayName“%2”、InstanceId“%3”的 FaultWorkItem 已经完成。 异常是从 Activity“%4”、DisplayName“%5”、InstanceId“%6”传播的。|WFRuntime|  
+|[1032 - ScheduleRuntimeWorkItem](1032-scheduleruntimeworkitem.md)|详细|已为 Activity“%1”、DisplayName“%2”、InstanceId“%3”安排了运行时工作项。|WFRuntime|  
+|[1033 - StartRuntimeWorkItem](1033-startruntimeworkitem.md)|详细|开始为 Activity“%1”、DisplayName“%2”、InstanceId“%3”执行运行时工作项。|WFRuntime|  
+|[1034 - CompleteRuntimeWorkItem](1034-completeruntimeworkitem.md)|详细|Activity“%1”、DisplayName“%2”、InstanceId“%3”的运行时工作项已经完成。|WFRuntime|  
+|[1035 - RuntimeTransactionSet](1035-runtimetransactionset.md)|详细|运行时事务已由 Activity "%1"、DisplayName "%2"、InstanceId "%3" 设置。  执行操作与 Activity "%4"、DisplayName "%5"、InstanceId "%6" 隔离。|WFRuntime|  
+|[1036 - RuntimeTransactionCompletionRequested](1036-runtimetransactioncompletionrequested.md)|详细|Activity“%1”、DisplayName“%2”、InstanceId“%3”已安排了运行时事务的完成。|WFRuntime|  
+|[1037 - RuntimeTransactionComplete](1037-runtimetransactioncomplete.md)|详细|运行时事务已完成，状态为“%1”。|WFRuntime|  
+|[1038 - EnterNoPersistBlock](1038-enternopersistblock.md)|详细|正在进入非持久块。|WFRuntime|  
+|[1039 - ExitNoPersistBlock](1039-exitnopersistblock.md)|详细|正在退出非持久块。|WFRuntime|  
+|[1040 - InArgumentBound](1040-inargumentbound.md)|详细|Activity“%2”、DisplayName“%3”、InstanceId“%4”中的 In 自变量“%1”已经与值 %5 绑定。|WFActivities|  
 |[1041 - WorkflowApplicationPersistableIdle](1041-workflowapplicationpersistableidle.md)|信息|WorkflowApplication Id "%1" 处于空闲和可持久状态。  将执行以下操作： %2。|WFRuntime|  
 |[1101 - WorkflowActivityStart](1101-workflowactivitystart.md)|信息|WorkflowInstance Id“%1”E2E 活动|WFRuntime|  
 |[1102 - WorkflowActivityStop](1102-workflowactivitystop.md)|信息|WorkflowInstance Id“%1”E2E 活动|WFRuntime|  
@@ -99,15 +100,15 @@ ms.locfileid: "96293346"
 |[1223 - SwitchCaseNotFound](1223-switchcasenotfound.md)|信息|Switch 活动“%1”找不到与 Expression 结果匹配的 Case 活动。|WFActivities|  
 |[1449 - WfMessageReceived](1449-wfmessagereceived.md)|信息|工作流已接收消息|WFServices|  
 |[1450 - WfMessageSent](1450-wfmessagesent.md)|信息|已从工作流发送消息|WFServices|  
-|[2021 - ExecuteWorkItemStart](2021-executeworkitemstart.md)|“详细”|开始执行工作项|WFRuntime|  
-|[2022 - ExecuteWorkItemStop](2022-executeworkitemstop.md)|“详细”|停止执行工作项|WFRuntime|  
-|[2023 - SendMessageChannelCacheMiss](2023-sendmessagechannelcachemiss.md)|“详细”|SendMessageChannelCache 未命中|WFRuntime|  
-|[2024 - InternalCacheMetadataStart](2024-internalcachemetadatastart.md)|“详细”|已在活动“%1”上启动 InternalCacheMetadata。|WFRuntime|  
-|[2025 - InternalCacheMetadataStop](2025-internalcachemetadatastop.md)|“详细”|已在活动“%1”上停止 InternalCacheMetadata。|WFRuntime|  
-|[2026 - CompileVbExpressionStart](2026-compilevbexpressionstart.md)|“详细”|正在编译 VB 表达式“%1”|WFRuntime|  
-|[2027 - CacheRootMetadataStart](2027-cacherootmetadatastart.md)|“详细”|已在活动“%1”上启动 CacheRootMetadata|WFRuntime|  
-|[2028 - CacheRootMetadataStop](2028-cacherootmetadatastop.md)|“详细”|已在活动 %1 上停止 CacheRootMetadata。|WFRuntime|  
-|[2029 - CompileVbExpressionStop](2029-compilevbexpressionstop.md)|“详细”|已完成编译 VB 表达式。|WFRuntime|  
+|[2021 - ExecuteWorkItemStart](2021-executeworkitemstart.md)|详细|开始执行工作项|WFRuntime|  
+|[2022 - ExecuteWorkItemStop](2022-executeworkitemstop.md)|详细|停止执行工作项|WFRuntime|  
+|[2023 - SendMessageChannelCacheMiss](2023-sendmessagechannelcachemiss.md)|详细|SendMessageChannelCache 未命中|WFRuntime|  
+|[2024 - InternalCacheMetadataStart](2024-internalcachemetadatastart.md)|详细|已在活动“%1”上启动 InternalCacheMetadata。|WFRuntime|  
+|[2025 - InternalCacheMetadataStop](2025-internalcachemetadatastop.md)|详细|已在活动“%1”上停止 InternalCacheMetadata。|WFRuntime|  
+|[2026 - CompileVbExpressionStart](2026-compilevbexpressionstart.md)|详细|正在编译 VB 表达式“%1”|WFRuntime|  
+|[2027 - CacheRootMetadataStart](2027-cacherootmetadatastart.md)|详细|已在活动“%1”上启动 CacheRootMetadata|WFRuntime|  
+|[2028 - CacheRootMetadataStop](2028-cacherootmetadatastop.md)|详细|已在活动 %1 上停止 CacheRootMetadata。|WFRuntime|  
+|[2029 - CompileVbExpressionStop](2029-compilevbexpressionstop.md)|详细|已完成编译 VB 表达式。|WFRuntime|  
 |[2576 - TryCatchExceptionFromTry](2576-trycatchexceptionfromtry.md)|信息|TryCatch 活动“%1”捕获了“%2”类型的异常。|WFActivities|  
 |[2577 - TryCatchExceptionDuringCancelation](2577-trycatchexceptionduringcancelation.md)|警告|TryCatch 活动“%1”的子活动在取消过程中引发了异常。|WFActivities|  
 |[2578 - TryCatchExceptionFromCatchOrFinally](2578-trycatchexceptionfromcatchorfinally.md)|警告|与 TryCatch 活动“%1”关联的 Catch 或 Finally 活动引发了异常。|WFActivities|  
@@ -115,13 +116,13 @@ ms.locfileid: "96293346"
 |[3502 - InferredOperationDescription](3502-inferredoperationdescription.md)|信息|已从 WorkflowService 中推断出协定“%2”中含有 Name='%1' 的 OperationDescription。 IsOneWay=%3。|WFServices|  
 |[3503 - DuplicateCorrelationQuery](3503-duplicatecorrelationquery.md)|警告|找到了含有 Where='%1' 的重复 CorrelationQuery。 计算相关性时将不使用此重复查询。|WFServices|  
 |[3507 - ServiceEndpointAdded](3507-serviceendpointadded.md)|信息|已为地址“%1”、绑定“%2”和协定“%3”添加了服务终结点。|WFServices|  
-|[3508 - TrackingProfileNotFound](3508-trackingprofilenotfound.md)|“详细”|未找到 ActivityDefinitionId“%2”的 TrackingProfile“%1”。 在配置文件中找不到 TrackingProfile，或 ActivityDefinitionId 不匹配。|WFServices|  
+|[3508 - TrackingProfileNotFound](3508-trackingprofilenotfound.md)|详细|未找到 ActivityDefinitionId“%2”的 TrackingProfile“%1”。 在配置文件中找不到 TrackingProfile，或 ActivityDefinitionId 不匹配。|WFServices|  
 |[3550 - BufferOutOfOrderMessageNoInstance](3550-bufferoutofordermessagenoinstance.md)|信息|此时不能执行操作“%1”。 服务实例准备好处理此特定操作时，将进行另一个尝试。|WFServices|  
 |[3551 - BufferOutOfOrderMessageNoBookmark](3551-bufferoutofordermessagenobookmark.md)|信息|此时不能执行服务实例“%1”上的操作“%2”。 服务实例准备好处理此特定操作时，将进行另一个尝试。|WFServices|  
 |[3552 - MaxPendingMessagesPerChannelExceeded](3552-maxpendingmessagesperchannelexceeded.md)|警告|达到了“%1”的中止值“MaxPendingMessagesPerChannel”。 若要增加此限制，请调整 BufferedReceiveServiceBehavior 中的 MaxPendingMessagesPerChannel 属性。|配额 WFServices|  
 |[3557 - TransactedReceiveScopeEndCommitFailed](3557-transactedreceivescopeendcommitfailed.md)|信息|ID 为“%1”的 CommittableTransaction 上的 EndCommit 调用引发了具有以下消息的 TransactionException:“%2”。|WFServices|  
-|[4201 - EndSqlCommandExecute](4201-endsqlcommandexecute.md)|“详细”|结束 SQL 命令执行: %1|WFInstanceStore|  
-|[4202 - StartSqlCommandExecute](4202-startsqlcommandexecute.md)|“详细”|正在开始 SQL 命令执行: %1|WFInstanceStore|  
+|[4201 - EndSqlCommandExecute](4201-endsqlcommandexecute.md)|详细|结束 SQL 命令执行: %1|WFInstanceStore|  
+|[4202 - StartSqlCommandExecute](4202-startsqlcommandexecute.md)|详细|正在开始 SQL 命令执行: %1|WFInstanceStore|  
 |[4203 - RenewLockSystemError](4203-renewlocksystemerror.md)|错误|未能延长锁定到期日，锁定到期日已过，或者已删除锁定所有者。 正在中止 SqlWorkflowInstanceStore。|WFInstanceStore|  
 |[4205 - FoundProcessingError](4205-foundprocessingerror.md)|错误|命令失败: %1|WFInstanceStore|  
 |[4206 - UnlockInstanceException](4206-unlockinstanceexception.md)|错误|尝试解除实例锁定时遇到异常 %1。|WFInstanceStore|  
@@ -136,6 +137,6 @@ ms.locfileid: "96293346"
 |[39456 - TrackingRecordDropped](39456-trackingrecorddropped.md)|警告|跟踪记录 %1 的大小超出了 ETW 会话对提供程序 %2 允许的最大值|WFTracking|  
 |[39457 - TrackingRecordRaised](39457-trackingrecordraised.md)|信息|跟踪记录 %1 提升为 %2。|WFRuntime|  
 |[39458 - TrackingRecordTruncated](39458-trackingrecordtruncated.md)|警告|用提供程序 %2 向 ETW 会话写入了截断的跟踪记录 %1。 已移除了变量/批注/用户数据|WFTracking|  
-|[39459 - TrackingDataExtracted](39459-trackingdataextracted.md)|“详细”|正在跟踪在活动 %2 中提取的数据 %1。|WFRuntime|  
+|[39459 - TrackingDataExtracted](39459-trackingdataextracted.md)|详细|正在跟踪在活动 %2 中提取的数据 %1。|WFRuntime|  
 |[39460 - TrackingValueNotSerializable](39460-trackingvaluenotserializable.md)|警告|所提取的自变量/变量“%1”不可序列化。|WFTracking|  
 |[57398 - MaxInstancesExceeded](57398-maxinstancesexceeded.md)|警告|系统达到为限制“MaxConcurrentInstances”设置的限制值。 此限制的限制值设置为 %1。 可通过修改 serviceThrottle 元素中的特性“maxConcurrentInstances”或修改行为 ServiceThrottlingBehavior 的“MaxConcurrentInstances”属性来更改限制值。|WFServices|

@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息：存储扩展性
 title: 存储扩展性
 ms.date: 03/30/2017
 ms.assetid: 7c3f4a46-4bac-4138-ae6a-a7c7ee0d28f5
-ms.openlocfilehash: 46c1ea40925a5c79180171da9a705d7e6b7c8b89
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f04c466224aacd1c8f755e7aa60b18846d0c7180
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61641601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755221"
 ---
 # <a name="store-extensibility"></a>存储扩展性
 
@@ -36,9 +37,9 @@ ms.locfileid: "61641601"
     application.Extensions.Add(documentStatusExtension);
     ```
 
-     有关添加自定义持久性参与者的更多详细信息，请参阅[持久性参与者](persistence-participants.md)示例。
+     有关添加自定义持久性参与者的详细信息，请参阅 [持久性参与者](persistence-participants.md) 示例。
 
-3. DP 应用程序中的自定义活动填充中的各种状态字段**Execute**方法。
+3. DP 应用程序中的自定义活动在 **Execute** 方法中填充各种状态字段。
 
     ```csharp
     public override void Execute(CodeActivityContext context)
@@ -52,7 +53,7 @@ ms.locfileid: "61641601"
     }
     ```
 
-4. 当工作流实例达到持久点时， **CollectValues**方法**DocumentStatusExtension**持久性参与者将这些属性保存到持久性数据集合。
+4. 当工作流实例到达持久性点时， **DocumentStatusExtension** 持久性参与者的 **CollectValues** 方法会将这些属性保存到持久性数据集合中。
 
     ```csharp
     class DocumentStatusExtension : PersistenceParticipant
@@ -74,9 +75,9 @@ ms.locfileid: "61641601"
     ```
 
     > [!NOTE]
-    > 所有这些属性传递给**SqlWorkflowInstanceStore**由持久性框架通过**SaveWorkflowCommand.InstanceData**集合。
+    > 持久性框架通过 **SaveWorkflowCommand. InstanceData** 集合将所有这些属性传递给 **SqlWorkflowInstanceStore** 。
 
-5. DP 应用程序初始化 SQL 工作流实例存储并调用**Promote**方法来提升此数据。
+5. DP 应用程序初始化 SQL 工作流实例存储并调用 **升级** 方法来升级此数据。
 
     ```csharp
     SqlWorkflowInstanceStore store = new SqlWorkflowInstanceStore(connectionString);
@@ -92,7 +93,7 @@ ms.locfileid: "61641601"
     store.Promote("DocumentStatus", variantProperties, null);
     ```
 
-    根据此提升信息， **SqlWorkflowInstanceStore**将数据属性放置中的列[InstancePromotedProperties](#InstancePromotedProperties)视图。
+    根据此促销信息， **SqlWorkflowInstanceStore** 将数据属性置于 [InstancePromotedProperties](#InstancePromotedProperties) 视图的列中。
 
 6. 为了从提升表中查询某个数据子集，DP 应用程序在提升视图之上添加一个自定义视图。
 
@@ -109,9 +110,9 @@ ms.locfileid: "61641601"
     go
     ```
 
-## <a name="InstancePromotedProperties"></a> [System.Activities.DurableInstancing.InstancePromotedProperties] view
+## <a name="systemactivitiesdurableinstancinginstancepromotedproperties-view"></a><a name="InstancePromotedProperties"></a> [InstancePromotedProperties] 视图
 
-|列名|列名称|描述|
+|列名|列类型|说明|
 |-----------------|-----------------|-----------------|
 |InstanceId|GUID|此提升所属的工作流实例。|
 |PromotionName|nvarchar(400)|提升本身的名称。|
