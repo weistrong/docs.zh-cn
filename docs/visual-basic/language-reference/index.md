@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 语言参考
 title: 语言参考
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - language reference, Visual Basic
 - Visual Basic, language reference
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
-ms.openlocfilehash: dd7b26d7b5acf924c3eac39b7a67c35245945aaa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 47a299437b5f3ceab1cb24b8a09666366c546a64
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84362471"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731027"
 ---
 # <a name="visual-basic-language-reference"></a>Visual Basic 语言参考
 
@@ -41,7 +42,7 @@ ms.locfileid: "84362471"
  [数据类型](data-types/index.md)  
  记录 Visual Basic 中可用的数据类型。  
   
- [Using](directives/index.md)  
+ [指令](directives/index.md)  
  记录 Visual Basic 中可用的编译器指令。  
   
  [函数](functions/index.md)  
@@ -66,7 +67,7 @@ ms.locfileid: "84362471"
  记录 Visual Basic 中可用的属性。  
   
  [查询](queries/index.md)  
- 提供有关在代码中使用语言集成查询（LINQ）表达式的参考信息。  
+ 提供有关在代码中使用 Language-Integrated 查询 (LINQ) 表达式的参考信息。  
   
  [语句](statements/index.md)  
  记录 Visual Basic 中提供的声明和可执行语句。  
@@ -86,4 +87,4 @@ ms.locfileid: "84362471"
 ## <a name="related-sections"></a>相关章节  
 
  [Visual Basic 命令行编译器](../reference/command-line-compiler/index.md)  
- 描述如何使用命令行编译器作为从 Visual Studio 集成开发环境（IDE）中编译程序的替代方法。
+ 描述如何使用命令行编译器作为从 Visual Studio 集成开发环境中编译程序的替代方法 (IDE) 。

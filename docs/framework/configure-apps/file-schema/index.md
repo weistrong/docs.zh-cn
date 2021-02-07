@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： .NET Framework 的配置文件架构
 title: .NET Framework 的配置文件架构
 ms.date: 05/01/2017
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - configuration settings [.NET Framework], applications
 - configuration file reference [.NET Framework]
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
-ms.openlocfilehash: ab6f12be01899f5b7e54a7ec2d9675d502d88bc3
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: eac6d14f29f5ae0eeb65efe5a1416b8f40583be3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555128"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729948"
 ---
 # <a name="configuration-file-schema-for-the-net-framework"></a>.NET Framework 的配置文件架构
 
@@ -37,7 +38,7 @@ ms.locfileid: "90555128"
 > [!IMPORTANT]
 > 配置文件中的 XML 标记和特性区分大小写。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 
 [**\<configuration>** Element](configuration-element.md)\
 所有配置文件的顶级元素。
@@ -76,7 +77,7 @@ ms.locfileid: "90555128"
 包含自定义应用程序设置，如文件路径、XML Web service URL 或应用程序的任何其他自定义配置信息。
 
 [Web 设置架构](./web/index.md)\
-用于配置 ASP.NET 如何与主机应用程序（如 IIS）一起工作的元素。 在 Aspnet.config** 文件中使用。
+用于配置 ASP.NET 如何与主机应用程序（如 IIS）一起工作的元素。 在 Aspnet.config 文件中使用。
 
 [Windows 窗体配置架构](winforms/index.md)\
 Windows 窗体应用程序配置部分中的所有元素，包括多监视器和高 DPI 支持等自定义。

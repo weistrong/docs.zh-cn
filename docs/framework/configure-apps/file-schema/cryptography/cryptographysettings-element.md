@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <cryptographySettings> 元素
 title: <cryptographySettings> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - cryptographySettings element
 - <cryptographySettings> element
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
-ms.openlocfilehash: 3c3513c05485550202f2fc5bcae1faabb0e75d47
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: afd4fdbc24dfaac60ce24b7a439a8d4d8a9427ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201806"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730091"
 ---
 # <a name="cryptographysettings-element"></a>\<cryptographySettings> 元素
 
@@ -40,14 +41,14 @@ ms.locfileid: "91201806"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<cryptoNameMapping>](cryptonamemapping-element.md)|包含类到友好名称的映射。|  
 |[\<oidMap>](oidmap-element.md)|包含) 映射到类 (OID 对象标识符。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`mscorlib`|包含 `cryptographySettings` 元素。|  

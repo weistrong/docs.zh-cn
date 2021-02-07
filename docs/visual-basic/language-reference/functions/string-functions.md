@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息： (Visual Basic 的字符串函数) '
 title: 字符串函数
 ms.date: 07/20/2015
 helpviewer_keywords:
 - string functions
 ms.assetid: f1bf9ac2-cbcf-4298-ae51-53182076bdc8
-ms.openlocfilehash: 778e57eadd75baf1aabd100f9d8d41a490f79a04
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1c121bc3de66caf748426b5cd04d049b30bf78bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406283"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731102"
 ---
 # <a name="string-functions-visual-basic"></a>字符串函数 (Visual Basic)
 
@@ -47,7 +48,7 @@ ms.locfileid: "84406283"
 |<xref:Microsoft.VisualBasic.Strings.Trim%2A>|返回一个字符串，该字符串包含不带前导空格或尾随空格的指定字符串的副本。|
 |<xref:Microsoft.VisualBasic.Strings.UCase%2A>|返回一个字符串或字符，其中包含转换为大写的指定字符串。|
 
-您可以使用[Option Compare](../statements/option-compare-statement.md)语句来设置是使用不区分大小写的文本排序顺序（由系统的区域设置（ `Text` ）决定），还是通过字符的内部二进制表示形式来比较字符串（ `Binary` ）。 默认的文本比较方法是 `Binary`。
+您可以使用 [Option Compare](../statements/option-compare-statement.md) 语句来设置是否使用由您的系统区域设置确定的不区分大小写的文本排序顺序对字符串进行比较 (`Text`) 或 () 字符的内部二进制表示形式 `Binary` 。 默认的文本比较方法是 `Binary`。
 
 ## <a name="example-ucase"></a>示例： UCase
 
@@ -87,7 +88,7 @@ ms.locfileid: "84406283"
 
 [!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [关键字](../keywords/index.md)
 - [Visual Basic 运行库成员](../runtime-library-members.md)

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：迭代器 (Visual Basic) '
 title: 迭代器
 ms.date: 07/20/2015
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Iterator keyword [Visual Basic]
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
-ms.openlocfilehash: 0b459a16317b8ba55886e52ecadb227ddf2fee83
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 7a3329ba23a3f2487343b332f3bb9c4b19c36496
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875429"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730520"
 ---
 # <a name="iterator-visual-basic"></a>迭代器 (Visual Basic)
 
@@ -19,7 +20,7 @@ ms.locfileid: "90875429"
   
 ## <a name="remarks"></a>备注  
 
- *迭代器*对集合执行自定义迭代。 迭代器使用 [Yield](../statements/yield-statement.md) 语句每次返回集合中的每个元素。 当 `Yield` 到达语句时，会保留代码中的当前位置。 下次调用迭代器函数时，将从该位置重新开始执行。  
+ *迭代器* 对集合执行自定义迭代。 迭代器使用 [Yield](../statements/yield-statement.md) 语句每次返回集合中的每个元素。 当 `Yield` 到达语句时，会保留代码中的当前位置。 下次调用迭代器函数时，将从该位置重新开始执行。  
   
  迭代器可作为函数实现或作为 `Get` 属性定义的访问器。 `Iterator`修饰符出现在迭代器函数或访问器的声明中 `Get` 。  
   
@@ -55,7 +56,7 @@ ms.locfileid: "90875429"
   
  有关其他示例，请参阅 [迭代](../../programming-guide/concepts/iterators.md)器。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>
 - [迭代器](../../programming-guide/concepts/iterators.md)

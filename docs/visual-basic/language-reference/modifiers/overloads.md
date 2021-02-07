@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 重载) '
 title: 重载
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Shadows keyword [Visual Basic]
 - signature, hiding by
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
-ms.openlocfilehash: bd0931cab520f8580c0d7473a44e350752e287bb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7f0b440b537500595e465d8aabc7724671f3ae95
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392101"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730507"
 ---
 # <a name="overloads-visual-basic"></a>Overloads (Visual Basic)
 
@@ -23,15 +24,15 @@ ms.locfileid: "84392101"
 
 ## <a name="remarks"></a>备注
 
-*重载*是为同一范围内的给定属性或过程名称提供多个定义的做法。 重新声明具有不同签名的属性或过程有时称为 "*按签名隐藏*"。
+*重载* 是为同一范围内的给定属性或过程名称提供多个定义的做法。 重新声明具有不同签名的属性或过程有时称为 " *按签名隐藏*"。
 
 ## <a name="rules"></a>规则
 
 - **声明上下文。** `Overloads`只能在属性或过程声明语句中使用。
 
-- **组合修饰符。** 不能 `Overloads` 在同一过程声明中同时指定和[阴影](shadows.md)。
+- **组合修饰符。** 不能 `Overloads` 在同一过程声明中同时指定和 [阴影](shadows.md) 。
 
-- **必需的差异。** 此声明中的*签名*必须与它重载的每个属性或过程的签名不同。 签名包含属性或过程名以及以下内容：
+- **必需的差异。** 此声明中的 *签名* 必须与它重载的每个属性或过程的签名不同。 签名包含属性或过程名以及以下内容：
 
   - 参数的数量
 
@@ -61,7 +62,7 @@ ms.locfileid: "84392101"
 
 - **可选修饰符。** 在 `Overloads` 同一个类中定义多个重载属性或过程时，无需使用修饰符。 然而，如果在某个声明中使用 `Overloads`，则必须在所有的声明中使用它。
 
-- **隐藏和重载。** `Overloads`还可用于在基类中隐藏现有成员或重载成员集。 以这种方式使用 `Overloads` 时，应使用与基类成员相同的名称和参数列表来声明属性或方法，并且不提供 `Shadows` 关键字。
+- **隐藏和重载。** `Overloads` 还可用于在基类中隐藏现有成员或重载成员集。 以这种方式使用 `Overloads` 时，应使用与基类成员相同的名称和参数列表来声明属性或方法，并且不提供 `Shadows` 关键字。
 
 如果使用 `Overrides`，编译器将隐式添加 `Overloads`，以便库 API 更轻松地使用 C#。
 
@@ -75,7 +76,7 @@ ms.locfileid: "84392101"
 
 - [Sub 语句](../statements/sub-statement.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Shadows](shadows.md)
 - [过程重载](../../programming-guide/language-features/procedures/procedure-overloading.md)

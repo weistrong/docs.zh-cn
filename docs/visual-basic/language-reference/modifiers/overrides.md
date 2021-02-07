@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：重写 (Visual Basic) '
 title: 替代
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - overriding, Overrides keyword
 - properties [Visual Basic], overriding
 ms.assetid: 9f5e6144-ce10-465e-842b-1a8f8760af90
-ms.openlocfilehash: 657f838b2959a5b6a7cef5ff18295a4ada709e9a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d118bf4e366ff8f84806586dfc3977612ed6eff4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730442"
 ---
 # <a name="overrides-visual-basic"></a>Overrides (Visual Basic)
 
@@ -30,7 +31,7 @@ ms.locfileid: "84392023"
 
 - **组合修饰符。** 不能在 `Overrides` `Shadows` 同一声明中同时指定和或 `Shared` 。 由于重写元素是隐式可重写的，因此不能将 `Overridable` 与 `Overrides` 组合到一起。
 
-- **匹配签名。** 此声明的签名必须与它所重写的属性或过程的*签名*完全匹配。 这意味着参数列表必须具有相同数量的参数，并且排序顺序和数据类型都必须完全相同。
+- **匹配签名。** 此声明的签名必须与它所重写的属性或过程的 *签名* 完全匹配。 这意味着参数列表必须具有相同数量的参数，并且排序顺序和数据类型都必须完全相同。
 
   除签名外，重写的声明还必须完全匹配以下项：
 
@@ -42,13 +43,13 @@ ms.locfileid: "84392023"
 
 - **附加匹配。** 除匹配基类版本的签名外，此声明还必须在以下方面与其匹配：
 
-  - 访问级别修饰符（如[Public](public.md)）
+  - 访问级别修饰符 (如 [公用](public.md)) 
 
-  - 传递每个参数的机制（[ByVal](byval.md)或[ByRef](byref.md)）
+  - 将每个参数的机制传递 ([ByVal](byval.md) 或 [ByRef](byref.md)) 
 
   - 泛型过程的每个类型参数的约束列表
 
-- **隐藏和重写操作。** 隐藏和重写操作都可重新定义继承的元素，但这两种方法之间又具有很大的差异。 有关详细信息，请参阅[Visual Basic 中的隐藏](../../programming-guide/language-features/declared-elements/shadowing.md)。
+- **隐藏和重写操作。** 隐藏和重写操作都可重新定义继承的元素，但这两种方法之间又具有很大的差异。 有关详细信息，请参阅 [Visual Basic 中的隐藏](../../programming-guide/language-features/declared-elements/shadowing.md)。
 
 如果使用 `Overrides`，编译器将隐式添加 `Overloads`，以便库 API 更轻松地使用 C#。
 
@@ -60,7 +61,7 @@ ms.locfileid: "84392023"
 
 - [Sub 语句](../statements/sub-statement.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [New](mustoverride.md)
 - [NotOverridable](notoverridable.md)

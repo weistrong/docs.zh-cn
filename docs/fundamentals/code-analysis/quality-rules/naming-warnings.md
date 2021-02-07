@@ -11,18 +11,18 @@ helpviewer_keywords:
 - rules, naming
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 88e7ec6bc1051fa98c46696b2193a5d5912eb111
-ms.sourcegitcommit: 2e4adc490c1d2a705a0592b295d606b10b9f51f1
+ms.openlocfilehash: 57524fbff364fd03a90b90a0900bd17e9c8a9248
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "96590171"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732314"
 ---
 # <a name="naming-rules"></a>命名规则
 
-命名规则支持遵从 .NET 设计准则的命名约定。
+命名规则支持遵从 [.net 设计准则的命名约定](../../../standard/design-guidelines/naming-guidelines.md)。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 
 |规则|描述|
 |----------|-----------------|

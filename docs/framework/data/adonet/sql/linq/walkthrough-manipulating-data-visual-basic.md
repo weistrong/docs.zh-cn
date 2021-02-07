@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：演练：操作数据 (Visual Basic) '
 title: 演练：操作数据 (Visual Basic)
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: 1f6a54f6-ec33-452a-a37d-48122207bf14
-ms.openlocfilehash: dbf18273e69ff0977f5d16ff179b8659865ef696
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 22bef61c294a92984446402063bf14b06f5b2b2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164046"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729518"
 ---
 # <a name="walkthrough-manipulating-data-visual-basic"></a>演练：操作数据 (Visual Basic)
 
@@ -67,21 +68,21 @@ ms.locfileid: "91164046"
   
 4. 在 " **名称** " 框中，键入 **LinqDataManipulationApp**。  
   
-5. 单击“确定”。   
+5. 单击“确定”。  
   
 ## <a name="adding-linq-references-and-directives"></a>添加 LINQ 引用和指令  
 
- 本演练用到默认情况下您的项目中可能未安装的程序集。 如果 `System.Data.Linq` 未在你的项目中列为引用 (请单击 "显示**解决方案资源管理器**中的**所有文件**"，然后展开 "**引用**" 节点) "添加"，如以下步骤中所述。  
+ 本演练用到默认情况下您的项目中可能未安装的程序集。 如果 `System.Data.Linq` 未在你的项目中列为引用 (请单击 "显示 **解决方案资源管理器** 中的 **所有文件**"，然后展开 "**引用**" 节点) "添加"，如以下步骤中所述。  
   
 #### <a name="to-add-systemdatalinq"></a>添加 System.Data.Linq  
   
-1. 在 **解决方案资源管理器**中，右键单击 " **引用**"，然后单击 " **添加引用**"。  
+1. 在 **解决方案资源管理器** 中，右键单击 " **引用**"，然后单击 " **添加引用**"。  
   
 2. 在 " **添加引用** " 对话框中，单击 " **.net**"，单击 "system.web" 程序集，然后单击 **"确定"**。  
   
      此程序集即被添加到项目中。  
   
-3. 在代码编辑器中，将以下指令添加到 **Module1**上方：  
+3. 在代码编辑器中，将以下指令添加到 **Module1** 上方：  
   
      [!code-vb[DLinqWalk3VB#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk3VB/vb/Module1.vb#1)]  
   
@@ -91,7 +92,7 @@ ms.locfileid: "91164046"
   
 #### <a name="to-add-the-northwind-code-file-to-the-project"></a>将 northwind 代码文件添加到项目  
   
-1. 在“项目”**** 菜单上，单击“添加现有项”****。  
+1. 在“项目”菜单上，单击“添加现有项”。  
   
 2. 在 " **添加现有项** " 对话框中，导航到 "c:\linqtest2\northwind.vb"，然后单击 " **添加**"。  
   
@@ -111,7 +112,7 @@ ms.locfileid: "91164046"
   
      此时将打开一个 **控制台** 窗口。  
   
-     在**控制台**窗口中按 enter，或在 Visual Studio 的 "**调试**" 菜单上单击 "**停止调试**"，以关闭应用程序。  
+     在 **控制台** 窗口中按 enter，或在 Visual Studio 的 "**调试**" 菜单上单击 "**停止调试**"，以关闭应用程序。  
   
 ## <a name="creating-a-new-entity"></a>创建新实体  
 

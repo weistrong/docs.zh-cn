@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： SingleTagSectionHandler 的自定义元素
 title: SingleTagSectionHandler 的自定义元素
 ms.date: 05/01/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom element
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
-ms.openlocfilehash: a40f35838655f6021af0b2e966335803ec8c16b4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 83022a1ebf295b89d5f868589e3d9a77c78e3fab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "80635402"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729974"
 ---
 # <a name="custom-element-for-singletagsectionhandler"></a>SingleTagSectionHandler 的自定义元素
 
@@ -61,8 +62,8 @@ ms.locfileid: "80635402"
 
 ## <a name="configuration-file"></a>配置文件
 
-此元素可用于应用程序配置文件、计算机配置文件（*machine.config*）和不在应用程序目录级别*的 web.config 文件*。
+此元素可用于应用程序配置文件、计算机配置文件 (*Machine.config*) 和 *Web.config* 不在应用程序目录级别的文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [.NET Framework 的配置文件架构](index.md)

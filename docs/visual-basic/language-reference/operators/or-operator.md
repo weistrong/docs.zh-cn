@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下方面的详细信息：或运算符 (Visual Basic) '
 title: Or 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - logical disjunction
 - disjunction operator [Visual Basic]
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
-ms.openlocfilehash: f6cfd1073ada42aa2db8be9b14c81319bc0db294
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: dfc50af2298c162707976e4b2eda9e9536aa64bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874757"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730325"
 ---
 # <a name="or-operator-visual-basic"></a>Or 运算符 (Visual Basic)
 
@@ -55,7 +56,7 @@ result = expression1 Or expression2
 |`False`|`False`|`False`|  
   
 > [!NOTE]
-> 在 `Boolean` 比较中， `Or` 运算符始终计算两个表达式，这可能包括进行过程调用。 [OrElse 运算符](orelse-operator.md)执行*短路*，这意味着，如果 `expression1` 为，则 `True` `expression2` 不计算。  
+> 在 `Boolean` 比较中， `Or` 运算符始终计算两个表达式，这可能包括进行过程调用。 [OrElse 运算符](orelse-operator.md)执行 *短路*，这意味着，如果 `expression1` 为，则 `True` `expression2` 不计算。  
   
  对于按位运算， `Or` 运算符对两个数值表达式中的相同位置执行按位比较，并根据下表设置中的相应位 `result` 。  
   
@@ -77,7 +78,7 @@ result = expression1 Or expression2
   
 ## <a name="overloading"></a>重载  
 
- `Or`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ `Or`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -95,7 +96,7 @@ result = expression1 Or expression2
   
  前面的示例分别生成10、14和14的结果。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [逻辑/按位运算符 (Visual Basic)](logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](operator-precedence.md)

@@ -1,4 +1,5 @@
 ---
+description: '详细了解： <add> webRequestModules 的元素 (网络设置) '
 title: webRequestModules 的 <add> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - add element, webRequestModules
 - <add> element, webRequestModules
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
-ms.openlocfilehash: 8d792b967d967540469dca7c090e0f905ecb2e6b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1edb63a1e1095bb4b3c3d749fd389ffaad5ddf9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201754"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729885"
 ---
 # <a name="add-element-for-webrequestmodules-network-settings"></a>webRequestModules 的 \<add> 元素（网络设置）
 

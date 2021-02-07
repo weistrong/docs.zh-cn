@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：演练：操作数据 (c # ) '
 title: 演练：操作数据 (C#)
 ms.date: 03/30/2017
 ms.assetid: 24adfbe0-0ad6-449f-997d-8808e0770d2e
-ms.openlocfilehash: fefbee533634ee42785c65e0265ce1e0567561b5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6176709a2e02d8c06ec54b70cc6e0e4c302509c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164059"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729583"
 ---
 # <a name="walkthrough-manipulating-data-c"></a>演练：操作数据 (C#)
 
@@ -67,7 +68,7 @@ ms.locfileid: "91164059"
   
 5. 在 " **位置** " 框中，验证要存储项目文件的位置。  
   
-6. 单击“确定”。   
+6. 单击“确定”。  
   
 ## <a name="adding-linq-references-and-directives"></a>添加 LINQ 引用和指令  
 
@@ -75,7 +76,7 @@ ms.locfileid: "91164059"
   
 #### <a name="to-add-systemdatalinq"></a>添加 System.Data.Linq  
   
-1. 在 **解决方案资源管理器**中，右键单击 " **引用**"，然后单击 " **添加引用**"。  
+1. 在 **解决方案资源管理器** 中，右键单击 " **引用**"，然后单击 " **添加引用**"。  
   
 2. 在 " **添加引用** " 对话框中，单击 " **.net**"，单击 "system.web" 程序集，然后单击 **"确定"**。  
   
@@ -91,7 +92,7 @@ ms.locfileid: "91164059"
   
 #### <a name="to-add-the-northwind-code-file-to-the-project"></a>将 northwind 代码文件添加到项目  
   
-1. 在“项目”**** 菜单上，单击“添加现有项”****。  
+1. 在“项目”菜单上，单击“添加现有项”。  
   
 2. 在 " **添加现有项** " 对话框中，导航到 "c:\linqtest6\northwind.cs"，然后单击 " **添加**"。  
   
@@ -111,7 +112,7 @@ ms.locfileid: "91164059"
   
      此时将打开一个 **控制台** 窗口。  
   
-     可以通过在**控制台**窗口中按 enter，或在 Visual Studio 的 "**调试**" 菜单上单击 "**停止调试**" 来关闭应用程序。  
+     可以通过在 **控制台** 窗口中按 enter，或在 Visual Studio 的 "**调试**" 菜单上单击 "**停止调试**" 来关闭应用程序。  
   
 ## <a name="creating-a-new-entity"></a>创建新实体  
 

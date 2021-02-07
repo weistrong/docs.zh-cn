@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <nameEntry> 元素
 title: <nameEntry> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <nameEntry> element
 - nameEntry element
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
-ms.openlocfilehash: 4341b1fcd3762e5aa55f0ba988f7f49d4b5cacd6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0ca227a2ba17a6b1e67fb75ec91aac9194b54737
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730000"
 ---
 # <a name="nameentry-element"></a>\<nameEntry> 元素
 
@@ -37,10 +38,10 @@ ms.locfileid: "91201767"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|name|必需的特性。<br /><br /> 指定密码类实现的算法的友好名称。|  
-|**class**|必需的特性。<br /><br /> 指定元素中 **name** 属性的值 [\<cryptoClass>](cryptoclass-element.md) 。|  
+|**name**|必需的特性。<br /><br /> 指定密码类实现的算法的友好名称。|  
+|class |必需的特性。<br /><br /> 指定元素中 **name** 属性的值 [\<cryptoClass>](cryptoclass-element.md) 。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -48,14 +49,14 @@ ms.locfileid: "91201767"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.web`|为 ASP.NET 配置节指定根元素。|  
   
 ## <a name="remarks"></a>备注  
 
- **Name**属性可以是在命名空间中找到的某个抽象类的名称 <xref:System.Security.Cryptography> 。 对抽象加密类调用 **Create** 方法时，会将抽象类名称传递给 <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> 方法。 **Cryptoconfig.createfromname** 返回 **类** 特性指示的类型的实例。 如果 **name** 属性是一个短名称，例如 RSA，则可以在调用 **cryptoconfig.createfromname** 方法时使用该名称。  
+ **Name** 属性可以是在命名空间中找到的某个抽象类的名称 <xref:System.Security.Cryptography> 。 对抽象加密类调用 **Create** 方法时，会将抽象类名称传递给 <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> 方法。 **Cryptoconfig.createfromname** 返回 **类** 特性指示的类型的实例。 如果 **name** 属性是一个短名称，例如 RSA，则可以在调用 **cryptoconfig.createfromname** 方法时使用该名称。  
   
 ## <a name="example"></a>示例  
 

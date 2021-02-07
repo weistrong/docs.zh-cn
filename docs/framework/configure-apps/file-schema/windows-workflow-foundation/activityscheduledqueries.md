@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <activityScheduledQueries>
 title: <activityScheduledQueries>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: ca6e82f1-54f2-48d6-899c-9873065b5547
-ms.openlocfilehash: 936267f7d61dfd09af45ddb96b4406c92c30b3b2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1f43642edffea782a9e5257a3568868645994a46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729831"
 ---
 # \<activityScheduledQueries>
 
@@ -48,13 +49,13 @@ ms.locfileid: "91148771"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<activityScheduledQuery>](activityscheduledquery.md)|一个查询，用于跟踪安排给父活动来执行的活动。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<workflow>](workflow.md)|一个配置元素，该元素包含由 **activityDefinitionId** 属性标识的特定工作流的所有查询。|  
   

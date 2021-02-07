@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <assemblyBinding> 的元素 <configuration>
 title: <configuration> 的 <assemblyBinding> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - assemblyBinding Element
 - <assemblyBinding> Element
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
-ms.openlocfilehash: 21cf5e749b0dae310c3326f8abf82c6678fc97e9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5cc3fc7cccd4b9dc7b62815734ff76e32e2243d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155474"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730104"
 ---
 # <a name="assemblybinding-element-for-configuration"></a>\<configuration> 的 \<assemblyBinding> 元素
 
@@ -28,7 +29,7 @@ ms.locfileid: "79155474"
 </assemblyBinding>
 ```
 
-## <a name="attribute"></a>属性
+## <a name="attribute"></a>Attribute
 
 |           | 说明 |
 | --------- | ----------- |
@@ -36,7 +37,7 @@ ms.locfileid: "79155474"
 
 ## <a name="parent-element"></a>父元素
 
-|     | 说明 |
+|     | 描述 |
 | --- | ----------- |
 | [**\<configuration>**](configuration-element.md) | 公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。 |
 
@@ -46,7 +47,7 @@ ms.locfileid: "79155474"
 | --- | ----------- |
 | [**\<linkedConfiguration>**](linkedconfiguration-element.md) | 指定要包含的配置文件。 |
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 [**\<linkedConfiguration>**](linkedconfiguration-element.md)元素通过允许应用程序配置文件在众所周知的位置包含程序集配置文件，而不是复制程序集配置设置，从而简化了组件程序集的管理。
 
@@ -65,6 +66,6 @@ ms.locfileid: "79155474"
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [.NET Framework 的配置文件架构](index.md)

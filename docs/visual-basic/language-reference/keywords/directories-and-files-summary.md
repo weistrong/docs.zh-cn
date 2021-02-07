@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：目录和文件摘要 (Visual Basic) '
 title: 目录和文件摘要
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - directories [Visual Basic], Visual Basic
 - files [Visual Basic], summary
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
-ms.openlocfilehash: 84e5ac5276eeddf399003f72ef72e7117feb011b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 4f0d05cfa94076e1619748042faca61008a3a1c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90868928"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730741"
 ---
 # <a name="directories-and-files-summary-visual-basic"></a>目录和文件摘要 (Visual Basic)
 
@@ -19,7 +20,7 @@ Visual Basic 语言关键字和运行时库成员按用途和使用进行组织�
   
  `My`与使用这些成员相比，使用此功能可为文件 i/o 操作提供更高的工作效率和性能。 有关详细信息，请参阅 <xref:Microsoft.VisualBasic.FileIO.FileSystem>。  
   
-|**操作**|**Language 元素**|  
+|**操作**|**语言元素**|  
 |----------------|--------------------------|  
 |更改目录或文件夹。|<xref:Microsoft.VisualBasic.FileSystem.ChDir%2A>|  
 |更改驱动器。|<xref:Microsoft.VisualBasic.FileSystem.ChDrive%2A>|  
@@ -34,7 +35,7 @@ Visual Basic 语言关键字和运行时库成员按用途和使用进行组织�
 |返回文件的名称或卷标。|<xref:Microsoft.VisualBasic.FileSystem.Dir%2A>|  
 |设置文件的属性信息。|<xref:Microsoft.VisualBasic.FileSystem.SetAttr%2A>|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [关键字](index.md)
 - [Visual Basic 运行库成员](../runtime-library-members.md)

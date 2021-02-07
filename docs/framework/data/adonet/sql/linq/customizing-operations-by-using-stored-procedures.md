@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用存储过程自定义操作
 title: 通过使用存储过程自定义操作
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a
-ms.openlocfilehash: 3034af783f754a0fa044f13cba0df21e277bc1da
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aa345ef8404b7cae7d96f75bb60325793767cd50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729531"
 ---
 # <a name="customizing-operations-by-using-stored-procedures"></a>通过使用存储过程自定义操作
 
@@ -23,7 +24,7 @@ ms.locfileid: "91173505"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  在下面的示例中，假定 `Northwind` 类包含两个方法，这两个方法可用来调用要用于派生类中的重写的存储过程。  
   
@@ -34,7 +35,7 @@ ms.locfileid: "91173505"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的类将这些方法用于重写。  
   
@@ -45,7 +46,7 @@ ms.locfileid: "91173505"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  您可以完全像使用 `NorthwindThroughSprocs` 一样使用 `Northwnd`。  
   

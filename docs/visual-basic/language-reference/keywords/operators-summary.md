@@ -1,4 +1,5 @@
 ---
+description: '详细了解：操作员 Summary (Visual Basic) '
 title: 运算符摘要
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - symbols, operators
 - Visual Basic code, operators
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
-ms.openlocfilehash: c268ee548a43d31e353f1f1b2679db36d7f86f14
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: aebdd1e6239e1f7a0792b82048f07ca7b30b23ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730572"
 ---
 # <a name="operators-summary-visual-basic"></a>运算符摘要 (Visual Basic)
 
@@ -26,7 +27,7 @@ Visual Basic 语言关键字和运行时库成员按用途和使用进行组织�
 |逻辑/按位运算|[Not](../operators/not-operator.md)、 [And](../operators/and-operator.md)、 [Or](../operators/or-operator.md)、 [Xor](../operators/xor-operator.md)、 [AndAlso](../operators/andalso-operator.md)、 [OrElse](../operators/orelse-operator.md)|  
 |其他操作|[AddressOf](../operators/addressof-operator.md)、 [Await](../operators/await-operator.md)、 [GetType](../operators/gettype-operator.md)|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [关键字](index.md)
 - [Visual Basic 运行库成员](../runtime-library-members.md)

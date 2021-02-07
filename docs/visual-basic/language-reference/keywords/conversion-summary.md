@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：转换摘要 (Visual Basic) '
 title: 转换摘要
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - conversions [Visual Basic], Visual Basic
 - type conversion [Visual Basic], keywords
 ms.assetid: ae2c79a7-2d62-4fbe-8585-14360d11f987
-ms.openlocfilehash: a1e4df718eeac3f547fa29c148d5fc81880e3336
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 3bc299e29cd4bee8ec99e17cbb71b779bd76f5d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730884"
 ---
 # <a name="conversion-summary-visual-basic"></a>转换摘要 (Visual Basic)
 
@@ -32,7 +33,7 @@ Visual Basic 语言关键字和运行时库成员按用途和使用进行组织�
 |将字符串转换为数字。|<xref:Microsoft.VisualBasic.Conversion.Val%2A>|  
 |将时间转换为序列号。|<xref:Microsoft.VisualBasic.DateAndTime.TimeSerial%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeValue%2A>|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [关键字](index.md)
 - [Visual Basic 运行库成员](../runtime-library-members.md)
