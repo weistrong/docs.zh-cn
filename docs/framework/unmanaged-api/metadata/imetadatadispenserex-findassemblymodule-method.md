@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataDispenserEx：： FindAssemblyModule 方法
 title: IMetaDataDispenserEx::FindAssemblyModule 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: d1fb65e1-7e19-4513-85b1-44f87c294d3e
 topic_type:
 - apiref
-ms.openlocfilehash: 5bc622c013e62fa9c03476cc5927133682020426
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 39ea13a2d8f2436e86db513aaa33f990f43d8132
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700595"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753570"
 ---
-# <a name="imetadatadispenserexfindassemblymodule-method"></a><span data-ttu-id="7dc07-102">IMetaDataDispenserEx::FindAssemblyModule 方法</span><span class="sxs-lookup"><span data-stu-id="7dc07-102">IMetaDataDispenserEx::FindAssemblyModule Method</span></span>
+# <a name="imetadatadispenserexfindassemblymodule-method"></a><span data-ttu-id="abde0-103">IMetaDataDispenserEx::FindAssemblyModule 方法</span><span class="sxs-lookup"><span data-stu-id="abde0-103">IMetaDataDispenserEx::FindAssemblyModule Method</span></span>
 
-<span data-ttu-id="7dc07-103">未实现此方法。</span><span class="sxs-lookup"><span data-stu-id="7dc07-103">This method is not implemented.</span></span> <span data-ttu-id="7dc07-104">如果调用，它将返回 E_NOTIMPL。</span><span class="sxs-lookup"><span data-stu-id="7dc07-104">If called, it returns E_NOTIMPL.</span></span>  
+<span data-ttu-id="abde0-104">未实现此方法。</span><span class="sxs-lookup"><span data-stu-id="abde0-104">This method is not implemented.</span></span> <span data-ttu-id="abde0-105">如果调用，它将返回 E_NOTIMPL。</span><span class="sxs-lookup"><span data-stu-id="abde0-105">If called, it returns E_NOTIMPL.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7dc07-105">语法</span><span class="sxs-lookup"><span data-stu-id="7dc07-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="abde0-106">语法</span><span class="sxs-lookup"><span data-stu-id="abde0-106">Syntax</span></span>  
   
 ```cpp  
 HRESULT FindAssemblyModule(  
@@ -41,43 +42,43 @@ HRESULT FindAssemblyModule(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="7dc07-106">参数</span><span class="sxs-lookup"><span data-stu-id="7dc07-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="abde0-107">参数</span><span class="sxs-lookup"><span data-stu-id="abde0-107">Parameters</span></span>  
 
  `szAppBase`  
- <span data-ttu-id="7dc07-107">中不使用。</span><span class="sxs-lookup"><span data-stu-id="7dc07-107">[in] Not used.</span></span>  
+ <span data-ttu-id="abde0-108">中不使用。</span><span class="sxs-lookup"><span data-stu-id="abde0-108">[in] Not used.</span></span>  
   
  `szPrivateBin`  
- <span data-ttu-id="7dc07-108">中不使用。</span><span class="sxs-lookup"><span data-stu-id="7dc07-108">[in] Not used.</span></span>  
+ <span data-ttu-id="abde0-109">中不使用。</span><span class="sxs-lookup"><span data-stu-id="abde0-109">[in] Not used.</span></span>  
   
  `szGlobalBin`  
- <span data-ttu-id="7dc07-109">中不使用。</span><span class="sxs-lookup"><span data-stu-id="7dc07-109">[in] Not used.</span></span>  
+ <span data-ttu-id="abde0-110">中不使用。</span><span class="sxs-lookup"><span data-stu-id="abde0-110">[in] Not used.</span></span>  
   
  `szAssemblyName`  
- <span data-ttu-id="7dc07-110">中模块的名称。</span><span class="sxs-lookup"><span data-stu-id="7dc07-110">[in] The name of the module.</span></span>  
+ <span data-ttu-id="abde0-111">中模块的名称。</span><span class="sxs-lookup"><span data-stu-id="abde0-111">[in] The name of the module.</span></span>  
   
  `szModuleName`  
- <span data-ttu-id="7dc07-111">中要查找的程序集。</span><span class="sxs-lookup"><span data-stu-id="7dc07-111">[in] The assembly to be found.</span></span>  
+ <span data-ttu-id="abde0-112">中要查找的程序集。</span><span class="sxs-lookup"><span data-stu-id="abde0-112">[in] The assembly to be found.</span></span>  
   
  `szName`  
- <span data-ttu-id="7dc07-112">弄程序集的简单名称。</span><span class="sxs-lookup"><span data-stu-id="7dc07-112">[out] The simple name of the assembly.</span></span>  
+ <span data-ttu-id="abde0-113">弄程序集的简单名称。</span><span class="sxs-lookup"><span data-stu-id="abde0-113">[out] The simple name of the assembly.</span></span>  
   
  `cchName`  
- <span data-ttu-id="7dc07-113">中的大小（以字节为单位） `szName` 。</span><span class="sxs-lookup"><span data-stu-id="7dc07-113">[in] The size, in bytes, of `szName`.</span></span>  
+ <span data-ttu-id="abde0-114">中的大小（以字节为单位） `szName` 。</span><span class="sxs-lookup"><span data-stu-id="abde0-114">[in] The size, in bytes, of `szName`.</span></span>  
   
  `pcName`  
- <span data-ttu-id="7dc07-114">弄中实际返回的字符数 `szName` 。</span><span class="sxs-lookup"><span data-stu-id="7dc07-114">[out] The number of characters actually returned in `szName`.</span></span>  
+ <span data-ttu-id="abde0-115">弄中实际返回的字符数 `szName` 。</span><span class="sxs-lookup"><span data-stu-id="abde0-115">[out] The number of characters actually returned in `szName`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="7dc07-115">要求</span><span class="sxs-lookup"><span data-stu-id="7dc07-115">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="abde0-116">要求</span><span class="sxs-lookup"><span data-stu-id="abde0-116">Requirements</span></span>  
 
- <span data-ttu-id="7dc07-116">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="7dc07-116">**Platform:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="abde0-117">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="abde0-117">**Platform:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="7dc07-117">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="7dc07-117">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="abde0-118">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="abde0-118">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="7dc07-118">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="7dc07-118">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="abde0-119">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="abde0-119">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="7dc07-119">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7dc07-119">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="abde0-120">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="abde0-120">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7dc07-120">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7dc07-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="abde0-121">请参阅</span><span class="sxs-lookup"><span data-stu-id="abde0-121">See also</span></span>
 
-- [<span data-ttu-id="7dc07-121">IMetaDataDispenserEx 接口</span><span class="sxs-lookup"><span data-stu-id="7dc07-121">IMetaDataDispenserEx Interface</span></span>](imetadatadispenserex-interface.md)
-- [<span data-ttu-id="7dc07-122">IMetaDataDispenser 接口</span><span class="sxs-lookup"><span data-stu-id="7dc07-122">IMetaDataDispenser Interface</span></span>](imetadatadispenser-interface.md)
+- [<span data-ttu-id="abde0-122">IMetaDataDispenserEx 接口</span><span class="sxs-lookup"><span data-stu-id="abde0-122">IMetaDataDispenserEx Interface</span></span>](imetadatadispenserex-interface.md)
+- [<span data-ttu-id="abde0-123">IMetaDataDispenser 接口</span><span class="sxs-lookup"><span data-stu-id="abde0-123">IMetaDataDispenser Interface</span></span>](imetadatadispenser-interface.md)

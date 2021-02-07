@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataDispenserEx：： OpenScopeOnITypeInfo 方法
 title: IMetaDataDispenserEx::OpenScopeOnITypeInfo 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 3480bbdb-c442-44a0-b7c6-333354503c52
 topic_type:
 - apiref
-ms.openlocfilehash: 6056a64b354f69ce39692173da01892870fba9e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bc36bac9e7c63f56f442f1e25fd7a6a93f75924b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682843"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753518"
 ---
-# <a name="imetadatadispenserexopenscopeonitypeinfo-method"></a><span data-ttu-id="baf1b-102">IMetaDataDispenserEx::OpenScopeOnITypeInfo 方法</span><span class="sxs-lookup"><span data-stu-id="baf1b-102">IMetaDataDispenserEx::OpenScopeOnITypeInfo Method</span></span>
+# <a name="imetadatadispenserexopenscopeonitypeinfo-method"></a><span data-ttu-id="7acfc-103">IMetaDataDispenserEx::OpenScopeOnITypeInfo 方法</span><span class="sxs-lookup"><span data-stu-id="7acfc-103">IMetaDataDispenserEx::OpenScopeOnITypeInfo Method</span></span>
 
-<span data-ttu-id="baf1b-103">未实现此方法。</span><span class="sxs-lookup"><span data-stu-id="baf1b-103">This method is not implemented.</span></span> <span data-ttu-id="baf1b-104">如果调用，它将返回 E_NOTIMPL。</span><span class="sxs-lookup"><span data-stu-id="baf1b-104">If called, it returns E_NOTIMPL.</span></span>  
+<span data-ttu-id="7acfc-104">未实现此方法。</span><span class="sxs-lookup"><span data-stu-id="7acfc-104">This method is not implemented.</span></span> <span data-ttu-id="7acfc-105">如果调用，它将返回 E_NOTIMPL。</span><span class="sxs-lookup"><span data-stu-id="7acfc-105">If called, it returns E_NOTIMPL.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="baf1b-105">语法</span><span class="sxs-lookup"><span data-stu-id="baf1b-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7acfc-106">语法</span><span class="sxs-lookup"><span data-stu-id="7acfc-106">Syntax</span></span>  
   
 ```cpp  
 HRESULT OpenScopeOnITypeInfo (  
@@ -37,31 +38,31 @@ HRESULT OpenScopeOnITypeInfo (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="baf1b-106">参数</span><span class="sxs-lookup"><span data-stu-id="baf1b-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="7acfc-107">参数</span><span class="sxs-lookup"><span data-stu-id="7acfc-107">Parameters</span></span>  
 
  `pITI`  
- <span data-ttu-id="baf1b-107">中指向 [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 接口的指针，该接口提供要打开范围的类型信息。</span><span class="sxs-lookup"><span data-stu-id="baf1b-107">[in] Pointer to an [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface that provides the type information on which to open the scope.</span></span>  
+ <span data-ttu-id="7acfc-108">中指向 [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 接口的指针，该接口提供要打开范围的类型信息。</span><span class="sxs-lookup"><span data-stu-id="7acfc-108">[in] Pointer to an [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface that provides the type information on which to open the scope.</span></span>  
   
  `dwOpenFlags`  
- <span data-ttu-id="baf1b-108">中打开模式标志。</span><span class="sxs-lookup"><span data-stu-id="baf1b-108">[in] The open mode flags.</span></span>  
+ <span data-ttu-id="7acfc-109">中打开模式标志。</span><span class="sxs-lookup"><span data-stu-id="7acfc-109">[in] The open mode flags.</span></span>  
   
  `riid`  
- <span data-ttu-id="baf1b-109">中所需的接口。</span><span class="sxs-lookup"><span data-stu-id="baf1b-109">[in] The desired interface.</span></span>  
+ <span data-ttu-id="7acfc-110">中所需的接口。</span><span class="sxs-lookup"><span data-stu-id="7acfc-110">[in] The desired interface.</span></span>  
   
  `ppIUnk`  
- <span data-ttu-id="baf1b-110">弄指向返回接口的指针的指针。</span><span class="sxs-lookup"><span data-stu-id="baf1b-110">[out] Pointer to a pointer to the returned interface.</span></span>  
+ <span data-ttu-id="7acfc-111">弄指向返回接口的指针的指针。</span><span class="sxs-lookup"><span data-stu-id="7acfc-111">[out] Pointer to a pointer to the returned interface.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="baf1b-111">要求</span><span class="sxs-lookup"><span data-stu-id="baf1b-111">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="7acfc-112">要求</span><span class="sxs-lookup"><span data-stu-id="7acfc-112">Requirements</span></span>  
 
- <span data-ttu-id="baf1b-112">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="baf1b-112">**Platform:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="7acfc-113">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="7acfc-113">**Platform:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="baf1b-113">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="baf1b-113">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="7acfc-114">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="7acfc-114">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="baf1b-114">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="baf1b-114">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="7acfc-115">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="7acfc-115">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="baf1b-115">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="baf1b-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="7acfc-116">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7acfc-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="baf1b-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="baf1b-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7acfc-117">请参阅</span><span class="sxs-lookup"><span data-stu-id="7acfc-117">See also</span></span>
 
-- [<span data-ttu-id="baf1b-117">IMetaDataDispenserEx 接口</span><span class="sxs-lookup"><span data-stu-id="baf1b-117">IMetaDataDispenserEx Interface</span></span>](imetadatadispenserex-interface.md)
-- [<span data-ttu-id="baf1b-118">IMetaDataDispenser 接口</span><span class="sxs-lookup"><span data-stu-id="baf1b-118">IMetaDataDispenser Interface</span></span>](imetadatadispenser-interface.md)
+- [<span data-ttu-id="7acfc-118">IMetaDataDispenserEx 接口</span><span class="sxs-lookup"><span data-stu-id="7acfc-118">IMetaDataDispenserEx Interface</span></span>](imetadatadispenserex-interface.md)
+- [<span data-ttu-id="7acfc-119">IMetaDataDispenser 接口</span><span class="sxs-lookup"><span data-stu-id="7acfc-119">IMetaDataDispenser Interface</span></span>](imetadatadispenser-interface.md)
