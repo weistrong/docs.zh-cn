@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：自定义 System-Provided 绑定
 title: 如何：自定义系统提供的绑定
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f8b97862-e8bb-470d-8b96-07733c21fe26
-ms.openlocfilehash: e3d7cb72bcbdd636530e7861071b73f8a5f38b31
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c0463a8e427e6503f0e68bc58eb488f9b0bad15a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249223"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668950"
 ---
 # <a name="how-to-customize-a-system-provided-binding"></a>如何：自定义系统提供的绑定
 
@@ -51,7 +52,7 @@ Windows Communication Foundation (WCF) 包含多个系统提供的绑定，这�
      [!code-csharp[C_HowTo_ChangeStandardBinding#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_changestandardbinding/cs/program.cs#3)]
      [!code-vb[C_HowTo_ChangeStandardBinding#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_changestandardbinding/vb/program.vb#3)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.BasicHttpBinding>

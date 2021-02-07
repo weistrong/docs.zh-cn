@@ -1,15 +1,16 @@
 ---
-title: Stream
+description: 了解有关以下内容的详细信息： Stream
+title: 流
 ms.date: 03/30/2017
 ms.assetid: 58a3db81-20ab-4627-bf31-39d30b70b4fe
-ms.openlocfilehash: 04bc5db4172d9052b45f63a2f7ed0fb997dc4c6c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ea0759f9eca2a974f77e8a6b059160b9a45bd94e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257192"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668833"
 ---
-# <a name="stream"></a>Stream
+# <a name="stream"></a>流
 
 流示例演示流传输模式通信的用法。 收发流的若干操作都由服务公开。 此示例是自承载的。 客户端和服务都是控制台程序。  
   
