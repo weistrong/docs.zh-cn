@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： ResolveTypeRef 方法
 title: IMetaDataImport::ResolveTypeRef 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 556bccfb-61bc-4761-b1d5-de4b1c18a38f
 topic_type:
 - apiref
-ms.openlocfilehash: 76c5519a6cd1b8994e2f869281f13d8269e89fde
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0634bac77f457432948d0c2887d676e95430d05d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702818"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677556"
 ---
 # <a name="imetadataimportresolvetyperef-method"></a>IMetaDataImport::ResolveTypeRef 方法
 
@@ -51,7 +52,7 @@ HRESULT ResolveTypeRef (
  `ptd`  
  弄指向表示被引用类型的 TypeDef 标记的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!IMPORTANT]
 > 如果加载多个应用程序域，请不要使用此方法。 方法不考虑应用程序域边界。 如果加载程序集的多个版本，并且这些版本包含相同命名空间的相同类型，则该方法将返回它找到的第一个类型的模块范围。  
@@ -70,7 +71,7 @@ HRESULT ResolveTypeRef (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

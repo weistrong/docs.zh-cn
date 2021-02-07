@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyEmit：： SetAssemblyRefProps 方法
 title: IMetaDataAssemblyEmit::SetAssemblyRefProps 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
 topic_type:
 - apiref
-ms.openlocfilehash: e28659f3c6912489775dd09951610f19e4400942
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 704fff656b705bb246e2742ce991d41fcadcdfcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678154"
 ---
 # <a name="imetadataassemblyemitsetassemblyrefprops-method"></a>IMetaDataAssemblyEmit::SetAssemblyRefProps 方法
 
@@ -67,7 +68,7 @@ HRESULT SetAssemblyRefProps (
  `dwAssemblyRefFlags`  
  中 [AssemblyRefFlags](assemblyrefflags-enumeration.md) 值的按位组合，用于指定所引用程序集的特性。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  若要创建 `AssemblyRef` 元数据结构，请使用 [IMetaDataAssemblyEmit：:D efineassemblyref](imetadataassemblyemit-defineassemblyref-method.md) 方法。  
   
@@ -81,6 +82,6 @@ HRESULT SetAssemblyRefProps (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataAssemblyEmit 接口](imetadataassemblyemit-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3310-DispatchFailed
 title: 3310 - DispatchFailed
 ms.date: 03/30/2017
 ms.assetid: 6b8d7d9f-c6d9-4275-9121-a47519094124
-ms.openlocfilehash: 1b8b7e951d1173e66821d4fe861ca3cff4c748cc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 16b2cdb017041cd106decf754f6d1fbd0ebcb93d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677283"
 ---
 # <a name="3310---dispatchfailed"></a>3310 - DispatchFailed
 
@@ -17,10 +18,10 @@ ms.locfileid: "96279553"
 |-|-|  
 |ID|3310|  
 |关键字|ServiceModel|  
-|Level|错误|  
+|级别|错误|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当调度已失败时，发出此事件。  
   

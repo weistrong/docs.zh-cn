@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyEmit：： SetExportedTypeProps 方法
 title: IMetaDataAssemblyEmit::SetExportedTypeProps 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1c090153-fd5f-46c7-9cff-39a78d992c8f
 topic_type:
 - apiref
-ms.openlocfilehash: 076d027945dc27942e4b0989e14e86d829f76679
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 61032abd7b049af29c583e9aee126184af3c78f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678089"
 ---
 # <a name="imetadataassemblyemitsetexportedtypeprops-method"></a>IMetaDataAssemblyEmit::SetExportedTypeProps 方法
 
@@ -51,7 +52,7 @@ HRESULT SetExportedTypeProps (
  `dwExportedTypeFlags`  
  中值的按位组合，用于指定类型的特性。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  若要创建 `ExportedType` 元数据结构，请使用 [IMetaDataAssemblyEmit：:D efineexportedtype](imetadataassemblyemit-defineexportedtype-method.md) 方法。  
   
@@ -65,6 +66,6 @@ HRESULT SetExportedTypeProps (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataAssemblyEmit 接口](imetadataassemblyemit-interface.md)

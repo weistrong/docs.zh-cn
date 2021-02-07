@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit：:D efineMethod 方法
 title: IMetaDataEmit::DefineMethod 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3e2102c5-48b7-4c0e-b805-7e2b5e156e3d
 topic_type:
 - apiref
-ms.openlocfilehash: a32a1eb850943b84a0d368f883e44fd4ccf32ee9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b0ba2bb68f1d4387229767f6f2550d64b9008898
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719575"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677959"
 ---
 # <a name="imetadataemitdefinemethod-method"></a>IMetaDataEmit::DefineMethod 方法
 
@@ -67,7 +68,7 @@ HRESULT DefineMethod (
  `pmd`  
  弄成员标记。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  元数据 API 保证按调用方为给定的封闭类或接口发出方法（在参数中指定）来保持方法的顺序相同 `td` 。  
   
@@ -118,7 +119,7 @@ HRESULT DefineMethod (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit 接口](imetadataemit-interface.md)
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)

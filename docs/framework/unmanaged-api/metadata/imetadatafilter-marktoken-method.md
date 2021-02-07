@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataFilter：： MarkToken 方法
 title: IMetaDataFilter::MarkToken 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bd492834-6529-4d39-b93d-f8cdbd3e297f
 topic_type:
 - apiref
-ms.openlocfilehash: c942838fb62bf86c4054761f4e7f2ef0518b3d89
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 97191533ae7d2bdc951521f1929a4c001c521b9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677770"
 ---
 # <a name="imetadatafiltermarktoken-method"></a>IMetaDataFilter::MarkToken 方法
 
@@ -49,6 +50,6 @@ HRESULT MarkToken (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataFilter 接口](imetadatafilter-interface.md)

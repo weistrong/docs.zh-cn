@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyImport：： FindExportedTypeByName 方法
 title: IMetaDataAssemblyImport::FindExportedTypeByName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 46264b2c-574d-4dde-aafc-77187a104fdd
 topic_type:
 - apiref
-ms.openlocfilehash: b1672d98d76241e5af4b6b60a38785f1278e15a8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4a2dc2b65b7f7fe6d5f2e120c635214d457991bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677979"
 ---
 # <a name="imetadataassemblyimportfindexportedtypebyname-method"></a>IMetaDataAssemblyImport::FindExportedTypeByName 方法
 
@@ -47,7 +48,7 @@ HRESULT FindExportedTypeByName (
  `ptkExportedType`  
  弄一个指针，指向 `mdExportedType` 表示导出类型的标记。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `FindExportedTypeByName`方法使用公共语言运行时所使用的标准规则来解析引用。  
   
@@ -61,7 +62,7 @@ HRESULT FindExportedTypeByName (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataAssemblyImport 接口](imetadataassemblyimport-interface.md)
 - [运行时如何定位程序集](../../deployment/how-the-runtime-locates-assemblies.md)

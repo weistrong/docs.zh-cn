@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：控制 WCF 服务主机的自动启动
 title: 控制 WCF 服务主机的自动启动
 ms.date: 03/30/2017
 f1_keywords:
 - WcfOptions
 ms.assetid: 6abe5d34-519b-4cef-8f02-3c0a7f125585
-ms.openlocfilehash: 2033e693003d0b50bcdada428e4a5f451b3ad67e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f0e9a4e79a403920c0bc6a512b30fb038b2aa1f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677387"
 ---
 # <a name="controlling-auto-launching-of-wcf-service-host"></a>控制 WCF 服务主机的自动启动
 
@@ -29,6 +30,6 @@ ms.locfileid: "96255073"
   
 - 联合服务库项目。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF 服务主机 (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)

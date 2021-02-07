@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： CloseEnum 方法
 title: IMetaDataImport::CloseEnum 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 727819d5-1dab-4ebb-ac25-950b4111dc72
 topic_type:
 - apiref
-ms.openlocfilehash: f418b48f1b62ae8093197d64ca44b2ef659990a3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b18b484cab0d9f4c0ecea21da78535c9a872bb1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701713"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677738"
 ---
 # <a name="imetadataimportcloseenum-method"></a>IMetaDataImport::CloseEnum 方法
 
@@ -39,7 +40,7 @@ void CloseEnum (
  `hEnum`  
  中要关闭的枚举器的句柄。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  指定的句柄 `hEnum` 是从以前的 `Enum` *名称* 调用获取的 (例如， [IMetaDataImport：： EnumTypeDefs](imetadataimport-enumtypedefs-method.md)) 。  
   
@@ -53,7 +54,7 @@ void CloseEnum (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)
