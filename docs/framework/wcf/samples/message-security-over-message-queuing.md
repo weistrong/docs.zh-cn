@@ -1,13 +1,14 @@
 ---
+description: 了解更多：消息安全消息队列
 title: 基于消息队列的消息安全性
 ms.date: 03/30/2017
 ms.assetid: 329aea9c-fa80-45c0-b2b9-e37fd7b85b38
-ms.openlocfilehash: 1b262a5f4343e07aecf5eebda32cc995f86ec77b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bfbec02dec11d4f4eb153db942eb12ce4cb595e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248911"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752322"
 ---
 # <a name="message-security-over-message-queuing"></a>基于消息队列的消息安全性
 
@@ -95,7 +96,7 @@ ms.locfileid: "96248911"
 
  此示例演示如何在消息级别对 MSMQ 进行相互身份验证。 证书是在带外交换的。 对于排队的应用程序始终是这样，因为服务和客户端不是必须同时处于开启状态并正在运行。
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
  示例客户端和服务代码与 [事务处理的 MSMQ 绑定](transacted-msmq-binding.md) 示例相同，但有一个区别。 操作协定是通过保护级别批注的，这说明消息必须是经过签名和加密的。
 

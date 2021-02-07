@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： MSMQ 激活
 title: MSMQ 激活
 ms.date: 03/30/2017
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.openlocfilehash: 349eadb8f517993c343e81656204ad25e62ed931
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 3360ae560cba9c3b42551617beb295154668814b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752196"
 ---
 # <a name="msmq-activation"></a>MSMQ 激活
 
@@ -329,7 +330,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
 
     1. 运行 Inetmgr.exe。
 
-    2. 在 " **应用程序池**" 下，右键 **单击 ") ** **DefaultAppPool** "，然后选择 " **设置应用程序池默认值 ...**" (。
+    2. 在 " **应用程序池**" 下，右键 **单击 ")** **DefaultAppPool** "，然后选择 " **设置应用程序池默认值 ...**" (。
 
     3. 更改标识属性以使用特定用户帐户。
 
