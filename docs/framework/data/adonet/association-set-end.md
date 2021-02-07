@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：关联集端
 title: 关联集端
 ms.date: 03/30/2017
 ms.assetid: fe4bf1d3-047a-4a37-98c5-a66e70811346
-ms.openlocfilehash: bd104ffb46cbd02a886ce87822ddc37159961174
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 12e01a3fb947f6fabd5e1a93ef475132418963df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198790"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697668"
 ---
 # <a name="association-set-end"></a>关联集端
 
-*关联集端*在[关联集](association-set.md)的末尾标识[实体类型](entity-type.md)和[实体集](entity-set.md)。 关联集端定义为关联集的一部分；一个关联集必须有且只有两个关联集端。  
+*关联集端* 在 [关联集](association-set.md)的末尾标识 [实体类型](entity-type.md)和 [实体集](entity-set.md)。 关联集端定义为关联集的一部分；一个关联集必须有且只有两个关联集端。  
   
  关联集端定义包含以下信息：  
   

@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：关联集
 title: Association Set — 关联集
 ms.date: 03/30/2017
 ms.assetid: a65247b6-ce59-44ea-974c-14ae20a7995f
-ms.openlocfilehash: 58d8794a21cc37ab84386c820b192fb29946095c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aeddf3e898aecc2b283a941e844a6dbe810357f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697577"
 ---
 # <a name="association-set"></a>Association Set — 关联集
 
-*关联集*是同一类型的[关联](association-type.md)实例的逻辑容器。 关联集不是一种数据建模构造，也就是说，它没有描述数据结构或关系。 相反，关联集提供了一种承载或存储环境构造（例如公共语言运行库或 SQL Server 数据库）来分组关联实例，以便可以将它们映射到某个数据存储区。  
+*关联集* 是同一类型的 [关联](association-type.md)实例的逻辑容器。 关联集不是一种数据建模构造，也就是说，它没有描述数据结构或关系。 相反，关联集提供了一种承载或存储环境构造（例如公共语言运行库或 SQL Server 数据库）来分组关联实例，以便可以将它们映射到某个数据存储区。  
   
  关联集是在实体容器中定义的， [实体容器](entity-container.md)是 [实体集](entity-set.md) 和关联集的逻辑分组。  
   

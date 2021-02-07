@@ -1,13 +1,14 @@
 ---
+description: 了解更多：聚合规范函数
 title: 聚合规范函数
 ms.date: 03/30/2017
 ms.assetid: 3bcff826-ca90-41b3-a791-04d6ff0e5085
-ms.openlocfilehash: 3f4bb84c45e503fc0018e7869f3b41ddab4581a6
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: e26888ac15553a592f7d2cb9b1a0941161115615
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70251359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697291"
 ---
 # <a name="aggregate-canonical-functions"></a>聚合规范函数
 
@@ -23,11 +24,11 @@ ms.locfileid: "70251359"
 
 **参数**
 
-`Int32` 、`Int64`、和。`Decimal` `Double`
+`Int32`、、 `Int64` `Double` 和 `Decimal` 。
 
 **返回值**
 
-的类型`expression` `null` ，如果所有输入值都是`null`值，则为。
+的类型 `expression` ， `null` 如果所有输入值都是值，则为 `null` 。
 
 **示例**
 
@@ -44,7 +45,7 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-一个 `Int64`。
+`Int64`。
 
 **示例**
 
@@ -61,7 +62,7 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-一个 `Int32`。
+`Int32`。
 
 **示例**
 
@@ -78,7 +79,7 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-的类型`expression` `null` ，如果所有输入值都是`null`值，则为。
+的类型 `expression` ， `null` 如果所有输入值都是值，则为 `null` 。
 
 **示例**
 
@@ -95,7 +96,7 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-的类型`expression` `null` ，如果所有输入值都是`null`值，则为。
+的类型 `expression` ， `null` 如果所有输入值都是值，则为 `null` 。
 
 **示例**
 
@@ -129,7 +130,7 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-一个`Double` `null` ，如果所有输入值都是值，则为。 `null`
+一个 `Double` ， `null` 如果所有输入值都是值，则为 `null` 。
 
 **示例**
 
@@ -146,7 +147,7 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-一个`Double` `null` ，如果所有输入值都是值，则为。 `null`
+一个 `Double` ， `null` 如果所有输入值都是值，则为 `null` 。
 
 **示例**
 
@@ -163,7 +164,7 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-一个`Double` `null` ，如果所有输入值都是值，则为。 `null`
+一个 `Double` ， `null` 如果所有输入值都是值，则为 `null` 。
 
 **示例**
 
@@ -180,14 +181,14 @@ ms.locfileid: "70251359"
 
 **返回值**
 
-一个`Double` `null` ，如果所有输入值都是值，则为。 `null`
+一个 `Double` ， `null` 如果所有输入值都是值，则为 `null` 。
 
 **示例**
 
 [!code-csharp[DP EntityServices Concepts#EDM_VARP](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#edm_varp)]
 [!code-sql[DP EntityServices Concepts#EDM_VARP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#edm_varp)]
 
-Microsoft SQL 客户端托管提供程序中提供了等效功能。 有关详细信息，请参阅[SqlClient for 实体框架函数](../sqlclient-for-ef-functions.md)。
+Microsoft SQL 客户端托管提供程序中提供了等效功能。 有关详细信息，请参阅 [SqlClient for 实体框架函数](../sqlclient-for-ef-functions.md)。
 
 ## <a name="collection-based-aggregates"></a>基于集合的聚合
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：将模型和映射文件嵌入资源
 title: 如何：创建模型及映射文件嵌入资源
 ms.date: 03/30/2017
 ms.assetid: 20dfae4d-e95a-4264-9540-f5ad23b462d3
-ms.openlocfilehash: 8496dcad5422d1a45af52e58325efd360768da34
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 373dfc2c93adfc510341ec0ea0487ad8962aa3e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198283"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697512"
 ---
 # <a name="how-to-make-model-and-mapping-files-embedded-resources"></a>如何：创建模型及映射文件嵌入资源
 
@@ -18,13 +19,13 @@ ms.locfileid: "91198283"
   
 ### <a name="to-embed-model-and-mapping-files"></a>嵌入模型和映射文件  
   
-1. 在 **解决方案资源管理器**中，选择概念 ( ") 文件。  
+1. 在 **解决方案资源管理器** 中，选择概念 ( ") 文件。  
   
 2. 在 " **属性** " 窗格中，将 " **生成操作** " 设置为 " **嵌入资源**"。  
   
 3. 对存储文件 (.ssdl) 和映射文件 (.msl) 重复步骤 1 和步骤 2。  
   
-4. 在 **解决方案资源管理器**中，双击 App.config 文件，然后根据 `Metadata` `connectionString` 以下格式之一修改属性中的参数：  
+4. 在 **解决方案资源管理器** 中，双击 App.config 文件，然后根据 `Metadata` `connectionString` 以下格式之一修改属性中的参数：  
   
     - `Metadata=` `res://<assemblyFullName>/<resourceName>;`  
   

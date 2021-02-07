@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息，请参阅如何：使用 EdmGen.exe 生成模型和映射文件
 title: 如何：使用 EdmGen.exe 生成模型和映射文件
 ms.date: 03/30/2017
 ms.assetid: 40db462d-2fd2-4cc1-ad86-d280403e63fa
-ms.openlocfilehash: 8837afd05eec0eaf8ef3e909d46b280e8ae05da7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b601e7dd3c108f4bf4966df2fabcf8324365fe3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697408"
 ---
 # <a name="how-to-use-edmgenexe-to-generate-the-model-and-mapping-files"></a>如何：使用 EdmGen.exe 生成模型和映射文件
 

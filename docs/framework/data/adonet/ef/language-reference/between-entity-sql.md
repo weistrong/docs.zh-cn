@@ -1,13 +1,14 @@
 ---
+description: '了解有关详细信息，请参阅 (实体 SQL) '
 title: BETWEEN (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 4dcdd754-ae01-4e78-bf28-8a117fb2b73e
-ms.openlocfilehash: 17e3fe97942b34232640b0326eca2c5729e86989
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35ac16e94f2e55f6a0f76591daf0f91f9708aa53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697109"
 ---
 # <a name="between-entity-sql"></a>BETWEEN (Entity SQL)
 
@@ -25,10 +26,10 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
  要测试是否在 `begin_expression` 和 `end_expression` 所定义的范围内的任何有效表达式。 `expression` 必须与 `begin_expression` 和 `end_expression` 的类型都相同。  
   
  `begin_expression`  
- 任何有效表达式。 `begin_expression` 必须与 `expression` 和 `end_expression` 的类型都相同。 `begin_expression` 应小于 `end_expression`，否则返回值将取反。  
+ 任何有效的表达式。 `begin_expression` 必须与 `expression` 和 `end_expression` 的类型都相同。 `begin_expression` 应小于 `end_expression`，否则返回值将取反。  
   
  `end_expression`  
- 任何有效表达式。 `end_expression` 必须与 `expression` 和 `begin_expression` 的类型都相同。  
+ 任何有效的表达式。 `end_expression` 必须与 `expression` 和 `begin_expression` 的类型都相同。  
   
  NOT  
  指定对 BETWEEN 的结果取反。  
