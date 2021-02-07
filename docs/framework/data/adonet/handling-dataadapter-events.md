@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：处理 DataAdapter 事件
 title: 处理 DataAdapter 事件
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
-ms.openlocfilehash: a2c2dc71cc9e5c445fd05534dad5ad47fd66f436
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 045a48ae545ad4354844dd451ff58618b760a9a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194721"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723941"
 ---
 # <a name="handling-dataadapter-events"></a>处理 DataAdapter 事件
 
@@ -41,7 +42,7 @@ ADO.NET <xref:System.Data.Common.DataAdapter> 公开三个可用于响应数据�
   
  也可以使用 `ContinueUpdateOnError` 属性为更新的行处理错误。 如果 `DataAdapter.ContinueUpdateOnError` 为 `true`，那么当行的更新导致引发异常时，该异常的文本被放入特定行的 `RowError` 信息中，并且处理将会继续而不会引发异常。 这使您能够在 `Update` 完成时对错误作出响应；与此相反的是 `RowUpdated` 事件，它使您能够在遇到错误时响应错误。  
   
- 以下代码示例显示如何添加和移除事件处理程序。 `RowUpdating` 事件处理程序编写带有时间戳的所有已删除记录的日志。 `RowUpdated`事件处理程序将错误信息添加到 `RowError` 中的行的属性中 `DataSet` ，取消隐藏异常，并继续处理 (镜像) 的行为 `ContinueUpdateOnError`  =  `true` 。  
+ 以下代码示例显示如何添加和移除事件处理程序。 `RowUpdating` 事件处理程序编写带有时间戳的所有已删除记录的日志。 `RowUpdated` 事件处理程序将错误信息添加到 `DataSet` 中行的 `RowError` 属性、取消显示异常，并继续处理（镜像 `ContinueUpdateOnError` = `true` 的行为）。  
   
 ```vb  
 ' Assumes that connection is a valid SqlConnection object.  
@@ -189,7 +190,7 @@ protected static void FillError(object sender, FillErrorEventArgs args)
 }  
 ```  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [DataAdapter 和 DataReader](dataadapters-and-datareaders.md)
 - [处理数据集事件](./dataset-datatable-dataview/handling-dataset-events.md)

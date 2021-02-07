@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：创建表达式列
 title: 创建表达式列
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0af3bd64-92a2-4b47-ae62-f5df35f131a6
-ms.openlocfilehash: ad14e4d3d6a1107f994d9536485257f9dc1851f5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 96b445734d645a957951a1d4cbd9d72ed254068f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166841"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724981"
 ---
 # <a name="creating-expression-columns"></a>创建表达式列
 
@@ -24,7 +25,7 @@ ms.locfileid: "91166841"
 |计算|"UnitPrice * Quantity"|  
 |聚合|Sum(Price)|  
   
- 可以在现有**DataColumn**对象上设置**Expression**属性，也可以将属性包含为传递给构造函数的第三个自变量 <xref:System.Data.DataColumn> ，如下面的示例中所示。  
+ 可以在现有 **DataColumn** 对象上设置 **Expression** 属性，也可以将属性包含为传递给构造函数的第三个自变量 <xref:System.Data.DataColumn> ，如下面的示例中所示。  
   
 ```vb  
 workTable.Columns.Add("Total",Type.GetType("System.Double"))  

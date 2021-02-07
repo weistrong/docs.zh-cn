@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：实体集
 title: 实体集
 ms.date: 03/30/2017
 ms.assetid: 59ec6ab0-88e5-4d25-b112-7a4eccbe61f0
-ms.openlocfilehash: 6286d3707a8506e7a389359a5aa361c152e75212
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4881be280e1da2d53db6fc9f526289cdcd82ee07
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194786"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724422"
 ---
 # <a name="entity-set"></a>实体集
 
-*实体集*是某个[实体类型](entity-type.md)的实例和从该实体类型派生的任何类型的实例的逻辑容器。  (有关派生类型的信息，请参阅 [实体数据模型：继承](entity-data-model-inheritance.md)。 ) 实体类型与实体集之间的关系类似于关系数据库中行与表之间的关系：与行相同，实体类型描述数据结构，而与表一样，实体集包含给定结构的实例。 实体集不是一种数据建模构造，它没有描述数据结构。 相反，实体集提供了一种承载或存储环境构造（例如公共语言运行库或 SQL Server 数据库）来分组实体类型实例，以便可以将它们映射到某个数据存储区。  
+*实体集* 是某个 [实体类型](entity-type.md)的实例和从该实体类型派生的任何类型的实例的逻辑容器。  (有关派生类型的信息，请参阅 [实体数据模型：继承](entity-data-model-inheritance.md)。 ) 实体类型与实体集之间的关系类似于关系数据库中行与表之间的关系：与行相同，实体类型描述数据结构，而与表一样，实体集包含给定结构的实例。 实体集不是一种数据建模构造，它没有描述数据结构。 相反，实体集提供了一种承载或存储环境构造（例如公共语言运行库或 SQL Server 数据库）来分组实体类型实例，以便可以将它们映射到某个数据存储区。  
   
  实体集是在 [实体容器](entity-container.md)中定义的，实体容器是实体集和 [关联集](association-set.md)的逻辑分组。  
   

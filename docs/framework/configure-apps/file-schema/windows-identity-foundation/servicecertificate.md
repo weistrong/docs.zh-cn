@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <serviceCertificate>
 title: <serviceCertificate>
 ms.date: 03/30/2017
 ms.assetid: 42c7f291-2ec3-43c5-8872-35897ff3c660
 author: BrucePerlerMS
-ms.openlocfilehash: ce8be6eea5469b099a368a0b62e791faa7e3cbfc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d9940fd96667211b1f9fd672b824af84e0d5143a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725319"
 ---
 # \<serviceCertificate>
 
@@ -40,13 +41,13 @@ ms.locfileid: "91156987"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<certificateReference>](certificatereference.md)|指定用于在证书存储中查找和验证 x.509 证书的设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<federationConfiguration>](federationconfiguration.md)|包含配置 <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) 和 <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) 的设置。|  
   

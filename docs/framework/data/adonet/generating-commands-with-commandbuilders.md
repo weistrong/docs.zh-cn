@@ -1,16 +1,17 @@
 ---
+description: 了解更多：通过 Commandbuilder 生成命令
 title: 使用 CommandBuilder 生成命令
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6e3fb8b5-373b-4f9e-ab03-a22693df8e91
-ms.openlocfilehash: d88f5772e038766d49baf8c758c547e6d5667904
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 495312f57d497421182384eff23b621130447940
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200714"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724097"
 ---
 # <a name="generating-commands-with-commandbuilders"></a>使用 CommandBuilder 生成命令
 
@@ -54,7 +55,7 @@ ms.locfileid: "91200714"
   
 ### <a name="table-and-column-names"></a>表名称和列名称  
 
- 如果列名称或表名称包含任何特殊字符（如空格、句点、问号或其他非字母数字字符），则即使这些字符用括号分隔，自动命令生成逻辑也可能会失败。 根据具体提供程序，通过设置 QuotePrefix 和 QuoteSuffix 参数，生成逻辑可以处理空格，但无法转义特殊字符。 支持 *目录. schema* 格式的完全限定的表名。  
+ 如果列名称或表名称包含任何特殊字符（如空格、句点、问号或其他非字母数字字符），则即使这些字符用括号分隔，自动命令生成逻辑也可能会失败。 根据具体提供程序，通过设置 QuotePrefix 和 QuoteSuffix 参数，生成逻辑可以处理空格，但无法转义特殊字符。 支持格式为 catalog.schema.table 的完全限定表名。  
   
 ## <a name="using-the-commandbuilder-to-automatically-generate-an-sql-statement"></a>使用 CommandBuilder 自动生成 SQL 语句  
 
@@ -98,7 +99,7 @@ Console.WriteLine(builder.GetUpdateCommand().CommandText)
 Console.WriteLine(builder.GetUpdateCommand().CommandText);
 ```
   
- 下面的示例在 `Customers` 数据集中重新创建 `custDS` 表。 调用 **RefreshSchema** 方法来刷新带有此新列信息的自动生成的命令。  
+ 下面的示例在 `Customers` 数据集中重新创建 `custDS` 表。 然后调用 RefreshSchema 方法，使用此新列的信息来刷新自动生成的命令。  
   
 ```vb  
 ' Assumes an open SqlConnection and SqlDataAdapter inside of a Using block.  

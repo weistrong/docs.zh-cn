@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：实体类型
 title: Entity Type — 实体类型
 ms.date: 03/30/2017
 ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c
-ms.openlocfilehash: 3f99667a06d8aa439232802d4909290dfe9db97c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fb801ca8565fce01466f30bddc8c14c39af568c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724357"
 ---
 # <a name="entity-type"></a>Entity Type — 实体类型
 
-*实体类型*是用实体数据模型 (EDM) 来描述数据结构的基本构造块。 在概念模型中，实体类型表示顶级概念（例如客户或订单）的结构。 实体类型是实体类型实例的模板。 每个模板都包含以下信息：  
+*实体类型* 是用实体数据模型 (EDM) 来描述数据结构的基本构造块。 在概念模型中，实体类型表示顶级概念（例如客户或订单）的结构。 实体类型是实体类型实例的模板。 每个模板都包含以下信息：  
   
 - 唯一名称。 （必选。）  
   

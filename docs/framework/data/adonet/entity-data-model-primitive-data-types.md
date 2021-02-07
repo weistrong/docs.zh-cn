@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：实体数据模型：基元数据类型
 title: 实体数据模型：基元数据类型
 ms.date: 03/30/2017
 ms.assetid: 7635168e-0566-4fdd-8391-7941b0d9f787
-ms.openlocfilehash: 4d52f50dec44c7d667dfedc10a2c9c25fcde8917
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bdc34f3232e78d29e6c2ce25d8f159d7f5238f2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724461"
 ---
 # <a name="entity-data-model-primitive-data-types"></a>实体数据模型：基元数据类型
 
@@ -22,15 +23,15 @@ ms.locfileid: "91194812"
 
  下表列出了 EDM 支持的基元数据类型。 该表还列出了可应用于每个基元数据类型的 [方面](facet.md) 。  
   
-|基元数据类型|描述|适用的方面|  
+|基元数据类型|说明|适用的方面|  
 |-------------------------|-----------------|-----------------------|  
 |二进制|包含二进制数据。|MaxLength、FixedLength、Nullable、Default|  
-|Boolean|包含值 `true` 或 `false`。|Nullable、Default|  
+|布尔|包含值 `true` 或 `false`。|Nullable、Default|  
 |Byte|包含一个无符号的 8 位整数值。|Precision、Nullable、Default|  
 |DateTime|表示日期和时间。|Precision、Nullable、Default|  
 |DateTimeOffset|包含以相对于 GMT 的偏移量（以分钟为单位）表示的日期和时间。|Precision、Nullable、Default|  
 |小数|包含一个具有固定精度和小数位数的数值。|Precision、Nullable、Default|  
-|双精度|包含一个具有 15 位精度的浮点数。|Precision、Nullable、Default|  
+|Double|包含一个具有 15 位精度的浮点数。|Precision、Nullable、Default|  
 |Float|包含一个具有 7 位精度的浮点数。|Precision、Nullable、Default|  
 |Guid|包含一个 16 字节的唯一标识符。|Precision、Nullable、Default|  
 |Int16|包含一个带符号的 16 位整数值。|Precision、Nullable、Default|  

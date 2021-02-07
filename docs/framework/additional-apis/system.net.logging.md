@@ -1,5 +1,6 @@
 ---
-title: 日志记录类（System.Net）
+description: 了解详细信息：日志记录类
+title: '记录类 (System.Net) '
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type:
@@ -16,14 +17,14 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: ad85fdd41252ed147eb5fe1a9db029db046d720c
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 1ae3079ab21502ee3f5bf71db57f0695da9a8571
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726203"
 ---
-# <a name="logging-class"></a>日志记录类
+# <a name="logging-class"></a>Logging 类
 
 提供跟踪日志记录功能。
 
@@ -58,7 +59,7 @@ internal static void Associate(TraceSource traceSource, object objA, object objB
 
   要与关联的对象 `objA` 。
 
-## <a name="entertracesource-object-string-string-method"></a>Enter （TraceSource，object，string，string）方法
+## <a name="entertracesource-object-string-string-method"></a>输入 (TraceSource、object、string、string) 方法
 
 日志进入到方法。
 
@@ -84,7 +85,7 @@ internal static void Enter(TraceSource traceSource, object obj, string method, s
 
   传递给方法的参数。
 
-## <a name="entertracesource-object-string-object-method"></a>Enter （TraceSource，object，string，object）方法
+## <a name="entertracesource-object-string-object-method"></a>输入 (TraceSource、object、string、object) 方法
 
 日志进入到方法。
 
@@ -110,7 +111,7 @@ internal static void Enter(TraceSource traceSource, object obj, string method, o
 
   传递给方法的参数。
 
-## <a name="entertracesource-string-string-string-method"></a>Enter （TraceSource，string，string，string）方法
+## <a name="entertracesource-string-string-string-method"></a>输入 (TraceSource、string、string、string) 方法
 
 日志进入到方法。
 
@@ -136,7 +137,7 @@ internal static void Enter(TraceSource traceSource, string obj, string method, s
 
   传递给方法的参数。
 
-## <a name="entertracesource-string-string-object-method"></a>Enter （TraceSource，string，string，object）方法
+## <a name="entertracesource-string-string-object-method"></a>输入 (TraceSource、string、string、object) 方法
 
 日志进入到方法。
 
@@ -162,7 +163,7 @@ internal static void Enter(TraceSource traceSource, string obj, string method, o
 
   传递给方法的参数。
 
-## <a name="entertracesource-string-string-method"></a>Enter （TraceSource，string，string）方法
+## <a name="entertracesource-string-string-method"></a>输入 (TraceSource、string、string) 方法
 
 日志进入到方法。
 
@@ -184,7 +185,7 @@ internal static void Enter(TraceSource traceSource, string method, string parame
 
   传递给方法的参数。
 
-## <a name="entertracesource-string-method"></a>Enter （TraceSource，string）方法
+## <a name="entertracesource-string-method"></a>输入 (TraceSource，string) 方法
 
 日志进入到方法。
 
@@ -228,7 +229,7 @@ internal static void Exception(TraceSource traceSource, object obj, string metho
 
   抛出的异常。
 
-## <a name="exittracesource-object-string-object-method"></a>Exit （TraceSource、object、string、object）方法
+## <a name="exittracesource-object-string-object-method"></a>Exit (TraceSource、object、string、object) 方法
 
 日志从函数退出。
 
@@ -254,7 +255,7 @@ internal static void Exit(TraceSource traceSource, object obj, string method, ob
 
   由方法返回的值。
 
-## <a name="exittracesource-string-string-object-method"></a>Exit （TraceSource、string、string、object）方法
+## <a name="exittracesource-string-string-object-method"></a>Exit (TraceSource、string、string、object) 方法
 
 日志从函数退出。
 
@@ -280,7 +281,7 @@ internal static void Exit(TraceSource traceSource, string obj, string method, ob
 
   由方法返回的值。
 
-## <a name="exittracesource-object-string-string-method"></a>Exit （TraceSource，object，string，string）方法
+## <a name="exittracesource-object-string-string-method"></a>Exit (TraceSource、object、string、string) 方法
 
 日志从函数退出。
 
@@ -306,7 +307,7 @@ internal static void Exit(TraceSource traceSource, object obj, string method, st
 
   由方法返回的值。
 
-## <a name="exittracesource-string-string-string-method"></a>Exit （TraceSource，string，string，string）方法
+## <a name="exittracesource-string-string-string-method"></a>Exit (TraceSource、string、string、string) 方法
 
 日志从函数退出。
 
@@ -332,7 +333,7 @@ internal static void Exit(TraceSource traceSource, string obj, string method, st
 
   由方法返回的值。
 
-## <a name="exittracesource-string-string-method"></a>Exit （TraceSource，string，string）方法
+## <a name="exittracesource-string-string-method"></a>Exit (TraceSource、string、string) 方法
 
 日志从函数退出。
 
@@ -354,7 +355,7 @@ internal static void Exit(TraceSource traceSource, string method, string paramet
 
   传递给正在退出的方法的参数。
 
-## <a name="exittracesource-string-method"></a>Exit （TraceSource，string）方法
+## <a name="exittracesource-string-method"></a>Exit (TraceSource，string) 方法
 
 日志从函数退出。
 
@@ -402,4 +403,4 @@ internal static bool On { get; }
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 

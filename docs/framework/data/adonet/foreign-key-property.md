@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：外键属性
 title: 外键属性
 ms.date: 03/30/2017
 ms.assetid: 23cb6729-544d-4f67-9ee7-44e8a6545587
-ms.openlocfilehash: be0fcb94b0b457a33c17e7125cd22db50f298cc6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1666e4477c09dd5d0ed3d2c35a93ca21824e8a0e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189313"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724123"
 ---
 # <a name="foreign-key-property"></a>外键属性
 
-实体数据模型 (EDM) 中的*外键属性*是一个基元类型[属性](property.md)， (或一组基元类型属性) 在包含另一个实体类型的[实体键](entity-key.md)的[实体类型](entity-type.md)上。  
+实体数据模型 (EDM) 中的 *外键属性* 是一个基元类型 [属性](property.md)， (或一组基元类型属性) 在包含另一个实体类型的 [实体键](entity-key.md)的 [实体类型](entity-type.md)上。  
   
  外键属性相当于关系数据库中的外键列。 与在关系数据库中使用外键列来创建表中各行之间的关系一样，概念模型中的外键属性用于建立实体类型之间的 [关联](association-type.md) 。 当一个类型具有外键属性时， [引用完整性约束](referential-integrity-constraint.md) 用于定义两个实体类型之间的关联。  
   

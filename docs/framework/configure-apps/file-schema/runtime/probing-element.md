@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <probing> 元素
 title: <probing> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - container tags, <probing> element
 - probing element
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
-ms.openlocfilehash: 1435ee8ea887b5d7d3e785eef0f25ffed14b1b97
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 404e53f735ce02c2a3d7911216f834d38e309789
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726099"
 ---
 # <a name="probing-element"></a>\<probing> 元素
 
@@ -47,7 +48,7 @@ ms.locfileid: "91195267"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`assemblyBinding`|包含有关程序集版本重定向和程序集位置的信息。|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  

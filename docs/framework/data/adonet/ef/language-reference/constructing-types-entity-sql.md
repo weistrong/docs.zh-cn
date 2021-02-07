@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：构造类型 (实体 SQL) '
 title: 构造类型 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
-ms.openlocfilehash: 89b4c3bb8b9d69767aa30cee5331269537c084bd
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: 5963c34ffd8e9273d400cc16ba93f72ded2ede46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99427019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724838"
 ---
 # <a name="constructing-types-entity-sql"></a>构造类型 (Entity SQL)
 

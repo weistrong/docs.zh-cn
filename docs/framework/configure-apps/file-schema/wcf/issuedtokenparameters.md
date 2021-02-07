@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <issuedTokenParameters>
 title: <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: 120b3f37-7331-4816-b712-d6aab39655a4
-ms.openlocfilehash: c90024a0629f39d160967ca00434e48f682d8933
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 92c8f5aa25ddb71561eb702ba3eb0396456008a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725657"
 ---
 # \<issuedTokenParameters>
 
@@ -50,17 +51,17 @@ ms.locfileid: "91157312"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |defaultMessageSecurityVersion|指定安全规范（WS-Security、WS-Trust、WS-Secure Conversation 和 WS-Security Policy）的版本，绑定必须支持这些安全规范。 此值的类型为 <xref:System.ServiceModel.MessageSecurityVersion>。|  
 |inclusionMode|指定令牌包含要求。 此属性的类型为 <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>。|  
 |keySize|一个指定令牌的密钥大小的整数。 默认值为 256。|  
-|keyType|一个指定密钥类型的 <xref:System.IdentityModel.Tokens.SecurityKeyType> 的有效值。 默认为 `SymmetricKey`。|  
+|keyType|一个指定密钥类型的 <xref:System.IdentityModel.Tokens.SecurityKeyType> 的有效值。 默认值为 `SymmetricKey`。|  
 |tokenType|一个指定令牌类型的字符串。 默认值为“http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAML”。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<additionalRequestParameters>](additionalrequestparameters-element.md)|一个用于指定附加请求参数的配置元素的集合。|  
 |[\<claimTypeRequirements>](claimtyperequirements-element.md)|指定所需声明类型的集合。<br /><br /> 在联合方案中，服务规定有关传入凭据的要求。 例如，传入凭据必须具有某组声明类型。 此集合中的每个元素都指定希望出现在联合凭据中的必选和可选的声明类型。|  
@@ -69,7 +70,7 @@ ms.locfileid: "91157312"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<secureConversationBootstrap>](secureconversationbootstrap.md)|指定用于启动安全对话服务的默认值。|  
 |[\<security>](security-of-custombinding.md)|指定自定义绑定的安全选项。|  

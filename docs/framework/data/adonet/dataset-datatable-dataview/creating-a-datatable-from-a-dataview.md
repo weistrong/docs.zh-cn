@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：从 DataView 创建 DataTable
 title: 从数据视图中创建数据表
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2d45cf41-d8ae-4409-af3e-a96a7e476d85
-ms.openlocfilehash: 42843ec40f4f7271526e341dc53bdbc2ef11db38
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2cd1b4520cfcbeb626eea06ae2d87208339dae9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198725"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725047"
 ---
 # <a name="creating-a-datatable-from-a-dataview"></a>从数据视图中创建数据表
 
@@ -22,7 +23,7 @@ ms.locfileid: "91198725"
   
 ## <a name="example"></a>示例  
 
- 下面的控制台应用程序示例创建一个 <xref:System.Data.DataTable> ，它包含**AdventureWorks**示例数据库中的**Person**表中的数据。 接下来，该示例基于创建一个经过排序和筛选的 <xref:System.Data.DataView> <xref:System.Data.DataTable> 。 在显示和的内容之后 <xref:System.Data.DataTable> <xref:System.Data.DataView> ，该示例 <xref:System.Data.DataTable> 通过调用方法，从创建一个新的 <xref:System.Data.DataView> <xref:System.Data.DataView.ToTable%2A> ，仅选择可用列的子集。 最后，该示例显示新的 <xref:System.Data.DataTable> 的内容。  
+ 下面的控制台应用程序示例创建一个 <xref:System.Data.DataTable> ，它包含 **AdventureWorks** 示例数据库中的 **Person** 表中的数据。 接下来，该示例基于创建一个经过排序和筛选的 <xref:System.Data.DataView> <xref:System.Data.DataTable> 。 在显示和的内容之后 <xref:System.Data.DataTable> <xref:System.Data.DataView> ，该示例 <xref:System.Data.DataTable> 通过调用方法，从创建一个新的 <xref:System.Data.DataView> <xref:System.Data.DataView.ToTable%2A> ，仅选择可用列的子集。 最后，该示例显示新的 <xref:System.Data.DataTable> 的内容。  
   
 ```vb  
 Private Sub DemonstrateDataView()  

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <localIssuer>
 title: <localIssuer>
 ms.date: 03/30/2017
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
-ms.openlocfilehash: e08d2c0b42cfd8e302223915f0256f8cb2d1468b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 38928f1bfd7740aa902de46958740a1e8fe63e5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204952"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725475"
 ---
 # \<localIssuer>
 
@@ -36,7 +37,7 @@ ms.locfileid: "91204952"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |address|必选字符串。 指定本地颁发者的 URI。|  
 |binding|可选的字符串。 系统提供的一个绑定。 有关列表，请参阅 [系统提供的绑定](../../../wcf/system-provided-bindings.md)。|  
@@ -44,14 +45,14 @@ ms.locfileid: "91204952"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<identity>](identity.md)|指定此本地颁发者的标识信息。|  
 |[\<headers>](headers-element.md)|地址头的集合，要正确书写本地颁发者的地址必须使用这些地址头。 可以使用 `add` 关键字向此集合添加标头。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<issuedToken>](issuedtoken.md)|指定用于向服务验证客户端身份的自定义令牌。|  
   

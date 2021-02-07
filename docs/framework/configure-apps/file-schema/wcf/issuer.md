@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <issuer>
 title: <issuer>
 ms.date: 03/30/2017
 ms.assetid: 8c49c6ae-fa1a-4179-a84b-613c3216dcde
-ms.openlocfilehash: 9e92bbcacf529a97e1ae936e93e38c98eab19cab
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 771fb8d0bee4e78b598bd20c4d99ec5180f9fb1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157260"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725631"
 ---
 # \<issuer>
 
@@ -51,20 +52,20 @@ ms.locfileid: "91157260"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |address|必选字符串。 STS 的 URL。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<headers>](headers-element.md)|生成器可以创建的终结点的地址标头的集合。|  
 |[\<identity>](identity.md)|在使用颁发的令牌时，指定能够使客户端对服务器进行身份验证的设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<message>](message-element-of-wsfederationhttpbinding.md)|定义元素的消息级安全性设置 [\<wsFederationHttpBinding>](wsfederationhttpbinding.md) 。|  
   

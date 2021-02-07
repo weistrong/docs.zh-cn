@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <add> 的元素 <sharedListeners>
 title: <sharedListeners> 的 <add> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <add> element for <sharedListeners>
 - add element for <sharedListeners>
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-ms.openlocfilehash: f0ede5f9dc19e9589afc888e7fcd01785bc1840c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: df3348fa0cbb357b2ceeb5d9db940a1ae3ae102c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726073"
 ---
 # <a name="add-element-for-sharedlisteners"></a>\<sharedListeners> 的 \<add> 元素
 
@@ -49,13 +50,13 @@ ms.locfileid: "91174025"
 
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<filter>](filter-element-for-add-for-sharedlisteners.md)|将筛选器添加到 `sharedListeners` 集合中的侦听器。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.diagnostics`|指定用于收集、存储和路由消息的跟踪侦听器以及对跟踪开关设置的级别。|  

@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <issuedTokenAuthentication> 信息： <serviceCredentials>
 title: <issuedTokenAuthentication> 的 <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 5c2e288f-f603-4d13-839a-0fd6d1981bec
-ms.openlocfilehash: 88657b6982108596c8d9030161390f76fcff6609
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 62c60cc467217312c349ecdbe8e98b04dd022ddf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725670"
 ---
 # <a name="issuedtokenauthentication-of-servicecredentials"></a>\<issuedTokenAuthentication> 的 \<serviceCredentials>
 
@@ -49,7 +50,7 @@ ms.locfileid: "91202469"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`allowedAudienceUris`|获取 <xref:System.IdentityModel.Tokens.SamlSecurityToken> 安全令牌的目标 URI 集，只有在使用这些目标 URI 时，<xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> 实例才会将该令牌视为有效令牌。 有关使用此属性的更多信息，请参见 <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>。|  
 |`allowUntrustedRsaIssuers`|一个布尔值，指定是否允许不可信的 RSA 证书颁发者。<br /><br /> 证书由证书颁发机构 (CA) 签名，以验证真实性。 不可信的颁发者是指未被指定为可信的证书签名者的 CA。|  
@@ -57,18 +58,18 @@ ms.locfileid: "91202469"
 |`certificateValidationMode`|设置证书验证模式。 <xref:System.ServiceModel.Security.X509CertificateValidationMode> 的有效值之一。 如果设置为 `Custom`，则还必须提供 `customCertificateValidator`。 默认值为 `ChainTrust`。|  
 |`customCertificateValidatorType`|可选的字符串。 一个用于验证自定义类型的类型和程序集。 当 `certificateValidationMode` 设置为 `Custom` 时，必须设置此属性。|  
 |`revocationMode`|设置吊销模式以指定是否进行吊销检查，以及是联机执行还是脱机执行。 此属性的类型为 <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>。|  
-|`samlSerializer`|一个可选字符串属性，指定用于服务凭据的 SamlSerializer 的类型。 默认值为空字符串。|  
+|`samlSerializer`|一个可选字符串属性，指定用于服务凭据的 SamlSerializer 的类型。 默认值为一个空字符串。|  
 |`trustedStoreLocation`|可选的枚举。 两个系统存储位置之一：`LocalMachine` 或 `CurrentUser`。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`knownCertificates`|指定一个 <xref:System.ServiceModel.Configuration.X509CertificateTrustedIssuerElement> 元素的集合，此集合指定服务凭据的可信颁发者。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceCredentials>](servicecredentials.md)|指定要用于对服务进行身份验证的凭据以及与客户端凭据验证相关的设置。|  
   

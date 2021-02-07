@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <custom>
 title: <custom>
 ms.date: 03/30/2017
 ms.assetid: a6f65a00-bd1a-4d4a-955a-fe009ec02ab8
-ms.openlocfilehash: c208a6c7305ccbbe8efb10d071de29cf1bd2cc10
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 327a5d7ff1bab88a1633d7a10095e708e6b1a533
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165138"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725904"
 ---
 # \<custom>
 
@@ -37,21 +38,21 @@ ms.locfileid: "91165138"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`address`|一个 URI，指定承载自定义对等解析程序服务的对等节点的终结点地址。|  
 |`resolverType`|一个字符串值，指定自定义对等解析程序服务的类型。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<identity>](identity.md)|指定配置了此元素的自定义对等解析程序的标识。 此元素的类型为 <xref:System.ServiceModel.Configuration.IdentityElement>。|  
 |[\<headers>](headers-element.md)|一个地址标头集合，可用于由自定义对等解析程序处理的 SOAP 消息。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<resolver>](resolver.md)|一个对等解析程序，可用于将对等网格 ID 解析为一组对等节点地址，这些地址表示参与网格的若干节点。|  
   

@@ -1,20 +1,21 @@
 ---
+description: 了解详细信息：使用 XML web services 中的数据集
 title: 使用 XML Web Services 中的数据集
 ms.date: 07/14/2020
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
-ms.openlocfilehash: d4f4d5d34698fbb9a7986f4628b282d4425da3f7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 3c9112d259d5a6450a968ba87b33c4072f6dc44c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554692"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725124"
 ---
 # <a name="consume-a-dataset-from-an-xml-web-service"></a>使用 XML web services 中的数据集
 
-<xref:System.Data.DataSet> 是用断开式设计来构建的，其部分目的是为了便于通过 Internet 来传输数据。 **数据集**是可序列化的，因为可以将其指定为 XML Web services 的输入或从 XML Web services 输出，而无需进行任何其他编码即可将**数据集**的内容从 XML Web service 流式传输到客户端和返回到客户端。 **数据集**使用 DiffGram 格式隐式转换为 XML 流，并通过网络发送，然后作为接收端上的**数据集**从 xml 流重新构造。 这为你提供了一种简单而灵活的方法，用于通过 XML Web services 传输和返回关系数据。 有关 DiffGram 格式的详细信息，请参阅 [diffgram](diffgrams.md)。  
+<xref:System.Data.DataSet> 是用断开式设计来构建的，其部分目的是为了便于通过 Internet 来传输数据。 **数据集** 是可序列化的，因为可以将其指定为 XML Web services 的输入或从 XML Web services 输出，而无需进行任何其他编码即可将 **数据集** 的内容从 XML Web service 流式传输到客户端和返回到客户端。 **数据集** 使用 DiffGram 格式隐式转换为 XML 流，并通过网络发送，然后作为接收端上的 **数据集** 从 xml 流重新构造。 这为你提供了一种简单而灵活的方法，用于通过 XML Web services 传输和返回关系数据。 有关 DiffGram 格式的详细信息，请参阅 [diffgram](diffgrams.md)。  
   
  下面的示例演示如何创建使用 **数据集** 传输关系数据的 XML Web service 和客户端 (包括已修改的数据) 并将所有更新解析回原始数据源。  
   
@@ -193,9 +194,9 @@ ms.locfileid: "90554692"
   
      如果想让 Visual Studio 为你生成 Web 服务代理类，只需创建客户端项目，然后在 "解决方案资源管理器" 窗口中右键单击该项目，然后选择 "**添加**  >  **服务引用**"。 在 " **添加服务引用** " 对话框中，选择 " **高级**"，然后选择 " **添加 Web 引用**"。 从可用 Web 服务的列表中选择 Web 服务 (如果 Web 服务在当前解决方案或当前计算机上不可用，则这可能需要提供 Web 服务终结点的地址) 。 如果自己创建 XML Web services 代理（按照前面的步骤所述），可以将其导入客户端代码并使用 XML Web services 方法。
 
-     下面的示例代码导入代理库，调用**GetCustomers**以获取客户列表，添加新客户，然后返回**UpdateCustomers**更新的**数据集**。  
+     下面的示例代码导入代理库，调用 **GetCustomers** 以获取客户列表，添加新客户，然后返回 **UpdateCustomers** 更新的 **数据集**。  
   
-     该示例将**GetChanges**返回的**数据集**传递给**UpdateCustomers** ，因为只有修改的行需要传递到**UpdateCustomers**。 **UpdateCustomers** 返回已解析的 **数据集**，然后你可以将其 **合并** 到现有的 **数据集中** ，以合并来自更新的已解决更改和任何行错误信息。 以下代码假定你已使用 Visual Studio 创建 Web 引用，并且已在 " **添加 Web 引用** " 对话框中将 web 引用重命名为 "DsSample"。  
+     该示例将 **GetChanges** 返回的 **数据集** 传递给 **UpdateCustomers** ，因为只有修改的行需要传递到 **UpdateCustomers**。 **UpdateCustomers** 返回已解析的 **数据集**，然后你可以将其 **合并** 到现有的 **数据集中** ，以合并来自更新的已解决更改和任何行错误信息。 以下代码假定你已使用 Visual Studio 创建 Web 引用，并且已在 " **添加 Web 引用** " 对话框中将 web 引用重命名为 "DsSample"。  
   
     ```vb  
     Imports System  

@@ -1,16 +1,17 @@
 ---
+description: 了解有关详细信息，请参阅如何：通过覆盖数据库值解决冲突
 title: 如何：通过重写数据库值解决冲突
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fd6db0b8-c29c-48ff-b768-31d28e7a148c
-ms.openlocfilehash: 1dc112350451bde28d27c63961733b96f6fc84be
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4eaa66b4bb49706bb1ca6449d24c688a89f2750b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723499"
 ---
 # <a name="how-to-resolve-conflicts-by-overwriting-database-values"></a>如何：通过重写数据库值解决冲突
 

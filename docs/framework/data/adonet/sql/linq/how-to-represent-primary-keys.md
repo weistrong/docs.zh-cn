@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：表示主键
 title: 如何：表示主键
 ms.date: 03/30/2017
 ms.assetid: 63c65289-6539-42b2-8493-891c232018fa
-ms.openlocfilehash: 02570176c8aef5cfdc7ba09fd6976f430900e8df
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1fbac2d60bd730718b5330bfd48910a61deae15c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166230"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723603"
 ---
 # <a name="how-to-represent-primary-keys"></a>如何：表示主键
 

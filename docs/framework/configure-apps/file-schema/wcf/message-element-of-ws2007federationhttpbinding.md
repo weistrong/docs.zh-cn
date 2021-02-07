@@ -1,13 +1,14 @@
 ---
+description: 详细了解： <message> 的元素 <ws2007FederationHttpBinding>
 title: <message> 的元素 <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 52cd941d-e230-4c82-8b29-333a7d20eca8
-ms.openlocfilehash: d71bce5e94568bdad3c52226fa1029a1dd87bfd9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f9116a5075f30421dfb26adc29ec0b167db33673
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725448"
 ---
 # <a name="message-element-of-ws2007federationhttpbinding"></a>\<message> 的元素 \<ws2007FederationHttpBinding>
 
@@ -87,16 +88,16 @@ ms.locfileid: "91204913"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`algorithmSuite`|可选。 设置消息加密、签名和密钥包装算法。 算法和密钥大小由 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> 类确定。 这些算法与“安全策略语言”(WS-SecurityPolicy) 规范中指定的算法一致。<br /><br /> 有关可能的值，请参见下表。 默认值为 Basic256。|  
 |`issuedKeyType`|指定要颁发的密钥类型。 有效值包括以下值：<br /><br /> -SymmetricKey<br />-PublicKey<br />-为 bearerkey 并且<br /><br /> 默认值为 SymmetricKey。 此属性的类型为 <xref:System.IdentityModel.Tokens.SecurityKeyType>。|  
-|`issuedTokenType`|一个 URI，指定要颁发的令牌的类型。 默认为 `null`。|  
+|`issuedTokenType`|一个 URI，指定要颁发的令牌的类型。 默认值为 `null`。|  
 |`negotiateServiceCredential`|一个值，指定是否应在协商过程中交换服务凭据，或者是否可在带外使用服务凭据。 默认值为 `true`，这意味着对服务凭据进行协商。|  
   
 ## <a name="algorithmsuite-attribute"></a>algorithmSuite 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |Basic128|使用 Aes128 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
 |Basic192|使用 Aes192 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
@@ -117,7 +118,7 @@ ms.locfileid: "91204913"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](claimtyperequirements-element.md)|指定此绑定的声明类型集合。 每个元素的类型都为 <xref:System.ServiceModel.Configuration.ClaimTypeElement>。|  
 |[\<issuer>](issuer.md)|指定颁发安全令牌的终结点。 此元素的类型为 <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>。|  
@@ -126,7 +127,7 @@ ms.locfileid: "91204913"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-element-of-ws2007federationhttpbinding.md)|定义绑定的安全设置。|  
   

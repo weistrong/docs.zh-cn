@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：撰写嵌套的实体 SQL 查询
 title: 撰写嵌套的 Entity SQL 查询
 ms.date: 03/30/2017
 ms.assetid: 685d4cd3-2c1f-419f-bb46-c9d97a351eeb
-ms.openlocfilehash: 0c9a6a99ff49cfa847f4c1e7ea693fbb2611debd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 971625f0b1e82068192d4f8f74e2f1c55043d900
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153061"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724890"
 ---
 # <a name="composing-nested-entity-sql-queries"></a>撰写嵌套的 Entity SQL 查询
 

@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：实体键
 title: 实体键
 ms.date: 03/30/2017
 ms.assetid: 0d447a6d-fa7a-4db0-8e7a-fd45e385fca0
-ms.openlocfilehash: b2692faf2f8bea27c8a5d6cdc52689ca186d3194
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 588f18a2f76ca11c797b9b2aaab00b090c99e345
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200779"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724435"
 ---
 # <a name="entity-key"></a>实体键
 
-"*实体键*" 是用于确定标识的[实体类型](entity-type.md)的[一个或一组属性。](property.md) 构成实体键的属性是在设计时选择的。 实体键属性的值必须在运行时唯一标识 [实体集中](entity-set.md) 的实体类型实例。 在选择构成实体键的属性时应确保实例在实体集中的唯一性。  
+"*实体键*" 是用于确定标识的 [实体类型](entity-type.md)的 [一个或一组属性。](property.md) 构成实体键的属性是在设计时选择的。 实体键属性的值必须在运行时唯一标识 [实体集中](entity-set.md) 的实体类型实例。 在选择构成实体键的属性时应确保实例在实体集中的唯一性。  
   
  下面是将一组属性用作实体键的要求：  
   

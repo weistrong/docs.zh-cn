@@ -1,20 +1,21 @@
 ---
+description: 了解详细信息： DataContractJsonSerializer 示例
 title: DataContractJsonSerializer 示例
 ms.date: 03/30/2017
 ms.assetid: 3c2c4747-7510-4bdf-b4fe-64f98428ef4a
-ms.openlocfilehash: 4aa0ee679ae424251000b14abfbacf0590a6ccd3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 258cd38f9ee532e5d750b4cabaa4214366835be7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726346"
 ---
 # <a name="datacontractjsonserializer-sample"></a>DataContractJsonSerializer 示例
 
 > [!NOTE]
-> 此示例适用于 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 。 对于涉及序列化和反序列化 JSON 的大多数方案，我们建议在[system.web 命名空间](../../../standard/serialization/system-text-json-overview.md)中提供 api。
+> 此示例适用于 <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 。 对于涉及序列化和反序列化 JSON 的大多数方案，我们建议在 [System.Text.Js上命名空间](../../../standard/serialization/system-text-json-overview.md)中的 api。
 
-<xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 支持同一类型，如 <xref:System.Runtime.Serialization.DataContractSerializer>。 JSON 数据格式在编写异步 JavaScript 和 XML (AJAX) 样式的 Web 应用程序时特别有用。 Windows Communication Foundation （WCF）中的 AJAX 支持经过优化，可通过 ScriptManager 控件与 ASP.NET AJAX 一起使用。 有关如何将 Windows Communication Foundation （WCF）与 ASP.NET AJAX 一起使用的示例，请参阅[AJAX 示例](ajax.md)。  
+<xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> 支持同一类型，如 <xref:System.Runtime.Serialization.DataContractSerializer>。 JSON 数据格式在编写异步 JavaScript 和 XML (AJAX) 样式的 Web 应用程序时特别有用。 Windows Communication Foundation 中 (WCF) 的 AJAX 支持经过优化，可通过 ScriptManager 控件与 ASP.NET AJAX 一起使用。 有关如何使用 Windows Communication Foundation (WCF) 与 ASP.NET AJAX 一起使用的示例，请参阅 [Ajax 示例](ajax.md)。  
   
 本主题的最后介绍了此示例的设置过程和生成说明。  
   
@@ -61,12 +62,12 @@ Person p2 = (Person)ser.ReadObject(stream1);
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：  
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Ajax\JsonSerialization`  
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例  
   
-1. 按照[生成 Windows Communication Foundation 示例](building-the-samples.md)中所述生成解决方案 JsonSerialization。  
+1. 按照 [生成 Windows Communication Foundation 示例](building-the-samples.md)中所述生成解决方案 JsonSerialization。  
   
 2. 运行生成的控制台应用程序。  

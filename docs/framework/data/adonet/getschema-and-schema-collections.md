@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息： GetSchema 和架构集合
 title: GetSchema 和架构集合
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 7ab93b89-1221-427c-84ad-04803b3c64b4
-ms.openlocfilehash: cea9deb7fe019fea189a87fc08468d010929db9a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2b085435f0f9ea9ec33897ee417cd7a726c4503d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723980"
 ---
 # <a name="getschema-and-schema-collections"></a>GetSchema 和架构集合
 
-每个 .NET Framework 托管提供程序中的 **连接** 类实现了一个 **GetSchema** 方法，该方法用于检索有关当前已连接的数据库的架构信息，并且从 **GetSchema** 方法返回的架构信息采用形式 <xref:System.Data.DataTable> 。 **GetSchema**方法是一种重载方法，该方法提供了用于指定要返回的架构集合以及限制返回的信息量的可选参数。  
+每个 .NET Framework 托管提供程序中的 **连接** 类实现了一个 **GetSchema** 方法，该方法用于检索有关当前已连接的数据库的架构信息，并且从 **GetSchema** 方法返回的架构信息采用形式 <xref:System.Data.DataTable> 。 GetSchema 方法属于重载方法，提供可选的参数来指定要返回的架构集合以及限制返回的信息量。  
   
 ## <a name="specifying-the-schema-collections"></a>指定架构集合  
 
- **GetSchema**方法的第一个可选参数是以字符串形式指定的集合名称。 有两种类型的架构集合：所有提供程序通用的通用架构集合以及每个提供程序特定的特定架构集合。  
+ GetSchema 方法的第一个可选参数是以字符串形式指定的集合名称。 有两种类型的架构集合：所有提供程序通用的通用架构集合以及每个提供程序特定的特定架构集合。  
   
  可以通过调用不带任何参数的 **GetSchema** 方法或使用架构集合名称 "MetaDataCollections"，查询 .NET Framework 托管提供程序以确定支持的架构集合列表。 此时将返回 <xref:System.Data.DataTable>，包含支持的架构集合列表、每个架构集合支持的限制数以及所使用的标识符部分数。  
   
@@ -107,7 +108,7 @@ class Program
 }  
 ```  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [检索数据库架构信息](retrieving-database-schema-information.md)
 - [ADO.NET 概述](ado-net-overview.md)

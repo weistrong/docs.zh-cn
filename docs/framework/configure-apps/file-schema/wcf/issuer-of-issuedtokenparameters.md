@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <issuer> 信息： <issuedTokenParameters>
 title: <issuer> 的 <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90
-ms.openlocfilehash: bfe8163d2d6baba1d6e8053f7f6579673d8b4b21
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7d67583eda22414750631b6dff40f6e6ea8831e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157273"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725644"
 ---
 # <a name="issuer-of-issuedtokenparameters"></a>\<issuer> 的 \<issuedTokenParameters>
 
@@ -34,20 +35,20 @@ ms.locfileid: "91157273"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |address|必选字符串。 STS 的 URL。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<headers>](headers-element.md)|生成器可以创建的终结点的地址标头的集合。|  
 |[\<identity>](identity.md)|在使用颁发的令牌时，指定能够使客户端对服务器进行身份验证的设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|指定当前颁发的令牌。|  
   

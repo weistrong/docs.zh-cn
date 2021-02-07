@@ -1,18 +1,19 @@
 ---
+description: 了解有关 <behavior> 工作流的详细信息 <serviceBehaviors>
 title: <behavior><serviceBehaviors>工作流的
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 6a4b718a-1b40-4957-935a-f6122819ab3c
-ms.openlocfilehash: 14c528746963a3078e0ab377d095414d2fca0dbe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7504e9b307286871440bb6efdb672a59d3d13cb1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725280"
 ---
 # <a name="behavior-of-servicebehaviors-of-workflow"></a>\<behavior>\<serviceBehaviors>工作流的
 
-**行为**元素包含服务行为的设置集合。 每个行为都按其 **名称**编制索引。 服务可以使用元素的 **behaviorConfiguration** 特性通过此名称链接到每个行为 [\<endpoint>](../wcf/endpoint-element.md) 。 这样，终结点可以共享公共行为配置而不用重新定义设置。  
+**行为** 元素包含服务行为的设置集合。 每个行为都按其 **名称** 编制索引。 服务可以使用元素的 **behaviorConfiguration** 特性通过此名称链接到每个行为 [\<endpoint>](../wcf/endpoint-element.md) 。 这样，终结点可以共享公共行为配置而不用重新定义设置。  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
@@ -64,7 +65,7 @@ ms.locfileid: "91189612"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<bufferReceive>](bufferreceive.md)|一种服务行为，允许服务使用缓冲接收处理，以使工作流服务能够处理无序消息。|  
 |[\<routing>](../wcf/routing-of-servicebehavior.md)|一种服务行为，允许服务使用 <xref:System.Activities.Tracking.EtwTrackingParticipant> 来利用 ETW 跟踪。|  
@@ -76,6 +77,6 @@ ms.locfileid: "91189612"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceBehaviors>](servicebehaviors-of-workflow.md)|服务行为元素的集合。|

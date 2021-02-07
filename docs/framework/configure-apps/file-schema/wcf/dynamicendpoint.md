@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <dynamicEndpoint>
 title: <dynamicEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
-ms.openlocfilehash: 6f9cb127deb5651ed27a0ef5802512fb5b6c7b54
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0fe30492e1daeecca5e27aef844f5f6977396049
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725891"
 ---
 # \<dynamicEndpoint>
 
@@ -55,13 +56,13 @@ ms.locfileid: "91190093"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<discoveryClientSettings>](discoveryclientsettings.md)|包含应用程序以客户端形式参与服务发现过程所需的设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<standardEndpoints>](standardendpoints.md)|具有一个或多个固定属性（地址、绑定和协定）的预定义终结点的标准终结点集合。|  
   

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：运行时设置架构
 title: 运行时设置架构
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - configuration schema [.NET Framework], runtime settings
 - runtime settings schema
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
-ms.openlocfilehash: 1797afe3e6347da1aef916d13be7678b7b8d4acf
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: ee9c209866eb8c505130327d78a18482f5a282e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726125"
 ---
 # <a name="run-time-settings-schema"></a>运行时设置架构
 

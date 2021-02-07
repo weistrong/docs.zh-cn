@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <enableWebScript>
 title: <enableWebScript>
 ms.date: 03/30/2017
 ms.assetid: 9c7e96e1-af70-4e6e-ac5c-d67929dddbaa
-ms.openlocfilehash: 11378e6cc8cbe8e631fd77ab74c91a616099df52
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f357bf1ab726cd434a16b2daa9c8115afe7d4430
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190080"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725878"
 ---
 # \<enableWebScript>
 
@@ -40,7 +41,7 @@ ms.locfileid: "91190080"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定终结点行为集。|  
   

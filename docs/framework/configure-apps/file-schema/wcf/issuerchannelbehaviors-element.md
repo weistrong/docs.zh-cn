@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <issuerChannelBehaviors> 元素
 title: <issuerChannelBehaviors> 元素
 ms.date: 03/30/2017
 ms.assetid: f7378673-8e9b-45b2-98d1-cf5dccdd8c40
@@ -11,25 +12,25 @@ no-loc:
 - <issuedToken>
 - <issuerChannelBehaviors>
 - <dataContractSerializer>
-ms.openlocfilehash: cbbfb9d3b5af47a360aa82cf837cd6749f61b641
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6be79f2ee6afb442a7a399ce49df4ad59dff2db5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70893156"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725540"
 ---
-# <a name="issuerchannelbehaviors-element"></a>\<issuerChannelBehaviors> 元素
+# <a name="issuerchannelbehaviors-element"></a>\:：： no (<issuerChannelBehaviors>) ：：：元素
 
-包含与指定的服务令牌服务通信时要使用的 Windows Communication Foundation （WCF）客户端终结点行为（在配置中定义）的集合。 定义的行为不能包含任何 [\<clientCredentials>](clientcredentials.md) 元素。
+包含 Windows Communication Foundation (WCF) 客户端终结点行为的集合， (在与指定的服务令牌服务通信时要使用的配置) 中定义。 定义的行为不能包含任何[ \: ：： no (<clientCredentials>) ：：](clientcredentials.md) ：元素。
 
 [\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<system.serviceModel>](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[\<behaviors>](behaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<endpointBehaviors>](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<behavior>](behavior-of-endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<clientCredentials>](clientcredentials.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<issuedToken>](issuedtoken.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<issuerChannelBehaviors>
+&nbsp;&nbsp;[\:：： no ( # B0>) ：：：](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\:：： no (<behaviors>) ：：：](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\:：： no (<endpointBehaviors>) ：：：](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\:：： no (<behavior>) ：：：](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\:：： no (<clientCredentials>) ：：：](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\:：： no (<issuedToken>) ：：：](issuedtoken.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\:：： no (<issuerChannelBehaviors>) ：：：
 
 ## <a name="syntax"></a>语法
 
@@ -58,13 +59,13 @@ ms.locfileid: "70893156"
 
 |元素|说明|
 |-------------|-----------------|
-|[\<issuedToken>](issuedtoken.md)|指定用于向服务验证客户端身份的自定义令牌。|
+|[\:：： no (<issuedToken>) ：：：](issuedtoken.md)|指定用于向服务验证客户端身份的自定义令牌。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-当必须使用任何行为（包含 `<clientCredentials>` 元素的行为除外）与某个服务进行通信时，应使用此元素。 例如，如果 [\<dataContractSerializer>](datacontractserializer-element.md) 必须包括一个行为元素。
+当必须使用任何行为（包含 `<clientCredentials>` 元素的行为除外）与某个服务进行通信时，应使用此元素。 例如，如果必须包含[ \: ：： no (<dataContractSerializer>) ：：](datacontractserializer-element.md) ：行为元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>
