@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：属性 (Visual Basic) '
 title: 特性
 ms.date: 07/20/2015
 helpviewer_keywords:
 - attributes [Visual Basic]
 ms.assetid: 5deb2b8a-1afd-4dbd-8ee8-f093d74ad0eb
-ms.openlocfilehash: 27dea66da794e5fed95902c40a81fa03422f6267
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a43d53f1d34f7e184b2ac9c0995e17531da8e829
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675216"
 ---
 # <a name="attributes-visual-basic"></a>特性 (Visual Basic)
 
@@ -22,6 +23,6 @@ Visual Basic 提供了多个特性，这些特性允许对象与非托管代码�
 |<xref:Microsoft.VisualBasic.VBFixedArrayAttribute>|指示应该将结构中的数组或者非局部变量当作固定长度的数组来进行处理。|
 |<xref:Microsoft.VisualBasic.VBFixedStringAttribute>|指示应该将字符串当作固定长度的字符串来处理。|
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [属性概述](../programming-guide/concepts/attributes/index.md)
