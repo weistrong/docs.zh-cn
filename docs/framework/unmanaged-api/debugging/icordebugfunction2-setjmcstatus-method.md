@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugFunction2：： SetJMCStatus 方法
 title: ICorDebugFunction2::SetJMCStatus 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22c27b01-2869-4214-b840-5921f7c874fc
 topic_type:
 - apiref
-ms.openlocfilehash: 55f219b5b834f365b87440e69bfa7d2c4e519235
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d2df9d47808b0220a91bd344e7600f8d16eccdb4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692181"
 ---
 # <a name="icordebugfunction2setjmcstatus-method"></a>ICorDebugFunction2::SetJMCStatus 方法
 
@@ -46,7 +47,7 @@ HRESULT SetJMCStatus (
 |`S_OK`|已成功标记函数。|  
 |`CORDBG_E_FUNCTION_NOT_DEBUGGABLE`|函数无法标记为用户代码，因为无法对其进行调试。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  仅我的代码分档器将跳过非用户代码。 用户代码必须是可调试代码的子集。  
   

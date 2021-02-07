@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugExceptionObjectValue：： EnumerateExceptionCallStack 方法
 title: ICorDebugExceptionObjectValue::EnumerateExceptionCallStack 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 00c64533-15dd-47f4-bb97-fe80a1ebadef
 topic_type:
 - apiref
-ms.openlocfilehash: 101151469e2eece20afe289c9d95387ce6dc7c6a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 97918d280299fae16eb55185baee19c27d99005b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693273"
 ---
 # <a name="icordebugexceptionobjectvalueenumerateexceptioncallstack-method"></a>ICorDebugExceptionObjectValue::EnumerateExceptionCallStack 方法
 
@@ -39,7 +40,7 @@ HRESULT EnumerateExceptionCallStack(
  ppCallStackEnum  
  弄指向 [ICorDebugExceptionObjectCallStackEnum](icordebugexceptionobjectcallstackenum-interface.md) 接口对象地址的指针，该对象是托管异常对象的堆栈跟踪枚举器。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果没有可用的调用堆栈信息，则该方法将返回 `S_OK` ，并且 [ICorDebugExceptionObjectCallStackEnum](icordebugexceptionobjectcallstackenum-interface.md) 是长度为0的有效枚举器。 如果该方法无法检索堆栈跟踪信息，则返回值为 `E_FAIL` ，并且不返回任何枚举器。  
   
@@ -55,7 +56,7 @@ HRESULT EnumerateExceptionCallStack(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugExceptionObjectValue 接口](icordebugexceptionobjectvalue-interface.md)
 - [调试接口](debugging-interfaces.md)

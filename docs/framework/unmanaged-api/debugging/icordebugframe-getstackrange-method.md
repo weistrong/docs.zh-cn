@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugFrame：： GetStackRange 方法
 title: ICorDebugFrame::GetStackRange 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fab037cb-fda6-40fb-9367-921e435dd5a0
 topic_type:
 - apiref
-ms.openlocfilehash: 0cfc734e3c2d250bba045a926f5b178b6cbc1ba4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1f1278e0c00addc3c14f4e1c8d3ed5aad0381526
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692896"
 ---
 # <a name="icordebugframegetstackrange-method"></a>ICorDebugFrame::GetStackRange 方法
 
@@ -43,7 +44,7 @@ HRESULT GetStackRange (
  `pEnd`  
  弄指向的指针 `CORDB_ADDRESS` ，它指定此对象表示的堆栈帧的结束地址 `ICorDebugFrame` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  堆栈的地址范围可用于拼凑将从多个调试引擎中收集的交错堆栈跟踪组合在一起。 数值范围不提供有关堆栈帧内容的信息。 它仅用于比较堆栈帧位置。  
   

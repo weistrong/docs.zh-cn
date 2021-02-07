@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback3：： CustomNotification 方法
 title: ICorDebugManagedCallback3::CustomNotification 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5e5422ac-afa1-403d-a894-2d7348673e38
 topic_type:
 - apiref
-ms.openlocfilehash: f30c9b6746d0e1594994870a96e94eb8105e4c94
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 18210e9c65afa0655374fb038d30516cfed02052
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700829"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691713"
 ---
 # <a name="icordebugmanagedcallback3customnotification-method"></a>ICorDebugManagedCallback3::CustomNotification 方法
 
@@ -67,7 +68,7 @@ HRESULT CustomNotification(ICorDebugThread *    pThread,
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugManagedCallback3 接口](icordebugmanagedcallback3-interface.md)
 - [调试接口](debugging-interfaces.md)

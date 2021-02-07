@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugFunction3 接口
 title: ICorDebugFunction3 接口
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: b22717b9-ead5-4eea-887e-789b52d613dc
 topic_type:
 - apiref
-ms.openlocfilehash: 17eda7470e5f2e4b41d1f2ed164843eaeeedea93
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f6f3ce78fbb0ca7efb6ba6a95da20f8c698b923c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692064"
 ---
 # <a name="icordebugfunction3-interface"></a>ICorDebugFunction3 接口
 
@@ -41,7 +42,7 @@ ms.locfileid: "95695864"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

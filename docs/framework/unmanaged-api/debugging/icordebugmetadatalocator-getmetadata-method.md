@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugMetaDataLocator：： GetMetaData 方法
 title: ICorDebugMetaDataLocator::GetMetaData 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
 topic_type:
 - apiref
-ms.openlocfilehash: 63efb788d8bca84da94921371309704cc7b20ac4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 419a03e42a54057ab70e31a368e918612f3a85f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691674"
 ---
 # <a name="icordebugmetadatalocatorgetmetadata-method"></a>ICorDebugMetaDataLocator::GetMetaData 方法
 
@@ -73,7 +74,7 @@ HRESULT GetMetaData(
 |S_OK|该方法已成功完成。 `wszPathBuffer` 包含文件的完整路径，以 null 结尾。|  
 |E_NOT_SUFFICIENT_BUFFER|`wszPathBuffer` 的当前大小不足以容纳完整路径。 在这种情况下，`pcchPathBuffer` 包含所需的 `WCHAR` 计数（包括终止 null 字符），并且使用请求的缓冲区大小第二次调用 `GetMetaData`。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `wszImagePath` 包含转储中模块的完整路径，则它从收集转储的计算机指定路径。 文件可能不位于此位置，或者具有相同名称的不正确文件可能存储在该路径上。  
   
@@ -87,7 +88,7 @@ HRESULT GetMetaData(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugThread4 接口](icordebugthread4-interface.md)
 - [调试接口](debugging-interfaces.md)

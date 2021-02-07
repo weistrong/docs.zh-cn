@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule：： GetMetaDataInterface 方法
 title: ICorDebugModule::GetMetaDataInterface 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 30d906f2-cf35-4fa9-9d4c-0c31b58c9f3a
 topic_type:
 - apiref
-ms.openlocfilehash: 9693014a24c5cbbb0db2d1c9b0a4d41fd3cdf5b5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 39af2560b4c10f6dc490bfba5425e2339a7c1823
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691635"
 ---
 # <a name="icordebugmodulegetmetadatainterface-method"></a>ICorDebugModule::GetMetaDataInterface 方法
 
@@ -43,7 +44,7 @@ HRESULT GetMetaDataInterface (
  `ppObj`  
  弄指向对象地址的指针，该 `T:IUnknown` 对象是一个 [元数据接口](../metadata/metadata-interfaces.md)。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调试器可以使用 `GetMetaDataInterface` 方法创建模块的原始元数据的副本，必须执行此操作才能编辑该模块。 调试器调用 `GetMetaDataInterface` 以获取该模块的 [IMetaDataEmit](../metadata/imetadataemit-interface.md) 接口对象，然后调用 [IMetaDataEmit：： SaveToMemory](../metadata/imetadataemit-savetomemory-method.md) 将模块的元数据副本保存到内存。  
   
@@ -57,6 +58,6 @@ HRESULT GetMetaDataInterface (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - Metadata 

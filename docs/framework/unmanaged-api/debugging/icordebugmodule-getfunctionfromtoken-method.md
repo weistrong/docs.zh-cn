@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule：： GetFunctionFromToken 方法
 title: ICorDebugModule::GetFunctionFromToken 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6fe12194-4ef7-43c1-9570-ade35ccf127a
 topic_type:
 - apiref
-ms.openlocfilehash: bf2acd897c9c45e445b864f85550ed7ed6e00886
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d6da43441f3774cff44a6f867c3ccf2a8581ebab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691644"
 ---
 # <a name="icordebugmodulegetfunctionfromtoken-method"></a>ICorDebugModule::GetFunctionFromToken 方法
 
@@ -43,7 +44,7 @@ HRESULT GetFunctionFromToken(
  `ppFunction`  
  弄指向表示函数的 ICorDebugFunction 接口对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetFunctionFromToken`如果传入的值 `methodDef` 不引用 Microsoft 中间语言 (MSIL) 方法，则方法将返回 CORDBG_E_FUNCTION_NOT_IL HRESULT。  
   

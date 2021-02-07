@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugFunction 接口
 title: ICorDebugFunction 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 783faea9-8083-41c1-b04a-51a81ac4c8f3
 topic_type:
 - apiref
-ms.openlocfilehash: 668b27932ea7a2bdc244e1ac0bb8e6891cbd4d17
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 835625341889e89e15ceb66ca71531cf7b8311c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726286"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692363"
 ---
 # <a name="icordebugfunction-interface"></a>ICorDebugFunction 接口
 
@@ -38,7 +39,7 @@ ms.locfileid: "95726286"
 |[GetNativeCode 方法](icordebugfunction-getnativecode-method.md)|获取此函数的本机代码。|  
 |[GetToken 方法](icordebugfunction-gettoken-method.md)|获取此函数的元数据标记。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugFunction`接口不表示包含泛型类型参数的函数。 例如，一个 `ICorDebugFunction` 实例将表示， `Func<T>` 而不是 `Func<string>` 。 调用 [ICorDebugILFrame2：： EnumerateTypeParameters](icordebugilframe2-enumeratetypeparameters-method.md) 以获取泛型类型参数。  
   
@@ -61,6 +62,6 @@ ms.locfileid: "95726286"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
