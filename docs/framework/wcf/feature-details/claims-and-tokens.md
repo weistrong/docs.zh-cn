@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：声明和标记
 title: 声明和令牌
 ms.date: 03/30/2017
 helpviewer_keywords:
 - claims [WCF], and tokens
 ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
-ms.openlocfilehash: cbc97f2224bce640757e1cef88fe325db477cfd7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d7d05fb63886ca7562ce478bcbcea73c3cbafcb8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734953"
 ---
 # <a name="claims-and-tokens"></a>声明和令牌
 
-本主题介绍 Windows Communication Foundation （WCF）从其支持的默认标记创建的各种声明类型。
+本主题介绍 Windows Communication Foundation (WCF) 从其支持的默认令牌创建的各种声明类型。
 
 可以使用 <xref:System.IdentityModel.Claims.ClaimSet> 和 <xref:System.IdentityModel.Claims.Claim> 类来检查客户端凭据的声明。 `ClaimSet` 包含 `Claim` 对象的集合。 每个 `Claim` 都具有以下重要成员：
 
@@ -53,7 +54,7 @@ ms.locfileid: "84587022"
 
   - `Claim` 为 Thumbprint、`ClaimType` 为 PossessProperty 以及 `Right` 为包含证书指纹的字节数组的 `Resource`
 
-  - 各种类型的其他 PossessProperty 声明，包括表示各种证书属性的 X500DistinguishedName、Dns、Name、Upn 和 Rsa。 Rsa 声明的资源是与证书关联的公钥。**注意**如果客户端凭据类型是服务将映射到 Windows 帐户的证书，则 `ClaimSet` 会生成两个对象。 第一个对象包含与 Windows 帐户相关的所有声明，第二个对象包含与证书相关的所有声明。
+  - 各种类型的其他 PossessProperty 声明，包括表示各种证书属性的 X500DistinguishedName、Dns、Name、Upn 和 Rsa。 Rsa 声明的资源是与证书关联的公钥。**注意** 如果客户端凭据类型是服务将映射到 Windows 帐户的证书，则 `ClaimSet` 会生成两个对象。 第一个对象包含与 Windows 帐户相关的所有声明，第二个对象包含与证书相关的所有声明。
 
 ## <a name="user-namepassword"></a>用户名/密码
 
@@ -71,7 +72,7 @@ ms.locfileid: "84587022"
 
 如果 `ClaimSet` 客户端凭据生成的任何对象都不包含包含的声明， `Right` `Identity,` 则属性将 <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> 返回 `true` 。 如果存在一个或多个此类声明，则 `IsAnonymous` 属性将返回 `false`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.IdentityModel.Claims.ClaimSet>
 - <xref:System.IdentityModel.Claims.Claim>

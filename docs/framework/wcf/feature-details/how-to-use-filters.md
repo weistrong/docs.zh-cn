@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：使用筛选器
 title: 如何：使用筛选器
 ms.date: 03/30/2017
 ms.assetid: f2c7255f-c376-460e-aa20-14071f1666e5
-ms.openlocfilehash: 149c0809820d6a4a9c8dabfb545258b9a3ffb40b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0218685cae6fe8dc4c1e36e51075d58b041ae7fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734316"
 ---
 # <a name="how-to-use-filters"></a>如何：使用筛选器
 
@@ -327,6 +328,6 @@ ms.locfileid: "96280840"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [路由服务](../samples/routing-services.md)

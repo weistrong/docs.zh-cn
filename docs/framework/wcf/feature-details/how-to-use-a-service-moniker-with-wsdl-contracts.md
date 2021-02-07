@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：将服务名字对象用于 WSDL 协定
 title: 如何：将服务名字对象用于 WSDL 协定
 ms.date: 03/30/2017
 ms.assetid: a88d9650-bb50-4f48-8c85-12f5ce98a83a
-ms.openlocfilehash: 6b1a6c905008b0232a098f253b9007e5147d71a2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 70a8ef0258cd8490d8e14b6a80e8de0248fa0ae2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280879"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734368"
 ---
 # <a name="how-to-use-a-service-moniker-with-wsdl-contracts"></a>如何：将服务名字对象用于 WSDL 协定
 
@@ -55,7 +56,7 @@ ms.locfileid: "96280879"
   
 7. 运行 Visual Basic 应用程序。 将显示一个消息框，其中列出调用 Subtract(145, 76.54) 的结果。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [入门](../samples/getting-started-sample.md)
 - [COM 应用程序集成概述](integrating-with-com-applications-overview.md)

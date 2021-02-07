@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：为指定的身份验证模式创建 SecurityBindingElement
 title: 如何：为指定的身份验证模式创建 SecurityBindingElement
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a7c7747a-5b8c-463f-8493-7266dac75066
-ms.openlocfilehash: 7b71224c74d7e9e766fb17101219dc5718d5d6a6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cb0831787b6d54daf561fc2750f1efe81bebfb0f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734472"
 ---
 # <a name="how-to-create-a-securitybindingelement-for-a-specified-authentication-mode"></a>如何：为指定的身份验证模式创建 SecurityBindingElement
 
@@ -28,7 +29,7 @@ Windows Communication Foundation (WCF) 提供多种模式，客户端和服务�
  [!code-csharp[c_CustomBindingsAuthMode#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombindingsauthmode/cs/source.cs#2)]
  [!code-vb[c_CustomBindingsAuthMode#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombindingsauthmode/vb/source.vb#2)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [SecurityBindingElement 身份验证模式](securitybindingelement-authentication-modes.md)
 - [如何：使用 SecurityBindingElement 创建自定义绑定](how-to-create-a-custom-binding-using-the-securitybindingelement.md)

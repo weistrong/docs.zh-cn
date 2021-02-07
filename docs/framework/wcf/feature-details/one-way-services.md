@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： One-Way 服务
 title: 单向服务
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF [WCF], one-way service contracts
 - service contracts [WCF], defining one-way
 ms.assetid: 19053a36-4492-45a3-bfe6-0365ee0205a3
-ms.openlocfilehash: c4b69d68c52e9f199348544e5838babc9f4d8c2c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c614db0103506022da72e8f4659ae09e8b949a27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733692"
 ---
 # <a name="one-way-services"></a>单向服务
 
@@ -56,6 +57,6 @@ public interface IOneWayCalculator
   
  建议改为检查服务以及客户端上的各个控制机制，然后测试应用程序方案来确定任一端最佳配置。 例如，如果使用会话会在服务上阻止消息的处理，则可以将 <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> 属性设置为 <xref:System.ServiceModel.InstanceContextMode.PerCall>，使每个消息都可以通过不同的服务实例来处理，并将 <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> 设置为 <xref:System.ServiceModel.ConcurrencyMode.Multiple>，以便允许多个线程一次调度多个消息。 另一个方法是提高服务和客户端绑定的读取配额。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [单向](../samples/one-way.md)

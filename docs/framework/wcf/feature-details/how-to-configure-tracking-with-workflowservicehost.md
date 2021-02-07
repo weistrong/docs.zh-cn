@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：用 WorkflowServiceHost 配置跟踪
 title: 如何：使用 WorkflowServiceHost 配置跟踪
 ms.date: 03/30/2017
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
-ms.openlocfilehash: cf30ace90f86e282d72c4da5f2c3707905360aeb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 11c48c3989ab9b788c1e6834d8cbfe53e2b8a53e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734823"
 ---
 # <a name="how-to-configure-tracking-with-workflowservicehost"></a>如何：使用 WorkflowServiceHost 配置跟踪
 
@@ -69,7 +70,7 @@ ms.locfileid: "96257348"
   
      有关常规跟踪的详细信息，请参阅 [工作流跟踪和跟踪](../../windows-workflow-foundation/workflow-tracking-and-tracing.md)。 有关以编程方式配置跟踪的示例，请参阅为 [工作流配置跟踪](../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF 服务的简化配置](../samples/simplified-configuration-for-wcf-services.md)
 - [工作流服务](workflow-services.md)

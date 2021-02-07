@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：部分信任功能兼容性
 title: 部分信任功能兼容性
 ms.date: 03/30/2017
 ms.assetid: a36a540b-1606-4e63-88e0-b7c59e0e6ab7
-ms.openlocfilehash: baf7758bc83419a68f900aa51233006ecb61d8e0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 470cedde3eb38508feb1c2950f7f504390914834
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247988"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733523"
 ---
 # <a name="partial-trust-feature-compatibility"></a>部分信任功能兼容性
 
@@ -59,7 +60,7 @@ ms.locfileid: "96247988"
   
  不支持消息传输优化机制 (MTOM) 编码器。  
   
-### <a name="security"></a>安全性  
+### <a name="security"></a>安全  
 
  部分受信任的应用程序可以使用 WCF 的传输级安全功能来保护其通信。 不支持消息级安全。 将绑定配置为使用消息级别的安全会在运行时导致异常。  
   
@@ -179,7 +180,7 @@ ms.locfileid: "96247988"
 
  若要在部分信任环境中运行时发现不可用的信息或操作，最好的方法是尝试在 `try` 块的内部访问资源或执行操作，然后 `catch` 失败。 若要避免在出现重复错误时扩散跟踪文件，WCF 在第一次安全失败之后禁用资源或操作跟踪。 对于在第一次尝试访问资源或执行操作时出现的每个失败的资源访问，将会有一个异常跟踪。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>

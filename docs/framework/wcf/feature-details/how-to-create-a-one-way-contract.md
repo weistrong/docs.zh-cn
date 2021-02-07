@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：创建 One-Way 协定
 title: 如何：创建单向协定
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 85084cd9-31cc-4e95-b667-42ef01336622
-ms.openlocfilehash: 7f0285ba4824ac842b3644d0834782139fd90657
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 465dc2da20288c918a70743fcbe3ed931620b33b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734719"
 ---
 # <a name="how-to-create-a-one-way-contract"></a>如何：创建单向协定
 
@@ -33,7 +34,7 @@ ms.locfileid: "96268685"
  [!code-csharp[S_Service_Session#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_service_session/cs/service.cs#1)]
  [!code-vb[S_Service_Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_service_session/vb/service.vb#1)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：将 WSE 3.0 Web 服务迁移到 WCF
 title: 将 WSE 3.0 Web 服务迁移到 WCF
 ms.date: 03/30/2017
 ms.assetid: 7bc5fff7-a2b2-4dbc-86cc-ecf73653dcdc
-ms.openlocfilehash: 84d227a46c4d17291ccf35a759018ffbe6f48b82
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 92ba60410747399e7a58944c08a082d56fc524d2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248157"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733731"
 ---
 # <a name="migrating-wse-30-web-services-to-wcf"></a>将 WSE 3.0 Web 服务迁移到 WCF
 
@@ -24,7 +25,7 @@ ms.locfileid: "96248157"
 > [!NOTE]
 > 若要将 WSE Web 服务迁移到 WCF，请使用 " [)  (" 元数据实用工具 "工具 ](../servicemodel-metadata-utility-tool-svcutil-exe.md) 来生成客户端。 另一方面，该客户端还包含可以用作 WCF 服务起点的接口和类。 所生成的接口将 <xref:System.ServiceModel.OperationContractAttribute> 属性 (attribute) 应用于将 <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> 属性 (property) 设置为 `*` 的协定的成员。 当 WSE 客户端使用此设置调用 Web 服务时，将引发以下异常： **Services3。 ResponseProcessingException： WSE910：处理响应消息期间发生错误，你可以在内部异常中找到错误**。 若要缓解此问题，可以将 <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> 属性 (attribute) 的 <xref:System.ServiceModel.OperationContractAttribute> 属性 (property) 设置为非 `null` 值，例如 `http://Microsoft.WCF.Documentation/ResponseToOCAMethod`。  
   
-## <a name="security"></a>安全性  
+## <a name="security"></a>安全  
   
 ### <a name="wse-30-web-services-that-are-secured-using-a-policy-file"></a>使用策略文件保护其安全的 WSE 3.0 Web 服务  
 
@@ -133,7 +134,7 @@ ms.locfileid: "96248157"
 
  WCF 中的 WSE 3.0 自定义传输的等效项是通道扩展。 有关创建通道扩展的详细信息，请参阅 [扩展通道层](../extending/extending-the-channel-layer.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [基本编程生命周期](../basic-programming-lifecycle.md)
 - [自定义绑定](../extending/custom-bindings.md)

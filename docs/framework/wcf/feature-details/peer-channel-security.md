@@ -1,13 +1,14 @@
 ---
+description: 详细了解：对等通道安全性
 title: 对等通道安全性
 ms.date: 03/30/2017
 ms.assetid: 2c59b164-3729-44f0-a967-f247c42de662
-ms.openlocfilehash: a237987a0139f0f72f2e49be318da0f62c4f2691
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: af2256c5b40daad7705946cb74c175dffde410f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247858"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733419"
 ---
 # <a name="peer-channel-security"></a>对等通道安全性
 
@@ -37,7 +38,7 @@ ms.locfileid: "96247858"
   
  只要应用程序选择了一种受支持的令牌类型，对等通道就不再需要特定的标识模型。 应用程序可以完全控制这些标识和身份验证决策的生命周期。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [保护对等通道应用程序](securing-peer-channel-applications.md)
 - [对等通道概念](peer-channel-concepts.md)

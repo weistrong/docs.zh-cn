@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：扩展性简介
 title: 扩展性介绍
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], extensibility
 - extensibility [WCF]
 ms.assetid: ef56c251-d63c-4b3f-944f-b0c67bfb0f68
-ms.openlocfilehash: 8f4cc490df49a91e448c02fef370ce828536f907
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a3e614d107d2371076358f8e7786c1bb246e36eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262718"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732834"
 ---
 # <a name="introduction-to-extensibility"></a>扩展性介绍
 
@@ -61,6 +62,6 @@ Windows Communication Foundation (WCF) 应用程序模型设计用于解决任�
   
  若要修改主机应用程序域和服务主机之间的关系，必须扩展 <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> 类。 有关详细信息，请参阅 [使用 ServiceHostFactory 扩展托管](./extending/extending-hosting-using-servicehostfactory.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展 WCF](./extending/index.md)

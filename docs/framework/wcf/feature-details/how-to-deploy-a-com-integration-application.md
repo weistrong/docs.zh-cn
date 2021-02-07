@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息，请参阅如何：部署 COM + 集成应用程序
 title: 如何：部署 COM+ 集成应用程序
 ms.date: 03/30/2017
 ms.assetid: 2e5a0510-db3c-4988-a09c-696285836650
-ms.openlocfilehash: 5f2e64ed06b98db50259edf8ef307ce430b8be38
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4bf9e72a631c97f3b791ecd01abb5cb74365772d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289784"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734381"
 ---
 # <a name="how-to-deploy-a-com-integration-application"></a>如何：部署 COM+ 集成应用程序
 
@@ -39,7 +40,7 @@ ms.locfileid: "96289784"
   
 5. 将计算机 A 上虚拟根目录中的 .svc 文件 (componentName.svc) 和 Web.config 文件复制到计算机 B 上新创建的虚拟根目录。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [与 COM + 应用程序集成概述](integrating-with-com-plus-applications-overview.md)
 - [如何：配置 COM+ 服务设置](how-to-configure-com-service-settings.md)

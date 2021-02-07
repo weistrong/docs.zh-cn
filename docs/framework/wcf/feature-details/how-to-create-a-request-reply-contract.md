@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：创建 Request-Reply 协定
 title: 如何：创建请求-答复协定
 ms.date: 03/30/2017
 ms.assetid: 801d90da-3d45-4284-9c9f-56c8aadb4060
-ms.openlocfilehash: 506ce527348286bb53223c64245c74e4cb21879a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f5e63538a405aa451ffd3be114485604c00fa407
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734693"
 ---
 # <a name="how-to-create-a-request-reply-contract"></a>如何：创建请求-答复协定
 
@@ -47,9 +48,9 @@ public interface ICalculator
   
 - 有关如何指定操作协定的详细信息，请参阅 <xref:System.ServiceModel.OperationContractAttribute> 类和 <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> 属性。  
   
-- 在部署了服务之后，应用 <xref:System.ServiceModel.ServiceContractAttribute> 和 <xref:System.ServiceModel.OperationContractAttribute> 特性会导致在 Web 服务描述语言 (WSDL) 文档中自动生成服务协定定义。 通过将 `?wsdl` 追加到该服务的 HTTP 基址，可下载此文档。 例如 `http://microsoft/CalculatorService?wsdl`  
+- 在部署了服务之后，应用 <xref:System.ServiceModel.ServiceContractAttribute> 和 <xref:System.ServiceModel.OperationContractAttribute> 特性会导致在 Web 服务描述语言 (WSDL) 文档中自动生成服务协定定义。 通过将 `?wsdl` 追加到该服务的 HTTP 基址，可下载此文档。 例如，`http://microsoft/CalculatorService?wsdl`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.OperationContractAttribute>
 - [设计服务协定](../designing-service-contracts.md)

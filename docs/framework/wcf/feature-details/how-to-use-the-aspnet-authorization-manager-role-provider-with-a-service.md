@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：将 ASP.NET 授权管理器角色提供程序与服务一起使用
 title: 如何：将 ASP.NET 授权管理器角色提供程序与服务一起使用
 ms.date: 03/30/2017
 ms.assetid: f21deb81-91ef-49ef-94d6-494785143271
-ms.openlocfilehash: bbdafdd96a32b41d7c6892944ed872e3f8702f0e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 24d6bbbf2181189104fb0df0068130c402fd2f68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734121"
 ---
 # <a name="how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service"></a>如何：将 ASP.NET 授权管理器角色提供程序与服务一起使用
 
@@ -32,6 +33,6 @@ ms.locfileid: "96280593"
   
  有关将 ASP.NET 角色提供程序与 WCF 应用程序集成的详细信息，请参阅 [如何：将 ASP.NET 角色提供程序用于服务](how-to-use-the-aspnet-role-provider-with-a-service.md)。 有关将授权管理器与 ASP.NET 配合使用的详细信息，请参阅 [如何：将授权管理器 (AzMan) 与 ASP.NET 2.0 一起](/previous-versions/msp-n-p/ff649313(v=pandp.10))使用。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：将 ASP.NET 角色提供程序与服务一起使用](how-to-use-the-aspnet-role-provider-with-a-service.md)

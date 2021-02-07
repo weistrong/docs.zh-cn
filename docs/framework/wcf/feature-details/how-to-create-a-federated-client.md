@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：创建联合客户端
 title: 如何：创建联合客户端
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 56ece47e-98bf-4346-b92b-fda1fc3b4d9c
-ms.openlocfilehash: a03d388f2773e312a149b5caf1747627d1c17864
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0078a07ff23dd364dcb8513a55e4ea6a54df40db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734732"
 ---
 # <a name="how-to-create-a-federated-client"></a>如何：创建联合客户端
 
@@ -165,7 +166,7 @@ ms.locfileid: "96286618"
 > [!NOTE]
 > 作用域限定为给定的 URI 的证书的客户端想法仅适用于对服务（这些服务公开这些 URI 处的终结点）进行出站调用的应用程序。 它不适用于对颁发的令牌进行签名的证书，例如在服务器上的服务器中配置的、由类的返回的证书 <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> 。 有关详细信息，请参阅 [如何：在联合身份验证服务上配置凭据](how-to-configure-credentials-on-a-federation-service.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [联合示例](../samples/federation-sample.md)
 - [如何：在 WSFederationHttpBinding 上禁用安全会话](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)

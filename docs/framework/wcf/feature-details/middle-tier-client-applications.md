@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： Middle-Tier 客户端应用程序
 title: 中间层客户端应用程序
 ms.date: 03/30/2017
 ms.assetid: f9714a64-d0ae-4a98-bca0-5d370fdbd631
-ms.openlocfilehash: 5019215567f4c9127f2e53fd4cdf0d4a67b84d17
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 90de03bb72e14f023db86e6f8226ae84f7461bee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733809"
 ---
 # <a name="middle-tier-client-applications"></a>中间层客户端应用程序
 
@@ -37,6 +38,6 @@ ms.locfileid: "96248248"
   
  此外，如果客户端使用可用 <xref:System.Xml.Serialization.XmlSerializer> 进行序列化的数据类型，则会在运行时生成并编译这些数据类型的序列化代码，从而导致启动性能降低；但你可以提高那些客户端的启动性能。 通过从应用程序的编译的程序集生成必要的序列化代码， [ ( # A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md) 可提高这些应用程序的启动性能。 有关详细信息，请参阅 [如何：使用 XmlSerializer 改善 WCF 客户端应用程序的启动时间](startup-time-of-wcf-client-applications-using-the-xmlserializer.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 WCF 客户端访问服务](accessing-services-using-a-client.md)

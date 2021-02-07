@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：负载均衡
 title: 负载平衡
 ms.date: 03/30/2017
 helpviewer_keywords:
 - load balancing [WCF]
 ms.assetid: 148e0168-c08d-4886-8769-776d0953b80f
-ms.openlocfilehash: ccb915c33be217d2a8d00a54c5bd57384286140f
-ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
+ms.openlocfilehash: 9f7946793fb9a9eec9baf531e4650f68b92151d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99548092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732808"
 ---
 # <a name="load-balancing"></a>负载平衡
 
@@ -97,6 +98,6 @@ ms.locfileid: "99548092"
   
  若要在负载平衡方案中获得最佳性能，请考虑使用 <xref:System.ServiceModel.NetTcpSecurity>（<xref:System.ServiceModel.SecurityMode.Transport> 或 <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>）。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Internet 信息服务承载最佳实践](./feature-details/internet-information-services-hosting-best-practices.md)

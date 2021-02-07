@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：使用消息传递活动创建工作流服务
 title: 如何：使用消息传递活动创建工作流服务
 ms.date: 03/30/2017
 ms.assetid: 53d094e2-6901-4aa1-88b8-024b27ccf78b
-ms.openlocfilehash: 21d08d9c3c78cc8774d038018703ffb0c7ceb1fe
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c8f01574c2880e3a75a4db8edea949648d49426c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286313"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734537"
 ---
 # <a name="how-to-create-a-workflow-service-with-messaging-activities"></a>如何：使用消息传递活动创建工作流服务
 
@@ -91,7 +92,7 @@ ms.locfileid: "96286313"
   
 4. 继续 [学习如何：从工作流应用程序访问服务](how-to-access-a-service-from-a-workflow-application.md) 主题来创建调用此服务的工作流客户端。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务](workflow-services.md)
 - [承载工作流服务概述](hosting-workflow-services-overview.md)

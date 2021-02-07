@@ -1,15 +1,16 @@
 ---
-title: 元数据
+description: 了解以下内容的详细信息：元数据
+title: Metadata
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF]
 ms.assetid: 66a61bd0-18d3-4e7e-bf8b-177a10ac2f60
-ms.openlocfilehash: c7f681de9b4485d9963eab2b27fbdea74b8832f3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52957fff54077e2a727775edb6cb706222eb0c64
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248274"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733874"
 ---
 # <a name="metadata"></a>元数据
 
@@ -38,6 +39,6 @@ Windows Communication Foundation (WCF) 提供了用于导出、发布、检索�
  [元数据的安全注意事项](security-considerations-with-metadata.md)  
  描述在处理服务元数据时的一些重要安全注意事项。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展元数据系统](../extending/extending-the-metadata-system.md)

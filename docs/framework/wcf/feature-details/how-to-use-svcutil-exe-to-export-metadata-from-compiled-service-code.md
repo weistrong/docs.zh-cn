@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息，请参阅如何：使用 Svcutil.exe 从已编译的服务代码中导出元数据
 title: 如何：使用 Svcutil.exe 将元数据从已编译的服务代码中导出
 ms.date: 03/30/2017
 ms.assetid: 95d0aed3-16a2-4398-89bb-39418eeb7355
-ms.openlocfilehash: f60d0c9ad3f6fc4e9596d466b5eabdaab0f4822f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 509d987ff27f9a05ca59d6065d76f27006f3cb25
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734199"
 ---
 # <a name="how-to-use-svcutilexe-to-export-metadata-from-compiled-service-code"></a>如何：使用 Svcutil.exe 将元数据从已编译的服务代码中导出
 
@@ -168,7 +169,7 @@ public class MyService : IPersonFinder
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ServiceModel 元数据实用工具 (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)
 - [导出和导入元数据](exporting-and-importing-metadata.md)

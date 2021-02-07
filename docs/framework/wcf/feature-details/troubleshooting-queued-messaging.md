@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：排队消息处理疑难解答
 title: 排队消息处理疑难解答
 ms.date: 03/30/2017
 ms.assetid: a5f2836f-018d-42f5-a571-1e97e64ea5b0
-ms.openlocfilehash: f695af3d2ad498e1f5975e1a396f1e7b05bf63bc
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e7cf2706e7c0853f14bad449b6ecaa8dd5983755
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733081"
 ---
 # <a name="troubleshooting-queued-messaging"></a>排队消息处理疑难解答
 
-本部分包含有关在 Windows Communication Foundation （WCF）中使用队列的常见问题和故障排除帮助。
+本部分包含有关在 Windows Communication Foundation (WCF) 中使用队列的常见问题和故障排除帮助。
 
 ## <a name="common-questions"></a>常见问题
 
@@ -25,7 +26,7 @@ ms.locfileid: "84595123"
 
 **问：** 是否必须升级 MSMQ 才能使用 <xref:System.ServiceModel.NetMsmqBinding> 和 `MsmqIntegration` 绑定？
 
-**答:** 否。 在 Windows XP 和 Windows Server 2003 上，这两种绑定都适用于 MSMQ 3.0。 升级到 Windows Vista 中的 MSMQ 4.0 时，绑定的某些功能将变为可用。
+**答:** 不是。 在 Windows XP 和 Windows Server 2003 上，这两种绑定都适用于 MSMQ 3.0。 升级到 Windows Vista 中的 MSMQ 4.0 时，绑定的某些功能将变为可用。
 
 **问：** 和绑定的哪些 <xref:System.ServiceModel.NetMsmqBinding> 功能 <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> 在 msmq 4.0 中可用，但在 msmq 3.0 中不可用？
 
@@ -37,7 +38,7 @@ ms.locfileid: "84595123"
 
 - 只有 MSMQ 4.0 才支持远程事务处理读取。
 
-有关详细信息，请参阅[Windows Vista、Windows Server 2003 和 WINDOWS XP 中的队列功能](diff-in-queue-in-vista-server-2003-windows-xp.md)之间的差异。
+有关详细信息，请参阅 [Windows Vista、Windows Server 2003 和 WINDOWS XP 中的队列功能](diff-in-queue-in-vista-server-2003-windows-xp.md)之间的差异。
 
 **问：** 是否可以在一侧排队通信和 MSMQ 4.0 一端使用 MSMQ 3.0？
 
@@ -45,7 +46,7 @@ ms.locfileid: "84595123"
 
 **问：** 我想要将现有的 MSMQ 应用程序与新的 WCF 客户端或服务器集成。 是否需要升级两端的 MSMQ 基础结构？
 
-**答:** 否。 您不必将任何一端升级到 MSMQ 4.0。
+**答:** 不是。 您不必将任何一端升级到 MSMQ 4.0。
 
 ## <a name="troubleshooting"></a>疑难解答
 
@@ -53,7 +54,7 @@ ms.locfileid: "84595123"
 
 **问：** 我尝试使用专用队列，但收到以下异常： `System.InvalidOperationException` ： URL 无效。 队列的 URL 不能包含“$”字符。 使用 net.msmq://machine/private/queueName 中的语法指定专有队列的地址。
 
-**答：** 检查配置和代码中的队列统一资源标识符（URI）。 不要在 URI 中使用“$”字符。 例如，若要对名为 OrdersQueue 的专用队列进行寻址，请将 URI 指定为 `net.msmq://localhost/private/ordersQueue` 。
+**答：** 检查配置和代码中的队列统一资源标识符 (URI) 。 不要在 URI 中使用“$”字符。 例如，若要对名为 OrdersQueue 的专用队列进行寻址，请将 URI 指定为 `net.msmq://localhost/private/ordersQueue` 。
 
 **问：**`ServiceHost.Open()`对排队的应用程序调用会引发以下异常： `System.ArgumentException` ：基址中不能包含 URI 查询字符串。 为什么？
 
@@ -65,13 +66,13 @@ ms.locfileid: "84595123"
 
 - 检查事务性队列需求是否与指定的保证相符。 请注意下面的原则：
 
-  - <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  只能向事务性队列发送持久消息（数据报和会话）并只使用 "一次性" 保证（ `true` ）。
+  - 你可以使用 "仅一次" 保证)  (数据报和会话发送持久消息， (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  `true` 只) 到事务性队列。
 
   - 可以发送只具有“一次性”保证的会话。
 
   - 需要使用事务从事务性队列接收会话中的消息。
 
-  - 只能 <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  向非事务性队列发送或接收易变或持久消息（仅限数据报）且无保证（ `false` ）。
+  - 您可以 (数据报) 发送或接收易变或持久消息，而无保证 (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  `false` 只) 非事务性队列。
 
 - 检查死信队列。 如果在此处找到消息，则确定没有传送这些消息的原因。
 
@@ -83,9 +84,9 @@ ms.locfileid: "84595123"
 
 **问：** 是否始终需要定义自定义死信队列，或是否有默认的死信队列？
 
-**答：** 如果保证为 "恰好一次" （ <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  `true` ），并且如果未指定自定义死信队列，则默认为系统级事务性死信队列。
+**答：** 如果保证 "只是一次" (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  `true`) ，并且如果未指定自定义死信队列，则默认为系统级事务性死信队列。
 
-如果保证为 "无 <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  `false` " （），则默认情况下不是 "死信队列" 功能。
+如果保证是无 (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>  =  `false`) ，则默认情况下不会有死信队列功能。
 
 **问：** 我的服务在 SvcHost 上抛出。打开并出现消息 "调用 svchost.open 时无法满足 EndpointListener 要求"。 为什么？
 
@@ -107,7 +108,7 @@ A. 请检查您的服务协定。 您可能忘记了 `true` 在所有服务操�
     sc sidtype NetMsmqActivator unrestricted
     ```
 
-有关非安全相关的 Web 主机问题，请参阅：[承载排队应用程序的 web](web-hosting-a-queued-application.md)。
+有关非安全相关的 Web 主机问题，请参阅： [承载排队应用程序的 web](web-hosting-a-queued-application.md)。
 
 **问：** 访问会话的最简单方法是什么？
 
@@ -150,43 +151,43 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
 
 还有一种解决方法就是安装集成了 Active Directory 的 MSMQ。
 
-**问：** 当我将 Active Directory 中的消息发送到队列时，会收到 "未找到内部证书" 消息。 如何修复此问题？
+**问：** 当我发送包含默认绑定 (传输安全) 在 Active Directory 中的消息发送到队列时，会收到 "找不到内部证书" 消息。 如何修复此问题？
 
-**答：** 这意味着必须续订发送方 Active Directory 的证书。 为此，请打开 **"控制面板**"、"**管理工具**"、"**计算机管理**"，右键单击 " **MSMQ**"，然后选择 "**属性**"。 选择 "**用户证书**" 选项卡，然后单击 "**续订**" 按钮。
+**答：** 这意味着必须续订发送方 Active Directory 的证书。 为此，请打开 **"控制面板**"、" **管理工具**"、" **计算机管理**"，右键单击 " **MSMQ**"，然后选择 " **属性**"。 选择 " **用户证书** " 选项卡，然后单击 " **续订** " 按钮。
 
 **问：** 当我使用发送消息 <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate> 并指定要使用的证书时，会收到 "证书无效" 消息。 如何修复此问题？
 
 **答：** 不能将本地计算机证书存储与证书模式一起使用。 必须使用证书管理单元将证书从计算机证书存储区复制到当前用户存储区。 若要打开证书管理单元，请执行以下操作：
 
-1. 单击 "**开始**"，选择 "**运行**"，键入 `mmc` ，然后单击 **"确定"**。
+1. 单击 " **开始**"，选择 " **运行**"，键入 `mmc` ，然后单击 **"确定"**。
 
-2. 在**Microsoft 管理控制台**中，打开 "**文件**" 菜单，然后选择 "**添加/删除管理单元**"。
+2. 在 **Microsoft 管理控制台** 中，打开 " **文件** " 菜单，然后选择 " **添加/删除管理单元**"。
 
-3. 在 "**添加/删除管理单元**" 对话框中，单击 "**添加**" 按钮。
+3. 在 " **添加/删除管理单元** " 对话框中，单击 " **添加** " 按钮。
 
-4. 在 "**添加独立管理单元**" 对话框中，选择 "证书"，然后单击 "**添加**"。
+4. 在 " **添加独立管理单元** " 对话框中，选择 "证书"，然后单击 " **添加**"。
 
-5. 在 "**证书**管理单元" 对话框中，选择 "**我的用户帐户"，** 然后单击 "**完成**"。
+5. 在 " **证书** 管理单元" 对话框中，选择 " **我的用户帐户"，** 然后单击 " **完成**"。
 
-6. 接下来，使用前面的步骤添加另一个证书管理单元，但这次请选择 "**计算机帐户**"，然后单击 "**下一步**"。
+6. 接下来，使用前面的步骤添加另一个证书管理单元，但这次请选择 " **计算机帐户** "，然后单击 " **下一步**"。
 
-7. 选择“本地计算机”****，然后单击“完成”****。 现在，可以将证书从计算机证书存储区拖放到当前用户存储区。
+7. 选择“本地计算机”，然后单击“完成”。 现在，可以将证书从计算机证书存储区拖放到当前用户存储区。
 
 **问：** 当我的服务在工作组模式下从另一台计算机上的队列中读取时，出现 "拒绝访问" 异常。
 
-**答：** 在工作组模式下，对于远程应用程序，若要获取对队列的访问权限，该应用程序必须有权访问该队列。 向队列的访问控制列表（ACL）添加 "匿名登录"，并向其授予 "读取" 权限。
+**答：** 在工作组模式下，对于远程应用程序，若要获取对队列的访问权限，该应用程序必须有权访问该队列。 向队列的访问控制列表添加 "匿名登录" (ACL) 并向其授予 "读取" 权限。
 
-**问：** 当网络服务客户端（或没有域帐户的任何客户端）发送排队消息时，发送将失败，并出现无效证书。 如何修复此问题？
+**问：** 如果网络服务客户端 (或没有域帐户的任何客户端) 发送排队消息，则发送将失败，并出现无效证书。 如何修复此问题？
 
 **答：** 检查绑定配置。 默认绑定会打开 MSMQ 传输安全以对消息进行签名。 关闭该传输安全。
 
 ### <a name="remote-transacted-receives"></a>远程事务处理接收
 
-**问：** 当我在计算机 A 上有一个队列，而在计算机 B 上读取消息的 WCF 服务（远程事务处理接收方案）时，不会从队列中读取消息。 跟踪信息指示接收失败，并显示消息 "无法导入事务"。 如何进行修复？
+**问：** 如果在计算机 A 上有队列，并在 (远程事务处理接收方案) 从计算机 B 上的队列读取消息的 WCF 服务，则不会从队列中读取消息。 跟踪信息指示接收失败，并显示消息 "无法导入事务"。 如何进行修复？
 
 **答：** 有三个可能的原因：
 
-- 如果处于域模式下，则远程事务处理接收要求 Microsoft 分布式事务协调器 (MSDTC) 网络访问。 你可以使用 "**添加/删除组件**" 启用它。
+- 如果处于域模式下，则远程事务处理接收要求 Microsoft 分布式事务协调器 (MSDTC) 网络访问。 你可以使用 " **添加/删除组件**" 启用它。
 
   ![显示启用网络 DTC 访问的屏幕截图。](./media/troubleshooting-queued-messaging/enable-distributed-transaction-coordinator-access.jpg)
 
@@ -194,7 +195,7 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
 
   ![启用 XA 事务](media/4f3695e0-fb0b-4c5b-afac-75f8860d2bb0.jpg "4f3695e0-fb0b-4c5b-afac-75f8860d2bb0")
 
-- 请确保 MSDTC 位于**Internet 连接防火墙**设置中的例外列表中。
+- 请确保 MSDTC 位于 **Internet 连接防火墙** 设置中的例外列表中。
 
 - 确保你使用的是 Windows Vista。 Windows Vista 上的 MSMQ 支持远程事务处理读取。 早期的 Windows 版本上的 MSMQ 不支持远程事务处理读取。
 

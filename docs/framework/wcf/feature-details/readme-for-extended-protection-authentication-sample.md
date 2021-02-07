@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：扩展保护身份验证示例自述文件
 title: 扩展保护身份验证示例自述文件
 ms.date: 03/30/2017
 ms.assetid: 80bf2e97-398d-4db5-9040-d96478a2ccab
-ms.openlocfilehash: 9b0a3535282a1fcc1103651f5601459e80d3d8d4
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: edab04c7762bf8964f634107debd3de35a7702ab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601096"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733302"
 ---
 # <a name="readme-for-extended-protection-authentication-sample"></a>扩展保护身份验证示例自述文件
 
-扩展保护是一项安全措施，可防止中间人（MITM）攻击，在这种攻击中，攻击者（"中间人"）截获客户端的凭据并使用这些凭据访问客户端目标服务器上的安全资源。
+扩展保护是一项安全措施，可防止中间人 (MITM) 攻击，在这种攻击中，攻击者 ("中间人" ) 截获客户端的凭据并使用这些凭据来访问客户端目标服务器上的安全资源。
 
-有关详细信息，请参阅[针对验证的扩展保护概述](extended-protection-for-authentication-overview.md)。
+有关详细信息，请参阅 [针对验证的扩展保护概述](extended-protection-for-authentication-overview.md)。
 
 > [!NOTE]
 > 仅当承载于 IIS 上时，此示例才有效。 它不适用于 Visual Studio 开发服务器，原因是此服务器不支持 HTTPS。
@@ -28,7 +29,7 @@ ms.locfileid: "84601096"
 
 4. 此示例要求客户端与服务器建立一个安全通道，因此它要求存在服务器证书，此证书可从 Internet 信息服务 (IIS) 管理器进行安装。
 
-    1. 从 "功能视图" 选项卡中打开 IIS 管理器 > 服务器证书。
+    1. 从 "功能视图" 选项卡上打开 "IIS 管理器"-> 服务器证书 (") "。
 
     2. 为了测试此示例，你可以创建一个自签名证书。 （如果不希望 Internet Explorer 提示证书不安全，可将证书安装到受信任的证书根颁发机构存储区中）。
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用消息安全保护消息
 title: 使用消息安全保护消息
 ms.date: 03/30/2017
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
-ms.openlocfilehash: 6aae16b766889f402f774451338ae2cd30162437
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 006caa232ef0ae92dfd27b03d7a20af3f4174c81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288590"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733055"
 ---
 # <a name="securing-messages-using-message-security"></a>使用消息安全保护消息
 
@@ -70,9 +71,9 @@ ms.locfileid: "96288590"
 
  在既使用传输安全又使用消息安全时，用于在传输级别和 SOAP 消息级别保护消息的证书必须相同。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用传输安全保护消息](securing-messages-using-transport-security.md)
 - [基于消息队列的消息安全性](../samples/message-security-over-message-queuing.md)
-- [安全性概念](security-concepts.md)
+- [安全概念](security-concepts.md)
 - [保护服务和客户端的安全](securing-services-and-clients.md)

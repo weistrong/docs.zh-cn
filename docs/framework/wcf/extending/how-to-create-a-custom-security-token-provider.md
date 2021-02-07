@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：创建自定义安全令牌提供程序
 title: 如何：创建自定义安全令牌提供程序
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], providing credentials
 ms.assetid: db8cb478-aa43-478b-bf97-c6489ad7c7fd
-ms.openlocfilehash: 94de506b16d97ec82b84ec6eed34111e99f62977
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4e0970ff01be74d0eb9f4ae8968bd100a0dafe00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735031"
 ---
 # <a name="how-to-create-a-custom-security-token-provider"></a>如何：创建自定义安全令牌提供程序
 
@@ -54,7 +55,7 @@ ms.locfileid: "96249262"
  [!code-csharp[c_CustomTokenProvider#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenprovider/cs/source.cs#0)]
  [!code-vb[c_CustomTokenProvider#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenprovider/vb/source.vb#0)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.IdentityModel.Selectors.SecurityTokenProvider>
 - <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>

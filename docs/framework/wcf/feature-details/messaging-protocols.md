@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：消息传递协议
 title: 消息协议
 ms.date: 03/30/2017
 ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104
-ms.openlocfilehash: 871297abb0ccc46e079ab85b098705602d14a161
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f4dd15d41266d3e5492b584f9f8e31f456a70ef7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248313"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733965"
 ---
 # <a name="messaging-protocols"></a>消息协议
 
@@ -492,7 +493,7 @@ MTOM 格式利用了包含 MTOM 本身、XOP 以及 MIME 在内的大型规范�
                         / "_" / "," / "-" / "." / "/" / ":" / "=" / "?"
     ```
 
-     示例：
+     示例:
 
      正确
 

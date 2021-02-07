@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：安全会话
 title: 安全会话
 ms.date: 03/30/2017
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
-ms.openlocfilehash: fd8406af0c37981b2ddc7ab8ddb0c82c63cbc0b1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8a4a2d23d5a27f5066bd5f004582829e499f714c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288537"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733068"
 ---
 # <a name="secure-sessions"></a>安全会话
 
@@ -37,7 +38,7 @@ WCF) Windows Communication Foundation (的一项功能是可靠会话，可保�
   
  [设计和实现服务](../designing-and-implementing-services.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：启用消息重放检测](how-to-enable-message-replay-detection.md)
 - [重播攻击](replay-attacks.md)

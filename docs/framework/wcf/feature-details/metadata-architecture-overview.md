@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：元数据体系结构概述
 title: 元数据体系结构概述
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], overview
 ms.assetid: 1d37645e-086d-4d68-a358-f3c5b6e8205e
-ms.openlocfilehash: db601a26eb7a7703403432590e359f51231e3ca1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 63e513c340ea37914da5942ac2479af4be6b8519
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248287"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733926"
 ---
 # <a name="metadata-architecture-overview"></a>元数据体系结构概述
 
@@ -93,7 +94,7 @@ Windows Communication Foundation (WCF) 为导出、发布、检索和导入服�
 
  如果终结点的绑定更改，或者希望为使用相同协定但具有不同绑定的终结点创建一个通道，则可以动态更新用来为服务终结点创建通道的绑定。 可以使用 <xref:System.ServiceModel.Description.MetadataResolver> 静态类在运行时为实现特定协定的服务终结点检索和导入元数据。 然后可以使用导入的 <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> 对象为所需终结点创建客户端或通道工厂。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description>
 - [元数据格式](metadata-formats.md)

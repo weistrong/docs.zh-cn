@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：使用配置添加 ASP.NET AJAX 终结点
 title: 如何：使用配置来添加 ASP.NET AJAX 终结点
 ms.date: 03/30/2017
 ms.assetid: 7cd0099e-dc3a-47e4-a38c-6e10f997f6ea
-ms.openlocfilehash: b229173381eed3e821a9ad9e1a6639912521731c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 629df635e9b19148db317a2d953bed9034556cd2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734342"
 ---
 # <a name="how-to-use-configuration-to-add-an-aspnet-ajax-endpoint"></a>如何：使用配置来添加 ASP.NET AJAX 终结点
 
@@ -105,7 +106,7 @@ Windows Communication Foundation (WCF) 允许您创建一个服务，该服务�
   
 1. 终结点是在相对于 .svc 文件的空地址处配置的，因此该服务现在可用，并可通过将请求发送到服务 .svc/ \<operation> -例如，为该操作发送服务。 `Add` 可以通过在 ASP.NET AJAX 脚本管理器控件的脚本集合中输入终结点 URL 来使用它。 有关示例，请参阅 [使用 HTTP POST 的 AJAX 服务](../samples/ajax-service-using-http-post.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为 ASP.NET AJAX 创建 WCF 服务](creating-wcf-services-for-aspnet-ajax.md)
 - [如何：将支持 AJAX 的 ASP.NET Web 服务迁移到 WCF](how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md)

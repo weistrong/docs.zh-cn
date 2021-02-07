@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息，请参阅 WCF 中的队列
 title: 在 WCF 中排队
 ms.date: 03/30/2017
 ms.assetid: e98d76ba-1acf-42cd-b137-0f8214661112
-ms.openlocfilehash: a55e9e38472f67b609685224e5dda34729c6481a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 21ba3980d7ef5d043a1bf9fed03e0c98ea34a933
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733354"
 ---
 # <a name="queuing-in-wcf"></a>在 WCF 中排队
 
@@ -136,7 +137,7 @@ ms.locfileid: "96295179"
   
 - [基于消息队列的消息安全性](../samples/message-security-over-message-queuing.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [服务终结点和队列寻址](service-endpoints-and-queue-addressing.md)
 - [承载排队应用程序的 Web](web-hosting-a-queued-application.md)

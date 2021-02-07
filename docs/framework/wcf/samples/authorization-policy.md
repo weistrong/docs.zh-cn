@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：授权策略
 title: 授权策略
 ms.date: 03/30/2017
 ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
-ms.openlocfilehash: a789faae1f6224512f9a8a9ab084c8a82e4a2b87
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c096585803f07aff157726bce850c09e27c51df5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732704"
 ---
 # <a name="authorization-policy"></a>授权策略
 
@@ -456,9 +457,9 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
     > [!NOTE]
     > Setup.bat 批处理文件设计为从 Visual Studio 的开发人员命令提示运行。 在 Visual Studio 开发人员命令提示中设置的 PATH 环境变量指向包含 *Setup.bat* 脚本所需的可执行文件的目录。
 
-1. 从 *service\bin*启动 Service.exe。
+1. 从 *service\bin* 启动 Service.exe。
 
-1. 从 *\client\bin*启动 Client.exe。 客户端活动将显示在客户端控制台应用程序上。
+1. 从 *\client\bin* 启动 Client.exe。 客户端活动将显示在客户端控制台应用程序上。
 
 如果客户端和服务无法进行通信，请参阅 [WCF 示例的故障排除提示](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))。
 
@@ -474,15 +475,15 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
 
 5. 在服务器上， `setup.bat service` 在开发人员命令提示中，以管理员权限打开 Visual Studio。
 
-    `setup.bat`使用参数运行将 `service` 使用计算机的完全限定的域名创建一个服务证书，并将服务证书导出到名为 *.cer*的文件中。
+    `setup.bat`使用参数运行将 `service` 使用计算机的完全限定的域名创建一个服务证书，并将服务证书导出到名为 *.cer* 的文件中。
 
-6. 编辑 *Service.exe.config* ，以反映) 的属性中 (新的证书名称，该名称与 `findValue` [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) 计算机的完全限定域名相同。 还要将元素**computername**中的 computername \<service> / \<baseAddresses> 从 localhost 更改为你的服务计算机的完全限定名称。
+6. 编辑 *Service.exe.config* ，以反映) 的属性中 (新的证书名称，该名称与 `findValue` [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) 计算机的完全限定域名相同。 还要将元素中的 computername \<service> / \<baseAddresses> 从 localhost 更改为你的服务计算机的完全限定名称。
 
 7. 将服务目录中的 *服务 .cer* 文件复制到客户端计算机上的客户端目录。
 
 8. 在客户端上，以 `setup.bat client` 管理员权限打开的 Visual Studio 开发人员命令提示中运行。
 
-    `setup.bat`使用参数运行将 `client` 创建一个名为**test1**的客户端证书，并将客户端证书*Client.cer*导出到名为的文件。
+    `setup.bat`使用参数运行将 `client` 创建一个名为 **test1** 的客户端证书，并将客户端证书导出到名为的文件。
 
 9. 在客户端计算机上的 *Client.exe.config* 文件中，更改终结点的地址值以与服务的新地址相匹配。 为此，请将 **localhost** 替换为服务器的完全限定的域名。
 

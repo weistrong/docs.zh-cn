@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：使用 MetadataExchangeClient 检索元数据
 title: 如何：使用 MetadataExchangeClient 检索元数据
 ms.date: 03/30/2017
 ms.assetid: 0754e9dc-13c5-45c2-81b5-f3da466e5a87
-ms.openlocfilehash: 412e695036f29886310099cc5a55b940247b0c72
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 17206bbba2ccde5961326a431b019fb7718f6cd4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280827"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734329"
 ---
 # <a name="how-to-use-metadataexchangeclient-to-retrieve-metadata"></a>如何：使用 MetadataExchangeClient 检索元数据
 
@@ -38,7 +39,7 @@ ms.locfileid: "96280827"
 
  若要编译此代码示例，必须引用 System.ServiceModel.dll 程序集并导入 <xref:System.ServiceModel.Description> 命名空间。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description.MetadataResolver>
 - <xref:System.ServiceModel.Description.MetadataExchangeClient>

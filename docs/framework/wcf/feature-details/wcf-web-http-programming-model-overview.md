@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息，请参阅 WCF Web HTTP 编程模型概述
 title: WCF Web HTTP 编程模型概述
 ms.date: 03/30/2017
 ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
-ms.openlocfilehash: 713dd05daa5071f253afd70e735475e49a986aa7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3359b0018458256cb3436e0fb631ee5fa438521e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732873"
 ---
 # <a name="wcf-web-http-programming-model-overview"></a>WCF Web HTTP 编程模型概述
 
@@ -21,7 +22,7 @@ Windows Communication Foundation (WCF) WEB HTTP 编程模型提供了用 WCF 生
   
  WCF WEB HTTP 编程模型扩展了 WCF 的覆盖范围，涵盖了包含 WEB HTTP 服务、AJAX 和 JSON 服务以及联合 (ATOM/RSS) 源的 Web 样式方案。 有关 AJAX 和 JSON 服务的详细信息，请参阅 [Ajax 集成和 Json 支持](ajax-integration-and-json-support.md)。 有关联合的详细信息，请参阅 [WCF 联合概述](wcf-syndication-overview.md)。  
   
- 对于可从 WEB HTTP 服务返回的数据的类型没有额外的限制。 任何可序列化类型都可以从 WEB HTTP 服务操作返回。 因为 WEB HTTP 服务操作可以通过 Web 浏览器调用，所以对可在 URL 中指定的数据类型有一个限制。 有关默认情况下支持的类型的详细信息，请参阅下面的 **UriTemplate 查询字符串参数和 url** 部分。 通过提供您自己的 T:System.ServiceModel.Dispatcher.QueryStringConverter 实现来指定如何将 URL 中指定的参数转换为实际参数类型，可以更改默认行为。 有关详细信息，请参阅<xref:System.ServiceModel.Dispatcher.QueryStringConverter>。  
+ 对于可从 WEB HTTP 服务返回的数据的类型没有额外的限制。 任何可序列化类型都可以从 WEB HTTP 服务操作返回。 因为 WEB HTTP 服务操作可以通过 Web 浏览器调用，所以对可在 URL 中指定的数据类型有一个限制。 有关默认情况下支持的类型的详细信息，请参阅下面的 **UriTemplate 查询字符串参数和 url** 部分。 通过提供您自己的 T:System.ServiceModel.Dispatcher.QueryStringConverter 实现来指定如何将 URL 中指定的参数转换为实际参数类型，可以更改默认行为。 有关详细信息，请参阅 <xref:System.ServiceModel.Dispatcher.QueryStringConverter>  
   
 > [!CAUTION]
 > 使用 WCF WEB HTTP 编程模型编写的服务不使用 SOAP 消息。 由于不使用 SOAP，因此不能使用 WCF 提供的安全功能。 然而，您可以通过使用 HTTPS 承载服务来使用基于传输的安全性。 有关 WCF 安全的详细信息，请参阅 [安全性概述](security-overview.md)  
@@ -150,7 +151,7 @@ interface ICustomer
 
  当使用 <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> 调用 WCF WEB HTTP 服务以创建通道时，即使将其他 <xref:System.ServiceModel.Description.WebHttpBehavior> 传递给 <xref:System.ServiceModel.EndpointAddress>，<xref:System.ServiceModel.EndpointAddress> 也会使用配置文件中设置的 <xref:System.ServiceModel.Channels.ChannelFactoryBase%601>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF 联合](wcf-syndication.md)
 - [WCF Web HTTP 编程对象模型](wcf-web-http-programming-object-model.md)

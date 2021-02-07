@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：路由方案
 title: 路由方案
 ms.date: 03/30/2017
 helpviewer_keywords:
 - routing [WCF], scenarios
 ms.assetid: ec22f308-665a-413e-9f94-7267cb665dab
-ms.openlocfilehash: b84cd4ba49e9deaf4ffc0e901716efc56059d60f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cce69ca846f5179d78b2e7321e62444fc6f6ec26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733276"
 ---
 # <a name="routing-scenarios"></a>路由方案
 
@@ -19,7 +20,7 @@ ms.locfileid: "96288522"
 
  路由服务最基本的用途是聚合多个目标终结点以减少公开给客户端应用程序的终结点数目，然后使用消息筛选器将各消息路由到正确的目标。 可以根据逻辑或物理处理需求（如必须由特定服务处理的消息类型）或任意业务需要（如对来自特定源的消息提供优先级处理）路由消息。 下表列出了一些常见方案及其使用时间：  
   
-|场景|何时使用|  
+|方案|何时使用|  
 |--------------|--------------|  
 |服务版本控制|需要支持服务的多个版本，或者可能会在将来部署更新服务|  
 |服务数据分区|必须跨多个主机对服务进行分区|  
@@ -83,6 +84,6 @@ ms.locfileid: "96288522"
   
  [如何：错误处理](how-to-error-handling.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [路由简介](routing-introduction.md)

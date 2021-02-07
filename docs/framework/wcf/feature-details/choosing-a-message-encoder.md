@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：选择消息编码器
 title: 选择消息编码器
 ms.date: 03/30/2017
 ms.assetid: 2204d82d-d962-4922-a79e-c9a231604f19
-ms.openlocfilehash: 8b53c17cccc74153e652494ec9753302cda8679b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 16f58dd0510584fa94363f63e1a2e56a9de83b52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295153"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734992"
 ---
 # <a name="choose-a-message-encoder"></a>选择消息编码器
 
@@ -35,7 +36,7 @@ ms.locfileid: "96295153"
   
 |因子|说明|支持此因素的编码器|  
 |------------|-----------------|---------------------------------------|  
-|支持的字符集|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>和 <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> 仅支持 UTF8 和 UTF16 Unicode (*大字节序*) 编码 *little-endian* 。 如果需要其他编码（如 UTF7 或 ASCII），则必须使用自定义编码器。 有关示例自定义编码器，请参阅 [自定义消息编码器](../samples/custom-message-encoder-custom-text-encoder.md)。|文本|  
+|支持的字符集|<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>和 <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> 仅支持 UTF8 和 UTF16 Unicode (*大字节序*) 编码 。 如果需要其他编码（如 UTF7 或 ASCII），则必须使用自定义编码器。 有关示例自定义编码器，请参阅 [自定义消息编码器](../samples/custom-message-encoder-custom-text-encoder.md)。|文本|  
 |检查|检查是在传送期间检查消息的功能。 使用或不使用 SOAP 的文本编码使很多程序不用专用工具就可以检查和分析消息。 使用传输安全时，在消息或传输级别，会影响检查消息的能力。 保密性会保护消息免于检查，完整性会保护消息免于修改。|文本|  
 |可靠性|可靠性是编码器传输错误的复原能力。 也可以在消息层、传输层和应用程序层提供可靠性。 所有标准 WCF 编码器都假定另一层提供可靠性。 编码器几乎没有从传输错误恢复的能力。|无|  
 |简单|简单性表示为编码规范创建编码器和解码器的简便性。 文本编码在简单性方面具有明显的优势，POX 文本编码的另一个优点在于不需要支持处理 SOAP。|文本 (POX)|  
@@ -85,6 +86,6 @@ IgnoreWhitespace 设置被忽略。
 
 客户端和服务都需要同意发送和接收压缩消息，因此必须在客户端和服务上的 binaryMessageEncoding 元素上配置 compressionFormat 属性。 如果未将服务或客户端配置为压缩，而另一端为，则会引发 ProtocolException。 应该仔细考虑如何启用压缩。 如果网络带宽是一个瓶颈，则压缩非常有用。 如果 CPU 是瓶颈，则压缩会减小吞吐量。 必须在模拟环境中进行相应的测试，以确定这对于应用程序是否有好处  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [绑定](bindings.md)

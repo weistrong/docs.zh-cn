@@ -1,13 +1,14 @@
 ---
+description: 详细了解：部分信任的最佳实践
 title: 部分信任最佳实践
 ms.date: 03/30/2017
 ms.assetid: 0d052bc0-5b98-4c50-8bb5-270cc8a8b145
-ms.openlocfilehash: 7d5bcc7f9f179553188b4ce90c724dc0bd839670
-ms.sourcegitcommit: d6e27023aeaffc4b5a3cb4b88685018d6284ada4
+ms.openlocfilehash: abdc0fbbb84581b302bca8d514a5f8f5cc2703e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67663037"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733549"
 ---
 # <a name="partial-trust-best-practices"></a>部分信任最佳实践
 
@@ -49,23 +50,23 @@ ms.locfileid: "67663037"
 
 ## <a name="using-wcf-from-fully-trusted-platform-code-that-allows-calls-from-partially-trusted-callers"></a>从允许来自部分受信任的调用方的调用的完全受信任平台代码使用 WCF
 
-WCF 部分信任安全性模型假定 WCF 公共方法或属性的任何调用方托管应用程序的代码访问安全性 (CAS) 上下文中运行。 WCF 还假定每个存在该只有一个应用程序安全上下文<xref:System.AppDomain>，并在建立此上下文<xref:System.AppDomain>受信任主机的创建时间 (例如，通过调用<xref:System.AppDomain.CreateDomain%2A>或 ASP.NET 应用程序管理器)。
+WCF 部分信任安全模型假定 WCF 公共方法或属性的任何调用方在代码访问安全性 (CAS) 宿主应用程序的上下文中运行。 WCF 还假设每个只有一个应用程序安全上下文 <xref:System.AppDomain> ，并且在 <xref:System.AppDomain> 创建时由受信任的主机建立此上下文 (例如，通过调用 <xref:System.AppDomain.CreateDomain%2A> 或通过 ASP.NET 应用程序管理器) 。
 
-此安全模型适用于无法断言其他 CAS 权限的用户编写应用程序，如在 Medium Trust ASP.NET 应用程序中运行的用户代码。 但是，完全受信任的平台代码 （例如，第三方程序集安装在全局程序集缓存和接受来自部分受信任的代码的调用） 必须当心在代表部分受信任应用程序到调用到 WCF避免引入应用程序级安全漏洞。
+此安全模型适用于无法断言其他 CAS 权限的用户编写应用程序，如在 Medium Trust ASP.NET 应用程序中运行的用户代码。 但是，完全受信任的平台代码 (例如，安装在全局程序集缓存中并接受部分受信任代码调用的第三方程序集) 必须在代表部分受信任的应用程序调用 WCF 时小心，以免引入应用程序级别的安全漏洞。
 
-完全信任代码应该避免更改当前线程的 CAS 权限集 (通过调用<xref:System.Security.PermissionSet.Assert%2A>， <xref:System.Security.PermissionSet.PermitOnly%2A>，或<xref:System.Security.PermissionSet.Deny%2A>) 在代表部分受信任代码调用 WCF Api 之前。 断言、拒绝或通过其他方式创建特定于线程且独立于应用程序级安全上下文的权限上下文可能会导致意外行为。 根据应用程序，此行为可能会导致应用程序级安全漏洞。
+完全信任代码应避免通过 <xref:System.Security.PermissionSet.Assert%2A> <xref:System.Security.PermissionSet.PermitOnly%2A> <xref:System.Security.PermissionSet.Deny%2A> 在代表部分受信任的代码调用 WCF api 之前调用、或) 来更改当前线程的 CAS 权限集 (。 断言、拒绝或通过其他方式创建特定于线程且独立于应用程序级安全上下文的权限上下文可能会导致意外行为。 根据应用程序，此行为可能会导致应用程序级安全漏洞。
 
-WCF 中使用线程特定的权限上下文调用必须准备好处理可能会出现在以下情况下的代码：
+使用线程特定的权限上下文调用 WCF 的代码必须准备好处理可能出现的以下情况：
 
 - 在操作期间可能未维护线程特定的安全上下文，这导致潜在的安全异常。
 
-- 内部 WCF 代码，以及任何用户提供的回调可能会在个在其下最初启动调用不同的安全上下文中运行。 这些上下文包括：
+- 内部 WCF 代码以及任何用户提供的回调都可能在不同的安全上下文中运行，该上下文与最初启动调用的安全上下文不同。 这些上下文包括：
 
   - 应用程序权限上下文。
 
-  - 用于在当前正在运行的生存期内调入 WCF 的其他用户线程以前创建的任何线程特定的权限上下文<xref:System.AppDomain>。
+  - 之前由其他用户线程创建的、用于在当前运行的生存期内调用 WCF 的任何线程特定权限上下文 <xref:System.AppDomain> 。
 
-WCF 可保证部分受信任的代码不能获取完全信任权限，除非此类权限添加到 WCF 公共 Api 的调用之前完全受信任的组件。 但是，它不保证断言完全信任的效果隔离到特定的线程、操作或用户操作。
+WCF 保证部分受信任的代码无法获取完全信任的权限，除非在调用 WCF 公共 Api 之前，完全受信任的组件断言了此类权限。 但是，它不保证断言完全信任的效果隔离到特定的线程、操作或用户操作。
 
 作为最佳实践，避免通过调用 <xref:System.Security.PermissionSet.Assert%2A>、<xref:System.Security.PermissionSet.PermitOnly%2A> 或 <xref:System.Security.PermissionSet.Deny%2A> 创建线程特定的权限上下文。 而是对应用程序本身授予或拒绝特权，以便不需要 <xref:System.Security.PermissionSet.Assert%2A>、<xref:System.Security.PermissionSet.Deny%2A> 或 <xref:System.Security.PermissionSet.PermitOnly%2A>。
 

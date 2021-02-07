@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：以单并发模式对消息进行有序处理
 title: 单并发模式中的有序消息处理
 ms.date: 03/30/2017
 ms.assetid: a90f5662-a796-46cd-ae33-30a4072838af
-ms.openlocfilehash: d70087a6dc1501f9a7f7ed057eae3dad181761ae
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2dd876f1831dda8b388108f238810be333e693be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733679"
 ---
 # <a name="ordered-processing-of-messages-in-single-concurrency-mode"></a>单并发模式中的有序消息处理
 
@@ -27,7 +28,7 @@ WCF 不会保证消息的处理顺序，除非基础通道是会话的。  例�
   
  如果 <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> 设置为任何其他值，则引发 <xref:System.InvalidOperationException>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [会话、实例化和并发](sessions-instancing-and-concurrency.md)
 - [并发](../samples/concurrency.md)

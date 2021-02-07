@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：创建 WSFederationHttpBinding
 title: 如何：创建 WSFederationHttpBinding
 ms.date: 03/30/2017
 dev_langs:
@@ -8,23 +9,23 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: e54897d7-aa6c-46ec-a278-b2430c8c2e10
-ms.openlocfilehash: ccc28c46e8be0b835cf08d372ef85b8a66e989ef
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f0b40cf074d5c3f2575c5a94baa2fdd4271f280f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734394"
 ---
 # <a name="how-to-create-a-wsfederationhttpbinding"></a>如何：创建 WSFederationHttpBinding
 
-在 Windows Communication Foundation （WCF）中， <xref:System.ServiceModel.WSFederationHttpBinding> 类（ [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) 在配置中）提供了一种用于公开联合服务的机制。 即，服务要求客户端使用安全令牌服务颁发的安全令牌进行身份验证。 本主题演示如何通过代码和配置来设置 <xref:System.ServiceModel.WSFederationHttpBinding>。 绑定一经创建，你就可以设置一个终结点来使用该绑定。
+在 Windows Communication Foundation (WCF) ， <xref:System.ServiceModel.WSFederationHttpBinding> [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) 配置) 中的类 (提供了一个用于公开联合服务的机制。 即，服务要求客户端使用安全令牌服务颁发的安全令牌进行身份验证。 本主题演示如何通过代码和配置来设置 <xref:System.ServiceModel.WSFederationHttpBinding>。 绑定一经创建，你就可以设置一个终结点来使用该绑定。
 
  基本步骤概述如下：
 
 1. 选择一种安全模式。 <xref:System.ServiceModel.WSFederationHttpBinding> 支持 `Message`，它在消息级提供端对端的安全（即使跨多个跃点也是如此），还支持 `TransportWithMessageCredential`，它在客户端和服务可以通过 HTTPS 直接连接的情况下提供较好的性能。
 
     > [!NOTE]
-    > <xref:System.ServiceModel.WSFederationHttpBinding> 还支持 `None` 作为安全模式。 此模式不安全，仅用于调试目的。 如果在部署服务终结点时将 <xref:System.ServiceModel.WSFederationHttpBinding> 其安全模式设置为 `None` ，则生成的客户端绑定（由[Svcutil.exe 元数据实用工具（）](../servicemodel-metadata-utility-tool-svcutil-exe.md)生成）是 <xref:System.ServiceModel.WSHttpBinding> 具有安全模式的 `None` 。
+    > <xref:System.ServiceModel.WSFederationHttpBinding> 还支持 `None` 作为安全模式。 此模式不安全，仅用于调试目的。 如果在部署服务终结点时将 <xref:System.ServiceModel.WSFederationHttpBinding> 其安全模式设置为，则生成的 `None` 客户端绑定 (由 [ ( # A0) ) ](../servicemodel-metadata-utility-tool-svcutil-exe.md) 是一个安全模式为的 <xref:System.ServiceModel.WSHttpBinding> `None` 。
 
      与其他系统提供的绑定不同，使用 `WSFederationHttpBinding` 时无需选择客户端凭据类型。 这是因为客户端凭据类型始终为已颁发令牌。 WCF 从指定的颁发者获取一个令牌，并将该令牌提供给服务以对客户端进行身份验证。
 
@@ -36,7 +37,7 @@ ms.locfileid: "84595435"
 
      SAML 1.1 令牌的 URI 是 `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1` 。
 
-4. 可选。 在联合服务上，将 <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress%2A> 属性设置为安全令牌服务的元数据 URL。 使用元数据终结点，服务的客户端可以选择一个适合的绑定/终结点对，前提是将服务配置为发布元数据。 有关发布元数据的详细信息，请参阅[发布元数据](publishing-metadata.md)。
+4. 可选。 在联合服务上，将 <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuerMetadataAddress%2A> 属性设置为安全令牌服务的元数据 URL。 使用元数据终结点，服务的客户端可以选择一个适合的绑定/终结点对，前提是将服务配置为发布元数据。 有关发布元数据的详细信息，请参阅 [发布元数据](publishing-metadata.md)。
 
  你还可以设置其他属性，包括已颁发令牌中用作校验密钥的密钥类型、在客户端和服务之间使用的算法套件、是协商还是显式指定服务凭据、服务期望已颁发令牌中包含的任何特定声明，以及必须添加到由客户端发送到安全令牌服务的请求的其他 XML 元素。
 
@@ -89,9 +90,9 @@ ms.locfileid: "84595435"
 
 11. 可选。 添加一个 `<identity>` 子元素，并指定安全令牌服务的标识。
 
-12. 有关详细信息，请参阅[服务标识和身份验证](service-identity-and-authentication.md)。
+12. 有关详细信息，请参阅 [服务标识和身份验证](service-identity-and-authentication.md)。
 
-13. 如果未指定本地颁发者则在客户端上是必需的；不能在服务上使用。 [\<binding>](../../configure-apps/file-schema/wcf/bindings.md)在可用于与 security token service 进行通信的绑定部分创建一个元素。 有关创建绑定的详细信息，请参阅[如何：在配置中指定服务绑定](../how-to-specify-a-service-binding-in-configuration.md)。
+13. 如果未指定本地颁发者则在客户端上是必需的；不能在服务上使用。 [\<binding>](../../configure-apps/file-schema/wcf/bindings.md)在可用于与 security token service 进行通信的绑定部分创建一个元素。 有关创建绑定的详细信息，请参阅 [如何：在配置中指定服务绑定](../how-to-specify-a-service-binding-in-configuration.md)。
 
 14. 通过设置 `binding` 元素的 `bindingConfiguration` 和 `<issuer>` 属性，来指定在上一步创建的绑定。
 
@@ -106,7 +107,7 @@ ms.locfileid: "84595435"
 [!code-csharp[c_FederationBinding#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_federationbinding/cs/source.cs#2)]
 [!code-vb[c_FederationBinding#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_federationbinding/vb/source.vb#2)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [联合](federation.md)
 - [联合示例](../samples/federation-sample.md)
