@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：引用
 title: 参考
 ms.date: 03/30/2017
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
-ms.openlocfilehash: 05ff05d165ad902eba0e984089ab1dde7f24fca7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7125cbea5cf8689a77823ff85b9652bc2ca31096
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91184854"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695187"
 ---
 # <a name="reference"></a>参考
 
 本节提供针对 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 开发人员的参考信息。  
   
- 还鼓励你搜索特定问题的 Microsoft Docs，尤其是参加 [LINQ 论坛](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql)，你可以在其中与专家详细讨论更复杂的主题。 此外，你还可以学习详细介绍 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 技术并包含 Visual Basic 和 C# 代码示例的白皮书。 有关详细信息，请参阅 [LINQ to SQL：用于关系数据的 .Net 语言集成查询](/previous-versions/dotnet/articles/bb425822(v=msdn.10))。  
+ 还鼓励你搜索特定问题的 Microsoft Docs，尤其是参加 [LINQ 论坛](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql)，你可以在其中与专家详细讨论更复杂的主题。 此外，你还可以学习详细介绍 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 技术并包含 Visual Basic 和 C# 代码示例的白皮书。 有关详细信息，请参阅 [LINQ to SQL：用于关系数据的 .net Language-Integrated 查询](/previous-versions/dotnet/articles/bb425822(v=msdn.10))。  
   
 ## <a name="in-this-section"></a>本节内容  
 

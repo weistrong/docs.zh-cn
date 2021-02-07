@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：导航 (实体 SQL) '
 title: NAVIGATE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: f107f29d-005f-4e39-a898-17f163abb1d0
-ms.openlocfilehash: 09128a367a02e1f9b206a9cc068987166c76381b
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 7fa39a988429fe0a658b01078d2369ad4767f4a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696498"
 ---
 # <a name="navigate-entity-sql"></a>NAVIGATE (Entity SQL)
 
@@ -19,11 +20,11 @@ ms.locfileid: "72319541"
 navigate(instance-expression, [relationship-type], [to-end [, from-end] ])
 ```
 
-## <a name="arguments"></a>自变量
+## <a name="arguments"></a>参数
 
 `instance-expression` 实体的实例。
 
-从概念架构定义语言（CSDL）文件 `relationship-type` 关系的类型名称。 @No__t_0 被限定为 \<namespace >。\<relationship 类型名称 >。
+`relationship-type` 关系的类型名称，从概念架构定义语言 (CSDL) 文件。 `relationship-type`限定为 \<namespace> 。 \<relationship type name>
 
 `to` 关系的结束。
 
@@ -35,7 +36,7 @@ navigate(instance-expression, [relationship-type], [to-end [, from-end] ])
 
 ## <a name="remarks"></a>备注
 
-关系是实体数据模型（EDM）中的第一类构造。 可以在两个或更多实体类型之间建立关系，用户可以通过关系从一端（实体）导航到另一端。 当关系中的名称解析没有歧义时，`from` 和 `to` 为有条件可选。
+关系是实体数据模型 (EDM) 中的第一类构造。 可以在两个或更多实体类型之间建立关系，用户可以通过关系从一端（实体）导航到另一端。 当关系中的名称解析没有歧义时，`from` 和 `to` 为有条件可选。
 
 NAVIGATE 在 O 和 C 空间中有效。
 
@@ -43,14 +44,14 @@ NAVIGATE 在 O 和 C 空间中有效。
 
 navigate(`instance-expression`, `relationship-type`, [ `to-end` [, `from-end` ] ] )
 
-例如:
+例如：
 
 ```sql
 Select o.Id, navigate(o, OrderCustomer, Customer, Order)
 From LOB.Orders as o
 ```
 
-其中 OrderCustomer 为 `relationship`，Customer 和 Order 为关系的 `to-end` （客户）和 `from-end` （订单）。 如果 OrderCustomer 是 n：1关系，那么导航表达式的结果类型为 Ref \<Customer >。
+其中 OrderCustomer 为 `relationship`，Customer 和 Order 为关系的 `to-end` （客户）和 `from-end` （订单）。 如果 OrderCustomer 是 n：1关系，那么导航表达式的结果类型为 Ref \<Customer> 。
 
 此表达式的简单形式如下：
 
@@ -59,7 +60,7 @@ Select o.Id, navigate(o, OrderCustomer)
 From LOB.Orders as o
 ```
 
-同样，在以下形式的查询中，导航表达式会生成一个集合 < 引用 \<Order > >。
+同样，在以下形式的查询中，导航表达式会生成<引用> 的集合 \<Order> 。
 
 ```sql
 Select c.Id, navigate(c, OrderCustomer, Order, Customer)
@@ -81,4 +82,4 @@ From LOB.Customers as c
 ## <a name="see-also"></a>请参阅
 
 - [实体 SQL 引用](entity-sql-reference.md)
-- [如何：利用导航运算符导航关系](navigate-entity-sql.md)
+- [如何：使用导航运算符导航关系](navigate-entity-sql.md)

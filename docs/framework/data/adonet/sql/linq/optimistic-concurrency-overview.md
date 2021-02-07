@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息：乐观并发：概述
 title: 乐观并发：概述
 ms.date: 03/30/2017
 ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
-ms.openlocfilehash: 7a1bc23d9f012b2f3541c1411a25b7527e696873
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fbf6714851dbb31982a110749c55e5fad7aa2206
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695419"
 ---
 # <a name="optimistic-concurrency-overview"></a>乐观并发：概述
 
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 支持开放式并发控制。 下表描述了适用于文档中的开放式并发的术语 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] ：  
   
-|术语|描述|  
+|术语|说明|  
 |-----------|-----------------|  
 |concurrency|两个或更多用户同时尝试更新同一数据库行的情形。|  
 |并发冲突 (concurrency conflict)|两个或更多用户同时尝试向一行的一列或多列提交冲突值的情形。|  
 |并发控制|用于解决并发冲突的技术。|  
-|开放式并发控制|先调查其他事务是否已更改了行中的值，再允许提交更改的技术。<br /><br /> 与 *悲观并发控制*相反，它会锁定记录以避免并发冲突。<br /><br /> 所谓*乐观*控制，因为它会将一个事务干扰另一个事务的几率视为不太可能。|  
+|开放式并发控制|先调查其他事务是否已更改了行中的值，再允许提交更改的技术。<br /><br /> 与 *悲观并发控制* 相反，它会锁定记录以避免并发冲突。<br /><br /> 所谓 *乐观* 控制，因为它会将一个事务干扰另一个事务的几率视为不太可能。|  
 |冲突解决|通过重新查询数据库刷新出现冲突的项，然后协调差异的过程。<br /><br /> 刷新对象时，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 更改跟踪器会保留以下数据：<br /><br /> -最初从数据库获取并用于更新检查的值。<br />-来自后续查询的新数据库值。<br /><br /> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 随后会确定相应对象是否发生冲突（即它的一个或多个成员值是否已发生更改）。 如果此对象发生冲突，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 下一步会确定它的哪些成员发生冲突。<br /><br /> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 发现的任何成员冲突都会添加到冲突列表中。|  
   
  在 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 对象模型中，当以下两个条件均为 true 时，将发生 *开放式并发冲突* ：  

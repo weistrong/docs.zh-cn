@@ -1,19 +1,20 @@
 ---
+description: 了解更多： Null 语义
 title: Null 语义
 ms.date: 03/30/2017
 ms.assetid: a97017ae-d634-4cf3-bbaf-054a528fd683
-ms.openlocfilehash: 739ee95be45d7d64a4ad1678837b9706a533f07d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2326cd20a225f31693260aa038477f1f6090d02f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147536"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695550"
 ---
 # <a name="null-semantics"></a>Null 语义
 
 下表提供了文档的各个部分的链接， [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 其中 `null` `Nothing` 讨论了 Visual Basic) 问题 (。  
   
-|主题|描述|  
+|主题|说明|  
 |-----------|-----------------|  
 |[SQL-CLR 类型不匹配](sql-clr-type-mismatches.md)|本主题的 "Null 语义" 部分包括以下内容的讨论：三态 SQL Boolean 与两态公共语言运行时 (CLR) <xref:System.Boolean> 、文本 `Nothing` (Visual Basic) 和 `null` (c # ) ，以及其他类似问题。|  
 |[标准查询运算符转换](standard-query-operator-translation.md)|本主题的“Null 语义”部分介绍 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]中的 null 比较语义。|  

@@ -1,16 +1,17 @@
 ---
+description: 了解更多： Null 比较
 title: Null 比较
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ef88af8c-8dfe-4556-8b56-81df960a900b
-ms.openlocfilehash: 71b7c4d86debe8cf267b1b65e3d176cbc4704e6d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3f2165cae56b6987330612cd2c9e21dfe8606fb2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185101"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696355"
 ---
 # <a name="null-comparisons"></a>Null 比较
 
@@ -35,7 +36,7 @@ WHERE h.ShipDate IS Null
   
 ## <a name="key-selectors"></a>键选择器  
 
- *键选择器*是在标准查询运算符中用于从元素中提取键的函数。 在键选择器函数中，表达式可以与常量进行比较。 如果表达式与 null 常量进行比较或两个 null 常量进行比较，则会展现 CLR null 语义。 如果数据源中具有 null 值的两个列进行比较，则会展现存储 null 语义。 键选择器出现在许多分组和排序标准查询运算符（如 <xref:System.Linq.Queryable.GroupBy%2A>）中，用于选择对查询结果进行排序或分组所依据的键。  
+ *键选择器* 是在标准查询运算符中用于从元素中提取键的函数。 在键选择器函数中，表达式可以与常量进行比较。 如果表达式与 null 常量进行比较或两个 null 常量进行比较，则会展现 CLR null 语义。 如果数据源中具有 null 值的两个列进行比较，则会展现存储 null 语义。 键选择器出现在许多分组和排序标准查询运算符（如 <xref:System.Linq.Queryable.GroupBy%2A>）中，用于选择对查询结果进行排序或分组所依据的键。  
   
 ## <a name="null-property-on-a-null-object"></a>Null 对象上的 Null 属性  
 

@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：调用规范函数
 title: 如何：调用规范函数
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b3d84873-7403-4957-8e20-b4ae39f50214
-ms.openlocfilehash: acfbdbaf21fe1d454b68dfef5bf4f88d8020ea65
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d1e2310bccd6cc60177dba9a2e4c3a104702ba0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696836"
 ---
 # <a name="how-to-call-canonical-functions"></a>如何：调用规范函数
 

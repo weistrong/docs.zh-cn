@@ -6,15 +6,15 @@ ms.author: daroth
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 12/01/2020
-ms.openlocfilehash: 47f684e1b48ca95b8d999e6f1429840eb5f541de
-ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
+ms.date: 02/02/2021
+ms.openlocfilehash: 267f7222865c5a92d20faaae41b052da08c284a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653467"
 ---
-# <a name="no-locblazor-for-aspnet-web-forms-developers"></a>面向 Web Forms ASP.NET Web Forms 开发人员的 Blazor
+# <a name="blazor-for-aspnet-web-forms-developers"></a>面向 Web Forms ASP.NET Web Forms 开发人员的 Blazor
 
 ![显示无服务器应用电子书封面的屏幕截图。](./media/index/blazor-for-aspnet-web-forms-developers.png)
 
@@ -34,7 +34,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-版权所有 © 2020 Microsoft Corporation
+版权所有 © 2021 Microsoft Corporation
 
 保留所有权利。 未经发布者书面许可，不得以任何形式或任何方式复制或传播本书中的任何内容。
 

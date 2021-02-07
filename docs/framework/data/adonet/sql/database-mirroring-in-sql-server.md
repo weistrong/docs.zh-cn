@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： SQL Server 中的数据库镜像
 title: SQL Server 中的数据库镜像
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 89befaff-bb46-4290-8382-e67cdb0e3de9
-ms.openlocfilehash: 7e2c1c8ea1cbc1bb22452b9ef9d1f250c96118ea
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 663f0a2a016a3f6c449c1d2694bc6c2d77eb6157
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695887"
 ---
 # <a name="database-mirroring-in-sql-server"></a>SQL Server 中的数据库镜像
 

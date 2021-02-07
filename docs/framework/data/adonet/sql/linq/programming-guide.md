@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：编程指南
 title: 编程指南
 ms.date: 03/30/2017
 ms.assetid: ed1012d4-3ff2-4877-af27-93125c4180ea
-ms.openlocfilehash: 50c4370e23faf8400eb23f1e8c0cc74cd4dce80e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 37f3974864e9bfc11bff762617bab27e25a44007
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695185"
 ---
 # <a name="programming-guide"></a>编程指南
 
 本节包含有关如何创建和使用 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 对象模型的信息。 如果你使用的是 Visual Studio，还可以使用对象关系设计器来执行其中许多相同的任务。  
   
- 你还可以在 Microsoft Docs 中搜索特定问题，并且可以参与 [LINQ 论坛](https://social.msdn.microsoft.com/forums/home?forum=linqtosql)，其中你可以与专家详细讨论更复杂的主题。 最后， [LINQ to SQL：用于关系数据的 .Net 语言集成查询](/previous-versions/dotnet/articles/bb425822(v=msdn.10)) 白皮书详细信息 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 技术，已完成 Visual Basic 和 c # 代码示例。  
+ 你还可以在 Microsoft Docs 中搜索特定问题，并且可以参与 [LINQ 论坛](https://social.msdn.microsoft.com/forums/home?forum=linqtosql)，其中你可以与专家详细讨论更复杂的主题。 最后， [LINQ to SQL：用于关系数据的 .net Language-Integrated 查询](/previous-versions/dotnet/articles/bb425822(v=msdn.10)) 白皮书详细信息 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 技术，附带 Visual Basic 和 c # 代码示例。  
   
 ## <a name="in-this-section"></a>本节内容  
 

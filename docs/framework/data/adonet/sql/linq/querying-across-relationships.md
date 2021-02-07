@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：跨关系查询
 title: 跨关系查询
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 297878d0-685b-4c01-b2e0-9d731b7322bc
-ms.openlocfilehash: 24ab13a1d67eac39c7b3d7be8cb1c16ec7265d5e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a29a24b21cc486f59ae7535db0e5f97831249ee0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91184872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695247"
 ---
 # <a name="querying-across-relationships"></a>跨关系查询
 
@@ -21,7 +22,7 @@ ms.locfileid: "91184872"
  [!code-csharp[DLinqQueryConcepts#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#3)]
  [!code-vb[DLinqQueryConcepts#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#3)]  
   
- 如果关系属性不存在，则必须以 *联接*的形式手动编写它们，就像在 SQL 查询中那样，如以下代码所示：  
+ 如果关系属性不存在，则必须以 *联接* 的形式手动编写它们，就像在 SQL 查询中那样，如以下代码所示：  
   
  [!code-csharp[DLinqQueryConcepts#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#4)]
  [!code-vb[DLinqQueryConcepts#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#4)]  
@@ -32,7 +33,7 @@ ms.locfileid: "91184872"
   
  既然您已经具备了关系，您就可以通过引用您的类中定义的关系属性来编写查询。 这些关系引用相当于数据库中的外键关系。 使用这些关系的操作会转换成用等效的 SQL 表示的更为复杂的联接。 只要你已经定义关系（使用 <xref:System.Data.Linq.Mapping.AssociationAttribute> 属性），你就无需在 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 中编写显式联接的代码。  
   
- 为了帮助保持这种错觉， [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 实现了一种称为 *延迟加载*的技术。 有关详细信息，请参阅 [延迟与立即加载](deferred-versus-immediate-loading.md)。  
+ 为了帮助保持这种错觉， [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 实现了一种称为 *延迟加载* 的技术。 有关详细信息，请参阅 [延迟与立即加载](deferred-versus-immediate-loading.md)。  
   
  请考虑以下 SQL 查询来投影对的列表 `CustomerID` - `OrderID` ：  
   

@@ -1,13 +1,14 @@
 ---
+description: '详细了解：！ = (不等于)  (实体 SQL) '
 title: '!=（不等于）(Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: 3b4a02ad-ddfc-4c42-8dfa-676234461312
-ms.openlocfilehash: bebe85072f5a2cf6a133b88c6d3f5c97299aa63f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a7a96606fb1834b757253948c3a0d2cde11893dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696394"
 ---
 # <a name="-not-equal-to-entity-sql"></a>!=（不等于）(Entity SQL)
 
@@ -24,7 +25,7 @@ expression <> expression
 ## <a name="arguments"></a>参数  
 
  `expression`  
- 任何有效表达式。 两个表达式都必须包含可隐式转换的数据类型。  
+ 任何有效的表达式。 两个表达式都必须包含可隐式转换的数据类型。  
   
 ## <a name="result-types"></a>结果类型  
 
