@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Declare 语句
 title: Declare Statement
 ms.date: 07/20/2015
 f1_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - Visual Basic code, Sub procedures
 - Function procedures [Visual Basic], declaring
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.openlocfilehash: 8a5802583db53bfd0444ec9df0de9a0b9346d424
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8ad8169515bbb2889c0adbed4df4e30a0215d47d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673838"
 ---
 # <a name="declare-statement"></a>Declare Statement
 
@@ -55,16 +56,16 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 |术语|定义|
 |---|---|
 |`attributelist`|可选。 请参阅 [特性列表](attribute-list.md)。|
-|`accessmodifier`|可选。 可以是以下值之一：<br /><br /> -   [公布](../modifiers/public.md)<br />-   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />- [受保护的朋友](../modifiers/protected-friend.md)<br />- [私有受保护](../modifiers/private-protected.md)<br /><br /> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|
+|`accessmodifier`|可选。 可以是以下其中一个值：<br /><br /> -   [公布](../modifiers/public.md)<br />-   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />- [受保护的朋友](../modifiers/protected-friend.md)<br />- [私有受保护](../modifiers/private-protected.md)<br /><br /> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|
 |`Shadows`|可选。 请参阅 [阴影](../modifiers/shadows.md)。|
-|`charsetmodifier`|可选。 指定字符集和文件搜索信息。 可以是以下值之一：<br /><br /> -   [Ansi](../modifiers/ansi.md) (默认值) <br />-   [Unicode](../modifiers/unicode.md)<br />-   [自动](../modifiers/auto.md)|
+|`charsetmodifier`|可选。 指定字符集和文件搜索信息。 可以是以下其中一个值：<br /><br /> -   [Ansi](../modifiers/ansi.md) (默认值) <br />-   [Unicode](../modifiers/unicode.md)<br />-   [自动](../modifiers/auto.md)|
 |`Sub`|可选，但 `Sub` `Function` 必须出现或。 指示外部过程不返回值。|
 |`Function`|可选，但 `Sub` `Function` 必须出现或。 指示外部过程返回值。|
 |`name`|必需。 此外部引用的名称。 有关详细信息，请参阅已 [声明的元素名称](../../programming-guide/language-features/declared-elements/declared-element-names.md)。|
 |`Lib`|必需。 引入一个 `Lib` 子句，该子句标识包含外部过程的外部文件 (DLL 或代码资源) 。|
 |`libname`|必需。 包含已声明过程的文件的名称。|
 |`Alias`|可选。 指示无法在其文件中按中指定的名称标识所声明的过程 `name` 。 在中指定其标识 `aliasname` 。|
-|`aliasname`|如果使用关键字，则为必需 `Alias` 。 通过以下两种方式之一标识过程的字符串：<br /><br /> 过程在其文件中的入口点名称，在引号 (`""`) <br /><br /> - 或 -<br /><br /> 数字符号 (`#`) 后跟一个整数，该整数指定过程入口点在其文件中的序号|
+|`aliasname`|如果使用关键字，则为必需 `Alias` 。 通过以下两种方式之一标识过程的字符串：<br /><br /> 过程在其文件中的入口点名称，在引号 (`""`) <br /><br /> \- 或 -<br /><br /> 数字符号 (`#`) 后跟一个整数，该整数指定过程入口点在其文件中的序号|
 |`parameterlist`|如果过程使用参数，则为必需。 请参阅 [参数列表](parameter-list.md)。|
 |`returntype`|如果 `Function` 指定了并为，则 `Option Strict` 为必需 `On` 。 过程返回的值的数据类型。|
 
@@ -110,7 +111,7 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 
 ## <a name="behavior"></a>行为
 
-- **内.** 外部引用在其类、结构或模块的范围内。
+- **划分范围。** 外部引用在其类、结构或模块的范围内。
 
 - **生存期.** 外部引用与声明它的类、结构或模块具有相同的生存期。
 

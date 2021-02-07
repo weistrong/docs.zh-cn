@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 运行时库成员
 title: 运行库成员
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft.VisualBasic namespace
 - members [Visual Basic], Visual Basic run-time library
 ms.assetid: f5e82c6e-3500-452b-bdb8-78f0d5477604
-ms.openlocfilehash: f7c7d818e6439f732031e23f297661bb960effb7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cbfca94fa1e8378c04c5a9a6c9cb77b560eed4c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359485"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674176"
 ---
 # <a name="visual-basic-runtime-library-members"></a>Visual Basic 运行库成员
 
@@ -193,9 +194,9 @@ ms.locfileid: "84359485"
   
 ## <a name="microsoftvisualbasic-constants-and-enumerations"></a>Microsoft。  
 
- `Microsoft.VisualBasic`命名空间提供常量和枚举作为 Visual Basic 运行时库的一部分。 你可以在代码中使用这些常量值。 每个枚举表示一种特定的功能类别。 有关详细信息，请参阅[常量和枚举](constants-and-enumerations.md)。  
+ `Microsoft.VisualBasic`命名空间提供常量和枚举作为 Visual Basic 运行时库的一部分。 你可以在代码中使用这些常量值。 每个枚举表示一种特定的功能类别。 有关详细信息，请参阅 [常量和枚举](constants-and-enumerations.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [常量和枚举](constants-and-enumerations.md)
 - [关键字](keywords/index.md)

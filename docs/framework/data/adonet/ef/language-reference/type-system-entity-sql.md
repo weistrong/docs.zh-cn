@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：键入 System (实体 SQL) '
 title: 类型系统 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
-ms.openlocfilehash: d4c8ba7a9d9b58220455b50ff99960fa132c00c7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8d0d50a2c82a309a6a496642836aabe23b6bb9bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673383"
 ---
 # <a name="type-system-entity-sql"></a>类型系统 (Entity SQL)
 

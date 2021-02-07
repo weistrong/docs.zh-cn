@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： TOP (实体 SQL) '
 title: TOP (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 4a4a0954-82e2-4eae-bcaf-7c4552f3532d
-ms.openlocfilehash: 16be25336bac386c993eae7527c9377be1073d1e
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 51e4ce53cff4b47f6f57b6b856ccb09b38e639cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319279"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673435"
 ---
 # <a name="top-entity-sql"></a>TOP (Entity SQL)
 
@@ -19,7 +20,7 @@ SELECT 子句可以在可选的 ALL/DISTINCT 修饰符之后具有可选的 TOP 
 [ TOP (n) ]
 ```
 
-## <a name="arguments"></a>自变量
+## <a name="arguments"></a>参数
 
 `n` 指定要返回的行数的数值表达式。 `n` 可以是单个数值或单个参数。
 
@@ -54,7 +55,7 @@ select distinct top(@topParam) c.a1, c.a2 from T as a
 ## <a name="see-also"></a>请参阅
 
 - [SELECT](select-entity-sql.md)
-- [SKIP](skip-entity-sql.md)
-- [LIMIT](limit-entity-sql.md)
+- [略](skip-entity-sql.md)
+- [上限](limit-entity-sql.md)
 - [ORDER BY](order-by-entity-sql.md)
 - [实体 SQL 引用](entity-sql-reference.md)

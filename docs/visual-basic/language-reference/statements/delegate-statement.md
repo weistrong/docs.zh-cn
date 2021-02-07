@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：委托语句
 title: Delegate 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - delegate keyword [Visual Basic]
 - Delegate statement [Visual Basic]
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
-ms.openlocfilehash: 29de4c174273c3c6c0d4f0cea1ee6dc254a1339b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 3fbf3d7b47b465fd0850f01170e02b19b7b93b4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866664"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673812"
 ---
 # <a name="delegate-statement"></a>Delegate 语句
 
@@ -30,7 +31,7 @@ ms.locfileid: "90866664"
 |术语|定义|  
 |---|---|  
 |`attrlist`|可选。 应用于此委托的特性的列表。 用逗号分隔多个属性。 必须将 [属性列表](attribute-list.md) 用尖括号括起来 ( " `<` " 和 " `>` " ) 。|  
-|`accessmodifier`|可选。 指定哪些代码可以访问委托。 可以是以下值之一：<br /><br /> - [公共](../modifiers/public.md)。 可以访问声明委托的元素的任何代码都可以访问它。<br />-   [受保护](../modifiers/protected.md)。 只有委托的类或派生类中的代码可以访问它。<br />-   [友元](../modifiers/friend.md)。 只有同一程序集中的代码才能访问该委托。<br />- [私有](../modifiers/private.md)。 只有声明委托的元素中的代码才能访问它。<br /><br /> - [受保护的朋友](../modifiers/protected-friend.md) 只有委托的类、派生类或同一程序集内的代码可以访问该委托。 <br />- [私有受保护](../modifiers/private-protected.md) 只有委托的类中的代码或同一程序集中的派生类中的代码才能访问该委托。 |  
+|`accessmodifier`|可选。 指定哪些代码可以访问委托。 可以是以下其中一个值：<br /><br /> - [公共](../modifiers/public.md)。 可以访问声明委托的元素的任何代码都可以访问它。<br />-   [受保护](../modifiers/protected.md)。 只有委托的类或派生类中的代码可以访问它。<br />-   [友元](../modifiers/friend.md)。 只有同一程序集中的代码才能访问该委托。<br />- [私有](../modifiers/private.md)。 只有声明委托的元素中的代码才能访问它。<br /><br /> - [受保护的朋友](../modifiers/protected-friend.md) 只有委托的类、派生类或同一程序集内的代码可以访问该委托。 <br />- [私有受保护](../modifiers/private-protected.md) 只有委托的类中的代码或同一程序集中的派生类中的代码才能访问该委托。 |  
 |`Shadows`|可选。 指示此委托重新声明并隐藏基类中具有相同名称的编程元素或重载元素集。 可以与任何其他类型一起隐藏任何类型的已声明元素。<br /><br /> 隐藏的元素不可在隐藏它的派生类中使用（除了从隐藏元素不可访问的位置）。 例如，如果某个 `Private` 元素隐藏了一个基类元素，则没有访问该元素的权限的代码将 `Private` 改为访问该基类元素。|  
 |`Sub`|可选，但 `Sub` `Function` 必须出现或。 将此过程声明为不 `Sub` 返回值的委托过程。|  
 |`Function`|可选，但 `Sub` `Function` 必须出现或。 将此过程声明为一个 `Function` 返回值的委托过程。|  
@@ -67,7 +68,7 @@ ms.locfileid: "90866664"
   
  [!code-vb[VbVbalrDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#14)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AddressOf 运算符](../operators/addressof-operator.md)
 - [个](of-clause.md)
@@ -76,4 +77,4 @@ ms.locfileid: "90866664"
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [协变和逆变](../../programming-guide/concepts/covariance-contravariance/index.md)
 - [位于](../modifiers/in-generic-modifier.md)
-- [弄](../modifiers/out-generic-modifier.md)
+- [Out](../modifiers/out-generic-modifier.md)

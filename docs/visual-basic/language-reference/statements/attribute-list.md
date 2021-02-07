@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息：属性列表 (Visual Basic) '
 title: 特性列表
 ms.date: 07/20/2015
 helpviewer_keywords:
 - attribute list
 - attributes [Visual Basic], applying
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
-ms.openlocfilehash: e566239c56efa8ca8e83bff92486fec4c434e92b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bde9387a48001a2696a6f69454edc311e7597bb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874741"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674033"
 ---
 # <a name="attribute-list-visual-basic"></a>特性列表 (Visual Basic)
 
@@ -57,7 +58,7 @@ ms.locfileid: "90874741"
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> 指示特性化过程表示非托管动态链接库中的入口点 (DLL) 。 特性提供 DLL 名称作为位置参数，将其他信息作为变量初始值设定项提供。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [程序集](../modifiers/assembly.md)
 - [模块 \<keyword>](../modifiers/module-keyword.md)

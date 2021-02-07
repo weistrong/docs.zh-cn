@@ -1,19 +1,20 @@
 ---
+description: 了解更多：不支持的表达式
 title: 不支持的表达式 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5e79da7e-e78a-413c-8fb0-f3f9cd84f579
 dev_langs:
 - sql
-ms.openlocfilehash: 956fe117eb0c59392c3999046bc70deaed268ac6
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: ceb57dc78f9685a79de987d15f7fd57a583b75a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70248784"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673292"
 ---
 # <a name="unsupported-expressions"></a>不支持的表达式
 
-本主题介绍中[!INCLUDE[esql](../../../../../../includes/esql-md.md)]不支持的 transact-sql 表达式。 有关详细信息，请参阅[实体 SQL 与 transact-sql 的不同之处](how-entity-sql-differs-from-transact-sql.md)。
+本主题介绍中不支持的 Transact-sql 表达式 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 。 有关详细信息，请参阅 [实体 SQL 与 transact-sql 的不同之处](how-entity-sql-differs-from-transact-sql.md)。
 
 ## <a name="quantified-predicates"></a>量化谓词
 
@@ -33,9 +34,9 @@ exists(select 0 from employees as e where sal > e.salary)
 
 ## <a name="-operator"></a>* 运算符
 
-Transact-sql 支持在 SELECT 子句中使用 * 运算符，以指示应提取所有列。在 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 中不支持使用此运算符。
+Transact-sql 支持在 SELECT 子句中使用 * 运算符，以指示应提取所有列。这在中不受支持 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 。
 
 ## <a name="see-also"></a>请参阅
 
-- [实体 SQL 概述](entity-sql-overview.md)
-- [实体 SQL 与 Transact-SQL 的区别](how-entity-sql-differs-from-transact-sql.md)
+- [Entity SQL 概述](entity-sql-overview.md)
+- [Entity SQL 与 Transact-SQL 有何不同](how-entity-sql-differs-from-transact-sql.md)

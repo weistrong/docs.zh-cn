@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Const 语句 (Visual Basic) '
 title: Const 语句
 ms.date: 05/12/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Const statement [Visual Basic]
 ms.assetid: 495b318d-b7c5-4198-94f8-0790a541b07a
-ms.openlocfilehash: 3b05d4067ef99e03df07d2c316c982051180d961
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 61d898823c7697c91b207a502417b49cdeaf5eea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84382102"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673851"
 ---
 # <a name="const-statement-visual-basic"></a>Const 语句 (Visual Basic)
 
@@ -27,13 +28,13 @@ Const constantlist
 ## <a name="parts"></a>组成部分
 
 `attributelist`  
-可选。 应用于此语句中声明的所有常量的特性列表。 请参阅尖括号中的[属性列表](attribute-list.md)（" `<` " 和 " `>` "）。
+可选。 应用于此语句中声明的所有常量的特性列表。 请参阅尖括号中的 [属性列表](attribute-list.md) ( " `<` " 和 " `>` " ) 。
 
 `accessmodifier`  
-可选。 用于指定哪些代码可以访问这些常量。 可以是[公共](../modifiers/public.md)、[受保护](../modifiers/protected.md)、[朋友](../modifiers/friend.md)、[受保护的朋友](../modifiers/protected-friend.md)、[私有](../modifiers/private.md)或[私有保护](../modifiers/private-protected.md)的。
+可选。 用于指定哪些代码可以访问这些常量。 可以是 [公共](../modifiers/public.md)、 [受保护](../modifiers/protected.md)、 [朋友](../modifiers/friend.md)、 [受保护的朋友](../modifiers/protected-friend.md)、 [私有](../modifiers/private.md)或 [私有保护](../modifiers/private-protected.md)的。
 
 `Shadows`  
-可选。 用于在基类中重新声明和隐藏编程元素。 请参阅[阴影](../modifiers/shadows.md)。
+可选。 用于在基类中重新声明和隐藏编程元素。 请参阅 [阴影](../modifiers/shadows.md)。
 
 `constantlist`  
 必需。 在此语句中声明的常量的列表。
@@ -54,15 +55,15 @@ Const constantlist
 
 如果你的应用程序中有一个永不更改的值，则可以定义一个已命名的常量，并将其用于替代文本值。 名称比值更易于记忆。 可以仅定义一次常数，并在代码中的多个位置使用它。 如果在更高版本中，需要重新定义值， `Const` 只需进行更改即可。
 
-只能 `Const` 在模块或过程级别使用。 这意味着变量的*声明上下文*必须是类、结构、模块、过程或块，而不能是源文件、命名空间或接口。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
+只能 `Const` 在模块或过程级别使用。 这意味着变量的 *声明上下文* 必须是类、结构、模块、过程或块，而不能是源文件、命名空间或接口。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
 
-本地常量（在过程中）默认为公共访问，不能对其使用任何访问修饰符。 类和模块成员常量（任何过程外部）默认为私有访问，结构成员常量默认为公共访问。 您可以使用访问修饰符调整其访问级别。
+在过程中 (的本地常量) 默认为公共访问权限，并且不能对其使用任何访问修饰符。 类和模块成员常数 (于任何过程之外) 默认为私有访问，而结构成员常数默认为公共访问。 您可以使用访问修饰符调整其访问级别。
 
 ## <a name="rules"></a>规则
 
-- **声明上下文。** 在任何过程之外，在模块级别声明的常量是*成员常量*;它是声明它的类、结构或模块的成员。
+- **声明上下文。** 在任何过程之外，在模块级别声明的常量是 *成员常量*;它是声明它的类、结构或模块的成员。
 
-  在过程级别声明的常量是*局部常量*;它在声明它的过程或块的本地。
+  在过程级别声明的常量是 *局部常量*;它在声明它的过程或块的本地。
 
 - **属性.** 仅可将属性应用于成员常量，而不能应用于局部常数。 特性向程序集的元数据提供信息，这对于临时存储（如本地常量）没有意义。
 
@@ -80,13 +81,13 @@ Const constantlist
 
 - **不同类型。** 您可以为不同的常量指定不同的数据类型， `As` 为您声明的每个变量使用单独的子句。 但是，不能通过使用 common 子句声明多个常量为同一类型 `As` 。
 
-- **起始.** 必须初始化中每个常量的值 `constantlist` 。 使用可 `initializer` 提供要分配给常数的表达式。 表达式可以是文本的任意组合、已经定义的其他常数以及已定义的枚举成员。 可以使用算术运算符和逻辑运算符来合并此类元素。
+- **初始化。** 必须初始化中每个常量的值 `constantlist` 。 使用可 `initializer` 提供要分配给常数的表达式。 表达式可以是文本的任意组合、已经定义的其他常数以及已定义的枚举成员。 可以使用算术运算符和逻辑运算符来合并此类元素。
 
   不能在中使用变量或函数 `initializer` 。 但是，可以使用转换关键字 `CByte` ，如和 `CShort` 。 `AscW`如果使用常量或参数调用该方法，则还可以使用 `String` `Char` ，因为在编译时可对其进行计算。
 
 ## <a name="behavior"></a>行为
 
-- **内.** 本地常量只能从其过程或块中访问。 成员常量可从其类、结构或模块中的任何位置进行访问。
+- **划分范围。** 本地常量只能从其过程或块中访问。 成员常量可从其类、结构或模块中的任何位置进行访问。
 
 - **限定.** 类、结构或模块外的代码必须使用该类、结构或模块的名称来限定成员常量的名称。 过程或块外的代码不能引用该过程或块中的任何本地常数。
 
@@ -104,7 +105,7 @@ Const constantlist
 
 前面的示例对 <xref:System.Type.ToString%2A> <xref:System.Type> [GetType 运算符](../operators/gettype-operator.md)返回的对象使用方法，因为 <xref:System.Type> 不能使用将转换为 `String` `CStr` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

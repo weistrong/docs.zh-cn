@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： AddHandler 语句
 title: AddHandler 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - AddHandler statement [Visual Basic]
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
-ms.openlocfilehash: 79dbe174209e91f13f5b43e8cdeb0b42edc4d163
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: c0c34abd7ff225765ab36278825a555e2b84b0d1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866709"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674098"
 ---
 # <a name="addhandler-statement"></a>AddHandler 语句
 
@@ -48,7 +49,7 @@ AddHandler event, AddressOf eventhandler
 
  [!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [RemoveHandler 语句](removehandler-statement.md)
 - [句柄数](handles-clause.md)

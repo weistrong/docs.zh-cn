@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <message> 信息： <wsHttpBinding>
 title: <message> 的 <wsHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
-ms.openlocfilehash: 7bd4caa31dcdcd2a4b104b9d4d5615a2ff800db4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b3a389f2cfd3442a0d05455f0519eaa19ef01e74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673630"
 ---
 # <a name="message-of-wshttpbinding"></a>\<message> 的 \<wsHttpBinding>
 
@@ -40,16 +41,16 @@ ms.locfileid: "91204811"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |algorithmSuite|设置消息加密和密钥包装算法。 算法和密钥大小由 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> 类确定。 这些算法与“安全策略语言”(WS-SecurityPolicy) 规范中指定的算法一致。<br /><br /> 默认值是 `Basic256`。|  
-|clientCredentialType|可选。 指定要在使用安全模式执行客户端身份验证时使用的凭据类型是 `Message` 还是 `TransportWithMessageCredentials`。 请参见下面的枚举值。 默认为 `Windows`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.MessageCredentialType>。|  
+|clientCredentialType|可选。 指定要在使用安全模式执行客户端身份验证时使用的凭据类型是 `Message` 还是 `TransportWithMessageCredentials`。 请参见下面的枚举值。 默认值为 `Windows`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.MessageCredentialType>。|  
 |establishSecurityContext|一个布尔值，确定安全通道是否建立安全会话。 安全会话将在交换应用程序消息之前建立安全上下文令牌 (SCT)。 建立 SCT 时，此安全通道将提供与上层通道之间的 <xref:System.ServiceModel.Channels.ISession> 接口。 有关使用安全会话的详细信息，请参阅 [如何：创建安全会话](../../../wcf/feature-details/how-to-create-a-secure-session.md)。<br /><br /> 默认值是 `true`。|  
-|negotiateServiceCredential|可选。 一个布尔值，指定是在带外客户端提供服务凭据，还是通过协商过程由客户端从服务获取服务凭据。 这种协商是正常消息交换的前提。<br /><br /> 如果 `clientCredentialType` 属性等于 "无"、"用户名" 或 "证书"，则将此特性设置为 `false` 意味着服务证书可用于带外客户端，并且客户端需要使用 [\<serviceCertificate>](servicecertificate-of-servicecredentials.md) 服务行为中的) 指定服务证书 ([\<serviceCredentials>](servicecredentials.md) 。 此模式可与实现 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。<br /><br /> 如果 `ClientCredentialType` 属性设置为 `Windows`，则将此属性设置为 `false` 会指定基于 Kerberos 的身份验证。 这意味着客户端和服务必须是相同 Kerberos 域的一部分。 此模式可与实现 Kerberos 令牌配置文件（如 OASIS WSS TC 中所定义）以及 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。<br /><br /> 当此属性为 `true` 时，会引起通过 SOAP 消息进行 SPNego 交换的 .NET SOAP 协商。<br /><br /> 默认为 `true`。|  
+|negotiateServiceCredential|可选。 一个布尔值，指定是在带外客户端提供服务凭据，还是通过协商过程由客户端从服务获取服务凭据。 这种协商是正常消息交换的前提。<br /><br /> 如果 `clientCredentialType` 属性等于 "无"、"用户名" 或 "证书"，则将此特性设置为 `false` 意味着服务证书可用于带外客户端，并且客户端需要使用 [\<serviceCertificate>](servicecertificate-of-servicecredentials.md) 服务行为中的) 指定服务证书 ([\<serviceCredentials>](servicecredentials.md) 。 此模式可与实现 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。<br /><br /> 如果 `ClientCredentialType` 属性设置为 `Windows`，则将此属性设置为 `false` 会指定基于 Kerberos 的身份验证。 这意味着客户端和服务必须是相同 Kerberos 域的一部分。 此模式可与实现 Kerberos 令牌配置文件（如 OASIS WSS TC 中所定义）以及 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。<br /><br /> 当此属性为 `true` 时，会引起通过 SOAP 消息进行 SPNego 交换的 .NET SOAP 协商。<br /><br /> 默认值为 `true`。|  
   
 ## <a name="algorithmsuite-attribute"></a>algorithmSuite 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |Basic128|使用 Basic128 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
 |Basic192|使用 Basic192 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
@@ -70,7 +71,7 @@ ms.locfileid: "91204811"
   
 ## <a name="clientcredentialtype-attribute"></a>clientCredentialType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|允许服务与匿名客户端交互。 在服务端，这表示该服务不需要任何客户端凭据。 对于客户端，这表示客户端不提供任何客户端凭据。|  
 |证书|允许服务要求使用证书对客户端进行身份验证。 如果使用消息安全模式且 `negotiateServiceCredential` 属性设置为 `false`，则需要向客户端提供服务证书。|  
@@ -84,7 +85,7 @@ ms.locfileid: "91204811"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-wshttpbinding.md)|定义的安全设置 [\<wsHttpBinding>](wshttpbinding.md) 。|  
   

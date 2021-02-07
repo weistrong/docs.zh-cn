@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：类语句 (Visual Basic) '
 title: Class 语句
 ms.date: 05/12/2018
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - classes [Visual Basic], data members
 - data members [Visual Basic], of classes
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
-ms.openlocfilehash: 3b64597fcd7453c20ed295fe263eeaa8783b20ae
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: de4541addc9f4755d973586c7d1b4410e4bf12ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673890"
 ---
 # <a name="class-statement-visual-basic"></a>Class 语句 (Visual Basic)
 
@@ -40,7 +41,7 @@ End Class
 |术语|定义|  
 |---|---|  
 |`attributelist`|可选。 请参阅 [特性列表](attribute-list.md)。|  
-|`accessmodifier`|可选。 可以是以下值之一：<br /><br /> -   [公布](../modifiers/public.md)<br />-   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />-   [受保护的朋友](../modifiers/protected-friend.md)<br />- [私有受保护](../modifiers/private-protected.md)<br/><br/> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|  
+|`accessmodifier`|可选。 可以是以下其中一个值：<br /><br /> -   [公布](../modifiers/public.md)<br />-   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />-   [受保护的朋友](../modifiers/protected-friend.md)<br />- [私有受保护](../modifiers/private-protected.md)<br/><br/> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|  
 |`Shadows`|可选。 请参阅 [阴影](../modifiers/shadows.md)。|  
 |`MustInherit`|可选。 请参阅 [MustInherit](../modifiers/mustinherit.md)。|  
 |`NotInheritable`|可选。 请参阅 [NotInheritable](../modifiers/notinheritable.md)。|  
@@ -57,7 +58,7 @@ End Class
   
 ## <a name="remarks"></a>备注  
 
- `Class`语句定义新的数据类型。 *类*是面向对象编程的基本构建基块 (OOP) 。 有关详细信息，请参阅 [对象和类](../../programming-guide/language-features/objects-and-classes/index.md)。  
+ `Class`语句定义新的数据类型。 *类* 是面向对象编程的基本构建基块 (OOP) 。 有关详细信息，请参阅 [对象和类](../../programming-guide/language-features/objects-and-classes/index.md)。  
   
  只能 `Class` 在命名空间或模块级别使用。 这意味着类的 *声明上下文* 必须是源文件、命名空间、类、结构、模块或接口，不能是过程或块。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。  
   
@@ -83,7 +84,7 @@ End Class
   
 - **访问级别。** 在类中，可以使用其自己的访问级别声明每个成员。 类成员默认为 [公共](../modifiers/public.md) 访问，变量和常量除外，默认为 [私有](../modifiers/private.md) 访问。 当某个类的访问权限超过其成员之一时，类访问级别将优先。  
   
-- **内.** 类在其包含的命名空间、类、结构或模块的范围内。  
+- **划分范围。** 类在其包含的命名空间、类、结构或模块的范围内。  
   
      每个类成员的作用域都是整个类。  
   
@@ -111,7 +112,7 @@ End Class
   
  [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对象和类](../../programming-guide/language-features/objects-and-classes/index.md)
 - [结构和类](../../programming-guide/language-features/data-types/structures-and-classes.md)
