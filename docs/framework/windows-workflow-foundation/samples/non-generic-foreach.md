@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：非泛型 ForEach
 title: 非泛型 ForEach
 ms.date: 03/30/2017
 ms.assetid: 576cd07a-d58d-4536-b514-77bad60bff38
-ms.openlocfilehash: 9678d929375857a76d01f575e637a069b0911ae5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 16635da4ef57ff7b59e178f5954465d8b86bf488
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741947"
 ---
 # <a name="non-generic-foreach"></a>非泛型 ForEach
 

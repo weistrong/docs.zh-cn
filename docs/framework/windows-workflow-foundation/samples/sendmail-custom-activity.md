@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： SendMail 自定义活动
 title: SendMail 自定义活动
 ms.date: 03/30/2017
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
-ms.openlocfilehash: f518beebe336080853e4dec3bca6f8539bbec304
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 853e28d26c41338670d377593d5a3536b011d112
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267579"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741752"
 ---
 # <a name="sendmail-custom-activity"></a>SendMail 自定义活动
 
@@ -18,15 +19,15 @@ ms.locfileid: "96267579"
 |名称|类型|描述|  
 |-|-|-|  
 |主机|字符串|SMTP 服务器主机的地址。|  
-|端口|字符串|主机中 SMTP 服务的端口。|  
-|EnableSsl|bool|指定 <xref:System.Net.Mail.SmtpClient> 是否使用安全套接字层 (SSL) 来对连接进行加密。|  
+|Port|字符串|主机中 SMTP 服务的端口。|  
+|EnableSsl|布尔|指定 <xref:System.Net.Mail.SmtpClient> 是否使用安全套接字层 (SSL) 来对连接进行加密。|  
 |UserName|字符串|设置用于验证发件人 <xref:System.Net.Mail.SmtpClient.Credentials%2A> 属性的凭据的用户名。|  
 |密码|字符串|设置用于验证发件人 <xref:System.Net.Mail.SmtpClient.Credentials%2A> 属性的凭据的密码。|  
 |主题|<xref:System.Activities.InArgument%601>\<string>|邮件主题。|  
 |正文|<xref:System.Activities.InArgument%601>\<string>|邮件正文。|  
 |Attachments|<xref:System.Activities.InArgument%601>\<string>|用于存储附加到此电子邮件的数据的附件集合。|  
-|从|<xref:System.Net.Mail.MailAddress>|此电子邮件的发件人地址。|  
-|如果|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|包含此电子邮件的收件人的地址集合。|  
+|From|<xref:System.Net.Mail.MailAddress>|此电子邮件的发件人地址。|  
+|功能|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|包含此电子邮件的收件人的地址集合。|  
 |CC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|包含此电子邮件 (CC) 收件人的抄送副本的地址集合。|  
 |BCC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|包含此电子邮件的密件抄送 (BCC) 收件人的地址集合。|  
 |令牌|<xref:System.Activities.InArgument%601><IDictionary\<string, string>>|会在正文中进行替换的标记。 此功能允许用户在正文中指定一些值，这些值稍后可由使用此属性提供的标记进行替换。|  

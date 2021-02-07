@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Option Strict 语句
 title: Option Strict Statement
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - late binding [Visual Basic]
 - implicit conversions [Visual Basic]
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
-ms.openlocfilehash: ab1094961e2bc3aed0e975e40369a5f5c1ba93eb
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: a128aca1bdaa6ce8bd4c4cd8e63e05348f00e4d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741427"
 ---
 # <a name="option-strict-statement"></a>Option Strict Statement
 
@@ -109,7 +110,7 @@ Option Strict { On | Off }
   
 ## <a name="when-an-option-strict-statement-is-not-present"></a>当 Option Strict 语句不存在时  
 
- 如果源代码不包含 `Option Strict` 语句，则使用 "编译" 页上的 " **Option strict** " 设置 [，"项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 。 " **编译" 页** 中的设置提供对生成错误的条件的更多控制。  
+ 如果源代码不包含 `Option Strict` 语句，则使用 "编译" 页上的 " **Option strict** " 设置 [，"项目设计器" (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 。 " **编译" 页** 中的设置提供对生成错误的条件的更多控制。  
   
  如果你使用的是命令行编译器，则可以使用 [-optionstrict](../../reference/command-line-compiler/optionstrict.md) 编译器选项来指定的设置 `Option Strict` 。  
   
@@ -117,55 +118,55 @@ Option Strict { On | Off }
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-1. 在 **解决方案资源管理器**中，选择一个项目。 在 **“项目”** 菜单上，单击 **“属性”** 。  
+1. 在“解决方案资源管理器”中，选择一个项目。 在 **“项目”** 菜单上，单击 **“属性”** 。  
   
 2. 在 " **编译** " 选项卡上，在 " **选项严格限制** " 框中设置值。  
   
 ### <a name="to-set-warning-configurations-in-the-ide"></a><a name="conditions"></a> 在 IDE 中设置警告配置  
 
- 使用 "编译" [页时，"项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 而不是 `Option Strict` 语句，您可以对生成错误的条件进行其他控制。 "**编译" 页**的 "**警告配置**" 部分具有与在上时导致编译时错误的三个条件相对应的设置 `Option Strict` 。 这些设置如下：  
+ 使用 "编译" [页时，"项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 而不是 `Option Strict` 语句，您可以对生成错误的条件进行其他控制。 "**编译" 页** 的 "**警告配置**" 部分具有与在上时导致编译时错误的三个条件相对应的设置 `Option Strict` 。 这些设置如下：  
   
 - **隐式转换**  
   
-- 晚期绑定；调用可能在运行时失败****  
+- 晚期绑定；调用可能在运行时失败  
   
-- 隐式类型；假定为对象****  
+- 隐式类型；假定为对象  
   
- “Option Strict”设置为“开启”时，所有这三个警告配置设置都将被设置为“错误”************。 “Option Strict”设置为“关闭”时，所有这三个设置都将被设置为“无”************。  
+ “Option Strict”设置为“开启”时，所有这三个警告配置设置都将被设置为“错误”。 “Option Strict”设置为“关闭”时，所有这三个设置都将被设置为“无”。  
   
- 可单独将各个警告配置设置更改为“无”、“警告”或“错误”************。 如果所有三个警告配置设置均设置为 " **错误**"， `On` 则会出现在 `Option strict` 框中。 如果所有三个均设置为 " **无**"，则 `Off` 在此框中显示。 对于这些配置的任何其他组合，显示“(自定义)”****。  
+ 可单独将各个警告配置设置更改为“无”、“警告”或“错误”。 如果三个警告配置都设置为“错误”，则 `On` 会出现在 `Option strict` 框中。 如果三个都设置为“无”，则 `Off` 会出现在此框中。 对于这些配置的任何其他组合，显示“(自定义)”。  
   
 ### <a name="to-set-the-option-strict-default-setting-for-new-projects"></a>为新项目设置选项 Strict 默认设置  
 
  创建项目时，"**编译**" 选项卡上的 " **option strict** " 设置设置为 "**选项**" 对话框中的 " **option strict** " 设置。  
   
- 若要 `Option Strict` 在此对话框中设置，请在 " **工具** " 菜单上单击 " **选项**"。 在“选项”对话框中，展开“项目和解决方案”，然后单击“VB 默认值”************。 **VB 默认**设置中的初始默认设置为 `Off` 。  
+ 若要 `Option Strict` 在此对话框中设置，请在 " **工具** " 菜单上单击 " **选项**"。 在“选项”对话框中，展开“项目和解决方案”，然后单击“VB 默认值”。 **VB 默认** 设置中的初始默认设置为 `Off` 。  
   
 ### <a name="to-set-option-strict-on-the-command-line"></a>在命令行上设置 Option Strict  
 
- 在**vbc**命令中包含[-optionstrict](../../reference/command-line-compiler/optionstrict.md)编译器选项。  
+ 在 **vbc** 命令中包含 [-optionstrict](../../reference/command-line-compiler/optionstrict.md)编译器选项。  
   
 ## <a name="example"></a>示例  
 
- 下面的示例演示由收缩转换的隐式类型转换导致的编译时错误。 此类别的错误对应于 "**编译" 页**上的**隐式转换**条件。  
+ 下面的示例演示由收缩转换的隐式类型转换导致的编译时错误。 此类别的错误对应于 "**编译" 页** 上的 **隐式转换** 条件。  
   
  [!code-vb[VbVbalrStatements#161](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#161)]  
   
 ## <a name="example"></a>示例  
 
- 下面的示例演示后期绑定导致的编译时错误。 此类别的错误对应于后期绑定; "**编译" 页**上的 "**调用可能在运行时失败**" 条件。  
+ 下面的示例演示后期绑定导致的编译时错误。 此类别的错误对应于后期绑定; "**编译" 页** 上的 "**调用可能在运行时失败**" 条件。  
   
  [!code-vb[VbVbalrStatements#162](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#162)]  
   
 ## <a name="example"></a>示例  
 
- 下面的示例演示由使用隐式类型声明的变量导致的错误 `Object` 。 此类别的错误对应于 **隐式类型;** " **编译" 页**上的 "对象假定" 条件。  
+ 下面的示例演示由使用隐式类型声明的变量导致的错误 `Object` 。 此类别的错误对应于 **隐式类型;** " **编译" 页** 上的 "对象假定" 条件。  
   
  [!code-vb[VbVbalrStatements#163](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#163)]  
   
  [!code-vb[VbVbalrStatements#164](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#164)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [隐式转换和显式转换](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

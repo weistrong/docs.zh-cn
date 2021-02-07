@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的 Sub 语句) '
 title: Sub 语句
 ms.date: 05/12/2018
 f1_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], Sub statements
 - Visual Basic code, Sub procedures
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-ms.openlocfilehash: e50b79c31c92ac116d6c82bcececba3340894d74
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9be40c8284c677a151e4b1665f0b49e5f852bf00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740985"
 ---
 # <a name="sub-statement-visual-basic"></a>Sub 语句 (Visual Basic)
 
@@ -55,11 +56,11 @@ End Sub
 
 - `attributelist`
 
-  可选。 请参阅[特性列表](attribute-list.md)。
+  可选。 请参阅 [特性列表](attribute-list.md)。
 
 - `Partial`
 
-  可选。 指示分部方法的定义。 请参阅[分部方法](../../programming-guide/language-features/procedures/partial-methods.md)。
+  可选。 指示分部方法的定义。 请参阅 [分部方法](../../programming-guide/language-features/procedures/partial-methods.md)。
 
 - `accessmodifier`
 
@@ -67,17 +68,17 @@ End Sub
 
   - [公共](../modifiers/public.md)
 
-  - [避免](../modifiers/protected.md)
+  - [Protected](../modifiers/protected.md)
 
-  - [友好](../modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - 专用 
+  - [专用](../modifiers/private.md)
 
   - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [私有受保护](../modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
-  请参阅[Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
+  请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
 
 - `proceduremodifiers`
 
@@ -99,31 +100,31 @@ End Sub
 
 - `Shared`
 
-  可选。 请参阅[共享](../modifiers/shared.md)。
+  可选。 请参阅 [共享](../modifiers/shared.md)。
 
 - `Shadows`
 
-  可选。 请参阅[阴影](../modifiers/shadows.md)。
+  可选。 请参阅 [阴影](../modifiers/shadows.md)。
 
 - `Async`
 
-  可选。 请参阅[Async](../modifiers/async.md)。
+  可选。 请参阅 [Async](../modifiers/async.md)。
 
 - `name`
 
-  必需。 过程的名称。 请参阅 [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)。 若要为类创建构造函数过程，请将过程的名称设置 `Sub` 为 `New` 关键字。 有关详细信息，请参阅[对象生存期：如何创建和销毁对象](../../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)。
+  必需。 过程的名称。 请参阅 [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)。 若要为类创建构造函数过程，请将过程的名称设置 `Sub` 为 `New` 关键字。 有关详细信息，请参阅 [对象生存期：如何创建和销毁对象](../../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)。
 
 - `typeparamlist`
 
-  可选。 泛型过程的类型参数的列表。 请参阅[类型列表](type-list.md)。
+  可选。 泛型过程的类型参数的列表。 请参阅 [类型列表](type-list.md)。
 
 - `parameterlist`
 
-  可选。 表示此过程参数的本地变量名称列表。 请参阅[参数列表](parameter-list.md)。
+  可选。 表示此过程参数的本地变量名称列表。 请参阅 [参数列表](parameter-list.md)。
 
 - `Implements`
 
-  可选。 指示此过程实现了一个或多个 `Sub` 过程，每个过程都在此过程的包含类或结构实现的接口中定义。 请参阅[Implements 语句](implements-statement.md)。
+  可选。 指示此过程实现了一个或多个 `Sub` 过程，每个过程都在此过程的包含类或结构实现的接口中定义。 请参阅 [Implements 语句](implements-statement.md)。
 
 - `implementslist`
 
@@ -142,7 +143,7 @@ End Sub
 
 - `Handles`
 
-  可选。 指示此过程可以处理一个或多个特定事件。 请参阅[句柄](handles-clause.md)。
+  可选。 指示此过程可以处理一个或多个特定事件。 请参阅 [句柄](handles-clause.md)。
 
 - `eventlist`
 
@@ -175,9 +176,9 @@ End Sub
 
 只能 `Sub` 在模块级别定义过程。 因此，sub 过程的声明上下文必须是类、结构、模块或接口，不能是源文件、命名空间、过程或块。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
 
-`Sub`过程默认为公共访问。 您可以使用访问修饰符调整其访问级别。
+`Sub` 过程默认为公共访问。 您可以使用访问修饰符调整其访问级别。
 
-如果过程使用 `Implements` 关键字，则包含类或结构必须具有 `Implements` 紧跟在其或语句后面的语句 `Class` `Structure` 。 `Implements`语句必须包括在中指定的每个接口 `implementslist` 。 但是，接口用于定义 `Sub` （在中）的名称不必 `definedname` 与此过程的名称匹配（在中为 `name` ）。
+如果过程使用 `Implements` 关键字，则包含类或结构必须具有 `Implements` 紧跟在其或语句后面的语句 `Class` `Structure` 。 `Implements`语句必须包括在中指定的每个接口 `implementslist` 。 但是，接口用于定义 `Sub`) 中的 (的名称不必 `definedname` 与此过程在) 中 (的名称相匹配 `name` 。
 
 ## <a name="returning-from-a-sub-procedure"></a>从 Sub 过程返回
 
@@ -199,7 +200,7 @@ End Sub
 
 `Sub`过程和 `Function` 过程可以具有参数并执行一系列语句。 但 `Function` 过程返回值，并且 `Sub` 过程不会。 因此，不能 `Sub` 在表达式中使用过程。
 
-您可以在 `Call` 调用过程时使用关键字 `Sub` ，但对于大多数用途，不建议使用该关键字。 有关详细信息，请参阅[Call 语句](call-statement.md)。
+您可以在 `Call` 调用过程时使用关键字 `Sub` ，但对于大多数用途，不建议使用该关键字。 有关详细信息，请参阅 [Call 语句](call-statement.md)。
 
 Visual Basic 有时会重新排列算术表达式以提高内部效率。 出于此原因，如果参数列表包含调用其他过程的表达式，则不应假定将按特定顺序调用这些表达式。
 
@@ -207,18 +208,18 @@ Visual Basic 有时会重新排列算术表达式以提高内部效率。 出于
 
 通过使用异步功能，你可以调用异步函数而无需使用显式回调或在多个函数或 lambda 表达式中手动拆分你的代码。
 
-如果使用[Async](../modifiers/async.md)修饰符标记过程，则可以在过程中使用[Await](../operators/await-operator.md)运算符。 当控件 `Await` 在过程中到达表达式时 `Async` ，控件将返回到调用方，并且在等待的任务完成之前，会挂起过程中的进度。 任务完成后，可以在过程中继续执行。
+如果使用 [Async](../modifiers/async.md) 修饰符标记过程，则可以在过程中使用 [Await](../operators/await-operator.md) 运算符。 当控件 `Await` 在过程中到达表达式时 `Async` ，控件将返回到调用方，并且在等待的任务完成之前，会挂起过程中的进度。 任务完成后，可以在过程中继续执行。
 
 > [!NOTE]
 > `Async`如果遇到了第一个尚未完成的对象或过程结束时 `Async` （以先发生者为准），则过程返回到调用方。
 
-还可以使用修饰符标记[函数语句](function-statement.md) `Async` 。 `Async`函数的返回类型可以是 <xref:System.Threading.Tasks.Task%601> 或 <xref:System.Threading.Tasks.Task> 。 本主题后面的示例演示了 `Async` 返回类型为的函数 <xref:System.Threading.Tasks.Task%601> 。
+还可以使用修饰符标记 [函数语句](function-statement.md) `Async` 。 `Async`函数的返回类型可以是 <xref:System.Threading.Tasks.Task%601> 或 <xref:System.Threading.Tasks.Task> 。 本主题后面的示例演示了 `Async` 返回类型为的函数 <xref:System.Threading.Tasks.Task%601> 。
 
 `Async``Sub`过程主要用于事件处理程序，其中不能返回值。 `Async` `Sub` 无法等待过程，并且过程的调用方 `Async` `Sub` 无法捕获该 `Sub` 过程引发的异常。
 
 `Async`过程不能声明任何[ByRef](../modifiers/byref.md)参数。
 
-有关过程的详细信息 `Async` ，请参阅[采用 Async 和 Await 的异步编程](../../programming-guide/concepts/async/index.md)、[异步程序中的控制流](../../programming-guide/concepts/async/control-flow-in-async-programs.md)和[异步返回类型](../../programming-guide/concepts/async/async-return-types.md)。
+有关过程的详细信息 `Async` ，请参阅 [采用 Async 和 Await 的异步编程](../../programming-guide/concepts/async/index.md)、 [异步程序中的控制流](../../programming-guide/concepts/async/control-flow-in-async-programs.md)和 [异步返回类型](../../programming-guide/concepts/async/async-return-types.md)。
 
 ## <a name="example"></a>示例
 
@@ -234,7 +235,7 @@ Visual Basic 有时会重新排列算术表达式以提高内部效率。 出于
 
 [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Implements 语句](implements-statement.md)
 - [Function 语句](function-statement.md)

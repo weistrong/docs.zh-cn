@@ -1,13 +1,14 @@
 ---
-title: 异常
+description: 了解详细信息：异常
+title: 例外
 ms.date: 03/30/2017
 ms.assetid: 065205cc-52dd-4f30-9578-b17d8d113136
-ms.openlocfilehash: 53cc8e3e27e131c5c2a9f8271851a0d8d7e0cbd7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 71cf6a4ac23f7979d0c9137d88f36a45f71783a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742447"
 ---
 # <a name="exceptions"></a>例外
 
@@ -55,7 +56,7 @@ ms.locfileid: "96280203"
 
  异常处理与补偿的不同之处在于：异常处理是在活动的执行期间发生的， 而补偿在活动成功完成后发生。 通过异常处理，可以在活动引发异常之后进行清理，而补偿提供了一种机制，可用于撤消以前完成的活动中所成功完成的工作。 有关详细信息，请参阅 [补偿](compensation.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Activities.Statements.TryCatch>
 - <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>

@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：属性网格扩展性
 title: 属性网格扩展性-WF 示例
 ms.date: 03/30/2017
 ms.assetid: 3530c3a3-756d-4712-9f10-fb2897414d3a
-ms.openlocfilehash: 130d8702795bccf0d5f28b5c0940bd7c25be3556
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 784705146974ffca5cd2e6c21dba722598544771
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741804"
 ---
 # <a name="property-grid-extensibility"></a>属性网格扩展性
 
 开发人员可以自定义属性网格，此网格将在设计器中选择给定活动时显示。 执行此操作可获得丰富的编辑体验。 此示例演示如何完成此操作。
 
-## <a name="demonstrates"></a>演示文本
+## <a name="demonstrates"></a>演示
 
 工作流设计器属性网格的扩展性。
 
@@ -22,11 +23,11 @@ ms.locfileid: "74715604"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\PropertyGridExtensibility`
 
-## <a name="discussion"></a>讨论
+## <a name="discussion"></a>讨论 (Discussion)
 
 若要扩展属性网格，开发人员可以选择自定义属性网格编辑器的内联外观或提供一个为更高级的编辑图面显示的对话框。 此示例中演示了两类不同的编辑器；即内联编辑器和对话框编辑器。
 
@@ -36,7 +37,7 @@ ms.locfileid: "74715604"
 
 - 创建一个从 <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor> 派生的类型。
 
-- 在构造函数中，<xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> 值是使用 Windows Presentation Foundation （WPF）数据模板设置的。 虽然可以将其绑定到 XAML 模板，但在此示例中，代码用于初始化数据绑定。
+- 在构造函数中， <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> 使用 Windows Presentation Foundation (WPF) 数据模板设置值。 虽然可以将其绑定到 XAML 模板，但在此示例中，代码用于初始化数据绑定。
 
 - 数据模板具有在属性网格中呈现的项的 <xref:System.Activities.Presentation.PropertyEditing.PropertyValue> 的数据上下文。 请注意，在下面的代码（此代码来自 CustomInlineEditor.cs）中，稍后会将此上下文绑定到 `Value` 属性。
 
@@ -69,7 +70,7 @@ ms.locfileid: "74715604"
 
 1. 创建一个从 <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> 派生的类型。
 
-2. 使用 WPF 数据模板设置构造函数中的 <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A> 值。 可以在 XAML 中创建该值，但在此示例中，将在代码中创建它。
+2. <xref:System.Activities.Presentation.PropertyEditing.PropertyValueEditor.InlineEditorTemplate%2A>使用 WPF 数据模板设置构造函数中的值。 可以在 XAML 中创建该值，但在此示例中，将在代码中创建它。
 
 3. 数据模板具有在属性网格中呈现的项的 <xref:System.Activities.Presentation.PropertyEditing.PropertyValue> 的数据上下文。 在下面的代码中，稍后会将其绑定到 `Value` 属性。 此外，包含 <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> 以提供引发 FilePickerEditor.cs 中的对话框的按钮也很重要。
 
@@ -123,7 +124,7 @@ ms.locfileid: "74715604"
 
 1. 生成解决方案，然后打开 Workflow1.xaml。
 
-2. 将**SimpleCodeActivity**从工具箱拖到设计器画布上。
+2. 将 **SimpleCodeActivity** 从工具箱拖到设计器画布上。
 
 3. 单击 " **SimpleCodeActivity** "，然后打开属性网格，其中有滑块控件和文件选取控件。
 
@@ -132,6 +133,6 @@ ms.locfileid: "74715604"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\PropertyGridExtensibility`

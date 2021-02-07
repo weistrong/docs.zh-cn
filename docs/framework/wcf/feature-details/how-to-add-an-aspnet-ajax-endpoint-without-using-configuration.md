@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：如何：在不使用配置的情况下添加 ASP.NET AJAX 终结点
 title: 如何：在不使用配置的情况下添加 ASP.NET AJAX 终结点
 ms.date: 03/30/2017
 ms.assetid: b05c1742-8d0a-4673-9d71-725b18a3008e
-ms.openlocfilehash: e33f1fed7dd7bf45966815949ac544250f4d1de8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52f572b8da1358911760808688574b6a1ac1bccd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257621"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742765"
 ---
 # <a name="how-to-add-an-aspnet-ajax-endpoint-without-using-configuration"></a>如何：在不使用配置的情况下添加 ASP.NET AJAX 终结点
 
@@ -97,7 +98,7 @@ Windows Communication Foundation (WCF) 允许您创建一个服务，用于公�
   
  <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> 类是 <xref:System.ServiceModel.Activation.ServiceHostFactory> 的派生类。 有关服务主机工厂机制的详细说明，请参阅 [使用 ServiceHostFactory 扩展托管](../extending/extending-hosting-using-servicehostfactory.md) 主题。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为 ASP.NET AJAX 创建 WCF 服务](creating-wcf-services-for-aspnet-ajax.md)
 - [如何：将支持 AJAX 的 ASP.NET Web 服务迁移到 WCF](how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md)

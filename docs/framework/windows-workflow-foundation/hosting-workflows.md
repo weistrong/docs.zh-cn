@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：承载工作流
 title: 承载工作流
 ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], hosting workflows
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
-ms.openlocfilehash: 6a8cea05965a0960f8b5f5948e621edb1ea1c032
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d9bec7d32559d4b9ce94a477857cac7053ed308e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268152"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742168"
 ---
 # <a name="hosting-workflows"></a>承载工作流
 
@@ -32,7 +33,7 @@ ms.locfileid: "96268152"
  [使用 WorkflowIdentity 和版本控制](using-workflowidentity-and-versioning.md)  
  介绍如何使用 `WorkflowIdentity` 并行承载工作流的多个版本。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Workflow Foundation 编程](programming.md)
 - [设计工作流](designing-workflows.md)

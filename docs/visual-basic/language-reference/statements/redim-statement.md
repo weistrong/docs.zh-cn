@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： ReDim 语句 (Visual Basic) '
 title: ReDim 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - declaration statements [Visual Basic]
 - scalar variables [Visual Basic]
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
-ms.openlocfilehash: 17bc806f2e92c61f1dd7425de40b1a68f926a583
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 8f7525064c8b32748cf5ebb2df7d4a5dfc76f794
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741323"
 ---
 # <a name="redim-statement-visual-basic"></a>ReDim 语句 (Visual Basic)
 
@@ -69,7 +70,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
 - **数据类型。** `ReDim`语句无法更改数组变量或其元素的数据类型。  
   
-- **起始.** `ReDim`语句不能为数组元素提供新的初始化值。  
+- **初始化。** `ReDim`语句不能为数组元素提供新的初始化值。  
   
 - **级别.** `ReDim` 语句无法更改数组的秩（维数）。  
   
@@ -103,11 +104,11 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  有关其他示例，请参阅 [数组](../../programming-guide/language-features/arrays/index.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.IndexOutOfRangeException>
 - [Const 语句](const-statement.md)
 - [Dim 语句](dim-statement.md)
 - [Erase 语句](erase-statement.md)
-- [没](../nothing.md)
+- [Nothing](../nothing.md)
 - [数组](../../programming-guide/language-features/arrays/index.md)

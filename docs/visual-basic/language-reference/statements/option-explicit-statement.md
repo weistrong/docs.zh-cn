@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Option Explicit 语句 (Visual Basic) '
 title: Option Explicit 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - explicit variable declaration
 - Option Explicit statement [Visual Basic]
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
-ms.openlocfilehash: 44bf8205ec071710ee3660968ab3c3e9af33f74d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 11f59508125167fde98b4fc359dde7fd7c539b75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874940"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741609"
 ---
 # <a name="option-explicit-statement-visual-basic"></a>Option Explicit 语句 (Visual Basic)
 
@@ -47,21 +48,21 @@ Option Explicit { On | Off }
   
 ## <a name="when-an-option-explicit-statement-is-not-present"></a>当选项显式语句不存在时  
 
- 如果源代码不包含 `Option Explicit` 语句，则使用 "编译" 页上的 " **Option Explicit** " 设置，将使用 " [项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 。 如果使用命令行编译器，则使用 [-optionexplicit](../../reference/command-line-compiler/optionexplicit.md) 编译器选项。  
+ 如果源代码不包含 `Option Explicit` 语句，则使用 "编译" 页上的 " **Option Explicit** " 设置，将使用 " [项目设计器" (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 。 如果使用命令行编译器，则使用 [-optionexplicit](../../reference/command-line-compiler/optionexplicit.md) 编译器选项。  
   
 #### <a name="to-set-option-explicit-in-the-ide"></a>在 IDE 中设置 Option Explicit  
   
-1. 在 **解决方案资源管理器**中，选择一个项目。 在“项目”菜单上，单击“属性” 。  
+1. 在“解决方案资源管理器”中，选择一个项目。 在“项目”菜单上，单击“属性” 。  
   
 2. 单击“编译”选项卡。  
   
 3. 在 " **选项** " 框中设置值。  
   
- 创建新项目时，"**编译**" 选项卡上的 " **option explicit** " 设置设置为 " **VB 默认值**" 对话框中的 "选项" "**显式**设置"。 若要访问 " **VB 默认值** " 对话框，请在 " **工具** " 菜单上单击 " **选项**"。 在“选项”对话框中，展开“项目和解决方案”，然后单击“VB 默认值”************。 **VB 默认**设置中的初始默认设置为 `On` 。  
+ 创建新项目时，"**编译**" 选项卡上的 " **option explicit** " 设置设置为 " **VB 默认值**" 对话框中的 "选项" "**显式** 设置"。 若要访问 " **VB 默认值** " 对话框，请在 " **工具** " 菜单上单击 " **选项**"。 在“选项”对话框中，展开“项目和解决方案”，然后单击“VB 默认值”。 **VB 默认** 设置中的初始默认设置为 `On` 。  
   
 #### <a name="to-set-option-explicit-on-the-command-line"></a>在命令行上设置 Option Explicit  
   
-- 在**vbc**命令中包含[-optionexplicit](../../reference/command-line-compiler/optionexplicit.md)编译器选项。  
+- 在 **vbc** 命令中包含 [-optionexplicit](../../reference/command-line-compiler/optionexplicit.md)编译器选项。  
   
 ## <a name="example"></a>示例  
 
@@ -71,7 +72,7 @@ Option Explicit { On | Off }
   
  [!code-vb[VbVbalrStatements#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#48)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Dim 语句](dim-statement.md)
 - [ReDim 语句](redim-statement.md)

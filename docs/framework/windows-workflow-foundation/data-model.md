@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： Windows Workflow Foundation 数据模型
 title: Windows Workflow Foundation 数据模型
 ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], data model
 ms.assetid: d5752e51-cfc9-4499-af71-53b6daae9879
-ms.openlocfilehash: 6702dd59c34864e732b5b0d149b974ba370495dc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8f916464a3b272f348dd9bc3895a42ec14f9db55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742584"
 ---
 # <a name="windows-workflow-foundation-data-model"></a>Windows Workflow Foundation 数据模型
 
@@ -23,7 +24,7 @@ Windows Workflow Foundation 数据模型包含三个概念：变量、自变量�
  [表达式](expressions.md)  
  介绍表达式以及如何在工作流开发中使用它们。  
   
- [C# 表达式](csharp-expressions.md)  
+ [C # 表达式](csharp-expressions.md)  
  介绍 .NET Framework 4.5 引入的工作流中的 c # 表达式。  
   
  [属性与自变量](properties-vs-arguments.md)  

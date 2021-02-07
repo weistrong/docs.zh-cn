@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：通过 CacheMetadata 公开数据
 title: 使用 CacheMetadata 公开数据
 ms.date: 03/30/2017
 ms.assetid: 34832f23-e93b-40e6-a80b-606a855a00d9
-ms.openlocfilehash: a044c896e56541ee954fc33853376eb8293c6ede
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ac4623881ebd76270f773a3b7acfe205ad365118
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61945699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742337"
 ---
 # <a name="exposing-data-with-cachemetadata"></a>使用 CacheMetadata 公开数据
 
@@ -17,19 +18,19 @@ ms.locfileid: "61945699"
 
 <xref:System.Activities.NativeActivity.CacheMetadata%2A> 所派生活动的 <xref:System.Activities.NativeActivity> 的默认实现将通过以下方式来处理以下方法类型：
 
-- <xref:System.Activities.InArgument%601><xref:System.Activities.OutArgument%601>，或<xref:System.Activities.InOutArgument%601>（泛型自变量）：这些自变量公开给运行时作为参数的名称，并键入等于公开的属性名称和类型、 相应的自变量方向和某些验证数据。
+- <xref:System.Activities.InArgument%601>、<xref:System.Activities.OutArgument%601> 或 <xref:System.Activities.InOutArgument%601>（泛型自变量）：这些自变量作为自变量公开给运行时，具有与公开的属性名称和类型相等的名称和类型、相应的自变量方向和某些验证数据。
 
 - <xref:System.Activities.Variable> 或其中的任何子类：这些成员作为公共变量公开给运行时。
 
-- <xref:System.Activities.Activity> 或其中的任何子类：这些成员作为公共子活动公开给运行时。 可以通过调用显式实现默认行为<xref:System.Activities.ActivityMetadata.AddImportedChild%2A>、 传入子活动。
+- <xref:System.Activities.Activity> 或其中的任何子类：这些成员作为公共子活动公开给运行时。 可以通过调用来显式实现默认行为 <xref:System.Activities.ActivityMetadata.AddImportedChild%2A> ，并传入子活动。
 
 - <xref:System.Activities.ActivityDelegate> 或其中的任何子类：这些成员作为公共委托公开给运行时。
 
-- <xref:System.Collections.ICollection> 类型的<xref:System.Activities.Variable>:集合中的所有元素都作为公共变量都公开给运行时。
+- <xref:System.Collections.ICollection> 类型的 <xref:System.Activities.Variable>：集合中的所有元素都作为公共变量公开给运行时。
 
-- <xref:System.Collections.ICollection> 类型的<xref:System.Activities.Activity>:集合中的所有元素作为公共子活动都公开给运行时。
+- <xref:System.Collections.ICollection> 类型的 <xref:System.Activities.Activity>：集合中的所有元素都作为公共子活动公开给运行时。
 
-- <xref:System.Collections.ICollection> 类型的<xref:System.Activities.ActivityDelegate>:集合中的所有元素都作为公共委托都公开给运行时。
+- <xref:System.Collections.ICollection> 类型的 <xref:System.Activities.ActivityDelegate>：集合中的所有元素都作为公共委托公开给运行时。
 
 从 <xref:System.Activities.Activity.CacheMetadata%2A>、<xref:System.Activities.Activity> 和 <xref:System.Workflow.Activities.CodeActivity> 派生的活动 <xref:System.Activities.AsyncCodeActivity> 也能起到以上的作用，但有以下差异：
 

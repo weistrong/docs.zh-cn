@@ -1,13 +1,14 @@
 ---
+description: '详细了解： <clear> schemeSettings 的元素 (Uri 设置) '
 title: schemeSettings 的 <clear> 元素（Uri 设置）
 ms.date: 03/30/2017
 ms.assetid: 65098332-ce61-4542-ab8d-e7dc0257d31f
-ms.openlocfilehash: 17069a56a8647871e98d70826a97a8fe407a0887
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 719296285c9a7da26eb6eaf16c630a63a10698b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740452"
 ---
 # <a name="clear-element-for-schemesettings-uri-settings"></a>schemeSettings 的 \<clear> 元素（Uri 设置）
 
@@ -38,7 +39,7 @@ ms.locfileid: "91205056"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<schemeSettings> 元素 (Uri 设置) ](schemesettings-element-uri-settings.md)|指定如何分析特定方案的 <xref:System.Uri>。|  
   

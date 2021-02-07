@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：选择 .。。Case 语句 (Visual Basic) '
 title: Select...Case 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Select Case statements
 - Case statement [Visual Basic], Select...Case
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
-ms.openlocfilehash: 750e765390ad223976b000fe64e656fa2d62a34b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 4f8edecd0a0b1afd59e182a372e308c3829a9b93
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871785"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741128"
 ---
 # <a name="selectcase-statement-visual-basic"></a>Select...Case 语句 (Visual Basic)
 
@@ -48,7 +49,7 @@ End Select
 |术语|定义|  
 |---|---|  
 |`testexpression`|必需。 表达式。 的计算结果必须为其中一种基本数据类型 (、、、、、、、、、、、、、、 `Boolean` `Byte` `Char` `Date` `Double` `Decimal` `Integer` `Long` `Object` `SByte` `Short` `Single` `String` `UInteger` `ULong` 和 `UShort`) 。|  
-|`expressionlist`|在语句中是必需的 `Case` 。 表示的匹配值的表达式子句的列表 `testexpression` 。 多个表达式子句之间用逗号分隔。 每个子句可以采用以下形式之一：<br /><br /> -   *表达式* `To` =*表达式*2<br />-[ `Is` ] *.comparisonoperator* *表达式*<br />-   *表达式*<br /><br /> 使用 `To` 关键字可以指定的匹配值范围的边界 `testexpression` 。 的值 `expression1` 必须小于或等于的值 `expression2` 。<br /><br /> 使用 `Is` 关键字和比较运算符 (`=` 、 `<>` 、、、 `<` `<=` `>` 或 `>=`) 来指定对的匹配值的限制 `testexpression` 。 如果 `Is` 未提供关键字，则自动将其插入 *.comparisonoperator*之前。<br /><br /> 仅指定的窗体 `expression` 被视为窗体的一种特殊情况， `Is` 其中 *.comparisonoperator* 是) 的等号 (`=` 。 此形式的计算结果为 `testexpression`  =  `expression` 。<br /><br /> 中的表达式 `expressionlist` 可以是任何数据类型，前提是它们可隐式转换为的类型 `testexpression` ，并且相应的 `comparisonoperator` 对于与之一起使用的两种类型都有效。|  
+|`expressionlist`|在语句中是必需的 `Case` 。 表示的匹配值的表达式子句的列表 `testexpression` 。 多个表达式子句之间用逗号分隔。 每个子句可以采用以下形式之一：<br /><br /> -   *表达式* `To` =*表达式* 2<br />-[ `Is` ] *.comparisonoperator* *表达式*<br />-   *表达式*<br /><br /> 使用 `To` 关键字可以指定的匹配值范围的边界 `testexpression` 。 的值 `expression1` 必须小于或等于的值 `expression2` 。<br /><br /> 使用 `Is` 关键字和比较运算符 (`=` 、 `<>` 、、、 `<` `<=` `>` 或 `>=`) 来指定对的匹配值的限制 `testexpression` 。 如果 `Is` 未提供关键字，则自动将其插入 *.comparisonoperator* 之前。<br /><br /> 仅指定的窗体 `expression` 被视为窗体的一种特殊情况， `Is` 其中 *.comparisonoperator* 是) 的等号 (`=` 。 此形式的计算结果为 `testexpression`  =  `expression` 。<br /><br /> 中的表达式 `expressionlist` 可以是任何数据类型，前提是它们可隐式转换为的类型 `testexpression` ，并且相应的 `comparisonoperator` 对于与之一起使用的两种类型都有效。|  
 |`statements`|可选。 `Case`如果 `testexpression` 与中的任何子句匹配，则为运行的一个或多个语句 `expressionlist` 。|  
 |`elsestatements`|可选。 `Case Else`如果不 `testexpression` 与任何语句的中的任何子句匹配，则为运行的一个或多个语句 `expressionlist` `Case` 。|  
 |`End Select`|终止 `Select` ... 构造的定义。 `Case`|  
@@ -85,7 +86,7 @@ End Select
   
  [!code-vb[VbVbalrStatements#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#54)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - [End 语句](end-statement.md)

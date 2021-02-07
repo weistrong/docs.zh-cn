@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： SQL 跟踪
 title: SQL 跟踪
 ms.date: 03/30/2017
 ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
-ms.openlocfilehash: 916c04b03dee296b7e6f5c792f0c4e50fb4203c0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2b336839b9c63c0b7bde8b6451add00cb353fec6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559345"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741739"
 ---
 # <a name="sql-tracking"></a>SQL 跟踪
 
@@ -24,7 +25,7 @@ ms.locfileid: "90559345"
 
 3. 在 Visual Studio 2010 中打开 SqlTrackingSample。
 
-4. 按**Ctrl** + **Shift** + **B**生成解决方案。
+4. 按 **Ctrl** + **Shift** + **B** 生成解决方案。
 
 5. 按 **F5** 运行该应用程序。
 
@@ -36,7 +37,7 @@ ms.locfileid: "90559345"
 
    本地服务 WSDL 地址的示例为 `http://localhost:65193/StockPriceService.xamlx?wsdl` 。
 
-8. 使用文件资源管理器 ( # A0) 运行 WCF 测试客户端。 它位于 *Microsoft Visual Studio 10.0 \ Common7\IDE 目录*中。
+8. 使用文件资源管理器 ( # A0) 运行 WCF 测试客户端。 它位于 *Microsoft Visual Studio 10.0 \ Common7\IDE 目录* 中。
 
 9. 在 WCF 测试客户端中，单击 " **文件** " 菜单，然后选择 " **添加服务**"。 将本地服务地址粘贴到文本框中。 单击 **“确定”**，关闭对话框。
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：调试工作流
 title: 调试工作流
 ms.date: 03/30/2017
 ms.assetid: b23b4814-ebb1-4c51-b7a9-469f4da7a96d
-ms.openlocfilehash: 31c688f5f45b41f337176108486ec2074e1915a7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9de65e580d47395a9528f4672014ceb491b09230
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742558"
 ---
 # <a name="debugging-workflows"></a>调试工作流
 
@@ -29,7 +30,7 @@ ms.locfileid: "90543831"
 
 工作流调试还支持使用 Visual Studio 的基础结构附加到某个过程。 这使工作流创作者能够调试在另一个主机环境（如 Internet 信息服务 (IIS) 7.0）中运行的工作流。
 
-## <a name="remote-debugging"></a>远程调试
+## <a name="remote-debugging"></a>Remote Debugging
 
 Windows Workflow Foundation (WF) 远程调试与其他 Visual Studio 组件进行远程调试的功能相同。 有关使用远程调试的信息，请参阅 [如何：启用远程调试](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100))。
 

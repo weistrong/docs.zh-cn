@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：使用双工协定访问服务
 title: 如何：使用双工协定访问服务
 ms.date: 03/30/2017
 dev_langs:
@@ -7,28 +8,28 @@ dev_langs:
 helpviewer_keywords:
 - duplex contracts [WCF]
 ms.assetid: 746a9d64-f21c-426c-b85d-972e916ec6c5
-ms.openlocfilehash: bc42792b827b49265a0b1addf959de2fa1a041e3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e58225e6b77115004c3c201d606e328aab184b75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597210"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742883"
 ---
 # <a name="how-to-access-services-with-a-duplex-contract"></a>如何：使用双工协定访问服务
 
-Windows Communication Foundation （WCF）的一项功能是能够创建使用双工消息传递模式的服务。 此模式允许服务通过回调与客户端进行通信。 本主题演示在实现回调接口的客户端类中创建 WCF 客户端的步骤。
+WCF) Windows Communication Foundation (的一项功能是能够创建使用双工消息传递模式的服务。 此模式允许服务通过回调与客户端进行通信。 本主题演示在实现回调接口的客户端类中创建 WCF 客户端的步骤。
 
 双向绑定向服务公开客户端的 IP 地址。 客户端应使用安全来确保仅连接到自己信任的服务。
 
-有关创建基本 WCF 服务和客户端的教程，请参阅[入门教程](../getting-started-tutorial.md)。
+有关创建基本 WCF 服务和客户端的教程，请参阅 [入门教程](../getting-started-tutorial.md)。
 
 ## <a name="to-access-a-duplex-service"></a>访问双工服务
 
-1. 创建包含两个接口的服务。 第一个接口用于服务，第二个接口用于回调。 有关创建双工服务的详细信息，请参阅[如何：创建双工协定](how-to-create-a-duplex-contract.md)。
+1. 创建包含两个接口的服务。 第一个接口用于服务，第二个接口用于回调。 有关创建双工服务的详细信息，请参阅 [如何：创建双工协定](how-to-create-a-duplex-contract.md)。
 
 2. 运行服务。
 
-3. 使用 " [svcutil.exe" 元数据实用工具（）](../servicemodel-metadata-utility-tool-svcutil-exe.md)为客户端生成协定（接口）。 有关如何执行此操作的信息，请参阅[如何：创建客户端](../how-to-create-a-wcf-client.md)。
+3. 使用 "工作的 [元数据实用工具" 工具 ( # A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md) 为客户端生成协定 (接口) 。 有关如何执行此操作的信息，请参阅  [如何：创建客户端](../how-to-create-a-wcf-client.md)。
 
 4. 在客户端类中实现回调接口，如下面的示例所示。
 
@@ -58,7 +59,7 @@ Windows Communication Foundation （WCF）的一项功能是能够创建使用�
     End Class
     ```
 
-5. 创建 <xref:System.ServiceModel.InstanceContext> 类的一个实例。 构造函数需要客户端类的一个实例。
+5. 创建的 <xref:System.ServiceModel.InstanceContext> 类的实例。 构造函数需要客户端类的一个实例。
 
     ```csharp
     InstanceContext site = new InstanceContext(new CallbackHandler());
@@ -87,7 +88,7 @@ Windows Communication Foundation （WCF）的一项功能是能够创建使用�
 [!code-csharp[S_DuplexClients#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_duplexclients/cs/client.cs#1)]
 [!code-vb[S_DuplexClients#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_duplexclients/vb/client.vb#1)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [入门教程](../getting-started-tutorial.md)
 - [如何：创建双工协定](how-to-create-a-duplex-contract.md)

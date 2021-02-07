@@ -1,13 +1,14 @@
 ---
+description: 了解更多：持久性参与者
 title: 持久性参与者
 ms.date: 03/30/2017
 ms.assetid: f84d2d5d-1c1b-4f19-be45-65b552d3e9e3
-ms.openlocfilehash: 0bff6cc8fafb1832dc4d0e33b754fe3adb81dcf6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 66f39bfe5b9efcae5d8377fda9415efd4cab9468
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742051"
 ---
 # <a name="persistence-participants"></a>持久性参与者
 
@@ -61,6 +62,6 @@ ms.locfileid: "96246103"
   
 - [如何：创建自定义持久性参与者](how-to-create-a-custom-persistence-participant.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [存储扩展性](store-extensibility.md)

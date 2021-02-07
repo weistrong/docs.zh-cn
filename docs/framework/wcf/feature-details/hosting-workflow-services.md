@@ -1,13 +1,14 @@
 ---
+description: 了解更多：托管工作流服务
 title: 承载工作流服务
 ms.date: 03/30/2017
 ms.assetid: 2d55217e-8697-4113-94ce-10b60863342e
-ms.openlocfilehash: 3bd45575e06ba742b0e6c43766c5e80dff47c03b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8d7d5bbc8b084ac74e51fe3906fd5eef13b5ea09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743000"
 ---
 # <a name="hosting-workflow-services"></a>承载工作流服务
 
@@ -59,7 +60,7 @@ ms.locfileid: "96255996"
 
  系统中已经创建 Web 部署工具，以方便部署作业。 通过使用该工具，可以在 IIS 6.0 和 IIS 7.0 之间迁移应用程序，同步服务器场，并打包、存档和部署 Web 应用程序。 有关详细信息，请参阅 [MS 部署工具](https://go.microsoft.com/fwlink/?LinkId=178690)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务主机内部机制](workflow-service-host-internals.md)
 - [配置 WorkflowServiceHost](configuring-workflowservicehost.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Option Compare 语句
 title: Option Compare 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - Option Compare statement [Visual Basic]
 - text [Visual Basic], comparing
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
-ms.openlocfilehash: 396770a2fc6996475d408cf8023a4eafdf6d3011
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fba8b207c0077f95540485d79311b47f1b8c209c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869653"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741661"
 ---
 # <a name="option-compare-statement"></a>Option Compare 语句
 
@@ -62,23 +63,23 @@ Option Compare { Binary | Text }
   
 ## <a name="when-an-option-compare-statement-is-not-present"></a>当 Option Compare 语句不存在时  
 
- 如果源代码不包含 `Option Compare` 语句，则使用 "编译" 页上的 " **选项比较** " 设置 [，"项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 。 如果使用命令行编译器，则使用 [-optioncompare](../../reference/command-line-compiler/optioncompare.md) 编译器选项指定的设置。  
+ 如果源代码不包含 `Option Compare` 语句，则使用 "编译" 页上的 " **选项比较** " 设置 [，"项目设计器" (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) 。 如果使用命令行编译器，则使用 [-optioncompare](../../reference/command-line-compiler/optioncompare.md) 编译器选项指定的设置。  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 #### <a name="to-set-option-compare-in-the-ide"></a>若要在 IDE 中设置 Option Compare  
   
-1. 在 **解决方案资源管理器**中，选择一个项目。 在“项目”菜单上，单击“属性” 。  
+1. 在“解决方案资源管理器”中，选择一个项目。 在“项目”菜单上，单击“属性” 。  
   
 2. 单击“编译”选项卡。  
   
 3. 设置 " **选项比较** " 框中的值。  
   
- 创建项目时，"**编译**" 选项卡上的 "**选项比较**" 设置设置为 "**选项**" 对话框中的 " **option compare** " 设置。 若要更改此设置，请在 " **工具** " 菜单上单击 " **选项**"。 在“选项”对话框中，展开“项目和解决方案”，然后单击“VB 默认值”************。 **VB 默认**设置中的初始默认设置为 "**二进制**"。  
+ 创建项目时，"**编译**" 选项卡上的 "**选项比较**" 设置设置为 "**选项**" 对话框中的 " **option compare** " 设置。 若要更改此设置，请在 " **工具** " 菜单上单击 " **选项**"。 在“选项”对话框中，展开“项目和解决方案”，然后单击“VB 默认值”。 **VB 默认** 设置中的初始默认设置为 "**二进制**"。  
   
 #### <a name="to-set-option-compare-on-the-command-line"></a>若要设置命令行上的 Option Compare  
   
-- 在**vbc**命令中包含[-optioncompare](../../reference/command-line-compiler/optioncompare.md)编译器选项。  
+- 在 **vbc** 命令中包含 [-optioncompare](../../reference/command-line-compiler/optioncompare.md)编译器选项。  
   
 ## <a name="example"></a>示例  
 
@@ -92,7 +93,7 @@ Option Compare { Binary | Text }
   
  [!code-vb[VbVbalrStatements#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#46)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Strings.InStr%2A>
 - <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>

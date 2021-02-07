@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Throw 语句 (Visual Basic) '
 title: Throw 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - exception handling, unstructured
 - throw statement [Visual Basic]
 ms.assetid: a6e07406-5c8a-4498-87a2-8339f3651d62
-ms.openlocfilehash: 95572b1739490e90f53da6b6ec283bfb532c46d3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b7fa4183b5997e5dac8045502a8eed1afe66fc0d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740933"
 ---
 # <a name="throw-statement-visual-basic"></a>Throw 语句 (Visual Basic)
 
@@ -38,7 +39,7 @@ Throw [ expression ]
 
 ## <a name="remarks"></a>备注
 
-`Throw`语句引发异常，你可以使用结构化异常处理代码（ `Try` ... `Catch`...`Finally`)或非结构化异常处理代码（ `On Error GoTo` ）。 您可以使用 `Throw` 语句来捕获代码中的错误，因为 Visual Basic 在调用堆栈中向上移动，直到找到相应的异常处理代码。
+`Throw`语句引发异常，你可以使用结构化异常处理代码处理 (`Try` ... `Catch`...`Finally` () 的) 或非结构化异常处理代码 `On Error GoTo` 。 您可以使用 `Throw` 语句来捕获代码中的错误，因为 Visual Basic 在调用堆栈中向上移动，直到找到相应的异常处理代码。
 
 `Throw`不带 expression 的语句只能用在 `Catch` 语句中，在这种情况下，该语句重新引发语句当前正在处理的异常 `Catch` 。
 

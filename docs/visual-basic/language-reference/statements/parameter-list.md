@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：参数列表 (Visual Basic) '
 title: 参数列表
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], Visual Basic
 - procedures [Visual Basic], parameter lists
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
-ms.openlocfilehash: 706fc2414806db5608cce410bf4156839ec2d83e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f69063fac82887ba4da3119d8ec4fcac11b7f4c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741401"
 ---
 # <a name="parameter-list-visual-basic"></a>参数列表 (Visual Basic)
 
@@ -31,7 +32,7 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 ## <a name="parts"></a>组成部分
 
 `attributelist`  
-可选。 应用于此参数的特性列表。 必须将[特性列表](attribute-list.md)括在尖括号（" `<` " 和 " `>` "）中。
+可选。 应用于此参数的特性列表。 必须将 [属性列表](attribute-list.md) 用尖括号括起来 ( " `<` " 和 " `>` " ) 。
 
 `Optional`  
 可选。 指定在调用过程时不需要此参数。
@@ -58,11 +59,11 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 
 参数括在括号内并用逗号分隔。 参数可以使用任何数据类型进行声明。 如果不指定 `parametertype` ，则默认为 `Object` 。
 
-当调用代码调用过程时，它会将*参数*传递给每个必需的参数。 有关详细信息，请参阅[参数和参数之间的差异](../../programming-guide/language-features/procedures/differences-between-parameters-and-arguments.md)。
+当调用代码调用过程时，它会将 *参数* 传递给每个必需的参数。 有关详细信息，请参阅 [参数和参数之间的差异](../../programming-guide/language-features/procedures/differences-between-parameters-and-arguments.md)。
 
-调用代码传递给每个参数的参数是指向调用代码中的基础元素的指针。 如果此元素不是*变量*（常量、文本、枚举或表达式），则任何代码都不能对其进行更改。 如果它是*变量*元素（已声明的变量、字段、属性、数组元素或结构元素），则调用代码可以更改它。 有关详细信息，请参阅可[修改和不可修改参数之间的差异](../../programming-guide/language-features/procedures/differences-between-modifiable-and-nonmodifiable-arguments.md)。
+调用代码传递给每个参数的参数是指向调用代码中的基础元素的指针。 如果此元素不是常量、文字、枚举或表达式的 *变量* () ，则任何代码都无法更改它。 如果它是 (声明的变量、字段、属性、数组元素或结构元素) 的 *可变* 元素，则调用代码可以更改它。 有关详细信息，请参阅可 [修改和不可修改参数之间的差异](../../programming-guide/language-features/procedures/differences-between-modifiable-and-nonmodifiable-arguments.md)。
 
-如果传递了 variable 元素 `ByRef` ，则该过程也可以更改它。 有关详细信息，请参阅[按值传递参数和通过引用传递参数之间的差异](../../programming-guide/language-features/procedures/differences-between-passing-an-argument-by-value-and-by-reference.md)。
+如果传递了 variable 元素 `ByRef` ，则该过程也可以更改它。 有关详细信息，请参阅 [按值传递参数和通过引用传递参数之间的差异](../../programming-guide/language-features/procedures/differences-between-passing-an-argument-by-value-and-by-reference.md)。
 
 ## <a name="rules"></a>规则
 
@@ -72,17 +73,17 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 
      每个可选参数声明都必须提供 `defaultvalue` 子句。
 
-     有关详细信息，请参阅[可选参数](../../programming-guide/language-features/procedures/optional-parameters.md)。
+     有关详细信息，请参阅 [可选参数](../../programming-guide/language-features/procedures/optional-parameters.md)。
 
 - **参数数组。** 必须 `ByVal` 为 `ParamArray` 参数指定。
 
      `Optional` `ParamArray` 在同一参数列表中不能同时使用和。
 
-     有关详细信息，请参阅[参数数组](../../programming-guide/language-features/procedures/parameter-arrays.md)。
+     有关详细信息，请参阅 [参数数组](../../programming-guide/language-features/procedures/parameter-arrays.md)。
 
 - **传递机制。** 每个参数的默认机制为 `ByVal` ，这意味着过程无法更改基础变量元素。 但是，如果该元素是引用类型，则该过程可以修改基础对象的内容或成员，即使它无法替换或重新分配对象本身。
 
-- **参数名称。** 如果参数的数据类型为数组，请在后面 `parametername` 紧跟括号。 有关参数名称的详细信息，请参阅已[声明的元素名称](../../programming-guide/language-features/declared-elements/declared-element-names.md)。
+- **参数名称。** 如果参数的数据类型为数组，请在后面 `parametername` 紧跟括号。 有关参数名称的详细信息，请参阅已 [声明的元素名称](../../programming-guide/language-features/declared-elements/declared-element-names.md)。
 
 ## <a name="example"></a>示例
 
@@ -90,7 +91,7 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 
 [!code-vb[VbVbalrStatements#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#2)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Function 语句](function-statement.md)

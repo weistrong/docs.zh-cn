@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：使用 WCF 客户端访问 WSE 3.0 服务
 title: 如何：使用 WCF 客户端访问 WSE 3.0 服务
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1f9bcd9b-8f8f-47fa-8f1e-0d47236eb800
-ms.openlocfilehash: c955244c2e6821abda3a1fc5e25f00a73389ff1d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5a117b4c3d743d783c37ed3e27e3cf11e44abec3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742922"
 ---
 # <a name="how-to-access-a-wse-30-service-with-a-wcf-client"></a>如何：使用 WCF 客户端访问 WSE 3.0 服务
 
@@ -62,7 +63,7 @@ ms.locfileid: "96257764"
 
  下面的代码示例定义了一个自定义绑定，该绑定公开对应于 WSE 3.0 完整安全断言的各个属性的属性。 然后，使用名为的自定义绑定 `WseHttpBinding` 来指定 WCF 客户端的绑定属性，该客户端与 WSSECURITYANONYMOUS WSE 3.0 快速入门示例进行通信。  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.Binding>
 - [与 WSE 互操作](/previous-versions/dotnet/netframework-3.5/ms752257(v=vs.90))

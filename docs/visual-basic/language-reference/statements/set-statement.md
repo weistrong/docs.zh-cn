@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Set 语句 (Visual Basic) '
 title: Set 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - write-only properties
 - properties [Visual Basic], write-only
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
-ms.openlocfilehash: b3524769567a56a87184bf916a3e5ccb1fd4fa1c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5ee27b35a4639bc20d5b6634de8332c6ede9bf12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871759"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741115"
 ---
 # <a name="set-statement-visual-basic"></a>Set 语句 (Visual Basic)
 
@@ -35,9 +36,9 @@ End Set
  可选。 请参阅 [特性列表](attribute-list.md)。  
   
  `accessmodifier`  
- 在 `Get` 此属性中的最多一个和语句上是可选的 `Set` 。 可以是以下值之一：  
+ 在 `Get` 此属性中的最多一个和语句上是可选的 `Set` 。 可以是以下其中一个值：  
   
-- [避免](../modifiers/protected.md)  
+- [Protected](../modifiers/protected.md)  
   
 - [Friend](../modifiers/friend.md)  
   
@@ -91,7 +92,7 @@ End Set
   
  [!code-vb[VbVbalrStatements#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#55)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Get 语句](get-statement.md)
 - [Property Statement](property-statement.md)
