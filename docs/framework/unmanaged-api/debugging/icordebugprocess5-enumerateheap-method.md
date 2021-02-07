@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess5：： EnumerateHeap 方法
 title: ICorDebugProcess5::EnumerateHeap 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
 topic_type:
 - apiref
-ms.openlocfilehash: 22ab29f8a204a4b27dafdefcd3652cc3dcf9769c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b43e7993b114ed64d009f91746ea987198edde74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722030"
 ---
 # <a name="icordebugprocess5enumerateheap-method"></a>ICorDebugProcess5::EnumerateHeap 方法
 
@@ -39,7 +40,7 @@ HRESULT EnumerateHeap(
  `ppObject`  
  弄指向 [ICorDebugHeapEnum](icordebugheapenum-interface.md) 接口对象地址的指针，该接口对象是驻留在托管堆上的对象的枚举器。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在调用 `ICorDebugProcess5::EnumerateHeap` 方法之前，应调用 [ICorDebugProcess5：： GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) 方法，并检查 `areGCStructuresValid` 返回 [COR_HEAPINFO](cor-heapinfo-structure.md) 对象的字段值，以确保其当前状态的垃圾回收堆可枚举。 此外，如果在 `ICorDebugProcess5::EnumerateHeap` `E_FAIL` 进程的生存期内附加过早，则在分配托管堆的内存之前，返回。  
   
@@ -55,7 +56,7 @@ HRESULT EnumerateHeap(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugProcess5 接口](icordebugprocess5-interface.md)
 - [调试接口](debugging-interfaces.md)

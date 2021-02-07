@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorPublishAppDomain：： GetName 方法
 title: ICorPublishAppDomain::GetName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6ef8ac9b-9803-4b65-8b13-25f3e0b1bc6b
 topic_type:
 - apiref
-ms.openlocfilehash: d6b05333b9e02c4202c0fd9bdee9b5c055aa4da3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 05b1b14f7e0db371b29059ec3d44333ac40428e9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95694355"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721796"
 ---
 # <a name="icorpublishappdomaingetname-method"></a>ICorPublishAppDomain::GetName 方法
 
@@ -48,7 +49,7 @@ HRESULT GetName (
  `szName`  
  弄要在其中存储名称的数组。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `szName` 为非 null，则该 `GetName` 方法将最多复制 `cchName` (个字符，包括 null 结束符) 入 `szName` 。 如果在中返回非 null，则 `pcchName` 名称中的实际字符数 (包括 null 结束符) 存储在 `szName` 数组中。  
   
@@ -64,6 +65,6 @@ HRESULT GetName (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorPublishAppDomain 接口](icorpublishappdomain-interface.md)

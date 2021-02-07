@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorPublishEnum：： GetCount 方法
 title: ICorPublishEnum::GetCount 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d228f684-2be3-4029-93ae-31fe02213c1f
 topic_type:
 - apiref
-ms.openlocfilehash: a23d61da2913d8732c3860a44eb58ffadab48315
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 99e831ae366604e2ae7494bf80fb2e7f25532582
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677929"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721614"
 ---
 # <a name="icorpublishenumgetcount-method"></a>ICorPublishEnum::GetCount 方法
 
@@ -49,6 +50,6 @@ HRESULT GetCount (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorPublishEnum 接口](icorpublishenum-interface.md)

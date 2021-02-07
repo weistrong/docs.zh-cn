@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback 接口
 title: ICorDebugManagedCallback 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b47f1d61-c7dc-4196-b926-0b08c94f7041
 topic_type:
 - apiref
-ms.openlocfilehash: 6eebabc3a08027eab4ac55c1e46dd75b1f75bd21
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0dd33e4295caa8f5ae41c65d9bd10152737156ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679697"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722810"
 ---
 # <a name="icordebugmanagedcallback-interface"></a>ICorDebugManagedCallback 接口
 
@@ -56,7 +57,7 @@ ms.locfileid: "95679697"
 |[UnloadModule 方法](icordebugmanagedcallback-unloadmodule-method.md)|通知调试器已卸载 CLR 模块 (DLL) 。|  
 |[UpdateModuleSymbols 方法](icordebugmanagedcallback-updatemodulesymbols-method.md)|通知调试器 CLR 模块的符号已更改。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  所有回调都是序列化的，在同一线程中调用，并在进程处于已同步状态的情况下调用。  
   
@@ -77,7 +78,7 @@ ms.locfileid: "95679697"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebug 接口](icordebug-interface.md)
 - [ICorDebugManagedCallback2 接口](icordebugmanagedcallback2-interface.md)

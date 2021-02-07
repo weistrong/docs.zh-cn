@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugObjectValue：： GetFieldValue 方法
 title: ICorDebugObjectValue::GetFieldValue 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c96770b0-3e09-47bb-bd29-20353b043459
 topic_type:
 - apiref
-ms.openlocfilehash: 745be25183f6b94e7a807c4230961d72e2836fe5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 38dac36747b286ab16ae3310b6b59695480a6ff1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695330"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722186"
 ---
 # <a name="icordebugobjectvaluegetfieldvalue-method"></a>ICorDebugObjectValue::GetFieldValue 方法
 
@@ -47,7 +48,7 @@ HRESULT GetFieldValue (
  `ppValue`  
  弄一个指向 "ICorDebugValue" 对象的指针，该对象表示指定字段的值。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  参数中指定的类 `pClass` 必须位于对象值的类的层次结构中，并且字段必须是该类的字段。  
   
@@ -63,4 +64,4 @@ HRESULT GetFieldValue (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorPublishEnum 接口
 title: ICorPublishEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7
 topic_type:
 - apiref
-ms.openlocfilehash: 492d4b727ce507340fec47d30a791aa49d0cecb6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c0d50f67bd61eecbade0b226f2f569ac26712faf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95693341"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721591"
 ---
 # <a name="icorpublishenum-interface"></a>ICorPublishEnum 接口
 
@@ -34,7 +35,7 @@ ms.locfileid: "95693341"
 |[Reset 方法](icorpublishenum-reset-method.md)|将光标移到枚举的开头。|  
 |[Skip 方法](icorpublishenum-skip-method.md)|按指定的项数在枚举中向前移动光标。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  以下枚举器派生自 `ICorPublishEnum` ：  
   
@@ -52,7 +53,7 @@ ms.locfileid: "95693341"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CorpubPublish Coclass](corpubpublish-coclass.md)
 - [调试接口](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorPublish：： GetProcess 方法
 title: ICorPublish::GetProcess 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c5143805-2eb7-45b8-85ed-c8fb34df1084
 topic_type:
 - apiref
-ms.openlocfilehash: a45f613b7547e2e80abdbd8ac85cb0b2b6a499e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d288a772274618cc99b63a68b37e84e543957b44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721965"
 ---
 # <a name="icorpublishgetprocess-method"></a>ICorPublish::GetProcess 方法
 
@@ -43,7 +44,7 @@ HRESULT GetProcess(
  `ppProcess`  
  弄一个指针，指向 `ICorPublishProcess` 表示进程的实例的地址。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetProcess` 如果进程不存在，或者不是可由当前用户调试的托管进程，则会失败。  
   
@@ -57,6 +58,6 @@ HRESULT GetProcess(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorPublish 接口](icorpublish-interface.md)

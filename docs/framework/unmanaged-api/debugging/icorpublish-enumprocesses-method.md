@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorPublish：： EnumProcesses 方法
 title: ICorPublish::EnumProcesses 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4ae765f0-93b2-4b6f-aea1-7b0cf44e04a7
 topic_type:
 - apiref
-ms.openlocfilehash: 297f672097dd6561a971608f368369c623532907
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2451f179301eff4caca966568f966d145e269f51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721991"
 ---
 # <a name="icorpublishenumprocesses-method"></a>ICorPublish::EnumProcesses 方法
 
@@ -43,7 +44,7 @@ HRESULT EnumProcesses (
  `ppIEnum`  
  一个指针，指向作为进程枚举器的 [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) 实例的地址。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  枚举器的进程集合基于调用方法时正在运行的进程的快照 `EnumProcesses` 。 枚举器将不包含在调用之后终止或开始后终止的任何进程 `EnumProcesses` 。  
   
@@ -59,6 +60,6 @@ HRESULT EnumProcesses (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorPublish 接口](icorpublish-interface.md)

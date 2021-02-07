@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugProcess6：： GetExportStepInfo 方法
 title: ICorDebugProcess6::GetExportStepInfo 方法
 ms.date: 03/30/2017
 ms.assetid: a927e0ac-f110-426d-bbec-9377a29c8f17
-ms.openlocfilehash: e2c04672e51ffb16043b14735cd5375073194c27
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e14b5e66d90fb2ece91991b3634fc2ad86fac895
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732614"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722004"
 ---
 # <a name="icordebugprocess6getexportstepinfo-method"></a>ICorDebugProcess6::GetExportStepInfo 方法
 
@@ -43,7 +44,7 @@ HRESULT GetExportStepInfo(
 |`E_POINTER`|`pInvokeKind` 或 `pInvokePurpose` 为 **null**。|  
 |其他失败 `HRESULT` 值。|根据需要。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -58,7 +59,7 @@ HRESULT GetExportStepInfo(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [“ICor调试进程6”接口](icordebugprocess6-interface.md)
 - [调试接口](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICeeGen：： GetSectionDataLen 方法
 title: ICeeGen::GetSectionDataLen 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e2a06ee4-b8ee-49c7-935a-c1031a29eef2
 topic_type:
 - apiref
-ms.openlocfilehash: b45b0a59a29a27e7b0a395f3928215959450f9a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9475112a6f25e9a4c57c4ded6cd11dab9bf352b9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721022"
 ---
 # <a name="iceegengetsectiondatalen-method"></a>ICeeGen::GetSectionDataLen 方法
 
@@ -45,7 +46,7 @@ HRESULT GetSectionDataLen (
  `dataLen`  
  弄指定节的返回长度。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetSectionDataLen`仅当有特殊部分的要求不是由其他方法处理时才调用。  
   
@@ -59,6 +60,6 @@ HRESULT GetSectionDataLen (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICeeGen 接口](iceegen-interface.md)

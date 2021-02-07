@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugMemoryBuffer：： GetStartAddress 方法
 title: ICorDebugMemoryBuffer::GetStartAddress 方法
 ms.date: 03/30/2017
 ms.assetid: f804d9ab-8c88-44f0-b278-5fcca7f87726
-ms.openlocfilehash: f76bf1479db987e4956d8b876f67d629d927f956
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 46720d70b8a1019e712b577b24dec5d4c3d5a31d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722706"
 ---
 # <a name="icordebugmemorybuffergetstartaddress-method"></a>ICorDebugMemoryBuffer::GetStartAddress 方法
 
@@ -26,7 +27,7 @@ HRESULT GetStartAddress(
  `address`  
  [out] 指向内存缓冲区起始地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!WARNING]
 > 此方法仅适用于 .NET Native。  
@@ -41,7 +42,7 @@ HRESULT GetStartAddress(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugMemoryBuffer 接口](icordebugmemorybuffer-interface.md)
 - [调试接口](debugging-interfaces.md)

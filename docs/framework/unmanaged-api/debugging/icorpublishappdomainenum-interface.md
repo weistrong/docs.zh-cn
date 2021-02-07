@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorPublishAppDomainEnum 接口
 title: ICorPublishAppDomainEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bb798c56-042e-475d-a245-b6fac36d0c07
 topic_type:
 - apiref
-ms.openlocfilehash: 5b5a901bef779948467cfcc3d71a1fcd057c1aeb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4e84af576103a792308fd44f903f2ae4daa5d736
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95693705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721783"
 ---
 # <a name="icorpublishappdomainenum-interface"></a>ICorPublishAppDomainEnum 接口
 
@@ -29,9 +30,9 @@ ms.locfileid: "95693705"
   
 |方法|说明|  
 |------------|-----------------|  
-|[Next 方法](icorpublishappdomainenum-next-method.md)|`ICorPublishAppDomain`从当前位置开始，获取集合中指定数量的实例。|  
+|[下一方法](icorpublishappdomainenum-next-method.md)|`ICorPublishAppDomain`从当前位置开始，获取集合中指定数量的实例。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorPublishAppDomainEnum`接口实现抽象接口的方法[ICorPublishEnum](icorpublishenum-interface.md)。  
   
@@ -45,7 +46,7 @@ ms.locfileid: "95693705"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [CorpubPublish Coclass](corpubpublish-coclass.md)
