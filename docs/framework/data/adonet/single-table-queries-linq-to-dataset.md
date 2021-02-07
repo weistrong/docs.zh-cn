@@ -1,20 +1,21 @@
 ---
+description: '了解详细信息： Single-Table 查询 (LINQ to DataSet) '
 title: 单表查询 (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0b74bcf8-3f87-449f-bff7-6bcb0d69d212
-ms.openlocfilehash: 17a2fcf54cae64d9443b0cc0e8a37e1002bbd394
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a4b6ce2a60eeafc9221d838d1b86c9964774df60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718754"
 ---
 # <a name="single-table-queries-linq-to-dataset"></a>单表查询 (LINQ to DataSet)
 
-语言集成查询 (LINQ) 查询可用于实现 <xref:System.Collections.Generic.IEnumerable%601> 接口或接口的数据源 <xref:System.Linq.IQueryable%601> 。 <xref:System.Data.DataTable>类不实现任何一个接口，因此， <xref:System.Data.DataTableExtensions.AsEnumerable%2A> 如果要 <xref:System.Data.DataTable> 在 LINQ 查询的子句中使用作为源，则必须调用方法 `From` 。  
+Language-Integrated 查询 (LINQ) 查询可用于实现 <xref:System.Collections.Generic.IEnumerable%601> 接口或接口的数据源 <xref:System.Linq.IQueryable%601> 。 <xref:System.Data.DataTable>类不实现任何一个接口，因此， <xref:System.Data.DataTableExtensions.AsEnumerable%2A> 如果要 <xref:System.Data.DataTable> 在 LINQ 查询的子句中使用作为源，则必须调用方法 `From` 。  
   
  下面的示例获取 SalesOrderHeader 表中的所有联机订单并将订单 ID、订单日期和订单编号输出到控制台。  
   

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ADO.NET 中的并行执行
 title: 并行执行
 ms.date: 03/30/2017
 ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
-ms.openlocfilehash: 609fc7b7cefd92e38ecfff54e5ac1651e855e4b7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ab55430382f49c40a577d5cac8501c0136c9f0a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91188933"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718767"
 ---
 # <a name="side-by-side-execution-in-adonet"></a>ADO.NET 中的并行执行
 
@@ -27,7 +28,7 @@ ms.locfileid: "91188933"
   
  如果你的应用程序是为使用 ODBC 数据访问接口来连接到数据源的 .NET Framework 版本1.0 开发的，并且你想要在 .NET Framework 版本1.1 或更高版本上运行该应用程序，则必须将该 ODBC 数据提供程序的命名空间更新为 **system.object**。 然后必须将其重新编译为较新版本的 .NET Framework。  
   
- 如果为 .NET Framework 版本2.0 或更高版本开发的应用程序，该应用程序使用 ODBC 数据提供程序连接到您的数据源，并且您想要在 .NET Framework 版本1.0 上运行该应用程序，则必须下载该 ODBC 数据提供程序并将其安装在 .NET Framework 版本1.0 系统上。 然后，必须将该 ODBC 数据提供程序的命名空间更改为 "node.js **"，然后**重新编译该应用程序的 .NET Framework 版本1.0。  
+ 如果为 .NET Framework 版本2.0 或更高版本开发的应用程序，该应用程序使用 ODBC 数据提供程序连接到您的数据源，并且您想要在 .NET Framework 版本1.0 上运行该应用程序，则必须下载该 ODBC 数据提供程序并将其安装在 .NET Framework 版本1.0 系统上。 然后，必须将该 ODBC 数据提供程序的命名空间更改为 "node.js **"，然后** 重新编译该应用程序的 .NET Framework 版本1.0。  
   
 ## <a name="the-net-framework-data-provider-for-oracle"></a>Oracle .NET Framework 数据提供程序  
 

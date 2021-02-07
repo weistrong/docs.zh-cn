@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <dependentAssembly> 元素
 title: <dependentAssembly> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - dependentAssembly element
 - <dependentAssembly> element
 ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
-ms.openlocfilehash: 6a924b1998651c923c64429029a118dd1e9ede69
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c804920de961fc609fd04a0853ecbdbc9202e5be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198998"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719079"
 ---
 # <a name="dependentassembly-element"></a>\<dependentAssembly> 元素
 
@@ -42,7 +43,7 @@ ms.locfileid: "91198998"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`assemblyIdentity`|包含有关程序集的标识信息。 此元素必须包含在每个 `dependentAssembly` 元素中。|  
 |`codeBase`|指定运行时在计算机上未安装共享程序集的情况下可以找到该程序集的位置。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91198998"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`assemblyBinding`|包含有关程序集版本重定向和程序集位置的信息。|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  

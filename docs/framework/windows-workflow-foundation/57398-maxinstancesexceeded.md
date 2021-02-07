@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 57398-MaxInstancesExceeded
 title: 57398 - MaxInstancesExceeded
 ms.date: 03/30/2017
 ms.assetid: f943d209-dfeb-43e5-b572-c9a06217936e
-ms.openlocfilehash: bd490aad24fba4550bc778799cd6f836dcfd466c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 104c466cb2e0ee8156e2b268caf5e757353dfb09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720223"
 ---
 # <a name="57398---maxinstancesexceeded"></a>57398 - MaxInstancesExceeded
 
@@ -17,10 +18,10 @@ ms.locfileid: "96289173"
 |-|-|  
 |ID|57398|  
 |关键字|WFServices|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示系统达到为限制“MaxConcurrentInstances”设置的限制值。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96289173"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
-|“属性”|xs:string|项的名称。|  
+|名称|xs:string|项的名称。|  
 |应用程序域|xs:string|由 AppDomain.CurrentDomain.FriendlyName 返回的字符串。|

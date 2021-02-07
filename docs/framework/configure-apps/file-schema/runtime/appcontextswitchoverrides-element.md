@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <AppContextSwitchOverrides> 元素
 title: AppContextSwitchOverrides 元素
 ms.date: 04/18/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - configuration switches
 - configuration
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
-ms.openlocfilehash: ab74886edcc86c900c56017867a3b81c9cb7886e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1c2e4ceaec83ee23990c2146960f602eb12361a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176144"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719326"
 ---
 # <a name="appcontextswitchoverrides-element"></a>\<AppContextSwitchOverrides> 元素
 
@@ -40,7 +41,7 @@ ms.locfileid: "91176144"
 
 ### <a name="value-attribute"></a>值特性
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |"名称 = 值"|预定义的开关名称及其值 (`true` 或 `false`) 。 多个开关名称/值对由分号分隔 ( ";") 。 有关 .NET Framework 支持的预定义开关名称的列表，请参阅 "备注" 部分。|
 
@@ -50,7 +51,7 @@ ms.locfileid: "91176144"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|
 |`runtime`|包含有关运行时初始化选项的信息。|
@@ -63,7 +64,7 @@ ms.locfileid: "91176144"
 
 .NET Framework 支持以下开关：
 
-|交换机名称|描述|已引入|
+|交换机名称|说明|已引入|
 |-----------------|-----------------|----------------|
 |`Switch.MS.Internal.`<br/>`DoNotApplyLayoutRoundingToMarginsAndBorderThickness`|控制 Windows Presentation Foundation 是否对控件布局使用旧算法。 有关详细信息，请参阅[缓解：WPF 布局](../../../migration-guide/mitigation-wpf-layout.md)。|.NET Framework 4.6|
 |`Switch.MS.Internal.`<br/>`UseSha1AsDefaultHashAlgorithmForDigitalSignatures`|控制 PackageDigitalSignatureManager 用于为包的部分签名的默认算法是 SHA1 还是 SHA256。<br>由于与 SHA1 冲突，Microsoft 建议使用 SHA256。|.NET Framework 4.7.1|

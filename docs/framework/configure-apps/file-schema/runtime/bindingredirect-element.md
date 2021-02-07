@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <bindingRedirect> 元素
 title: <bindingRedirect> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - container tags, <bindingRedirect> element
 - bindingRedirect element
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
-ms.openlocfilehash: 7667f78d2c341990585526fd153c0b230658a2ee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 833ee73fa11d179ac855f3ac4d2bca8d7a2226ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167244"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719170"
 ---
 # <a name="bindingredirect-element"></a>\<bindingRedirect> 元素
 
@@ -42,18 +43,18 @@ newVersion="new assembly version"/>
   
 |属性|描述|  
 |---------------|-----------------|  
-|`oldVersion`|必需的特性。<br /><br /> 指定最初请求的程序集的版本。 程序集版本号的格式为 "主要版本. 次要版本. 内部版本. *修订*版本"。 该版本号的每个部分的有效值介于 0 和 65535 之间。<br /><br /> 你还可以按下列格式指定版本范围：<br /><br /> *n. n。 n n n n n n n n n n n n n n n n n n n n*|  
+|`oldVersion`|必需的特性。<br /><br /> 指定最初请求的程序集的版本。 程序集版本号的格式为 "主要版本. 次要版本. 内部版本. *修订* 版本"。 该版本号的每个部分的有效值介于 0 和 65535 之间。<br /><br /> 你还可以按下列格式指定版本范围：<br /><br /> *n. n。 n n n n n n n n n n n n n n n n n n n n*|  
 |`newVersion`|必需的特性。<br /><br /> 用以下格式指定要使用的程序集的版本，而不是最初请求的 *版本：*<br /><br /> 此值可以指定 `oldVersion` 之前的版本。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |无||  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`assemblyBinding`|包含有关程序集版本重定向和程序集位置的信息。|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  

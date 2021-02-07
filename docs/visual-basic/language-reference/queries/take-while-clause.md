@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅 Take While 子句 (Visual Basic) '
 title: Take While 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Take While clause [Visual Basic]
 - Take While statement [Visual Basic]
 ms.assetid: db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11
-ms.openlocfilehash: 632e9e2195f21a3aa1d1ffd28e9838905c471156
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: a413223d4a85670c66f71e24addb92ae4d38a4a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719703"
 ---
 # <a name="take-while-clause-visual-basic"></a>Take While 子句 (Visual Basic)
 
@@ -43,7 +44,7 @@ Take While expression
   
  [!code-vb[VbSimpleQuerySamples#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#2)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

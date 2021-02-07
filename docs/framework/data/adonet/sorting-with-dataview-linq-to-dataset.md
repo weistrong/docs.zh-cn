@@ -1,20 +1,21 @@
 ---
+description: '详细了解：通过 DataView (LINQ to DataSet 进行排序) '
 title: 使用 DataView 进行排序 (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 885b3b7b-51c1-42b3-bb29-b925f4f69a6f
-ms.openlocfilehash: d80c00a4b06a31f61a521e7206c204c02106748a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ac07e5bc2c74a5724a4497d630d7352694ac9a7a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175273"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718676"
 ---
 # <a name="sorting-with-dataview-linq-to-dataset"></a>使用 DataView 进行排序 (LINQ to DataSet)
 
-基于特定条件对数据进行排序，然后通过 UI 控件向客户端表示该数据的能力是数据绑定的一个重要特征。 <xref:System.Data.DataView> 提供多种方式对数据进行排序并返回按指定排序条件排序的数据行。 除了基于字符串的排序功能以外， <xref:System.Data.DataView> 还使您能够将语言集成查询用于排序条件 (LINQ) 表达式。 LINQ 表达式允许执行比基于字符串的排序更复杂而功能更强大的排序操作。 本主题介绍这两种使用 <xref:System.Data.DataView> 的排序方法。  
+基于特定条件对数据进行排序，然后通过 UI 控件向客户端表示该数据的能力是数据绑定的一个重要特征。 <xref:System.Data.DataView> 提供多种方式对数据进行排序并返回按指定排序条件排序的数据行。 除了基于字符串的排序功能以外， <xref:System.Data.DataView> 还使您能够对排序条件使用 Language-Integrated 查询 (LINQ) 表达式。 LINQ 表达式允许执行比基于字符串的排序更复杂而功能更强大的排序操作。 本主题介绍这两种使用 <xref:System.Data.DataView> 的排序方法。  
   
 ## <a name="creating-dataview-from-a-query-with-sorting-information"></a>通过具有排序信息的查询创建 DataView  
 

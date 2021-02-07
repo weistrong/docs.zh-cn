@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <alwaysFlowImpersonationPolicy> 元素
 title: <alwaysFlowImpersonationPolicy> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - alwaysFlowImpersonationPolicy element
 - <alwaysFlowImpersonationPolicy> element
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
-ms.openlocfilehash: 9316f026a807b6ad36014157061f67bdbd7d3d18
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5ee8e763eddb810143522ce9e6df780ee77c26c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719365"
 ---
 # <a name="alwaysflowimpersonationpolicy-element"></a>\<alwaysFlowImpersonationPolicy> 元素
 
@@ -42,7 +43,7 @@ ms.locfileid: "91149434"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`false`|Windows 标识不流经异步点，除非模拟是通过托管方法（如）执行的 <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> 。 这是默认设置。|  
 |`true`|无论模拟的执行方式如何，Windows 标识始终流经异步点。|  
@@ -53,7 +54,7 @@ ms.locfileid: "91149434"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

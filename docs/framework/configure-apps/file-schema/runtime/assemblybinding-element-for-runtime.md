@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <assemblyBinding> 的元素 <runtime>
 title: <runtime> 的 <assemblyBinding> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - assemblyBinding element
 - container tags, <assemblyBinding> element
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
-ms.openlocfilehash: b6a39bcecfd2485481677496adcf026d986c283b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a797b541f9f13852234872f1eb2fc68a2eac727d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719222"
 ---
 # <a name="assemblybinding-element-for-runtime"></a>\<runtime> 的 \<assemblyBinding> 元素
 
@@ -37,14 +38,14 @@ ms.locfileid: "91170241"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |**xmlns**|必需的特性。<br /><br /> 指定程序集绑定所需的 XML 命名空间。 使用字符串“urn: 架构-microsoft-com:asm.v1”作为值。|  
 |**appliesTo**|指定 .NET Framework 程序集重定向适用的运行时版本。 此可选特性用 .NET Framework 版本号来指示其适用的版本。 如果没有指定 appliesTo 特性，\<assemblyBinding> 元素将适用于 .NET Framework 的所有版本 。 .NET Framework 版本1.1 中引入了 **appliesTo** 特性;.NET Framework 版本1.0 将忽略它。 这意味着，即使指定了 appliesTo 特性，在使用 .NET Framework 版本 1.0 时所有的 \<assemblyBinding> 元素也都适用 。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<dependentAssembly>](dependentassembly-element.md)|封装程序集的绑定策略和程序集位置。 **\<dependentAssembly>** 为每个程序集使用一个标记。|  
 |[\<probing>](probing-element.md)|指定加载程序集时公共语言运行时搜索的子目录。|  
@@ -53,7 +54,7 @@ ms.locfileid: "91170241"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

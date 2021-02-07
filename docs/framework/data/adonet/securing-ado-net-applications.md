@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：保护 ADO.NET 应用程序
 title: 保证应用程序的安全
 ms.date: 03/30/2017
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
-ms.openlocfilehash: af184f64b43c2d3dc39f8c0add08940d3b002c24
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4e4d219d1f4249846943d019e174abd6d43687c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718871"
 ---
 # <a name="securing-adonet-applications"></a>保护 ADO.NET 应用程序
 
@@ -17,7 +18,7 @@ ms.locfileid: "90550750"
   
 编写安全代码不会阻止在使用非托管资源（如数据库）时自己造成的安全漏洞。 多数服务器数据库（如 SQL Server）拥有其各自的安全系统，正确实现这些安全系统可增强安全性。 但是，即使是具有可靠安全系统的数据源，如果未适当配置，也可能受到攻击。  
   
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 
  [安全性概述](security-overview.md)  
  提供对设计安全 ADO.NET 应用程序的建议。  

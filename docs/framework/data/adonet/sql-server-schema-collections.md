@@ -1,21 +1,22 @@
 ---
+description: 了解详细信息： SQL Server 架构集合
 title: SQL Server 架构集合
 ms.date: 03/30/2017
 ms.assetid: c6403cc3-d78b-4f85-bab1-ada7a3446ec5
-ms.openlocfilehash: ebb0cea20aede3d04e37536c7c615678e109337a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0299daada77b6968a0b1f875956da7bd2a221322
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718663"
 ---
 # <a name="sql-server-schema-collections"></a>SQL Server 架构集合
 
-除了通用架构集合之外，适用于 SQL Server 的 Microsoft .NET Framework 数据提供程序还支持其他架构集合。 架构集合因使用的 SQL Server 的版本而稍有不同。 若要确定支持的架构集合列表，请调用不带参数的 **GetSchema** 方法，或调用架构集合名称 "MetaDataCollections"。 此时将返回 <xref:System.Data.DataTable>，包含支持的架构集合列表、每个架构集合支持的限制数以及所使用的标识符部分数。  
+除了通用架构集合之外，适用于 SQL Server 的 Microsoft .NET Framework 数据提供程序还支持其他架构集合。 架构集合因使用的 SQL Server 的版本而稍有不同。 要确定支持的架构集合列表，请以无参数的形式或使用架构集合名称“MetaDataCollections”调用 GetSchema 方法。 此时将返回 <xref:System.Data.DataTable>，包含支持的架构集合列表、每个架构集合支持的限制数以及所使用的标识符部分数。  
   
 ## <a name="databases"></a>数据库  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |database_name|字符串|数据库的名称。|  
 |dbid|Int16|数据库 ID。|  
@@ -37,7 +38,7 @@ ms.locfileid: "91197659"
   
 ## <a name="indexes"></a>索引  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |constraint_catalog|字符串|索引所属的编录。|  
 |constraint_schema|字符串|包含索引的架构。|  
@@ -51,13 +52,13 @@ ms.locfileid: "91197659"
 
  从 .NET Framework 版本 3.5 SP1 和 SQL Server 2008 开始，以下列已经添加到 Indexes 架构集合以支持新的空间类型、文件流和稀疏列。 早期版本的 .NET Framework 和 SQL Server 不支持这些列。  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
-|type_desc|字符串|索引类型可以为以下值之一：<br /><br /> -堆<br />-群集<br />-非聚集<br />-XML<br />-空间|  
+|type_desc|字符串|索引类型可以为以下值之一：<br /><br /> -   HEAP<br />-   CLUSTERED<br />-   NONCLUSTERED<br />-   XML<br />-   SPATIAL|  
   
 ## <a name="indexcolumns"></a>IndexColumns  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |constraint_catalog|字符串|索引所属的编录。|  
 |constraint_schema|字符串|包含索引的架构。|  
@@ -72,7 +73,7 @@ ms.locfileid: "91197659"
   
 ## <a name="procedures"></a>过程  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |SPECIFIC_CATALOG|字符串|编录的特定名称。|  
 |SPECIFIC_SCHEMA|字符串|特定的架构名称。|  
@@ -86,7 +87,7 @@ ms.locfileid: "91197659"
   
 ## <a name="procedure-parameters"></a>过程参数  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |SPECIFIC_CATALOG|字符串|此参数所属的过程的编录名称。|  
 |SPECIFIC_SCHEMA|字符串|包含此参数所属的过程的架构。|  
@@ -148,7 +149,7 @@ ms.locfileid: "91197659"
 
  从 .NET Framework 版本 3.5 SP1 和 SQL Server 2008 开始，以下列已经添加到 Colums 架构集合以支持新的空间类型、文件流和稀疏列。 早期版本的 .NET Framework 和 SQL Server 不支持这些列。  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |IS_FILESTREAM|字符串|YES       FILESTREAM    <br /><br /> NO，如果列不具有 FILESTREAM 属性。|  
 |IS_SPARSE|字符串|YES，如果列是稀疏列。<br /><br /> NO，如果列不是稀疏列。|  
@@ -214,7 +215,7 @@ ms.locfileid: "91197659"
   
 ## <a name="users"></a>用户  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |uid|Int16|用户 ID，在此数据库中是唯一的。 1 为数据库所有者。|  
 |user_name|字符串|在此数据库中唯一的用户名和组名。|  
@@ -245,7 +246,7 @@ ms.locfileid: "91197659"
   
 ## <a name="userdefinedtypes"></a>UserDefinedTypes  
   
-|ColumnName|数据类型|描述|  
+|ColumnName|数据类型|说明|  
 |----------------|--------------|-----------------|  
 |assembly_name|字符串|程序集文件的名称。|  
 |udt_name|字符串|程序集的类名。|  
@@ -260,7 +261,7 @@ ms.locfileid: "91197659"
 |Create_Date|DateTime|创建/注册程序集的日期。|  
 |Permission_set_desc|字符串|程序集的权限集/安全级别的友好名称。|  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [检索数据库架构信息](retrieving-database-schema-information.md)
 - [ADO.NET 概述](ado-net-overview.md)

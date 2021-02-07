@@ -1,20 +1,21 @@
 ---
+description: 了解详细信息：架构限制
 title: 架构限制
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 73d2980e-e73c-4987-913a-8ddc93d09144
-ms.openlocfilehash: c0a3cafef45341cd95fa0a4f65c818129e120e44
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 74ddfe5b8aaf9b8193e0c0b2a929ccde333eac26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147819"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719040"
 ---
 # <a name="schema-restrictions"></a>架构限制
 
-**GetSchema**方法的第二个可选参数是用于限制返回的架构信息量的限制，并将其作为字符串数组传递到**GetSchema**方法。 在数组中的位置确定可以传递的值，这等效于限制数。  
+GetSchema 方法的第二个可选参数是用于限制返回的架构信息量的限制，该参数以字符串数组的形式传递给 GetSchema 方法 。 在数组中的位置确定可以传递的值，这等效于限制数。  
   
  例如，下表说明使用适用于 SQL Server 的 .NET Framework 数据提供程序时“Tables”架构集合支持的限制。 SQL Server 架构集合的其他限制在本主题的结尾处列出。  
   
@@ -27,7 +28,7 @@ ms.locfileid: "91147819"
   
 ## <a name="specifying-restriction-values"></a>指定限制值  
 
- 要使用“Tables”架构集合的一个限制，只需创建一个包含四个元素的字符串数组，然后在与限制数匹配的元素中填充值。 例如，若要将 **GetSchema** 方法返回的表仅限制为 "sales" 架构中的表，请先将数组的第二个元素设置为 "sales"，然后再将其传递给 **GetSchema** 方法。  
+ 要使用“Tables”架构集合的一个限制，只需创建一个包含四个元素的字符串数组，然后在与限制数匹配的元素中填充值。 例如，要将 GetSchema 方法返回的表限制为仅返回“Sales”架构中的表，可将数组的第二个元素设置为“Sales”，然后再将其传递给 GetSchema 方法 。  
   
 > [!NOTE]
 > `SqlClient` 和 `OracleClient` 的限制集合还有附加的 `ParameterName` 列。 为了向后兼容，仍提供限制默认列，但是目前忽略该列。 在指定限制值时，应使用参数化查询（而不是字符串替换）来最大程度地降低受到 SQL 注入式攻击的风险。  
@@ -266,6 +267,6 @@ class Program
 |表|@Table|TABLE_NAME|3|  
 |列|@Column|COLUMN_NAME|4|  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [ADO.NET 概述](ado-net-overview.md)

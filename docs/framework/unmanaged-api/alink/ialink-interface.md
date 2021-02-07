@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IALink 接口
 title: IALink 接口
 ms.date: 03/30/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - IALink interface
 ms.assetid: 50abd02d-6488-4815-999b-4fb89af4d568
-ms.openlocfilehash: 657c16f6e96633e568903ca4a55b4c68c1a49fa5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ee6cfe72047c69759df234d1b38ca1776f43c46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718234"
 ---
 # <a name="ialink-interface"></a>IALink 接口
 
@@ -75,7 +76,7 @@ ms.locfileid: "95720316"
   
  [SetNonAssemblyFlags 方法](setnonassemblyflags-method.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ALink API](index.md)
 - [IALink2 接口](ialink2-interface.md)

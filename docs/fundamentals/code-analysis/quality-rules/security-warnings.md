@@ -12,25 +12,25 @@ helpviewer_keywords:
 - rules, security
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: e907905b065d786fc8b3c370fb2d2e2b19e62a2b
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: 861827662a771ec7cc1827cdd8125be6c05bf05c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "96591071"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719716"
 ---
 # <a name="security-rules"></a>安全规则
 
 安全规则支持更安全的库和应用程序。 这些规则可帮助防止程序中出现安全漏洞。 如果您禁用这些规则中的任何一种，您应该清楚地标记代码中的原因，并向您的开发项目通知指定的安全官员。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 
 |规则|描述|
 |----------|-----------------|
 |[CA2100:检查 SQL 查询是否存在安全漏洞](ca2100.md)|一个方法使用按该方法的字符串参数生成的字符串设置 System.Data.IDbCommand.CommandText 属性。 此规则假定字符串参数中包含用户输入。 基于用户输入生成的 SQL 命令字符串易于受到 SQL 注入式攻击。|
 |[CA2109:检查可见的事件处理程序](ca2109.md)|检测到公共事件处理方法或受保护事件处理方法。 除非绝对必要，否则不应公开事件处理方法。|
 |[CA2119:密封满足私有接口的方法](ca2119.md)|可继承的公共类型为 internal（在 Visual Basic 中为 Friend）接口提供可重写的方法实现。 若要修复与此规则的冲突，请禁止方法在程序集外重写。|
-|[CA2153：避免处理损坏状态异常](ca2153.md)|[损坏状态异常 (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。|
+|[CA2153:避免处理损坏状态异常](ca2153.md)|[损坏状态异常 (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。|
 |[CA2300：请勿使用不安全的反序列化程序 BinaryFormatte](ca2300.md)|反序列化不受信任的数据时，不安全的反会很容易 攻击者可能会修改序列化的数据，使其包含意外类型，以注入具有恶意副作用的对象。|
 |[CA2301：在未先设置 BinaryFormatter.Binder 的情况下，请不要调用 BinaryFormatter.Deserialize](ca2301.md)|反序列化不受信任的数据时，不安全的反会很容易 攻击者可能会修改序列化的数据，使其包含意外类型，以注入具有恶意副作用的对象。|
 |[CA2302：在调用 BinaryFormatter.Deserialize 之前，确保设置 BinaryFormatter.Binder](ca2302.md)|反序列化不受信任的数据时，不安全的反会很容易 攻击者可能会修改序列化的数据，使其包含意外类型，以注入具有恶意副作用的对象。|
@@ -93,7 +93,7 @@ ms.locfileid: "96591071"
 |[CA5375:请勿使用帐户共享访问签名](ca5375.md)|帐户 SAS 可委派对 blob 容器、表、队列以及服务 SAS 不允许的文件共享上的读取、写入和删除操作的访问权限。 但是，它不支持容器级别的策略，并且具有较低的灵活性和对所授予权限的控制权限。 一旦恶意用户获得，您的存储帐户就会容易泄露。|
 |[CA5376:使用 SharedAccessProtocol HttpsOnly](ca5376.md)|SAS 是不能以纯文本形式在 HTTP 上传输的敏感数据。|
 |[CA5377:使用容器级别访问策略](ca5377.md)|容器级别的访问策略可以随时修改或撤消。 它提供了更大的灵活性并控制授予的权限。|
-|[CA5378：不禁用 ServicePointManagerSecurityProtocols](ca5378.md)|设置 `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` 以 `true` 限制 Windows Communication FRAMEWORK (WCF) 传输层安全 (tls) 与使用 tls 1.0 的连接。 TLS 版本将不推荐使用。|
+|[CA5378：不禁用 ServicePointManagerSecurityProtocols](ca5378.md)|设置 `DisableUsingServicePointManagerSecurityProtocols` 以 `true` 限制 Windows Communication FRAMEWORK (WCF) 传输层安全 (tls) 与使用 tls 1.0 的连接。 TLS 版本将不推荐使用。|
 |[CA5379：确保密钥派生函数算法足够强](ca5379.md)|<xref:System.Security.Cryptography.Rfc2898DeriveBytes>类默认使用 <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> 算法。 应指定要在具有 <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> 或更高版本的构造函数的某些重载中使用的哈希算法。 请注意， <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> 属性仅具有 `get` 访问器，没有 `overriden` 修饰符。|
 |[CA5380：请勿将证书添加到根存储中](ca5380.md)|此规则检测将证书添加到 "受信任的根证书颁发机构" 证书存储中的代码。 默认情况下，"受信任的根证书颁发机构" 证书存储区配置为满足 Microsoft 根证书计划要求的一组公共 Ca。|
 |[CA5381：请确保证书未添加到根存储中](ca5381.md)|此规则检测可能会将证书添加到 "受信任的根证书颁发机构" 证书存储中的代码。 默认情况下，"受信任的根证书颁发机构" 证书存储区配置了一组公共证书颁发机构 (Ca) 满足 Microsoft 根证书计划的要求。|
