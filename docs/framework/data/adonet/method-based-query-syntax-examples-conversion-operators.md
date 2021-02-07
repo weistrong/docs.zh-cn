@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息： Method-Based 查询语法示例：转换运算符 (LINQ to DataSet) '
 title: 基于方法的查询语法示例：转换运算符 (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a084c16b-9b55-4690-aefd-f8e0810a92c3
-ms.openlocfilehash: b3c746f715f40f4c134185fa0cf8e6e115e0067b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 958e5c0ac1d1d8a98e6099ffcad055e78f07b23e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164644"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672733"
 ---
 # <a name="method-based-query-syntax-examples-conversion-operators-linq-to-dataset"></a>基于方法的查询语法示例：转换运算符 (LINQ to DataSet)
 

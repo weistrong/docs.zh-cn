@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： OLE DB、ODBC 和 Oracle 连接池
 title: OLE DB、ODBC 和 Oracle 连接池
 ms.date: 03/30/2017
 ms.assetid: 2bd83b1e-3ea9-43c4-bade-d9cdb9bbbb04
-ms.openlocfilehash: 0ff3cbd89482645ff8d52e3144f1a82fd05d8013
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: da30d70f88c8d109d50716347e7deaacdc65991a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672642"
 ---
 # <a name="ole-db-odbc-and-oracle-connection-pooling"></a>OLE DB、ODBC 和 Oracle 连接池
 
@@ -55,7 +56,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 
  如果存在一个与已消失的服务器的连接，如果连接池进程尚未检测到断开的连接并将连接标记为无效，可以从池中提取此连接。 当发生这种情况时，将生成异常。 但是，为了将该连接释放回池中，仍必须将其关闭。
 
- 不要在类的 `Close` 方法中对 `Dispose`、`Connection` 或任何其他托管对象调用 `DataReader` 或 `Finalize`。 在终结器中，仅释放类直接拥有的非托管资源。 如果类不拥有任何非托管资源，则不要在类定义中包含 `Finalize` 方法。 有关详细信息，请参阅 [垃圾回收](../../../standard/garbage-collection/index.md)。
+ 不要在类的 `Close` 方法中对 `Dispose`、`Connection` 或任何其他托管对象调用 `DataReader` 或 `Finalize`。 在终结器中，仅释放类直接拥有的非托管资源。 如果类不拥有任何非托管资源，则不要在类定义中包含 `Finalize` 方法。 有关详细信息，请参阅[垃圾回收](../../../standard/garbage-collection/index.md)。
 
 ### <a name="transaction-support"></a>事务支持
 
@@ -69,7 +70,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 
  下表描述了可用于调整连接池行为的 <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> 值。
 
-|名称|默认|描述|
+|名称|默认|说明|
 |----------|-------------|-----------------|
 |`Connection Lifetime`|0|连接返回到池中后，创建时间将与当前时间进行比较，如果时间跨度（秒）超过 `Connection Lifetime` 指定的值，该连接将被破坏。 在聚集配置中可以使用它来强制在运行服务器和刚联机的服务器之间达到负载平衡。<br /><br /> 如果值为零 (0)，则将使池连接具有最大的超时期限。|
 |`Enlist`|'true'|当为 `true` 时，如果存在事务上下文，池管理程序将自动在创建线程的当前事务上下文中登记连接。|
@@ -77,7 +78,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 |`Min Pool Size`|0|池中维护的最小连接数。|
 |`Pooling`|'true'|当为 `true` 时，将从相应的池中取出连接，或者在必要时创建连接并将其添加到相应的池中。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [连接池](connection-pooling.md)
 - [性能计数器](performance-counters.md)

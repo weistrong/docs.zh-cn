@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：实体数据模型重要概念
 title: 实体数据模型关键概念
 ms.date: 03/30/2017
 ms.assetid: c635a16d-6674-45aa-9344-dcb7df992bab
-ms.openlocfilehash: d020de65ff64d93c0ea925b71e5f1546eb4402aa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4b97a39a5989689662db7be92b259b9a08d84cc7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191757"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672789"
 ---
 # <a name="entity-data-model-key-concepts"></a>实体数据模型关键概念
 
-实体数据模型 (EDM) 使用三个关键概念来描述数据结构： *实体类型*、 *关联类型*和 *属性*。 在任何 EDM 实现中，这些都是描述数据结构的最重要概念。  
+实体数据模型 (EDM) 使用三个关键概念来描述数据结构： *实体类型*、 *关联类型* 和 *属性*。 在任何 EDM 实现中，这些都是描述数据结构的最重要概念。  
   
 ## <a name="entity-type"></a>实体类型  
 
@@ -35,11 +36,11 @@ ms.locfileid: "91191757"
   
 ## <a name="representations-of-a-conceptual-model"></a>概念模型的表示形式  
 
- *概念模型*是某些数据结构的特定表示形式，作为实体和关系。 概念模型的一种表示形式是图表。 下图用三个实体类型（`Book`、`Publisher` 和 `Author`）以及两个关联（`PublishedBy` 和 `WrittenBy`）来表示概念模型：  
+ *概念模型* 是某些数据结构的特定表示形式，作为实体和关系。 概念模型的一种表示形式是图表。 下图用三个实体类型（`Book`、`Publisher` 和 `Author`）以及两个关联（`PublishedBy` 和 `WrittenBy`）来表示概念模型：  
   
  ![显示具有三个实体类型的概念模型的关系图。](./media/entity-data-model-key-concepts/conceptual-model-entity-types-associations.gif)  
   
- 然而，如果要传达一些有关模型的详细信息，这种表现形式存在一些不足。 例如，图中没有传达属性类型和实体集信息。 域特定语言 (DSL) 可用于更明确地传达有关概念模型的大量信息。 [ADO.NET 实体框架](./ef/index.md)使用名为*概念架构定义语言* ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) 的基于 XML 的 DSL 来定义概念模型。 下面是上图所示的概念模型的 CSDL 定义。  
+ 然而，如果要传达一些有关模型的详细信息，这种表现形式存在一些不足。 例如，图中没有传达属性类型和实体集信息。 域特定语言 (DSL) 可用于更明确地传达有关概念模型的大量信息。 [ADO.NET 实体框架](./ef/index.md)使用名为 *概念架构定义语言* ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) 的基于 XML 的 DSL 来定义概念模型。 下面是上图所示的概念模型的 CSDL 定义。  
   
  [!code-xml[EDM_Example_Model#EDMExampleCSDL](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#edmexamplecsdl)]  
   

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：实体框架术语
 title: 实体框架术语
 ms.date: 03/30/2017
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945
-ms.openlocfilehash: dbe03de44b8ae2a857b923cd9dc74c42ea18f4e8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b2cdaa4fb71403915ae5df57f785efde8cf54d24
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200935"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673097"
 ---
 # <a name="entity-framework-terminology"></a>实体框架术语
 
@@ -65,7 +66,7 @@ ms.locfileid: "91200935"
 |代理对象|一个对象，它派生自 POCO 类，由实体框架生成以支持更改跟踪和延迟加载。 有关详细信息，请参阅 [创建 POCO 代理的要求](/previous-versions/dotnet/netframework-4.0/dd468057(v=vs.100))。|  
 |Referential Constraint — 引用约束|在概念模型中定义的约束，该约束指示一个实体与另一个实体之间存在依赖关系。 此约束意味着，如果没有对应的主体实体实例，就不会存在依赖性实体的实例。<br /><br /> 有关详细信息，请参阅 [ReferentialConstraint 元素 (CSDL) ](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#referentialconstraint-element-csdl) 和 [引用完整性约束](../referential-integrity-constraint.md)。|  
 |关系 (relationship)|实体之间的逻辑连接。|  
-|role|为关联的每个 `End` 提供的名称，用于明确关系的语义。<br /><br /> 有关详细信息，请参阅 [End 元素 (CSDL) ](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#end-element-csdl) 和 [关联端](../association-end.md)。|  
+|角色 (role)|为关联的每个 `End` 提供的名称，用于明确关系的语义。<br /><br /> 有关详细信息，请参阅 [End 元素 (CSDL) ](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#end-element-csdl) 和 [关联端](../association-end.md)。|  
 |标量属性|实体的属性，它映射到存储模型中的单个字段。|  
 |自跟踪实体 (self-tracking entity)|从文本模板转换工具包 (T4) 中生成的一种实体，该实体可以将更改记录到标量属性、复杂属性以及导航属性中。|  
 |Simple Type — 简单类型|一种基元类型，用于定义概念模型中的属性。<br /><br /> 有关详细信息，请参阅 [概念模型类型 (CSDL) ](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl) 和 [实体数据模型：基元数据类型](../entity-data-model-primitive-data-types.md)。|  

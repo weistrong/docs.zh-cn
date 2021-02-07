@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：实体数据模型：命名空间
 title: 实体数据模型：命名空间
 ms.date: 03/30/2017
 ms.assetid: 98ab4226-bb9f-44e7-af46-61a9b1a4e47c
-ms.openlocfilehash: 1e5f9527ec208c5650c68fe35bb758e0850b7700
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c18178672ebab0e323c9712af2668c3cb92e0300
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672759"
 ---
 # <a name="entity-data-model-namespaces"></a>实体数据模型：命名空间
 

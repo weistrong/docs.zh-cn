@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息： Method-Based 查询语法示例：联接 (LINQ to DataSet) '
 title: 基于方法的查询语法示例：联接 (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4fd5ed2c-b03a-4054-a3ed-3ddb380d7d9d
-ms.openlocfilehash: 9573b1bf9dad77567fee8801a5e612c7efd53b1e
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: f19921ceb874d120a3b50896f3ec82159ef03aac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98187803"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672694"
 ---
 # <a name="method-based-query-syntax-examples-join-linq-to-dataset"></a>基于方法的查询语法示例：联接 (LINQ to DataSet)
 
@@ -45,7 +46,7 @@ ms.locfileid: "98187803"
  [!code-csharp[DP LINQ to DataSet Examples#JoinWithGroupedResults_MQ](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#joinwithgroupedresults_mq)]
  [!code-vb[DP LINQ to DataSet Examples#JoinWithGroupedResults_MQ](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#joinwithgroupedresults_mq)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [将数据加载到数据集中](loading-data-into-a-dataset.md)
 - [LINQ to DataSet 示例](linq-to-dataset-examples.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： LINQ to DataSet 示例
 title: LINQ to DataSet 示例
 ms.date: 03/30/2017
 ms.assetid: dfd91658-8d8a-45a4-a356-e327e809f21d
-ms.openlocfilehash: 48511dc7ae249e35b9bd76e0d6d3d9f1ef39dde0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 65977210fb160439231ea723134c94eb56ca8930
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169513"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672746"
 ---
 # <a name="linq-to-dataset-examples"></a>LINQ to DataSet 示例
 
@@ -41,7 +42,7 @@ ms.locfileid: "91169513"
   
 - [中间件排序](method-based-query-syntax-examples-ordering-linq-to-dataset.md)  
   
-- [集合运算符](method-based-query-syntax-examples-set-operators.md)  
+- [集运算符](method-based-query-syntax-examples-set-operators.md)  
   
 - [转换运算符](method-based-query-syntax-examples-conversion-operators.md)  
   

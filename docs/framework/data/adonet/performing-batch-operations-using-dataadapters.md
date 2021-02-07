@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用 Dataadapter 执行批处理操作
 title: 使用 DataAdapter 执行批处理操作
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e72ed5af-b24f-486c-8429-c8fd2208f844
-ms.openlocfilehash: 9dd6abb91b3549e3bc8b4ae84cbb227171512ecb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d0472761a0a3893872f073cfe25921066a0f96bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177418"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672330"
 ---
 # <a name="performing-batch-operations-using-dataadapters"></a>使用 DataAdapter 执行批处理操作
 
@@ -26,7 +27,7 @@ ms.locfileid: "91177418"
 
  启用批处理更新时，的 <xref:System.Data.IDbCommand.UpdatedRowSource%2A>、`UpdateCommand` 和 `InsertCommand` 的 `DeleteCommand` 属性值应设置为 <xref:System.Data.UpdateRowSource.None> 或 <xref:System.Data.UpdateRowSource.OutputParameters>。 执行批处理更新时，命令的 <xref:System.Data.IDbCommand.UpdatedRowSource%2A> 或 <xref:System.Data.UpdateRowSource.FirstReturnedRecord> 的 <xref:System.Data.UpdateRowSource.Both> 属性值无效。  
   
- 下面的过程演示 `UpdateBatchSize` 属性的用法。 此过程采用两个自变量：一个 <xref:System.Data.DataSet> 对象，该对象的列表示**ProductCategory**表中的**ProductCategoryID**和**Name**字段，一个整数表示批大小 (批处理) 中的行数。 代码创建一个新的 <xref:System.Data.SqlClient.SqlDataAdapter> 对象，并设置其 <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>、<xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A> 和 <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A> 属性。 代码假定 <xref:System.Data.DataSet> 对象具有经过修改的行。 它设置 `UpdateBatchSize` 属性并执行更新。  
+ 下面的过程演示 `UpdateBatchSize` 属性的用法。 该过程采用两个自变量，一个是 <xref:System.Data.DataSet> 对象，它具有表示 Production.ProductCategory 表中 ProductCategoryID 和 Name 字段的列；另一个是表示批大小的整数（批处理中的行数）  。 代码创建一个新的 <xref:System.Data.SqlClient.SqlDataAdapter> 对象，并设置其 <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>、<xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A> 和 <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A> 属性。 代码假定 <xref:System.Data.DataSet> 对象具有经过修改的行。 它设置 `UpdateBatchSize` 属性并执行更新。  
   
 ```vb  
 Public Sub BatchUpdate( _  
@@ -129,7 +130,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
   
 ## <a name="handling-batch-update-related-events-and-errors"></a>处理与批处理更新相关的事件和错误  
 
- **DataAdapter**有两个与更新相关的事件： **RowUpdating**和**RowUpdated**。 在 ADO.NET 的以前版本中，如果禁用批处理，则每处理一行就会生成一次这些事件。 **RowUpdating** 是在更新执行之前生成的，在数据库更新完成后生成 **RowUpdated** 。  
+ DataAdapter 包含两个与更新有关的事件：RowUpdating 和 RowUpdated 。 在 ADO.NET 的以前版本中，如果禁用批处理，则每处理一行就会生成一次这些事件。 **RowUpdating** 是在更新执行之前生成的，在数据库更新完成后生成 **RowUpdated** 。  
   
 ### <a name="event-behavior-changes-with-batch-updates"></a>批处理更新的事件行为更改  
 
@@ -147,7 +148,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
   
  数据提供程序和后端数据库服务器确定支持哪些 SQL 构造以执行批处理。 如果为执行提交了不支持的语句，则可能引发异常。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [DataAdapter 和 DataReader](dataadapters-and-datareaders.md)
 - [使用 DataAdapter 更新数据源](updating-data-sources-with-dataadapters.md)

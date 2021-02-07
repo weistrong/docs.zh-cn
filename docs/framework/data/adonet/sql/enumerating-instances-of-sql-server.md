@@ -1,20 +1,21 @@
 ---
+description: '了解详细信息：枚举 SQL Server 的实例 (ADO.NET) '
 title: 枚举 SQL Server 的实例
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ddf1c83c-9d40-45e6-b04d-9828c6cbbfdc
-ms.openlocfilehash: 2966157921894356836765edee6160d8e0f3e6e0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: dd52142a06d5c7203eb8a2a14d0e6fc48f1e2a27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156129"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672304"
 ---
 # <a name="enumerating-instances-of-sql-server-adonet"></a>枚举 SQL Server 的实例 (ADO.NET)
 
-SQL Server 允许应用程序在当前网络中查找 SQL Server 实例。 <xref:System.Data.Sql.SqlDataSourceEnumerator> 类向应用程序开发人员公开此信息，提供了包含所有可见服务器的相关信息的 <xref:System.Data.DataTable>。 此返回的表包含网络上可用服务器实例的列表（该列表与用户尝试创建新连接时提供的列表匹配），并展开“连接属性”对话框上包含所有可用服务器的下拉列表****。 显示的结果并不总是完整的。  
+SQL Server 允许应用程序在当前网络中查找 SQL Server 实例。 <xref:System.Data.Sql.SqlDataSourceEnumerator> 类向应用程序开发人员公开此信息，提供了包含所有可见服务器的相关信息的 <xref:System.Data.DataTable>。 此返回的表包含网络上可用服务器实例的列表（该列表与用户尝试创建新连接时提供的列表匹配），并展开“连接属性”对话框上包含所有可用服务器的下拉列表。 显示的结果并不总是完整的。  
   
 > [!NOTE]
 > 与大多数 Windows 服务一样，最好以尽可能小的特权运行 SQL Browser 服务。 有关 SQL Browser 服务以及如何管理其行为的更多信息，请参见 SQL Server 联机丛书。  

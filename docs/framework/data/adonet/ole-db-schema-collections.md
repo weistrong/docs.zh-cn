@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： OLE DB 架构集合
 title: OLE DB 架构集合
 ms.date: 03/30/2017
 ms.assetid: 6380c36b-658e-4d67-91e8-7131ef4a7c2c
-ms.openlocfilehash: 90899a123b3dafcd47a50ef8f6eb003938b22a03
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d4d4bae5387575bdaeaf013ed690e95aa3259068
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672616"
 ---
 # <a name="ole-db-schema-collections"></a>OLE DB 架构集合
 
@@ -54,10 +55,10 @@ ms.locfileid: "91186934"
 |COLUMN_GUID|Guid|  
 |COLUMN_PROPID|Int64|  
 |ORDINAL_POSITION|Int64|  
-|COLUMN_HASDEFAULT|Boolean|  
+|COLUMN_HASDEFAULT|布尔|  
 |COLUMN_DEFAULT|字符串|  
 |COLUMN_FLAGS|Int64|  
-|IS_NULLABLE|Boolean|  
+|IS_NULLABLE|布尔|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -79,7 +80,7 @@ ms.locfileid: "91186934"
 |COLUMN_COMPFLAGS|Int32|  
 |COLUMN_SORTID|Int32|  
 |COLUMN_TDSCOLLATION|Byte[]|  
-|IS_COMPUTED|Boolean|  
+|IS_COMPUTED|布尔|  
   
 ### <a name="procedures"></a>过程  
   
@@ -104,9 +105,9 @@ ms.locfileid: "91186934"
 |PARAMETER_NAME|字符串|  
 |ORDINAL_POSITION|Int32|  
 |PARAMETER_TYPE|Int32|  
-|PARAMETER_HASDEFAULT|Boolean|  
+|PARAMETER_HASDEFAULT|布尔|  
 |PARAMETER_DEFAULT|字符串|  
-|IS_NULLABLE|Boolean|  
+|IS_NULLABLE|布尔|  
 |DATA_TYPE|Int32|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
 |CHARACTER_OCTET_LENGTH|Int64|  
@@ -133,15 +134,15 @@ ms.locfileid: "91186934"
 |INDEX_CATALOG|字符串|  
 |INDEX_SCHEMA|字符串|  
 |INDEX_NAME|字符串|  
-|PRIMARY_KEY|Boolean|  
-|UNIQUE|Boolean|  
-|CLUSTERED|Boolean|  
+|PRIMARY_KEY|布尔|  
+|UNIQUE|布尔|  
+|CLUSTERED|布尔|  
 |TYPE|Int32|  
 |FILL_FACTOR|Int32|  
 |INITIAL_SIZE|Int32|  
 |NULLS|Int32|  
-|SORT_BOOKMARKS|Boolean|  
-|AUTO_UPDATE|Boolean|  
+|SORT_BOOKMARKS|布尔|  
+|AUTO_UPDATE|布尔|  
 |NULL_COLLATION|Int32|  
 |ORDINAL_POSITION|Int64|  
 |COLUMN_NAME|字符串|  
@@ -151,7 +152,7 @@ ms.locfileid: "91186934"
 |CARDINALITY|小数|  
 |PAGES|Int32|  
 |FILTER_CONDITION|字符串|  
-|INTEGRATED|Boolean|  
+|INTEGRATED|布尔|  
   
 ## <a name="microsoft-oracle-ole-db-provider"></a>Microsoft Oracle OLE DB 提供程序  
 
@@ -196,10 +197,10 @@ ms.locfileid: "91186934"
 |COLUMN_GUID|Guid|  
 |COLUMN_PROPID|Int64|  
 |ORDINAL_POSITION|Int64|  
-|COLUMN_HASDEFAULT|Boolean|  
+|COLUMN_HASDEFAULT|布尔|  
 |COLUMN_DEFAULT|字符串|  
 |COLUMN_FLAGS|Int64|  
-|IS_NULLABLE|Boolean|  
+|IS_NULLABLE|布尔|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -243,7 +244,7 @@ ms.locfileid: "91186934"
 |COLUMN_PROPID|Int64|  
 |ROWSET_NUMBER|Int64|  
 |ORDINAL_POSITION|Int64|  
-|IS_NULLABLE|Boolean|  
+|IS_NULLABLE|布尔|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -261,8 +262,8 @@ ms.locfileid: "91186934"
 |TABLE_SCHEMA|字符串|  
 |TABLE_NAME|字符串|  
 |VIEW_DEFINITION|字符串|  
-|CHECK_OPTION|Boolean|  
-|IS_UPDATABLE|Boolean|  
+|CHECK_OPTION|布尔|  
+|IS_UPDATABLE|布尔|  
 |DESCRIPTION|字符串|  
 |DATE_CREATED|DateTime|  
 |DATE_MODIFIED|DateTime|  
@@ -277,15 +278,15 @@ ms.locfileid: "91186934"
 |INDEX_CATALOG|字符串|  
 |INDEX_SCHEMA|字符串|  
 |INDEX_NAME|字符串|  
-|PRIMARY_KEY|Boolean|  
-|UNIQUE|Boolean|  
-|CLUSTERED|Boolean|  
+|PRIMARY_KEY|布尔|  
+|UNIQUE|布尔|  
+|CLUSTERED|布尔|  
 |TYPE|Int32|  
 |FILL_FACTOR|Int32|  
 |INITIAL_SIZE|Int32|  
 |NULLS|Int32|  
-|SORT_BOOKMARKS|Boolean|  
-|AUTO_UPDATE|Boolean|  
+|SORT_BOOKMARKS|布尔|  
+|AUTO_UPDATE|布尔|  
 |NULL_COLLATION|Int32|  
 |ORDINAL_POSITION|Int64|  
 |COLUMN_NAME|字符串|  
@@ -295,7 +296,7 @@ ms.locfileid: "91186934"
 |CARDINALITY|小数|  
 |PAGES|Int32|  
 |FILTER_CONDITION|字符串|  
-|INTEGRATED|Boolean|  
+|INTEGRATED|布尔|  
   
 ## <a name="microsoft-jet-ole-db-provider"></a>Microsoft Jet OLE DB       
 
@@ -336,10 +337,10 @@ ms.locfileid: "91186934"
 |COLUMN_GUID|Guid|  
 |COLUMN_PROPID|Int64|  
 |ORDINAL_POSITION|Int64|  
-|COLUMN_HASDEFAULT|Boolean|  
+|COLUMN_HASDEFAULT|布尔|  
 |COLUMN_DEFAULT|字符串|  
 |COLUMN_FLAGS|Int64|  
-|IS_NULLABLE|Boolean|  
+|IS_NULLABLE|布尔|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -379,8 +380,8 @@ ms.locfileid: "91186934"
 |TABLE_SCHEMA|字符串|  
 |TABLE_NAME|字符串|  
 |VIEW_DEFINITION|字符串|  
-|CHECK_OPTION|Boolean|  
-|IS_UPDATABLE|Boolean|  
+|CHECK_OPTION|布尔|  
+|IS_UPDATABLE|布尔|  
 |DESCRIPTION|字符串|  
 |DATE_CREATED|DateTime|  
 |DATE_MODIFIED|DateTime|  
@@ -395,15 +396,15 @@ ms.locfileid: "91186934"
 |INDEX_CATALOG|字符串|  
 |INDEX_SCHEMA|字符串|  
 |INDEX_NAME|字符串|  
-|PRIMARY_KEY|Boolean|  
-|UNIQUE|Boolean|  
-|CLUSTERED|Boolean|  
+|PRIMARY_KEY|布尔|  
+|UNIQUE|布尔|  
+|CLUSTERED|布尔|  
 |TYPE|Int32|  
 |FILL_FACTOR|Int32|  
 |INITIAL_SIZE|Int32|  
 |NULLS|Int32|  
-|SORT_BOOKMARKS|Boolean|  
-|AUTO_UPDATE|Boolean|  
+|SORT_BOOKMARKS|布尔|  
+|AUTO_UPDATE|布尔|  
 |NULL_COLLATION|Int32|  
 |ORDINAL_POSITION|Int64|  
 |COLUMN_NAME|字符串|  
@@ -413,7 +414,7 @@ ms.locfileid: "91186934"
 |CARDINALITY|小数|  
 |PAGES|Int32|  
 |FILTER_CONDITION|字符串|  
-|INTEGRATED|Boolean|  
+|INTEGRATED|布尔|  
   
 ## <a name="see-also"></a>请参阅
 

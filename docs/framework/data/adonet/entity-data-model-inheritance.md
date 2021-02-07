@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：实体数据模型：继承
 title: 实体数据模型：继承
 ms.date: 03/30/2017
 ms.assetid: 42c7ef24-710a-4af9-8493-cd41c399ecb0
-ms.openlocfilehash: 057040eee411988c46adc9c4cabcfe5f5a185e1b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 69d05800f397c122243fbaa497c67634fa78d4b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672850"
 ---
 # <a name="entity-data-model-inheritance"></a>实体数据模型：继承
 
