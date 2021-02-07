@@ -1,15 +1,16 @@
 ---
+description: '了解有关以下方面的详细信息：模块 (Visual Basic) '
 title: 模块
 ms.date: 07/20/2015
 helpviewer_keywords:
 - modules, Visual Basic
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
-ms.openlocfilehash: df7e32a81746a97a78a4a2a28e57032affa73cc0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 59a7c1ba94f8ad013ad2c9b6e335d0e9f411058a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84386590"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674748"
 ---
 # <a name="modules-visual-basic"></a>模块 (Visual Basic)
 
@@ -30,6 +31,6 @@ Visual Basic 提供了多个模块，使你能够在代码中简化常见任务�
 |<xref:Microsoft.VisualBasic.Strings>|包含一些成员，这些成员执行字符串操作，如重新格式化字符串、搜索字符串、获取字符串的长度等。|  
 |<xref:Microsoft.VisualBasic.VBMath>|包含成员执行数学运算。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 语言参考](index.md)

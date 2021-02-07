@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30145：无法发出程序集： <error message>
 title: 无法发出程序集：<error message>
 ms.date: 08/14/2018
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30145
 ms.assetid: 2e7eb2b9-eda6-4bdb-95cc-72c7f0be7528
-ms.openlocfilehash: c088f273c100b1a7eefcf74047865093f378e970
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 015ab6e1d186495d72bddd65678ab15088c0f1b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674878"
 ---
 # <a name="bc30145-unable-to-emit-assembly-error-message"></a>BC30145：无法发出程序集： \<error message>
 
@@ -59,7 +60,7 @@ Visual Basic 编译器调用程序集链接器 (*Al.exe*（也称为 Alink) ）�
 
 6. 在 Visual Studio 中，将 .NET 程序集引用添加到刚创建的文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe（强名称工具）](../../../framework/tools/sn-exe-strong-name-tool.md)

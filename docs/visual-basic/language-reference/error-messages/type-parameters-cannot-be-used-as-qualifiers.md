@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC32098：不能将类型参数用作限定符
 title: 类型参数不能用作限定符
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32098
 ms.assetid: bab05325-dde8-4621-a5f6-368b5b7b2d76
-ms.openlocfilehash: 14e6094b0cc129eba86db1808c0f0575955f5e75
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 61be8e81c9cf6c7a8339c7bbf0ad9566f582eb57
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675047"
 ---
 # <a name="bc32098-type-parameters-cannot-be-used-as-qualifiers"></a>BC32098：不能将类型参数用作限定符
 
@@ -39,7 +40,7 @@ End Function
 
 2. 如果需要使用构造类型来查找要限定的编程元素，则必须使用其他程序逻辑。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [References to Declared Elements](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)

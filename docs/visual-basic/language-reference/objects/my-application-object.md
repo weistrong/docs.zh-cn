@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： My. Application 对象
 title: My.Application 对象
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application object
 ms.assetid: a0ecfccf-acf7-49ec-a08b-72e6458c5c8d
-ms.openlocfilehash: 89ca6f9b3bac384a1155f236134f32e61c51a01e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fa9f91cf100c6008f2f3b8c85c9792fa6ffd4904
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674553"
 ---
 # <a name="myapplication-object"></a>My.Application 对象
 
@@ -33,7 +34,7 @@ ms.locfileid: "90875359"
   
  **程序集：** Microsoft.VisualBasic.dll) 中的 Visual Basic 运行时库 (  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [My.Application.Info 对象](my-application-info-object.md)
 - [My.Application.Log 对象](my-application-log-object.md)

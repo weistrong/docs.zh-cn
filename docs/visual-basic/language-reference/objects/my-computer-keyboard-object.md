@@ -1,15 +1,16 @@
 ---
+description: 了解更多： "我的计算机" 对象
 title: My.Computer.Keyboard 对象
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Computer.Keyboard object
 ms.assetid: 78dec9be-4e69-4ede-b9be-2ac34bec2b26
-ms.openlocfilehash: 8a645e8e0701e479b46ccbe3056994b49e8692c5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6f2a0a7fc096ee4045b51fcbbf2ce7d0737cb6a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674384"
 ---
 # <a name="mycomputerkeyboard-object"></a>My.Computer.Keyboard 对象
 
@@ -29,6 +30,6 @@ ms.locfileid: "90867436"
   
  **程序集：** Microsoft.VisualBasic.dll) 中的 Visual Basic 运行时库 (  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [My.Computer 对象](my-computer-object.md)

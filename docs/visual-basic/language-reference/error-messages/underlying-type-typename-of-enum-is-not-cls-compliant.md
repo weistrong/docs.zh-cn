@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC40032： <typename> 枚举的基础类型不符合 CLS
 title: 枚举的基础类型 <typename> 不符合 CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40032
 ms.assetid: 32bf1949-fd73-456c-a323-bf1ffe1320ed
-ms.openlocfilehash: 42c2398945b97d68161af6fb3c3b69909f4aaf39
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: aebee5a9e0cd7f2e780d0171ad59dcfd4fd1d940
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674787"
 ---
 # <a name="bc40032-underlying-type-typename-of-enum-is-not-cls-compliant"></a>BC40032： \<typename> 枚举的基础类型不符合 CLS
 
@@ -42,7 +43,7 @@ ms.locfileid: "92161512"
 
 - 如果要与自动化或 COM 对象进行交互，请记住，某些类型的数据宽度与 .NET Framework 中的不同。 例如，`uint` 在其他环境中通常为 16 位。 如果要将16位参数传递给此类组件，请 `UShort` `UInteger` 在托管的 Visual Basic 代码中将其声明为而不是。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [反射 (Visual Basic)](../../programming-guide/concepts/reflection.md)
 - [反射](../../../framework/reflection-and-codedom/reflection.md)
