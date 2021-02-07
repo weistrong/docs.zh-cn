@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CeeSectionAttr 枚举
 title: CeeSectionAttr 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2fb80298f6eef331b5b7ae4a46222ce97ede6f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 13cfb635aaa606905745146d7c3caae3f9162e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732731"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678856"
 ---
 # <a name="ceesectionattr-enumeration"></a>CeeSectionAttr 枚举
 
@@ -57,6 +58,6 @@ typedef enum  {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

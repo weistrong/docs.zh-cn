@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： MDAInfo 结构
 title: MDAInfo 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fb8c14f7-d461-43d1-8b47-adb6723b9b93
 topic_type:
 - apiref
-ms.openlocfilehash: 8e88d90e3291d21888fae7aa162f84b6377658c5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5c42537a68d38e6cff3d70dcb796cd733ce64a1e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679740"
 ---
 # <a name="mdainfo-structure"></a>MDAInfo 结构
 
@@ -41,7 +42,7 @@ typedef struct _MDAInfo {
 |`lpMDACaption`|当前 MDA 的标题。 标题描述触发事件的故障类型 `Event_MDAFired` 。|  
 |`lpMDAMessage`|当前 MDA 提供的输出消息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  托管调试助手 (Mda) 是调试辅助工具，可与公共语言运行时 (CLR) 来执行任务，例如，在运行时执行引擎中标识无效条件或转储有关引擎状态的附加信息。 Mda 生成的 XML 消息与其他难以捕获的事件有关。 它们对于调试托管代码和非托管代码之间的转换特别有用。  
   
@@ -63,7 +64,7 @@ typedef struct _MDAInfo {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载结构](hosting-structures.md)
 - [使用托管调试助手诊断错误](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

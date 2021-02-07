@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： LPOVERLAPPED_COMPLETION_ROUTINE 函数指针
 title: LPOVERLAPPED_COMPLETION_ROUTINE 函数指针
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
 topic_type:
 - apiref
-ms.openlocfilehash: a3a45a13073cf422064d28554a274e068db6f517
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6645e6a9746404a4ae355a22cf16e6d164c63bed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679818"
 ---
 # <a name="lpoverlapped_completion_routine-function-pointer"></a>LPOVERLAPPED_COMPLETION_ROUTINE 函数指针
 
@@ -50,7 +51,7 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
  `lpOverlapped`  
  中指向结构的指针，该结构包含用于完成 i/o 请求的信息。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  指向该函数的 `LPOVERLAPPED_COMPLETION_ROUTINE` 点是回调函数，并且必须由宿主应用程序的编写器实现。 回调函数允许主机处理已完成的 i/o 请求。  
   
@@ -64,6 +65,6 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [弃用的 CLR 承载函数](deprecated-clr-hosting-functions.md)

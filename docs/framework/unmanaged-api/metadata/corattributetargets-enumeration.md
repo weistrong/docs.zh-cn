@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorAttributeTargets 枚举
 title: CorAttributeTargets 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 694c0fa0-7011-41a9-9dfd-f0e16ea574b5
 topic_type:
 - apiref
-ms.openlocfilehash: fbe721bad56ec2be434039f00e741ad9a177815f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6f80df31b9da8591fac3d979ede1e9bf0f8ecfc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678483"
 ---
 # <a name="corattributetargets-enumeration"></a>CorAttributeTargets 枚举
 
@@ -80,7 +81,7 @@ typedef enum CorAttributeTargets
 |`catAll`|可以对任何应用程序元素应用属性。|  
 |`catClassMembers`|特性可应用于类的成员。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CorAttributeTargets`枚举值可以与按位 "或" 运算组合在一起，以获取首选组合。  
   
@@ -94,6 +95,6 @@ typedef enum CorAttributeTargets
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

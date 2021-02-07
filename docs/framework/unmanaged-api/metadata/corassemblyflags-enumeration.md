@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorAssemblyFlags 枚举
 title: CorAssemblyFlags 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9
 topic_type:
 - apiref
-ms.openlocfilehash: 615c4ac95ab777e8081e630cafb6671e64dea78a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bd74534b1f607eea15f1d8615f66723428ddae3f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678479"
 ---
 # <a name="corassemblyflags-enumeration"></a>CorAssemblyFlags 枚举
 
@@ -85,6 +86,6 @@ typedef enum CorAssemblyFlags {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

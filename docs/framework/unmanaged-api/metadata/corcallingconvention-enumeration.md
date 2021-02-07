@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorCallingConvention 枚举
 title: CorCallingConvention 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 69156fbf-7219-43bf-b4b8-b13f1a2fcb86
 topic_type:
 - apiref
-ms.openlocfilehash: c9b20500a4a9e4649a938e00e3b059d1395da1d3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2e823fe3566ef7a54f759cd5debbbd7d5dcf3ceb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678436"
 ---
 # <a name="corcallingconvention-enumeration"></a>CorCallingConvention 枚举
 
@@ -75,6 +76,6 @@ typedef enum CorCallingConvention
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

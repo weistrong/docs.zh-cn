@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： LoadLibraryShim 函数
 title: LoadLibraryShim 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1
 topic_type:
 - apiref
-ms.openlocfilehash: d5e9ba0023b6516eb6190f32bc65b2b8b6af79f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 829d64b5215fc21b2d8c8b753f5ad99212267b6a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680000"
 ---
 # <a name="loadlibraryshim-function"></a>LoadLibraryShim 函数
 
@@ -62,7 +63,7 @@ HRESULT LoadLibraryShim (
 |S_OK|该方法已成功完成。|  
 |CLR_E_SHIM_RUNTIMELOAD|加载 `szDllName` 需要加载公共语言运行时 (clr) ，而 clr 的必要版本无法加载。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此函数用于加载 .NET Framework 可再发行组件包中包含的 Dll。 它不会加载用户生成的 Dll。  
   
@@ -77,6 +78,6 @@ HRESULT LoadLibraryShim (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [弃用的 CLR 承载函数](deprecated-clr-hosting-functions.md)

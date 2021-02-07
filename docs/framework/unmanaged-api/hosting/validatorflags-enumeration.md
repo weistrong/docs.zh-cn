@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ValidatorFlags 枚举
 title: ValidatorFlags 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
 topic_type:
 - apiref
-ms.openlocfilehash: 92c430cdb8b46cf75dde9a8395ce713116dc05a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 473b0eef2851126256e1ea6b6d2b82be32e03e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732848"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679116"
 ---
 # <a name="validatorflags-enumeration"></a>ValidatorFlags 枚举
 
@@ -57,7 +58,7 @@ enum ValidatorFlags {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRErrorReportingManager 接口](iclrerrorreportingmanager-interface.md)
 - [承载枚举](hosting-enumerations.md)

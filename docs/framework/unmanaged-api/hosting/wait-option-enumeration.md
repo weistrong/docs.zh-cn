@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： WAIT_OPTION 枚举
 title: WAIT_OPTION 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 962fc293-8ded-4b3b-90ce-2c21a4f1b244
 topic_type:
 - apiref
-ms.openlocfilehash: 056d41df328de5796eec9f04589205d18b408f1f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1d651909e0f62f2db7478a6e0b37139d1f953196
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679129"
 ---
 # <a name="wait_option-enumeration"></a>WAIT_OPTION 枚举
 
@@ -43,7 +44,7 @@ typedef enum {
 |`WAIT_MSGPUMP`|当线程被阻止时，通知宿主必须在当前 OS 线程上抽取消息。 运行时仅在线程上指定此值 <xref:System.Threading.ApartmentState.STA> 。|  
 |`WAIT_NOTINDEADLOCK`|向宿主通知指定的同步请求无法被宿主中断。 也就是说，主机无法返回 `HOST_E_DEADLOCK` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [IHostTaskManager：： Sleep](ihosttaskmanager-sleep-method.md)和[IHostTaskManager：： SwitchToTask](ihosttaskmanager-switchtotask-method.md)方法都采用此类型的参数。  
   
@@ -57,6 +58,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载枚举](hosting-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： AssemblyFlags 枚举
 title: AssemblyFlags 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 40f9bd9e-16ec-447e-81b0-168c875e9866
 topic_type:
 - apiref
-ms.openlocfilehash: 561b4d68a574a2859286fb5f2e2d950518a9d29d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 17cc0dec305c21d21693fe8f4f8d82c039f73278
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678999"
 ---
 # <a name="assemblyflags-enumeration"></a>AssemblyFlags 枚举
 
@@ -47,7 +48,7 @@ typedef enum {
 |`afNonSideBySideProcess`|指定程序集不能与其他版本在同一进程中一起执行。|  
 |`afNonSideBySideMachine`|如果程序集在同一台计算机上运行，则指定该程序集无法与其他版本一起执行。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  0x0010 和0x0070 （含）之间的值用于描述所引用程序集的并行兼容性功能。 如果未设置这些值，则假定程序集是并行兼容的。  
   
@@ -61,7 +62,7 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)
 - [IMetaDataAssemblyEmit 接口](imetadataassemblyemit-interface.md)
