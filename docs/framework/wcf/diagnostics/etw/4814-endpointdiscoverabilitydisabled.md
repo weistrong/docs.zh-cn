@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4814-EndpointDiscoverabilityDisabled
 title: 4814 - EndpointDiscoverabilityDisabled
 ms.date: 03/30/2017
 ms.assetid: b3805218-4865-42d8-976a-cbbd4ff6fcc8
-ms.openlocfilehash: 59177cfbbf215fba78ec5b9b0549c4b283b32f18
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1bb787bd3e477e2874c70253fd46b2cbdd4e9579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760220"
 ---
 # <a name="4814---endpointdiscoverabilitydisabled"></a>4814 - EndpointDiscoverabilityDisabled
 
@@ -17,10 +18,10 @@ ms.locfileid: "96285936"
 |-|-|  
 |ID|4814|  
 |关键字|发现|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当禁用了终结点的可发现性时，发出此事件。  
   

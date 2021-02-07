@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4815-EndpointDiscoverabilityEnabled
 title: 4815 - EndpointDiscoverabilityEnabled
 ms.date: 03/30/2017
 ms.assetid: cd027b98-da63-4046-8243-c09e30870b5f
-ms.openlocfilehash: ab84ae9f19b326723df9d0d2ba1259d419379f1c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 75c5e2fad51ff89fc74771833b0ee8cc0e1995ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285858"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760194"
 ---
 # <a name="4815---endpointdiscoverabilityenabled"></a>4815 - EndpointDiscoverabilityEnabled
 
@@ -17,10 +18,10 @@ ms.locfileid: "96285858"
 |-|-|  
 |ID|4815|  
 |关键字|发现|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当启用了终结点的可发现性时，将发出此事件。  
   

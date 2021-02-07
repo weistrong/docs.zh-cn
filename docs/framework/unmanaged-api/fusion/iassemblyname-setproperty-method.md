@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IAssemblyName：： SetProperty 方法
 title: IAssemblyName::SetProperty 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 496c3add-f60b-4073-943f-d1bcf33330cb
 topic_type:
 - apiref
-ms.openlocfilehash: 04b3e73e2166efb2ec0821d21da3da4c53b0ca4b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cab132c2cd8a0744a2a946a1d8b21f49012c6eac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688648"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760676"
 ---
 # <a name="iassemblynamesetproperty-method"></a>IAssemblyName::SetProperty 方法
 
@@ -55,6 +56,6 @@ HRESULT SetProperty (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IAssemblyName 接口](iassemblyname-interface.md)

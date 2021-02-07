@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IAppDomainSetup 接口
 title: IAppDomainSetup 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1844da85-c031-40bf-bea4-1a3d12a36c8c
 topic_type:
 - apiref
-ms.openlocfilehash: d504101747995557ba526c88de451ebab7b3c556
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8fd224308ea68f7b56ae174c7f71fc4f89630101
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760579"
 ---
 # <a name="iappdomainsetup-interface"></a>IAppDomainSetup 接口
 
@@ -27,7 +28,7 @@ ms.locfileid: "95698547"
   
 ## <a name="properties"></a>属性  
   
-|properties|说明|  
+|属性|说明|  
 |--------------|-----------------|  
 |<xref:System.AppDomainSetup.ApplicationBase%2A>|获取或设置包含该应用程序的目录的名称。|  
 |<xref:System.AppDomainSetup.ApplicationName%2A>|获取或设置应用程序的名称。|  
@@ -40,7 +41,7 @@ ms.locfileid: "95698547"
 |<xref:System.AppDomainSetup.ShadowCopyDirectories%2A>|获取或设置目录的名称，这些目录包含要进行卷影复制的程序集。|  
 |<xref:System.AppDomainSetup.ShadowCopyFiles%2A>|获取或设置一个字符串，该字符串指示阴影复制是打开还是关闭。 有效值为 "true" 或 "false"。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IAppDomainSetup`接口对应于 <xref:System.IAppDomainSetup> 类型实现的托管接口 <xref:System.AppDomainSetup> 。 <xref:System.IAppDomainSetup?displayProperty=nameWithType>有关其属性的详细说明，请参阅。  
   
@@ -56,7 +57,7 @@ ms.locfileid: "95698547"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainSetup>

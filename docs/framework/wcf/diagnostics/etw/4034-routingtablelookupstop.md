@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4034-RoutingTableLookupStop
 title: 4034 - RoutingTableLookupStop
 ms.date: 03/30/2017
 ms.assetid: 8a7ae705-77fd-42ce-a181-814765873d73
-ms.openlocfilehash: 694dd89dc9d42262db7ac82ad8c1c376811fcf53
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bcbd788e3c4c7e8e4af5d56635babc56d6322f83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96270258"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760311"
 ---
 # <a name="4034---routingtablelookupstop"></a>4034 - RoutingTableLookupStop
 
@@ -20,7 +21,7 @@ ms.locfileid: "96270258"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当路由表查找已停止时，发出此事件。  
   

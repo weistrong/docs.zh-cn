@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IAppDomainBinding 接口
 title: IAppDomainBinding 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 368881ab-c4ea-4731-bf22-c596aac7c66c
 topic_type:
 - apiref
-ms.openlocfilehash: 652739ad51e0a177f7b0fc6c0c9a11508c820bb3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3de559af023311f705f9f7dc6eb9785788216a83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721716"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760610"
 ---
 # <a name="iappdomainbinding-interface"></a>IAppDomainBinding 接口
 
@@ -41,6 +42,6 @@ ms.locfileid: "95721716"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)

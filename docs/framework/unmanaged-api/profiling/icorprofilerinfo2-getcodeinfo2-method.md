@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo2：： GetCodeInfo2 方法
 title: ICorProfilerInfo2::GetCodeInfo2 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 532da6ee-7f0a-401b-a61e-fc47ec235d2e
 topic_type:
 - apiref
-ms.openlocfilehash: e88fe1b3c93ca278d0e64a5eb3274c86bd8f0f6d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 69b877b2dfe3bf23cd2b13417386c45d51de44d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727128"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760465"
 ---
 # <a name="icorprofilerinfo2getcodeinfo2-method"></a>ICorProfilerInfo2::GetCodeInfo2 方法
 
@@ -51,7 +52,7 @@ HRESULT GetCodeInfo2(
  `codeInfos`  
  [out] 调用方提供的缓冲区。 返回此方法后，它包含一个 `COR_PRF_CODE_INFO` 结构数组，每个结构描述一个本机代码块。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  范围按 Microsoft 中间语言 (MSIL) 偏移递增的顺序进行排序。  
   
@@ -69,7 +70,7 @@ HRESULT GetCodeInfo2(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetCodeInfo3 方法](icorprofilerinfo4-getcodeinfo3-method.md)
 - [ICorProfilerInfo2 接口](icorprofilerinfo2-interface.md)

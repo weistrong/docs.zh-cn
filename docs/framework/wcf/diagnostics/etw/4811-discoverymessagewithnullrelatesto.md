@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4811-DiscoveryMessageWithNullRelatesTo
 title: 4811 - DiscoveryMessageWithNullRelatesTo
 ms.date: 03/30/2017
 ms.assetid: dab901e8-a2b3-41c1-a76b-bcd8b3c7c29a
-ms.openlocfilehash: 2f2eeee50ed6925ab1f3762dbdd898c375756b7e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 40b56c7b114246cf28301603b3c33fbf4434d28b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760259"
 ---
 # <a name="4811---discoverymessagewithnullrelatesto"></a>4811 - DiscoveryMessageWithNullRelatesTo
 
@@ -17,10 +18,10 @@ ms.locfileid: "96267413"
 |-|-|  
 |ID|4811|  
 |关键字|发现|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  在发现消息由于消息标头不包含所需的 RelatesTo 属性而被 DiscoveryClient 丢弃时，将发出此事件。  
   
