@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ITypeNameBuilder：： AddSzArray 方法
 title: ITypeNameBuilder::AddSzArray 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,33 +16,33 @@ helpviewer_keywords:
 ms.assetid: a6a46296-af14-4c53-9744-f7a1e3f3028a
 topic_type:
 - apiref
-ms.openlocfilehash: c8d966fad422196c7342fb007354bb7e0a35ca90
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9d3bf8eaf62476e69132c38c9a08a7ac0bf7b3c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732401"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680611"
 ---
-# <a name="itypenamebuilderaddszarray-method"></a><span data-ttu-id="7d37e-102">ITypeNameBuilder::AddSzArray 方法</span><span class="sxs-lookup"><span data-stu-id="7d37e-102">ITypeNameBuilder::AddSzArray Method</span></span>
+# <a name="itypenamebuilderaddszarray-method"></a><span data-ttu-id="a1b6b-103">ITypeNameBuilder::AddSzArray 方法</span><span class="sxs-lookup"><span data-stu-id="a1b6b-103">ITypeNameBuilder::AddSzArray Method</span></span>
 
-<span data-ttu-id="7d37e-103">此方法支持 .NET Framework 基础结构，但不适合直接在代码中使用。</span><span class="sxs-lookup"><span data-stu-id="7d37e-103">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
+<span data-ttu-id="a1b6b-104">此方法支持 .NET Framework 基础结构，但不适合直接在代码中使用。</span><span class="sxs-lookup"><span data-stu-id="a1b6b-104">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7d37e-104">语法</span><span class="sxs-lookup"><span data-stu-id="7d37e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a1b6b-105">语法</span><span class="sxs-lookup"><span data-stu-id="a1b6b-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT AddSzArray ( );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="7d37e-105">要求</span><span class="sxs-lookup"><span data-stu-id="7d37e-105">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="a1b6b-106">要求</span><span class="sxs-lookup"><span data-stu-id="a1b6b-106">Requirements</span></span>  
 
- <span data-ttu-id="7d37e-106">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="7d37e-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="a1b6b-107">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="a1b6b-107">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="7d37e-107">**标头：** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="7d37e-107">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="a1b6b-108">**标头：** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="a1b6b-108">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="7d37e-108">**库：** 作为中的资源包含 MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="7d37e-108">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="a1b6b-109">**库：** 作为中的资源包含 MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="a1b6b-109">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="7d37e-109">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7d37e-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="a1b6b-110">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a1b6b-110">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7d37e-110">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7d37e-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a1b6b-111">请参阅</span><span class="sxs-lookup"><span data-stu-id="a1b6b-111">See also</span></span>
 
-- [<span data-ttu-id="7d37e-111">承载接口</span><span class="sxs-lookup"><span data-stu-id="7d37e-111">Hosting Interfaces</span></span>](hosting-interfaces.md)
+- [<span data-ttu-id="a1b6b-112">承载接口</span><span class="sxs-lookup"><span data-stu-id="a1b6b-112">Hosting Interfaces</span></span>](hosting-interfaces.md)
