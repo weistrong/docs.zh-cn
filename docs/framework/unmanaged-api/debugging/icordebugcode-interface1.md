@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugCode 接口
 title: ICorDebugCode 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7bd14fb6-8b54-4484-a891-e3c21859c019
 topic_type:
 - apiref
-ms.openlocfilehash: 03cbc1a598ba6c0166f72ff404c239763956c996
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce67c48501783bbe00152f0ba2c224e6e7dde6d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711136"
 ---
 # <a name="icordebugcode-interface"></a>ICorDebugCode 接口
 
@@ -39,7 +40,7 @@ ms.locfileid: "95687601"
 |[GetVersionNumber 方法](icordebugcode-getversionnumber-method.md)|获取一个从1开始的数字，该数字标识此表示的代码的版本 `ICorDebugCode` 。|  
 |[IsIL 方法](icordebugcode-isil-method.md)|获取一个值，该值指示是否 `ICorDebugCode` 在 MSIL 中编译此。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugCode` 可以表示 MSIL 或本机代码。 表示 MSIL 代码的 "ICorDebugFunction" 对象可以有零个或一个 `ICorDebugCode` 关联的对象。 表示本机代码的 "ICorDebugFunction" 对象可以有任意数量的 `ICorDebugCode` 关联对象。  
   
@@ -56,7 +57,7 @@ ms.locfileid: "95687601"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugCode3 接口](icordebugcode3-interface.md)
 - [调试接口](debugging-interfaces.md)

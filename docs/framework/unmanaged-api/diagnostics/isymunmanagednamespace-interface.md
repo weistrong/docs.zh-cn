@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedNamespace 接口
 title: ISymUnmanagedNamespace 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d42bea4e-5848-4e43-a883-69af7a313ce9
 topic_type:
 - apiref
-ms.openlocfilehash: d9b295060426acd7f925bcf19c05ba216fdc2a4d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff2cd2286ab006411a70ff9aa32c4f0265a73995
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709836"
 ---
 # <a name="isymunmanagednamespace-interface"></a>ISymUnmanagedNamespace 接口
 
@@ -37,6 +38,6 @@ ms.locfileid: "95707893"
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [诊断符号存储区接口](diagnostics-symbol-store-interfaces.md)

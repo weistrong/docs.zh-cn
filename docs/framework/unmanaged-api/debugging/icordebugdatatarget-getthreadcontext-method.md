@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugDataTarget：： GetThreadContext 方法
 title: ICorDebugDataTarget::GetThreadContext 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8954268-1821-4b23-b665-dbb55f2af31b
 topic_type:
 - apiref
-ms.openlocfilehash: faacea6a2f04ef20025fd33adb4ce76eaf54f32c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf40579aa0a495af4e5e775334d177ca6f3da86f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679736"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710629"
 ---
 # <a name="icordebugdatatargetgetthreadcontext-method"></a>ICorDebugDataTarget::GetThreadContext 方法
 
@@ -50,7 +51,7 @@ HRESULT GetThreadContext(
  `pContext`  
  弄将存储线程上下文的缓冲区。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 Windows 平台上， `pContext` 必须是 `CONTEXT`) 在 [ICorDebugDataTarget：： GetPlatform](icordebugdatatarget-getplatform-method.md) 方法指定的计算机类型中定义的结构 (。 `contextFlags` 必须与结构的字段具有相同的值 `ContextFlags` `CONTEXT` 。 `CONTEXT`结构特定于处理器; 有关详细信息，请参阅 WinNT .h 文件。  
   
@@ -64,7 +65,7 @@ HRESULT GetThreadContext(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugDataTarget 接口](icordebugdatatarget-interface.md)
 - [调试接口](debugging-interfaces.md)

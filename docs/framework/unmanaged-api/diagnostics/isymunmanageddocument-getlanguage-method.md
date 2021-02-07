@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedDocument：： GetLanguage 方法
 title: ISymUnmanagedDocument::GetLanguage 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c6639418-e9f2-4a99-8ce2-ec9876e0bc79
 topic_type:
 - apiref
-ms.openlocfilehash: 075d46b0bbc68add0203daf7430afb712c998fe0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f30636303d310ed91aa4229f52a3197a29190d3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700972"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710304"
 ---
 # <a name="isymunmanageddocumentgetlanguage-method"></a>ISymUnmanagedDocument::GetLanguage 方法
 
@@ -42,6 +43,6 @@ HRESULT GetLanguage(
 
  如果方法成功，则 S_OK。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedDocument 接口](isymunmanageddocument-interface.md)

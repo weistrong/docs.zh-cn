@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedENCUpdate：： UpdateMethodLines 方法
 title: ISymUnmanagedENCUpdate::UpdateMethodLines 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 275ef87b-0b53-49f9-af6b-58506335dc06
 topic_type:
 - apiref
-ms.openlocfilehash: 99499b8717f219616b6b368e6393b4b7ca0a79d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6174f3aa980ccf2cdc07720e3aa90b7bb74a77af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710057"
 ---
 # <a name="isymunmanagedencupdateupdatemethodlines-method"></a>ISymUnmanagedENCUpdate::UpdateMethodLines 方法
 
@@ -54,6 +55,6 @@ HRESULT UpdateMethodLines(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedENCUpdate 接口](isymunmanagedencupdate-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugController：： SetAllThreadsDebugState 方法
 title: ICorDebugController::SetAllThreadsDebugState 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bdda4bd7-4743-4d58-a22b-8067e967db95
 topic_type:
 - apiref
-ms.openlocfilehash: d8375948be5820aaf6e879b82bcfde6471cccf3f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3bce5360833ae18c68bc8d7ea24f0dec7615f7a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710733"
 ---
 # <a name="icordebugcontrollersetallthreadsdebugstate-method"></a>ICorDebugController::SetAllThreadsDebugState 方法
 
@@ -43,7 +44,7 @@ HRESULT SetAllThreadsDebugState (
  `pExceptThisThread`  
  中一个指向 "ICorDebugThread" 对象的指针，该对象表示要从调试状态设置中免除的线程。 如果此值为 null，则不免除任何线程。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此 `SetAllThreadsDebugState` 方法可能会影响通过 [EnumerateThreads 方法](icordebugcontroller-enumeratethreads-method.md)不可见的线程，因此，通过方法挂起的线程 `SetAllThreadsDebugState` 需要通过 `SetAllThreadsDebugState` 方法恢复。  
   
@@ -57,4 +58,4 @@ HRESULT SetAllThreadsDebugState (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

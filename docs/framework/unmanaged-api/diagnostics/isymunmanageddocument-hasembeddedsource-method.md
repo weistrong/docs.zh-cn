@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedDocument：： HasEmbeddedSource 方法
 title: ISymUnmanagedDocument::HasEmbeddedSource 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 385fc4d3-365c-4645-b7b0-6c4c5344b79f
 topic_type:
 - apiref
-ms.openlocfilehash: 09bc0f87cd35f12a15566fb525c2ce42990ac69b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fcab83fea65d9a9e483bff9d2d75714c233718eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710122"
 ---
 # <a name="isymunmanageddocumenthasembeddedsource-method"></a>ISymUnmanagedDocument::HasEmbeddedSource 方法
 
@@ -42,6 +43,6 @@ HRESULT HasEmbeddedSource(
 
  如果方法成功，则 S_OK。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedDocument 接口](isymunmanageddocument-interface.md)

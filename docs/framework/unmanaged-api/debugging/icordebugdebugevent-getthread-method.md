@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugDebugEvent：： GetThread 方法
 title: ICorDebugDebugEvent::GetThread Method
 ms.date: 03/30/2017
 ms.assetid: 4f2e9a2c-8369-4a07-a881-ad5422626353
-ms.openlocfilehash: ca6aba7897d9e97743d29db49bd058e140f84e6e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1d476603572f31882f481d414e483c6712f1b5fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713582"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710395"
 ---
 # <a name="icordebugdebugeventgetthread-method"></a>ICorDebugDebugEvent::GetThread Method
 
@@ -26,7 +27,7 @@ HRESULT GetThread(
  ppThread  
  [输出] 指针指向代表事件发生线程的 ICorDebugThread 对象的地址。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -41,7 +42,7 @@ HRESULT GetThread(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [“ICor调试调试事件”接口](icordebugdebugevent-interface.md)
 - [调试接口](debugging-interfaces.md)

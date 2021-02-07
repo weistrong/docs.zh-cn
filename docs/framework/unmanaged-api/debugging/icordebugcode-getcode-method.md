@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugCode：： GetCode 方法
 title: ICorDebugCode::GetCode 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7137e3d1-1dad-48d8-8c37-16ac816534d3
 topic_type:
 - apiref
-ms.openlocfilehash: 20eac75a1f1d13b6a30267d56ff66024725e6f33
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 329770fac4f2b375c01dd68e4ea7114e59c609b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711279"
 ---
 # <a name="icordebugcodegetcode-method"></a>ICorDebugCode::GetCode 方法
 
@@ -56,7 +57,7 @@ HRESULT GetCode (
  `pcBufferSize`  
  弄返回的字节数。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果函数的代码已划分为多个块，则它们将按照增加的本机偏移量的顺序进行连接。 不检查指令边界。  
   
@@ -70,6 +71,6 @@ HRESULT GetCode (
   
  **.NET Framework 版本：** 1.1、1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetCodeChunks 方法](icordebugcode2-getcodechunks-method.md)

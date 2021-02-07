@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugDataTarget：： ReadVirtual 方法
 title: ICorDebugDataTarget::ReadVirtual 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55e57640-b3d2-413d-b4f4-fbc27fb8e37c
 topic_type:
 - apiref
-ms.openlocfilehash: 8fb0cfc72867653eaff65f3183dacf9191604290
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4525ba1e5dc685813d963dab96879b886987f38f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710590"
 ---
 # <a name="icordebugdatatargetreadvirtual-method"></a>ICorDebugDataTarget::ReadVirtual 方法
 
@@ -51,7 +52,7 @@ HRESULT ReadVirtual(
  `pBytesRead`  
  弄实际从目标地址中读取的字节数。 该值可以少于 `bytesRequested` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果可以读取指定开始地址处的第一个字节 () ，则调用应返回成功 (，以支持通过自描述长度有效读取数据结构，如) 以 null 结尾的字符串。  
   
@@ -65,7 +66,7 @@ HRESULT ReadVirtual(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugDataTarget 接口](icordebugdatatarget-interface.md)
 - [调试接口](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedDocument 接口
 title: ISymUnmanagedDocument 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5c26b366-6e81-467c-9dd0-02dd26fee0a3
 topic_type:
 - apiref
-ms.openlocfilehash: 83c683e1f60f13f7cee4ddc6fe5af5a94e36eb93
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd1907e570dd15ebcac3ee12aa09c626c9bb7787
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692171"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710135"
 ---
 # <a name="isymunmanageddocument-interface"></a>ISymUnmanagedDocument 接口
 
@@ -40,6 +41,6 @@ ms.locfileid: "95692171"
 |[GetURL 方法](isymunmanageddocument-geturl-method.md)|返回此文档的 URL。|  
 |[HasEmbeddedSource 方法](isymunmanageddocument-hasembeddedsource-method.md)|`true`如果文档在调试符号中嵌入了源，则返回; 否则返回 `false` 。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [诊断符号存储区接口](diagnostics-symbol-store-interfaces.md)
