@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1009-ActivityScheduled
 title: 1009 - ActivityScheduled
 ms.date: 03/30/2017
 ms.assetid: 307e38b6-d47e-47a4-9708-e74d8314b1a1
-ms.openlocfilehash: 812531d4206dfee20f183b9461330e71263b0bf8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 80ee250955a03927fb9db2b1242d420be77a6df8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755546"
 ---
 # <a name="1009---activityscheduled"></a>1009 - ActivityScheduled
 
@@ -17,10 +18,10 @@ ms.locfileid: "96239765"
 |-|-|  
 |ID|1009|  
 |关键字|WFRuntime|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示正在安排某一活动的执行。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96239765"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |ParentActivity|xs:string|父活动的类型名称。|  
 |ParentDisplayName|xs:string|父活动的显示名称。|  

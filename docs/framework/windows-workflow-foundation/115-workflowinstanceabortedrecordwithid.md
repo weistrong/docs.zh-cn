@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 115-WorkflowInstanceAbortedRecordWithId
 title: 115 - WorkflowInstanceAbortedRecordWithId
 ms.date: 03/30/2017
 ms.assetid: 0293dd4e-e6ae-473a-b3d6-c2d38f9bd875
-ms.openlocfilehash: 69c0c58de36a7fff916b11deba888b7cef7c626e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6d9eb387ba61a646cbf1423d01175b0230272ca5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285143"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755429"
 ---
 # <a name="115---workflowinstanceabortedrecordwithid"></a>115 - WorkflowInstanceAbortedRecordWithId
 
@@ -17,10 +18,10 @@ ms.locfileid: "96285143"
 |-|-|  
 |ID|115|  
 |关键字|HealthMonitoring、WFTracking|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例发出 WorkflowInstanceAbortedRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96285143"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  
