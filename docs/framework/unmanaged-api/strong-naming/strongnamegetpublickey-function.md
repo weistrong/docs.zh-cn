@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameGetPublicKey 函数
 title: StrongNameGetPublicKey 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5b58c87f-3f72-40df-9b9a-291076931cc3
 topic_type:
 - apiref
-ms.openlocfilehash: c97cc0c1d4c022583d0823abeff998e2ed5f719e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c94ffdd20e83b03da27b2f44ebbc279cfd8b8afc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710969"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670562"
 ---
 # <a name="strongnamegetpublickey-function"></a>StrongNameGetPublicKey 函数
 
@@ -65,7 +66,7 @@ BOOLEAN StrongNameGetPublicKey (
 
  `true` 成功完成时;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  公钥包含在 [PublicKeyBlob](publickeyblob-structure.md) 结构中。  
   
@@ -81,7 +82,7 @@ BOOLEAN StrongNameGetPublicKey (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameGetPublicKey 方法](../hosting/iclrstrongname-strongnamegetpublickey-method.md)
 - [StrongNameTokenFromPublicKey 方法](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md)

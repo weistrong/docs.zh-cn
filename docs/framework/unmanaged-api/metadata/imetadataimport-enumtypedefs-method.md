@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumTypeDefs 方法
 title: IMetaDataImport::EnumTypeDefs 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4e508711-da92-4381-aaf8-6803075cdaa2
 topic_type:
 - apiref
-ms.openlocfilehash: 4545f5f8d78e588c655a72340210a785b0feb619
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 28bd06b70573b780b687da9de0e13e17c29bb39a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670666"
 ---
 # <a name="imetadataimportenumtypedefs-method"></a>IMetaDataImport::EnumTypeDefs 方法
 
@@ -58,7 +59,7 @@ HRESULT EnumTypeDefs (
 |`S_OK`|`EnumTypeDefs` 已成功返回。|  
 |`S_FALSE`|没有要枚举的令牌。 在这种情况下， `pcTypeDefs` 为零。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  TypeDef 标记表示一种类型，如类或接口，以及通过扩展性机制添加的任何类型。  
   
@@ -72,7 +73,7 @@ HRESULT EnumTypeDefs (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

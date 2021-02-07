@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameSignatureSize 函数
 title: StrongNameSignatureSize 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4fde4cd0-f53e-4411-a2fe-fc5c54472f95
 topic_type:
 - apiref
-ms.openlocfilehash: 6a2b3afe66f1eaa358c5f80de50f14ceb730048b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3f22a6a4d5455af4dd17cb75edfd18befed7de3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670510"
 ---
 # <a name="strongnamesignaturesize-function"></a>StrongNameSignatureSize 函数
 
@@ -52,7 +53,7 @@ BOOLEAN StrongNameSignatureSize (
 
  `true` 成功完成时;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `StrongNameSignatureSize` 函数未成功完成，请调用 [StrongNameErrorInfo](strongnameerrorinfo-function.md) 函数来检索上次生成的错误。  
   
@@ -66,7 +67,7 @@ BOOLEAN StrongNameSignatureSize (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameSignatureSize 方法](../hosting/iclrstrongname-strongnamesignaturesize-method.md)
 - [ICLRStrongName 接口](../hosting/iclrstrongname-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSecurityManager：： SetThreadToken 方法
 title: IHostSecurityManager::SetThreadToken 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e951c345-8a86-4587-911b-a1a57bc6428a
 topic_type:
 - apiref
-ms.openlocfilehash: 5a2b2e5560c292598f0110de9445eb66ba794997
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 96fb8d487cecc0e62d9b7787c686c74898d99d70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671381"
 ---
 # <a name="ihostsecuritymanagersetthreadtoken-method"></a>IHostSecurityManager::SetThreadToken 方法
 
@@ -50,7 +51,7 @@ HRESULT SetThreadToken (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IHostSecurityManager::SetThreadToken` 的行为类似于具有相同名称的对应 Win32 函数，不同之处在于 Win32 函数允许调用方将句柄传入任意线程，同时 `IHostSecurityManager::SetThreadToken` 只能将标记与当前正在执行的线程关联。  
   
@@ -66,7 +67,7 @@ HRESULT SetThreadToken (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostSecurityManager 接口](ihostsecuritymanager-interface.md)
 - [IHostThreadPoolManager 接口](ihostthreadpoolmanager-interface.md)

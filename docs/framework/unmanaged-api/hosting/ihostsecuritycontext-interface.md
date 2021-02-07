@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSecurityContext 接口
 title: IHostSecurityContext 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 88e2eac0-8ccb-404f-abbc-287d55159842
 topic_type:
 - apiref
-ms.openlocfilehash: aafaa1d648396ddaa76193fa15cf7f74394777a9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c4c1be00a8b1c9df58797a0f2fc7e60abcab9673
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724801"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671615"
 ---
 # <a name="ihostsecuritycontext-interface"></a>IHostSecurityContext 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95724801"
 |------------|-----------------|  
 |[Capture 方法](ihostsecuritycontext-capture-method.md)|获取 `IHostSecurityContext` 从对 [IHostSecurityManager：： GetSecurityContext](ihostsecuritymanager-getsecuritycontext-method.md)的调用返回的实例的克隆。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主可以通过 CLR 和用户代码控制对线程标记的所有代码访问。 它还可以确保在异步操作或代码点之间跨受限制的代码访问传递完整的安全上下文信息。 `IHostSecurityContext` 封装此安全上下文信息，这对于运行时是不透明的。 运行时使用捕获此信息 `Capture` ，并将其移动到线程池辅助角色项调度、终结器执行和模块和类构造函数中。  
   
@@ -45,7 +46,7 @@ ms.locfileid: "95724801"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRHostProtectionManager 接口](iclrhostprotectionmanager-interface.md)
 - [IHostSecurityManager 接口](ihostsecuritymanager-interface.md)

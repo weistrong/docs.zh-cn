@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSecurityManager：： ImpersonateLoggedOnUser 方法
 title: IHostSecurityManager::ImpersonateLoggedOnUser 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: acc49ba0-f1d9-45ad-871f-9d053a89dcbe
 topic_type:
 - apiref
-ms.openlocfilehash: dd1d1af8072ac11e37bd2eb1a47d76b12685cb31
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b77e0a163551a48629898b1311fc19ba815aaf4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724775"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671576"
 ---
 # <a name="ihostsecuritymanagerimpersonateloggedonuser-method"></a>IHostSecurityManager::ImpersonateLoggedOnUser 方法
 
@@ -50,7 +51,7 @@ HRESULT ImpersonateLoggedOnUser (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用 `LogonUser` 或相关的 Win32 函数获取当前用户标识的凭据的句柄。  
   
@@ -66,7 +67,7 @@ HRESULT ImpersonateLoggedOnUser (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostSecurityContext 接口](ihostsecuritycontext-interface.md)
 - [IHostSecurityManager 接口](ihostsecuritymanager-interface.md)

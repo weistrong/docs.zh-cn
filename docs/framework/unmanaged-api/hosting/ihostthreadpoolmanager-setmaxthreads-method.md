@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostThreadPoolManager：： SetMaxThreads 方法
 title: IHostThreadPoolManager::SetMaxThreads 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 77cfd347-95c2-4425-b807-4ecc2a8d4578
 topic_type:
 - apiref
-ms.openlocfilehash: 68e806daa63d13ad6c1f3b5de634c20ca02e8eb4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 83266b05f639c0aa63e492bca525cbbf09a30775
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671238"
 ---
 # <a name="ihostthreadpoolmanagersetmaxthreads-method"></a>IHostThreadPoolManager::SetMaxThreads 方法
 
@@ -51,7 +52,7 @@ HRESULT SetMaxThreads (
 |E_FAIL|发生了未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_NOTIMPL|宿主不提供的实现 `SetMaxThreads` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主无需允许 CLR 配置线程池的大小。 出于实现、性能或可伸缩性等原因，某些主机可能需要对线程池进行独占控制。 在这种情况下，主机应返回 E_NOTIMPL 的 HRESULT 值。  
   
@@ -65,7 +66,7 @@ HRESULT SetMaxThreads (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Threading.ThreadPool.SetMaxThreads%2A>
 - <xref:System.Threading.ThreadPool>

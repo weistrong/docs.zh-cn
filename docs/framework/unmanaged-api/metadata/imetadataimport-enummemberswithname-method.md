@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumMembersWithName 方法
 title: IMetaDataImport::EnumMembersWithName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7c9e9120-3104-42f0-86ce-19a025f20dcc
 topic_type:
 - apiref
-ms.openlocfilehash: 35b82c33e54619eb9bebd5e5749ae202e905357a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bb6d8f0769029dccaf1f52dd211c67d47bf32a73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670757"
 ---
 # <a name="imetadataimportenummemberswithname-method"></a>IMetaDataImport::EnumMembersWithName 方法
 
@@ -59,7 +60,7 @@ HRESULT EnumMembersWithName (
  `pcTokens`  
  弄中返回的 MemberDef 令牌的实际数量 `rMembers` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法枚举字段和方法，而不是属性或事件。 与 [IMetaDataImport：： EnumMembers](imetadataimport-enummembers-method.md)不同，会 `EnumMembersWithName` 丢弃所有不具有指定名称的字段和成员标记。  
   
@@ -80,7 +81,7 @@ HRESULT EnumMembersWithName (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

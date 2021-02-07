@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSecurityManager：： GetSecurityContext 方法
 title: IHostSecurityManager::GetSecurityContext 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 958970d6-f6a2-4b84-b32a-f555cbaf8f61
 topic_type:
 - apiref
-ms.openlocfilehash: dfb96de02549e6d0f178c099793741f7fbd61d55
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0dc9e0380d2fb218b68f6beb85fa1ccba8826d85
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724788"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671555"
 ---
 # <a name="ihostsecuritymanagergetsecuritycontext-method"></a>IHostSecurityManager::GetSecurityContext 方法
 
@@ -54,7 +55,7 @@ HRESULT GetSecurityContext (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主可以通过 CLR 和用户代码控制对线程标记的所有代码访问。 它还可以确保在异步操作或代码点之间跨受限制的代码访问传递完整的安全上下文信息。 `IHostSecurityContext` 封装此安全上下文信息，这对于 CLR 是不透明的。 CLR 捕获此信息，并在线程池辅助角色项调度、终结器执行以及模块和类构造之间移动。  
   
@@ -68,7 +69,7 @@ HRESULT GetSecurityContext (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EContextType 枚举](econtexttype-enumeration.md)
 - [IHostSecurityContext 接口](ihostsecuritycontext-interface.md)

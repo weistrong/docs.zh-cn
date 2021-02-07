@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3312-MessageReadByEncoder
 title: 3312 - MessageReadByEncoder
 ms.date: 03/30/2017
 ms.assetid: cdcc8e3d-e2aa-4c5e-a580-bdf581a66709
-ms.openlocfilehash: 5cad3c3b5090e5ce00286d2e5c346a06e537f8ee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0a6a7ddf0faf1723f176eeb61dfaf8043fbb4129
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670406"
 ---
 # <a name="3312---messagereadbyencoder"></a>3312 - MessageReadByEncoder
 
@@ -17,10 +18,10 @@ ms.locfileid: "96279436"
 |-|-|  
 |ID|3312|  
 |关键字|通道|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  编码器读取消息时，将发出此事件。  
   

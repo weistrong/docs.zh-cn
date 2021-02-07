@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSemaphore 接口
 title: IHostSemaphore 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c0765321-656c-441e-bab5-58176292be1e
 topic_type:
 - apiref
-ms.openlocfilehash: cccbf9a28b16ffee14b3fd3ec43c376109d6ccec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 682f1f70925310e93f88f1dc314052e801a5e87b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671342"
 ---
 # <a name="ihostsemaphore-interface"></a>IHostSemaphore 接口
 
@@ -42,7 +43,7 @@ ms.locfileid: "95683051"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostAutoEvent 接口](ihostautoevent-interface.md)

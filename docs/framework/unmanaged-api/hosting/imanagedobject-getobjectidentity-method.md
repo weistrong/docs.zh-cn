@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IManagedObject：： GetObjectIdentity 方法
 title: IManagedObject::GetObjectIdentity 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b862ff3e-e480-4cdf-84e2-e1013334a467
 topic_type:
 - apiref
-ms.openlocfilehash: fc74b84bccceb1772bf3642e51ec88c562ce5dce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8929819bbf490680b5f3f1f47b9f3b8e830d57ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730704"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671160"
 ---
 # <a name="imanagedobjectgetobjectidentity-method"></a>IManagedObject::GetObjectIdentity 方法
 
@@ -47,7 +48,7 @@ HRESULT GetObjectIdentity (
  `pCCW`  
  弄指向 COM 经典 v 表中对象索引的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  托管对象的标识包括进程 GUID、应用程序域 ID 以及 COM 经典 v 表中对象的索引。  
   
@@ -61,6 +62,6 @@ HRESULT GetObjectIdentity (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IManagedObject 接口](imanagedobject-interface.md)

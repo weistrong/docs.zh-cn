@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSecurityManager 接口
 title: IHostSecurityManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c3be2cbd-2d93-438b-9888-9a0251b63c03
 topic_type:
 - apiref
-ms.openlocfilehash: 37f606a67bef79936c81b2a36f12a00d24bd82f1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 76ba26443fa2a4e65459dd073eb6d22031548112
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671537"
 ---
 # <a name="ihostsecuritymanager-interface"></a>IHostSecurityManager 接口
 
@@ -36,7 +37,7 @@ ms.locfileid: "95680529"
 |[SetSecurityContext 方法](ihostsecuritymanager-setsecuritycontext-method.md)|设置当前正在执行的线程的安全上下文。|  
 |[SetThreadToken 方法](ihostsecuritymanager-setthreadtoken-method.md)|设置当前正在执行的线程的句柄。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主可以通过公共语言运行时 (CLR) 和用户代码来控制对线程标记的所有代码访问。 它还可以确保在异步操作或代码点之间跨受限制的代码访问传递完整的安全上下文信息。 `IHostSecurityContext` 封装此安全上下文信息，这对于 CLR 是不透明的。  
   
@@ -60,7 +61,7 @@ ms.locfileid: "95680529"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostSecurityContext 接口](ihostsecuritycontext-interface.md)
 - [承载接口](hosting-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyEmit：:D efineExportedType 方法
 title: IMetaDataAssemblyEmit::DefineExportedType 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fad01d7a-3178-4c8c-9f0a-4641e3701c9b
 topic_type:
 - apiref
-ms.openlocfilehash: 6b30218cc7373494870ec54a3196857fcc5c08a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0da1b1eb0880b0ba9df0ba9ad70b460163dffc39
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671095"
 ---
 # <a name="imetadataassemblyemitdefineexportedtype-method"></a>IMetaDataAssemblyEmit::DefineExportedType 方法
 
@@ -63,7 +64,7 @@ HRESULT DefineExportedType (
  `pmdct`  
  弄指向返回的元数据标记的指针，该标记指示导出的类型。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ExportedType`必须为此程序集公开的每个类型定义元数据结构，该结构在包含清单的模块中实现。  
   
@@ -77,6 +78,6 @@ HRESULT DefineExportedType (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataAssemblyEmit 接口](imetadataassemblyemit-interface.md)

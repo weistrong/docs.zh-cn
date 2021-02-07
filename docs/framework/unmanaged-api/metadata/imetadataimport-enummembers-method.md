@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumMembers 方法
 title: IMetaDataImport::EnumMembers 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3fb8e178-342b-4c89-9bcf-f7f834e6cb77
 topic_type:
 - apiref
-ms.openlocfilehash: 92503df60ae44dfd44819fe3eda8e6a0549b2b66
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3b56b25c6c581f6bfc3303a55a49a12ffcc73494
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670809"
 ---
 # <a name="imetadataimportenummembers-method"></a>IMetaDataImport::EnumMembers 方法
 
@@ -62,7 +63,7 @@ HRESULT EnumMembers (
 |`S_OK`|`EnumMembers` 已成功返回。|  
 |`S_FALSE`|没有要枚举的 MemberDef 令牌。 在这种情况下， `pcTokens` 为零。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  枚举类的成员集合时， `EnumMembers` 只会返回 (字段和方法的成员，但 **不会** 返回直接在类上定义的属性或事件) 。 即使该类为这些继承成员提供了实现，它也不会返回类继承的任何成员。 若要枚举继承成员，调用方必须显式遍历继承链。 请注意，根据发出原始元数据的语言或编译器，继承链的规则可能会有所不同。
 
@@ -78,7 +79,7 @@ HRESULT EnumMembers (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

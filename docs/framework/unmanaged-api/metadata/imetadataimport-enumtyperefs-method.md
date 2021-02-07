@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumTypeRefs 方法
 title: IMetaDataImport::EnumTypeRefs 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b4896b8f-8e97-469c-8089-e72a025661b5
 topic_type:
 - apiref
-ms.openlocfilehash: e77520552eea9b58e4358cc5928e5ce666037009
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1155357e82c08660a852225f0b1a54629cbee0ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670614"
 ---
 # <a name="imetadataimportenumtyperefs-method"></a>IMetaDataImport::EnumTypeRefs 方法
 
@@ -58,7 +59,7 @@ HRESULT EnumTypeRefs (
 |`S_OK`|`EnumTypeRefs` 已成功返回。|  
 |`S_FALSE`|没有要枚举的令牌。 在这种情况下， `pcTypeRefs` 为零。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  TypeRef 标记表示对类型的引用。  
   
@@ -72,7 +73,7 @@ HRESULT EnumTypeRefs (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)
