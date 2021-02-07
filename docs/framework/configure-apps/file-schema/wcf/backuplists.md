@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <backupLists>
 title: <backupLists>
 ms.date: 03/30/2017
 ms.assetid: 593b3390-f65b-4684-ad40-0596b62f0954
-ms.openlocfilehash: 940bf28958251e7257b2cc19a9c5ff0059411bcd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9647c507f85eba6bfd001b34dbf617bc881d3f2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749696"
 ---
 # \<backupLists>
 
@@ -40,13 +41,13 @@ ms.locfileid: "91201546"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<filter>](filter.md)|包含当无法访问主终结点时路由服务将使用的终结点的列表。 .|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<routing>](routing.md)|表示用于定义一组路由筛选器的配置节，这些筛选器确定计算传入消息时要使用的 Windows Communication Foundation 的类型 (WCF) ，以及用于 <xref:System.ServiceModel.Dispatcher.MessageFilter> 定义筛选器匹配时要将消息发送到的目标终结点的路由表。|  
   

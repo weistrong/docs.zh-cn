@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <add> 信息： <issuerChannelBehaviors>
 title: <add> 的 <issuerChannelBehaviors>
 ms.date: 03/30/2017
 ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db
-ms.openlocfilehash: cf7ac2691ad1c641352a8047373ced538b19e983
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ccd8ba015b7a6837c74ce2c051a794d36ce8ceaa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750294"
 ---
 # <a name="add-of-issuerchannelbehaviors"></a>\<add> 的 \<issuerChannelBehaviors>
 
@@ -50,15 +51,15 @@ ms.locfileid: "70398334"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[\<issuerChannelBehaviors>](issuerchannelbehaviors-element.md)|包含与指定的服务令牌服务通信时要使用的 Windows Communication Foundation （WCF）客户端终结点行为的集合。|
+|[\<issuerChannelBehaviors>](issuerchannelbehaviors-element.md)|包含与指定的服务令牌服务通信时要使用的 Windows Communication Foundation (WCF) 客户端终结点行为的集合。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-`issuerAddress` 包含客户端希望与之进行通信的安全令牌服务的 URI。 `behaviorConfiguration`指向应用程序在 Windows Communication Foundation （WCF）创建的通道中使用的终结点行为，以从安全令牌服务获取已颁发的令牌。
+`issuerAddress` 包含客户端希望与之进行通信的安全令牌服务的 URI。 `behaviorConfiguration` 指向应用程序在 Windows Communication Foundation (WCF) 创建的通道中使用的终结点行为，以从安全令牌服务获取已颁发的令牌。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>

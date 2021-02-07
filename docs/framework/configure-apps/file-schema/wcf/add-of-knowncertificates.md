@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <add> 信息： <knownCertificates>
 title: <add> 的 <knownCertificates>
 ms.date: 03/30/2017
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
-ms.openlocfilehash: 453593918de15613edb801cca8a16c9dbf71aa90
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1669495e6119a35543e39230fc5dcc986ee2dec5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750281"
 ---
 # <a name="add-of-knowncertificates"></a>\<add> 的 \<knownCertificates>
 
@@ -40,7 +41,7 @@ ms.locfileid: "91176079"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |findValue|字符串。 要搜索的值。|  
 |storeLocation|枚举。 要搜索的两个存储位置之一。|  
@@ -55,19 +56,19 @@ ms.locfileid: "91176079"
   
 ## <a name="x509findtype-attribute"></a>x509FindType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|值包括：FindByThumbprint、FindBySubjectName、FindBySubjectDistinguishedName、FindByIssuerName、FindByIssuerDistinguishedName、FindBySerialNumber、FindByTimeValid、FindByTimeNotYetValid、FindBySerialNumber、FindByTimeExpired、FindByTemplateName、FindByApplicationPolicy、FindByCertificatePolicy、FindByExtension、FindByKeyUsage 和 FindBySubjectKeyIdentifier。|  
   
 ## <a name="storelocation-attribute"></a>storeLocation 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|CurrentUser 或 LocalMachine。|  
   
 ## <a name="storename-attribute"></a>storeName 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|值包括：AddressBook、AuthRoot、CertificateAuthority、Disallowed、My、Root、TrustedPeople 和 TrustedPublisher。|  
   
@@ -77,7 +78,7 @@ ms.locfileid: "91176079"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<knownCertificates>](knowncertificates.md)|表示一个 X.509 证书集合，这些证书由安全令牌服务 (STS) 提供以用于验证安全令牌。|  
   

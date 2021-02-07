@@ -1,12 +1,14 @@
 ---
+description: 了解详细信息： @ServiceHost
 title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
-ms.openlocfilehash: cb425d9f4dadd97e93946a2b4cd9d059ea8504ce
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: d16fda68bdc753121f02f6332dabedf236fac257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051358"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750307"
 ---
 # <a name="servicehost"></a>\@服务主机
 
@@ -36,7 +38,7 @@ CodeBehind = "CodeBehind"
 
 ### <a name="debug"></a>调试
 
-指示是否应用调试符号编译 Windows Communication Foundation （WCF）服务。 `true`如果应用调试符号编译 WCF 服务，则为; 否则为。否则为 `false` 。
+指示是否应用调试符号编译 Windows Communication Foundation (WCF) 服务。 `true` 如果应用调试符号编译 WCF 服务，则为; 否则为。否则为 `false` 。
 
 ### <a name="language"></a>语言
 
@@ -44,13 +46,13 @@ CodeBehind = "CodeBehind"
 
 ### <a name="codebehind"></a>CodeBehind
 
-指定实现 XML Web service 的源文件，当实现 XML Web service 的类未驻留在同一文件中，且尚未编译成程序集并放置在*\bin*目录中时，则为。
+指定实现 XML Web service 的源文件，当实现 XML Web service 的类未驻留在同一文件中，且尚未编译成程序集并放置在 *\bin* 目录中时，则为。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-<xref:System.ServiceModel.ServiceHost>用于承载服务的是 Windows Communication Foundation （WCF）编程模型中的一个扩展点。 由于 <xref:System.ServiceModel.ServiceHost> 可能属于宿主环境不应直接实例化的多态类型，因此使用工厂模式对其进行实例化。
+<xref:System.ServiceModel.ServiceHost>用于承载服务的是 Windows Communication Foundation (WCF) 编程模型中的一个扩展点。 由于 <xref:System.ServiceModel.ServiceHost> 可能属于宿主环境不应直接实例化的多态类型，因此使用工厂模式对其进行实例化。
 
-默认实现使用 <xref:System.ServiceModel.Activation.ServiceHostFactory> 创建 <xref:System.ServiceModel.ServiceHost> 的实例。 但你可以通过在指令中指定工厂实现的 CLR 类型名称来提供自己的工厂（一个返回派生主机的工厂） `@ServiceHost` 。
+默认实现使用 <xref:System.ServiceModel.Activation.ServiceHostFactory> 创建 <xref:System.ServiceModel.ServiceHost> 的实例。 但你可以通过在指令中指定工厂实现的 CLR 类型名称来提供自己的工厂 (一个返回派生主机) `@ServiceHost` 。
 
 若要使用自定义服务主机工厂而不是默认工厂，只需在指令中提供类型名称，如下所示 `@ServiceHost` 。
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <httpDigest> 元素
 title: <httpDigest> 元素
 ms.date: 03/30/2017
 ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
-ms.openlocfilehash: 523df7d5847ba7003e60f3882183b50cb18f6b51
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2b11edcaab88ff3a2b437b1e886997e08b8c9fee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749657"
 ---
 # <a name="httpdigest-element"></a>\<httpDigest> 元素
 
@@ -33,7 +34,7 @@ ms.locfileid: "91202482"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`impersonationLevel`|设置客户端用于与服务器进行通信的模拟首选项。 服务器上不强制使用客户端所选择的模拟模式。 有效值包括以下值：<br /><br /> -标识：服务器可以获取客户端的标识和特权，但不能模拟客户端。<br />-模拟：服务器可以在本地系统上模拟客户端的安全上下文。<br />-委派：服务器可以在远程系统上模拟客户端的安全上下文。<br />-Anonymous：服务器无法模拟或标识客户端。<br />-None：不分配模拟级别。<br /><br /> 默认值为 Identification。 此属性的类型为 <xref:System.Security.Principal.TokenImpersonationLevel>。|  
   
@@ -43,7 +44,7 @@ ms.locfileid: "91202482"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|指定用于向服务验证客户端身份的凭据。|  
   

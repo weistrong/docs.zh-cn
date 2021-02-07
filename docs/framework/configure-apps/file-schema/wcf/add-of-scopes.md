@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <add> 信息： <scopes>
 title: <add> 的 <scopes>
 ms.date: 03/30/2017
 ms.assetid: 0563a7d8-fc84-4c85-9066-af32665857c2
-ms.openlocfilehash: 1f5b5ea621614880286181c7584863ea024b3d04
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e5582a7599c221e9ac00e03178911290e18ff536
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149005"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750229"
 ---
 # <a name="add-of-scopes"></a>\<add> 的 \<scopes>
 
@@ -54,7 +55,7 @@ ms.locfileid: "91149005"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<scopes>](scopes.md)|包含一个配置元素集合，这些元素指定可用于在查询时筛选服务终结点的自定义范围 URI。|  
   

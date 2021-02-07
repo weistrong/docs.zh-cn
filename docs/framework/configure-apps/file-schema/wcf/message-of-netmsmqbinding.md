@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <message> 信息： <netMsmqBinding>
 title: <message> 的 <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77
-ms.openlocfilehash: 5a4a4e8b645ee2c607988ac3031af537c93ca8c0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 0e8cf641ef8ba5361318f7b658d5d60beef6ce56
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749579"
 ---
 # <a name="message-of-netmsmqbinding"></a>\<message> 的 \<netMsmqBinding>
 
@@ -42,8 +43,8 @@ ms.locfileid: "73736756"
 
 |属性|说明|
 |---------------|-----------------|
-|algorithmSuite|设置消息加密和密钥包装算法，这些算法用于针对通过 MSMQ 传输发送的消息实现基于消息的安全性。<br /><br /> 默认值为 `Aes256`。 此属性的类型为 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>。|
-|clientCredentialType|指定针对通过 MSMQ 传输发送的消息执行客户端身份验证时要使用的凭据类型。 有效值包括以下值：<br /><br /> -None：这允许服务与匿名客户端交互。 服务和客户端都不需要凭据。<br />-Windows：这使得 SOAP 交换在 Windows 凭据的已验证上下文下。 此设置总是执行基于 Kerberos 的身份验证。<br />-UserName：这使服务可以要求使用用户名凭据对客户端进行身份验证。 在这种情况下，需要使用以下行为指定 `clientCredentials` 凭据 **：** Windows Communication Foundation （WCF）不支持发送密码摘要，也不支持使用密码派生密钥并使用此类密钥来实现消息安全性。 因此，在使用用户名凭据时，WCF 会强制使用交换。 此模式要求使用 `clientCredential` 行为和 `serviceCertificate` 在客户端指定服务证书。 <br /><br /> -Certificate：使服务可以要求使用证书对客户端进行身份验证。 在此情况下，需要使用 `clientCredentials` 行为指定客户端凭据。 在此情况下，需要使用 `clientCredentials` 行为，通过指定 `serviceCertificate` 来指定服务凭据。<br />-CardSpace：这允许服务要求使用 CardSpace 对客户端进行身份验证。 必须在 `serviceCertificate` 行为中设置 `clientCredential`。<br /><br /> 默认值为 `Windows`。 此属性的类型为 <xref:System.ServiceModel.MessageCredentialType>。|
+|algorithmSuite|设置消息加密和密钥包装算法，这些算法用于针对通过 MSMQ 传输发送的消息实现基于消息的安全性。<br /><br /> 默认值是 `Aes256`。 此属性的类型为 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>。|
+|clientCredentialType|指定针对通过 MSMQ 传输发送的消息执行客户端身份验证时要使用的凭据类型。 有效值包括以下值：<br /><br /> -None：这允许服务与匿名客户端交互。 服务和客户端都不需要凭据。<br />-Windows：这使得 SOAP 交换在 Windows 凭据的已验证上下文下。 此设置总是执行基于 Kerberos 的身份验证。<br />-UserName：这使服务可以要求使用用户名凭据对客户端进行身份验证。 在这种情况下，需要使用以下行为指定 `clientCredentials` 凭据 **：**  Windows Communication Foundation (WCF) 不支持发送密码摘要，也不支持使用密码派生密钥并使用此类密钥来实现消息安全性。 因此，在使用用户名凭据时，WCF 会强制使用交换。 此模式要求使用 `clientCredential` 行为和 `serviceCertificate` 在客户端指定服务证书。 <br /><br /> -Certificate：使服务可以要求使用证书对客户端进行身份验证。 在此情况下，需要使用 `clientCredentials` 行为指定客户端凭据。 在此情况下，需要使用 `clientCredentials` 行为，通过指定 `serviceCertificate` 来指定服务凭据。<br />-CardSpace：这允许服务要求使用 CardSpace 对客户端进行身份验证。 必须在 `serviceCertificate` 行为中设置 `clientCredential`。<br /><br /> 默认值是 `Windows`。 此属性的类型为 <xref:System.ServiceModel.MessageCredentialType>。|
 
 ### <a name="child-elements"></a>子元素
 
@@ -51,11 +52,11 @@ ms.locfileid: "73736756"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<security>](security-of-netmsmqbinding.md)|定义绑定的安全设置。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>

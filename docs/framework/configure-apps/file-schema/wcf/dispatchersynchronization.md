@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <dispatcherSynchronization>
 title: <dispatcherSynchronization>
 ms.date: 03/30/2017
 ms.assetid: cc030f9c-4e38-4b14-94dc-9a0e41ec8e2d
-ms.openlocfilehash: b95f25217c2a3558846cc7a0ef43e21aacd2ee2a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 93664dec3648ed58df7e3e5c0760f1694c60ba7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398000"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749597"
 ---
 # \<dispatcherSynchronization>
   
@@ -48,11 +49,11 @@ ms.locfileid: "70398000"
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |  
+| 元素 | 说明 |  
 | ------- | ----------- |  
 | [\<behavior>](behavior-of-endpointbehaviors.md)|指定终结点行为。 |
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Configuration.DispatcherSynchronizationElement>
 - <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior>

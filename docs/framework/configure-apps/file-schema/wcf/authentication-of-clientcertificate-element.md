@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <authentication> 元素的详细 <clientCertificate> 信息
 title: <authentication> of <clientCertificate> 元素
 ms.date: 03/30/2017
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
-ms.openlocfilehash: 13296dbc2b3bc8836770197a1549586c841b4635
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 346e1012fd9d799b093be15381aebbc026ea2591
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749891"
 ---
 # <a name="authentication-of-clientcertificate-element"></a>\<authentication> of \<clientCertificate> 元素
 
@@ -39,14 +40,14 @@ ms.locfileid: "91201598"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |customCertificateValidatorType|可选的字符串。 一个用于验证自定义类型的类型和程序集。 当 `certificateValidationMode` 设置为 `Custom` 时，必须设置此属性。|  
 |certificateValidationMode|可选的枚举。 指定用来验证凭据的其中一种模式。 此特性的类型为 <xref:System.ServiceModel.Security.X509CertificateValidationMode>。 如果设置为 <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom?displayProperty=nameWithType>，则还必须提供 `customCertificateValidator`。 默认值为 <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust?displayProperty=nameWithType>。|  
 |includeWindowsGroups|可选的布尔值。 指定 Windows 组是否包含在安全上下文中。 将此属性设置为 `true` 会影响性能，因为这会导致完全组扩展。 如果不需要建立用户所属组的列表，请将此属性设置为 `false`。|  
 |mapClientCertificateToWindowsAccount|布尔值。 指定是否可以使用证书将客户端映射到 Windows 标识。 为此，必须启用 Active Directory。|  
-|revocationMode|可选的枚举。 用于检查吊销证书列表 (RCL) 的一种模式。 默认为 `Online`。 使用 HTTP 传输安全性时，将忽略此值。|  
-|trustedStoreLocation|可选的枚举。 两个系统存储位置之一：`LocalMachine` 或 `CurrentUser`。 在向客户端协商服务证书时使用此值。 针对指定存储位置中的 " **受信任人** " 存储执行验证。 默认为 `CurrentUser`。|  
+|revocationMode|可选的枚举。 用于检查吊销证书列表 (RCL) 的一种模式。 默认值为 `Online`。 使用 HTTP 传输安全性时，将忽略此值。|  
+|trustedStoreLocation|可选的枚举。 两个系统存储位置之一：`LocalMachine` 或 `CurrentUser`。 在向客户端协商服务证书时使用此值。 针对指定存储位置中的 " **受信任人** " 存储执行验证。 默认值为 `CurrentUser`。|  
   
 ## <a name="customcertificatevalidatortype-attribute"></a>customCertificateValidatorType 属性  
   
@@ -56,21 +57,21 @@ ms.locfileid: "91201598"
   
 ## <a name="certificatevalidationmode-attribute"></a>certificateValidationMode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|下列值之一：None、PeerTrust、ChainTrust、PeerOrChainTrust 和 Custom。<br /><br /> 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="revocationmode-attribute"></a>revocationMode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|下列值之一：NoCheck、Online 和 Offline。 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="trustedstorelocation-attribute"></a>trustedStoreLocation 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
-|枚举|以下值之一：`LocalMachine` 或 `CurrentUser`。 默认为 `CurrentUser`。 如果客户端应用程序在系统帐户下运行，则证书通常位于 `LocalMachine`。 如果客户端应用程序在用户帐户下运行，则证书通常位于 `CurrentUser`。|  
+|枚举|以下值之一：`LocalMachine` 或 `CurrentUser`。 默认值为 `CurrentUser`。 如果客户端应用程序在系统帐户下运行，则证书通常位于 `LocalMachine`。 如果客户端应用程序在用户帐户下运行，则证书通常位于 `CurrentUser`。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -78,7 +79,7 @@ ms.locfileid: "91201598"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<clientCertificate>](clientcertificate-of-servicecredentials.md)|定义用于针对服务进行客户端身份验证的 X.509 证书。|  
   

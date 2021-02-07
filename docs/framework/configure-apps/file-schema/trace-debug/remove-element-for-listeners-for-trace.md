@@ -1,4 +1,5 @@
 ---
+description: 详细了解： <remove> <listeners> 的元素 <trace>
 title: <remove>的元素 <listeners><trace>
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - remove element
 - <remove> element
 ms.assetid: 9a5cd1b5-be1a-485f-8f0c-2890ad3ef3e0
-ms.openlocfilehash: 01b797e1fb62d32e9f0d44c54b803dd969615361
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8b863cb535c28f090374e284717d5bf38f22e881
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173830"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750593"
 ---
 # <a name="remove-element-for-listeners-for-trace"></a>\<remove>的元素 \<listeners>\<trace>
 
@@ -36,9 +37,9 @@ ms.locfileid: "91173830"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|name|必需的特性。<br /><br /> 要从 **侦听器** 集合中删除的侦听器的名称。|  
+|**name**|必需的特性。<br /><br /> 要从 **侦听器** 集合中删除的侦听器的名称。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -46,7 +47,7 @@ ms.locfileid: "91173830"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`listeners`|指定用于收集、存储和路由消息的侦听器。 侦听器将跟踪输出定向到适当的目标。|  

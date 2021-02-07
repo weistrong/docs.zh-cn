@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <baseAddressPrefixFilters>
 title: <baseAddressPrefixFilters>
 ms.date: 03/30/2017
 ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
-ms.openlocfilehash: ce224a2a1d6d96f2bc72e9291e7256d264d86d50
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9212838393ead04bdcd475b314bb2707e6f899ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749670"
 ---
 # \<baseAddressPrefixFilters>
 
@@ -41,13 +42,13 @@ ms.locfileid: "91149022"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add-of-baseaddressprefixfilter.md)|添加一个配置元素，用于指定服务主机所使用的基址的前缀筛选器。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceHostingEnvironment>](servicehostingenvironment.md)|定义服务承载环境要为特定传输实例化的类型。|  
   

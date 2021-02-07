@@ -1,13 +1,14 @@
 ---
+description: 了解有关 WCF 的详细信息： <add>
 title: <add> WCF 的
 ms.date: 03/30/2017
 ms.assetid: c196f6d7-77f6-4266-973c-305b2b4dd8a2
-ms.openlocfilehash: b3b2883e711cea036ed8a61631e698a9d41fcadd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4fa9985ea101cc020f4fd9796f0874aff8b60720
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750034"
 ---
 # <a name="add-of-wcf"></a>\<add> WCF 的
 
@@ -51,7 +52,7 @@ ms.locfileid: "91172926"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<participants>](../windows-workflow-foundation/participants.md)|跟踪参与者的列表|  
   

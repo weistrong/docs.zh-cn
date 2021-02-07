@@ -1,17 +1,18 @@
 ---
+description: 了解详细 <add> 信息： <serviceActivations>
 title: <add> 的 <serviceActivations>
 ms.date: 03/30/2017
 ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
-ms.openlocfilehash: a0f68717f765482f53e675458fae63d1a374d6fb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 53c89321c8cde1966a04870c62fa0777610ff547
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750138"
 ---
 # <a name="add-of-serviceactivations"></a>\<add> 的 \<serviceActivations>
 
-一个配置元素，允许您定义映射到 Windows Communication Foundation （WCF）服务类型的虚拟服务激活设置。 使用此配置元素可以在不使用 .svc 文件的情况下激活承载在 WAS/IIS 中的服务。
+一个配置元素，可用于定义虚拟服务激活设置，这些设置映射到 Windows Communication Foundation (WCF) 服务类型。 使用此配置元素可以在不使用 .svc 文件的情况下激活承载在 WAS/IIS 中的服务。
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -40,7 +41,7 @@ ms.locfileid: "70850327"
 |---------------|-----------------|
 |工厂|一个字符串，指定生成服务激活元素的工厂的 CLR 类型名称。|
 |服务|实现服务的 ServiceType（完全限定的 Typename 或短的 Typename（将它置于 App_Code 文件夹中时））。|
-|relativeAddress|当前 IIS 应用程序内的相对地址，例如“Service.svc”。 在 WCF 4.0 中，此相对地址必须包含其中一个已知文件扩展名（.svc，. .xamlx，...）。RelativeUrl 不存在物理文件|
+|relativeAddress|当前 IIS 应用程序内的相对地址，例如“Service.svc”。 在 WCF 4.0 中，此相对地址必须包含一个已知文件扩展名 ( .xamlx，... ) 。RelativeUrl 不存在物理文件|
 
 ### <a name="child-elements"></a>子元素
 
@@ -48,11 +49,11 @@ ms.locfileid: "70850327"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<serviceHostingEnvironment>](servicehostingenvironment.md)|一个描述激活设置的配置节。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 下面的示例演示如何在 web.config 文件中配置激活设置。
 
@@ -74,7 +75,7 @@ ms.locfileid: "70850327"
 
 基于配置的激活支持通过 http 协议和非 http 协议进行激活。 它需要 relativeAddress 中的扩展，即 xoml 或 .xamlx。 您可以将自己的扩展名映射到已知的 buildProviders，然后就可以通过任意扩展名激活服务。 如果发生冲突，`<serviceActivations>` 节将重写 .svc 注册。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Configuration.ServiceActivationElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>

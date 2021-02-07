@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <trace> 元素
 title: <trace> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - trace element
 - trace listener, <trace> element
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
-ms.openlocfilehash: 617b42a0be2be272a78b33be997cce632d1c6dcb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 470bc300911656a9c9951e52e3883ba5c8b01c59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198920"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750320"
 ---
 # <a name="trace-element"></a>\<trace> 元素
 
@@ -47,27 +48,27 @@ ms.locfileid: "91198920"
   
 ## <a name="autoflush-attribute"></a>autoflush 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`false`|不会自动刷新输出缓冲区。 这是默认设置。|  
 |`true`|自动刷新输出缓冲区。|  
   
 ## <a name="usegloballock-attribute"></a>useGlobalLock 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`false`|如果侦听器是线程安全的，则不使用全局锁定;否则，将使用全局锁。|  
 |`true`|无论侦听器是否是线程安全的，都使用全局锁。 这是默认设置。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<listeners>](listeners-element-for-trace.md)|指定用于收集、存储和路由消息的侦听器。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.diagnostics`|指定用于收集、存储和路由消息的跟踪侦听器以及对跟踪开关设置的级别。|  

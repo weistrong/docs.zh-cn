@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <add> 元素的详细 <scopedCertificates> 信息
 title: <add> of <scopedCertificates> 元素
 ms.date: 03/30/2017
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
-ms.openlocfilehash: 28777ecac130295a8ba82a8e4d67cc519d088d8a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4c267164ccf065edee79a6aaaa9aaddc14d95909
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750268"
 ---
 # <a name="add-of-scopedcertificates-element"></a>\<add> of \<scopedCertificates> 元素
 
@@ -39,7 +40,7 @@ ms.locfileid: "91195137"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |targetUri|字符串。 指定与证书相关的服务的 URI。|  
 |findValue|字符串。 要搜索的值。|  
@@ -55,19 +56,19 @@ ms.locfileid: "91195137"
   
 ## <a name="x509findtype-attribute"></a>x509FindType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|值包括：FindByThumbprint、FindBySubjectName、FindBySubjectDistinguishedName、FindByIssuerName、FindByIssuerDistinguishedName、FindBySerialNumber、FindByTimeValid、FindByTimeNotYetValid、FindBySerialNumber、FindByTimeExpired、FindByTemplateName、FindByApplicationPolicy、FindByCertificatePolicy、FindByExtension、FindByKeyUsage 和 FindBySubjectKeyIdentifier。|  
   
 ## <a name="storelocation-attribute"></a>storeLocation 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|CurrentUser 或 LocalMachine。|  
   
 ## <a name="storename-attribute"></a>storeName 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|值包括：AddressBook、AuthRoot、CertificateAuthority、Disallowed、My、Root、TrustedPeople 和 TrustedPublisher。|  
   
@@ -77,7 +78,7 @@ ms.locfileid: "91195137"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<scopedCertificates>](scopedcertificates-element.md)|表示特定服务为身份验证提供的 X.509（作用域）证书的集合。|  
   

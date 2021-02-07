@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <allowedAudienceUris>
 title: <allowedAudienceUris>
 ms.date: 03/30/2017
 ms.assetid: 0f4dc73d-d95d-4193-9755-7df4cf2b8e1c
-ms.openlocfilehash: 602e25240ddbd337543efa8c4097d4da9e5c25e9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d556a9dcb71222ff52f38e43ad2608e1046e1a60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201624"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749969"
 ---
 # \<allowedAudienceUris>
 
@@ -40,13 +41,13 @@ ms.locfileid: "91201624"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add-of-allowedaudienceuris.md)|添加 <xref:System.IdentityModel.Tokens.SamlSecurityToken> 安全令牌的目标 URI，只有在使用该目标 URI 时，<xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> 实例才会将该令牌视为有效令牌。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)|将颁发的令牌指定为服务凭据。|  
   

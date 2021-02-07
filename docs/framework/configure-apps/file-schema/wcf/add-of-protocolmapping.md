@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <add> 信息： <protocolMapping>
 title: <add> 的 <protocolMapping>
 ms.date: 03/30/2017
 ms.assetid: 08e62249-1641-41d1-91b1-66d7b46244e4
-ms.openlocfilehash: 46ba21b65f524f88bfce81739f0cd73040a2ad45
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 530ef6b2893eb55a979aba2ef7ec21efffc3070a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205004"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750242"
 ---
 # <a name="add-of-protocolmapping"></a>\<add> 的 \<protocolMapping>
 
@@ -34,7 +35,7 @@ ms.locfileid: "91205004"
   
 ### <a name="attributes"></a>特性  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |binding|一个字符串，指定在创建默认终结点时要用于终结点的绑定类型。|  
 |bindingConfiguration|一个字符串，指定要引用的绑定配置节的名称。|  
@@ -46,7 +47,7 @@ ms.locfileid: "91205004"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<protocolMapping>](protocolmapping.md)|表示一个配置节，该配置节用于定义传输协议方案 (（如 http、net.tcp、net.pipe ) 等）之间的默认协议映射，并 Windows Communication Foundation (WCF) 绑定。|  
   

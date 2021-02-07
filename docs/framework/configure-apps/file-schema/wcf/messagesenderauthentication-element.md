@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <messageSenderAuthentication> 元素
 title: <messageSenderAuthentication> 元素
 ms.date: 03/30/2017
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
-ms.openlocfilehash: e7e636571c0dbb1845438c22f7e7509dfc7987f9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 03c1cd626e7c3ad71026c076df3d757419810d74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749332"
 ---
 # <a name="messagesenderauthentication-element"></a>\<messageSenderAuthentication> 元素
 
@@ -39,7 +40,7 @@ ms.locfileid: "91204783"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`customCertificateValidatorType`|一个用于验证自定义类型的类型和程序集。 当 `certificateValidationMode` 设置为 `Custom` 时，必须设置此属性。|  
 |`certificateValidationMode`|指定用来验证凭据的三种模式之一。 如果设置为 `Custom`，则还必须提供 `customCertificateValidator`。|  
@@ -54,21 +55,21 @@ ms.locfileid: "91204783"
   
 ## <a name="certificatevalidationmode-attribute"></a>certificateValidationMode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
-|枚举|可选。 下列值之一：`None`、`PeerTrust`、`ChainTrust`、`PeerOrChainTrust` 和 `Custom`。 默认为 `ChainTrust`。 默认为 `ChainTrust`。<br /><br /> 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
+|枚举|可选。 下列值之一：`None`、`PeerTrust`、`ChainTrust`、`PeerOrChainTrust` 和 `Custom`。 默认值为 `ChainTrust`。 默认值为 `ChainTrust`。<br /><br /> 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="revocationmode-attribute"></a>revocationMode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
-|枚举|下列值之一：`NoCheck`、`Online` 和 `Offline`。 默认为 `Online`。<br /><br /> 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
+|枚举|下列值之一：`NoCheck`、`Online` 和 `Offline`。 默认值为 `Online`。<br /><br /> 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="trustedstorelocation-attribute"></a>trustedStoreLocation 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
-|枚举|以下值之一：`LocalMachine` 或 `CurrentUser`。 默认为 `CurrentUser`。 如果客户端应用程序在系统帐户下运行，则证书通常位于 `LocalMachine`。 如果客户端应用程序在用户帐户下运行，则证书通常位于 `CurrentUser`。 默认为 `CurrentUser`。|  
+|枚举|以下值之一：`LocalMachine` 或 `CurrentUser`。 默认值为 `CurrentUser`。 如果客户端应用程序在系统帐户下运行，则证书通常位于 `LocalMachine`。 如果客户端应用程序在用户帐户下运行，则证书通常位于 `CurrentUser`。 默认值为 `CurrentUser`。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -76,7 +77,7 @@ ms.locfileid: "91204783"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<peer>](peer-of-clientcredentials-element.md)|指定一个用于向对等服务证明客户端身份的凭据。|  
   

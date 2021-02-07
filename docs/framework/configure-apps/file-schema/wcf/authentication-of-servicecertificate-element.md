@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <authentication> 元素的详细 <serviceCertificate> 信息
 title: <authentication> of <serviceCertificate> 元素
 ms.date: 03/30/2017
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
-ms.openlocfilehash: c6f2578d85971740e5bd3d75151305a475187492
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35a94f4f9c089f86aef38e7e9a1115a7cd22a325
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749878"
 ---
 # <a name="authentication-of-servicecertificate-element"></a>\<authentication> of \<serviceCertificate> 元素
 
@@ -37,12 +38,12 @@ ms.locfileid: "91201585"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |customCertificateValidatorType|字符串。 一个用于验证自定义类型的类型和程序集。|  
-|certificateValidationMode|指定用来验证凭据的三种模式之一。 如果设置为 `Custom`，则还必须提供 customCertificateValidator。 默认为 `ChainTrust`。|  
-|revocationMode|用于检查吊销证书列表 (CRL) 的一种模式。 默认为 `Online`。|  
-|trustedStoreLocation|两个系统存储位置之一：`LocalMachine` 或 `CurrentUser`。 在向客户端协商服务证书时使用此值。 针对指定存储位置中的 " **受信任人** " 存储执行验证。 默认为 `CurrentUser`。|  
+|certificateValidationMode|指定用来验证凭据的三种模式之一。 如果设置为 `Custom`，则还必须提供 customCertificateValidator。 默认值为 `ChainTrust`。|  
+|revocationMode|用于检查吊销证书列表 (CRL) 的一种模式。 默认值为 `Online`。|  
+|trustedStoreLocation|两个系统存储位置之一：`LocalMachine` 或 `CurrentUser`。 在向客户端协商服务证书时使用此值。 针对指定存储位置中的 " **受信任人** " 存储执行验证。 默认值为 `CurrentUser`。|  
   
 ## <a name="customcertificatevalidator-attribute"></a>customCertificateValidator 属性  
   
@@ -52,19 +53,19 @@ ms.locfileid: "91201585"
   
 ## <a name="certificatevalidationmode-attribute"></a>certificateValidationMode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|下列值之一：None、PeerTrust、ChainTrust、PeerOrChainTrust 和 Custom。<br /><br /> 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="revocationmode-attribute"></a>revocationMode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|下列值之一：NoCheck、Online 和 Offline。<br /><br /> 有关详细信息，请参阅使用 [证书](../../../wcf/feature-details/working-with-certificates.md)。|  
   
 ## <a name="trustedstorelocation-attribute"></a>trustedStoreLocation 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|下列值之一：LocalMachine 或 CurrentUser。 默认值为 CurrentUser。 如果客户端应用程序在系统帐户下运行，则证书通常位于 LocalMachine 中。 如果客户端应用程序在用户帐户下运行，则证书通常位于 CurrentUser 中。|  
   
@@ -74,7 +75,7 @@ ms.locfileid: "91201585"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceCertificate>](servicecertificate-of-clientcredentials-element.md)|指定客户端对服务进行身份验证时使用的证书。|  
   

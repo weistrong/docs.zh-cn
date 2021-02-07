@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <source> 元素
 title: <source> 元素
 ms.date: 09/29/2017
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - <source> element
 - source element
-ms.openlocfilehash: e9c6a06ca9e481ecc2277e1d1ea76a0b99edb158
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: acf510dd5813900f36ac431418d55bbc6c2f364a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173817"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750580"
 ---
 # <a name="source-element"></a>\<source> 元素
 
@@ -46,13 +47,13 @@ ms.locfileid: "91173817"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<listeners>](listeners-element-for-source.md)|包含收集、存储和路由消息的侦听器。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.diagnostics`|指定用于收集、存储和路由消息的跟踪侦听器以及对跟踪开关设置的级别。|  

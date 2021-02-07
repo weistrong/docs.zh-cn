@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <udpDiscoveryEndpoint>
 title: <udpDiscoveryEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 1f485329-2771-43bc-88de-df8f2faa3bb7
-ms.openlocfilehash: f02cbddcdd4390d754f93e6f6d9aae6646cb137b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9863b4bc768b9c1cca933d001f0db596ce502fa0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749228"
 ---
 # \<udpDiscoveryEndpoint>
 
@@ -40,7 +41,7 @@ ms.locfileid: "91183619"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |discoveryMode|一个字符串，指定发现协议的模式。 有效值为 "即席" 和 "Managed"。 在托管模式下，协议依靠发现代理，此代理用作可检测服务的存储库。 即席模式要求协议使用 UDP 多播机制查找可用的服务。 此值的类型为 <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode>。|  
 |discoveryVersion|一个字符串，指定两个 WS-Discovery 协议版本中的其中一个版本。 有效值为 WSDiscovery11 和 WSDiscoveryApril2005。 此值的类型为 <xref:System.ServiceModel.Discovery.DiscoveryVersion>。|  
@@ -50,13 +51,13 @@ ms.locfileid: "91183619"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<udpTransportSettings>](udptransportsettings.md)|一个设置集合，用于为 UDP 终结点配置 UDP 传输。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<standardEndpoints>](standardendpoints.md)|具有一个或多个固定属性（地址、绑定和协定）的预定义终结点的标准终结点集合。|  
   
