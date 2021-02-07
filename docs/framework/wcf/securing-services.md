@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：保护服务
 title: 保证服务的安全
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF security
 - WCF, security
 ms.assetid: f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620
-ms.openlocfilehash: f2a8e10aaf9c1dbe3065344963fcc712776cd2db
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6d72b814e0669cac90210bd02f36740673f3960e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685304"
 ---
 # <a name="securing-services"></a>保证服务的安全
 
@@ -116,7 +117,7 @@ WCF) 服务 Windows Communication Foundation (的安全性包括两个主要要�
 
  `ProtectionLevel` 属性出现在多个特性类（如 <xref:System.ServiceModel.ServiceContractAttribute> 和 <xref:System.ServiceModel.OperationContractAttribute> 类）中。 保护级别是一个值，它指定了支持服务的消息（或消息部分）是进行签名、签名并加密，还是未经签名或加密即发送。 有关属性的详细信息，请参阅 [了解保护级别](understanding-protection-level.md)和编程示例的详细信息，请参阅 [如何：设置 ProtectionLevel 属性](how-to-set-the-protectionlevel-property.md)。 有关使用中的上下文设计服务协定的详细信息 `ProtectionLevel` ，请参阅 [设计服务协定](designing-service-contracts.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel>
 - <xref:System.ServiceModel.Description.ServiceCredentials>

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：关键安全概念
 title: 安全性的基础概念
 ms.date: 07/15/2020
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - permissions [.NET]
 - security [.NET], about security
 ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
-ms.openlocfilehash: 73e4d0474810d097c5eee8b99ae30b6096ee1695
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8643c87197049465371da00b2ecb70ac99d70f9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684992"
 ---
 # <a name="key-security-concepts"></a>安全性的基础概念
 
@@ -75,6 +76,6 @@ ms.locfileid: "95687542"
 
 授权是确定是否同意主体执行所请求的操作的过程。 授权发生在身份验证之后，并使用有关主体的标识和角色的信息来确定主体可以访问的资源。 您可以使用基于 .NET 角色的安全性实现授权。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ASP.NET Core 安全性](/aspnet/core/security/)

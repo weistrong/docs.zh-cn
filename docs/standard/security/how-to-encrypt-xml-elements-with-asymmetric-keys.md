@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：用非对称密钥对 XML 元素进行加密
 title: 如何：用非对称密钥对 XML 元素进行加密
 ms.date: 07/14/2020
 dev_langs:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Advanced Encryption Standard algorithm
 - encryption [.NET], asymmetric keys
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-ms.openlocfilehash: 29fe7c229664b08c9e1563413525818f2e883198
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fff8ec57da0318e48f2a230f01dba26497837028
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729338"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685148"
 ---
 # <a name="how-to-encrypt-xml-elements-with-asymmetric-keys"></a>如何：用非对称密钥对 XML 元素进行加密
 
@@ -143,7 +144,7 @@ ms.locfileid: "95729338"
   
 当你使用加密密钥执行操作后，通过将每个字节设置为零或通过调用托管加密类的 <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> 方法来将它从内存中清除。  加密密钥有时可从内存由调试器读取，或从硬盘读取（如果内存位置分页到磁盘）。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [加密模型](cryptography-model.md)
 - [加密服务](cryptographic-services.md)

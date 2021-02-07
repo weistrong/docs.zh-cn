@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：标准终结点的用法
 title: 标准终结点的用法
 ms.date: 03/30/2017
 ms.assetid: ecd6a62f-9619-4778-a497-6f888087a9ea
-ms.openlocfilehash: 2b210bfe683669aeebf54a1701f07d492e6abdb4
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 804fdd84d3f6ff6f961aed81e8bd14cf8c43063c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685408"
 ---
 # <a name="usage-of-standard-endpoints"></a>标准终结点的用法
 
@@ -143,13 +144,13 @@ public class CustomEndpoint : ServiceEndpoint
 
 2. 使多个项目可以启动。
 
-    1. 在**解决方案资源管理器**中，右键单击 "标准终结点" 解决方案，然后选择 "**属性**"。
+    1. 在 **解决方案资源管理器** 中，右键单击 "标准终结点" 解决方案，然后选择 " **属性**"。
 
-    2. 在 "**通用属性**" 中，选择 "**启动项目**"，然后单击 "**多个启动项目**"。
+    2. 在 " **通用属性**" 中，选择 " **启动项目**"，然后单击 " **多个启动项目**"。
 
-    3. 将服务项目移动到列表的开头，将 "**操作**" 设置为 "**启动**"。
+    3. 将服务项目移动到列表的开头，将 " **操作** " 设置为 " **启动**"。
 
-    4. 将客户端项目移动到服务项目之后，同时将**操作**设置为 "**启动**"。
+    4. 将客户端项目移动到服务项目之后，同时将 **操作** 设置为 " **启动**"。
 
          这指定客户端项目在服务项目之后执行。
 
@@ -158,15 +159,15 @@ public class CustomEndpoint : ServiceEndpoint
 > [!NOTE]
 > 如果这些步骤不起作用，请使用以下步骤确保已正确设置你的环境：
 >
-> 1. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
-> 2. 若要生成解决方案，请按照[生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
-> 3. 若要在一台或多台计算机配置中运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+> 1. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+> 2. 若要生成解决方案，请按照 [生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
+> 3. 若要在一台或多台计算机配置中运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅 [Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation () 的示例 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 。 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\StandardEndpoints`

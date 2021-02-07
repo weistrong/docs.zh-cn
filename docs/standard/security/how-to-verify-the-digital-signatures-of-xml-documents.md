@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：验证 XML 文档的数字签名
 title: 如何：验证 XML 文档的数字签名
 ms.date: 07/14/2020
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - XML digital signatures
 - digital signatures, verifying
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
-ms.openlocfilehash: 9cbebd34866b66c00bf4aca708d75e315b067b0d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 37ef72c6bedf73ced7c2dde4335034f603190946
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820067"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685031"
 ---
 # <a name="how-to-verify-the-digital-signatures-of-xml-documents"></a>如何：验证 XML 文档的数字签名
 
@@ -89,7 +90,7 @@ ms.locfileid: "94820067"
   
 切勿将私钥直接嵌入到源代码中。  [Ildasm.exe 使用 (IL 拆装器) ](../../framework/tools/ildasm-exe-il-disassembler.md)或通过在文本编辑器（例如记事本）中打开程序集，可以轻松地从程序集中读取嵌入的密钥。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [加密模型](cryptography-model.md)
 - [加密服务](cryptographic-services.md)

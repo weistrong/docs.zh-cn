@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：访问硬件加密设备
 title: 如何：访问硬件加密设备
 ms.date: 07/14/2020
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - hardware encryption
 - CspParameters
 ms.assetid: b0e734df-6eb4-4b16-b48c-6f0fe82d5f17
-ms.openlocfilehash: c4f0b77985dea1818729af41b69a4a7d30427415
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: fcf12314490542848d20bd3a4977d68c386853bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685265"
 ---
 # <a name="how-to-access-hardware-encryption-devices"></a>如何：访问硬件加密设备
 
@@ -64,7 +65,7 @@ ms.locfileid: "94829890"
   
 - 必须使用特定于读卡器的信息来初始化 <xref:System.Security.Cryptography.CspParameters> 对象。  有关详细信息，请参阅读卡器的文档。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [加密模型](cryptography-model.md)
 - [加密服务](cryptographic-services.md)

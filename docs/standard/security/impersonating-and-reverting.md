@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：模拟和恢复
 title: 模拟与恢复
 ms.date: 07/15/2020
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - security [.NET], impersonating Windows accounts
 - impersonating Windows accounts
 ms.assetid: b93d402c-6c28-4f50-b2bc-d9607dc3e470
-ms.openlocfilehash: 90f43510eb0e71fb324012fa00ac08f9ee3292ac
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f3e536f87ef5aa09cd727fe9674c7a40f3a09150
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820054"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685005"
 ---
 # <a name="impersonating-and-reverting"></a>模拟与恢复
 
@@ -63,7 +64,7 @@ ms.locfileid: "94820054"
   
  请注意，" **模拟** " 和 " **撤消** " 都不会更改 **主体** 对象 (<xref:System.Security.Principal.IPrincipal> 与当前调用上下文关联的) 。 相反，模拟和还原会更改与当前操作系统进程关联的标记。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Security.Principal.WindowsIdentity>
 - <xref:System.Security.Principal.WindowsImpersonationContext>

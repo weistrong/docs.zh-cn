@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：加密签名
 title: 加密签名
 ms.date: 07/14/2020
 dev_langs:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - digital signatures, verifying
 - signing XML
 ms.assetid: aa87cb7f-e608-4a81-948b-c9b8a1225783
-ms.openlocfilehash: 453e9d887012826da3f64d199e15a05fd0661191
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 082f55af648b73b6447d69edd5912804e9332d03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831125"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685291"
 ---
 # <a name="cryptographic-signatures"></a>加密签名
 
@@ -160,7 +161,7 @@ else
 
 如果签名有效，则此代码段将显示“`The signature is valid`”，如果无效，则显示“`The signature is not valid`”。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [加密服务](cryptographic-services.md)
 - [加密模型](cryptography-model.md)
