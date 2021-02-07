@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息： XmlSerializer 错误
 title: XMLSerializer 错误
 ms.date: 03/30/2017
 ms.assetid: c6b80f14-64f4-4162-ae76-71664cf42fd3
-ms.openlocfilehash: 1eefa37d6d11e232bd4d0914eedab3ebb66b92ef
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c48aa88103dc2b913fe520dff996414b7c1505a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676503"
 ---
 # <a name="xmlserializer-faults"></a>XMLSerializer 错误
 
@@ -38,7 +39,7 @@ public interface ICalculator
 }  
 ```  
   
- 为客户端代理生成代码时，必须将/UseSerializerForFaults 标志应用于 " **/UseSerializerForFaults** "[元数据实用工具工具 ( # A0)](../servicemodel-metadata-utility-tool-svcutil-exe.md)。  
+ 为客户端代理生成代码时，必须将/UseSerializerForFaults 标志应用于 "  "[元数据实用工具工具 ( # A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md)。  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例  
   
@@ -57,7 +58,7 @@ public interface ICalculator
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Service\XmlSerializerFaults`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.XmlSerializerFormatAttribute>
 - <xref:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults%2A>

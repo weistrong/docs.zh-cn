@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：用非对称密钥对 XML 元素进行解密
 title: 如何：用非对称密钥对 XML 元素进行解密
 ms.date: 07/14/2020
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - XML encryption
 - decryption
 ms.assetid: dd5de491-dafe-4b94-966d-99714b2e754a
-ms.openlocfilehash: 0456c89987b37840daa1c84342528d11c6da73a4
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: bd3bd142aa5800efa83bc20a4b1af6d5bc61eba2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675567"
 ---
 # <a name="how-to-decrypt-xml-elements-with-asymmetric-keys"></a>如何：用非对称密钥对 XML 元素进行解密
 
@@ -86,7 +87,7 @@ ms.locfileid: "94822225"
   
  当你使用加密密钥执行操作后，通过将每个字节设置为零或通过调用托管加密类的 <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> 方法来将它从内存中清除。  加密密钥有时可从内存由调试器读取，或从硬盘读取（如果内存位置分页到磁盘）。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [加密模型](cryptography-model.md)
 - [加密服务](cryptographic-services.md)

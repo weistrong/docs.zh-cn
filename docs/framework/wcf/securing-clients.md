@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：保护客户端
 title: 保证客户端的安全
 ms.date: 03/30/2017
 helpviewer_keywords:
 - clients [WCF], security considerations
 ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
-ms.openlocfilehash: b7f720b83a858c8739d2f7b9bf63d29c54b914e0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d78ad2fba00a0707dcf1c63681d9d76e68a31c00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676438"
 ---
 # <a name="securing-clients"></a>保证客户端的安全
 
@@ -86,7 +87,7 @@ ms.locfileid: "96242248"
 
  若要 [\<clientCredentials>](../configure-apps/file-schema/wcf/clientcredentials.md) 在代码中设置值，你必须访问 <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> 类的属性 <xref:System.ServiceModel.ClientBase%601> 。 该属性返回一个 <xref:System.ServiceModel.Description.ClientCredentials> 对象，使用该对象可以访问各种凭据类型，如下表所示。  
   
-|ClientCredential 属性|说明|注释|  
+|ClientCredential 属性|说明|说明|  
 |-------------------------------|-----------------|-----------|  
 |<xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A>|返回一个 <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>|表示客户端提供的 X.509 证书，客户端使用该证书向服务器证明自己的身份。|  
 |<xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>|返回一个 <xref:System.ServiceModel.Security.HttpDigestClientCredential>|表示 HTTP 摘要式凭据。 该凭据是用户名和密码的哈希。|  
@@ -154,7 +155,7 @@ ms.locfileid: "96242248"
 </wsHttpBinding>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
 - <xref:System.ServiceModel.ClientBase%601>
