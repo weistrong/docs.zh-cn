@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： SQL Server ADO.NET 中的数据操作
 title: SQL Server 数据操作
 ms.date: 03/30/2017
 ms.assetid: b864ebc9-ed8e-4059-85fd-36d9198f5521
-ms.openlocfilehash: 590b7942148b9db49817c13b102b82552e935fb2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 79eda39fe16a8c7bd7f9a77b1f7ff0739c4f8062
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203457"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767344"
 ---
 # <a name="sql-server-data-operations-in-adonet"></a>ADO.NET 中的 SQL Server 数据操作
 
@@ -27,7 +28,7 @@ ms.locfileid: "91203457"
  [表值参数](table-valued-parameters.md)  
  介绍如何使用在 SQL Server 2008 中引入的表值参数。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 ADO.NET 中检索和修改数据](../retrieving-and-modifying-data.md)
 - [SQL Server 和 ADO.NET](index.md)

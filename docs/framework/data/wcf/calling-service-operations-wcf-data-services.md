@@ -1,22 +1,25 @@
 ---
+description: '了解详细信息：调用服务操作 (WCF Data Services) '
 title: 调用服务操作（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1767f3a7-29d2-4834-a763-7d169693fa8b
-ms.openlocfilehash: ac1b28665dcaaa9f8c6ae6a6611757f6c4969adb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 49b08581e42fcd20b9d560d73379eb43ebbf2eb4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766460"
 ---
 # <a name="calling-service-operations-wcf-data-services"></a>调用服务操作（WCF 数据服务）
 
-OData) Open Data Protocol (定义数据服务的服务操作。 WCF 数据服务使你能够将此类操作定义为数据服务中的方法。 与其他数据服务资源一样，这些服务操作也通过 URI 进行寻址。 服务操作可以返回实体类型的集合、单个实体类型实例的集合和基元类型（如整数和字符串）的集合。 服务操作还可以返回 `null`（在 Visual Basic 中为 `Nothing`）。 WCF 数据服务客户端库可用于访问支持 HTTP GET 请求的服务操作。 这些种类的服务操作定义为应用了 <xref:System.ServiceModel.Web.WebGetAttribute> 的方法。 有关详细信息，请参阅 [服务操作](service-operations-wcf-data-services.md)。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+OData) Open Data Protocol (定义数据服务的服务操作。 WCF Data Services 使你能够将此类操作定义为数据服务中的方法。 与其他数据服务资源一样，这些服务操作也通过 URI 进行寻址。 服务操作可以返回实体类型的集合、单个实体类型实例的集合和基元类型（如整数和字符串）的集合。 服务操作还可以返回 `null`（在 Visual Basic 中为 `Nothing`）。 WCF Data Services 客户端库可用于访问支持 HTTP GET 请求的服务操作。 这些种类的服务操作定义为应用了 <xref:System.ServiceModel.Web.WebGetAttribute> 的方法。 有关详细信息，请参阅 [服务操作](service-operations-wcf-data-services.md)。  
   
- 服务操作在实现 OData 的数据服务所返回的元数据中公开。 在元数据中，服务操作表示为 `FunctionImport` 元素。 生成强类型时 <xref:System.Data.Services.Client.DataServiceContext> ，添加服务引用和 DataSvcUtil.exe 工具将忽略此元素。 因此，无法在上下文中找到一种方法用来直接调用服务操作。 不过，仍可使用 WCF 数据服务客户端通过以下两种方式之一来调用服务操作：  
+ 服务操作在实现 OData 的数据服务所返回的元数据中公开。 在元数据中，服务操作表示为 `FunctionImport` 元素。 生成强类型时 <xref:System.Data.Services.Client.DataServiceContext> ，添加服务引用和 DataSvcUtil.exe 工具将忽略此元素。 因此，无法在上下文中找到一种方法用来直接调用服务操作。 不过，仍可使用 WCF Data Services 客户端通过以下两种方式之一来调用服务操作：  
   
 - 通过调用 <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> 的 <xref:System.Data.Services.Client.DataServiceContext> 方法，同时提供服务操作的 URI 以及任何参数。 此方法用于调用任意 GET 服务操作。  
   
@@ -24,23 +27,23 @@ OData) Open Data Protocol (定义数据服务的服务操作。 WCF 数据服务
   
 ## <a name="considerations-for-calling-service-operations"></a>调用服务操作的注意事项  
 
- 使用 WCF 数据服务客户端调用服务操作时，请注意以下事项。  
+ 使用 WCF Data Services 客户端调用服务操作时，请注意以下事项。  
   
 - 异步访问数据服务时，必须在 <xref:System.Data.Services.Client.DataServiceContext.BeginExecute%2A> / <xref:System.Data.Services.Client.DataServiceContext.EndExecute%2A> 上 <xref:System.Data.Services.Client.DataServiceContext> 或 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> / <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 方法上 <xref:System.Data.Services.Client.DataServiceQuery%601> 使用等效的异步方法。  
   
-- WCF 数据服务客户端库无法具体化返回基元类型集合的服务操作的结果。  
+- WCF Data Services 客户端库无法具体化返回基元类型集合的服务操作的结果。  
   
-- WCF 数据服务客户端库不支持调用后服务操作。 服务操作由 HTTP POST 调用，后者通过使用 <xref:System.ServiceModel.Web.WebInvokeAttribute> 配合 `Method="POST"` 参数定义。 要通过使用 HTTP POST 请求调用服务操作，必须使用 <xref:System.Net.HttpWebRequest>。  
+- WCF Data Services 客户端库不支持调用后服务操作。 服务操作由 HTTP POST 调用，后者通过使用 <xref:System.ServiceModel.Web.WebInvokeAttribute> 配合 `Method="POST"` 参数定义。 要通过使用 HTTP POST 请求调用服务操作，必须使用 <xref:System.Net.HttpWebRequest>。  
   
 - 您不能使用 <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> 调用这样的 GET 服务操作：它返回实体或基元类型的单个结果，或需要多个输入参数。 必须调用 <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> 方法。  
   
-- 请考虑在强类型化分部类（由工具生成）上创建扩展方法，该 <xref:System.Data.Services.Client.DataServiceContext> 分部类使用 <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> 或 <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> 方法来调用服务操作。 这样您就可以直接从上下文调用服务操作。 有关详细信息，请参阅博客文章 [服务操作和 WCF 数据服务客户端](/archive/blogs/astoriateam/service-operations-and-the-wcf-data-services-client)。  
+- 请考虑在强类型化分部类（由工具生成）上创建扩展方法，该 <xref:System.Data.Services.Client.DataServiceContext> 分部类使用 <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> 或 <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> 方法来调用服务操作。 这样您就可以直接从上下文调用服务操作。 有关详细信息，请参阅博客文章 [服务操作和 WCF Data Services 客户端](/archive/blogs/astoriateam/service-operations-and-the-wcf-data-services-client)。  
   
 - 使用 <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> 调用服务操作时，客户端库会 <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> 通过对保留字符执行百分号编码（如与号 ( # A0) ），并对字符串中的单引号进行转义来自动转义提供给的字符。 但是，当您调用某一 *Execute* 方法来调用服务操作时，您必须记得对任何用户提供的字符串值执行这种转义。 URI 中的单引号转义为单引号对。  
   
 ## <a name="examples-of-calling-service-operations"></a>调用服务操作示例  
 
- 本部分包含以下示例，说明如何使用 WCF 数据服务客户端库调用服务操作：  
+ 本部分包含以下示例，说明如何使用 WCF Data Services 客户端库调用服务操作：  
   
 - [调用 Execute &lt; T &gt; 以返回实体集合](calling-service-operations-wcf-data-services.md#ExecuteIQueryable)  
   

@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： SQL Server ADO.NET 的进程特定行为
 title: ADO.NET 的 SQL Server 进程内特定行为
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 4f223948-ae8f-4c16-bdc2-4acc6debed3f
-ms.openlocfilehash: 6ab019703cb38e4458ad945453f077768d3be5d8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bace6594ebe2f5aa5e3deecd2413903dd9d4a13c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147523"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767214"
 ---
 # <a name="sql-server-in-process-specific-behavior-of-adonet"></a>ADO.NET 的 SQL Server 进程内特定行为
 

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：截获数据服务消息 (WCF Data Services) '
 title: 如何：截获数据服务消息（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -8,18 +9,20 @@ helpviewer_keywords:
 - WCF Data Services, customizing
 - query interceptors [WCF Data Services]
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
-ms.openlocfilehash: 8cc8bdcf776befafba967ee2649a6ada789d07c5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6768fa9f0c7ca9a5a6ed6faa318675f2c2c51543
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765277"
 ---
 # <a name="how-to-intercept-data-service-messages-wcf-data-services"></a>如何：截获数据服务消息（WCF 数据服务）
 
-使用 WCF 数据服务，可以截获请求消息，以便可以向操作添加自定义逻辑。 若要截获消息，请使用数据服务中的专门特性化的方法。 有关详细信息，请参阅 [拦截](interceptors-wcf-data-services.md)程序。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+使用 WCF Data Services，可以截获请求消息，以便可以向操作添加自定义逻辑。 若要截获消息，请使用数据服务中的专门特性化的方法。 有关详细信息，请参阅 [拦截](interceptors-wcf-data-services.md)程序。  
   
- 本主题中的示例使用 Northwind 示例数据服务。 此服务是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。  
+ 本主题中的示例使用 Northwind 示例数据服务。 此服务是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。  
   
 ### <a name="to-define-a-query-interceptor-for-the-orders-entity-set"></a>为 Orders 实体集定义查询侦听器  
   

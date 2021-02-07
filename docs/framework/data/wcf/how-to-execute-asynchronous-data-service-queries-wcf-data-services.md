@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：执行异步数据服务查询 (WCF Data Services) '
 title: 如何：执行异步数据服务查询（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -8,21 +9,23 @@ helpviewer_keywords:
 - WCF Data Services, asynchronous operations
 - asynchronous operations [WCF Data Services]
 ms.assetid: 902a2dc1-d0e9-4b00-90a8-becc4cb1f6a7
-ms.openlocfilehash: 84eb88695580598d41615653723c137d3f766a47
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35300de319673b29484dc981b5d6d51c964ad908
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765342"
 ---
 # <a name="how-to-execute-asynchronous-data-service-queries-wcf-data-services"></a>如何：执行异步数据服务查询（WCF 数据服务）
 
-通过使用 WCF 数据服务的客户端库，可以异步执行客户端-服务器操作，如执行查询和保存更改。 有关详细信息，请参阅 [异步操作](asynchronous-operations-wcf-data-services.md)。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+通过使用 WCF Data Services 的客户端库，可以异步执行客户端-服务器操作，如执行查询和保存更改。 有关详细信息，请参阅 [异步操作](asynchronous-operations-wcf-data-services.md)。  
   
 > [!NOTE]
 > 对于必须在特定线程中调用回调的应用程序，必须显式封送 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 方法的执行。 有关详细信息，请参阅 [异步操作](asynchronous-operations-wcf-data-services.md)。  
   
- 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。  
+ 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。  
   
 ## <a name="example"></a>示例  
 

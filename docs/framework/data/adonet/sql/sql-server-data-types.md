@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： SQL Server 数据类型和 ADO.NET
 title: SQL Server 数据类型和 ADO.NET
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 81b43550-23e8-43bb-b460-7eb8ac825c33
-ms.openlocfilehash: db4618ac624ea8401cab682a8c21d8f23c253d05
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 841fa5864bf54b5e4fc4dc24dab64e6ac1435c7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767292"
 ---
 # <a name="sql-server-data-types-and-adonet"></a>SQL Server 数据类型和 ADO.NET
 

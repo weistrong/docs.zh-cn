@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：更新数据服务 (WCF Data Services) '
 title: 更新数据服务（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - WCF Data Services, changing data
 - WCF Data Services, client library
 ms.assetid: 00d993be-ffed-4dea-baf7-6eea982cdb54
-ms.openlocfilehash: 3e2bd3f4ca5402abe4a7f8ec8f5410effaee6700
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3223207b310c28d8e586a537b5c76b7e1b7ca17c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764887"
 ---
 # <a name="updating-the-data-service-wcf-data-services"></a>更新数据服务（WCF 数据服务）
 
-当你使用 WCF 数据服务的客户端库来使用 Open Data Protocol (OData) 源时，库会将源中的条目转换为客户端数据服务类的实例。 通过使用 <xref:System.Data.Services.Client.DataServiceContext> 所属的 <xref:System.Data.Services.Client.DataServiceQuery%601> 跟踪这些数据服务类。 客户端通过使用 <xref:System.Data.Services.Client.DataServiceContext> 上的方法跟踪您报告的实体更改。 客户端利用这些方法可跟踪已添加和删除的实体以及您对属性值或对实体实例之间关系的更改。 调用 <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> 方法时，将以基于 REST 的操作的形式将这些跟踪的更改发送回数据服务。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+当你使用 WCF Data Services 的客户端库来使用 Open Data Protocol (OData) 源时，库会将源中的条目转换为客户端数据服务类的实例。 通过使用 <xref:System.Data.Services.Client.DataServiceContext> 所属的 <xref:System.Data.Services.Client.DataServiceQuery%601> 跟踪这些数据服务类。 客户端通过使用 <xref:System.Data.Services.Client.DataServiceContext> 上的方法跟踪您报告的实体更改。 客户端利用这些方法可跟踪已添加和删除的实体以及您对属性值或对实体实例之间关系的更改。 调用 <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> 方法时，将以基于 REST 的操作的形式将这些跟踪的更改发送回数据服务。  
   
 > [!NOTE]
 > 当使用 <xref:System.Data.Services.Client.DataServiceCollection%601> 实例将数据绑定到控件时，对绑定控件中数据所做的更改自动报告给 <xref:System.Data.Services.Client.DataServiceContext>。 有关详细信息，请参阅 [将数据绑定到控件](binding-data-to-controls-wcf-data-services.md)。  
@@ -29,7 +32,7 @@ ms.locfileid: "91180603"
  [!code-csharp[Astoria Northwind Client#CreateNewProduct](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#createnewproduct)]
  [!code-vb[Astoria Northwind Client#CreateNewProduct](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#createnewproduct)]  
   
- 若要添加实体实例，请在 "添加服务引用" 对话框生成的类上调用相应的*AddTo*方法 <xref:System.Data.Services.Client.DataServiceContext> ，如以下示例中所示： **Add Service Reference**  
+ 若要添加实体实例，请在 "添加服务引用" 对话框生成的类上调用相应的 *AddTo* 方法 <xref:System.Data.Services.Client.DataServiceContext> ，如以下示例中所示：   
   
  [!code-csharp[Astoria Northwind Client#AddProductSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addproductspecific)]
  [!code-vb[Astoria Northwind Client#AddProductSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addproductspecific)]  
@@ -69,11 +72,11 @@ ms.locfileid: "91180603"
   
 ## <a name="creating-and-modifying-relationship-links"></a>创建并修改关系链接  
 
- 使用 <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> 添加服务引用对话框生成的类的方法或相应的*AddTo*方法添加新实体时 <xref:System.Data.Services.Client.DataServiceContext> ，不会自动**Add Service Reference**定义新实体和相关实体之间的任何关系。  
+ 使用 <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> 添加服务引用对话框生成的类的方法或相应的 *AddTo* 方法添加新实体时 <xref:System.Data.Services.Client.DataServiceContext> ，不会自动定义新实体和相关实体之间的任何关系。  
   
- 可创建和更改实体实例之间的关系，以及让客户端库在数据服务中反映这些更改。 实体之间的关系在模型中定义为关联，<xref:System.Data.Services.Client.DataServiceContext> 在上下文中以链接对象的形式跟踪每个关系。 WCF 数据服务在类上提供以下方法 <xref:System.Data.Services.Client.DataServiceContext> 来创建、修改和删除这些链接：  
+ 可创建和更改实体实例之间的关系，以及让客户端库在数据服务中反映这些更改。 实体之间的关系在模型中定义为关联，<xref:System.Data.Services.Client.DataServiceContext> 在上下文中以链接对象的形式跟踪每个关系。 WCF Data Services 在类上提供以下方法 <xref:System.Data.Services.Client.DataServiceContext> 来创建、修改和删除这些链接：  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |<xref:System.Data.Services.Client.DataServiceContext.AddRelatedObject%2A>|在两个相关实体对象之间创建新的链接。 调用此方法相当于同时调用 <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> 和  <xref:System.Data.Services.Client.DataServiceContext.AddLink%2A> 以创建新对象并定义与现有对象的关系。|  
 |<xref:System.Data.Services.Client.DataServiceContext.AddLink%2A>|在两个相关实体对象之间创建新的链接。|  

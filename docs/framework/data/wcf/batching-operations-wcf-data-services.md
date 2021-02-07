@@ -1,19 +1,22 @@
 ---
+description: '了解详细信息：批处理操作 (WCF Data Services) '
 title: 批处理操作（WCF 数据服务）
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, client library
 ms.assetid: 962a49d1-cc11-4b96-bc7d-071dd6607d6c
-ms.openlocfilehash: 95524c1397172e645d682a6ef3f03b17bb3a639d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0f8f4043e35c872445f73483832311ed86989101
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166061"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766538"
 ---
 # <a name="batching-operations-wcf-data-services"></a>批处理操作（WCF 数据服务）
 
-OData) Open Data Protocol (支持对基于 OData 的服务发出的请求的批处理。 有关详细信息，请参阅 [OData：批处理](https://www.odata.org/documentation/odata-version-2-0/batch-processing/)。 在 WCF 数据服务中，使用的每个操作（ <xref:System.Data.Services.Client.DataServiceContext> 如执行查询或保存更改）都会导致向数据服务发送一个单独的请求。 为保持操作集的合理范围，可以显式定义操作批。 这样可确保通过一个 HTTP 请求将该批中的所有操作发送到数据服务，使服务器能够以原子方式处理这些操作，并减少与数据服务之间的往返次数。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+OData) Open Data Protocol (支持对基于 OData 的服务发出的请求的批处理。 有关详细信息，请参阅 [OData：批处理](https://www.odata.org/documentation/odata-version-2-0/batch-processing/)。 在 WCF Data Services 中，使用的每个操作（ <xref:System.Data.Services.Client.DataServiceContext> 如执行查询或保存更改）都会导致向数据服务发送一个单独的请求。 为保持操作集的合理范围，可以显式定义操作批。 这样可确保通过一个 HTTP 请求将该批中的所有操作发送到数据服务，使服务器能够以原子方式处理这些操作，并减少与数据服务之间的往返次数。  
   
 ## <a name="batching-query-operations"></a>查询操作批处理  
 

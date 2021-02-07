@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：加载延迟的内容 (WCF Data Services) '
 title: 加载延迟的内容（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -9,16 +10,18 @@ helpviewer_keywords:
 - WCF Data Services, deferred content
 - WCF Data Services, loading data
 ms.assetid: 32f9b588-c832-44c4-a7e0-fcce635df59a
-ms.openlocfilehash: 6eff454bf4f79f7fe215828956ffe79d0c1f6757
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e14796ba003cbad721160ed4a0e2be3e8d148660
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194318"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764913"
 ---
 # <a name="loading-deferred-content-wcf-data-services"></a>加载延迟的内容（WCF 数据服务）
 
-默认情况下，WCF 数据服务限制查询返回的数据量。 不过，如果需要，您可以从该数据服务显式加载其他数据，包括相关实体、分页响应数据以及二进制数据流。 本主题介绍如何将这种延迟的内容加载到应用程序。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+默认情况下，WCF Data Services 限制查询返回的数据量。 不过，如果需要，您可以从该数据服务显式加载其他数据，包括相关实体、分页响应数据以及二进制数据流。 本主题介绍如何将这种延迟的内容加载到应用程序。  
   
 ## <a name="related-entities"></a>相关实体  
 
@@ -29,7 +32,7 @@ ms.locfileid: "91194318"
      [!code-csharp[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#expandorderdetailsspecific)]
      [!code-vb[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#expandorderdetailsspecific)]  
   
-     WCF 数据服务通过使用查询选项，将在单个查询中可包括的实体集的数目限制为 12 `$expand` 。  
+     WCF Data Services 通过使用查询选项，将在单个查询中可包括的实体集的数目限制为 12 `$expand` 。  
   
 - **显式加载**：可以对实例调用 <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> 方法 <xref:System.Data.Services.Client.DataServiceContext> 以显式加载相关实体。 每次调用 <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> 方法都会创建一个对数据服务的单独请求。 下面的示例为 `Order_Details` 实体显式加载 `Orders`：  
   
@@ -59,7 +62,7 @@ ms.locfileid: "91194318"
   
 ## <a name="binary-data-streams"></a>二进制数据流  
 
- WCF 数据服务使你能够以数据流的形式访问 (BLOB) 数据的二进制大型对象。 流式处理会将对二进制数据的加载推迟到需要时再加载，并且客户端可以更有效地处理此数据。 为了利用此功能，数据服务必须实现 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 提供程序。 有关详细信息，请参阅 [流式处理提供程序](streaming-provider-wcf-data-services.md)。 启用流式处理后，会在没有相关二进制数据的情况下返回实体类型。 在这种情况下，必须使用 <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> 类的方法 <xref:System.Data.Services.Client.DataServiceContext> 来访问来自服务的二进制数据的数据流。 同样，使用 <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> 方法可以作为流添加或更改实体的二进制数据。 有关详细信息，请参阅使用 [二进制数据](working-with-binary-data-wcf-data-services.md)。  
+ WCF Data Services 使你能够以数据流的形式访问 (BLOB) 数据的二进制大型对象。 流式处理会将对二进制数据的加载推迟到需要时再加载，并且客户端可以更有效地处理此数据。 为了利用此功能，数据服务必须实现 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 提供程序。 有关详细信息，请参阅 [流式处理提供程序](streaming-provider-wcf-data-services.md)。 启用流式处理后，会在没有相关二进制数据的情况下返回实体类型。 在这种情况下，必须使用 <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> 类的方法 <xref:System.Data.Services.Client.DataServiceContext> 来访问来自服务的二进制数据的数据流。 同样，使用 <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> 方法可以作为流添加或更改实体的二进制数据。 有关详细信息，请参阅使用 [二进制数据](working-with-binary-data-wcf-data-services.md)。  
   
 ## <a name="see-also"></a>请参阅
 

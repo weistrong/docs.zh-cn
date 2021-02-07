@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：添加、修改和删除实体 (WCF Data Services) '
 title: 如何：添加、修改和删除实体（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -7,18 +8,20 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, changing data
 ms.assetid: a00f8933-b232-4445-95ba-adc634f055d8
-ms.openlocfilehash: 3d147f05e2911cdaa05c5fc2374e14c539235fda
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 300ec4d710b376979b77c02b2831bb6b64393709
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172523"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765732"
 ---
 # <a name="how-to-add-modify-and-delete-entities-wcf-data-services"></a>如何：添加、修改和删除实体（WCF 数据服务）
 
-使用 WCF 数据服务的客户端库，您可以通过对中的对象执行等效操作，在数据服务中创建、更新和删除实体数据 <xref:System.Data.Services.Client.DataServiceContext> 。 有关详细信息，请参阅 [更新数据服务](updating-the-data-service-wcf-data-services.md)。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+使用 WCF Data Services 的客户端库，您可以通过对中的对象执行等效操作，在数据服务中创建、更新和删除实体数据 <xref:System.Data.Services.Client.DataServiceContext> 。 有关详细信息，请参阅 [更新数据服务](updating-the-data-service-wcf-data-services.md)。  
   
- 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。  
+ 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。  
   
 ## <a name="example"></a>示例  
 

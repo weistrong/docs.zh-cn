@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： SQL Server 功能和 ADO.NET
 title: SQL Server 功能和 ADO.NET
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
-ms.openlocfilehash: 121381114fadd8b20978d2e932bf3ec8bdcdb193
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 19440a74e5561f730ece0c4f96de69f4e4baba2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767227"
 ---
 # <a name="sql-server-features-and-adonet"></a>SQL Server 功能和 ADO.NET
 

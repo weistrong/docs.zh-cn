@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： SqlClient 对 LocalDB 的支持
 title: SqlClient 对 LocalDB 的支持
 ms.date: 03/30/2017
 ms.assetid: cf796898-5575-46f2-ae6e-21e5aa8c4123
-ms.openlocfilehash: 55ab1346de6f5c14f15d01344a984c18edf30e02
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f99c46277638c810c91f7ceffd0e47c896125c63
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824475"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767162"
 ---
 # <a name="sqlclient-support-for-localdb"></a>SqlClient 对 LocalDB 的支持
 
@@ -57,7 +58,7 @@ ms.locfileid: "94824475"
   
 - 使用 `AttachDBFilename` 连接字符串关键字来指定 .MDF 文件。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [SQL Server 功能和 ADO.NET](sql-server-features-and-adonet.md)
 - [ADO.NET 概述](../ado-net-overview.md)

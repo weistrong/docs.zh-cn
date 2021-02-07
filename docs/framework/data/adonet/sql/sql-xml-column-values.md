@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： SQL XML 列值
 title: SQL XML 列值
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d97ce4da-f09c-4d1e-85b7-a0ccedd7246a
-ms.openlocfilehash: cd55e2263d4b71fe62910ac918e331ebe37833eb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 357d55e2ce497c9929b8e7e7459ebf23ccaafede
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177275"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767175"
 ---
 # <a name="sql-xml-column-values"></a>SQL XML 列值
 
@@ -18,10 +19,10 @@ SQL Server 支持 `xml` 数据类型，开发人员可以使用 <xref:System.Dat
   
 ## <a name="example"></a>示例  
 
- 以下控制台应用程序从 AdventureWorks 数据库的 Sales.Store 表中为 <xref:System.Data.SqlClient.SqlDataReader> 实例选择两行，每行包含一个 `xml` 列********。 对于每一行，`xml` 列的值是使用 <xref:System.Data.SqlClient.SqlDataReader> 的 <xref:System.Data.SqlClient.SqlDataReader.GetSqlXml%2A> 方法进行读取。 此值存储在 <xref:System.Xml.XmlReader> 中。 请注意，若要将内容设置为 <xref:System.Data.SqlTypes.SqlXml> 变量，必须使用 <xref:System.Data.SqlClient.SqlDataReader.GetSqlXml%2A>，而不是 <xref:System.Data.IDataRecord.GetValue%2A> 方法；<xref:System.Data.IDataRecord.GetValue%2A> 以字符串形式返回 `xml` 列的值。  
+ 以下控制台应用程序从 AdventureWorks 数据库的 Sales.Store 表中为 `xml` 实例选择两行，每行包含一个  **列**  <xref:System.Data.SqlClient.SqlDataReader>。 对于每一行，`xml` 列的值是使用 <xref:System.Data.SqlClient.SqlDataReader.GetSqlXml%2A> 的 <xref:System.Data.SqlClient.SqlDataReader> 方法进行读取。 此值存储在 <xref:System.Xml.XmlReader> 中。 请注意，若要将内容设置为 <xref:System.Data.SqlClient.SqlDataReader.GetSqlXml%2A> 变量，必须使用 <xref:System.Data.IDataRecord.GetValue%2A>，而不是 <xref:System.Data.SqlTypes.SqlXml> 方法；<xref:System.Data.IDataRecord.GetValue%2A> 以字符串形式返回 `xml` 列的值。  
   
 > [!NOTE]
-> 默认情况下，在安装 SQL Server 时不安装 AdventureWorks 示例数据库****。 可以通过运行 SQL Server 安装程序来安装它。  
+> 默认情况下，在安装 SQL Server 时不安装 AdventureWorks 示例数据库  。 可以通过运行 SQL Server 安装程序来安装它。  
   
  [!code-csharp[DataWorks SqlClient.GetXmlDataReader#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.GetXmlDataReader/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.GetXmlDataReader#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.GetXmlDataReader/VB/source.vb#1)]  

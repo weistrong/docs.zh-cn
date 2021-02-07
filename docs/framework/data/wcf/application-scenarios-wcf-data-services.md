@@ -1,20 +1,23 @@
 ---
+description: '了解详细信息： (WCF Data Services 的应用程序方案) '
 title: 应用程序方案（WCF 数据服务）
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, learn more
 - WCF Data Services, scenarios
 ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
-ms.openlocfilehash: 842f560df5229fc8a2249e1317cb348b7ed3361a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: af772a3197e1fee312d70797c8a954434db6ffdf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766616"
 ---
 # <a name="application-scenarios-wcf-data-services"></a>应用程序方案（WCF 数据服务）
 
-WCF 数据服务支持一组核心方案，用于将数据作为 Open Data Protocol (OData) 源公开和使用。 本主题提供与这些方案相关的主题的链接。
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+WCF Data Services 支持一组核心方案，用于将数据作为 Open Data Protocol (OData) 源公开和使用。 本主题提供与这些方案相关的主题的链接。
 
 将数据库中的关系数据作为 OData 源公开。
 
@@ -90,7 +93,7 @@ WCF 数据服务支持一组核心方案，用于将数据作为 Open Data Proto
 
 - [如何：截断数据服务消息](how-to-intercept-data-service-messages-wcf-data-services.md)
 
-- [拦截器](interceptors-wcf-data-services.md)
+- [侦听器](interceptors-wcf-data-services.md)
 
 创建数据服务上的终结点以启用自定义服务行为。
 

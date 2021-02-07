@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugController：:D etach 方法
 title: ICorDebugController::Detach 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 06fae364-f2c6-4a50-aa7e-3da9f2684dc3
 topic_type:
 - apiref
-ms.openlocfilehash: 55acb6e3ec60925cba3d8aa5328547c54f270356
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 763386fa72fab023becf4a360556e61d500c7949
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764633"
 ---
 # <a name="icordebugcontrollerdetach-method"></a>ICorDebugController::Detach 方法
 
@@ -48,4 +49,4 @@ HRESULT Detach ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

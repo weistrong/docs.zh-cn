@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (WCF Data Services LINQ 注意事项) '
 title: LINQ 注意事项（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -9,16 +10,18 @@ helpviewer_keywords:
 - querying the data service [WCF Data Services]
 - WCF Data Services, querying
 ms.assetid: cc4ec9e9-348f-42a6-a78e-1cd40e370656
-ms.openlocfilehash: 2523aac510516fdf19087425b10ab3f2296eb726
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4205fc5c67c5939377e2a964d5a82d8855b03fce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194333"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764959"
 ---
 # <a name="linq-considerations-wcf-data-services"></a>LINQ 注意事项（WCF 数据服务）
 
-本主题提供有关在使用 WCF 数据服务客户端时如何编写和执行 LINQ 查询的信息，以及使用 LINQ 查询实现 Open Data Protocol (OData) 的数据服务的限制。 有关对基于 OData 的数据服务编写和执行查询的详细信息，请参阅 [查询数据服务](querying-the-data-service-wcf-data-services.md)。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+本主题提供有关在使用 WCF Data Services 客户端时如何编写和执行 LINQ 查询的信息，以及使用 LINQ 查询实现 Open Data Protocol (OData) 的数据服务的限制。 有关对基于 OData 的数据服务编写和执行查询的详细信息，请参阅 [查询数据服务](querying-the-data-service-wcf-data-services.md)。  
   
 ## <a name="composing-linq-queries"></a>编写 LINQ 查询  
 
@@ -45,7 +48,7 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
 [!code-csharp[Astoria Northwind Client#AddQueryOptionsLinqExpressionSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addqueryoptionslinqexpressionspecific)]
 [!code-vb[Astoria Northwind Client#AddQueryOptionsLinqExpressionSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addqueryoptionslinqexpressionspecific)]
   
- WCF 数据服务客户端可以将这两种组合查询转换为查询 URI，并且可以通过将查询方法追加到查询表达式来扩展 LINQ 查询。 通过向查询表达式或 <xref:System.Data.Services.Client.DataServiceQuery%601> 追加方法语法来编写 LINQ 查询时，运算将按照方法的调用顺序添加到查询 URI 中。 这等效于调用 <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> 方法将每个查询选项添加到查询 URI 中。  
+ WCF Data Services 客户端可以将这两种组合查询转换为查询 URI，并且可以通过将查询方法追加到查询表达式来扩展 LINQ 查询。 通过向查询表达式或 <xref:System.Data.Services.Client.DataServiceQuery%601> 追加方法语法来编写 LINQ 查询时，运算将按照方法的调用顺序添加到查询 URI 中。 这等效于调用 <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> 方法将每个查询选项添加到查询 URI 中。  
   
 ## <a name="executing-linq-queries"></a>执行 LINQ 查询  
 
@@ -61,7 +64,7 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
   
 <a name="filtering"></a>
 
-### <a name="filtering"></a>Filtering  
+### <a name="filtering"></a>筛选  
 
  本小节中的 LINQ 查询示例将筛选由服务返回的源中的数据。  
   

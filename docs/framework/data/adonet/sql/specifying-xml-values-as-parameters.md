@@ -1,29 +1,30 @@
 ---
+description: 了解详细信息：将 XML 值指定为参数
 title: 将 XML 值指定为参数
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2c4d08b8-fc29-4614-97fa-29c8ff7ca5b3
-ms.openlocfilehash: 20a573da0221704451f10138cb854523d5a17f17
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9c5b81270eeaec1fc0b3992971c9285863c92466
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767448"
 ---
 # <a name="specifying-xml-values-as-parameters"></a>将 XML 值指定为参数
 
-如果查询需要值为 XML 字符串的参数，开发人员可以使用 SqlXml 数据类型的实例提供该值****。 真的没有任何窍门；SQL Server 中的 XML 列接受参数值的方式与其他数据类型完全相同。  
+如果查询需要值为 XML 字符串的参数，开发人员可以使用 SqlXml 数据类型的实例提供该值。 真的没有任何窍门；SQL Server 中的 XML 列接受参数值的方式与其他数据类型完全相同。  
   
 ## <a name="example"></a>示例  
 
- 以下控制台应用程序在 AdventureWorks 数据库中新建一个表****。 新表包括一个名为 SalesID 的列和一个名为 SalesInfo 的 XML 列********。  
+ 以下控制台应用程序在 AdventureWorks 数据库中新建一个表。 新表包括一个名为 SalesID 的列和一个名为 SalesInfo 的 XML 列。  
   
 > [!NOTE]
-> 默认情况下，在安装 SQL Server 时不安装 AdventureWorks 示例数据库****。 可以通过运行 SQL Server 安装程序来安装它。  
+> 默认情况下，在安装 SQL Server 时不安装 AdventureWorks 示例数据库。 可以通过运行 SQL Server 安装程序来安装它。  
   
- 该示例准备一个 <xref:System.Data.SqlClient.SqlCommand> 对象以在新表中插入行。 保存的文件为 SalesInfo 列提供所需的 XML 数据****。  
+ 该示例准备一个 <xref:System.Data.SqlClient.SqlCommand> 对象以在新表中插入行。 保存的文件为 SalesInfo 列提供所需的 XML 数据。  
   
  若要创建运行示例所需的文件，请在与项目相同的文件夹中创建一个新的文本文件。 将文件命名为 MyTestStoreData.xml。 在记事本中打开该文件，然后复制并粘贴以下文本：  
   

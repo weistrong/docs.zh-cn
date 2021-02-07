@@ -1,22 +1,23 @@
 ---
+description: 了解详细信息：事务和大容量复制操作
 title: 事务和批量复制操作
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f6f0cbc9-f7bf-4d6e-875f-ad1ba0b4aa62
-ms.openlocfilehash: 27fafc0ef45b80eddd993229f52d119b40b4956f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 84e7c3c73a7886fff3a7cc16166b78e26e89ca93
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155427"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766980"
 ---
 # <a name="transaction-and-bulk-copy-operations"></a>事务和批量复制操作
 
 大容量复制操作可以作为独立操作或作为多步事务的一部分执行。 后面这个选项使你能够在同一事务中执行多个大容量复制操作，以及执行其他数据库操作（例如插入、更新和删除），同时仍能够提交或回滚整个事务。  
   
- 默认情况下，大容量复制操作作为独立的操作执行。 大容量复制操作以非事务方式执行，不可以对其进行回滚。 如果需要在出错时回滚所有或部分大容量复制，则可以使用 <xref:System.Data.SqlClient.SqlBulkCopy> 托管的事务，在现有事务中执行大容量复制操作，或者在**系统事务**中登记 <xref:System.Transactions.Transaction> 。  
+ 默认情况下，大容量复制操作作为独立的操作执行。 大容量复制操作以非事务方式执行，不可以对其进行回滚。 如果需要在出错时回滚所有或部分大容量复制，则可以使用 <xref:System.Data.SqlClient.SqlBulkCopy> 托管的事务，在现有事务中执行大容量复制操作，或者在 **系统事务** 中登记 <xref:System.Transactions.Transaction> 。  
   
 ## <a name="performing-a-non-transacted-bulk-copy-operation"></a>执行非事务性批量复制操作  
 
@@ -65,5 +66,5 @@ ms.locfileid: "91155427"
   
 ## <a name="see-also"></a>请参阅
 
-- [SQL Server 中的批量复制操作](bulk-copy-operations-in-sql-server.md)
+- [SQL Server 中的大容量复制操作](bulk-copy-operations-in-sql-server.md)
 - [ADO.NET 概述](../ado-net-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：承载数据服务 (WCF Data Services) '
 title: 承载数据服务（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - WCF Data Services, configuring
 - WCF Data Services, Windows Communication Foundation
 ms.assetid: b48f42ce-22ce-4f8d-8f0d-f7ddac9125ee
-ms.openlocfilehash: 5dfa1d9f02f660b55ecf6598ef5012174a1ba853
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 519adde3a3e054d68ff9a1b7acf7ff06c0ca7532
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765784"
 ---
 # <a name="hosting-the-data-service-wcf-data-services"></a>承载数据服务（WCF 数据服务）
 
-通过使用 WCF 数据服务，你可以创建一个服务，该服务将数据作为 Open Data Protocol (OData) 源公开。 此数据服务定义为从 <xref:System.Data.Services.DataService%601> 继承的类。 此类提供处理请求消息、对数据源执行更新以及根据 OData 生成响应消息所需的功能。 但是，数据服务无法针对传入的 HTTP 请求绑定到网络套接字并进行侦听。 对于这一必需的功能，数据服务依赖于宿主计算机。
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+通过使用 WCF Data Services，你可以创建一个服务，该服务将数据作为 Open Data Protocol (OData) 源公开。 此数据服务定义为从 <xref:System.Data.Services.DataService%601> 继承的类。 此类提供处理请求消息、对数据源执行更新以及根据 OData 生成响应消息所需的功能。 但是，数据服务无法针对传入的 HTTP 请求绑定到网络套接字并进行侦听。 对于这一必需的功能，数据服务依赖于宿主计算机。
 
  数据服务主机可代表数据服务执行以下任务：
 
@@ -29,7 +32,7 @@ ms.locfileid: "91172588"
 
 - 代表数据服务发送响应。
 
- 为了简化数据服务的承载，WCF 数据服务旨在与 Windows Communication Foundation (WCF) 集成。 数据服务提供一个默认 WCF 实现，充当 ASP.NET 应用程序中的数据服务主机。 因此，您可以通过以下方式之一承载数据服务：
+ 为了简化数据服务的承载，WCF Data Services 旨在与 Windows Communication Foundation (WCF) 集成。 数据服务提供一个默认 WCF 实现，充当 ASP.NET 应用程序中的数据服务主机。 因此，您可以通过以下方式之一承载数据服务：
 
 - 在 ASP.NET 应用程序中。
 
@@ -60,7 +63,7 @@ ms.locfileid: "91172588"
 
 ## <a name="self-hosted-wcf-services"></a>自承载 WCF 服务
 
- 由于它包含 WCF 实现，因此 WCF 数据服务支持作为 WCF 服务自承载数据服务。 服务可以在任何 .NET Framework 的应用程序中自承载，如控制台应用程序。 继承自 <xref:System.Data.Services.DataServiceHost> 的 <xref:System.ServiceModel.Web.WebServiceHost> 类用于实例化位于特定地址的数据服务。
+ 由于它包含 WCF 实现，因此 WCF Data Services 支持作为 WCF 服务自承载数据服务。 服务可以在任何 .NET Framework 的应用程序中自承载，如控制台应用程序。 继承自 <xref:System.Data.Services.DataServiceHost> 的 <xref:System.ServiceModel.Web.WebServiceHost> 类用于实例化位于特定地址的数据服务。
 
  自承载功能可用于开发和测试目的，因为通过此功能更易于部署服务和解决服务问题。 但是，这种托管并不提供 ASP.NET 或 (IIS) Internet Information Services 提供的高级宿主和管理功能。 有关详细信息，请参阅 [托管应用程序中的托管](../../wcf/feature-details/hosting-in-a-managed-application.md)。
 

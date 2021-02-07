@@ -1,13 +1,14 @@
 ---
+description: 详细了解：中的 XML 数据 SQL Server
 title: SQL Server 中的 XML 数据
 ms.date: 03/30/2017
 ms.assetid: 9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d
-ms.openlocfilehash: 8ad92334a2afd4791bb0b40378c49a0efa14fefd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fb087aeb0893ce9de9c5beb7728ff1af3259d3e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766928"
 ---
 # <a name="xml-data-in-sql-server"></a>SQL Server 中的 XML 数据
 

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：自定义数据绑定行为 (WCF Data Services) '
 title: 如何：自定义数据绑定行为（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -8,18 +9,20 @@ helpviewer_keywords:
 - WCF Data Services, customizing
 - WCF Data Services, data binding
 ms.assetid: 40476b89-8941-4771-8d21-2fe430c85a9d
-ms.openlocfilehash: 13847923a5f31108e93ef12cf7775109be3cd9eb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 60c8808f90f8e0a824a8b2b641508c0fe33f14cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765680"
 ---
 # <a name="how-to-customize-data-binding-behaviors-wcf-data-services"></a>如何：自定义数据绑定行为（WCF 数据服务）
 
-使用 WCF 数据服务，可以提供自定义逻辑，该逻辑在 <xref:System.Data.Services.Client.DataServiceCollection%601> 添加或从绑定集合中删除对象或检测到属性更改时由调用。 此自定义逻辑作为方法提供，作为 <xref:System.Func%602> 委托引用， `false` 如果在自定义方法完成时仍应执行默认行为，并且 `true` 应停止事件的后续处理，则这些方法将返回值。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+使用 WCF Data Services，可以提供自定义逻辑，该逻辑在 <xref:System.Data.Services.Client.DataServiceCollection%601> 添加或从绑定集合中删除对象或检测到属性更改时由调用。 此自定义逻辑作为方法提供，作为 <xref:System.Func%602> 委托引用， `false` 如果在自定义方法完成时仍应执行默认行为，并且 `true` 应停止事件的后续处理，则这些方法将返回值。  
   
- 本主题中的示例为 `entityChanged` 的 `entityCollectionChanged` 和 <xref:System.Data.Services.Client.DataServiceCollection%601> 参数提供了自定义方法。 本主题中的示例使用 Northwind 示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。  
+ 本主题中的示例为 `entityChanged` 的 `entityCollectionChanged` 和 <xref:System.Data.Services.Client.DataServiceCollection%601> 参数提供了自定义方法。 本主题中的示例使用 Northwind 示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。  
   
 ## <a name="example"></a>示例  
 

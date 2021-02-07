@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugController：： Stop 方法
 title: ICorDebugController::Stop 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c34e79be-a7fb-479e-8dec-d126a4c330e5
 topic_type:
 - apiref
-ms.openlocfilehash: 11cc6e4108a2064a8a9fcefa760bf3c3411d63fb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 613fd81a03114580ae3d826a94d855023895b694
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764601"
 ---
 # <a name="icordebugcontrollerstop-method"></a>ICorDebugController::Stop 方法
 
@@ -39,7 +40,7 @@ HRESULT Stop (
  `dwTimeoutIgnored`  
  未使用。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `Stop` 在进程中运行托管代码的所有线程上执行协作停止。 在仅限托管的调试会话期间，非托管线程可能会继续运行 (但在尝试调用托管代码) 时将被阻止。 在互操作调试会话期间，也将停止非托管线程。 `dwTimeoutIgnored`该值当前被忽略，并被视为无限 (-1) 。 如果协作式停止由于死锁而失败，则所有线程都将被挂起并返回 E_TIMEOUT。  
   
@@ -58,4 +59,4 @@ HRESULT Stop (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

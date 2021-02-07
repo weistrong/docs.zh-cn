@@ -1,20 +1,23 @@
 ---
+description: '了解有关详细信息，请参阅如何：使用 ADO.NET 创建数据服务实体框架数据源 (WCF Data Services) '
 title: 如何：使用 ADO.NET 实体框架数据源创建数据服务（WCF 数据服务）
 ms.date: 08/24/2018
 helpviewer_keywords:
 - WCF Data Services, providers
 - WCF Data Services, Entity Framework
 ms.assetid: 6d11fec8-0108-42f5-8719-2a7866d04428
-ms.openlocfilehash: 1e559488a3260fafe6c211ff47226a258fc1289a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: aea96c3953ec990b5f70a9702961512332330c6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557692"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766192"
 ---
 # <a name="how-to-create-a-data-service-using-an-adonet-entity-framework-data-source-wcf-data-services"></a>如何：使用 ADO.NET 实体框架数据源创建数据服务（WCF 数据服务）
 
-WCF 数据服务将实体数据作为数据服务公开。 当数据源为关系数据库时，NETEntity 框架将提供此实体数据。 本主题介绍如何在基于现有数据库的 Visual Studio Web 应用程序中创建基于实体框架的数据模型，以及如何使用此数据模型创建新的数据服务。
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+WCF Data Services 将实体数据作为数据服务公开。 当数据源为关系数据库时，NETEntity 框架将提供此实体数据。 本主题介绍如何在基于现有数据库的 Visual Studio Web 应用程序中创建基于实体框架的数据模型，以及如何使用此数据模型创建新的数据服务。
 
 实体框架还提供可以在 Visual Studio 项目外生成实体框架模型的命令行工具。 有关详细信息，请参阅 [如何：使用 EdmGen.exe 生成模型和映射文件](../adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)。
 
@@ -28,7 +31,7 @@ WCF 数据服务将实体数据作为数据服务公开。 当数据源为关系
 
      将显示“实体数据模型向导”的第一页。
 
-4. 在 " **选择模型内容** " 对话框中，选择 " **从数据库生成**"。 然后单击“下一步”  。
+4. 在 " **选择模型内容** " 对话框中，选择 " **从数据库生成**"。 然后单击“下一步”。
 
 5. 单击 " **新建连接** " 按钮。
 
@@ -36,7 +39,7 @@ WCF 数据服务将实体数据作为数据服务公开。 当数据源为关系
 
      " **选择您的数据连接** " 对话框将通过数据库连接设置进行更新。
 
-7. 确保选中 " **将实体连接设置保存 App.Config 为：** " 复选框。 然后单击“下一步”  。
+7. 确保选中 " **将实体连接设置保存 App.Config 为：** " 复选框。 然后单击“下一步”。
 
 8. 在 " **选择数据库对象** " 对话框中，选择计划在数据服务中公开的所有数据库对象。
 
@@ -51,16 +54,16 @@ WCF 数据服务将实体数据作为数据服务公开。 当数据源为关系
 
 1. 在 Visual Studio 中，打开代表数据模型的 .edmx 文件。
 
-2. 在 **模型浏览器**中，右键单击模型，单击 " **属性**"，然后记下实体容器的名称。
+2. 在 **模型浏览器** 中，右键单击模型，单击 " **属性**"，然后记下实体容器的名称。
 
-3. 在**解决方案资源管理器**中，右键单击 ASP.NET 项目的名称，然后单击 "**添加**  >  **新项**"。
+3. 在 **解决方案资源管理器** 中，右键单击 ASP.NET 项目的名称，然后单击 "**添加**  >  **新项**"。
 
 4. 在 "**添加新项**" 对话框中，选择 " **Web** " 类别中的 " **WCF 数据服务**" 模板。
 
    ![Visual Studio 2015 中的 WCF 数据服务项模板](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
-   > **WCF 数据服务**模板在 visual studio 2015 中提供，但在 visual studio 2017 或更高版本中不可用。
+   > **WCF 数据服务** 模板在 visual studio 2015 中提供，但在 visual studio 2017 或更高版本中不可用。
 
 5. 提供服务的名称，然后单击 **"确定"**。
 

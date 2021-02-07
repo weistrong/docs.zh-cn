@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：访问数据服务资源 (WCF Data Services) '
 title: 访问数据服务资源（WCF 数据服务）
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - WCF Data Services, getting started
 - WCF Data Services, accessing data
 ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
-ms.openlocfilehash: 02e45f4e67a80d3afb600f44ea9fa6a5e175310c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1b4d94b020dcbb942959dfbf3fb3fc26dcbf915
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186673"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766642"
 ---
 # <a name="accessing-data-service-resources-wcf-data-services"></a>访问数据服务资源（WCF 数据服务）
 
-WCF 数据服务支持 Open Data Protocol (OData) 将数据公开为包含由 Uri 寻址的资源的源。 这些资源根据 [实体数据模型](../adonet/entity-data-model.md)的实体关系约定来表示。 在此模型中，实体表示作为应用程序域中数据类型的数据操作单元，如客户、订单、项目和产品。 可以通过使用具象状态传输 (REST) 的语义（尤其是标准 HTTP 谓词 GET、PUT、POST 和 DELETE）访问和更改实体数据。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+WCF Data Services 支持 Open Data Protocol (OData) 将数据公开为包含由 Uri 寻址的资源的源。 这些资源根据 [实体数据模型](../adonet/entity-data-model.md)的实体关系约定来表示。 在此模型中，实体表示作为应用程序域中数据类型的数据操作单元，如客户、订单、项目和产品。 可以通过使用具象状态传输 (REST) 的语义（尤其是标准 HTTP 谓词 GET、PUT、POST 和 DELETE）访问和更改实体数据。  
   
 ## <a name="addressing-resources"></a>处理资源  
 
@@ -59,9 +62,9 @@ WCF 数据服务支持 Open Data Protocol (OData) 将数据公开为包含由 Ur
   
  返回源中的各项还按订单的 ShipCity 属性值进行排序。  
   
- WCF 数据服务支持以下 OData 系统查询选项：  
+ WCF Data Services 支持以下 OData 系统查询选项：  
   
-|查询选项|描述|  
+|查询选项|说明|  
 |------------------|-----------------|  
 |`$orderby`|定义用于返回的源中的实体的默认排序顺序。 下面的查询按市/县对返回的客户源进行排序：<br /><br /> `https://services.odata.org/Northwind/Northwind.svc/Customers?$orderby=Country,City>`|  
 |`$top`|指定要包括在返回的源中的实体数。 下面的示例跳过前 10 个客户，然后返回接下来的 10 个客户：<br /><br /> `https://services.odata.org/Northwind/Northwind.svc/Customers?$skip=10&$top=10`|  
@@ -81,7 +84,7 @@ WCF 数据服务支持 Open Data Protocol (OData) 将数据公开为包含由 Ur
   
 ## <a name="consuming-the-returned-feed"></a>使用返回的源  
 
- OData 资源的 URI 使你可以对服务公开的实体数据进行寻址。 在 Web 浏览器的 "地址" 字段中输入 URI 时，将返回所请求资源的 OData 源表示形式。 有关详细信息，请参阅 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)。 尽管可以使用 Web 浏览器测试某个数据服务资源能否返回预期的数据，但是生产数据服务（这些服务也可创建、更新和删除数据）通常由应用程序代码或网页中的脚本编写语言访问。 有关详细信息，请参阅 [在客户端应用程序中使用数据服务](using-a-data-service-in-a-client-application-wcf-data-services.md)。  
+ OData 资源的 URI 使你可以对服务公开的实体数据进行寻址。 在 Web 浏览器的 "地址" 字段中输入 URI 时，将返回所请求资源的 OData 源表示形式。 有关详细信息，请参阅 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)。 尽管可以使用 Web 浏览器测试某个数据服务资源能否返回预期的数据，但是生产数据服务（这些服务也可创建、更新和删除数据）通常由应用程序代码或网页中的脚本编写语言访问。 有关详细信息，请参阅 [在客户端应用程序中使用数据服务](using-a-data-service-in-a-client-application-wcf-data-services.md)。  
   
 ## <a name="see-also"></a>请参阅
 

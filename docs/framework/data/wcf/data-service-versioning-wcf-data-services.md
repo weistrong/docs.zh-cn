@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：数据服务版本控制 (WCF Data Services) '
 title: 数据服务版本管理（WCF 数据服务）
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,16 +7,18 @@ helpviewer_keywords:
 - versioning [WCF Data Services]
 - WCF Data Services, versioning
 ms.assetid: e3e899cc-7f25-4f67-958f-063f01f79766
-ms.openlocfilehash: 8d7cc0f0033c75c05ac9c39cfbf1ce09dc032a4c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5b08d9d822fc9dd8be4cd4614f8a5536bf98fd43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91182865"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766135"
 ---
 # <a name="data-service-versioning-wcf-data-services"></a>数据服务版本管理（WCF 数据服务）
 
-利用 Open Data Protocol (OData) ，你可以创建数据服务，以便客户端可以使用基于数据模型的 Uri 作为资源访问数据。 OData 还支持服务操作的定义。 这些数据服务在初始部署之后，可能出于多种原因（例如，更改业务需求、信息技术需求，或者为了解决其他问题）而需要更改，并且在其生存期期间可能需要更改多次。 更改现有数据服务时，您必须考虑是否要定义您的数据服务的新版本以及如何将对现有客户端应用程序的影响降至最低。 本主题提供了有关何时以及如何创建一个新版本的数据服务的指导。 它还介绍了 WCF 数据服务如何处理支持不同版本 OData 协议的客户端和数据服务之间的交换。
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+利用 Open Data Protocol (OData) ，你可以创建数据服务，以便客户端可以使用基于数据模型的 Uri 作为资源访问数据。 OData 还支持服务操作的定义。 这些数据服务在初始部署之后，可能出于多种原因（例如，更改业务需求、信息技术需求，或者为了解决其他问题）而需要更改，并且在其生存期期间可能需要更改多次。 更改现有数据服务时，您必须考虑是否要定义您的数据服务的新版本以及如何将对现有客户端应用程序的影响降至最低。 本主题提供了有关何时以及如何创建一个新版本的数据服务的指导。 它还介绍了 WCF Data Services 如何处理支持不同版本 OData 协议的客户端和数据服务之间的交换。
 
 ## <a name="versioning-a-wcf-data-service"></a>WCF 数据服务版本管理
 
@@ -56,17 +59,17 @@ ms.locfileid: "91182865"
 
 ## <a name="odata-protocol-versions"></a>OData 协议版本
 
- 新版本的 OData 发布后，客户端应用程序可能无法使用数据服务所支持的 OData 协议版本。 较旧的客户端应用程序可以访问支持更高版本 OData 的数据服务。 客户端应用程序也可能使用较新版本的 WCF 数据服务客户端库，该版本支持 OData 的较新版本，而不是正在访问的数据服务。
+ 新版本的 OData 发布后，客户端应用程序可能无法使用数据服务所支持的 OData 协议版本。 较旧的客户端应用程序可以访问支持更高版本 OData 的数据服务。 客户端应用程序也可能使用较新版本的 WCF Data Services 客户端库，该版本支持 OData 的较新版本，而不是正在访问的数据服务。
 
- WCF 数据服务利用 OData 提供的支持来处理此类版本控制方案。 当客户端使用的 OData 版本不同于数据服务所使用的 OData 版本时，还支持生成和使用数据模型元数据来创建客户端数据服务类。 有关详细信息，请参阅 [OData：概述](https://www.odata.org/documentation/odata-version-2-0/overview/) 一文中的协议版本控制部分。
+ WCF Data Services 利用 OData 提供的支持来处理此类版本控制方案。 当客户端使用的 OData 版本不同于数据服务所使用的 OData 版本时，还支持生成和使用数据模型元数据来创建客户端数据服务类。 有关详细信息，请参阅 [OData：概述](https://www.odata.org/documentation/odata-version-2-0/overview/) 一文中的协议版本控制部分。
 
 ### <a name="version-negotiation"></a>版本协商
 
  数据服务可配置为定义服务将使用的 OData 协议的最高版本，而与客户端请求的版本无关。 为此，可以 <xref:System.Data.Services.Common.DataServiceProtocolVersion> 为 <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> 数据服务所用的的属性指定一个值 <xref:System.Data.Services.DataServiceBehavior> 。 有关详细信息，请参阅 [配置数据服务](configuring-the-data-service-wcf-data-services.md)。
 
- 当应用程序使用 WCF 数据服务的客户端库访问数据服务时，库会自动将这些标头设置为正确的值，具体取决于 OData 的版本以及应用程序中使用的功能。 默认情况下，WCF 数据服务使用支持请求的操作的最低协议版本。
+ 当应用程序使用 WCF Data Services 的客户端库访问数据服务时，库会自动将这些标头设置为正确的值，具体取决于 OData 的版本以及应用程序中使用的功能。 默认情况下，WCF Data Services 使用支持请求的操作的最低协议版本。
 
- 下表详细说明了包含特定版本 OData 协议的 WCF 数据服务支持的 .NET Framework 和 Silverlight 版本。
+ 下表详细说明了包含特定版本 OData 协议的 WCF Data Services 支持的 .NET Framework 和 Silverlight 版本。
 
 |OData 协议版本|支持引入方式|
 |-----------------------------------------------------------------------------------|----------------------------|
@@ -75,9 +78,9 @@ ms.locfileid: "91182865"
 
 ### <a name="metadata-versions"></a>元数据版本
 
- 默认情况下，WCF 数据服务使用 CSDL 版本1.1 来表示数据模型。 对于基于反射提供程序或自定义数据服务提供程序的数据模型始终如此。 但是，如果数据模型是使用实体框架定义的，则返回的 CSDL 版本就是该实体框架所用的版本。 CSDL 的版本由 [Schema 元素 () ](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#schema-element-csdl)的命名空间确定。
+ 默认情况下，WCF Data Services 使用 CSDL 版本1.1 来表示数据模型。 对于基于反射提供程序或自定义数据服务提供程序的数据模型始终如此。 但是，如果数据模型是使用实体框架定义的，则返回的 CSDL 版本就是该实体框架所用的版本。 CSDL 的版本由 [Schema 元素 () ](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#schema-element-csdl)的命名空间确定。
 
- 返回的元数据的 `DataServices` 元素还包含一个 `DataServiceVersion` 特性，该特性的值与响应消息中 `DataServiceVersion` 标头的值相同。 客户端应用程序（如 Visual Studio 中的 " **添加服务引用** " 对话框）使用此信息来生成客户端数据服务类，这些类与承载数据服务的 WCF 数据服务的版本一起正确工作。 有关详细信息，请参阅 [OData：概述](https://www.odata.org/documentation/odata-version-2-0/overview/) 一文中的协议版本控制部分。
+ 返回的元数据的 `DataServices` 元素还包含一个 `DataServiceVersion` 特性，该特性的值与响应消息中 `DataServiceVersion` 标头的值相同。 客户端应用程序（如 Visual Studio 中的 " **添加服务引用** " 对话框）使用此信息来生成客户端数据服务类，这些类与承载数据服务的 WCF Data Services 的版本一起正确工作。 有关详细信息，请参阅 [OData：概述](https://www.odata.org/documentation/odata-version-2-0/overview/) 一文中的协议版本控制部分。
 
 ## <a name="see-also"></a>请参阅
 

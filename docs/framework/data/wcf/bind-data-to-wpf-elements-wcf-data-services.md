@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：将数据绑定到 Windows Presentation Foundation 元素 (WCF Data Services) '
 title: 如何：将数据绑定到 Windows Presentation Foundation 元素（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -8,18 +9,20 @@ helpviewer_keywords:
 - data binding, WCF Data Services
 - WCF Data Services, data binding
 ms.assetid: d6538ab0-0abe-426a-b9d9-e6f3a5ca2016
-ms.openlocfilehash: d6f50fb849d958ae1109324f1055b84451bde5a9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 57ad03770681fbedf9b0d5afae82a0a2590f0bc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766525"
 ---
 # <a name="how-to-bind-data-to-windows-presentation-foundation-elements-wcf-data-services"></a>如何：将数据绑定到 Windows Presentation Foundation 元素（WCF 数据服务）
 
-使用 WCF 数据服务，你可以将 Windows Presentation Foundation (WPF) 元素（如 <xref:System.Windows.Controls.ListBox> 或 <xref:System.Windows.Controls.ComboBox> ）绑定到的实例 <xref:System.Data.Services.Client.DataServiceCollection%601> ，该实例处理控件引发的事件，以使 <xref:System.Data.Services.Client.DataServiceContext> 与对控件中的数据所做的更改保持同步。 有关详细信息，请参阅 [将数据绑定到控件](binding-data-to-controls-wcf-data-services.md)。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+使用 WCF Data Services，你可以将 Windows Presentation Foundation (WPF) 元素（如 <xref:System.Windows.Controls.ListBox> 或 <xref:System.Windows.Controls.ComboBox> ）绑定到的实例 <xref:System.Data.Services.Client.DataServiceCollection%601> ，该实例处理控件引发的事件，以使 <xref:System.Data.Services.Client.DataServiceContext> 与对控件中的数据所做的更改保持同步。 有关详细信息，请参阅 [将数据绑定到控件](binding-data-to-controls-wcf-data-services.md)。  
   
- 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。  
+ 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。  
   
 ## <a name="example"></a>示例  
 

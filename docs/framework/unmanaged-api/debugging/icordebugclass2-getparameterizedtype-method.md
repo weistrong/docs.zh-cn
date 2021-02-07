@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugClass2：： GetParameterizedType 方法
 title: ICorDebugClass2::GetParameterizedType 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 94b591c4-9302-4af2-a510-089496afb036
 topic_type:
 - apiref
-ms.openlocfilehash: 139181975d16c2cdacec10ed646cfc2b8fb31a20
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4810e10e88af9256a466579ee607c0ef314d984b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765017"
 ---
 # <a name="icordebugclass2getparameterizedtype-method"></a>ICorDebugClass2::GetParameterizedType 方法
 
@@ -51,7 +52,7 @@ HRESULT GetParameterizedType (
  `ppType`  
  弄指向表示类型声明的对象的地址的指针 `ICorDebugType` 。 此对象等效于 <xref:System.Type> 托管代码中的对象。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果类是非泛型类（即，如果它没有类型参数）， `GetParameterizedType` 只需获取与类相对应的运行时类型对象。 `elementType`如果类是值类型，则应将参数设置为类的正确元素类型： ELEMENT_TYPE_VALUETYPE; 否则 ELEMENT_TYPE_CLASS。  
   

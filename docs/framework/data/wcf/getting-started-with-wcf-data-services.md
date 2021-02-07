@@ -1,26 +1,29 @@
 ---
+description: 了解详细信息：入门与 WCF Data Services
 title: WCF 数据服务入门
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, getting started
 ms.assetid: c832fa5b-cf86-4690-be5a-a226c0e49530
-ms.openlocfilehash: 011d49688a1aa611ab2a3cfb314e03bb0b38b56d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 051de9c86ac9b0ec058339da13ea43b0b31cf9ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765875"
 ---
 # <a name="getting-started-with-wcf-data-services"></a>WCF 数据服务入门
 
-本节中的主题可帮助你快速了解 Open Data Protocol (OData) ，以及如何通过说明基础技术来使用 WCF 数据服务来公开和使用 OData 源。 本部分包括概念内容和 [快速入门](quickstart-wcf-data-services.md) 教程。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+本节中的主题可帮助你快速了解 Open Data Protocol (OData) ，以及如何通过说明基础技术来使用 WCF Data Services 来公开和使用 OData 源。 本部分包括概念内容和 [快速入门](quickstart-wcf-data-services.md) 教程。  
   
 ## <a name="in-this-section"></a>本节内容  
 
- 以下主题介绍如何使用 WCF 数据服务创建数据服务。  
+ 以下主题介绍如何使用 WCF Data Services 创建数据服务。  
   
  [将数据公开为服务](exposing-your-data-as-a-service-wcf-data-services.md)  
- 描述使用 WCF 数据服务创建数据服务所需的步骤。  
+ 描述使用 WCF Data Services 创建数据服务所需的步骤。  
   
  [访问数据服务资源](accessing-data-service-resources-wcf-data-services.md)  
  介绍如何使用 OData 源。  
@@ -32,10 +35,10 @@ ms.locfileid: "91172601"
  演示如何创建和访问基于 OData 的简单服务，该服务公开基于 Northwind 示例数据库的源。  
   
  [应用程序方案](application-scenarios-wcf-data-services.md)  
- 重点介绍 WCF 数据服务支持的一组核心 OData 方案。  
+ 重点介绍 WCF Data Services 支持的一组核心 OData 方案。  
   
  [资源](wcf-data-services-resources.md)  
- 提供指向 WCF 数据服务和 OData 资源的链接。  
+ 提供指向 WCF Data Services 和 OData 资源的链接。  
   
 ## <a name="related-sections"></a>相关章节  
 

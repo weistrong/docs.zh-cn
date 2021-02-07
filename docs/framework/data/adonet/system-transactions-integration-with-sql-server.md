@@ -1,24 +1,25 @@
 ---
+description: 了解有关以下方面的详细信息：与 SQL Server 集成
 title: System.Transactions 与 SQL Server 的集成
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b555544e-7abb-4814-859b-ab9cdd7d8716
-ms.openlocfilehash: 5adf40f96854e08736cdef77300d69e452de5eea
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 977ff18600256613dabc0212c2f7aa1bc2650408
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191679"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766772"
 ---
 # <a name="systemtransactions-integration-with-sql-server"></a>System.Transactions 与 SQL Server 的集成
 
 .NET Framework 版本2.0 引入了一个可通过命名空间访问的事务框架 <xref:System.Transactions> 。 此框架以完全集成在 .NET Framework 中的方式公开事务，包括 ADO.NET。  
   
- 除可编程性增强功能外， <xref:System.Transactions> ADO.NET 还可协同工作，在处理事务时协调优化。 可提升事务是可以根据需要自动提升为完全分布式事务的轻型（本地）事务。  
+ 除了可编程性增强功能，<xref:System.Transactions> 和 ADO.NET 还可以在你处理事务时协同工作以协调优化。 可提升事务是可以根据需要自动提升为完全分布式事务的轻型（本地）事务。  
   
- 从 ADO.NET 2.0 开始， <xref:System.Data.SqlClient> 当你使用 SQL Server 时，支持可提升事务。 可提升的事务不会调用分布式事务增加的系统开销，除非需要增加的系统开销。 可提升事务是自动的，无需开发人员介入。  
+ 从 ADO.NET 2.0 开始， <xref:System.Data.SqlClient> 当你使用 SQL Server 时，支持可提升事务。 可提升的事务不会调用分布式事务增加的系统开销，除非需要增加的系统开销。 可提升事务是自动的，无需开发人员干预。  
   
  仅当使用 .NET Framework 数据提供程序进行 SQL Server () 使用 SQL Server 时，才可以使用可提升事务 `SqlClient` 。  
   
@@ -31,7 +32,7 @@ ms.locfileid: "91191679"
   
 ## <a name="promotable-transaction-scenarios"></a>可提升事务方案  
 
- 分布式事务由 Microsoft 分布式事务处理协调器 (MS DTC) 管理，该协调程序集成了事务中访问的所有资源管理器，通常会占用大量的系统资源。 可提升事务是事务的一种特殊形式 <xref:System.Transactions> ，有效地将工作委托给简单的 SQL Server 事务。 <xref:System.Transactions>、 <xref:System.Data.SqlClient> 和 SQL Server 协调处理事务时涉及到的工作，根据需要将其提升为完整的分布式事务。  
+ 分布式事务由 Microsoft 分布式事务处理协调器 (MS DTC) 管理，该协调程序集成了事务中访问的所有资源管理器，通常会占用大量的系统资源。 可提升事务是有效地将工作委托给简单 SQL Server 事务的 <xref:System.Transactions> 事务的特殊形式。 <xref:System.Transactions>、<xref:System.Data.SqlClient> 和 SQL Server 会对处理事务时涉及到的工作进行协调，并根据需要将其升级为完全分布式事务。  
   
  使用可提升事务的优点是在使用活动 <xref:System.Transactions.TransactionScope> 事务打开某个连接但不打开任何其他连接时，事务作为轻型事务提交，而不引发完全分布式事务的其他系统开销。  
   
@@ -234,7 +235,7 @@ Public Function CreateTransactionScope( _
 End Function  
 ```  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [事务和并发性](transactions-and-concurrency.md)
+- [事务和并发](transactions-and-concurrency.md)
 - [ADO.NET 概述](ado-net-overview.md)

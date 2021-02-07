@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：事务和并发
 title: 事务和并发性
 ms.date: 03/30/2017
 ms.assetid: f46570de-9e50-4fe6-8710-a8c31fa8569b
-ms.openlocfilehash: 049e402345e1abbb46739e48c89101207a43bb27
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c77b9abc72ae662eec76fc40a9856ad73f000c27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766759"
 ---
 # <a name="transactions-and-concurrency"></a>事务和并发性
 
@@ -20,7 +21,7 @@ ms.locfileid: "91191666"
   
  如果一个事务涉及同一个数据库或服务器中的多个表，则存储过程中的显式事务通常可以更好地执行。 您可以通过使用 Transact-SQL `BEGIN TRANSACTION`、`COMMIT TRANSACTION` 和 `ROLLBACK TRANSACTION` 语句在 SQL Server 存储过程中创建事务。 有关详细信息，请参阅 SQL Server 联机丛书。  
   
- 涉及不同资源管理器的事务（例如 SQL Server 和 Oracle 之间的事务）需要分布式事务。  
+ 涉及不同资源管理器的事务（如 SQL Server 和 Oracle 之间的事务）需要分布式事务。  
   
 ## <a name="in-this-section"></a>本节内容  
 
@@ -30,8 +31,8 @@ ms.locfileid: "91191666"
  [分布式事务](distributed-transactions.md)  
  描述如何在 ADO.NET 中执行分布式事务。  
   
- [System.Transactions 与 SQL Server 的集成](system-transactions-integration-with-sql-server.md)  
- 描述 <xref:System.Transactions> 与使用分布式事务的 SQL Server 的集成。  
+ [System.object 与 SQL Server 的集成](system-transactions-integration-with-sql-server.md)  
+ 说明 <xref:System.Transactions> 与 SQL Server 集成以使用分布式事务。  
   
  [开放式并发](optimistic-concurrency.md)  
  描述开放式并发和保守式并发，以及如何测试并发冲突。  
@@ -39,7 +40,7 @@ ms.locfileid: "91191666"
 ## <a name="see-also"></a>请参阅
 
 - [事务基础知识](../transactions/transaction-fundamentals.md)
-- [连接数据源](connecting-to-a-data-source.md)
+- [连接到数据源](connecting-to-a-data-source.md)
 - [命令和参数](commands-and-parameters.md)
 - [DataAdapter 和 DataReader](dataadapters-and-datareaders.md)
 - [DbProviderFactories](dbproviderfactories.md)

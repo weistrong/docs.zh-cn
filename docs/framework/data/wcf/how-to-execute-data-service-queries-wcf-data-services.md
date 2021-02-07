@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：执行数据服务查询 (WCF Data Services) '
 title: 如何：执行数据服务查询（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -9,16 +10,18 @@ helpviewer_keywords:
 - WCF Data Services, querying
 - WCF Data Services, accessing data
 ms.assetid: 62997821-e0c6-4c4d-9fb7-1273fb5e5d18
-ms.openlocfilehash: 11a37340df879db7c2f8fdeaa792c1466e4a75d0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0d78a5a82f23bb6035d21bd45d68a0b1bb76f34b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91184750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765316"
 ---
 # <a name="how-to-execute-data-service-queries-wcf-data-services"></a>如何：执行数据服务查询（WCF 数据服务）
 
-WCF 数据服务使你能够使用生成的客户端数据服务类从基于 .NET Framework 的客户端应用程序查询数据服务。 可以使用下列方法之一执行查询：  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+WCF Data Services 使你能够使用生成的客户端数据服务类从基于 .NET Framework 的客户端应用程序查询数据服务。 可以使用下列方法之一执行查询：  
   
 - 针对从 <xref:System.Data.Services.Client.DataServiceQuery%601> 工具所生成的 <xref:System.Data.Services.Client.DataServiceContext> 获取的命名 `Add Data Service Reference` 执行 LINQ 查询。  
   
@@ -28,7 +31,7 @@ WCF 数据服务使你能够使用生成的客户端数据服务类从基于 .NE
   
  有关详细信息，请参阅 [查询数据服务](querying-the-data-service-wcf-data-services.md)。  
   
- 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。  
+ 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。  
   
 ## <a name="example"></a>示例  
 

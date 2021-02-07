@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：将数据绑定到控件 (WCF Data Services) '
 title: 将数据绑定到控件（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -9,21 +10,23 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - data binding, WCF Data Services
 ms.assetid: b32e1d49-c214-4cb1-867e-88fbb3d08c8d
-ms.openlocfilehash: 178d77c225144497982487afa00f4493e17d1744
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 01ef24c2723bb690a8f441a315085c4312307b03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805208"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766473"
 ---
 # <a name="binding-data-to-controls-wcf-data-services"></a>将数据绑定到控件（WCF 数据服务）
 
-使用 WCF 数据服务，可以将控件（如 `ComboBox` 和控件）绑定 `ListView` 到类的实例 <xref:System.Data.Services.Client.DataServiceCollection%601> 。 此集合继承自 <xref:System.Collections.ObjectModel.ObservableCollection%601> 类，包含 Open Data Protocol (OData) 源的数据。 此类表示一个动态数据集合，在添加项或移除项时，此集合将提供通知。 当你使用 <xref:System.Data.Services.Client.DataServiceCollection%601> 的实例进行数据绑定时，WCF 数据服务的客户端库将处理这些事件，以确保由跟踪的对象 <xref:System.Data.Services.Client.DataServiceContext> 与绑定 UI 元素中的数据保持同步。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+使用 WCF Data Services，可以将控件（如 `ComboBox` 和控件）绑定 `ListView` 到类的实例 <xref:System.Data.Services.Client.DataServiceCollection%601> 。 此集合继承自 <xref:System.Collections.ObjectModel.ObservableCollection%601> 类，包含 Open Data Protocol (OData) 源的数据。 此类表示一个动态数据集合，在添加项或移除项时，此集合将提供通知。 当你使用 <xref:System.Data.Services.Client.DataServiceCollection%601> 的实例进行数据绑定时，WCF Data Services 的客户端库将处理这些事件，以确保由跟踪的对象 <xref:System.Data.Services.Client.DataServiceContext> 与绑定 UI 元素中的数据保持同步。  
   
  <xref:System.Data.Services.Client.DataServiceCollection%601> 类（间接）实现 <xref:System.Collections.Specialized.INotifyCollectionChanged> 接口以从集合中添加或移除对象时警告上下文。 与 <xref:System.Data.Services.Client.DataServiceCollection%601> 一起使用的数据服务类型对象还必须实现 <xref:System.ComponentModel.INotifyPropertyChanged> 接口，才能在绑定集合中对象的属性发生更改时警告 <xref:System.Data.Services.Client.DataServiceCollection%601>。  
   
 > [!NOTE]
-> 当你使用**添加服务引用**对话框或具有[DataSvcUtil.exe](wcf-data-service-client-utility-datasvcutil-exe.md) `/dataservicecollection` 生成客户端数据服务类的选项的DataSvcUtil.exe工具时，生成的数据类将实现 <xref:System.ComponentModel.INotifyPropertyChanged> 接口。 有关详细信息，请参阅 [如何：手动生成客户端数据服务类](how-to-manually-generate-client-data-service-classes-wcf-data-services.md)。  
+> 当你使用 **添加服务引用** 对话框或具有 [](wcf-data-service-client-utility-datasvcutil-exe.md) `/dataservicecollection` 生成客户端数据服务类的选项的DataSvcUtil.exe工具时，生成的数据类将实现 <xref:System.ComponentModel.INotifyPropertyChanged> 接口。 有关详细信息，请参阅 [如何：手动生成客户端数据服务类](how-to-manually-generate-client-data-service-classes-wcf-data-services.md)。  
   
 ## <a name="creating-the-binding-collection"></a>创建绑定集合  
 
@@ -92,7 +95,7 @@ ms.locfileid: "91805208"
 - `entityCollectionChanged` - 从绑定集合添加或移除对象时调用的方法。 此 <xref:System.Func%602> 委托接受一个 <xref:System.Data.Services.Client.EntityCollectionChangedParams> 对象并返回一个布尔值，该值指示默认行为（即对 <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A> 调用 <xref:System.Collections.Specialized.NotifyCollectionChangedAction.Add> 操作的 <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A> 或 <xref:System.Collections.Specialized.NotifyCollectionChangedAction.Remove> 操作的 <xref:System.Data.Services.Client.DataServiceContext>）是否仍应发生。  
   
 > [!NOTE]
-> WCF 数据服务不执行在这些委托中实现的自定义行为的验证。  
+> WCF Data Services 不执行在这些委托中实现的自定义行为的验证。  
   
  在下面的示例中，自定义 <xref:System.Collections.Specialized.NotifyCollectionChangedAction.Remove> 操作以调用 <xref:System.Data.Services.Client.DataServiceContext.DeleteLink%2A> 和 <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A> 方法来移除属于删除的 `Orders_Details` 实体的 `Orders` 实体。 执行此自定义操作的原因是，删除父实体时不会自动删除依赖实体。  
   

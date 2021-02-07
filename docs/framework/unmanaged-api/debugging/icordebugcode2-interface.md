@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugCode2 接口
 title: ICorDebugCode2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9321903b-7dea-40d8-ba32-99016c00cc46
 topic_type:
 - apiref
-ms.openlocfilehash: 1e5b92d99d8ae52c88f1517f9c3d7db8e70598ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 29fd657ec56993d47ee57aa41c81b45e75352697
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720797"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765024"
 ---
 # <a name="icordebugcode2-interface"></a>ICorDebugCode2 接口
 
@@ -32,7 +33,7 @@ ms.locfileid: "95720797"
 |[GetCodeChunks 方法](icordebugcode2-getcodechunks-method.md)|获取包含此代码对象的代码块。|  
 |[GetCompilerFlags 方法](icordebugcode2-getcompilerflags-method.md)|获取一些标志，这些标志指定此代码对象是实时 (JIT) 使用本机映像)  ( 生成器编译或生成的。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -47,7 +48,7 @@ ms.locfileid: "95720797"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugCode3 接口](icordebugcode3-interface.md)
 - [调试接口](debugging-interfaces.md)

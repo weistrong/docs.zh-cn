@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：将查询结果投影 (WCF Data Services) '
 title: 如何：投影查询结果（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -10,18 +11,20 @@ helpviewer_keywords:
 - query projection [WCF Data Services]
 - WCF Data Services, querying
 ms.assetid: 474ac625-8770-43ba-8320-d3315ea9530f
-ms.openlocfilehash: 8a3a278a8459da073b7ad3cbf8d1fff1d435a18c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a851176e5f97e31d2e8d9ac62c720d04df4ddc37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175182"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765108"
 ---
 # <a name="how-to-project-query-results-wcf-data-services"></a>如何：投影查询结果（WCF 数据服务）
 
-投影提供减少查询返回的数据量的机制，方法是指定在响应中仅返回某个实体的某些属性。 您可以通过使用查询选项或使用 select 子句对 WCF 数据服务查询的结果执行投影， `$select` (在 LINQ [select](../../../csharp/language-reference/keywords/select-clause.md)查询中 Visual Basic) 中进行[选择](../../../visual-basic/language-reference/queries/select-clause.md)。 有关详细信息，请参阅 [查询数据服务](querying-the-data-service-wcf-data-services.md)。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+投影提供减少查询返回的数据量的机制，方法是指定在响应中仅返回某个实体的某些属性。 您可以通过使用查询选项或使用 select 子句对 WCF Data Services 查询的结果执行投影， `$select` (在 LINQ [](../../../csharp/language-reference/keywords/select-clause.md)查询中 Visual Basic) 中进行[选择](../../../visual-basic/language-reference/queries/select-clause.md)。 有关详细信息，请参阅 [查询数据服务](querying-the-data-service-wcf-data-services.md)。  
   
- 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。  
+ 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。  
   
 ## <a name="example"></a>示例  
 
