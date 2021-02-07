@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugType2：： GetTypeID 方法
 title: ICorDebugType2：： GetTypeID 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b933686-226e-4373-92b7-fac579ee7b1a
 topic_type:
 - apiref
-ms.openlocfilehash: 2a4a0bfae6f9a1970f0d4aca8b37f8fc68194462
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8143ede1a11ee5f73c49fc723920f53430339ed0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738099"
 ---
 # <a name="icordebugtype2gettypeid-method"></a>ICorDebugType2：： GetTypeID 方法
 
@@ -49,7 +50,7 @@ HRESULT GetTypeID(
 |`CORDBG_E_CLASS_NOT_LOADED`|尚未加载类型。|  
 |`CORDBG_E_UNSUPPORTED`|不支持该类型。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法提供了一个从 ICorDebugType 的映射，该映射表示可能尚未加载到运行时中的类型，也称为一个 [COR_TYPEID](cor-typeid-structure.md)，它用作标识加载到运行时中的类型的不透明句柄。  
   
@@ -65,6 +66,6 @@ HRESULT GetTypeID(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugType2 接口](icordebugtype2-interface.md)

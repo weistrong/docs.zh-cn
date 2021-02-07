@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo4：： RequestRevert 方法
 title: ICorProfilerInfo4::RequestRevert 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 70261da5-5933-4e25-9de0-ddf51cba56cc
 topic_type:
 - apiref
-ms.openlocfilehash: b80de5e0e03f6b3a424ac59a099e361dd6c50c86
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 24a6a86f32bb9657e62a4433edcb5835e16b9754
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733810"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737293"
 ---
 # <a name="icorprofilerinfo4requestrevert-method"></a>ICorProfilerInfo4::RequestRevert 方法
 
@@ -73,7 +74,7 @@ HRESULT RequestRevert (
 |CORPROF_E_ACTIVE_REJIT_REQUEST_NOT_FOUND|CLR 无法还原指定函数，因为找不到对应的活动的重新编译请求。 从未请求重新编译或此函数已还原。|  
 |其他|操作系统返回了 CLR 控件范围之外的失败。 例如，如果用于更改内存页访问权限保护的系统调用失败，将显示操作系统错误。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在下次调用任何已还原的函数实例时，将运行此函数的初始版本。 如果已在运行某个函数，则将完成正在运行的版本的执行操作。  
   
@@ -87,7 +88,7 @@ HRESULT RequestRevert (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo4 接口](icorprofilerinfo4-interface.md)
 - [分析接口](profiling-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedDocument：： FindClosestLine 方法
 title: ISymUnmanagedDocument::FindClosestLine 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
 topic_type:
 - apiref
-ms.openlocfilehash: 5ec67758e3174493cbd5cec1de0dcce30013ac43
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0409a5cc29bf148a49a5267d34662f763fc302d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737826"
 ---
 # <a name="isymunmanageddocumentfindclosestline-method"></a>ISymUnmanagedDocument::FindClosestLine 方法
 
@@ -46,6 +47,6 @@ HRESULT FindClosestLine(
 
  如果该方法成功，则 S_OK;否则为错误代码。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedDocument 接口](isymunmanageddocument-interface.md)

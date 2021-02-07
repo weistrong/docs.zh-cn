@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo7：： ApplyMetaData 方法
 title: ICorProfilerInfo7：： ApplyMetaData 方法
 ms.date: 02/15/2019
 dev_langs:
@@ -10,12 +11,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: a1bfb649-4584-4d35-b3e6-8fe59b53992a
-ms.openlocfilehash: 2c71db25422740880d8b29576eff247d5eba5f1d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a4554357ede85d936e8bf9c87c6b9c096dab188
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686106"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737124"
 ---
 # <a name="icorprofilerinfo7applymetadata-method"></a>ICorProfilerInfo7：： ApplyMetaData 方法
 
@@ -36,7 +37,7 @@ HRESULT ApplyMetaData(
  `moduleID`  
  中已更改其元数据的模块的标识符。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果在 [ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md) 回调之后进行元数据更改，则必须在使用新元数据之前调用此方法。  
   
@@ -70,6 +71,6 @@ HRESULT ApplyMetaData(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo7 接口](icorprofilerinfo7-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerFunctionEnum 接口
 title: ICorProfilerFunctionEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0a1d4a38-cd0b-4231-91df-13646218ae72
 topic_type:
 - apiref
-ms.openlocfilehash: 84c3b504dff8a04172dde903c1681c9f3fb2fcd2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0a9437ee1f5c481c2c2d1fd46361da6e938dd179
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737592"
 ---
 # <a name="icorprofilerfunctionenum-interface"></a>ICorProfilerFunctionEnum 接口
 
@@ -31,11 +32,11 @@ ms.locfileid: "95669222"
 |------------|-----------------|  
 |[Clone 方法](icorprofilerfunctionenum-clone-method.md)|获取指向此 `ICorProfilerFunctionEnum` 接口副本的接口指针。|  
 |[GetCount 方法](icorprofilerfunctionenum-getcount-method.md)|获取应用程序加载的函数数量或探查器强制加载的函数数量。|  
-|[Next 方法](icorprofilerfunctionenum-next-method.md)|从一个函数的顺序集合中获取指定数量的连续函数（从枚举器在序列中的当前位置开始）。|  
+|[下一方法](icorprofilerfunctionenum-next-method.md)|从一个函数的顺序集合中获取指定数量的连续函数（从枚举器在序列中的当前位置开始）。|  
 |[Reset 方法](icorprofilerfunctionenum-reset-method.md)|将枚举器的光标移动到序列的起始位置。|  
 |[Skip 方法](icorprofilerfunctionenum-skip-method.md)|将枚举器的游标从其当前位置前移，以便跳过指定数量的元素。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorProfilerFunctionEnum` 接口是一个枚举器。 它可以让数组接收器以其合适的速率从发送器拉取元素。 换而言之，接收器可以显式控制数组元素流，从而避免将大型数组作为方法形参传递方面的相关问题。  
   
@@ -51,7 +52,7 @@ ms.locfileid: "95669222"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [分析接口](profiling-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerFunctionEnum：： Reset 方法
 title: ICorProfilerFunctionEnum::Reset 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 80046b2e-55b7-40a2-9adf-cf2763ee59c8
 topic_type:
 - apiref
-ms.openlocfilehash: b5e3656672b68f662368ca77ee84e6fa387a7a7e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0474373a918eb04e42ff5ea5b8646c50924694da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737501"
 ---
 # <a name="icorprofilerfunctionenumreset-method"></a>ICorProfilerFunctionEnum::Reset 方法
 
@@ -42,7 +43,7 @@ HRESULT Reset();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerFunctionEnum 接口](icorprofilerfunctionenum-interface.md)
 - [分析接口](profiling-interfaces.md)

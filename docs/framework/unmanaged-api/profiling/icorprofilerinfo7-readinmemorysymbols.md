@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo7：： ReadInMemorySymbols
 title: ICorProfilerInfo7：： ReadInMemorySymbols
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
-ms.openlocfilehash: 6917900b7494550992dfa82f45ed0140f95e68cb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f1a88d823e7cdfcc89aa140681f61cfbe3f63ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736981"
 ---
 # <a name="icorprofilerinfo7readinmemorysymbols"></a>ICorProfilerInfo7：： ReadInMemorySymbols
 
@@ -58,7 +59,7 @@ HRESULT ReadInMemorySymbols(
   
  `CORPROF_E_MODULE_IS_DYNAMIC`如果该模块是使用创建的，则为 <xref:System.Reflection.Emit> 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此 `ReadInMemorySymbols` 方法尝试 `countSymbolBytes` 从      `symbolsReadOffset` 内存中流内的偏移量开始读取数据。 将数据复制到 `pSymbolBytes` ，该数据应具有 `countSymbolBytes` 可用空间。     `pCountSymbolsBytesRead` 包含读取的实际字节数， `countSymbolBytes` 如果已到达流的末尾，则可以小于。  
   
@@ -75,6 +76,6 @@ HRESULT ReadInMemorySymbols(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo7 接口](icorprofilerinfo7-interface.md)

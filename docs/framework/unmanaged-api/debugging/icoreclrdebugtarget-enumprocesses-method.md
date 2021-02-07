@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICoreClrDebugTarget：： EnumProcesses 方法
 title: ICoreClrDebugTarget::EnumProcesses 方法
 ms.date: 03/30/2017
 api_name:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: e00fd477-4f49-43d3-bd0e-3094824b1136
 topic_type:
 - apiref
-ms.openlocfilehash: 7e0219ae0d7d474812865f01e4e2fcfe2e4da991
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 73dc8a2b00f7a57879855158e6b871117d015f3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738034"
 ---
 # <a name="icoreclrdebugtargetenumprocesses-method"></a>ICoreClrDebugTarget::EnumProcesses 方法
 
@@ -56,7 +57,7 @@ HRESULT EnumProcesses (
  E_FAIL（或其他 E_ 返回代码）  
  其他故障。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  若要释放此方法分配的内存，请调用 [ICoreClrDebugTarget：： FreeMemory](icoreclrdebugtarget-freememory-method.md) 方法。  
   
@@ -70,6 +71,6 @@ HRESULT EnumProcesses (
   
  **.NET Framework 版本：** 3.5 SP1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICoreClrDebugTarget 接口](icoreclrdebugtarget-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorProfilerInfo7 接口
 title: ICorProfilerInfo7 接口
 ms.date: 03/30/2017
 ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313
-ms.openlocfilehash: 4acafafa284549fe1b078542a88c0818dcde3038
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7a33472d5562ad57d38291c64f8da7021ae2fe91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686054"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737072"
 ---
 # <a name="icorprofilerinfo7-interface"></a>ICorProfilerInfo7 接口
 
@@ -31,6 +32,6 @@ ms.locfileid: "95686054"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)

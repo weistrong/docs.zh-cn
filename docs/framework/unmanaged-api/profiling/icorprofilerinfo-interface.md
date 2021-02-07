@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo 接口
 title: ICorProfilerInfo 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: eb4e4ce0-06e7-4469-bbc4-edc2eb5da4b1
 topic_type:
 - apiref
-ms.openlocfilehash: a029784a28036e531670ad373893b4256c5864c4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d1da0f41a7c7358b7f71c8d931fff723b3144cdd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671182"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737371"
 ---
 # <a name="icorprofilerinfo-interface"></a>ICorProfilerInfo 接口
 
@@ -66,7 +67,7 @@ ms.locfileid: "95671182"
 |[SetILFunctionBody 方法](icorprofilerinfo-setilfunctionbody-method.md)|替换指定模块中指定函数的主体。|  
 |[SetILInstrumentedCodeMap 方法](icorprofilerinfo-setilinstrumentedcodemap-method.md)|指定指定函数的原始 MSIL 的偏移量如何映射到该函数的探查器修改后的新偏移量。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器调用接口中的方法 `ICorProfilerInfo` ，以便与 CLR 通信以控制事件监视和请求信息。  
   
@@ -84,7 +85,7 @@ ms.locfileid: "95671182"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
 - [ICorProfilerInfo2 接口](icorprofilerinfo2-interface.md)

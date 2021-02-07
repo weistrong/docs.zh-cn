@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorProfilerInfo6：： EnumNgenModuleMethodsInliningThisMethod 方法
 title: ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod 方法
 ms.date: 03/30/2017
 ms.assetid: b933dfe6-7833-40cb-aad8-40842dc3034f
-ms.openlocfilehash: 8ed3f305deceacb976aeff994db1588f9e1ce1fb
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: bd43dcecabe9a75f7ce3a94996727b192574e321
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495523"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737163"
 ---
 # <a name="icorprofilerinfo6enumngenmodulemethodsinliningthismethod-method"></a>ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod 方法
 
@@ -31,20 +32,20 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
 中NGen 模块的标识符。
 
 `inlineeModuleId`\
-中定义的模块的标识符 `inlineeMethodId` 。 有关详细信息，请参阅“备注”部分。
+中定义的模块的标识符 `inlineeMethodId` 。 有关详细信息，请参阅备注部分。
 
 `inlineeMethodId`\
-中内联方法的标识符。 有关详细信息，请参阅“备注”部分。
+中内联方法的标识符。 有关详细信息，请参阅备注部分。
 
 `incompleteData`\
-弄一个标志，该标志指示是否 `ppEnum` 将所有方法内联到给定方法。  有关详细信息，请参阅“备注”部分。
+弄一个标志，该标志指示是否 `ppEnum` 将所有方法内联到给定方法。  有关详细信息，请参阅备注部分。
 
 `ppEnum`\
 弄指向枚举器地址的指针
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-`inlineeModuleId`和 `inlineeMethodId` 共同构成了可能内联的方法的完整标识符。 例如，假设 module `A` 定义方法 `Simple.Add` ：
+`inlineeModuleId` 和 `inlineeMethodId` 共同构成了可能内联的方法的完整标识符。 例如，假设 module `A` 定义方法 `Simple.Add` ：
 
 ```csharp
 Simple.Add(int a, int b)
@@ -58,7 +59,7 @@ Fancy.AddTwice(int a, int b)
 { return Simple.Add(a,b) + Simple.Add(a,b); }
 ```
 
-还假定 `Fancy.AddTwice` inlines 调用 `SimpleAdd` 。 探查器可以使用此枚举器查找在模块 B 中定义的内联的所有方法 `Simple.Add` ，并将枚举结果 `AddTwice` 。  `inlineeModuleId`是模块的标识符 `A` ，是的 `inlineeMethodId` 标识符 `Simple.Add(int a, int b)` 。
+还假定 `Fancy.AddTwice` inlines 调用 `SimpleAdd` 。 探查器可以使用此枚举器查找在模块 B 中定义的内联的所有方法 `Simple.Add` ，并将枚举结果 `AddTwice` 。  `inlineeModuleId` 是模块的标识符 `A` ，是的 `inlineeMethodId` 标识符 `Simple.Add(int a, int b)` 。
 
 如果在 `incompleteData` 函数返回后为 true，则枚举器不包含内联给定方法的所有方法。 如果尚未加载 inliners 模块的一个或多个直接或间接依赖项，则可能会发生这种情况。 如果探查器需要准确的数据，则应在加载更多模块时重试，最好是在每个模块加载时重试。
 
@@ -73,7 +74,7 @@ Simple.Add(int a, int b)
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
 
 **头文件：** CorProf.idl、CorProf.h
 
@@ -81,6 +82,6 @@ Simple.Add(int a, int b)
 
 **.NET Framework 版本：**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo6 接口](icorprofilerinfo6-interface.md)

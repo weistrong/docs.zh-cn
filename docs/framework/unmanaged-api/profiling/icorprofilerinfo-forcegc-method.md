@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： ForceGC 方法
 title: ICorProfilerInfo::ForceGC 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0da1ef80-d242-4636-87d0-43e0470b342a
 topic_type:
 - apiref
-ms.openlocfilehash: 75f2db5e5489f02dcae3db0c3e6af19c922e0745
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1abed09450b72730a11a168223b6da05e9baf9be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737527"
 ---
 # <a name="icorprofilerinfoforcegc-method"></a>ICorProfilerInfo::ForceGC 方法
 
@@ -46,6 +47,6 @@ HRESULT ForceGC();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
