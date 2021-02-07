@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：跟踪记录
 title: 跟踪记录
 ms.date: 03/30/2017
 ms.assetid: 51adbda3-bd8b-4892-a8ea-d343186472d2
-ms.openlocfilehash: 0344c802ef779d1f13f58c35c2f0e4fa67a37578
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ab04f7c964ae8ba64b6c67606031217fbe122951
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238101"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755117"
 ---
 # <a name="tracking-records"></a>跟踪记录
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238101"
 
  下表详细介绍工作流运行时发出的跟踪记录。  
   
-|跟踪记录|描述|  
+|跟踪记录|说明|  
 |---------------------|-----------------|  
 |工作流生命周期记录|在工作流实例生命周期的各个阶段中发出。 例如，当工作流启动或完成时发出一个记录。|  
 |活动生命周期记录|详细说明活动执行情况。 这些记录指示工作流活动的状态，例如，当安排活动时、活动完成时，或者发生错误时。|  
@@ -62,7 +63,7 @@ ms.locfileid: "96238101"
   
 5. <xref:System.Activities.Tracking.WorkflowInstanceRecord> 指示正在完成工作流。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Server App Fabric 监视](/previous-versions/appfabric/ee677251(v=azure.10))
 - [用 App Fabric 监视应用程序](/previous-versions/appfabric/ee677276(v=azure.10))

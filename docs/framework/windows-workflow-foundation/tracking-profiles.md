@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：跟踪配置文件
 title: 跟踪配置文件
 ms.date: 03/30/2017
 ms.assetid: 22682566-1cd9-4672-9791-fb3523638e18
-ms.openlocfilehash: ceeb0f5533bb4c637ea7df52249f5b00067d9b3d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9748f0452a1699e08760372f826f2458d82f4b79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755143"
 ---
 # <a name="tracking-profiles"></a>跟踪配置文件
 
@@ -64,9 +65,9 @@ TrackingProfile profile = new TrackingProfile()
 
 跟踪配置文件中的 `implementationVisibility` 特性指定的两种可见性模式包括 `RootScope` 和 `All`。 如果复合活动不是工作流的根，则使用 `RootScope` 模式会禁止构成活动实现的活动的跟踪记录。 这意味着，如果将使用其他活动实现的某一活动添加到工作流中，并将 `implementationVisibility` 设置为 RootScope，则仅跟踪该复合活动中的顶级活动。 如果活动是工作流的根，该活动的实现即为工作流自身，因此将发出构成实现的活动的跟踪记录。 使用 All 模式允许发出根活动及其所有复合活动的所有跟踪记录。
 
-例如，假设 *MyActivity* 是一个复合活动，其实现包含两个活动： *Activity1* 和 *Activity2*。 如果将此活动添加到工作流，并使用设置为的跟踪配置文件启用跟踪 `implementationVisibility` `RootScope` ，则只会为 *MyActivity*发出跟踪记录。 但是，对于 activity *Activity1* 和 *Activity2*，不会发出任何记录。
+例如，假设 *MyActivity* 是一个复合活动，其实现包含两个活动： *Activity1* 和 *Activity2*。 如果将此活动添加到工作流，并使用设置为的跟踪配置文件启用跟踪 `implementationVisibility` `RootScope` ，则只会为 *MyActivity* 发出跟踪记录。 但是，对于 activity *Activity1* 和 *Activity2*，不会发出任何记录。
 
-但是，如果将 `implementationVisibility` 跟踪配置文件的属性设置为 `All` ，则会同时为 *MyActivity*和活动 *Activity1* 和 *Activity2*发出跟踪记录。
+但是，如果将 `implementationVisibility` 跟踪配置文件的属性设置为 `All` ，则会同时为 *MyActivity* 和活动 *Activity1* 和 *Activity2* 发出跟踪记录。
 
 `implementationVisibility` 标志适用于以下跟踪记录类型：
 
