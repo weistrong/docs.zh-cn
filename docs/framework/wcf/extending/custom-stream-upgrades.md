@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：自定义流升级
 title: 自定义流升级
 ms.date: 03/30/2017
 ms.assetid: e3da85c8-57f3-4e32-a4cb-50123f30fea6
-ms.openlocfilehash: 3ef0f59a5d63c24188b29cb7a38db2d6323d80ee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fe52b99de382d5a5d5b41a0bff2c4a9a7698f6f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295571"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735239"
 ---
 # <a name="custom-stream-upgrades"></a>自定义流升级
 
@@ -97,7 +98,7 @@ ms.locfileid: "96295571"
   
 4. 每次调用 <xref:System.ServiceModel.Channels.StreamUpgradeInitiator.GetNextUpgrade%2A> 和 <xref:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade%2A> 之后，都会升级该流。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.StreamUpgradeInitiator>
 - <xref:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator>

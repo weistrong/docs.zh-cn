@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：自定义绑定
 title: 自定义绑定
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Communication Foundation, endpoints
 - Windows Communication Foundation, configuration
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
-ms.openlocfilehash: 062aba26227fedeea3e5f462ebf5d55cf0cba56c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ced0f9ada7238b43216a246d75dd391aa6eb3f2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735343"
 ---
 # <a name="custom-bindings"></a>自定义绑定
 
@@ -64,7 +65,7 @@ ms.locfileid: "90539992"
 
 下表总结了每层的选项。
 
-|层|选项|必选|
+|层|选项|必须|
 |-----------|-------------|--------------|
 |事务|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|否|
 |可靠性|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement>|否|

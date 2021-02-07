@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：创建 BindingElement
 title: 创建 BindingElement
 ms.date: 03/30/2017
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
-ms.openlocfilehash: 285bed029cf8487b37757de6a56075abe448f3ce
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: de5ef045f2e83985cabd36c53652d46536889fa2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735421"
 ---
 # <a name="creating-a-bindingelement"></a>创建 BindingElement
 
@@ -77,7 +78,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
   
  为通道创建绑定元素后，返回到 " [开发通道](developing-channels.md) " 主题，以查看是否要将配置文件支持添加到绑定元素、是否以及如何添加元数据发布支持，以及是否以及如何构造使用绑定元素的用户定义绑定。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.BindingElement>
 - [开发通道](developing-channels.md)
