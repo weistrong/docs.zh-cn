@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedVariable 接口
 title: ISymUnmanagedVariable 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 704c69ba-77bc-40d7-8c0c-400061686321
 topic_type:
 - apiref
-ms.openlocfilehash: 93e1f8eb17f06e42ddb243f88c593979fcb28030
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 15b6c7018f92ad4c82abb9e5b4e52bf428b3f54b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762690"
 ---
 # <a name="isymunmanagedvariable-interface"></a>ISymUnmanagedVariable 接口
 
@@ -43,6 +44,6 @@ ms.locfileid: "95733277"
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [诊断符号存储区接口](diagnostics-symbol-store-interfaces.md)

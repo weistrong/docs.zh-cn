@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedWriter：:D efineSequencePoints 方法
 title: ISymUnmanagedWriter::DefineSequencePoints 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 64202baf-be6b-40ba-8162-8cc6c0c9b8e1
 topic_type:
 - apiref
-ms.openlocfilehash: af8beb1ec627b93faeb7329a03579319ca3880ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0c5ac9854ef341512f58cb1cd63ed7dfcde9962e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678319"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762326"
 ---
 # <a name="isymunmanagedwriterdefinesequencepoints-method"></a>ISymUnmanagedWriter::DefineSequencePoints 方法
 
@@ -57,10 +58,10 @@ HRESULT DefineSequencePoints(
  中序列点的起始列号。  
   
  `endLines`  
- 中序列点的结束行号。 此参数是可选的。  
+ 中序列点的结束行号。 此参数可选。  
   
  `endColumns`  
- 中序列点的结束列号。 此参数是可选的。  
+ 中序列点的结束列号。 此参数可选。  
   
 ## <a name="return-value"></a>返回值  
 
@@ -70,6 +71,6 @@ HRESULT DefineSequencePoints(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedWriter 接口](isymunmanagedwriter-interface.md)

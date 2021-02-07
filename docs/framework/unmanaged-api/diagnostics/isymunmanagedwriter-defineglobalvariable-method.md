@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedWriter：:D efineGlobalVariable 方法
 title: ISymUnmanagedWriter::DefineGlobalVariable 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 843c904a-8176-4d8f-bd47-b4d4c29f4c5c
 topic_type:
 - apiref
-ms.openlocfilehash: bc389b7247a6b1d6ce16cb3cf350f1672213b2e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 70dccfed054a9ac79baf3f28683edc9a14d3cdf7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762378"
 ---
 # <a name="isymunmanagedwriterdefineglobalvariable-method"></a>ISymUnmanagedWriter::DefineGlobalVariable 方法
 
@@ -74,7 +75,7 @@ HRESULT DefineGlobalVariable(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedWriter 接口](isymunmanagedwriter-interface.md)
 - [DefineLocalVariable 方法](isymunmanagedwriter-definelocalvariable-method.md)

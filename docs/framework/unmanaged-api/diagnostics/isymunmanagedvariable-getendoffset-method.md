@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedVariable：： GetEndOffset 方法
 title: ISymUnmanagedVariable::GetEndOffset 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e5d777c5-d450-4c0f-999c-b3953ee22cfb
 topic_type:
 - apiref
-ms.openlocfilehash: cf4179f839b62409d5b2185f3e11e8e732c29187
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 302f19c0d9fce1864e94a79efe3a3d1515478c0b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721863"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762794"
 ---
 # <a name="isymunmanagedvariablegetendoffset-method"></a>ISymUnmanagedVariable::GetEndOffset 方法
 
@@ -46,7 +47,7 @@ HRESULT GetEndOffset(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedVariable 接口](isymunmanagedvariable-interface.md)
 - [GetStartOffset 方法](isymunmanagedvariable-getstartoffset-method.md)

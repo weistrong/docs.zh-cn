@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedVariable：： GetName 方法
 title: ISymUnmanagedVariable::GetName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
 topic_type:
 - apiref
-ms.openlocfilehash: f9da3ca8684da3bbc87146b3b52effdc4f91393d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88d8cf4c81200a30e2a102b63af2817fef2b50c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726881"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762781"
 ---
 # <a name="isymunmanagedvariablegetname-method"></a>ISymUnmanagedVariable::GetName 方法
 
@@ -55,6 +56,6 @@ HRESULT GetName(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedVariable 接口](isymunmanagedvariable-interface.md)

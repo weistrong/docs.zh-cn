@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedWriter：： OpenScope 方法
 title: ISymUnmanagedWriter::OpenScope 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbea0644-3873-4329-90b8-624163e87467
 topic_type:
 - apiref
-ms.openlocfilehash: 5afc91d1dc6d02f052e860787ebf0858a2f5d12d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1e47d97941b053fedcf08c7582e1083988a9fed4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762105"
 ---
 # <a name="isymunmanagedwriteropenscope-method"></a>ISymUnmanagedWriter::OpenScope 方法
 
@@ -46,7 +47,7 @@ HRESULT OpenScope(
 
  如果该方法成功，则 S_OK;否则，E_FAIL 或其他一些错误代码。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ISymUnmanagedWriter::OpenScope` 返回一个不透明的范围标识符，该标识符可以与 [ISymUnmanagedWriter：： SetScopeRange](isymunmanagedwriter-setscoperange-method.md) 一起使用，以定义范围的起始和结束偏移量。 在这种情况下，将忽略传递到 `ISymUnmanagedWriter::OpenScope` 和 [ISymUnmanagedWriter：： CloseScope](isymunmanagedwriter-closescope-method.md) 的偏移量。 范围标识符只在当前方法中有效。  
   
@@ -54,6 +55,6 @@ HRESULT OpenScope(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedWriter 接口](isymunmanagedwriter-interface.md)

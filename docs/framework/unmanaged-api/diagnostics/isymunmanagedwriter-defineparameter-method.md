@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedWriter：:D efineParameter 方法
 title: ISymUnmanagedWriter::DefineParameter 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a8e3dd32-6a44-4371-9a74-f417b11998c8
 topic_type:
 - apiref
-ms.openlocfilehash: c5e36443295395997303cb94202f534a83d086f4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1e42140e33a99b224ccf3eff7ea29b7aa3ff1b15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762352"
 ---
 # <a name="isymunmanagedwriterdefineparameter-method"></a>ISymUnmanagedWriter::DefineParameter 方法
 
@@ -72,6 +73,6 @@ HRESULT DefineParameter(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedWriter 接口](isymunmanagedwriter-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedWriter：： OpenMethod 方法
 title: ISymUnmanagedWriter::OpenMethod 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fb90cb7f-af88-45e8-a99f-80a0bbddb08b
 topic_type:
 - apiref
-ms.openlocfilehash: deb3a28ffb73754b4c03496a6a72325418f1a4fc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2cf7e6bf7c632449c25a2b49c7658fa7b1cc287e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722903"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762222"
 ---
 # <a name="isymunmanagedwriteropenmethod-method"></a>ISymUnmanagedWriter::OpenMethod 方法
 
@@ -46,7 +47,7 @@ HRESULT OpenMethod(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedWriter 接口](isymunmanagedwriter-interface.md)
 - [CloseMethod 方法](isymunmanagedwriter-closemethod-method.md)

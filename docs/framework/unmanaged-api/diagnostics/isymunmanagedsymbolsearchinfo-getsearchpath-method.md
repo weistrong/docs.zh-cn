@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedSymbolSearchInfo：： GetSearchPath 方法
 title: ISymUnmanagedSymbolSearchInfo::GetSearchPath 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b588d470-53c2-4492-be8c-957323eaca0b
 topic_type:
 - apiref
-ms.openlocfilehash: eda8a7ff1d8b3031173bf5f73a8b8a8355e6a62c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2ae85733ccca8ac63fbca5d2556026221e5681bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763028"
 ---
 # <a name="isymunmanagedsymbolsearchinfogetsearchpath-method"></a>ISymUnmanagedSymbolSearchInfo::GetSearchPath 方法
 
@@ -46,6 +47,6 @@ HRESULT GetSearchPathLength(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedSymbolSearchInfo 接口](isymunmanagedsymbolsearchinfo-interface.md)

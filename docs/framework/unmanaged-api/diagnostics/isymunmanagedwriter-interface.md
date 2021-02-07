@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedWriter 接口
 title: ISymUnmanagedWriter 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7d6733ec-f081-4166-bc17-de09e16dc304
 topic_type:
 - apiref
-ms.openlocfilehash: fddfd2a163f6e6513b648ee0b724c0b5bd54c81a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 20fc0fd9b76b1aae4090582fe48a8a8e77d77c9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722929"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762235"
 ---
 # <a name="isymunmanagedwriter-interface"></a>ISymUnmanagedWriter 接口
 
@@ -58,7 +59,7 @@ ms.locfileid: "95722929"
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [诊断符号存储区接口](diagnostics-symbol-store-interfaces.md)
 - [ISymUnmanagedWriter2 接口](isymunmanagedwriter2-interface.md)
