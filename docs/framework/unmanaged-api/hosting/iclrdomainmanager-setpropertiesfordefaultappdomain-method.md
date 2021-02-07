@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDomainManager：： SetPropertiesForDefaultAppDomain 方法
 title: ICLRDomainManager::SetPropertiesForDefaultAppDomain 方法
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - ICLRDomainManager::SetPropertiesForDefaultAppDomain method [.NET Framework hosting]
 - SetPropertiesForDefaultAppDomain method [.NET Framework hosting]
 ms.assetid: 43e61c4b-c435-45ec-9ef6-c68403aa4200
-ms.openlocfilehash: b5577d0444caf14fb47d9d7e2de60a8399378db7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 08e6c885d5d089fa22c30a4e3cef69480b840031
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702129"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689438"
 ---
 # <a name="iclrdomainmanagersetpropertiesfordefaultappdomain-method"></a>ICLRDomainManager::SetPropertiesForDefaultAppDomain 方法
 
@@ -54,7 +55,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
 |S_OK|该方法已成功完成。|  
 |HRESULT_FROM_WIN32 (ERROR_UNKNOWN_PROPERTY) |`pwszPropertyNames` 包含此方法无法识别的属性名称。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  "PARTIAL_TRUST_VISIBLE_ASSEMBLIES" 的属性值是一个程序集的列表，这些程序集具有 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 带有标志的条件性 (APTCA) 特性 <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault?displayProperty=nameWithType> ，在默认应用程序域中对部分受信任的调用方可见。  
   
@@ -68,7 +69,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载](index.md)
 - [ICLRDomainManager 接口](iclrdomainmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugReferenceValue 接口
 title: ICorDebugReferenceValue 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2040e2be-119a-4cfb-ae52-b0b6f052665c
 topic_type:
 - apiref
-ms.openlocfilehash: 343e504e086e740236d7b5977452cc0d789883fc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e516b1178b4f4268472dedd37d6443e673e16af6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728402"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690959"
 ---
 # <a name="icordebugreferencevalue-interface"></a>ICorDebugReferenceValue 接口
 
@@ -35,7 +36,7 @@ ms.locfileid: "95728402"
 |[IsNull 方法](icordebugreferencevalue-isnull-method.md)|获取一个值，该值指示此 `ICorDebugReferenceValue` 值是否为 null 值，在这种情况下，不 `ICorDebugReferenceValue` 指向对象。|  
 |[SetValue 方法](icordebugreferencevalue-setvalue-method.md)|设置当前内存地址。 也就是说，此方法会将此设置 `ICorDebugReferenceValue` 为指向对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在继续调试进程时，公共语言运行时 (CLR) 可以对对象进行垃圾回收。 垃圾回收可能会在内存中移动对象。 `ICorDebugReferenceValue`将与垃圾回收一起合作，以便在垃圾回收后更新其信息，或者在垃圾回收之前隐式地将其无效。  
   
@@ -54,6 +55,6 @@ ms.locfileid: "95728402"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

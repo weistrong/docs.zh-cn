@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataInfo：： GetFileMapping 方法
 title: IMetaDataInfo::GetFileMapping 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2868dfec-c992-4606-88bb-a8e0b6b18271
 topic_type:
 - apiref
-ms.openlocfilehash: 8823f3cc016072d3f20100c29532459da5e97492
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 82a1a23c50a4d8340804f66966933fc6a11e0f8c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688476"
 ---
 # <a name="imetadatainfogetfilemapping-method"></a>IMetaDataInfo::GetFileMapping 方法
 
@@ -55,7 +56,7 @@ HRESULT GetFileMapping (
 |`E_INVALIDARG`|将 NULL 作为参数值传递。|  
 |`COR_E_NOTSUPPORTED`|CLR 实现无法提供有关内存区域的信息。 这可能是由以下原因引起的：<br /><br /> -元数据范围已用 `ofWrite` 或标记打开 `ofCopyMemory` 。<br />-元数据范围在未带标志的情况下打开 `ofReadOnly` 。<br />- [IMetaDataDispenser：： OpenScopeOnMemory](imetadatadispenser-openscopeonmemory-method.md) 方法仅用于打开文件的元数据部分。<br />-此文件不是可移植的可执行文件 (PE) 文件。 **注意：**  这些条件依赖于 CLR 实现，并且可能会在 CLR 的未来版本中减弱。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ppvData`仅当基础元数据范围打开时，指向的内存才有效。  
   
@@ -75,7 +76,7 @@ HRESULT GetFileMapping (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataInfo 接口](imetadatainfo-interface.md)
 - [CorFileMapping 枚举](corfilemapping-enumeration.md)

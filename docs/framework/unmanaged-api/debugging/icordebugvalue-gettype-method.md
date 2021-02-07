@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugValue：： GetType 方法
 title: ICorDebugValue::GetType 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41e2d503-e1f1-407b-abe0-6a29adb3e0d1
 topic_type:
 - apiref
-ms.openlocfilehash: 06f403f0b653866428a41240f99833ec1180eb86
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 750e73634683a03e811d2756cc62c16b6dcea3de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731067"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690320"
 ---
 # <a name="icordebugvaluegettype-method"></a>ICorDebugValue::GetType 方法
 
@@ -39,7 +40,7 @@ HRESULT GetType (
  `pType`  
  弄一个指针，指向 "CorElementType" 枚举的值，该值指示值的类型。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果对象是复杂的运行时类型，则可以通过接口的相应子类检查该类型 `ICorDebugValue` 。 例如，"ICorDebugObjectValue" 是从继承的，它 `ICorDebugValue` 表示一个复杂类型。  
   
@@ -55,4 +56,4 @@ HRESULT GetType (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

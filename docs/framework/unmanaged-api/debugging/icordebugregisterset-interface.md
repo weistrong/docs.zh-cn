@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugRegisterSet 接口
 title: ICorDebugRegisterSet 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d3d9676d-0b87-4bc3-b679-7bbc7a186c88
 topic_type:
 - apiref
-ms.openlocfilehash: 940810288b72be0d4dfc5366176663c22c369ebb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7d888e9e395e9f5fa88c6a6d96b2b8e3171ef4ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712373"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690777"
 ---
 # <a name="icordebugregisterset-interface"></a>ICorDebugRegisterSet 接口
 
@@ -35,7 +36,7 @@ ms.locfileid: "95712373"
 |[SetRegisters 方法](icordebugregisterset-setregisters-method.md)|未实现 .NET Framework 版本2.0。|  
 |[SetThreadContext 方法](icordebugregisterset-setthreadcontext-method.md)|未实现 2.0 .NET Framework。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugRegisterSet`接口仅支持32位寄存器。 使用需要额外注册的平台（如 IA-64）上的 [ICorDebugRegisterSet2](icordebugregisterset2-interface.md) 接口。  
   
@@ -52,7 +53,7 @@ ms.locfileid: "95712373"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [ICorDebugRegisterSet2 接口](icordebugregisterset2-interface.md)

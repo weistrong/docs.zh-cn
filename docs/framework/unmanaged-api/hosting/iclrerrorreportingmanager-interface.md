@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRErrorReportingManager 接口
 title: ICLRErrorReportingManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ea8af0d5-4133-4472-8a1f-50570d7e85fa
 topic_type:
 - apiref
-ms.openlocfilehash: d3816c8a3b6204b053505aa888eb28d696f8990b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 094fe52858983fd0e1e5826e823932cb150b6087
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677833"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689269"
 ---
 # <a name="iclrerrorreportingmanager-interface"></a>ICLRErrorReportingManager 接口
 
@@ -33,7 +34,7 @@ ms.locfileid: "95677833"
 |[EndCustomDump 方法](iclrerrorreportingmanager-endcustomdump-method.md)|清除由先前对的调用设置的自定义堆栈转储配置 `BeginCustomDump` 。|  
 |[GetBucketParametersForCurrentException 方法](iclrerrorreportingmanager-getbucketparametersforcurrentexception-method.md)|获取调用线程上的当前异常的 Watson 存储桶。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `BeginCustomDump`方法设置自定义堆栈转储配置。 `EndCustomDump`方法清除自定义堆栈转储配置并释放任何关联的状态。 应在自定义转储完成后调用它。  
   
@@ -50,7 +51,7 @@ ms.locfileid: "95677833"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ECustomDumpItemKind 枚举](ecustomdumpitemkind-enumeration.md)
 - [承载接口](hosting-interfaces.md)

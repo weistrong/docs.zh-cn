@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRHostProtectionManager 接口
 title: ICLRHostProtectionManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ce2770ae-23d0-45d9-8bcf-46504ac5020e
 topic_type:
 - apiref
-ms.openlocfilehash: e8ead998907d55b0bfbf82e5f6f4e7c504f657ec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 60d27a8c1a24720bbfdcde52a5495425279d5ac4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689223"
 ---
 # <a name="iclrhostprotectionmanager-interface"></a>ICLRHostProtectionManager 接口
 
@@ -42,7 +43,7 @@ ms.locfileid: "95714154"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EApiCategories 枚举](eapicategories-enumeration.md)
 - [ICLRControl 接口](iclrcontrol-interface.md)

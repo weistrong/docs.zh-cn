@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugVariableHome：： GetArgumentIndex 方法
 title: ICorDebugVariableHome：： GetArgumentIndex 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e86fcc72-388d-4009-ab21-8f9c3323e9a3
 topic_type:
 - apiref
-ms.openlocfilehash: 27a676fd1d2d7903943e44f8a7201b88af4fba89
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 827ef55d3e3509cbfbfc8213ef5b53fbe2e2220e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396998"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690036"
 ---
 # <a name="icordebugvariablehomegetargumentindex-method"></a>ICorDebugVariableHome：： GetArgumentIndex 方法
 
@@ -43,10 +44,10 @@ HRESULT GetArgumentIndex(
 
 方法返回以下值。
 
-|“值”|说明|
+|值|说明|
 |-----------|-----------------|
 |`S_OK`|方法调用返回有效的参数索引。|
-|`E_FAIL`|当前[ICorDebugVariableHome](icordebugvariablehome-interface.md)实例表示局部变量。|
+|`E_FAIL`|当前 [ICorDebugVariableHome](icordebugvariablehome-interface.md) 实例表示局部变量。|
 
 ## <a name="remarks"></a>备注
 
@@ -54,7 +55,7 @@ HRESULT GetArgumentIndex(
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
 
 **标头**：CorDebug.idl、CorDebug.h
 

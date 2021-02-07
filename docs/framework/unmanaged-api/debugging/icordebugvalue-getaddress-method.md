@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugValue：： GetAddress 方法
 title: ICorDebugValue::GetAddress 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a247c792-45e1-4538-9e1f-b46acca4a463
 topic_type:
 - apiref
-ms.openlocfilehash: 47c0c4dfa78e85bcc83f0bb2a333955c8e8666fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c922388fbab820e50edffc140be94a2c0920099d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690426"
 ---
 # <a name="icordebugvaluegetaddress-method"></a>ICorDebugValue::GetAddress 方法
 
@@ -39,7 +40,7 @@ HRESULT GetAddress (
  `pAddress`  
  弄指向 `CORDB_ADDRESS` 对象的指针，该对象指定此值对象的地址。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果值不可用，则返回 0 (零) 。 如果值至少出现在寄存器中或者存储在垃圾回收器句柄 () 中，则可能会发生这种情况 `GCHandle` 。  
   
@@ -53,4 +54,4 @@ HRESULT GetAddress (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

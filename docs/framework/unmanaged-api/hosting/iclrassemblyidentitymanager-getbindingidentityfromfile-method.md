@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRAssemblyIdentityManager：： GetBindingIdentityFromFile 方法
 title: ICLRAssemblyIdentityManager::GetBindingIdentityFromFile 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7797562d-7b4c-4bd9-8b93-f35e0e2869e4
 topic_type:
 - apiref
-ms.openlocfilehash: 443acfa77dc8103008263f19bed116d02e7ea676
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 82e72155b38f71fe2c024994f07178638095be9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689542"
 ---
 # <a name="iclrassemblyidentitymanagergetbindingidentityfromfile-method"></a>ICLRAssemblyIdentityManager::GetBindingIdentityFromFile 方法
 
@@ -64,7 +65,7 @@ HRESULT GetBindingIdentityFromFile(
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 如果方法返回 E_FAIL，则 CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetBindingIdentityFromFile` 通常称为两次。 第一次调用为提供一个 null 值 `pwzBuffer` ，并且该方法将在中返回适当大小 `pcchBufferSize` 。 第二个调用提供适当分配的缓冲区，方法在完成时返回实际的缓冲区数据。  
   
@@ -78,7 +79,7 @@ HRESULT GetBindingIdentityFromFile(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyIdentityManager 接口](iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)

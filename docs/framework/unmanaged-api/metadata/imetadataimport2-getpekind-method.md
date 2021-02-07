@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport2：： GetPEKind 方法
 title: IMetaDataImport2::GetPEKind 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d91c3d89-8022-4a4c-a2a2-a8af2c387507
 topic_type:
 - apiref
-ms.openlocfilehash: d335beecc12e0c1c895e42888ad7172f78062ff7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3cd003f4b1a56f59b9e8c89bf1c4f8f2f8c7fea1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688567"
 ---
 # <a name="imetadataimport2getpekind-method"></a>IMetaDataImport2::GetPEKind 方法
 
@@ -43,11 +44,11 @@ HRESULT GetPEKind (
  `pdwMachine`  
  弄一个指针，指向用于标识计算机体系结构的值。 有关可能的值，请参阅下一节。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  参数引用的值 `pdwMachine` 可以是下列值之一。  
   
-|Value|计算机体系结构|  
+|值|计算机体系结构|  
 |-----------|--------------------------|  
 |IMAGE_FILE_MACHINE_I386<br /><br /> 0x014C|x86|  
 |IMAGE_FILE_MACHINE_IA64<br /><br /> 0x0200|Intel IPF|  
@@ -63,7 +64,7 @@ HRESULT GetPEKind (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)
 - [IMetaDataImport 接口](imetadataimport-interface.md)

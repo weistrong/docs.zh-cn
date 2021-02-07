@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport2 接口
 title: IMetaDataImport2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d39b2b87-ba53-4771-ae53-952a68452511
 topic_type:
 - apiref
-ms.openlocfilehash: a845ecfde6583d625d2a8f165443344ff9e40d05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: de1b190ae174c6028e4f116d7f6fc0b9af0aac6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688541"
 ---
 # <a name="imetadataimport2-interface"></a>IMetaDataImport2 接口
 
@@ -48,7 +49,7 @@ ms.locfileid: "95702541"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Reflection.PortableExecutableKinds>
 - [元数据接口](metadata-interfaces.md)

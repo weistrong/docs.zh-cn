@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRGCManager2：： SetGCStartupLimitsEx 方法
 title: ICLRGCManager2::SetGCStartupLimitsEx 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6c3a08a9-5d65-48d4-8bbf-2a86ed7d356a
 topic_type:
 - apiref
-ms.openlocfilehash: 27d1ce06800075d2690bc508554b70f8d10168af
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2a4801d2f6255f5f84e0a4bae7a1886689ee8dc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689231"
 ---
 # <a name="iclrgcmanager2setgcstartuplimitsex-method"></a>ICLRGCManager2::SetGCStartupLimitsEx 方法
 
@@ -58,7 +59,7 @@ HRESULT SetGCStartupLimitsEx (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `SetGCStartupLimitsEx`只能在启动主机之前指定设置的值。 `SetGCStartupLimitsEx`将忽略以后对的调用。  
   
@@ -74,7 +75,7 @@ HRESULT SetGCStartupLimitsEx (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自动内存管理](../../../standard/automatic-memory-management.md)
 - [垃圾回收](../../../standard/garbage-collection/index.md)

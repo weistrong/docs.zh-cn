@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugRegisterSet：： SetRegisters 方法
 title: ICorDebugRegisterSet::SetRegisters 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ac6244b9-54ba-475f-b72a-abed6afc46ec
 topic_type:
 - apiref
-ms.openlocfilehash: 4be5d2d9d891010e68cd6eb96cd4456e04d8c8b0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7a83d9d01a392d7ed435292f45ee0c75765ced36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712282"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690673"
 ---
 # <a name="icordebugregistersetsetregisters-method"></a>ICorDebugRegisterSet::SetRegisters 方法
 
@@ -49,7 +50,7 @@ HRESULT SetRegisters (
   
  **.NET Framework 版本：** 1.1、1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugRegisterSet 接口](icordebugregisterset-interface.md)
 - [ICorDebugRegisterSet2 接口](icordebugregisterset2-interface.md)

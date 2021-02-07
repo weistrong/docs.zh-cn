@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRPolicyManager：： SetActionOnTimeout 方法
 title: ICLRPolicyManager::SetActionOnTimeout 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 38439fa1-2b99-4fa8-a6ec-08afc0f83b9c
 topic_type:
 - apiref
-ms.openlocfilehash: 3ddd78ea35d5709abb30af085b2212a09b28c2ef
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d682acd49bdc4fa0f8c58a1300e2215816fe2718
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725555"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689022"
 ---
 # <a name="iclrpolicymanagersetactionontimeout-method"></a>ICLRPolicyManager::SetActionOnTimeout 方法
 
@@ -63,7 +64,7 @@ HRESULT SetActionOnTimeout (
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_INVALIDARG|无法为指定的设置超时 `operation` ，或者为提供的值无效 `operation` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  超时值可以是 CLR 设置的默认超时值，也可以是主机在 [ICLRPolicyManager：： SetTimeout](iclrpolicymanager-settimeout-method.md) 方法的调用中指定的值。  
   
@@ -85,7 +86,7 @@ HRESULT SetActionOnTimeout (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrOperation 枚举](eclroperation-enumeration.md)
 - [EPolicyAction 枚举](epolicyaction-enumeration.md)

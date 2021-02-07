@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedConstant：： GetSignature 方法
 title: ISymUnmanagedConstant::GetSignature 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3eb41151-a228-43e3-ba8f-e6dd3ceb8542
 topic_type:
 - apiref
-ms.openlocfilehash: 4436e4528c1dc486eb5c443c5a9467ac69a26c7d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d28051c9d0e2675e980926fe63ffa7c4d13ef13a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689789"
 ---
 # <a name="isymunmanagedconstantgetsignature-method"></a>ISymUnmanagedConstant::GetSignature 方法
 
@@ -55,7 +56,7 @@ HRESULT GetSignature(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedConstant 接口](isymunmanagedconstant-interface.md)
 - [GetName 方法](isymunmanagedconstant-getname-method.md)

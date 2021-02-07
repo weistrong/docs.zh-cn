@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugValue：： GetSize 方法
 title: ICorDebugValue::GetSize 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 445a9ee3-e050-4f3a-931a-96b0efb00110
 topic_type:
 - apiref
-ms.openlocfilehash: 9f5688ae4f76f9ddfde231aa6252d666c9152eec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3fc2582990d58fa2e42f240dfd3e563eed34e372
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690335"
 ---
 # <a name="icordebugvaluegetsize-method"></a>ICorDebugValue::GetSize 方法
 
@@ -39,7 +40,7 @@ HRESULT GetSize (
  `pSize`  
  弄此值对象的大小（以字节为单位）。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果值的类型为引用类型，则此方法返回指针的大小，而不是对象的大小。  
   
@@ -55,6 +56,6 @@ HRESULT GetSize (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetSize64 方法](icordebugvalue3-getsize64-method.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugValue2：： GetExactType 方法
 title: ICorDebugValue2::GetExactType 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8e9aae1b-d1b7-4b6e-b577-6faf36dcec85
 topic_type:
 - apiref
-ms.openlocfilehash: cb5bec66ab02de248109d8aaf444a93e67c2c6d2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d0ef08b119106ced89ec2094b5bf67d0c874b6bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720355"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690296"
 ---
 # <a name="icordebugvalue2getexacttype-method"></a>ICorDebugValue2::GetExactType 方法
 
@@ -39,7 +40,7 @@ HRESULT GetExactType (
  `ppType`  
  弄指向对象地址的指针，该 `ICorDebugType` 对象表示 <xref:System.Type> 此 "ICorDebugValue2" 对象表示的值的。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  一般识别 `GetExactType` 方法取代了 [ICorDebugObjectValue：： GetClass](icordebugobjectvalue-getclass-method.md) 和 [ICorDebugValue：： GetType](icordebugvalue-gettype-method.md) 方法，其中每个方法都返回值类型的相关信息。  
   
@@ -53,4 +54,4 @@ HRESULT GetExactType (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

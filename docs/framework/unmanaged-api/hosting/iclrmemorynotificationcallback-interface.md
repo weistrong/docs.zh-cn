@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRMemoryNotificationCallback 接口
 title: ICLRMemoryNotificationCallback 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 873639e2-4837-4568-83b3-4493e67e4174
 topic_type:
 - apiref
-ms.openlocfilehash: 5762a354bec485cb382b5460dfd2a337f79bee1a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 46e53cdf0b7f797b8945237d47fc3b521b08ddb7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689217"
 ---
 # <a name="iclrmemorynotificationcallback-interface"></a>ICLRMemoryNotificationCallback 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95689532"
 |------------|-----------------|  
 |[OnMemoryNotification 方法](iclrmemorynotificationcallback-onmemorynotification-method.md)| (CLR) 计算机上的内存负载通知公共语言运行时。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  主机使用 `ICLRMemoryNotificationCallback` 接口请求 CLR 释放内存资源。  
   
@@ -45,7 +46,7 @@ ms.locfileid: "95689532"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostMemoryManager 接口](ihostmemorymanager-interface.md)
 - [承载接口](hosting-interfaces.md)

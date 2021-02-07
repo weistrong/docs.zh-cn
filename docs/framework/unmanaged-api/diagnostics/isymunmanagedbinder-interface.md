@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedBinder 接口
 title: ISymUnmanagedBinder 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b22fbe19-b30f-4696-8175-e6b91da9edab
 topic_type:
 - apiref
-ms.openlocfilehash: 554e59484f00626726f7f024c69e93a5e6647130
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 14ebccb028ab3388a8058dd05504c56a6df74c95
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727375"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689919"
 ---
 # <a name="isymunmanagedbinder-interface"></a>ISymUnmanagedBinder 接口
 
@@ -39,7 +40,7 @@ ms.locfileid: "95727375"
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [诊断符号存储区接口](diagnostics-symbol-store-interfaces.md)
 - [ISymUnmanagedBinder2 接口](isymunmanagedbinder2-interface.md)

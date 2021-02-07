@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRMetaHost：： EnumerateInstalledRuntimes 方法
 title: ICLRMetaHost::EnumerateInstalledRuntimes 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9e359384-0d3d-451c-807e-5d7fcebf2be7
 topic_type:
 - apiref
-ms.openlocfilehash: f8f67edde7f99878429ca0bbd89aaf52336aa79c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a1c2fe46a64339e013df0f65dc073d183036a0fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689191"
 ---
 # <a name="iclrmetahostenumerateinstalledruntimes-method"></a>ICLRMetaHost::EnumerateInstalledRuntimes 方法
 
@@ -57,7 +58,7 @@ HRESULT EnumerateInstalledRuntimes (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRMetaHost 接口](iclrmetahost-interface.md)
 - [承载](index.md)
