@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：保存和还原时区
 title: 保存和还原时区
 ms.date: 04/10/2017
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - time zone objects [.NET], serializing
 - time zone objects [.NET], saving
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
-ms.openlocfilehash: 0658bad6da078b6e44695a92b6cb2b22576f6424
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: bd888c2d9a1f02fa05fd1abf9d984022be03e192
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702439"
 ---
 # <a name="saving-and-restoring-time-zones"></a>保存和还原时区
 
@@ -71,6 +72,6 @@ ms.locfileid: "94817570"
 
 有关使用嵌入资源存储序列化的时区数据的示例，请参阅 [如何：将时区保存到嵌入的资源](save-time-zones-to-an-embedded-resource.md) 和 [如何：从嵌入的资源还原时区](restore-time-zones-from-an-embedded-resource.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)

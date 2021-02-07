@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：将时区保存到嵌入的资源中
 title: 如何：将时区保存到嵌入的资源中
 ms.date: 04/10/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - time zone objects [.NET], serializing
 - time zone objects [.NET], saving
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
-ms.openlocfilehash: 23f86076b2858404f3dbc900d8c40a6509abe8db
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4f1455ffa790652d2dad605a0eb71fb81a05326d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702465"
 ---
 # <a name="how-to-save-time-zones-to-an-embedded-resource"></a>如何：将时区保存到嵌入的资源中
 
@@ -22,7 +23,7 @@ ms.locfileid: "94817596"
 
 通常，序列化 <xref:System.TimeZoneInfo> 对象的过程与时区感知应用程序分离。 根据用于保存序列化对象的数据存储区 <xref:System.TimeZoneInfo> ，时区数据可以作为安装或安装例程的一部分进行序列化 (例如，将数据存储在注册表) 的应用程序密钥中，或作为在编译最终应用程序之前运行的实用工具例程的一部分 (例如，当将序列化数据存储在 .NET XML 资源 ( .resx) 文件) 时。
 
-除了使用应用程序编译的资源文件外，还可以使用多个其他数据存储区来存储时区信息。 这些功能包括以下这些：
+除了使用应用程序编译的资源文件外，还可以使用多个其他数据存储区来存储时区信息。 这些演示包括以下内容：
 
 - 注册表。 请注意，应用程序应使用其自己的应用程序密钥的子项来存储自定义时区数据，而不是使用 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones 的子项。
 
@@ -80,7 +81,7 @@ ms.locfileid: "94817596"
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)
 - [时区概述](time-zone-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：解决不明确时间
 title: 如何：解析明确时间
 ms.date: 04/10/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - time zones [.NET], ambiguous time
 - ambiguous time [.NET]
 ms.assetid: 2cf5fb25-492c-4875-9245-98cac8348e97
-ms.openlocfilehash: 29a549d519bd3b6c10fef8205b30a07a71f01d1a
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 743aff3303669efcf20e233b1f5b2d520475d5f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702517"
 ---
 # <a name="how-to-resolve-ambiguous-times"></a>如何：解析明确时间
 
@@ -52,7 +53,7 @@ ms.locfileid: "94817752"
 
 - <xref:System>要导入的命名空间与 `using` c # 代码) 中 (必需的语句一起导入。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)
 - [如何：让用户解决不明确的时间](let-users-resolve-ambiguous-times.md)

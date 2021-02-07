@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：时区概述
 title: 时区概述
 ms.date: 04/10/2017
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - adjustment rule [.NET]
 - time zones [.NET], terminology
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
-ms.openlocfilehash: 1e876fd608b088b02385467367948440549e96e8
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4f892763cc27794155847c602c458d82780592ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702426"
 ---
 # <a name="time-zone-overview"></a>时区概述
 
@@ -70,6 +71,6 @@ ms.locfileid: "94817505"
 
 有关如何在时区之间转换时间的详细信息，请参阅[在不同时区间转换时间](converting-between-time-zones.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)

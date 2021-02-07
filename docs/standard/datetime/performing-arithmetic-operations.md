@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：用日期和时间执行算术运算
 title: 使用日期和时间执行算术运算
 ms.date: 04/10/2017
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - DateTime structure, arithmetic operations
 - DateTimeOffset structure, arithmetic operations
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-ms.openlocfilehash: af294c45359f6226c4189aabb34fdfc670bbd1c9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7b39a6dec3abc2206c8eef7566f74aab6614aae6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702556"
 ---
 # <a name="performing-arithmetic-operations-with-dates-and-times"></a>使用日期和时间执行算术运算
 
@@ -67,7 +68,7 @@ ms.locfileid: "94817765"
 
 ## <a name="arithmetic-operations-with-times-in-time-zones"></a>时间区域中时间的算术运算
 
-<xref:System.TimeZoneInfo>类包括多种转换方法，这些方法在将时间从一个时区转换到另一个时区时自动应用调整。 这些功能包括以下这些：
+<xref:System.TimeZoneInfo>类包括多种转换方法，这些方法在将时间从一个时区转换到另一个时区时自动应用调整。 这些演示包括以下内容：
 
 - <xref:System.TimeZoneInfo.ConvertTime%2A>和 <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> 方法，用于在任意两个时区之间转换时间。
 
@@ -82,7 +83,7 @@ ms.locfileid: "94817765"
 [!code-csharp[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual5.cs#5)]
 [!code-vb[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual5.vb#5)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)
 - [如何：在日期和时间算术中使用时区](use-time-zones-in-arithmetic.md)
