@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ValidatorFlags 枚举
 title: ValidatorFlags 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
 topic_type:
 - apiref
-ms.openlocfilehash: 92c430cdb8b46cf75dde9a8395ce713116dc05a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 473b0eef2851126256e1ea6b6d2b82be32e03e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732848"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679116"
 ---
-# <a name="validatorflags-enumeration"></a><span data-ttu-id="60d4b-102">ValidatorFlags 枚举</span><span class="sxs-lookup"><span data-stu-id="60d4b-102">ValidatorFlags Enumeration</span></span>
+# <a name="validatorflags-enumeration"></a><span data-ttu-id="d9a99-103">ValidatorFlags 枚举</span><span class="sxs-lookup"><span data-stu-id="d9a99-103">ValidatorFlags Enumeration</span></span>
 
-<span data-ttu-id="60d4b-103">包含一些值，这些值指示应在调用 [ICLRValidator：： Validate](iclrvalidator-validate-method.md) 方法时执行的验证类型。</span><span class="sxs-lookup"><span data-stu-id="60d4b-103">Contains values that indicate the type of validation that should be performed in a call to the [ICLRValidator::Validate](iclrvalidator-validate-method.md) method.</span></span>  
+<span data-ttu-id="d9a99-104">包含一些值，这些值指示应在调用 [ICLRValidator：： Validate](iclrvalidator-validate-method.md) 方法时执行的验证类型。</span><span class="sxs-lookup"><span data-stu-id="d9a99-104">Contains values that indicate the type of validation that should be performed in a call to the [ICLRValidator::Validate](iclrvalidator-validate-method.md) method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="60d4b-104">语法</span><span class="sxs-lookup"><span data-stu-id="60d4b-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d9a99-105">语法</span><span class="sxs-lookup"><span data-stu-id="d9a99-105">Syntax</span></span>  
   
 ```cpp  
 enum ValidatorFlags {  
@@ -37,27 +38,27 @@ enum ValidatorFlags {
 };  
 ```  
   
-## <a name="members"></a><span data-ttu-id="60d4b-105">成员</span><span class="sxs-lookup"><span data-stu-id="60d4b-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="d9a99-106">成员</span><span class="sxs-lookup"><span data-stu-id="d9a99-106">Members</span></span>  
   
-|<span data-ttu-id="60d4b-106">成员</span><span class="sxs-lookup"><span data-stu-id="60d4b-106">Member</span></span>|<span data-ttu-id="60d4b-107">说明</span><span class="sxs-lookup"><span data-stu-id="60d4b-107">Description</span></span>|  
+|<span data-ttu-id="d9a99-107">成员</span><span class="sxs-lookup"><span data-stu-id="d9a99-107">Member</span></span>|<span data-ttu-id="d9a99-108">说明</span><span class="sxs-lookup"><span data-stu-id="d9a99-108">Description</span></span>|  
 |------------|-----------------|  
-|`VALIDATOR_CHECK_ILONLY`|<span data-ttu-id="60d4b-108">指定应只验证可执行文件中的 Microsoft 中间语言 (MSIL) 。</span><span class="sxs-lookup"><span data-stu-id="60d4b-108">Specifies that only the Microsoft intermediate language (MSIL) in the executable file should be validated.</span></span>|  
-|`VALIDATOR_CHECK_PEFORMAT_ONLY`|<span data-ttu-id="60d4b-109">指定只能验证可执行文件的格式。</span><span class="sxs-lookup"><span data-stu-id="60d4b-109">Specifies that only the format of the executable file should be validated.</span></span>|  
-|`VALIDATOR_EXTRA_VERBOSE`|<span data-ttu-id="60d4b-110">指定应执行和报告的所有类型的验证。</span><span class="sxs-lookup"><span data-stu-id="60d4b-110">Specifies that all types of validation should be performed and reported on.</span></span>|  
-|`VALIDATOR_NOCHECK_PEFORMAT`|<span data-ttu-id="60d4b-111">指定不应验证可执行文件的格式。</span><span class="sxs-lookup"><span data-stu-id="60d4b-111">Specifies that the format of the executable file should not be validated.</span></span>|  
-|`VALIDATOR_SHOW_SOURCE_LINES`|<span data-ttu-id="60d4b-112">指定验证错误消息应包含引发验证错误的源代码行。</span><span class="sxs-lookup"><span data-stu-id="60d4b-112">Specifies that validation error messages should include the lines of source code that raise validation errors.</span></span> <span data-ttu-id="60d4b-113">此字段值在 .NET Framework 版本2.0 中无效。</span><span class="sxs-lookup"><span data-stu-id="60d4b-113">This field value is not valid in the .NET Framework version 2.0.</span></span>|  
+|`VALIDATOR_CHECK_ILONLY`|<span data-ttu-id="d9a99-109">指定应只验证可执行文件中的 Microsoft 中间语言 (MSIL) 。</span><span class="sxs-lookup"><span data-stu-id="d9a99-109">Specifies that only the Microsoft intermediate language (MSIL) in the executable file should be validated.</span></span>|  
+|`VALIDATOR_CHECK_PEFORMAT_ONLY`|<span data-ttu-id="d9a99-110">指定只能验证可执行文件的格式。</span><span class="sxs-lookup"><span data-stu-id="d9a99-110">Specifies that only the format of the executable file should be validated.</span></span>|  
+|`VALIDATOR_EXTRA_VERBOSE`|<span data-ttu-id="d9a99-111">指定应执行和报告的所有类型的验证。</span><span class="sxs-lookup"><span data-stu-id="d9a99-111">Specifies that all types of validation should be performed and reported on.</span></span>|  
+|`VALIDATOR_NOCHECK_PEFORMAT`|<span data-ttu-id="d9a99-112">指定不应验证可执行文件的格式。</span><span class="sxs-lookup"><span data-stu-id="d9a99-112">Specifies that the format of the executable file should not be validated.</span></span>|  
+|`VALIDATOR_SHOW_SOURCE_LINES`|<span data-ttu-id="d9a99-113">指定验证错误消息应包含引发验证错误的源代码行。</span><span class="sxs-lookup"><span data-stu-id="d9a99-113">Specifies that validation error messages should include the lines of source code that raise validation errors.</span></span> <span data-ttu-id="d9a99-114">此字段值在 .NET Framework 版本2.0 中无效。</span><span class="sxs-lookup"><span data-stu-id="d9a99-114">This field value is not valid in the .NET Framework version 2.0.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="60d4b-114">要求</span><span class="sxs-lookup"><span data-stu-id="60d4b-114">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="d9a99-115">要求</span><span class="sxs-lookup"><span data-stu-id="d9a99-115">Requirements</span></span>  
 
- <span data-ttu-id="60d4b-115">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="60d4b-115">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="d9a99-116">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="d9a99-116">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="60d4b-116">**标头：** IValidator，IValidator</span><span class="sxs-lookup"><span data-stu-id="60d4b-116">**Header:** IValidator.idl, IValidator.h</span></span>  
+ <span data-ttu-id="d9a99-117">**标头：** IValidator，IValidator</span><span class="sxs-lookup"><span data-stu-id="d9a99-117">**Header:** IValidator.idl, IValidator.h</span></span>  
   
- <span data-ttu-id="60d4b-117">**库：** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="60d4b-117">**Library:** MSCorEE.dll</span></span>  
+ <span data-ttu-id="d9a99-118">**库：** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="d9a99-118">**Library:** MSCorEE.dll</span></span>  
   
- <span data-ttu-id="60d4b-118">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="60d4b-118">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="d9a99-119">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d9a99-119">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="60d4b-119">另请参阅</span><span class="sxs-lookup"><span data-stu-id="60d4b-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d9a99-120">请参阅</span><span class="sxs-lookup"><span data-stu-id="d9a99-120">See also</span></span>
 
-- [<span data-ttu-id="60d4b-120">ICLRErrorReportingManager 接口</span><span class="sxs-lookup"><span data-stu-id="60d4b-120">ICLRErrorReportingManager Interface</span></span>](iclrerrorreportingmanager-interface.md)
-- [<span data-ttu-id="60d4b-121">承载枚举</span><span class="sxs-lookup"><span data-stu-id="60d4b-121">Hosting Enumerations</span></span>](hosting-enumerations.md)
+- [<span data-ttu-id="d9a99-121">ICLRErrorReportingManager 接口</span><span class="sxs-lookup"><span data-stu-id="d9a99-121">ICLRErrorReportingManager Interface</span></span>](iclrerrorreportingmanager-interface.md)
+- [<span data-ttu-id="d9a99-122">承载枚举</span><span class="sxs-lookup"><span data-stu-id="d9a99-122">Hosting Enumerations</span></span>](hosting-enumerations.md)

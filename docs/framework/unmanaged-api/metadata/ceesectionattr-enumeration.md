@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CeeSectionAttr 枚举
 title: CeeSectionAttr 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2fb80298f6eef331b5b7ae4a46222ce97ede6f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 13cfb635aaa606905745146d7c3caae3f9162e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732731"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678856"
 ---
-# <a name="ceesectionattr-enumeration"></a><span data-ttu-id="24ecd-102">CeeSectionAttr 枚举</span><span class="sxs-lookup"><span data-stu-id="24ecd-102">CeeSectionAttr Enumeration</span></span>
+# <a name="ceesectionattr-enumeration"></a><span data-ttu-id="c90b7-103">CeeSectionAttr 枚举</span><span class="sxs-lookup"><span data-stu-id="c90b7-103">CeeSectionAttr Enumeration</span></span>
 
-<span data-ttu-id="24ecd-103">提供指定节的属性的值，供 [ICeeGen](iceegen-interface.md) 接口使用。</span><span class="sxs-lookup"><span data-stu-id="24ecd-103">Provides values that specify attributes of a section for use by the [ICeeGen](iceegen-interface.md) interface.</span></span>  
+<span data-ttu-id="c90b7-104">提供指定节的属性的值，供 [ICeeGen](iceegen-interface.md) 接口使用。</span><span class="sxs-lookup"><span data-stu-id="c90b7-104">Provides values that specify attributes of a section for use by the [ICeeGen](iceegen-interface.md) interface.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="24ecd-104">语法</span><span class="sxs-lookup"><span data-stu-id="24ecd-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="c90b7-105">语法</span><span class="sxs-lookup"><span data-stu-id="c90b7-105">Syntax</span></span>  
   
 ```cpp  
 typedef enum  {  
@@ -38,25 +39,25 @@ typedef enum  {
 } CeeSectionAttr;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="24ecd-105">成员</span><span class="sxs-lookup"><span data-stu-id="24ecd-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="c90b7-106">成员</span><span class="sxs-lookup"><span data-stu-id="c90b7-106">Members</span></span>  
   
-|<span data-ttu-id="24ecd-106">成员</span><span class="sxs-lookup"><span data-stu-id="24ecd-106">Member</span></span>|<span data-ttu-id="24ecd-107">说明</span><span class="sxs-lookup"><span data-stu-id="24ecd-107">Description</span></span>|  
+|<span data-ttu-id="c90b7-107">成员</span><span class="sxs-lookup"><span data-stu-id="c90b7-107">Member</span></span>|<span data-ttu-id="c90b7-108">说明</span><span class="sxs-lookup"><span data-stu-id="c90b7-108">Description</span></span>|  
 |------------|-----------------|  
-|`sdNone`|<span data-ttu-id="24ecd-108">节没有特性。</span><span class="sxs-lookup"><span data-stu-id="24ecd-108">Section has no attributes.</span></span>|  
-|`sdReadOnly`|<span data-ttu-id="24ecd-109">部分包含初始化的数据，该数据只能读取，而不是更新。</span><span class="sxs-lookup"><span data-stu-id="24ecd-109">Section contains initialized data that can be only read, not updated.</span></span>|  
-|`sdReadWrite`|<span data-ttu-id="24ecd-110">节包含可读取或更新的初始化数据。</span><span class="sxs-lookup"><span data-stu-id="24ecd-110">Section contains initialized data that can be read or updated.</span></span>|  
-|`sdExecute`|<span data-ttu-id="24ecd-111">部分包含允许读取和执行的可执行代码。</span><span class="sxs-lookup"><span data-stu-id="24ecd-111">Section contains executable code that is allowed to be read and executed.</span></span>|  
+|`sdNone`|<span data-ttu-id="c90b7-109">节没有特性。</span><span class="sxs-lookup"><span data-stu-id="c90b7-109">Section has no attributes.</span></span>|  
+|`sdReadOnly`|<span data-ttu-id="c90b7-110">部分包含初始化的数据，该数据只能读取，而不是更新。</span><span class="sxs-lookup"><span data-stu-id="c90b7-110">Section contains initialized data that can be only read, not updated.</span></span>|  
+|`sdReadWrite`|<span data-ttu-id="c90b7-111">节包含可读取或更新的初始化数据。</span><span class="sxs-lookup"><span data-stu-id="c90b7-111">Section contains initialized data that can be read or updated.</span></span>|  
+|`sdExecute`|<span data-ttu-id="c90b7-112">部分包含允许读取和执行的可执行代码。</span><span class="sxs-lookup"><span data-stu-id="c90b7-112">Section contains executable code that is allowed to be read and executed.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="24ecd-112">要求</span><span class="sxs-lookup"><span data-stu-id="24ecd-112">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="c90b7-113">要求</span><span class="sxs-lookup"><span data-stu-id="c90b7-113">Requirements</span></span>  
 
- <span data-ttu-id="24ecd-113">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="24ecd-113">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="c90b7-114">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="c90b7-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="24ecd-114">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="24ecd-114">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="c90b7-115">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="c90b7-115">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="24ecd-115">**库：** 作为中的资源包含 MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="24ecd-115">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="c90b7-116">**库：** 作为中的资源包含 MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="c90b7-116">**Library:** Included as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="24ecd-116">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="24ecd-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="c90b7-117">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c90b7-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="24ecd-117">另请参阅</span><span class="sxs-lookup"><span data-stu-id="24ecd-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c90b7-118">请参阅</span><span class="sxs-lookup"><span data-stu-id="c90b7-118">See also</span></span>
 
-- [<span data-ttu-id="24ecd-118">元数据枚举</span><span class="sxs-lookup"><span data-stu-id="24ecd-118">Metadata Enumerations</span></span>](metadata-enumerations.md)
+- [<span data-ttu-id="c90b7-119">元数据枚举</span><span class="sxs-lookup"><span data-stu-id="c90b7-119">Metadata Enumerations</span></span>](metadata-enumerations.md)
