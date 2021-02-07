@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugController：： IsRunning 方法
 title: ICorDebugController::IsRunning 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b33ff059-40c4-4dfe-9cb2-21bfed2de0b0
 topic_type:
 - apiref
-ms.openlocfilehash: 73ed86ee12b02d292dc6dfc1d652459a679f81ca
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6a0628cc39765d9cb295877d912d92dbb27937da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679931"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764575"
 ---
 # <a name="icordebugcontrollerisrunning-method"></a>ICorDebugController::IsRunning 方法
 
@@ -49,4 +50,4 @@ HRESULT IsRunning (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

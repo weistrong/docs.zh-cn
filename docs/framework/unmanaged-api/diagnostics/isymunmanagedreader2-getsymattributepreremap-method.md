@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedReader2：： GetSymAttributePreRemap 方法
 title: ISymUnmanagedReader2::GetSymAttributePreRemap 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
 topic_type:
 - apiref
-ms.openlocfilehash: 812c0d08930efff9140c6e897d3f93c4909e8464
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 843a3d2d2a568fdff83d2e416fff426daad14645
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763626"
 ---
 # <a name="isymunmanagedreader2getsymattributepreremap-method"></a>ISymUnmanagedReader2::GetSymAttributePreRemap 方法
 
@@ -63,6 +64,6 @@ HRESULT GetSymAttributePreRemap(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedReader2 接口](isymunmanagedreader2-interface.md)

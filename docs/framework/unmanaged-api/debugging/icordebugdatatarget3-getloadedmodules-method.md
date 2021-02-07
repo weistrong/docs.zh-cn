@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugDataTarget3：： GetLoadedModules 方法
 title: ICorDebugDataTarget3::GetLoadedModules 方法
 ms.date: 03/30/2017
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e
-ms.openlocfilehash: efbada02b7a24e0a7ed613b86b8a4a1a0b5b051a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea6350155fd79b52a37133cad95f624635433a3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764341"
 ---
 # <a name="icordebugdatatarget3getloadedmodules-method"></a>ICorDebugDataTarget3::GetLoadedModules 方法
 
@@ -34,7 +35,7 @@ HRESULT GetLoadedModules(
  `pLoadedModules`  
  弄指向 [ICorDebugLoadedModule](icordebugloadedmodule-interface.md) 对象数组的指针，这些对象提供有关已加载模块的信息。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -49,7 +50,7 @@ HRESULT GetLoadedModules(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugDataTarget3 接口](icordebugdatatarget3-interface.md)
 - [调试接口](debugging-interfaces.md)

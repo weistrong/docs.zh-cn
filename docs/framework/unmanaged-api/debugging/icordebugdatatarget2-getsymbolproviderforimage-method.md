@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugDataTarget2：： GetSymbolProviderForImage 方法
 title: ICorDebugDataTarget2::GetSymbolProviderForImage 方法
 ms.date: 03/30/2017
 ms.assetid: b7c0a2f0-e904-43b3-98e1-d669e8a589e8
-ms.openlocfilehash: 5a5ccaeb36dcda82c0189026e19c6a7c023f3e1c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b4493b6c0959dc39d955d7691a22ac6905034b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764380"
 ---
 # <a name="icordebugdatatarget2getsymbolproviderforimage-method"></a>ICorDebugDataTarget2::GetSymbolProviderForImage 方法
 
@@ -30,7 +31,7 @@ HRESULT GetSymbolProviderForImage(
  `ppSymProvider`  
  弄指向 [ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md) 对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -45,7 +46,7 @@ HRESULT GetSymbolProviderForImage(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [“ICor调试数据目标2”接口](icordebugdatatarget2-interface.md)
 - [调试接口](debugging-interfaces.md)

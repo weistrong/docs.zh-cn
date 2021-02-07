@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugDebugEvent 接口
 title: “ICor调试调试事件”接口
 ms.date: 03/30/2017
 ms.assetid: a226737a-cb99-4e97-bd94-9a37094ded41
-ms.openlocfilehash: d73857bd9d0d5dd9e5eff0c89dcc573ae0d93f0e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5735be22b76e9f74847bb5138c00130f28dbfc96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731873"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764302"
 ---
 # <a name="icordebugdebugevent-interface"></a>“ICor调试调试事件”接口
 
@@ -20,7 +21,7 @@ ms.locfileid: "95731873"
 |[GetEventKind 方法](icordebugdebugevent-geteventkind-method.md)|指出该 `ICorDebugDebugEvent` 对象代表的事件类型。|  
 |[GetThread 方法](icordebugdebugevent-getthread-method.md)|获取发生事件的线程。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  以下接口派生自 `ICorDebugDebugEvent` 接口：  
   
@@ -41,7 +42,7 @@ ms.locfileid: "95731873"
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

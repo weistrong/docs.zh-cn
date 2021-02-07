@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedReader：： GetDocument 方法
 title: ISymUnmanagedReader::GetDocument 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bb203853-6a6d-4027-b9e9-603a7f28b9d3
 topic_type:
 - apiref
-ms.openlocfilehash: 4604d78f66b872a30457c51bf65890caf613c4fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f2f31467cfd00de68737224a2c1af5b1e78efed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764094"
 ---
 # <a name="isymunmanagedreadergetdocument-method"></a>ISymUnmanagedReader::GetDocument 方法
 
@@ -43,13 +44,13 @@ HRESULT GetDocument (
  中标识文档的 URL。  
   
  `language`  
- 中文档语言。 此参数是可选的。  
+ 中文档语言。 此参数可选。  
   
  `languageVendor`  
- 中文档语言的供应商标识。 此参数是可选的。  
+ 中文档语言的供应商标识。 此参数可选。  
   
  `documentType`  
- 中文档的类型。 此参数是可选的。  
+ 中文档的类型。 此参数可选。  
   
  `pRetVal`  
  弄指向返回的接口的指针。  
@@ -62,6 +63,6 @@ HRESULT GetDocument (
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedReader 接口](isymunmanagedreader-interface.md)
