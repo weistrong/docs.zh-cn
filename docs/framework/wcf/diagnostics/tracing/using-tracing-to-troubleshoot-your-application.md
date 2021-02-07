@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用跟踪对应用程序进行故障排除
 title: 使用跟踪来排除应用程序故障
 ms.date: 03/30/2017
 ms.assetid: 7676b9bb-cbd1-41fd-9a93-cc615af6e2d0
-ms.openlocfilehash: 3b684bf2dc6b075906921f56c6aa07ee55ca7fd5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bc81199450da5522caa92120f0b8c5153ccb9957
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291240"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758042"
 ---
 # <a name="using-tracing-to-troubleshoot-your-application"></a>使用跟踪来排除应用程序故障
 
@@ -33,7 +34,7 @@ ms.locfileid: "96291240"
  [发出用户代码跟踪](emitting-user-code-traces.md)  
  描述如何在用户代码中以编程方式发出跟踪，以便可以主动创建检测数据，供以后在进行诊断和与 WCF 跟踪相关联时使用。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [服务跟踪查看器工具 (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
 - [跟踪](index.md)

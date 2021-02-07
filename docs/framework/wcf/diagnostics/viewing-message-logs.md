@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：查看消息日志
 title: 查看消息日志
 ms.date: 03/30/2017
 ms.assetid: 3012fa13-f650-45fb-aaea-c5cca8c7d372
-ms.openlocfilehash: c8313b14a45051b7828a1ab223a3da63b2e7a153
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c640b2c3793839be4a31123701865fa944eaebc8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758029"
 ---
 # <a name="viewing-message-logs"></a>查看消息日志
 
@@ -64,7 +65,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
   
 - 已启用编码以转换到 UTF-8。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [服务跟踪查看器工具 (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md)
 - [使用服务跟踪查看器查看相关跟踪和进行故障诊断](./tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

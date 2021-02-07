@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： CallbackBehavior
 title: CallbackBehavior
 ms.date: 03/30/2017
 ms.assetid: 42acd302-2b62-4849-a2d1-a03084343ecd
-ms.openlocfilehash: cec9005a099247671dbebaacc0b242ca8d7a0144
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fa9e403324afe818e247d1f751cce0ce7d5a6fb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96269643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757756"
 ---
 # <a name="callbackbehavior"></a>CallbackBehavior
 
@@ -97,6 +98,6 @@ class CallbackBehavior : Behavior
 |---------|-----------------------------------|  
 |命名空间|已在 root\ServiceModel 中定义|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.CallbackBehaviorAttribute>

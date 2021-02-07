@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用服务跟踪查看器查看相关跟踪和进行故障排除
 title: 使用服务跟踪查看器查看相关跟踪和进行故障诊断
 ms.date: 03/30/2017
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
-ms.openlocfilehash: e1cd1443e96e7195127cb95e7ef1b2c4d6d9c176
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3f6f48c3d366a024c5dcc0cdbc85c4aea47a7a8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758159"
 ---
 # <a name="using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting"></a>使用服务跟踪查看器查看相关跟踪和进行故障诊断
 
@@ -15,9 +16,9 @@ ms.locfileid: "84587750"
 
 ## <a name="using-the-service-trace-viewer-tool"></a>使用服务跟踪查看器工具
 
-Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助您关联 WCF 侦听器生成的诊断跟踪，以找出错误的根本原因。 该工具为您提供了一种轻松查看、分组和筛选跟踪的方法，以便您可以诊断、修复和验证 WCF 服务的问题。 有关使用此工具的详细信息，请参阅[服务跟踪查看器工具（svctraceviewer.exe）](../../service-trace-viewer-tool-svctraceviewer-exe.md)。
+Windows Communication Foundation (WCF) 服务跟踪查看器工具可帮助您关联 WCF 侦听器生成的诊断跟踪，以找出错误的根本原因。 该工具为您提供了一种轻松查看、分组和筛选跟踪的方法，以便您可以诊断、修复和验证 WCF 服务的问题。 有关使用此工具的详细信息，请参阅 [服务跟踪查看器工具 ( # A0) ](../../service-trace-viewer-tool-svctraceviewer-exe.md)。
 
-本主题包含在使用[服务跟踪查看器工具（svctraceviewer.exe）](../../service-trace-viewer-tool-svctraceviewer-exe.md)进行查看时，通过运行[跟踪和消息日志记录](../../samples/tracing-and-message-logging.md)示例生成的跟踪的屏幕截图。 本主题演示如何了解跟踪内容、活动及其关联，以及进行故障诊断时如何分析大量跟踪。
+本主题包含在使用[服务跟踪查看器工具（ ( # A0) ](../../service-trace-viewer-tool-svctraceviewer-exe.md)进行查看时，通过运行[跟踪和消息日志记录](../../samples/tracing-and-message-logging.md)示例生成的跟踪的屏幕截图。 本主题演示如何了解跟踪内容、活动及其关联，以及进行故障诊断时如何分析大量跟踪。
 
 ## <a name="viewing-trace-content"></a>查看跟踪内容
 
@@ -37,24 +38,24 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
 
 - 唯一跟踪标识符，它是指向 Microsoft Docs 中的目标的 URL，可从中获取与跟踪相关的详细信息。
 
- 所有这些都可以在服务跟踪查看器的右上窗格中查看，也可以在选择跟踪时右下面板的 "格式视图" 视图中的 "**基本信息**" 部分中查看。
+ 所有这些都可以在服务跟踪查看器的右上窗格中查看，也可以在选择跟踪时右下面板的 "格式视图" 视图中的 " **基本信息** " 部分中查看。
 
 > [!NOTE]
-> 如果客户端和服务位于同一计算机上，则将显示针对这两个应用程序的跟踪。 可以使用 "**进程名称**" 列筛选这些字段。
+> 如果客户端和服务位于同一计算机上，则将显示针对这两个应用程序的跟踪。 可以使用 " **进程名称** " 列筛选这些字段。
 
 此外，格式化视图还提供了跟踪说明和其他可用的详细信息。 后者可以包括异常类型和消息、调用堆栈、消息操作、从/到字段以及其他异常信息。
 
 在 XML 视图中，有用的 xml 标记包括：
 
-- `<SubType>`（跟踪级别）。
+- `<SubType>`)  (跟踪级别。
 
 - `<TimeCreated>`.
 
-- `<Source>`（跟踪源名称）。
+- `<Source>` (跟踪源名称) 。
 
-- `<Correlation>`（发出跟踪时设置的活动 id）。
+- `<Correlation>` 发出跟踪) 时设置 (活动 id。
 
-- `<Execution>`（进程和线程 id）。
+- `<Execution>`)  (进程和线程 id。
 
 - `<Computer>`.
 
@@ -113,9 +114,9 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
 
 活动是一个逻辑处理单元，将与该处理单元相关的所有跟踪组合在一起。 例如，可以为每个请求定义一个活动。 传输在终结点内的活动之间创建因果关系。 通过传播活动 ID，可以跨终结点使活动相关。 可以通过 `propagateActivity` = `true` 在每个终结点的配置中设置来实现此目的。 活动、传输和传播允许您执行错误关联。 这样，可以更快地找到错误的根本原因。
 
-在客户端上，为每个对象模型调用创建一个 WCF 活动（例如，打开 ChannelFactory、添加、拆分等。）每个操作调用都在 "处理操作" 活动中进行处理。
+在客户端上，为每个对象模型调用创建一个 WCF 活动 (例如，打开 ChannelFactory、Add、除法等。 ) 每个操作调用都在 "处理操作" 活动中进行处理。
 
-在以下屏幕截图中，从[跟踪和消息日志记录](../../samples/tracing-and-message-logging.md)示例中提取了左侧面板，其中显示在客户端进程中创建的活动的列表（按创建时间排序）。 以下是活动的时间顺序列表：
+在以下屏幕截图中，从 [跟踪和消息日志记录](../../samples/tracing-and-message-logging.md) 示例中提取了左侧面板，其中显示在客户端进程中创建的活动的列表（按创建时间排序）。 以下是活动的时间顺序列表：
 
 - 构造了通道工厂 (ClientBase)。
 
@@ -132,9 +133,9 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
  我们看到由于 wsHttpBinding 所致的安全基础结构消息。
 
 > [!NOTE]
-> 在 WCF 中，我们先在单独的活动（处理消息）中显示正在处理的响应消息，然后再将它们关联到包含请求消息的对应处理操作活动（通过传输）。 这发生在基础结构消息和异步请求中，并且归因于以下事实：必须检查消息、读取 activityId 标头以及识别具有该 ID 的现有“处理操作”活动以便与它相关。 对于同步请求，我们将为响应截留这些信息，因此可以知道响应与哪个处理操作相关。
+> 在 WCF 中，我们先在单独的活动中显示要处理的响应消息 (处理消息) ，然后再将它们关联到包含请求消息的对应处理操作活动（通过传输）。 这发生在基础结构消息和异步请求中，并且归因于以下事实：必须检查消息、读取 activityId 标头以及识别具有该 ID 的现有“处理操作”活动以便与它相关。 对于同步请求，我们将为响应截留这些信息，因此可以知道响应与哪个处理操作相关。
 
-下图显示了按创建时间列出的 WCF 客户端活动（左面板）及其嵌套活动和跟踪（右上面板）：
+下图显示了按创建时间列出的 WCF 客户端活动 (左面板) 及其嵌套活动和跟踪 (右上面板) ：
 
 ![显示按创建时间列出的 WCF 客户端活动的屏幕截图。](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-client-activities-creation-time.gif)
 
@@ -142,7 +143,7 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
 
 如果双击左面板中的 "处理操作添加" 活动，可以看到与 "添加" 相关的客户端 WCF 活动的图形表示形式。 左侧的第一个活动是根活动 (0000)，它是默认活动。 WCF 从环境活动中传输。 如果未定义此情况，WCF 将从0000传输。 在这里，第二个活动“处理操作添加”在 0 之外传输。 然后可看到“设置安全会话”。
 
-下图显示了 WCF 客户端活动的图形视图，特别是环境活动（此处为0），处理操作，并设置安全会话：
+下图显示了 WCF 客户端活动的图形视图，具体而言，环境活动 (0) 、处理操作和设置安全会话：
 
 ![跟踪查看器中显示环境活动和处理操作的关系图。](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/wcf-activities-graph-ambient-process.gif)
 
@@ -152,7 +153,7 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
 
 ![跟踪查看器的屏幕截图，显示 "处理操作" 活动的跟踪列表](./media/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting/process-action-traces.gif)
 
-在这里，我们只是为了清楚起见加载客户端跟踪，但是，如果在工具中也加载了服务跟踪（请求消息接收和响应消息），则这些跟踪会出现在同一活动中，并 `propagateActivity` 将其设置为 `true.` 这会在后面的图中显示。
+在这里，我们只是为了清楚起见加载了客户端跟踪，但是，如果在工具中也加载了服务跟踪，则发送的请求消息 (请求消息和) 发送的响应消息将出现在同一活动中，如 `propagateActivity` `true.` 后面的插图中所示。
 
 在服务上，活动模型映射到 WCF 概念，如下所示：
 
@@ -186,7 +187,7 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
 
 跨服务和客户端的错误关联
 
-用于生成这些跟踪的示例是使用 wsHttpBinding 的一系列同步请求。 对于没有安全性或具有异步请求的情形，与此图形存在偏差，其中处理操作活动包括造成异步调用的开始操作和结束操作，并显示到回调活动的传输。 有关其他方案的详细信息，请参阅[端到端跟踪方案](end-to-end-tracing-scenarios.md)。
+用于生成这些跟踪的示例是使用 wsHttpBinding 的一系列同步请求。 对于没有安全性或具有异步请求的情形，与此图形存在偏差，其中处理操作活动包括造成异步调用的开始操作和结束操作，并显示到回调活动的传输。 有关其他方案的详细信息，请参阅 [端到端跟踪方案](end-to-end-tracing-scenarios.md)。
 
 ## <a name="troubleshooting-using-the-service-trace-viewer"></a>使用服务跟踪查看器进行故障诊断
 
@@ -197,7 +198,7 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
 
 在右上面板上，可以检查在左侧选择的活动的跟踪。 然后，可以检查该面板中的红色或黄色跟踪以及查看它们是如何相关的。 在前面的图形中，我们看到客户端和服务的警告跟踪都在同一处理操作活动中。
 
-如果这些跟踪未提供错误的根本原因，则可以通过双击左面板上的所选活动（此处为处理操作）来利用图形。 随后将显示具有相关活动的图形。 然后，您可以展开相关活动（通过单击 "+" 符号），在相关活动中查找红色或黄色的第一个已发出跟踪。 在传输到相关活动或跨终结点的消息流之后，一直展开刚好在相关的红色或黄色跟踪之前发生的活动，直到查明问题的根本原因为止。
+如果这些跟踪未提供错误的根本原因，则可以通过双击左面板上的所选活动（此处为处理操作）来利用图形。 随后将显示具有相关活动的图形。 然后，您可以通过单击 "+" 符号) 来展开相关活动 (，以在相关活动中查找红色或黄色的第一个发出的跟踪。 在传输到相关活动或跨终结点的消息流之后，一直展开刚好在相关的红色或黄色跟踪之前发生的活动，直到查明问题的根本原因为止。
 
 ![使用跟踪查看器](media/wcfc-e2etrace9s.gif "wcfc_e2etrace9s")
 
@@ -211,7 +212,7 @@ Windows Communication Foundation （WCF）服务跟踪查看器工具可帮助�
 
 若要开始进行故障排除，还可以选择红色或黄色的消息跟踪，然后双击它以跟踪根本原因。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [端到端跟踪方案](end-to-end-tracing-scenarios.md)
 - [服务跟踪查看器工具 (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
