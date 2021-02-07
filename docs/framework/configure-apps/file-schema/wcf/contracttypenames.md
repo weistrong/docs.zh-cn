@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <contractTypeNames>
 title: <contractTypeNames>
 ms.date: 03/30/2017
 ms.assetid: 5ec5efc6-87f8-4160-9be0-dcd2e01df3df
-ms.openlocfilehash: f1626983d34a7b66ee23c3a2d9a3c2107812e136
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7521b16c097a8df75819654525c0663124a1ebd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175975"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754441"
 ---
 # \<contractTypeNames>
 
@@ -59,13 +60,13 @@ ms.locfileid: "91175975"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](contracttypenames.md)|协定类型名称是一个属性，它引用搜索服务时通常采用的条件集。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<findCriteria>](findcriteria.md)|一个配置元素，提供客户端应用程序用于搜索发现服务的一组条件。 可将这些条件划分为搜索条件（指定要查找的服务）和查找终止条件（搜索应持续的时长）。|  
   

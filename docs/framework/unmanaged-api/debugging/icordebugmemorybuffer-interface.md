@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugMemoryBuffer 接口
 title: ICorDebugMemoryBuffer 接口
 ms.date: 03/30/2017
 ms.assetid: 85dc2d65-3657-4b93-9f23-9feaa95d37ff
-ms.openlocfilehash: 2765852309401d2aa30f91b506ba55156cd8a3e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94eeb0f31c0e1c053fabbd556768fa65dda2d328
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710724"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754012"
 ---
 # <a name="icordebugmemorybuffer-interface"></a>ICorDebugMemoryBuffer 接口
 
@@ -20,7 +21,7 @@ ms.locfileid: "95710724"
 |[GetSize 方法](icordebugmemorybuffer-getsize-method.md)|获取内存缓冲区的大小（以字节为单位）。|  
 |[GetStartAddress 方法](icordebugmemorybuffer-getstartaddress-method.md)|获取内存缓冲区的起始地址。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口仅适用于 .NET Native。 如果在 .NET Native 外为 ICorDebug 方案实现此接口，则公共语言运行时将忽略此接口。  
@@ -35,7 +36,7 @@ ms.locfileid: "95710724"
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

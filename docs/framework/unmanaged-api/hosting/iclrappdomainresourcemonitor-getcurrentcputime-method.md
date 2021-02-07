@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRAppDomainResourceMonitor：： GetCurrentCpuTime 方法
 title: ICLRAppDomainResourceMonitor::GetCurrentCpuTime 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebc9cc33-fcd6-4cae-9ecb-ea21c51874e6
 topic_type:
 - apiref
-ms.openlocfilehash: a0b966e85bedcbef622aba2f6b181b98e0950e01
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce36bf4ab88f953834d3ff12404bcaadcb42812d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700673"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753923"
 ---
 # <a name="iclrappdomainresourcemonitorgetcurrentcputime-method"></a>ICLRAppDomainResourceMonitor::GetCurrentCpuTime 方法
 
@@ -47,9 +48,9 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
 |-------------|-----------------|  
 |S_OK|该方法已成功完成。|  
 |COR_E_APPDOMAINUNLOADED|应用程序域已卸载或不存在。|  
-|E_FAIL|未启用应用程序域资源监视。<br /><br /> -或-<br /><br /> 所有其他失败。|  
+|E_FAIL|未启用应用程序域资源监视。<br /><br /> \- 或 -<br /><br /> 所有其他失败。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法是托管属性的非托管等效项 <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=nameWithType> 。  
   

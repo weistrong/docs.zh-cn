@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugAssembly3：： EnumerateContainedAssemblies 方法
 title: ICorDebugAssembly3::EnumerateContainedAssemblies 方法
 ms.date: 03/30/2017
 ms.assetid: 98f15b05-afad-4616-9e2a-1a9af31948b6
-ms.openlocfilehash: 1e040453d5eb7a312f2e665974486492b99de16d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8933500713661ef785eb3ce5abc574e512580b6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719679"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754077"
 ---
 # <a name="icordebugassembly3enumeratecontainedassemblies-method"></a>ICorDebugAssembly3::EnumerateContainedAssemblies 方法
 
@@ -30,7 +31,7 @@ HRESULT EnumerateContainedAssemblies(
 
  `S_OK` 若该 `ICorDebugAssembly3` 对象为容器；反之，`S_FALSE`，枚举为空。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  需用符号来列举包含的程序集。 如果其并不存在，则方法返回 `S_FALSE`，且不提供有效枚举。  
   
@@ -47,7 +48,7 @@ HRESULT EnumerateContainedAssemblies(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [“ICor调试程序集3”接口](icordebugassembly3-interface.md)
 - [调试接口](debugging-interfaces.md)

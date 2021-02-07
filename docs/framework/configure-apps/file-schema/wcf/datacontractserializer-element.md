@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <dataContractSerializer>
 title: <dataContractSerializer>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - DataContractSerializer
 - KnownTypes
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-ms.openlocfilehash: 2a994a8ba97d4c65fdaba5a85e779dd9935e3074
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0705a40f55d76ef46a7debcd4ecfb5235c7c0d21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754428"
 ---
 # \<dataContractSerializer>
 
@@ -38,7 +39,7 @@ ms.locfileid: "91195022"
   
 ### <a name="attributes"></a>特性  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |ignoreExtensionDataObject|一个布尔值，指定在对终结点进行序列化或反序列化时，是否要忽略由该终结点提供的数据。 只可对 `<dataContractSerializer>` 元素下的 `<behavior>` 设置此属性。|  
 |maxItemsInObjectGraph|一个整数，指定要序列化或反序列化的最大项数。 此属性为 65536。|  
@@ -49,7 +50,7 @@ ms.locfileid: "91195022"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-servicebehaviors.md)|服务行为的设置集合。|  
 |[\<system.runtime.serialization>](system-runtime-serialization.md)|表示 <xref:System.Runtime.Serialization> 命名空间节的根元素，并包含 <xref:System.Runtime.Serialization.DataContractSerializer> 的设置选项的元素。|  

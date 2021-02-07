@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebug：： SetManagedHandler 方法
 title: ICorDebug::SetManagedHandler 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
 topic_type:
 - apiref
-ms.openlocfilehash: 97a4a464d3dfb7b333f44ac4206bd880fd171e16
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5817bd39a2c4e7c71dc12ca8d2d9b1263d116ac8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723410"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754350"
 ---
 # <a name="icordebugsetmanagedhandler-method"></a>ICorDebug::SetManagedHandler 方法
 
@@ -39,7 +40,7 @@ HRESULT SetManagedHandler (
  `pCallback`  
  中指向 [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) 对象的指针，该对象为事件处理程序对象。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `SetManagedHandler` 必须在创建时调用。  
   
@@ -55,6 +56,6 @@ HRESULT SetManagedHandler (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebug 接口](icordebug-interface.md)

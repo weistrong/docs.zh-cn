@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugMemoryBuffer：： GetSize 方法
 title: ICorDebugMemoryBuffer::GetSize 方法
 ms.date: 03/30/2017
 ms.assetid: 9ffd5482-268e-4680-9fd1-bfb0b7d66450
-ms.openlocfilehash: 7f5458dd12ca83c1a5190bbf7fab0f8e5d06a0e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7de23dd13a1e0ef841145e3845d7d0052ce3ef9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710745"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754035"
 ---
 # <a name="icordebugmemorybuffergetsize-method"></a>ICorDebugMemoryBuffer::GetSize 方法
 
@@ -26,7 +27,7 @@ HRESULT GetSize(
  `pcbBufferLength`  
  [out] 指向内存缓冲区大小的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -41,7 +42,7 @@ HRESULT GetSize(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugMemoryBuffer 接口](icordebugmemorybuffer-interface.md)
 - [调试接口](debugging-interfaces.md)

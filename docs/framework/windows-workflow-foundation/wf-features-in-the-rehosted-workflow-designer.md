@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：重新承载中的新 Workflow Foundation 4.5 功能的支持工作流设计器
 title: 重新承载的工作流设计器中新 Workflow Foundation 4.5 功能的支持
 ms.date: 03/30/2017
 ms.assetid: 1a4a4038-d8e6-41dd-99ea-93bd76286772
-ms.openlocfilehash: 139215131afa38bc33539fa242a3584eb67d7941
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 948519265383e9fd3850c44304f7c02283b3f579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755000"
 ---
 # <a name="support-for-new-workflow-foundation-45-features-in-the-rehosted-workflow-designer"></a>重新承载的工作流设计器中新 Workflow Foundation 4.5 功能的支持
 
@@ -66,7 +67,7 @@ ms.locfileid: "96293944"
 
  也可以使用鼠标中键或空格键来平移工作流设计器。
 
-### <a name="multi-select"></a>多重选择
+### <a name="multi-select"></a>多选
 
  通过拖动围绕活动的矩形（未启用平移模式时）或通过按住 Ctrl 键并逐一单击所需的活动，可以一次选择多个活动。 重新承载的编辑器支持此功能。
 

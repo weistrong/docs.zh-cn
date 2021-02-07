@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit：:D efineImportMember 方法
 title: IMetaDataEmit::DefineImportMember 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7dd94c6-335b-46ff-9dfe-505056db5673
 topic_type:
 - apiref
-ms.openlocfilehash: 60210bc8f93294c3c3380c36096f3e80e5b26643
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 91c6ea70d38b8d4f73570ed19d86bacca30ebae5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723254"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753453"
 ---
 # <a name="imetadataemitdefineimportmember-method"></a>IMetaDataEmit::DefineImportMember 方法
 
@@ -67,7 +68,7 @@ HRESULT DefineImportMember (
  `pmr`  
  弄 `mdMemberRef` 在成员引用的当前范围内定义的标记。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `DefineImportMember`方法查找由指定的成员，该成员 `mbMember` 在指定的另一个范围内定义， `pImport` 并检索其属性。 它使用此信息调用当前范围中的 [IMetaDataEmit：:D efinememberref](imetadataemit-definememberref-method.md) 方法来创建成员引用。  
   
@@ -89,7 +90,7 @@ HRESULT DefineImportMember (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit 接口](imetadataemit-interface.md)
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <supportedRuntime> 元素
 title: <supportedRuntime> 配置元素-.NET
 ms.date: 04/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - supportedRuntime element
 - <supportedRuntime> element
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
-ms.openlocfilehash: 79b49cbc9b122e6591d07643a341841b262edff4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 04c2b3fec591e1b99757085afdddf26c529591b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201702"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754493"
 ---
 # <a name="supportedruntime-element"></a>\<supportedRuntime> 元素
 
@@ -31,9 +32,9 @@ ms.locfileid: "91201702"
 
 ## <a name="attributes"></a>特性
 
-|属性|描述|
+|属性|说明|
 |---------------|-----------------|
-|**version**|可选特性。<br /><br /> 一个字符串值，它指定此应用程序支持的公共语言运行时 (CLR) 版本。 有关属性的有效值 `version` ，请参阅 ["运行时版本" 值](#version) 部分。 **注意：**  通过 .NET Framework 3.5，"*运行时版本*" 值采用 *主*格式。*次要*。*生成*。 从 .NET Framework 4 开始，只需要主要版本号和次要版本号 (即，"4.0.30319" 而不是 "v" ) 。 建议使用较短字符串。|
+|**version**|可选特性。<br /><br /> 一个字符串值，它指定此应用程序支持的公共语言运行时 (CLR) 版本。 有关属性的有效值 `version` ，请参阅 ["运行时版本" 值](#version) 部分。 **注意：**  通过 .NET Framework 3.5，"*运行时版本*" 值采用 *主* 格式。*次要*。*生成*。 从 .NET Framework 4 开始，只需要主要版本号和次要版本号 (即，"4.0.30319" 而不是 "v" ) 。 建议使用较短字符串。|
 |**sku**|可选特性。<br /><br /> 一个字符串值，该值指定库存单位 (SKU)，库存单位则指定此应用程序支持的 .NET Framework 版本。<br /><br /> 从 .NET Framework 4.0 起，建议使用 `sku` 特性。  若存在该特性，则它指示应用面向的 .NET Framework 版本。<br /><br /> 有关 sku 属性的有效值，请参阅 ["sku id" 值](#sku) 一节。|
 
 ## <a name="remarks"></a>备注

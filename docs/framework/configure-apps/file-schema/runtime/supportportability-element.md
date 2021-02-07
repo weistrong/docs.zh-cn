@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <supportPortability> 元素
 title: <supportPortability> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - supportPortability element
 - <supportPortability> element
 ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
-ms.openlocfilehash: 05ce6943b9456d4fd380ea8d6cf354d197b92f96
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5a39f946d5b3841af5f4254cc2f70142aa6c013d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754506"
 ---
 # <a name="supportportability-element"></a>\<supportPortability> 元素
 
@@ -33,14 +34,14 @@ ms.locfileid: "91183944"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |PKT|必需的特性。<br /><br /> 以字符串的形式指定受影响的程序集的公钥标记。|  
 |enabled|可选特性。<br /><br /> 指定是否应启用指定 .NET Framework 程序集的实现之间的可移植性支持。|  
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |是|支持指定 .NET Framework 程序集的实现之间的可移植性。 这是默认设置。|  
 |false|禁用支持指定 .NET Framework 程序集的实现之间的可移植性。 这使应用程序可以引用指定程序集的多个实现。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91183944"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

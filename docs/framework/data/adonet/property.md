@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：属性
 title: property
 ms.date: 03/30/2017
 ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
-ms.openlocfilehash: 6aeb29c5aa608987466ec858416a4ac141ff1da3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8b25c19b0673817945fa6cc786589346462f7e61
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180915"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754320"
 ---
 # <a name="property"></a>property
 
-"*属性*" 是[实体类型](entity-type.md)和[复杂类型](complex-type.md)的基本构建基块。 属性定义了实体类型实例或复杂类型实例要包含的数据的形状和特征。 概念模型中的属性类似于为类定义的属性。 正如类的属性定义类的形状和携带有关对象的信息一样，概念模型中的属性也定义实体类型的形状和携带有关实体类型实例的信息。  
+"*属性*" 是 [实体类型](entity-type.md)和 [复杂类型](complex-type.md)的基本构建基块。 属性定义了实体类型实例或复杂类型实例要包含的数据的形状和特征。 概念模型中的属性类似于为类定义的属性。 正如类的属性定义类的形状和携带有关对象的信息一样，概念模型中的属性也定义实体类型的形状和携带有关实体类型实例的信息。  
   
 > [!NOTE]
 > 本主题中描述的属性不同于导航属性。 有关详细信息，请参阅 [导航属性](navigation-property.md)。  

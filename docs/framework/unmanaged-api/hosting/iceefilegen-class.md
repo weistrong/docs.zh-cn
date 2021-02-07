@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICeeFileGen 类
 title: ICeeFileGen 类
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 90368606-506e-40df-be1f-8d595159203f
 topic_type:
 - apiref
-ms.openlocfilehash: 78de6f91cc5c9de41426ac2e3c200fe14b32ae96
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 01f8e21ccdb46a236e69a83942b16f65b2b04378
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753960"
 ---
 # <a name="iceefilegen-class"></a>ICeeFileGen 类
 
@@ -243,6 +244,6 @@ public:
   
  **.NET Framework 版本：** 1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用自定义表达式编辑器
 title: 使用自定义表达式编辑器
 ms.date: 03/30/2017
 ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
-ms.openlocfilehash: e33e804d73239794a7f9cf9f3c28c3808f8b963e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0455088d879e51a31b0139f85f871be3fb87e7e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755091"
 ---
 # <a name="using-a-custom-expression-editor"></a>使用自定义表达式编辑器
 
@@ -278,11 +279,11 @@ namespace WpfApplication1
 }  
 ```  
   
-### <a name="notes"></a>注释  
+### <a name="notes"></a>说明  
 
  如果在自定义活动设计器中使用 **ExpressionTextBox** 控件，则无需使用接口的和方法来创建和销毁表达式 <xref:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor%2A> 编辑器 <xref:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors%2A> <xref:System.Activities.Presentation.View.IExpressionEditorService> 。 <xref:System.Activities.Presentation.View.ExpressionTextBox> 类可为您管理此过程。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Activities.Presentation.View.IExpressionEditorService>
 - <xref:System.Activities.Presentation.View.IExpressionEditorInstance>

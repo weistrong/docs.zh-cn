@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugBlockingObjectEnum 接口
 title: ICorDebugBlockingObjectEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 208e5c2d-3f3f-404e-8b3c-7cccc14ddb16
 topic_type:
 - apiref
-ms.openlocfilehash: 221acf9bea714728a81b9f15c8165c1f9eba16a8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4f28039cb8a9bdcb376a9acf22572d29e41a2adf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754064"
 ---
 # <a name="icordebugblockingobjectenum-interface"></a>ICorDebugBlockingObjectEnum 接口
 
@@ -29,9 +30,9 @@ ms.locfileid: "95719198"
   
 |方法|说明|  
 |------------|-----------------|  
-|[Next 方法](icordebugblockingobjectenum-next-method.md)|枚举 [CorDebugBlockingObject](cordebugblockingobject-structure.md) 结构的列表。|  
+|[下一方法](icordebugblockingobjectenum-next-method.md)|枚举 [CorDebugBlockingObject](cordebugblockingobject-structure.md) 结构的列表。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  每个 `CorDebugBlockingObject` 结构均表示一个阻塞线程的对象。  
   
@@ -48,7 +49,7 @@ ms.locfileid: "95719198"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

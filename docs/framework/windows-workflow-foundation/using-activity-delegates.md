@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用活动委托
 title: 使用活动委托
 ms.date: 03/30/2017
 ms.assetid: e33cf876-8979-440b-9b23-4a12d1139960
-ms.openlocfilehash: 66a03187336475ed377fda032506cfa66d3daf58
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2570d32c275975b8bda34fab2ffd79a49b6a9c73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293294"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755078"
 ---
 # <a name="using-activity-delegates"></a>使用活动委托
 

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRAppDomainResourceMonitor 接口
 title: ICLRAppDomainResourceMonitor 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 72fa83a1-8997-41d7-b355-ab177a24a303
 topic_type:
 - apiref
-ms.openlocfilehash: 84c53f0666d0e04b898e28c1d8e146eab566ca1b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 85321eabedb6912efabe57553732f8c6a4063155
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674692"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753895"
 ---
 # <a name="iclrappdomainresourcemonitor-interface"></a>ICLRAppDomainResourceMonitor 接口
 
@@ -33,7 +34,7 @@ ms.locfileid: "95674692"
 |[GetCurrentSurvived 方法](iclrappdomainresourcemonitor-getcurrentsurvived-method.md)|获取当前应用程序域引用的最后一个完整的、阻止的垃圾回收和所引用的字节数。|  
 |[GetCurrentCpuTime 方法](iclrappdomainresourcemonitor-getcurrentcputime-method.md)|获取自应用程序域创建以来在当前应用程序域中执行时所有线程已使用的总处理器时间。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICLRAppDomainResourceMonitor`接口提供类似于以下托管属性的功能：  
   

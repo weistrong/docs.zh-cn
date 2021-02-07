@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugAppDomain 接口
 title: ICorDebugAppDomain 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: be7ae711-1217-4a44-be40-166e29641b77
 topic_type:
 - apiref
-ms.openlocfilehash: 98273a5d4602c023863758045bdb2a6a502ba7a7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5f1ac20a7376a741da2e34de74c810c0f45e8293
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754191"
 ---
 # <a name="icordebugappdomain-interface"></a>ICorDebugAppDomain 接口
 
@@ -40,7 +41,7 @@ ms.locfileid: "95687224"
 |[GetProcess 方法](icordebugappdomain-getprocess-method.md)|获取包含应用程序域的进程。|  
 |[IsAttached 方法](icordebugappdomain-isattached-method.md)|确定调试器是否已附加到应用程序域。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -55,6 +56,6 @@ ms.locfileid: "95687224"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

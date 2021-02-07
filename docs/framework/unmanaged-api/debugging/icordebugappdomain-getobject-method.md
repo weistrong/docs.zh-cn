@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugAppDomain：： GetObject 方法
 title: ICorDebugAppDomain::GetObject 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 78232e6f-ae18-4cfa-a6cd-e79471cf9d76
 topic_type:
 - apiref
-ms.openlocfilehash: a163667ea7eca1ed817d642efdb8fc4efa2a0651
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 59389e2a4ca72f8dcdd7117213e968440d30aaa6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754206"
 ---
 # <a name="icordebugappdomaingetobject-method"></a>ICorDebugAppDomain::GetObject 方法
 
@@ -43,7 +44,7 @@ HRESULT GetObject (
 
  如果 <xref:System.AppDomain?displayProperty=nameWithType> 尚未为此应用程序域构造托管对象，则该方法将返回 `S_FALSE` ，并将放 `NULL` 入 `*ppObject` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  进程中的每个应用程序域在运行时中都可能有一个 <xref:System.AppDomain?displayProperty=nameWithType> 表示该对象的托管对象。 此函数获取对应于此托管对象的 ICorDebugValue 接口对象 <xref:System.AppDomain?displayProperty=nameWithType> 。  
   

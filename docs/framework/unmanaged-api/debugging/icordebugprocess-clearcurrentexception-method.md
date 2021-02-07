@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess：： ClearCurrentException 方法
 title: ICorDebugProcess::ClearCurrentException 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9e02ee1a-e495-4578-bfb5-b946274bede7
 topic_type:
 - apiref
-ms.openlocfilehash: 0d36390a905561b64b3ca6ca95722f82158450be
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6f356078d8d303acb39cbaa500b7592185ad55ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695213"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754025"
 ---
 # <a name="icordebugprocessclearcurrentexception-method"></a>ICorDebugProcess::ClearCurrentException 方法
 
@@ -37,7 +38,7 @@ HRESULT ClearCurrentException([in] DWORD threadID);
  `threadID`  
  中将清除当前非托管异常的线程的 ID。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在线程报告了应被调试对象忽略的非托管异常之前，请在调用 [ICorDebugController：： Continue](icordebugcontroller-continue-method.md) 之前调用此方法。 这会清除给定线程上未完成的带外 (IB) 和带外 (OOB) 事件。 自动清除所有 OOB 断点和单步例外。  
   

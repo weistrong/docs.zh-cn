@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeHost 接口
 title: ICLRRuntimeHost 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cb0c5f65-3791-47bc-b833-2f84f4101ba5
 topic_type:
 - apiref
-ms.openlocfilehash: 8d88222215eb31e1c63f3b26079517c4b088e81b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 92bab42fa1cf2cca5caa0eb039c88fec3e65390c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753882"
 ---
 # <a name="iclrruntimehost-interface"></a>ICLRRuntimeHost 接口
 
@@ -43,7 +44,7 @@ ms.locfileid: "95728831"
 |[Stop 方法](iclrruntimehost-stop-method.md)|停止由运行时执行的代码。|  
 |[UnloadAppDomain 方法](iclrruntimehost-unloadappdomain-method.md)|卸载 <xref:System.AppDomain> 对应于指定数值标识符的。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  从 .NET Framework 4 开始，使用 [ICLRMetaHost](iclrmetahost-interface.md) 接口获取指向 [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) 接口的指针，然后调用 [ICLRRuntimeInfo：： GetInterface](iclrruntimeinfo-getinterface-method.md) 方法以获取指向的指针 `ICLRRuntimeHost` 。 在 .NET Framework 的早期版本中，主机 `ICLRRuntimeHost` 通过调用 [CorBindToRuntimeEx](corbindtoruntimeex-function.md) 或 [CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)获取指向实例的指针。 若要提供 .NET Framework 版本2.0 中提供的任何技术的实现，必须使用 `ICLRRuntimeHost` 而不是 `ICorRuntimeHost` 。  
   
@@ -60,7 +61,7 @@ ms.locfileid: "95728831"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CorBindToCurrentRuntime 函数](corbindtocurrentruntime-function.md)
 - [CorBindToRuntimeEx 函数](corbindtoruntimeex-function.md)

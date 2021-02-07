@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataDispenserEx 接口
 title: IMetaDataDispenserEx 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 78b3629e-77a2-4406-89c3-56b5cc2c4594
 topic_type:
 - apiref
-ms.openlocfilehash: 60d321c1a87a5da433437c9d4587fa9f8947acf4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d940ac20eaad4b930ab17fb2d194d3b03bd4cf3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713374"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753531"
 ---
 # <a name="imetadatadispenserex-interface"></a>IMetaDataDispenserEx 接口
 
@@ -46,7 +47,7 @@ ms.locfileid: "95713374"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据接口](metadata-interfaces.md)
 - [IMetaDataDispenser 接口](imetadatadispenser-interface.md)

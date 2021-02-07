@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataDispenserEx：： GetOption 方法
 title: IMetaDataDispenserEx::GetOption 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d7f794e5-8e25-4d65-850a-7c34fbfce87d
 topic_type:
 - apiref
-ms.openlocfilehash: 0ceadf42ac49fd3fc89c78a6a26b2f529afeeaf0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf52a251c3c0e0485558a150b727d58eeae81995
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753544"
 ---
 # <a name="imetadatadispenserexgetoption-method"></a>IMetaDataDispenserEx::GetOption 方法
 
@@ -43,7 +44,7 @@ HRESULT GetOption (
  `pValue`  
  弄返回的选项的值。 此值的类型将是指定选项的类型的变体。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  以下列表显示了此方法支持的 Guid。 有关说明，请参阅 [IMetaDataDispenserEx：： SetOption](imetadatadispenserex-setoption-method.md) 方法。 如果不 `optionId` 在此列表中，则此方法返回 HRESULT `E_INVALIDARG` ，指示参数不正确。  
   
@@ -71,7 +72,7 @@ HRESULT GetOption (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataDispenserEx 接口](imetadatadispenserex-interface.md)
 - [IMetaDataDispenser 接口](imetadatadispenser-interface.md)

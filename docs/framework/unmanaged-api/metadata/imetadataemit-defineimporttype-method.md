@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit：:D efineImportType 方法
 title: IMetaDataEmit::DefineImportType 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 37fd27af-8062-4904-ace4-51bb78ec600a
 topic_type:
 - apiref
-ms.openlocfilehash: 94ce4443be210fdfeb1bab197c3e603255e1cc4c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7afe0fe400e4eb6e177a06e00b2d69202820804c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753427"
 ---
 # <a name="imetadataemitdefineimporttype-method"></a>IMetaDataEmit::DefineImportType 方法
 
@@ -63,7 +64,7 @@ HRESULT DefineImportType (
  `ptr`  
  弄 `mdTypeRef` 在类型引用的当前范围中定义的标记。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在调用 [IMetaDataEmit：:D efineimportmember](imetadataemit-defineimportmember-method.md) 方法之前，可以使用 `DefineImportType` 方法在当前作用域中为成员的父类或父接口创建类型引用。  
   
@@ -77,7 +78,7 @@ HRESULT DefineImportType (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit 接口](imetadataemit-interface.md)
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)

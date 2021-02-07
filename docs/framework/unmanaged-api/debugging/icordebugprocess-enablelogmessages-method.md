@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess：： EnableLogMessages 方法
 title: ICorDebugProcess::EnableLogMessages 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 14a4e5a3-3eaf-4f53-9dd1-762726963a23
 topic_type:
 - apiref
-ms.openlocfilehash: 86cb1a2eb18840419d2a4e8ee4f6475edafe8397
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d44f1a14611493372c7321feaa14329d5d77b01b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753986"
 ---
 # <a name="icordebugprocessenablelogmessages-method"></a>ICorDebugProcess::EnableLogMessages 方法
 
@@ -37,7 +38,7 @@ HRESULT EnableLogMessages([in]BOOL fOnOff);
  `fOnOff`  
  [in] `true` 启用日志消息的传输; `false` 禁用传输。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法仅在 [ICorDebugManagedCallback：： CreateProcess](icordebugmanagedcallback-createprocess-method.md) 回调发生之后有效。  
   

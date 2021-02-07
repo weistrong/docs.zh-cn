@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeHost：： GetCLRControl 方法
 title: ICLRRuntimeHost::GetCLRControl 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e47e3655-efd5-4572-a1dc-50c69bf2a468
 topic_type:
 - apiref
-ms.openlocfilehash: 928ac05fbd3a19a17e7f37674b2a75f8bc799fc6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 832ae03c0126f0c08afa9b5c0312a636ec1de294
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753922"
 ---
 # <a name="iclrruntimehostgetclrcontrol-method"></a>ICLRRuntimeHost::GetCLRControl 方法
 
@@ -51,7 +52,7 @@ HRESULT GetCLRControl(
 |E_FAIL|发生未知的灾难性故障。 如果方法返回 E_FAIL，则 CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |HOST_E_INVALIDOPERATION|CLR 已经开始。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICLRControl` 提供 [GetCLRManager 方法](iclrcontrol-getclrmanager-method.md) ，该方法使宿主可以获取指向某个管理器类型的接口指针。  
   
@@ -65,7 +66,7 @@ HRESULT GetCLRControl(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRControl 接口](iclrcontrol-interface.md)
 - [ICLRRuntimeHost 接口](iclrruntimehost-interface.md)

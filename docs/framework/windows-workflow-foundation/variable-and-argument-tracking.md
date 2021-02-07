@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：变量和参数跟踪
 title: 变量和自变量跟踪
 ms.date: 03/30/2017
 ms.assetid: 8f3d9d30-d899-49aa-b7ce-a8d0d32c4ff0
-ms.openlocfilehash: 85cecbfaf1db224152d4582325326f1f80e08266
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f2663e585ca280739f9c4ec176c31cf1d7c30657
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754974"
 ---
 # <a name="variable-and-argument-tracking"></a>变量和自变量跟踪
 
@@ -49,7 +50,7 @@ ms.locfileid: "96242898"
   
 3. 对于自定义跟踪参与者，请确保 WF 代码不会泄露存储在变量或参数中的敏感信息。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Server App Fabric 监视](/previous-versions/appfabric/ee677251(v=azure.10))
 - [用 App Fabric 监视应用程序](/previous-versions/appfabric/ee677276(v=azure.10))

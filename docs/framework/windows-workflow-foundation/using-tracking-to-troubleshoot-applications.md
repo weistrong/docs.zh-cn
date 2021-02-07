@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用跟踪对应用程序进行故障排除
 title: 使用跟踪对应用程序进行故障排除
 ms.date: 03/30/2017
 ms.assetid: 8851adde-c3c2-4391-9523-d8eb831490af
-ms.openlocfilehash: 62f2240831dd33bdaf78655199aad75b7e29c59c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9ff2c1b9a4a35a75a9f4d2229b5b43d6607e7557
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754987"
 ---
 # <a name="using-tracking-to-troubleshoot-applications"></a>使用跟踪对应用程序进行故障排除
 
@@ -53,7 +54,7 @@ ms.locfileid: "96293567"
   
  如果使用 ETW 跟踪参与者启用跟踪，则会向 ETW 会话发出错误事件。 可以使用事件查看器查看这些事件。 这可以在分析通道中的节点 **事件查看器 >应用程序和服务日志->Microsoft >Windows >应用程序服务器-应用程序** "下找到。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Server App Fabric 监视](/previous-versions/appfabric/ee677251(v=azure.10))
 - [用 App Fabric 监视应用程序](/previous-versions/appfabric/ee677276(v=azure.10))

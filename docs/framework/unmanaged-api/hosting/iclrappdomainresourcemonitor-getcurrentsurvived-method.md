@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRAppDomainResourceMonitor：： GetCurrentSurvived 方法
 title: ICLRAppDomainResourceMonitor::GetCurrentSurvived 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 392e9009-40ef-40e3-ad4d-7ce93a989e78
 topic_type:
 - apiref
-ms.openlocfilehash: eba9caece91e369cd46aed652b559ace49c77725
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 20aea8583da207144aa0ffe29591a113da789fa8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753908"
 ---
 # <a name="iclrappdomainresourcemonitorgetcurrentsurvived-method"></a>ICLRAppDomainResourceMonitor::GetCurrentSurvived 方法
 
@@ -55,7 +56,7 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
 |S_OK|该方法已成功完成。|  
 |COR_E_APPDOMAINUNLOADED|应用程序域已卸载或不存在。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  仅在完整的、阻止的垃圾回收后更新统计信息。即，包含所有代并在收集过程中停止应用程序的集合。 例如， <xref:System.GC.Collect?displayProperty=nameWithType> 方法重载执行完全阻塞的集合。 并发垃圾回收在后台发生，不会阻止应用程序。  
   

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTaskManager：： EnterRuntime 方法
 title: IHostTaskManager::EnterRuntime 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1aa7a4b1-636a-4f5e-b834-b406d72f7120
 topic_type:
 - apiref
-ms.openlocfilehash: 11515bbb5717222a0030c1953b4eab4eb1b83bb2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 924fa18c9acbf02d8c614ffd9bf95657fd73ed14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731639"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753830"
 ---
 # <a name="ihosttaskmanagerenterruntime-method"></a>IHostTaskManager::EnterRuntime 方法
 
@@ -44,7 +45,7 @@ HRESULT EnterRuntime ();
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用来完成请求的分配。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `EnterRuntime` 调用以通知宿主某个非托管函数（对该函数进行了之前对 [LeaveRuntime](ihosttaskmanager-leaveruntime-method.md) 方法的调用）已完成执行，并将执行控制返回到运行时。  
   

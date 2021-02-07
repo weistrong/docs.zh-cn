@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <generatePublisherEvidence> 元素
 title: <generatePublisherEvidence> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - generatePublisherEvidence element
 - <generatePublisherEvidence> element
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
-ms.openlocfilehash: 506e7873fab8e41fce121587c22d85600a8b1760
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2a949b52abe5ec10872d2cade49a0556063b2018
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158768"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754519"
 ---
 # <a name="generatepublisherevidence-element"></a>\<generatePublisherEvidence> 元素
 
@@ -39,7 +40,7 @@ ms.locfileid: "91158768"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`false`|不创建 <xref:System.Security.Policy.Publisher> 证据。|  
 |`true`|创建 <xref:System.Security.Policy.Publisher> 证据。 这是默认设置。|  
@@ -50,7 +51,7 @@ ms.locfileid: "91158768"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关运行时初始化选项的信息。|  
