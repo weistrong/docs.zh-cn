@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <certificateReference>
 title: <certificateReference>
 ms.date: 03/30/2017
 ms.assetid: 2ac8bc14-e9f1-48fb-b662-f5991558fbe4
 author: BrucePerlerMS
-ms.openlocfilehash: c21e5186b8afdf8c72cbfc605af94c95bc2bc0d5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3404d44457849fb78ae88617d049a2199f2b5509
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201366"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681781"
 ---
 # \<certificateReference>
 
@@ -44,7 +45,7 @@ ms.locfileid: "91201366"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |storeName|X.509 证书存储区的名称。 默认值为 "My"。 可选。|  
 |storeLocation|一个 <xref:System.Security.Cryptography.X509Certificates.StoreLocation> 值，该值指定 x.509 证书存储区的位置。 默认值为 "LocalMachine"。 可选。|  
@@ -58,7 +59,7 @@ ms.locfileid: "91201366"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceCertificate>](servicecertificate.md)|配置用于加密和解密令牌的证书。|  
   

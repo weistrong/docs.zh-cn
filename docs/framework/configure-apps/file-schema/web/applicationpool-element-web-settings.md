@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息： <applicationPool> 元素 (Web 设置) '
 title: <applicationPool> 元素（网络设置）
 ms.date: 03/30/2017
 helpviewer_keywords:
 - applicationPool element
 - <applicationPool> element
 ms.assetid: 46d1baaa-e343-4639-b70d-2a43a9f62b2a
-ms.openlocfilehash: 963b25e57ae8c2cc59dcc3e50ae2a52cc04f54a8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e70b804fbad506f98d5356828843208e5ef9e515
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681989"
 ---
 # <a name="applicationpool-element-web-settings"></a>\<applicationPool> 元素（网络设置）
 
@@ -38,7 +39,7 @@ ms.locfileid: "91185634"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`maxConcurrentRequestsPerCPU`|指定 ASP.NET 每 CPU 允许的并发请求数。|  
 |`maxConcurrentThreadsPerCPU`|指定每个 CPU 的应用程序池可以运行的线程数。 这提供了一种方法来控制 ASP.NET 并发，因为你可以限制每个 CPU 可用于处理请求的托管线程数。 默认情况下，此设置为0，这意味着 ASP.NET 不会限制可为每个 CPU 创建的线程数，尽管 CLR 线程池还限制了可创建的线程数。|  
@@ -50,7 +51,7 @@ ms.locfileid: "91185634"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<system.web>](system-web-element-web-settings.md)|包含有关 ASP.NET 如何与宿主应用程序进行交互的信息。|  
   
@@ -65,7 +66,7 @@ ms.locfileid: "91185634"
   
 对于 `maxConcurrentRequestsPerCPU` 设置，.NET Framework 4 中 "5000" 的默认设置有效地关闭了由 ASP.NET 控制的请求阻止，除非你实际每个 CPU 有5000或更多请求。 默认设置依赖于 CLR 线程池来自动管理每个 CPU 的并发。 对于大量使用异步请求处理的应用程序，或在网络 i/o 上阻塞多个长时间运行的请求的应用程序，将从 .NET Framework 4 中增加的默认限制中受益。 如果设置 `maxConcurrentRequestsPerCPU` 为零，则不会使用托管线程处理 ASP.NET 请求。 当应用程序在 IIS 应用程序池中运行时，请求将保留在 IIS i/o 线程上，因此并发会受到 IIS 线程设置的限制。  
   
-此 `requestQueueLimit` 设置与 processModel 元素的属性的工作方式相同 `requestQueueLimit` ，该元素在 ASP.NET 应用程序的 Web.config 文件中设置。 [processModel](/previous-versions/dotnet/netframework-4.0/7w2sway1(v=vs.100)) 但 `requestQueueLimit` aspnet.config 文件中的设置将覆盖 `requestQueueLimit` Web.config 文件中的设置。 换句话说，如果在默认情况下 (设置这两个属性，则) ，则 `requestQueueLimit` aspnet.config 文件中的设置优先。  
+此 `requestQueueLimit` 设置与 processModel 元素的属性的工作方式相同 `requestQueueLimit` ，该元素在 ASP.NET 应用程序的 Web.config 文件中设置。 [](/previous-versions/dotnet/netframework-4.0/7w2sway1(v=vs.100)) 但 `requestQueueLimit` aspnet.config 文件中的设置将覆盖 `requestQueueLimit` Web.config 文件中的设置。 换句话说，如果在默认情况下 (设置这两个属性，则) ，则 `requestQueueLimit` aspnet.config 文件中的设置优先。  
   
 ## <a name="example"></a>示例  
 

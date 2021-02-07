@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <webHttpEndpoint>
 title: <webHttpEndpoint>
 ms.date: 03/30/2017
 ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
-ms.openlocfilehash: 3282871bf8dbd25726ada7003d3066b9a42e2366
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d1bcda1fc97dece833c8163e5facbefe614af0ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682587"
 ---
 # \<webHttpEndpoint>
 
@@ -39,7 +40,7 @@ ms.locfileid: "91177977"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |automaticFormatSelectionEnabled|一个布尔值，指示是否启用自动格式选择。<br /><br /> 如果启用了自动格式选择，基础结构将分析请求消息的 `Accept` 标头，并确定最适合的响应格式。 如果 `Accept` 标头未指定适合的响应格式，则基础结构将使用请求消息的 `Content-Type`，或使用操作的默认响应格式。|  
 |defaultOutgoingResponseFormat|一个指定默认传出响应格式的特性。 此特性的类型为 <xref:System.ServiceModel.Web.WebMessageFormat>|  
@@ -52,7 +53,7 @@ ms.locfileid: "91177977"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<standardEndpoints>](standardendpoints.md)|具有一个或多个固定属性（地址、绑定和协定）的预定义终结点的标准终结点集合。|  
   

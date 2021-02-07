@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <persistenceProvider>
 title: <persistenceProvider>
 ms.date: 03/30/2017
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
-ms.openlocfilehash: dbf0ba565d4e3e2d65b4a81eb5d345fa90fb43c7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 60ddaf9f26f496bd7d79ccab84f84135e46963d1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181422"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683549"
 ---
 # \<persistenceProvider>
 
@@ -33,7 +34,7 @@ ms.locfileid: "91181422"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |persistenceOperationTimeout|一个 <xref:System.TimeSpan> 值，指定用于持久性操作的超时值。 默认值为 "00:00:30"。|  
 |type|一个字符串，指定要使用的永久性提供程序工厂的类型。|  
@@ -44,7 +45,7 @@ ms.locfileid: "91181422"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定行为元素。|  
   

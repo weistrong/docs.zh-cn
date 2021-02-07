@@ -1,13 +1,14 @@
 ---
+description: 了解更多： System.web 方法
 title: System.Convert 方法
 ms.date: 03/30/2017
 ms.assetid: 3ca6c5b6-ea5d-4ab0-b675-f082135b342c
-ms.openlocfilehash: d0aa0b11223e23b874471962d727d8e16e152ceb
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a323f8d0c3c4a8d1248409d2ec27565acdc58222
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681404"
 ---
 # <a name="systemconvert-methods"></a>System.Convert 方法
 

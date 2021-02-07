@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <customBinding>
 title: <security> 的 <customBinding>
 ms.date: 03/30/2017
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
-ms.openlocfilehash: eb661864e2540a9b9f5f217402d37515043c862a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0c7a534754f19d46984911ba1dec60d9c517e6b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683237"
 ---
 # <a name="security-of-custombinding"></a>\<security> 的 \<customBinding>
 
@@ -48,19 +49,19 @@ ms.locfileid: "91170111"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |allowSerializedSigningTokenOnReply|可选。 一个布尔值，指定是否可以在答复时使用序列化令牌。 默认值是 `false`。 使用双向绑定时，默认设置为 `true` 并忽略所做的任何设置。|  
-|authenticationMode|可选。 指定在发起方和响应方之间使用的身份验证模式。 请参见下面所有的值。<br /><br /> 默认为 `sspiNegotiated`。|  
+|authenticationMode|可选。 指定在发起方和响应方之间使用的身份验证模式。 请参见下面所有的值。<br /><br /> 默认值为 `sspiNegotiated`。|  
 |defaultAlgorithmSuite|可选。 设置消息加密和密钥包装算法。 算法和密钥大小由 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> 类确定。 这些算法与“安全策略语言”(WS-SecurityPolicy) 规范中指定的算法一致。<br /><br /> 以下显示了可能的值。 默认值是 `Basic256`。<br /><br /> 此属性与选取不同于默认算法的算法集的其他平台一起使用。 在对此设置进行修改时，应该注意相关算法的优缺点。 此属性的类型为 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>。|  
-|includeTimestamp|一个布尔值，指定是否每个消息都包含时间戳。 默认为 `true`。|  
-|keyEntropyMode|指定用于保护消息的密钥的计算方法。 密钥只能基于客户端密钥材料、服务密钥材料或两者的组合。 有效值为<br /><br /> -   `ClientEntropy`：会话密钥基于客户端提供的密钥数据。<br />-   `ServerEntropy`：会话密钥基于服务器提供的密钥数据。<br />-   `CombinedEntropy`：会话密钥基于客户端和服务提供的密钥数据。<br /><br /> 默认为 `CombinedEntropy`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.Security.SecurityKeyEntropyMode>。|  
+|includeTimestamp|一个布尔值，指定是否每个消息都包含时间戳。 默认值为 `true`。|  
+|keyEntropyMode|指定用于保护消息的密钥的计算方法。 密钥只能基于客户端密钥材料、服务密钥材料或两者的组合。 有效值为<br /><br /> -   `ClientEntropy`：会话密钥基于客户端提供的密钥数据。<br />-   `ServerEntropy`：会话密钥基于服务器提供的密钥数据。<br />-   `CombinedEntropy`：会话密钥基于客户端和服务提供的密钥数据。<br /><br /> 默认值为 `CombinedEntropy`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.Security.SecurityKeyEntropyMode>。|  
 |messageProtectionOrder|设置对消息应用消息级安全算法的顺序。 有效值包括以下值：<br /><br /> -   `SignBeforeEncrypt`：先签名，然后加密。<br />-   `SignBeforeEncryptAndEncryptSignature`：先签名，然后加密签名。<br />-   `EncryptBeforeSign`：先加密，然后签名。<br /><br /> 默认值取决于所使用的 WS-Security 版本。 使用 WS-Security 1.1 时，默认值为 `SignBeforeEncryptAndEncryptSignature`。 使用 WS-Security 1.0 时，默认值为 `SignBeforeEncrypt`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.Security.MessageProtectionOrder>。|  
 |messageSecurityVersion|可选。 设置所使用的 WS-Security 的版本。 有效值包括以下值：<br /><br /> - WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11<br />- WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br />- WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br /><br /> 默认值是 WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11，且该默认值在 XML 中可以简单地表示为 `Default`。 此属性的类型为 <xref:System.ServiceModel.MessageSecurityVersion>。|  
-|requireDerivedKeys|一个布尔值，指定是否可以从原始校验密钥中派生密钥。 默认为 `true`。|  
-|requireSecurityContextCancellation|可选。 一个布尔值，指定当不再需要安全上下文时是否应将其取消和终止。 默认为 `true`。|  
+|requireDerivedKeys|一个布尔值，指定是否可以从原始校验密钥中派生密钥。 默认值为 `true`。|  
+|requireSecurityContextCancellation|可选。 一个布尔值，指定当不再需要安全上下文时是否应将其取消和终止。 默认值为 `true`。|  
 |requireSignatureConfirmation|可选。 一个布尔值，指定是否启用 WS-Security 签名确认。 当设置为 `true` 时，消息签名由响应方进行确认。  为相互证书配置自定义绑定时或将自定义绑定配置为使用所颁发的令牌（WSS 1.1 绑定）时，此特性默认为 `true`。 否则默认值为 `false`。<br /><br /> 签名确认用于确认服务正在完全知晓请求的情况下做出响应。|  
-|securityHeaderLayout|可选。 指定安全头中元素的排序。 有效值为<br /><br /> -   `Strict`：根据 "使用之前声明" 的一般原则，将项添加到安全标头中。<br />-   `Lax`：项以任何可确认为 WSS： SOAP 消息安全的顺序添加到安全标头中。<br />-   `LaxWithTimestampFirst`：项以任何符合 WSS： SOAP 消息安全的顺序添加到安全标头中，但安全标头中的第一个元素必须是 wsse： Timestamp 元素。<br />-   `LaxWithTimestampLast`：项以任何符合 WSS： SOAP 消息安全的顺序添加到安全标头中，但安全头中的最后一个元素必须是 wsse： Timestamp 元素。<br /><br /> 默认为 `Strict`。<br /><br /> 此元素的类型为 <xref:System.ServiceModel.Channels.SecurityHeaderLayout>。|  
+|securityHeaderLayout|可选。 指定安全头中元素的排序。 有效值为<br /><br /> -   `Strict`：根据 "使用之前声明" 的一般原则，将项添加到安全标头中。<br />-   `Lax`：项以任何可确认为 WSS： SOAP 消息安全的顺序添加到安全标头中。<br />-   `LaxWithTimestampFirst`：项以任何符合 WSS： SOAP 消息安全的顺序添加到安全标头中，但安全标头中的第一个元素必须是 wsse： Timestamp 元素。<br />-   `LaxWithTimestampLast`：项以任何符合 WSS： SOAP 消息安全的顺序添加到安全标头中，但安全头中的最后一个元素必须是 wsse： Timestamp 元素。<br /><br /> 默认值为 `Strict`。<br /><br /> 此元素的类型为 <xref:System.ServiceModel.Channels.SecurityHeaderLayout>。|  
   
 ## <a name="authenticationmode-attribute"></a>authenticationMode 特性  
   
@@ -70,7 +71,7 @@ ms.locfileid: "91170111"
   
 ## <a name="defaultalgorithm-attribute"></a>defaultAlgorithm 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |Basic128|使用 Aes128 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
 |Basic192|使用 Aes192 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
@@ -91,7 +92,7 @@ ms.locfileid: "91170111"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|指定一个当前颁发的令牌。 此元素的类型为 <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>。|  
 |[\<localClientSettings>](localclientsettings-element.md)|指定此绑定的本地客户端安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>。|  
@@ -100,7 +101,7 @@ ms.locfileid: "91170111"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

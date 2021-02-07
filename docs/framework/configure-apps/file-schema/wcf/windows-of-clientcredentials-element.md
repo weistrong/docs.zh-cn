@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <windows> 元素的详细 <clientCredentials> 信息
 title: <windows> of <clientCredentials> 元素
 ms.date: 03/30/2017
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
-ms.openlocfilehash: 115e1822659c04ee37a7364f7b25616b52dc5efe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d693ad914dfa02ef12a7c8520ca84be3a9595e73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177821"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682418"
 ---
 # <a name="windows-of-clientcredentials-element"></a>\<windows> of \<clientCredentials> 元素
 
@@ -34,7 +35,7 @@ ms.locfileid: "91177821"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`allowedImpersonationLevel`|设置客户端用于与服务器进行通信的模拟首选项。 服务器上不强制使用客户端所选择的模拟模式。 有效值包括以下值：<br /><br /> -标识：服务器可以获取客户端的标识和特权，但不能模拟客户端。<br />-模拟：服务器可以在本地系统上模拟客户端的安全上下文。<br />-委派：服务器可以在远程系统上模拟客户端的安全上下文。<br />-Anonymous：服务器无法模拟或标识客户端。<br />-None：不分配模拟级别。<br /><br /> 默认值为 Identification。 此属性的类型为 <xref:System.Security.Principal.TokenImpersonationLevel>。|  
 |`allowNtlm`|如果 Kerberos 不可用，则将此属性设置为 `true` 可令身份验证降级到 NTLM。<br /><br /> 如果将此属性设置为，则 `false` Windows Communication Foundation (WCF) 以便在使用 NTLM 时尽力引发异常。 请注意，将此属性设置为 `false` 可能不阻止通过网络发送 NTLM 凭据。|  
@@ -45,7 +46,7 @@ ms.locfileid: "91177821"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|指定用于向服务证明客户端身份的凭据。|  
   

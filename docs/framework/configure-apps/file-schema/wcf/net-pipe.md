@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <net.pipe>
 title: <net.pipe>
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
-ms.openlocfilehash: d070b822cefeef3c281d5b0e47411f4c624dd83f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d95aebc62ab92b91c1633a99d8311b55bfaaf0d1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684069"
 ---
 # \<net.pipe>
 
@@ -52,7 +53,7 @@ ms.locfileid: "91204601"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`maxPendingAccepts`|一个整数，指定共享服务侦听终结点上的最大未完成并发接受线程数。 默认值为 2。|  
 |`maxPendingConnections`|一个整数，指定可等待调度的最大连接数。 默认值为 100。|  
@@ -60,13 +61,13 @@ ms.locfileid: "91204601"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<allowAccounts>](allowaccounts.md)|一个配置元素的集合，这些元素包含一个 `securityIdentifier` 属性，用于为承载 WCF 服务并被授予对共享服务的连接访问权限的进程指定用户帐户。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<system.serviceModel.activation>](system-servicemodel-activation.md)|包含侦听器进程 SMSvcHost.exe 的配置设置。|  
   

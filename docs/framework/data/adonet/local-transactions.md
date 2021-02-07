@@ -1,33 +1,34 @@
 ---
+description: 了解有关以下内容的详细信息：本地事务
 title: 本地事务
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8ae3712f-ef5e-41a1-9ea9-b3d0399439f1
-ms.openlocfilehash: a0b713ab0b81cb2f0661212dae22db34b7f9f3ae
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 998024a6b08ec9cb97c8bb8dbbe2c9d17f38f350
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175390"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681638"
 ---
 # <a name="local-transactions"></a>本地事务
 
-如果要将多个任务绑定在一起，以便将它们作为单个工作单元执行，则可以使用 ADO.NET 中的事务。 例如，假设应用程序执行两个任务。 首先使用订单信息更新表。 然后更新包含库存信息的表，将已订购的商品记入借方。 如果有一个任务失败，则回滚两个更新。  
+当要将多个任务绑定在一起，以便它们作为单个工作单元执行时，可以使用 ADO.NET 中的事务。 例如，假设应用程序执行两个任务。 首先使用订单信息更新表。 然后更新包含库存信息的表，将已订购的商品记入借方。 如果任何一项任务失败，两个更新均将回滚。  
   
 ## <a name="determining-the-transaction-type"></a>确定事务类型  
 
- 如果事务是单阶段事务，则该事务被视为本地事务，并且由数据库直接处理。 当事务由事务监视器协调并使用防故障机制 (例如两阶段提交) 进行事务解析时，该事务被视为分布式事务。  
+ 如果事务是单阶段事务，并且由数据库直接处理，则属于本地事务。 如果事务由事务监视程序进行协调并使用故障保护机制（例如两阶段提交）解决，则属于分布式事务。  
   
- 每个 .NET Framework 数据提供程序都有自己 `Transaction` 的用于执行本地事务的对象。 如果要求事务在 SQL Server 数据库中执行，则选择 <xref:System.Data.SqlClient> 事务。 对于 Oracle 事务，使用 <xref:System.Data.OracleClient> 提供程序。 此外，还提供了一个 <xref:System.Data.Common.DbTransaction> 类，该类可用于编写与提供程序无关的代码，该代码需要事务。  
+ 每个 .NET Framework 数据提供程序都有自己 `Transaction` 的用于执行本地事务的对象。 如果要求事务在 SQL Server 数据库中执行，则选择 <xref:System.Data.SqlClient> 事务。 对于 Oracle 事务，使用 <xref:System.Data.OracleClient> 提供程序。 此外，还提供了一个新的 <xref:System.Data.Common.DbTransaction> 类，用于编写需要事务并且与提供程序无关的代码。  
   
 > [!NOTE]
-> 当事务在服务器上执行时，它们是最有效的。 如果使用的 SQL Server 数据库广泛使用显式事务，应考虑使用 Transact-SQL BEGIN TRANSACTION 语句以存储过程的形式编写这些事务。
+> 事务在服务器上执行时最为有效。 如果使用的 SQL Server 数据库广泛使用显式事务，应考虑使用 Transact-SQL BEGIN TRANSACTION 语句以存储过程的形式编写这些事务。
   
 ## <a name="performing-a-transaction-using-a-single-connection"></a>使用单个连接执行事务  
 
- 在 ADO.NET 中，可以通过对象控制事务 `Connection` 。 可以使用 `BeginTransaction` 方法启动本地事务。 开始事务后，可以使用 `Transaction` 对象的 `Command` 属性在该事务中登记一个命令。 然后，可以根据事务组件的成功或失败，提交或回滚在数据源上进行的修改。  
+ 在 ADO.NET 中，可以使用 `Connection` 对象控制事务。 可以使用 `BeginTransaction` 方法启动本地事务。 开始事务后，可以使用 `Transaction` 对象的 `Command` 属性在该事务中登记一个命令。 然后，可以根据事务组件的成功或失败，提交或回滚在数据源上进行的修改。  
   
 > [!NOTE]
 > 不应对本地事务使用 `EnlistDistributedTransaction` 方法。  
@@ -53,7 +54,7 @@ ms.locfileid: "91175390"
   
 ## <a name="see-also"></a>请参阅
 
-- [事务和并发性](transactions-and-concurrency.md)
+- [事务和并发](transactions-and-concurrency.md)
 - [分布式事务](distributed-transactions.md)
-- [System.Transactions 与 SQL Server 的集成](system-transactions-integration-with-sql-server.md)
+- [System.object 与 SQL Server 的集成](system-transactions-integration-with-sql-server.md)
 - [ADO.NET 概述](ado-net-overview.md)

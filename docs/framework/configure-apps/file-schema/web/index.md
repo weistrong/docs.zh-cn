@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Web 设置架构
 title: Web 设置架构
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - configuration files [ASP.NET]
 - configuration schema [.NET Framework], Web settings
 ms.assetid: ae1ac356-267d-4753-8d7a-7a04eb45a9be
-ms.openlocfilehash: c3ac9b42aeff3f7b26f0b36480bc75ceda39e7e6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 262a53ae062788143cbacdc1012085186f4c9652
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185595"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681911"
 ---
 # <a name="web-settings-schema"></a>Web 设置架构
 
@@ -30,7 +31,7 @@ Web 设置包含在 Aspnet.config 文件中，该文件位于各版本 .NET Fram
 &nbsp;&nbsp;[**\<system.web>**](system-web-element-web-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<applicationPool>**](applicationpool-element-web-settings.md)
 
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<system.web>](system-web-element-web-settings.md)|包含 ASP.NET 承载层使用的信息。|  
 |[\<applicationPool>](applicationpool-element-web-settings.md)|指定 CPU 和执行级别 ASP.NET 设置，后者应用于由 ASP.NET 承载层托管的进程范围行为。|  

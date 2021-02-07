@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <webSocketSettings>
 title: <webSocketSettings>
 ms.date: 03/30/2017
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
-ms.openlocfilehash: 6cfddfb9ebfc7c3447af977e14738baabebc8fe9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a0b67a0088491c73ed0214191283ae5292a654b0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177843"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682483"
 ---
 # \<webSocketSettings>
 
@@ -43,7 +44,7 @@ ms.locfileid: "91177843"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |createNotificationOnConnection|指定是否在连接时发送通知。|  
 |disablePayloadMasking|指定是否禁用 Web Socket 掩码。|  
@@ -56,10 +57,10 @@ ms.locfileid: "91177843"
   
 ## <a name="transportusage-attribute"></a>transportUsage 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |WhenDuplex|如果为双工协定，则使用 Web Socket 协议。|  
-|始终|始终使用 Web Socket 协议，而不管协定类型。|  
+|Always|始终使用 Web Socket 协议，而不管协定类型。|  
 |从不|永远不使用 Web Socket 协议。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -68,7 +69,7 @@ ms.locfileid: "91177843"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |\<netHttpBinding>|指定 NetHttpBinding|  
   
@@ -91,7 +92,7 @@ ms.locfileid: "91177843"
 </netHttpBinding>
 ```  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.ServiceModel.Channels.Binding>
 - <xref:System.ServiceModel.Channels.BindingElement>

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： LINQ to DataSet 概述
 title: LINQ to DataSet 概述
 ms.date: 03/30/2017
 ms.assetid: dc20a8fb-03f6-4b68-9c2b-7f7299e3070b
-ms.openlocfilehash: f7659d03005df69d7debe604581ce49973f938cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 73054a4f9b7397e3fa5d417d85afa2fa23aec643
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681690"
 ---
 # <a name="linq-to-dataset-overview"></a>LINQ to DataSet 概述
 
@@ -19,7 +20,7 @@ ms.locfileid: "91200610"
   
 ## <a name="querying-datasets-using-linq-to-dataset"></a>使用 LINQ to DataSet 查询数据集  
 
- 在开始 <xref:System.Data.DataSet> 使用 LINQ to DataSet 查询对象之前，必须填充 <xref:System.Data.DataSet> 。 可以通过多种方法将数据加载到 <xref:System.Data.DataSet> 中，如使用 <xref:System.Data.Common.DataAdapter> 类或 [LINQ to SQL](./sql/linq/index.md)。 将数据加载到 <xref:System.Data.DataSet> 对象后，可以开始查询数据。 使用 LINQ to DataSet 来构建查询类似于对其他启用 LINQ 的数据源使用语言集成查询 (LINQ) 。 <xref:System.Data.DataSet>使用 <xref:System.Linq.Enumerable.Join%2A> 和标准查询运算符可以对中的单个表执行 LINQ 查询，也可以针对多个表执行 LINQ 查询 <xref:System.Linq.Enumerable.GroupJoin%2A> 。  
+ 在开始 <xref:System.Data.DataSet> 使用 LINQ to DataSet 查询对象之前，必须填充 <xref:System.Data.DataSet> 。 可以通过多种方法将数据加载到 <xref:System.Data.DataSet> 中，如使用 <xref:System.Data.Common.DataAdapter> 类或 [LINQ to SQL](./sql/linq/index.md)。 将数据加载到 <xref:System.Data.DataSet> 对象后，可以开始查询数据。 使用 LINQ to DataSet 来构建查询类似于对其他启用 LINQ 的数据源使用 Language-Integrated 查询 (LINQ) 。 <xref:System.Data.DataSet>使用 <xref:System.Linq.Enumerable.Join%2A> 和标准查询运算符可以对中的单个表执行 LINQ 查询，也可以针对多个表执行 LINQ 查询 <xref:System.Linq.Enumerable.GroupJoin%2A> 。  
   
  支持对类型化和非类型化对象同时支持 LINQ 查询 <xref:System.Data.DataSet> 。 如果在应用程序设计时已知 <xref:System.Data.DataSet> 的架构，则建议使用类型化 <xref:System.Data.DataSet>。 在类型化 <xref:System.Data.DataSet> 中，表和行对每个列都具有类型化成员，从而使查询更简单并且更具可读性。  
   

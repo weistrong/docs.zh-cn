@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： <msmqIntegrationBinding>
 title: <msmqIntegrationBinding>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - msmqIntegrationBinding Element
 ms.assetid: edf277f3-e3bf-4ed8-9f55-83b5788430a7
-ms.openlocfilehash: bc2b1648ad404ba13920d9f276c299756554b5d4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2745fdf1576d66e3e7c0c74d9b7d6f008fac88b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684238"
 ---
 # \<msmqIntegrationBinding>
 
@@ -55,12 +56,12 @@ ms.locfileid: "91204666"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |closeTimeout|一个 <xref:System.TimeSpan> 值，指定为完成关闭操作提供的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|  
 |customDeadLetterQueue|一个 URI，包含每个应用程序的死信队列（该队列用于放置已过期的消息或者放置传输或传递失败的消息）的位置。<br /><br /> 死信队列是发送应用程序的队列管理器中的一个队列，用于放置传递失败的过期消息。<br /><br /> <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> 指定的 URI 必须使用 net.msmq 方案。|  
 |deadLetterQueue|一个 <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> 值，指定要使用的死信队列（如果有）的类型。<br /><br /> 死信队列是无法传递到应用程序的消息所要传输到的位置。<br /><br /> 对于需要 exactlyOnce 保证（即，`exactlyOnce` 属性设置为 `true`）的消息，此属性默认为 MSMQ 中系统级事务性死信队列。<br /><br /> 对于不需要保证的消息，此属性默认为 `null`。|  
-|durable|一个布尔值，指示消息在队列中是持久的还是可变的。 持久消息能够在队列管理器崩溃后保留下来，而可变消息则不能。 当应用程序需要较低的延迟并且可以容忍偶尔丢失消息时，可变消息是有用的。 如果 `exactlyOnce` 属性设置为 `true`，则消息必须为持久的消息。 默认为 `true`。|  
+|durable|一个布尔值，指示消息在队列中是持久的还是可变的。 持久消息能够在队列管理器崩溃后保留下来，而可变消息则不能。 当应用程序需要较低的延迟并且可以容忍偶尔丢失消息时，可变消息是有用的。 如果 `exactlyOnce` 属性设置为 `true`，则消息必须为持久的消息。 默认值为 `true`。|  
 |exactlyOnce|一个布尔值，指示每个消息是否只传递一次。 然后，将通知发送方有关传递失败的信息。 如果 `durable` 为 `false`，则将忽略此属性并且传输消息，而不会提供传递保证。 默认值为 `true`。 有关详细信息，请参阅 <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A>。|  
 |maxReceivedMessageSize|一个正整数，定义此绑定所处理的最大消息大小（以字节为单位），其中包括标头。 如果消息超出此限制，则发送方将收到 SOAP 错误。 接收方将删除该消息，并在跟踪日志中创建事件项。 默认值为 65536。 对消息大小进行的此限制旨在降低遭受拒绝服务 (DoS) 攻击的可能性。|  
 |maxRetryCycles|一个整数，指示病毒消息检测功能所使用的重试周期数。 如果所有周期的所有传递尝试均失败，则消息将变为病毒消息。 默认值为 2。 有关详细信息，请参阅 <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A>。|  
@@ -74,28 +75,28 @@ ms.locfileid: "91204666"
 |sendTimeout|一个 <xref:System.TimeSpan> 值，指定为完成发送操作提供的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|  
 |serializationFormat|定义用于消息正文序列化的格式。 此属性的类型为 <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat>。|  
 |timeToLive|一个 TimeSpan 值，指定在消息过期并放入死信队列之前消息保持有效的持续时间。 默认值为 1.00:00:00。<br /><br /> 设置此属性可以确保具有时效性的消息不会在由接收应用程序进行处理之前过时。 如果队列中的消息在指定时间间隔内未被接收应用程序进行处理，则称该消息为过时消息。 过时消息被发送到称为“死信队列”的特殊队列中。 死信队列的位置通过 `DeadLetterQueue` 属性进行设置，或基于保证设置为适当的默认值。|  
-|useMsmqTracing|一个布尔值，指定是否应跟踪由此绑定处理的消息。 默认为 `false`。 如果启用了跟踪，则每当消息离开或到达消息队列计算机时，都会创建报告消息并将其发送到报告队列。|  
-|useSourceJournal|一个布尔值，指定是否应将由此绑定处理的消息的副本存储在源日志中。 默认为 `false`。<br /><br /> 如果排队应用程序要保留已离开计算机传出队列的消息的记录，则可以将这些消息复制到日志队列。 在消息离开传出队列，并且接收到目标计算机已接收该消息的确认后，该消息的副本就会保留在发送计算机的系统日志队列中。|  
+|useMsmqTracing|一个布尔值，指定是否应跟踪由此绑定处理的消息。 默认值为 `false`。 如果启用了跟踪，则每当消息离开或到达消息队列计算机时，都会创建报告消息并将其发送到报告队列。|  
+|useSourceJournal|一个布尔值，指定是否应将由此绑定处理的消息的副本存储在源日志中。 默认值为 `false`。<br /><br /> 如果排队应用程序要保留已离开计算机传出队列的消息的记录，则可以将这些消息复制到日志队列。 在消息离开传出队列，并且接收到目标计算机已接收该消息的确认后，该消息的副本就会保留在发送计算机的系统日志队列中。|  
   
 ## <a name="serializationformat-attribute"></a>{serializationFormat} 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |Xml|XML 格式|  
 |二进制|二进制格式|  
 |ActiveX|ActiveX 格式|  
 |ByteArray|将对象序列化为字节数组。|  
-|Stream|设置为流格式的正文|  
+|流|设置为流格式的正文|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-msmqintegrationbinding.md)|定义绑定的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<bindings>](bindings.md)|此元素包含标准绑定和自定义绑定的集合。|  
   

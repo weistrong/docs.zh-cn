@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <netTcpBinding>
 title: <security> 的 <netTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
-ms.openlocfilehash: d39e3e5e655817aa91c5301274a860a00a6ab7ef
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ad924f5a6ea9e003f6427ee76d3aef3afde9d083
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683068"
 ---
 # <a name="security-of-nettcpbinding"></a>\<security> 的 \<netTcpBinding>
 
@@ -37,29 +38,29 @@ ms.locfileid: "91169981"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |mode|可选。 指定所应用的安全类型。 以下列出了有效值。 默认值是 `Transport`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.SecurityMode>。|  
   
 ## <a name="mode-attribute"></a>mode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|禁用安全性。|  
-|传输|使用 TLS over TCP 或 SPNego 提供传输安全性。 此服务可能需要使用 SSL 证书进行配置。 可以使用此模式控制保护级别。|  
+|Transport|使用 TLS over TCP 或 SPNego 提供传输安全性。 此服务可能需要使用 SSL 证书进行配置。 可以使用此模式控制保护级别。|  
 |消息|使用 SOAP 消息安全提供安全性。 默认情况下，将对 SOAP 正文进行加密和签名。 此模式提供了各种各样的功能，例如服务凭据在带外客户端是否可用、要使用的算法套件以及要应用于消息正文的保护级别。 每个会话将执行一次客户端身份验证，身份验证的结果在会话过程中将被缓存。|  
 |TransportWithMessageCredential|传输安全性与消息安全性结合使用。 使用 TLS over TCP 或 SPNego 提供传输安全性，传输安全性可确保完整性、保密性和服务器身份验证。 SOAP 消息安全性提供客户端身份验证。 默认情况下，每个会话将执行一次客户端身份验证，身份验证的结果在会话过程中将被缓存。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<transport>](transport-of-nettcpbinding.md)|定义传输的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.TcpTransportSecurityElement>。|  
 |[\<message>](message-element-of-nettcpbinding.md)|定义消息的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |binding|的绑定元素 [\<netTcpBinding>](nettcpbinding.md) 。|  
   

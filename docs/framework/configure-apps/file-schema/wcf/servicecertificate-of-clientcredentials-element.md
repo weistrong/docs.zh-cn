@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <serviceCertificate> 元素的详细 <clientCredentials> 信息
 title: <serviceCertificate> of <clientCredentials> 元素
 ms.date: 03/30/2017
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.openlocfilehash: 502452c664f2dcb0856f72e25ff8b1517f432919
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5503c1a60b2d37f4f9359a2f49c019c37df71619
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682899"
 ---
 # <a name="servicecertificate-of-clientcredentials-element"></a>\<serviceCertificate> of \<clientCredentials> 元素
 
@@ -37,7 +38,7 @@ ms.locfileid: "91172887"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<defaultCertificate>](defaultcertificate-element.md)|指定在服务或 STS 未通过协商协议提供证书时要使用的 X.509 证书。|  
 |[\<scopedCertificates>](scopedcertificates-element.md)|表示特定服务为身份验证提供的 X.509（作用域）证书的集合。 此集合通常用于指定联合方案中安全令牌服务的服务证书。|  
@@ -45,7 +46,7 @@ ms.locfileid: "91172887"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|指定客户端用于向服务证明自己的身份的凭据。|  
   

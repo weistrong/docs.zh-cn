@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <audienceUris>
 title: <audienceUris>
 ms.date: 03/30/2017
 ms.assetid: 7a3d8515-d756-4afe-a22d-07cbe2217ee3
 author: BrucePerlerMS
-ms.openlocfilehash: c9787d8e0d8d66494bbf2dbd0e24ff39178a4cde
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 98b411e73d4b9941e65daaf5d1d63285cdc90fd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681846"
 ---
 # \<audienceUris>
 
@@ -45,13 +46,13 @@ ms.locfileid: "91189898"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |mode|一个 <xref:System.IdentityModel.Selectors.AudienceUriMode> 值，该值指定是否应将受众限制应用于传入令牌。 可能的值为 "始终"、"从不" 和 "BearerKeyOnly"。 默认值为 "Always"。 可选。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`<add value=xs:string>`|将属性指定的 URI 添加 `value` 到 audienceUris 集合。 需要 `value` 属性。 URI 区分大小写。|  
 |`<clear>`|清除 audienceUris 集合。 所有标识符都将从集合中删除。|  
@@ -59,7 +60,7 @@ ms.locfileid: "91189898"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|为安全标记处理程序的集合提供配置。|  
   

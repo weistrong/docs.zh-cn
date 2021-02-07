@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： <wsFederationHttpBinding>
 title: <wsFederationHttpBinding>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - wsFederationBinding element
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
-ms.openlocfilehash: a57b5ff0b4a8186ffc4c01b5e0824100f265551c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1217c4e46fe18ea5df478b8a790be4da33590c92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682093"
 ---
 # \<wsFederationHttpBinding>
 
@@ -144,7 +145,7 @@ ms.locfileid: "90557276"
 
 ## <a name="remarks"></a>备注
 
-联合是一种可以在多个系统通过共享标识进行身份验证和授权的功能。 这些标识可以指用户，也可以指计算机。 联合 HTTP 支持 SOAP 安全以及混合模式安全，但不支持以独占方式使用传输安全。 此绑定为 WS 联合身份验证协议提供 Windows Communication Foundation (WCF) 支持。 配置了此绑定的服务必须使用 HTTP 传输。
+联合是一种可以在多个系统通过共享标识进行身份验证和授权的功能。 这些标识可以指用户，也可以指计算机。 联合 HTTP 支持 SOAP 安全以及混合模式安全，但不支持以独占方式使用传输安全。 此绑定为 WS-Federation 协议提供 Windows Communication Foundation (WCF) 支持。 配置了此绑定的服务必须使用 HTTP 传输。
 
 绑定由绑定元素堆栈组成。 满足下面的条件时，
 

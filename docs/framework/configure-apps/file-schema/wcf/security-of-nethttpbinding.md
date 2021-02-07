@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <netHttpBinding>
 title: <security> 的 <netHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
-ms.openlocfilehash: 97c52fa4f062ed0c65d5b1a8ca47a1439ab04cf5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 70d6363c0ac7fa00d83880ddc8c873548b385a29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683120"
 ---
 # <a name="security-of-nethttpbinding"></a>\<security> 的 \<netHttpBinding>
 
@@ -40,7 +41,7 @@ ms.locfileid: "73736491"
 
 |属性|说明|
 |---------------|-----------------|
-|模式|可选。 指定所使用的安全类型。 默认为 `None`。 此属性的类型为 <xref:System.ServiceModel.BasicHttpSecurityMode>。|
+|mode|可选。 指定所使用的安全类型。 默认值为 `None`。 此属性的类型为 <xref:System.ServiceModel.BasicHttpSecurityMode>。|
 
 ## <a name="mode-attribute"></a>mode 特性
 
@@ -50,26 +51,26 @@ ms.locfileid: "73736491"
 |Transport|使用 HTTPS 传输提供安全性。 使用 HTTPS 对 SOAP 消息进行保护。 使用服务的 X.509 证书向客户端对服务进行身份验证。 使用所提供的 ClientCredentialType 对客户端进行身份验证。|
 |消息|使用 SOAP 消息安全提供安全性。 默认情况下，将对正文进行加密和签名。 对于此绑定，系统要求向带外客户端提供服务器证书。 此绑定仅有的有效 `ClientCredentialType` 为 `Certificate`。|
 |TransportWithMessageCredential|完整性、保密性和服务器身份验证由传输安全来提供。 客户端身份验证采用 SOAP 消息安全方式提供。 如果要使用用户名/密码对用户进行身份验证，并且存在用于保护消息传输的现有 HTTP 部署，则适用此模式。|
-|TransportCredentialOnly|此模式并不提供消息的完整性和保密性， 而是提供基于 http 的客户端身份验证。 使用此模式时应当小心。 在通过其他方式（如 IPSec）提供传输安全，并且 WCF 基础结构仅提供客户端身份验证的环境中，应使用此方法。|
+|TransportCredentialOnly|此模式并不提供消息的完整性和保密性， 而是提供基于 http 的客户端身份验证。 使用此模式时应当小心。 它应该用于通过其他 (方式（如 IPSec) ）提供传输安全的环境中，并且 WCF 基础结构只提供客户端身份验证。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<transport>](transport-of-nethttpbinding.md)|定义基本 HTTP 服务的传输安全设置。 此元素与 <xref:System.ServiceModel.HttpTransportSecurity> 相对应。|
 |[\<message>](message-of-nethttpbinding.md)|定义基本 HTTP 服务的消息安全设置。 此元素与 <xref:System.ServiceModel.BasicHttpMessageSecurity> 相对应。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |binding|的绑定元素 [\<basicHttpBinding>](basichttpbinding.md) 。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
  默认情况下，不会对 SOAP 消息进行保护，也不会对客户端进行身份验证。 使用此元素，您可以配置 `netHttpBinding` 元素的其他安全设置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.NetHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>  

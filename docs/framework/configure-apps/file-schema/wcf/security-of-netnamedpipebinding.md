@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <netNamedPipeBinding>
 title: <security> 的 <netNamedPipeBinding>
 ms.date: 03/30/2017
 ms.assetid: bb3cb022-637e-49fd-92e8-6766038affa7
-ms.openlocfilehash: 1a231a60d29cc6a4460de69a98753c23c0386027
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d64917c53390cade00d9e104c8581ce45355ac34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683094"
 ---
 # <a name="security-of-netnamedpipebinding"></a>\<security> 的 \<netNamedPipeBinding>
 
@@ -38,19 +39,19 @@ ms.locfileid: "91170033"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |mode|指定应用于此绑定的安全类型。 有效值包括以下值：<br /><br /> -None：这将禁用安全性。<br />-Transport：使用基于传输的基础安全性提供安全性。 可以使用此模式控制保护级别。<br />-默认值为 Transport。 此属性的类型为 <xref:System.ServiceModel.NetNamedPipeSecurityMode>。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |运输|定义传输的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.NamedPipeTransportSecurityElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |binding|的绑定元素 [\<netNamedPipeBinding>](netnamedpipebinding.md) 。|  
   

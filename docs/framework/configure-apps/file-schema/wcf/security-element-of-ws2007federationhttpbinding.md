@@ -1,13 +1,14 @@
 ---
+description: 详细了解： <security> 的元素 <ws2007FederationHttpBinding>
 title: <security> 的元素 <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
-ms.openlocfilehash: 943ccc241aef15b58661699408b085d98cf86c3b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0caa2c3791c0dc3c8db0d9ee27175a28e52f6baa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183697"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683289"
 ---
 # <a name="security-element-of-ws2007federationhttpbinding"></a>\<security> 的元素 \<ws2007FederationHttpBinding>
 
@@ -43,13 +44,13 @@ ms.locfileid: "91183697"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`mode`|可选。 指定所应用的安全类型。 默认值是 `Message`。 此属性的类型为 <xref:System.ServiceModel.WSFederationHttpSecurityMode>。|  
   
 ## <a name="mode-attribute"></a>mode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|SOAP 消息在传输过程中并不安全。|  
 |消息|通过使用 SOAP 消息安全，可以提供完整性、保密性、服务器身份验证和客户端身份验证。 默认情况下，将对正文进行加密和签名。 此服务必须使用证书进行配置。 客户端根据由安全令牌服务颁发给客户端的令牌进行身份验证。|  
@@ -57,13 +58,13 @@ ms.locfileid: "91183697"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<message>](message-of-ws2007httpbinding.md)|定义消息级安全性设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义的所有绑定功能 [\<wsDualHttpBinding>](wsdualhttpbinding.md) 。|  
   

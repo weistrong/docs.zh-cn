@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <caches>
 title: <caches>
 ms.date: 03/30/2017
 ms.assetid: 4651091b-3a20-40d8-b293-4408c0710143
 author: BrucePerlerMS
-ms.openlocfilehash: 791c5be8aa48db2b17a42a216ad2bf5e7b5a4bc1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ebc2fa66ab8b657f7cc3741668c9f27fc60510b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681833"
 ---
 # \<caches>
 
@@ -40,14 +41,14 @@ ms.locfileid: "91189872"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<sessionSecurityTokenCache>](sessionsecuritytokencache.md)|使用服务或安全标记处理程序集合为会话令牌注册缓存。|  
 |[\<tokenReplayCache>](tokenreplaycache.md)|向服务或安全标记处理程序集合注册令牌重播缓存。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<identityConfiguration>](identityconfiguration.md)|指定服务级别标识设置。|  
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|为安全标记处理程序的集合提供配置。|  

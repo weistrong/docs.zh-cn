@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <resolver>
 title: <resolver>
 ms.date: 03/30/2017
 ms.assetid: 0c00200c-f135-4e5c-a024-76b72bcbc021
-ms.openlocfilehash: 6b1fd8e916aef2425377c45a0c85e37773f3ca28
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 338f9342d1ef14f3d96dada17fb9f6d893c86bee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683354"
 ---
 # \<resolver>
 
@@ -34,20 +35,20 @@ ms.locfileid: "91150890"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`mode`|一个字符串，指定与此服务关联的对等解析程序实例是特定于 PNRP，还是为自定义解析程序，或者是自动确定的。 此属性的类型为 <xref:System.ServiceModel.PeerResolvers.PeerResolverMode>。|  
 |`referralPolicy`|一个字符串，指定在对等端间共享引用的方式。 此属性的类型为 <xref:System.ServiceModel.PeerResolvers.PeerReferralPolicy>。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<headers>](headers.md)|指定自定义对等解析程序服务的设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义的所有绑定功能 [\<netPeerTcpBinding>](netpeertcpbinding.md) 。|  
   

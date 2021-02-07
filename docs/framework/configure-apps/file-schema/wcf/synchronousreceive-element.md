@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <synchronousReceive> 元素
 title: <synchronousReceive> 元素
 ms.date: 03/30/2017
 ms.assetid: cc070387-3d11-4b02-a952-bc08ad2df05a
-ms.openlocfilehash: 2073d115dd87d513a6e48b8b585fed4b49d5bb32
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: afcd10b4ad41bd6ff12dbf246f66ef7fac4e759a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682613"
 ---
 # <a name="synchronousreceive-element"></a>\<synchronousReceive> 元素
 
@@ -40,7 +41,7 @@ ms.locfileid: "91157169"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定终结点行为。|  
   

@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： LINQ to SQL 对象模型
 title: LINQ to SQL 对象模型
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 81dd0c37-e2a4-4694-83b0-f2e49e693810
-ms.openlocfilehash: b17e1b6f4a6f849e3b42d69e9b9c2d5f906218e1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: be4021019d09d1479364b25268eefda50b6eaa6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681261"
 ---
 # <a name="the-linq-to-sql-object-model"></a>LINQ to SQL 对象模型
 
@@ -34,7 +35,7 @@ ms.locfileid: "91155505"
   
 ## <a name="linq-to-sql-entity-classes-and-database-tables"></a>LINQ to SQL 实体类与数据库表  
 
- 在中 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] ，数据库表由 *实体类*表示。 实体类与您可能创建的任何其他类相似，只不过对实体类进行批注的方法是使用将该类与数据库表关联的特殊信息。 您需通过向类声明中添加自定义属性 (<xref:System.Data.Linq.Mapping.TableAttribute>) 来进行这种批注，如下面的示例所示：  
+ 在中 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] ，数据库表由 *实体类* 表示。 实体类与您可能创建的任何其他类相似，只不过对实体类进行批注的方法是使用将该类与数据库表关联的特殊信息。 您需通过向类声明中添加自定义属性 (<xref:System.Data.Linq.Mapping.TableAttribute>) 来进行这种批注，如下面的示例所示：  
   
 ### <a name="example"></a>示例  
 

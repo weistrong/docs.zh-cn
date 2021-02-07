@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <webHttpBinding>
 title: <security> 的 <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
-ms.openlocfilehash: 60b863a0a2a846a60dde2e4b323a305b5096b1cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a80a919ef877f01503e5ceaeb4fe7432e46f288c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683042"
 ---
 # <a name="security-of-webhttpbinding"></a>\<security> 的 \<webHttpBinding>
 
@@ -44,27 +45,27 @@ ms.locfileid: "91169890"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|mode|指定终结点是使用传输级安全模式还是不使用安全模式。 默认为 `None`。 此属性的类型为 <xref:System.ServiceModel.WebHttpSecurityMode>。|  
+|mode|指定终结点是使用传输级安全模式还是不使用安全模式。 默认值为 `None`。 此属性的类型为 <xref:System.ServiceModel.WebHttpSecurityMode>。|  
   
 ## <a name="mode-attribute"></a>Mode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|禁用安全性。|  
-|传输|使用 HTTPS 提供安全性。 此服务需要使用 SSL 证书进行配置。 消息使用 HTTPS 获得全面保护，而且客户端使用服务的 SSL 证书对服务进行身份验证。 客户端身份验证通过 `ClientCredentialType` 的属性进行控制 [\<transport>](transport-of-webhttpbinding.md) 。|  
+|Transport|使用 HTTPS 提供安全性。 此服务需要使用 SSL 证书进行配置。 消息使用 HTTPS 获得全面保护，而且客户端使用服务的 SSL 证书对服务进行身份验证。 客户端身份验证通过 `ClientCredentialType` 的属性进行控制 [\<transport>](transport-of-webhttpbinding.md) 。|  
 |TransportCredentialOnly|此模式并不提供消息的完整性和保密性， 而是提供基于 HTTP 的客户端身份验证。 使用此模式时应当小心。 它应该用于通过其他 (方式（如 IPSec) ）提供传输安全的环境中，并且 WCF 基础结构只提供客户端身份验证。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<transport>](transport-of-webhttpbinding.md)|定义传输安全设置。 此元素与 <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement> 类型相对应。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<webHttpBinding>](webhttpbinding.md)|一个绑定元素，用于为响应 HTTP 请求（而不是 SOAP 消息）的 Windows Communication Foundation (WCF) Web 服务配置终结点。|  
   

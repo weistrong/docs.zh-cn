@@ -1,19 +1,20 @@
 ---
-title: <workflowInstanceQueries>WCF 的
+description: 了解有关 WCF 的详细信息： <workflowInstanceQueries>
+title: <workflowInstanceQueries> WCF 的
 ms.date: 03/30/2017
 ms.assetid: b0852f77-16e4-4d55-8eb7-a19feb0e8fc4
-ms.openlocfilehash: 8a58767745efab67fb7550de8770fec2c6226117
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d4dc4827cba5a1732070b5269350ca3dd9bf2c47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854772"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682327"
 ---
-# <a name="workflowinstancequeries-of-wcf"></a>\<workflowInstanceQueries>WCF 的
+# <a name="workflowinstancequeries-of-wcf"></a>\<workflowInstanceQueries> WCF 的
 
 表示配置元素的集合，这些配置元素跟踪工作流实例生命周期的更改，例如已开始或已完成的事件。  
   
-有关跟踪配置文件查询的详细信息，请参阅[跟踪配置文件](../../../windows-workflow-foundation/tracking-profiles.md)  
+有关跟踪配置文件查询的详细信息，请参阅 [跟踪配置文件](../../../windows-workflow-foundation/tracking-profiles.md)  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -61,9 +62,9 @@ ms.locfileid: "70854772"
   
 |元素|说明|  
 |-------------|-----------------|  
-|[\<workflow>](../windows-workflow-foundation/workflow.md)|一个配置元素，该元素包含由[activityDefinitionId](xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId)属性标识的特定工作流的所有查询。|  
+|[\<workflow>](../windows-workflow-foundation/workflow.md)|一个配置元素，该元素包含由 [activityDefinitionId](xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId) 属性标识的特定工作流的所有查询。|  
   
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 <xref:System.Activities.Tracking.WorkflowInstanceQuery> 用于订阅以下 <xref:System.Activities.Tracking.TrackingRecord> 对象：  
   
@@ -91,7 +92,7 @@ ms.locfileid: "70854772"
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <namedPipeTransport>
 title: <namedPipeTransport>
 ms.date: 03/30/2017
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
-ms.openlocfilehash: 4582066098feaf50b33b083de56bcb8c3e04df0f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 68714404492be92ce789dbde95a39199f5de16d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204614"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684095"
 ---
 # \<namedPipeTransport>
 
@@ -50,7 +51,7 @@ ms.locfileid: "91204614"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |ChannelInitializationTimeout|获取或设置确定通道在断开连接前可处于初始化状态的最长时间的 <xref:System.TimeSpan>。|  
 |ConnectionBufferSize|获取或设置用于从客户端或服务传输网络上的序列化消息块的缓冲区大小。|  
@@ -67,7 +68,7 @@ ms.locfileid: "91204614"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

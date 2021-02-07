@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <wsDualHttpBinding>
 title: <security> 的 <wsDualHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
-ms.openlocfilehash: 7398cd538bb240e78413575f7c28abe7f797d05c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6d2e87912aef6114d7dcb99b82e4a7804317b28a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162200"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683029"
 ---
 # <a name="security-of-wsdualhttpbinding"></a>\<security> 的 \<wsDualHttpBinding>
 
@@ -36,26 +37,26 @@ ms.locfileid: "91162200"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |mode|可有可无. 指定所应用的安全类型。 默认值是 `Message`。 此属性的类型为 <xref:System.ServiceModel.WSDualHttpSecurityMode>。|  
   
 ## <a name="mode-attribute"></a>Mode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|禁用安全性。|  
 |消息|使用 SOAP 消息安全提供安全性。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<message>](message-of-wsdualhttpbinding.md)|定义消息级安全性设置。 此元素的类型为 <xref:System.ServiceModel.MessageSecurityOverHttp>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义的所有绑定功能 [\<wsDualHttpBinding>](wsdualhttpbinding.md) 。|  
   

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <reliableSession>
 title: <reliableSession>
 ms.date: 03/30/2017
 ms.assetid: 129b4a59-37f0-4030-b664-03795d257d29
-ms.openlocfilehash: ec69d9194d98302a4744e290f23fbb150b2e87cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5b5798326be9b376ece4e590f068f5b5e71bd878
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683406"
 ---
 # \<reliableSession>
 
@@ -39,15 +40,15 @@ ms.locfileid: "91181306"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |acknowledgementInterval|一个 <xref:System.TimeSpan>，包含最大时间间隔，通道在等待此时间间隔后才会发送截至该时刻所收到的消息的确认。 默认值为 00:00:0.2。|  
-|flowControlEnabled|一个布尔值，指示是否激活高级流控制（特定于 Microsoft 的 WS-ReliableMessaging 流控制实现）。 默认为 `true`。|  
+|flowControlEnabled|一个布尔值，指示是否激活高级流控制（特定于 Microsoft 的 WS-ReliableMessaging 流控制实现）。 默认值为 `true`。|  
 |inactivityTimeout|一个 <xref:System.TimeSpan>，指定通道在出错之前允许其他通信方不发送任何消息的最大持续时间。 默认值为 00:10:00。<br /><br /> 通道上的活动被定义为接收应用程序消息或基础结构消息。 此属性控制保持非活动会话存在的最长时间。 如果经过此最长时间后该会话仍不活动，则基础结构会中止该会话，且通道会出错。 **注意：**  应用程序不需要定期发送消息以使连接保持活动状态。|  
 |maxPendingChannels|一个整数，指定侦听器上可等待接受的最大通道数。 该值应介于 1 至 16384 之间（包括这两个值）。 默认值为 4。<br /><br /> 通道在等待被接受时处于挂起状态。 达到此限制后，将不创建任何通道。 确切地说，在达到此数值之前（通过接受挂起的通道来实现），通道处于挂起模式。 这是对每个工厂的限制。<br /><br /> 当达到此阈值时如果远程应用程序尝试建立新的可靠会话，则会拒绝请求且打开操作将提示此错误。 此限制不适用于挂起的传出通道数。|  
 |maxRetryCount|一个整数，指定可靠通道未收到消息确认时，在其基础通道上调用 Send 尝试重新传输该消息的最大尝试次数。<br /><br /> 此值应大于零。 默认值为 8。<br /><br /> 此值应为大于零的整数。 如果在最后一次重新传输后未收到确认，则通道出错。<br /><br /> 如果接收方在接收时确认了消息的传递，则认为该消息已传输。<br /><br /> 如果在传输消息后的一段确定时间内未收到确认，则基础结构将自动重新传输该消息。 此基础结构尝试重新发送消息的次数最多为此属性指定的次数。 如果在最后一次重新传输后未收到确认，则通道出错。<br /><br /> 基础结构使用指数补偿算法根据计算的平均往返时间来确定何时重新传输。 在重新传输之前，此时间最初为 1 秒钟，每尝试一次，延迟时间便会加倍，因此在第一次尝试传输和最后一次尝试传输之间大约会经过 8.5 分钟。 可以根据计算的往返时间来调整第一次尝试重新传输的时间，因此这些尝试所经历的时间将会相应地发生变化。 这样，可以使重新传输时间动态地适应不断变化的网络条件。|  
 |maxTransferWindowSize|一个指定缓冲区最大大小的整数。 有效值介于 1 和 4096 之间（包括这两个值）。<br /><br /> 在客户端上，该属性定义可靠通道在保存接收者尚未确认的消息时所使用的缓冲区的最大大小。 此配额的单位是消息。 如果缓冲区已满，将阻止后来的“发送”操作。<br /><br /> 在接收方上，该属性定义通道在存储尚未发送到应用程序的传入消息时所使用的缓冲区的最大大小。 如果缓冲区已满，则接收方将删除后来的消息而不会给出任何提示并要求客户端重新传输。|  
-|ordered|一个布尔值，指定是否保证消息以其发送顺序抵达。 如果此设置为 `false`，则消息可以不按顺序抵达。 默认为 `true`。|  
+|ordered|一个布尔值，指定是否保证消息以其发送顺序抵达。 如果此设置为 `false`，则消息可以不按顺序抵达。 默认值为 `true`。|  
 |reliableMessagingVersion|<xref:System.ServiceModel.ReliableMessagingVersion> 中的一个有效值，指定要使用的 WS-ReliableMessaging 版本。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -56,7 +57,7 @@ ms.locfileid: "91181306"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

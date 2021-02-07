@@ -1,13 +1,14 @@
 ---
+description: 了解有关 <peer> 元素的详细 <clientCredentials> 信息
 title: <peer> of <clientCredentials> 元素
 ms.date: 03/30/2017
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-ms.openlocfilehash: 75d8543d7db5eee1345d54f934fc89c9593b85ac
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1ff9386ba51dcf6bab6df71bd345cdaa59f18e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683783"
 ---
 # <a name="peer-of-clientcredentials-element"></a>\<peer> of \<clientCredentials> 元素
 
@@ -41,7 +42,7 @@ ms.locfileid: "91186986"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<certificate>](certificate-element.md)|指定要用于为对等客户端的消息进行签名和加密的 X.509 证书。 .|  
 |[\<peerAuthentication>](peerauthentication-element.md)|指定用于对等客户端的身份验证选项。|  
@@ -49,7 +50,7 @@ ms.locfileid: "91186986"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|指定用于向服务验证客户端身份的凭据。|  
   

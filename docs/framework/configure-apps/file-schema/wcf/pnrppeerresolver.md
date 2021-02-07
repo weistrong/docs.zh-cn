@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <pnrpPeerResolver>
 title: <pnrpPeerResolver>
 ms.date: 03/30/2017
 ms.assetid: c1b34f3b-68e5-4911-a367-de49fb61dbc6
-ms.openlocfilehash: 0a8cc60226b13552d47faec3a156ed1f59acacb9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4af6a63312fa300cfa33e578f01b8e07267ad3a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181396"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683536"
 ---
 # \<pnrpPeerResolver>
 
@@ -32,7 +33,7 @@ ms.locfileid: "91181396"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |resolverType|一个字符串，指定要使用的解析程序。 此属性是可选的。 如果不设置，或者将其设置为空字符串，则使用 PNRP。|  
   
@@ -42,7 +43,7 @@ ms.locfileid: "91181396"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

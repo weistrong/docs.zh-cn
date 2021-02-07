@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <serviceSecurityAudit>
 title: <serviceSecurityAudit>
 ms.date: 03/30/2017
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
-ms.openlocfilehash: 6cec3373dae3127f16bb8a418a91a684554f2b0c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 262341f44adb7657086edb8d33514c07195ddfa3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682743"
 ---
 # \<serviceSecurityAudit>
 
@@ -35,10 +36,10 @@ ms.locfileid: "91153659"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |auditLogLocation|指定审核日志的位置。 有效值包括以下值：<br /><br /> -默认：将安全事件写入 Windows XP 上的应用程序日志以及 Windows Server 2003 和 Windows Vista 上的事件日志。<br />-应用程序：审核事件将写入到应用程序事件日志中。<br />-Security：审核事件将写入安全事件日志。<br /><br /> 默认值为 Default。 有关详细信息，请参阅 <xref:System.ServiceModel.AuditLogLocation>。|  
-|suppressAuditFailure|一个布尔值，指定取消显示审核日志写入失败的行为。<br /><br /> 应将对审核日志的写入错误通知给应用程序。 如果应用程序并不用于处理审核错误，则应使用此属性取消显示审核日志写入失败。<br /><br /> 如果此属性为 `true`，则因尝试写入审核事件而导致的异常（OutOfMemoryException、StackOverFlowException、ThreadAbortException 和 ArgumentException 除外）将由系统进行处理并且不会传播到应用程序。 如果此属性为 `false`，则因尝试写入审核事件而导致的所有异常都将向上传递给应用程序。<br /><br /> 默认为 `true`。|  
+|suppressAuditFailure|一个布尔值，指定取消显示审核日志写入失败的行为。<br /><br /> 应将对审核日志的写入错误通知给应用程序。 如果应用程序并不用于处理审核错误，则应使用此属性取消显示审核日志写入失败。<br /><br /> 如果此属性为 `true`，则因尝试写入审核事件而导致的异常（OutOfMemoryException、StackOverFlowException、ThreadAbortException 和 ArgumentException 除外）将由系统进行处理并且不会传播到应用程序。 如果此属性为 `false`，则因尝试写入审核事件而导致的所有异常都将向上传递给应用程序。<br /><br /> 默认值为 `true`。|  
 |serviceAuthorizationAuditLevel|指定审核日志中记录的授权事件的类型。 有效值包括以下值：<br /><br /> -None：不执行任何服务授权事件的审核。<br />-Success：仅审核成功的服务授权事件。<br />-失败：仅审核失败的服务授权事件。<br />-SuccessOrFailure：审核成功和失败的服务授权事件。<br /><br /> 默认值为 None。 有关详细信息，请参阅 <xref:System.ServiceModel.AuditLevel>。|  
 |messageAuthenticationAuditLevel|指定所记录的消息身份验证审核事件的类型。 有效值包括以下值：<br /><br /> -None：不生成审核事件。<br />-Success：仅记录成功安全 (完全验证，包括消息签名验证、密码和令牌验证) 事件。<br />-失败：只记录失败事件。<br />-SuccessOrFailure：成功和失败事件都被记录。<br /><br /> 默认值为 None。 有关详细信息，请参阅 <xref:System.ServiceModel.AuditLevel>。|  
   
@@ -48,7 +49,7 @@ ms.locfileid: "91153659"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定行为元素。|  
   

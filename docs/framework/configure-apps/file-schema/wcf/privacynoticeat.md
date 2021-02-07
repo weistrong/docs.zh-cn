@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <privacyNoticeAt>
 title: <privacyNoticeAt>
 ms.date: 03/30/2017
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
-ms.openlocfilehash: 5e772e23b21c566c906be854e33b924698dcf3e0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2e38d43becd783cc50afba5a029d3ab9905ec15a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158703"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683497"
 ---
 # \<privacyNoticeAt>
 
@@ -37,7 +38,7 @@ ms.locfileid: "91158703"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`url`|一个字符串，指定隐私声明位于的 URI。|  
 |`version`|一个整数，指定此隐私声明的版本。|  
@@ -48,7 +49,7 @@ ms.locfileid: "91158703"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

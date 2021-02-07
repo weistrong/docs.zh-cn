@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <msmqTransportSecurity>
 title: <msmqTransportSecurity>
 ms.date: 03/30/2017
 ms.assetid: 092e911b-ab1b-4069-a26e-6134c3299e06
-ms.openlocfilehash: 9d28f3f08e9c3984c055567df03f2839709a1522
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d5a681c287749598c8c80470ea6d800f1687a80d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684160"
 ---
 # \<msmqTransportSecurity>
 
@@ -37,7 +38,7 @@ ms.locfileid: "91204640"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`msmqAuthenticationMode`|指定 MSMQ 传输必须采用什么方式对消息进行身份验证。 如果将此属性设置为 `None`，则 `msmqProtectionLevel` 属性的值也必须设置为 `None`。<br /><br /> 有效值包括以下值：<br /><br /> -None：无身份验证。<br />-Windows：身份验证机制使用 Active Directory 获取与消息关联的 SID 的 x.509 证书。 然后使用它来检查队列的 ACL 以确保用户有权写入队列。<br />-Certificate：通道从证书存储区获取证书。<br /><br /> 默认值为 Windows。 此属性的类型为 <xref:System.ServiceModel.MsmqAuthenticationMode>。|  
 |`msmqEncryptionAlgorithm`|指定在消息队列管理器之间传输消息时用于在网络上对消息进行加密的算法。 有效值包括以下值：<br /><br /> -RC4Stream<br />-AES<br /><br /> 默认值为 RC4Stream。 此属性的类型为 <xref:System.ServiceModel.MsmqEncryptionAlgorithm>。|  
@@ -50,7 +51,7 @@ ms.locfileid: "91204640"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<msmqIntegration>](msmqintegration.md)|指定与消息队列 (MSMQ) 发送方或接收方进行交互所需的设置。|  
 |[\<msmqTransport>](msmqtransport.md)|指定使用本机 MSMQ 协议的 Windows Communication Foundation (WCF) 服务的队列通信属性。|  

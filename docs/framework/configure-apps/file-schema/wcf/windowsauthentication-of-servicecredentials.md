@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <windowsAuthentication> 信息： <serviceCredentials>
 title: <windowsAuthentication> 的 <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48
-ms.openlocfilehash: bda375959b535ce5f2996d594f719893164b0bd4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 94f5804ac22a8c3ee1b8fc646ece8521ff639aec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682405"
 ---
 # <a name="windowsauthentication-of-servicecredentials"></a>\<windowsAuthentication> 的 \<serviceCredentials>
 
@@ -34,10 +35,10 @@ ms.locfileid: "91194994"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|`includeWindowsGroups`|一个可选的布尔值属性，指定系统是否将 Windows 组包含在安全上下文中。 默认为 `true`。<br /><br /> 将此属性设置为 `true` 会影响性能，因为这会导致完全组扩展。 如果不需要建立用户所属组的列表，请将此属性设置为 `false`。|  
-|`allowAnonymousLogons`|一个可选的布尔值属性，指定是否允许匿名的未经过身份验证的调用方。 默认为 `false`。<br /><br /> 如果将绑定的 `clientCredentialType` 属性设置为 `Windows`，则系统不允许匿名的调用方。 这意味着，只有经过身份验证的域或工作组调用方才可以访问系统。 可以使用此属性重写此行为。<br /><br /> 使用此设置应特别小心。|  
+|`includeWindowsGroups`|一个可选的布尔值属性，指定系统是否将 Windows 组包含在安全上下文中。 默认值为 `true`。<br /><br /> 将此属性设置为 `true` 会影响性能，因为这会导致完全组扩展。 如果不需要建立用户所属组的列表，请将此属性设置为 `false`。|  
+|`allowAnonymousLogons`|一个可选的布尔值属性，指定是否允许匿名的未经过身份验证的调用方。 默认值为 `false`。<br /><br /> 如果将绑定的 `clientCredentialType` 属性设置为 `Windows`，则系统不允许匿名的调用方。 这意味着，只有经过身份验证的域或工作组调用方才可以访问系统。 可以使用此属性重写此行为。<br /><br /> 使用此设置应特别小心。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -45,7 +46,7 @@ ms.locfileid: "91194994"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceCredentials>](servicecredentials.md)|指定要用于对服务进行身份验证的凭据以及与客户端凭据验证相关的设置。|  
   

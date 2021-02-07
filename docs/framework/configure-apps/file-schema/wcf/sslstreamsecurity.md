@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <sslStreamSecurity>
 title: <sslStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
-ms.openlocfilehash: aa6bc7f5a94afc8a190d3d9d2d71ea8b38d8c25b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77e08deb5263e330ead5df21ed1ef2dddbba28ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153568"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682691"
 ---
 # \<sslStreamSecurity>
 
@@ -33,9 +34,9 @@ ms.locfileid: "91153568"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|requireClientCertificate|一个布尔值，指定此绑定是否需要客户端证书。 默认为 `false`。|  
+|requireClientCertificate|一个布尔值，指定此绑定是否需要客户端证书。 默认值为 `false`。|  
 |sslProtocols|指定支持哪些 SslProtocols 的 SslProtocols 枚举标志值。 默认值为 Ssl3&#124;Tls&#124;Tls11&#124;Tls12。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -44,7 +45,7 @@ ms.locfileid: "91153568"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   
