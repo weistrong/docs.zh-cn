@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTaskManager：： SetCLRTaskManager 方法
 title: IHostTaskManager::SetCLRTaskManager 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ec90ee83-bd4b-408b-9274-62a923ab86a1
 topic_type:
 - apiref
-ms.openlocfilehash: 23d0679599c681468caa2507518d0ae3144ac26a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 438a5b56afd42eceafb484bdf0020efbad86d052
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669791"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680866"
 ---
 # <a name="ihosttaskmanagersetclrtaskmanager-method"></a>IHostTaskManager::SetCLRTaskManager 方法
 
@@ -50,7 +51,7 @@ HRESULT SetCLRTaskManager (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  运行时调用 `SetCLRTaskManager` 来向宿主提供指向实例的接口指针 `ICLRTaskManager` 。  
   
@@ -64,7 +65,7 @@ HRESULT SetCLRTaskManager (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)
