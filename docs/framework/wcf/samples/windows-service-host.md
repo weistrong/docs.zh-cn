@@ -1,16 +1,17 @@
 ---
+description: 了解有关以下内容的详细信息： Windows 服务主机
 title: Windows 服务主机
 ms.date: 03/30/2017
 helpviewer_keywords:
 - NT Service
 - NT Service Host Sample [Windows Communication Foundation]
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
-ms.openlocfilehash: 305cf7897483dbc8e57217cf8098f4e790e2a4c8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 529256675723e556879b8380f514ab1b0a5b7f8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715127"
 ---
 # <a name="windows-service-host"></a>Windows 服务主机
 
@@ -64,6 +65,6 @@ ms.locfileid: "96244959"
   
 4. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AppFabric 承载和持久性示例](/previous-versions/appfabric/ff383418(v=azure.10))

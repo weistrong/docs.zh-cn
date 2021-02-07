@@ -1,23 +1,24 @@
 ---
+description: 了解详细信息： SecurityTokenAuthenticatorOpened
 title: System.ServiceModel.Security.SecurityTokenAuthenticatorOpened
 ms.date: 03/30/2017
 ms.assetid: c6cb0065-b4f6-40eb-89ac-5e8f0e05e0de
-ms.openlocfilehash: eef7c76836c6d8bc2b7964dedbe743bd8ca844c5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 168e4420c152214cccfb0e2949cbf4defc6beadf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272210"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715881"
 ---
 # <a name="systemservicemodelsecuritysecuritytokenauthenticatoropened"></a>System.ServiceModel.Security.SecurityTokenAuthenticatorOpened
 
 System.ServiceModel.Security.SecurityTokenAuthenticatorOpened  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  安全令牌身份验证器已打开。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

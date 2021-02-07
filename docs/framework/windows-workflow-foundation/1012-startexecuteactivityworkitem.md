@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1012-StartExecuteActivityWorkItem
 title: 1012 - StartExecuteActivityWorkItem
 ms.date: 03/30/2017
 ms.assetid: 29e9b1c6-c5d7-4b58-b59d-a06a923d3c80
-ms.openlocfilehash: b9cfceb12d56f93c0f9726849e34f4333f1399ac
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3b57fc6d37a6708a4e22537de87a2566612088e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99714880"
 ---
 # <a name="1012---startexecuteactivityworkitem"></a>1012 - StartExecuteActivityWorkItem
 
@@ -20,7 +21,7 @@ ms.locfileid: "96239635"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示 ExecuteActivityWorkItem 正在开始执行。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96239635"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |活动|xs:string|活动的类型名称。|  
 |DisplayName|xs:string|活动的显示名称。|  

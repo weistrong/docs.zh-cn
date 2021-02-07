@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo2：： GetStaticFieldInfo 方法
 title: ICorProfilerInfo2::GetStaticFieldInfo 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fc663e76-e23f-49a8-bdd5-52cdf1a3b2b3
 topic_type:
 - apiref
-ms.openlocfilehash: ff84bdfb8bbd5331fb94eed766f09137adf9e62c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1acde9d5ad1a35b11cb036bced99c1909f0b6b04
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716349"
 ---
 # <a name="icorprofilerinfo2getstaticfieldinfo-method"></a>ICorProfilerInfo2::GetStaticFieldInfo 方法
 
@@ -46,7 +47,7 @@ HRESULT GetStaticFieldInfo (
  `pFieldInfo`  
  弄一个指针，指向 [COR_PRF_STATIC_TYPE](cor-prf-static-type-enumeration.md) 枚举的值，该值指示指定字段是否为静态的，如果为，则为应用于该字段的静态类型。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此信息可用于确定要调用哪个函数以获取静态字段的地址。  
   
@@ -62,7 +63,7 @@ HRESULT GetStaticFieldInfo (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 接口](icorprofilerinfo2-interface.md)

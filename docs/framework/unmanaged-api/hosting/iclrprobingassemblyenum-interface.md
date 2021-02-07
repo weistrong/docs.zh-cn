@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRProbingAssemblyEnum 接口
 title: ICLRProbingAssemblyEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e7d3ccab-b0f0-4872-8935-0ed72920171b
 topic_type:
 - apiref
-ms.openlocfilehash: 6df08889af30542af5a128cbffc38a57ce640fde
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1fd11e237f02bab85ec2b41df49d7d8a2f27e1e1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716492"
 ---
 # <a name="iclrprobingassemblyenum-interface"></a>ICLRProbingAssemblyEnum 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95728922"
 |------------|-----------------|  
 |[Get 方法](iclrprobingassemblyenum-get-method.md)|获取指定索引处的程序集标识。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  方法（如 [ICLRAssemblyIdentityManager：： GetProbingAssembliesFromReference](iclrassemblyidentitymanager-getprobingassembliesfromreference-method.md) ）返回 `ICLRProbingAssemblyEnum` 实例。  
   
@@ -45,7 +46,7 @@ ms.locfileid: "95728922"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyIdentityManager 接口](iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)

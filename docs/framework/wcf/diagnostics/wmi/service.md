@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：服务
 title: 服务
 ms.date: 03/30/2017
 ms.assetid: 999806e1-6376-409e-b998-b0af391adfe7
-ms.openlocfilehash: aa4eecbcc8a2ef818cd99d777b0e3c2f1f222e46
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e66f9a23f8c182327899904c26ff6a6368b9bdc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715621"
 ---
 # <a name="service"></a>服务
 
@@ -81,7 +82,7 @@ class Service
   
  该地址处的服务名称。  
   
-### <a name="extensions"></a>扩展  
+### <a name="extensions"></a>Extensions  
 
  数据类型：String array  
   
@@ -89,7 +90,7 @@ class Service
   
  服务实例扩展的实例上下文。  
   
-### <a name="metadata"></a>元数据  
+### <a name="metadata"></a>Metadata  
 
  数据类型：String array  
   
@@ -97,7 +98,7 @@ class Service
   
  服务元数据设置。  
   
-### <a name="name"></a>“属性”  
+### <a name="name"></a>名称  
 
  数据类型：字符串  
   

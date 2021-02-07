@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo2：： GetObjectGeneration 方法
 title: ICorProfilerInfo2::GetObjectGeneration 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0d25f76-0bd5-4aa6-96cf-bfec0e1de28b
 topic_type:
 - apiref
-ms.openlocfilehash: 4ba404692bef84c0522a799c61f07eac341eaab4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f4927c081393a11f7dad7d59cce311b82072659c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716414"
 ---
 # <a name="icorprofilerinfo2getobjectgeneration-method"></a>ICorProfilerInfo2::GetObjectGeneration 方法
 
@@ -42,7 +43,7 @@ HRESULT GetObjectGeneration(
  `range`  
  弄指向 [COR_PRF_GC_GENERATION_RANGE](cor-prf-gc-generation-range-structure.md) 结构的指针，该结构描述一个范围 (即，生成中正在进行垃圾回收的内存块) 。 此范围包含指定的对象。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetObjectGeneration`如果垃圾回收未进行，则可以从任何探查器回调调用方法。 也就是说，它可从任何回调调用， [ICorProfilerCallback2：： GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md) 和 [ICorProfilerCallback2：： GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md)之间发生的回调除外。  
   
@@ -56,7 +57,7 @@ HRESULT GetObjectGeneration(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 接口](icorprofilerinfo2-interface.md)

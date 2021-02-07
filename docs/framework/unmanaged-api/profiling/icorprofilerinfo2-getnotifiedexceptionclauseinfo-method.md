@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo2：： GetNotifiedExceptionClauseInfo 方法
 title: ICorProfilerInfo2::GetNotifiedExceptionClauseInfo 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f9594a7e-cb0c-4c48-accb-29f762aa0c21
 topic_type:
 - apiref
-ms.openlocfilehash: b0d94f5004da85caf0460e8f1d1b2d964944b045
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f297689ccdd1b600fe86db16940434c990e4b084
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727063"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716479"
 ---
 # <a name="icorprofilerinfo2getnotifiedexceptionclauseinfo-method"></a>ICorProfilerInfo2::GetNotifiedExceptionClauseInfo 方法
 
@@ -38,7 +39,7 @@ HRESULT GetNotifiedExceptionClauseInfo(
  `pinfo`  
  弄指向描述当前异常子句实例及其关联帧的 [COR_PRF_EX_CLAUSE_INFO](cor-prf-ex-clause-info-structure.md) 结构的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  收到异常通知时， `GetNotifiedExceptionClauseInfo` 可用于获取异常子句的本机地址和帧信息 (`catch` / `finally` / `filter`) 即将运行 ([ICorProfilerCallback：： ExceptionCatcherEnter](icorprofilercallback-exceptioncatcherenter-method.md)、 [ICorProfilerCallback：： ExceptionUnwindFinallyEnter](icorprofilercallback-exceptionunwindfinallyenter-method.md)或[ICorProfilerCallback：： ExceptionSearchFilterEnter](icorprofilercallback-exceptionsearchfilterenter-method.md)回调由探查器接收，或) 刚刚运行 ([ICorProfilerCallback：： ExceptionCatcherLeave](icorprofilercallback-exceptioncatcherleave-method.md)、 [ICorProfilerCallback：： ExceptionUnwindFinallyLeave](icorprofilercallback-exceptionunwindfinallyleave-method.md)或[ICorProfilerCallback：： ExceptionSearchFilterLeave](icorprofilercallback-exceptionsearchfilterleave-method.md)回调由探查器) 接收。  
   
@@ -54,7 +55,7 @@ HRESULT GetNotifiedExceptionClauseInfo(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 接口](icorprofilerinfo2-interface.md)
