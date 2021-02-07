@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugClass：： GetToken 方法
 title: ICorDebugClass::GetToken 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: ee5c848a-eac4-4462-b07a-07ccd76a75df
 topic_type:
 - apiref
-ms.openlocfilehash: 59f450117d1a52ce7b900d9d67330fc98281afa0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f87b71800410fc3a95790e6d35cf4bd10a5ce747
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728415"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711517"
 ---
-# <a name="icordebugclassgettoken-method"></a><span data-ttu-id="b830a-102">ICorDebugClass::GetToken 方法</span><span class="sxs-lookup"><span data-stu-id="b830a-102">ICorDebugClass::GetToken Method</span></span>
+# <a name="icordebugclassgettoken-method"></a><span data-ttu-id="24bfa-103">ICorDebugClass::GetToken 方法</span><span class="sxs-lookup"><span data-stu-id="24bfa-103">ICorDebugClass::GetToken Method</span></span>
 
-<span data-ttu-id="b830a-103">获取 `TypeDef` 引用此类的定义的元数据标记。</span><span class="sxs-lookup"><span data-stu-id="b830a-103">Gets the `TypeDef` metadata token that references the definition of this class.</span></span>  
+<span data-ttu-id="24bfa-104">获取 `TypeDef` 引用此类的定义的元数据标记。</span><span class="sxs-lookup"><span data-stu-id="24bfa-104">Gets the `TypeDef` metadata token that references the definition of this class.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b830a-104">语法</span><span class="sxs-lookup"><span data-stu-id="b830a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="24bfa-105">语法</span><span class="sxs-lookup"><span data-stu-id="24bfa-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetToken (  
@@ -34,21 +35,21 @@ HRESULT GetToken (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="b830a-105">参数</span><span class="sxs-lookup"><span data-stu-id="b830a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="24bfa-106">参数</span><span class="sxs-lookup"><span data-stu-id="24bfa-106">Parameters</span></span>  
 
  `pTypeDef`  
- <span data-ttu-id="b830a-106">弄指向 `mdTypeDef` 引用此类的定义的标记的指针。</span><span class="sxs-lookup"><span data-stu-id="b830a-106">[out] A pointer to an `mdTypeDef` token that references the definition of this class.</span></span>  
+ <span data-ttu-id="24bfa-107">弄指向 `mdTypeDef` 引用此类的定义的标记的指针。</span><span class="sxs-lookup"><span data-stu-id="24bfa-107">[out] A pointer to an `mdTypeDef` token that references the definition of this class.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="b830a-107">要求</span><span class="sxs-lookup"><span data-stu-id="b830a-107">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="24bfa-108">要求</span><span class="sxs-lookup"><span data-stu-id="24bfa-108">Requirements</span></span>  
 
- <span data-ttu-id="b830a-108">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="b830a-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="24bfa-109">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="24bfa-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="b830a-109">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="b830a-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="24bfa-110">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="24bfa-110">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="b830a-110">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b830a-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="24bfa-111">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="24bfa-111">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="b830a-111">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b830a-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="24bfa-112">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="24bfa-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="b830a-112">另请参阅</span><span class="sxs-lookup"><span data-stu-id="b830a-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="24bfa-113">请参阅</span><span class="sxs-lookup"><span data-stu-id="24bfa-113">See also</span></span>
 
-- [<span data-ttu-id="b830a-113">元数据接口</span><span class="sxs-lookup"><span data-stu-id="b830a-113">Metadata Interfaces</span></span>](../metadata/metadata-interfaces.md)
+- [<span data-ttu-id="24bfa-114">元数据接口</span><span class="sxs-lookup"><span data-stu-id="24bfa-114">Metadata Interfaces</span></span>](../metadata/metadata-interfaces.md)
