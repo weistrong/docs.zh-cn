@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用匿名客户端的消息安全性
 title: 匿名客户端的消息安全
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
-ms.openlocfilehash: aed56be359f094db483ab1d012bd77a1096433b6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 921ddd9e8e7d2a860f3516c452870bc2bb150911
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726970"
 ---
 # <a name="message-security-with-an-anonymous-client"></a>匿名客户端的消息安全
 
@@ -22,12 +23,12 @@ ms.locfileid: "90553761"
 
 |特征|说明|
 |--------------------|-----------------|
-|安全模式|Message|
+|安全模式|消息|
 |互操作性|仅 WCF|
 |身份验证（服务器）|初始协商要求服务器身份验证，而不是客户端身份验证|
 |身份验证（客户端）|无|
 |完整性|是，使用共享安全上下文|
-|保密性|是，使用共享安全上下文|
+|机密性|是，使用共享安全上下文|
 |Transport|HTTP|
 
 ## <a name="service"></a>服务

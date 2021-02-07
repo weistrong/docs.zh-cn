@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： GetParamProps 方法
 title: IMetaDataImport::GetParamProps 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4d5e5f00-bcab-4f41-b191-176511a186a7
 topic_type:
 - apiref
-ms.openlocfilehash: a16621f4c9b06f049239dc4e2335d70a167dd756
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2c48215836dfb3ae44edc9a2bf10d4028fd82bb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729260"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728114"
 ---
 # <a name="imetadataimportgetparamprops-method"></a>IMetaDataImport::GetParamProps 方法
 
@@ -75,7 +76,7 @@ HRESULT GetParamProps (
  `pcchValue`  
  弄以宽字符为大小的大小 `ppValue` ; 如果不包含字符串，则为零 `ppValue` 。  
   
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 参数的序列值 `pulSequence` 从1开始。 返回值的序列号为0。
 
@@ -89,7 +90,7 @@ HRESULT GetParamProps (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

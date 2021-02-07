@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICoreClrDebugTarget 接口
 title: ICoreClrDebugTarget 接口
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
 topic_type:
 - apiref
-ms.openlocfilehash: 791bd2754a96b97a38e2509c0c61a644324857cb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f0ed4dd75cd1daca6e83617433b29bbaecb1dd36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728751"
 ---
 # <a name="icoreclrdebugtarget-interface"></a>ICoreClrDebugTarget 接口
 
@@ -56,7 +57,7 @@ class ICoreClrDebugTarget {
 |[ICoreClrDebugTarget::EnumRuntimes 方法](icoreclrdebugtarget-enumruntimes-method.md)|枚举远程计算机上指定进程中的公共语言运行时 (Clr) 。|  
 |[ICoreClrDebugTarget::FreeMemory 方法](icoreclrdebugtarget-freememory-method.md)|释放此类中枚举方法分配的内存。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  目前，此功能仅用于调试在远程 Macintosh 计算机上运行的基于 Silverlight 的应用程序目标。  
   
@@ -70,7 +71,7 @@ class ICoreClrDebugTarget {
   
  **.NET Framework 版本：** 3.5 SP1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugRemoteTarget 接口](icordebugremotetarget-interface.md)
 - [ICorDebug 接口](icordebug-interface.md)

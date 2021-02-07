@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostThreadPoolManager 接口
 title: IHostThreadPoolManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f
 topic_type:
 - apiref
-ms.openlocfilehash: b6625b0ef4dc3de4067514a0b39849c7a958d5c4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0361b7a08f781a8748e43959f65ce0e9f21bbac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730755"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728394"
 ---
 # <a name="ihostthreadpoolmanager-interface"></a>IHostThreadPoolManager 接口
 
@@ -36,7 +37,7 @@ ms.locfileid: "95730755"
 |[SetMaxThreads 方法](ihostthreadpoolmanager-setmaxthreads-method.md)|设置宿主可在线程池中维护的最大线程数。|  
 |[SetMinThreads 方法](ihostthreadpoolmanager-setminthreads-method.md)|设置主机在预期请求中必须保持的空闲线程的最小数目。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  主机不需要使用对和方法的调用中指定的值来配置线程池 `SetMaxThreads` `SetMinThreads` 。 在这种情况下，宿主应从这些方法返回 E_NOTIMPL 的 HRESULT 值。  
   
@@ -50,7 +51,7 @@ ms.locfileid: "95730755"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Threading>
 - <xref:System.Threading.ThreadPool>

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 514-WebHostRequestStop
 title: 514 - WebHostRequestStop
 ms.date: 03/30/2017
 ms.assetid: c5858bf6-3330-4f2a-9907-a99692fa8817
-ms.openlocfilehash: d2f08ff003fe92caa6d09ba61cac18c7a869e45c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7b862c30d36d2885b26393d6e74f445bf1c4d553
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727711"
 ---
 # <a name="514---webhostrequeststop"></a>514 - WebHostRequestStop
 
@@ -17,10 +18,10 @@ ms.locfileid: "96238348"
 |-|-|  
 |ID|514|  
 |关键字|WebHost|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  在 WebHostRequest 已结束时发出此事件。  
   

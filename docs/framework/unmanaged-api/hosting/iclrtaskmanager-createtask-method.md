@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTaskManager：： CreateTask 方法
 title: ICLRTaskManager::CreateTask 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eea570d9-2e53-4320-9ea0-eb777bf9dcf3
 topic_type:
 - apiref
-ms.openlocfilehash: c8d18b78cf0185271eae763892610d13f76e42ab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 98a287f10a84b18579ebf2a4294cbb8a67cabc9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728608"
 ---
 # <a name="iclrtaskmanagercreatetask-method"></a>ICLRTaskManager::CreateTask 方法
 
@@ -51,7 +52,7 @@ HRESULT CreateTask (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于分配请求的资源。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  当用户代码通过使用命名空间中的类型创建线程时 <xref:System.Threading> ，或者当线程池的大小增加时，CLR 将自动创建一个新任务。 当非托管代码调用托管函数时，它还会创建任务。  
   
@@ -70,7 +71,7 @@ HRESULT CreateTask (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

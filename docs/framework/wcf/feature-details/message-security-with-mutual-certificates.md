@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：具有相互证书的消息安全
 title: 使用相互证书的消息安全
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
-ms.openlocfilehash: 521b2a887792d41dd28342ca4bfe7be71ceba4b7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c894f457dcd0fdc449c2f94eaee15004300df5fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237373"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726983"
 ---
 # <a name="message-security-with-mutual-certificates"></a>使用相互证书的消息安全
 
@@ -165,7 +166,7 @@ ms.locfileid: "96237373"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全性概述](security-overview.md)
 - [Windows Server App Fabric 的安全模型](/previous-versions/appfabric/ee677202(v=azure.10))

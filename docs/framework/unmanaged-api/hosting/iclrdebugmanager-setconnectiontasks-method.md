@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDebugManager：： SetConnectionTasks 方法
 title: ICLRDebugManager::SetConnectionTasks 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b38bbc9a-872c-41a9-b8c3-ca011d25456a
 topic_type:
 - apiref
-ms.openlocfilehash: 5df01ac929874d00a5fddda83f532927dc46d67b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 851b3f54cc5599781596314dfb70296a3d86491a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719835"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728712"
 ---
 # <a name="iclrdebugmanagersetconnectiontasks-method"></a>ICLRDebugManager::SetConnectionTasks 方法
 
@@ -59,7 +60,7 @@ HRESULT SetConnectionTasks (
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_INVALIDARG|尚未使用的此值调用[BeginConnection](iclrdebugmanager-beginconnection-method.md) ，或者 `id` `dwCount` 或 `id` 为零，或的一个元素 `ppCLRTask` 为空。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRDebugManager](iclrdebugmanager-interface.md) 提供了三种方法： `BeginConnection` 、 `SetConnectionTasks` 和 [EndConnection](iclrdebugmanager-endconnection-method.md)，用于将任务列表与标识符和友好名称关联起来。  
   
@@ -76,7 +77,7 @@ HRESULT SetConnectionTasks (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRControl 接口](iclrcontrol-interface.md)
 - [ICLRDebugManager 接口](iclrdebugmanager-interface.md)

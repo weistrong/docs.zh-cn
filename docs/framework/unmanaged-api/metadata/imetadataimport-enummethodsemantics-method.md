@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumMethodSemantics 方法
 title: IMetaDataImport::EnumMethodSemantics 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e7e3c630-9691-46d6-94df-b5593a7bb08a
 topic_type:
 - apiref
-ms.openlocfilehash: 3d14aea92633c944d21d867c8152767ae6f1f291
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9819afb2d7974e9f705c6ff665d3414eade0ab90
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720966"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728244"
 ---
 # <a name="imetadataimportenummethodsemantics-method"></a>IMetaDataImport::EnumMethodSemantics 方法
 
@@ -62,9 +63,9 @@ HRESULT EnumMethodSemantics (
 |`S_OK`|`EnumMethodSemantics` 已成功返回。|  
 |`S_FALSE`|没有要枚举的事件或属性。 在这种情况下， `pcEventProp` 为零。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
- 很多公共语言运行时 *Property* 类型定义 `Changed` 与其属性相关的属性事件和 `On` *属性* `Changed` 方法。 例如， <xref:System.Windows.Forms.Control?displayProperty=nameWithType> 类型定义 <xref:System.Windows.Forms.Control.Font%2A> 属性、 <xref:System.Windows.Forms.Control.FontChanged> 事件和 <xref:System.Windows.Forms.Control.OnFontChanged%2A> 方法。 属性的 set 访问器方法 <xref:System.Windows.Forms.Control.Font%2A> 调用 <xref:System.Windows.Forms.Control.OnFontChanged%2A> 方法，而后者又引发了 <xref:System.Windows.Forms.Control.FontChanged> 事件。 您将 `EnumMethodSemantics` 使用的 MethodDef 调用 <xref:System.Windows.Forms.Control.OnFontChanged%2A> 来获取对 <xref:System.Windows.Forms.Control.Font%2A> 属性和事件的引用 <xref:System.Windows.Forms.Control.FontChanged> 。  
+ 很多公共语言运行时类型定义 `Changed` 与其属性相关的属性事件和 `On` *属性* `Changed` 方法。 例如， <xref:System.Windows.Forms.Control?displayProperty=nameWithType> 类型定义 <xref:System.Windows.Forms.Control.Font%2A> 属性、 <xref:System.Windows.Forms.Control.FontChanged> 事件和 <xref:System.Windows.Forms.Control.OnFontChanged%2A> 方法。 属性的 set 访问器方法 <xref:System.Windows.Forms.Control.Font%2A> 调用 <xref:System.Windows.Forms.Control.OnFontChanged%2A> 方法，而后者又引发了 <xref:System.Windows.Forms.Control.FontChanged> 事件。 您将 `EnumMethodSemantics` 使用的 MethodDef 调用 <xref:System.Windows.Forms.Control.OnFontChanged%2A> 来获取对 <xref:System.Windows.Forms.Control.Font%2A> 属性和事件的引用 <xref:System.Windows.Forms.Control.FontChanged> 。  
   
 ## <a name="requirements"></a>要求  
 
@@ -76,7 +77,7 @@ HRESULT EnumMethodSemantics (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

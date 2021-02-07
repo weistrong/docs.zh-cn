@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：安全协议
 title: 安全协议
 ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], protocols
 ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
-ms.openlocfilehash: 1455aeeeb759f8eb2cc09c8649a5cbd6843d950a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 267724f852e2402054c11fbada3ef465db4b1ca2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254007"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726801"
 ---
 # <a name="security-protocols"></a>安全协议
 
@@ -41,7 +42,7 @@ Web 服务安全协议提供 Web 服务安全机制，这些机制可满足所�
   
 - 消息交换模式。  
   
-|身份验证模式|客户端身份验证|服务器身份验证|“模式”|  
+|身份验证模式|客户端身份验证|服务器身份验证|模型|  
 |-------------------------|---------------------------|---------------------------|----------|  
 |UserNameOverTransport|用户名/密码|X509|Transport|  
 |CertificateOverTransport|X509|X509|Transport|  

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3819-RoutingServiceMovedToBackup
 title: 3819 - RoutingServiceMovedToBackup
 ms.date: 03/30/2017
 ms.assetid: bf4086de-efd4-413c-9bc3-32a85b6b6722
-ms.openlocfilehash: 2906d5f377f03c7b8a60789e476295d31903216f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3038121e5a04c891beb7f074e0ea7d78db94b4fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727737"
 ---
 # <a name="3819---routingservicemovedtobackup"></a>3819 - RoutingServiceMovedToBackup
 
@@ -17,10 +18,10 @@ ms.locfileid: "96273433"
 |-|-|  
 |ID|3819|  
 |关键字|RoutingServices|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当路由服务已移到备份终结点时，发出此事件。  
   

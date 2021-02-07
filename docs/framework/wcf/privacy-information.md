@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Windows Communication Foundation 隐私信息
 title: Windows Communication Foundation 隐私信息
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF, privacy information
 - privacy information [WCF]
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
-ms.openlocfilehash: 5ecd1c39a4ad6a146c734aab8349c5caa4212662
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4f942e84a072d15a12b6db7cc2c310d629a59f6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249938"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726684"
 ---
 # <a name="windows-communication-foundation-privacy-information"></a>Windows Communication Foundation 隐私信息
 
@@ -429,7 +430,7 @@ Microsoft 承诺保护最终用户的隐私。 使用 Windows Communication Foun
   
  Web 服务描述语言 (WSDL) 包含端口的定义。 每个端口都具有一个终结点地址和一个表示应用程序所使用的服务的绑定。 可以使用配置禁用公开 WSDL。 计算机上不会保留任何信息。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Communication Foundation](index.md)
 - [安全性](./feature-details/security.md)

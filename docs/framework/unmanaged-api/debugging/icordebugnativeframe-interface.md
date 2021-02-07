@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugNativeFrame 接口
 title: ICorDebugNativeFrame 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 04819c58-7246-4b32-befb-680cf1dbc436
 topic_type:
 - apiref
-ms.openlocfilehash: 043dc0fdd5218d7bc6b80428d1eb891b3f01ee8c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e417184c9f1ca5136e1b4dba07820fd8242ae932
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729128"
 ---
 # <a name="icordebugnativeframe-interface"></a>ICorDebugNativeFrame 接口
 
@@ -39,7 +40,7 @@ ms.locfileid: "95695512"
 |[GetRegisterSet 方法](icordebugnativeframe-getregisterset-method.md)|获取一个指针，该指针指向表示此的注册集的 [ICorDebugRegisterSet](icordebugregisterset-interface.md) `ICorDebugNativeFrame` 。|  
 |[SetIP 方法](icordebugnativeframe-setip-method.md)|将指令指针设置为本机代码中的指定偏移位置。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -54,6 +55,6 @@ ms.locfileid: "95695512"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

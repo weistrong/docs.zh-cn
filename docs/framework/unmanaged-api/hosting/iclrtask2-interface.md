@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTask2 接口
 title: ICLRTask2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b5a22ebc-0582-49de-91f9-97a3d9789290
 topic_type:
 - apiref
-ms.openlocfilehash: 9332b3462ba389783a113d173e32850d40427ce2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 835b01e1c808c071e9393c5117d5e38415ec8eba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728623"
 ---
 # <a name="iclrtask2-interface"></a>ICLRTask2 接口
 
@@ -32,7 +33,7 @@ ms.locfileid: "95720225"
 |[BeginPreventAsyncAbort 方法](iclrtask2-beginpreventasyncabort-method.md)|延迟当前线程上的新线程中止请求。|  
 |[EndPreventAsyncAbort 方法](iclrtask2-endpreventasyncabort-method.md)|允许新的或挂起的线程中止请求导致在当前线程上中止线程。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICLRTask2`接口继承 `ICLRTask` 接口并添加允许主机延迟线程中止的方法，以保护不能失败的代码区域。 调用 `BeginPreventAsyncAbort` 会递增当前线程的延迟线程中止计数器，并调用 `EndPreventAsyncAbort` 减量。 对和的调用 `BeginPreventAsyncAbort` `EndPreventAsyncAbort` 可以嵌套。 只要计数器大于零，就会延迟当前线程的线程中止。  
   
@@ -54,7 +55,7 @@ ms.locfileid: "95720225"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

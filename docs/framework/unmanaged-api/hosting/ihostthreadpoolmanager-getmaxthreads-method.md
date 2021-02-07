@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostThreadPoolManager：： GetMaxThreads 方法
 title: IHostThreadPoolManager::GetMaxThreads 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: db268876-6178-4a81-aca3-318ee7f96001
 topic_type:
 - apiref
-ms.openlocfilehash: 3aecebe2803d3a795db801491d0f60a5eb7c00ce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e8cae2aa29a50ef58a5b87deba9e275a441d43ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728361"
 ---
 # <a name="ihostthreadpoolmanagergetmaxthreads-method"></a>IHostThreadPoolManager::GetMaxThreads 方法
 
@@ -51,7 +52,7 @@ HRESULT GetMaxThreads (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_NOTIMPL|宿主不提供的实现 `GetMaxThreads` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 调用 `GetMaxThreads` 来确定线程池中线程的总数。 [GetAvailableThreads](ihostthreadpoolmanager-getavailablethreads-method.md)方法获取当前未处理工作项的线程数。 所有超出参数返回值的请求将 `pdwMaxWorkerThreads` 保持排队状态，直到线程变为可用。  
   
@@ -67,7 +68,7 @@ HRESULT GetMaxThreads (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Threading.ThreadPool.GetMaxThreads%2A>
 - <xref:System.Threading.ThreadPool>

@@ -1,13 +1,14 @@
 ---
+description: 了解更多：不支持的方案
 title: 不支持的方案
 ms.date: 03/30/2017
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
-ms.openlocfilehash: 2d779b49a8201b3ad53507af7710f7aef5e9321c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7547a1acc060a6611a4750e512501cd314bed702
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289641"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726749"
 ---
 # <a name="unsupported-scenarios"></a>不支持的方案
 
@@ -123,7 +124,7 @@ WCF 不支持以下设置组合，因为它们可能会阻止客户端身份验�
 
  解决方法是，导入完毕后直接在客户端上修改绑定。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全注意事项](security-considerations-in-wcf.md)
 - [信息泄露](information-disclosure.md)

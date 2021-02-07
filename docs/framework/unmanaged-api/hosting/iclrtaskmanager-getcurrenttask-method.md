@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTaskManager：： GetCurrentTask 方法
 title: ICLRTaskManager::GetCurrentTask 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c0b82a9f-edc6-4878-9c81-48de53c02142
 topic_type:
 - apiref
-ms.openlocfilehash: af855e3ba47dc329a4fb722c3e13d5f1816beba4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d7435f9099d6a8ceb173afbf79c1d0f5d4005980
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728530"
 ---
 # <a name="iclrtaskmanagergetcurrenttask-method"></a>ICLRTaskManager::GetCurrentTask 方法
 
@@ -50,7 +51,7 @@ HRESULT GetCurrentTask (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICLRTask`参数指向的实例 `ppTask` 表示 CLR 当前正在执行的任务。 `ICLRTask`实例与表示宿主任务的相应[IHostTask](ihosttask-interface.md)实例相关联。  
   
@@ -64,7 +65,7 @@ HRESULT GetCurrentTask (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

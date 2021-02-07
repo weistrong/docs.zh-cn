@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IObjectHandle：：解包方法
 title: IObjectHandle::Unwrap 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 794c6f8e-ed58-416b-b756-e864f2c958f7
 topic_type:
 - apiref
-ms.openlocfilehash: 32b6d2c05a96658ab2b8ec1df288d2be05bb947f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f791eaf52abd045d495fe15e868423e464fd27e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728322"
 ---
 # <a name="iobjecthandleunwrap-method"></a>IObjectHandle::Unwrap 方法
 

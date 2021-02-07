@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Windows Communication Foundation 安全性
 title: Windows Communication Foundation 安全性
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - security [WCF]
 - Windows Communication Foundation, security
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-ms.openlocfilehash: b92f1ad8bb00e9df8daf55da4d7a808420d909cf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8cf748504c85844f82f8941be1b60bb29478f730
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726788"
 ---
 # <a name="windows-communication-foundation-security"></a>Windows Communication Foundation 安全性
 
@@ -24,7 +25,7 @@ ms.locfileid: "96253994"
  [安全性概述](security-overview.md)  
  描述 WCF 中的安全功能。  
   
- [安全性概念](security-concepts.md)  
+ [安全概念](security-concepts.md)  
  描述 WCF 安全性中使用的基本术语和概念。  
   
  [常用安全方案](common-security-scenarios.md)  
@@ -73,6 +74,6 @@ ms.locfileid: "96253994"
   
  [概念性概述](../conceptual-overview.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [配置应用程序](../diagnostics/configuring-your-application.md)

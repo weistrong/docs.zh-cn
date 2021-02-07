@@ -1,16 +1,17 @@
 ---
+description: 了解更多相关信息： Windows 客户端的消息安全性（不带凭据协商）
 title: 没有凭据协商的 Windows 客户端的消息安全
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fc07a26c-cbee-41c5-8fb0-329085fef749
-ms.openlocfilehash: 3e5838c474a4f13136ed29baab440dc1559b95f5
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e9edd63c80d868024d8a4b664c42456bb454cb69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551088"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727009"
 ---
 # <a name="message-security-with-a-windows-client-without-credential-negotiation"></a>没有凭据协商的 Windows 客户端的消息安全
 
@@ -25,12 +26,12 @@ ms.locfileid: "90551088"
 
 |特征|说明|
 |--------------------|-----------------|
-|安全模式|Message|
+|安全模式|消息|
 |互操作性|是，WS-Security 使用 Kerberos 令牌配置文件兼容的客户端|
 |身份验证（服务器）|服务器和客户端的相互身份验证|
 |身份验证（客户端）|服务器和客户端的相互身份验证|
 |完整性|是|
-|保密性|是|
+|机密性|是|
 |Transport|HTTP|
 |绑定|<xref:System.ServiceModel.WSHttpBinding>|
 

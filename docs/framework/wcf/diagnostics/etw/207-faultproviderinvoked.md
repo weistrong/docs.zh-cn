@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 207-FaultProviderInvoked
 title: 207 - FaultProviderInvoked
 ms.date: 03/30/2017
 ms.assetid: b730d903-01c2-4deb-85a4-da12f8a21fe4
-ms.openlocfilehash: 71381c9eee6aed4792500c8558db88e239bf89f7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 03c4f1669fc61019ccf4d23d2994f136e231fbec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295166"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728062"
 ---
 # <a name="207---faultproviderinvoked"></a>207 - FaultProviderInvoked
 
@@ -17,10 +18,10 @@ ms.locfileid: "96295166"
 |-|-|  
 |ID|207|  
 |关键字|疑难解答，ServiceModel|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  此事件在调用 `FaultProvider` 之后发出。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96295166"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |TypeName|`xs:string`|所调用 `FaultProvider` 的类型的 CLR FullName。|  
 |ExceptionTypeName|`xs:string`|`FaultProvider` 处理的异常的 CLR FullName。|  

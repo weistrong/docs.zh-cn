@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugNativeFrame：： SetIP 方法
 title: ICorDebugNativeFrame::SetIP 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 57784a51-c76d-48f8-9392-584d0e1946d9
 topic_type:
 - apiref
-ms.openlocfilehash: 65de42a0b86e4b4593b7880e9dc290ce00007a40
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb55b35eb4bd107a7273fd80ba83baac96610fb8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709253"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729167"
 ---
 # <a name="icordebugnativeframesetip-method"></a>ICorDebugNativeFrame::SetIP 方法
 
@@ -39,7 +40,7 @@ HRESULT SetIP (
  `nOffset`  
  中本机代码中的偏移位置。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用将 `SetIP` 立即使当前线程的所有帧和链无效。 如果在调用后调试器需要帧信息 `SetIP` ，则它必须执行新的堆栈跟踪。  
   
@@ -57,4 +58,4 @@ HRESULT SetIP (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
