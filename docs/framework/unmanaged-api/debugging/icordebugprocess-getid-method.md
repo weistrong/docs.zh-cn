@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess：： GetID 方法
 title: ICorDebugProcess::GetID 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0ba8453-fa7e-4c14-93e5-335409cd4a47
 topic_type:
 - apiref
-ms.openlocfilehash: 65d9c3688f3a41312a17e6058f73596fc2503dd4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 806e73724a88d08235f4a3e751f771abace1ad56
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95694979"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746979"
 ---
 # <a name="icordebugprocessgetid-method"></a>ICorDebugProcess::GetID 方法
 

@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <GenericParameter> 元素 ( .NET Native) '
 title: <GenericParameter>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
-ms.openlocfilehash: 1400fb7029df533d54e87a1c534f4ac3b0a5fc68
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 57cbb3418289d7da4f25577188299acd55ce6c94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747824"
 ---
 # <a name="genericparameter-element-net-native"></a>\<GenericParameter>元素 (.NET Native)
 
@@ -35,7 +36,7 @@ ms.locfileid: "96288016"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 泛型参数的名称。 例如，对于泛型委托 <xref:System.Func%603>，`Name` 特性的值为“TResult”，从而将运行时策略应用到该委托的返回值。|  
 |`Activate`|反射|可选特性。 控制运行时对构造函数的访问，以启用实例激活。|  
@@ -51,13 +52,13 @@ ms.locfileid: "96288016"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |generic_parameter_name|必需的特性。 泛型类型参数的名称。 例如，对于泛型委托 <xref:System.Func%603>，“TResult”的一个 generic_parameter_name 值将运行时策略应用到该委托的返回值。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这种策略类型。 可能值为 `All`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
@@ -67,7 +68,7 @@ ms.locfileid: "96288016"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Method>](method-element-net-native.md)|将运行时反射策略应用到一个构造函数或方法。|  
 |[\<Type>](type-element-net-native.md)|将运行时反射策略应用到一个特定类型，例如一个类或结构。|  

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CLRDataCreateInstance 函数
 title: CLRDataCreateInstance 函数
 ms.date: 03/30/2017
 api_name:
@@ -7,7 +8,7 @@ api_location:
 - mscordbi.dll
 - mscordacwks.dll
 api_type:
-- COM
+- DLLExport
 f1_keywords:
 - CLRDataCreateInstance
 helpviewer_keywords:
@@ -15,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: 440bad90-5a88-45e7-9157-4596801d8d19
 topic_type:
 - apiref
-ms.openlocfilehash: 2ffc575cfcef1089a70ef3b6d38787a5b4c50443
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 923b0c687d2b337eacb475973927452e3b47ad0d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729819"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747252"
 ---
 # <a name="clrdatacreateinstance-function"></a>CLRDataCreateInstance 函数
 
-为指定的目标项创建接口对象。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT CLRDataCreateInstance (  
+为指定的目标项创建接口对象。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT CLRDataCreateInstance (
     [in]  REFIID           iid,
     [in]  ICLRDataTarget  *target,
     [out] void           **iface  
@@ -47,7 +48,7 @@ HRESULT CLRDataCreateInstance (
  `iface`  
  弄指向返回的接口对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICLRDataTarget`对象由调试应用程序的编写器实现。 实现取决于所表示的目标项的类型。 目标项可以是进程、内存转储、远程计算机，等等。  
   
@@ -58,9 +59,11 @@ HRESULT CLRDataCreateInstance (
  **标头：** ClrData .idl  
   
  **库：** CorGuids.lib  
+
+ **程序集**： mscordacwks.dll、mscordbi.dll
   
- **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework 版本：** 自 .NET Framework 2.0 起可用
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试全局静态函数](debugging-global-static-functions.md)

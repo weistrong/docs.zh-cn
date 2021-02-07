@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <Method> 元素 ( .NET Native) '
 title: <Method>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 348b49e5-589d-4eb2-a597-d6ff60ab52d1
-ms.openlocfilehash: 1d57457c90e44c70caa301eccc02c5831d283cea
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 76c379ed81e721316e4293b20ba89acfbc9d174f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747518"
 ---
 # <a name="method-element-net-native"></a>\<Method>元素 (.NET Native)
 
@@ -28,7 +29,7 @@ ms.locfileid: "96287899"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 指定方法名称。|  
 |`Signature`|常规|可选特性。 指定方法签名。 如果存在多个参数，它们之间用逗号分割。 例如，以下 `<Method>` 元素定义了 <xref:System.DateTimeOffset.ToString%28System.String%2CSystem.IFormatProvider%29> 方法的策略。<br /><br /> `<Type Name="System.DateTime">    <Method Name="ToString" Signature="System.String,System.IFormatProvider"            Dynamic="Required" /> </Type>`<br /><br /> 如果该特性不存在，运行时指令将应用到该方法的所有重载。|  
@@ -37,25 +38,25 @@ ms.locfileid: "96287899"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |method_name|方法名称。 方法的类型由父级 [\<Type>](type-element-net-native.md) 或 [\<TypeInstantiation>](typeinstantiation-element-net-native.md) 元素定义。|  
   
 ## <a name="signature-attribute"></a>签名特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*method_signature*|形成方法签名的参数类型。 多个参数由逗号分隔，例如，`"System.String,System.Int32,System.Int32)"`。 参数类型名称应是完全限定的。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这种策略类型。 可能值为 `Auto`、`Excluded`、`Included` 和 `Required`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Parameter>](parameter-element-net-native.md)|将策略应用到传递到方法的参数类型。|  
 |[\<GenericParameter>](genericparameter-element-net-native.md)|将策略应用到一个泛型类型或方法的参数类型。|  
@@ -64,7 +65,7 @@ ms.locfileid: "96287899"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Type>](type-element-net-native.md)|将反射策略应用到一种类型及其所有成员。|  
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|将反射策略应用到一种构造泛型类型及其所有成员。|  
@@ -147,7 +148,7 @@ ms.locfileid: "96287899"
 </Directives>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](runtime-directive-elements.md)

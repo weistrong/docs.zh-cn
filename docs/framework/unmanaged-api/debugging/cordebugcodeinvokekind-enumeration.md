@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugCodeInvokeKind 枚举
 title: “Cor调试代码调用类型”枚举
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: e795e6a2-1008-4a81-af88-d777888e942e
 topic_type:
 - apiref
-ms.openlocfilehash: ece5bd5373fed1a10e6592ff884e98b614e7991d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d3fc3fe6f7568adcb2d1bbbe18c98d9d84bac337
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715984"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747083"
 ---
 # <a name="cordebugcodeinvokekind-enumeration"></a>“Cor调试代码调用类型”枚举
 
@@ -40,7 +41,7 @@ typedef enum CorDebugCodeInvokeKind
 |`CODE_INVOKE_KIND_RETURN`|该方法可通过返回指令调用托管代码。 在下一个托管代码处应跳出。|  
 |`CODE_INVOKE_KIND_TAILCALL`|该方法可通过尾调调用托管代码。 在托管代码处应单步执行所有调用指令。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此枚举由 [ICorDebugProcess6：： GetExportStepInfo](icordebugprocess6-getexportstepinfo-method.md) 方法用来提供有关单步执行托管代码的信息。  
   
@@ -57,7 +58,7 @@ typedef enum CorDebugCodeInvokeKind
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)
 - [调试](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：入门与 .NET Native
 title: .NET Native 入门
 ms.date: 03/30/2017
 ms.assetid: fc9e04e8-2d05-4870-8cd6-5bd276814afc
-ms.openlocfilehash: b6cd4acaa377de7fc172fb12c9fb9ff1b832f88a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6079e21764ebc39515eb9b9f217057d916da8942
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551205"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747798"
 ---
 # <a name="getting-started-with-net-native"></a>.NET Native 入门
 
@@ -79,11 +80,11 @@ ms.locfileid: "90551205"
 
 ## <a name="step-3-deploy-and-test-the-release-builds-of-your-app"></a>步骤 3：部署和测试应用的发布版本
 
-在更新运行时指令文件之后，你可以重新生成和部署应用的发布版本。 .NET Native 二进制文件放置在项目 "**属性**" 对话框的 "**生成输出路径**"**文本框中指定**目录的 ILC 子目录中。未在此文件夹中的二进制文件尚未用 .NET Native 编译。 彻底测试你的应用，并在其各个目标平台上测试所有方案（包括失败方案）。
+在更新运行时指令文件之后，你可以重新生成和部署应用的发布版本。 .NET Native 二进制文件放置在项目 "**属性**" 对话框的 "**生成输出路径**"**文本框中指定** 目录的 ILC 子目录中。未在此文件夹中的二进制文件尚未用 .NET Native 编译。 彻底测试你的应用，并在其各个目标平台上测试所有方案（包括失败方案）。
 
 如果应用无法正常工作（尤其是在运行时引发 [MissingMetadataException](missingmetadataexception-class-net-native.md) 或 [MissingInteropDataException](missinginteropdataexception-class-net-native.md) 异常的情况下），请按照下一部分的指令进行操作，即[步骤 4：手动解决丢失的元数据](#Step4)。 启用最可能的异常可能会帮助发现这些 bug。
 
-如果已测试并调试了应用的调试版本，并且确信已消除 [MissingMetadataException](missingmetadataexception-class-net-native.md) 和 [MissingInteropDataException](missinginteropdataexception-class-net-native.md) 异常，则应将应用作为优化 .NET Native 应用进行测试。 为此，请将活动项目配置从“调试”改为“发布”********。
+如果已测试并调试了应用的调试版本，并且确信已消除 [MissingMetadataException](missingmetadataexception-class-net-native.md) 和 [MissingInteropDataException](missinginteropdataexception-class-net-native.md) 异常，则应将应用作为优化 .NET Native 应用进行测试。 为此，请将活动项目配置从“调试”改为“发布”。
 
 <a name="Step4"></a>
 

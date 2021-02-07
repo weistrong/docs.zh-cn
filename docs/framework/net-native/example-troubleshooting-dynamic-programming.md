@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：示例：排查动态编程问题
 title: 示例：动态编程疑难解答
 ms.date: 03/30/2017
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
-ms.openlocfilehash: 0cff232668b9eb65b09a22b14e4ae58673ccd6d0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7ad3fde9c81800123abe899e2f696c3833fed5bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747850"
 ---
 # <a name="example-troubleshooting-dynamic-programming"></a>示例：动态编程疑难解答
 
@@ -60,7 +61,7 @@ App!$43_System::Threading::SendOrPostCallback.InvokeOpenStaticThunk
 
  如果该应用过去使用的是 `typeof(LayoutApplicationVM)` 而不是 `Type.GetType("LayoutApplicationVM")`，工具链可能已经保存了 `browse` 元数据。  然而，它也可能没有创建 `invoke` 元数据，这在实例化该类型时可能会导致 [MissingMetadataException](missingmetadataexception-class-net-native.md) 异常。 要阻止这一异常，你仍然必须为命名空间添加一个运行时指令或指定 `dynamic` 策略的类型。 有关运行时指令的信息，请参阅 [运行时指令 (rd.xml) 配置文件参考](runtime-directives-rd-xml-configuration-file-reference.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [入门](getting-started-with-net-native.md)
 - [示例：处理绑定数据时出现的异常](example-handling-exceptions-when-binding-data.md)

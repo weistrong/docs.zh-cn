@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <Application> 元素 ( .NET Native) '
 title: <Application>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
-ms.openlocfilehash: a7f2eca5a5bb5cfb7b9827f2463454a17fc128cb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ebbc6292b5936e6b7d54666070b33df2da80f57f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747941"
 ---
 # <a name="application-element-net-native"></a>\<Application>元素 (.NET Native)
 
@@ -37,7 +38,7 @@ ms.locfileid: "96288133"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Activate`|反射|可选特性。 控制运行时对构造函数的访问，以启用实例激活。|  
 |`Browse`|反射|可选特性。 控制对该类型信息的查询或列举该类型，但并不在运行时间启用任何动态访问。|  
@@ -52,13 +53,13 @@ ms.locfileid: "96288133"
   
 ## <a name="all-attributes"></a>所有特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该策略的设置将应用到该应用中的所有类型。 可能值为 `All`、`Auto`、`Excluded`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Assembly>](assembly-element-net-native.md)|将策略应用到特定程序集中的所有类型。|  
 |[\<Namespace>](namespace-element-net-native.md)|将策略应用到特定命名空间中的所有类型。|  
@@ -72,7 +73,7 @@ ms.locfileid: "96288133"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Directives>](directives-element-net-native.md)|运行时指令文件的根元素。|  
   

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess：： IsOSSuspended 方法
 title: ICorDebugProcess::IsOSSuspended 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 83406cb2-5797-4402-872d-89c9516aefec
 topic_type:
 - apiref
-ms.openlocfilehash: fffa61d8e406162251b0934a9846e5a813422798
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa5e438418330d9fee51fcdb56a617421df06904
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746732"
 ---
 # <a name="icordebugprocessisossuspended-method"></a>ICorDebugProcess::IsOSSuspended 方法
 
@@ -42,7 +43,7 @@ HRESULT IsOSSuspended(
  `pbSuspended`  
  弄指向布尔值的指针， `true` 如果指定线程已挂起，则为; 否则 `pbSuspended` 为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  当由于调试器停止此进程而暂停指定的线程时，指定线程的 Win32 挂起计数将递增1。 如果调试器用户界面向用户显示操作系统 (OS) 挂起线程计数，则 (UI) 可能需要考虑此信息。  
   

@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <ImpliesType> 元素 ( .NET Native) '
 title: <ImpliesType>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
-ms.openlocfilehash: 04c3a9498a5c9c24d67dedd02fb4c9d68d9efbdd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6476876f335788a276907fd2aef02d5623382699
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747681"
 ---
 # <a name="impliestype-element-net-native"></a>\<ImpliesType>元素 (.NET Native)
 
@@ -35,7 +36,7 @@ ms.locfileid: "96287951"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 指定类型名称。|  
 |`Activate`|反射|可选特性。 控制运行时对构造函数的访问，以启用实例激活。|  
@@ -51,13 +52,13 @@ ms.locfileid: "96287951"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |type_name|类型名称。 如果此 `<ImpliesType>` 元素代表的类型同其包含的 `<Type>` 元素位于相同的命名空间，type_name 可能会包括类型名称而不包括其命名空间。 否则，type_name 必须包含完全限定的类型名称。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这种策略类型。 可能值为 `All`、`Auto`、`Excluded`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
@@ -67,7 +68,7 @@ ms.locfileid: "96287951"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Type>](type-element-net-native.md)|将反射策略应用到一种类型及其所有成员。|  
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|将反射策略应用到一种构造泛型类型及其所有成员。|  
@@ -93,7 +94,7 @@ ms.locfileid: "96287951"
   
  这个指令是不起作用的，除非 `Explicit` 的一个实例化具有一个已定义的 `Dynamic` 策略设置。 例如，如果对于 `Explicit<Int32>` 情况如此，`Implicit<Int32>` 会同其根公共成员一起被实例化，并且它们的元数据就能由动态编程访问。  
   
- 以下是一个至少可以应用到序列化程序的实际实例。 指令捕获对类型化为内容的内容进行反射的需求， `IList<` *something* `>` `List<` *something* `>` 而不需要每个应用程序的批注就会反映相应的内容类型。  
+ 以下是一个至少可以应用到序列化程序的实际实例。 指令捕获对类型化为内容的内容进行反射的需求， `IList<`  `>` `List<`  `>` 而不需要每个应用程序的批注就会反映相应的内容类型。  
   
 ```xml  
 <Type Name="System.Collections.Generic.IList{T}">  
@@ -112,7 +113,7 @@ ms.locfileid: "96287951"
 </Type>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](runtime-directive-elements.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息：编译应用 .NET Native
 title: 使用 .NET Native 编译引用
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - .NET Native
 - C# and native compilation
 ms.assetid: 47cd5648-9469-4b1d-804c-43cc04384045
-ms.openlocfilehash: 7601a6d5e7f49b6d8fc434ef772e2e69740f02cf
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2626daf17fda751edd7915f15fd4b68ffb623dff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543928"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747655"
 ---
 # <a name="compiling-apps-with-net-native"></a>使用 .NET Native 编译引用
 

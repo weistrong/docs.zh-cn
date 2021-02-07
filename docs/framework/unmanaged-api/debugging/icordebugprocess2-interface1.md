@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess2 接口
 title: ICorDebugProcess2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 73332138-5fea-441f-b893-61af87d45a42
 topic_type:
 - apiref
-ms.openlocfilehash: f1a30c197373928ec10c2b84de4e805b94ea2384
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 47e94ee8ee4f45e365fa9efe888cb706f8bb1dfd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746589"
 ---
 # <a name="icordebugprocess2-interface"></a>ICorDebugProcess2 接口
 
@@ -37,7 +38,7 @@ ICorDebugProcess 接口的逻辑扩展，它表示运行托管代码的进程。
 |[SetDesiredNGENCompilerFlags 方法](icordebugprocess2-setdesiredngencompilerflags-method.md)|设置实时 (JIT) 编译器所需的标志，以将图像加载到正在调试的进程中。|  
 |[SetUnmanagedBreakpoint 方法](icordebugprocess2-setunmanagedbreakpoint-method.md)|在指定的本机映像偏移量处设置非托管断点。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -52,6 +53,6 @@ ICorDebugProcess 接口的逻辑扩展，它表示运行托管代码的进程。
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

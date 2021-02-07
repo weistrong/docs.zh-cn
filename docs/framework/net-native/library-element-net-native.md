@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <Library> 元素 ( .NET Native) '
 title: <Library>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e
-ms.openlocfilehash: aeaa6b1a9c3c4ceebdd0eab3f331a044971398bf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 224b2b9cbce8123f4a15b9ec3e3793674633822a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747603"
 ---
 # <a name="library-element-net-native"></a>\<Library>元素 (.NET Native)
 
@@ -34,13 +35,13 @@ ms.locfileid: "96287912"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |assembly_name|程序集的简单名称，不要包含文件扩展名。 此特性对应 <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> 属性。 例如，一个名为 Extensions.dll 的程序集的名称为“Extensions”。 参阅“备注”部分，了解支持对来自程序集的元数据有条件包含的 assembly_name 的一种特殊形式。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Assembly>](assembly-element-net-native.md)|将策略应用到特定程序集中的所有类型。|  
 |[\<Namespace>](namespace-element-net-native.md)|将策略应用到特定命名空间中的所有类型。|  
@@ -49,7 +50,7 @@ ms.locfileid: "96287912"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Directives>](directives-element-net-native.md)|运行时指令文件的根元素。|  
   

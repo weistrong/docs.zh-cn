@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess：： ReadMemory 方法
 title: ICorDebugProcess::ReadMemory 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 28e4b2f6-9589-445c-be24-24a3306795e7
 topic_type:
 - apiref
-ms.openlocfilehash: a0abc7168ff7bffdbb835c1c1bc93de9df6e381c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bdf1bda9df416b6d3142e3ae09955e706f260802
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95694862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746797"
 ---
 # <a name="icordebugprocessreadmemory-method"></a>ICorDebugProcess::ReadMemory 方法
 
@@ -50,7 +51,7 @@ HRESULT ReadMemory(
  `read`  
  弄一个指针，指向到指定缓冲区中传输的字节数。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此 `ReadMemory` 方法主要用于互操作调试，用于检查调试对象的非托管部分所使用的内存区域。 此方法还可用于读取 Microsoft 中间语言 (MSIL) 代码和本机 JIT 编译代码。  
   

@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <MethodInstantiation> 元素 ( .NET Native) '
 title: <MethodInstantiation>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a
-ms.openlocfilehash: e247db05f8442d4fcfddbf03b5eb8955b8ff425a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 985d522a559dbbce936a2f29a9983c89ebd18a48
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250952"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747486"
 ---
 # <a name="methodinstantiation-element-net-native"></a>\<MethodInstantiation>元素 (.NET Native)
 
@@ -29,7 +30,7 @@ ms.locfileid: "96250952"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 指定方法名称。|  
 |`Signature`|常规|可选特性。 指定该类型的命名参数。 多个命名参数由逗号分隔。 `Signature` 特性用于区分重载方法。|  
@@ -39,25 +40,25 @@ ms.locfileid: "96250952"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |method_name|方法名称。 方法的类型由父级 [\<Type>](type-element-net-native.md) 或 [\<TypeInstantiation>](typeinstantiation-element-net-native.md) 元素定义。|  
   
 ## <a name="signature-attribute"></a>签名特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*method_signature*|指定该类型的命名参数。 如果存在多个参数，它们之间用逗号分割。|  
   
 ## <a name="arguments-attribute"></a>自变量特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |method_arguments|指定泛型类型参数。 如果存在多个自变量，它们之间用逗号分割。 每个自变量必须包含一个完全限定的类型名称。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这个方法的策略类型。 可能值为 `Auto`、`Excluded`、`Included` 和 `Required`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
@@ -67,7 +68,7 @@ ms.locfileid: "96250952"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Type>](type-element-net-native.md)|将反射策略应用到一种类型及其所有成员。|  
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|将反射策略应用到一种构造泛型类型及其所有成员。|  
@@ -76,7 +77,7 @@ ms.locfileid: "96250952"
 
  `<MethodInstantiation>` 元素替代其相应的开发泛型方法的运行时反射策略。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](runtime-directive-elements.md)

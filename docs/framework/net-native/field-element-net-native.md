@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <Field> 元素 ( .NET Native) '
 title: <Field>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
-ms.openlocfilehash: e63dc293c42aa620b7f7ac15fc0454bc603b9dde
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1f8c8b6720fb90bdc5855da7b17694253bbb7629
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251043"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747837"
 ---
 # <a name="field-element-net-native"></a>\<Field>元素 (.NET Native)
 
@@ -28,7 +29,7 @@ ms.locfileid: "96251043"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 指定字段名称。|  
 |`Browse`|反射|可选特性。 控制对该字段信息的查询或列举该字段，但并不在运行时间启用任何动态访问。|  
@@ -37,13 +38,13 @@ ms.locfileid: "96251043"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |method_name|字段名。 字段的类型由父级 [\<Type>](type-element-net-native.md) 或 [\<TypeInstantiation>](typeinstantiation-element-net-native.md) 元素定义。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这个字段的策略类型。 可能值为 `Auto`、`Excluded`、`Included` 和 `Required`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
@@ -53,7 +54,7 @@ ms.locfileid: "96251043"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Type>](type-element-net-native.md)|将反射策略应用到一种类型及其所有成员。|  
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|将反射策略应用到一种构造泛型类型及其所有成员。|  
@@ -62,7 +63,7 @@ ms.locfileid: "96251043"
 
  如果一个字段的策略没有得到显式定义，它将继承其父元素的运行时策略。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令元素](runtime-directive-elements.md)
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)

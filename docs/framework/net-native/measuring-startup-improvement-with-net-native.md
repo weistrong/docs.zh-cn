@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：通过 .NET Native 度量启动改进
 title: 使用 .NET Native 衡量启动改善
 ms.date: 03/30/2017
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
-ms.openlocfilehash: 6d89edaff184692eabb11e928f5211f664ff5afa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ef3245811f79475fc7c267e7376f6140e8686724
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747590"
 ---
 # <a name="measuring-startup-improvement-with-net-native"></a>使用 .NET Native 衡量启动改善
 
@@ -99,6 +100,6 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  通过对原始应用和使用 .NET Native 工具链生成的版本重复此过程，可以比较性能差异。   .NET Native 应用通常比 non-.NET 本机应用启动更快。 如果你有兴趣更深入了解，PerfView 也可以识别你的应用代码中花费时间最多的部分。 有关详细信息，请观看 [PerfView 教程](https://channel9.msdn.com/Series/PerfView-Tutorial)或读取 [Vance Morrison 的博客文章](/archive/blogs/vancem/publication-of-the-perfview-performance-analysis-tool)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Diagnostics.Tracing.EventSource>
