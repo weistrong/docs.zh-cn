@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostPolicyManager 接口
 title: IHostPolicyManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8c4aa124-5e00-46d9-b1e8-57ba6574bb0d
 topic_type:
 - apiref
-ms.openlocfilehash: 3c85bcbe8aee453b19217ebd1f48feea113e3bb1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d823ee2526019188afd17df903b61a720e18207f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671907"
 ---
 # <a name="ihostpolicymanager-interface"></a>IHostPolicyManager 接口
 
@@ -43,7 +44,7 @@ ms.locfileid: "95731212"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrFailure 枚举](eclrfailure-enumeration.md)
 - [EClrOperation 枚举](eclroperation-enumeration.md)

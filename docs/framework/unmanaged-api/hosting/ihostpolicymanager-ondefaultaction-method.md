@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostPolicyManager：： OnDefaultAction 方法
 title: IHostPolicyManager::OnDefaultAction 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 071e73bd-4795-470f-9373-cfaef553b7f2
 topic_type:
 - apiref
-ms.openlocfilehash: a22f16c14514b90ce888fafc0ea554bd9f90cb11
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea474734f7bc0a5210c5aecf605452909b261a87
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671901"
 ---
 # <a name="ihostpolicymanagerondefaultaction-method"></a>IHostPolicyManager::OnDefaultAction 方法
 
@@ -64,7 +65,7 @@ HRESULT OnDefaultAction (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrOperation 枚举](eclroperation-enumeration.md)
 - [EPolicyAction 枚举](epolicyaction-enumeration.md)
