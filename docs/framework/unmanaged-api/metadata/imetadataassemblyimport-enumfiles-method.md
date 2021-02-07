@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyImport：： EnumFiles 方法
 title: IMetaDataAssemblyImport::EnumFiles 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: f0d721e2-b946-426d-8e20-9124bd04e4cb
 topic_type:
 - apiref
-ms.openlocfilehash: f9af770f3bdca98f6b3d06d8b0fe6c92745f73e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 25282edd081e937e4c84334f9f004e201b9db46f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671017"
 ---
-# <a name="imetadataassemblyimportenumfiles-method"></a><span data-ttu-id="2dcd5-102">IMetaDataAssemblyImport::EnumFiles 方法</span><span class="sxs-lookup"><span data-stu-id="2dcd5-102">IMetaDataAssemblyImport::EnumFiles Method</span></span>
+# <a name="imetadataassemblyimportenumfiles-method"></a><span data-ttu-id="5fbee-103">IMetaDataAssemblyImport::EnumFiles 方法</span><span class="sxs-lookup"><span data-stu-id="5fbee-103">IMetaDataAssemblyImport::EnumFiles Method</span></span>
 
-<span data-ttu-id="2dcd5-103">枚举当前程序集清单中引用的文件。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-103">Enumerates the files referenced in the current assembly manifest.</span></span>  
+<span data-ttu-id="5fbee-104">枚举当前程序集清单中引用的文件。</span><span class="sxs-lookup"><span data-stu-id="5fbee-104">Enumerates the files referenced in the current assembly manifest.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="2dcd5-104">语法</span><span class="sxs-lookup"><span data-stu-id="2dcd5-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="5fbee-105">语法</span><span class="sxs-lookup"><span data-stu-id="5fbee-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT EnumFiles (  
@@ -37,37 +38,37 @@ HRESULT EnumFiles (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="2dcd5-105">参数</span><span class="sxs-lookup"><span data-stu-id="2dcd5-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="5fbee-106">参数</span><span class="sxs-lookup"><span data-stu-id="5fbee-106">Parameters</span></span>  
 
  `phEnum`  
- <span data-ttu-id="2dcd5-106">[in，out]指向枚举器的指针。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-106">[in, out] A pointer to the enumerator.</span></span> <span data-ttu-id="2dcd5-107">第一次调用此方法时，此值必须为 null 值。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-107">This must be a null value for the first call of this method.</span></span>  
+ <span data-ttu-id="5fbee-107">[in，out]指向枚举器的指针。</span><span class="sxs-lookup"><span data-stu-id="5fbee-107">[in, out] A pointer to the enumerator.</span></span> <span data-ttu-id="5fbee-108">第一次调用此方法时，此值必须为 null 值。</span><span class="sxs-lookup"><span data-stu-id="5fbee-108">This must be a null value for the first call of this method.</span></span>  
   
  `rFiles`  
- <span data-ttu-id="2dcd5-108">弄用于存储 `mdFile` 元数据标记的数组。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-108">[out] The array used to store the `mdFile` metadata tokens.</span></span>  
+ <span data-ttu-id="5fbee-109">弄用于存储 `mdFile` 元数据标记的数组。</span><span class="sxs-lookup"><span data-stu-id="5fbee-109">[out] The array used to store the `mdFile` metadata tokens.</span></span>  
   
  `cMax`  
- <span data-ttu-id="2dcd5-109">中可以放入的标记的最大数目 `mdFile` `rFiles` 。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-109">[in] The maximum number of `mdFile` tokens that can be placed in `rFiles`.</span></span>  
+ <span data-ttu-id="5fbee-110">中可以放入的标记的最大数目 `mdFile` `rFiles` 。</span><span class="sxs-lookup"><span data-stu-id="5fbee-110">[in] The maximum number of `mdFile` tokens that can be placed in `rFiles`.</span></span>  
   
  `pcTokens`  
- <span data-ttu-id="2dcd5-110">弄 `mdFile` 实际置于中的标记数 `rFiles` 。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-110">[out] The number of `mdFile` tokens actually placed in `rFiles`.</span></span>  
+ <span data-ttu-id="5fbee-111">弄 `mdFile` 实际置于中的标记数 `rFiles` 。</span><span class="sxs-lookup"><span data-stu-id="5fbee-111">[out] The number of `mdFile` tokens actually placed in `rFiles`.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="2dcd5-111">返回值</span><span class="sxs-lookup"><span data-stu-id="2dcd5-111">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="5fbee-112">返回值</span><span class="sxs-lookup"><span data-stu-id="5fbee-112">Return Value</span></span>  
   
-|<span data-ttu-id="2dcd5-112">HRESULT</span><span class="sxs-lookup"><span data-stu-id="2dcd5-112">HRESULT</span></span>|<span data-ttu-id="2dcd5-113">说明</span><span class="sxs-lookup"><span data-stu-id="2dcd5-113">Description</span></span>|  
+|<span data-ttu-id="5fbee-113">HRESULT</span><span class="sxs-lookup"><span data-stu-id="5fbee-113">HRESULT</span></span>|<span data-ttu-id="5fbee-114">说明</span><span class="sxs-lookup"><span data-stu-id="5fbee-114">Description</span></span>|  
 |-------------|-----------------|  
-|`S_OK`|<span data-ttu-id="2dcd5-114">`EnumFiles` 已成功返回。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-114">`EnumFiles` returned successfully.</span></span>|  
-|`S_FALSE`|<span data-ttu-id="2dcd5-115">没有要枚举的令牌。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-115">There are no tokens to enumerate.</span></span> <span data-ttu-id="2dcd5-116">在这种情况下， `pcTokens` 设置为零。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-116">In this case, `pcTokens` is set to zero.</span></span>|  
+|`S_OK`|<span data-ttu-id="5fbee-115">`EnumFiles` 已成功返回。</span><span class="sxs-lookup"><span data-stu-id="5fbee-115">`EnumFiles` returned successfully.</span></span>|  
+|`S_FALSE`|<span data-ttu-id="5fbee-116">没有要枚举的令牌。</span><span class="sxs-lookup"><span data-stu-id="5fbee-116">There are no tokens to enumerate.</span></span> <span data-ttu-id="5fbee-117">在这种情况下， `pcTokens` 设置为零。</span><span class="sxs-lookup"><span data-stu-id="5fbee-117">In this case, `pcTokens` is set to zero.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="2dcd5-117">要求</span><span class="sxs-lookup"><span data-stu-id="2dcd5-117">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="5fbee-118">要求</span><span class="sxs-lookup"><span data-stu-id="5fbee-118">Requirements</span></span>  
 
- <span data-ttu-id="2dcd5-118">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="2dcd5-118">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="5fbee-119">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="5fbee-119">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="2dcd5-119">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="2dcd5-119">**Header:** Cor.h</span></span>  
+ <span data-ttu-id="5fbee-120">**标头：** Cor</span><span class="sxs-lookup"><span data-stu-id="5fbee-120">**Header:** Cor.h</span></span>  
   
- <span data-ttu-id="2dcd5-120">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="2dcd5-120">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+ <span data-ttu-id="5fbee-121">**库：** 用作 MsCorEE.dll 中的资源</span><span class="sxs-lookup"><span data-stu-id="5fbee-121">**Library:** Used as a resource in MsCorEE.dll</span></span>  
   
- <span data-ttu-id="2dcd5-121">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2dcd5-121">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="5fbee-122">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5fbee-122">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2dcd5-122">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2dcd5-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5fbee-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="5fbee-123">See also</span></span>
 
-- [<span data-ttu-id="2dcd5-123">IMetaDataAssemblyImport 接口</span><span class="sxs-lookup"><span data-stu-id="2dcd5-123">IMetaDataAssemblyImport Interface</span></span>](imetadataassemblyimport-interface.md)
+- [<span data-ttu-id="5fbee-124">IMetaDataAssemblyImport 接口</span><span class="sxs-lookup"><span data-stu-id="5fbee-124">IMetaDataAssemblyImport Interface</span></span>](imetadataassemblyimport-interface.md)
