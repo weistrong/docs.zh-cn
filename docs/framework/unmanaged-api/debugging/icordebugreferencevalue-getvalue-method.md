@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugReferenceValue：： GetValue 方法
 title: ICorDebugReferenceValue::GetValue 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5da07f99-6c70-46ec-b997-5ab6fb7106cd
 topic_type:
 - apiref
-ms.openlocfilehash: cbdba623b02ccc85c6d4784a9539adf14fd256e7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 29e0c4997d3349b642381dcf69063de21c3f9330
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95691183"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691013"
 ---
 # <a name="icordebugreferencevaluegetvalue-method"></a>ICorDebugReferenceValue::GetValue 方法
 

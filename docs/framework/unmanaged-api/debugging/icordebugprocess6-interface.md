@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugProcess6 接口
 title: “ICor调试进程6”接口
 ms.date: 03/30/2017
 ms.assetid: 34a10ac2-882c-4797-8369-f120e8e640c7
-ms.openlocfilehash: ba70bab28eeddad6e3cf3c2b82b196a69ce68647
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f303670d0667a80507bc623f9af037759fdde463
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691453"
 ---
 # <a name="icordebugprocess6-interface"></a>“ICor调试进程6”接口
 
@@ -24,7 +25,7 @@ ms.locfileid: "95732601"
 |[MarkDebuggerAttached 方法](icordebugprocess6-markdebuggerattached-method.md)|更改调试对象的内部状态，以便 .NET Framework 类库中的 <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> 方法返回 `true`。|  
 |[“进程状态已更改”方法](icordebugprocess6-processstatechanged-method.md)|通知 [ICorDebug](icordebug-interface.md) 进程正在运行。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口仅适用于 .NET Native。 尝试调用 `QueryInterface` 来检索接口指针会为 .NET Native 外部的 ICorDebug 方案返回 `E_NOINTERFACE`。  
@@ -39,7 +40,7 @@ ms.locfileid: "95732601"
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)
