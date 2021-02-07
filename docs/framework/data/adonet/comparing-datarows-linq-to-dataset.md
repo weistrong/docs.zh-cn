@@ -1,20 +1,21 @@
 ---
+description: '了解详细信息：比较 Datarow (LINQ to DataSet) '
 title: 比较 DataRow (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8fe0eadf-297b-487c-8d4b-7816753c2883
-ms.openlocfilehash: 8cce52734c83e42312d71806d4151ef21e4df0ba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: df410432ab31d5ee284cb1d7cd15661db65ca503
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663930"
 ---
 # <a name="comparing-datarows-linq-to-dataset"></a>比较 DataRow (LINQ to DataSet)
 
- (LINQ) 的语言集成查询定义了用于比较源元素的各种集运算符，以确定它们是否相等。 LINQ 提供以下集运算符：  
+Language-Integrated 查询 (LINQ) 定义用于比较源元素的各种集运算符，以确定它们是否相等。 LINQ 提供以下集运算符：  
   
 - <xref:System.Linq.Enumerable.Distinct%2A>  
   

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：  <<= 运算符 (Visual Basic) '
 title: <<= 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - operator<<=
 - compound assignment statements [Visual Basic]
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
-ms.openlocfilehash: 72fc842002586a4d5e48bc39b5c785fc6a9e9451
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 40d0b69c3af672383230db5beadbcd3f3391db7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866903"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665635"
 ---
 # <a name="-operator-visual-basic"></a>\<\<= 运算符 (Visual Basic) 
 
@@ -46,7 +47,7 @@ variableorproperty <<= amount
   
 ## <a name="overloading"></a>重载  
 
- 可以*重载* [<< 运算符](left-shift-operator.md)，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `<<` 运算符会影响运算符的行为 `<<=` 。 如果你的代码 `<<=` 在重载的类或结构上使用 `<<` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ 可以 *重载* [<< 运算符](left-shift-operator.md)，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `<<` 运算符会影响运算符的行为 `<<=` 。 如果你的代码 `<<=` 在重载的类或结构上使用 `<<` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -54,7 +55,7 @@ variableorproperty <<= amount
   
  [!code-vb[VbVbalrOperators#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#13)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [<< 运算符](left-shift-operator.md)
 - [赋值运算符](assignment-operators.md)

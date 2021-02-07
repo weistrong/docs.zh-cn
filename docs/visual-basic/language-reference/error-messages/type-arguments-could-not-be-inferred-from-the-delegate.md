@@ -1,4 +1,5 @@
 ---
+description: 了解更多相关信息： BC36564：无法从委托推断类型参数
 title: 未能从委托中推理类型参数
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36564
 ms.assetid: 21312807-e1cd-4ac1-ae1c-c28a9c25164d
-ms.openlocfilehash: f7937a34ab425da684f892250884d21e020e4c57
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 1a83ee64df4523cee87d0d677ddafaeadfe5543d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666259"
 ---
 # <a name="bc36564-type-arguments-could-not-be-inferred-from-the-delegate"></a>BC36564：无法从委托推断类型参数
 
@@ -26,7 +27,7 @@ ms.locfileid: "92161239"
 
 - 为 `AddressOf` 表达式中的泛型过程指定类型参数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [AddressOf 运算符](../operators/addressof-operator.md)

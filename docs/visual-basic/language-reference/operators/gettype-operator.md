@@ -1,4 +1,5 @@
 ---
+description: '详细了解： GetType 运算符 (Visual Basic) '
 title: GetType Operator
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - GetType operator [Visual Basic]
 - GetType keyword [Visual Basic]
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
-ms.openlocfilehash: 9ff207ea4f2b89ea30eb8f46a3e640ccf3789974
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 15fe9c28997aa01527f23c0cc8fdbb0fe6cc53f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867009"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665986"
 ---
 # <a name="gettype-operator-visual-basic"></a>GetType 运算符 (Visual Basic)
 
@@ -26,7 +27,7 @@ GetType(typename)
   
 ## <a name="parameters"></a>参数  
   
-|参数|描述|  
+|参数|说明|  
 |---|---|  
 |`typename`|要获取其信息的类型的名称。|  
   
@@ -60,7 +61,7 @@ GetType(typename)
   
  [!code-vb[VbVbalrOperators#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#26)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的运算符优先级](operator-precedence.md)
 - [按功能列出的运算符](operators-listed-by-functionality.md)

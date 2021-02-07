@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <claimType>
 title: <claimType>
 ms.date: 03/30/2017
 ms.assetid: d17b5831-9a2c-45c4-b0d1-68f48e72e861
 author: BrucePerlerMS
-ms.openlocfilehash: 1b5427210142c70c31c5f736c9b5e281dca53f33
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 55fd32edc7fb810742c3cf678b434675aebba00e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664218"
 ---
 # \<claimType>
 
@@ -50,6 +51,6 @@ ms.locfileid: "91150864"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<claimTypeRequired>](claimtyperequired.md)|指定传入安全令牌所需的声明集。|

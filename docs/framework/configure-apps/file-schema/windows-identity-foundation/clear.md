@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <clear>
 title: <clear>
 ms.date: 03/30/2017
 ms.assetid: 54dcd1d1-038f-4fc8-a3a4-56ba7a1ca0fd
 author: BrucePerlerMS
-ms.openlocfilehash: 0f043442fb8edd9bf95a839a26cc42e8122d9100
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 460add2722779a61dacc5c7510ea0a94aaef4a3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167062"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664127"
 ---
 # \<clear>
 
@@ -47,6 +48,6 @@ ms.locfileid: "91167062"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<securityTokenHandlers>](securitytokenhandlers.md)|指定注册到终结点的安全令牌处理程序的集合。|

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <filterTables>
 title: <filterTables>
 ms.date: 03/30/2017
 ms.assetid: 41f1ac35-f559-473a-b2c3-8cc83a6a3831
-ms.openlocfilehash: faa26ca108010330475725f83dfd0c6668cfc6b1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 932d0e162c3fdeba8b166d3adaaa73cc3b5293a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664582"
 ---
 # \<filterTables>
 
@@ -45,13 +46,13 @@ ms.locfileid: "91178198"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<filters>](filters-of-routing.md)|一个路由表，包含路由筛选器与在筛选器匹配时消息要发送到的目标终结点之间的映射。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<routing>](routing.md)|一个包含路由筛选器和路由表的配置节。|  
   

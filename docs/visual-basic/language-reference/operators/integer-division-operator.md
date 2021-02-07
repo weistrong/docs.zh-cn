@@ -1,4 +1,5 @@
 ---
+description: '详细了解：操作员 (Visual Basic) '
 title: '\ 运算符'
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - quotients, integer
 - truncation [Visual Basic], integer division
 ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
-ms.openlocfilehash: cf2dc66532925d56cea6fd141f44a245bc2dd8dd
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e15a630d37e423b7a7d0040e495f2543889f37b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873392"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665778"
 ---
 # <a name="-operator-visual-basic"></a>\ 运算符 (Visual Basic)
 
@@ -65,7 +66,7 @@ expression1 \ expression2
  如果 `expression2` 计算结果为零，则 `\` 运算符会引发 <xref:System.DivideByZeroException> 异常。 对于操作数的所有数值数据类型都是如此。  
   
 > [!NOTE]
-> `\`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+> `\`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -75,7 +76,7 @@ expression1 \ expression2
   
  前面的示例中的表达式分别返回值2、3、33和-22。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [\\= 运算符](integer-division-assignment-operator.md)
 - [/Operator (Visual Basic) ](floating-point-division-operator.md)

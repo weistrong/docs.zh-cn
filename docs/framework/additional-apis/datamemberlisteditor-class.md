@@ -1,5 +1,6 @@
 ---
-title: 数据成员列表编辑器类
+description: 了解详细信息： DataMemberListEditor 类
+title: DataMemberListEditor 类
 ms.date: 03/30/2017
 ms.technology: dotnet-winforms
 api_name:
@@ -11,16 +12,16 @@ api_type:
 ms.assetid: c11d5231-78f2-45a7-9210-3b2d0969370e
 topic_type:
 - apiref
-ms.openlocfilehash: 407bbe87e3d186dc901b18dbfee38e2ff69d356a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a78be03733e8338e2c02f4675d3cfbd5f6e27c90
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664764"
 ---
-# <a name="datamemberlisteditor-class"></a>数据成员列表编辑器类
+# <a name="datamemberlisteditor-class"></a>DataMemberListEditor 类
 
-通过列出`DataSource`对象的所有属性以从中选择值源，提供用于编辑数据绑定对象（具有非 null`DataSource`属性的对象）属性的下拉用户界面。  
+提供一个下拉用户界面，用于编辑具有非 null 属性的数据绑定对象的属性 (`DataSource`) 通过列出对象的所有属性 `DataSource` ，从中选择值源。  
   
 ## <a name="syntax"></a>语法
   
@@ -29,18 +30,18 @@ internal class DataMemberListEditor : UITypeEditor
 ```
 
 > [!WARNING]
-> 该`DataMemberListEditor`类是内部的，不应直接在代码中使用。
+> `DataMemberListEditor`类是内部的，不应在代码中直接使用。
 >
-> 在任何情况下，Microsoft 都不支持在生产应用程序中使用此类。
+> 在任何情况下，Microsoft 不支持在生产应用程序中使用此类。
   
 ## <a name="requirements"></a>要求
 
-**命名空间：**<xref:System.Windows.Forms.Design?displayProperty=nameWithType>  
+**命名空间：** <xref:System.Windows.Forms.Design?displayProperty=nameWithType>  
   
-**装配：** 系统.设计（系统中.设计.dll）  
+**程序集：** System.Design.dll) 中的 (设计  
   
-**.NET 框架版本：** 自 2.0 起可用。  
+**.NET Framework 版本：** 自2.0 起可用。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Windows.Forms.Design?displayProperty=nameWithType>

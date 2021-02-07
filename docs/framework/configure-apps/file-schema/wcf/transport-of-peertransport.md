@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <transport> 信息： <peerTransport>
 title: <transport> 的 <peerTransport>
 ms.date: 03/30/2017
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
-ms.openlocfilehash: 7328d67c4649010dce3e1c866238d1e0067e4990
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ba3405c5dfadb513f92ebd537409a3f7b12fa291
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664504"
 ---
 # <a name="transport-of-peertransport"></a>\<transport> 的 \<peerTransport>
 
@@ -36,13 +37,13 @@ ms.locfileid: "91157065"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |credentialType|可选。 指定用于验证通过对等传输发送的消息的凭据的类型。 此属性的类型为 <xref:System.ServiceModel.PeerTransportCredentialType>。|  
   
 ## <a name="credentialtype-attribute"></a>credentialType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |证书|对等通道传输的身份验证需要 X509 证书。|  
 |密码|对等通道传输的身份验证需要正确的密码。|  
@@ -53,7 +54,7 @@ ms.locfileid: "91157065"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-peertransport.md)|定义对等传输的安全设置。|  
   

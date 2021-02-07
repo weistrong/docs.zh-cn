@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息：逻辑/按位运算符 (Visual Basic) '
 title: 逻辑-位运算符
 ms.date: 07/20/2015
 helpviewer_keywords:
 - operators [Visual Basic], logical
 - logical operators [Visual Basic], Visual Basic
 ms.assetid: 55de4889-7679-4859-8063-bee15abca53f
-ms.openlocfilehash: ec39b191f1a8374fd3b6c6d9a72841ec5510afe8
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: b76c82d76a0d476eef569c410294edcc5d072d25
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665570"
 ---
 # <a name="logicalbitwise-operators-visual-basic"></a>逻辑/按位运算符 (Visual Basic)
 
@@ -32,7 +33,7 @@ ms.locfileid: "90866756"
   
  [IsTrue 运算符](istrue-operator.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的运算符优先级](operator-precedence.md)
 - [Visual Basic 中的逻辑运算符和位运算符](../../programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

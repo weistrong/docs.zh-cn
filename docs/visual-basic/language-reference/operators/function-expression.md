@@ -1,4 +1,5 @@
 ---
+description: '详细了解：函数表达式 (Visual Basic) '
 title: 函数表达式
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - functions [Visual Basic], function expressions
 - lambda expressions [Visual Basic], function expression
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
-ms.openlocfilehash: 719969be23a6d94f22a1d86cb4ad3f37e4c3b254
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bef5db7f167b615c2a0c20539521c186683da985
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666012"
 ---
 # <a name="function-expression-visual-basic"></a>函数表达式 (Visual Basic)
 
@@ -37,7 +38,7 @@ End Function
   
 ## <a name="remarks"></a>备注  
 
- *Lambda 表达式*是没有名称的函数，用于计算并返回值。 可以在可以使用委托类型的任何位置使用 lambda 表达式，但不能使用作为的参数 `RemoveHandler` 。 有关委托的详细信息以及对委托使用 lambda 表达式的详细信息，请参阅 [委托语句](../statements/delegate-statement.md) 和 [宽松委托转换](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)。  
+ *Lambda 表达式* 是没有名称的函数，用于计算并返回值。 可以在可以使用委托类型的任何位置使用 lambda 表达式，但不能使用作为的参数 `RemoveHandler` 。 有关委托的详细信息以及对委托使用 lambda 表达式的详细信息，请参阅 [委托语句](../statements/delegate-statement.md) 和 [宽松委托转换](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)。  
   
 ## <a name="lambda-expression-syntax"></a>Lambda 表达式语法  
 
@@ -79,7 +80,7 @@ End Function
   
 ## <a name="example"></a>示例  
 
- Lambda 表达式在语言集成查询 (LINQ) 中的许多查询运算符，可以在基于方法的查询中显式使用。 下面的示例演示一个典型的 LINQ 查询，然后将查询转换为方法格式。  
+ Lambda 表达式在 Language-Integrated 查询 (LINQ) 中采用了许多查询运算符，并且可在基于方法的查询中显式使用。 下面的示例演示一个典型的 LINQ 查询，然后将查询转换为方法格式。  
   
 ```vb  
 Dim londonCusts = From cust In db.Customers  
@@ -94,7 +95,7 @@ Dim londonCusts = db.Customers.
   
  有关查询方法的详细信息，请参阅 [查询](../queries/index.md)。 有关标准查询运算符的详细信息，请参阅 [标准查询运算符概述](../../programming-guide/concepts/linq/standard-query-operators-overview.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Function 语句](../statements/function-statement.md)
 - [Lambda 表达式](../../programming-guide/language-features/procedures/lambda-expressions.md)

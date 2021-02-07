@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： IsNot Operator (Visual Basic) '
 title: IsNot 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - TypeOf...IsNot expression
 - IsNot operator [Visual Basic]
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
-ms.openlocfilehash: ea978f8874cee20fb3a005189fd846f7564da777
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: ac3e127676dfa57d14e07838152022de62fc336b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665661"
 ---
 # <a name="isnot-operator-visual-basic"></a>IsNot 运算符 (Visual Basic)
 
@@ -39,7 +40,7 @@ result = object1 IsNot object2
 
   必需。 任何 `Object` 变量或表达式。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `IsNot`运算符确定两个对象引用是否引用不同的对象。 但是，它不会执行值比较。 如果 `object1` 和 `object2` 都引用完全相同的对象实例，则 `result` 为 `False` ; 如果不是，则为; 如果不是， `result` 则为 `True` 。
 
@@ -61,7 +62,7 @@ result = object1 IsNot object2
 If TypeOf sender IsNot Button Then
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Is 运算符](is-operator.md)
 - [TypeOf 运算符](typeof-operator.md)

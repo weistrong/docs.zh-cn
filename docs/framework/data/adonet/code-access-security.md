@@ -1,16 +1,17 @@
 ---
+description: 了解更多相关信息：代码访问安全性和 ADO.NET
 title: 代码访问安全性
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 93e099eb-daa1-4f1e-b031-c1e10a996f88
-ms.openlocfilehash: c4c18e8026dc230db896103d29d40426dbd11f16
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e7a6054cd7c222c700f5a83e46f5b44bfee23248
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663997"
 ---
 # <a name="code-access-security-and-adonet"></a>代码访问安全性和 ADO.NET
 
@@ -75,7 +76,7 @@ ms.locfileid: "91203834"
   
  下表列出了可用的 <xref:System.Data.SqlClient.SqlClientPermissionAttribute> 属性及其说明：  
   
-|权限属性|描述|  
+|权限属性|说明|  
 |-----------------------------------|-----------------|  
 |`Action`|获取或设置安全性操作。 从 <xref:System.Security.Permissions.SecurityAttribute> 继承。|  
 |`AllowBlankPassword`|启用或禁用连接字符串中空白密码。 有效值为 `true`（启用空白密码的使用）和 `false`（禁用空白密码的使用）。 从 <xref:System.Data.Common.DBDataPermissionAttribute> 继承。|  

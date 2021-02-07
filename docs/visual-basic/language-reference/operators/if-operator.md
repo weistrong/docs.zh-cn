@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下方面的详细信息： If Operator (Visual Basic) '
 title: If 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - conditional operator [Visual Basic]
 - If Operator [Visual Basic]
 ms.assetid: dd56c9df-7cd4-442c-9ba6-20c70ee44c8f
-ms.openlocfilehash: 28fb2afb2c4cf78ffbbb028145de647a8dc512ed
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3b25ab4b6c5f0d2608644adb6e35ff4ad5128f42
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84371098"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665869"
 ---
 # <a name="if-operator-visual-basic"></a>If 运算符 (Visual Basic)
 
@@ -38,7 +39,7 @@ If( [argument1,] argument2, argument3 )
 |---|---|
 |`argument1`|必需。 `Boolean`. 确定要计算和返回的其他参数的值。|
 |`argument2`|必需。 `Object`. 如果计算结果为，则计算并返回 `argument1` `True` 。|
-|`argument3`|必需。 `Object`. 如果计算结果为，则计算并返回， `argument1` `False` 如果 `argument1` 为[可为空](../../programming-guide/language-features/data-types/nullable-value-types.md)的 `Boolean` 变量， [Nothing](../nothing.md)则为。|
+|`argument3`|必需。 `Object`. 如果计算结果为，则计算并返回， `argument1` `False` 如果 `argument1` 为[可为空](../../programming-guide/language-features/data-types/nullable-value-types.md)的 `Boolean` 变量， [](../nothing.md)则为。|
 
 `If`使用三个参数调用的运算符的工作方式类似于 `IIf` 函数，只不过它使用短路计算。 `IIf`函数始终计算其所有三个参数，而 `If` 具有三个参数的运算符只计算两个参数中的两个。 计算第一个 `If` 参数，并将结果强制转换为 `Boolean` 值， `True` 或 `False` 。 如果值为 `True` ， `argument2` 则计算，并返回其值，但不会对其值进行 `argument3` 求值。 如果表达式的值 `Boolean` 为 `False` ， `argument3` 则计算，并返回其值，但不会对其值进行 `argument2` 求值。 下面的示例演示使用 `If` 三个参数时的用法：
 
@@ -63,7 +64,7 @@ If( [argument1,] argument2, argument3 )
 
 [!code-vb[VbVbalrOperators#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class4.vb#102)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Interaction.IIf%2A>
 - [可以为 null 的值类型](../../programming-guide/language-features/data-types/nullable-value-types.md)

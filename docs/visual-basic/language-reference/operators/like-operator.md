@@ -1,4 +1,5 @@
 ---
+description: '了解更多相关信息： Like Operator (Visual Basic) '
 title: Like 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - data [Visual Basic], string comparisons
 - string comparison [Visual Basic], Like operators
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
-ms.openlocfilehash: 49dfe5cf5dbcf8dc6f79f569a92e36aa81806913
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: f1be174010b7acae5bface4fc0a2d0e606a90fca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665583"
 ---
 # <a name="like-operator-visual-basic"></a>Like 运算符 (Visual Basic)
 
@@ -111,7 +112,7 @@ result = string Like pattern
   
 ## <a name="overloading"></a>重载  
 
- `Like`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ `Like`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -119,7 +120,7 @@ result = string Like pattern
   
  [!code-vb[VbVbalrOperators#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#30)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Strings.InStr%2A>
 - <xref:Microsoft.VisualBasic.Strings.StrComp%2A>

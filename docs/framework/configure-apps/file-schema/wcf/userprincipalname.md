@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <userPrincipalName>
 title: <userPrincipalName>
 ms.date: 03/30/2017
 ms.assetid: 68032f69-149e-4613-bae4-18314d4fd294
-ms.openlocfilehash: 353d3e2d88e3515e54deadab85c37ce3be26ef29
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 73ace3d6f3d5cb88f2630a4a2ae319decf420021
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664413"
 ---
 # \<userPrincipalName>
 
@@ -36,7 +37,7 @@ ms.locfileid: "91203860"
   
 |属性|说明|  
 |---------------|-----------------|  
-|值|一个用户帐户名（有时称为“用户登录名”）和一个域名（标识用户帐户所在的域）。 这是登录到 Windows 域的标准用法。 格式为： someone@example.com () 电子邮件地址。|  
+|value|一个用户帐户名（有时称为“用户登录名”）和一个域名（标识用户帐户所在的域）。 这是登录到 Windows 域的标准用法。 格式为： someone@example.com () 电子邮件地址。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -44,7 +45,7 @@ ms.locfileid: "91203860"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<identity>](identity.md)|指定要由客户端进行身份验证的服务的标识。|  
   

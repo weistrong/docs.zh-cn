@@ -1,4 +1,5 @@
 ---
+description: '详细了解： IsTrue Operator (Visual Basic) '
 title: IsTrue 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - IsTrue operator [Visual Basic]
 - OrElse operator [Visual Basic]
 ms.assetid: b6cec0f2-61b1-4331-a7f0-4d07ee3179d6
-ms.openlocfilehash: 2e67a4adabe58ab12d317ae6318c0a2fac29da7d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 50b618c888ce988da5241041fb2f728e0a581c70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665648"
 ---
 # <a name="istrue-operator-visual-basic"></a>IsTrue 运算符 (Visual Basic)
 
@@ -39,7 +40,7 @@ ms.locfileid: "90866944"
  如果未定义任何到 `Boolean` 或运算符的转换 `IsTrue` ，则编译器会发出错误消息。  
   
 > [!NOTE]
-> `IsTrue`运算符可以*重载*，这意味着当类或结构的操作数具有该类或结构的类型时，该类或结构可以重新定义它的行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+> `IsTrue`运算符可以 *重载*，这意味着当类或结构的操作数具有该类或结构的类型时，该类或结构可以重新定义它的行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -47,7 +48,7 @@ ms.locfileid: "90866944"
   
  [!code-vb[VbVbalrOperators#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#28)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IsFalse 运算符](isfalse-operator.md)
 - [如何：定义运算符](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)

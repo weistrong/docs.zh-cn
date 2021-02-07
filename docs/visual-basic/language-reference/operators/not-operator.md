@@ -1,4 +1,5 @@
 ---
+description: '详细了解： Not Operator (Visual Basic) '
 title: Not 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - logical negation
 - operators [Visual Basic], negation
 ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
-ms.openlocfilehash: 7d0beea16a2ac00be090c6a241f9790a0ba33390
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 91f3525b52d6f38081b8e5ba208c193f714a4045
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665349"
 ---
 # <a name="not-operator-visual-basic"></a>Not 运算符 (Visual Basic)
 
@@ -64,7 +65,7 @@ result = Not expression
   
 ## <a name="overloading"></a>重载  
 
- `Not`运算符可以*重载*，这意味着当类或结构的操作数具有该类或结构的类型时，该类或结构可以重新定义它的行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ `Not`运算符可以 *重载*，这意味着当类或结构的操作数具有该类或结构的类型时，该类或结构可以重新定义它的行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -82,7 +83,7 @@ result = Not expression
   
  前面的示例分别产生–11、–9和–7的结果。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [逻辑/按位运算符 (Visual Basic)](logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](operator-precedence.md)

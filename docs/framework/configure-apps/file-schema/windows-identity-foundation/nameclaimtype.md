@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <nameClaimType>
 title: <nameClaimType>
 ms.date: 03/30/2017
 ms.assetid: 17514d95-f0f5-4789-8e28-346640dc227c
 author: BrucePerlerMS
-ms.openlocfilehash: 4ffc19366d91e4a14ee0f931d7009ede390cc097
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d5bc2f96c2753febdb61c3495b7067c0e31e52d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664049"
 ---
 # \<nameClaimType>
 
@@ -47,7 +48,7 @@ ms.locfileid: "91165021"
   
 |属性|说明|  
 |---------------|-----------------|  
-|值|一个字符串，指定表示要用于属性的声明的声明类型的 URI <xref:System.Security.Principal.IIdentity.Name%2A> 。 必需。|  
+|value|一个字符串，指定表示要用于属性的声明的声明类型的 URI <xref:System.Security.Principal.IIdentity.Name%2A> 。 必需。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -55,7 +56,7 @@ ms.locfileid: "91165021"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<samlSecurityTokenRequirement>](samlsecuritytokenrequirement.md)|为 <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> 类、 <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> 类或其中任何一个类的派生类提供配置。|  
   

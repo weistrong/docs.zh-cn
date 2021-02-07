@@ -1,4 +1,5 @@
 ---
+description: '详细了解： Mod operator (Visual Basic) '
 title: Mod 运算符
 ms.date: 04/24/2018
 f1_keywords:
@@ -12,14 +13,14 @@ helpviewer_keywords:
 - arithmetic operators [Visual Basic], Mod
 - math operators [Visual Basic]
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
-ms.openlocfilehash: 32065567799b023556a018ae2f5ba338796e0b49
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bfec39f54041714258e21f087a044dce24edcb6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665427"
 ---
-# <a name="mod-operator-visual-basic"></a>Mod 运算符（Visual Basic）
+# <a name="mod-operator-visual-basic"></a>Mod 运算符 (Visual Basic) 
 
 将两个数字相除，仅返回余数。
 
@@ -49,9 +50,9 @@ result = number1 Mod number2
 结果是除以后的余数 `number1` `number2` 。 例如，表达式的 `14 Mod 4` 计算结果为2。
 
 > [!NOTE]
-> 在数学中，*余数*和*模数*之间存在差异，但负数的结果不同。 `Mod`Visual Basic、.NET Framework `op_Modulus` 运算符和基础[rem](<xref:System.Reflection.Emit.OpCodes.Rem>) IL 指令中的运算符都执行了余数运算。
+> 在数学中， *余数* 和 *模数* 之间存在差异，但负数的结果不同。 `Mod`Visual Basic、.NET Framework `op_Modulus` 运算符和基础[rem](<xref:System.Reflection.Emit.OpCodes.Rem>) IL 指令中的运算符都执行了余数运算。
 
-操作的结果 `Mod` 保留被除数的符号， `number1` 因此它可以是正数也可以是负数。 结果始终处于范围内（- `number2` ， `number2` ），而不是排他。 例如：
+操作的结果 `Mod` 保留被除数的符号， `number1` 因此它可以是正数也可以是负数。 结果始终处于范围 (- `number2` 、 `number2`) 、独占。 例如：
 
 ```vb
 Public Module Example
@@ -73,13 +74,13 @@ End Module
 
 如果 `number1` 或 `number2` 是浮点值，则返回相除的浮点余数。 结果的数据类型是最小的数据类型，该数据类型可以包含与和的数据类型相除所得的所有可能 `number1` 值 `number2` 。
 
-如果 `number1` 或的 `number2` 计算结果不为[空](../nothing.md)，则将其视为零。
+如果 `number1` 或的 `number2` 计算结果不为 [空](../nothing.md)，则将其视为零。
 
 相关运算符包括：
 
-- [\ 运算符（Visual Basic）](integer-division-operator.md)返回相除的整数商。 例如，表达式的 `14 \ 4` 计算结果为3。
+- [\ 运算符 (Visual Basic) ](integer-division-operator.md)返回相除的整数商。 例如，表达式的 `14 \ 4` 计算结果为3。
 
-- [/运算符（Visual Basic）](floating-point-division-operator.md)以浮点数的形式返回所有商，包括余数。 例如，表达式的 `14 / 4` 计算结果为3.5。
+- [/运算符 (Visual Basic) ](floating-point-division-operator.md)将完整商（包括余数）作为浮点数返回。 例如，表达式的 `14 / 4` 计算结果为3.5。
 
 ## <a name="attempted-division-by-zero"></a>尝试被零除
 
@@ -98,11 +99,11 @@ End Module
 
 ## <a name="floating-point-imprecision"></a>浮点不精确性
 
-使用浮点数时，请记住，内存中不一定有精确的十进制表示形式。 这可能会导致某些操作产生意外结果，如值比较和 `Mod` 运算符。 有关详细信息，请参阅[数据类型疑难解答](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)。
+使用浮点数时，请记住，内存中不一定有精确的十进制表示形式。 这可能会导致某些操作产生意外结果，如值比较和 `Mod` 运算符。 有关详细信息，请参阅 [数据类型疑难解答](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)。
 
 ## <a name="overloading"></a>重载
 
-`Mod`运算符可以*重载*，这意味着类或结构可以重新定义它的行为。 如果你的代码应用于 `Mod` 包含此类重载的类或结构的实例，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。
+`Mod`运算符可以 *重载*，这意味着类或结构可以重新定义它的行为。 如果你的代码应用于 `Mod` 包含此类重载的类或结构的实例，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。
 
 ## <a name="example"></a>示例
 
@@ -116,7 +117,7 @@ End Module
 
 [!code-vb[VbVbalrOperators#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#32)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Conversion.Int%2A>
 - <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
@@ -125,4 +126,4 @@ End Module
 - [按功能列出的运算符](operators-listed-by-functionality.md)
 - [数据类型疑难解答](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)
 - [算术运算符 (Visual Basic)](../../programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
-- [\ 运算符（Visual Basic）](integer-division-operator.md)
+- [\ 运算符 (Visual Basic) ](integer-division-operator.md)

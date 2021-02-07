@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：  << 运算符 (Visual Basic) '
 title: << 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - << operator [Visual Basic]
 - operator <<, Visual Basic left shift operator
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
-ms.openlocfilehash: 77bf26d4e6bb068f9130deed5eb1ecbaee62afce
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 079af61e5c4ce3834db0877feace724c74c8169c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866793"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665622"
 ---
 # <a name="-operator-visual-basic"></a>\<\< 操作员 (Visual Basic) 
 
@@ -54,7 +55,7 @@ result = pattern << amount
  算术移位从不产生溢出异常。  
   
 > [!NOTE]
-> `<<`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果代码对这样的类或结构使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+> `<<`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果代码对这样的类或结构使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -76,7 +77,7 @@ result = pattern << amount
   
  的移位量 `result4` 计算为17和15，这等于1。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [移位运算符](bit-shift-operators.md)
 - [赋值运算符](assignment-operators.md)

@@ -1,4 +1,5 @@
 ---
+description: 详细了解：中的运算符优先级 Visual Basic
 title: 运算符优先级
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - math operators [Visual Basic]
 - order of precedence
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
-ms.openlocfilehash: b5649cd2a58fd8d300df58c563aebeed8976c4f5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 7aa4677549328d450834f3a1ecb047d405893f69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665284"
 ---
 # <a name="operator-precedence-in-visual-basic"></a>Visual Basic 中的运算符优先级
 
@@ -77,7 +78,7 @@ ms.locfileid: "90874787"
 
  独占析取 (`Xor`) 
 
-### <a name="comments"></a>备注
+### <a name="comments"></a>注释
 
  `=`运算符只是相等比较运算符，而不是赋值运算符。
 
@@ -87,7 +88,7 @@ ms.locfileid: "90874787"
 
 ## <a name="associativity"></a>结合性
 
- 当相同优先级的运算符同时出现在表达式中时（例如，乘法和除法），编译器将按从左至右的顺序计算每个运算。 下面的示例对此进行了演示。
+ 当相同优先级的运算符同时出现在表达式中时（例如，乘法和除法），编译器将按从左至右的顺序计算每个运算。 下面的示例阐释了这一点。
 
 ```vb
 Dim n1 As Integer = 96 / 8 / 4
@@ -101,7 +102,7 @@ Dim n3 As Integer = 96 / (8 / 4)
 
 ## <a name="overriding-precedence-and-associativity"></a>重写优先级和关联性
 
- 您可以使用括号来强制在其他部分中计算表达式。 这可以覆盖优先级顺序和左侧相关性。 Visual Basic 始终执行括在括号内的操作。 但在括号中，它将保持普通的优先级和关联性，除非在括号内使用括号。 下面的示例对此进行了演示。
+ 您可以使用括号来强制在其他部分中计算表达式。 这可以覆盖优先级顺序和左侧相关性。 Visual Basic 始终执行括在括号内的操作。 但在括号中，它将保持普通的优先级和关联性，除非在括号内使用括号。 下面的示例阐释了这一点。
 
 ```vb
 Dim a, b, c, d, e, f, g As Double
@@ -121,7 +122,7 @@ g = (a - (b + c)) / (d * e)
 ' The preceding line sets g to 0.5.
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [= 运算符](assignment-operator.md)
 - [Is 运算符](is-operator.md)

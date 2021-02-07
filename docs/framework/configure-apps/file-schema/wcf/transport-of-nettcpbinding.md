@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <transport> 信息： <netTcpBinding>
 title: <transport> 的 <netTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: 49462e0a-66e1-463f-b3e1-c83a441673c6
-ms.openlocfilehash: 8f752373c51992c51b747f5f4dc4a63910a387c6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9005de300b41c9f53c62875ee185d0f8a3ee8d7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664543"
 ---
 # <a name="transport-of-nettcpbinding"></a>\<transport> 的 \<netTcpBinding>
 
@@ -47,7 +48,7 @@ ms.locfileid: "91162187"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |clientCredentialType|可选。 指定要在使用传输安全性执行客户端身份验证时使用的凭据类型。<br /><br /> -默认值为 `Windows` 。<br />-此属性的类型为 <xref:System.ServiceModel.TcpClientCredentialType> 。|  
 |protectionLevel|可选。 定义 TCP 传输级别的安全性。 消息签名降低了在消息传输过程中第三方对消息进行篡改的风险。 加密为传输过程提供了数据级保密功能。<br /><br /> 默认值是 `EncryptAndSign`。|  
@@ -56,7 +57,7 @@ ms.locfileid: "91162187"
   
 ## <a name="clientcredentialtype-attribute"></a>clientCredentialType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|客户端为匿名客户端。 这需要服务证书。|  
 |Windows|指定使用 SP 协商（Kerberos 协商）进行客户端 Windows 身份验证。|  
@@ -64,10 +65,10 @@ ms.locfileid: "91162187"
   
 ## <a name="protectionlevel-attribute"></a>protectionLevel 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|无保护。|  
-|签名|对消息进行签名。|  
+|Sign|对消息进行签名。|  
 |EncryptAndSign|-对消息进行加密和签名。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -76,7 +77,7 @@ ms.locfileid: "91162187"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-nettcpbinding.md)|指定的安全功能 [\<netTcpBinding>](nettcpbinding.md) 。|  
   

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：？。  ( # A1 null- (Visual Basic 的条件运算符) '
 title: Null 条件运算符
 ms.date: 10/19/2018
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - ?. operator [Visual Basic]
 - ?[] operator [C#]
 - ?[] operator [Visual Basic]
-ms.openlocfilehash: bffbba859968e0a050397cd9e685c142f801798a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 558b8921d0da4089505dd1035cb6039af24a2802
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401467"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665362"
 ---
-# <a name="-and--null-conditional-operators-visual-basic"></a>?. 与?（） null-条件运算符（Visual Basic）
+# <a name="-and--null-conditional-operators-visual-basic"></a>?.  ( # A1 null- (Visual Basic 的条件运算符) 
 
-`Nothing`在执行成员访问（）或索引（）操作之前，测试左操作数的值是否为 null （） `?.` `?()` ; `Nothing` 如果左操作数的计算结果为，则返回 `Nothing` 。 请注意，在通常返回值类型的表达式中，null 条件运算符将返回 <xref:System.Nullable%601> 。
+测试 () 的左操作数的值， `Nothing` 然后在执行成员访问 (`?.`) 或索引 (`?()`) 操作; `Nothing` 如果左操作数的计算结果为，则返回 `Nothing` 。 请注意，在通常返回值类型的表达式中，null 条件运算符将返回 <xref:System.Nullable%601> 。
 
 这些运算符可帮助编写更少的代码来处理 null 检查，尤其是在对数据结构进行降序操作时。 例如：
 
@@ -39,7 +40,7 @@ If customers IsNot Nothing Then
 End If
 ```
 
-有时，你需要对可能为 null 的对象执行操作，这取决于该对象上布尔成员的值（如以下示例中的布尔属性 `IsAllowedFreeShipping` ）：
+有时，你需要对可能为 null 的对象执行操作，具体取决于该对象上布尔成员的值 (如下面的示例中的布尔属性 `IsAllowedFreeShipping`) ：
 
 ```vb
 Dim customer = FindCustomerByID(123) 'customer will be Nothing if not found.
@@ -109,7 +110,7 @@ SendNews?.Invoke("Just in...")
 
 新方法是线程安全的，因为编译器生成的代码仅评估 `SendNews` 一次，从而使结果保持在临时变量中。 你需要显式调用 `Invoke` 方法，因为不存在 NULL 条件委托调用语法 `SendNews?(String)`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运算符 (Visual Basic)](index.md)
 - [Visual Basic 编程指南](../../programming-guide/index.md)

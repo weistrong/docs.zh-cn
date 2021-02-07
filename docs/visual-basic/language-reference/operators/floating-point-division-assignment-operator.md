@@ -1,4 +1,5 @@
 ---
+description: '详细了解：/= 运算符 (Visual Basic) '
 title: /= 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - operator /=
 - compound assignment statements [Visual Basic]
 ms.assetid: a1e22d0e-8380-4761-9da1-84fb51c34821
-ms.openlocfilehash: d47a69e454305ce9417a46b5bbfbbb55a1ad1dc3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 3020372be18f554df18fa6dac539ab9d0b2f725e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867080"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666025"
 ---
 # <a name="-operator-visual-basic"></a>/= 运算符 (Visual Basic)
 
@@ -45,7 +46,7 @@ variableorproperty /= expression
   
 ## <a name="overloading"></a>重载  
 
- [/运算符 (Visual Basic) ](floating-point-division-operator.md)可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `/` 运算符会影响运算符的行为 `/=` 。 如果你的代码 `/=` 在重载的类或结构上使用 `/` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ [/运算符 (Visual Basic)](floating-point-division-operator.md)可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `/` 运算符会影响运算符的行为 `/=` 。 如果你的代码 `/=` 在重载的类或结构上使用 `/` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -53,7 +54,7 @@ variableorproperty /= expression
   
  [!code-vb[VbVbalrOperators#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#17)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [/Operator (Visual Basic) ](floating-point-division-operator.md)
 - [\\= 运算符](integer-division-assignment-operator.md)

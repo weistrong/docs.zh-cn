@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Is operator (Visual Basic) '
 title: Is 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - TypeOf...Is expression
 - Is operator [Visual Basic]
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
-ms.openlocfilehash: 1c2d87ef0a8202332c87af552f488d652c400213
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 0912ebd9bc9c33149568c6cea0197ef24c305ff2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812258"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665679"
 ---
 # <a name="is-operator-visual-basic"></a>Is 运算符 (Visual Basic) 
 
@@ -37,7 +38,7 @@ result = object1 Is object2
  `object2`  
  必需。 任意 `Object` 名称。  
   
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `Is`运算符确定两个对象引用是否引用同一对象。 但是，它不会执行值比较。 如果 `object1` 和 `object2` 都引用完全相同的对象实例，则 `result` 为 `True` ; 如果不是，则为; 如果不是，则 `result` 为 `False` 。
 
@@ -60,7 +61,7 @@ result = object1 Is object2
 If TypeOf sender Is Button Then
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [TypeOf 运算符](typeof-operator.md)
 - [IsNot 运算符](isnot-operator.md)
