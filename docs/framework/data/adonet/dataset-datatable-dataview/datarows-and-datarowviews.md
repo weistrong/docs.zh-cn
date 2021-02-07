@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息： Datarow 和 Datarowview
 title: DataRow 和 DataRowView
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8f5eec26-b809-4aca-8778-7e202356d856
-ms.openlocfilehash: bce90c1d310178e66da7c758c6df2cd357199c8b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d7700922a9ae76fb9898412b6a08394059e6e494
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153282"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724942"
 ---
-# <a name="datarows-and-datarowviews"></a><span data-ttu-id="b677f-102">DataRow 和 DataRowView</span><span class="sxs-lookup"><span data-stu-id="b677f-102">DataRows and DataRowViews</span></span>
+# <a name="datarows-and-datarowviews"></a><span data-ttu-id="b63e2-103">DataRow 和 DataRowView</span><span class="sxs-lookup"><span data-stu-id="b63e2-103">DataRows and DataRowViews</span></span>
 
-<span data-ttu-id="b677f-103"><xref:System.Data.DataView> 公开 <xref:System.Data.DataRowView> 对象的可枚举集合。</span><span class="sxs-lookup"><span data-stu-id="b677f-103">A <xref:System.Data.DataView> exposes an enumerable collection of <xref:System.Data.DataRowView> objects.</span></span> <span data-ttu-id="b677f-104">**DataRowView**对象将值公开为按基础表中的列的名称或序号引用进行索引的对象数组。</span><span class="sxs-lookup"><span data-stu-id="b677f-104">The **DataRowView** objects expose values as object arrays that are indexed by either the name or the ordinal reference of the column in the underlying table.</span></span> <span data-ttu-id="b677f-105">可以 <xref:System.Data.DataRow> 使用 DataRowView 的属性访问由**DataRowView**公开的 <xref:System.Data.DataRowView.Row%2A> 。 **DataRowView**</span><span class="sxs-lookup"><span data-stu-id="b677f-105">You can access the <xref:System.Data.DataRow> that is exposed by the **DataRowView** by using the <xref:System.Data.DataRowView.Row%2A> property of the **DataRowView**.</span></span>  
+<span data-ttu-id="b63e2-104"><xref:System.Data.DataView> 公开 <xref:System.Data.DataRowView> 对象的可枚举集合。</span><span class="sxs-lookup"><span data-stu-id="b63e2-104">A <xref:System.Data.DataView> exposes an enumerable collection of <xref:System.Data.DataRowView> objects.</span></span> <span data-ttu-id="b63e2-105">**DataRowView** 对象将值公开为按基础表中的列的名称或序号引用进行索引的对象数组。</span><span class="sxs-lookup"><span data-stu-id="b63e2-105">The **DataRowView** objects expose values as object arrays that are indexed by either the name or the ordinal reference of the column in the underlying table.</span></span> <span data-ttu-id="b63e2-106">可以 <xref:System.Data.DataRow> 使用 DataRowView 的属性访问由 **DataRowView** 公开的 <xref:System.Data.DataRowView.Row%2A> 。 </span><span class="sxs-lookup"><span data-stu-id="b63e2-106">You can access the <xref:System.Data.DataRow> that is exposed by the **DataRowView** by using the <xref:System.Data.DataRowView.Row%2A> property of the **DataRowView**.</span></span>  
   
- <span data-ttu-id="b677f-106">使用**DataRowView**查看值时，DataView 的属性将 <xref:System.Data.DataView.RowStateFilter%2A> 确定公开基础**DataView** **DataRow**的行版本。</span><span class="sxs-lookup"><span data-stu-id="b677f-106">When you view values by using a **DataRowView**, the <xref:System.Data.DataView.RowStateFilter%2A> property of the **DataView** determines which row version of the underlying **DataRow** is exposed.</span></span> <span data-ttu-id="b677f-107">有关使用 **DataRow**访问不同行版本的信息，请参阅 [行状态和行版本](row-states-and-row-versions.md)。</span><span class="sxs-lookup"><span data-stu-id="b677f-107">For information about accessing different row versions using a **DataRow**, see [Row States and Row Versions](row-states-and-row-versions.md).</span></span>  
+ <span data-ttu-id="b63e2-107">使用 **DataRowView** 查看值时，DataView 的属性将 <xref:System.Data.DataView.RowStateFilter%2A> 确定公开基础 **DataRow** 的行版本。</span><span class="sxs-lookup"><span data-stu-id="b63e2-107">When you view values by using a **DataRowView**, the <xref:System.Data.DataView.RowStateFilter%2A> property of the **DataView** determines which row version of the underlying **DataRow** is exposed.</span></span> <span data-ttu-id="b63e2-108">有关使用 **DataRow** 访问不同行版本的信息，请参阅 [行状态和行版本](row-states-and-row-versions.md)。</span><span class="sxs-lookup"><span data-stu-id="b63e2-108">For information about accessing different row versions using a **DataRow**, see [Row States and Row Versions](row-states-and-row-versions.md).</span></span>  
   
- <span data-ttu-id="b677f-108">以下代码示例显示一个表中的所有当前值和原始值。</span><span class="sxs-lookup"><span data-stu-id="b677f-108">The following code example displays all the current and original values in a table.</span></span>  
+ <span data-ttu-id="b63e2-109">以下代码示例显示一个表中的所有当前值和原始值。</span><span class="sxs-lookup"><span data-stu-id="b63e2-109">The following code example displays all the current and original values in a table.</span></span>  
   
 ```vb  
 Dim catView As DataView = New DataView(catDS.Tables("Categories"))  
@@ -60,11 +61,11 @@ public static void WriteView(DataView thisDataView)
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="b677f-109">请参阅</span><span class="sxs-lookup"><span data-stu-id="b677f-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b63e2-110">请参阅</span><span class="sxs-lookup"><span data-stu-id="b63e2-110">See also</span></span>
 
 - <xref:System.Data.DataRowVersion>
 - <xref:System.Data.DataViewRowState>
 - <xref:System.Data.DataView>
 - <xref:System.Data.DataRowView>
-- [<span data-ttu-id="b677f-110">DataView</span><span class="sxs-lookup"><span data-stu-id="b677f-110">DataViews</span></span>](dataviews.md)
-- [<span data-ttu-id="b677f-111">ADO.NET 概述</span><span class="sxs-lookup"><span data-stu-id="b677f-111">ADO.NET Overview</span></span>](../ado-net-overview.md)
+- [<span data-ttu-id="b63e2-111">DataView</span><span class="sxs-lookup"><span data-stu-id="b63e2-111">DataViews</span></span>](dataviews.md)
+- [<span data-ttu-id="b63e2-112">ADO.NET 概述</span><span class="sxs-lookup"><span data-stu-id="b63e2-112">ADO.NET Overview</span></span>](../ado-net-overview.md)
