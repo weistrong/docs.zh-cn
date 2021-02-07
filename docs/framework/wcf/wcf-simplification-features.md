@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WCF 简化功能
 title: WCF 简化功能
 ms.date: 03/30/2017
 ms.assetid: 4535a511-6064-4da0-b361-80262a891663
-ms.openlocfilehash: 8a818ec0852cfae20ef23fede04b55b08a7449a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf89ff7775e2a162760c3c6c598a045ddccdf8d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703374"
 ---
 # <a name="wcf-simplification-features"></a>WCF 简化功能
 
@@ -94,7 +95,7 @@ WCF 提供了 ASP.NET 兼容模式，以向开发人员授予编写 WCF 服务�
 
 下表描述了已更改的设置以及可在何处找到其他信息。
 
-|properties|开|新默认值|更多信息|
+|属性|开|新默认值|更多信息|
 |--------------|--------|-----------------|----------------------|
 |channelInitializationTimeout|<xref:System.ServiceModel.NetTcpBinding>|30 秒|此属性可确定 TCP 连接使用 .NET 组帧协议对自身进行身份验证所需的时间。 客户端需要发送一些初始数据，然后服务器才有足够的信息来执行身份验证。 此超时被有意设置为小于 ReceiveTimeout（10 分钟），这样，未经身份验证的恶意客户端就无法长时间保持绑到该服务器的连接。 默认值为 30 秒。 有关的详细信息 <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ChannelInitializationTimeout%2A>|
 |listenBacklog|<xref:System.ServiceModel.NetTcpBinding>|16 * 处理器数|此套接字级别的属性描述了要排队的“挂起接受”请求的数目。 如果侦听积压工作 (backlog) 队列已满，则会拒绝新的套接字请求。 有关的详细信息 <xref:System.ServiceModel.NetTcpBinding.ListenBacklog%2A>|

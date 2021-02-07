@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：排查 Windows Communication Foundation 教程入门问题
 title: 排查 Windows Communication Foundation 教程入门
 ms.date: 01/25/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
-ms.openlocfilehash: 4d471372419996c5bc490c2d0fdd83927428a41e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c57598da80beb7b95d324359f6f9cf7cab9a4879
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703388"
 ---
 # <a name="troubleshoot-the-get-started-with-windows-communication-foundation-tutorials"></a>排查 Windows Communication Foundation 教程入门
 
@@ -98,7 +99,7 @@ Visual Basic 应用程序的入口点不正确。 进行以下更改：
     </binding
     ```  
 
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 
  [WCF 应用程序入门](getting-started-tutorial.md)  
  [WCF 疑难解答快速入门](wcf-troubleshooting-quickstart.md)  

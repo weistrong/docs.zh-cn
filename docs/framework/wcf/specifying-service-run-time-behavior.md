@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：指定服务 Run-Time 行为
 title: 指定服务运行时行为
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 5c5450ea-6af1-4b75-a267-613d0ac54707
-ms.openlocfilehash: 61c3b8ebd431c3a16475342984b463d5f8842a89
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a7336a64c32773b0fa960879021bb04cccfaa24f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "96235878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703479"
 ---
 # <a name="specifying-service-run-time-behavior"></a>指定服务运行时行为
 
@@ -129,7 +130,7 @@ ms.locfileid: "96235878"
   
 - <xref:System.ServiceModel.TransactionFlowAttribute>. 指定服务操作接受事务标头所处的级别。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [正在配置服务](configuring-services.md)
 - [如何：控制服务实例化](./feature-details/how-to-control-service-instancing.md)

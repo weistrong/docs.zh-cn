@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：实例化 TimeZoneInfo 对象
 title: 如何：实例化 TimeZoneInfo 对象
 ms.date: 04/10/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - instantiating time zone objects
 - time zone objects [.NET], instantiation
 ms.assetid: 8cb620e5-c6a6-4267-a52e-beeb73cd1a34
-ms.openlocfilehash: c4e441e793244dfe368fb86c3e77fcf67a685558
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: d063833aa60142bf6f942a836c7f89777d9073a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817817"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702608"
 ---
 # <a name="how-to-instantiate-a-timezoneinfo-object"></a>如何：实例化 TimeZoneInfo 对象
 
@@ -40,7 +41,7 @@ ms.locfileid: "94817817"
 
 如果你的应用程序依赖于一个必须存在的时区，则应首先调用 <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> 方法从注册表中检索时区信息。 如果方法调用失败，则异常处理程序应创建时区的新实例，或通过对序列化的 <xref:System.TimeZoneInfo> 对象进行反序列化来重新创建它。 有关示例，请参阅 [如何：从嵌入的资源还原时区](restore-time-zones-from-an-embedded-resource.md) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)
 - [查找本地系统上定义的时区](finding-the-time-zones-on-local-system.md)

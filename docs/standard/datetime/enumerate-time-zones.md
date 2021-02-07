@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：枚举计算机上存在的时区
 title: 如何：枚举计算机上的时区
 ms.date: 04/10/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - time zones [.NET], enumerating
 - enumerating time zones [.NET]
 ms.assetid: bb7a42ab-6bd9-4c5c-b734-5546d51f8669
-ms.openlocfilehash: 276c13bb95685e9588e25238f1a6e45cd57a6c91
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 98227d61ed81828f9c0614f622fed9a9667c6f4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817960"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702673"
 ---
 # <a name="how-to-enumerate-time-zones-present-on-a-computer"></a>如何：枚举计算机上的时区
 
@@ -66,7 +67,7 @@ ms.locfileid: "94817960"
 
   <xref:System.Collections.ObjectModel>
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)
 - [如何：将时区保存到嵌入的资源](save-time-zones-to-an-embedded-resource.md)

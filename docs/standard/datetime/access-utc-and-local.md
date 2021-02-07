@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：访问预定义 UTC 和本地时区对象
 title: 如何：访问预定义 UTC 和本地时区对象
 ms.date: 04/10/2017
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - time zones [.NET], retrieving
 - time zones [.NET], UTC
 ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
-ms.openlocfilehash: b92ac812ed0bd0e80bb3a6ab03b52746eb15db97
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 74e3ca601ac0b3a6a684569b0931f8566b5d5d26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702751"
 ---
 # <a name="how-to-access-the-predefined-utc-and-local-time-zone-objects"></a>如何：访问预定义 UTC 和本地时区对象
 
@@ -50,7 +51,7 @@ ms.locfileid: "94818103"
 
 - <xref:System>要导入的命名空间与 `using` c # 代码) 中 (必需的语句一起导入。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)
 - [查找本地系统上定义的时区](finding-the-time-zones-on-local-system.md)

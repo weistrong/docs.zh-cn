@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 119-WorkflowInstanceUpdatedRecord
 title: 119 - WorkflowInstanceUpdatedRecord
 ms.date: 03/30/2017
 ms.assetid: 32485d0a-dcdb-45bc-b1e3-79fa9ad9439b
-ms.openlocfilehash: c76ce2ffcd25ebe09463e6d704787f321baa2cb3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e59bbe81d548fccb0d44d6f8c1b442ee6ad685f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96278656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703193"
 ---
 # <a name="119---workflowinstanceupdatedrecord"></a>119 - WorkflowInstanceUpdatedRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96278656"
 |-|-|  
 |ID|119|  
 |关键字|HealthMonitoring、WFTracking|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当更新工作流实例时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96278656"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  

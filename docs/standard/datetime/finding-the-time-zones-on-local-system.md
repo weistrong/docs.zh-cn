@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：查找本地系统上定义的时区
 title: 查找本地系统上定义的时区
 ms.date: 04/10/2017
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - UTC times, finding local system time zones
 - time zones [.NET], UTC
 ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
-ms.openlocfilehash: 02467e10494e72c83ad9521228f6c4151c4a6bd1
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 1b7a4d1962adac42b47cda42d4d1223c4b79852a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702634"
 ---
 # <a name="finding-the-time-zones-defined-on-a-local-system"></a>查找本地系统上定义的时区
 
@@ -34,7 +35,7 @@ ms.locfileid: "94817934"
 
 时区标识符是唯一标识时区的键字段。 虽然大多数键都相对较短，但时区标识符相对较长。 在大多数情况下，其值对应于 <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=nameWithType> 属性，该属性用于提供时区标准时间的名称。 但是，有例外情况。 确保提供有效标识符最好的办法是枚举系统上可用的时区，并记下其关联的标识符。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [日期、时间和时区](index.md)
 - [如何：访问预定义的 UTC 和本地时区对象](access-utc-and-local.md)

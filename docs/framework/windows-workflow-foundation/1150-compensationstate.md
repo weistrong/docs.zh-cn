@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1150-CompensationState
 title: 1150 - CompensationState
 ms.date: 03/30/2017
 ms.assetid: eb015842-cc5a-47be-bce5-6af39e567723
-ms.openlocfilehash: 2adb317521b8659c2419e4c04aabf4cf4499b36f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4adc246cbe46dee3594bc6c0330c8e0306489219
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285104"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703336"
 ---
 # <a name="1150---compensationstate"></a>1150 - CompensationState
 
@@ -17,10 +18,10 @@ ms.locfileid: "96285104"
 |-|-|  
 |ID|1150|  
 |关键字|WFActivities|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示状态在 CompensableActivity 中发生更改。  
   
