@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <udpTransportSettings>
 title: <udpTransportSettings>
 ms.date: 03/30/2017
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
-ms.openlocfilehash: ed59a139ac21e7cfb4400d17f1fc6a0fa3096641
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bfd862009401fef160939fb9acaa66fc9ca23ddb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183671"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749150"
 ---
 # \<udpTransportSettings>
 
@@ -47,7 +48,7 @@ ms.locfileid: "91183671"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |duplicateMessageHistoryLength|一个整数，指定传输用于标识重复消息的最大消息哈希数。  将在 TransportManager 级别进行重复检测。 将此属性设置为 0 即可禁用重复检测。<br /><br /> 系统管理员或开发人员可以使用此特性关闭重复消息检测算法。 如果您希望实现自己的重复检测算法，可能需要这一功能。<br /><br /> 默认值为 4112。|  
 |maxBufferPoolSize|一个整数，指定传输使用的任何缓冲池的最大大小。|  
@@ -65,7 +66,7 @@ ms.locfileid: "91183671"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md)|具有固定发现协定和 UDP 传输绑定的标准终结点。|  
   
