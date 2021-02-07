@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：扩展跟踪
 title: 扩展跟踪
 ms.date: 03/30/2017
 ms.assetid: 2b971a99-16ec-4949-ad2e-b0c8731a873f
-ms.openlocfilehash: 5e3329238998f11467511960f32b177953036ab1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e387f49eb4b31ce8dc0b726853ef69d20c8af063
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752361"
 ---
 # <a name="extend-tracing"></a>扩展跟踪
 
@@ -101,6 +102,6 @@ ms.locfileid: "96265331"
   
 3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AppFabric 监视示例](/previous-versions/appfabric/ff383407(v=azure.10))

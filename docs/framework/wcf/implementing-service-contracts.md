@@ -1,15 +1,16 @@
 ---
+description: 了解有关以下内容的详细信息：实现服务协定
 title: 实现服务协定
 ms.date: 03/30/2017
 helpviewer_keywords:
 - implementing service contracts [WCF]
 ms.assetid: aefb6f56-47e3-4f24-ab0a-9bc07bf9885f
-ms.openlocfilehash: 121922e3de62653babdac084d6bd226f7263e33c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4510c9e7b9ea3a98a37d528af4064f0e73bea89b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262731"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752491"
 ---
 # <a name="implementing-service-contracts"></a>实现服务协定
 
@@ -59,7 +60,7 @@ class MathService
   
  在实现服务协定后，必须为该服务创建一个或多个终结点。 有关详细信息，请参阅 [创建终结点概述](endpoint-creation-overview.md)。 有关如何运行服务的详细信息，请参阅 [托管服务](hosting-services.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [设计和实现服务](designing-and-implementing-services.md)
 - [如何：使用协定类创建服务](./feature-details/how-to-create-a-wcf-contract-with-a-class.md)

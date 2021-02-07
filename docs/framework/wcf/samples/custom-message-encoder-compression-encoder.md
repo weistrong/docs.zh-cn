@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息：自定义消息编码器：压缩编码器
 title: 自定义消息编码器：压缩编码器
 ms.date: 03/30/2017
 ms.assetid: 57450b6c-89fe-4b8a-8376-3d794857bfd7
-ms.openlocfilehash: db20ec20579d6fcb0ec202920db0d7781b0676df
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 61c28435000333b1411a3fbcba485e0a252aed63
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752507"
 ---
 # <a name="custom-message-encoder-compression-encoder"></a>自定义消息编码器：压缩编码器
 
-此示例演示如何使用 Windows Communication Foundation （WCF）平台实现自定义编码器。
+此示例演示如何使用 Windows Communication Foundation (WCF) 平台实现自定义编码器。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageEncoder\Compression`
 
@@ -27,7 +28,7 @@ ms.locfileid: "84600615"
 该示例由一个客户端控制台程序 (.exe)、一个自承载的服务控制台程序 (.exe) 和一个压缩消息编码器库 (.dll) 组成。 该服务实现定义“请求-答复”通信模式的协定。 该协定由 `ISampleServer` 接口定义，而该接口将公开基本字符串回显操作（`Echo` 和 `BigEcho`）。 客户端向给定的操作发出同步请求，服务通过将该消息回送到客户端来进行回复。 客户端和服务活动显示在控制台窗口中。 提供该示例的目的在于演示如何编写自定义编码器并演示压缩消息对网络的影响。 可以为压缩消息编码器添加计算消息大小和/或处理时间的方法。
 
 > [!NOTE]
-> 在 .NET Framework 4 中，如果服务器正在发送压缩响应（使用 GZip 或 Deflate 等算法创建），则会在 WCF 客户端上启用自动解压缩。 如果服务是 Internet 信息服务 (IIS) 中的 Web 承载服务，则可以为该服务配置 IIS 以发送压缩响应。 如果客户端和服务上都需要执行压缩和解压缩，或者如果该服务是自承载服务，则可以使用此示例。
+> 在 .NET Framework 4 中，如果服务器发送的压缩响应 (是使用 GZip 或 Deflate) 等算法创建的，则在 WCF 客户端上已启用自动解压缩。 如果服务是 Internet 信息服务 (IIS) 中的 Web 承载服务，则可以为该服务配置 IIS 以发送压缩响应。 如果客户端和服务上都需要执行压缩和解压缩，或者如果该服务是自承载服务，则可以使用此示例。
 
 此示例演示如何生成自定义消息编码器并将其集成到 WCF 应用程序中。 库 GZipEncoder.dll 是同时用客户端和服务部署的。 该示例还演示对消息进行压缩所带来的影响。 GZipEncoder.dll 中的代码演示以下操作：
 
@@ -342,17 +343,17 @@ Press <ENTER> to terminate client.
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
-2. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+2. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
-3. 若要生成解决方案，请按照[生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
+3. 若要生成解决方案，请按照 [生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
 
-4. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+4. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageEncoder\Compression`

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：承载排队应用程序的 Web
 title: 承载排队应用程序的 Web
 ms.date: 03/30/2017
 ms.assetid: c7a539fa-e442-4c08-a7f1-17b7f5a03e88
-ms.openlocfilehash: c2b41ee1d0a82693760bc3e1b6144d2190153f24
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5fb056a75598523554869f0089689979986dba7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752556"
 ---
 # <a name="web-hosting-a-queued-application"></a>承载排队应用程序的 Web
 
@@ -47,7 +48,7 @@ Windows 进程激活服务 (WAS) 管理辅助进程的激活和生命周期，�
 
  不能基于系统队列（如系统级死信队列）或子队列（如病毒子队列）中的消息激活 WAS 承载的应用程序。 这是此版本产品的一个限制。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [病毒消息处理](poison-message-handling.md)
 - [服务终结点和队列寻址](service-endpoints-and-queue-addressing.md)

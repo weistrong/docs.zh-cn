@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：事务协议版本1。0
 title: 事务协议版本 1.0
 ms.date: 03/30/2017
 ms.assetid: 034679af-0002-402e-98a8-ef73dcd71bb6
-ms.openlocfilehash: 7b1cfc21a1361cee3027fd5a61ec61a4a0a998b7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5fb49e40ab76ff0eef9825ac886d5afbbf185565
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246233"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752712"
 ---
 # <a name="transaction-protocols-version-10"></a>事务协议版本 1.0
 
@@ -365,7 +366,7 @@ Windows Communication Foundation (WCF) 版本1实现 WS-Atomic 事务的1.0 版�
 
  下面的消息与两阶段提交 (2PC) 协议相关。  
   
-#### <a name="commit"></a>Commit  
+#### <a name="commit"></a>提交  
   
 ```xml  
 <s:Envelope>  

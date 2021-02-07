@@ -1,16 +1,17 @@
 ---
+description: 了解有关在 WCF 中执行事务的详细信息
 title: WCF 中的事务
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF, using transactions
 - Windows Communication Foundation, using transactions
 ms.assetid: 1e8d04dd-b7cf-41e7-8560-54b4381beb0f
-ms.openlocfilehash: 29dc73c642642acb778a1f56e79185cbcec9ad3e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b17acd43eba31a90ff3c635ae5c8372d36a81a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261483"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752660"
 ---
 # <a name="transactions-in-wcf"></a>WCF 中的事务
 
@@ -36,6 +37,6 @@ Windows Communication Foundation (WCF) 事务功能允许多个组件同时参�
 
  [基本 WCF 编程](../basic-wcf-programming.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [可靠会话概述](reliable-sessions-overview.md)

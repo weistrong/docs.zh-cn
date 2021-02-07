@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： Web 服务协议互操作性指南
 title: Web 服务协议互操作性指南
 ms.date: 03/30/2017
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
-ms.openlocfilehash: f35ca629da65af749897d28d28808d06eced7aa8
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: cab744818d3a52c6f6cd0d95195d9112ac9babf6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90720109"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752543"
 ---
 # <a name="web-services-protocols-interoperability-guide"></a>Web 服务协议互操作性指南
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：安全协议版本1。0
 title: 安全协议版本 1.0
 ms.date: 03/30/2017
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
-ms.openlocfilehash: d98a05bbcb8413c33672a17580c6d16b57c63b83
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c807f0b844fb9cb861148afa63d83826a9740c98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254020"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752725"
 ---
 # <a name="security-protocols-version-10"></a>安全协议版本 1.0
 
@@ -39,7 +40,7 @@ Web 服务安全协议提供 Web 服务安全机制，这些机制可满足所�
   
 - 消息交换模式。  
   
-|身份验证模式|客户端身份验证|服务器身份验证|“模式”|  
+|身份验证模式|客户端身份验证|服务器身份验证|模型|  
 |-------------------------|---------------------------|---------------------------|----------|  
 |UserNameOverTransport|用户名/密码|X509|Transport|  
 |CertificateOverTransport|X509|X509|Transport|  

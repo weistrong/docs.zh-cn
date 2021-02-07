@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：自定义绑定可靠会话
 title: 自定义绑定可靠会话
 ms.date: 03/30/2017
 ms.assetid: c5fcd409-246f-4f3e-b3f1-629506ca4c04
-ms.openlocfilehash: bd690f96eea885c4d414f9725125e1918fdffa23
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0799e10c0fb86727bc21553584646031dc6f3606
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585138"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752504"
 ---
 # <a name="custom-binding-reliable-session"></a>自定义绑定可靠会话
 
@@ -18,18 +19,18 @@ ms.locfileid: "84585138"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Custom\ReliableSession`
 
 ## <a name="sample-details"></a>示例详细信息
 
-可靠会话提供可靠的消息和会话功能。 可靠消息在失败时重新尝试通信并允许指定传递保证（如消息按顺序抵达）。 会话在调用之间将保持客户端的状态。 此示例实现了用来保持客户端状态的会话，并指定了按顺序传递保证。 该示例基于实现计算器服务的[入门](getting-started-sample.md)。 可靠会话功能是在客户端和服务的应用程序配置文件中启用和配置的。
+可靠会话提供可靠的消息和会话功能。 可靠消息在失败时重新尝试通信并允许指定传递保证（如消息按顺序抵达）。 会话在调用之间将保持客户端的状态。 此示例实现了用来保持客户端状态的会话，并指定了按顺序传递保证。 该示例基于实现计算器服务的 [入门](getting-started-sample.md) 。 可靠会话功能是在客户端和服务的应用程序配置文件中启用和配置的。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
 
-在定义自定义绑定时，绑定元素的排序非常重要，因为每个元素都表示通道堆栈中的一个层（请参阅[自定义绑定](../extending/custom-bindings.md)）。
+在定义自定义绑定时，绑定元素的排序非常重要，因为每个元素都表示通道堆栈中的一个层 (请参阅 [自定义绑定](../extending/custom-bindings.md)) 。
 
 示例的服务配置定义如下面的代码示例所示。
 
@@ -109,11 +110,11 @@ Press <ENTER> to terminate client.
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
-2. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+2. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
 3. 若要生成 C# 或 Visual Basic .NET 版本的解决方案，请按照 [Building the Windows Communication Foundation Samples](building-the-samples.md)中的说明进行操作。
 
-4. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+4. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
     > [!IMPORTANT]
     > 在跨计算机配置中运行客户端时，请确保 `address` [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) 使用相应计算机的名称替换元素的属性和的属性中的 "localhost" `clientBaseAddress` [\<compositeDuplex>](../../configure-apps/file-schema/wcf/compositeduplex.md) ，如下面的示例中所示。

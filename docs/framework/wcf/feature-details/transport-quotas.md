@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：传输配额
 title: 传输配额
 ms.date: 03/30/2017
 helpviewer_keywords:
 - transport quotas [WCF]
 ms.assetid: 3e71dd3d-f981-4d9c-9c06-ff8abb61b717
-ms.openlocfilehash: bcc63e6645580c1021667b278b80c09baf5700c1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0359d088402235a34b8cf1d13820c0a7c920b023
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261457"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752621"
 ---
 # <a name="transport-quotas"></a>传输配额
 
@@ -33,7 +34,7 @@ ms.locfileid: "96261457"
   
  每个配额设置都有类型、最小值和默认值。 配额的最大值由其类型限制。 由于计算机的限制，并不总是可以将配额设置为它的最大值。  
   
-|名称|类型|最小值<br /><br /> 值|默认<br /><br /> value|描述|  
+|名称|类型|最小值<br /><br /> value|默认<br /><br /> value|描述|  
 |----------|----------|--------------------|-----------------------|-----------------|  
 |`ChannelInitializationTimeout`|TimeSpan|1 个计时周期|5 秒|初始读取过程中等待连接发送前导码的最长时间。 此数据在进行身份验证前接收。 此设置通常要比 `ReceiveTimeout` 配额值小得多。|  
 |`CloseTimeout`|TimeSpan|0|1 分钟|在传输引发异常之前等待连接关闭的最长时间。|  
@@ -64,7 +65,7 @@ ms.locfileid: "96261457"
 
  通过绑定元素设置传输配额为控制传输行为提供了最大的灵活性。 生成通道时，将从绑定中获取关闭、打开、接收和发送操作的默认超时值。  
   
-|“属性”|HTTP|TCP/IP|命名管道|  
+|名称|HTTP|TCP/IP|命名管道|  
 |----------|----------|-------------|----------------|  
 |`ChannelInitializationTimeout`||X|X|  
 |`CloseTimeout`||||  
@@ -87,7 +88,7 @@ ms.locfileid: "96261457"
 
  通过绑定设置传输配额可提供一组简化的配额以供选择，同时仍然提供对最常用配额值的访问。  
   
-|“属性”|HTTP|TCP/IP|命名管道|  
+|名称|HTTP|TCP/IP|命名管道|  
 |----------|----------|-------------|----------------|  
 |`ChannelInitializationTimeout`||||  
 |`CloseTimeout`|X|X|X|  
@@ -114,7 +115,7 @@ ms.locfileid: "96261457"
 
  应用程序配置可以设置与直接访问绑定上的属性一样的传输配额。 在配置文件中，传输配额的名称总是以小写字母开头。 例如，绑定上的 `CloseTimeout` 属性对应于配置中的 `closeTimeout` 设置，而绑定上的 `MaxConnections` 属性对应于配置中的 `maxConnections` 设置。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>

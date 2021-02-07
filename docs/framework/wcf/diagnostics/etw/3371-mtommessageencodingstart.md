@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3371-MtomMessageEncodingStart
 title: 3371 - MtomMessageEncodingStart
 ms.date: 03/30/2017
 ms.assetid: b1ba417f-f765-4567-82e3-ea2080e0ac73
-ms.openlocfilehash: f66aa1f4c9117fe10076c972e74bb9f87717f0ae
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 234ce0e5cad1353aa58c9ec38344bb8424fbf148
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753011"
 ---
 # <a name="3371---mtommessageencodingstart"></a>3371 - MtomMessageEncodingStart
 
@@ -20,7 +21,7 @@ ms.locfileid: "96259637"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  MtomMessageEncoder 开始对消息编码时发出此事件。  
   

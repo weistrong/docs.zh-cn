@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_SNAPSHOT_INFO 枚举
 title: COR_PRF_SNAPSHOT_INFO 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a5906b2a-ad4a-4cc6-a421-2d7d8adf7468
 topic_type:
 - apiref
-ms.openlocfilehash: 5290db008bfe5727ed5899c2ed6f7e41ae9a353a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fcdaeeb6170cb9998281100c5628b3d95f9e9326
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753336"
 ---
 # <a name="cor_prf_snapshot_info-enumeration"></a>COR_PRF_SNAPSHOT_INFO 枚举
 
@@ -43,7 +44,7 @@ typedef enum _COR_PRF_SNAPSHOT_INFO {
 |`COR_PRF_SNAPSHOT_REGISTER_CONTEXT`|指示必须为所有 `StackSnapshotCallback` 参数（包括参数）传递值 `context` 。|  
 |`COR_PRF_SNAPSHOT_X86_OPTIMIZED`|指示将使用更简单的替代堆栈遍历算法。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  枚举提供的值 `COR_PRF_SNAPSHOT_INFO` 将作为参数传递给 [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) 方法。  
   
@@ -57,7 +58,7 @@ typedef enum _COR_PRF_SNAPSHOT_INFO {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [DoStackSnapshot 方法](icorprofilerinfo2-dostacksnapshot-method.md)
 - [分析枚举](profiling-enumerations.md)

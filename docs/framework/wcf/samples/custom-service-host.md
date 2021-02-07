@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：自定义服务主机
 title: 自定义服务主机
 ms.date: 03/30/2017
 ms.assetid: fe16ff50-7156-4499-9c32-13d8a79dc100
-ms.openlocfilehash: 56846f4021b2a0be1801decedb02c4c637847d07
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a18c3ec10eef5fc2c436a2fc2665ea73ed963384
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752439"
 ---
 # <a name="custom-service-host"></a>自定义服务主机
 
@@ -180,6 +181,6 @@ public class SelfDescribingServiceHostFactory : ServiceHostFactory
 
 5. 若要删除 IIS 7.0 应用程序，请运行 *Cleanup.bat*。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：在 IIS 中承载 WCF 服务](../feature-details/how-to-host-a-wcf-service-in-iis.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息，请参阅 WCF Web HTTP 编程对象模型
 title: WCF Web HTTP 编程对象模型
 ms.date: 03/30/2017
 ms.assetid: ed96b5fc-ca2c-4b0d-bdba-d06b77c3cb2a
-ms.openlocfilehash: 4cd23ccb1956a73e36d5c7d3e444c347247e338d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cfec94d323e2580cab64b426215cc2c7284743ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752569"
 ---
 # <a name="wcf-web-http-programming-object-model"></a>WCF Web HTTP 编程对象模型
 
@@ -47,7 +48,7 @@ WCF WEB HTTP 编程模型允许开发人员通过基本 HTTP 请求（无需 SOA
 
  <xref:System.ServiceModel.Web.WebGetAttribute> 特性用于将服务操作标记为响应 HTTP GET 请求的操作。 这是将元数据添加到操作说明中的被动操作行为（<xref:System.ServiceModel.Description.IOperationBehavior> 方法不执行任何操作）。 应用 <xref:System.ServiceModel.Web.WebGetAttribute> 将无任何效果，除非将在操作说明中查找此元数据的行为（具体来说是 <xref:System.ServiceModel.Description.WebHttpBehavior>）添加到服务的行为集合中。 <xref:System.ServiceModel.Web.WebGetAttribute> 特性采用下表所示的可选参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`BodyStyle`|控制是否包装发送到应用该属性的服务操作以及从该操作接收的请求和响应。|  
 |`RequestFormat`|控制如何格式化请求消息。|  
@@ -64,7 +65,7 @@ WCF WEB HTTP 编程模型允许开发人员通过基本 HTTP 请求（无需 SOA
   
  <xref:System.ServiceModel.Web.WebInvokeAttribute> 特性采用下表所示的可选参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`BodyStyle`|控制是否包装发送到应用该属性的服务操作以及从该操作接收的请求和响应。|  
 |`Method`|指定将服务操作映射到的 HTTP 方法。|  
@@ -109,11 +110,11 @@ WCF WEB HTTP 编程模型允许开发人员通过基本 HTTP 请求（无需 SOA
 
  WCF WEB HTTP 编程模型不使用基于 SOAP 的消息，因此不支持 WS-* 协议。 但是，您可以通过两个终结点公开同一协定：一个终结点使用 SOAP，另一个终结点不使用 SOAP。 有关示例，请参阅 [如何：向 SOAP 和 Web 客户端公开协定](how-to-expose-a-contract-to-soap-and-web-clients.md) 。  
   
-## <a name="security"></a>安全性  
+## <a name="security"></a>安全  
 
 由于 WCF WEB HTTP 编程模型不支持 WS-* 协议，因此保证基于 WCF WEB HTTP 编程模型生成的 Web 服务安全的唯一方式是使用 SSL 公开服务。 有关设置 SSL 和 IIS 7.0 的详细信息，请参阅 [如何在 iis 中实现 ssl](https://support.microsoft.com/help/299875/how-to-implement-ssl-in-iis)。
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.WebHttpBinding>
 - <xref:System.ServiceModel.Web.WebGetAttribute>

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo2：:D oStackSnapshot 方法
 title: ICorProfilerInfo2::DoStackSnapshot 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 287b11e9-7c52-4a13-ba97-751203fa97f4
 topic_type:
 - apiref
-ms.openlocfilehash: 10cc9dedfa34cd5235df721d7010bbd928fbc3ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e30e11dfe04da1e7a5adfef004036507b724963d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753245"
 ---
 # <a name="icorprofilerinfo2dostacksnapshot-method"></a>ICorProfilerInfo2::DoStackSnapshot 方法
 
@@ -66,7 +67,7 @@ HRESULT DoStackSnapshot(
  `contextSize`  
  中 `CONTEXT` 由参数引用的结构的大小 `context` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  传递 null 以 `thread` 生成当前线程的快照。 仅当目标线程在此时挂起时，才能对其他线程执行快照操作。  
   
@@ -112,7 +113,7 @@ HRESULT DoStackSnapshot(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 接口](icorprofilerinfo2-interface.md)

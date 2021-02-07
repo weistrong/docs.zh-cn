@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3374-MtomMessageDecodingStart
 title: 3374 - MtomMessageDecodingStart
 ms.date: 03/30/2017
 ms.assetid: 72afd61d-da6b-418e-b26a-efc7bdb0a218
-ms.openlocfilehash: 73dbabf39b4a5e92e3168f407d5bdfd93bb87ebe
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 58cffe9524ed9fccdc33758b957189f718db4b9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752972"
 ---
 # <a name="3374---mtommessagedecodingstart"></a>3374 - MtomMessageDecodingStart
 
@@ -20,7 +21,7 @@ ms.locfileid: "96259598"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  MtomMessageEncoder 开始对消息解码时发出此事件。  
   

@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： ICorProfilerInfo10 接口
 title: ICorProfilerInfo10 接口
 ms.date: 08/06/2019
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: a99fa8410bbd0dedeaeb9e1713107a3dcc9ada6b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd24491cb1ca55ad48137522c63e78e6387d33e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727219"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753284"
 ---
 # <a name="icorprofilerinfo10-interface"></a>ICorProfilerInfo10 接口
 
@@ -31,6 +32,6 @@ ms.locfileid: "95727219"
 **头文件：** CorProf.idl、CorProf.h  
 **.Net 版本：**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
