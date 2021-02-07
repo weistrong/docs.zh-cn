@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 57403-TraceCodeEventLogWarning
 title: 57403 - TraceCodeEventLogWarning
 ms.date: 03/30/2017
 ms.assetid: f5e7b068-a335-4c4b-9cae-44d0ffeaa595
-ms.openlocfilehash: 72e08b16e5b82a1c82659d28ab3de58badd59906
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 00f8dcf2397d2afaa4b874d8092b495c7b848301
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669132"
 ---
 # <a name="57403---tracecodeeventlogwarning"></a>57403 - TraceCodeEventLogWarning
 
@@ -17,10 +18,10 @@ ms.locfileid: "96282140"
 |-|-|  
 |ID|57403|  
 |关键字|基础结构|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  对于 TraceCodeEventLogWarning 发出此事件。  
   

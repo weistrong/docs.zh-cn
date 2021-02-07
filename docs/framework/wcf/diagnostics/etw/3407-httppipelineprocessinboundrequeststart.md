@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3407-HttpPipelineProcessInboundRequestStart
 title: 3407 - HttpPipelineProcessInboundRequestStart
 ms.date: 03/30/2017
 ms.assetid: f9cc34e8-f4e1-43c8-823f-6186ee5e676f
-ms.openlocfilehash: 07f38005f14504793ec3789e7ceacef39df42e0b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 825e4590c64c31cae8fa5de0624aebcdb64346b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669834"
 ---
 # <a name="3407---httppipelineprocessinboundrequeststart"></a>3407 - HttpPipelineProcessInboundRequestStart
 
@@ -20,7 +21,7 @@ ms.locfileid: "96249548"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  在 Http 消息处理程序处理入站请求时，将发出此事件。  
   
