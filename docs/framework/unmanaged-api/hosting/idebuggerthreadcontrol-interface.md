@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IDebuggerThreadControl 接口
 title: IDebuggerThreadControl 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0a270c42-a7d1-45f1-a64d-fa3e84d14532
 topic_type:
 - apiref
-ms.openlocfilehash: 2268fce5d3ca732d852edfdb6f0edf63117df363
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 293a120d44b9b04d7e367546c477fb273f535310
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684208"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709734"
 ---
 # <a name="idebuggerthreadcontrol-interface"></a>IDebuggerThreadControl 接口
 
@@ -43,6 +44,6 @@ ms.locfileid: "95684208"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostIoCompletionManager：： GetHostOverlappedSize 方法
 title: IHostIoCompletionManager::GetHostOverlappedSize 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2902578b-d5e2-4f8d-a103-0c7b6dceda9e
 topic_type:
 - apiref
-ms.openlocfilehash: 612a5f08982b1db5c940a7cca93166480b21e612
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2a2ebe1da82c5702269b634eadfe98b72739e3df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708540"
 ---
 # <a name="ihostiocompletionmanagergethostoverlappedsize-method"></a>IHostIoCompletionManager::GetHostOverlappedSize 方法
 
@@ -50,7 +51,7 @@ HRESULT GetHostOverlappedSize (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  对 Windows 平台 Api 的所有异步 i/o 调用都采用 Win32 `OVERLAPPED` 对象，后者提供了文件指针位置等信息。 若要维护状态，执行异步 i/o 调用的应用程序通常会将自定义数据添加到该结构中。 `GetHostOverlappedSize` 和 [IHostIoCompletionManager：： InitializeHostOverlapped](ihostiocompletionmanager-initializehostoverlapped-method.md) 为主机提供了一个机会，使其包括此类自定义数据。  
   
@@ -74,7 +75,7 @@ HRESULT GetHostOverlappedSize (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Threading.NativeOverlapped>
 - [ICLRIoCompletionManager 接口](iclriocompletionmanager-interface.md)

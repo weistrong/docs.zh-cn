@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostAssemblyStore 接口
 title: IHostAssemblyStore 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2fed963d2d0ebec54e5f7a4d95cba26c1bac1f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a05fee7916911687143d5953e26187162a2fa544
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680932"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709010"
 ---
 # <a name="ihostassemblystore-interface"></a>IHostAssemblyStore 接口
 
@@ -32,7 +33,7 @@ ms.locfileid: "95680932"
 |[ProvideAssembly 方法](ihostassemblystore-provideassembly-method.md)|获取对[IHostAssemblyManager：： GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md)调用返回的[ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)未引用的程序集的引用。|  
 |[ProvideModule 方法](ihostassemblystore-providemodule-method.md)|解析程序集内的模块或未嵌入) 资源文件的链接 (。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IHostAssemblyStore` 提供一种方法，使主机可以根据程序集标识有效地加载程序集。 宿主通过返回直接指向字节的实例来加载程序集 `IStream` 。  
   
@@ -54,7 +55,7 @@ ms.locfileid: "95680932"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager 接口](ihostassemblymanager-interface.md)

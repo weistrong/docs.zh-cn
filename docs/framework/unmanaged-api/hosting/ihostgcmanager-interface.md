@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostGCManager 接口
 title: IHostGCManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 820330a4-244c-4f67-ab5e-f24b0b3c2080
 topic_type:
 - apiref
-ms.openlocfilehash: eb7e52b5237d4341c27b8c167249dc2614168679
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: da229c04eb5f5a27c34c133b5c88183d00f47c40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708653"
 ---
 # <a name="ihostgcmanager-interface"></a>IHostGCManager 接口
 
@@ -43,7 +44,7 @@ ms.locfileid: "95729514"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

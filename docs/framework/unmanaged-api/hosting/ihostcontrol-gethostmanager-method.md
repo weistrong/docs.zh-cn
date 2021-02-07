@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostControl：： GetHostManager 方法
 title: IHostControl::GetHostManager 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0fa34bca-ed18-4626-9e78-d33684d18edb
 topic_type:
 - apiref
-ms.openlocfilehash: e340dcb5dc093f965e6c08a24a3d65ed0aa6e07a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7cc118808c8788504da2cc07a8c61c419d3c588f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708892"
 ---
 # <a name="ihostcontrolgethostmanager-method"></a>IHostControl::GetHostManager 方法
 
@@ -56,7 +57,7 @@ HRESULT GetHostManager (
 |E_INVALIDARG|请求的无效 `IID` 。|  
 |E_NOINTERFACE|不支持请求的接口。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 将查询宿主，以确定它是否支持以下一个或多个接口：  
   
@@ -92,6 +93,6 @@ HRESULT GetHostManager (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostControl 接口](ihostcontrol-interface.md)

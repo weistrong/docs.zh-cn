@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostControl：： SetAppDomainManager 方法
 title: IHostControl::SetAppDomainManager 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6562bbe7-0d67-4c50-a958-3a18cf680375
 topic_type:
 - apiref
-ms.openlocfilehash: 2f4c004db39c14e7a71b0caa55a6089e8f69ca3a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1fc5efc0afad73d1805338140f186a50913ca542
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708887"
 ---
 # <a name="ihostcontrolsetappdomainmanager-method"></a>IHostControl::SetAppDomainManager 方法
 
@@ -54,7 +55,7 @@ HRESULT SetAppDomainManager (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  向 <xref:System.AppDomainManager> 宿主提供一种机制，用于启动到托管代码并控制每个代码的创建和设置 <xref:System.AppDomain> 。 <xref:System.AppDomainManager>创建时，将加载到每个中 <xref:System.AppDomain> <xref:System.AppDomain> 。 如果选择此选项，CLR 将通过设置参数的值，通知宿主已创建应用程序域 `pUnkAppDomainManager` 。  
   
@@ -70,7 +71,7 @@ HRESULT SetAppDomainManager (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainManager>

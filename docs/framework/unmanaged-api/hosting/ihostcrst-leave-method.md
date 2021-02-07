@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostCrst：： Leave 方法
 title: IHostCrst::Leave 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dfc51d9e-b36d-4dba-9ea1-4f63fa0601ae
 topic_type:
 - apiref
-ms.openlocfilehash: 0752afb42b8c512450b047a5e2e7e1ff34533487
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b00e62c7b2683ab6024a7c9b8de4645ceb59fb02
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708835"
 ---
 # <a name="ihostcrstleave-method"></a>IHostCrst::Leave 方法
 
@@ -43,7 +44,7 @@ HRESULT Leave ();
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `Leave` 允许 CLR 与宿主的线程实现直接通信，而不是使用相应的 Win32 `LeaveCriticalSection` 函数。 获取由当前实例表示的临界区所有权的线程必须在 `IHostCrst` `Leave` 每次进入该临界部分时调用一次。  
   
@@ -57,7 +58,7 @@ HRESULT Leave ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostCrst 接口](ihostcrst-interface.md)

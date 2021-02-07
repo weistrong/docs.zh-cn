@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostAssemblyManager：： GetAssemblyStore 方法
 title: IHostAssemblyManager::GetAssemblyStore 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d0f74593-9bb1-4a11-8096-e29734b20698
 topic_type:
 - apiref
-ms.openlocfilehash: 936ea068f3cc5567a00af5f2bdd5f3d9cd52bc81
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5edfdc5481803ce0dd3a6f8f400b18e3f1600ea8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709108"
 ---
 # <a name="ihostassemblymanagergetassemblystore-method"></a>IHostAssemblyManager::GetAssemblyStore 方法
 
@@ -51,7 +52,7 @@ HRESULT GetAssemblyStore (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_NOINTERFACE|宿主不提供的实现 `IHostAssemblyStore` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IHostAssemblyStore` 提供允许主机独立于 CLR 绑定到程序集和模块的方法。 主机通常提供程序集存储区，以允许从文件系统以外的其他格式加载程序集。  
   
@@ -68,7 +69,7 @@ HRESULT GetAssemblyStore (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostAssemblyManager 接口](ihostassemblymanager-interface.md)
 - [IHostAssemblyStore 接口](ihostassemblystore-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IGCHostControl 接口
 title: IGCHostControl 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2eb56ea9-8b7e-452b-a209-3d2be719fca6
 topic_type:
 - apiref
-ms.openlocfilehash: ca03883f2d33eda1c867933256141febaa4269ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8e8175c6b03e91ce2de6e4aabe71c16630eb3476
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687712"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709355"
 ---
 # <a name="igchostcontrol-interface"></a>IGCHostControl 接口
 
@@ -41,6 +42,6 @@ ms.locfileid: "95687712"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)

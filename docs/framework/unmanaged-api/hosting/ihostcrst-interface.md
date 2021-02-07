@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostCrst 接口
 title: IHostCrst 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ac298ebd-0815-47e4-a823-30b31baab903
 topic_type:
 - apiref
-ms.openlocfilehash: 350af708456914c73929d2b8887173cf784d4294
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7945f0087667c1d610a1a2370528b055af74d579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708861"
 ---
 # <a name="ihostcrst-interface"></a>IHostCrst 接口
 
@@ -34,7 +35,7 @@ ms.locfileid: "95680548"
 |[SetSpinCount 方法](ihostcrst-setspincount-method.md)|设置临界区的旋转计数。|  
 |[TryEnter 方法](ihostcrst-tryenter-method.md)|尝试输入临界区，并立即报告成功或失败。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IHostCrst` 允许公共语言运行时 (CLR) 直接与关键节的主机表示形式进行通信，而不是使用或等 Win32 函数 `EnterCriticalSection` `LeaveCriticalSection` 。  
   
@@ -48,7 +49,7 @@ ms.locfileid: "95680548"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostSyncManager 接口](ihostsyncmanager-interface.md)

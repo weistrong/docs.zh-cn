@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IGCHost：： Collect 方法
 title: IGCHost::Collect 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fc7d9448-3186-494d-9f0d-ea39717e9a82
 topic_type:
 - apiref
-ms.openlocfilehash: f32b91f0d47449f80c38542162035999d616813b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b4c249e07709dc443ae7dd6c6a5bfd206b7f1caa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95670131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709679"
 ---
 # <a name="igchostcollect-method"></a>IGCHost::Collect 方法
 
@@ -49,6 +50,6 @@ HRESULT Collect (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IGCHost 接口](igchost-interface.md)

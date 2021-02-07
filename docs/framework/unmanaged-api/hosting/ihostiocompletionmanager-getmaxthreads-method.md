@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostIoCompletionManager：： GetMaxThreads 方法
 title: IHostIoCompletionManager::GetMaxThreads 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e7a6cadc-2433-4472-a701-58891abcde45
 topic_type:
 - apiref
-ms.openlocfilehash: 0b16305bc88854f1ab2ab89ab6b0d4d3e6881cf1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 10c36c058f5161330842fa9d71813c4520d4655c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689466"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708504"
 ---
 # <a name="ihostiocompletionmanagergetmaxthreads-method"></a>IHostIoCompletionManager::GetMaxThreads 方法
 
@@ -51,7 +52,7 @@ HRESULT GetMaxThreads (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_NOTIMPL|宿主不提供的实现 `GetMaxThreads` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  出于实现、性能或可伸缩性等原因，主机可能需要对可分配给处理 i/o 请求的线程数进行独占控制。 出于此原因，主机不需要实现 `GetMaxThreads` 。 在这种情况下，宿主应从此方法返回 E_NOTIMPL。  
   
@@ -65,7 +66,7 @@ HRESULT GetMaxThreads (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRIoCompletionManager 接口](iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager 接口](ihostiocompletionmanager-interface.md)

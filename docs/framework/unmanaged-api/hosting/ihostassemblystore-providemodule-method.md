@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostAssemblyStore：:P rovideModule 方法
 title: IHostAssemblyStore::ProvideModule 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f42e3dd0-c88e-4748-b6c0-4c515a633180
 topic_type:
 - apiref
-ms.openlocfilehash: 35805d277774e1de03bb7dee1740a2e1305a97c9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9e783b9f8db303d095995507689d7567225a51fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709004"
 ---
 # <a name="ihostassemblystoreprovidemodule-method"></a>IHostAssemblyStore::ProvideModule 方法
 
@@ -64,9 +65,9 @@ HRESULT ProvideModule (
 |COR_E_FILENOTFOUND (0x80070002) |找不到请求的程序集或链接的资源。|  
 |E_NOT_SUFFICIENT_BUFFER|`pdwModuleId` 不够大，无法包含主机希望返回的标识符。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
- 为返回的标识值 `pdwModuleId` 由主机指定。 标识符在进程的生存期内必须是唯一的。 CLR 使用此值作为关联流的唯一标识符。 它将对 ProvideAssembly 和对的调用所返回的值检查每个值 `pAssemblyId` [ProvideAssembly](ihostassemblystore-provideassembly-method.md) `pdwModuleId` `ProvideModule` 。 如果主机为其他主机返回相同的标识符值 `IStream` ，则 CLR 将检查是否已映射该流的内容。 如果是这样，CLR 将加载映像的现有副本，而不是映射一个新副本。 因此，标识符也不得与从返回的程序集标识符重叠 `ProvideAssembly` 。  
+ 为返回的标识值 `pdwModuleId` 由主机指定。 标识符在进程的生存期内必须是唯一的。 CLR 使用此值作为关联流的唯一标识符。 它将对 ProvideAssembly 和对的调用所返回的值检查每个值 `pAssemblyId` [](ihostassemblystore-provideassembly-method.md) `pdwModuleId` `ProvideModule` 。 如果主机为其他主机返回相同的标识符值 `IStream` ，则 CLR 将检查是否已映射该流的内容。 如果是这样，CLR 将加载映像的现有副本，而不是映射一个新副本。 因此，标识符也不得与从返回的程序集标识符重叠 `ProvideAssembly` 。  
   
 ## <a name="requirements"></a>要求  
 
@@ -78,7 +79,7 @@ HRESULT ProvideModule (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager 接口](ihostassemblymanager-interface.md)
