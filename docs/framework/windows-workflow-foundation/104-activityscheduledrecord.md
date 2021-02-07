@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 104-ActivityScheduledRecord
 title: 104 - ActivityScheduledRecord
 ms.date: 03/30/2017
 ms.assetid: ae202178-8fb1-4646-a3aa-18beeda8ff93
-ms.openlocfilehash: b2c7cbd169053188d5e84a0b8afd87c4916c87cb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9d52dac3ec68de0d38959e81294c5c6ead21428e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667806"
 ---
 # <a name="104---activityscheduledrecord"></a>104 - ActivityScheduledRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96238959"
 |-|-|  
 |ID|104|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例中的某个活动发出 ActivityScheduledRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,12 +31,12 @@ ms.locfileid: "96238959"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  
 |EventTime|xs:dateTime|发出该事件时的 UTC 时间|  
-|“属性”|xs:string|安排子活动的活动的名称|  
+|名称|xs:string|安排子活动的活动的名称|  
 |ActivityId|xs:string|安排子活动的活动的 ID|  
 |ActivityInstanceId|xs:string|安排子活动的活动的实例 ID|  
 |ActivityTypeName|xs:string|请求取消操作的活动的类型|  

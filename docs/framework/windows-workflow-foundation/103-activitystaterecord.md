@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 103-ActivityStateRecord
 title: 103 - ActivityStateRecord
 ms.date: 03/30/2017
 ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
-ms.openlocfilehash: 02c33f02b7650c9f9b7527c319de3b58980fdd6c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 14afbfdb0869b6ee65e1482fa73aa36ccd58f307
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275071"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668118"
 ---
 # <a name="103---activitystaterecord"></a>103 - ActivityStateRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96275071"
 |-|-|  
 |ID|103|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例中的某个活动发出 ActivityStateRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,13 +31,13 @@ ms.locfileid: "96275071"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  
 |EventTime|xs:dateTime|发出该事件时的 UTC 时间|  
 |状态|xs:string|活动的状态|  
-|“属性”|xs:string|发出该事件的活动的显示名称|  
+|名称|xs:string|发出该事件的活动的显示名称|  
 |ActivityId|xs:string|发出的活动的活动 ID|  
 |ActivityInstanceId|xs:string|发出的活动的活动实例 ID|  
 |ActivityTypeName|xs:string|发出的活动的类型名称|  

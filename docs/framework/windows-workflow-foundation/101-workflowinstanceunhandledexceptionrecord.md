@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 101-WorkflowInstanceUnhandledExceptionRecord
 title: 101 - WorkflowInstanceUnhandledExceptionRecord
 ms.date: 03/30/2017
 ms.assetid: ab7d50a0-5347-4390-8445-1def4dfdff6a
-ms.openlocfilehash: f62868a09b72ef4fe567fbedc1729cd6bad309f0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 349fbd2aad2e3cafc85f54417f74f0fcea7ceecb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668131"
 ---
 # <a name="101---workflowinstanceunhandledexceptionrecord"></a>101 - WorkflowInstanceUnhandledExceptionRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96239752"
 |-|-|  
 |ID|101|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|错误|  
+|级别|错误|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例发出 WorkflowInstanceUnhandledExceptionRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96239752"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  

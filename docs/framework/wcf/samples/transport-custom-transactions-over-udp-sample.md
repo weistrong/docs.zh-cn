@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：传输： UDP 上的自定义事务示例
 title: 传输：UDP 示例上的自定义事务
 ms.date: 03/30/2017
 ms.assetid: 6cebf975-41bd-443e-9540-fd2463c3eb23
-ms.openlocfilehash: 1a5b6afd7dc078b0e6e270888973b34a91bfdb9f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 609576c74a8a3c0cd55829335545818028d444bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295660"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668508"
 ---
 # <a name="transport-custom-transactions-over-udp-sample"></a>传输：UDP 示例上的自定义事务
 
@@ -264,6 +265,6 @@ if (transaction != null)
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transactions\TransactionMessagePropertyUDPTransport`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [传输：UDP](transport-udp.md)

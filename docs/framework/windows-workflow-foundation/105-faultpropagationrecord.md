@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 105-FaultPropagationRecord
 title: 105 - FaultPropagationRecord
 ms.date: 03/30/2017
 ms.assetid: 168473b1-b1e5-4e9f-8a2a-35bbdb2ef531
-ms.openlocfilehash: 3390a77f16cc52e52ea1b3e4c1a34d0f44795abb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95f82763606bf16219fa4234b5f6e7101c0954fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238907"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667676"
 ---
 # <a name="105---faultpropagationrecord"></a>105 - FaultPropagationRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96238907"
 |-|-|  
 |ID|105|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例中的某个活动发出 FaultPropagationRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96238907"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  

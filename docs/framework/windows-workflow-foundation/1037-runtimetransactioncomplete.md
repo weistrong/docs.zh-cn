@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1037-RuntimeTransactionComplete
 title: 1037 - RuntimeTransactionComplete
 ms.date: 03/30/2017
 ms.assetid: 2c8c31e0-42a9-4f46-865b-2da9ab16a0ba
-ms.openlocfilehash: ad05151a1497ea4b31e0fe33fe2983c1f145f224
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5784dc1b0eede5ddad0e6aae4cb79c6e859f325e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294243"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667858"
 ---
 # <a name="1037---runtimetransactioncomplete"></a>1037 - RuntimeTransactionComplete
 
@@ -20,7 +21,7 @@ ms.locfileid: "96294243"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示运行时事务已完成。  
   

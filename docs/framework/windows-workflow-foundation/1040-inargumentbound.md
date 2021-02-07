@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1040-InArgumentBound
 title: 1040 - InArgumentBound
 ms.date: 03/30/2017
 ms.assetid: 7dfaad1b-36c0-4575-84c1-31d63b0eaf5d
-ms.openlocfilehash: 04a61892ea817d5168ccbfccf68c0b74ee43e983
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f604a2503bcaf407a9a690b5a681208815fd245a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238946"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667793"
 ---
 # <a name="1040---inargumentbound"></a>1040 - InArgumentBound
 
@@ -20,7 +21,7 @@ ms.locfileid: "96238946"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示已绑定 In 自变量。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96238946"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InArgument|xs:string|InArgument 的名称。|  
 |活动|xs:string|活动的类型名称。|  

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 110-CustomTrackingRecordWarning
 title: 110 - CustomTrackingRecordWarning
 ms.date: 03/30/2017
 ms.assetid: 3bc093de-be47-4ed0-983f-05b4246446fc
-ms.openlocfilehash: 8fced5fe4baabac34b25b9a00421c3ded1c83ca6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d127b0fbf8fa4f2d7285068486a900452685346d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667598"
 ---
 # <a name="110---customtrackingrecordwarning"></a>110 - CustomTrackingRecordWarning
 
@@ -17,10 +18,10 @@ ms.locfileid: "96238764"
 |-|-|  
 |ID|110|  
 |关键字|UserEvents、EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例中的某个活动发出警告级别的 CustomTrackingRecord 时，ETW 跟踪参与者将发出此事件  
   
@@ -30,12 +31,12 @@ ms.locfileid: "96238764"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  
 |EventTime|xs:dateTime|发出该事件时的 UTC 时间|  
-|“属性”|xs:string|CustomTrackingRecord 的名称|  
+|名称|xs:string|CustomTrackingRecord 的名称|  
 |ActivityName|xs:string|发出 CustomTrackingRecord 的活动的名称|  
 |ActivityId|xs:string|发出 CustomTrackingRecord 的活动的 ID|  
 |ActivityInstanceId|xs:string|发出 CustomTrackingRecord 的活动的实例 ID|  

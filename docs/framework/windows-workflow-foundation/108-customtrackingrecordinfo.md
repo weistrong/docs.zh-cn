@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 108-CustomTrackingRecordInfo
 title: 108 - CustomTrackingRecordInfo
 ms.date: 03/30/2017
 ms.assetid: 5bee501e-4e00-42cd-b949-e88009c3d4e8
-ms.openlocfilehash: 5fe45d62446d4dee23d29bed03dd490d8cb8efb8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4ab4771b6e569ce089b8765fda0316ed9d710410
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667611"
 ---
 # <a name="108---customtrackingrecordinfo"></a>108 - CustomTrackingRecordInfo
 
@@ -17,10 +18,10 @@ ms.locfileid: "96238842"
 |-|-|  
 |ID|108|  
 |关键字|UserEvents、EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例中的某个活动发出信息级别的 CustomTrackingRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,12 +31,12 @@ ms.locfileid: "96238842"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  
 |EventTime|xs:dateTime|发出该事件时的 UTC 时间|  
-|“属性”|xs:string|CustomTrackingRecord 的名称|  
+|名称|xs:string|CustomTrackingRecord 的名称|  
 |ActivityName|xs:string|发出 CustomTrackingRecord 的活动的名称|  
 |ActivityId|xs:string|发出 CustomTrackingRecord 的活动的 ID|  
 |ActivityInstanceId|xs:string|发出 CustomTrackingRecord 的活动的实例 ID|  

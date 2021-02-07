@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 107--BookmarkResumptionRecord
 title: 107 -- BookmarkResumptionRecord
 ms.date: 03/30/2017
 ms.assetid: aa2d37ed-2bfa-439b-89e8-a9354027f155
-ms.openlocfilehash: 14557ef2726a60bcde49d30f9d6168fd831e613c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 456a6cd9f723732454ce032facd062a26aa609be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238855"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667624"
 ---
 # <a name="107----bookmarkresumptionrecord"></a>107 -- BookmarkResumptionRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96238855"
 |-|-|  
 |ID|107|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  在工作流实例发出 BookmarkResumptionRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,12 +31,12 @@ ms.locfileid: "96238855"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  
 |EventTime|xs:dateTime|发出该事件时的 UTC 时间|  
-|“属性”|xs:string|继续的书签的名称|  
+|名称|xs:string|继续的书签的名称|  
 |SubInstanceID|xs:GUID|书签范围的 ID|  
 |OwnerActivityName|xs:string|书签活动的名称|  
 |OwnerActivityId|xs:string|书签活动的 ID|  

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：事务的 MSMQ 绑定
 title: 已经过事务处理的 MSMQ 绑定
 ms.date: 03/30/2017
 ms.assetid: 71f5cb8d-f1df-4e1e-b8a2-98e734a75c37
-ms.openlocfilehash: fa53099caba144f321698f180fe18f7614a1fa64
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 17fdcdb169c9e57c1a95d5aea4c79654e3739664
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596560"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668521"
 ---
 # <a name="transacted-msmq-binding"></a>已经过事务处理的 MSMQ 绑定
 
@@ -50,7 +51,7 @@ public interface IOrderProcessor
 }
 ```
 
-服务是自承载服务。 使用 MSMQ 传输时，必须提前创建所使用的队列。 可以手动或通过代码完成此操作。 在此示例中，该服务包含代码，以检查队列是否存在并在不存在时创建队列。 从配置文件中读取队列名称。 基址[元数据实用工具（svcutil.exe）](../servicemodel-metadata-utility-tool-svcutil-exe.md)使用该基址来生成服务的代理。
+服务是自承载服务。 使用 MSMQ 传输时，必须提前创建所使用的队列。 可以手动或通过代码完成此操作。 在此示例中，该服务包含代码，以检查队列是否存在并在不存在时创建队列。 从配置文件中读取队列名称。 基址由 "工作的 [元数据实用工具" 工具使用 ( # A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md) 来生成服务的代理。
 
 ```csharp
 // Host the service within this EXE console application.
@@ -90,7 +91,7 @@ MSMQ 队列名称在配置文件的 appSettings 节中指定，如以下示例�
 ```
 
 > [!NOTE]
-> 队列名称为本地计算机使用圆点 (.)，并在使用 <xref:System.Messaging> 创建队列时在其路径中使用反斜杠分隔符。 Windows Communication Foundation （WCF）终结点使用带有 net.pipe 方案的队列地址，使用 "localhost" 来表示本地计算机，并在其路径中使用正斜杠。
+> 队列名称为本地计算机使用圆点 (.)，并在使用 <xref:System.Messaging> 创建队列时在其路径中使用反斜杠分隔符。 Windows Communication Foundation (WCF) 终结点将队列地址与 net.tcp 方案一起使用，使用 "localhost" 来表示本地计算机，并在其路径中使用正斜杠。
 
 客户端创建事务范围。 与队列的通信发生在事务范围之内，从而可将该事务范围视为原子单元，其中所有消息均将发送到队列或者没有任何消息发送到队列。 通过在事务范围上调用 <xref:System.Transactions.TransactionScope.Complete%2A> 可以提交事务。
 
@@ -159,23 +160,23 @@ Processing Purchase Order: 7b31ce51-ae7c-4def-9b8b-617e4288eafd
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+1. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
 2. 如果先运行服务，则它将检查以确保队列存在。 如果队列不存在，则服务将创建一个队列。 可以先运行服务以创建队列或通过 MSMQ 队列管理器创建一个队列。 执行下面的步骤来在 Windows 2008 中创建队列。
 
     1. 在 Visual Studio 2012 中打开服务器管理器。
 
-    2. 展开 "**功能**" 选项卡。
+    2. 展开 " **功能** " 选项卡。
 
     3. 右键单击 "**专用消息队列**"，然后选择 "**新建****专用队列**"。
 
-    4. 选中 "**事务性**" 框。
+    4. 选中 " **事务性** " 框。
 
     5. 输入 `ServiceModelSamplesTransacted` 作为新队列的名称。
 
 3. 若要生成 C# 或 Visual Basic .NET 版本的解决方案，请按照 [Building the Windows Communication Foundation Samples](building-the-samples.md)中的说明进行操作。
 
-4. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+4. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
 默认情况下使用 <xref:System.ServiceModel.NetMsmqBinding> 启用传输安全。 对于 MSMQ 传输安全存在两个相关属性：<xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> 和 <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A>。 默认情况下，身份验证模式设置为 `Windows`，保护级别设置为 `Sign`。 为了使 MSMQ 提供身份验证和签名功能，MSMQ 必须是域的一部分，并且必须安装 MSMQ 的 Active Directory 集成选项。 如果在未满足这些条件的计算机上运行此示例，将会收到错误。
 
@@ -235,6 +236,6 @@ Processing Purchase Order: 7b31ce51-ae7c-4def-9b8b-617e4288eafd
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\Transacted`
