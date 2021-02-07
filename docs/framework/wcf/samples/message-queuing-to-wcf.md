@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：要 Windows Communication Foundation 的消息队列
 title: 到 Windows Communication Foundation 的消息队列
 ms.date: 03/30/2017
 ms.assetid: 6d718eb0-9f61-4653-8a75-d2dac8fb3520
-ms.openlocfilehash: 5132e0380aebd595e79429fab9df8a7fb94574a0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 53c535379584bcb8fa50d1b550f87ea7acc15175
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558688"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703999"
 ---
 # <a name="message-queuing-to-windows-communication-foundation"></a>到 Windows Communication Foundation 的消息队列
 

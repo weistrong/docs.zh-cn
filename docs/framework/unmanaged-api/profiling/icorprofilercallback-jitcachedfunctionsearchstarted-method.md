@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： JITCachedFunctionSearchStarted 方法
 title: ICorProfilerCallback::JITCachedFunctionSearchStarted 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5cba642c-0d80-48ee-889d-198c5044d821
 topic_type:
 - apiref
-ms.openlocfilehash: 938da4e3b7cc45c24dcac872ab504755116197a0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1faaf8fbc1e0fee9ce76850cfedcd4e8cf934371
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684000"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705754"
 ---
 # <a name="icorprofilercallbackjitcachedfunctionsearchstarted-method"></a>ICorProfilerCallback::JITCachedFunctionSearchStarted 方法
 
@@ -44,7 +45,7 @@ HRESULT JITCachedFunctionSearchStarted(
 
   \[out] `true` 如果执行引擎应使用函数的缓存版本 (如果可用) ，则为; 否则为 `false` 。 如果值为 `false` ，则执行引擎将对函数进行 JIT 编译，而不是使用未进行 JIT 编译的版本。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 .NET Framework 版本2.0 中， `JITCachedFunctionSearchStarted` 对于常规 NGen 映像中的所有函数，不会进行和 [ICorProfilerCallback：： JITCachedFunctionSearchFinished 方法](icorprofilercallback-jitcachedfunctionsearchfinished-method.md) 回调。 只有针对配置文件优化的 NGen 映像将为映像中的所有函数生成回调。 但是，由于额外的开销，如果探查器打算使用这些回调来强制将函数实时编译 (JIT) ，则它应请求探查器优化的 NGen 映像。 否则，探查器应使用延迟策略来收集函数信息。  
   
@@ -64,6 +65,6 @@ HRESULT JITCachedFunctionSearchStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

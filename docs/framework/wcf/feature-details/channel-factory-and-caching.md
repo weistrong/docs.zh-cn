@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：通道工厂和缓存
 title: 通道工厂和缓存
 ms.date: 03/30/2017
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
-ms.openlocfilehash: 5b8348a98b484ca08e3dbeba141dc49825c8c071
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6922191c2b99dea516d0e85aac9ed7bc12a67b81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705195"
 ---
 # <a name="channel-factory-and-caching"></a>通道工厂和缓存
 
@@ -26,13 +27,13 @@ WCF 客户端应用程序使用 <xref:System.ServiceModel.ChannelFactory%601> �
 > [!TIP]
 > 当直接使用 <xref:System.ServiceModel.ChannelFactory%601> 类时，您可以直接控制通道工厂创建。
 
-用[Svcutil.exe 元数据实用工具（）](../servicemodel-metadata-utility-tool-svcutil-exe.md)生成的 WCF 客户端代理派生自 <xref:System.ServiceModel.ClientBase%601> 。 <xref:System.ServiceModel.ClientBase%601> 定义一个静态 <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> 属性，该属性定义通道工厂缓存行为。 为特定类型设定缓存设置。 例如，将设置 `ClientBase<ITest>.CacheSettings` 为下面定义的值之一将仅影响类型为的代理/ClientBase `ITest` 。 特定 <xref:System.ServiceModel.ClientBase%601> 的缓存设置在创建第一个代理/ClientBase 实例后就不可改变。
+通过 [ ( # A0) ](../servicemodel-metadata-utility-tool-svcutil-exe.md) 生成的 WCF 客户端代理是从派生的 <xref:System.ServiceModel.ClientBase%601> 。 <xref:System.ServiceModel.ClientBase%601> 定义一个静态 <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> 属性，该属性定义通道工厂缓存行为。 为特定类型设定缓存设置。 例如，将设置  `ClientBase<ITest>.CacheSettings` 为下面定义的值之一将仅影响类型为的代理/ClientBase `ITest` 。 特定 <xref:System.ServiceModel.ClientBase%601> 的缓存设置在创建第一个代理/ClientBase 实例后就不可改变。
 
 ## <a name="specifying-caching-behavior"></a>指定缓存行为
 
 缓存行为通过将 <xref:System.ServiceModel.ClientBase%601.CacheSetting> 属性设置为下列值之一指定。
 
-|缓存设置值|描述|
+|缓存设置值|说明|
 |-------------------------|-----------------|
 |<xref:System.ServiceModel.CacheSetting.AlwaysOn>|应用程序域内的 <xref:System.ServiceModel.ClientBase%601> 的所有实例都可以参与缓存。 开发人员已经确定对缓存没有不利的安全性影响。 即使访问了上的 "安全敏感" 属性，缓存也不会关闭 <xref:System.ServiceModel.ClientBase%601> 。 的 "安全敏感" 属性 <xref:System.ServiceModel.ClientBase%601> 是 <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> 、 <xref:System.ServiceModel.ClientBase%601.Endpoint%2A> 和 <xref:System.ServiceModel.ClientBase%601.ChannelFactory%2A> 。|
 |<xref:System.ServiceModel.CacheSetting.Default>|只有从在配置文件中定义的终结点创建的 <xref:System.ServiceModel.ClientBase%601> 的实例才参与应用程序域内的缓存。 以编程方式在应用程序域内创建的 <xref:System.ServiceModel.ClientBase%601> 的任何实例都将不参与缓存。 此外， <xref:System.ServiceModel.ClientBase%601> 只要访问了其任何 "安全敏感" 属性，就会对实例禁用缓存。|
@@ -113,7 +114,7 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
 
 在上面的示例中，`TestClient` 的所有实例将使用不同的通道工厂。 当每个终结点具有不同的安全需求并且对缓存没有意义时，这非常有用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.ClientBase%601>
 - [生成客户端](../building-clients.md)

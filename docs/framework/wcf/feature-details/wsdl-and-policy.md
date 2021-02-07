@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WSDL 和策略
 title: WSDL 和策略
 ms.date: 03/30/2017
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
-ms.openlocfilehash: 123a878e90ee9099b009985a5e79155e8b1cd097
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e7d0ca81fbac1a746fa7c10efb8e8d32f1ee3240
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238335"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704142"
 ---
 # <a name="wsdl-and-policy"></a>WSDL 和策略
 
@@ -56,7 +57,7 @@ ms.locfileid: "96238335"
 
  除了在 Web Services 规范中引入的策略断言 (WS-ATOMICTRANSACTION ) 并在本文档的其他部分中提到，WCF 还实现了以下策略断言。  
   
-|策略断言|策略主题|描述|  
+|策略断言|策略主题|说明|  
 |----------------------|--------------------|-----------------|  
 |http:HttpBasicAuthentication|终结点|终结点使用 HTTP 基本身份验证。|  
 |http:HttpDigestAuthentication|终结点|终结点使用 HTTP 摘要式身份验证。|  
@@ -76,7 +77,7 @@ ms.locfileid: "96238335"
 |mssp:MustNotSendCancel|嵌套|指定一个需求，即不要将使用 Cancel 绑定 [WS-Trust、WS-SC] 的请求安全令牌 (RST) 请求消息 [WS-Trust] 发送给给定 SecurityContextToken 的颁发机构。 如果此断言存在，则不得将此类请求消息发送给颁发机构。 如果此断言不存在，则可以将此类请求消息发送给颁发机构。|  
 |mssp:RequireClientCertificate|嵌套|这一可选元素指定需要作为 TLSNEGO 协议的一部分提供的客户端证书。 如果此断言存在，则必须提供客户端证书。 如果此断言不存在，则不得提供客户端证书。 此断言不得在 mssp:SslContextToken 外部使用。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自定义 WSDL 发布](../samples/custom-wsdl-publication.md)
 - [如何：导出自定义 WSDL](../extending/how-to-export-custom-wsdl.md)

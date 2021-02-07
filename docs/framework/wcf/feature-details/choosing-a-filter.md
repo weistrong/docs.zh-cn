@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：选择筛选器
 title: 选择筛选器
 ms.date: 03/30/2017
 ms.assetid: 67ab5af9-b9d9-4300-b3b1-41abb5a1fd10
-ms.openlocfilehash: f783b6416f2330d272c4c756a3ca0cd332f3c6e7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7fa484775f0a08ccef28da358cd057465c49f390
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705268"
 ---
 # <a name="choosing-a-filter"></a>选择筛选器
 
@@ -145,7 +146,7 @@ XPathMessageFilter xpath1=new XPathMessageFilter("//ns:element");
 
 有关设计 XPath 查询的详细信息，请参阅 [Xpath 语法](/previous-versions/dotnet/netframework-4.0/ms256471(v=vs.100))。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [消息筛选器](message-filters.md)
 - [如何：使用筛选器](how-to-use-filters.md)

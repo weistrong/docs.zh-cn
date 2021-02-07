@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用 Dead-Letter 队列处理消息传输故障
 title: 使用死信队列处理消息传输故障
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9e891c6a-d960-45ea-904f-1a00e202d61a
-ms.openlocfilehash: d3087021c717d6ee055a4a1f5332d9d259f06381
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 497da84d37cf7c82a2da09e4303b8e53e7e0b46c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704441"
 ---
 # <a name="using-dead-letter-queues-to-handle-message-transfer-failures"></a>使用死信队列处理消息传输故障
 
@@ -74,7 +75,7 @@ ms.locfileid: "96289589"
   
  下面是死信队列服务配置文件的代码。  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [队列概述](queues-overview.md)
 - [如何：使用 WCF 终结点交换排队消息](how-to-exchange-queued-messages-with-wcf-endpoints.md)

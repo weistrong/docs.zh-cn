@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：工作流服务主机扩展性
 title: 工作流服务主机可扩展性
 ms.date: 03/30/2017
 ms.assetid: c0e8f7bb-cb13-49ec-852f-b85d7c23972f
-ms.openlocfilehash: 67a7830c564cabafb9441e86eb0d87164d854ee5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7454d894823a67b3621828afdd70a28cf2e7506c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704337"
 ---
 # <a name="workflow-service-host-extensibility"></a>工作流服务主机可扩展性
 
@@ -53,7 +54,7 @@ host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action =
 
  <xref:System.ServiceModel.Activities.WorkflowServiceHost> 可用于承载非服务工作流、未以 <xref:System.ServiceModel.Activities.Receive> 活动开头的工作流或未使用消息传递活动的工作流。 工作流服务通常以 <xref:System.ServiceModel.Activities.Receive> 活动开头。 如果 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 在接收工作流服务的消息时未处于运行状态（或未保存），则会创建一个新的工作流服务实例。 如果工作流不以 Receive 活动开头，则无法通过发送消息来启动此工作流，因为没有用于接收消息的活动。 若要承载非服务工作流，请从 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> 派生一个类，并重写 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A>、<xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext%2A> 和 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark%2A>。 如果您想提供首选实例 ID，请重写 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A>。 重写 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext%2A> 可以创建自定义工作流创建上下文或填充现有 <xref:System.ServiceModel.Activities.WorkflowCreationContext> 的实例。 重写 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark%2A> 可以从传入消息中手动提取书签。 如果重写此方法，则必须在其主体中调用 <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse%2A>，以便响应发送给 WorkflowHostingEndpoint 的消息。 如果不这样做，则可能会最终超过 <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> 限制。 在双向协定中，您可能能够检测到未能调用 <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse%2A>，因为客户端未能接收响应。 在单向协定中，您无法识别有关未能调用 <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse%2A> 的错误，直至超过 <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> 中止值之后，此时为时已晚。 有关详细信息，请参阅 [WorkflowHostingEndpoint Resume 书签](../../windows-workflow-foundation/samples/workflowhostingendpoint-resume-bookmark.md)若要创建非服务工作流的新实例，请声明一个用于定义创建新实例的操作的服务协定。 创建操作应采用 IDictionary \<string, object> 来传递任何所需的工作流参数。 该协定由 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> 派生类隐式实现。 当承载工作流时，请通过调用 <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> 向主机添加 <xref:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint%2A> 派生类的实例，然后调用 <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>。 若要创建工作流的实例，请创建所用服务协定类型的 <xref:System.ServiceModel.ChannelFactory%601>，并调用 <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A>。 然后，可调用在服务协定中定义的创建操作。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务](workflow-services.md)
 - [消息传递活动](messaging-activities.md)

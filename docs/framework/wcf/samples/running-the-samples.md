@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：运行 Windows Communication Foundation 示例
 title: 运行 Windows Communication Foundation 示例
 ms.date: 03/30/2017
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
-ms.openlocfilehash: 3a12128541739ba5c380be2efc291b9b419cab12
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4edbd7aef8eed42e4815666c15ff07aa2c2e82de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703726"
 ---
 # <a name="running-the-windows-communication-foundation-samples"></a>运行 Windows Communication Foundation 示例
 
@@ -80,7 +81,7 @@ Windows Communication Foundation (WCF) 示例可以在一台计算机或跨计�
   
 - 出于安全目的，如果服务承载于 IIS 中，请在示例结束后删除虚拟目录定义和在安装步骤中授予的权限。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [生成 Windows Communication Foundation 示例](building-the-samples.md)
 - [WCF 示例的疑难解答提示](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ManagedToUnmanagedTransition 方法
 title: ICorProfilerCallback::ManagedToUnmanagedTransition 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ef3cd619-912d-40c5-a449-03ba02a39ee7
 topic_type:
 - apiref
-ms.openlocfilehash: ef65ed908c71bcc2755aaf42070439fd7dab3f6d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bf7f45ae576f9812dee24cd3799a3a87678f7c61
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705562"
 ---
 # <a name="icorprofilercallbackmanagedtounmanagedtransition-method"></a>ICorProfilerCallback::ManagedToUnmanagedTransition 方法
 
@@ -42,7 +43,7 @@ HRESULT ManagedToUnmanagedTransition(
  `reason`  
  中一个 [COR_PRF_TRANSITION_REASON](cor-prf-transition-reason-enumeration.md) 枚举的值，该值指示是否由于从托管代码调用非托管代码而发生转换，或者是否是由非托管函数调用的托管函数返回。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果的值 `reason` 为 COR_PRF_TRANSITION_CALL，则函数 ID 为非托管函数的 ID，该函数从未使用实时编译器进行编译。 非托管函数具有与之关联的基本信息，如名称和某些元数据。 如果使用隐式平台调用调用非托管函数 (PInvoke) ，则运行时无法确定调用的目标，并且的值 `functionId` 将为 null。 有关隐式 PInvoke 的详细信息，请参阅 [使用 c + + 互操作 (隐式 pinvoke) ](/cpp/dotnet/using-cpp-interop-implicit-pinvoke)。  
   
@@ -56,7 +57,7 @@ HRESULT ManagedToUnmanagedTransition(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [UnmanagedToManagedTransition 方法](icorprofilercallback-unmanagedtomanagedtransition-method.md)

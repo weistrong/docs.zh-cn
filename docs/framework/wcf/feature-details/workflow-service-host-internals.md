@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：工作流服务主机内部机制
 title: 工作流服务主机内部机制
 ms.date: 03/30/2017
 ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
-ms.openlocfilehash: 23ee0533d5386164dc95cb7fe2c61a626ea3f96e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fb33e7d6f4e9f78c06459f3d7c8b5c44e2a44a7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704376"
 ---
 # <a name="workflow-service-host-internals"></a>工作流服务主机内部机制
 
@@ -52,7 +53,7 @@ ms.locfileid: "96295738"
 > [!WARNING]
 > 如果 SQL Server 配置为仅侦听 NamedPipe 协议，则工作流服务主机将打开失败。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务](workflow-services.md)
 - [承载工作流服务](hosting-workflow-services.md)

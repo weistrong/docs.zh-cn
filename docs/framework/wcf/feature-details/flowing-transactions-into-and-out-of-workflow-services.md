@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：将事务流入和流出工作流服务
 title: 使事务流入和流出工作流服务
 ms.date: 03/30/2017
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
-ms.openlocfilehash: 8764f3c88fc978bc71ff993252b04fe58da4bbc9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f39740c45dd70fbc06963b8e842f9a01a0393f7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704961"
 ---
 # <a name="flowing-transactions-into-and-out-of-workflow-services"></a>使事务流入和流出工作流服务
 
@@ -125,7 +126,7 @@ ms.locfileid: "96290343"
   
      ![添加 WriteLine 活动后的序列](./media/flowing-transactions-into-and-out-of-workflow-services/after-adding-writelines.jpg)  
   
-9. 将活动拖放到 `PrintTransactionInfo` 活动的主体中的第二个 <xref:System.Activities.Statements.WriteLine> 活动之后 **Body** <xref:System.ServiceModel.Activities.TransactedReceiveScope> 。  
+9. 将活动拖放到 `PrintTransactionInfo` 活动的主体中的第二个 <xref:System.Activities.Statements.WriteLine> 活动之后 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 。  
   
      ![添加 PrintTransactionInfo 后的序列](./media/flowing-transactions-into-and-out-of-workflow-services/after-adding-printtransactioninfo.jpg )  
   
@@ -133,7 +134,7 @@ ms.locfileid: "96290343"
   
     |属性|值|  
     |--------------|-----------|  
-    |如果|replyMessage|  
+    |功能|replyMessage|  
     |值|"Service: Sending reply."|  
   
 11. 将 <xref:System.Activities.Statements.WriteLine> 活动拖放到 <xref:System.Activities.Statements.Assign> 活动后面，然后将它的 <xref:System.Activities.Statements.WriteLine.Text%2A> 属性设置为 "Service: Begin reply."  
@@ -312,7 +313,7 @@ ms.locfileid: "96290343"
     }  
     ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务](workflow-services.md)
 - [Windows Communication Foundation 事务概述](transactions-overview.md)

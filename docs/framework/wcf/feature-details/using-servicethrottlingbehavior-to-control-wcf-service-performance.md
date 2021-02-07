@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：使用 ServiceThrottlingBehavior 控制 WCF 服务性能
 title: 使用 ServiceThrottlingBehavior 控制 WCF 服务性能
 ms.date: 03/30/2017
 helpviewer_keywords:
 - behavior [WCF], service performance
 ms.assetid: f9dc120c-dc24-49d5-930e-b22f5bc73423
-ms.openlocfilehash: 44cc924de0c3079bb2f8125a7ac63fa494d4aca1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4a53c89c6b17402b7dd32120d049426052e4f9e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704415"
 ---
 # <a name="using-servicethrottlingbehavior-to-control-wcf-service-performance"></a>使用 ServiceThrottlingBehavior 控制 WCF 服务性能
 
@@ -29,7 +30,7 @@ ms.locfileid: "96289407"
   
  有关详细信息，请参见 <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> 和 <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentInstances%2A>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
 - <xref:System.ServiceModel.NetTcpBinding.MaxConnections%2A>

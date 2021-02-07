@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：终结点地址
 title: 终结点地址
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], addresses
 - WCF [WCF], addresses
 ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
-ms.openlocfilehash: 45f179e7f36bb9f1c4d3b12166bc2e9e8b24e9d8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 009b34a3931bda3b16c9079316b97ea2f1680ffb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251420"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704779"
 ---
 # <a name="endpoint-addresses"></a>终结点地址
 
@@ -149,7 +150,7 @@ ms.locfileid: "96251420"
   
  在某些方案中，终结点接收抵达基础传输的所有消息，而不仅仅是具有相应 `To` 头的消息。 若要启用这一点，用户可以使用 <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> 类。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [指定终结点地址](../specifying-an-endpoint-address.md)
 - [服务标识和身份验证](service-identity-and-authentication.md)

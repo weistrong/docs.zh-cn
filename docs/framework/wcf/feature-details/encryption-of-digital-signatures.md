@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：数字签名的加密
 title: 数字签名的加密
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - digital signatures [WCF], encryption
 - digital signatures [WCF]
 ms.assetid: 0868866d-40b4-4341-8e42-eee3b7f15b69
-ms.openlocfilehash: dece961ac70dbcf310e5e4a9dcb05c303c787ad4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a68cea324fd5c2619f501eaf42bc518c17b89a6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704844"
 ---
 # <a name="encryption-of-digital-signatures"></a>数字签名的加密
 
@@ -29,7 +30,7 @@ ms.locfileid: "96251433"
   
  有关创建自定义绑定的详细信息，请参阅 [创建 User-Defined 绑定](../extending/creating-user-defined-bindings.md)。 有关为特定身份验证模式创建自定义绑定的详细信息，请参阅 [如何：为指定的身份验证模式创建 SecurityBindingElement](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Security.MessageProtectionOrder>
 - <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>

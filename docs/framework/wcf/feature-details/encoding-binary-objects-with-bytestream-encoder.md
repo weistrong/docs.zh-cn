@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：用 ByteStream 编码器编码二进制对象
 title: 使用字节流编码器编码二进制对象
 ms.date: 03/30/2017
 ms.assetid: 020ee981-c889-4b12-a3ea-91823ef46444
-ms.openlocfilehash: cc63cb8de1e245c3b58fb69819e59cb815b777d3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4ef3d3cd378abacd14dd502530a8090f3982e4ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276732"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704896"
 ---
 # <a name="encoding-binary-objects-with-bytestream-encoder"></a>使用字节流编码器编码二进制对象
 

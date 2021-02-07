@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：动态更新
 title: 如何：动态更新
 ms.date: 03/30/2017
 ms.assetid: 9b8f6e0d-edab-4a7e-86e3-8c66bebc64bb
-ms.openlocfilehash: a12d480163bb579f34d006ae1837ed4392bf47ee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 877cb58dd271fa70176a4197da273d923ec253f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704714"
 ---
 # <a name="how-to-dynamic-update"></a>如何：动态更新
 
@@ -300,6 +301,6 @@ namespace Microsoft.Samples.AdvancedFilters
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [路由服务](../samples/routing-services.md)

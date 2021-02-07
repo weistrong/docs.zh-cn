@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：权限提升
 title: 权限提升
 ms.date: 03/30/2017
 helpviewer_keywords:
 - elevation of privilege [WCF]
 - security [WCF], elevation of privilege
 ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
-ms.openlocfilehash: 9c62e11eedaa3fa194522695a33bccf210d390df
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 65aff3b8a1f258f68333fe39a2c980ae523d9ee9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704935"
 ---
 # <a name="elevation-of-privilege"></a>权限提升
 
@@ -89,11 +90,11 @@ ms.locfileid: "96254215"
   
  若要缓解此问题，请以其他方式引用 X.509 证书，如使用 <xref:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全注意事项](security-considerations-in-wcf.md)
 - [信息泄露](information-disclosure.md)
 - [拒绝服务](denial-of-service.md)
 - [重播攻击](replay-attacks.md)
 - [篡改](tampering.md)
-- [不支持的方案](unsupported-scenarios.md)
+- [不受支持的方案](unsupported-scenarios.md)

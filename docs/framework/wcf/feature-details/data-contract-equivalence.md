@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：数据协定等效性
 title: 数据协定等效性
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], equivalence
 ms.assetid: f06f3c7e-c235-4ec1-b200-68142edf1ed1
-ms.openlocfilehash: 2a8c186c839be5008bbc5315c7c9fae638680714
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d47107cfaeea5093977a919df1a5edb226cb4ebc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704987"
 ---
 # <a name="data-contract-equivalence"></a>数据协定等效性
 
@@ -63,7 +64,7 @@ ms.locfileid: "96293918"
   
  在应用程序之间传递参数和返回值时，如果所需类型为接口，则等效于所需类型为 <xref:System.Object> 类型。 由于每种类型最终都派生自 <xref:System.Object>，因此所有数据协定最终都派生自 <xref:System.Object> 的数据协定。 这样，在要求使用接口时，就可以传递任何数据协定类型。 若要成功使用接口，还需要执行其他步骤;有关详细信息，请参阅 [数据协定已知类型](data-contract-known-types.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

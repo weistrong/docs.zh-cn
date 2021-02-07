@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback2 接口
 title: ICorProfilerCallback2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4a261dba-450d-4f1f-8d98-865b58bfc992
 topic_type:
 - apiref
-ms.openlocfilehash: 597a3dfecd42e206c98974093fa2417eba570f6a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b6a6fa62d8d1b119ce1a52b06cb562c6da32b1a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729459"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705520"
 ---
 # <a name="icorprofilercallback2-interface"></a>ICorProfilerCallback2 接口
 
@@ -41,7 +42,7 @@ ms.locfileid: "95729459"
 |[SurvivingReferences 方法](icorprofilercallback2-survivingreferences-method.md)|通知探查器有关垃圾回收已保留下来的对象引用。|  
 |[ThreadNameChanged 方法](icorprofilercallback2-threadnamechanged-method.md)|通知代码探查器线程的名称已更改。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 在 `ICorProfilerCallback` (或) 接口中调用方法， `ICorProfilerCallback2` 以便在探查器已订阅的事件发生时通知探查器。 这是 CLR 与代码探查器进行通信时所使用的主回调接口。  
   
@@ -62,7 +63,7 @@ ms.locfileid: "95729459"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

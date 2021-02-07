@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：工作流控制终结点
 title: 工作流控制终结点
 ms.date: 03/30/2017
 ms.assetid: 1b883334-1590-4fbb-b0d6-65197efe0700
-ms.openlocfilehash: ecc0946833db578c524ce7e4579024bd4cd46fd0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 235d7ce3552bb3452fc3ace52249311a7605a519
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704402"
 ---
 # <a name="workflow-control-endpoint"></a>工作流控制终结点
 
@@ -35,7 +36,7 @@ ms.locfileid: "96266891"
 
  <xref:System.ServiceModel.Activities.IWorkflowInstanceManagement> 接口将定义一组具有同步和异步版本的控制操作。 事务处理版本要求使用识别事务处理的绑定。 下表列出了支持的控制操作。  
   
-|控制操作|描述|  
+|控制操作|说明|  
 |-----------------------|-----------------|  
 |中止|强制停止执行工作流实例。|  
 |取消|将工作流实例从活动或挂起状态转换为完成状态。|  

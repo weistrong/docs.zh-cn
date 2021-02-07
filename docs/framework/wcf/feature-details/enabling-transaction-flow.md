@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：启用事务流
 title: 启用事务流
 ms.date: 03/30/2017
 helpviewer_keywords:
 - transactions [WCF], enabling flow
 ms.assetid: a03f5041-5049-43f4-897c-e0292d4718f7
-ms.openlocfilehash: 206cbecc35c6b517ddfc3b14f4a1d139cf72fc34
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: abf8875c870894f6c1b0a08138356950a646e4d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276745"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704922"
 ---
 # <a name="enabling-transaction-flow"></a>启用事务流
 
@@ -37,11 +38,11 @@ Windows Communication Foundation (WCF) 提供了非常灵活的选项来控制�
   
 |TransactionFlow<br /><br /> binding|TransactionFlow 绑定属性|TransactionFlowProtocol 绑定协议|事务流的类型|  
 |---------------------------------|--------------------------------------|----------------------------------------------|------------------------------|  
-|必需|true|WS-AT|事务必须以可以互操作的 WS-AT 格式流动。|  
-|必需|true|OleTransactions|事务必须以 WCF OleTransactions 格式流动。|  
+|必需|是|WS-AT|事务必须以可以互操作的 WS-AT 格式流动。|  
+|必需|是|OleTransactions|事务必须以 WCF OleTransactions 格式流动。|  
 |必需|false|不适用|不适用，因为这是无效的配置。|  
-|然后用户才能访问|true|WS-AT|事务可以以可互操作的 WS-AT 格式流动。|  
-|然后用户才能访问|true|OleTransactions|事务可能以 WCF OleTransactions 格式流动。|  
+|然后用户才能访问|是|WS-AT|事务可以以可互操作的 WS-AT 格式流动。|  
+|然后用户才能访问|是|OleTransactions|事务可能以 WCF OleTransactions 格式流动。|  
 |然后用户才能访问|false|任何值|不流动事务。|  
 |NotAllowed|任何值|任何值|不流动事务。|  
   
@@ -49,13 +50,13 @@ Windows Communication Foundation (WCF) 提供了非常灵活的选项来控制�
   
 |传入消息|TransactionFlow 设置|事务标头|消息处理结果|  
 |----------------------|-----------------------------|------------------------|-------------------------------|  
-|事务与预期的协议格式匹配|Allowed 或 Mandatory|`MustUnderstand` 等于 `true`。|进程|  
+|事务与预期的协议格式匹配|Allowed 或 Mandatory|`MustUnderstand` 等于 `true`。|过程|  
 |事务不与预期的协议格式匹配|必需|`MustUnderstand` 等于 `false`。|因要求一个事务而拒绝|  
 |事务不与预期的协议格式匹配|然后用户才能访问|`MustUnderstand` 等于 `false`。|因无法理解标头而拒绝|  
 |使用任何协议格式的事务|NotAllowed|`MustUnderstand` 等于 `false`。|因无法理解标头而拒绝|  
 |无事务|必需|不适用|因要求一个事务而拒绝|  
-|无事务|然后用户才能访问|不适用|进程|  
-|无事务|NotAllowed|不适用|进程|  
+|无事务|然后用户才能访问|不适用|过程|  
+|无事务|NotAllowed|不适用|过程|  
   
  虽然协定上的每个方法都有不同的事务流需求，但事务流协议设置的范围处于绑定级别。 这意味着，共享同一个终结点（并因此共享同一绑定）的所有方法也共享允许或要求事务流的同一个策略以及同一个事务协议（如果适用）。  
   
@@ -75,7 +76,7 @@ Windows Communication Foundation (WCF) 提供了非常灵活的选项来控制�
   
  管理员或部署人员可以使用终结点级别的事务流在部署时使用配置文件来配置事务流需求或约束。  
   
-## <a name="security"></a>安全性  
+## <a name="security"></a>安全  
 
  若要确保系统的安全性和完整性，你必须在应用程序之间流动事务时保护消息交换。 你不应向无资格参与某一事务的任何应用程序流动或透露该事务的详细信息。  
   

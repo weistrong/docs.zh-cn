@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： JITInlining 方法
 title: ICorProfilerCallback::JITInlining 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c2f45801-dd38-4b78-b6b7-64397dc73f83
 topic_type:
 - apiref
-ms.openlocfilehash: cf68594620b24f2a5823aa423c5911f2d9d6b328
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2bd6c48180b9484ef90b6afb505c8171aff57aa4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725490"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705624"
 ---
 # <a name="icorprofilercallbackjitinlining-method"></a>ICorProfilerCallback::JITInlining 方法
 
@@ -46,7 +47,7 @@ HRESULT JITInlining(
  `pfShouldInline`  
  [out] `true` 如果允许执行插入，则为;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器可以将设置 `pfShouldInline` 为 `false` ，以防止将 `calleeId` 函数插入 `callerId` 函数。 此外，探查器可以通过使用 [COR_PRF_MONITOR](cor-prf-monitor-enumeration.md) 枚举的 COR_PRF_DISABLE_INLINING 值全局禁用内联插入。  
   
@@ -62,6 +63,6 @@ HRESULT JITInlining(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
