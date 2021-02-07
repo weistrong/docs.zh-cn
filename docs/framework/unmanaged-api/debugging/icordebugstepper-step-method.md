@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugStepper：： Step 方法
 title: ICorDebugStepper::Step 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 38c1940b-ada1-40ba-8295-4c0833744e1e
 topic_type:
 - apiref
-ms.openlocfilehash: 234705e4495a1a582f3801ad1e645f923cd6f4b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb45575f7818784addf67eacda35442764e706af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727687"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717623"
 ---
 # <a name="icordebugstepperstep-method"></a>ICorDebugStepper::Step 方法
 
@@ -39,7 +40,7 @@ HRESULT Step (
  `bStepIn`  
  中设置为 `true` 可单步执行在线程中调用的函数。 设置为 `false` 以逐过程执行函数。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  当公共语言运行时执行此分档器帧中的下一个托管指令时，此步骤即告完成。 如果 `Step` 在不在托管代码中的分档器上调用，则在线程执行下一个托管代码指令时，步骤将完成。  
   
