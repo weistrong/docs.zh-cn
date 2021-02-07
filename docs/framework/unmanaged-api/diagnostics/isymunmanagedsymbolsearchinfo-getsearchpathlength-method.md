@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedSymbolSearchInfo：： GetSearchPathLength 方法
 title: ISymUnmanagedSymbolSearchInfo::GetSearchPathLength 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,37 +16,37 @@ helpviewer_keywords:
 ms.assetid: 274e73cf-8333-47ba-ac12-70214e2b0112
 topic_type:
 - apiref
-ms.openlocfilehash: 9803094753dee27318af9981bd2e2ad196d434e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3d5faf9d972881ff9c1eaf71bcaa6f68da46dae6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763015"
 ---
-# <a name="isymunmanagedsymbolsearchinfogetsearchpathlength-method"></a><span data-ttu-id="011ff-102">ISymUnmanagedSymbolSearchInfo::GetSearchPathLength 方法</span><span class="sxs-lookup"><span data-stu-id="011ff-102">ISymUnmanagedSymbolSearchInfo::GetSearchPathLength Method</span></span>
+# <a name="isymunmanagedsymbolsearchinfogetsearchpathlength-method"></a><span data-ttu-id="c3d93-103">ISymUnmanagedSymbolSearchInfo::GetSearchPathLength 方法</span><span class="sxs-lookup"><span data-stu-id="c3d93-103">ISymUnmanagedSymbolSearchInfo::GetSearchPathLength Method</span></span>
 
-<span data-ttu-id="011ff-103">获取搜索路径长度。</span><span class="sxs-lookup"><span data-stu-id="011ff-103">Gets the search path length.</span></span>  
+<span data-ttu-id="c3d93-104">获取搜索路径长度。</span><span class="sxs-lookup"><span data-stu-id="c3d93-104">Gets the search path length.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="011ff-104">语法</span><span class="sxs-lookup"><span data-stu-id="011ff-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="c3d93-105">语法</span><span class="sxs-lookup"><span data-stu-id="c3d93-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetSearchPathLength(  
     [out] ULONG32 *pcchPath);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="011ff-105">参数</span><span class="sxs-lookup"><span data-stu-id="011ff-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="c3d93-106">参数</span><span class="sxs-lookup"><span data-stu-id="c3d93-106">Parameters</span></span>  
 
  `pcchPath`  
- <span data-ttu-id="011ff-106">弄指向的指针， `ULONG32` 该指针接收包含搜索路径长度所需的缓冲区大小（以字符数表示）。</span><span class="sxs-lookup"><span data-stu-id="011ff-106">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the search path length.</span></span>  
+ <span data-ttu-id="c3d93-107">弄指向的指针， `ULONG32` 该指针接收包含搜索路径长度所需的缓冲区大小（以字符数表示）。</span><span class="sxs-lookup"><span data-stu-id="c3d93-107">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the search path length.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="011ff-107">返回值</span><span class="sxs-lookup"><span data-stu-id="011ff-107">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="c3d93-108">返回值</span><span class="sxs-lookup"><span data-stu-id="c3d93-108">Return Value</span></span>  
 
- <span data-ttu-id="011ff-108">如果该方法成功，则 S_OK;否则，E_FAIL 或其他一些错误代码。</span><span class="sxs-lookup"><span data-stu-id="011ff-108">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+ <span data-ttu-id="c3d93-109">如果该方法成功，则 S_OK;否则，E_FAIL 或其他一些错误代码。</span><span class="sxs-lookup"><span data-stu-id="c3d93-109">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="011ff-109">要求</span><span class="sxs-lookup"><span data-stu-id="011ff-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="c3d93-110">要求</span><span class="sxs-lookup"><span data-stu-id="c3d93-110">Requirements</span></span>  
 
- <span data-ttu-id="011ff-110">**标头：** CorSym，CorSym</span><span class="sxs-lookup"><span data-stu-id="011ff-110">**Header:** CorSym.idl, CorSym.h</span></span>  
+ <span data-ttu-id="c3d93-111">**标头：** CorSym，CorSym</span><span class="sxs-lookup"><span data-stu-id="c3d93-111">**Header:** CorSym.idl, CorSym.h</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="011ff-111">另请参阅</span><span class="sxs-lookup"><span data-stu-id="011ff-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c3d93-112">请参阅</span><span class="sxs-lookup"><span data-stu-id="c3d93-112">See also</span></span>
 
-- [<span data-ttu-id="011ff-112">ISymUnmanagedSymbolSearchInfo 接口</span><span class="sxs-lookup"><span data-stu-id="011ff-112">ISymUnmanagedSymbolSearchInfo Interface</span></span>](isymunmanagedsymbolsearchinfo-interface.md)
+- [<span data-ttu-id="c3d93-113">ISymUnmanagedSymbolSearchInfo 接口</span><span class="sxs-lookup"><span data-stu-id="c3d93-113">ISymUnmanagedSymbolSearchInfo Interface</span></span>](isymunmanagedsymbolsearchinfo-interface.md)
