@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerThreadEnum：： Skip 方法
 title: ICorProfilerThreadEnum::Skip 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: acb8b029-4a96-4ed7-ae3c-310204e5ceea
 topic_type:
 - apiref
-ms.openlocfilehash: 12b7b53c408388c21d7508f6591ead5ccf55936b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1da191980364868ed4237fccaf7495d5417705cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721174"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736885"
 ---
 # <a name="icorprofilerthreadenumskip-method"></a>ICorProfilerThreadEnum::Skip 方法
 
@@ -47,7 +48,7 @@ HRESULT Skip (    [in] ULONG celt
 |S_OK|`celt` 元素已被跳过。|  
 |S_FALSE|`celt`跳过的元素数少于个，这表示没有更多元素。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此枚举器的游标的新位置 (当前位置) + `celt` 。  
   
@@ -61,7 +62,7 @@ HRESULT Skip (    [in] ULONG celt
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerThreadEnum 接口](icorprofilerthreadenum-interface.md)
 - [分析接口](profiling-interfaces.md)

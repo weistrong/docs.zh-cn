@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： PublicKeyBlob 结构
 title: PublicKeyBlob 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b9240712-829c-4c8d-9a09-a6e7aa63f63a
 topic_type:
 - apiref
-ms.openlocfilehash: 42cd3cc22fbbb8eb3d5ac44544fce36650b6461f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94c1ea3d5a41bbb8941658e87f97cd6d6336187a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736474"
 ---
 # <a name="publickeyblob-structure"></a>PublicKeyBlob 结构
 
@@ -45,7 +46,7 @@ typedef struct {
 |`cbPublicKey`|密钥的长度（以字节为单位）。|  
 |`PublicKey`|可变长度的字节数组，其中包含由 CryptoAPI 返回的格式的键值。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `PublicKeyBlob`结构由[StrongNameGetPublicKey](strongnamegetpublickey-function.md)、 [StrongNameSignatureGeneration](strongnamesignaturegeneration-function.md)和其他强名称函数用来表示公钥/私钥对的公钥。  
   
@@ -59,7 +60,7 @@ typedef struct {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameGetPublicKey 函数](strongnamegetpublickey-function.md)
 - [StrongNameSignatureGeneration 函数](strongnamesignaturegeneration-function.md)

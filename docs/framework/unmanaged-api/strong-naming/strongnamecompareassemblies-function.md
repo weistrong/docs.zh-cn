@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameCompareAssemblies 函数
 title: StrongNameCompareAssemblies 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 763f2375-efc6-4219-8806-a3b0567ef72b
 topic_type:
 - apiref
-ms.openlocfilehash: e7292635ea0344f1c77c8d44908a9a811e464ff9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e59bb96a89dc1e1cf8b809c3e0d538aaffe83b8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736485"
 ---
 # <a name="strongnamecompareassemblies-function"></a>StrongNameCompareAssemblies 函数
 
@@ -68,13 +69,13 @@ BOOLEAN StrongNameCompareAssemblies (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  程序集的强名称签名由程序集的文本名称、版本、区域性和公钥标记组成。  
   
  如果 `StrongNameCompareAssemblies` 函数未成功完成，请调用 [StrongNameErrorInfo](strongnameerrorinfo-function.md) 函数来检索上次生成的错误。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameCompareAssemblies 方法](../hosting/iclrstrongname-strongnamecompareassemblies-method.md)
 - [ICLRStrongName 接口](../hosting/iclrstrongname-interface.md)

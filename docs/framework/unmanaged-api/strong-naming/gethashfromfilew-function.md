@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetHashFromFileW 函数
 title: GetHashFromFileW 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 97c2d7a6-5376-45a1-ba65-146a249147cc
 topic_type:
 - apiref
-ms.openlocfilehash: 8038d0abc93e058e6bde897bbf2261d8f1df885a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: daebd06de02dfe936f1bdeb8697de4fe6524dce3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736507"
 ---
 # <a name="gethashfromfilew-function"></a>GetHashFromFileW 函数
 
@@ -56,7 +57,7 @@ HRESULT GetHashFromFileW (
  `pchHash`  
  弄的大小（以字节为单位） `pbHash` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此函数与 [GetHashFromFile](gethashfromfile-function.md)相同，不同之处在于文件名规范是 Unicode 而不是 ANSI。  
   
@@ -70,7 +71,7 @@ HRESULT GetHashFromFileW (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetHashFromFileW 方法](../hosting/iclrstrongname-gethashfromfilew-method.md)
 - [GetHashFromFile 方法](../hosting/iclrstrongname-gethashfromfile-method.md)
