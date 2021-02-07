@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：信道类
 title: Channel 类
 ms.date: 03/30/2017
 ms.assetid: d9fae2ca-209c-4341-a0f5-6b79d1a67776
-ms.openlocfilehash: a920636e7df9609b12834366b1488c80122f9fca
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dcc92f78f09e9a73a24134c6c0685949f46f38dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274226"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757717"
 ---
-# <a name="channel-class"></a><span data-ttu-id="570ee-102">Channel 类</span><span class="sxs-lookup"><span data-stu-id="570ee-102">Channel class</span></span>
+# <a name="channel-class"></a><span data-ttu-id="f5833-103">Channel 类</span><span class="sxs-lookup"><span data-stu-id="f5833-103">Channel class</span></span>
 
-<span data-ttu-id="570ee-103">通道</span><span class="sxs-lookup"><span data-stu-id="570ee-103">Channel</span></span>  
+<span data-ttu-id="f5833-104">通道</span><span class="sxs-lookup"><span data-stu-id="f5833-104">Channel</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="570ee-104">语法</span><span class="sxs-lookup"><span data-stu-id="570ee-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="f5833-105">语法</span><span class="sxs-lookup"><span data-stu-id="f5833-105">Syntax</span></span>  
   
 ```csharp
 class Channel  
@@ -26,60 +27,60 @@ class Channel
 };  
 ```  
   
-## <a name="methods"></a><span data-ttu-id="570ee-105">方法</span><span class="sxs-lookup"><span data-stu-id="570ee-105">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="f5833-106">方法</span><span class="sxs-lookup"><span data-stu-id="f5833-106">Methods</span></span>  
 
- <span data-ttu-id="570ee-106">Channel 类未定义任何方法。</span><span class="sxs-lookup"><span data-stu-id="570ee-106">The Channel class does not define any methods.</span></span>  
+ <span data-ttu-id="f5833-107">Channel 类未定义任何方法。</span><span class="sxs-lookup"><span data-stu-id="f5833-107">The Channel class does not define any methods.</span></span>  
   
-## <a name="properties"></a><span data-ttu-id="570ee-107">属性</span><span class="sxs-lookup"><span data-stu-id="570ee-107">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="f5833-108">属性</span><span class="sxs-lookup"><span data-stu-id="f5833-108">Properties</span></span>  
 
- <span data-ttu-id="570ee-108">Channel 类具有以下属性。</span><span class="sxs-lookup"><span data-stu-id="570ee-108">The Channel class has the following properties.</span></span>  
+ <span data-ttu-id="f5833-109">Channel 类具有以下属性。</span><span class="sxs-lookup"><span data-stu-id="f5833-109">The Channel class has the following properties.</span></span>  
   
-### <a name="localaddress"></a><span data-ttu-id="570ee-109">LocalAddress</span><span class="sxs-lookup"><span data-stu-id="570ee-109">LocalAddress</span></span>  
+### <a name="localaddress"></a><span data-ttu-id="f5833-110">LocalAddress</span><span class="sxs-lookup"><span data-stu-id="f5833-110">LocalAddress</span></span>  
 
- <span data-ttu-id="570ee-110">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="570ee-110">Data type: string</span></span>  
+ <span data-ttu-id="f5833-111">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="f5833-111">Data type: string</span></span>  
   
- <span data-ttu-id="570ee-111">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="570ee-111">Access type: Read-only</span></span>  
+ <span data-ttu-id="f5833-112">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="f5833-112">Access type: Read-only</span></span>  
   
- <span data-ttu-id="570ee-112">通道的本地终结点。</span><span class="sxs-lookup"><span data-stu-id="570ee-112">The local endpoint for the channel.</span></span>  
+ <span data-ttu-id="f5833-113">通道的本地终结点。</span><span class="sxs-lookup"><span data-stu-id="f5833-113">The local endpoint for the channel.</span></span>  
   
-### <a name="ref"></a><span data-ttu-id="570ee-113">ref</span><span class="sxs-lookup"><span data-stu-id="570ee-113">ref</span></span>  
+### <a name="ref"></a><span data-ttu-id="f5833-114">ref</span><span class="sxs-lookup"><span data-stu-id="f5833-114">ref</span></span>  
 
- <span data-ttu-id="570ee-114">数据类型：Endpoint</span><span class="sxs-lookup"><span data-stu-id="570ee-114">Data type: Endpoint</span></span>  
+ <span data-ttu-id="f5833-115">数据类型：Endpoint</span><span class="sxs-lookup"><span data-stu-id="f5833-115">Data type: Endpoint</span></span>  
   
- <span data-ttu-id="570ee-115">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="570ee-115">Access type: Read-only</span></span>  
+ <span data-ttu-id="f5833-116">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="f5833-116">Access type: Read-only</span></span>  
   
- <span data-ttu-id="570ee-116">对通道所连接到的终结点的引用。</span><span class="sxs-lookup"><span data-stu-id="570ee-116">A reference to the endpoint the channel connects to.</span></span>  
+ <span data-ttu-id="f5833-117">对通道所连接到的终结点的引用。</span><span class="sxs-lookup"><span data-stu-id="f5833-117">A reference to the endpoint the channel connects to.</span></span>  
   
-### <a name="remoteaddress"></a><span data-ttu-id="570ee-117">RemoteAddress</span><span class="sxs-lookup"><span data-stu-id="570ee-117">RemoteAddress</span></span>  
+### <a name="remoteaddress"></a><span data-ttu-id="f5833-118">RemoteAddress</span><span class="sxs-lookup"><span data-stu-id="f5833-118">RemoteAddress</span></span>  
 
- <span data-ttu-id="570ee-118">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="570ee-118">Data type: string</span></span>  
+ <span data-ttu-id="f5833-119">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="f5833-119">Data type: string</span></span>  
   
- <span data-ttu-id="570ee-119">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="570ee-119">Access type: Read-only</span></span>  
+ <span data-ttu-id="f5833-120">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="f5833-120">Access type: Read-only</span></span>  
   
- <span data-ttu-id="570ee-120">与通道相关联的远程地址。</span><span class="sxs-lookup"><span data-stu-id="570ee-120">The remote address associated with the channel.</span></span>  
+ <span data-ttu-id="f5833-121">与通道相关联的远程地址。</span><span class="sxs-lookup"><span data-stu-id="f5833-121">The remote address associated with the channel.</span></span>  
   
-### <a name="sessionid"></a><span data-ttu-id="570ee-121">SessionId</span><span class="sxs-lookup"><span data-stu-id="570ee-121">SessionId</span></span>  
+### <a name="sessionid"></a><span data-ttu-id="f5833-122">SessionId</span><span class="sxs-lookup"><span data-stu-id="f5833-122">SessionId</span></span>  
 
- <span data-ttu-id="570ee-122">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="570ee-122">Data type: string</span></span>  
+ <span data-ttu-id="f5833-123">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="f5833-123">Data type: string</span></span>  
   
- <span data-ttu-id="570ee-123">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="570ee-123">Access type: Read-only</span></span>  
+ <span data-ttu-id="f5833-124">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="f5833-124">Access type: Read-only</span></span>  
   
- <span data-ttu-id="570ee-124">当前会话的 ID（如果有）。</span><span class="sxs-lookup"><span data-stu-id="570ee-124">The current session Id, if any.</span></span>  
+ <span data-ttu-id="f5833-125">当前会话的 ID（如果有）。</span><span class="sxs-lookup"><span data-stu-id="f5833-125">The current session Id, if any.</span></span>  
   
-### <a name="type"></a><span data-ttu-id="570ee-125">类型</span><span class="sxs-lookup"><span data-stu-id="570ee-125">Type</span></span>  
+### <a name="type"></a><span data-ttu-id="f5833-126">类型</span><span class="sxs-lookup"><span data-stu-id="f5833-126">Type</span></span>  
 
- <span data-ttu-id="570ee-126">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="570ee-126">Data type: string</span></span>  
+ <span data-ttu-id="f5833-127">数据类型：字符串</span><span class="sxs-lookup"><span data-stu-id="f5833-127">Data type: string</span></span>  
   
- <span data-ttu-id="570ee-127">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="570ee-127">Access type: Read-only</span></span>  
+ <span data-ttu-id="f5833-128">访问类型：只读</span><span class="sxs-lookup"><span data-stu-id="f5833-128">Access type: Read-only</span></span>  
   
- <span data-ttu-id="570ee-128">通道的类型。</span><span class="sxs-lookup"><span data-stu-id="570ee-128">The type of the channel.</span></span>  
+ <span data-ttu-id="f5833-129">通道的类型。</span><span class="sxs-lookup"><span data-stu-id="f5833-129">The type of the channel.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="570ee-129">要求</span><span class="sxs-lookup"><span data-stu-id="570ee-129">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="f5833-130">要求</span><span class="sxs-lookup"><span data-stu-id="f5833-130">Requirements</span></span>  
   
-|<span data-ttu-id="570ee-130">MOF</span><span class="sxs-lookup"><span data-stu-id="570ee-130">MOF</span></span>|<span data-ttu-id="570ee-131">已在 Servicemodel.mof 中声明。</span><span class="sxs-lookup"><span data-stu-id="570ee-131">Declared in Servicemodel.mof.</span></span>|  
+|<span data-ttu-id="f5833-131">MOF</span><span class="sxs-lookup"><span data-stu-id="f5833-131">MOF</span></span>|<span data-ttu-id="f5833-132">已在 Servicemodel.mof 中声明。</span><span class="sxs-lookup"><span data-stu-id="f5833-132">Declared in Servicemodel.mof.</span></span>|  
 |---------|-----------------------------------|  
-|<span data-ttu-id="570ee-132">命名空间</span><span class="sxs-lookup"><span data-stu-id="570ee-132">Namespace</span></span>|<span data-ttu-id="570ee-133">已在 root\ServiceModel 中定义</span><span class="sxs-lookup"><span data-stu-id="570ee-133">Defined in root\ServiceModel</span></span>|  
+|<span data-ttu-id="f5833-133">命名空间</span><span class="sxs-lookup"><span data-stu-id="f5833-133">Namespace</span></span>|<span data-ttu-id="f5833-134">已在 root\ServiceModel 中定义</span><span class="sxs-lookup"><span data-stu-id="f5833-134">Defined in root\ServiceModel</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="570ee-134">另请参阅</span><span class="sxs-lookup"><span data-stu-id="570ee-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f5833-135">请参阅</span><span class="sxs-lookup"><span data-stu-id="f5833-135">See also</span></span>
 
 - <xref:System.ServiceModel.Channels.ChannelBase>
