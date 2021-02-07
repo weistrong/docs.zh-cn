@@ -1,4 +1,5 @@
 ---
+description: '详细了解： <clear> authenticationModules 的元素 (网络设置) '
 title: authenticationModules 的 <clear> 元素（网络设置）
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,57 +11,57 @@ helpviewer_keywords:
 - <clear> element, authenticationModules
 - authenticationModules, clear element
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
-ms.openlocfilehash: 6ac2287ba9b17727835d43a3e3b8876f210fb5c7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ccfc9f53ef53268cdb1155673fc47a862a63419c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698565"
 ---
-# <a name="clear-element-for-authenticationmodules-network-settings"></a><span data-ttu-id="b3a8c-102">authenticationModules 的 \<clear> 元素（网络设置）</span><span class="sxs-lookup"><span data-stu-id="b3a8c-102">\<clear> Element for authenticationModules (Network Settings)</span></span>
+# <a name="clear-element-for-authenticationmodules-network-settings"></a><span data-ttu-id="64875-103">authenticationModules 的 \<clear> 元素（网络设置）</span><span class="sxs-lookup"><span data-stu-id="64875-103">\<clear> Element for authenticationModules (Network Settings)</span></span>
 
-<span data-ttu-id="b3a8c-103">清除应用程序中的所有身份验证模块。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-103">Clears all authentication modules from the application.</span></span>  
+<span data-ttu-id="64875-104">清除应用程序中的所有身份验证模块。</span><span class="sxs-lookup"><span data-stu-id="64875-104">Clears all authentication modules from the application.</span></span>  
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
-## <a name="syntax"></a><span data-ttu-id="b3a8c-104">语法</span><span class="sxs-lookup"><span data-stu-id="b3a8c-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="64875-105">语法</span><span class="sxs-lookup"><span data-stu-id="64875-105">Syntax</span></span>  
   
 ```xml  
 <clear/>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="b3a8c-105">特性和元素</span><span class="sxs-lookup"><span data-stu-id="b3a8c-105">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="64875-106">特性和元素</span><span class="sxs-lookup"><span data-stu-id="64875-106">Attributes and Elements</span></span>  
 
- <span data-ttu-id="b3a8c-106">下列各节描述了特性、子元素和父元素。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-106">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="64875-107">下列各节描述了特性、子元素和父元素。</span><span class="sxs-lookup"><span data-stu-id="64875-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="b3a8c-107">特性</span><span class="sxs-lookup"><span data-stu-id="b3a8c-107">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="64875-108">特性</span><span class="sxs-lookup"><span data-stu-id="64875-108">Attributes</span></span>  
 
- <span data-ttu-id="b3a8c-108">无。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-108">None.</span></span>  
+ <span data-ttu-id="64875-109">无。</span><span class="sxs-lookup"><span data-stu-id="64875-109">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="b3a8c-109">子元素</span><span class="sxs-lookup"><span data-stu-id="b3a8c-109">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="64875-110">子元素</span><span class="sxs-lookup"><span data-stu-id="64875-110">Child Elements</span></span>  
 
- <span data-ttu-id="b3a8c-110">无。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-110">None.</span></span>  
+ <span data-ttu-id="64875-111">无。</span><span class="sxs-lookup"><span data-stu-id="64875-111">None.</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="b3a8c-111">父元素</span><span class="sxs-lookup"><span data-stu-id="b3a8c-111">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="64875-112">父元素</span><span class="sxs-lookup"><span data-stu-id="64875-112">Parent Elements</span></span>  
   
-|<span data-ttu-id="b3a8c-112">**元素**</span><span class="sxs-lookup"><span data-stu-id="b3a8c-112">**Element**</span></span>|<span data-ttu-id="b3a8c-113">**说明**</span><span class="sxs-lookup"><span data-stu-id="b3a8c-113">**Description**</span></span>|  
+|<span data-ttu-id="64875-113">**元素**</span><span class="sxs-lookup"><span data-stu-id="64875-113">**Element**</span></span>|<span data-ttu-id="64875-114">**说明**</span><span class="sxs-lookup"><span data-stu-id="64875-114">**Description**</span></span>|  
 |-----------------|---------------------|  
-|[<span data-ttu-id="b3a8c-114">authenticationModules</span><span class="sxs-lookup"><span data-stu-id="b3a8c-114">authenticationModules</span></span>](authenticationmodules-element-network-settings.md)|<span data-ttu-id="b3a8c-115">指定用于对网络请求进行身份验证的模块。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-115">Specifies modules used to authenticate network requests.</span></span>|  
+|[<span data-ttu-id="64875-115">authenticationModules</span><span class="sxs-lookup"><span data-stu-id="64875-115">authenticationModules</span></span>](authenticationmodules-element-network-settings.md)|<span data-ttu-id="64875-116">指定用于对网络请求进行身份验证的模块。</span><span class="sxs-lookup"><span data-stu-id="64875-116">Specifies modules used to authenticate network requests.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="b3a8c-116">备注</span><span class="sxs-lookup"><span data-stu-id="b3a8c-116">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="64875-117">备注</span><span class="sxs-lookup"><span data-stu-id="64875-117">Remarks</span></span>  
 
- <span data-ttu-id="b3a8c-117">`clear`元素删除之前在配置文件或配置层次结构的较高级别中定义的所有身份验证模块。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-117">The `clear` element removes all authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.</span></span>  
+ <span data-ttu-id="64875-118">`clear`元素删除之前在配置文件或配置层次结构的较高级别中定义的所有身份验证模块。</span><span class="sxs-lookup"><span data-stu-id="64875-118">The `clear` element removes all authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.</span></span>  
   
-## <a name="configuration-files"></a><span data-ttu-id="b3a8c-118">配置文件</span><span class="sxs-lookup"><span data-stu-id="b3a8c-118">Configuration Files</span></span>  
+## <a name="configuration-files"></a><span data-ttu-id="64875-119">配置文件</span><span class="sxs-lookup"><span data-stu-id="64875-119">Configuration Files</span></span>  
 
- <span data-ttu-id="b3a8c-119">此元素可在应用程序配置文件或计算机配置文件 (Machine.config) 中使用。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-119">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
+ <span data-ttu-id="64875-120">此元素可在应用程序配置文件或计算机配置文件 (Machine.config) 中使用。</span><span class="sxs-lookup"><span data-stu-id="64875-120">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="b3a8c-120">示例</span><span class="sxs-lookup"><span data-stu-id="b3a8c-120">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="64875-121">示例</span><span class="sxs-lookup"><span data-stu-id="64875-121">Example</span></span>  
 
- <span data-ttu-id="b3a8c-121">下面的示例删除所有配置的身份验证模块。</span><span class="sxs-lookup"><span data-stu-id="b3a8c-121">The following example removes all configured authentication modules.</span></span>  
+ <span data-ttu-id="64875-122">下面的示例删除所有配置的身份验证模块。</span><span class="sxs-lookup"><span data-stu-id="64875-122">The following example removes all configured authentication modules.</span></span>  
   
 ```xml  
 <configuration>  
@@ -72,8 +73,8 @@ ms.locfileid: "91167322"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="b3a8c-122">请参阅</span><span class="sxs-lookup"><span data-stu-id="b3a8c-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="64875-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="64875-123">See also</span></span>
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>
-- [<span data-ttu-id="b3a8c-123">网络设置架构</span><span class="sxs-lookup"><span data-stu-id="b3a8c-123">Network Settings Schema</span></span>](index.md)
+- [<span data-ttu-id="64875-124">网络设置架构</span><span class="sxs-lookup"><span data-stu-id="64875-124">Network Settings Schema</span></span>](index.md)
