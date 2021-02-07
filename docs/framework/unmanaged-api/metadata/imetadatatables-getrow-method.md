@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataTables：： GetRow 方法
 title: IMetaDataTables::GetRow 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a7408d51-0bce-45a2-b58f-da4660bbc039
 topic_type:
 - apiref
-ms.openlocfilehash: 01c4c1734aa0701f787a2b73787e9e4781901d42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f3888bbb53339dc60eb0c2d36f2d7383e5f8c228
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672638"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687813"
 ---
 # <a name="imetadatatablesgetrow-method"></a>IMetaDataTables::GetRow 方法
 
@@ -47,7 +48,7 @@ HRESULT GetRow (
  `ppRow`  
  弄指向指向行的指针的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
   不建议使用此方法，因为它不返回一致的结果。 有关 GUID 表的信息，请参阅公共语言基础结构 (CLI) 文档，尤其是 "第二部分：元数据定义和语义"。 文档在线提供;请参阅 [ECMA c # 和公共语言基础结构标准](../../../standard/components.md#applicable-standards) 和 [标准 ECMA-335-公共语言基础结构 (CLI) ](http://www.ecma-international.org/publications/standards/Ecma-335.htm)。  
   
@@ -61,7 +62,7 @@ HRESULT GetRow (
   
  **.NET Framework 版本**  [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataTables 接口](imetadatatables-interface.md)
 - [IMetaDataTables2 接口](imetadatatables2-interface.md)

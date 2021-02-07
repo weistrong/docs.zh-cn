@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：安全异常
 title: 安全异常
 ms.date: 03/30/2017
 ms.assetid: 76d5e5cd-e4f4-404f-9a5a-ec3522494ad8
-ms.openlocfilehash: e96c317862867b9e461eb2d13dce6ede5b30cf13
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: efa3b7e132f3f3fdc8f2cb5b7dc09614ce584fdb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75348235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686227"
 ---
 # <a name="security-exceptions"></a>安全异常
 
@@ -27,9 +28,9 @@ ms.locfileid: "75348235"
 |BasicTokenCannotBeWrittenWithoutEncryption|不进行加密无法写入基本令牌。|
 |BindingDoesNotSupportProtectionForRst|指定协定的指定绑定是使用 SecureConversation 配置的，但是身份验证模式无法提供协商所必需的基于请求/答复的完整性和保密性。|
 |BindingDoesNotSupportWindowsIdenityForImpersonation|指定协定操作需要 Windows 标识进行自动模拟。 指定协定的指定绑定未提供代表调用方的 Windows 标识。|
-|CachedNegotiationStateQuotaReached|服务无法缓存协商状态，因为已达到指定容量。 请重试请求。|
+|CachedNegotiationStateQuotaReached|服务无法缓存协商状态，因为已达到指定容量。 重试请求。|
 |CacheQuotaReached|无法添加该项目。 最大缓存大小已指定。|
-|CannotDetermineSPNBasedOnAddress|客户端无法以 SspiNegotiation/Kerberos 为目的根据指定目标地址中的标识确定服务主体名称。 目标地址标识必须是 UPN 标识（如 acmedomain\\\alice）或 SPN 标识（如 host/bobs-sfpreviewcluster）。|
+|CannotDetermineSPNBasedOnAddress|客户端无法以 SspiNegotiation/Kerberos 为目的根据指定目标地址中的标识确定服务主体名称。 目标地址标识必须是 UPN 标识 (如 acmedomain \\ \alice) 或 SPN 标识 (如 host/bobs-sfpreviewcluster) 。|
 |CannotFindCert|无法使用下列指定的搜索标准找到 X.509 证书：StoreName、StoreLocation、FindType、FindValue。|
 |CannotFindCertForTarget|无法使用下列指定的搜索标准为指定目标找到 X.509 证书：StoreName、StoreLocation、FindType、FindValue。|
 |CannotFindCorrelationStateForApplyingSecurity|无法找到将安全性应用到应答器上的答复所需的相关性状态。|

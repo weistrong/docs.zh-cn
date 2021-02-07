@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： SetEnterLeaveFunctionHooks 方法
 title: ICorProfilerInfo::SetEnterLeaveFunctionHooks 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 72399636-c219-4ffd-8ac8-39432c9d4641
 topic_type:
 - apiref
-ms.openlocfilehash: 18aed5c5314fc1057767b599c538952a1d4d6b57
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 45c161a76f3ae568da6a83a2c45acb214a327ff1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687202"
 ---
 # <a name="icorprofilerinfosetenterleavefunctionhooks-method"></a>ICorProfilerInfo::SetEnterLeaveFunctionHooks 方法
 
@@ -46,7 +47,7 @@ HRESULT SetEnterLeaveFunctionHooks(
  `pFuncTailcall`  
  中指向要用作 [FunctionTailcall](functiontailcall-function.md) 回调的实现的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 .NET Framework 版本1.0 中，每个函数指针均可为 null，以禁用相应的回调。  
   
@@ -64,6 +65,6 @@ HRESULT SetEnterLeaveFunctionHooks(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

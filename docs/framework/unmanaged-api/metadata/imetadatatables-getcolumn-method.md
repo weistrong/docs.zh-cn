@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataTables：： GetColumn 方法
 title: IMetaDataTables::GetColumn 方法
 ms.date: 02/25/2019
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1032055b-cabb-45c5-a50e-7e853201b175
 topic_type:
 - apiref
-ms.openlocfilehash: 270546f0270521e38cfdcae5e4d2137202c13cb1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c4cec7216f93783b34b594330358d1e6036ed40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711062"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688255"
 ---
 # <a name="imetadatatablesgetcolumn-method"></a>IMetaDataTables::GetColumn 方法
 
@@ -51,7 +52,7 @@ HRESULT GetColumn (
  `pVal`  
  弄指向单元格中的值的指针。  
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 返回的值的 interpretion `pVal` 取决于列的类型。 列类型可通过调用 [IMetaDataTables](imetadatatables-getcolumninfo-method.md)来确定。
 
@@ -59,7 +60,7 @@ HRESULT GetColumn (
 - 它还会自动将8位或16位值转换为完整的32位值。
 - 对于 *堆* 类型列，返回的 *pVal* 将是对应堆中的索引。
 
-| 列类型              | pVal 包含 | 注释                          |
+| 列类型              | pVal 包含 | 评论                          |
 |--------------------------|---------------|-----------------------------------|
 | `0`..`iRidMax`<br> (0. 63)   | mdToken     | *pVal* 将包含一个完整的令牌。 函数自动将 Rid 转换为完整的标记。 |
 | `iCodedToken`..`iCodedTokenMax`<br> (64.. 95)  | mdToken | 返回后， *pVal* 将包含一个完整的令牌。 函数自动将 CodedToken 解压缩到完整的令牌中。 |
@@ -82,7 +83,7 @@ HRESULT GetColumn (
   
  **.NET Framework 版本**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataTables 接口](imetadatatables-interface.md)
 - [IMetaDataTables2 接口](imetadatatables2-interface.md)

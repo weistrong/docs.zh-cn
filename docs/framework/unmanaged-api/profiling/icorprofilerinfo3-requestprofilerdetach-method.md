@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo3：： RequestProfilerDetach 方法
 title: ICorProfilerInfo3::RequestProfilerDetach 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea102e62-0454-4477-bcf3-126773acd184
 topic_type:
 - apiref
-ms.openlocfilehash: 2ea39c94a5a0f3d24d4123d6405115ac75105e26
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d37c6df823aaebe4209e45cd459a8815a39852f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687033"
 ---
 # <a name="icorprofilerinfo3requestprofilerdetach-method"></a>ICorProfilerInfo3::RequestProfilerDetach 方法
 
@@ -51,7 +52,7 @@ HRESULT RequestProfilerDetach(
 |CORPROF_E_RUNTIME_UNINITIALIZED|托管应用程序中的运行时尚未初始化。  (即，未完全加载运行时。在探查器回调的 [ICorProfilerCallback：： Initialize](icorprofilercallback-initialize-method.md) 方法中请求分离时，可能会返回此错误代码 ) 。|  
 |CORPROF_E_UNSUPPORTED_CALL_SEQUENCE|在不支持时调用了 `RequestProfilerDetach`。 如果在托管线程上调用方法，而不是从 [ICorProfilerCallback](icorprofilercallback-interface.md) [方法中](icorprofilercallback-interface.md) 调用，或者不能容忍垃圾回收，则会发生这种情况。 有关详细信息，请参阅 [CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](corprof-e-unsupported-call-sequence-hresult.md)。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在分离过程中，分离线程（专为分离探查器创建的线程）有时会检查是否所有线程均已退出探查器的代码。 探查器应通过 `dwExpectedCompletionMilliseconds` 参数估计此操作的耗时。 最佳使用值是探查器在任何给定 `ICorProfilerCallback*` 方法内通常花费的时间量；此值不应小于探查器预计花费时间量的一半。  
   
@@ -69,7 +70,7 @@ HRESULT RequestProfilerDetach(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo3 接口](icorprofilerinfo3-interface.md)
 - [分析接口](profiling-interfaces.md)

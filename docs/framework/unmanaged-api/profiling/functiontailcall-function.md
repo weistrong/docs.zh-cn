@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionTailcall 函数
 title: FunctionTailcall 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 66347e03-9a97-41e8-8f9d-89b80803f7b5
 topic_type:
 - apiref
-ms.openlocfilehash: 02bc6f4bbb6754bd160fe2694f27563908f3a759
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8da3efde7d925fdb02232ca98662f8d6a6fd0adf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687306"
 ---
 # <a name="functiontailcall-function"></a>FunctionTailcall 函数
 
@@ -42,7 +43,7 @@ void __stdcall FunctionTailcall (
 
   \[in] 要进行尾调用的当前正在执行的函数的标识符。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  尾调用的目标函数将使用当前堆栈帧，并将直接返回到进行尾调用的函数的调用方。 这意味着将不会为作为尾调用目标的函数发出 [FunctionLeave](functionleave-function.md) 回调。  
   
@@ -68,7 +69,7 @@ void __stdcall FunctionTailcall (
   
  **.NET Framework 版本：** 1.1、1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [FunctionEnter2 函数](functionenter2-function.md)
 - [FunctionLeave2 函数](functionleave2-function.md)

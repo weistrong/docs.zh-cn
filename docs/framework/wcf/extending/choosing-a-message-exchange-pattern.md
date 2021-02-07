@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：选择消息交换模式
 title: 选择消息交换模式
 ms.date: 03/30/2017
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
-ms.openlocfilehash: 22c720beaa8dc70d2916a5b1d38819ad3d333a0f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c452a65e4d4108123deaab93be9bd825127eba70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275653"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685850"
 ---
 # <a name="choosing-a-message-exchange-pattern"></a>选择消息交换模式
 
@@ -97,6 +98,6 @@ ms.locfileid: "96275653"
   
 - 当在您的通道上调用 <xref:System.ServiceModel.ICommunicationObject.Abort%2A> 时，应立即终止会话而不必执行 I/O。 同样，这可能意味着不执行任何操作，或者可能涉及中止一个网络连接或某个其他资源。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [通道模型概述](channel-model-overview.md)

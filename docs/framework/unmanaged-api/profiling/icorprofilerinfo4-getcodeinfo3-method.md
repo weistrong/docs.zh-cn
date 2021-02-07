@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo4：： GetCodeInfo3 方法
 title: ICorProfilerInfo4::GetCodeInfo3 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bb8c105e-4d9a-4684-8c05-ed6909cc1b8c
 topic_type:
 - apiref
-ms.openlocfilehash: 44454b87bb656d2a4ad6e597ae001f64222b905f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6bc2beb291101257448ab58ac9a93362005fecbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686821"
 ---
 # <a name="icorprofilerinfo4getcodeinfo3-method"></a>ICorProfilerInfo4::GetCodeInfo3 方法
 
@@ -55,7 +56,7 @@ HRESULT GetCodeInfo3(
  `codeInfos`  
  [out] 调用方提供的缓冲区。 返回此方法后，它包含一个 `COR_PRF_CODE_INFO` 结构数组，每个结构描述一个本机代码块。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetCodeInfo3`方法类似于[GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md)，只不过它将获取包含指定 IP 地址的函数的 JIT 重新编译的 ID。  
   
@@ -78,7 +79,7 @@ HRESULT GetCodeInfo3(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetCodeInfo2 方法](icorprofilerinfo2-getcodeinfo2-method.md)
 - [ICorProfilerInfo4 接口](icorprofilerinfo4-interface.md)

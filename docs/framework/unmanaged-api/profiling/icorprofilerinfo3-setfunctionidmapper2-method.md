@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo3：： SetFunctionIDMapper2 方法
 title: ICorProfilerInfo3::SetFunctionIDMapper2 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8cdb1188-952a-4ba8-9f05-bfebc18cdd29
 topic_type:
 - apiref
-ms.openlocfilehash: 26c26cf204f1a2743f46cfcfdfadbf2c3e3df38e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4847d3bd7b8bf6142da0f32c3558016b2c758087
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721564"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686981"
 ---
 # <a name="icorprofilerinfo3setfunctionidmapper2-method"></a>ICorProfilerInfo3::SetFunctionIDMapper2 方法
 
@@ -44,7 +45,7 @@ HRESULT SetFunctionIDMapper2(
   
 ## <a name="return-value"></a>返回值  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  FunctionID 值的替代项将传递到探查器的函数入口/出口挂钩 ([FunctionEnter3](functionenter3-function.md)、 [FunctionLeave3](functionleave3-function.md)和 [FunctionTailcall3](functiontailcall3-function.md);、 [FunctionEnter3WithInfo](functionenter3withinfo-function.md)、 [FunctionLeave3WithInfo](functionleave3withinfo-function.md)和 [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md)) 由 [SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) 或 [SetEnterLeaveFunctionHooks3WithInfo](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) 方法指定。  
   
@@ -60,7 +61,7 @@ HRESULT SetFunctionIDMapper2(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [ICorProfilerInfo3 接口](icorprofilerinfo3-interface.md)

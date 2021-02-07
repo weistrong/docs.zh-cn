@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： SetEventMask 方法
 title: ICorProfilerInfo::SetEventMask 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 44bc0f56-32fa-491e-a62d-52fc96d48125
 topic_type:
 - apiref
-ms.openlocfilehash: 9d319b6523b2c2a1bcc5cb6ea7a28efa67d898e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e389d25abfecfc9a5dec8834e412fe618324e311
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720940"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687189"
 ---
 # <a name="icorprofilerinfoseteventmask-method"></a>ICorProfilerInfo::SetEventMask 方法
 
@@ -38,7 +39,7 @@ HRESULT SetEventMask(
  `dwEvents`  
  [in] 一个指定事件类别的 4 字节的值。 每个位都可控制不同的功能、行为或事件类型。 [COR_PRF_MONITOR](cor-prf-monitor-enumeration.md)枚举中描述了这些位。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 应调用 [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) 方法，而不是此方法。 尽管此 `SetEventMask` 方法继续受支持，但 [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) 提供其他功能。  
@@ -53,7 +54,7 @@ HRESULT SetEventMask(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)
 - [SetEventMask2 方法](icorprofilerinfo5-seteventmask2-method.md)

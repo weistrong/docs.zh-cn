@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：通道模型概述
 title: 通道模型概述
 ms.date: 03/30/2017
 helpviewer_keywords:
 - channel model [WCF]
 ms.assetid: 07a81e11-3911-4632-90d2-cca99825b5bd
-ms.openlocfilehash: 8a71adbc9c9b3f13cde250ff0bfbca67e9f23df9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8b22c2b957eec6e3b52a84c7a30d4a17c41293e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685876"
 ---
 # <a name="channel-model-overview"></a>通道模型概述
 
@@ -75,7 +76,7 @@ Windows Communication Foundation (WCF) 通道堆栈是一个分层通信堆栈�
   
  以下主题说明通道对象模型以及可帮助生成自定义通道的各个开发领域。  
   
-|主题|描述|  
+|主题|说明|  
 |-----------|-----------------|  
 |[服务：通道侦听器和通道](service-channel-listeners-and-channels.md)|说明用于侦听服务应用程序中传入通道的通道侦听器。|  
 |[客户端：通道工厂和通道](client-channel-factories-and-channels.md)|说明用于创建通道以连接到服务应用程序的通道工厂。|  

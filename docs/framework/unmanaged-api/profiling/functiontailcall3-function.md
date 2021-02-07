@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionTailcall3 函数
 title: FunctionTailcall3 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1e48243f-5de6-4bd6-a1d0-e1d248bca4b8
 topic_type:
 - apiref
-ms.openlocfilehash: dfe1a530ea009300e7cfbf002053d2e2b6034845
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07ab49e8aeccdd82680a677c8b94e8a0c075d242
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687293"
 ---
 # <a name="functiontailcall3-function"></a>FunctionTailcall3 函数
 
@@ -37,7 +38,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
 
   \[in] 要进行尾调用的当前正在执行的函数的标识符。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `FunctionTailcall3`回调函数将在调用函数时通知探查器。 使用 [ICorProfilerInfo3：： SetEnterLeaveFunctionHooks3 方法](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) 注册此函数的实现。  
   
@@ -63,7 +64,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [FunctionEnter3](functionenter3-function.md)
 - [FunctionLeave3](functionleave3-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo3 接口
 title: ICorProfilerInfo3 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 044a262f-0fa7-485d-b0c1-64cdc359c654
 topic_type:
 - apiref
-ms.openlocfilehash: 9944234da1677608aec10066b61bfc6a6cb72bcb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 52b4c699a122c302e47cffb11d01e7829009e219
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697852"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687176"
 ---
 # <a name="icorprofilerinfo3-interface"></a>ICorProfilerInfo3 接口
 
@@ -44,7 +45,7 @@ ms.locfileid: "95697852"
 |[SetEnterLeaveFunctionHooks3WithInfo 方法](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md)|指定将在托管函数的 [FunctionEnter3WithInfo](functionenter3withinfo-function.md)、 [FunctionLeave3WithInfo](functionleave3withinfo-function.md)和 [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) 挂钩上调用的探查器实现函数。|  
 |[SetFunctionIDMapper2 方法](icorprofilerinfo3-setfunctionidmapper2-method.md)|指定将调用以将 `FunctionID` 值映射至替换值（传递至探查器的输入/退出挂钩）的探查器实现函数。 此方法将 [ICorProfilerInfo：： SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md) 与探查器可能用于消除运行时之间的歧义的参数进行扩展。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 通过使用自由线程模型实现 `ICorProfilerInfo3` 接口的方法。 每个方法均返回一个 HRESULT，指示成功或失败。 有关可能的返回代码的列表，请参阅 CorError.h 文件。  
   
@@ -60,7 +61,7 @@ ms.locfileid: "95697852"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

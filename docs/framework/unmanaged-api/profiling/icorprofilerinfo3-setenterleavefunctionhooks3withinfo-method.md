@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo3：： SetEnterLeaveFunctionHooks3WithInfo 方法
 title: ICorProfilerInfo3::SetEnterLeaveFunctionHooks3WithInfo 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ca8ea534-e441-47b8-be85-466410988c0a
 topic_type:
 - apiref
-ms.openlocfilehash: 2ae4b35feb2441fdd66fb68ba9bb3649269a983c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 15f6696635172972b09e68beeae13a7d6a8e195a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697813"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687007"
 ---
 # <a name="icorprofilerinfo3setenterleavefunctionhooks3withinfo-method"></a>ICorProfilerInfo3::SetEnterLeaveFunctionHooks3WithInfo 方法
 
@@ -46,7 +47,7 @@ HRESULT SetEnterLeaveFunctionHooks3WithInfo(
  `pFuncTailcall3`  
  中指向要用作回调的实现的指针 `FunctionTailcall3WithInfo` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [FunctionEnter3WithInfo](functionenter3withinfo-function.md)、 [FunctionLeave3WithInfo](functionleave3withinfo-function.md)和[FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md)挂钩提供堆栈帧和参数检查。 若要访问该信息， `COR_PRF_ENABLE_FUNCTION_ARGS` `COR_PRF_ENABLE_FUNCTION_RETVAL` 必须设置、和/或 `COR_PRF_ENABLE_FRAME_INFO` 标志。 探查器可以使用 [ICorProfilerInfo：： SetEventMask](icorprofilerinfo-seteventmask-method.md) 方法来设置事件标志，然后使用 `SetEnterLeaveFunctionHooks3WithInfo` 方法来注册此函数的实现。  
   
@@ -64,7 +65,7 @@ HRESULT SetEnterLeaveFunctionHooks3WithInfo(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md)
 - [FunctionEnter3](functionenter3-function.md)

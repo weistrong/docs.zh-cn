@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：扩展客户端
 title: 扩展客户端
 ms.date: 03/30/2017
 helpviewer_keywords:
 - proxy extensions [WCF]
 ms.assetid: 1328c61c-06e5-455f-9ebd-ceefb59d3867
-ms.openlocfilehash: b3bbbdb895576b4a6d9167bcf321a99d10d378cc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 259136b3d8c35c47edbab1badf55139eb315d2f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249288"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685746"
 ---
 # <a name="extending-clients"></a>扩展客户端
 
@@ -119,7 +120,7 @@ ms.locfileid: "96249288"
   
  有关演示如何在 WCF 客户端上进行侦听的示例，请参阅 [如何：检查或修改参数](how-to-inspect-or-modify-parameters.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Dispatcher.ClientRuntime>
 - <xref:System.ServiceModel.Dispatcher.ClientOperation>

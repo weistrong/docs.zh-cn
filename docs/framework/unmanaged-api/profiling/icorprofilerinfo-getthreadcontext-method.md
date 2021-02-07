@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetThreadContext 方法
 title: ICorProfilerInfo::GetThreadContext 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 79446216-4b8b-484c-8fe3-e87dbf9df2fd
 topic_type:
 - apiref
-ms.openlocfilehash: 2e24d72c8be1ace10b2feb15101ed8f83db386c2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b2970da90250819cc68eee55b70188d4830113a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687267"
 ---
 # <a name="icorprofilerinfogetthreadcontext-method"></a>ICorProfilerInfo::GetThreadContext 方法
 
@@ -52,6 +53,6 @@ HRESULT GetThreadContext(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

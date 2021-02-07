@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo4：： EnumJITedFunctions2 方法
 title: ICorProfilerInfo4::EnumJITedFunctions2 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 40e9a1be-9bd2-4fad-9921-34a84b61c1e3
 topic_type:
 - apiref
-ms.openlocfilehash: 2a6ddaef7b64427f8349abedbbd85b4d82a0b88c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3740236cfe2bc7ecc6cd3bbeb3345c7510dd159f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686942"
 ---
 # <a name="icorprofilerinfo4enumjitedfunctions2-method"></a>ICorProfilerInfo4::EnumJITedFunctions2 方法
 
@@ -37,7 +38,7 @@ HRESULT EnumJITedFunctions([out] ICorProfilerFunctionEnum** ppEnum);
  `ppEnum`  
  弄指向 [ICorProfilerFunctionEnum](icorprofilerfunctionenum-interface.md) 枚举器的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法可能与 `JITCompilation` 回调（如 [ICorProfilerCallback：： JITCompilationStarted](icorprofilercallback-jitcompilationstarted-method.md) 方法）重叠。 返回的枚举包含字段的值 `COR_PRF_FUNCTION::reJitId` 。 此方法替换的 [ICorProfilerInfo3：： EnumJITedFunctions](icorprofilerinfo3-enumjitedfunctions-method.md) 方法不枚举 JIT 重新编译的 id，因为 `COR_PRF_FUNCTION::reJitId` 字段始终设置为0。 `ICorProfilerInfo4::EnumJITedFunctions`方法会枚举 JIT 重新编译的 id，因为 `COR_PRF_FUNCTION::reJitId` 字段设置正确。 请注意， [ICorProfilerInfo4：： EnumJITedFunctions2](icorprofilerinfo4-enumjitedfunctions2-method.md) 方法可以触发垃圾回收，而 [ICorProfilerInfo3：： EnumJITedFunctions 方法](icorprofilerinfo3-enumjitedfunctions-method.md) 将不会触发垃圾回收。  有关详细信息，请参阅 [CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](corprof-e-unsupported-call-sequence-hresult.md)。  
   
@@ -51,7 +52,7 @@ HRESULT EnumJITedFunctions([out] ICorProfilerFunctionEnum** ppEnum);
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EnumJITedFunctions 方法](icorprofilerinfo3-enumjitedfunctions-method.md)
 - [ICorProfilerInfo4 接口](icorprofilerinfo4-interface.md)

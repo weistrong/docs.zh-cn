@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionLeave3WithInfo 函数
 title: FunctionLeave3WithInfo 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5fa68a67-ced6-41c6-a2c0-467060fd0692
 topic_type:
 - apiref
-ms.openlocfilehash: 69ee0ea78e0c7edbb61999ef8fba1791e6f682bc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6a861f455e827258368764b80547c3b3e9c986cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722240"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687410"
 ---
 # <a name="functionleave3withinfo-function"></a>FunctionLeave3WithInfo 函数
 
@@ -43,7 +44,7 @@ void __stdcall FunctionLeave3WithInfo(
 
   \[in] 一个表示有关给定堆栈帧的信息的不透明的句柄。 此句柄仅在其传递到的回调期间有效。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `FunctionLeave3WithInfo`回调方法会在调用函数时通知探查器，并允许探查器使用[ICorProfilerInfo3：： GetFunctionLeave3Info 方法](icorprofilerinfo3-getfunctionleave3info-method.md)来检查返回值。 若要访问返回值信息，必须 `COR_PRF_ENABLE_FUNCTION_RETVAL` 设置标志。 探查器可以使用 [ICorProfilerInfo：： SetEventMask 方法](icorprofilerinfo-seteventmask-method.md) 来设置事件标志，然后使用 [ICorProfilerInfo3：： SetEnterLeaveFunctionHooks3WithInfo 方法](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) 来注册此函数的实现。  
   
@@ -69,7 +70,7 @@ void __stdcall FunctionLeave3WithInfo(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetFunctionLeave3Info](icorprofilerinfo3-getfunctionleave3info-method.md)
 - [FunctionEnter3](functionenter3-function.md)

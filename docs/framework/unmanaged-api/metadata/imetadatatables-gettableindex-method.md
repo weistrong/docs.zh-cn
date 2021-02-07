@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataTables：： GetTableIndex 方法
 title: IMetaDataTables::GetTableIndex 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c6ec3800-e0d9-4387-afb8-ddc0b818114c
 topic_type:
 - apiref
-ms.openlocfilehash: 52d70a76bdf8380d320edb6e8188443070a36b1b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d42a42a1a19a67fada17bbe1016f7e324cd1c287
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687722"
 ---
 # <a name="imetadatatablesgettableindex-method"></a>IMetaDataTables::GetTableIndex 方法
 
@@ -43,7 +44,7 @@ HRESULT GetTableIndex (
  `pixTbl`  
  弄指向所引用表的返回索引的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  不建议使用此方法，因为它不返回一致的结果。 有关 GUID 表的信息，请参阅公共语言基础结构 (CLI) 文档，尤其是 "第二部分：元数据定义和语义"。 文档在线提供;请参阅 [ECMA c # 和公共语言基础结构标准](../../../standard/components.md#applicable-standards) 和 [标准 ECMA-335-公共语言基础结构 (CLI) ](http://www.ecma-international.org/publications/standards/Ecma-335.htm)。  
   
@@ -57,7 +58,7 @@ HRESULT GetTableIndex (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataTables 接口](imetadatatables-interface.md)
 - [IMetaDataTables2 接口](imetadatatables2-interface.md)
