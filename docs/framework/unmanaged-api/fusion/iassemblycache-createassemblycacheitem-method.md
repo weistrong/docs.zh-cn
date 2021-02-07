@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IAssemblyCache：： CreateAssemblyCacheItem 方法
 title: IAssemblyCache::CreateAssemblyCacheItem 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 017a7ba5-aaaf-44e2-9cbe-ceebef259df0
 topic_type:
 - apiref
-ms.openlocfilehash: b417377ea1d0746e563490d87cc9a988e857d943
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3377901d358bcf643ce0d30336c1c0cd8089e50c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760974"
 ---
 # <a name="iassemblycachecreateassemblycacheitem-method"></a>IAssemblyCache::CreateAssemblyCacheItem 方法
 
@@ -63,7 +64,7 @@ HRESULT CreateAssemblyCacheItem (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IAssemblyCache 接口](iassemblycache-interface.md)
 - [IAssemblyCacheItem 接口](iassemblycacheitem-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CompareAssemblyIdentity 函数
 title: CompareAssemblyIdentity 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8b364ae1-8efa-4744-a7da-81fd093d84d6
 topic_type:
 - apiref
-ms.openlocfilehash: da32ce6a40378a6f88cf71bd7707be2079d71068
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa55d1ea0b1968ec4e50106139e154e29e159ec7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761208"
 ---
 # <a name="compareassemblyidentity-function"></a>CompareAssemblyIdentity 函数
 
@@ -63,7 +64,7 @@ STDAPI CompareAssemblyIdentity (
 
  `pfEquivalent` 返回一个布尔值，该值指示两个程序集是否等效。 `pResult` 返回 `AssemblyComparisonResult` 值之一，以便为的值提供更详细的原因 `pfEquivalent` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CompareAssemblyIdentity` 检查 `pwzAssemblyIdentity1` 和是否 `pwzAssemblyIdentity2` 等效。 `pfEquivalent``true`在以下一个或多个条件下，设置为：  
   
@@ -87,7 +88,7 @@ STDAPI CompareAssemblyIdentity (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成全局静态函数](fusion-global-static-functions.md)
 - [AssemblyComparisonResult 枚举](assemblycomparisonresult-enumeration.md)

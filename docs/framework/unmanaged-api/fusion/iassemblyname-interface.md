@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IAssemblyName 接口
 title: IAssemblyName 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f7f8e605-6b67-4151-936f-f04ecd671d90
 topic_type:
 - apiref
-ms.openlocfilehash: f6feed9f59715f9a2801cd3a2a99a087957d4377
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fb5949572adc533bab5ed26ee969267f430f36ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715064"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760701"
 ---
 # <a name="iassemblyname-interface"></a>IAssemblyName 接口
 
@@ -46,7 +47,7 @@ ms.locfileid: "95715064"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成接口](fusion-interfaces.md)
 - [IAssemblyEnum 接口](iassemblyenum-interface.md)

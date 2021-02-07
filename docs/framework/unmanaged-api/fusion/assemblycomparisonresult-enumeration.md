@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： AssemblyComparisonResult 枚举
 title: AssemblyComparisonResult 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bd042f89-10b1-40ca-946e-46da082f5263
 topic_type:
 - apiref
-ms.openlocfilehash: cde25a9507006c89ef6490c13ae82033f04c2931
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 093cff830aa87d28ee86ecaeb6965887279a72d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761261"
 ---
 # <a name="assemblycomparisonresult-enumeration"></a>AssemblyComparisonResult 枚举
 
@@ -46,7 +47,7 @@ typedef enum _tagAssemblyComparisonResult {
   
 ## <a name="members"></a>成员  
   
-|成员名称|说明|  
+|成员名称|描述|  
 |-----------------|-----------------|  
 |`ACR_EquivalentFullMatch`|指示比较匹配项中的所有程序集字段。|  
 |`ACR_EquivalentFXUnified`|指示基于公共语言运行时版本，将程序集视为等效 (CLR) .NET Framework 版本2.0 中的程序集版本号。|  
@@ -71,7 +72,7 @@ typedef enum _tagAssemblyComparisonResult {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CompareAssemblyIdentity 函数](compareassemblyidentity-function.md)
 - [合成枚举](fusion-enumerations.md)

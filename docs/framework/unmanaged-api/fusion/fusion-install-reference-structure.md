@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FUSION_INSTALL_REFERENCE 结构
 title: FUSION_INSTALL_REFERENCE 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ae181ec8-36bf-4ed1-9a02-ca27d417c80b
 topic_type:
 - apiref
-ms.openlocfilehash: d5ff08e62b94d7f164b103ae0535bb62e4e60aea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4ac3d2f7d36dd017315a8a3ce6d6185e75f9ddc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761104"
 ---
 # <a name="fusion_install_reference-structure"></a>FUSION_INSTALL_REFERENCE 结构
 
@@ -55,7 +56,7 @@ typedef struct _FUSION_INSTALL_REFERENCE_ {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成结构](fusion-structures.md)
 - [全局程序集缓存](../../app-domains/gac.md)

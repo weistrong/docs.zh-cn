@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： USER_THREAD 结构
 title: USER_THREAD 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a57c7d71-c4b0-41f9-a964-0c5ee84a3124
 topic_type:
 - apiref
-ms.openlocfilehash: 409651aa69e957418ad46f61e1bd57add0eb10a6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a4bd22073b7610307e67107781bdb68a15ef795f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761263"
 ---
 # <a name="user_thread-structure"></a>USER_THREAD 结构
 
@@ -48,7 +49,7 @@ typedef struct tagUSER_THREAD
 
  **标头：** ProtocolNotify2 .idl  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [SetNotifyFilter 方法](inotifysource2-setnotifyfilter-method.md)
 - [诊断符号存储区结构](diagnostics-symbol-store-structures.md)

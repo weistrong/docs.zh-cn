@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetHistoryFileDirectory 函数
 title: GetHistoryFileDirectory 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 93232222-926e-42ac-b85d-8a6d33977672
 topic_type:
 - apiref
-ms.openlocfilehash: 484adf288356b9955fe0cac0bb30002ec1f012d3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 960bc75d69f4be6d1639e109d6327b5e65d3e129
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760961"
 ---
 # <a name="gethistoryfiledirectory-function"></a>GetHistoryFileDirectory 函数
 
@@ -51,7 +52,7 @@ HRESULT GetHistoryFileDirectory (
 |S_OK|该方法已成功完成。|  
 |E_INVALIDARG|`wzDir` 或 `pdwSize` 为 null，或者版本字符串不正确。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  成功完成 `pdwSize` 后，参数设置为路径字符串的长度。  
   
@@ -65,7 +66,7 @@ HRESULT GetHistoryFileDirectory (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CreateHistoryReader 函数](createhistoryreader-function.md)
 - [NukeDownloadedCache 函数](nukedownloadedcache-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetIdentityAuthority 函数
 title: GetIdentityAuthority 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 843cd5ab-d2b7-4ff6-86bd-e68c7a91c098
 topic_type:
 - apiref
-ms.openlocfilehash: e9631211993afbfe968c7122828251746f15c3f6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5126aa9b319af41f7ecd30845a9f74ba69016588
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760987"
 ---
 # <a name="getidentityauthority-function"></a>GetIdentityAuthority 函数
 
@@ -47,7 +48,7 @@ HRESULT GetIdentityAuthority (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IIdentityAuthority 接口](iidentityauthority-interface.md)
 - [合成全局静态函数](fusion-global-static-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CreateAssemblyEnum 函数
 title: CreateAssemblyEnum 函数
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 3506df38-6cea-42f6-946e-4287863bcfb3
 topic_type:
 - apiref
-ms.openlocfilehash: b7e3696121475885f5061bd96eb6905d7ccae734
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 47177fcf0cd9e1b492fa89b9fb80c5cdaaced689
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761133"
 ---
 # <a name="createassemblyenum-function"></a>CreateAssemblyEnum 函数
 
@@ -56,7 +57,7 @@ HRESULT CreateAssemblyEnum (
  `pvReserved`  
  中保留以供将来进行扩展。 `pvReserved` 必须为空引用。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `dwFlags`参数只包含枚举中的一个位 `ASM_CACHE_FLAGS` 。  
   
@@ -70,7 +71,7 @@ HRESULT CreateAssemblyEnum (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IAssemblyEnum 接口](iassemblyenum-interface.md)
 - [IAssemblyName 接口](iassemblyname-interface.md)

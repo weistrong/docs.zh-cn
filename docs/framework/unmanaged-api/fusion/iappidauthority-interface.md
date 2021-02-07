@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IAppIdAuthority 接口
 title: IAppIdAuthority 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ec354fa1-1efd-41b0-bc43-b90597b6e253
 topic_type:
 - apiref
-ms.openlocfilehash: a344f2ab5d9a7aa92018c47ee7a162cd1721aeb5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 238885c7f080571b414511c24f9772dbc19b4683
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732107"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760991"
 ---
 # <a name="iappidauthority-interface"></a>IAppIdAuthority 接口
 
@@ -54,6 +55,6 @@ ms.locfileid: "95732107"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成接口](fusion-interfaces.md)

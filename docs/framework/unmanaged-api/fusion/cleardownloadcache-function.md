@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ClearDownloadCache 函数
 title: ClearDownloadCache 函数
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: df7595d1-430f-44b4-8160-4c2ba9df70b1
 topic_type:
 - apiref
-ms.openlocfilehash: a280b071b3c9f390e59d60009b5b9ed1c136989b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e0aecf525051172ea8a21c4941f9dad79b4fc85b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761221"
 ---
 # <a name="cleardownloadcache-function"></a>ClearDownloadCache 函数
 
@@ -43,7 +44,7 @@ HRESULT ClearDownloadCache ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成全局静态函数](fusion-global-static-functions.md)
 - [全局程序集缓存](../../app-domains/gac.md)
