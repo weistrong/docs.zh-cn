@@ -1,31 +1,32 @@
 ---
+description: 了解详细信息： 3381-SequenceAcknowledgementSent
 title: 3381 - SequenceAcknowledgementSent
 ms.date: 03/30/2017
 ms.assetid: 42630d32-c24d-41b9-9106-9ca1a3e2f7d8
-ms.openlocfilehash: 782771f6675cb3b4e6a60d16571bf2550826050e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 01d2c2233a87eb1e6bcd24ed8dba6370146af7dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96260821"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752829"
 ---
-# <a name="3381---sequenceacknowledgementsent"></a><span data-ttu-id="e1722-102">3381 - SequenceAcknowledgementSent</span><span class="sxs-lookup"><span data-stu-id="e1722-102">3381 - SequenceAcknowledgementSent</span></span>
+# <a name="3381---sequenceacknowledgementsent"></a><span data-ttu-id="13979-103">3381 - SequenceAcknowledgementSent</span><span class="sxs-lookup"><span data-stu-id="13979-103">3381 - SequenceAcknowledgementSent</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e1722-103">属性</span><span class="sxs-lookup"><span data-stu-id="e1722-103">Properties</span></span>  
+## <a name="properties"></a><span data-ttu-id="13979-104">属性</span><span class="sxs-lookup"><span data-stu-id="13979-104">Properties</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="e1722-104">ID</span><span class="sxs-lookup"><span data-stu-id="e1722-104">ID</span></span>|<span data-ttu-id="e1722-105">3381</span><span class="sxs-lookup"><span data-stu-id="e1722-105">3381</span></span>|  
-|<span data-ttu-id="e1722-106">关键字</span><span class="sxs-lookup"><span data-stu-id="e1722-106">Keywords</span></span>|<span data-ttu-id="e1722-107">通道</span><span class="sxs-lookup"><span data-stu-id="e1722-107">Channel</span></span>|  
-|<span data-ttu-id="e1722-108">级别</span><span class="sxs-lookup"><span data-stu-id="e1722-108">Level</span></span>|<span data-ttu-id="e1722-109">“详细”</span><span class="sxs-lookup"><span data-stu-id="e1722-109">Verbose</span></span>|  
-|<span data-ttu-id="e1722-110">通道</span><span class="sxs-lookup"><span data-stu-id="e1722-110">Channel</span></span>|<span data-ttu-id="e1722-111">Microsoft-Windows-应用程序服务器-应用程序/调试</span><span class="sxs-lookup"><span data-stu-id="e1722-111">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
+|<span data-ttu-id="13979-105">ID</span><span class="sxs-lookup"><span data-stu-id="13979-105">ID</span></span>|<span data-ttu-id="13979-106">3381</span><span class="sxs-lookup"><span data-stu-id="13979-106">3381</span></span>|  
+|<span data-ttu-id="13979-107">关键字</span><span class="sxs-lookup"><span data-stu-id="13979-107">Keywords</span></span>|<span data-ttu-id="13979-108">通道</span><span class="sxs-lookup"><span data-stu-id="13979-108">Channel</span></span>|  
+|<span data-ttu-id="13979-109">级别</span><span class="sxs-lookup"><span data-stu-id="13979-109">Level</span></span>|<span data-ttu-id="13979-110">“详细”</span><span class="sxs-lookup"><span data-stu-id="13979-110">Verbose</span></span>|  
+|<span data-ttu-id="13979-111">通道</span><span class="sxs-lookup"><span data-stu-id="13979-111">Channel</span></span>|<span data-ttu-id="13979-112">Microsoft-Windows-应用程序服务器-应用程序/调试</span><span class="sxs-lookup"><span data-stu-id="13979-112">Microsoft-Windows-Application Server-Applications/Debug</span></span>|  
   
-## <a name="description"></a><span data-ttu-id="e1722-112">描述</span><span class="sxs-lookup"><span data-stu-id="e1722-112">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="13979-113">说明</span><span class="sxs-lookup"><span data-stu-id="13979-113">Description</span></span>  
 
- <span data-ttu-id="e1722-113">此事件是发送 SequenceAcknowledgement 时发出的。</span><span class="sxs-lookup"><span data-stu-id="e1722-113">This event is emitted when the SequenceAcknowledgement is sent.</span></span>  
+ <span data-ttu-id="13979-114">此事件是发送 SequenceAcknowledgement 时发出的。</span><span class="sxs-lookup"><span data-stu-id="13979-114">This event is emitted when the SequenceAcknowledgement is sent.</span></span>  
   
-## <a name="message"></a><span data-ttu-id="e1722-114">消息</span><span class="sxs-lookup"><span data-stu-id="e1722-114">Message</span></span>  
+## <a name="message"></a><span data-ttu-id="13979-115">消息</span><span class="sxs-lookup"><span data-stu-id="13979-115">Message</span></span>  
 
- <span data-ttu-id="e1722-115">SessionId：%1 确认已发送。</span><span class="sxs-lookup"><span data-stu-id="e1722-115">SessionId:%1 acknowledgement sent.</span></span>  
+ <span data-ttu-id="13979-116">SessionId：%1 确认已发送。</span><span class="sxs-lookup"><span data-stu-id="13979-116">SessionId:%1 acknowledgement sent.</span></span>  
   
-## <a name="details"></a><span data-ttu-id="e1722-116">详细信息</span><span class="sxs-lookup"><span data-stu-id="e1722-116">Details</span></span>
+## <a name="details"></a><span data-ttu-id="13979-117">详细信息</span><span class="sxs-lookup"><span data-stu-id="13979-117">Details</span></span>
