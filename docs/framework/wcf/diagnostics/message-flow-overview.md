@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：消息流概述
 title: 消息流概述
 ms.date: 03/30/2017
 ms.assetid: fb0899e1-84cc-4d90-b45b-dc5a50063943
-ms.openlocfilehash: cb2924b62fce62620b664efa34208deb12dd34b7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ec26824db51e65eff75f4b705c0a2ed966a7aa3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759752"
 ---
 # <a name="message-flow-overview"></a>消息流概述
 

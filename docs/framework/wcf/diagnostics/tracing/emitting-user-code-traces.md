@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：发出 User-Code 跟踪
 title: 发出用户代码跟踪
 ms.date: 03/30/2017
 ms.assetid: fa54186a-8ffa-4332-b0e7-63867126fd49
-ms.openlocfilehash: e8b2031165a83e24ba15a2fcf847a170f47e696a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0abc8a4b39979942fd291ffd9cbb96047274dab0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589287"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759505"
 ---
 # <a name="emitting-user-code-traces"></a>发出用户代码跟踪
 
-除了在配置中启用跟踪以收集 Windows Communication Foundation （WCF）生成的检测数据之外，还可以通过编程方式在用户代码中发出跟踪。 这样，您就可以主动创建检测数据，过后您可以细读这些数据以进行诊断。 本主题讨论如何实现这一目的。
+除了在配置中启用跟踪以收集 Windows Communication Foundation (WCF) 生成的检测数据之外，还可以通过编程方式在用户代码中发出跟踪。 这样，您就可以主动创建检测数据，过后您可以细读这些数据以进行诊断。 本主题讨论如何实现这一目的。
 
-此外，[扩展跟踪](../../samples/extending-tracing.md)示例包括以下部分中所示的所有代码。
+此外， [扩展跟踪](../../samples/extending-tracing.md) 示例包括以下部分中所示的所有代码。
 
 ## <a name="creating-a-trace-source"></a>创建跟踪源
 
@@ -109,11 +110,11 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
 
 ## <a name="viewing-user-traces-in-the-service-trace-viewer-tool"></a>在服务跟踪查看器工具中查看服务跟踪
 
-本部分包含在使用[服务跟踪查看器工具（svctraceviewer.exe）](../../service-trace-viewer-tool-svctraceviewer-exe.md)进行查看时，通过运行[扩展跟踪](../../samples/extending-tracing.md)示例生成的跟踪的屏幕截图。
+本部分包含在使用[服务跟踪查看器工具（ ( # A0) ](../../service-trace-viewer-tool-svctraceviewer-exe.md)进行查看时，通过运行[扩展跟踪](../../samples/extending-tracing.md)示例生成的跟踪的屏幕截图。
 
 在下图中，在左侧面板上选择了之前创建的 "添加请求" 活动。 它与其他三个构成应用程序客户端程序的数学运算活动（除、减、乘）列在一起。 用户代码对每个操作定义了一个新活动，以便隔离在不同请求中发生的潜在错误。
 
-若要演示如何在[扩展跟踪](../../samples/extending-tracing.md)示例中使用传输，还会创建一个封装了四个操作请求的计算器活动。 对于每个请求，它们都将在“Calculator activity”（计算器活动）与请求活动之间来回转移（跟踪在图中的面板右上方突出显示）。
+若要演示如何在 [扩展跟踪](../../samples/extending-tracing.md) 示例中使用传输，还会创建一个封装了四个操作请求的计算器活动。 对于每个请求，它们都将在“Calculator activity”（计算器活动）与请求活动之间来回转移（跟踪在图中的面板右上方突出显示）。
 
 当您在左面板选择了一个活动之后，此活动包括的跟踪将显示在面板右上方。 如果 `propagateActivity` 位于 `true` 请求路径中的每个终结点，则请求活动中的跟踪来自参与请求的所有进程。 在本示例中，您可以在面板的第 4 列看到来自客户端和服务的跟踪。
 
@@ -131,7 +132,7 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
 
 在下图中，我们还看到跟踪在“Calculator activity”（计算器活动）中来回转移，而且每个请求活动都具有两对“开始”和“停止”跟踪，一对用于客户端，另一对用于服务（每个跟踪源一对）。
 
-![跟踪查看器：发出用户&#45;代码跟踪](media/242c9358-475a-4baf-83f3-4227aa942fcd.gif "242c9358-475a-4baf-83f3-4227aa942fcd")按创建时间列出的活动列表（左面板）及其嵌套活动（右上面板）
+![跟踪查看器：发出用户&#45;代码跟踪](media/242c9358-475a-4baf-83f3-4227aa942fcd.gif "242c9358-475a-4baf-83f3-4227aa942fcd") 按创建时间列出的活动 (左侧面板) 及其嵌套活动 (右上面板) 
 
 如果活动代码引发的异常会导致客户端引发异常（例如，当客户端没有获得请求的响应时），将在同一个直接相关的活动中显示服务和客户端警告或错误消息。 在下图中，服务将引发异常，指出 "服务拒绝在用户代码中处理此请求"。 客户端还会引发一个异常，指出 "由于内部错误，服务器无法处理该请求"。
 
@@ -145,10 +146,10 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
 
 ![显示错误关联关系图视图的屏幕截图。](./media/emitting-user-code-traces/trace-viewer-error-correlation.gif)
 
-若要获取之前的跟踪，我们为用户跟踪源设置 `ActivityTracing` 并为 `propagateActivity=true` 跟踪源设置 `System.ServiceModel`。 我们没有为 `ActivityTracing` 跟踪源设置 `System.ServiceModel`，以便实现用户代码活动之间的传播。 （如果启用了 "用户活动跟踪"，则不会将客户端中定义的活动 ID 全部传播给服务用户代码;但传输会将客户端和服务用户代码活动与中间 WCF 活动相关联。）
+若要获取之前的跟踪，我们为用户跟踪源设置 `ActivityTracing` 并为 `propagateActivity=true` 跟踪源设置 `System.ServiceModel`。 我们没有为 `ActivityTracing` 跟踪源设置 `System.ServiceModel`，以便实现用户代码活动之间的传播。  (当 "System.servicemodel" 活动跟踪开启时，客户端中定义的活动 ID 不会传播到服务用户代码，但传输会将客户端和服务用户代码活动与中间 WCF 活动相关联。 ) 
 
 定义活动和传播活动 ID 使得我们可以对各终结点执行直接错误关联。 这样，我们就可以更快地找到错误的根源。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展跟踪](../../samples/extending-tracing.md)

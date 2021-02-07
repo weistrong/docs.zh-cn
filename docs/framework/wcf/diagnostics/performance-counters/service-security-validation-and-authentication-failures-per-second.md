@@ -1,19 +1,20 @@
 ---
+description: 了解更多：服务：每秒安全验证和身份验证失败数
 title: 服务：Security Validation and Authentication Failures Per Second（每秒安全验证和身份验证失败次数）
 ms.date: 03/30/2017
 ms.assetid: 4af18009-e778-490b-9ba6-e76485285830
-ms.openlocfilehash: f66e6b90622cf181229938bc4fd877a98cd23a48
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8c0baedab3335031ed1737e0e4cecff7febc2944
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236879"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759518"
 ---
 # <a name="service-security-validation-and-authentication-failures-per-second"></a>服务：Security Validation and Authentication Failures Per Second（每秒安全验证和身份验证失败次数）
 
 计数器名称：Security Validation and Authentication Failures Per Second（每秒安全验证和身份验证失败次数）。  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  每当消息由于“Security Calls Not Authorized”（未授权的安全调用次数）计数器中未包括的安全问题而遭到拒绝时，此计数器即会递增。 此类问题包括：  
   

@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：服务：每秒流动的事务数
 title: 服务：Transactions Flowed Per Second（每秒流动的事务数）
 ms.date: 03/30/2017
 ms.assetid: ec72eb49-2942-4811-91df-d6e5dad81fd8
-ms.openlocfilehash: 158bd7e2f2f98e91215ef7351cf90493a2d3059d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aae78853272b46a97ce25a710039661f36bf7079
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236827"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759492"
 ---
 # <a name="service-transactions-flowed-per-second"></a>服务：Transactions Flowed Per Second（每秒流动的事务数）
 
 计数器名称：Transactions Flowed Per Second（每秒流动的事务数）。  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  一秒内流向此服务中操作的事务数。  
   

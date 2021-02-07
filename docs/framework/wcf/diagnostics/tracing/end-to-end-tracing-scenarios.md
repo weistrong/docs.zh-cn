@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息：端到端跟踪方案
 title: 端到端跟踪方案
 ms.date: 03/30/2017
 ms.assetid: f83b7d53-6061-4362-a9a3-ee1daf6542be
-ms.openlocfilehash: cd9be9a39ba1ebb331060231bdb481fd21a3ae6d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dc551a8b2f1649d9a1ce800943dd404be1472dbf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243958"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759440"
 ---
 # <a name="end-to-end-tracing-scenarios"></a>端到端跟踪方案
 
@@ -39,7 +40,7 @@ ms.locfileid: "96243958"
   
 - [COM +](com.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)
 - [端对端跟踪](end-to-end-tracing.md)

@@ -1,23 +1,24 @@
 ---
+description: 了解详细信息： SecuritySessionServerCloseSendFailure
 title: System.ServiceModel.Security.SecuritySessionServerCloseSendFailure
 ms.date: 03/30/2017
 ms.assetid: b848eeeb-07d6-4f2d-a14a-e62ee1968dfa
-ms.openlocfilehash: e9929a1b9f46034bd823a000716aa3322f00ab63
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8e5e9a764d61e4bb0b57c28760923f8d3afb46b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272184"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758361"
 ---
 # <a name="systemservicemodelsecuritysecuritysessionserverclosesendfailure"></a>System.ServiceModel.Security.SecuritySessionServerCloseSendFailure
 
 System.ServiceModel.Security.SecuritySessionServerCloseSendFailure  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  向客户端发送安全会话关闭指令时发生故障。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

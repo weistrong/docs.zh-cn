@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 5012-DCJsonGenReaderStart
 title: 5012 - DCJsonGenReaderStart
 ms.date: 03/30/2017
 ms.assetid: 6d2ad3c9-47ee-4e77-b1c6-259ab15b0cfb
-ms.openlocfilehash: 778456f429c13505e5b7ac0cb3303e166cb14a7f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7dabcd2452c0901ca64facbd1775e84df997dcb4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254709"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760077"
 ---
 # <a name="5012---dcjsongenreaderstart"></a>5012 - DCJsonGenReaderStart
 
@@ -20,7 +21,7 @@ ms.locfileid: "96254709"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当 Json 生成的读取器启动时，发出此事件。  
   

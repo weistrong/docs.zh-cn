@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息：端到端跟踪
 title: 端到端跟踪
 ms.date: 03/30/2017
 ms.assetid: f5ac7fc7-f97c-4313-b068-54e0c471b2aa
-ms.openlocfilehash: a8c06b9e4f70321e6ef3756863390dc62c659557
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c1c4a38d4ef8c445994d42abeafbb25da9a5f326
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759427"
 ---
 # <a name="end-to-end-tracing"></a>端到端跟踪
 
@@ -27,7 +28,7 @@ ms.locfileid: "96243945"
   
  提供所有活动跟踪类型的摘要  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [配置跟踪](configuring-tracing.md)
 - [使用服务跟踪查看器查看相关跟踪和进行故障诊断](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

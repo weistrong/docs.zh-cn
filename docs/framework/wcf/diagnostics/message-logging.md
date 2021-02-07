@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：消息日志记录
 title: 消息日志记录
 ms.date: 03/30/2017
 ms.assetid: 6bce0682-75ef-4d65-a659-b328fba4a8b5
-ms.openlocfilehash: 109b81ee7124bb7f89048c35c9f9617ba3e84c87
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 47130acb5ce70f85ba9d20b70566c29531be3fb0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285507"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759739"
 ---
 # <a name="message-logging"></a>消息日志记录
 
@@ -31,6 +32,6 @@ Windows Communication Foundation (WCF) 提供记录传入消息和传出消息�
   
  本主题描述如何防止在消息日志以及由消息日志记录生成的事件中公开敏感数据。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [管理和诊断](index.md)

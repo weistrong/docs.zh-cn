@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：每秒调用数
 title: Calls Per Second（每秒调用次数）
 ms.date: 03/30/2017
 ms.assetid: 0efb5a94-d83b-4793-b529-6fcbedb65c43
-ms.openlocfilehash: 766e481478cf98c43a898bf28fcd7af3896b2327
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1d204e4c88d9f9ab113e59c76f1eaecc280e552e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96271338"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759648"
 ---
 # <a name="calls-per-second"></a>Calls Per Second（每秒调用次数）
 
 计数器名称：Calls Per Second（每秒调用次数）  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  一秒内对此操作调用的次数。  
   
