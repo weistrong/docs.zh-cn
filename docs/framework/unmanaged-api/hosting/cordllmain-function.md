@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： _CorDllMain 函数
 title: _CorDllMain 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8
 topic_type:
 - apiref
-ms.openlocfilehash: 1b3ebcabc66ee7ca29245bb02d958be311bc65fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 442afae3a627eb684a86c02fbc6e546aa804b7a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717142"
 ---
 # <a name="_cordllmain-function"></a>\_CorDllMain 函数
 
@@ -50,7 +51,7 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
 
  `true`如果发生错误，则此方法将返回成功 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此函数由 DLL 程序集的操作系统加载程序调用。 对于可执行程序集，加载程序将调用[ \_ CorExeMain](corexemain-function.md)函数。  
   
@@ -70,6 +71,6 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据全局静态函数](../metadata/metadata-global-static-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRPolicyManager：： SetUnhandledExceptionPolicy 方法
 title: ICLRPolicyManager::SetUnhandledExceptionPolicy 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5268480e-280a-4931-b7a3-dc3ffdf7f78f
 topic_type:
 - apiref
-ms.openlocfilehash: 1088374c9df18ded38b44384be44de245f0bd403
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 489127bb00b2b65466460baa3cfd31439672cd1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728948"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716531"
 ---
 # <a name="iclrpolicymanagersetunhandledexceptionpolicy-method"></a>ICLRPolicyManager::SetUnhandledExceptionPolicy 方法
 
@@ -50,7 +51,7 @@ HRESULT SetUnhandledExceptionPolicy (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  默认情况下，CLR 是所有未经处理的异常的最终处理程序，其默认行为是销毁进程。 宿主可以通过将值设置为 eHostDeterminedPolicy 来更改此行为 `policy` 。 与早期版本的 CLR 一样，此值允许主机实现其自己的默认行为。  
   
@@ -64,7 +65,7 @@ HRESULT SetUnhandledExceptionPolicy (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrUnhandledException 枚举](eclrunhandledexception-enumeration.md)
 - [ICLRControl 接口](iclrcontrol-interface.md)

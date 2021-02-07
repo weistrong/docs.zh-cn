@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRPolicyManager：： SetTimeoutAndAction 方法
 title: ICLRPolicyManager::SetTimeoutAndAction 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
 topic_type:
 - apiref
-ms.openlocfilehash: 41e13e20a1cf5a7000907b1cc7d8d2af5174ceba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c91d43cce381bef804b30e9e1dcb50574ddcd1b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728963"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716557"
 ---
 # <a name="iclrpolicymanagersettimeoutandaction-method"></a>ICLRPolicyManager::SetTimeoutAndAction 方法
 
@@ -67,7 +68,7 @@ HRESULT SetTimeoutAndAction (
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_INVALIDARG|无法为指定的设置超时 `operation` ，或者为提供的值无效 `action` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `SetTimeoutAndAction` 封装了 [ICLRPolicyManager：： SetTimeout](iclrpolicymanager-settimeout-method.md) 和 [ICLRPolicyManager：： SetActionOnTimeout](iclrpolicymanager-setactionontimeout-method.md) 方法的功能，可调用这些方法来代替对这两个方法的顺序调用。  
   
@@ -84,7 +85,7 @@ HRESULT SetTimeoutAndAction (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrOperation 枚举](eclroperation-enumeration.md)
 - [EPolicyAction 枚举](epolicyaction-enumeration.md)

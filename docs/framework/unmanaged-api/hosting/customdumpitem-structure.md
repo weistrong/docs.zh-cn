@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CustomDumpItem 结构
 title: CustomDumpItem 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fd9085ff-7beb-4c38-97f0-037cd8ba4f65
 topic_type:
 - apiref
-ms.openlocfilehash: c77e93686c7d121e9fe2a92f03970404ab823dc0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9bd7b2bb59675bc01e24dc6e6d0ce524f3d35466
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716890"
 ---
 # <a name="customdumpitem-structure"></a>CustomDumpItem 结构
 
@@ -43,7 +44,7 @@ struct {
 |`itemKind`|一个 [ECustomDumpItemKind](ecustomdumpitemkind-enumeration.md) 值，指示要添加的项的类型。|  
 |`pReserved`|当前未使用。 添加到联合的任何项都必须不大于指针大小。 如果 `struct` 需要，您必须单独分配并指向它。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRErrorReportingManager：： BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md) 采用类型为的参数 `CustomDumpItem` 。  
   
@@ -57,6 +58,6 @@ struct {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载结构](hosting-structures.md)
