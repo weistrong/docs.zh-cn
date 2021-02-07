@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugExceptionObjectCallStackEnum 接口
 title: ICorDebugExceptionObjectCallStackEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 39dffa18-c71b-48c4-b11d-e814631ab1e9
 topic_type:
 - apiref
-ms.openlocfilehash: 1c45faecdb8b95af8d9e981962151c2c5d071a4f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c72f4299bf3ebc5de2d2ed196801d93ff5fe4356
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693351"
 ---
 # <a name="icordebugexceptionobjectcallstackenum-interface"></a>ICorDebugExceptionObjectCallStackEnum 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95731886"
 |------------|-----------------|  
 |[ICorDebugExceptionObjectCallStackEnum：： Next](icordebugexceptionobjectcallstackenum-next-method.md)|获取指定数量的 [CorDebugExceptionObjectStackFrame](cordebugexceptionobjectstackframe-structure.md) 对象，这些对象包含有关异常对象的调用堆栈的信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugExceptionObjectCallStackEnum`接口实现 ICorDebugEnum 接口。  
   
@@ -47,7 +48,7 @@ ms.locfileid: "95731886"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

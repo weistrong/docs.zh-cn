@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugChain：： GetCaller 方法
 title: ICorDebugChain::GetCaller 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d0b8ab4b-d7d2-4fa0-945f-3d2b87e7e991
 topic_type:
 - apiref
-ms.openlocfilehash: 0f616b3bae48a972c0fc8935c35add7d844a7364
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5af2132b7fec9e70704db980b95221db6eb273f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695016"
 ---
 # <a name="icordebugchaingetcaller-method"></a>ICorDebugChain::GetCaller 方法
 
@@ -41,7 +42,7 @@ HRESULT GetCaller (
   
  如果此链被自发地称为 (如此链或调试器初始化调用堆栈) ，将为 `ppChain` null。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果调用是在线程间封送的，则调用链可能位于不同的线程上。  
   

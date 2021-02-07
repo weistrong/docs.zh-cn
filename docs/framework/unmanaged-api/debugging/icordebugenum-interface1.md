@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugEnum 接口
 title: ICorDebugEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 80be7efe-2c32-4b9f-8c52-40c6f6268219
 topic_type:
 - apiref
-ms.openlocfilehash: b208444de3b427329988f27b9d252b54143b7240
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 20d2bb14bddcaf40802567ec78a8e318ac1db380
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698788"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694469"
 ---
 # <a name="icordebugenum-interface"></a>ICorDebugEnum 接口
 
@@ -34,7 +35,7 @@ ms.locfileid: "95698788"
 |[Reset 方法](icordebugenum-reset-method.md)|将光标移到枚举的开头。|  
 |[Skip 方法](icordebugenum-skip-method.md)|按指定的项数在枚举中向前移动光标。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  以下枚举器派生自 `ICorDebugEnum` ：  
   
@@ -93,6 +94,6 @@ ms.locfileid: "95698788"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

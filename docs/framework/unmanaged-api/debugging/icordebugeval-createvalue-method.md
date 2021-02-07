@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugEval：： CreateValue 方法
 title: ICorDebugEval::CreateValue 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9a1c0b47-6f10-4fcb-844a-4ab2d7990140
 topic_type:
 - apiref
-ms.openlocfilehash: 41db6ac00d8646651d0e8433d076c37af6020071
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f5ea753b5b95c68136e7b799aad88eee5845ea82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694157"
 ---
 # <a name="icordebugevalcreatevalue-method"></a>ICorDebugEval::CreateValue 方法
 
@@ -49,7 +50,7 @@ HRESULT CreateValue (
  `ppValue`  
  弄指向表示值的 "ICorDebugValue" 对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CreateValue` 创建 `ICorDebugValue` 给定类型的对象，其唯一目的是在函数计算中使用它。 此值对象可用于将用户常数作为参数传递。  
   
@@ -67,7 +68,7 @@ HRESULT CreateValue (
   
  **.NET Framework 版本：** 1.1、1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CreateValueForType 方法](icordebugeval2-createvaluefortype-method.md)
 - [ICorDebugEval 接口](icordebugeval-interface.md)

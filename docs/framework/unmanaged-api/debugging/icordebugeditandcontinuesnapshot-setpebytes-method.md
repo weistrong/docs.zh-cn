@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugEditAndContinueSnapshot：： SetPEBytes 方法
 title: ICorDebugEditAndContinueSnapshot::SetPEBytes 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 7235c225-cb6e-49e9-a95b-09a646579841
 topic_type:
 - apiref
-ms.openlocfilehash: 6c654cfb2b2680987b2801a37f3d87352968431d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cfd63cae0aa972d6983df5641339d0c6ff2ca63c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694534"
 ---
 # <a name="icordebugeditandcontinuesnapshotsetpebytes-method"></a>ICorDebugEditAndContinueSnapshot::SetPEBytes 方法
 
 `SetPEBytes` 已过时。 请勿调用此方法。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

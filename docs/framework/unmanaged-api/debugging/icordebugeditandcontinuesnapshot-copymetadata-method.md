@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugEditAndContinueSnapshot：： CopyMetaData 方法
 title: ICorDebugEditAndContinueSnapshot::CopyMetaData 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: bf116077-1f44-4f76-962c-76d0c202017d
 topic_type:
 - apiref
-ms.openlocfilehash: 0d600e54793017505388efd1be897aa2ace4fd57
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 018594c399d168353451213f6d95cd71c57fc701
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694807"
 ---
 # <a name="icordebugeditandcontinuesnapshotcopymetadata-method"></a>ICorDebugEditAndContinueSnapshot::CopyMetaData 方法
 
 `CopyMetaData` 已过时。 请勿调用此方法。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

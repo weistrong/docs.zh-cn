@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugEval 接口
 title: ICorDebugEval 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a5c9815-832d-47e1-b7f7-bbba135d7cf1
 topic_type:
 - apiref
-ms.openlocfilehash: 5d8fd79b242f2b88b82c5c3d78dfe45d80f1194f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6eda0f63b377399cad391346dc6bedfa860e4b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694092"
 ---
 # <a name="icordebugeval-interface"></a>ICorDebugEval 接口
 
@@ -40,7 +41,7 @@ ms.locfileid: "95729780"
 |[NewObjectNoConstructor 方法](icordebugeval-newobjectnoconstructor-method.md)|分配指定类型的新对象实例，而不尝试调用构造函数方法。 .NET Framework 2.0 中 (过时;改 [为使用 ICorDebugEval2：： NewParameterizedObjectNoConstructor](icordebugeval2-newparameterizedobjectnoconstructor-method.md) ) |  
 |[NewString 方法](icordebugeval-newstring-method.md)|使用指定的内容分配新的字符串对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugEval`在用于执行计算的特定线程的上下文中创建对象。 给定计算中使用的所有对象和类型必须位于同一个应用程序域中。 该应用程序域不需要与该线程的当前应用程序域相同。 评估可以嵌套。  
   
@@ -63,6 +64,6 @@ ms.locfileid: "95729780"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

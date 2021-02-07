@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugEval2 接口
 title: ICorDebugEval2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fce34531-2687-406d-9131-d6ad94f2ce0e
 topic_type:
 - apiref
-ms.openlocfilehash: 090b587ef509795609250914ce8883ad96d28c18
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2c279335bdd30b8dc2698f348d9537443b236a45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729676"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693754"
 ---
 # <a name="icordebugeval2-interface"></a>ICorDebugEval2 接口
 
@@ -37,7 +38,7 @@ ms.locfileid: "95729676"
 |[NewStringWithLength 方法](icordebugeval2-newstringwithlength-method.md)|使用指定的内容创建指定长度的新字符串。|  
 |[RudeAbort 方法](icordebugeval2-rudeabort-method.md)|中止此当前正在执行的计算 `ICorDebugEval2` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -52,6 +53,6 @@ ms.locfileid: "95729676"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

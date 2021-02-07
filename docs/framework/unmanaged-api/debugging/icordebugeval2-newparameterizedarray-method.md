@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugEval2：： NewParameterizedArray 方法
 title: ICorDebugEval2::NewParameterizedArray 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
 topic_type:
 - apiref
-ms.openlocfilehash: 14274932461fa7a5278c9a09b421f50be098cb91
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ce8582328013ad02357361f05efb55ade8780e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693741"
 ---
 # <a name="icordebugeval2newparameterizedarray-method"></a>ICorDebugEval2::NewParameterizedArray 方法
 
@@ -51,7 +52,7 @@ HRESULT NewParameterizedArray(
  `lowBounds`  
  [in] 可选。 数组的每个维度的下限。 如果省略此值，则假定每个维度的下限为零。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  数组的元素可以是泛型类型的实例。 始终在当前运行线程的应用程序域中创建数组。 在 .NET Framework 2.0 中，的值 `rank` 必须为1。  
   
