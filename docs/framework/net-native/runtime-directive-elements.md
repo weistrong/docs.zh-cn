@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息：运行时指令元素
 title: 运行时指令元素
 ms.date: 03/30/2017
 ms.assetid: 3fe5848c-ecd7-4136-970b-8e48d250bde6
-ms.openlocfilehash: 96bce89c02ad17d1b30eda66237f69a15123dcd3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 74ff6c7d782f48106e37b99187770d8e82926be4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738424"
 ---
 # <a name="runtime-directive-elements"></a>运行时指令元素
 
@@ -67,6 +68,6 @@ ms.locfileid: "96250796"
  [\<TypeParameter>](typeparameter-element-net-native.md)  
  将运行时策略应用到以传递到方法为代表的 <xref:System.Type> 自变量类型。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [rd.xml 配置文件参考](runtime-directives-rd-xml-configuration-file-reference.md)

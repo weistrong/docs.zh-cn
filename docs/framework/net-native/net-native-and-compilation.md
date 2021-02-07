@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： .NET Native 和编译
 title: .NET Native 和编译
 ms.date: 03/30/2017
 ms.assetid: e38ae4f3-3e3d-42c3-a4b8-db1aa9d84f85
-ms.openlocfilehash: cf5c9f05b2f2cb4ca15e4add5b53bc9bdca757a3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 1a847340f48d97eb255869895f9a5b963e45e8ab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128245"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738554"
 ---
 # <a name="net-native-and-compilation"></a>.NET Native 和编译
 
@@ -102,7 +103,7 @@ ms.locfileid: "73128245"
 
 - NGEN 映像往往非常脆弱。 例如，如果修补或更改了依赖项，通常需要使用它的程序集也重新执行 NGEN 操作。 对于 .NET Framework 类库中的系统程序集尤其如此。 相反，.NET 本机允许独立提供应用程序。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据和自描述组件](../../standard/metadata-and-self-describing-components.md)
 - [内部 .NET Native（第 9 频道视频）](https://channel9.msdn.com/Shows/Going+Deep/Inside-NET-Native)

@@ -1,16 +1,17 @@
 ---
+description: 了解有关详细信息，请参阅如何：映射数据库关系
 title: 如何：映射数据库关系
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 538def39-8399-46fb-b02d-60ede4e050af
-ms.openlocfilehash: 2f612877f5e7da6442c242aa0d56d811c0aa7cf8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: cbccf9ec33a76b6446549fe8031300174506bd00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166451"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738840"
 ---
 # <a name="how-to-map-database-relationships"></a>如何：映射数据库关系
 
@@ -51,7 +52,7 @@ ms.locfileid: "91166451"
  这种情况也可以反过来处理。 您可以不使用 `Customer` 类来说明客户与订单之间的关联，而改用 `Order` 类。 `Order` 类使用 <xref:System.Data.Linq.EntityRef%601> 类型反向说明与客户的关系，如下面的代码示例所示。  
   
 > [!NOTE]
-> <xref:System.Data.Linq.EntityRef%601>类支持*延迟加载*。 有关详细信息，*请参阅*[延迟与立即加载](deferred-versus-immediate-loading.md)。  
+> <xref:System.Data.Linq.EntityRef%601>类支持 *延迟加载*。 有关详细信息，*请参阅*[延迟与立即加载](deferred-versus-immediate-loading.md)。  
   
  [!code-csharp[DLinqCustomize#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#5)]
  [!code-vb[DLinqCustomize#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#5)]  

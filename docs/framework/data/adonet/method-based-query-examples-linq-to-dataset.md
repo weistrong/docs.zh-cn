@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： Method-Based 查询示例 (LINQ to DataSet) '
 title: 基于方法的查询示例 (LINQ to DataSet)
 ms.date: 03/30/2017
 ms.assetid: d340775c-7f39-4087-a290-5cbec6cfa68e
-ms.openlocfilehash: 1c1ef8f1b6c05415ac6f5ee59d9a415bfab2c410
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4597dee40bb3c75b6cbca946e0833672c8512c06
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175377"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739165"
 ---
 # <a name="method-based-query-examples-linq-to-dataset"></a>基于方法的查询示例 (LINQ to DataSet)
 
@@ -24,7 +25,7 @@ ms.locfileid: "91175377"
  [中间件排序](method-based-query-syntax-examples-ordering-linq-to-dataset.md)  
  本主题中的示例演示如何使用 <xref:System.Linq.Enumerable.OrderBy%2A>、<xref:System.Linq.Enumerable.OrderByDescending%2A>、<xref:System.Linq.Enumerable.Reverse%2A> 和 <xref:System.Linq.Enumerable.ThenByDescending%2A> 方法来查询 <xref:System.Data.DataSet> 并排序结果。  
   
- [集合运算符](method-based-query-syntax-examples-set-operators.md)  
+ [集运算符](method-based-query-syntax-examples-set-operators.md)  
  本主题中的示例演示如何使用 <xref:System.Linq.Enumerable.Distinct%2A>、<xref:System.Linq.Enumerable.Except%2A>、<xref:System.Linq.Enumerable.Intersect%2A> 和 <xref:System.Linq.Enumerable.Union%2A> 运算符对多组数据行执行基于值的比较运算。  
   
  [转换运算符](method-based-query-syntax-examples-conversion-operators.md)  

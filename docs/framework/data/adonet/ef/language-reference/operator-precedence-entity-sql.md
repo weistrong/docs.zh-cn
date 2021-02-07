@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：运算符优先级 (实体 SQL) '
 title: 运算符优先级 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: e92e4ca5-2889-4266-9625-47f0eb01a948
-ms.openlocfilehash: f8aa0f213a24d6431d8910af849571a67fbd9f57
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 72cfdecf7dfe4ce590d99e866429e771f9ede231
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739321"
 ---
 # <a name="operator-precedence-entity-sql"></a>运算符优先级 (Entity SQL)
 
@@ -22,7 +23,7 @@ ms.locfileid: "91175637"
 |3|乘法|`* / %`|  
 |4|加法|`+ -`|  
 |5|中间件排序|`< > <= >=`|  
-|6|等式|`= != <>`|  
+|6|相等|`= != <>`|  
 |7|条件“与”|`and &&`|  
 |8|条件“或”|`or &#124;&#124;`|  
   

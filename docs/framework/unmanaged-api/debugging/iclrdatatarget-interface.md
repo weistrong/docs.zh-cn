@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDataTarget 接口
 title: ICLRDataTarget 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e2f05155-9bef-4e11-b703-7f05890665ca
 topic_type:
 - apiref
-ms.openlocfilehash: 0d3e6a95d8fd71a67b97923dac53c1f615dfe666
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f24760f638705a1bde7e055069cbc3a18a0896fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738216"
 ---
 # <a name="iclrdatatarget-interface"></a>ICLRDataTarget 接口
 
@@ -41,7 +42,7 @@ ms.locfileid: "95703416"
 |[SetTLSValue 方法](iclrdatatarget-settlsvalue-method.md)|在目标进程中指定线程 (TLS) 中设置一个值。|  
 |[WriteVirtual 方法](iclrdatatarget-writevirtual-method.md)|将数据从指定的缓冲区写入指定的虚拟内存地址。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  API 客户端 (即，调试器) 必须根据特定目标项实现此接口。 例如，活动进程的实现将不同于内存转储的。  
   
@@ -55,7 +56,7 @@ ms.locfileid: "95703416"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRDataTarget2 接口](iclrdatatarget2-interface.md)
 - [调试接口](debugging-interfaces.md)

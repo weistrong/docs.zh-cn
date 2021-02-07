@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： _EFN_GetManagedExcepStack 函数
 title: _EFN_GetManagedExcepStack 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 21ceed9e-62b2-4024-b027-6d095109955a
 topic_type:
 - apiref
-ms.openlocfilehash: b86277836b1be48c9f8020d59071aba8c5b1e457
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a3c7e30a377e10b9d4d0b1dd663a594a0e872f3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676226"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738307"
 ---
 # <a name="_efn_getmanagedexcepstack-function"></a>\_EFN \_ GetManagedExcepStack 函数
 
@@ -50,7 +51,7 @@ HRESULT _EFN_GetManagedExcepStack(
  `cbString`  
  弄字符串缓冲区中的可用字符数。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果当前上下文中的线程上没有托管代码，则该函数将返回具有0xa0 的工具值的 HRESULT SOS_E_NOMANAGEDCODE 和错误代码0x1000。  
   
@@ -62,6 +63,6 @@ HRESULT _EFN_GetManagedExcepStack(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试全局静态函数](debugging-global-static-functions.md)

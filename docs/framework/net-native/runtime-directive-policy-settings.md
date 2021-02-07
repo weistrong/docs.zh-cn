@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息：运行时指令策略设置
 title: 运行时指令策略设置
 ms.date: 03/30/2017
 ms.assetid: cb52b1ef-47fd-4609-b69d-0586c818ac9e
-ms.openlocfilehash: 7a8933decaec45e8000f3f3d1717847f333deddd
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b8bbb0f713900b4f0b3808431ce45ab85a7f8225
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "76738504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738411"
 ---
 # <a name="runtime-directive-policy-settings"></a>运行时指令策略设置
 
@@ -16,7 +17,7 @@ ms.locfileid: "76738504"
 
 .NET Native 的运行时指令策略设置决定在运行时间类型和类型成员的元数据的可用性。 如果没有必要的元数据，依赖于反射、序列化和反序列化的操作或 .NET 框架类型到 COM 的封送或 Windows 运行时会失败并引发一个异常。 最常见的异常是 [MissingMetadataException](missingmetadataexception-class-net-native.md) 和（在互操作的情况下）[MissingInteropDataException](missinginteropdataexception-class-net-native.md)。
 
-运行时策略设置是由一个运行时指令 (.rd.xml) 文件控制的。 每个运行时指令为特定的程序元素定义策略，如程序集（ [\<Assembly>](assembly-element-net-native.md) 元素）、类型（ [\<Type>](type-element-net-native.md) 元素）或方法（ [\<Method>](method-element-net-native.md) 元素）。 指令包括一个或多个用于定义反射策略类型、序列化策略类型和互操作策略类型的特性，这些将在下一部分讨论到。 该特性的值定义策略设置。
+运行时策略设置是由一个运行时指令 (.rd.xml) 文件控制的。 每个运行时指令为特定的程序元素定义策略，如 (元素) 的程序集 [\<Assembly>](assembly-element-net-native.md) 、元素)  (类型 [\<Type>](type-element-net-native.md) 或元素 (元素的方法 [\<Method>](method-element-net-native.md) 。 指令包括一个或多个用于定义反射策略类型、序列化策略类型和互操作策略类型的特性，这些将在下一部分讨论到。 该特性的值定义策略设置。
 
 ## <a name="policy-types"></a>策略类型
 
@@ -128,7 +129,7 @@ ms.locfileid: "76738504"
 |`Required PublicAndInternal`|为公共类型或成员以及内部类型或成员启用策略，并确保公共类型和成员以及内部类型或成员的元数据始终可用。 该设置不同于 `PublicAndInternal`，后者确保公共类型和成员以及内部类型和成员的元数据仅在工具链确定这一步骤有必要时才可用。|✔️||
 |`Required All`|要求工具链在不管所有类型是否受到占用情况下都保留它们，并为它们启用策略。|✔️||
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](runtime-directive-elements.md)

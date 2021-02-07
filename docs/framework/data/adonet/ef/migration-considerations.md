@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：实体框架的迁移注意事项 () '
 title: 迁移注意事项（实体框架）
 ms.date: 03/30/2017
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
-ms.openlocfilehash: d5151f0215cde1c5e35cc87c3cd667e16a23a1df
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6824d28fecc743e17046c826b887900218c90f3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175468"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739243"
 ---
 # <a name="migration-considerations-entity-framework"></a>迁移注意事项（实体框架）
 
@@ -99,7 +100,7 @@ ADO.NET 实体框架为现有应用程序提供了几个优点。 其中最重�
   
 - 使用 XML 数据的应用程序。  
 
-  对象序列化允许您创建实体框架数据服务。 这些服务为使用 XML 数据的应用程序（如基于 AJAX 的 Internet 应用程序）提供数据。 在这些情况下，请考虑使用 WCF 数据服务。 这些数据服务基于实体数据模型，并使用标准具象状态传输 (REST) HTTP 操作（如 GET、PUT 和 POST）提供对实体数据的动态访问。 有关详细信息，请参阅 [WCF Data Services 4.5](../../wcf/index.md)。  
+  对象序列化允许您创建实体框架数据服务。 这些服务为使用 XML 数据的应用程序（如基于 AJAX 的 Internet 应用程序）提供数据。 在这些情况下，请考虑使用 WCF Data Services。 这些数据服务基于实体数据模型，并使用标准具象状态传输 (REST) HTTP 操作（如 GET、PUT 和 POST）提供对实体数据的动态访问。 有关详细信息，请参阅 [WCF Data Services 4.5](../../wcf/index.md)。  
   
   实体框架不支持本机 XML 数据类型。 这意味着在将实体映射到包含 XML 列的表时，该 XML 列的等效实体属性是一个字符串。 对象可以断开连接，并序列化为 XML。 有关详细信息，请参阅 [序列化对象](/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100))。  
   

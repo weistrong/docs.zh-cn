@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：存储和重复使用查询
 title: 如何：存储和重复使用查询
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a012bd79-1809-45e3-adea-0229532396cc
-ms.openlocfilehash: aae1cf3faf2ecb3d8e9511390cdaa1e004905bea
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a9c467cc9b2e39e6bd7616c6439d02c67f43d7c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738814"
 ---
 # <a name="how-to-store-and-reuse-queries"></a>如何：存储和重复使用查询
 
@@ -31,7 +32,7 @@ ms.locfileid: "91197087"
   
 ## <a name="example"></a>示例  
 
- 当前无法将 (存储在静态变量中) 返回 *匿名类型*的查询，因为类型没有可作为泛型参数提供的名称。 下面的示例演示如何创建可表示结果的类型，然后将其用作泛型自变量，从而解决该问题。  
+ 当前无法将 (存储在静态变量中) 返回 *匿名类型* 的查询，因为类型没有可作为泛型参数提供的名称。 下面的示例演示如何创建可表示结果的类型，然后将其用作泛型自变量，从而解决该问题。  
   
  [!code-csharp[DLinqQuerying#8](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQuerying/cs/Program.cs#8)]
  [!code-vb[DLinqQuerying#8](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#8)]  

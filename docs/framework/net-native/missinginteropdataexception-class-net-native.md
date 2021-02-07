@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息： MissingInteropDataException 类 ( .NET Native) '
 title: 缺少互操作数据异常类 (.NET Native)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
-ms.openlocfilehash: bbbb484e5cb8060568b321a2a41474d60c9f87f6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ee1544d6a0e1e6a3f0e4386650754ed84b49015b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738697"
 ---
 # <a name="missinginteropdataexception-class-net-native"></a>缺少互操作数据异常类 (.NET Native)
 
@@ -21,7 +22,7 @@ ms.locfileid: "96250913"
  命名空间：System.Runtime.CompilerServices  
   
 > [!IMPORTANT]
-> `MissingInteropDataException`类仅供 .NET Native 工具链内部使用。 它不用于在第三方代码中使用，也不应用它处理应用程序代码中的异常。 相反，你可以通过将条目添加到[运行时指令文件](runtime-directives-rd-xml-configuration-file-reference.md)来消除异常。 有关详细信息，请参阅“备注”部分。  
+> `MissingInteropDataException`类仅供 .NET Native 工具链内部使用。 它不用于在第三方代码中使用，也不应用它处理应用程序代码中的异常。 相反，你可以通过将条目添加到[运行时指令文件](runtime-directives-rd-xml-configuration-file-reference.md)来消除异常。 有关详细信息，请参见“备注”部分。  
   
 ## <a name="syntax"></a>语法  
 
@@ -38,7 +39,7 @@ ms.locfileid: "96250913"
   
 ## <a name="properties"></a>属性  
   
-|属性|描述|  
+|属性|说明|  
 |--------------|-----------------|  
 |`public IDictionary Data { get; }`|获取键/值对的集合，这些键/值对提供有关该异常的其他用户定义信息。 （从 <xref:System.Exception?displayProperty=nameWithType> 继承。）|  
 |`public string HelpLink { get; set; }`|获取或设置指向与此异常关联的帮助文件链接。 （从 <xref:System.Exception?displayProperty=nameWithType> 继承。）|  
@@ -52,7 +53,7 @@ ms.locfileid: "96250913"
   
 ## <a name="methods"></a>方法  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |`public bool Equals(Object obj)`|确定指定对象是否等于当前对象。  （从 <xref:System.Object> 继承。）|  
 |`protected void Finalize()`|在垃圾回收将某一对象回收前允许该对象尝试释放资源并执行其他清理操作。 （从 <xref:System.Object> 继承。）|  
@@ -65,7 +66,7 @@ ms.locfileid: "96250913"
   
 ## <a name="events"></a>事件  
   
-|事件|描述|  
+|事件|说明|  
 |-----------|-----------------|  
 |`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|当异常被序列化用来创建包含有关该异常的徐列出数据的异常状态对象时会出现该问题。 （从 <xref:System.Exception?displayProperty=nameWithType> 继承。）|  
   
@@ -80,7 +81,7 @@ ms.locfileid: "96250913"
   
  `MissingInteropDataException` 类包含单个唯一成员，即 `MissingType` 属性，它表示一种类型，而如果想成功完成方法调用需使用到该类型的元数据。 所有剩余成员均继承自基类 <xref:System.Exception?displayProperty=nameWithType>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Exception?displayProperty=nameWithType>
 - [MissingMetadataException 类](missingmetadataexception-class-net-native.md)

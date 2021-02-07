@@ -1,13 +1,14 @@
 ---
+description: '详细了解： OFTYPE (实体 SQL) '
 title: OFTYPE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 6d259ca7-bbf0-40f8-a154-181d25c0d67e
-ms.openlocfilehash: b5600b4cee23945fe60142b370feb35ac1a2efa1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d916ea4487fcc7a21f5fb62aa7e6f8a23d73fed2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175676"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739334"
 ---
 # <a name="oftype-entity-sql"></a>OFTYPE (Entity SQL)
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：反射和 .NET Native
 title: 反射和 .NET Native
 ms.date: 03/30/2017
 ms.assetid: 91c9eae4-c641-476c-a06e-d7ce39709763
-ms.openlocfilehash: c38070ec4afe0a7311133e0ef7b5b24eb2fe4fb5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 150afe5964cbf3a8983540d5948b246a8f330793
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738437"
 ---
 # <a name="reflection-and-net-native"></a>反射和 .NET Native
 
@@ -32,7 +33,7 @@ ms.locfileid: "96287834"
   
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 .NET Native 编译应用程序](index.md)
 - [.NET Native 和编译](net-native-and-compilation.md)

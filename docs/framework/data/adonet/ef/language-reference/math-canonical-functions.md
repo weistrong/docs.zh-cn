@@ -1,13 +1,14 @@
 ---
+description: 详细了解：数学规范函数
 title: 数学规范函数
 ms.date: 03/30/2017
 ms.assetid: 6f6cddc6-b561-4ebe-84b6-841ef5b4113b
-ms.openlocfilehash: 9417ff9836912017c9d88bb24a18849aaac2836a
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 55072099f5766d48ea3067a2e9eaa187a8b3f111
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70250307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739360"
 ---
 # <a name="math-canonical-functions"></a>数学规范函数
 
@@ -19,7 +20,7 @@ ms.locfileid: "70250307"
 
 **参数**
 
-`Int16` 、`Int32` 、、`Double`、 、和`Decimal`。 `Int64` `Byte` `Single`
+、、、 `Int16` `Int32` 、、 `Int64` `Byte` `Single` `Double` 和 `Decimal` 。
 
 **返回值**
 
@@ -35,7 +36,7 @@ ms.locfileid: "70250307"
 
 **参数**
 
-`Single` 、`Double`和。`Decimal`
+`Single`、 `Double` 和 `Decimal` 。
 
 **返回值**
 
@@ -52,7 +53,7 @@ ms.locfileid: "70250307"
 
 **参数**
 
-`Single` 、`Double`和。`Decimal`
+`Single`、 `Double` 和 `Decimal` 。
 
 **返回值**
 
@@ -71,8 +72,8 @@ ms.locfileid: "70250307"
 
 |  |  |
 |--|--|
-|`value` | `Int32, Int64, Double`、或`Decimal`。 |
-|`exponent` | `Int64` 、`Double`或。`Decimal` |
+|`value` | `Int32, Int64, Double` 或 `Decimal`。 |
+|`exponent` | `Int64`、 `Double` 或 `Decimal` 。 |
 
 **返回值**
 
@@ -88,7 +89,7 @@ ms.locfileid: "70250307"
 
 **参数**
 
-`Single` 、`Double`和。`Decimal`
+`Single`、 `Double` 和 `Decimal` 。
 
 **返回值**
 
@@ -138,7 +139,7 @@ ms.locfileid: "70250307"
   
  如果提供 `null` 输入，则这些函数返回 `null`。  
   
- Microsoft SQL 客户端托管提供程序中提供了等效功能。 有关详细信息，请参阅[SqlClient for 实体框架函数](../sqlclient-for-ef-functions.md)。  
+ Microsoft SQL 客户端托管提供程序中提供了等效功能。 有关详细信息，请参阅 [SqlClient for 实体框架函数](../sqlclient-for-ef-functions.md)。  
   
 ## <a name="see-also"></a>请参阅
 

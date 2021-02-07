@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：乐观并发
 title: 开放式并发
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e380edac-da67-4276-80a5-b64decae4947
-ms.openlocfilehash: 681044a9d905f052516ba240e25ffff84928e58e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1034720b2c57b863b87eef440424a7e2f4c2c6c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166633"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739139"
 ---
 # <a name="optimistic-concurrency"></a>开放式并发
 
@@ -43,7 +44,7 @@ ms.locfileid: "91166633"
   
  下午 1:01，用户 2 读取同一行。  
   
- 在下午1:03，，2-2 将 **FirstName** 从 "Bob" 更改为 "Robert" 并更新数据库。  
+ 下午 1:03，用户 2 将 FirstName 从“Bob”更改为“Robert”并更新数据库。  
   
 |列名称|原始值|当前值|数据库中的值|  
 |-----------------|--------------------|-------------------|-----------------------|  
@@ -67,13 +68,13 @@ ms.locfileid: "91166633"
 
  测试是否存在开放式并发冲突的方法有若干种。 其中一种涉及到在表中包含时间戳列。 数据库通常会提供时间戳功能，该功能可用于标识上次更新记录的日期和时间。 当使用这种方法时，将在表定义中包含时间戳列。 每当更新记录时，时间戳都将得到更新，以反映当前的日期和时间。 在测试是否存在开放式并发冲突时，对表内容的任何查询都会返回时间戳列。 当试图执行更新时，数据库中的时间戳值将与所修改行中包含的原始时间戳值进行比较。 如果两者匹配，则会执行更新，并用当前时间更新时间戳列以反映更新。 如果两者不匹配，则发生了开放式并发冲突。  
   
- 测试是否存在开放式并发冲突的另一种方法是验证某行中的所有原始列值是否仍匹配数据库中的相应值。 例如，请看以下查询：  
+ 测试是否存在开放式并发冲突的另一种方法是验证某行中的所有原始列值是否仍匹配数据库中的相应值。 例如，考虑以下查询：  
   
 ```sql
 SELECT Col1, Col2, Col3 FROM Table1  
 ```  
   
- 若要在更新表1中的行时测试开放式并发 **冲突，需要**发出以下 UPDATE 语句：  
+ 若要在更新 Table1 中的某行时测试是否存在乐观并发冲突，请发出以下 UPDATE 语句：  
   
 ```sql
 UPDATE Table1 Set Col1 = @NewCol1Value,  
@@ -99,15 +100,15 @@ UPDATE Table1 Set Col1 = @NewVal1
   
 ### <a name="the-dataadapterrowupdated-event"></a>DataAdapter.RowUpdated 事件  
 
- 对象的 **RowUpdated** 事件 <xref:System.Data.Common.DataAdapter> 可以与前面所述的技术结合使用，以向应用程序提供有关开放式并发冲突的通知。 **RowUpdated**在每次尝试更新**数据集中****修改**的行后发生。 它使您能够添加特殊的处理代码，包括在发生异常时进行处理，添加自定义错误信息，添加重试逻辑等。 <xref:System.Data.Common.RowUpdatedEventArgs>对象返回一个**RecordsAffected**属性，该属性包含表中已修改的行的特定更新命令所影响的行数。 通过设置 update 命令来测试开放式并发， **RecordsAffected** 属性将在发生开放式并发冲突时返回值0，因为没有更新任何记录。 如果是这种情况，则将引发异常。 **RowUpdated**事件使你能够处理此事件，并通过设置适当的**RowUpdatedEventArgs**值（如**UpdateStatus SkipCurrentRow**）来避免异常。 有关 **RowUpdated** 事件的详细信息，请参阅 [处理 DataAdapter 事件](handling-dataadapter-events.md)。  
+ <xref:System.Data.Common.DataAdapter> 对象的 RowUpdated 事件可以与上述方法一起用来向应用程序提供有关乐观并发冲突的通知。 在每次尝试从 DataSet 更新 Modified 行之后，都会发生 RowUpdated  。 它使您能够添加特殊的处理代码，包括在发生异常时进行处理，添加自定义错误信息，添加重试逻辑等。 <xref:System.Data.Common.RowUpdatedEventArgs> 对象为表中已修改的行返回 RecordsAffected 属性，其中包含特定更新命令所影响的行数。 通过设置更新命令来测试是否存在乐观并发，如果乐观并发冲突已发生，由于没有更新任何记录，因此 RecordsAffected 属性最终将返回值 0。 如果是这种情况，则将引发异常。 RowUpdated 事件使你能够通过设置合适的 RowUpdatedEventArgs.Status 值（例如 UpdateStatus.SkipCurrentRow）来处理这种情况并避免异常  。 有关 RowUpdated 事件的详细信息，请参阅[处理 DataAdapter 事件](handling-dataadapter-events.md)。  
   
- 或者，可以在调用**update**之前将**dataadapter.continueupdateonerror**设置为**true**，并在**更新**完成后响应特定行的**RowError**属性中存储的错误信息。 有关详细信息，请参阅 [行错误信息](./dataset-datatable-dataview/row-error-information.md)。  
+ 或者，可以在调用 Update 之前将 DataAdapter.ContinueUpdateOnError 设置为 true，并在完成 Update 后响应存储在特定行的 RowError 属性中的错误信息    。 有关详细信息，请参阅 [Row Error 信息](./dataset-datatable-dataview/row-error-information.md)。  
   
 ## <a name="optimistic-concurrency-example"></a>开放式并发示例  
 
- 下面是一个简单的示例，它将**DataAdapter**的**UpdateCommand**设置为测试乐观并发，然后使用**RowUpdated**事件来测试是否存在开放式并发冲突。 当遇到开放式并发冲突时，应用程序将设置为其发出更新的行的 **RowError** ，以反映开放式并发冲突。  
+ 下面是一个简单的示例，通过设置 DataAdapter 的 UpdateCommand 来测试是否存在乐观并发，然后使用 RowUpdated 事件来测试是否存在乐观并发冲突  。 当遇到乐观并发冲突时，应用程序将设置发出更新命令的目标行的 RowError，以反映乐观并发冲突。  
   
- 请注意，传递给 UPDATE 命令的 WHERE 子句的参数值映射到其各自列的 **原始** 值。  
+ 请注意，传递给 UPDATE 命令的 WHERE 子句的参数值映射到其相应列的 Original 值。  
   
 ```vb  
 ' Assumes connection is a valid SqlConnection.  
@@ -215,5 +216,5 @@ protected static void OnRowUpdated(object sender, SqlRowUpdatedEventArgs args)
 - [在 ADO.NET 中检索和修改数据](retrieving-and-modifying-data.md)
 - [使用 DataAdapter 更新数据源](updating-data-sources-with-dataadapters.md)
 - [行错误信息](./dataset-datatable-dataview/row-error-information.md)
-- [事务和并发性](transactions-and-concurrency.md)
+- [事务和并发](transactions-and-concurrency.md)
 - [ADO.NET 概述](ado-net-overview.md)

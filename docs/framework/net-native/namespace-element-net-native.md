@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <Namespace> 元素 ( .NET Native) '
 title: <Namespace>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192
-ms.openlocfilehash: 05de04685f8ba746f55bf040c74fd3831c5b63ca
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c24f78d8d9fd59258391e9dd5e59988675163b49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738606"
 ---
 # <a name="namespace-element-net-native"></a>\<Namespace>元素 (.NET Native)
 
@@ -35,7 +36,7 @@ ms.locfileid: "96287886"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 指定命名空间的名称。|  
 |`Activate`|反射|可选特性。 控制运行时对构造函数的访问，以启用实例激活。|  
@@ -51,19 +52,19 @@ ms.locfileid: "96287886"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*namespace_name*|命名空间名称。 如果 \<Namespace> 元素是 [\<Application>](application-element-net-native.md) 、或元素的子元素 [\<Library>](library-element-net-native.md) ，则 [\<Assembly>](assembly-element-net-native.md) *namespace_name* 必须是完全限定的命名空间名称。 如果该 \<Namespace> 元素是另一个元素的子元素 \<Namespace> ，则 *namespace_name* 必须是相对的命名空间名称。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用这个策略类型到该命名空间的所有类型。 可能值为 `All`、`Auto`、`Excluded`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`<Namespace>`|将运行时反射策略应用到一个父命名空间中的所有类型。|  
 |[\<Type>](type-element-net-native.md)|将反射策略应用到一个类型。|  
@@ -71,7 +72,7 @@ ms.locfileid: "96287886"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Application>](application-element-net-native.md)|作为应用程序范围内的类型和元数据可以反应在运行时间的类型成员的容器而服务。 [\<Application>](application-element-net-native.md)元素可以包含零个、一个或多个 [\<Assembly>](assembly-element-net-native.md) 元素。|  
 |[\<Assembly>](assembly-element-net-native.md)|将运行时反射策略应用到指定程序集中的所有类型。|  
@@ -84,7 +85,7 @@ ms.locfileid: "96287886"
   
  当它是元素的子元素时 [\<Assembly>](assembly-element-net-native.md) ， `<Namespace>` 元素将重写由元素定义的运行时反射策略  [\<Assembly>](assembly-element-net-native.md) 。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令策略设置](runtime-directive-policy-settings.md)
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)

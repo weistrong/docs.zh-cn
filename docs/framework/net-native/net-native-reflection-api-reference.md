@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息： .NET Native 反射 API 参考
 title: .NET Native 本机反射 API 参考
 ms.date: 03/30/2017
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
-ms.openlocfilehash: 4cded310397ffa4dea057899b6f008146d35a03b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 44786812b5bf8c7bd470a588730b7b03ee91f00c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738515"
 ---
 # <a name="net-native-reflection-api-reference"></a>.NET Native 本机反射 API 参考
 
-.NET Native 包括三个新的异常类型： MissingInteropDataException、MissingMetadataException 和 MissingRuntimeArtifactException。 [system.runtime.compilerservices.](missinginteropdataexception-class-net-native.md)、 [System.Reflection.MissingMetadataException](missingmetadataexception-class-net-native.md)和[System.Reflection.MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md)。 请注意有关所有三种异常类型的以下内容：  
+.NET Native 包括三个新的异常类型： MissingInteropDataException、MissingMetadataException 和 MissingRuntimeArtifactException。 [system.runtime.compilerservices.](missinginteropdataexception-class-net-native.md)、 [](missingmetadataexception-class-net-native.md)和[](missingruntimeartifactexception-class-net-native.md)。 请注意有关所有三种异常类型的以下内容：  
   
  这些类型仅供内部使用。  
  这三种异常类型仅用于 .NET Native 工具链。 当 .NET Native 工具链检测到不允许程序继续执行的缺失数据时，将引发异常。  
@@ -30,7 +31,7 @@ ms.locfileid: "96250874"
 
  <xref:System.Reflection> 命名空间包含用于 .NET Framework 中的反射的核心类型。 对于 .NET Native，它还包括两个新的异常类型：  
   
-|实例|描述|  
+|实例|说明|  
 |-----------|-----------------|  
 |[MissingMetadataException](missingmetadataexception-class-net-native.md)|当反射用于检索不存在的元数据时会引起此异常。|  
 |[MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md)|当一个类型或类型成员的元数据可用但其实现已遭到删除时会引发此异常。|  
@@ -41,13 +42,13 @@ ms.locfileid: "96250874"
 
  <xref:System.Runtime.CompilerServices> 命名空间包括通过语言编译器为用户设计的类型。 对于 .NET Native，它还包含一个新的异常类型：  
   
-|实例|描述|  
+|实例|说明|  
 |-----------|-----------------|  
 |[MissingInteropDataException](missinginteropdataexception-class-net-native.md)|当手动封送方法被调用但一个类型的元数据无法通过动态分析找到或无法在运行时指令文件中找到时，会引发该异常。|  
   
  要查看有关此命名空间中其他类型的文档，请参阅 .NET Framework 文档集中的 <xref:System.Runtime.CompilerServices> 引用页面。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [MissingInteropDataException 类](missinginteropdataexception-class-net-native.md)
 - [MissingMetadataException 类](missingmetadataexception-class-net-native.md)

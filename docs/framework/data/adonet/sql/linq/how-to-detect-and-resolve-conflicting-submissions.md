@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：检测和解决冲突的提交
 title: 如何：检测到并解决冲突的提交
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 91e27206-01fb-4c7a-8afc-1383a6ac5067
-ms.openlocfilehash: 96e96208d9bb28092701164e6cd5943ef81515a5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7ccfc9aeba8a21c3f5e950569d7650af087416a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147718"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739035"
 ---
 # <a name="how-to-detect-and-resolve-conflicting-submissions"></a>如何：检测到并解决冲突的提交
 

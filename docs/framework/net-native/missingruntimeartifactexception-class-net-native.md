@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： MissingRuntimeArtifactException 类 ( .NET Native) '
 title: 缺少运行时间项目异常类 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
-ms.openlocfilehash: 2618af8e122964d64126f945c337101cb5bbe5ae
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fae0ae708ab8d87347f29571ddb00e53bf7f6931
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738632"
 ---
 # <a name="missingruntimeartifactexception-class-net-native"></a>缺少运行时间项目异常类 (.NET Native)
 
@@ -18,7 +19,7 @@ ms.locfileid: "96250900"
  命名空间：System.Reflection  
   
 > [!IMPORTANT]
-> `MissingRuntimeArtifactException`类仅供 .NET Native 工具链内部使用。 它不用于在第三方代码中使用，也不应用它处理应用程序代码中的异常。 相反，你可以通过将条目添加到[运行时指令文件](runtime-directives-rd-xml-configuration-file-reference.md)来消除异常。 有关详细信息，请参阅“备注”部分。  
+> `MissingRuntimeArtifactException`类仅供 .NET Native 工具链内部使用。 它不用于在第三方代码中使用，也不应用它处理应用程序代码中的异常。 相反，你可以通过将条目添加到[运行时指令文件](runtime-directives-rd-xml-configuration-file-reference.md)来消除异常。 有关详细信息，请参见“备注”部分。  
   
 ## <a name="syntax"></a>语法  
 
@@ -37,7 +38,7 @@ ms.locfileid: "96250900"
   
 ## <a name="properties"></a>属性  
   
-|属性|描述|  
+|属性|说明|  
 |--------------|-----------------|  
 |`public IDictionary Data { get; }`|获取键/值对的集合，这些键/值对提供有关该异常的其他用户定义信息。 （从 <xref:System.Exception?displayProperty=nameWithType> 继承。）|  
 |`public string HelpLink { get; set; }`|获取或设置指向与此异常关联的帮助文件链接。 （从 <xref:System.Exception?displayProperty=nameWithType> 继承。）|  
@@ -50,7 +51,7 @@ ms.locfileid: "96250900"
   
 ## <a name="methods"></a>方法  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |`public bool Equals(Object obj)`|确定指定对象是否等于当前对象。  （从 <xref:System.Object> 继承。）|  
 |`protected void Finalize()`|在垃圾回收将某一对象回收前允许该对象尝试释放资源并执行其他清理操作。 （从 <xref:System.Object> 继承。）|  
@@ -63,7 +64,7 @@ ms.locfileid: "96250900"
   
 ## <a name="events"></a>事件  
   
-|事件|描述|  
+|事件|说明|  
 |-----------|-----------------|  
 |`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|当异常被序列化用来创建包含有关该异常的徐列出数据的异常状态对象时会出现该问题。 （从 <xref:System.Exception?displayProperty=nameWithType> 继承。）|  
   
@@ -81,7 +82,7 @@ ms.locfileid: "96250900"
   
  `MissingRuntimeArtifactException` 类不包括独有成员；它的所有成员都是从其基类即 <xref:System.MemberAccessException> 继承的。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令策略设置](runtime-directive-policy-settings.md)
