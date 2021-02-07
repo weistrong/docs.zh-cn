@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit：： SetClassLayout 方法
 title: IMetaDataEmit::SetClassLayout 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2576c449-388d-4434-a0e1-9f53991e11b6
 topic_type:
 - apiref
-ms.openlocfilehash: ee10907fb7f5d90db1bdce845272cd3de38e35a6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e0ce8e93137b9a32a13ca86ead539385523fa8a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706599"
 ---
 # <a name="imetadataemitsetclasslayout-method"></a>IMetaDataEmit::SetClassLayout 方法
 
@@ -51,7 +52,7 @@ HRESULT SetClassLayout (
  `ulClassSize`  
  中类的大小（以字节为单位）。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  该类最初是通过以下方式定义的：调用 [IMetaDataEmit：:D efinetypedef](imetadataemit-definetypedef-method.md) 方法，并为类的字段指定三种布局之一：自动、顺序或显式。 通常，您将使用自动布局，并让运行时选择对字段进行布局的最佳方式。  
   
@@ -71,7 +72,7 @@ HRESULT SetClassLayout (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit 接口](imetadataemit-interface.md)
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)

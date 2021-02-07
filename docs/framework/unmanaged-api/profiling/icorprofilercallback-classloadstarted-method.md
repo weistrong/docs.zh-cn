@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ClassLoadStarted 方法
 title: ICorProfilerCallback::ClassLoadStarted 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9f728de8-45c2-45a5-ac4a-45660bd36ecf
 topic_type:
 - apiref
-ms.openlocfilehash: fbdc9345c8364f33ac69da452dd91155fd5eede9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2474f8041b0858cbcb81d3f4042f1748cb99df3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700270"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706429"
 ---
 # <a name="icorprofilercallbackclassloadstarted-method"></a>ICorProfilerCallback::ClassLoadStarted 方法
 
@@ -39,7 +40,7 @@ HRESULT ClassLoadStarted(
 
   \[in] 标识正在加载的类。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 `classId` 调用 [ICorProfilerCallback：： ClassLoadFinished](icorprofilercallback-classloadfinished-method.md) 方法之前，的值对信息请求无效。  
   
@@ -53,6 +54,6 @@ HRESULT ClassLoadStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTaskManager 接口
 title: IHostTaskManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
 topic_type:
 - apiref
-ms.openlocfilehash: deb14d291bfd511e8f3534f3c5e32787c259c5e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 67574550ba26970189ea53b8e6bdb867fea8549b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673106"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707448"
 ---
 # <a name="ihosttaskmanager-interface"></a>IHostTaskManager 接口
 
@@ -48,7 +49,7 @@ ms.locfileid: "95673106"
 |[Sleep 方法](ihosttaskmanager-sleep-method.md)|通知宿主当前任务将要进入睡眠状态。|  
 |[SwitchToTask 方法](ihosttaskmanager-switchtotask-method.md)|通知宿主应切换到当前任务。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IHostTaskManager` 允许 CLR 创建和管理任务，以便在控制从托管到非托管代码的传输时，为宿主提供挂钩，并指定在代码执行期间宿主可以和不能执行的某些操作。  
   
@@ -62,7 +63,7 @@ ms.locfileid: "95673106"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

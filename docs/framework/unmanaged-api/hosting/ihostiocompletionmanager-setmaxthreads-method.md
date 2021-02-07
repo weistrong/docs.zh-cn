@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostIoCompletionManager：： SetMaxThreads 方法
 title: IHostIoCompletionManager::SetMaxThreads 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebad4f40-d9f1-4dc6-9b27-a89c9eb3926f
 topic_type:
 - apiref
-ms.openlocfilehash: 3cb001db74587beb5417bf57738c5efb9a274591
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6b36523b0b0d6cefba383d324eb23debefd7c41b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724814"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708250"
 ---
 # <a name="ihostiocompletionmanagersetmaxthreads-method"></a>IHostIoCompletionManager::SetMaxThreads 方法
 
@@ -51,7 +52,7 @@ HRESULT SetMaxThreads (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_NOTIMPL|宿主不提供的实现 `SetMaxThreads` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `SetMaxThreads` 向 CLR 提供一个机会，用于设置对 i/o 端口上的服务请求可用的最大线程数。 出于实现、性能或可伸缩性等原因，主机可能需要独占控制线程池的大小。 出于此原因，主机不需要实现 `SetMaxThreads` 。 在这种情况下，主机应从此方法返回 E_NOTIMPL。  
   
@@ -65,7 +66,7 @@ HRESULT SetMaxThreads (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRIoCompletionManager 接口](iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager 接口](ihostiocompletionmanager-interface.md)

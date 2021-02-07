@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostIoCompletionManager：： SetMinThreads 方法
 title: IHostIoCompletionManager::SetMinThreads 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dea34b81-8d2b-4cc3-8696-0ad4291d8a92
 topic_type:
 - apiref
-ms.openlocfilehash: 64ea9fdd477ec005b089f451101b742278ab4266
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aade5ebb9e318d51296e52e7cf1c31c6ea9e4f6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708228"
 ---
 # <a name="ihostiocompletionmanagersetminthreads-method"></a>IHostIoCompletionManager::SetMinThreads 方法
 
@@ -51,7 +52,7 @@ HRESULT SetMinThreads (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_NOTIMPL|宿主不提供的实现 `SetMinThreads` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  出于实现、性能或可伸缩性等原因，主机可能需要对可分配给处理 i/o 请求的线程数进行独占控制。 出于此原因，主机不需要实现 `SetMinThreads` 。 在这种情况下，宿主应从此方法返回 E_NOTIMPL。  
   
@@ -65,7 +66,7 @@ HRESULT SetMinThreads (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRIoCompletionManager 接口](iclriocompletionmanager-interface.md)
 - [SetMaxThreads 方法](ihostiocompletionmanager-setmaxthreads-method.md)

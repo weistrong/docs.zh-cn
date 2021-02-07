@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ExceptionUnwindFunctionEnter 方法
 title: ICorProfilerCallback::ExceptionUnwindFunctionEnter 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea3dc625-5650-4bf4-8e67-01e42be065b1
 topic_type:
 - apiref
-ms.openlocfilehash: d3a09a6caf3febd04296fce518ade42e8676a4b8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f0376e01263290596aa722b37f6a796ab919139
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706014"
 ---
 # <a name="icorprofilercallbackexceptionunwindfunctionenter-method"></a>ICorProfilerCallback::ExceptionUnwindFunctionEnter 方法
 
@@ -39,7 +40,7 @@ HRESULT ExceptionUnwindFunctionEnter(
 
   \[in] 要展开的函数的 ID。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器不应在此方法的实现中被阻止，因为堆栈可能不处于允许垃圾回收的状态，因此无法启用抢先垃圾回收。 如果探查器在此处阻止并且试图进行垃圾回收，则运行时将被阻止，直到此回调返回。  
   
@@ -55,7 +56,7 @@ HRESULT ExceptionUnwindFunctionEnter(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ExceptionUnwindFunctionLeave 方法](icorprofilercallback-exceptionunwindfunctionleave-method.md)

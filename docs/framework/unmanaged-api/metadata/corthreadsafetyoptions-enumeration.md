@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorThreadSafetyOptions 枚举
 title: CorThreadSafetyOptions 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dae07d9b-df51-488c-b17e-52d6e48217bd
 topic_type:
 - apiref
-ms.openlocfilehash: 8c0527a7bc3cde7344bf809dc8e6f5a3fac04852
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 7915bcf5e7b71fa84ea83642467c1600cd38712d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707314"
 ---
 # <a name="corthreadsafetyoptions-enumeration"></a>CorThreadSafetyOptions 枚举
 
@@ -37,7 +38,7 @@ typedef enum CorThreadSafetyOptions {
 
 ## <a name="members"></a>成员
 
-|成员|描述|
+|成员|说明|
 |------------|-----------------|
 |`MDThreadSafetyDefault`|默认值。 与 `MDThreadSafetyOff` 相同。|
 |`MDThreadSafetyOff`|指示无法设置读取器/写入器锁。|
@@ -45,12 +46,12 @@ typedef enum CorThreadSafetyOptions {
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
 
 **标头：** Corhdr。h
 
 **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostMemoryManager：： VirtualProtect 方法
 title: IHostMemoryManager::VirtualProtect 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 13be0299-df0d-4951-aabf-0676a30b385f
 topic_type:
 - apiref
-ms.openlocfilehash: 9822e5a1fb09e9d3bce541ff63cf766ae8611789
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66e1fb5afdc3aa5c400ed0ffa9cea569d300e6a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731243"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707421"
 ---
 # <a name="ihostmemorymanagervirtualprotect-method"></a>IHostMemoryManager::VirtualProtect 方法
 
@@ -62,7 +63,7 @@ HRESULT VirtualProtect (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  的此实现 `VirtualProtect` 返回一个 HRESULT 值，而 Win32 实现返回非零值以指示成功，并返回一个零值以指示失败。 有关详细信息，请参阅 Windows 平台文档。  
   
@@ -76,6 +77,6 @@ HRESULT VirtualProtect (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostMemoryManager 接口](ihostmemorymanager-interface.md)

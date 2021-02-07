@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostIoCompletionManager：： InitializeHostOverlapped 方法
 title: IHostIoCompletionManager::InitializeHostOverlapped 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c35199bf-bc47-4901-b467-4e8a37644bbb
 topic_type:
 - apiref
-ms.openlocfilehash: 397dbbeb0b85cb549a8b5917f977ecb13b3d6539
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 10be7edb67143937dec6efc6e35466466374d32d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708458"
 ---
 # <a name="ihostiocompletionmanagerinitializehostoverlapped-method"></a>IHostIoCompletionManager::InitializeHostOverlapped 方法
 
@@ -51,7 +52,7 @@ HRESULT InitializeHostOverlapped (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于分配请求的资源。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  Windows 平台函数使用 `OVERLAPPED` 结构来存储异步 i/o 请求的状态。 CLR 将调用 `InitializeHostOverlapped` 方法，以为宿主向宿主追加自定义数据的机会 `OVERLAPPED` 。  
   
@@ -70,7 +71,7 @@ HRESULT InitializeHostOverlapped (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRIoCompletionManager 接口](iclriocompletionmanager-interface.md)
 - [GetHostOverlappedSize 方法](ihostiocompletionmanager-gethostoverlappedsize-method.md)

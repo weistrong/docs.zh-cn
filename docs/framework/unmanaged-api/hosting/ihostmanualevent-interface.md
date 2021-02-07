@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostManualEvent 接口
 title: IHostManualEvent 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 300c2661-b7d1-4c39-b080-9ebdef0fd523
 topic_type:
 - apiref
-ms.openlocfilehash: 50e37b770e3ee6e0a5cdfca61fc5b09749e5735f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1c70935568b9ff4080fd5bcdc372c02d354aa06f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673176"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708120"
 ---
 # <a name="ihostmanualevent-interface"></a>IHostManualEvent 接口
 
@@ -43,7 +44,7 @@ ms.locfileid: "95673176"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostAutoEvent 接口](ihostautoevent-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostIoCompletionManager 接口
 title: IHostIoCompletionManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c28d1983-83f7-46e2-990f-dbb9dc07c818
 topic_type:
 - apiref
-ms.openlocfilehash: 75ad8670008242008aa344835143ff9b2add0a6c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 30cb0ecbfd9645bc0374e3570751832d6fa8eced
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708315"
 ---
 # <a name="ihostiocompletionmanager-interface"></a>IHostIoCompletionManager 接口
 
@@ -41,7 +42,7 @@ ms.locfileid: "95719588"
 |[SetMaxThreads 方法](ihostiocompletionmanager-setmaxthreads-method.md)|设置主机 allots i/o 请求的最大线程数。|  
 |[SetMinThreads 方法](ihostiocompletionmanager-setminthreads-method.md)|设置主机应为 i/o 完成分配的最小线程数。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IHostIoCompletionManager` 对应于 `ICLRIoCompletionManager` CLR 实现的接口。 CLR 调用的方法将 `IHostIoCompletionManager` 句柄绑定到主机提供的端口，并且宿主将调用的方法 `ICLRIoCompletionManager` 来报告 i/o 请求的完成。  
   
@@ -55,6 +56,6 @@ ms.locfileid: "95719588"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)

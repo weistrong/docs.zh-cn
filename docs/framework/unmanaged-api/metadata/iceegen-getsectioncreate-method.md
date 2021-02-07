@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICeeGen：： GetSectionCreate 方法
 title: ICeeGen::GetSectionCreate 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 154b2460-59ce-4874-a9f2-1b3353486ac5
 topic_type:
 - apiref
-ms.openlocfilehash: 4ef3992d840f539ca07c411c2d740fa32b14edbc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2839d11c927dbf573f213d3ebaa9e6e6d8d5015d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722942"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706859"
 ---
 # <a name="iceegengetsectioncreate-method"></a>ICeeGen::GetSectionCreate 方法
 
@@ -49,7 +50,7 @@ HRESULT GetSectionCreate (
  `section`  
  弄指向新创建的代码部分的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetSectionCreate`仅当有特殊部分的要求不是由其他方法处理时才调用。  
   
@@ -63,6 +64,6 @@ HRESULT GetSectionCreate (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICeeGen 接口](iceegen-interface.md)

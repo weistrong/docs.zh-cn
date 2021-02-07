@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： Initialize 方法
 title: ICorProfilerCallback::Initialize 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dc5fab2a-4b45-4b12-8727-b89c9915f23e
 topic_type:
 - apiref
-ms.openlocfilehash: 26df1599af247bd08d3702d4ef3c5aa2f648620c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3ff579dee384b331450aa54aace39890febfe30
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720368"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705936"
 ---
 # <a name="icorprofilercallbackinitialize-method"></a>ICorProfilerCallback::Initialize 方法
 
@@ -39,7 +40,7 @@ HRESULT Initialize(
 
   \[in] 指向 [IUnknown](/cpp/atl/iunknown) 接口的指针，探查器必须查询 [ICorProfilerInfo](icorprofilerinfo-interface.md) 接口指针。  
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `Initialize`调用是启用 (或禁用不可变的) 回调的唯一机会。 一旦调用启用了回调 `Initialize` ，以后就不能再使用 [ICorProfilerInfo：： SetEventMask](icorprofilerinfo-seteventmask-method.md)来禁用它。 [COR_PRF_MONITOR](cor-prf-monitor-enumeration.md)枚举的 COR_PRF_MONITOR_IMMUTABLE 值指示哪些事件是不可变的。  
   
@@ -53,7 +54,7 @@ HRESULT Initialize(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [Shutdown 方法](icorprofilercallback-shutdown-method.md)

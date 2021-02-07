@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： ExceptionSearchFunctionEnter 方法
 title: ICorProfilerCallback::ExceptionSearchFunctionEnter 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bfd54573-b7e6-4bd1-a184-7f08a8b39fae
 topic_type:
 - apiref
-ms.openlocfilehash: 9c39d984db62326b31a4760a817ee82def6dd78f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6e77ab5dc8c15a1d0785fb83310183c0a4693225
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706183"
 ---
 # <a name="icorprofilercallbackexceptionsearchfunctionenter-method"></a>ICorProfilerCallback::ExceptionSearchFunctionEnter 方法
 
@@ -49,7 +50,7 @@ HRESULT ExceptionSearchFunctionEnter(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ExceptionSearchFunctionLeave 方法](icorprofilercallback-exceptionsearchfunctionleave-method.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostMemoryManager：： VirtualFree 方法
 title: IHostMemoryManager::VirtualFree 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1a436e89-eb28-4d15-bcf1-a072f86dbd99
 topic_type:
 - apiref
-ms.openlocfilehash: be006afaf5966aa4e6d11c73b92004d676c97c7f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 987661ce1b7bfd08f757f53082313b8eb60ff282
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707475"
 ---
 # <a name="ihostmemorymanagervirtualfree-method"></a>IHostMemoryManager::VirtualFree 方法
 
@@ -59,7 +60,7 @@ HRESULT VirtualFree (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |HOST_E_INVALIDOPERATION|尝试释放未通过主机分配的内存。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `VirtualFree``lpAddress`通过对[IHostMemoryManager：： VirtualAlloc](ihostmemorymanager-virtualalloc-method.md)函数的更早调用来释放与参数关联的虚拟内存页。 尝试释放未通过主机分配的内存应返回 HOST_E_INVALIDOPERATION。  
   
@@ -75,7 +76,7 @@ HRESULT VirtualFree (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostMemoryManager 接口](ihostmemorymanager-interface.md)
 - [IHostMalloc 接口](ihostmalloc-interface.md)

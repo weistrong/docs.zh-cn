@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostMemoryManager：： RegisterMemoryNotificationCallback 方法
 title: IHostMemoryManager::RegisterMemoryNotificationCallback 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 65d301f6-4dbb-4b5f-8eff-82540e2b6465
 topic_type:
 - apiref
-ms.openlocfilehash: edb29378412583d7cdec804b08f8f622d642b02f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 26a7468aba4f473eebff78a8c67eeb5b3e866e9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731301"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707756"
 ---
 # <a name="ihostmemorymanagerregistermemorynotificationcallback-method"></a>IHostMemoryManager::RegisterMemoryNotificationCallback 方法
 
@@ -50,7 +51,7 @@ HRESULT RegisterMemoryNotificationCallback (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  由于 `ICLRMemoryNotificationCallback` 接口仅定义了一个 ([ICLRMemoryNotificationCallback：： OnMemoryNotification](iclrmemorynotificationcallback-onmemorynotification-method.md)) 的方法，并且由于 `pCallback` 是一个指向 `ICLRMemoryNotificationCallback` CLR 提供的实例的指针，因此注册对于回调函数本身是有效的。 宿主调用 `OnMemoryNotification` 以报告内存压力条件，而不是使用标准的 Win32 `CreateMemoryResourceNotification` 函数。 有关详细信息，请参阅 Windows 平台文档。  
   
@@ -67,7 +68,7 @@ HRESULT RegisterMemoryNotificationCallback (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRMemoryNotificationCallback 接口](iclrmemorynotificationcallback-interface.md)
 - [IHostMemoryManager 接口](ihostmemorymanager-interface.md)

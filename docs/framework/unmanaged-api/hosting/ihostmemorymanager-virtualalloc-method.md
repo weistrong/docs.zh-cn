@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostMemoryManager：： VirtualAlloc 方法
 title: IHostMemoryManager::VirtualAlloc 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
 topic_type:
 - apiref
-ms.openlocfilehash: a2deabc5f1c7ea0f42b6d8ec3944d984854ae571
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 28682aea5e6e7951b3b8f0a9af946a3f3828601b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731275"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707834"
 ---
 # <a name="ihostmemorymanagervirtualalloc-method"></a>IHostMemoryManager::VirtualAlloc 方法
 
@@ -71,7 +72,7 @@ HRESULT VirtualAlloc (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的可用内存来完成分配请求|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  可以通过调用在进程的地址空间中保留区域 `VirtualAlloc` 。 `pAddress`参数包含所需内存块的起始地址。 此参数通常设置为 null。 操作系统会保留可用于进程的免费地址范围记录。 如果 `pAddress` 值为 null，则指示系统在其认为合适的位置保留区域。 或者，您可以为内存块提供特定的起始地址。 在这两种情况下，output 参数 `ppMem` 将作为指向已分配内存的指针返回。 函数本身返回 HRESULT 值。  
   
@@ -87,6 +88,6 @@ HRESULT VirtualAlloc (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostMemoryManager 接口](ihostmemorymanager-interface.md)

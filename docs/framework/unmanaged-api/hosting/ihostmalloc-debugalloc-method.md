@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostMAlloc：:D ebugAlloc 方法
 title: IHostMAlloc::DebugAlloc 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0bfbc527-bea2-43ce-b041-69186f4440dd
 topic_type:
 - apiref
-ms.openlocfilehash: 49de0398dd32970bd8ceb0fd24178e75df5d14b1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f94ff0d6cc1e25daee12c67c38167f7f14829510
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708211"
 ---
 # <a name="ihostmallocdebugalloc-method"></a>IHostMAlloc::DebugAlloc 方法
 
@@ -67,7 +68,7 @@ HRESULT DebugAlloc (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用来完成分配请求。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 通过调用[IHostMemoryManager：： CreateMalloc](ihostmemorymanager-createmalloc-method.md)方法获取指向[IHostMalloc](ihostmalloc-interface.md)实例的接口指针。 `DebugAlloc` 允许运行时获取代码文件信息，以便在调试期间使用。  
   
@@ -81,7 +82,7 @@ HRESULT DebugAlloc (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostMemoryManager 接口](ihostmemorymanager-interface.md)
 - [IHostMalloc 接口](ihostmalloc-interface.md)

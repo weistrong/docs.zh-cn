@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostMemoryManager：： CreateMAlloc 方法
 title: IHostMemoryManager::CreateMAlloc 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9ee6e052-bef7-4350-9e4f-edfffd99ad6f
 topic_type:
 - apiref
-ms.openlocfilehash: 79580170d544cd3763992a4bc67fd20e3446bb1d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: de73490a5c8b4e1672beb4750bcc617c2371f07b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685716"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707879"
 ---
 # <a name="ihostmemorymanagercreatemalloc-method"></a>IHostMemoryManager::CreateMAlloc 方法
 
@@ -55,7 +56,7 @@ HRESULT CreateMalloc (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的物理内存可用于完成分配请求。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CreateMAlloc` 返回一个对象，该对象允许 CLR 通过主机发出分配请求，而不是使用标准的 Win32 函数。  
   
@@ -69,7 +70,7 @@ HRESULT CreateMalloc (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostMalloc 接口](ihostmalloc-interface.md)
 - [IHostMemoryManager 接口](ihostmemorymanager-interface.md)

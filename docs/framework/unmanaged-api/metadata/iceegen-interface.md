@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICeeGen 接口
 title: ICeeGen 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 383d20b0-efe9-4e71-8fb8-1186b2e7d0c0
 topic_type:
 - apiref
-ms.openlocfilehash: 2c180a135608350b0feec3f419be98f4f428b186
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 43e9e0696523346ffbcf0b8823a48ed2c9c359e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704508"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706807"
 ---
 # <a name="iceegen-interface"></a>ICeeGen 接口
 
@@ -57,6 +58,6 @@ ms.locfileid: "95704508"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据接口](metadata-interfaces.md)

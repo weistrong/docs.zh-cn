@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_MODULE_FLAGS 枚举
 title: COR_PRF_MODULE_FLAGS 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
 topic_type:
 - apiref
-ms.openlocfilehash: 7d9e187d4aede772b7a002359cd3bdd350aaec77
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0be5d97bfb6bea069d039d175fc554e0ef59993d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682141"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706432"
 ---
 # <a name="cor_prf_module_flags-enumeration"></a>COR_PRF_MODULE_FLAGS 枚举
 
@@ -52,7 +53,7 @@ typedef enum
 |COR_PRF_MODULE_FLAT_LAYOUT|模块在内存中的布局是平面的，而不是映射的。 如果模块设置了此位，则当解释标头中 (Rva) 的相对虚拟地址时，直接从可移植可执行文件中读取信息的探查器 (PE) 文件头将必须小心。|  
 |COR_PRF_MODULE_WINDOWS_RUNTIME|在此模块的程序集的元数据中设置 Windows 运行时内容类型标志。 所有 Windows 元数据 ( winmd) 模块都属于这种情况。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  COR_PRF_MODULE_FLAGS 中的位将返回到探查器的 `pdwModuleFlags` [ICorProfilerInfo3：： GetModuleInfo2](icorprofilerinfo3-getmoduleinfo2-method.md) 方法的 output 参数中。 可能有两个或更多标志的一些组合，但并非所有组合都可行。  
   
@@ -66,6 +67,6 @@ typedef enum
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析枚举](profiling-enumerations.md)

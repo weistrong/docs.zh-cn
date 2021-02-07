@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostMemoryManager 接口
 title: IHostMemoryManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a945d439-3b34-4aa4-b575-8413dd7806ce
 topic_type:
 - apiref
-ms.openlocfilehash: 0f71e4c45e43c2027b12998532f2b04401a51951
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c9b6f83b5c70a53388e886e1047798f660b826e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707863"
 ---
 # <a name="ihostmemorymanager-interface"></a>IHostMemoryManager 接口
 
@@ -40,7 +41,7 @@ ms.locfileid: "95731327"
 |[VirtualProtect 方法](ihostmemorymanager-virtualprotect-method.md)|用作相应 Win32 函数的逻辑包装，该函数更改调用进程的虚拟地址空间中已提交页面区域的保护。|  
 |[VirtualQuery 方法](ihostmemorymanager-virtualquery-method.md)|用作相应 Win32 函数的逻辑包装，它检索有关调用进程的虚拟地址空间中的一系列页面的信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IHostMemoryManager` 还为 CLR 提供一些方法，用于获取一个指针，通过该指针可以在堆上发出内存请求并在进程中获取由主机报告的内存压力级别。  
   
@@ -54,7 +55,7 @@ ms.locfileid: "95731327"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostMalloc 接口](ihostmalloc-interface.md)
 - [承载接口](hosting-interfaces.md)

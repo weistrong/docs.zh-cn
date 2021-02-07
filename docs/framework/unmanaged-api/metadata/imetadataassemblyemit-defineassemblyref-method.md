@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyEmit：:D efineAssemblyRef 方法
 title: IMetaDataAssemblyEmit::DefineAssemblyRef 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b284b18-0084-4b3a-912a-5ebe9f29c88b
 topic_type:
 - apiref
-ms.openlocfilehash: ba53ff30f0b6d0ae7fed7db422b7c0a242204a2c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e3c3acce77e6b0cb2943d66f3477898c90ea6251
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706690"
 ---
 # <a name="imetadataassemblyemitdefineassemblyref-method"></a>IMetaDataAssemblyEmit::DefineAssemblyRef 方法
 
@@ -67,7 +68,7 @@ HRESULT DefineAssemblyRef (
  `pmdar`  
  弄指向返回的 `AssemblyRef` 元数据标记的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `AssemblyRef`必须为此程序集引用的每个程序集定义一个元数据结构。  
   
@@ -83,6 +84,6 @@ HRESULT DefineAssemblyRef (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataAssemblyEmit 接口](imetadataassemblyemit-interface.md)
