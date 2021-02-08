@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugMDA 接口
 title: ICorDebugMDA 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8ecbb854-295c-4dd4-b9fc-01ebeac46e06
 topic_type:
 - apiref
-ms.openlocfilehash: c4ff28ff1019b5314902a4e71f6d02b5a2fd8d70
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8e6e779c58d71b07edc9b63dff72aef728ebe050
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710826"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801119"
 ---
 # <a name="icordebugmda-interface"></a>ICorDebugMDA 接口
 
@@ -35,7 +36,7 @@ ms.locfileid: "95710826"
 |[GetOSThreadId 方法](icordebugmda-getosthreadid-method.md)|获取要在其上执行此 MDA 的操作系统线程标识符。|  
 |[GetXML 方法](icordebugmda-getxml-method.md)|获取与此 MDA 关联的完整 XML 流。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -50,7 +51,7 @@ ms.locfileid: "95710826"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [使用托管调试助手诊断错误](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

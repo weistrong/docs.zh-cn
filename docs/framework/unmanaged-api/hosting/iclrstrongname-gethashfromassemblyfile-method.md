@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRStrongName：： GetHashFromAssemblyFile 方法
 title: ICLRStrongName::GetHashFromAssemblyFile 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b67ea03-d474-4605-acaa-57455790250c
 topic_type:
 - apiref
-ms.openlocfilehash: 0a15a4d237f63da54615ee1801e6cd39620e8274
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 40a8e2aabe9ade00243c535d63389f4265cc6ab0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799689"
 ---
 # <a name="iclrstrongnamegethashfromassemblyfile-method"></a>ICLRStrongName::GetHashFromAssemblyFile 方法
 
@@ -69,7 +70,7 @@ HRESULT GetHashFromAssemblyFile (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetHashFromAssemblyFileW 方法](iclrstrongname-gethashfromassemblyfilew-method.md)
 - [ICLRStrongName 接口](iclrstrongname-interface.md)

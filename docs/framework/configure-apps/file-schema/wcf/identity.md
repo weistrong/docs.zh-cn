@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <identity>
 title: <identity>
 ms.date: 03/30/2017
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-ms.openlocfilehash: bb9468b6005361a2a480f7c0ebfb2cbb9e9199c2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ceb4dc0e7efa6cd01204253001432ed1ef2c048e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157377"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802250"
 ---
 # \<identity>
 
@@ -46,7 +47,7 @@ ms.locfileid: "91157377"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |证书 (certificate)|指定 X.509 证书的设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.CertificateElement>。 它包含一个 `encodedValue` 属性，该属性是一个字符串，用于指定此证书编码的值。|  
 |certificateReference|指定 X.509 证书验证的设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.CertificateReferenceElement>。|  
@@ -57,7 +58,7 @@ ms.locfileid: "91157377"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<custom>](custom.md)|指定 netPeerTcpBinding 的自定义对等解析程序。|  
 |[\<endpoint>](endpoint-element.md)|配置服务终结点。|  

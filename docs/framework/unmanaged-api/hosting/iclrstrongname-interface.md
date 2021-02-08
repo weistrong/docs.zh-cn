@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRStrongName 接口
 title: ICLRStrongName 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2fac66fd-6b3b-4dbd-8baf-86038bd85526
 topic_type:
 - apiref
-ms.openlocfilehash: 691cc3cf4ec8d036a4de04247f243d99daa887d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5565e864d35e68e714602b291a724a0ad9999a28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799663"
 ---
 # <a name="iclrstrongname-interface"></a>ICLRStrongName 接口
 
@@ -55,7 +56,7 @@ ms.locfileid: "95733628"
 |[StrongNameTokenFromAssemblyEx 方法](iclrstrongname-strongnametokenfromassemblyex-method.md)|从指定的程序集文件创建强名称令牌并返回公钥。|  
 |[StrongNameTokenFromPublicKey 方法](iclrstrongname-strongnametokenfrompublickey-method.md)|获取表示公钥的令牌。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  可以 `ICLRStrongName` 通过使用和作为参数调用 [ICLRRuntimeInfo：： GetInterface](iclrruntimeinfo-getinterface-method.md) 方法来获取的实例 `CLSID_CLRStrongName` `IID_ICLRStrongName` 。  
   
@@ -69,7 +70,7 @@ ms.locfileid: "95733628"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)
 - [承载](index.md)

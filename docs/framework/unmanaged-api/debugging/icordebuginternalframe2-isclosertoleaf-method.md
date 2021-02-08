@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugInternalFrame2：： IsCloserToLeaf 方法
 title: ICorDebugInternalFrame2::IsCloserToLeaf 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
 topic_type:
 - apiref
-ms.openlocfilehash: 83d3eda0f3c4619ec7a5df91d13ab9f3a58e5f01
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d773f8670f600a5bcd2a8dad7f23fe243195957c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801275"
 ---
 # <a name="icordebuginternalframe2isclosertoleaf-method"></a>ICorDebugInternalFrame2::IsCloserToLeaf 方法
 
@@ -51,7 +52,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
 |E_FAIL|无法执行比较。|  
 |E_INVALIDARG|`pFrameToCompare` 或 `pIsCloser` 为 null。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IsCloserToLeaf` 可用于实现将内部帧与堆栈上的其他帧交错的策略。  
   
@@ -65,7 +66,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugInternalFrame2 接口](icordebuginternalframe2-interface.md)
 - [调试接口](debugging-interfaces.md)

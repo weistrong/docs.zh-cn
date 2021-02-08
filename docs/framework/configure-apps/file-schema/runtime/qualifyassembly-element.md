@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <qualifyAssembly> 元素
 title: <qualifyAssembly> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - <qualifyAssembly> element
 - qualifyAssembly element
 ms.assetid: ad6442f6-1a9d-43b6-b733-04ac1b7f9b82
-ms.openlocfilehash: 26b265996a059d8e52901557603bcf5e7636e596
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 16891cca40d907d0ca32aea7f610e84305fcd0e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802444"
 ---
 # <a name="qualifyassembly-element"></a>\<qualifyAssembly> 元素
 
@@ -50,7 +51,7 @@ ms.locfileid: "91195215"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`assemblyBinding`|包含有关程序集版本重定向和程序集位置的信息。|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
@@ -60,7 +61,7 @@ ms.locfileid: "91195215"
 
  <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>使用部分程序集名称调用方法会导致公共语言运行时仅查找应用程序基目录中的程序集。 使用 **\<qualifyAssembly>** 应用程序配置文件中的元素来提供完整的程序集信息 (名称、版本、公钥标记和区域性) 并导致公共语言运行时在全局程序集缓存中搜索程序集。  
   
- **FullName**特性必须包含程序集标识的四个字段：名称、版本、公钥标记和区域性。 **PartialName**属性必须部分引用程序集。 您必须至少指定程序集的文本名称 (最常见的情况) ，但也可以包括版本、公钥标记或区域性 (或四个（但不是全部四) 个）的任意组合。 **PartialName**必须与在调用中指定的名称相匹配。 例如，你不能 `"math"` 在配置文件中将指定为 **partialName** 属性，然后 `Assembly.Load("math, Version=3.3.3.3")` 在代码中调用。  
+ **FullName** 特性必须包含程序集标识的四个字段：名称、版本、公钥标记和区域性。 **PartialName** 属性必须部分引用程序集。 您必须至少指定程序集的文本名称 (最常见的情况) ，但也可以包括版本、公钥标记或区域性 (或四个（但不是全部四) 个）的任意组合。 **PartialName** 必须与在调用中指定的名称相匹配。 例如，你不能 `"math"` 在配置文件中将指定为 **partialName** 属性，然后 `Assembly.Load("math, Version=3.3.3.3")` 在代码中调用。  
   
 ## <a name="example"></a>示例  
 

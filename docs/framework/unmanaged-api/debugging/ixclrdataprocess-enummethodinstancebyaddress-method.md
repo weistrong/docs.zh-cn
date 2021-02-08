@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IXCLRDataProcess：： EnumMethodInstanceByAddress 方法
 title: IXCLRDataProcess：： EnumMethodInstanceByAddress 方法
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 142099ae5cf9637cc28e8c82aabcd831cc8f0f52
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: a0d59956288e39be188628d10c63a52d09d17638
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800690"
 ---
 # <a name="ixclrdataprocessenummethodinstancebyaddress-method"></a>IXCLRDataProcess：： EnumMethodInstanceByAddress 方法
 
@@ -51,10 +52,10 @@ HRESULT EnumMethodInstanceByAddress(
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
-**标头：** 无**库：** 无 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
+**标头：** 无 **库：** 无 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CLRDataSourceType 枚举](clrdatasourcetype-enumeration.md)
 - [调试](index.md)

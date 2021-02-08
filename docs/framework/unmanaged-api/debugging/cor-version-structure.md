@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_VERSION 结构
 title: COR_VERSION 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5efaee1c-a001-4c73-9525-4160f4c71567
 topic_type:
 - apiref
-ms.openlocfilehash: 874c0520482cc5a3bbfcdd17924edee84fe91ff5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: abdbe2a62d89db9dd673a429d81209fc42c34b73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801756"
 ---
 # <a name="cor_version-structure"></a>COR_VERSION 结构
 
@@ -45,7 +46,7 @@ typedef struct _COR_VERSION {
 |`dwBuild`|内部版本号。|  
 |`dwSubBuild`|子内部版本号。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果版本号为1.0.3705.288，1为主要版本号，0为次版本号，3705为内部版本号，288为子内部版本号。  
   
@@ -59,7 +60,7 @@ typedef struct _COR_VERSION {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

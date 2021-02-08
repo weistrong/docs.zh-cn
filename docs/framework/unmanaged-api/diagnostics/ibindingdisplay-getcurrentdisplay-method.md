@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IBindingDisplay：： GetCurrentDisplay 方法
 title: IBindingDisplay::GetCurrentDisplay 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d28eeea4-c4e0-40d4-91de-198d98cfa13c
 topic_type:
 - apiref
-ms.openlocfilehash: d52f089923d16f93345444c07ff8e0619644f2eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 680a91c8025ac3247701c14c23f442da5e304ecb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725144"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800414"
 ---
 # <a name="ibindingdisplaygetcurrentdisplay-method"></a>IBindingDisplay::GetCurrentDisplay 方法
 
@@ -39,11 +40,11 @@ HRESULT GetCurrentDisplay (
  `display`  
  [out，retval]指向包含绑定显示信息的 safearray 的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [IBindingDisplay：： InitializeForProcess](ibindingdisplay-initializeforprocess-method.md)方法之前必须已成功，并且调试器必须停止该程序。  
   
- 调用方必须使用 SafeArrayDestroy 释放返回的 `SAFEARRAY` 内存[SafeArrayDestroy](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraydestroy)。  
+ 调用方必须使用 SafeArrayDestroy 释放返回的 `SAFEARRAY` 内存[](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraydestroy)。  
   
 ## <a name="requirements"></a>要求  
 
@@ -55,7 +56,7 @@ HRESULT GetCurrentDisplay (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IBindingDisplay 接口](ibindingdisplay-interface.md)
 - [InitializeForProcess 方法](ibindingdisplay-initializeforprocess-method.md)

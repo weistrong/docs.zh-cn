@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IXCLRDataProcess：： EndEnumMethodInstancesByAddress 方法
 title: IXCLRDataProcess：： EndEnumMethodInstancesByAddress 方法
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 5960d08ccfc09010a20d28a22c2e2f3f5b339c7d
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 2e01fe0737319a7b336d9f6992bf81b2c57f9e70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800716"
 ---
 # <a name="ixclrdataprocessendenummethodinstancesbyaddress-method"></a>IXCLRDataProcess：： EndEnumMethodInstancesByAddress 方法
 
@@ -47,12 +48,12 @@ HRESULT EndEnumMethodInstancesByAddress(
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。  
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。  
 **标头：** 内容  
 **库：** 内容  
 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CLRDataSourceType 枚举](clrdatasourcetype-enumeration.md)
 - [调试](index.md)

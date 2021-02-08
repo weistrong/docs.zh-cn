@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <Type> 元素 ( .NET Native) '
 title: <Type>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
-ms.openlocfilehash: e71df41c4a37206910d835ee85dc3d68b4cbad4a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9a0304049c5b8f97c30a85de1c6ed60cde111df1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287704"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801938"
 ---
 # <a name="type-element-net-native"></a>\<Type>元素 (.NET Native)
 
@@ -35,7 +36,7 @@ ms.locfileid: "96287704"
 
 ### <a name="attributes"></a>特性
 
-|属性|属性类型|描述|
+|属性|属性类型|说明|
 |---------------|--------------------|-----------------|
 |`Name`|常规|必需的特性。 指定类型名称。|
 |`Activate`|反射|可选特性。 控制运行时对构造函数的访问，以启用实例激活。|
@@ -51,19 +52,19 @@ ms.locfileid: "96287704"
 
 ## <a name="name-attribute"></a>Name 特性
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |type_name|类型名称。 如果此 `<Type>` 元素是 [\<Namespace>](namespace-element-net-native.md) 元素或另一个元素的子元素 `<Type>` ， *type_name* 可以包括该类型的名称，而无需命名空间。 否则，type_name 必须包含完全限定的类型名称。|
 
 ## <a name="all-other-attributes"></a>所有其他特性
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |*策略_设置*|该设置将应用到这种策略类型。 可能值为 `All`、`Auto`、`Excluded`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<AttributeImplies>](attributeimplies-element-net-native.md)|如果包含类型是一个特性，为该特性所应用到的代码元素定义一个运行时策略。|
 |[\<Event>](event-element-net-native.md)|将反射策略应用到属于这种类型的一个事件。|
@@ -79,7 +80,7 @@ ms.locfileid: "96287704"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<Application>](application-element-net-native.md)|作为应用程序范围内的类型和元数据可以反应在运行时间的类型成员的容器而服务。|
 |[\<Assembly>](assembly-element-net-native.md)|将反射策略应用到指定程序集中的所有类型。|
@@ -134,7 +135,7 @@ ms.locfileid: "96287704"
 </Directives>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](runtime-directive-elements.md)

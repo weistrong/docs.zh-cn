@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess：： GetHelperThreadID 方法
 title: ICorDebugProcess::GetHelperThreadID 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 84e1e605-37c1-49a5-8e12-35db85654622
 topic_type:
 - apiref
-ms.openlocfilehash: 77cc658e28c7a69d8c4aeeed2f3e7ea40f0d2af6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ee7bd2106a37c5c67df48a54ff9ab7fa49a03f80
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801015"
 ---
 # <a name="icordebugprocessgethelperthreadid-method"></a>ICorDebugProcess::GetHelperThreadID 方法
 
@@ -39,7 +40,7 @@ HRESULT GetHelperThreadID (
  `pThreadID`  
  弄指向调试器的内部帮助器线程的操作系统线程 ID 的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在托管和非托管调试期间，调试器负责确保具有指定 ID 的线程在命中调试器所放置的断点时保持运行状态。 调试器也可能希望从用户隐藏此线程。 如果进程中尚不存在 helper 线程，则该 `GetHelperThreadID` 方法将在 * 中返回零 `pThreadID` 。  
   

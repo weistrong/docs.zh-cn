@@ -1,5 +1,6 @@
 ---
-title: ComNetOS 类（System.Net）
+description: 了解详细信息： ComNetOS 类
+title: 'ComNetOS 类 (System.Net) '
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type:
@@ -11,16 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: ed2b970d07df2c338870b386e75c1688703f1d68
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 7376fe4a5e02818907cb71573451fffb3a3667cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802523"
 ---
 # <a name="comnetos-class"></a>ComNetOS 类
 
-提供有关当前操作系统的信息，如其版本和安装类型（客户端或服务器）。 无法继承此类。
+提供有关当前操作系统的信息，如客户端或服务器)  (的版本和安装类型。 此类不能被继承。
   
 ```csharp  
 internal static class ComNetOS
@@ -43,4 +44,4 @@ internal static readonly bool IsWin7orLater
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 

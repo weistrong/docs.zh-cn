@@ -1,5 +1,6 @@
 ---
-title: ConnectStream 属性（System.Net）
+description: 了解详细信息： ConnectStream 属性
+title: 'ConnectStream 属性 (System.Net) '
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
 topic_type:
@@ -11,12 +12,12 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 374d53346c964c5f8135c7e121bd3a2db8a8fd7b
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 26d7141cd63dd579112b962b58f5c5e85a655dc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84989515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802510"
 ---
 # <a name="connectstreamconnection-property"></a>ConnectStream 属性
 
@@ -34,7 +35,7 @@ internal Connection Connection { get; }
 
 连接对象。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 > [!WARNING]
 > `ConnectStream.Connection`属性是内部的，不应在代码中直接使用。
@@ -45,6 +46,6 @@ internal Connection Connection { get; }
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 
 
 **.NET Framework 版本：** 自1.0 起可用。

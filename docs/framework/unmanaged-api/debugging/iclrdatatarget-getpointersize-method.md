@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDataTarget：： GetPointerSize 方法
 title: ICLRDataTarget::GetPointerSize 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 51d9f4a4-81a7-4527-8537-5212bdb05c70
 topic_type:
 - apiref
-ms.openlocfilehash: 077aa50465d99c9098f26e67b3852feb0d399142
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c6e5ab9b919d1c5d2d6e2267a48d46a11cccc09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703518"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801327"
 ---
 # <a name="iclrdatatargetgetpointersize-method"></a>ICLRDataTarget::GetPointerSize 方法
 
@@ -39,7 +40,7 @@ HRESULT GetPointerSize (
  `pointerSize`  
  弄指向一个整数值的指针，该整数值指定目标进程上的指针的大小（以字节为单位）。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法由调试应用程序的编写器实现。  
   
@@ -53,6 +54,6 @@ HRESULT GetPointerSize (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRDataTarget 接口](iclrdatatarget-interface.md)

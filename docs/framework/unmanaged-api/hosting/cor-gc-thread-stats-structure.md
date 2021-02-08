@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_GC_THREAD_STATS 结构
 title: COR_GC_THREAD_STATS 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 01f9a59b-7679-4d42-9ced-4a8981625c3d
 topic_type:
 - apiref
-ms.openlocfilehash: 25a90965dc5466b7cf1a07140705424cf2ba4cd9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 179eb335e9f8c118ee98d4b777c347f3758ee0c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699230"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799780"
 ---
 # <a name="cor_gc_thread_stats-structure"></a>COR_GC_THREAD_STATS 结构
 
@@ -41,7 +42,7 @@ typedef struct _COR_GC_THREAD_STATS {
 |`PerThreadAllocation`|与当前实例关联的线程上分配的内存字节数 `COR_GC_THREAD_STATS` 。 每次发生零代垃圾回收时，此数字会被清除为零。|  
 |`Flags`|最近一次垃圾回收后提升为较高代的字节数。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRTask：： GetMemStats](iclrtask-getmemstats-method.md) 采用类型为的输出参数 `COR_GC_THREAD_STATS` 。  
   
@@ -55,7 +56,7 @@ typedef struct _COR_GC_THREAD_STATS {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载结构](hosting-structures.md)
 - [IHostTask 接口](ihosttask-interface.md)

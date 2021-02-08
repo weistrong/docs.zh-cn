@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRStrongName：： StrongNameCompareAssemblies 方法
 title: ICLRStrongName::StrongNameCompareAssemblies 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b1fb356c-72cf-4aa4-8376-f291a6d97c01
 topic_type:
 - apiref
-ms.openlocfilehash: ddcbe84053aa7f4cafd81e905f8aef988f92875e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ab02312073f9caf5059ecf7b4eeddaef864bd7b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799639"
 ---
 # <a name="iclrstrongnamestrongnamecompareassemblies-method"></a>ICLRStrongName::StrongNameCompareAssemblies 方法
 
@@ -67,7 +68,7 @@ HRESULT StrongNameCompareAssemblies (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  程序集的强名称签名由程序集的文本名称、版本、区域性和公钥标记组成。  
   

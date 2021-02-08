@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PUB_ENUMPROCESS 枚举
 title: COR_PUB_ENUMPROCESS 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
 topic_type:
 - apiref
-ms.openlocfilehash: 30a522fbf96aebaa96f33f4a1dc381683f183871
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66bbd08aabb9d2c93e385ed098bae54754a85b85
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801782"
 ---
 # <a name="cor_pub_enumprocess-enumeration"></a>COR_PUB_ENUMPROCESS 枚举
 
@@ -35,11 +36,11 @@ typedef enum {
   
 ## <a name="members"></a>成员  
   
-|成员名称|说明|  
+|成员名称|描述|  
 |-----------------|-----------------|  
 |`COR_PUB_MANAGEDONLY`|托管进程。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  非托管调试 API 的当前版本仅枚举托管进程。  
   
@@ -53,6 +54,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)

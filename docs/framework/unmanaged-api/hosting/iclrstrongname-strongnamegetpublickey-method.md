@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRStrongName：： StrongNameGetPublicKey 方法
 title: ICLRStrongName::StrongNameGetPublicKey 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a31dcaa9-a404-4c1d-8cc7-081827c52935
 topic_type:
 - apiref
-ms.openlocfilehash: 5bd314b2b63474d2a1d159f74564e2d4ca13aef6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7be64e145f1e26a1260e2b23fd9fe5f97e289478
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799598"
 ---
 # <a name="iclrstrongnamestrongnamegetpublickey-method"></a>ICLRStrongName::StrongNameGetPublicKey 方法
 
@@ -63,7 +64,7 @@ HRESULT StrongNameGetPublicKey (
 
  `S_OK` 如果该方法已成功完成，则为;否则，表示失败的 HRESULT 值 (参阅) 列表的 [常见 HRESULT 值](/windows/win32/seccrypto/common-hresult-values) 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  公钥包含在 [PublicKeyBlob](../strong-naming/publickeyblob-structure.md) 结构中。  
   
@@ -77,7 +78,7 @@ HRESULT StrongNameGetPublicKey (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameTokenFromPublicKey 方法](iclrstrongname-strongnametokenfrompublickey-method.md)
 - [PublicKeyBlob 结构](../strong-naming/publickeyblob-structure.md)

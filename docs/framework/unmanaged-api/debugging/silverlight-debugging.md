@@ -1,16 +1,17 @@
 ---
+description: 了解更多： Silverlight 调试
 title: Silverlight 调试
 ms.date: 03/30/2017
 helpviewer_keywords:
 - debugging API [Silverlight]
 - Silverlight, debugging
 ms.assetid: 5e903e04-17d0-4014-ac9a-a43330ec8b1c
-ms.openlocfilehash: 49f026b8e1a3dd78a62091e77a5aba0c9a2e09d6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 54a3f7f4b2de867509ff94dafa25c067a78b3ee6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800534"
 ---
 # <a name="silverlight-debugging"></a>Silverlight 调试
 
@@ -54,7 +55,7 @@ ms.locfileid: "95671832"
  [ShutdownDbgTransportManager 函数](shutdowndbgtransportmanager-function.md)  
  关闭用于远程目标计算机连接的传输管理器。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试 Coclass](debugging-coclasses.md)
 - [调试接口](debugging-interfaces.md)

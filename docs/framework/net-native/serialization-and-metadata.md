@@ -1,13 +1,14 @@
 ---
+description: 了解更多：序列化和元数据
 title: 序列化和元数据
 ms.date: 03/30/2017
 ms.assetid: 619ecf1c-1ca5-4d66-8934-62fe7aad78c6
-ms.openlocfilehash: 739d482330103a2a79d0d640781b5516bbc15c01
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: da7424d683922618abda4b896bc0e7cf2dbc87be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801964"
 ---
 # <a name="serialization-and-metadata"></a>序列化和元数据
 
@@ -69,7 +70,7 @@ ms.locfileid: "96250783"
   
 有关此示例中使用的语法的信息，请参阅[ \<Type> 元素](type-element-net-native.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](runtime-directive-elements.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugInterfaceVersion 枚举
 title: CorDebugInterfaceVersion 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7d1e6cd9-2a15-41c6-9b68-008705a4ed90
 topic_type:
 - apiref
-ms.openlocfilehash: 939400fcc40edd62532d459d6ed626dbdc4f41fc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 35b8fd6eae2b7999d7669632506cfea43dffbd45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801635"
 ---
 # <a name="cordebuginterfaceversion-enumeration"></a>CorDebugInterfaceVersion 枚举
 
@@ -221,7 +222,7 @@ typedef enum CorDebugInterfaceVersion {
 |`ver_ICorDebugILFrame3`|[ICorDebugILFrame3](icordebugilframe3-interface.md)|4.5|  
 |`CorDebugLatestVersion`|.NET Framework（包括其所有 Service Pack）的版本为最新版本。|-|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调试器可以 `CorDebugInterfaceVersion` 在 [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) 函数中使用枚举来指定调试器支持的 .NET Framework 的最高版本。  
   
@@ -249,6 +250,6 @@ typedef enum CorDebugInterfaceVersion {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)

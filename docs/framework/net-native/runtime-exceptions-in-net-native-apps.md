@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： .NET Native 应用中的运行时异常
 title: .NET 本机应用中的运行时异常
 ms.date: 03/30/2017
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97
-ms.openlocfilehash: 5c521eed94590e583a761cc2003460875e690fa9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 11a85d36a95e74dac36cd45e080428fcba0c673e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801977"
 ---
 # <a name="runtime-exceptions-in-net-native-apps"></a>.NET 本机应用中的运行时异常
 
@@ -63,7 +64,7 @@ Additional information: Value does not fall within the expected range.
   
  若要获取完整的堆栈，请改为运行调试版本。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试 .NET 本机 Windows 通用应用](https://devblogs.microsoft.com/devops/debugging-net-native-windows-universal-apps/)
 - [入门](getting-started-with-net-native.md)

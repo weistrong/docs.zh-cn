@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugMergedAssemblyRecord：： GetPublicKey 方法
 title: ICorDebugMergedAssemblyRecord::GetPublicKey 方法
 ms.date: 03/30/2017
 ms.assetid: 6f4e78ba-082b-489d-8b58-4c35fbcc7a5b
-ms.openlocfilehash: e89ecca25edb0d7eae3a7e65f9585d71ad4ace4d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 15175b0d02773bcbce46bfaec9ce1de3021b7dde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801093"
 ---
 # <a name="icordebugmergedassemblyrecordgetpublickey-method"></a>ICorDebugMergedAssemblyRecord::GetPublicKey 方法
 
@@ -33,7 +34,7 @@ HRESULT GetPublicKey(
  `pbPublicKey`  
  [out] 指向包含程序集公钥的字节数组的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -48,7 +49,7 @@ HRESULT GetPublicKey(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugMergedAssemblyRecord 接口](icordebugmergedassemblyrecord-interface.md)
 - [调试接口](debugging-interfaces.md)

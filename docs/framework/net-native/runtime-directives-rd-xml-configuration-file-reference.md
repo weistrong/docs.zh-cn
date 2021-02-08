@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：运行时指令 ( # A0) 配置文件引用'
 title: 运行时指令 (rd.xml) 配置文件引用
 ms.date: 03/30/2017
 ms.assetid: 8241523f-d8e1-4fb6-bf6a-b29bfe07b38a
-ms.openlocfilehash: e74d34693446cca645003a9f93bc1777849e3182
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9c995bd831f01e47c651d015895398e1ad42633d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "76738406"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801990"
 ---
 # <a name="runtime-directives-rdxml-configuration-file-reference"></a>运行时指令 (rd.xml) 配置文件引用
 
@@ -42,17 +43,17 @@ ms.locfileid: "76738406"
 - [Directives](directives-element-net-native.md) [1:1]
   - [Application](application-element-net-native.md) [0:1]
     - [Assembly](assembly-element-net-native.md) [0:M]
-      - [命名空间](namespace-element-net-native.md)[0： M]。 . .
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [命名空间](namespace-element-net-native.md) [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
     - [Namespace](namespace-element-net-native.md) [0:M]
-      - [命名空间](namespace-element-net-native.md)[0： M]。 . .
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [命名空间](namespace-element-net-native.md) [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
     - [Type](type-element-net-native.md) [0:M]
       - [Subtypes](subtypes-element-net-native.md)（包含类型的子类）[O:1]
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
       - [AttributeImplies](attributeimplies-element-net-native.md)（包含类型是一种特性）[O:1]
       - [GenericParameter](genericparameter-element-net-native.md) [0:M]
       - [Method](method-element-net-native.md) [0:M]
@@ -64,8 +65,8 @@ ms.locfileid: "76738406"
       - [Field](field-element-net-native.md) [0:M]
       - [Event](event-element-net-native.md) [0:M]
     - [TypeInstantiation](typeinstantiation-element-net-native.md)（构造泛型类型）[0:M]
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
       - [Method](method-element-net-native.md) [0:M]
         - [Parameter](parameter-element-net-native.md) [0:M]
         - [TypeParameter](typeparameter-element-net-native.md) [0:M]
@@ -76,17 +77,17 @@ ms.locfileid: "76738406"
       - [Event](event-element-net-native.md) [0:M]
   - [Library](library-element-net-native.md) [0:M]
     - [Assembly](assembly-element-net-native.md) [0:M]
-      - [命名空间](namespace-element-net-native.md)[0： M]。 . .
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [命名空间](namespace-element-net-native.md) [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
     - [Namespace](namespace-element-net-native.md) [0:M]
-      - [命名空间](namespace-element-net-native.md)[0： M]。 . .
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [命名空间](namespace-element-net-native.md) [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
     - [Type](type-element-net-native.md) [0:M]
       - [Subtypes](subtypes-element-net-native.md)（包含类型的子类）[O:1]
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
       - [AttributeImplies](attributeimplies-element-net-native.md)（包含类型是一种特性）[O:1]
       - [GenericParameter](genericparameter-element-net-native.md) [0:M]
       - [Method](method-element-net-native.md) [0:M]
@@ -95,8 +96,8 @@ ms.locfileid: "76738406"
       - [Field](field-element-net-native.md) [0:M]
       - [Event](event-element-net-native.md) [0:M]
     - [TypeInstantiation](typeinstantiation-element-net-native.md)（构造泛型类型）[0:M]
-      - [类型](type-element-net-native.md)[0： M]。 . .
-      - [类型实例化](typeinstantiation-element-net-native.md)（构造泛型类型） [0： M]。 . .
+      - [类型](type-element-net-native.md) [0： M]。 . .
+      - [类型实例化](typeinstantiation-element-net-native.md)) [0： M] 构造泛型类型 (。 . .
       - [Method](method-element-net-native.md) [0:M]
       - [MethodInstantiation](methodinstantiation-element-net-native.md)（构造泛型方法）[0:M]
       - [Property](property-element-net-native.md) [0:M]
@@ -453,7 +454,7 @@ ms.locfileid: "76738406"
 
 有关详细信息，请参阅[将 Windows 应用商店应用迁移到 .NET Native](migrating-your-windows-store-app-to-net-native.md) 中的“序列化程序的差异”一节。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令元素](runtime-directive-elements.md)
 - [反射和 .NET Native](reflection-and-net-native.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugStaticFieldSymbol：： GetAddress 方法
 title: ICorDebugStaticFieldSymbol::GetAddress 方法
 ms.date: 03/30/2017
 ms.assetid: 5a6c9a5a-ec72-4c40-a9c3-cee7baa63687
-ms.openlocfilehash: e9404b429ad4507acb5132a86af5f287dbcf07b3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1944839ff6afc31dc3667111397cbb088b95b412
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677279"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801002"
 ---
 # <a name="icordebugstaticfieldsymbolgetaddress-method"></a>ICorDebugStaticFieldSymbol::GetAddress 方法
 
@@ -26,7 +27,7 @@ HRESULT GetAddress(
  pRVA  
  [out] 指向静态字段的相对虚拟地址 (RVA) 的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -41,7 +42,7 @@ HRESULT GetAddress(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugStaticFieldSymbol 接口](icordebugstaticfieldsymbol-interface.md)
 - [调试接口](debugging-interfaces.md)

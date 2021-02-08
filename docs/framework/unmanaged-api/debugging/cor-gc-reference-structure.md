@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_GC_REFERENCE 结构
 title: COR_GC_REFERENCE 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62
 topic_type:
 - apiref
-ms.openlocfilehash: bb4a8f7ff3ee54474804e3e5620dcce7c9f79fb5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 38518bb1eb870081621bf32af9e63cdaa208dbd3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801808"
 ---
 # <a name="cor_gc_reference-structure"></a>COR_GC_REFERENCE 结构
 
@@ -42,10 +43,10 @@ typedef struct _COR_GC_REFERENCE {
 |------------|-----------------|  
 |`domain`|指向句柄或对象所属的应用程序域的指针。 其值可以是 `null` 。|  
 |`location`|与要进行垃圾回收的对象相对应的 ICorDebugValue 或 ICorDebugReferenceValue 接口。|  
-|`type`|一个 [CorGCReferenceType](corgcreferencetype-enumeration.md) 枚举值，该值指示根的来源。 有关详细信息，请参阅“备注”部分。|  
-|`extraData`|有关要进行垃圾回收的对象的其他数据。 此信息取决于对象的源，如字段所示 `type` 。 有关详细信息，请参阅“备注”部分。|  
+|`type`|一个 [CorGCReferenceType](corgcreferencetype-enumeration.md) 枚举值，该值指示根的来源。 有关详细信息，请参见“备注”部分。|  
+|`extraData`|有关要进行垃圾回收的对象的其他数据。 此信息取决于对象的源，如字段所示 `type` 。 有关详细信息，请参见“备注”部分。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  该 `type` 字段是一个 [CorGCReferenceType](corgcreferencetype-enumeration.md) 枚举值，该值指示引用来自何处。 特定 `COR_GC_REFERENCE` 值可以反映以下任意一种类型的托管对象：  
   
@@ -55,7 +56,7 @@ typedef struct _COR_GC_REFERENCE {
   
 - 终结器队列中的对象 (`CorGCReferenceType.CorReferenceFinalizer`) 。 终结器队列根对象，直到终结器运行。  
   
- 该 `extraData` 字段包含其他数据，具体取决于引用 (或类型) 的源。 可能的值为：  
+ 该 `extraData` 字段包含其他数据，具体取决于引用 (或类型) 的源。 可能的值有：  
   
 - `DependentSource`. 如果 `type` 为 `CorGCREferenceType.CorHandleStrongDependent` ，则此字段为对象，如果为，则此字段为要在其上进行垃圾回收的对象的根 `COR_GC_REFERENCE.Location` 。  
   
@@ -73,7 +74,7 @@ typedef struct _COR_GC_REFERENCE {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

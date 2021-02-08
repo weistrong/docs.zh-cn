@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <localServiceSettings> 元素
 title: <localServiceSettings> 元素
 ms.date: 03/30/2017
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
-ms.openlocfilehash: 3043c07afd316d90cc5525a67bef144f33d9b136
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ee3306588d6a86ed9ced9c66624cd34f18e2c5c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802198"
 ---
 # <a name="localservicesettings-element"></a>\<localServiceSettings> 元素
 
@@ -48,9 +49,9 @@ ms.locfileid: "91204926"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|`detectReplays`|一个布尔值，指定是否自动检测和处理针对通道的重放攻击。 默认为 `false`。|  
+|`detectReplays`|一个布尔值，指定是否自动检测和处理针对通道的重放攻击。 默认值为 `false`。|  
 |`inactivityTimeout`|一个正值 <xref:System.TimeSpan> ，指定通道在超时之前等待的无活动持续时间。默认值为 "01:00:00"。|  
 |`issuedCookieLifeTime`|一个 <xref:System.TimeSpan>，指定颁发给所有新安全 Cookie 的生存期。 超过生存期的 Cookie 会被回收，且需要再次对其进行协商。 默认值为“10:00:00”。|  
 |`maxCachedCookies`|一个正整数，指定可以缓存的最大 Cookie 数。 默认值为 1000。|  
@@ -71,7 +72,7 @@ ms.locfileid: "91204926"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-custombinding.md)|指定自定义绑定的安全选项。|  
 |[\<secureConversationBootstrap>](secureconversationbootstrap.md)|指定用于启动安全对话服务的默认值。|  

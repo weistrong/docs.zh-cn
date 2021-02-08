@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： PreBindAssemblyEx 函数
 title: PreBindAssemblyEx 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
 topic_type:
 - apiref
-ms.openlocfilehash: a729249f7b0681941a0b1a478dbe2c0d9d6cd01c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e94bd7c335555e8109df60a00cadc76f7e13434b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723956"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800001"
 ---
 # <a name="prebindassemblyex-function"></a>PreBindAssemblyEx 函数
 
@@ -60,7 +61,7 @@ HRESULT PreBindAssemblyEx (
  `pvReserved`  
  中保留以供将来进行扩展。 `pvReserved` 必须为空引用。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ppNamePostPolicy`仅当函数返回 HRESULT FUSION_E_REF_DEF_MISMATCH 时才设置 output 参数。 否则为 null。  
   
@@ -74,6 +75,6 @@ HRESULT PreBindAssemblyEx (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成全局静态函数](fusion-global-static-functions.md)

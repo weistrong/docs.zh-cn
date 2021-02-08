@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： WriteableMetadataUpdateMode 枚举
 title: WriteableMetadataUpdateMode 枚举
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 6758f4d3-6bc7-4c99-8582-e9be00566784
 topic_type:
 - apiref
-ms.openlocfilehash: 1553e18da10844da28bbaf84ba76bc5c34ca49b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b8136963e315c429643bd0ebf4bdb509d5173bec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725295"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800508"
 ---
 # <a name="writeablemetadataupdatemode-enumeration"></a>WriteableMetadataUpdateMode 枚举
 
@@ -36,12 +37,12 @@ typedef enum WriteableMetadataUpdateMode {
   
 ## <a name="members"></a>成员  
   
-|成员名称|说明|  
+|成员名称|描述|  
 |-----------------|-----------------|  
 |`LegacyCompatPolicy`|当使元数据的内存中更新可见时，保持与 .NET Framework 早期版本的兼容性。 有关详细信息，请参阅备注部分。|  
 |`AlwaysShowUpdates`|使元数据的内存中更新对调试器可见。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  枚举的成员 `WriteableMetadataUpdateMode` 可以传递给 [SetWriteableMetadataUpdateMode](icordebugprocess7-setwriteablemetadataupdatemode-method.md) 方法，以控制目标进程中元数据的内存中更新对调试器是否可见。  
   
@@ -57,7 +58,7 @@ typedef enum WriteableMetadataUpdateMode {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)
 - [SetWriteableMetadataUpdateMode 方法](icordebugprocess7-setwriteablemetadataupdatemode-method.md)

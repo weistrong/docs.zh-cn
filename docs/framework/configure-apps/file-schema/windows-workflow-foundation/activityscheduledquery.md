@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <activityScheduledQuery>
 title: <activityScheduledQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: a8bcd6d4-b389-4daf-86bf-1ade85fec114
-ms.openlocfilehash: 207931f68303883c29161cc28a5fc1974d01b6b8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 72aa9c2d3480488d4468d008fa8a4306929c190d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148732"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802107"
 ---
 # \<activityScheduledQuery>
 
@@ -45,7 +46,7 @@ ms.locfileid: "91148732"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |activityName|一个字符串，指定正在请求取消的活动的名称。|  
 |childActivityName|一个字符串，指定已请求将其取消的子活动的名称。|  
@@ -56,7 +57,7 @@ ms.locfileid: "91148732"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<activityScheduledQuery>](activityscheduledquery.md)|一个查询，用于跟踪安排给父活动来执行的活动。|  
   

@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <issuerMetadata> 信息： <issuedTokenParameters>
 title: <issuerMetadata> 的 <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
-ms.openlocfilehash: 389ac9e96c1462f59bc42b2e20cb511acdefda00
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6b0b5064254caf1c6bcf72c2e6d3449402853b98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185660"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802237"
 ---
 # <a name="issuermetadata-of-issuedtokenparameters"></a>\<issuerMetadata> 的 \<issuedTokenParameters>
 
@@ -32,20 +33,20 @@ ms.locfileid: "91185660"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|address|必需。 一个指定终结点地址的字符串。 该地址必须为绝对 URI。 默认值为空字符串。|  
+|address|必需。 一个指定终结点地址的字符串。 该地址必须为绝对 URI。 默认值为一个空字符串。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<headers>](headers-element.md)|一个地址标头集合。|  
 |[\<identity>](identity.md)|一个标识，与某个终结点交换消息的其他终结点可以使用该标识对该终结点进行身份验证。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|指定在联合安全方案中颁发的安全令牌的参数。|  
   

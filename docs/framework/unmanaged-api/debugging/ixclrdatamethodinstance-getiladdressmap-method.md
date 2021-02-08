@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IXCLRDataMethodInstance：： GetILAddressMap 方法
 title: IXCLRDataMethodInstance：： GetILAddressMap 方法
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 0acfa9ffd6f4bc3be567855008dccd08c9c74153
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ddddf593c3c18f2b4cd1682b5d6f7c8ff1985ac6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420911"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800807"
 ---
 # <a name="ixclrdatamethodinstancegetiladdressmap-method"></a>IXCLRDataMethodInstance：： GetILAddressMap 方法
 
@@ -47,7 +48,7 @@ HRESULT GetILAddressMap(
 弄该方法所需的映射项的数目。
 
 `maps`\
-[out，size_is （mapLen）]用于存储映射项的数组。
+[out，size_is (mapLen) ]用于存储映射项的数组。
 
 ## <a name="remarks"></a>备注
 
@@ -55,12 +56,12 @@ HRESULT GetILAddressMap(
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。  
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。  
 **标头：** 内容  
 **库：** 内容  
 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试](index.md)
 - [IXCLRDataMethodInstance 接口](ixclrdatamethodinstance-interface.md)

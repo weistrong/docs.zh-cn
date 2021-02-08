@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IReferenceIdentity 接口
 title: IReferenceIdentity 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9180ac5a-7019-4716-9f83-8a91d157239a
 topic_type:
 - apiref
-ms.openlocfilehash: 867c09caa3bd3aed50de21c2ef91a02782830be2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a29aaa1f4fb928c136af4168619d27900537c779
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800040"
 ---
 # <a name="ireferenceidentity-interface"></a>IReferenceIdentity 接口
 
@@ -42,7 +43,7 @@ ms.locfileid: "95704547"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成接口](fusion-interfaces.md)
 - [IEnumIDENTITY_ATTRIBUTE 接口](ienumidentity-attribute-interface.md)

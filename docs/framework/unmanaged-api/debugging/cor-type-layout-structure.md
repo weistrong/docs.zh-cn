@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_TYPE_LAYOUT 结构
 title: COR_TYPE_LAYOUT 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 43a7addd-f25a-4049-9907-abec3eb17af2
 topic_type:
 - apiref
-ms.openlocfilehash: f33c8f5cf218979404063342d9b1cc5123839f83
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07bed0c526aae38cb380b57da505a3f02bdf4aae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801759"
 ---
 # <a name="cor_type_layout-structure"></a>COR_TYPE_LAYOUT 结构
 
@@ -47,7 +48,7 @@ typedef struct COR_TYPE_LAYOUT {
 |`boxOffset`|如果此类型为装箱，则为对象字段的开始偏移量。 此字段仅对基元和结构等值类型有效。|  
 |`type`|此类型所属的 CorElementType。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `numFields` 大于零，则可以调用 [ICorDebugProcess5：： GetTypeFields](icordebugprocess5-gettypefields-method.md) 方法来获取有关此类型中的字段的信息。 如果 `type` 为 `ELEMENT_TYPE_STRING` 、 `ELEMENT_TYPE_ARRAY` 或 `ELEMENT_TYPE_SZARRAY` ，则此类型的对象的大小是可变的，你可以将 [COR_TYPEID](cor-typeid-structure.md) 结构传递给 [ICorDebugProcess5：： GetArrayLayout](icordebugprocess5-getarraylayout-method.md) 方法。  
   
@@ -61,7 +62,7 @@ typedef struct COR_TYPE_LAYOUT {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

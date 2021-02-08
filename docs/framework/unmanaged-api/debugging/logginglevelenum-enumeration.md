@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： LoggingLevelEnum 枚举
 title: LoggingLevelEnum 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 09daac08-005a-46b2-beab-408d0820c5e5
 topic_type:
 - apiref
-ms.openlocfilehash: 389edbeb746fbeaf60d88bf9ee2a3a0731822e55
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7c9676fef83ea44f45a25350a2b3d325c1c22f98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800601"
 ---
 # <a name="logginglevelenum-enumeration"></a>LoggingLevelEnum 枚举
 
@@ -63,7 +64,7 @@ typedef enum LoggingLevelEnum {
 |`LErrorLevel`|消息为错误级别。|  
 |`LPanicLevel`|消息是一个紧急级别。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  公共语言运行时 (CLR) 调用 [ICorDebugManagedCallback：： LogMessage](icordebugmanagedcallback-logmessage-method.md) 方法来通知调试器，托管线程已记录事件。 CLR 传递枚举的值 `LoggingLevelEnum` ，以指示托管线程写入事件日志的消息的严重性级别。  
   
@@ -77,7 +78,7 @@ typedef enum LoggingLevelEnum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Diagnostics.EventLog>
 - [调试枚举](debugging-enumerations.md)

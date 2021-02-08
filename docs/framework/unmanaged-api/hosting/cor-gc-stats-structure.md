@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_GC_STATS 结构
 title: COR_GC_STATS 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8d4ff73e-739b-40f6-9349-359fbc99c2f9
 topic_type:
 - apiref
-ms.openlocfilehash: 53a70c53a06ac55a2dab7c646018d63189ee0b36
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9b1002f462fb9b447e521cd1b3e5c78297eefc04
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726218"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799794"
 ---
 # <a name="cor_gc_stats-structure"></a>COR_GC_STATS 结构
 
@@ -59,7 +60,7 @@ typedef struct _COR_GC_STATS {
 |`KBytesPromotedFromGen0`|从零代升级到第1代的对象的大小（以 kb 为单位）。|  
 |`KBytesPromotedFromGen1`|从第一代升级到第二代的对象的大小（以 kb 为单位）。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRGCManager：： GetStats](iclrgcmanager-getstats-method.md)方法要求将 `Flags` 结构的字段 `COR_GC_STATS` 设置为一个或多个[COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md)枚举的值，以指定要设置的统计信息。  
   
@@ -87,7 +88,7 @@ pCLRGCManager->GetStats(&GCStats);
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载结构](hosting-structures.md)
 - [自动内存管理](../../../standard/automatic-memory-management.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CoInitializeEE 函数
 title: CoInitializeEE 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7e42a928-5068-4ba6-b8c3-806551a01fa8
 topic_type:
 - apiref
-ms.openlocfilehash: 707e182e62f4a7b7b813e6b288c6825b0d3d2eab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9664324c569ed4de73262491cf8eda8296b3c3a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799819"
 ---
 # <a name="coinitializeee-function"></a>CoInitializeEE 函数
 
@@ -49,7 +50,7 @@ HRESULT CoInitializeEE (
 |S_FALSE|已经加载了执行引擎。|  
 |E_FAIL|未能加载执行引擎。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法加载尚未加载的执行引擎。  
   
@@ -63,6 +64,6 @@ HRESULT CoInitializeEE (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据全局静态函数](../metadata/metadata-global-static-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <publisherPolicy> 元素
 title: <publisherPolicy> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - container tags, <publisherPolicy> element
 - <publisherPolicy> element
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
-ms.openlocfilehash: bd6ab1123ef3f84f7e8a06b25ce48aed37e4bef7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35d729d5b195e010a80e7272312f14ac5802001b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195254"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802431"
 ---
 # <a name="publisherpolicy-element"></a>\<publisherPolicy> 元素
 
@@ -39,15 +40,15 @@ ms.locfileid: "91195254"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`apply`|指定是否应用发布者策略。|  
   
 ## <a name="apply-attribute"></a>应用属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
-|`yes`|应用发布者策略。 这是默认设置。|  
+|`yes`|应用发布者策略。 此为默认设置。|  
 |`no`|不应用发布者策略。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -56,7 +57,7 @@ ms.locfileid: "91195254"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`assemblyBinding`|包含有关程序集版本重定向和程序集位置的信息。|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
@@ -67,7 +68,7 @@ ms.locfileid: "91195254"
 
  当组件供应商发布程序集的新版本时，供应商可以包括发行者策略，以便使用旧版本的应用程序现在使用新版本。 若要指定是否将发布服务器策略应用于特定程序集，请将该 **\<publisherPolicy>** 元素放在 **\<dependentAssembly>** 元素中。  
   
- **Apply**属性的默认设置为 **"是"**。 如果将 **apply** 特性设置为 " **否** "，则将替代程序集以前的 **"是"** 设置。  
+ **Apply** 属性的默认设置为 **"是"**。 如果将 **apply** 特性设置为 " **否** "，则将替代程序集以前的 **"是"** 设置。  
   
  若要让应用程序使用 [\<publisherPolicy apply="no"/>](publisherpolicy-element.md) 应用程序配置文件中的元素显式忽略发行者策略，则需要权限。 通过在上设置标志来授予权限 <xref:System.Security.Permissions.SecurityPermissionFlag> <xref:System.Security.Permissions.SecurityPermission> 。 有关详细信息，请参阅 [程序集绑定重定向安全权限](../../assembly-binding-redirection-security-permission.md)。  
   

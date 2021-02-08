@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <TypeInstantiation> 元素 ( .NET Native) '
 title: <TypeInstantiation>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
-ms.openlocfilehash: a1db497762b3dc8c135154086d72fb3ac92ff5a4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8939767e016283ea525fbd74554fe30b1cca952a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801925"
 ---
 # <a name="typeinstantiation-element-net-native"></a>\<TypeInstantiation>元素 (.NET Native)
 
@@ -36,7 +37,7 @@ ms.locfileid: "96250744"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 指定类型名称。|  
 |`Arguments`|常规|必需的特性。 指定泛型类型参数。 如果存在多个自变量，它们之间用逗号分割。|  
@@ -53,25 +54,25 @@ ms.locfileid: "96250744"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |type_name|类型名称。 如果此 `<TypeInstantiation>` 元素是 [\<Namespace>](namespace-element-net-native.md) 元素、元素或另一个元素的子元素，则 [\<Type>](type-element-net-native.md) `<TypeInstantiation>` *type_name* 可以指定该类型的名称，而无需命名空间。 否则，type_name 必须包含完全限定的类型名称。 该类型名称没有经过修饰。 例如，对于一个 <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> 对象，`<TypeInstantiation>` 元素可能显示如下：<br /><br /> `\<TypeInstantiation Name=System.Collections.Generic.List Dynamic="Required Public" />`|  
   
 ## <a name="arguments-attribute"></a>自变量特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |type_argument|指定泛型类型参数。 如果存在多个自变量，它们之间用逗号分割。 每个自变量必须包含一个完全限定的类型名称。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这个构造泛型类型的策略类型。 可能值为 `All`、`Auto`、`Excluded`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Event>](event-element-net-native.md)|将反射策略应用到属于这种类型的一个事件。|  
 |[\<Field>](field-element-net-native.md)|将反射策略应用到属于这种类型的一个字段。|  
@@ -84,7 +85,7 @@ ms.locfileid: "96250744"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Application>](application-element-net-native.md)|作为应用程序范围内的类型和元数据可以反应在运行时间的类型成员的容器而服务。|  
 |[\<Assembly>](assembly-element-net-native.md)|将反射策略应用到指定程序集中的所有类型。|  
@@ -118,7 +119,7 @@ ms.locfileid: "96250744"
 </Directives>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时指令 (rd.xml) 配置文件引用](runtime-directives-rd-xml-configuration-file-reference.md)
 - [运行时指令元素](runtime-directive-elements.md)

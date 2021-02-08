@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorGCReferenceType 枚举
 title: CorGCReferenceType 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d9f16439-5a36-4474-8ffd-4f0b2c2bb686
 topic_type:
 - apiref
-ms.openlocfilehash: e2903637faa11a3c0a62080cc6fafcf1fc668a56
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a1f534f9fe4b9ba4ede0bef94f35cf1688fe1817
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801509"
 ---
 # <a name="corgcreferencetype-enumeration"></a>CorGCReferenceType 枚举
 
@@ -49,7 +50,7 @@ typedef enum {
   
 ## <a name="members"></a>成员  
   
-|成员名称|说明|  
+|成员名称|描述|  
 |-----------------|-----------------|  
 |`CorHandleStrong`|来自对象句柄表的强引用的句柄。|  
 |`CorHandleStrongPinning`|来自对象句柄表的固定强引用的句柄。|  
@@ -65,7 +66,7 @@ typedef enum {
 |`CorHandleWeakOnly`|仅返回句柄表中的弱引用。 此值仅由 [ICorDebugProcess5：： EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) 方法使用。|  
 |`CorHandleAll`|返回句柄表中的所有引用。 此值仅由 [ICorDebugProcess5：： EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) 方法使用。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CorGCReferenceType`枚举的使用方式如下：  
   
@@ -83,6 +84,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)

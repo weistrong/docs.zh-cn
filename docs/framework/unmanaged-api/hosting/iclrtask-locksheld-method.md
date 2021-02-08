@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTask：： LocksHeld 方法
 title: ICLRTask::LocksHeld 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e88a4dc3-02cc-4703-a474-292b71c40657
 topic_type:
 - apiref
-ms.openlocfilehash: 755dfed4107a602390a4402a2dde83e08986b623
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5dff0b2a80594e03d61d50c6d9fa52bb12bb42f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799521"
 ---
 # <a name="iclrtasklocksheld-method"></a>ICLRTask::LocksHeld 方法
 
@@ -60,7 +61,7 @@ HRESULT LocksHeld (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

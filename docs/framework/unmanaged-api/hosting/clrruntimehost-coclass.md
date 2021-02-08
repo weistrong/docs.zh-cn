@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CLRRuntimeHost 组件类
 title: CLRRuntimeHost 组件类
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2ac9cbf5-8a2d-4e4f-8831-0dad8ef0a897
 topic_type:
 - apiref
-ms.openlocfilehash: 7c77cb2e89cb8fd87bf219780b9460649de19c9d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a371b9b7263f8bb58b5c513de6647320f000beed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799884"
 ---
 # <a name="clrruntimehost-coclass"></a>CLRRuntimeHost 组件类
 
@@ -51,6 +52,6 @@ coclass CLRRuntimeHost {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载组件类](hosting-coclasses.md)

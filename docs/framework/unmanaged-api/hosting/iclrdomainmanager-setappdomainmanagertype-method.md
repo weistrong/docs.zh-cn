@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDomainManager：： SetAppDomainManagerType 方法
 title: ICLRDomainManager::SetAppDomainManagerType 方法
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - SetAppDomainManagerType method, ICLRDomainManager interface [.NET Framework hosting]
 - ICLRDomainManager::SetAppDomainManagerType method [.NET Framework hosting]
 ms.assetid: ee91abb0-cb74-41dd-927b-e117fb8ffdf4
-ms.openlocfilehash: 7c6b328793e6437682ad8d642e611be30e7b0fe6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 479e6596982d21c4e9ae445a7d4453235dbef729
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799754"
 ---
 # <a name="iclrdomainmanagersetappdomainmanagertype-method"></a>ICLRDomainManager::SetAppDomainManagerType 方法
 
@@ -54,7 +55,7 @@ HRESULT SetAppDomainManagerType(
 |S_OK|该方法已成功完成。|  
 |HOST_E_CLRNOTAVAILABLE| (CLR) 的公共语言运行时未加载到进程中，或 CLR 处于无法运行托管代码或成功处理调用的状态。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  目前，的唯一定义的值 `dwInitializeDomainFlags` 为 `eInitializeNewDomainFlags_NoSecurityChanges` ，它指示公共语言运行时 (CLR) 应用程序域管理器在执行方法期间将不会修改安全设置 <xref:System.AppDomainManager.InitializeNewDomain%2A?displayProperty=nameWithType> 。 这允许 CLR 优化加载具有条件 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 特性的程序集。 如果这组程序集的可传递闭包很大，则这可能会显著提高启动时间。  
   
@@ -73,7 +74,7 @@ HRESULT SetAppDomainManagerType(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载](index.md)
 - [ICLRDomainManager 接口](iclrdomainmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugChainReason 枚举
 title: CorDebugChainReason 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c915da51-50b2-41df-841a-2b971f4d0975
 topic_type:
 - apiref
-ms.openlocfilehash: 6185c5dda69a0cf7e9847ddc021448612a426b19
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 18b6ac9c50c3a44a77a0f63a680b84c70e667e9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801743"
 ---
 # <a name="cordebugchainreason-enumeration"></a>CorDebugChainReason 枚举
 
@@ -63,7 +64,7 @@ typedef enum CorDebugChainReason {
 |`CHAIN_CONTEXT_SWITCH`|未使用。|  
 |`CHAIN_FUNC_EVAL`|由函数求值启动该链。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  使用 [ICorDebugChain：： GetReason](icordebugchain-getreason-method.md) 方法来确定启动调用链的原因。  
   
@@ -77,6 +78,6 @@ typedef enum CorDebugChainReason {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)

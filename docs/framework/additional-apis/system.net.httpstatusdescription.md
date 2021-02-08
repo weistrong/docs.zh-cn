@@ -1,5 +1,6 @@
 ---
-title: HttpStatusDescription 类（System.Net）
+description: 了解详细信息： HttpStatusDescription 类
+title: 'HttpStatusDescription 类 (System.Net) '
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
 topic_type:
@@ -11,16 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 0214d8259c735de11abe204680d619a7298466de
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: fa135a6421397ce6b7be2af05d66aa8e81beafb7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802497"
 ---
 # <a name="httpstatusdescription-class"></a>HttpStatusDescription 类
 
-提供标准 HTTP 状态说明。 无法继承此类。
+提供标准 HTTP 状态说明。 此类不能被继承。
 
 ```csharp
 internal static class HttpStatusDescription
@@ -55,4 +56,4 @@ HTTP 状态说明。
 
 **命名空间：** <xref:System.Net>
 
-**程序集：** 系统（System.dll）
+**程序集：** System.dll 中的系统 () 

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ClrCreateManagedInstance 函数
 title: ClrCreateManagedInstance 函数
 ms.date: 03/30/2017
 api_name:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 58ba42c0-4857-43bf-a039-73a4dc6544c2
 topic_type:
 - apiref
-ms.openlocfilehash: 9aed79138499f1aa7b6fa3a28ad4505edd51b041
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b6d3b014f54dd563e53cd8a4c48907d01945015f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799923"
 ---
 # <a name="clrcreatemanagedinstance-function"></a>ClrCreateManagedInstance 函数
 
@@ -52,7 +53,7 @@ STDAPI ClrCreateManagedInstance (
  `ppObject`  
  弄指向调用方请求的托管类型实例的指针的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  公共语言运行时应已加载到进程中。 例如，在调用函数之前，可以使用对 [CorBindToRuntimeEx](corbindtoruntimeex-function.md) 函数的调用来加载该 `ClrCreateManagedInstance` 函数。 如果未加载运行时，则 `ClrCreateManagedInstance` 首先尝试加载运行时的 v v1.0.3705。 如果失败，它将尝试加载最新版本的运行时。  
   
@@ -66,7 +67,7 @@ STDAPI ClrCreateManagedInstance (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [弃用的 CLR 承载函数](deprecated-clr-hosting-functions.md)
 - [承载](index.md)

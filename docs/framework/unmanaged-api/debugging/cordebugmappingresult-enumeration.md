@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugMappingResult 枚举
 title: CorDebugMappingResult 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 701281dd-2936-45c8-a1f0-3bf7332b093b
 topic_type:
 - apiref
-ms.openlocfilehash: 0e7afa386af1bd2eebc2b58592d01b764660248f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 03454e2fbfa8fabca89805ea51a6cfba27aa792f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704690"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801587"
 ---
 # <a name="cordebugmappingresult-enumeration"></a>CorDebugMappingResult 枚举
 
@@ -49,7 +50,7 @@ typedef enum CorDebugMappingResult {
 |`MAPPING_EXACT`|方法完全映射到 MSIL 代码或已解释帧，因此 IP 的值是准确的。|  
 |`MAPPING_APPROXIMATE`|已成功映射方法，但 IP 的值可能是近似的。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  可以使用 [ICorDebugILFrame：： GetIP](icordebugilframe-getip-method.md) 方法获取指令指针的值。  
   
@@ -63,6 +64,6 @@ typedef enum CorDebugMappingResult {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)

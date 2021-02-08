@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_ARRAY_LAYOUT 结构
 title: COR_ARRAY_LAYOUT 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa20ac3d-6f60-4aa2-91c5-f3a86f82eba8
 topic_type:
 - apiref
-ms.openlocfilehash: 2ca6c89a671c4d7882e7cefdb820d07ac5636530
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dfd9f503356b65d0a85cb3a8f108409dc6aea011
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727401"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801821"
 ---
 # <a name="cor_array_layout-structure"></a>COR_ARRAY_LAYOUT 结构
 
@@ -53,7 +54,7 @@ typedef struct COR_ARRAY_LAYOUT {
 |`numRanks`|数组中的通道数。|  
 |`rankOffset`|排名开始处的偏移量。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `rankSize`字段指定多维数组中排名的大小。 它对于一维数组也是准确的。  
   
@@ -69,7 +70,7 @@ typedef struct COR_ARRAY_LAYOUT {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

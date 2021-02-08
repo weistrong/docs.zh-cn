@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <message> 信息： <basicHttpBinding>
 title: <message> 的 <basicHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
-ms.openlocfilehash: 8b1e889efc53d0132368111037399ea8872008b1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 738d782aaac06366eec324b091cbda815a3ff98f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802146"
 ---
 # <a name="message-of-basichttpbinding"></a>\<message> 的 \<basicHttpBinding>
 
@@ -34,10 +35,10 @@ ms.locfileid: "91204861"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |algorithmSuite|设置消息加密和密钥包装算法。 此属性类型为 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>，用于指定算法和密钥大小。 这些算法与“安全策略语言”(WS-SecurityPolicy) 规范中指定的算法一致。<br /><br /> 默认值是 `Basic256`。|  
-|clientCredentialType|指定要在使用基于消息的安全性执行客户端身份验证时使用的凭据类型。 默认为 `UserName`。|  
+|clientCredentialType|指定要在使用基于消息的安全性执行客户端身份验证时使用的凭据类型。 默认值为 `UserName`。|  
   
 ## <a name="clientcredentialtype-attribute"></a>clientCredentialType 属性  
   
@@ -52,7 +53,7 @@ ms.locfileid: "91204861"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-basichttpbinding.md)|定义的安全功能 [\<basicHttpBinding>](basichttpbinding.md) 。|  
   

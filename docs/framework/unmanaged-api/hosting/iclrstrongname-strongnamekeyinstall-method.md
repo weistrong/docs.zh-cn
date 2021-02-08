@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRStrongName：： StrongNameKeyInstall 方法
 title: ICLRStrongName::StrongNameKeyInstall 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5c15cf3b-164c-49d1-8e57-e42949d55acf
 topic_type:
 - apiref
-ms.openlocfilehash: 7e0c689dad0c288e3af3a3d64ee1bba1c44053c1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8f9e7bfebff555a6430a3970c8ee1c481e341f58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674523"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799507"
 ---
 # <a name="iclrstrongnamestrongnamekeyinstall-method"></a>ICLRStrongName::StrongNameKeyInstall 方法
 
@@ -51,7 +52,7 @@ HRESULT StrongNameKeyInstall (
 
  `S_OK` 如果该方法已成功完成，则为;否则，表示失败的 HRESULT 值 (参阅) 列表的 [常见 HRESULT 值](/windows/win32/seccrypto/common-hresult-values) 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  使用 [ICLRStrongName：： StrongNameKeyDelete](iclrstrongname-strongnamekeydelete-method.md) 方法删除密钥容器。  
   
@@ -65,7 +66,7 @@ HRESULT StrongNameKeyInstall (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameKeyDelete 方法](iclrstrongname-strongnamekeydelete-method.md)
 - [ICLRStrongName 接口](iclrstrongname-interface.md)

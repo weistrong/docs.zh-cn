@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <ThrowUnobservedTaskExceptions> 元素
 title: <ThrowUnobservedTaskExceptions> 元素
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ThrowUnobservedTaskExceptions element
 - <ThrowUnobservedTaskExceptions> element
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
-ms.openlocfilehash: 012c2e70e66015bc317606a7eea07812b5df26e7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 53f3f1275ea8419bed52fd73726c043e1c49eed7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802393"
 ---
 # <a name="throwunobservedtaskexceptions-element"></a>\<ThrowUnobservedTaskExceptions> 元素
 
@@ -42,7 +43,7 @@ ms.locfileid: "91183918"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`false`|对于未处理的任务异常，不会终止正在运行的进程。 这是默认设置。|  
 |`true`|终止正在运行的进程的未处理任务异常。|  
@@ -53,7 +54,7 @@ ms.locfileid: "91183918"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关运行时初始化选项的信息。|  
@@ -73,7 +74,7 @@ ms.locfileid: "91183918"
   
 - 通过设置环境变量 `COMPlus_ThrowUnobservedTaskExceptions` (`set COMPlus_ThrowUnobservedTaskExceptions=1`) 。  
   
-- 通过在 HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft 中设置注册表 DWORD 值 ThrowUnobservedTaskExceptions = 1 \\ 。.Netframework 键。  
+- 通过在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft中设置注册表 DWORD 值 ThrowUnobservedTaskExceptions = 1 \\ 。.Netframework 键。  
   
 ## <a name="example"></a>示例  
 

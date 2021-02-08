@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTask2：： EndPreventAsyncAbort 方法
 title: ICLRTask2::EndPreventAsyncAbort 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d8013659-e3df-44b3-814f-a6b534ce62f8
 topic_type:
 - apiref
-ms.openlocfilehash: 7f8963403c60815bbf1cd3008ed7fec73d849fea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 964a68c1ad6d5aa6a95560d2870e135640283590
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720251"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799494"
 ---
 # <a name="iclrtask2endpreventasyncabort-method"></a>ICLRTask2::EndPreventAsyncAbort 方法
 
@@ -41,7 +42,7 @@ HRESULT EndPreventAsyncAbort();
 |S_OK|该方法已成功完成。|  
 |HOST_E_INVALIDOPERATION|在不是当前线程的线程上调用了方法。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用此方法会将当前线程的延迟线程中止计数器减一。  
   
@@ -59,7 +60,7 @@ HRESULT EndPreventAsyncAbort();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [BeginPreventAsyncAbort 方法](iclrtask2-beginpreventasyncabort-method.md)
 - [ICLRTask2 接口](iclrtask2-interface.md)

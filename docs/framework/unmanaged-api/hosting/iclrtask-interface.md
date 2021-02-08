@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTask 接口
 title: ICLRTask 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b3a44df3-578a-4451-b55e-70c8e7695f5e
 topic_type:
 - apiref
-ms.openlocfilehash: 5ecc42950775a620796a1c775e5f088f461a12c3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f48216b19dd2c1d0d0ba64117169b74767dbdf2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690819"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799522"
 ---
 # <a name="iclrtask-interface"></a>ICLRTask 接口
 
@@ -41,7 +42,7 @@ ms.locfileid: "95690819"
 |[SwitchOut 方法](iclrtask-switchout-method.md)|通知 CLR 由当前实例表示的任务 `ICLRTask` 不再处于可使用状态。|  
 |[YieldTask 方法](iclrtask-yieldtask-method.md)|请求 CLR 使处理器时间可供其他任务使用。 CLR 不保证任务将处于可产生处理时间的状态。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICLRTask`是 CLR 任务的表示形式。 在代码执行过程中的任意时刻，都可以将任务描述为正在运行或等待运行。 宿主调用 `ICLRTask::SwitchIn` 方法，以通知 CLR 当前实例所表示的任务 `ICLRTask` 现在处于可使用状态。 调用后 `ICLRTask::SwitchIn` ，宿主可以在任何操作系统线程上计划任务，但运行时需要线程关联的情况除外，这是由对 [IHostTaskManager：： BeginThreadAffinity](ihosttaskmanager-beginthreadaffinity-method.md) 和 [IHostTaskManager：： EndThreadAffinity](ihosttaskmanager-endthreadaffinity-method.md) 方法的调用指定的。 稍后，操作系统可能决定从线程中删除任务并将其置于非运行状态。 例如，每当任务阻止同步基元或等待 i/o 操作完成时，就会发生这种情况。 主机调用 [SwitchOut](iclrtask-switchout-method.md) 来通知 CLR 当前实例所表示的任务 `ICLRTask` 不再处于可使用状态。  
   
@@ -57,7 +58,7 @@ ms.locfileid: "95690819"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)
 - [IHostTask 接口](ihosttask-interface.md)

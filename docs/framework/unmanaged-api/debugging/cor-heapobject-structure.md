@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_HEAPOBJECT 结构
 title: COR_HEAPOBJECT 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a92fdf95-492b-49ae-a741-2186e5c1d7c5
 topic_type:
 - apiref
-ms.openlocfilehash: 54af02b48dabdf2042763954805f0d454323ac89
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f41e02e7c528063f4b7ed485cbadbabb4d3e5ca7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726361"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801795"
 ---
 # <a name="cor_heapobject-structure"></a>COR_HEAPOBJECT 结构
 
@@ -43,7 +44,7 @@ typedef struct _COR_HEAPOBJECT {
 |`size`|对象的总大小（以字节为单位）。|  
 |`type`|表示对象类型的 [COR_TYPEID](cor-typeid-structure.md) 标记。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `COR_HEAPOBJECT`可以通过枚举通过调用[ICorDebugProcess5：： EnumerateHeap](icordebugprocess5-enumerateheap-method.md)方法填充的[ICorDebugHeapEnum](icordebugheapenum-interface.md)接口对象来检索实例。  
   
@@ -65,7 +66,7 @@ typedef struct _COR_HEAPOBJECT {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <behavior> 信息： <endpointBehaviors>
 title: <behavior> 的 <endpointBehaviors>
 ms.date: 03/30/2017
 ms.assetid: b90ca3bc-3c22-4174-b903-e3a39898bd27
-ms.openlocfilehash: d191b968e1c3fd1db0837ba7e03f210a1b00062d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a72bb69cce96d72cdc00d48546244bdcde20271f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802328"
 ---
 # <a name="behavior-of-endpointbehaviors"></a>\<behavior> 的 \<endpointBehaviors>
 
@@ -43,7 +44,7 @@ ms.locfileid: "91201494"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|指定用于向服务验证客户端身份的凭据。|  
 |[\<callbackDebug>](callbackdebug.md)|指定 Windows Communication Foundation (WCF) 回调对象的服务调试。|  
@@ -60,6 +61,6 @@ ms.locfileid: "91201494"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<endpointBehaviors>](endpointbehaviors.md)|终结点行为元素的集合。|

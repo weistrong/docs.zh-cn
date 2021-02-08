@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugThread4：： GetBlockingObjects 方法
 title: ICorDebugThread4::GetBlockingObjects 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a7e6c54e-7be9-4e52-bbb4-95f52458e8e4
 topic_type:
 - apiref
-ms.openlocfilehash: eb8692aebe7b702b5778b3f13e496d81dcd45784
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6a60ebe6f5f6dac93dcb11dad7658aba9c934329
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800950"
 ---
 # <a name="icordebugthread4getblockingobjects-method"></a>ICorDebugThread4::GetBlockingObjects 方法
 
@@ -38,7 +39,7 @@ HRESULT GetBlockingObjects (
  `ppBlockingObjectEnum`  
  弄指向 [CorDebugBlockingObject](cordebugblockingobject-structure.md) 结构的有序枚举的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  返回的枚举中的第一个元素对应于阻塞线程的第一个结构。 第二个元素对应于在第一次阻塞时 (APC) 运行异步过程调用时遇到的阻塞项，依此类推。  
   
@@ -60,7 +61,7 @@ HRESULT GetBlockingObjects (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugThread4 接口](icordebugthread4-interface.md)
 - [调试接口](debugging-interfaces.md)

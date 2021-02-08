@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugVariableSymbol：： SetValue 方法
 title: ICorDebugVariableSymbol::SetValue 方法
 ms.date: 03/30/2017
 ms.assetid: 4609418d-71fa-44bc-9618-4d529d25cabb
-ms.openlocfilehash: 3ef9b9b9a095d6d6026ffc38873661355d660488
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa36712defcf44039f17fe846113c15814549e09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800846"
 ---
 # <a name="icordebugvariablesymbolsetvalue-method"></a>ICorDebugVariableSymbol::SetValue 方法
 
@@ -46,7 +47,7 @@ HRESULT SetValue(
  `pValue`  
  [in] 包含要设置的值的缓冲区。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -61,7 +62,7 @@ HRESULT SetValue(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugVariableSymbol 接口](icordebugvariablesymbol-interface.md)
 - [调试接口](debugging-interfaces.md)

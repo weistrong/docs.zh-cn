@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedReader：： GetDocumentVersion 方法
 title: ISymUnmanagedReader::GetDocumentVersion 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a51f1f64-e084-44c5-830c-2222da5a6bbf
 topic_type:
 - apiref
-ms.openlocfilehash: fc38c167b47ea72c7bc7ad81074f9cb1a0d217d8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e6877a10f0c285186330b320c9b614939f4d9e3f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800196"
 ---
 # <a name="isymunmanagedreadergetdocumentversion-method"></a>ISymUnmanagedReader::GetDocumentVersion 方法
 
@@ -54,6 +55,6 @@ HRESULT GetDocumentVersion (
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedReader 接口](isymunmanagedreader-interface.md)

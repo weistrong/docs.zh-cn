@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugModuleDebugEvent 接口
 title: ICorDebugModuleDebugEvent 接口
 ms.date: 03/30/2017
 ms.assetid: 41950c52-1ac8-4212-b814-c77e20879f91
-ms.openlocfilehash: 62d419a193cff000e1dd748d0cbb6b61775a81aa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0c2d43d7b04caeea0407ede23f0df6e278d60c92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801028"
 ---
 # <a name="icordebugmoduledebugevent-interface"></a>ICorDebugModuleDebugEvent 接口
 
@@ -19,7 +20,7 @@ ms.locfileid: "95695811"
 |------------|-----------------|  
 |[GetModule 方法](icordebugmoduledebugevent-getmodule-method.md)|获取刚加载或卸载的合并模块。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [MODULE_LOADED](cordebugdebugeventkind-enumeration.md)和[MODULE_UNLOADED](cordebugdebugeventkind-enumeration.md)事件类型实现此接口。  
   
@@ -36,7 +37,7 @@ ms.locfileid: "95695811"
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

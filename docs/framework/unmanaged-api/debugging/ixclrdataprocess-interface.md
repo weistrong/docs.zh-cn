@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IXCLRDataProcess 接口
 title: IXCLRDataProcess 接口
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 376ec2b840bc17c79ed1f27c17a8ddd22c37a0f4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b611491e5c9a5957c07a305a3f395b67ad208649
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800638"
 ---
 # <a name="ixclrdataprocess-interface"></a>IXCLRDataProcess 接口
 
@@ -30,7 +31,7 @@ ms.locfileid: "96245336"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                                                                                                               | 描述                                                                                     |
+| 方法                                                                                                                                               | 说明                                                                                     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | [GetRuntimeNameByAddress](ixclrdataprocess-getruntimenamebyaddress-method.md)                     | 获取给定地址的名称。                                                               |
 | [GetAppDomainByUniqueId](ixclrdataprocess-getappdomainbyuniqueid-method.md)                       | `AppDomain`按其唯一 id 在进程中获取。                                              |
@@ -52,7 +53,7 @@ ms.locfileid: "96245336"
 **库：** 内容  
 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试](index.md)
 - [调试接口](debugging-interfaces.md)

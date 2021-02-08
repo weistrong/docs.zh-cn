@@ -1,13 +1,14 @@
 ---
+description: 详细了解： <message> 的元素 <wsFederationHttpBinding>
 title: <message> 的元素 <wsFederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec
-ms.openlocfilehash: ea320b1d97e742d4f90ec55502f3bd429803283d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 64978902081ec9e5a603804fed3b378da12fe42e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802185"
 ---
 # <a name="message-element-of-wsfederationhttpbinding"></a>\<message> 的元素 \<wsFederationHttpBinding>
 
@@ -87,16 +88,16 @@ ms.locfileid: "91204887"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |algorithmSuite|设置消息加密和密钥包装算法。 有关此属性的有效值，请参见“algorithmSuite 属性”表。 默认值是 `Basic256`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>。 这些算法与“安全策略语言”(WS-SecurityPolicy) 规范中指定的算法一致。|  
-|issuedKeyType|指定要颁发的密钥类型。 有效值包括以下值：<br /><br /> -SymmetricKey<br />-PublicKey<br /><br /> 默认为 `SymmetricKey`。 此属性的类型为 <xref:System.IdentityModel.Tokens.SecurityKeyType>。|  
-|issuedTokenType|一个字符串，它所包含的 URI 指定要颁发的令牌的类型。 默认为 `null`。|  
+|issuedKeyType|指定要颁发的密钥类型。 有效值包括以下值：<br /><br /> -SymmetricKey<br />-PublicKey<br /><br /> 默认值为 `SymmetricKey`。 此属性的类型为 <xref:System.IdentityModel.Tokens.SecurityKeyType>。|  
+|issuedTokenType|一个字符串，它所包含的 URI 指定要颁发的令牌的类型。 默认值为 `null`。|  
 |negotiateServiceCredential|一个布尔值，指定是否应在协商过程中交换服务凭据，或者是否可在带外使用服务凭据。 默认值为 `true`，这意味着对服务凭据进行协商。|  
   
 ## <a name="algorithmsuite-attribute"></a>algorithmSuite 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |Basic128|使用 Basic128 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
 |Basic192|使用 Basic192 加密，对消息摘要使用 Sha1，对密钥包装使用 Rsa-oaep-mgf1p。|  
@@ -117,7 +118,7 @@ ms.locfileid: "91204887"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](claimtyperequirements-element.md)|指定此绑定的声明类型集合。 每个元素的类型都为 <xref:System.ServiceModel.Configuration.ClaimTypeElement>。|  
 |颁发者|指定颁发安全令牌的终结点。 此元素的类型为 <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>。|  
@@ -126,7 +127,7 @@ ms.locfileid: "91204887"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-wsfederationhttpbinding.md)|定义绑定的安全设置。|  
   

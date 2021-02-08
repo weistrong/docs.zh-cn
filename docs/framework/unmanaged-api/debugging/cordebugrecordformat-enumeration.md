@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorDebugRecordFormat 枚举
 title: “Cor调试记录格式”枚举
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: d680c1c0-16ab-4ccc-9444-39cf8e0e05ee
 topic_type:
 - apiref
-ms.openlocfilehash: b3a22d7b32eb258263d373ae91b3fb7fbc9aae99
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 856522497a8f858abdb39ac232fb3034d4d91dfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801561"
 ---
 # <a name="cordebugrecordformat-enumeration"></a>“Cor调试记录格式”枚举
 
@@ -37,7 +38,7 @@ typedef enum CorDebugRecordFormat {
 |`FORMAT_WINDOWS_EXCEPTIONRECORD32`|数据为 32 位 Windows 异常记录。|  
 |`FORMAT_WINDOWS_EXCEPTIONRECORD64`|数据为 64 位 Windows 异常记录。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  枚举的成员 `CorDebugRecordFormat` 将传递给 [DecodeEvent](icordebugprocess6-decodeevent-method.md) 方法，以便在其参数中指示字节数组的格式 `pRecord` 。  
   
@@ -54,6 +55,6 @@ typedef enum CorDebugRecordFormat {
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)

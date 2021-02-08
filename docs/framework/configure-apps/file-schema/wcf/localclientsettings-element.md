@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <localClientSettings> 元素
 title: <localClientSettings> 元素
 ms.date: 03/30/2017
 ms.assetid: 4680ace5-f4e1-4fcb-b9d8-a4a4af5cd7ae
-ms.openlocfilehash: 19eaea71fdaad1b945524cca5cf15634e0b0fa14
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6393a460b5a58ab9bf7933df8643df3530da5f14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158729"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802211"
 ---
 # <a name="localclientsettings-element"></a>\<localClientSettings> 元素
 
@@ -45,11 +46,11 @@ ms.locfileid: "91158729"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|`cacheCookies`|一个布尔值，指定是否启用 Cookie 缓存。 默认为 `false`。|  
+|`cacheCookies`|一个布尔值，指定是否启用 Cookie 缓存。 默认值为 `false`。|  
 |`cookieRenewalThresholdPercentage`|一个整数，指定可续订的最大 Cookie 百分比。 该值应介于 0 至 100 之间（包括这两个数）。 默认值为 90。|  
-|`detectReplays`|一个布尔值，指定是否自动检测和处理针对通道的重放攻击。 默认为 `false`。|  
+|`detectReplays`|一个布尔值，指定是否自动检测和处理针对通道的重放攻击。 默认值为 `false`。|  
 |`maxClockSkew`|一个 <xref:System.TimeSpan>，指定通信双方的系统时钟之间的最大时间差异。 默认值为“00:05:00”。<br /><br /> 当此值被设置为默认值时，接收方所接受的消息的发送时间时间戳最多可比消息接收时间晚或早 5 分钟。 未通过发送时间测试的消息会被拒绝。 此设置与 `replayWindow` 属性结合使用。|  
 |`maxCookieCachingTime`|一个 <xref:System.TimeSpan>，指定 Cookie 的最长生存期。 默认值为“10675199.02:48:05.4775807”。|  
 |`reconnectTransportOnFailure`|一个布尔值，指定使用 WS-ReliableMessaging 的连接是否将在传输失败后尝试重新连接。 默认值为 `true`，表示将进行无限次重新连接尝试。 非活动超时能够打断此循环；非活动超时在无法重新连接通道时使其引发异常。|  
@@ -65,7 +66,7 @@ ms.locfileid: "91158729"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-custombinding.md)|指定自定义绑定的安全选项。|  
 |[\<secureConversationBootstrap>](secureconversationbootstrap.md)|指定用于启动安全对话服务的默认值。|  

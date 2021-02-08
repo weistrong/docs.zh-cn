@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorSymSearchPolicyAttributes 枚举
 title: CorSymSearchPolicyAttributes 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 03abde84-930a-49d3-bac3-23abb34a0184
 topic_type:
 - apiref
-ms.openlocfilehash: 2d5d19fb3fb7c727227827dacbaac2c910ac8b3c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a9af0e96809ec8eba5c03c2e372e818c74914baf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800469"
 ---
 # <a name="corsymsearchpolicyattributes-enumeration"></a>CorSymSearchPolicyAttributes 枚举
 
@@ -53,6 +54,6 @@ typedef enum CorSymSearchPolicyAttributes
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [诊断符号存储区枚举](diagnostics-symbol-store-enumerations.md)

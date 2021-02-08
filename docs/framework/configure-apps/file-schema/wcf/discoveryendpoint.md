@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <discoveryEndpoint>
 title: <discoveryEndpoint>
 ms.date: 03/30/2017
 ms.assetid: fae2f48b-a635-4e4b-859d-a1432ac37e1c
-ms.openlocfilehash: 32b14f8fb3235040a51455f2099a403c8312c699
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 32be673aac9604d8285d002640f11a29b9545afb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855396"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802302"
 ---
 # \<discoveryEndpoint>
 
@@ -52,7 +53,7 @@ ms.locfileid: "70855396"
   
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |  
+| 元素 | 说明 |  
 | ------- | ----------- |  
 | [\<standardEndpoints>](standardendpoints.md) | 具有一个或多个固定属性（地址、绑定和协定）的预定义终结点的标准终结点集合。 |  
   
@@ -85,6 +86,6 @@ ms.locfileid: "70855396"
 </standardEndpoints>
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>

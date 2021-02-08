@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_DEBUG_STEP_RANGE 结构
 title: COR_DEBUG_STEP_RANGE 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8809d00e-beaa-4dcf-b4e8-e89d0a5406b7
 topic_type:
 - apiref
-ms.openlocfilehash: cd85ba2e6a907ff9546614e02b4da5f45e74b924
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 40462be4b165351b3265fa0833d19f18e0fa3a37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801834"
 ---
 # <a name="cor_debug_step_range-structure"></a>COR_DEBUG_STEP_RANGE 结构
 
@@ -53,7 +54,7 @@ typedef struct {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StepRange 方法](icordebugstepper-steprange-method.md)
 - [调试结构](debugging-structures.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IDENTITY_ATTRIBUTE 结构
 title: IDENTITY_ATTRIBUTE 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1ee7c434-9681-4fa8-badd-652cb1a9742b
 topic_type:
 - apiref
-ms.openlocfilehash: da4b1d6f2a7079ef33859fce29c9555ac06fcfc2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 52610961ab202fc79351073eac1846a1a63889e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800170"
 ---
 # <a name="identity_attribute-structure"></a>IDENTITY_ATTRIBUTE 结构
 
@@ -43,7 +44,7 @@ typedef struct _IDENTITY_ATTRIBUTE {
 |`pszName`|指向以 null 结尾的字符串的指针，该字符串包含属性的名称。|  
 |`pszValue`|指向以 null 结尾的字符串的指针，该字符串包含属性的值。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  该 `IDENTITY_ATTRIBUTE` 结构包含三个指向以 null 结尾的字符串的指针。 这三个字符串描述了一个属性。  
   
@@ -57,7 +58,7 @@ typedef struct _IDENTITY_ATTRIBUTE {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IDefinitionIdentity 接口](idefinitionidentity-interface.md)
 - [IDENTITY_ATTRIBUTE_BLOB 结构](identity-attribute-blob-structure.md)

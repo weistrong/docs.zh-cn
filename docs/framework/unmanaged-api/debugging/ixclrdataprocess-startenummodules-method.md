@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IXCLRDataProcess：： StartEnumModules 方法
 title: IXCLRDataProcess：： StartEnumModules 方法
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: d55b07ea3fada73237919bf677163a9096d5ad04
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 2e90c646ee8815ec10ce0bbd7538f13d7b5dcf8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420716"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800573"
 ---
 # <a name="ixclrdataprocessstartenummodules-method"></a>IXCLRDataProcess：： StartEnumModules 方法
 
@@ -47,12 +48,12 @@ HRESULT StartEnumModules(
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。  
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。  
 **标头：** 内容  
 **库：** 内容  
 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CLRDataSourceType 枚举](clrdatasourcetype-enumeration.md)
 - [调试](index.md)

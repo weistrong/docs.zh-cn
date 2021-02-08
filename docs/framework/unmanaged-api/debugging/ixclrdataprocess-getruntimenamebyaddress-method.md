@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IXCLRDataProcess：： GetRuntimeNameByAddress 方法
 title: IXCLRDataProcess：： GetRuntimeNameByAddress 方法
 ms.date: 4/27/2020
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: tommcdon
 ms.author: tommcdon
-ms.openlocfilehash: 6648bdafe6e5cdd402bcfa02a148c57f0f1e209e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 62d9ae73c216748cc8eb02aedd41cf19f475d071
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275564"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800651"
 ---
 # <a name="ixclrdataprocessgetruntimenamebyaddress-method"></a>IXCLRDataProcess：： GetRuntimeNameByAddress 方法
 
@@ -75,7 +76,7 @@ HRESULT GetRuntimeNameByAddress(
 **库：** 内容
 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试](index.md)
 - [IXCLRDataProcess 接口](ixclrdataprocess-interface.md)
