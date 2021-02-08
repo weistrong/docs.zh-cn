@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC32126： T) 的 "system.string (的方法不能用作" AddressOf "运算符的操作数
 title: “System.Nullable(Of T)”的方法不能用作“AddressOf”运算符的操作数
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32126
 ms.assetid: 2325668b-e2ad-40ee-a1ec-30450236c20d
-ms.openlocfilehash: 173cf19537e3f9ffc4cff6cef71f34b6d365e5d3
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 5ddf2f11bab3193423a3294a7f96afe68f0e5dce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795789"
 ---
 # <a name="bc32126-methods-of-systemnullableof-t-cannot-be-used-as-operands-of-the-addressof-operator"></a>BC32126：不能将 ") " 的 ("" 的方法用作 "AddressOf" 运算符的操作数
 
@@ -62,7 +63,7 @@ Module Module1
 End Module
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Nullable%601>
 - [AddressOf 运算符](../operators/addressof-operator.md)

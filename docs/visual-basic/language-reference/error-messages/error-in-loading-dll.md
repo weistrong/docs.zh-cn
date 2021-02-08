@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：加载 DLL 时出错 (Visual Basic) '
 title: 加载 DLL 时出错
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID48
 ms.assetid: 4226cd1f-028c-477d-88a5-cb57f7e0cdc8
-ms.openlocfilehash: 35733fe2e20d46207f6cfdaee32f6559fceed6eb
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 098d05e93d328f3667000bd81290f4b77cf7949e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796504"
 ---
 # <a name="error-in-loading-dll-visual-basic"></a>加载 DLL 时出错 (Visual Basic)
 
@@ -33,6 +34,6 @@ ms.locfileid: "90874378"
   
 - 如果 DLL 或被引用的 DLL 不在路径所指定的目录中，则将 DLL 移到引用的目录。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Declare Statement](../statements/declare-statement.md)

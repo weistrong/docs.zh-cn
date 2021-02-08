@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC36593：类型的表达式 <type> 不可查询
 title: 类型 <type> 的表达式不可查询
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36593
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
-ms.openlocfilehash: d605243c213166f20592fdc440a3362f957ebbf2
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: b2fc6c81ee34c1f8e251ac65ba582fde1c6a7b9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163059"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796348"
 ---
 # <a name="bc36593-expression-of-type-type-is-not-queryable"></a>BC36593：类型的表达式 \<type> 不可查询
 
@@ -30,11 +31,11 @@ ms.locfileid: "92163059"
 
 ## <a name="to-correct-this-error"></a>更正此错误
 
-1. 将 `Import` <xref:System.Linq> 、 <xref:System.Data.Linq> 或命名空间的语句添加 <xref:System.Xml.Linq> 到代码文件中。 你还可以使用 "项目设计器 **" ("项目设计**器" 的 "**引用**" 页) 导入项目的命名空间。
+1. 将 `Import` <xref:System.Linq> 、 <xref:System.Data.Linq> 或命名空间的语句添加 <xref:System.Xml.Linq> 到代码文件中。 你还可以使用 "项目设计器 **" ("项目设计** 器" 的 "**引用**" 页) 导入项目的命名空间。
 
 2. 确保已标识为查询源的类型是可查询类型。 即，实现或的类型 <xref:System.Collections.Generic.IEnumerable%601> <xref:System.Linq.IQueryable%601> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Linq>
 - <xref:System.Data.Linq>

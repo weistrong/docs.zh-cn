@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC40056：导入 "" 中指定的命名空间或类型 <qualifiedelementname> 不包含任何公共成员或找不到
 title: Imports“<qualifiedelementname>”中指定的命名空间或类型不包含任何公共成员，或者找不到该命名空间或类型
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40056
 ms.assetid: b59f5754-444f-4378-9272-9678b437e84a
-ms.openlocfilehash: 284a8c71fee8835f78ca5435932819fded1b1f30
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e98ba70660823196e763300cd33ec1ba9a9db3b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160127"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795698"
 ---
 # <a name="bc40056-namespace-or-type-specified-in-the-imports-qualifiedelementname-doesnt-contain-any-public-member-or-cannot-be-found"></a>BC40056：在导入 "" 中指定的命名空间或类型 \<qualifiedelementname> 不包含任何公共成员，或者找不到该命名空间或类型
 
@@ -20,7 +21,7 @@ ms.locfileid: "92160127"
 
 `Imports`语句指定了一个包含元素，该元素无法找到或未定义任何 `Public` 成员。
 
-*包含元素*可以是命名空间、类、结构、模块、接口或枚举。 包含元素包含变量、过程或其他包含元素等成员。
+*包含元素* 可以是命名空间、类、结构、模块、接口或枚举。 包含元素包含变量、过程或其他包含元素等成员。
 
 导入的目的是允许你的代码访问命名空间或类型成员，而无需对其进行限定。 你的项目可能还需要添加对命名空间或类型的引用。 有关详细信息，请参阅对已 [声明元素的引用](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)中的 "导入包含元素"。
 
@@ -46,7 +47,7 @@ Imports behave = winfrm.Design.Behavior`
 
 3. 验证包含元素是否至少公开一个 `Public` 成员。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Imports 语句（.NET 命名空间和类型）](../statements/imports-statement-net-namespace-and-type.md)
 - [Namespace 语句](../statements/namespace-statement.md)

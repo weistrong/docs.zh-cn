@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30205：应为语句结尾
 title: 需要语句结束
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30205
 ms.assetid: 53c7f825-a737-4b76-a1fa-f67745b8bd40
-ms.openlocfilehash: 36883989fe5aa0b5c70aa9ab1f7c991fab99e778
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: a3f309a4674f6de34c0be8abfef31e293a10dec5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796543"
 ---
 # <a name="bc30205-end-of-statement-expected"></a>BC30205：应为语句结尾
 
@@ -28,7 +29,7 @@ ms.locfileid: "92163124"
 
 2. 在完成该语句的元素之后插入一个行结束符。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：在代码中拆分和合并语句](../../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
 - [语句](../../programming-guide/language-features/statements.md)

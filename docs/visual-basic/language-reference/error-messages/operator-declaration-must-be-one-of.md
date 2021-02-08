@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC33000：运算符声明必须是以下之一： +,-, *、、/、^、 &amp; 、Like、Mod、And、Or、Xor、Not、 <<、 >> .。。
 title: 运算符声明必须是以下其中之一： +,-, *,-,-, ^、 &amp; 、Like、Mod、And、Or、Xor、Not、 <<、 >>、=、 <>、<、<=、>、>=、CType、IsTrue、IsFalse
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC33000
 ms.assetid: 15c5d8eb-3a8c-4141-8f41-33151afabf97
-ms.openlocfilehash: a94e62e33427987a302a6244b2b8ce8d295e4f11
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 0ad82a6414387278622a10624952ebc35e7e9b83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795555"
 ---
 # <a name="bc33000-operator-declaration-must-be-one-of----amp-like-mod-and-or-xor-not--"></a>BC33000：运算符声明必须是以下之一： +,-, *、 \, /、^、 &amp; 、Like、Mod、And、Or、Xor、Not、 \<\<, >> .。。
 
@@ -34,7 +35,7 @@ ms.locfileid: "92159893"
 
 - 如果你需要重载无法直接重载的运算符这一功能，请创建用于获取适当参数并返回适当值的 `Function` 过程。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Operator Statement](../statements/operator-statement.md)
 - [运算符过程](../../programming-guide/language-features/procedures/operator-procedures.md)

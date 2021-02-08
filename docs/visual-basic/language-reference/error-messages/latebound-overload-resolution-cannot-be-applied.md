@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC30933：后期绑定重载决策不能应用于 " <procedurename> "，因为访问实例是一个接口类型
 title: 后期绑定重载决策不能应用于“<procedurename>”，因为访问实例是一个接口类型
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - overload resolution [Visual Basic], with late-bound argument
 - BC30933
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
-ms.openlocfilehash: 090ec6f3bbf56350fda2ab15c974b0bc6b15e3d3
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 3002232c953fa21a10de944bc61e2f0c448ae4fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162513"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795906"
 ---
 # <a name="bc30933-latebound-overload-resolution-cannot-be-applied-to-procedurename-because-the-accessing-instance-is-an-interface-type"></a>BC30933：后期绑定重载决策不能应用于 " \<procedurename> "，因为访问实例是一个接口类型
 
@@ -66,7 +67,7 @@ refer.s1(CType(o1, Double))
 
 前面的每个代码行显式将变量强制 `Object` 转换 `o1` 为为重载定义的参数类型之一。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程重载](../../programming-guide/language-features/procedures/procedure-overloading.md)
 - [重载决策](../../programming-guide/language-features/procedures/overload-resolution.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC36532：嵌套函数没有与委托 "" 兼容的签名<delegatename>
 title: 嵌套函数没有与委托“<delegatename>”兼容的签名。
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36532
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829
-ms.openlocfilehash: 0dde340164f1ba80d0e1d9fbb5d17ba6da0a5bc4
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 2220faacdac065718a302ef7b086f99bf1e16cef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795659"
 ---
 # <a name="bc36532-nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-delegatename"></a>BC36532：嵌套函数没有与委托 "" 兼容的签名 \<delegatename>
 
@@ -36,7 +37,7 @@ Delegate Function Del(ByVal p As Integer, ByVal q As Integer) As Integer
 
 调整委托定义或指定的 lambda 表达式，使签名兼容。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [宽松委托转换](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
 - [Lambda 表达式](../../programming-guide/language-features/procedures/lambda-expressions.md)

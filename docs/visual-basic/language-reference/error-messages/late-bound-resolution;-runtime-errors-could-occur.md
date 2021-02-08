@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC42017：晚期绑定解析;可能出现运行时错误
 title: 后期绑定解决方案；可能会发生运行时错误
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42017
 ms.assetid: 45f552c8-57c6-44c0-97d3-e510119b257a
-ms.openlocfilehash: ef0fa295cadaaa0550be4809ec97c6da13b5e2db
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 2c783a7aff46df8ab033463f49c45f4c797220ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160426"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795919"
 ---
 # <a name="bc42017-late-bound-resolution-runtime-errors-could-occur"></a>BC42017：后期绑定解析;可能出现运行时错误
 
@@ -30,7 +31,7 @@ ms.locfileid: "92160426"
 
 - 如果可能，请将变量声明为特定类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [早期绑定和后期绑定](../../programming-guide/language-features/early-late-binding/index.md)
 - [对象变量声明](../../programming-guide/language-features/variables/object-variable-declaration.md)

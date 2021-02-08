@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC33107：二进制 "If" 表达式中的第一个操作数必须可以为 null 或引用类型
 title: 二元“If”表达式中的第一个操作数必须是可以为 null 的类型或引用类型
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC33107
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
-ms.openlocfilehash: bca9b74a68815b4e5a3bb2dc114b9031cdf24099
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 4a0037680e31a8220cb796e6d8f3215139e01b20
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162734"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796244"
 ---
 # <a name="bc33107-first-operand-in-a-binary-if-expression-must-be-nullable-or-a-reference-type"></a>BC33107：二进制 "If" 表达式中的第一个操作数必须可以为 null 或引用类型
 
@@ -54,7 +55,7 @@ Console.WriteLine(If(choice1 < choice2, 1, 2))
 Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [If 运算符](../operators/if-operator.md)
 - [If...Then...Else 语句](../statements/if-then-else-statement.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30957：已禁用函数求值，因为上一个函数求值超时
 title: 已禁用函数求值，因为前一个函数求值超时
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30957
 ms.assetid: 561e593a-f50a-4b72-a708-4cab60ec7b28
-ms.openlocfilehash: 6367553df38a7ccf3b4afbeec877f88fc3d3a1da
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 32e4b460a0334a542d59091bfc0b9a2337fdd089
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160680"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796179"
 ---
 # <a name="bc30957-function-evaluation-is-disabled-because-a-previous-function-evaluation-timed-out"></a>BC30957：已禁用函数求值，因为上一个函数求值超时
 

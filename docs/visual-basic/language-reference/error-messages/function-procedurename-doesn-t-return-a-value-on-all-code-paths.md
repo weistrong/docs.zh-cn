@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC42105：函数 " <procedurename> " 不会在所有代码路径上都返回值
 title: 函数“<procedurename>”并非在所有代码路径上都返回值
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42105
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
-ms.openlocfilehash: 19b305e337767dfb34718aed7b665f142851bd36
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 2d0fa99906606228595a0c0d45f58dae0b269b77
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163358"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796166"
 ---
 # <a name="bc42105-function-procedurename-doesnt-return-a-value-on-all-code-paths"></a>BC42105：函数 " \<procedurename> " 不会在所有代码路径上都返回值
 
@@ -40,7 +41,7 @@ ms.locfileid: "92163358"
 
      如果始终使用语句，则更容易保证每次从过程返回一个值 `Return` 。 如果执行此操作，则之前的最后一个语句 `End Function` 应为 `Return` 语句。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Function 过程](../../programming-guide/language-features/procedures/function-procedures.md)
 - [Function 语句](../statements/function-statement.md)

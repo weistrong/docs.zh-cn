@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC40039： <namespacename> 根命名空间中的名称 <fullnamespacename> 不符合 CLS
 title: 根命名空间 <namespacename> 中的名称 <fullnamespacename> 不符合 CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40039
 ms.assetid: c5bd5914-ae71-416a-8bed-f76f644f78be
-ms.openlocfilehash: 48e020cb74641279a4f402e47034514d78dfc4fc
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 2560c5c056c70909a08a48a0ff8b2859b178cc8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160205"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795724"
 ---
 # <a name="bc40039-name-namespacename-in-the-root-namespace-fullnamespacename-is-not-cls-compliant"></a>BC40039： \<namespacename> 根命名空间中的名称 \<fullnamespacename> 不符合 CLS
 
@@ -34,7 +35,7 @@ ms.locfileid: "92160205"
 
 - 如果要求命名空间名称保持不变，则 <xref:System.CLSCompliantAttribute> 从程序集删除或将其标记为 `<CLSCompliant(False)>` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Namespace 语句](../statements/namespace-statement.md)
 - [Visual Basic 中的命名空间](../../programming-guide/program-structure/namespaces.md)

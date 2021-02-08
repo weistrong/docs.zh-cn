@@ -1,15 +1,16 @@
 ---
+description: 了解更多有关：对象变量或 With 块变量未设置的信息
 title: 未设置对象变量或 With 块变量
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID91
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
-ms.openlocfilehash: 5eff7622ce2a35cf2846c5141cede98ea033d708
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: a20655c2219aa5b90015e025a38ea9dd02894a6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159880"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795568"
 ---
 # <a name="object-variable-or-with-block-variable-not-set"></a>未设置对象变量或 With 块变量
 
@@ -51,7 +52,7 @@ ms.locfileid: "92159880"
 
 5. 请确保 `With` 通过执行 `With` 语句入口点初始化块。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对象变量声明](../../programming-guide/language-features/variables/object-variable-declaration.md)
 - [ReDim 语句](../statements/redim-statement.md)

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： BC40008： " <elementname> " 已过时 (Visual Basic 警告) '
 title: “<elementname>”已过时（Visual Basic 警告）
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40008
 ms.assetid: 729e3eb5-76ac-4c55-9fdd-78350e0de55e
-ms.openlocfilehash: 555030d97434852eab64cc8b4bda2e901649d17d
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 6fea3526f19b139af103f21ddd89f2272eb6eac5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796569"
 ---
 # <a name="bc40008-elementname-is-obsolete-visual-basic-warning"></a>BC40008： " \<elementname> " 已过时 (Visual Basic 警告) 
 
@@ -28,6 +29,6 @@ ms.locfileid: "92163137"
 
 - 确保源代码引用的元素名称拼写正确。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [属性概述](../../programming-guide/concepts/attributes/index.md)

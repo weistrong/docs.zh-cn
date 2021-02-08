@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC40031：名称 <membername> 不符合 CLS
 title: 名称 <membername> 不符合 CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40031
 ms.assetid: e2b885dc-cbf9-49ff-bbbe-531657ea99f7
-ms.openlocfilehash: 43fff3f12295f3837148b0a349887e8405126819
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 7abc4aee8bb468b523e5bdd2ac13947d19c926bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795750"
 ---
 # <a name="bc40031-name-membername-is-not-cls-compliant"></a>BC40031：名称 \<membername> 不符合 CLS
 
@@ -34,7 +35,7 @@ ms.locfileid: "92160231"
 
 - 如果要求成员名称保持不变，请 <xref:System.CLSCompliantAttribute> 从其定义中删除或将其标记为 `<CLSCompliant(False)>` 。 你仍可以将程序集标记为 `<CLSCompliant(True)>` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)
 - [Visual Basic 命名约定](../../programming-guide/program-structure/naming-conventions.md)

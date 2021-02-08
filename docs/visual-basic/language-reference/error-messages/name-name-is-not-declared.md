@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC30451：名称 " <name> " 未声明
 title: 名称“<name>”未声明
 ms.date: 10/10/2018
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30451
 ms.assetid: 765f099b-e21e-47c6-a906-a065444e56b3
-ms.openlocfilehash: 0a2c2a90b99017fcd9bb594acc6f2dbcf29d9536
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 8d76bcfd18b277a5f542f363cb906496680bae29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160192"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795737"
 ---
 # <a name="bc30451-name-name-is-not-declared"></a>BC30451：名称 " \<name> " 未声明
 
@@ -42,7 +43,7 @@ ms.locfileid: "92160192"
 
    [!code-xml[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/vbruntime.vbproj?highlight=6)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [声明和常量摘要](../keywords/declarations-and-constants-summary.md)
 - [Visual Basic 命名约定](../../programming-guide/program-structure/naming-conventions.md)

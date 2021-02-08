@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30068： Expression 是一个值，因此不能作为赋值的目标
 title: 表达式是一个值，因此不能作为赋值目标
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30068
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
-ms.openlocfilehash: cd23e6c2beb2f93578a350bc41a780c9ab785f26
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 424ce9cb0183153454bc068e9da940948b737c47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160888"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796361"
 ---
 # <a name="bc30068-expression-is-a-value-and-therefore-cannot-be-the-target-of-an-assignment"></a>BC30068： Expression 是一个值，因此不能作为赋值的目标
 
@@ -58,7 +59,7 @@ exitButton.Location = exitLocation
 
 - 使用变量访问属性，为其赋值。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运算符和表达式](../../programming-guide/language-features/operators-and-expressions/index.md)
 - [语句](../../programming-guide/language-features/statements.md)

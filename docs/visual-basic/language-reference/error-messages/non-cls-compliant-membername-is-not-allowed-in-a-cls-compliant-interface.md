@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC40033： <membername> 在符合 cls 的接口中不允许出现不符合 cls 的
 title: 在符合 CLS 的接口中不允许出现不符合 CLS 的 <membername>
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40033
 ms.assetid: 060c4b08-798e-40f1-94cf-c05c524f1b8a
-ms.openlocfilehash: aa7944e90857436553435ce783c0820770496a49
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 070b56a8bf9df930de5bb5e363a9b157fcdc7ad7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159984"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795633"
 ---
 # <a name="bc40033-non-cls-compliant-membername-is-not-allowed-in-a-cls-compliant-interface"></a>BC40033： \<membername> 在符合 cls 的接口中不允许出现不符合 cls 的
 
@@ -36,6 +37,6 @@ ms.locfileid: "92159984"
 
 - 如果要求此成员保留在其当前接口内，请 <xref:System.CLSCompliantAttribute> 从其定义中删除或将其标记为 `<CLSCompliant(False)>` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Interface 语句](../statements/interface-statement.md)

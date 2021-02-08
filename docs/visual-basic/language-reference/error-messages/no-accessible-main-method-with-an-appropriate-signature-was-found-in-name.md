@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30737：在 "" 中找不到带有适当签名的可访问 "Main" 方法<name>
 title: 在“<name>”中找不到任何具有合适签名的可访问“Main”方法
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30737
 ms.assetid: 3f40bacd-3fac-4741-b204-852f693d4340
-ms.openlocfilehash: e1f95484a153bdcac9543508b7f2708dc6b7d942
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 1865d6baea824c435d276aa9c160bcd282abf4ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795646"
 ---
 # <a name="bc30737-no-accessible-main-method-with-an-appropriate-signature-was-found-in-name"></a>BC30737：在 "" 中找不到带有适当签名的可访问 "Main" 方法 \<name>
 
@@ -24,7 +25,7 @@ ms.locfileid: "92160036"
 
 - 定义 `Public Sub Main` 项目的过程。 当 `Shared` 且仅当在类中定义时，才将其声明为。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 程序的结构](../../programming-guide/program-structure/structure-of-a-visual-basic-program.md)
 - [过程](../../programming-guide/language-features/procedures/index.md)
