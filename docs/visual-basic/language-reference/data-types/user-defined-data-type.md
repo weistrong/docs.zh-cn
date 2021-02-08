@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： User-Defined 数据类型
 title: 用户定义的数据类型
 ms.date: 07/20/2015
 f1_keywords:
@@ -23,18 +24,18 @@ helpviewer_keywords:
 - user-defined data types
 - types [Visual Basic], user-defined
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
-ms.openlocfilehash: fbd9536a54d7fb471d6cb2e130b14a84e40a4940
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6eb94b38e2d29a4bbdfcf94de307bbe07a2c1b0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774962"
 ---
 # <a name="user-defined-data-type"></a>用户定义的数据类型
 
 以您定义的格式保存数据。 `Structure`语句定义格式。
 
-以前版本的 Visual Basic 支持用户定义的类型（UDT）。 当前版本将 UDT 扩展到*结构*。 结构是一种或多种数据类型*成员*的串联。 Visual Basic 将结构视为单个单元，但你也可以单独访问其成员。
+以前版本的 Visual Basic 支持 (UDT) 的用户定义类型。 当前版本将 UDT 扩展到 *结构*。 结构是一种或多种数据类型 *成员* 的串联。 Visual Basic 将结构视为单个单元，但你也可以单独访问其成员。
 
 ## <a name="remarks"></a>备注
 
@@ -44,13 +45,13 @@ ms.locfileid: "84415487"
 
 ## <a name="declaration-format"></a>声明格式
 
-结构声明以[结构语句](../statements/structure-statement.md)开头，以 `End Structure` 语句结尾。 `Structure`语句提供结构的名称，该结构也是结构正在定义的数据类型的标识符。 代码的其他部分可以使用此标识符来声明变量、参数和函数返回值，使其成为此结构的数据类型。
+结构声明以 [结构语句](../statements/structure-statement.md) 开头，以 `End Structure` 语句结尾。 `Structure`语句提供结构的名称，该结构也是结构正在定义的数据类型的标识符。 代码的其他部分可以使用此标识符来声明变量、参数和函数返回值，使其成为此结构的数据类型。
 
 和语句之间的 `Structure` 声明 `End Structure` 定义结构的成员。
 
 ## <a name="member-access-levels"></a>成员访问级别
 
-必须使用[Dim 语句](../statements/dim-statement.md)或指定访问级别的语句（如[Public](../modifiers/public.md)、 [Friend](../modifiers/friend.md)或[Private](../modifiers/private.md)）声明每个成员。 如果使用 `Dim` 语句，则访问级别默认为 "公共"。
+必须使用 [Dim 语句](../statements/dim-statement.md) 或指定访问级别的语句（如 [Public](../modifiers/public.md)、 [Friend](../modifiers/friend.md)或 [Private](../modifiers/private.md)）声明每个成员。 如果使用 `Dim` 语句，则访问级别默认为 "公共"。
 
 ## <a name="programming-tips"></a>编程提示
 
@@ -58,7 +59,7 @@ ms.locfileid: "84415487"
 
 - **互操作注意事项。** 如果与不是为 .NET Framework 编写的组件（如自动化或 COM 对象）交互，请记住，其他环境中的用户定义类型与 Visual Basic 结构类型不兼容。
 
-- **扩大.** 不会与任何结构数据类型自动转换。 您可以使用[Operator 语句](../statements/operator-statement.md)在结构上定义转换运算符，并且可以将每个转换运算符声明为 `Widening` 或 `Narrowing` 。
+- **扩大.** 不会与任何结构数据类型自动转换。 您可以使用 [Operator 语句](../statements/operator-statement.md)在结构上定义转换运算符，并且可以将每个转换运算符声明为 `Widening` 或 `Narrowing` 。
 
 - **键入字符。** 结构数据类型没有文本类型字符或标识符类型字符。
 
@@ -76,7 +77,7 @@ ms.locfileid: "84415487"
 End Structure
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ValueType>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>

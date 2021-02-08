@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：输入和输出摘要 (Visual Basic) '
 title: 输入和输出摘要
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - output, Visual Basic functions
 - I/O [Visual Basic], functions
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
-ms.openlocfilehash: f88d68910c3c094b54896e4aa88c8c2be44cba98
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 214eb827a9630005c68ff3c8631957b8e2752a05
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774819"
 ---
 # <a name="input-and-output-summary-visual-basic"></a>输入和输出摘要 (Visual Basic)
 
@@ -32,7 +33,7 @@ Visual Basic 语言关键字和运行时库成员按用途和使用进行组织�
 |在文件中设置读写位置。|<xref:Microsoft.VisualBasic.FileSystem.Seek%2A>|  
 |写入文件。|<xref:Microsoft.VisualBasic.FileSystem.FilePut%2A>, <xref:Microsoft.VisualBasic.FileSystem.FilePutObject%2A>, <xref:Microsoft.VisualBasic.FileSystem.Print%2A>, <xref:Microsoft.VisualBasic.FileSystem.Write%2A>, <xref:Microsoft.VisualBasic.FileSystem.WriteLine%2A>|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [关键字](index.md)
 - [Visual Basic 运行库成员](../runtime-library-members.md)

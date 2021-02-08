@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：默认 (Visual Basic) '
 title: 默认
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Default keyword [Visual Basic]
 - default properties
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
-ms.openlocfilehash: bc213c3b5564d1833136df8f5b8dab1c6b012296
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fe135df4f29ae3c4064c97d4f2789be7f4f3d8f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774598"
 ---
 # <a name="default-visual-basic"></a>Default (Visual Basic)
 
@@ -37,7 +38,7 @@ ms.locfileid: "90875487"
   
  [Property Statement](../statements/property-statement.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：在 Visual Basic 中声明和调用默认属性](../../programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)
 - [关键字](../keywords/index.md)

@@ -1,5 +1,6 @@
 ---
-title: In （泛型修饰符）-Visual Basic
+description: '详细了解：在 (泛型修饰符中)  (Visual Basic) '
+title: 在 (泛型修饰符) -Visual Basic
 ms.date: 07/20/2015
 f1_keywords:
 - vb.VarianceIn
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - contravariance, In keyword [Visual Basic]
 - In keyword [Visual Basic]
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
-ms.openlocfilehash: 9c0f7d454767112e1e309af81407b5fdef22eee9
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: e6ac95a77253b28e45a4be8a29623bdd76a231f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72004873"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774533"
 ---
 # <a name="in-generic-modifier-visual-basic"></a>In（泛型修饰符）(Visual Basic)
 
@@ -36,7 +37,7 @@ ms.locfileid: "72004873"
 
 ## <a name="behavior"></a>行为
 
-具有逆变类型参数的接口使其方法接受的参数的类型可以比接口类型参数指定的类型派生程度更小。 例如，由于在 .NET Framework 4 的 <xref:System.Collections.Generic.IComparer%601> 接口中，类型 T 是逆变的，因此，如果 `Employee` 从 `Person`继承，则可以将 `IComparer(Of Person)` 类型的对象分配给 `IComparer(Of Employee)` 类型的对象，而无需使用任何特殊转换方法。
+具有逆变类型参数的接口使其方法接受的参数的类型可以比接口类型参数指定的类型派生程度更小。 例如，因为在 .NET Framework 4 的接口中， <xref:System.Collections.Generic.IComparer%601> 类型 T 是逆变的，所以可以将类型的对象分配 `IComparer(Of Person)` 给类型的对象， `IComparer(Of Employee)` 而无需使用任何特殊转换方法（如果 `Employee` 从继承） `Person` 。
 
 可以向逆变委托分配相同类型的其他委托，不过要使用派生程度更小的泛型类型参数。
 
@@ -52,7 +53,7 @@ ms.locfileid: "72004873"
 
 [!code-vb[vbVarianceKeywords#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#2)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [泛型接口中的变体](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
 - [Out](out-generic-modifier.md)

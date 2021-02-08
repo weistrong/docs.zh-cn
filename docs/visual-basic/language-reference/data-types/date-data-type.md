@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：日期数据类型 (Visual Basic) '
 title: Date 数据类型
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - literals [Visual Basic], Date
 - '# specifier for Date literals'
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
-ms.openlocfilehash: 46c25e14db56d4cc3c6d59ec7649b37c35676e2e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f6ea6aa99339d13824477bba99ecd211f826a3ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775014"
 ---
 # <a name="date-data-type-visual-basic"></a>Date 数据类型 (Visual Basic)
 
@@ -42,7 +43,7 @@ ms.locfileid: "84387421"
 
 ## <a name="workarounds"></a>问题解决
 
-若要将 `Date` 文字转换为你所在区域的格式或自定义格式，请将该文字提供给 <xref:Microsoft.VisualBasic.Strings.Format%2A> 函数，并指定预定义的或用户定义的日期格式。 下面的示例对这种情况进行了演示。
+若要将 `Date` 文字转换为你所在区域的格式或自定义格式，请将该文字提供给 <xref:Microsoft.VisualBasic.Strings.Format%2A> 函数，并指定预定义的或用户定义的日期格式。 下面的示例演示这一操作。
 
 ```vb
 MsgBox("The formatted date is " & Format(#5/31/1993#, "dddd, d MMM yyyy"))
@@ -70,19 +71,19 @@ Dim dateInMay As New System.DateTime(1993, 5, 31, 12, 14, 0)
 
 - **互操作注意事项。** 如果你与不是为 .NET Framework 编写的组件（如自动化或 COM 对象）交互，请记住，其他环境中的日期/时间类型与 Visual Basic `Date` 类型不兼容。 如果将日期/时间自变量传递给此类组件，请在新的 Visual Basic 代码中将其声明为 `Double` 而不是 `Date`，并使用转换方法 <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> 和 <xref:System.DateTime.ToOADate%2A?displayProperty=nameWithType>。
 
-- **键入字符。** `Date`没有文本类型字符或标识符类型字符。 但是，编译器会将括在数字符号 (`# #`) 内的文本作为 `Date`。
+- **键入字符。** `Date` 没有文本类型字符或标识符类型字符。 但是，编译器会将括在数字符号 (`# #`) 内的文本作为 `Date`。
 
 - **Framework 类型。** .NET Framework 中的对应类型是 <xref:System.DateTime?displayProperty=nameWithType> 结构。
 
 ## <a name="example"></a>示例
 
-`Date` 数据类型的变量或常数都包含日期和时间。 下面的示例对此进行了演示。
+`Date` 数据类型的变量或常数都包含日期和时间。 下面的示例阐释了这一点。
 
 ```vb
 Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.DateTime?displayProperty=nameWithType>
 - [数据类型](index.md)

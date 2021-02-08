@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下内容的详细信息： Friend (Visual Basic) '
 title: Friend
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Protected Friend keyword combination
 - Friend keyword [Visual Basic], and Protected
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
-ms.openlocfilehash: d37a93343822d069295477958780c2b9c72043fa
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ef2444555c05d6a4b24048316e282d269d4b7f1b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875458"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774585"
 ---
 # <a name="friend-visual-basic"></a>Friend (Visual Basic)
 
@@ -75,13 +76,13 @@ ms.locfileid: "90875458"
   
  [Sub 语句](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
 - [公共](public.md)
-- [避免](protected.md)
+- [Protected](protected.md)
 - [专用](private.md)
-- [私有受保护](./private-protected.md)
+- [Private Protected](./private-protected.md)
 - [Protected Friend](./protected-friend.md)
 - [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)
 - [过程](../../programming-guide/language-features/procedures/index.md)
