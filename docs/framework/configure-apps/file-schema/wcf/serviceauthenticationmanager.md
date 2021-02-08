@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <serviceAuthenticationManager>
 title: <serviceAuthenticationManager>
 ms.date: 03/30/2017
 ms.assetid: 5d69e64f-f325-4d55-8e2d-0fb30f222dda
-ms.openlocfilehash: a7c1e06c74bd3ba62d52ef833b8ffb6a8fd594fb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ae9c8d7f74b3ad7d0c61a77d20f38f228c695970
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167166"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786767"
 ---
 # \<serviceAuthenticationManager>
 
@@ -38,7 +39,7 @@ ms.locfileid: "91167166"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |serviceAuthenticationManagerType|一个字符串，指定当前行为的身份验证策略类型。|  
   
@@ -48,7 +49,7 @@ ms.locfileid: "91167166"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定行为元素。|  
   

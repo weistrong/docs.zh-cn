@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <etwEnable> 元素
 title: <etwEnable> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - etwEnable element
 - <etwEnable> element
 ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
-ms.openlocfilehash: 1c3e42dfbc2c27841ed065e90bad24575e4fb2b1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 224784f47d15788ded41a5756e1d179a5a25907b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178263"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787040"
 ---
 # <a name="etwenable-element"></a>\<etwEnable> 元素
 
@@ -38,7 +39,7 @@ ms.locfileid: "91178263"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |是|启用 ETW。 这是从 Windows Vista 和 Windows Server 2008 操作系统开始的 Windows 版本的默认值。|  
 |false|禁用 ETW。 这是早期版本的 Windows 的默认设置。|  
@@ -49,7 +50,7 @@ ms.locfileid: "91178263"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

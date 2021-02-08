@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeInfo：： LoadErrorString 方法
 title: ICLRRuntimeInfo::LoadErrorString 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52c543ab-9ef5-4ee7-b836-c0ffc35cd45b
 topic_type:
 - apiref
-ms.openlocfilehash: 0e029aa848a6630ae00c834dd2b924dc4ebce537
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0523b5b89072db50c83c52065c22e9df7167a027
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785063"
 ---
 # <a name="iclrruntimeinfoloaderrorstring-method"></a>ICLRRuntimeInfo::LoadErrorString 方法
 
@@ -76,7 +77,7 @@ HRESULT LoadErrorString(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRRuntimeInfo 接口](iclrruntimeinfo-interface.md)
 - [承载接口](hosting-interfaces.md)

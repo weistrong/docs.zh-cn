@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： CreateAutoEvent 方法
 title: IHostSyncManager::CreateAutoEvent 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3153643e-cf5c-4b44-8e0e-c2b22cb08208
 topic_type:
 - apiref
-ms.openlocfilehash: 37c306df76a796d6e0a2b7540ebd85c13865dfbe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 69767f1e01ead93c874eecf01c3167a5dc0e4b82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784842"
 ---
 # <a name="ihostsyncmanagercreateautoevent-method"></a>IHostSyncManager::CreateAutoEvent 方法
 
@@ -51,7 +52,7 @@ HRESULT CreateAutoEvent (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于创建请求的事件对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CreateAutoEvent` 创建自动事件对象，其状态将在释放等待线程后自动更改为非终止状态。 此方法 `CreateEvent` 使用 `false` 为参数指定的值镜像 Win32 函数 `bManualReset`  
   
@@ -65,7 +66,7 @@ HRESULT CreateAutoEvent (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostAutoEvent 接口](ihostautoevent-interface.md)

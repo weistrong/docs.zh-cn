@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetCLRIdentityManager 函数
 title: GetCLRIdentityManager 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 66eeca30-adb4-45f4-aff5-347564c95724
 topic_type:
 - apiref
-ms.openlocfilehash: 9d1196749e033c71b0c8923d0325eb4886122d1a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 483cf0499fa162da4c89e350198a5609f9f1bab6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785362"
 ---
 # <a name="getclridentitymanager-function"></a>GetCLRIdentityManager 函数
 
@@ -44,7 +45,7 @@ STDAPI GetCLRIdentityManager(
  `ppManager`  
  弄指向 [ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md) 或 [ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md) 对象地址的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用 [GetRealProcAddress](getrealprocaddress-function.md) 函数以获取指向函数的指针 `GetCLRIdentityManager` 。  
   
@@ -58,6 +59,6 @@ STDAPI GetCLRIdentityManager(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [弃用的 CLR 承载函数](deprecated-clr-hosting-functions.md)

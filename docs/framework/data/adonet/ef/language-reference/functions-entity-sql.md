@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：函数 (实体 SQL) '
 title: 函数 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 52b3d776-5acc-4f69-b614-5a43ce56ef9f
-ms.openlocfilehash: bef959ae6a835b5d1d696162528a8f904c59e8e5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c557d264587a1d40194971d756e6b5c75a3856aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786298"
 ---
 # <a name="functions-entity-sql"></a>函数 (Entity SQL)
 

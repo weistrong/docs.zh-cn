@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <netMsmqBinding>
 title: <security> 的 <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
-ms.openlocfilehash: 32b066fdf4d8edbbd36fdff7b14bdec87ddc970d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1b60d9e390e371555f4c3abf4988e79bb0f04fe8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170072"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786845"
 ---
 # <a name="security-of-netmsmqbinding"></a>\<security> 的 \<netMsmqBinding>
 
@@ -39,20 +40,20 @@ ms.locfileid: "91170072"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |mode|指定用于控制完整性、保密性和身份验证的安全类型。 有效值包括以下值：<br /><br /> -None：这将禁用安全性。<br />-Transport：传输提供保护和身份验证。 这适用于两个队列管理器之间的消息安全性。 未在应用程序和队列管理器之间提供安全性。 现有的 Msmq 应用程序与此类型的安全模式功能等效。<br />-Message：指定端应用程序安全性。 未在传输层提供安全性。 这类似于其他标准绑定提供的安全性。<br />-Both：同时在传输和 SOAP 消息传送层上提供安全性。 在这两个层上需要相同的凭据。<br /><br /> 默认值为 Transport。 此属性的类型为 <xref:System.ServiceModel.NetMsmqSecurityMode>。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<message>](message-of-netmsmqbinding.md)|定义 SOAP 消息安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>。|  
 |[\<transport>](transport-of-netmsmqbinding.md)|定义 MSMQ 传输的安全设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |binding|的绑定元素 [\<netMsmqBinding>](netmsmqbinding.md)|  
   

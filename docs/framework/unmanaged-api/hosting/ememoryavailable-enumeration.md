@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EMemoryAvailable 枚举
 title: EMemoryAvailable 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 38e72a06-dbed-473b-a59b-7e0b3ea4f2af
 topic_type:
 - apiref
-ms.openlocfilehash: 6a8765bfd62a2e6543661804ab8d009ce19f8813
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdb33b45c354d39b1a52fd815a44041b659181ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785440"
 ---
 # <a name="ememoryavailable-enumeration"></a>EMemoryAvailable 枚举
 
@@ -43,7 +44,7 @@ typedef enum {
 |`eMemoryAvailableLow`|物理内存非常少。|  
 |`eMemoryAvailableNeutral`|可用物理内存为中性。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  使用 [ICLRMemoryNotificationCallback：： OnMemoryNotification](iclrmemorynotificationcallback-onmemorynotification-method.md) 方法调用，此值由主机传递到公共语言运行时 (CLR) 。  
   
@@ -57,6 +58,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载枚举](hosting-enumerations.md)

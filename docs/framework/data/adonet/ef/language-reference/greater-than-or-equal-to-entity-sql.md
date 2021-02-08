@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： >= (大于或等于)  (实体 SQL) '
 title: '>=（大于或等于）(Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: 70780ac4-0123-4da8-b731-8af856daffe3
-ms.openlocfilehash: 02e03d6d2da321bd02ea2b14e45a910853d39c4d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d05685123e3262a2d2ae01553c7c5334a7e53c40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158417"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786272"
 ---
 # <a name="-greater-than-or-equal-to-entity-sql"></a>>= (大于或等于)  (实体 SQL) 
 
@@ -22,7 +23,7 @@ expression >= expression
 ## <a name="arguments"></a>参数  
 
  `expression`  
- 任何有效表达式。 两个表达式都必须包含可隐式转换的数据类型。  
+ 任何有效的表达式。 两个表达式都必须包含可隐式转换的数据类型。  
   
 ## <a name="result-types"></a>结果类型  
 

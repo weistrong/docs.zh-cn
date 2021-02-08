@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <GCCpuGroup> 元素
 title: <GCCpuGroup> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - GCCpuGroup element
 - <GCCpuGroup> element
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
-ms.openlocfilehash: f1cbe5a7109d6e4aae2e92710920a1c6b3a40d00
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d4b3aa7084cbc2cb23b273bea95ffaec6e3a74d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "82102887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786988"
 ---
 # <a name="gccpugroup-element"></a>\<GCCpuGroup> 元素
 
@@ -33,7 +34,7 @@ ms.locfileid: "82102887"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |`enabled`|必需的特性。<br /><br /> 指定垃圾回收是否支持多个 CPU 组。|
 
@@ -50,14 +51,14 @@ ms.locfileid: "82102887"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-如果计算机具有多个 CPU 组并且启用了服务器垃圾回收（请参阅 [\<gcServer>](gcserver-element.md) 元素），则启用此元素会在所有 CPU 组之间扩展垃圾回收，并在创建和平衡堆时考虑所有核心。
+如果计算机具有多个 CPU 组并且启用了服务器垃圾回收 (请参阅 [\<gcServer>](gcserver-element.md) 元素) ，启用此元素可跨所有 CPU 组扩展垃圾回收，并在创建和平衡堆时考虑所有内核。
 
 > [!NOTE]
 > 此元素仅适用于垃圾回收线程。 若要使运行时能够在所有 CPU 组之间分配用户线程，还必须启用该 [\<Thread_UseAllCpuGroups>](thread-useallcpugroups-element.md) 元素。
@@ -75,7 +76,7 @@ ms.locfileid: "82102887"
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时设置架构](index.md)
 - [配置文件架构](../index.md)

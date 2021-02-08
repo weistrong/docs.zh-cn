@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <timeOuts>
 title: <timeOuts>
 ms.date: 03/30/2017
 ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
-ms.openlocfilehash: f7e513bb5c486fa5f7c39c9b2e3cfcd26bd7c219
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 097569d1742f6486ddfb5fb3c3d98ba106424f45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786585"
 ---
 # \<timeOuts>
 
@@ -33,7 +34,7 @@ ms.locfileid: "91157091"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`closeTimeout`|一个 <xref:System.TimeSpan> 值，指定为关闭服务主机预留的时间间隔。|  
 |`openTimeout`|一个 <xref:System.TimeSpan> 值，指定为打开或关闭服务主机预留的时间间隔。|  
@@ -44,7 +45,7 @@ ms.locfileid: "91157091"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<host>](host.md)|一个指定服务主机设置的配置元素。|  
   

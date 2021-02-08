@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeInfo：： LoadLibrary 方法
 title: ICLRRuntimeInfo::LoadLibrary 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4517ada3-4417-4ac5-a150-73da7a87c686
 topic_type:
 - apiref
-ms.openlocfilehash: aa45c814568188a5fe93e3acd2514cb54bb0f984
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 47557934868c7c1b68b23bf4eded0e90705d7252
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785050"
 ---
 # <a name="iclrruntimeinfoloadlibrary-method"></a>ICLRRuntimeInfo::LoadLibrary 方法
 
@@ -54,7 +55,7 @@ HRESULT LoadLibrary(
 |E_POINTER|`pwzDllName` 或 `phndModule` 为 null。|  
 |E_OUTOFMEMORY|没有足够的内存可用来处理请求。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法仅加载 .NET Framework 可再发行组件包中包含的 Dll。 它无法加载用户生成的程序集。  
   
@@ -68,7 +69,7 @@ HRESULT LoadLibrary(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRRuntimeInfo 接口](iclrruntimeinfo-interface.md)
 - [承载接口](hosting-interfaces.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ADO.NET 中的数据类型映射
 title: 数据类型映射
 ms.date: 03/30/2017
 ms.assetid: d4afab94-ada6-4c77-a73c-41f17bae6b5a
-ms.openlocfilehash: 52e64714a17448cd94723bdc216d8ea069fc5eef
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c1829fdc2ebc053d1fd3a76e827a81e582572233
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786441"
 ---
 # <a name="data-type-mappings-in-adonet"></a>ADO.NET 中的数据类型映射
 
@@ -15,7 +16,7 @@ ms.locfileid: "91177743"
   
  同样，当 `DataReader` 从数据源返回值时，生成的值将存储在具有 .NET Framework 类型的局部变量中。 对于的 `Fill` 操作 `DataAdapter` 和的 `Get` 方法，将 `DataReader` 从 .NET Framework 数据提供程序返回的值推断 .NET Framework 类型。  
   
- 当所返回值的特定类型已知时，可以使用 `DataReader` 的类型化访问器方法，而不是依靠推断出的数据类型。 类型化访问器方法通过以特定 .NET Framework 类型返回值来提高性能，从而无需额外的类型转换。  
+ 当所返回值的特定类型已知时，可以使用 `DataReader` 的类型化访问器方法，而不是依靠推断出的数据类型。 类型化访问器方法无需进行额外的类型转换，即可将值作为特定的 .NET Framework 类型返回，从而提供更好的性能。  
   
 > [!NOTE]
 > .NET Framework 数据提供程序数据类型的 Null 值由表示 `DBNull.Value` 。  
@@ -37,7 +38,7 @@ ms.locfileid: "91177743"
  [浮点数](floating-point-numbers.md)  
  描述开发人员在使用浮点数时经常遇到的问题。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [SQL Server 数据类型和 ADO.NET](./sql/sql-server-data-types.md)
 - [配置参数和参数数据类型](configuring-parameters-and-parameter-data-types.md)

@@ -1,13 +1,14 @@
 ---
+description: '了解有关以下内容的详细信息： (实体 SQL 除外) '
 title: EXCEPT (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 69cc23e5-3f8f-4b49-b20e-2f84ff11c80d
-ms.openlocfilehash: 6797f8038a83533b5a6bd41ad402daec7abdc7de
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fd66d8dc6e22a73afbfd27e6eb1fd6c8bb9d3475
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148044"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786389"
 ---
 # <a name="except-entity-sql"></a>EXCEPT (Entity SQL)
 

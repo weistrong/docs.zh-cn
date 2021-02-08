@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：数据类型和函数
 title: 数据类型和函数
 ms.date: 03/30/2017
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
-ms.openlocfilehash: 456cf5acf42221379e68ff79ee57c084664e30e5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5a718d5fd4b110d35153e4486e42cee0b8a215bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147757"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786142"
 ---
 # <a name="data-types-and-functions"></a>数据类型和函数
 
@@ -15,7 +16,7 @@ ms.locfileid: "91147757"
   
  表中不受支持的项表示 LINQ to SQL 无法转换 CLR 成员、构造或强制转换以供在 SQL Server 上执行。 您可能仍可以在您的代码中使用这些项，但是在查询转换为 Transact-SQL 之前或结果已经从数据库中检索后必须对其进行计算。  
   
-|主题|描述|  
+|主题|说明|  
 |-----------|-----------------|  
 |[SQL-CLR 类型映射](sql-clr-type-mapping.md)|提供 CLR 类型和 SQL Server 类型之间的详细映射矩阵。|  
 |[基本数据类型](basic-data-types.md)|汇总了 .NET Framework 的行为差异。|  

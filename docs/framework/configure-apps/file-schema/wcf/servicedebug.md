@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <serviceDebug>
 title: <serviceDebug>
 ms.date: 03/30/2017
 ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
-ms.openlocfilehash: 8236e581ee754a39ae32fa97084b8e2bfbaee652
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7563969ef54e9644982c707ef1cd2e18ca7b41f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153867"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786741"
 ---
 # \<serviceDebug>
 
@@ -40,7 +41,7 @@ ms.locfileid: "91153867"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |httpHelpPageBinding|一个字符串值，指定在利用 HTTP 访问服务帮助页时使用的绑定类型。<br /><br /> 仅支持具有支持 <xref:System.ServiceModel.Channels.IReplyChannel?displayProperty=nameWithType> 的内部绑定元素的绑定。 此外，绑定的 <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> 属性必须为 <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>。|  
 |httpHelpPageBindingConfiguration|一个字符串，指定在 `httpHelpPageBinding` 特性中指定的绑定的名称，此名称引用此绑定的其他配置信息。 必须在 `<bindings>` 节中定义相同的名称。|  
@@ -50,7 +51,7 @@ ms.locfileid: "91153867"
 |httpsHelpPageBindingConfiguration|一个字符串，指定在 `httpsHelpPageBinding` 特性中指定的绑定的名称，此名称引用此绑定的其他配置信息。 必须在 `<bindings>` 节中定义相同的名称。|  
 |httpsHelpPageEnabled|一个布尔值，该值控制 WCF 是否在由属性指定的地址发布 HTML 帮助页 `httpsHelpPageUrl` 。 默认值为 `true`。<br /><br /> 可以将此属性设置为 `false` 以禁止发布对于 HTML 浏览器可见的 HTML 帮助页。<br /><br /> 若要确保在 `httpsHelpPageUrl` 属性控制的位置发布 HTML 帮助页，必须将此属性设置为 `true`。 另外，还必须满足以下条件之一：<br /><br /> - `httpsHelpPageUrl` 属性是支持 HTTPS 协议方案的绝对地址。<br />-存在支持 HTTPS 协议方案的服务的基址。<br /><br /> 尽管为 `httpsHelpPageUrl` 属性指定不支持 HTTPS 协议方案的绝对地址会引发异常，但不满足前面两个条件的任何其他方案都不会引发异常，也不会发布 HTML 帮助页。|  
 |httpsHelpPageUrl|一个 URI，指定在使用 HTML 浏览器查看终结点时，用户所见自定义 HTML 帮助文件的基于 HTTPS 的相对或绝对 URL。<br /><br /> 可以使用此属性启用自定义 HTML 帮助文件，例如，从 HTML 浏览器通过 HTTPS/Get 请求返回的帮助文件。 HTML 帮助文件位置的解析方式如下：<br /><br /> -如果此属性的值是相对地址，则 HTML 帮助文件的位置是支持 HTTPS 请求的服务基址加上此属性值的值。<br />-如果此属性的值是绝对地址并支持 HTTPS 请求，则 HTML 帮助文件的位置是此属性的值。<br />-如果此属性的值是绝对的但不支持 HTTPS 请求，则会引发异常。<br /><br /> 仅当属性为时，此属性才有效 `httpHelpPageEnabled` `true` 。|  
-|includeExceptionDetailInFaults|一个值，指定是否在返回给客户端的 SOAP 错误详细信息中包含托管异常信息以供调试。 默认为 `false`。<br /><br /> 如果将此属性设置为 `true`，则可以将托管异常信息流到客户端以便进行调试，还可以为在 Web 浏览器中浏览该服务的用户发布 HTML 信息文件。 **警告：**  向客户端返回托管异常信息可能会带来安全风险。 这是因为，异常详细信息公开了有关内部服务实现的信息，这些信息可能被未经授权的客户端使用。|  
+|includeExceptionDetailInFaults|一个值，指定是否在返回给客户端的 SOAP 错误详细信息中包含托管异常信息以供调试。 默认值为 `false`。<br /><br /> 如果将此属性设置为 `true`，则可以将托管异常信息流到客户端以便进行调试，还可以为在 Web 浏览器中浏览该服务的用户发布 HTML 信息文件。 **警告：**  向客户端返回托管异常信息可能会带来安全风险。 这是因为，异常详细信息公开了有关内部服务实现的信息，这些信息可能被未经授权的客户端使用。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -58,7 +59,7 @@ ms.locfileid: "91153867"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定行为元素。|  
   

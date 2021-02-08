@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <enforceFIPSPolicy> 元素
 title: <enforceFIPSPolicy> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - <enforceFIPSPolicy> element
 - Federal Information Processing Standards (FIPS)
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
-ms.openlocfilehash: 864a371d4ad10585e672452ad85cc09d4b684068
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d445570db634867a15b6d97d4e20186bd0641c2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158833"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787066"
 ---
 # <a name="enforcefipspolicy-element"></a>\<enforceFIPSPolicy> 元素
 
@@ -40,7 +41,7 @@ ms.locfileid: "91158833"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`true`|如果你的计算机配置为要求加密算法符合 FIPS 标准，则强制实施此要求。 如果某个类实现了不符合 FIPS 的算法，则该类的构造函数或方法将在 `Create` 该计算机上运行时引发异常。 这是默认设置。|  
 |`false`|无论计算机配置如何，应用程序使用的加密算法都无需符合 FIPS。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91158833"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

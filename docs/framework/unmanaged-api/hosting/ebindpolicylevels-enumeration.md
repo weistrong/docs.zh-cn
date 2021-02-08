@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EBindPolicyLevels 枚举
 title: EBindPolicyLevels 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa
 topic_type:
 - apiref
-ms.openlocfilehash: a0992ca8ac4bfffef681c74de455a0eeb627a042
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 00e10cff79cdd782e8d9ab8e9b7e1e3f388fb1ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785609"
 ---
 # <a name="ebindpolicylevels-enumeration"></a>EBindPolicyLevels 枚举
 
@@ -53,7 +54,7 @@ typedef enum {
 |`ePolicyPortability`|指定策略应支持 .NET Framework 程序集的实现之间的可移植性。 请参阅 [\<supportPortability>](../../configure-apps/file-schema/runtime/supportportability-element.md) 配置文件元素。|  
 |`ePolicyUnifiedToCLR`|指定应将策略统一到公共语言运行时的 (CLR) 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此枚举将传递给 [ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md) 接口的方法，以指定应用程序策略中的更改。  
   
@@ -67,7 +68,7 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyIdentityManager 接口](iclrassemblyidentitymanager-interface.md)
 - [承载枚举](hosting-enumerations.md)

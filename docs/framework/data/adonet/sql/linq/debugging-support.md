@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：调试支持
 title: 调试支持
 ms.date: 03/30/2017
 ms.assetid: 262d8e60-8e71-42d7-8340-1b5276a0ad35
-ms.openlocfilehash: 89558b634c9fdfae13c13aca3041e22271feaa1e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 05ffe9790ce1b73361db55bb96cc703b01e4d69c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194500"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786129"
 ---
 # <a name="debugging-support"></a>调试支持
 
@@ -26,7 +27,7 @@ ms.locfileid: "91194500"
  [如何：显示 LINQ to SQL 命令](how-to-display-linq-to-sql-commands.md)  
  介绍如何显示 SQL 命令及其他信息。  
   
- [疑难解答](troubleshooting.md)  
+ [故障排除](troubleshooting.md)  
  提供可能难以确定其出现原因的一些常见情况。  
   
 ## <a name="see-also"></a>请参阅

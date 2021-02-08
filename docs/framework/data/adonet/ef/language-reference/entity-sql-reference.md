@@ -1,23 +1,24 @@
 ---
+description: 了解详细信息：实体 SQL 引用
 title: 实体 SQL 引用
 ms.date: 03/30/2017
 ms.assetid: 61ce7ee1-ffe2-477d-8a9f-835b0a11d900
-ms.openlocfilehash: 987aa5c05b88d684e050721077d704b29e546aab
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 89a53d6d365d8cae99e16c52cc159c9d2ff57cfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542119"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786415"
 ---
 # <a name="entity-sql-reference"></a>实体 SQL 引用
 
 本部分包含实体 SQL 参考文章。 本文按类别汇总并分组实体 SQL 运算符。
 
-## <a name="arithmetic-operators"></a>算术运算符
+## <a name="arithmetic-operators"></a>算数运算符
 
 算术运算符对两个表达式执行数学运算，这两个表达式可以是一个或多个数值数据类型。 下表列出了实体 SQL 算术运算符：
 
-|运算符|使用|
+|操作员|用途|
 |--------------|---------|
 |[+（加）](add.md)|加。|
 |[/（除）](divide-entity-sql.md)|除。|
@@ -45,7 +46,7 @@ ms.locfileid: "90542119"
 
 相等和不相等适用于有标识的所有对象类型，如 `Boolean` 类型。 拥有相同标识的非基元对象被视为相等。 下表列出了实体 SQL 比较运算符：
 
-|运算符|说明|
+|操作员|说明|
 |--------------|-----------------|
 |[=（等于）](equals-entity-sql.md)|比较两个表达式是否相等。|
 |[>（大于）](greater-than-entity-sql.md)|比较两个表达式以确定左侧表达式的值是否大于右侧表达式的值。|
@@ -61,7 +62,7 @@ ms.locfileid: "90542119"
 
 逻辑运算符测试条件的真实性。 CASE 表达式计算一组布尔表达式的值以确定结果。 下表列出了逻辑 and CASE 表达式运算符：
 
-|运算符|说明|
+|操作员|说明|
 |--------------|-----------------|
 |[ (逻辑与)&&  ](and-entity-sql.md)|逻辑 AND。|
 |[\! (逻辑非) ](not-entity-sql.md)|逻辑非。|
@@ -73,7 +74,7 @@ ms.locfileid: "90542119"
 
 查询运算符用于定义返回实体数据的查询表达式。 下表列出了查询运算符：
 
-|运算符|使用|
+|操作员|用途|
 |--------------|---------|
 |[FROM](from-entity-sql.md)|指定在 [SELECT](select-entity-sql.md) 语句中使用的集合。|
 |[GROUP BY](group-by-entity-sql.md)|指定由查询返回的对象 ([选择](select-entity-sql.md) 要放置) 表达式的组。|
@@ -90,7 +91,7 @@ ms.locfileid: "90542119"
 
 引用是指向特定实体集中的特定实体的逻辑指针（外键）。 实体 SQL 支持以下运算符来构造、析构和导航引用：
 
-|运算符|使用|
+|操作员|用途|
 |--------------|---------|
 |[CREATEREF](createref-entity-sql.md)|创建对实体集中的实体的引用。|
 |[DEREF](deref-entity-sql.md)|取消引用一个引用值，并生成该取消引用的结果。|
@@ -102,7 +103,7 @@ ms.locfileid: "90542119"
 
 实体 SQL 提供各种功能强大的设置操作。 这包括类似于 Transact-sql 运算符（如 UNION、INTERSECT、EXCEPT 和 EXISTS）的集运算符。 实体 SQL 还支持重复消除 (集) 、) 中的成员资格测试 (以及联接 (联接) 的运算符。 下表列出了实体 SQL 集运算符：
 
-|运算符|使用|
+|操作员|用途|
 |--------------|---------|
 |[ANYELEMENT](anyelement-entity-sql.md)|从多值集合中提取元素。|
 |[EXCEPT](except-entity-sql.md)|返回一个集合，该集合中的所有非重复值都是从除除运算符右侧的查询表达式返回的查询表达式中的任何非重复值。|
@@ -118,9 +119,9 @@ ms.locfileid: "90542119"
 
 实体 SQL 提供了允许构造、查询和操作表达式 (值) 类型的操作。 下表列出了用于处理类型的运算符：
 
-|运算符|使用|
+|操作员|用途|
 |--------------|---------|
-|[CAST](cast-entity-sql.md)|将一种数据类型的表达式转换为另一种数据类型的表达式。|
+|[CAST](cast-entity-sql.md)|将一种数据类型的表达式转换为另一种。|
 |[集合](collection-entity-sql.md)|在 [函数](function-entity-sql.md) 操作中用于声明实体类型或复杂类型的集合。|
 |[\[不是 \]](isof-entity-sql.md)|确定表达式的类型是否为指定类型或指定类型的某个子类型。|
 |[OFTYPE](oftype-entity-sql.md)|从查询表达式返回特定类型的对象集合。|
@@ -133,7 +134,7 @@ ms.locfileid: "90542119"
 
 下表列出了其他实体 SQL 运算符：
 
-|运算符|使用|
+|操作员|用途|
 |--------------|---------|
 |[+（字符串串联）](string-concatenation-entity-sql.md)|用于在实体 SQL 中串联字符串。|
 |[. (成员访问) ](member-access-entity-sql.md)|用于访问结构化概念模型类型实例的属性或字段的值。|

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <tcpTransport>
 title: <tcpTransport>
 ms.date: 03/30/2017
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
-ms.openlocfilehash: 6d4302e1840f58e2daad855942493cc96b7d5e34
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b660443ac58e8ed72d70adb5bf9e9e87b060e3af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158664"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786611"
 ---
 # \<tcpTransport>
 
@@ -50,7 +51,7 @@ ms.locfileid: "91158664"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |channelInitializationTimeout|获取或设置对要接受的通道进行初始化的时间限制。  通道在断开连接前可处于初始化状态的最长时间（秒）。 此配额包括 TCP 连接可以使用 .NET 消息帧协议对自身进行身份验证所需的时间。 客户端需要发送一些初始数据，然后服务器才有足够的信息来执行身份验证。 默认为 30 秒。|  
 |connectionBufferSize|获取或设置用于从客户端或服务传输网络上的序列化消息块的缓冲区大小。|  
@@ -63,8 +64,8 @@ ms.locfileid: "91158664"
 |maxPendingAccepts|获取或设置可用于处理服务上的传入连接的最大挂起异步接受操作数。|  
 |maxPendingConnections|获取或设置在服务上等待调度的最大连接数。|  
 |maxReceivedMessageSize|获取和设置允许接收的最大消息大小。|  
-|portSharingEnabled|一个布尔值，指定是否为此连接启用 TCP 端口共享。 如果此值为 `false`，则每个绑定都将使用自己的独占端口。 默认为 `false`。<br /><br /> 此设置只与服务相关。 客户端并不会受影响。<br /><br /> 使用此设置要求通过将 Windows Communication Foundation (WCF) TCP 端口共享服务的“启动类型”设置为“手动”或“自动”来启用该服务。|  
-|teredoEnabled|一个布尔值，指定是否启用 Teredo（一种用于对防火墙后的客户端进行寻址的技术）。 默认为 `false`。<br /><br /> 此属性为基础 TCP 套接字启用 Teredo。 有关详细信息，请参阅 [Teredo 概述](/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10))。<br /><br /> 此属性仅适用于 Windows XP SP2 和 Windows Server 2003。 Windows Vista 具有适用于 Teredo 的计算机范围的配置选项，因此，在运行 Vista 时将忽略此属性。 Teredo 要求客户端和服务计算机都安装 Microsoft IPv6 堆栈，并进行正确的配置以便使用 Teredo。|  
+|portSharingEnabled|一个布尔值，指定是否为此连接启用 TCP 端口共享。 如果此值为 `false`，则每个绑定都将使用自己的独占端口。 默认值为 `false`。<br /><br /> 此设置只与服务相关。 客户端并不会受影响。<br /><br /> 使用此设置要求通过将 Windows Communication Foundation (WCF) TCP 端口共享服务的“启动类型”设置为“手动”或“自动”来启用该服务。|  
+|teredoEnabled|一个布尔值，指定是否启用 Teredo（一种用于对防火墙后的客户端进行寻址的技术）。 默认值为 `false`。<br /><br /> 此属性为基础 TCP 套接字启用 Teredo。 有关详细信息，请参阅 [Teredo 概述](/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10))。<br /><br /> 此属性仅适用于 Windows XP SP2 和 Windows Server 2003。 Windows Vista 具有适用于 Teredo 的计算机范围的配置选项，因此，在运行 Vista 时将忽略此属性。 Teredo 要求客户端和服务计算机都安装 Microsoft IPv6 堆栈，并进行正确的配置以便使用 Teredo。|  
 |transferMode|获取或设置一个值，该值指示通过面向连接的传输对消息进行缓冲还是流处理。|  
 |connectionPoolSettings|指定命名管道绑定的其他连接池设置。|  
   
@@ -74,7 +75,7 @@ ms.locfileid: "91158664"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

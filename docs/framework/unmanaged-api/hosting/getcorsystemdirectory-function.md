@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetCORSystemDirectory 函数
 title: GetCORSystemDirectory 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
 topic_type:
 - apiref
-ms.openlocfilehash: 21b01156afceb24ab5c132894fae6922d7b97e59
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 267736c2f8cdea03fbd9f77108a3d88193830ab4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785336"
 ---
 # <a name="getcorsystemdirectory-function"></a>GetCORSystemDirectory 函数
 
@@ -49,7 +50,7 @@ HRESULT GetCORSystemDirectory (
  `dwLength`  
  弄中返回的字符数 `pbuffer` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!CAUTION]
 > 不要在运行 CLR 版本4的进程中使用此函数。 如果计算机上安装了 CLR 的早期版本，则此函数将返回该版本的安装目录。  
@@ -64,6 +65,6 @@ HRESULT GetCORSystemDirectory (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [弃用的 CLR 承载函数](deprecated-clr-hosting-functions.md)

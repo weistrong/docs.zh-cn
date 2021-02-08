@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用 DbDataAdapter 修改数据
 title: 使用 DbDataAdapter 修改数据
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e35c7f9e-648b-4fcc-9361-d365c3e42c9a
-ms.openlocfilehash: 5272a53ae0b3ac1888d01dc2a59778c6c7231619
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 749c56e8db76a469d7ebf0e503508665c2fdbd94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150760"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786246"
 ---
 # <a name="modifying-data-with-a-dbdataadapter"></a>使用 DbDataAdapter 修改数据
 
@@ -36,7 +37,7 @@ ms.locfileid: "91150760"
   
 |数据提供程序|参数命名语法|  
 |-------------------|-----------------------------|  
-|`SqlClient`|以 `@`*参数名*格式使用命名参数。|  
+|`SqlClient`|以 `@`*参数名* 格式使用命名参数。|  
 |`OracleClient`|以 `:`*参数名* （或 *参数名*）格式使用命名参数。|  
 |`OleDb`|使用由问号 (`?`) 指示的位置参数标记。|  
 |`Odbc`|使用由问号 (`?`) 指示的位置参数标记。|  
@@ -46,7 +47,7 @@ ms.locfileid: "91150760"
 > [!IMPORTANT]
 > 出于安全原因，建议不要通过采用字符串串联的形式构造直接 SQL 语句来完全避免提供程序特定的参数。 使用字符串串联代替参数会使您的应用程序容易受到 SQL 注入攻击。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [DbProviderFactories](dbproviderfactories.md)
 - [获取 DbProviderFactory](obtaining-a-dbproviderfactory.md)

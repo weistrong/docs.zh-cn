@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <protocolMapping>
 title: <protocolMapping>
 ms.date: 03/30/2017
 ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
-ms.openlocfilehash: 0a79aa18c74ddb8ec47f02620d16d391b4a36b68
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: defdf3129122212dac9481dc5d8d48a0dfa94d72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786910"
 ---
 # \<protocolMapping>
 
@@ -37,13 +38,13 @@ ms.locfileid: "91162291"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<filters>](filters-of-routing.md)|包含传输协议方案（如 http、net.tcp、net.pipe 等）和 WCF 绑定之间的默认协议映射。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<system.serviceModel>](system-servicemodel.md)|所有 WCF 配置元素的根元素。|  
   

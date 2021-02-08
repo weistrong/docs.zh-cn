@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EClrOperation 枚举
 title: EClrOperation 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
 topic_type:
 - apiref
-ms.openlocfilehash: c24e4557695d26666682ee385131abaab707a24d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9f75762a400955b5f36fb2a337f283e36a32658c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720706"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785557"
 ---
 # <a name="eclroperation-enumeration"></a>EClrOperation 枚举
 
@@ -51,7 +52,7 @@ typedef enum {
 |`OPR_ThreadRudeAbortInCriticalRegion`|宿主可以指定在关键代码区域发生强制线程中止时要执行的策略操作。|  
 |`OPR_ThreadRudeAbortInNonCriticalRegion`|宿主可以指定在非关键代码区域发生强制线程中止时要执行的策略操作。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  公共语言运行时 (CLR) 可靠性基础结构区分关键代码区域发生的中止和资源分配失败，以及在非关键代码区域发生的失败。 这种区别旨在允许主机根据代码中发生故障的位置设置不同的策略。  
   
@@ -71,7 +72,7 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrFailure 枚举](eclrfailure-enumeration.md)
 - [EPolicyAction 枚举](epolicyaction-enumeration.md)

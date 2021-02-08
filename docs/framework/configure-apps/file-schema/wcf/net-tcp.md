@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <net.tcp>
 title: <net.tcp>
 ms.date: 03/30/2017
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
-ms.openlocfilehash: 12709d58d9192825598b15a50baa10a54450226e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b7b36e0309139508011e5abceab97cc6f6f9a53d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786936"
 ---
 # \<net.tcp>
 
@@ -54,23 +55,23 @@ ms.locfileid: "91178068"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`listenBacklog`|一个整数，指定已从共享连接接受但尚未调度到 Windows Communication Foundation (WCF) 服务的最大未处理连接数。 默认值为 10。|  
 |`maxPendingAccepts`|一个整数，指定共享服务侦听终结点上的最大未完成并发接受线程数。 默认值为 2。|  
 |`MaxPendingConnections`|侦听器可以拥有的正在等待应用程序接受的最大连接数。 超出此配额值时，新的传入连接会被丢弃而不是等待接受。 连接功能（如消息安全）可能会使客户端打开多个连接。 在设置此配额值时，服务管理员应该考虑这些额外的连接。 默认值为 10。|  
 |`receiveTimeout`|<xref:System.TimeSpan>，它将为读取组帧数据并执行来自基础连接的连接调度指定超时值。 默认值为“00:00:10”。|  
-|`teredoEnabled`|一个布尔值，指示端口共享服务是否使用 Microsoft Teredo 服务代表 WCF 服务在 TCP 端口上进行侦听。 默认为 `false`。|  
+|`teredoEnabled`|一个布尔值，指示端口共享服务是否使用 Microsoft Teredo 服务代表 WCF 服务在 TCP 端口上进行侦听。 默认值为 `false`。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<allowAccounts>](allowaccounts.md)|一个配置元素的集合，这些元素包含一个 `securityIdentifier` 属性，用于为承载 WCF 服务并被授予对共享服务的连接访问权限的进程指定用户帐户。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<system.serviceModel.activation>](system-servicemodel-activation.md)|包含侦听器进程 SMSvcHost.exe 的配置设置。|  
   

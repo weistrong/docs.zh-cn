@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： CreateMonitorEvent 方法
 title: IHostSyncManager::CreateMonitorEvent 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 524c7fd3-9b5c-46e7-99ba-555fd2fe33f0
 topic_type:
 - apiref
-ms.openlocfilehash: 7fc431861ac8f5c0e47e12e688f4ca004313c062
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b48d0417e614cf04c3ab150f0bdda73408b7a273
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784777"
 ---
 # <a name="ihostsyncmanagercreatemonitorevent-method"></a>IHostSyncManager::CreateMonitorEvent 方法
 
@@ -55,7 +56,7 @@ HRESULT CreateMonitorEvent (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于创建请求的事件对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CreateMonitorEvent` 返回 `IHostAutoEvent` CLR 在其托管类型实现中使用的 <xref:System.Threading.Monitor?displayProperty=nameWithType> 。 此方法 `CreateEvent` 使用为参数指定的值，对 Win32 函数进行镜像 `false` `bManualReset` 。  
   
@@ -71,7 +72,7 @@ HRESULT CreateMonitorEvent (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostAutoEvent 接口](ihostautoevent-interface.md)

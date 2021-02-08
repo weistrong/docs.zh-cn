@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： <GCHeapAffinitizeMask> 元素
 title: GCHeapAffinitizeMask 元素
 ms.date: 11/08/2019
 helpviewer_keywords:
 - gcHeapCount element
 - <gcHeapCount> element
-ms.openlocfilehash: 09d6523fb10692dd3617a3827d5bccf112bc632b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ea6be3fa3d973f228576db69d0700b1f7ddba585
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73978419"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786975"
 ---
 # <a name="gcheapaffinitizemask-element"></a>\<GCHeapAffinitizeMask> 元素
 
@@ -32,7 +33,7 @@ ms.locfileid: "73978419"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |`enabled`|必需的特性。<br /><br />指定 GC 堆和单个处理器之间的相关性。 |
 
@@ -48,22 +49,22 @@ ms.locfileid: "73978419"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-默认情况下，服务器 GC 线程使用各自的 CPU 进行关联，以便为每个处理器提供一个 GC 堆、一个服务器 GC 线程，以及一个后台服务器垃圾回收线程。 从 .NET Framework 4.6.2 开始，当堆数受**GCHeapCount**元素限制时，可以使用**GCHeapAffinitizeMask**元素控制服务器 GC 堆与处理器之间的相关性。
+默认情况下，服务器 GC 线程使用各自的 CPU 进行关联，以便为每个处理器提供一个 GC 堆、一个服务器 GC 线程，以及一个后台服务器垃圾回收线程。 从 .NET Framework 4.6.2 开始，当堆数受 **GCHeapCount** 元素限制时，可以使用 **GCHeapAffinitizeMask** 元素控制服务器 GC 堆与处理器之间的相关性。
 
-**GCHeapAffinitizeMask**通常与其他两个标志一起使用：
+**GCHeapAffinitizeMask** 通常与其他两个标志一起使用：
 
-- [GCNoAffinitize](gcnoaffinitize-element.md)，控制服务器 GC 线程/堆是否与 cpu 关联。 `enabled` [GCNoAffinitize](gcnoaffinitize-element.md)元素的属性必须为 `false` 要使用的**GCHeapAffinitizeMask**设置的（其默认值）。
+- [GCNoAffinitize](gcnoaffinitize-element.md)，控制服务器 GC 线程/堆是否与 cpu 关联。 `enabled` [GCNoAffinitize](gcnoaffinitize-element.md)元素的属性必须 `false` (其默认值) ，才能使用 **GCHeapAffinitizeMask** 设置。
 
 - [GCHeapCount](gcheapcount-element.md)，用于限制进程用于服务器 GC 的堆数。 默认情况下，每个处理器都有一个堆。
 
-**nnnn**是以十进制值表示的位掩码。 字节0的位0表示处理器0，第1个字节表示处理器1，依此类推。 例如：
+**nnnn** 是以十进制值表示的位掩码。 字节0的位0表示处理器0，第1个字节表示处理器1，依此类推。 例如：
 
 ```xml
 <GCHeapAffinitizeMask enabled="1023"/>
@@ -73,7 +74,7 @@ ms.locfileid: "73978419"
 
 ## <a name="example"></a>示例
 
-下面的示例指示应用程序使用具有10个堆/线程的服务器 GC。 由于不希望这些堆与系统上运行的其他应用程序中的堆重叠，因此，请使用**GCHeapAffinitizeMask**指定进程应使用 cpu 0 到9。
+下面的示例指示应用程序使用具有10个堆/线程的服务器 GC。 由于不希望这些堆与系统上运行的其他应用程序中的堆重叠，因此，请使用 **GCHeapAffinitizeMask** 指定进程应使用 cpu 0 到9。
 
 ```xml
 <configuration>
@@ -85,7 +86,7 @@ ms.locfileid: "73978419"
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [GCNoAffinitize 元素](gcnoaffinitize-element.md)

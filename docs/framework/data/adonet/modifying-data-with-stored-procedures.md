@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：用存储过程修改数据
 title: 使用存储过程修改数据
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 7d8e9a46-1af6-4a02-bf61-969d77ae07e0
-ms.openlocfilehash: 65116a48533fd6ce86894c6a4522929285f8e1f0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 66a4aa9577c71605bde0152a142a65dfa81a31d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150747"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786220"
 ---
 # <a name="modifying-data-with-stored-procedures"></a>使用存储过程修改数据
 
@@ -21,7 +22,7 @@ ms.locfileid: "91150747"
   
 ## <a name="example"></a>示例  
 
- 该示例使用以下存储过程将新类别插入**Northwind** **category 表。** 该存储过程采用 "列 **名称** " 列中的值作为输入参数，并使用 SCOPE_IDENTITY ( # A1 函数检索标识字段的新值 " **类别 id**"，并在输出参数中将其返回。 RETURN 语句使用 @ @ROWCOUNT 函数返回插入的行数。  
+ 此示例使用以下存储过程将一个新类别插入到 Northwind“类别”表。 该存储过程采用 "列 **名称** " 列中的值作为输入参数，并使用 SCOPE_IDENTITY ( # A1 函数检索标识字段的新值 " **类别 id**"，并在输出参数中将其返回。 RETURN 语句使用 @ @ROWCOUNT 函数返回插入的行数。  
   
 ```sql
 CREATE PROCEDURE dbo.InsertCategory  
@@ -41,7 +42,7 @@ RETURN @@ROWCOUNT
  [!code-csharp[DataWorks SqlClient.SprocIdentityReturn#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.SprocIdentityReturn/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.SprocIdentityReturn#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.SprocIdentityReturn/VB/source.vb#1)]  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 ADO.NET 中检索和修改数据](retrieving-and-modifying-data.md)
 - [DataAdapter 和 DataReader](dataadapters-and-datareaders.md)

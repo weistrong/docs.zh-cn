@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeHost：： SetHostControl 方法
 title: ICLRRuntimeHost::SetHostControl 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6136be87-e631-4756-81ed-74b66581bad4
 topic_type:
 - apiref
-ms.openlocfilehash: 32483be43d4d4fe9d185c091e15a13c6feb95600
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e51c61666716badc7214f9a74ad11aa646f2316c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728818"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785089"
 ---
 # <a name="iclrruntimehostsethostcontrol-method"></a>ICLRRuntimeHost::SetHostControl 方法
 
@@ -51,7 +52,7 @@ HRESULT SetHostControl(
 |E_FAIL|发生未知的灾难性故障。 如果方法返回 E_FAIL，则 CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_CLR_ALREADY_STARTED|CLR 已初始化。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  必须在 `SetHostControl` 初始化 CLR 之前调用，也就是说，在调用 [Start 方法](iclrruntimehost-start-method.md) 或使用任何 [元数据接口](../metadata/metadata-interfaces.md)之前。 建议在 `SetHostControl` 调用 [CorBindToCurrentRuntime 函数](corbindtocurrentruntime-function.md) 或 [CorBindToRuntimeEx 函数](corbindtoruntimeex-function.md)之后立即调用。  
   
@@ -65,7 +66,7 @@ HRESULT SetHostControl(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRRuntimeHost 接口](iclrruntimehost-interface.md)
 - [IHostControl 接口](ihostcontrol-interface.md)

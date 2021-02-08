@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： CreateManualEvent 方法
 title: IHostSyncManager::CreateManualEvent 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 68661fbd-09cf-46dc-890b-e694f8a3880a
 topic_type:
 - apiref
-ms.openlocfilehash: 67af8f125b2be39138bac5d51148215f3a3acf86
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 300d6cbf9555eb331a470767cdfb2745da300bb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723865"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784790"
 ---
 # <a name="ihostsyncmanagercreatemanualevent-method"></a>IHostSyncManager::CreateManualEvent 方法
 
@@ -55,7 +56,7 @@ HRESULT CreateManualEvent (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于创建请求的事件对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CreateManualEvent` 创建一个 `IHostManualEvent` 手动重置事件对象，该对象需要调用 [IHostManualEvent：： reset](ihostmanualevent-reset-method.md) 方法，以将其设置为非终止状态。 `CreateManualEvent``CreateEvent`使用 `true` 为参数指定的值镜像 Win32 函数 `bManualReset` 。  
   
@@ -69,7 +70,7 @@ HRESULT CreateManualEvent (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostManualEvent 接口](ihostmanualevent-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <serviceHostingEnvironment>
 title: <serviceHostingEnvironment>
 ms.date: 03/30/2017
 ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652
-ms.openlocfilehash: 5a7043064593fa329618510d15baeb87da432652
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 95243a1cf9cea734b7f35a1400a8b5b865767976
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786715"
 ---
 # \<serviceHostingEnvironment>
 
@@ -43,15 +44,15 @@ ms.locfileid: "91167089"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|aspNetCompatibilityEnabled|一个布尔值，指示是否已为当前应用程序启用了 ASP.NET 兼容模式。 默认为 `false`。<br /><br /> 当此属性设置为时 `true` ，将禁止请求 Windows Communication Foundation (WCF) 服务流过 ASP.NET HTTP 管道，并且禁止通过非 HTTP 协议进行通信。 有关详细信息，请参阅 [WCF 服务和 ASP.NET](../../../wcf/feature-details/wcf-services-and-aspnet.md)。|  
+|aspNetCompatibilityEnabled|一个布尔值，指示是否已为当前应用程序启用了 ASP.NET 兼容模式。 默认值为 `false`。<br /><br /> 当此属性设置为时 `true` ，将禁止请求 Windows Communication Foundation (WCF) 服务流过 ASP.NET HTTP 管道，并且禁止通过非 HTTP 协议进行通信。 有关详细信息，请参阅 [WCF 服务和 ASP.NET](../../../wcf/feature-details/wcf-services-and-aspnet.md)。|  
 |minFreeMemoryPercentageToActivateService|一个整数，指定在可以激活 WCF 服务之前，系统应提供的最小可用内存量。 **警告：**  在 WCF 服务的 web.config 文件中指定此属性以及部分信任时，将导致 <xref:System.Security.SecurityException> 服务运行。|  
 |multipleSiteBindingsEnabled|一个布尔值，指定是否对每个站点启用多个 IIS 绑定。<br /><br /> IIS 由网站组成，这些网站是包含虚拟目录的虚拟应用程序的容器。 可通过一个或多个 IIS 绑定访问站点上的应用程序。 一个 IIS 绑定提供两条信息：绑定协议和绑定信息。 绑定协议定义进行通信所依据的方案，而绑定信息是用于访问站点的信息。 绑定协议的一个示例可以是 HTTP，而绑定信息可包含 IP 地址、端口、主机标头等。<br /><br /> IIS 支持一个站点指定多个 IIS 绑定，这会导致一个方案有多个基址。 但是，在站点下承载的 Windows Communication Foundation (WCF) 服务只允许绑定到每个方案的一个 baseAddress。<br /><br /> 若要针对 Windows Communication Foundation (WCF) 服务为每个站点启用多个 IIS 绑定，请将此属性设置为 `true` 。 请注意，仅对 HTTP 协议支持多个站点绑定。 配置文件中的终结点地址需要是一个完整的 URI。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<baseAddressPrefixFilters>](baseaddressprefixfilters.md)|一个配置元素的集合，这些元素指定服务主机所使用的基址的前缀筛选器。|  
 |[\<serviceActivations>](serviceactivations.md)|一个描述激活设置的配置节。|  
@@ -59,7 +60,7 @@ ms.locfileid: "91167089"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |serviceModel|所有 Windows Communication Foundation (WCF) 配置元素的根元素。|  
   

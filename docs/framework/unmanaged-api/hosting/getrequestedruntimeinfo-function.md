@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetRequestedRuntimeInfo 函数
 title: GetRequestedRuntimeInfo 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0dfd7cdc-c116-4e25-b56a-ac7b0378c942
 topic_type:
 - apiref
-ms.openlocfilehash: b120b854e1787824808dd64d95b0fa78ba6c9fa2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 63d0bdcd07be5727cddc0acc352e8358b5ff0090
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705483"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785284"
 ---
 # <a name="getrequestedruntimeinfo-function"></a>GetRequestedRuntimeInfo 函数
 
@@ -90,7 +91,7 @@ HRESULT GetRequestedRuntimeInfo (
 |S_OK|该方法已成功完成。|  
 |ERROR_INSUFFICIENT_BUFFER|目录缓冲区不够大，无法存储目录路径。<br /><br /> - 或 -<br /><br /> 版本缓冲区不够大，无法存储版本字符串。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetRequestedRuntimeInfo`方法返回有关加载到进程中的版本的运行时信息，这不一定是计算机上安装的最新版本。  
   
@@ -126,7 +127,7 @@ HRESULT GetRequestedRuntimeInfo (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetRequestedRuntimeVersion 函数](getrequestedruntimeversion-function.md)
 - [GetVersionFromProcess 函数](getversionfromprocess-function.md)

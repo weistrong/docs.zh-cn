@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <ws2007HttpBinding>
 title: <security> 的 <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
-ms.openlocfilehash: 48b49bf69f791f90ed5b2eea8e6d412438cd9519
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ef8b82d34b318db79db061b9c01b147e619d39c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786806"
 ---
 # <a name="security-of-ws2007httpbinding"></a>\<security> 的 \<ws2007HttpBinding>
 
@@ -45,13 +46,13 @@ ms.locfileid: "91169838"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|`mode`|可有可无. 指定所应用的安全类型。 默认为 `Message`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.SecurityMode>。|  
+|`mode`|可有可无. 指定所应用的安全类型。 默认值为 `Message`。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.SecurityMode>。|  
   
 ## <a name="mode-attribute"></a>Mode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`None`|禁用安全性。|  
 |`Transport`|使用 HTTPS 提供安全性。 此服务必须使用安全套接字层 (SSL) 证书进行配置。 消息使用 HTTPS 获得全面保护，而且客户端使用服务的 SSL 证书对服务进行身份验证。 客户端身份验证通过元素的 `ClientCredentials` 属性进行控制 [\<transport>](transport-of-ws2007httpbinding.md) 。|  
@@ -60,14 +61,14 @@ ms.locfileid: "91169838"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<transport>](transport-of-ws2007httpbinding.md)|定义传输安全设置。 此元素与 <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement> 类型相对应。 仅在将模式设置为“Transport”时才应用这些设置。|  
 |[\<message>](message-of-ws2007httpbinding.md)|定义消息的安全设置。 此元素与 <xref:System.ServiceModel.Configuration.MessageSecurityOverHttpElement> 类型相对应。 将模式设置为“Transport”时，不应用这些设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<ws2007HttpBinding>](ws2007httpbinding.md)|HTTP 传输应用程序的安全绑定。|  
   

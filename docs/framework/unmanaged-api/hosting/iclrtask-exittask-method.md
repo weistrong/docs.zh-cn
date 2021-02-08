@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTask：： ExitTask 方法
 title: ICLRTask::ExitTask 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 746c85a6-4b33-4f72-a2e9-379fdf2e96af
 topic_type:
 - apiref
-ms.openlocfilehash: bcd1cac47e4b59cc47c95145f0ccf60c92ea54fe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 267b7f284ccac5b535a72dab425c035b6c689361
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784959"
 ---
 # <a name="iclrtaskexittask-method"></a>ICLRTask::ExitTask 方法
 
@@ -43,7 +44,7 @@ HRESULT ExitTask ();
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ExitTask` 尝试完全关闭任务，其方式类似于从非托管类型库分离线程。  
   
@@ -57,7 +58,7 @@ HRESULT ExitTask ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

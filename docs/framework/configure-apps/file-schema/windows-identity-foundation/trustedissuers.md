@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <trustedIssuers>
 title: <trustedIssuers>
 ms.date: 03/30/2017
 ms.assetid: d818c917-07b4-40db-9801-8676561859fd
 author: BrucePerlerMS
-ms.openlocfilehash: 08cddd19f40f039f86e100cc7ee6a78633502eb2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8789eaa38666e22f6a58b3178103aef4408677b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786507"
 ---
 # \<trustedIssuers>
 
@@ -52,7 +53,7 @@ ms.locfileid: "91185556"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`<add thumbprint=xs:string name=xs:string>`|将证书添加到受信任的颁发者的集合中。 证书是用属性指定的 `thumbprint` 。 此属性是必需的，并且应该包含证书指纹的 ASN. 1 编码形式。 `name`属性是可选的，可用于指定证书的友好名称。|  
 |`<clear>`|从受信任的颁发者集合中清除所有证书。|  
@@ -60,7 +61,7 @@ ms.locfileid: "91185556"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<issuerNameRegistry>](issuernameregistry.md)|配置颁发者名称注册表。 **重要提示：** `type` 元素的属性 `<issuerNameRegistry>` 必须引用类，才能使 <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> `<trustedIssuers>` 元素有效。|  
   

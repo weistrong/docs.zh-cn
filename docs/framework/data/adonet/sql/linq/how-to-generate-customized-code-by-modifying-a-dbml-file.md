@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：通过修改 DBML 文件生成自定义代码
 title: 如何：通过修改 DBML 文件生成自定义代码
 ms.date: 03/30/2017
 ms.assetid: 50ad597a-8598-42d3-82dd-fc7d702ebc37
-ms.openlocfilehash: ab49f76a0d5e7338a93e21ae9a8d1d9d74a21e82
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0dd4024b3f6a0ca0583de6bfbdb7463fab14d969
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785999"
 ---
 # <a name="how-to-generate-customized-code-by-modifying-a-dbml-file"></a>如何：通过修改 DBML 文件生成自定义代码
 

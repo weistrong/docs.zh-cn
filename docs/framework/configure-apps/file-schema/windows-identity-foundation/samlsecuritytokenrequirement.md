@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <samlSecurityTokenRequirement>
 title: <samlSecurityTokenRequirement>
 ms.date: 03/30/2017
 ms.assetid: 09202d12-88d3-49cc-953b-703bcc1690eb
 author: BrucePerlerMS
-ms.openlocfilehash: f93ec0007b537e306a570b166eaa4cd2fe7f81e2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 21e584480aae6f620e0809be77e02789536db426
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157026"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786559"
 ---
 # \<samlSecurityTokenRequirement>
 
@@ -49,7 +50,7 @@ ms.locfileid: "91157026"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |mapToWindows|指定令牌处理程序是否应使用传入 UPN 声明将验证令牌映射到 Windows 帐户。 默认值为“false”。|  
 |issuerCertificateRevocationMode|一个 <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> 值，该值指定要用于 x.509 证书的吊销模式。 默认值为 "Online"。|  
@@ -59,14 +60,14 @@ ms.locfileid: "91157026"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<nameClaimType>](nameclaimtype.md)|设置指定属性的声明类型 <xref:System.Security.Principal.IIdentity.Name%2A> 。|  
 |[\<roleClaimType>](roleclaimtype.md)|指定声明类型，该声明类型定义 <xref:System.Security.Claims.ClaimsIdentity> 由标记处理程序的方法返回的对象集合中的角色类型声明 <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> 。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add.md)|将指定的安全令牌处理程序添加到令牌处理程序集合。|  
   

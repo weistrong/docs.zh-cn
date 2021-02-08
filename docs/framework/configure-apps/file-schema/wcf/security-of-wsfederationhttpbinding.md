@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <wsFederationHttpBinding>
 title: <security> 的 <wsFederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: a8e5e854-b8dc-4921-843d-34b6a4a6a8ba
-ms.openlocfilehash: 650483099c7d70450cfc56a9a28efac076d64675
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6c01c7a50b05f1723b3620407eb5e5761bae35cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786793"
 ---
 # <a name="security-of-wsfederationhttpbinding"></a>\<security> 的 \<wsFederationHttpBinding>
 
@@ -92,7 +93,7 @@ ms.locfileid: "91162227"
   
 ## <a name="mode-attribute"></a>Mode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|SOAP 消息在传输过程中并不安全。|  
 |消息|通过使用 SOAP 消息安全，可以提供完整性、保密性、服务器身份验证和客户端身份验证。 默认情况下，将对正文进行加密和签名。 此服务需要使用证书进行配置。 客户端根据由安全令牌服务颁发给客户端的令牌进行身份验证|  
@@ -100,13 +101,13 @@ ms.locfileid: "91162227"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<message>](message-element-of-wsfederationhttpbinding.md)|定义消息级安全性设置。 此元素的类型为 <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义的所有绑定功能 [\<wsDualHttpBinding>](wsdualhttpbinding.md) 。|  
   

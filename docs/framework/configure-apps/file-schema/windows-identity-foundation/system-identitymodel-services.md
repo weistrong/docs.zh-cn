@@ -1,18 +1,19 @@
 ---
+description: 了解详细信息： <System.identitymodel>
 title: <system.identityModel.services>
 ms.date: 03/30/2017
 ms.assetid: fa1624dd-2d74-4ae3-942e-498cee261ac5
 author: BrucePerlerMS
-ms.openlocfilehash: e909756a58d5008d917fca84af0e478fc4878d2f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 037a96c2620e06ef6aed85d1dbaba62aca72e9eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156805"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786546"
 ---
 # \<system.identityModel.services>
 
-使用 WS 联合身份验证协议进行身份验证的配置节。  
+使用 WS-Federation 协议进行身份验证的配置节。  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<system.identityModel.services>**  
@@ -36,7 +37,7 @@ ms.locfileid: "91156805"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<federationConfiguration>](federationconfiguration.md)|包含配置 <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) 和 <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) HTTP 模块的设置。|  
   

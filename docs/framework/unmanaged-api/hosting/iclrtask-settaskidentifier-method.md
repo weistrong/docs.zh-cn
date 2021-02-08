@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTask：： SetTaskIdentifier 方法
 title: ICLRTask::SetTaskIdentifier 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bdb7f047-1e90-40fc-9e3b-d44a16509073
 topic_type:
 - apiref
-ms.openlocfilehash: d1f731e00d4917b997dfba392cb9b6ce2afc082e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e746d8ec96d16f7761dd49ac814ddbed073c2686
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690741"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784946"
 ---
 # <a name="iclrtasksettaskidentifier-method"></a>ICLRTask::SetTaskIdentifier 方法
 
@@ -50,7 +51,7 @@ HRESULT SetTaskIdentifier (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主可以将标识符与任务相关联，以帮助在调试环境中集成 CLR 和宿主。 标识符对于 CLR 没有意义。 CLR 将其传递到调试器应用程序。 调试器可以使用此标识符将 CLR 调用堆栈与宿主调用堆栈相关联，并使其各自的跟踪信息在调试器的用户界面中查看时能够统一。  
   
@@ -64,7 +65,7 @@ HRESULT SetTaskIdentifier (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

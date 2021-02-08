@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <disableCommitThreadStack> 元素
 title: <disableCommitThreadStack> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <disableCommitThreadStack> element
 - disableCommitThreadStack element
 ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
-ms.openlocfilehash: f717f57fe8670b126ed1468713a2114aaa772762
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f80a23b12f67b9f3df1ddb010edb735225f6f7a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198985"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787092"
 ---
 # <a name="disablecommitthreadstack-element"></a>\<disableCommitThreadStack> 元素
 
@@ -41,7 +42,7 @@ ms.locfileid: "91198985"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |0|不禁用公共语言运行时的默认行为（即在线程启动时提交完整线程堆栈）。|  
 |1|禁用公共语言运行时的默认行为（即在线程启动时提交完整线程堆栈）。|  
@@ -52,7 +53,7 @@ ms.locfileid: "91198985"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

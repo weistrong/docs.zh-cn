@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <System.identitymodel>
 title: <system.identityModel>
 ms.date: 03/30/2017
 ms.assetid: 210ce7e9-d07b-400c-800f-5f525dcf95e8
 author: BrucePerlerMS
-ms.openlocfilehash: 216b4c73e06469d6577c61338ad1af0fdd2dc05e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c597f2a849248366f9cf3847c8ef369c13d7a286
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185569"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786520"
 ---
 # \<system.identityModel>
 
@@ -34,13 +35,13 @@ ms.locfileid: "91185569"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<identityConfiguration>](identityconfiguration.md)|指定服务级别标识设置。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`<configuration>`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
   

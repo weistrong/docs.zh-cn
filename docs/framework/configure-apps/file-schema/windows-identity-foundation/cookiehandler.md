@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <cookieHandler>
 title: <cookieHandler>
 ms.date: 03/30/2017
 ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
 author: BrucePerlerMS
-ms.openlocfilehash: 5f5b432830a61adab324b2b6cd2ebe6eeccca7f0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 036646ca5c8aaedebba9466ecb8c9232e87a773d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189833"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786572"
 ---
 # \<cookieHandler>
 
@@ -56,14 +57,14 @@ ms.locfileid: "91189833"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<chunkedCookieHandler>](chunkedcookiehandler.md)|配置 <xref:System.IdentityModel.Services.ChunkedCookieHandler> 。 仅当 `mode` 元素的属性 `<cookieHandler>` 为 "默认值" 或 "分块" 时，此元素才能存在。|  
 |[\<customCookieHandler>](customcookiehandler.md)|设置自定义 cookie 处理程序类型。 如果 `mode` 元素的属性 `<cookieHandler>` 为 "Custom"，则此元素必须存在。 此属性的任何其他值不能出现此情况 `mode` 。 自定义类型必须派生自 <xref:System.IdentityModel.Services.CookieHandler> 类。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<federationConfiguration>](federationconfiguration.md)|包含配置 <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) 和 <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) 的设置。|  
   

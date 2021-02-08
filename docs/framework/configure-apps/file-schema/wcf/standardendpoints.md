@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <standardEndpoints>
 title: <standardEndpoints>
 ms.date: 03/30/2017
 ms.assetid: d62153d7-a6e6-462a-a784-cca61e9c2ba1
-ms.openlocfilehash: 5d0607b5c541fc5ae402a50a0f8c464355b6b246
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f792f55b2c0c76727f4aaee50df072ee0c8bdbc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786650"
 ---
 # \<standardEndpoints>
 
@@ -36,7 +37,7 @@ ms.locfileid: "91157195"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<announcementEndpoint>](announcementendpoint.md)|定义具有固定公告协定的标准终结点。 当分别打开或关闭服务时，服务可以选择通过发送一条联机和脱机公告消息来公告其可用性。 Windows Communication Foundation (WCF) 服务指定元素中的公告终结点 [\<serviceDiscovery>](servicediscovery.md) ，并使用 AnnouncementClient 来执行公告。 希望侦听来自其他服务的公告的客户端实际充当 WCF 服务;因此，您必须在部分中配置该客户端的公告终结点 [\<services>](services.md) 。|  
 |[\<discoveryEndpoint>](discoveryendpoint.md)|定义具有固定发现协定的标准终结点。 将此元素添加到服务配置后，该元素将指定侦听发现消息的位置。 将此元素添加到客户端配置后，该元素将指定发送发现查询的位置。|  
@@ -50,7 +51,7 @@ ms.locfileid: "91157195"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |\<system.ServiceModel>|所有 WCF 配置元素的根元素。|  
   

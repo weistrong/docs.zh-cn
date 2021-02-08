@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeHost：： ExecuteInDefaultAppDomain 方法
 title: ICLRRuntimeHost::ExecuteInDefaultAppDomain 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 30b5cf9a-a762-4bd4-be12-d6c1442b78b1
 topic_type:
 - apiref
-ms.openlocfilehash: df0b2d96963ad03e04bd8770d8a8078c6c20b8ff
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0fae9be69cf67da252dcdb423432ec922c0b00ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785103"
 ---
 # <a name="iclrruntimehostexecuteindefaultappdomain-method"></a>ICLRRuntimeHost::ExecuteInDefaultAppDomain 方法
 
@@ -66,7 +67,7 @@ HRESULT ExecuteInDefaultAppDomain (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 如果某个方法返回 E_FAIL，则该 CRL 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用的方法必须具有以下签名：  
   
@@ -86,6 +87,6 @@ static int pwzMethodName (String pwzArgument)
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRRuntimeHost 接口](iclrruntimehost-interface.md)

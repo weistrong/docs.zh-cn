@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EApiCategories 枚举
 title: EApiCategories 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3c4a8a5a-8a46-4ac9-947f-4959bc9d6ac6
 topic_type:
 - apiref
-ms.openlocfilehash: f90e08373c0497201816bc7eead89b83b84be255
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 58a7d4fa4d0c965bf9158ad6713185782d4ae94a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726868"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785622"
 ---
 # <a name="eapicategories-enumeration"></a>EApiCategories 枚举
 
@@ -59,7 +60,7 @@ typedef enum {
 |`eSynchronization`|指定允许用户代码持有锁的公共语言运行时类和成员阻止在部分受信任的代码中运行。|  
 |`eUI`|指定在部分受信任的代码中阻止允许或要求人工交互的托管类和成员。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRHostProtectionManager：： SetProtectedCategories](iclrhostprotectionmanager-setprotectedcategories-method.md)方法采用类型的参数 `EApiCategories` 。  
   
@@ -75,7 +76,7 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRHostProtectionManager 接口](iclrhostprotectionmanager-interface.md)
 - [承载枚举](hosting-enumerations.md)

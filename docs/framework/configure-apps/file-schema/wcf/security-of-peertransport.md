@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <security> 信息： <peerTransport>
 title: <security> 的 <peerTransport>
 ms.date: 03/30/2017
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
-ms.openlocfilehash: f37c336b0e42993e1eef3f06e2f919705f425a2e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 592f886377a2d5f2008be900a9e7586385fb3782
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786819"
 ---
 # <a name="security-of-peertransport"></a>\<security> 的 \<peerTransport>
 
@@ -35,13 +36,13 @@ ms.locfileid: "91169955"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`mode`|指定要应用的安全类型。 默认值为 Message。 此属性的类型为 <xref:System.ServiceModel.SecurityMode>。|  
   
 ## <a name="mode-attribute"></a>mode 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`None`|禁用安全性。|  
 |`Transport`|使用 HTTPS 提供安全性。|  
@@ -50,13 +51,13 @@ ms.locfileid: "91169955"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<transport>](transport-of-peertransport.md)|定义自定义绑定的对等传输。 此元素具有一个 `clientCredentialType` 属性，可指定与服务进行交互时要使用的凭据。 此属性的类型为 <xref:System.ServiceModel.PeerTransportCredentialType>。<br /><br /> 此元素的类型为 <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<peerTransport>](peertransport.md)|定义自定义绑定的对等传输。|  
   

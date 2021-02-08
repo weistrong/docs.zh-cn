@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EInitializeNewDomainFlags 枚举
 title: EInitializeNewDomainFlags 枚举
 ms.date: 03/30/2017
 api_name:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - EInitializeNewDomainFlags enumeration [.NET Framework hosting]
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
-ms.openlocfilehash: 8350b507609e63c060cda08514200d386c37a6b3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b856d061e86c0c79b35f842975378307b79a37e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724320"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785459"
 ---
 # <a name="einitializenewdomainflags-enumeration"></a>EInitializeNewDomainFlags 枚举
 
@@ -39,7 +40,7 @@ typedef enum {
 |`eInitializeNewDomainFlags_None`|无标志。|  
 |`eInitializeNewDomainFlags_NoSecurityChanges`|通知公共语言运行时 (CLR) 宿主不会在方法中更改应用程序域的安全状态 <xref:System.AppDomainManager.InitializeNewDomain%2A> 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICLRDomainManager：： SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md)方法采用类型的参数 `EInitializeNewDomainFlags` 。  
   
@@ -53,7 +54,7 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载枚举](hosting-enumerations.md)
 - [SetAppDomainManagerType 方法](iclrdomainmanager-setappdomainmanagertype-method.md)

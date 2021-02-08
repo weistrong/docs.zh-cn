@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <gcAllowVeryLargeObjects> 元素
 title: gcAllowVeryLargeObjects 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - gcAllowVeryLargeObjects element
 - <gcAllowVeryLargeObjects> element
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
-ms.openlocfilehash: 1e54b0780ffb5bbe81ab1be2b376ff7a038ee05c
-ms.sourcegitcommit: 0273f8845eb1ea8de64086bef2271b4f22182c91
+ms.openlocfilehash: ff8380a13c4284cc24178e185344207c3b9a39b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98058124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787014"
 ---
 # <a name="gcallowverylargeobjects-element"></a>\<gcAllowVeryLargeObjects> 元素
 
@@ -34,9 +35,9 @@ ms.locfileid: "98058124"
   
 ### <a name="enabled-attribute"></a>enabled 属性  
   
-|“值”|描述|  
+|值|说明|  
 |-----------|-----------------|  
-|`false`|总大小中大于 2 GB 的数组未启用。 这是默认值。|  
+|`false`|总大小中大于 2 GB 的数组未启用。 这是默认设置。|  
 |`true`|在64位平台上，总大小中已启用大于 2 GB 的数组。|  
   
 ## <a name="child-elements"></a>子元素  
@@ -45,12 +46,12 @@ ms.locfileid: "98058124"
   
 ## <a name="parent-elements"></a>父元素
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关运行时初始化选项的信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在应用程序配置文件中使用此元素可启用大小大于 2 GB 的数组，但不会更改对象大小或数组大小的其他限制：  
   
@@ -79,7 +80,7 @@ ms.locfileid: "98058124"
 
 .NET Framework 4.5 及更高版本
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时设置架构](index.md)
 - [配置文件架构](../index.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： CreateRWLockReaderEvent 方法
 title: IHostSyncManager::CreateRWLockReaderEvent 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 68c4ea19-c47c-45c6-b420-d3a2ba1c2d50
 topic_type:
 - apiref
-ms.openlocfilehash: 7c9bf2186d3dc4500694225ea4023df3609b9010
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: be20757924aa45d2a44edab9bf921026aa0247a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784764"
 ---
 # <a name="ihostsyncmanagercreaterwlockreaderevent-method"></a>IHostSyncManager::CreateRWLockReaderEvent 方法
 
@@ -59,7 +60,7 @@ HRESULT CreateRWLockReaderEvent (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于创建请求的事件对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 调用 `CreateRWLockReaderEvent` 来获取对要 `IHostManualEvent` 在其实现读取器锁实现中使用的实例的引用。 主机可以使用 cookie 来确定哪些任务正在等待读取器锁（通过查询 [ICLRSyncManager](iclrsyncmanager-interface.md) 接口）。  
   
@@ -73,7 +74,7 @@ HRESULT CreateRWLockReaderEvent (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostAutoEvent 接口](ihostautoevent-interface.md)

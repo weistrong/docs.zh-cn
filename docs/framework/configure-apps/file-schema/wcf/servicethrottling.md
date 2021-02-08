@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <serviceThrottling>
 title: <serviceThrottling>
 ms.date: 03/30/2017
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
-ms.openlocfilehash: 0c6d844ac287037b7a546d3a48e7cd924e8a63d1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eb65f6d60a266a367789d87e4e6ea10ebfd2c7a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786676"
 ---
 # \<serviceThrottling>
 
@@ -34,7 +35,7 @@ ms.locfileid: "91153607"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |maxConcurrentCalls|一个正整数，用于限制当前在整个 <xref:System.ServiceModel.ServiceHost> 中处理的消息数目。 超出此限制的调用将在队列中排队。 将此值设置为 0 与将其设置为 Int32.MaxValue 等效。 默认值是 16 * 处理器计数。|  
 |maxConcurrentInstances|一个正整数，用于限制在整个 <xref:System.ServiceModel.InstanceContext> 中一次执行的 <xref:System.ServiceModel.ServiceHost> 对象数。 用于创建其他实例的请求将会排队，并在出现低于该限值的槽时完成。 默认值是 maxConcurrentSessions 和 MaxConcurrentCalls 的和|  
@@ -46,7 +47,7 @@ ms.locfileid: "91153607"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定行为元素。|  
   

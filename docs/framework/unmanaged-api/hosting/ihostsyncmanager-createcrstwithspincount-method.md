@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： CreateCrstWithSpinCount 方法
 title: IHostSyncManager::CreateCrstWithSpinCount 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
 topic_type:
 - apiref
-ms.openlocfilehash: 6b2f57c7147cc8ff2abff848bd1e4661c2f5e728
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3c43f1a3d52eb7174844ecb4079cf54413f20853
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784816"
 ---
 # <a name="ihostsyncmanagercreatecrstwithspincount-method"></a>IHostSyncManager::CreateCrstWithSpinCount 方法
 
@@ -55,7 +56,7 @@ HRESULT CreateCrstWithSpinCount (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于创建请求的关键部分。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  自旋计数仅在多处理器系统上使用。 自旋计数指定调用线程在与不可用关键部分关联的信号量上执行等待操作之前必须旋转的次数。 如果在自旋操作期间关键部分变为免费，则调用线程将避免等待操作。 `CreateCrstWithSpinCount` 对 Win32 函数进行镜像 `InitializeCriticalSectionAndSpinCount` 。  
   
@@ -69,7 +70,7 @@ HRESULT CreateCrstWithSpinCount (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostSemaphore 接口](ihostsemaphore-interface.md)

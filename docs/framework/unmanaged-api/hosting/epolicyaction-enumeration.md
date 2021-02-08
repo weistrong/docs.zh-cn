@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： EPolicyAction 枚举
 title: EPolicyAction 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 72dd76ba-239e-45ac-9ded-318fb07d6c6d
 topic_type:
 - apiref
-ms.openlocfilehash: 72b371d72b2f055f2840da5595d9022ffd7e2507
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fb66de2211972bd4d25ccfbab4965f315c0144a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674724"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785447"
 ---
 # <a name="epolicyaction-enumeration"></a>EPolicyAction 枚举
 
@@ -57,7 +58,7 @@ typedef enum {
 |`eThrowException`|指定应引发适用于条件的异常，例如内存不足、缓冲区溢出，等等。|  
 |`eUnloadAppDomain`|指定 <xref:System.AppDomain> 应卸载。 CLR 尝试运行终结器。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主通过调用 [ICLRPolicyManager](iclrpolicymanager-interface.md) 接口的方法来设置策略操作。 有关 "强制" 和 "正常中止" 的信息，请参阅 [EClrOperation](eclroperation-enumeration.md) 枚举。  
   
@@ -71,7 +72,7 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrFailure 枚举](eclrfailure-enumeration.md)
 - [ICLRPolicyManager 接口](iclrpolicymanager-interface.md)

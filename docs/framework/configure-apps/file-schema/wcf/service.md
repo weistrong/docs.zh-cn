@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <service>
 title: <service>
 ms.date: 03/30/2017
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
-ms.openlocfilehash: dcc32f5aa055942408a3f01d37b5aa27ac0f51ee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c3870a170847d773996625235c75591ced75e315
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786780"
 ---
 # \<service>
 
@@ -32,21 +33,21 @@ ms.locfileid: "91173765"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |behaviorConfiguration|一个字符串，其中包含要用于实例化服务的行为的行为名。 定义服务时，该行为名必须在作用域内。 默认值为一个空字符串。|  
 |name|必需的字符串属性，此属性指定要进行实例化的服务的类型。 此设置必须等同于一个有效类型。 格式应为 `Namespace.Class.`|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<endpoint>](endpoint-element.md)|公开此服务的 `endpoint` 元素的集合。|  
 |[\<host>](host.md)|指定此服务实例的主机。 此元素的类型为 <xref:System.ServiceModel.Configuration.HostElement>。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<services>](services.md)|所有 WCF 配置元素的根元素。|  
   

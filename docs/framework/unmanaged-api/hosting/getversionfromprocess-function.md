@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetVersionFromProcess 函数
 title: GetVersionFromProcess 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
 topic_type:
 - apiref
-ms.openlocfilehash: da0d159da6eef7745c1fa7f7320d5e1355f6e413
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ab665d2984f79baf049009690b36782528094937
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721876"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785245"
 ---
 # <a name="getversionfromprocess-function"></a>GetVersionFromProcess 函数
 
@@ -60,7 +61,7 @@ HRESULT GetVersionFromProcess (
 |返回代码|说明|  
 |-----------------|-----------------|  
 |S_OK|该方法已成功完成。|  
-|E_INVALIDARG|`pVersion` 为 null 且不为 `cchBuffer` null，反之亦然。<br /><br /> -或-<br /><br /> `hProcess` 不是进程的有效句柄。<br /><br /> -或-<br /><br /> 未加载 CLR。|  
+|E_INVALIDARG|`pVersion` 为 null 且不为 `cchBuffer` null，反之亦然。<br /><br /> \- 或 -<br /><br /> `hProcess` 不是进程的有效句柄。<br /><br /> \- 或 -<br /><br /> 未加载 CLR。|  
 |ERROR_INSUFFICIENT_BUFFER|`cchBuffer` 为 null 或小于版本字符串的长度。|  
 |E_NOTIMPL|此方法在 Microsoft Windows 95、Microsoft Windows 98 或 Microsoft Windows Millennium Edition 操作系统上不可用。|  
   
@@ -74,7 +75,7 @@ HRESULT GetVersionFromProcess (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetRequestedRuntimeInfo 函数](getrequestedruntimeinfo-function.md)
 - [GetRequestedRuntimeVersion 函数](getrequestedruntimeversion-function.md)

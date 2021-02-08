@@ -1,21 +1,22 @@
 ---
+description: 详细了解：模型声明函数
 title: 模型声明函数
 ms.date: 03/30/2017
 ms.assetid: aba87f13-5685-4f6b-ad14-918e8a7d5c2a
-ms.openlocfilehash: fb30dd86c29d6a7fff6f2c71d5fd892326e1fda4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c9a5cedb8c9706aa0d299635f60f762b92ca6d78
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147848"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786259"
 ---
 # <a name="model-declared-function"></a>模型声明函数
 
-*模型声明函数*是在概念模型中声明的、但未在该概念模型中定义的函数。 该函数可能是在承载或存储环境中定义的。 例如，模型声明函数可能映射至在数据库中定义的函数，从而在概念模型中提供服务器端的功能。  
+*模型声明函数* 是在概念模型中声明的、但未在该概念模型中定义的函数。 该函数可能是在承载或存储环境中定义的。 例如，模型声明函数可能映射至在数据库中定义的函数，从而在概念模型中提供服务器端的功能。  
   
  模型声明函数的声明包含以下信息：  
   
-- 函数名。 （必需）  
+- 函数的名称。 （必需）  
   
 - 返回值的类型。 (可选)  
   

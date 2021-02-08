@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <routing> 信息： <serviceBehavior>
 title: <routing> 的 <serviceBehavior>
 ms.date: 03/30/2017
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
-ms.openlocfilehash: cd53b720bad5752189f1c30d9e4acd3a66830396
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1d8a056d708b3c42aeccf3e46a0703b3fc78a17d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786884"
 ---
 # <a name="routing-of-servicebehavior"></a>\<routing> 的 \<serviceBehavior>
 
@@ -40,10 +41,10 @@ ms.locfileid: "91150877"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |filterTable|一个字符串，指定路由服务要计算的筛选器所在的路由表的名称。 此值必须与 `name` [\<filterTable>](filtertable.md) 部分中元素的属性相匹配 [\<filterTables>](filtertables.md) 。|  
-|routeOnHeaderOnly|一个布尔值，指定筛选器将同时检查消息正文和标头，还是仅检查标头。 默认为 `true`。|  
+|routeOnHeaderOnly|一个布尔值，指定筛选器将同时检查消息正文和标头，还是仅检查标头。 默认值为 `true`。|  
 |soapProcessingEnabled|一个布尔值，指定是否应进行 SOAP 处理。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -52,7 +53,7 @@ ms.locfileid: "91150877"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定行为元素。|  
   

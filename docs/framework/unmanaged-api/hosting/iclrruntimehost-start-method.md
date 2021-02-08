@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeHost：： Start 方法
 title: ICLRRuntimeHost::Start 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c0a6dce5-0a8d-42e8-808b-6ca14df9d289
 topic_type:
 - apiref
-ms.openlocfilehash: 2358af3dff97dbe648da924bc929dd2f83b12df0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ada729c9a90b23fb1573a2101845028e5e2fe76
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728805"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785076"
 ---
 # <a name="iclrruntimehoststart-method"></a>ICLRRuntimeHost::Start 方法
 
@@ -43,7 +44,7 @@ HRESULT Start();
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 如果方法返回 E_FAIL，则 CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在许多情况下，不需要调用 `Start` ，因为运行时将在首次运行托管代码请求时自动初始化自身。 但是，可以使用 `Start` 来准确指定运行时应初始化的时间。  
   
@@ -57,7 +58,7 @@ HRESULT Start();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.AppDomain>
 - [ICLRRuntimeHost 接口](iclrruntimehost-interface.md)
