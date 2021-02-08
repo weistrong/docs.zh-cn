@@ -1,4 +1,5 @@
 ---
+description: 了解更多相关信息： BC31122： "Custom" 修饰符在没有显式委托类型的声明事件上无效
 title: “Custom”修饰符在未用显式委托类型声明的事件上无效
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC31122
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
-ms.openlocfilehash: a2277e3778c2c252fd4b1eaeb033d549f041c15c
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 6cbddd31dfa9c923038f8ea706bfc49233574cfb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796673"
 ---
 # <a name="bc31122-custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types"></a>BC31122： "Custom" 修饰符在没有显式委托类型的声明事件上无效
 
@@ -42,7 +43,7 @@ ms.locfileid: "92160628"
 
  [!code-vb[VbVbalrEventError#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#2)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Event 语句](../statements/event-statement.md)
 - [Delegate 语句](../statements/delegate-statement.md)

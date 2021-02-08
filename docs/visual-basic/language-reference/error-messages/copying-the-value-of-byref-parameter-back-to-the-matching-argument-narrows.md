@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC32053：将 "ByRef" 参数 "" 的值复制 <parametername> 回匹配的参数会收缩从类型 " <typename1> " 到类型 "<typename2>
 title: 将“ByRef”参数“<parametername>”的值复制回匹配的参数将导致从类型“<typename1>”到类型“<typename2>”的收缩转换
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32053
 ms.assetid: 281564b7-99f7-451f-b10d-f985e831bb25
-ms.openlocfilehash: b9a38d3eb4e25d5c9ac765adf47df72e45fd082a
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: a90e64cd81443831a7b8f934fea646411eb5a220
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796699"
 ---
 # <a name="bc32053-copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument-narrows-from-type-typename1-to-type-typename2"></a>BC32053：将 "ByRef" 参数 "" 的值复制 \<parametername> 回匹配的参数将导致从类型 " \<typename1> " 到类型 " \<typename2> " 的收缩
 
@@ -34,7 +35,7 @@ ms.locfileid: "92160927"
 
 - 如果需要将值返回到调用自变量中，请尽可能将反向转换运算符定义为 [扩大](../modifiers/widening.md)转换运算符。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](../../programming-guide/language-features/procedures/index.md)
 - [过程形参和实参](../../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC30298：构造函数 " <name> " 不能调用自身
 title: 构造函数“<name>”不能调用自身
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30298
 ms.assetid: 2d77b7f4-0640-4f89-9c65-f101fd2847c0
-ms.openlocfilehash: f40319cde8388b17e27cfaec2117ebd519ebd4ff
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 486495eb822e3e3008382232091fe3923851f97c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160940"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796712"
 ---
 # <a name="bc30298-constructor-name-cannot-call-itself"></a>BC30298：构造函数 " \<name> " 不能调用自身
 
@@ -28,6 +29,6 @@ ms.locfileid: "92160940"
 
 2. 如果不打算调用另一个构造函数，请完全删除该 `Sub New` 调用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对象生存期：如何创建和销毁对象](../../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

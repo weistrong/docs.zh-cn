@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC30439：常量表达式无法在类型 "中表示<typename>
 title: 常量表达式无法在类型“<typename>”中表示
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30439
 ms.assetid: 0a842906-3bc5-4946-8a37-3e3da883ef63
-ms.openlocfilehash: e18f05c0d6a37ac4563b554d7ba943ba21131f85
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 763ed8a414d8dda3e950ae85a4b1152a459518a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163163"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796738"
 ---
 # <a name="bc30439-constant-expression-not-representable-in-type-typename"></a>BC30439：常量表达式无法在类型 "" 中表示 \<typename>
 
@@ -24,7 +25,7 @@ ms.locfileid: "92163163"
 
 1. 将目标类型更改为可处理该常量的目标类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [常量概述](../../programming-guide/language-features/constants-enums/constants-overview.md)
 - [常量和枚举](../constants-and-enumerations.md)

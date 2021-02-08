@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC40007：默认属性 " <propertyname1> " 与 "" 中的默认属性 "" 冲突 <propertyname2> <classname> ，因此应声明为 "Shadows"
 title: 默认属性“<propertyname1>”与“<propertyname2>”中的默认属性“<classname>”冲突，因此应声明为“Shadows”
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40007
 ms.assetid: 692ccf76-5715-4f11-a972-84cf9de30bc1
-ms.openlocfilehash: 290971a3173c59f08fbd279b6fffe3bcb618cb72
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 8ec7e36da18bbf8dda35e1a521d64268d14b7b26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160602"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796634"
 ---
 # <a name="bc40007-default-property-propertyname1-conflicts-with-default-property-propertyname2-in-classname-and-so-should-be-declared-shadows"></a>BC40007：默认属性 " \<propertyname1> " 与 "" 中的默认属性 "" 冲突 \<propertyname2> \<classname> ，因此应声明为 "Shadows"
 
@@ -26,7 +27,7 @@ ms.locfileid: "92160602"
 
 - 将 `Shadows` 关键字添加到声明中，或更改所声明的属性的名称。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [阴影](../modifiers/shadows.md)
+- [Shadows](../modifiers/shadows.md)
 - [Visual Basic 中的隐藏](../../programming-guide/language-features/declared-elements/shadowing.md)

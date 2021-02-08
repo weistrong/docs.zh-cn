@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC40029： " <classname> " 不符合 cls，因为它所实现的接口 " <interfacename> " 不符合 cls
 title: “<classname>”不符合 CLS，因为它所实现的接口“<interfacename>”不符合 CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40029
 ms.assetid: 178452f3-5575-4da0-9d6c-53bcddb6a338
-ms.openlocfilehash: 936bc78d87613a8492347df0f65688bbef6e2ca4
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 28264dd602bd20a6b33bebd965982ca12d402d01
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163176"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796764"
 ---
 # <a name="bc40029-classname-is-not-cls-compliant-because-the-interface-interfacename-it-implements-is-not-cls-compliant"></a>BC40029： " \<classname> " 不符合 cls，因为它所实现的接口 " \<interfacename> " 不符合 cls
 

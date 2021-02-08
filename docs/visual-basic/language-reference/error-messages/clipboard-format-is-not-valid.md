@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：剪贴板格式无效
 title: 剪贴板格式无效
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID460
 ms.assetid: 71a4a045-65bb-417d-b3bd-99a9fa3c53f6
-ms.openlocfilehash: 429d1e120a0044152a358a87663eb09989f45b0e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 58ba6197a14b005cf61d0783e19cb3f957dd2fca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796751"
 ---
 # <a name="clipboard-format-is-not-valid"></a>剪贴板格式无效
 
@@ -25,6 +26,6 @@ ms.locfileid: "90874594"
   
 - 删除无效的格式，并指定一个有效的格式。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [剪贴板：添加其他格式](/cpp/mfc/clipboard-adding-other-formats)

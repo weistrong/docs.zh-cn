@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30188：需要声明
 title: 需要声明
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30188
 ms.assetid: da6b1df3-fe6b-4415-88e6-0977e5189e0b
-ms.openlocfilehash: 2755f5afcb96ca7a6c4d140908649390dd66d571
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: b86c182fb9dc8ab7d624833136f0e87b072aed92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796660"
 ---
 # <a name="bc30188-declaration-expected"></a>BC30188：应为声明
 
@@ -30,7 +31,7 @@ Nondeclarative 语句，如赋值语句或循环语句，在任何过程外发�
 
 - 确保声明关键字没有拼写错误。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](../../programming-guide/language-features/procedures/index.md)
 - [Dim 语句](../statements/dim-statement.md)
