@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： INotifySource2 接口
 title: INotifySource2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: f432fb85-5c78-43d1-8302-53b8fc605c97
 topic_type:
 - apiref
-ms.openlocfilehash: efb7ca77b2468bf05b8973d80c2c20b85a64faf6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a14f4578d322802360de35396c684d69e2d12da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790329"
 ---
-# <a name="inotifysource2-interface"></a><span data-ttu-id="20867-102">INotifySource2 接口</span><span class="sxs-lookup"><span data-stu-id="20867-102">INotifySource2 Interface</span></span>
+# <a name="inotifysource2-interface"></a><span data-ttu-id="98bb1-103">INotifySource2 接口</span><span class="sxs-lookup"><span data-stu-id="98bb1-103">INotifySource2 Interface</span></span>
 
-<span data-ttu-id="20867-103">声明用于设置通知筛选器的方法。</span><span class="sxs-lookup"><span data-stu-id="20867-103">Declares a method for setting notification filters.</span></span>  
+<span data-ttu-id="98bb1-104">声明用于设置通知筛选器的方法。</span><span class="sxs-lookup"><span data-stu-id="98bb1-104">Declares a method for setting notification filters.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="20867-104">方法</span><span class="sxs-lookup"><span data-stu-id="20867-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="98bb1-105">方法</span><span class="sxs-lookup"><span data-stu-id="98bb1-105">Methods</span></span>  
   
-|<span data-ttu-id="20867-105">方法</span><span class="sxs-lookup"><span data-stu-id="20867-105">Method</span></span>|<span data-ttu-id="20867-106">说明</span><span class="sxs-lookup"><span data-stu-id="20867-106">Description</span></span>|  
+|<span data-ttu-id="98bb1-106">方法</span><span class="sxs-lookup"><span data-stu-id="98bb1-106">Method</span></span>|<span data-ttu-id="98bb1-107">说明</span><span class="sxs-lookup"><span data-stu-id="98bb1-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="20867-107">SetNotifyFilter 方法</span><span class="sxs-lookup"><span data-stu-id="20867-107">SetNotifyFilter Method</span></span>](inotifysource2-setnotifyfilter-method.md)|<span data-ttu-id="20867-108">分配用于此源的通知筛选器。</span><span class="sxs-lookup"><span data-stu-id="20867-108">Assigns a notification filter for use with this source.</span></span>|  
+|[<span data-ttu-id="98bb1-108">SetNotifyFilter 方法</span><span class="sxs-lookup"><span data-stu-id="98bb1-108">SetNotifyFilter Method</span></span>](inotifysource2-setnotifyfilter-method.md)|<span data-ttu-id="98bb1-109">分配用于此源的通知筛选器。</span><span class="sxs-lookup"><span data-stu-id="98bb1-109">Assigns a notification filter for use with this source.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="20867-109">要求</span><span class="sxs-lookup"><span data-stu-id="20867-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="98bb1-110">要求</span><span class="sxs-lookup"><span data-stu-id="98bb1-110">Requirements</span></span>  
 
- <span data-ttu-id="20867-110">**标头：** ProtocolNotify2 .idl</span><span class="sxs-lookup"><span data-stu-id="20867-110">**Header:** ProtocolNotify2.idl</span></span>  
+ <span data-ttu-id="98bb1-111">**标头：** ProtocolNotify2 .idl</span><span class="sxs-lookup"><span data-stu-id="98bb1-111">**Header:** ProtocolNotify2.idl</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="20867-111">另请参阅</span><span class="sxs-lookup"><span data-stu-id="20867-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="98bb1-112">请参阅</span><span class="sxs-lookup"><span data-stu-id="98bb1-112">See also</span></span>
 
-- [<span data-ttu-id="20867-112">INotifyConnection2 接口</span><span class="sxs-lookup"><span data-stu-id="20867-112">INotifyConnection2 Interface</span></span>](inotifyconnection2-interface.md)
-- [<span data-ttu-id="20867-113">INotifySink2 接口</span><span class="sxs-lookup"><span data-stu-id="20867-113">INotifySink2 Interface</span></span>](inotifysink2-interface.md)
-- [<span data-ttu-id="20867-114">诊断符号存储区接口</span><span class="sxs-lookup"><span data-stu-id="20867-114">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
+- [<span data-ttu-id="98bb1-113">INotifyConnection2 接口</span><span class="sxs-lookup"><span data-stu-id="98bb1-113">INotifyConnection2 Interface</span></span>](inotifyconnection2-interface.md)
+- [<span data-ttu-id="98bb1-114">INotifySink2 接口</span><span class="sxs-lookup"><span data-stu-id="98bb1-114">INotifySink2 Interface</span></span>](inotifysink2-interface.md)
+- [<span data-ttu-id="98bb1-115">诊断符号存储区接口</span><span class="sxs-lookup"><span data-stu-id="98bb1-115">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
