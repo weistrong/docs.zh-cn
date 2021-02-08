@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息： MessageQueueClosed
 title: System.ServiceModel.Activation.MessageQueueClosed
 ms.date: 03/30/2017
 ms.assetid: 92c40c72-4f0d-4d8a-bde0-1731aaaeaf89
-ms.openlocfilehash: cac53a0bca26c4a4960df9ce0d53217888ee40b4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89273251b5244840cf4f45bc425ee5ed93b3a25a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242365"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770425"
 ---
-# <a name="systemservicemodelactivationmessagequeueclosed"></a><span data-ttu-id="0f500-102">System.ServiceModel.Activation.MessageQueueClosed</span><span class="sxs-lookup"><span data-stu-id="0f500-102">System.ServiceModel.Activation.MessageQueueClosed</span></span>
+# <a name="systemservicemodelactivationmessagequeueclosed"></a><span data-ttu-id="a7e2e-103">System.ServiceModel.Activation.MessageQueueClosed</span><span class="sxs-lookup"><span data-stu-id="a7e2e-103">System.ServiceModel.Activation.MessageQueueClosed</span></span>
 
-<span data-ttu-id="0f500-103">System.ServiceModel.Activation.MessageQueueClosed</span><span class="sxs-lookup"><span data-stu-id="0f500-103">System.ServiceModel.Activation.MessageQueueClosed</span></span>  
+<span data-ttu-id="a7e2e-104">System.ServiceModel.Activation.MessageQueueClosed</span><span class="sxs-lookup"><span data-stu-id="a7e2e-104">System.ServiceModel.Activation.MessageQueueClosed</span></span>  
   
-## <a name="description"></a><span data-ttu-id="0f500-104">描述</span><span class="sxs-lookup"><span data-stu-id="0f500-104">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="a7e2e-105">说明</span><span class="sxs-lookup"><span data-stu-id="a7e2e-105">Description</span></span>  
 
- <span data-ttu-id="0f500-105">消息队列已关闭。</span><span class="sxs-lookup"><span data-stu-id="0f500-105">A message queue was closed.</span></span>  
+ <span data-ttu-id="a7e2e-106">消息队列已关闭。</span><span class="sxs-lookup"><span data-stu-id="a7e2e-106">A message queue was closed.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="0f500-106">另请参阅</span><span class="sxs-lookup"><span data-stu-id="0f500-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a7e2e-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="a7e2e-107">See also</span></span>
 
-- [<span data-ttu-id="0f500-107">跟踪</span><span class="sxs-lookup"><span data-stu-id="0f500-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="0f500-108">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="0f500-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="0f500-109">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="0f500-109">Administration and Diagnostics</span></span>](../index.md)
+- [<span data-ttu-id="a7e2e-108">跟踪</span><span class="sxs-lookup"><span data-stu-id="a7e2e-108">Tracing</span></span>](index.md)
+- [<span data-ttu-id="a7e2e-109">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="a7e2e-109">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="a7e2e-110">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="a7e2e-110">Administration and Diagnostics</span></span>](../index.md)
