@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3501-InferredContractDescription
 title: 3501 - InferredContractDescription
 ms.date: 03/30/2017
 ms.assetid: 21a70849-4fc0-41d2-b9a4-db5aa2acdf1a
-ms.openlocfilehash: 88a04c0eb6d12876592702ad4dba3a17aa8da122
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2eab180780a1475bff421441b7cef23f58f627c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245284"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778082"
 ---
 # <a name="3501---inferredcontractdescription"></a>3501 - InferredContractDescription
 
@@ -17,10 +18,10 @@ ms.locfileid: "96245284"
 |-|-|  
 |ID|3501|  
 |关键字|WFServices|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示已从 WorkflowService 中推断出 ContractDescription。  
   
@@ -30,8 +31,8 @@ ms.locfileid: "96245284"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
-|“属性”|xs:string|ContractDescription 的名称。|  
+|名称|xs:string|ContractDescription 的名称。|  
 |命名空间|xs:string|ContractDescription 的命名空间。|  
 |应用程序域|xs:string|由 AppDomain.CurrentDomain.FriendlyName 返回的字符串。|

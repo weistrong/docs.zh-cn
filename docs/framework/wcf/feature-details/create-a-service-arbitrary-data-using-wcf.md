@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：使用 WCF REST 编程模型创建接受任意数据的服务
 title: 如何：使用 WCF REST 编程模型创建接受任意数据的服务
 ms.date: 03/30/2017
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
-ms.openlocfilehash: 9c9899705861cc1cf2cda2559c30a0a60d8cc635
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a08e611b51d92e070f18620d61a2b95de2cd6cfb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237828"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780318"
 ---
 # <a name="how-to-create-a-service-that-accepts-arbitrary-data-using-the-wcf-rest-programming-model"></a>如何：使用 WCF REST 编程模型创建接受任意数据的服务
 
@@ -195,7 +196,7 @@ namespace ReceiveRawData
   
 - 编译该代码时，请引用 System.ServiceModel.dll 和 System.ServiceModel.Web.dll  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [UriTemplate 和 UriTemplateTable](uritemplate-and-uritemplatetable.md)
 - [WCF Web HTTP 编程模型](wcf-web-http-programming-model.md)

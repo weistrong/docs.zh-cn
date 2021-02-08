@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：将 NetTcpBinding 应用程序转换为对等通道应用程序
 title: 将 NetTcpBinding 应用程序转换为对等通道应用程序
 ms.date: 03/30/2017
 ms.assetid: d4137292-a923-4b8f-8594-42276f2d3ce2
-ms.openlocfilehash: 5444b53f0373a2f2b06da680a53e8e5fa77d39b7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 828ffce38fb05acff851c9fe5a6fbb38fffad6aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286729"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780409"
 ---
 # <a name="converting-a-nettcpbinding-application-to-a-peer-channel-application"></a>将 NetTcpBinding 应用程序转换为对等通道应用程序
 
@@ -15,7 +16,7 @@ ms.locfileid: "96286729"
   
  如果应用程序使用默认解析程序和安全设置，那么将基于客户端/服务器的标准应用程序转换为使用对等通道需要在应用程序配置文件中将绑定名称从“NetTcpBinding”更改为“NetPeerTcpBinding”，而无需更改应用程序基本代码。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [生成对等通道应用程序](building-a-peer-channel-application.md)
 - [系统提供的绑定](../system-provided-bindings.md)

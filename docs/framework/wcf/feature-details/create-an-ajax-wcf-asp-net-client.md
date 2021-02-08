@@ -1,13 +1,14 @@
 ---
-title: 在 Visual Studio 中创建启用 AJAX 的 WCF 服务和 ASP.NET 客户端
+description: 了解详细信息：如何：创建 AJAX-Enabled WCF 服务和访问服务的 ASP.NET 客户端
+title: 在 Visual Studio 中创建 AJAX-Enabled WCF 服务和 ASP.NET 客户端
 ms.date: 08/17/2018
 ms.assetid: 95012df8-2a66-420d-944a-8afab261013e
-ms.openlocfilehash: 0bfe55c68f68bfef7b7ec2034413b53d41b0c785
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 59b0cab9b28dd68b27529b5d880138cc283144a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91609351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780344"
 ---
 # <a name="how-to-create-an-ajax-enabled-wcf-service-and-an-aspnet-client-that-accesses-the-service"></a>如何：创建支持 AJAX 的 WCF 服务和访问该服务的 ASP.NET 客户端
 
@@ -19,7 +20,7 @@ ms.locfileid: "91609351"
 
 1. 从 "**文件**" 菜单中选择 "**新建**  >  **项目**"
 
-1. 在 "**新建项目**" 对话框中，展开 "**已安装**的  >  **Visual c #**  >  **Web** " 类别，然后选择 " **ASP.NET Web 应用程序 ( .NET Framework) **"。
+1. 在 "**新建项目**" 对话框中，展开 "**已安装** 的  >  **Visual c #**  >  **Web** " 类别，然后选择 " **ASP.NET Web 应用程序 ( .NET Framework)**"。
 
 1. 将项目命名为 **SandwichServices** ，然后单击 **"确定"**。
 
@@ -29,9 +30,9 @@ ms.locfileid: "91609351"
 
 ## <a name="add-a-web-form"></a>添加 web 窗体
 
-1. 在**解决方案资源管理器**中右键单击 "SandwichServices" 项目，然后选择 "**添加**  >  **新项**"。
+1. 在 **解决方案资源管理器** 中右键单击 "SandwichServices" 项目，然后选择 "**添加**  >  **新项**"。
 
-1. 在 "**添加新项**" 对话框中，展开 "**已安装**的  >  **Visual c #**  >  **Web** " 类别，然后选择 " **Web 窗体**" 模板。
+1. 在 "**添加新项**" 对话框中，展开 "**已安装** 的  >  **Visual c #**  >  **Web** " 类别，然后选择 " **Web 窗体**" 模板。
 
 1. 接受默认名称 " (**webform1.aspx** ") ，然后选择 " **添加**"。
 
@@ -47,9 +48,9 @@ ms.locfileid: "91609351"
 
 ## <a name="create-an-ajax-enabled-wcf-service"></a>创建启用 AJAX 的 WCF 服务
 
-1. 在**解决方案资源管理器**中右键单击 "SandwichServices" 项目，然后选择 "**添加**  >  **新项**"。
+1. 在 **解决方案资源管理器** 中右键单击 "SandwichServices" 项目，然后选择 "**添加**  >  **新项**"。
 
-1. 在 "**添加新项**" 对话框中，展开 "**已安装**的  >  **Visual c #**  >  **Web** " 类别，然后选择**WCF 服务 (启用 AJAX 的) **模板。
+1. 在 "**添加新项**" 对话框中，展开 "**已安装** 的  >  **Visual c #**  >  **Web** " 类别，然后选择 **WCF 服务 (启用 AJAX 的)** 模板。
 
    ![WCF 服务 (Visual Studio 中启用 AJAX 的) 项模板](./media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
 
@@ -100,11 +101,11 @@ ms.locfileid: "91609351"
     </script>
     ```
 
-   此代码将调用 CostService 的方法来计算三个三明治的价格，然后将结果显示在名为 **additionResult**的范围内。
+   此代码将调用 CostService 的方法来计算三个三明治的价格，然后将结果显示在名为 **additionResult** 的范围内。
 
 ## <a name="run-the-program"></a>运行程序
 
-请确保 *webform1.aspx* 具有焦点，然后按 " **启动** " 按钮以启动 web 客户端。 该按钮具有一个绿色三角形，并显示类似于 **IIS Express (Microsoft Edge) **的内容。 也可以按 <kbd>F5</kbd>。 单击 " **3 三明治** " 按钮的 "价格" 以生成 "3.75" 的预期输出。
+请确保 *webform1.aspx* 具有焦点，然后按 " **启动** " 按钮以启动 web 客户端。 该按钮具有一个绿色三角形，并显示类似于 **IIS Express (Microsoft Edge)** 的内容。 也可以按 <kbd>F5</kbd>。 单击 " **3 三明治** " 按钮的 "价格" 以生成 "3.75" 的预期输出。
 
 ## <a name="example"></a>示例
 

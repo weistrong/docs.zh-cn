@@ -1,17 +1,18 @@
 ---
+description: 了解有关使用 WCF 服务的 .ASMX 客户端的详细信息
 title: 带有 WCF 服务的 ASMX 客户端
 ms.date: 03/30/2017
 ms.assetid: 3ea381ee-ac7d-4d62-8c6c-12dc3650879f
-ms.openlocfilehash: fd13d4907f1be09440387a36e14ecdc4926ba7e7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b9f561f6651c591556f821478c4c4bfd7d7da23d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594772"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778914"
 ---
 # <a name="asmx-client-with-a-wcf-service"></a>带有 WCF 服务的 ASMX 客户端
 
-此示例演示如何使用 Windows Communication Foundation （WCF）创建服务，然后从非 WCF 客户端（如 .ASMX 客户端）访问该服务。
+此示例演示如何使用 Windows Communication Foundation (WCF) 创建服务，然后从非 WCF 客户端（如 .ASMX 客户端）访问该服务。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
@@ -51,7 +52,7 @@ public interface ICalculator
 </services>
 ```
 
-使用由 Web 服务描述语言（WSDL）实用程序（Wsdl.exe）生成的类型化代理来与 WCF 服务进行通信。 该类型化代理包含在 generatedClient.cs 文件中。 WSDL 实用工具为指定的服务检索元数据并生成一个类型化代理，供客户端用来进行通信。 默认情况下，框架不公开任何元数据。 若要公开生成代理所需的元数据，必须添加 [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md) ，并将其 `httpGetEnabled` 属性设置为， `True` 如下面的配置所示。
+使用由 Web 服务描述语言生成的类型化代理（ (WSDL) utility ( # A0) ），.ASMX 客户端与 WCF 服务进行通信。 该类型化代理包含在 generatedClient.cs 文件中。 WSDL 实用工具为指定的服务检索元数据并生成一个类型化代理，供客户端用来进行通信。 默认情况下，框架不公开任何元数据。 若要公开生成代理所需的元数据，必须添加 [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md) ，并将其 `httpGetEnabled` 属性设置为， `True` 如下面的配置所示。
 
 ```xml
 <behaviors>
@@ -132,20 +133,20 @@ Press <ENTER> to terminate client.
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+1. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
 2. 若要生成 C# 或 Visual Basic .NET 版本的解决方案，请按照 [Building the Windows Communication Foundation Samples](building-the-samples.md)中的说明进行操作。
 
-3. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
 > [!NOTE]
-> 有关传递和返回复杂数据类型的详细信息，请参阅： [Windows 窗体客户端中的数据绑定](data-binding-in-a-windows-forms-client.md)、 [Windows Presentation Foundation 客户端中的数据](data-binding-in-a-wpf-client.md)绑定，以及[ASP.NET 客户端中的数据绑定](data-binding-in-an-aspnet-client.md)
+> 有关传递和返回复杂数据类型的详细信息，请参阅： [Windows 窗体客户端中的数据绑定](data-binding-in-a-windows-forms-client.md)、 [Windows Presentation Foundation 客户端中的数据](data-binding-in-a-wpf-client.md)绑定，以及 [ASP.NET 客户端中的数据绑定](data-binding-in-an-aspnet-client.md)
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Interop\ASMX`

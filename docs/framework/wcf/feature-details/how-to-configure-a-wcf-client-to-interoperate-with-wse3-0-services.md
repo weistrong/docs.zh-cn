@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：配置 WCF 客户端以与 WSE 3.0 服务互操作
 title: 如何：配置 WCF 客户端以与 WSE3.0 服务进行互操作
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3dadd7f1-d207-4ea5-a73b-3e8aa44407f8
-ms.openlocfilehash: b5284db1329c572bdecf3ef607e697c63835d508
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 97de90c491a29cdacf881a92013a11db6aea416f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257517"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780123"
 ---
 # <a name="how-to-configure-a-wcf-client-to-interoperate-with-wse30-services"></a>如何：配置 WCF 客户端以与 WSE3.0 服务进行互操作
 
@@ -63,7 +64,7 @@ ms.locfileid: "96257517"
 [!code-csharp[c_WCFClientToWSEService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wcfclienttowseservice/cs/client.cs#0)]
 [!code-vb[c_WCFClientToWSEService#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#0)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.Binding>
 - [与 WSE 互操作](/previous-versions/dotnet/netframework-3.5/ms752257(v=vs.90))

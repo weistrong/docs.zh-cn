@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：使用会话
 title: 使用会话
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - sessions [WCF]
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
-ms.openlocfilehash: 42159b3871d974e53751468b422cbe9f72b6f908
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bd5fc82af9b613566885bcf27e659edc4ba0e579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273680"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778160"
 ---
 # <a name="using-sessions"></a>使用会话
 
@@ -154,7 +155,7 @@ ms.locfileid: "96273680"
 > [!NOTE]
 > MaxConcurrentSessions 在此情况下不会产生任何影响，因为只有一个“会话”可用。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>
 - <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>

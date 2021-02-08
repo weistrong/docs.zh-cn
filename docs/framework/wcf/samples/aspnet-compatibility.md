@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ASP.NET 兼容性
 title: ASP.NET 兼容性
 ms.date: 03/30/2017
 ms.assetid: c8b51f1e-c096-4c42-ad99-0519887bbbc5
-ms.openlocfilehash: b1d1a72b9ac3041a1547ac42a33eb7d3e1f87a63
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a5685481a16d87715d4fc9096055af5be479f459
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553182"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778849"
 ---
 # <a name="aspnet-compatibility"></a>ASP.NET 兼容性
 
@@ -20,7 +21,7 @@ ms.locfileid: "90553182"
 
 此示例需要 .NET Framework 4 应用程序池才能运行。 若要创建新的应用程序池或修改默认应用程序池，请按照以下步骤操作。
 
-1. 打开“控制面板”  打开 "**系统和安全**" 标题下的 "**管理工具**" 小程序。 ** (IIS) 管理器**小程序打开 Internet Information Services。
+1. 打开“控制面板”  打开 "**系统和安全**" 标题下的 "**管理工具**" 小程序。 **(IIS) 管理器** 小程序打开 Internet Information Services。
 
 2. 展开 " **连接** " 窗格中的 treeview。 选择 " **应用程序池** " 节点。
 

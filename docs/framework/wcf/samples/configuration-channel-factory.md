@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：配置通道工厂
 title: 配置通道工厂
 ms.date: 03/30/2017
 ms.assetid: 3b749493-bd8a-4ccb-893e-5948901a1486
-ms.openlocfilehash: bebdd7e5913fd3bbc1ab88d32e6612b9bc951852
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7868f9b9e3a97a67ac513668be09de4d9c5073bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241143"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778407"
 ---
 # <a name="configuration-channel-factory"></a>配置通道工厂
 

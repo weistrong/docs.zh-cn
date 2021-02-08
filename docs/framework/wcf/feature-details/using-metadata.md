@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用元数据
 title: 使用元数据
 ms.date: 03/30/2017
 ms.assetid: 05cf53a1-b92d-4d8e-a87e-79f6e51c4a8d
-ms.openlocfilehash: e8b41cb161ee1320ec6233f6cadae842af5aec68
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 380e769a6772e41ed67a0b115861b4055397f680
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289459"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779733"
 ---
 # <a name="using-metadata"></a>使用元数据
 
@@ -24,6 +25,6 @@ ms.locfileid: "96289459"
  [根据服务元数据生成 WCF 客户端](generating-a-wcf-client-from-service-metadata.md)  
  演示如何使用 Svcutil.exe 检索元数据，并生成 Windows Communication Foundation (WCF) 客户端。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - Metadata 

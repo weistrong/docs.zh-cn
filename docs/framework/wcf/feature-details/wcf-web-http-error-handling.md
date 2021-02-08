@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WCF Web HTTP 错误处理
 title: WCF Web HTTP 错误处理
 ms.date: 03/30/2017
 ms.assetid: 02891563-0fce-4c32-84dc-d794b1a5c040
-ms.openlocfilehash: cfbf98c69370764a9526c32459d43521177476e3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 88483c249bc1b6b866517ca10b348c0885fc34fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239024"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779473"
 ---
 # <a name="wcf-web-http-error-handling"></a>WCF Web HTTP 错误处理
 
@@ -54,7 +55,7 @@ public string Operation2()
   
  <xref:System.ServiceModel.Web.WebFaultException> 是一个 <xref:System.ServiceModel.FaultException>，因此可用作公开 SOAP 终结点和 Web HTTP 终结点的服务的错误异常编程模型。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF Web HTTP 编程模型](wcf-web-http-programming-model.md)
 - [WCF Web HTTP 格式设置](wcf-web-http-formatting.md)

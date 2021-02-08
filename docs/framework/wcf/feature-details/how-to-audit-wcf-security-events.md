@@ -1,4 +1,5 @@
 ---
+description: 了解有关详细信息，请参阅如何：审核 Windows Communication Foundation 安全事件
 title: 如何：审核 Windows Communication Foundation 安全事件
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], auditing events
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
-ms.openlocfilehash: 67ab5d4a4592a8b772cfdd70befe32f339062b8c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b9cd258f51dbc726108fef0bbf173c7ee26c1d0f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780201"
 ---
 # <a name="how-to-audit-windows-communication-foundation-security-events"></a>如何：审核 Windows Communication Foundation 安全事件
 
@@ -90,7 +91,7 @@ Windows Communication Foundation (WCF) 允许您将安全事件记录到 Windows
   
  如果将 <xref:System.ServiceModel.AuditLogLocation> 属性设置为 <xref:System.ServiceModel.AuditLogLocation.Security> ，并且未在 **本地安全策略** 中设置 **审核对象访问**，则不会将审核事件写入安全日志。 请注意，虽然不返回任何失败记录，但审核项不会写入安全日志。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>

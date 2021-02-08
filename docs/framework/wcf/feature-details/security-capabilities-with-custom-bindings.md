@@ -1,13 +1,14 @@
 ---
+description: 了解更多：包含自定义绑定的安全功能
 title: 使用自定义绑定的安全功能
 ms.date: 03/30/2017
 ms.assetid: a2425679-484a-4e6c-9c98-7da7304f1516
-ms.openlocfilehash: 1b12907481ccb3f3c5f4b8aaba6ede8ebfa6228a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0d4298bcb0b22d607c4abb15d879e3b093394bad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779837"
 ---
 # <a name="security-capabilities-with-custom-bindings"></a>使用自定义绑定的安全功能
 
@@ -54,7 +55,7 @@ ms.locfileid: "96288302"
   
  [保护服务和客户端的安全](securing-services-and-clients.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [绑定与安全](bindings-and-security.md)
 - [安全性概述](security-overview.md)

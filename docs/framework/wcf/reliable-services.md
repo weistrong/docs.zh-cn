@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Reliable Services
 title: Reliable Services
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], reliable sessions
 - service contracts [WCF], reliable services
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
-ms.openlocfilehash: d028af80a30fd18b6aa6e9678e7fd8788e7b7b95
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c38f949e57b1891da2433875571443656c7044dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779200"
 ---
 # <a name="reliable-services"></a>Reliable Services
 
@@ -47,7 +48,7 @@ ms.locfileid: "96249743"
   
  在队列之间与可靠消息传送相耦合的分离，使松耦合的应用程序能够可靠地通信。 与可靠会话不同，源和目标不必同时运行。 这暗示可以出现这种情况：当源产生消息的速率和目标使用消息的速率不匹配时，队列实际上用作一种负载平衡机制。 有关队列的详细信息，请参阅 [WCF 中的队列](./feature-details/queues-in-wcf.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [可靠会话概述](./feature-details/reliable-sessions-overview.md)
 - [在 WCF 中排队](./feature-details/queuing-in-wcf.md)

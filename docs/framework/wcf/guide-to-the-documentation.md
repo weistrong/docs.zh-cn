@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：文档指南
 title: 文档指南
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF [WCF], documentation
 - Windows Communication Foundation [WCF], documentation
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
-ms.openlocfilehash: 10a4fe88c9d49d49338776db83abc1201ada8a95
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7b5c3aa7c6f6a561fa49fb5d417d3fd1e82fcacd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779408"
 ---
 # <a name="guide-to-the-documentation"></a>文档指南
 
@@ -62,7 +63,7 @@ ms.locfileid: "96238140"
 
  若要查看系统提供的绑定中支持的协议的列表，请参阅 [System-Provided 互操作性绑定支持的 Web 服务协议](./feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)。 若要查看系统提供的绑定的列表，请参阅 [系统提供的绑定](system-provided-bindings.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Communication Foundation 示例](./samples/index.md)
 - [概念性概述](conceptual-overview.md)

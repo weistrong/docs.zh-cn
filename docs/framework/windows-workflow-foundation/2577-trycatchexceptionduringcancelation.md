@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 2577-TryCatchExceptionDuringCancelation
 title: 2577 - TryCatchExceptionDuringCancelation
 ms.date: 03/30/2017
 ms.assetid: 35ee9f55-227f-4566-bcb4-4c7c75dea85b
-ms.openlocfilehash: 33c68984e88eaa5e3028899a7c3066c94a65e8eb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e02e7722dadfe38b9fc1fbb92e809ae8f80cbd2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96271234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778095"
 ---
 # <a name="2577---trycatchexceptionduringcancelation"></a>2577 - TryCatchExceptionDuringCancelation
 
@@ -17,10 +18,10 @@ ms.locfileid: "96271234"
 |-|-|  
 |ID|2577|  
 |关键字|WFActivities|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  支持 TryCatch 活动的子活动在取消过程中引发了异常。  
   

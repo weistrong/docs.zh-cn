@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：通过 WorkflowServiceHost 配置持久性
 title: 如何：使用 WorkflowServiceHost 配置永久性
 ms.date: 03/30/2017
 ms.assetid: e31cd4df-13a3-4a9a-9be8-5243e0055356
-ms.openlocfilehash: 3d8b7183b11c138b8da1f04d9084f8b94b7dcaa6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 79945fb791cc25bdf362302fa884636942fb5692
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257335"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780032"
 ---
 # <a name="how-to-configure-persistence-with-workflowservicehost"></a>如何：使用 WorkflowServiceHost 配置永久性
 
@@ -60,7 +61,7 @@ ms.locfileid: "96257335"
   
      有关如何以编程方式配置持久性的示例，请参阅 [如何：为工作流和工作流服务启用持久性](../../windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务](workflow-services.md)
 - [工作流持久性](../../windows-workflow-foundation/workflow-persistence.md)

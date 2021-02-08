@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WCF 中的安全行为
 title: WCF 中的安全行为
 ms.date: 03/30/2017
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
-ms.openlocfilehash: 4e8452d2beb93c9ae59ef6535f45445352a48e22
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a9ebdc44b3770ab4d0cf931db4bf23c9a4cd8e4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779850"
 ---
 # <a name="security-behaviors-in-wcf"></a>WCF 中的安全行为
 
@@ -239,7 +240,7 @@ ms.locfileid: "96288328"
 </behaviors>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [审核](auditing-security-events.md)
 - [Windows Server App Fabric 的安全模型](/previous-versions/appfabric/ee677202(v=azure.10))

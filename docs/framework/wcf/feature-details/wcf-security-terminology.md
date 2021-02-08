@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： WCF 安全术语
 title: WCF 安全术语
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - security glossary [WCF]
 - security terms [WCF]
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
-ms.openlocfilehash: 70dde7ab30d542ecc9f85d027a86b466eb13e4f6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 490bc0f0be5cb26299db9b51691bca87c2371297
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779577"
 ---
 # <a name="wcf-security-terminology"></a>WCF 安全术语
 
@@ -182,8 +183,8 @@ ms.locfileid: "96281307"
  X.509  
  一种国际上认可的证书标准，用于定义证书的必需部分。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Windows Communication Foundation 基础概念](../fundamental-concepts.md)
-- [安全性概念](security-concepts.md)
+- [安全概念](security-concepts.md)
 - [Windows Server App Fabric 的安全模型](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：配置本地颁发者
 title: 如何：配置本地颁发者
 ms.date: 03/30/2017
 dev_langs:
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 15263371-514e-4ea6-90fb-14b4939154cd
-ms.openlocfilehash: 7da3cd34d0840eea48c9ef0bb89fb6580b87623b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1c950c2bbbb55954fc65e35632523ea14ee3ac00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780162"
 ---
 # <a name="how-to-configure-a-local-issuer"></a>如何：配置本地颁发者
 
 本主题说明如何配置客户端以便为已颁发令牌使用本地颁发者。
 
-当客户端与联合服务通信时，服务端通常指定安全令牌服务的地址，客户端需要该安全令牌服务来颁发客户端用于向联合服务对自己进行身份验证的令牌。 在某些情况下，可以将客户端配置为使用*本地颁发者*。
+当客户端与联合服务通信时，服务端通常指定安全令牌服务的地址，客户端需要该安全令牌服务来颁发客户端用于向联合服务对自己进行身份验证的令牌。 在某些情况下，可以将客户端配置为使用 *本地颁发者*。
 
-当联合绑定的颁发者地址为或时，Windows Communication Foundation （WCF）使用本地颁发者 `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` `null` 。 在这样的情况下，必须使用本地颁发者的地址和要使用的绑定来配置 <xref:System.ServiceModel.Description.ClientCredentials>，这样才能与该颁发者通信。
+Windows Communication Foundation (WCF) 当联合绑定的颁发者地址为或时，将使用本地颁发 `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` 者 `null` 。 在这样的情况下，必须使用本地颁发者的地址和要使用的绑定来配置 <xref:System.ServiceModel.Description.ClientCredentials>，这样才能与该颁发者通信。
 
 > [!NOTE]
 > 如果 <xref:System.ServiceModel.Description.ClientCredentials.SupportInteractive%2A> 类的属性 `ClientCredentials` 设置为，则 `true` 未指定本地颁发者地址，或其他联合绑定指定的颁发者地址 [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) 为 `http://schemas.xmlsoap.org/ws/2005/05/identity/issuer/self` 、 `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` 或为 `null` ，则使用 Windows CardSpace 颁发者。
@@ -76,7 +77,7 @@ ms.locfileid: "84601239"
 
 请注意，如果颁发者地址和绑定是为给定的绑定而指定的，则不对使用该绑定的终结点使用本地颁发者。 希望始终使用本地颁发者的客户端应该确保不使用这样的绑定，或修改该绑定，使颁发者地址为 `null`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：在联合身份验证服务上配置凭据](how-to-configure-credentials-on-a-federation-service.md)
 - [如何：创建联合客户端](how-to-create-a-federated-client.md)

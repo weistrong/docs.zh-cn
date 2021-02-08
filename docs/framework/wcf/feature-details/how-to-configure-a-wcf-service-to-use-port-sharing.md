@@ -1,16 +1,17 @@
 ---
+description: 了解有关详细信息，请参阅如何：将 Windows Communication Foundation 服务配置为使用端口共享
 title: 如何：配置 Windows Communication Foundation 服务以使用端口共享
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6400bc71-a858-4ac2-8d5a-caa72d3b5482
-ms.openlocfilehash: 39b9da1096c38eba648f528f7c2b3ecaa39ab7c2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 53fe3449ece5a5e545d7add5c4e6c7feebe5a8ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780097"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-service-to-use-port-sharing"></a>如何：配置 Windows Communication Foundation 服务以使用端口共享
 
@@ -61,7 +62,7 @@ ms.locfileid: "96257504"
 </system.serviceModel>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Net.TCP 端口共享](net-tcp-port-sharing.md)
 - [如何：启用 Net.TCP 端口共享服务](how-to-enable-the-net-tcp-port-sharing-service.md)

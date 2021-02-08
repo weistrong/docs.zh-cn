@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 225-TraceCorrelationKeys
 title: 225 - TraceCorrelationKeys
 ms.date: 03/30/2017
 ms.assetid: d9083aaf-3816-4c1c-bae0-2d7f49628345
-ms.openlocfilehash: 04c5e0f4fbf3b95485e5bf4aae53aa2e4912d893
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c5fdb9305815cdc4df6bbae3e54209d2b5cffd9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294490"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778108"
 ---
 # <a name="225---tracecorrelationkeys"></a>225 - TraceCorrelationKeys
 
@@ -17,10 +18,10 @@ ms.locfileid: "96294490"
 |-|-|  
 |ID|225|  
 |关键字|疑难解答，ServiceModel|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  将基于内容的相关用于工作流服务时将发出此事件。 该事件包含为关联消息和实例而应用的相关键。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96294490"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |实例键|`xs:GUID`|依据相关值生成的键。|  
 |值|`xs:string`|用于计算相关实例键的值。|  

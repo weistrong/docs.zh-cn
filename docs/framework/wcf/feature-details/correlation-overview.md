@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：相关概述
 title: 相关概述
 ms.date: 03/30/2017
 ms.assetid: edcc0315-5d26-44d6-a36d-ea554c418e9f
-ms.openlocfilehash: 3cc0bc49ad464401ccff769fd5873d5b7e19dccc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 66413a5289a8ff6172c7167a972754e3e0ba4279
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293710"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780383"
 ---
 # <a name="correlation-overview"></a>相关概述
 
@@ -29,6 +30,6 @@ ms.locfileid: "96293710"
 
 基于内容的相关使用消息中的某些信息片段将消息与特定实例关联。 与基于协议的相关不同，基于内容的相关要求应用程序作者显式声明此数据在各相关消息中的位置。 使用基于内容相关的活动通过使用 <xref:System.ServiceModel.MessageQuerySet> 指定此消息数据。 与不使用某个上下文绑定（如 <xref:System.ServiceModel.BasicHttpContextBinding>）的服务进行通信时，基于内容的相关非常有用。
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [NetContextExchangeCorrelation](/previous-versions/dotnet/netframework-4.0/ee662963(v=vs.100))

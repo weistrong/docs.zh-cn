@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息：结合使用多个身份验证方案和 WCF
 title: 对 WCF 使用多个身份验证方案
 ms.date: 03/30/2017
 ms.assetid: f32a56a0-e2b2-46bf-a302-29e1275917f9
-ms.openlocfilehash: 3aae9bff4300af97f7b179d9d8115340a26e715a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fd03a13c5d38bbf26e2b6079d1320bc389c9f20b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289420"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779707"
 ---
 # <a name="using-multiple-authentication-schemes-with-wcf"></a>对 WCF 使用多个身份验证方案
 
@@ -122,7 +123,7 @@ else
     </binding>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [绑定与安全](bindings-and-security.md)
 - [终结点：地址、绑定和协定](endpoints-addresses-bindings-and-contracts.md)

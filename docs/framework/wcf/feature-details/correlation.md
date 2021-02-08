@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：相关
 title: 相关性
 ms.date: 03/30/2017
 ms.assetid: 60151f6c-19b7-47af-9cdc-76c2ac95f301
-ms.openlocfilehash: 1a357dd9469d7428af56772d3241e59766429990
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c4142a4e7c9472eaf52fc5339221bb59c1883f9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286768"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780357"
 ---
 # <a name="correlation"></a>相关性
 
@@ -27,7 +28,7 @@ ms.locfileid: "96286768"
  [针对相关的疑难解答](troubleshooting-correlation.md)  
  为相关性疑难解答提供方法。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Activities.CorrelationHandle>
 - <xref:System.ServiceModel.Activities.Send>

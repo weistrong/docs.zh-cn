@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：如何：配置 WCF 服务以与 WSE 3.0 客户端进行互操作
 title: 如何：配置 WCF 服务以与 WSE 3.0 客户端进行互操作
 ms.date: 03/30/2017
 ms.assetid: 0f38c4a0-49a6-437c-bdde-ad1d138d3c4a
-ms.openlocfilehash: 600b9c28d92f9e2b6e4d586b052cc5762d591521
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d48b24ac7787a9863744ee9b6a4a984cb6b371e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779928"
 ---
 # <a name="how-to-configure-wcf-services-to-interoperate-with-wse-30-clients"></a>如何：配置 WCF 服务以与 WSE 3.0 客户端进行互操作
 
-当 WCF 服务配置为使用8月2004版的 WS-ADDRESSING 规范时，Windows Communication Foundation （WCF）服务与用于 Microsoft .NET （WSE）客户端的 Web 服务增强3.0 线路级别兼容。
+当 WCF 服务配置为使用 (规范的8月2004版时，Windows Communication Foundation (WCF) 服务与 Web 服务增强 3.0 Microsoft .NET 的线路级别兼容。
 
 ### <a name="to-enable-a-wcf-service-to-interoperate-with-wse-30-clients"></a>使 WCF 服务与 WSE 3.0 客户端进行互操作
 
@@ -23,7 +24,7 @@ ms.locfileid: "84599056"
 
     2. 通过将添加 [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) 到 [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md) 并设置属性，指定绑定的名称 `name` 。
 
-    3. 通过将子添加到，指定身份验证模式和用于保护与 WSE 3.0 兼容的消息的 WS 安全规范的版本 [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) 。
+    3. 通过将子添加到，指定身份验证模式和用于保护与 WSE 3.0 兼容的消息 WS-Security 规范的版本 [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) 。
 
         若要设置身份验证模式，请设置 `authenticationMode` 的属性 [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) 。 身份验证模式大致等效于 WSE 3.0 中的关守安全断言。 下表将 WCF 中的身份验证模式映射到 WSE 3.0 中的交钥匙安全声明。
 
@@ -36,11 +37,11 @@ ms.locfileid: "84599056"
         |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameOverTransport>|`usernameOverTransportSecurity`|
         |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameForCertificate>|`usernameForCertificateSecurity`|
 
-        \*`mutualCertificate10Security`和 `mutualCertificate11Security` 交钥匙安全声明的主要区别之一是 WSE 用于保护 SOAP 消息的 WS 安全规范的版本。 `mutualCertificate10Security` 使用 WS-Security 1.0，而 WS-Security 1.1 用于 `mutualCertificate11Security`。 对于 WCF，会在的属性中指定 WS 安全规范的版本 `messageSecurityVersion` [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) 。
+        \*`mutualCertificate10Security`和 `mutualCertificate11Security` 交钥匙安全声明的主要区别之一是 WSE 用于保护 SOAP 消息的 WS-Security 规范的版本。 `mutualCertificate10Security` 使用 WS-Security 1.0，而 WS-Security 1.1 用于 `mutualCertificate11Security`。 对于 WCF，WS-Security 规范的版本是在的属性中指定的 `messageSecurityVersion` [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) 。
 
-        若要设置用于保护 SOAP 消息的 WS 安全规范的版本，请设置 `messageSecurityVersion` 的属性 [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) 。 若要与 WSE 3.0 进行互操作，请将 `messageSecurityVersion` 属性的值设置为 <xref:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10%2A>。
+        若要设置用于保护 SOAP 消息的 WS-Security 规范的版本，请设置 `messageSecurityVersion` 的属性 [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) 。 若要与 WSE 3.0 进行互操作，请将 `messageSecurityVersion` 属性的值设置为 <xref:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10%2A>。
 
-    4. 通过添加 [\<textMessageEncoding>](../../configure-apps/file-schema/wcf/textmessageencoding.md) 并将其值设置为，指定 WCF 使用 ws-addressing 规范的8月2004版 `messageVersion` <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004%2A> 。
+    4. 通过添加 [\<textMessageEncoding>](../../configure-apps/file-schema/wcf/textmessageencoding.md) 并将其值设置为，指定 WCF 使用8月2004版的 WS-Addressing 规范 `messageVersion` <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004%2A> 。
 
         > [!NOTE]
         > 在使用 SOAP 1.2 时，请将 `messageVersion` 属性设置为 <xref:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressingAugust2004%2A>。
@@ -92,6 +93,6 @@ ms.locfileid: "84599056"
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：自定义系统提供的绑定](../extending/how-to-customize-a-system-provided-binding.md)

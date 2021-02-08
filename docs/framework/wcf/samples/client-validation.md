@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：客户端验证
 title: 客户端验证
 ms.date: 03/30/2017
 ms.assetid: f0c1f805-1a81-4d0d-a112-bf5e2e87a631
-ms.openlocfilehash: dee57e039d4510673b7205fd44fa300b24ac1df5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 373ee49bccd8905e0cb9bfebf281abdd183ac506
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243308"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778563"
 ---
 # <a name="client-validation"></a>客户端验证
 
@@ -64,6 +65,6 @@ ms.locfileid: "96243308"
     > [!NOTE]
     > 此脚本不会在跨计算机运行此示例时移除客户端上的服务证书。 如果你已运行跨计算机使用证书的 WCF 示例，请确保清除已安装在 CurrentUser-TrustedPeople 存储中的服务证书。 为此，请使用以下命令：`certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用元数据](../feature-details/using-metadata.md)

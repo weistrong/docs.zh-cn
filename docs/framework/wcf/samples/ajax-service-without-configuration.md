@@ -1,24 +1,25 @@
 ---
+description: 了解更多相关信息：没有配置的 AJAX 服务
 title: 无配置的 AJAX 服务
 ms.date: 03/30/2017
 ms.assetid: e6db7acd-5679-45d4-b98a-8449c6873838
-ms.openlocfilehash: ab3731ab6aeb80e0e46228b8bf702b0fe5c6e6e9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 137f0845f042d1919c1cb070c91a473ff81863cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779031"
 ---
 # <a name="ajax-service-without-configuration"></a>无配置的 AJAX 服务
 
-此示例演示如何使用 Windows Communication Foundation （WCF）来创建基本 ASP.NET 异步 JavaScript 和 XML （AJAX）服务（可通过从 Web 浏览器客户端使用 JavaScript 代码访问的服务）而无需使用任何配置设置。 该服务在 .svc 文件中使用特殊语法来自动启用 AJAX 终结点。
+此示例演示如何使用 Windows Communication Foundation (WCF) 创建 ASP.NET 的基本的异步 JavaScript 和 XML (AJAX) service (可通过使用 Web 浏览器客户端中的 JavaScript 代码访问的服务) ，而无需使用任何配置设置。 该服务在 .svc 文件中使用特殊语法来自动启用 AJAX 终结点。
 
-WCF 中的 AJAX 支持经过优化，可在控件中与 ASP.NET AJAX 一起使用 `ScriptManager` 。 有关将 WCF 与 ASP.NET AJAX 一起使用的示例，请参阅[Ajax 示例](ajax.md)。
+WCF 中的 AJAX 支持经过优化，可在控件中与 ASP.NET AJAX 一起使用 `ScriptManager` 。 有关将 WCF 与 ASP.NET AJAX 一起使用的示例，请参阅 [Ajax 示例](ajax.md)。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
 
- 此示例是基于使用 HTTP POST 的 AJAX 服务生成的。 如[基本 AJAX 服务](basic-ajax-service.md)示例中所述， <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> 用于宿主服务。
+ 此示例是基于使用 HTTP POST 的 AJAX 服务生成的。 如 [基本 AJAX 服务](basic-ajax-service.md) 示例中所述， <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> 用于宿主服务。
 
 ```text
 <%ServiceHost
@@ -36,21 +37,21 @@ WCF 中的 AJAX 支持经过优化，可在控件中与 ASP.NET AJAX 一起使�
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Ajax\ConfigFreeAjaxService`
 
 #### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 确保在[Windows Communication Foundation 示例的一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)中执行设置说明。
+1. 确保在 [Windows Communication Foundation 示例的一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)中执行设置说明。
 
-2. 按照[生成 Windows Communication Foundation 示例](building-the-samples.md)中所述生成解决方案 ConfigFreeAjaxService。
+2. 按照 [生成 Windows Communication Foundation 示例](building-the-samples.md)中所述生成解决方案 ConfigFreeAjaxService。
 
-3. 导航到 `http://localhost/ServiceModelSamples/ConfigFreeClientPage.aspx` （不要在浏览器中从项目目录中打开 configfreeclientpage.aspx）。
+3. 定位到 `http://localhost/ServiceModelSamples/ConfigFreeClientPage.aspx` (不要在浏览器中从项目目录) 中打开 configfreeclientpage.aspx。
 
 > [!NOTE]
 > 运行此示例时，请确保不要对 IIS 中的 ServiceModelSamples 文件夹同时启用匿名身份验证和 Windows 身份验证。 如果同时启用了这两种身份验证，请禁用 Windows 身份验证。 运行了该示例后，请启用 Windows 身份验证并运行“iisreset”。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [基本 AJAX 服务](basic-ajax-service.md)
