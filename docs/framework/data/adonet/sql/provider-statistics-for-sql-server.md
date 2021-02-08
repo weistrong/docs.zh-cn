@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： SQL Server 的提供程序统计信息
 title: 用于 SQL Server 的提供程序统计信息
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 429c9d09-92ac-46ec-829a-fbff0a9575a2
-ms.openlocfilehash: 21bf7662094d5bc8948a1ce6378c454713cacc62
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ece5a6214d438ecac64e8738755d5fb5d0ed7245
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183112"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767591"
 ---
 # <a name="provider-statistics-for-sql-server"></a>用于 SQL Server 的提供程序统计信息
 
@@ -18,14 +19,14 @@ ms.locfileid: "91183112"
   
 ## <a name="statistical-values-available"></a>可用的统计信息值  
 
- Microsoft SQL Server 提供程序中目前提供 18 个不同的项。 可用的项数可以通过 <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> 返回的 <xref:System.Collections.IDictionary> 接口引用的 Count 属性进行访问****。 提供程序统计信息的所有计数器均使用公共语言运行时 <xref:System.Int64> 类型（C# 和 Visual Basic 中为 long），宽度为 64 位****。 int64 数据类型的最大值由 int64.MaxValue 字段定义，最大值为 ((2^63)-1))********。 当计数器的值达到此最大值时，它们将不再被认为是准确的。 这意味着 int64.MaxValue-1((2^63)-2) 实际上是任何统计信息的最大有效值****。  
+ Microsoft SQL Server 提供程序中目前提供 18 个不同的项。 可用的项数可以通过 <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> 返回的 <xref:System.Collections.IDictionary> 接口引用的 Count 属性进行访问。 提供程序统计信息的所有计数器均使用公共语言运行时 <xref:System.Int64> 类型（C# 和 Visual Basic 中为 long），宽度为 64 位。 int64 数据类型的最大值由 int64.MaxValue 字段定义，最大值为 ((2^63)-1))。 当计数器的值达到此最大值时，它们将不再被认为是准确的。 这意味着 int64.MaxValue-1((2^63)-2) 实际上是任何统计信息的最大有效值。  
   
 > [!NOTE]
 > 字典用于返回提供程序统计信息，因为返回的统计信息的数量、名称和顺序可能会在将来发生变化。 应用程序不应依赖于在字典中找到的特定值，而应检查该值是否存在，并相应地设置分支。  
   
  下表显示了当前可用的统计值。 注意，在 Microsoft .NET Framework 的地区版本中，各个值的键名未本地化。  
   
-|键名|描述|  
+|键名|说明|  
 |--------------|-----------------|  
 |`BuffersReceived`|返回应用程序开始使用提供程序并启用统计信息后，提供程序从 SQL Server 接收到的表格格式数据流 (TDS) 数据包的数量。|  
 |`BuffersSent`|返回启用了统计信息之后，提供程序向 SQL Server 发送的 TDS 数据包的数量。 如果命令较大，可能需要多个缓冲区。 例如，如果将较大的命令发送到服务器，并且它需要六个数据包，则将 `ServerRoundtrips` 增加 1，将 `BuffersSent` 增加 6。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91183112"
  下面的控制台应用程序显示了如何启用连接的统计信息，检索四个单独的统计值并将它们写出到控制台窗口。  
   
 > [!NOTE]
-> 下面的示例使用随 SQL Server 提供的 AdventureWorks 示例数据库****。 示例代码中提供的连接字符串假定数据库已安装并且在本地计算机上可用。 根据环境需要修改连接字符串。  
+> 下面的示例使用随 SQL Server 提供的 AdventureWorks 示例数据库。 示例代码中提供的连接字符串假定数据库已安装并且在本地计算机上可用。 根据环境需要修改连接字符串。  
   
 ```vb  
 Option Strict On  
@@ -208,7 +209,7 @@ namespace CS_Stats_Console_GetValue
  下面的控制台应用程序显示了如何启用连接的统计信息，如何使用枚举器检索所有可用的统计信息值并将它们写入控制台窗口。  
   
 > [!NOTE]
-> 下面的示例使用随 SQL Server 提供的 AdventureWorks 示例数据库****。 示例代码中提供的连接字符串假定数据库已安装并且在本地计算机上可用。 根据环境需要修改连接字符串。  
+> 下面的示例使用随 SQL Server 提供的 AdventureWorks 示例数据库。 示例代码中提供的连接字符串假定数据库已安装并且在本地计算机上可用。 根据环境需要修改连接字符串。  
   
 ```vb  
 Option Strict On  

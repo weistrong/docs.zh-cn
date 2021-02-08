@@ -1,16 +1,17 @@
 ---
-title: 修改大值 (max) 数据
+description: 了解详细信息：在 ADO.NET 中修改 Large-Value (max) 数据
+title: 修改 Large-Value (max) 数据
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8aca5f00-d80e-4320-81b3-016d0466f7ee
-ms.openlocfilehash: 4748740379df689669ee87f66dce58a7015d1217
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2d4721d2de24399a33322bde9e70eb68e59480cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172692"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767669"
 ---
 # <a name="modifying-large-value-max-data-in-adonet"></a>在 ADO.NET 中修改大值 (max) 数据
 
@@ -22,7 +23,7 @@ ms.locfileid: "91172692"
   
  **SQL Server 文档**  
   
-1. [使用大值数据类型](/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
+1. [使用 Large-Value 数据类型](/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
   
 ## <a name="large-value-type-restrictions"></a>大值类型限制  
 
@@ -67,12 +68,12 @@ FROM OPENROWSET
   
  { *column_name* = {。写入 ( *表达式* ， @Offset @Length ) }  
   
- WRITE 方法指定将修改 column_name 值的某个部分**。 表达式是将复制到 column_name 的值，`@Offset` 是将写入表达式的开始点，`@Length` 自变量是列中该部分的长度**。  
+ WRITE 方法指定将修改 column_name 值的某个部分。 表达式是将复制到 column_name 的值，`@Offset` 是将写入表达式的开始点，`@Length` 自变量是列中该部分的长度。  
   
 |如果|Then|  
 |--------|----------|  
-|表达式设置为 NULL|忽略 `@Length`，并在指定的 `@Offset` 处截断 column_name 中的值**。|  
-|`@Offset` 为 NULL|更新操作将表达式追加到现有 column_name 值的末尾并忽略 `@Length`**。|  
+|表达式设置为 NULL|忽略 `@Length`，并在指定的 `@Offset` 处截断 column_name 中的值。|  
+|`@Offset` 为 NULL|更新操作将表达式追加到现有 column_name 值的末尾并忽略 `@Length`。|  
 |`@Offset` 大于 column_name 值的长度|SQL Server 将返回错误。|  
 |`@Length` 为 NULL|更新操作将删除从 `@Offset` 到 `column_name` 值的结尾的所有数据。|  
   

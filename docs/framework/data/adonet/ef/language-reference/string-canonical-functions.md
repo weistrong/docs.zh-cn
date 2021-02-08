@@ -1,13 +1,14 @@
 ---
+description: 了解更多：字符串规范函数
 title: 字符串规范函数
 ms.date: 03/30/2017
 ms.assetid: 5e2cbebd-5df3-47c7-b0e2-49a17ab22bfb
-ms.openlocfilehash: 5a7889511d9e8e276ba026c37f4cd8a4aeba156c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aa356b094e900cca6bd9fdfe09b144d9a9424651
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173648"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767825"
 ---
 # <a name="string-canonical-functions"></a>字符串规范函数
 
@@ -17,14 +18,14 @@ ms.locfileid: "91173648"
 
  下表列出了字符串 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 规范函数。  
   
-|函数|描述|  
+|函数|说明|  
 |--------------|-----------------|  
 |`Concat(string1, string2)`|返回包含追加了 `string2` 的 `string1` 的字符串。<br /><br /> **参数**<br /><br /> `string1`：将 `string2` 追加到其后的字符串。<br /><br /> `string2`：追加到 `string1` 之后的字符串。<br /><br /> **返回值**<br /><br /> `String`。 如果返回值字符串的长度大于允许的最大长度，则发生错误。<br /><br /> **示例**<br /><br /> `-- The following example returns abcxyz.`<br /><br /> `Concat('abc', 'xyz')`|  
 |`Contains(string, target)`|如果 `true` 包含在 `target` 中，则返回 `string`。<br /><br /> **参数**<br /><br /> `string`：在其中进行搜索的字符串。<br /><br /> `target`：所搜索的目标字符串。<br /><br /> **返回值**<br /><br /> 如果 `true` 包含在 `target` 中，则为 `string`；否则为 `false`。<br /><br /> **示例**<br /><br /> `-- The following example returns true.`<br /><br /> `Contains('abc', 'bc')`|  
 |`EndsWith(string, target)`|如果 `true` 以 `target` 结尾，则返回 `string`。<br /><br /> **参数**<br /><br /> `string`：在其中进行搜索的字符串。<br /><br /> `target`：在 `string` 末尾搜索的目标字符串。<br /><br /> **返回值**<br /><br /> 如果 `True` 以 `string` 结尾，则返回 `target`；否则返回 `false`。<br /><br /> **示例**<br /><br /> `-- The following example returns true.`<br /><br /> `EndsWith('abc', 'bc')`**注意：** 如果使用的是 SQL Server 数据访问接口，则此函数将返回， `false` 前提是该字符串存储在固定长度字符串列中且 `target` 为常量。 在这种情况下，将搜索整个字符串，包括任何填充尾随空格。 一种可能的解决办法是将数据裁剪为固定长度字符串，如下面的示例中所示：`EndsWith(TRIM(string), target)`|  
-|`IndexOf(target, string)`|返回 `target` 在 `string` 中的位置，如果没找到则返回 0。 返回 1 指示 `string` 的起始位置。 索引号从 1 开始。<br /><br /> **参数**<br /><br /> `target`：要搜索的字符串。<br /><br /> `string`：在其中进行搜索的字符串。<br /><br /> **返回值**<br /><br /> 一个 `Int32`。<br /><br /> **示例**<br /><br /> `-- The following example returns 4.`<br /><br /> `IndexOf('xyz', 'abcxyz')`|  
+|`IndexOf(target, string)`|返回 `target` 在 `string` 中的位置，如果没找到则返回 0。 返回 1 指示 `string` 的起始位置。 索引号从 1 开始。<br /><br /> **参数**<br /><br /> `target`：要搜索的字符串。<br /><br /> `string`：在其中进行搜索的字符串。<br /><br /> **返回值**<br /><br /> `Int32`。<br /><br /> **示例**<br /><br /> `-- The following example returns 4.`<br /><br /> `IndexOf('xyz', 'abcxyz')`|  
 |`Left(string, length)`|返回 `length` 左侧开始的前 `string` 个字符。 如果 `string` 的长度小于 `length`，则返回整个字符串。<br /><br /> **参数**<br /><br /> `string`：`String`。<br /><br /> `length`：`Int16`、`Int32`、`Int64` 或 `Byte`。 `length` 不能小于零。<br /><br /> **返回值**<br /><br /> `String`。<br /><br /> **示例**<br /><br /> `-- The following example returns abc.`<br /><br /> `Left('abcxyz', 3)`|  
-|`Length(string)`|返回字符串的 (`Int32`) 长度，以字符为单位。<br /><br /> **参数**<br /><br /> `string`：`String`。<br /><br /> **返回值**<br /><br /> 一个 `Int32`。<br /><br /> **示例**<br /><br /> `-- The following example returns 6.`<br /><br /> `Legth('abcxyz')`|  
+|`Length(string)`|返回字符串的 (`Int32`) 长度，以字符为单位。<br /><br /> **参数**<br /><br /> `string`：`String`。<br /><br /> **返回值**<br /><br /> `Int32`。<br /><br /> **示例**<br /><br /> `-- The following example returns 6.`<br /><br /> `Legth('abcxyz')`|  
 |`LTrim(string)`|返回 `string` 且不带前导空格。<br /><br /> **参数**<br /><br /> `String`。<br /><br /> **返回值**<br /><br /> `String`。<br /><br /> **示例**<br /><br /> `-- The following example returns abc.`<br /><br /> `LTrim('   abc')`|  
 |`Replace(string1, string2, string3)`|返回 `string1`，其中所有 `string2` 都替换为 `string3`。<br /><br /> **参数**<br /><br /> `String`。<br /><br /> **返回值**<br /><br /> `String`。<br /><br /> **示例**<br /><br /> `-- The following example returns abcxyz.`<br /><br /> `Concat('abc', 'xyz')`|  
 |`Reverse(string)`|返回反转字符顺序的 `string`。<br /><br /> **参数**<br /><br /> `String`。<br /><br /> **返回值**<br /><br /> `String`。<br /><br /> **示例**<br /><br /> `-- The following example returns dcba.`<br /><br /> `Reverse('abcd')`|  
