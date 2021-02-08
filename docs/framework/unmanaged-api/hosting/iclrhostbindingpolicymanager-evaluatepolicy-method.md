@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRHostBindingPolicyManager：： EvaluatePolicy 方法
 title: ICLRHostBindingPolicyManager::EvaluatePolicy 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3a3a9446-7a4e-4836-9b27-5c536c15993d
 topic_type:
 - apiref
-ms.openlocfilehash: 9840217abdf8b3e1d0917b7447572b6860c181c8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e92126a8c12d03ee21e4867754b1a418ef11d463
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789965"
 ---
 # <a name="iclrhostbindingpolicymanagerevaluatepolicy-method"></a>ICLRHostBindingPolicyManager::EvaluatePolicy 方法
 
@@ -72,7 +73,7 @@ HRESULT EvaluatePolicy (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此 `EvaluatePolicy` 方法允许主机影响绑定策略，以维护特定于主机的程序集版本要求。 策略引擎本身仍保留在 CLR 内。  
   
@@ -86,6 +87,6 @@ HRESULT EvaluatePolicy (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRHostBindingPolicyManager 接口](iclrhostbindingpolicymanager-interface.md)

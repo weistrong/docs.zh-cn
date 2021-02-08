@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ISymUnmanagedMethod：： GetOffset 方法
 title: ISymUnmanagedMethod::GetOffset 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8bf3cb62-89bf-4159-ad53-de606aba89e8
 topic_type:
 - apiref
-ms.openlocfilehash: 14d4211b208482a399aa00430791b3efffda851e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3bc7154a47a38fd2cbadc62921f6e57f7901087e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790121"
 ---
 # <a name="isymunmanagedmethodgetoffset-method"></a>ISymUnmanagedMethod::GetOffset 方法
 
@@ -58,6 +59,6 @@ HRESULT GetOffset(
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedMethod 接口](isymunmanagedmethod-interface.md)

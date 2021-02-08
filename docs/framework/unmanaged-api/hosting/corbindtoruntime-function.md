@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorBindToRuntime 函数
 title: CorBindToRuntime 函数
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 799740aa-46ec-4532-95da-6444565b4971
 topic_type:
 - apiref
-ms.openlocfilehash: 426e95281b648217642ca06f04dfbd9ec991221e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 727abdccd692a431960d293404025cf9ccc1d7ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790082"
 ---
 # <a name="corbindtoruntime-function"></a>CorBindToRuntime 函数
 
@@ -65,7 +66,7 @@ HRESULT CorBindToRuntime (
  `ppv`  
  弄返回的接口指针 `riid` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `pwszVersion` 指定不存在的运行时版本，则 `CorBindToRuntimeEx` 返回的 HRESULT 值为 CLR_E_SHIM_RUNTIMELOAD。  
   
@@ -85,7 +86,7 @@ HRESULT CorBindToRuntime (
   
      版本1兼容性模式适用于整个进程和进程中的所有应用程序域。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [CorBindToRuntimeEx](corbindtoruntimeex-function.md) 和 `CorBindToRuntime` 执行相同的操作，但 `CorBindToRuntimeEx` 函数允许您设置标志来指定 CLR 的行为。  
   
@@ -99,7 +100,7 @@ HRESULT CorBindToRuntime (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [CorBindToCurrentRuntime 函数](corbindtocurrentruntime-function.md)
 - [CorBindToRuntimeByCfg 函数](corbindtoruntimebycfg-function.md)

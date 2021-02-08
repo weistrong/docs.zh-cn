@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ISymUnmanagedAsyncMethodPropertiesWriter 接口
 title: ISymUnmanagedAsyncMethodPropertiesWriter 接口
 ms.date: 03/30/2017
 ms.assetid: caa71820-8058-4b6a-93a2-25ee757d92d3
-ms.openlocfilehash: 779b737da43f61d1023a0a640dce936e11c4704c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c8b1bc037485e22160af28b59d751859a157499
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707030"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790186"
 ---
 # <a name="isymunmanagedasyncmethodpropertieswriter-interface"></a>ISymUnmanagedAsyncMethodPropertiesWriter 接口
 
@@ -33,6 +34,6 @@ ms.locfileid: "95707030"
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [诊断符号存储区接口](diagnostics-symbol-store-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRPolicyManager：： SetActionOnFailure 方法
 title: ICLRPolicyManager::SetActionOnFailure 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4664033f-db97-4388-b988-2ec470796e58
 topic_type:
 - apiref
-ms.openlocfilehash: 8f44247ca7904a40f5ebc092d95c2e08b6048438
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 67d3ca5d7924caf0a768b4de53b4b24f1c72fa27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725568"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789796"
 ---
 # <a name="iclrpolicymanagersetactiononfailure-method"></a>ICLRPolicyManager::SetActionOnFailure 方法
 
@@ -55,7 +56,7 @@ HRESULT SetActionOnFailure (
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_INVALIDARG|无法为指定的操作设置策略操作，或者为该操作指定了无效的策略操作。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  默认情况下，CLR 在无法分配内存等资源时引发异常。 `SetActionOnFailure` 允许主机通过指定在失败时要执行的策略操作来重写此行为。 下表显示了支持的 [EClrFailure](eclrfailure-enumeration.md) 和 [EPolicyAction](epolicyaction-enumeration.md) 值的组合。  ([EClrFailure](eclrfailure-enumeration.md) 值中省略 FAIL_ 前缀。 )   
   
@@ -82,7 +83,7 @@ HRESULT SetActionOnFailure (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrFailure 枚举](eclrfailure-enumeration.md)
 - [EPolicyAction 枚举](epolicyaction-enumeration.md)

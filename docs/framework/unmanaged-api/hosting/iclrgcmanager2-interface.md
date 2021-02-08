@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRGCManager2 接口
 title: ICLRGCManager2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4b5ffd7b-9ad7-41cd-9bba-34030ae3da7e
 topic_type:
 - apiref
-ms.openlocfilehash: d2873b5e1f8229e8a16dfaacf1c9737ac47405bb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 455b3a99d10fa43bf325e9f7075d255dd55ae38b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789952"
 ---
 # <a name="iclrgcmanager2-interface"></a>ICLRGCManager2 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95672794"
 |------------|-----------------|  
 |[SetGCStartupLimitsEx 方法](iclrgcmanager2-setgcstartuplimitsex-method.md)|设置垃圾回收段的大小以及垃圾回收系统的第0代的最大大小。 启用0代和大于的段大小 `DWORD` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此接口继承自 [ICLRGCManager 接口](iclrgcmanager-interface.md)。  
   
@@ -47,7 +48,7 @@ ms.locfileid: "95672794"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自动内存管理](../../../standard/automatic-memory-management.md)
 - [COR_GC_STATS 结构](cor-gc-stats-structure.md)

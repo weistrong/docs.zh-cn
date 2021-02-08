@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRHostBindingPolicyManager：： ModifyApplicationPolicy 方法
 title: ICLRHostBindingPolicyManager::ModifyApplicationPolicy 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
 topic_type:
 - apiref
-ms.openlocfilehash: 8da9c9fea5cf5b3a27eeb9d0222f0845c832b7da
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f7d992f4b7d24233da175814f991106bb97a937
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789926"
 ---
 # <a name="iclrhostbindingpolicymanagermodifyapplicationpolicy-method"></a>ICLRHostBindingPolicyManager::ModifyApplicationPolicy 方法
 
@@ -76,7 +77,7 @@ HRESULT  ModifyApplicationPolicy (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 方法返回 E_FAIL 后，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ModifyApplicationPolicy`可以调用方法两次。 第一次调用应为参数提供 null 值 `pbNewApplicationPolicy` 。 此调用将返回，并具有的必需值 `pcbNewAppPolicySize` 。 第二次调用应为提供此值 `pcbNewAppPolicySize` ，并指向该大小的缓冲区 `pbNewApplicationPolicy` 。  
   
@@ -90,6 +91,6 @@ HRESULT  ModifyApplicationPolicy (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRHostBindingPolicyManager 接口](iclrhostbindingpolicymanager-interface.md)

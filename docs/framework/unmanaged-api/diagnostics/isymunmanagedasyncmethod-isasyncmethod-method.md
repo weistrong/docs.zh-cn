@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ISymUnmanagedAsyncMethod：： IsAsyncMethod 方法
 title: ISymUnmanagedAsyncMethod::IsAsyncMethod 方法
 ms.date: 03/30/2017
 ms.assetid: 670a7653-dac6-4171-98ee-d669e3adf4b2
-ms.openlocfilehash: af02aba1a0d390c103e8c6108f90b93fe2a98ff3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4b151f5367bac5fd92cc8237492cad6dacfb8e88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707147"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790251"
 ---
 # <a name="isymunmanagedasyncmethodisasyncmethod-method"></a>ISymUnmanagedAsyncMethod::IsAsyncMethod 方法
 
@@ -35,6 +36,6 @@ HRESULT IsAsyncMethod(    [out, retval] BOOL* pRetVal);
 
  **标头：** CorSym，CorSym  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ISymUnmanagedAsyncMethod 接口](isymunmanagedasyncmethod-interface.md)
