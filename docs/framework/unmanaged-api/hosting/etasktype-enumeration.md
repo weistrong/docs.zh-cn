@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ETaskType 枚举
 title: ETaskType 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: aa527b31-89d4-41f2-ad6f-63b76950b7df
 topic_type:
 - apiref
-ms.openlocfilehash: 332488fee4c982fdbaecceeaa2a6a3876f1602a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7cb241765b2ff3b4a3402221c6b3e2b7ff6305c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733693"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785397"
 ---
-# <a name="etasktype-enumeration"></a><span data-ttu-id="ed238-102">ETaskType 枚举</span><span class="sxs-lookup"><span data-stu-id="ed238-102">ETaskType Enumeration</span></span>
+# <a name="etasktype-enumeration"></a><span data-ttu-id="c5835-103">ETaskType 枚举</span><span class="sxs-lookup"><span data-stu-id="c5835-103">ETaskType Enumeration</span></span>
 
-<span data-ttu-id="ed238-103">包含一些值，这些值指示由 [ICLRTask](iclrtask-interface.md) 或 [IHostTask](ihosttask-interface.md) 接口表示的任务的类型。</span><span class="sxs-lookup"><span data-stu-id="ed238-103">Contains values that indicate the type of task that is represented by either an [ICLRTask](iclrtask-interface.md) or an [IHostTask](ihosttask-interface.md) interface.</span></span>  
+<span data-ttu-id="c5835-104">包含一些值，这些值指示由 [ICLRTask](iclrtask-interface.md) 或 [IHostTask](ihosttask-interface.md) 接口表示的任务的类型。</span><span class="sxs-lookup"><span data-stu-id="c5835-104">Contains values that indicate the type of task that is represented by either an [ICLRTask](iclrtask-interface.md) or an [IHostTask](ihosttask-interface.md) interface.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ed238-104">语法</span><span class="sxs-lookup"><span data-stu-id="ed238-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="c5835-105">语法</span><span class="sxs-lookup"><span data-stu-id="c5835-105">Syntax</span></span>  
   
 ```cpp  
 typedef enum ETaskType {  
@@ -43,32 +44,32 @@ typedef enum ETaskType {
 } ETaskType;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="ed238-105">成员</span><span class="sxs-lookup"><span data-stu-id="ed238-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="c5835-106">成员</span><span class="sxs-lookup"><span data-stu-id="c5835-106">Members</span></span>  
   
-|<span data-ttu-id="ed238-106">成员</span><span class="sxs-lookup"><span data-stu-id="ed238-106">Member</span></span>|<span data-ttu-id="ed238-107">说明</span><span class="sxs-lookup"><span data-stu-id="ed238-107">Description</span></span>|  
+|<span data-ttu-id="c5835-107">成员</span><span class="sxs-lookup"><span data-stu-id="c5835-107">Member</span></span>|<span data-ttu-id="c5835-108">说明</span><span class="sxs-lookup"><span data-stu-id="c5835-108">Description</span></span>|  
 |------------|-----------------|  
-|`TT_ADUNLOAD`|<span data-ttu-id="ed238-108">接口表示应用程序域卸载任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-108">The interface represents an application domain unloading task.</span></span>|  
-|`TT_DEBUGGERHELPER`|<span data-ttu-id="ed238-109">接口表示调试器帮助器任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-109">The interface represents a debugger helper task.</span></span>|  
-|`TT_FINALIZER`|<span data-ttu-id="ed238-110">接口表示终结器任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-110">The interface represents a finalizer task.</span></span>|  
-|`TT_GC`|<span data-ttu-id="ed238-111">接口表示垃圾回收任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-111">The interface represents a garbage collection task.</span></span>|  
-|`TT_THREADPOOL_GATE`|<span data-ttu-id="ed238-112">接口表示一个 "入口线程" 任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-112">The interface represents a gate thread task.</span></span>|  
-|`TT_THREADPOOL_IOCOMPLETION`|<span data-ttu-id="ed238-113">接口表示 i/o 线程任务或完成端口线程任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-113">The interface represents an I/O thread task or a completion port thread task.</span></span>|  
-|`TT_THREADPOOL_TIMER`|<span data-ttu-id="ed238-114">接口表示计时器线程任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-114">The interface represents a timer thread task.</span></span>|  
-|`TT_THREADPOOL_WAIT`|<span data-ttu-id="ed238-115">接口表示等待线程任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-115">The interface represents a wait thread task.</span></span>|  
-|`TT_THREADPOOL_WORKER`|<span data-ttu-id="ed238-116">接口表示工作线程任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-116">The interface represents a worker thread task.</span></span>|  
-|`TT_UNKNOWN`|<span data-ttu-id="ed238-117">任务未知。</span><span class="sxs-lookup"><span data-stu-id="ed238-117">The task is unknown.</span></span>|  
-|`TT_USER`|<span data-ttu-id="ed238-118">接口表示用户任务。</span><span class="sxs-lookup"><span data-stu-id="ed238-118">The interface represents a user task.</span></span>|  
+|`TT_ADUNLOAD`|<span data-ttu-id="c5835-109">接口表示应用程序域卸载任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-109">The interface represents an application domain unloading task.</span></span>|  
+|`TT_DEBUGGERHELPER`|<span data-ttu-id="c5835-110">接口表示调试器帮助器任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-110">The interface represents a debugger helper task.</span></span>|  
+|`TT_FINALIZER`|<span data-ttu-id="c5835-111">接口表示终结器任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-111">The interface represents a finalizer task.</span></span>|  
+|`TT_GC`|<span data-ttu-id="c5835-112">接口表示垃圾回收任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-112">The interface represents a garbage collection task.</span></span>|  
+|`TT_THREADPOOL_GATE`|<span data-ttu-id="c5835-113">接口表示一个 "入口线程" 任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-113">The interface represents a gate thread task.</span></span>|  
+|`TT_THREADPOOL_IOCOMPLETION`|<span data-ttu-id="c5835-114">接口表示 i/o 线程任务或完成端口线程任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-114">The interface represents an I/O thread task or a completion port thread task.</span></span>|  
+|`TT_THREADPOOL_TIMER`|<span data-ttu-id="c5835-115">接口表示计时器线程任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-115">The interface represents a timer thread task.</span></span>|  
+|`TT_THREADPOOL_WAIT`|<span data-ttu-id="c5835-116">接口表示等待线程任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-116">The interface represents a wait thread task.</span></span>|  
+|`TT_THREADPOOL_WORKER`|<span data-ttu-id="c5835-117">接口表示工作线程任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-117">The interface represents a worker thread task.</span></span>|  
+|`TT_UNKNOWN`|<span data-ttu-id="c5835-118">任务未知。</span><span class="sxs-lookup"><span data-stu-id="c5835-118">The task is unknown.</span></span>|  
+|`TT_USER`|<span data-ttu-id="c5835-119">接口表示用户任务。</span><span class="sxs-lookup"><span data-stu-id="c5835-119">The interface represents a user task.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="ed238-119">要求</span><span class="sxs-lookup"><span data-stu-id="ed238-119">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="c5835-120">要求</span><span class="sxs-lookup"><span data-stu-id="c5835-120">Requirements</span></span>  
 
- <span data-ttu-id="ed238-120">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="ed238-120">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="c5835-121">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="c5835-121">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="ed238-121">**标头：** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="ed238-121">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="c5835-122">**标头：** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="c5835-122">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="ed238-122">**库：** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="ed238-122">**Library:** MSCorEE.dll</span></span>  
+ <span data-ttu-id="c5835-123">**库：** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="c5835-123">**Library:** MSCorEE.dll</span></span>  
   
- <span data-ttu-id="ed238-123">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="ed238-123">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="c5835-124">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c5835-124">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ed238-124">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ed238-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c5835-125">请参阅</span><span class="sxs-lookup"><span data-stu-id="c5835-125">See also</span></span>
 
-- [<span data-ttu-id="ed238-125">承载枚举</span><span class="sxs-lookup"><span data-stu-id="ed238-125">Hosting Enumerations</span></span>](hosting-enumerations.md)
+- [<span data-ttu-id="c5835-126">承载枚举</span><span class="sxs-lookup"><span data-stu-id="c5835-126">Hosting Enumerations</span></span>](hosting-enumerations.md)
