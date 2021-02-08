@@ -1,33 +1,34 @@
 ---
+description: 了解详细信息：自定义插入、更新和删除操作
 title: 自定义插入、更新和删除操作
 ms.date: 03/30/2017
 ms.assetid: 07eef055-8f6c-414d-850e-d323ff946cd0
-ms.openlocfilehash: 4b846d1e1f737cec85ecda75df5e3f66982def62
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 44bd76b61aff335019818b3c61040d10babe7301
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177340"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773207"
 ---
-# <a name="customizing-insert-update-and-delete-operations"></a><span data-ttu-id="5eef0-102">自定义插入、更新和删除操作</span><span class="sxs-lookup"><span data-stu-id="5eef0-102">Customizing Insert, Update, and Delete Operations</span></span>
+# <a name="customizing-insert-update-and-delete-operations"></a><span data-ttu-id="9f232-103">自定义插入、更新和删除操作</span><span class="sxs-lookup"><span data-stu-id="9f232-103">Customizing Insert, Update, and Delete Operations</span></span>
 
-<span data-ttu-id="5eef0-103">默认情况下，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 会生成动态 SQL 来实现插入、读取、更新和删除操作。</span><span class="sxs-lookup"><span data-stu-id="5eef0-103">By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] generates dynamic SQL to implement insert, read, update, and delete operations.</span></span> <span data-ttu-id="5eef0-104">但实际上，您通常要自定义应用程序以满足您的业务需要。</span><span class="sxs-lookup"><span data-stu-id="5eef0-104">In practice, however, you typically customize your application to suit your business needs.</span></span>  
+<span data-ttu-id="9f232-104">默认情况下，[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 会生成动态 SQL 来实现插入、读取、更新和删除操作。</span><span class="sxs-lookup"><span data-stu-id="9f232-104">By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] generates dynamic SQL to implement insert, read, update, and delete operations.</span></span> <span data-ttu-id="9f232-105">但实际上，您通常要自定义应用程序以满足您的业务需要。</span><span class="sxs-lookup"><span data-stu-id="9f232-105">In practice, however, you typically customize your application to suit your business needs.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="5eef0-105">如果使用的是 Visual Studio，则可以使用对象关系设计器自定义插入、更新和删除操作。</span><span class="sxs-lookup"><span data-stu-id="5eef0-105">If you are using Visual Studio, you can use the Object Relational Designer to customize insert, update, and delete actions.</span></span>  
+> <span data-ttu-id="9f232-106">如果使用的是 Visual Studio，则可以使用对象关系设计器自定义插入、更新和删除操作。</span><span class="sxs-lookup"><span data-stu-id="9f232-106">If you are using Visual Studio, you can use the Object Relational Designer to customize insert, update, and delete actions.</span></span>  
   
- <span data-ttu-id="5eef0-106">本节中的主题介绍了 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 提供的用于在应用程序中自定义插入、读取、更新和删除操作的技术。</span><span class="sxs-lookup"><span data-stu-id="5eef0-106">This section of topics describes the techniques that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for customizing insert, read, update, and delete operations in your application.</span></span>  
+ <span data-ttu-id="9f232-107">本节中的主题介绍了 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 提供的用于在应用程序中自定义插入、读取、更新和删除操作的技术。</span><span class="sxs-lookup"><span data-stu-id="9f232-107">This section of topics describes the techniques that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for customizing insert, read, update, and delete operations in your application.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="5eef0-107">本节内容</span><span class="sxs-lookup"><span data-stu-id="5eef0-107">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="9f232-108">本节内容</span><span class="sxs-lookup"><span data-stu-id="9f232-108">In This Section</span></span>  
 
- [<span data-ttu-id="5eef0-108">自定义操作：概述</span><span class="sxs-lookup"><span data-stu-id="5eef0-108">Customizing Operations: Overview</span></span>](customizing-operations-overview.md)  
- <span data-ttu-id="5eef0-109">介绍 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 提供的用于自定义插入、读取、更新和删除操作的各种技术。</span><span class="sxs-lookup"><span data-stu-id="5eef0-109">Describes the various techniques [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for customizing insert, read, update, and delete operations.</span></span>  
+ [<span data-ttu-id="9f232-109">自定义操作：概述</span><span class="sxs-lookup"><span data-stu-id="9f232-109">Customizing Operations: Overview</span></span>](customizing-operations-overview.md)  
+ <span data-ttu-id="9f232-110">介绍 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 提供的用于自定义插入、读取、更新和删除操作的各种技术。</span><span class="sxs-lookup"><span data-stu-id="9f232-110">Describes the various techniques [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for customizing insert, read, update, and delete operations.</span></span>  
   
- [<span data-ttu-id="5eef0-110">插入、更新和删除操作</span><span class="sxs-lookup"><span data-stu-id="5eef0-110">Insert, Update, and Delete Operations</span></span>](insert-update-and-delete-operations.md)  
- <span data-ttu-id="5eef0-111">介绍用于操作数据库数据的 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 默认过程。</span><span class="sxs-lookup"><span data-stu-id="5eef0-111">Describes the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] default processes for manipulating database data.</span></span>  
+ [<span data-ttu-id="9f232-111">插入、更新和删除操作</span><span class="sxs-lookup"><span data-stu-id="9f232-111">Insert, Update, and Delete Operations</span></span>](insert-update-and-delete-operations.md)  
+ <span data-ttu-id="9f232-112">介绍用于操作数据库数据的 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 默认过程。</span><span class="sxs-lookup"><span data-stu-id="9f232-112">Describes the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] default processes for manipulating database data.</span></span>  
   
- [<span data-ttu-id="5eef0-112">开发人员在重写默认行为中的责任</span><span class="sxs-lookup"><span data-stu-id="5eef0-112">Responsibilities of the Developer In Overriding Default Behavior</span></span>](responsibilities-of-the-developer-in-overriding-default-behavior.md)  
- <span data-ttu-id="5eef0-113">介绍开发人员在实现非 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 强制需求方面的责任。</span><span class="sxs-lookup"><span data-stu-id="5eef0-113">Describes the role of the developer in implementing requirements not enforced by [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].</span></span>  
+ [<span data-ttu-id="9f232-113">开发人员在重写默认行为中的责任</span><span class="sxs-lookup"><span data-stu-id="9f232-113">Responsibilities of the Developer In Overriding Default Behavior</span></span>](responsibilities-of-the-developer-in-overriding-default-behavior.md)  
+ <span data-ttu-id="9f232-114">介绍开发人员在实现非 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 强制需求方面的责任。</span><span class="sxs-lookup"><span data-stu-id="9f232-114">Describes the role of the developer in implementing requirements not enforced by [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].</span></span>  
   
- [<span data-ttu-id="5eef0-114">通过使用分部方法添加业务逻辑</span><span class="sxs-lookup"><span data-stu-id="5eef0-114">Adding Business Logic By Using Partial Methods</span></span>](adding-business-logic-by-using-partial-methods.md)  
- <span data-ttu-id="5eef0-115">介绍如何使用分部方法重写自动生成的方法。</span><span class="sxs-lookup"><span data-stu-id="5eef0-115">Describes how to use partial methods to override autogenerated methods.</span></span>
+ [<span data-ttu-id="9f232-115">通过使用分部方法添加业务逻辑</span><span class="sxs-lookup"><span data-stu-id="9f232-115">Adding Business Logic By Using Partial Methods</span></span>](adding-business-logic-by-using-partial-methods.md)  
+ <span data-ttu-id="9f232-116">介绍如何使用分部方法重写自动生成的方法。</span><span class="sxs-lookup"><span data-stu-id="9f232-116">Describes how to use partial methods to override autogenerated methods.</span></span>
