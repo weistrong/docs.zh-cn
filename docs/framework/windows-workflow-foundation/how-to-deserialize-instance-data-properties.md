@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：反序列化实例数据属性
 title: 如何：对实例数据属性进行反序列化
 ms.date: 03/30/2017
 ms.assetid: b13a3508-1b97-4359-b336-03d85fa23bc4
-ms.openlocfilehash: 0f941e2d2b10e825adcdc13e2a9aed231125fe09
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 79b70da12281da01a755a541fc4577e91f840f8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777822"
 ---
 # <a name="how-to-deserialize-instance-data-properties"></a>如何：对实例数据属性进行反序列化
 
