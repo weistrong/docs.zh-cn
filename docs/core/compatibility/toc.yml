@@ -22,6 +22,10 @@
           items:
             - name: 概述
               href: 6.0.md
+            - name: ASP.NET Core
+              items:
+                - name: Kestrel：日志消息属性已更改
+                  href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
             - name: Windows 窗体
               items:
                 - name: 增加了 NotifyIcon.Text 最大文本长度
@@ -298,6 +302,10 @@
       items:
         - name: ASP.NET Core
           items:
+            - name: .NET 6.0
+              items:
+                - name: Kestrel：日志消息属性已更改
+                  href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
             - name: .NET 5.0
               items:
                 - name: ASP.NET Core 应用反序列化带引号的数字
