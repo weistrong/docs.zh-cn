@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： WCF 数据服务客户端实用工具 ( # A0) '
 title: WCF 数据服务客户端实用工具 (DataSvcUtil.exe)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,16 +7,18 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - WCF Data Services, consuming
 ms.assetid: 9d0af606-929b-4c03-b307-3ef5f705afce
-ms.openlocfilehash: 600cb9a4f91ff2051f60ee86d4cb80cc5b404c61
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1e232538284072d82eed3f1b9e8d41f2ae950adf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791694"
 ---
 # <a name="wcf-data-service-client-utility-datasvcutilexe"></a>WCF 数据服务客户端实用工具 (DataSvcUtil.exe)
 
-DataSvcUtil.exe 是 WCF 数据服务提供的命令行工具，它使用 Open Data Protocol (OData) 源，并生成从 .NET Framework 客户端应用程序访问数据服务所需的客户端数据服务类。 通过使用以下元数据源，该实用工具可以生成数据类：
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+DataSvcUtil.exe 是 WCF Data Services 提供的命令行工具，它使用 Open Data Protocol (OData) 源，并生成从 .NET Framework 客户端应用程序访问数据服务所需的客户端数据服务类。 通过使用以下元数据源，该实用工具可以生成数据类：
 
 - 数据服务的根 URI。 该实用工具会请求描述数据服务所公开的数据模型的服务元数据文档。 有关详细信息，请参阅 [AtomPub (RFC5023) ](https://tools.ietf.org/html/rfc5023#section-8)。
 
@@ -25,7 +28,7 @@ DataSvcUtil.exe 是 WCF 数据服务提供的命令行工具，它使用 Open Da
 
 有关详细信息，请参阅 [如何：手动生成客户端数据服务类](how-to-manually-generate-client-data-service-classes-wcf-data-services.md)。
 
-DataSvcUtil.exe 工具安装在 .NET Framework 目录中。 在许多情况下，它位于 *C:\Windows\Microsoft.NET\Framework\v4.0*中。 对于64位系统，它位于 *C:\Windows\Microsoft.NET\Framework64\v4.0*中。 你还可以从 Visual Studio 的开发人员命令提示访问 DataSvcUtil.exe 工具。
+DataSvcUtil.exe 工具安装在 .NET Framework 目录中。 在许多情况下，它位于 *C:\Windows\Microsoft.NET\Framework\v4.0* 中。 对于64位系统，它位于 *C:\Windows\Microsoft.NET\Framework64\v4.0* 中。 你还可以从 Visual Studio 的开发人员命令提示访问 DataSvcUtil.exe 工具。
 
 ## <a name="syntax"></a>语法
 

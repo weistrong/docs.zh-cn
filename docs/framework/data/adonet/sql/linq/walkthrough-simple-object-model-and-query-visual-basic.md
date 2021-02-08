@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：演练：简单对象模型和查询 (Visual Basic) '
 title: 演练：简单对象模型和查询 (Visual Basic)
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: c878e457-f715-46e4-a136-ff14d6c86018
-ms.openlocfilehash: c21a187739ba19be2dc8e89b4dddc94ad799f036
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: def2fecf0d6d97841ebd47a1d675f85341053d39
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792117"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791798"
 ---
 # <a name="walkthrough-simple-object-model-and-query-visual-basic"></a>演练：简单对象模型和查询 (Visual Basic)
 
@@ -21,17 +22,17 @@ ms.locfileid: "70792117"
 
 本演练是使用 Visual Basic 开发设置编写的。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 
 - 本演练使用专用文件夹（“c:\linqtest”）来保存文件。 请在开始本演练前创建此文件夹。
 
-- 本演练需要 Northwind 示例数据库。 如果您的开发计算机上没有此数据库，您可以从 Microsoft 下载网站下载它。 有关说明，请参阅[下载示例数据库](downloading-sample-databases.md)。 下载此数据库后，请将文件复制到 c:\linqtest 文件夹。
+- 本演练需要 Northwind 示例数据库。 如果您的开发计算机上没有此数据库，您可以从 Microsoft 下载网站下载它。 有关说明，请参阅 [下载示例数据库](downloading-sample-databases.md)。 下载此数据库后，请将文件复制到 c:\linqtest 文件夹。
 
 ## <a name="overview"></a>概述
 
 本演练由六项主要任务组成：
 
-- 在 Visual Studio 中创建解决方案。[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]
+- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]在 Visual Studio 中创建解决方案。
 
 - 将类映射到数据库表。
 
@@ -45,7 +46,7 @@ ms.locfileid: "70792117"
 
 ## <a name="creating-a-linq-to-sql-solution"></a>创建 LINQ to SQL 解决方案
 
-在第一个任务中，您将创建一个 Visual Studio 解决方案，其中包含生成和运行[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]项目所必需的引用。
+在第一个任务中，您将创建一个 Visual Studio 解决方案，其中包含生成和运行项目所必需的引用 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 。
 
 ### <a name="to-create-a-linq-to-sql-solution"></a>创建 LINQ to SQL 解决方案
 
@@ -55,23 +56,23 @@ ms.locfileid: "70792117"
 
 3. 在“模板”窗格中，单击“控制台应用程序”。
 
-4. 在 "**名称**" 框中，键入**LinqConsoleApp**。
+4. 在 " **名称** " 框中，键入 **LinqConsoleApp**。
 
-5. 单击 **“确定”** 。
+5. 单击“确定”。
 
 ## <a name="adding-linq-references-and-directives"></a>添加 LINQ 引用和指令
 
-本演练用到默认情况下您的项目中可能未安装的程序集。 如果`System.Data.Linq`未在你的项目中列为引用（单击 "在**解决方案资源管理器**中**显示所有文件**" 并展开 "**引用**" 节点），请添加它，如以下步骤中所述。
+本演练用到默认情况下您的项目中可能未安装的程序集。 如果 `System.Data.Linq` 未在你的项目中列为引用 (请单击 "显示 **解决方案资源管理器** 中的 **所有文件**"，然后展开 "**引用**" 节点) "添加"，如以下步骤中所述。
 
 ### <a name="to-add-systemdatalinq"></a>添加 System.Data.Linq
 
-1. 在**解决方案资源管理器**中，右键单击 "**引用**"，然后单击 "**添加引用**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " **引用**"，然后单击 " **添加引用**"。
 
-2. 在 "**添加引用**" 对话框中，单击 " **.net**"，单击 "system.web" 程序集，然后单击 **"确定"** 。
+2. 在 " **添加引用** " 对话框中，单击 " **.net**"，单击 "system.web" 程序集，然后单击 **"确定"**。
 
      此程序集即被添加到项目中。
 
-3. 同样，在 "**添加引用**" 对话框中，单击 " **.net**"，滚动到 "system.web"，然后单击 **"确定"** 。
+3. 同样，在 " **添加引用** " 对话框中，单击 " **.net**"，滚动到 "system.web"，然后单击 **"确定"**。
 
      此程序集（支持本演练中的消息框）即被添加到项目中。
 
@@ -81,7 +82,7 @@ ms.locfileid: "70792117"
 
 ## <a name="mapping-a-class-to-a-database-table"></a>将类映射到数据库表
 
-在此步骤中，您将创建一个类，并将其映射到数据库表。 这类类称为*实体类*。 请注意，只需添加 <xref:System.Data.Linq.Mapping.TableAttribute> 属性即可完成映射。 <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A> 属性指定数据库中的表的名称。
+在此步骤中，您将创建一个类，并将其映射到数据库表。 这类类称为 *实体类*。 请注意，只需添加 <xref:System.Data.Linq.Mapping.TableAttribute> 属性即可完成映射。 <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A> 属性指定数据库中的表的名称。
 
 ### <a name="to-create-an-entity-class-and-map-it-to-a-database-table"></a>创建一个实体类并将其映射到数据库表
 
@@ -121,7 +122,7 @@ ms.locfileid: "70792117"
 
 ## <a name="creating-a-simple-query"></a>创建简单查询
 
-在此步骤中，您将创建一个查询，查找数据库中的 Customers 表内的哪些客户位于伦敦。 此步骤中的查询代码只描述查询。 它不执行查询。 此方法称为 "*延迟执行*"。 有关详细信息，请参阅 [LINQ 查询简介 (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)。
+在此步骤中，您将创建一个查询，查找数据库中的 Customers 表内的哪些客户位于伦敦。 此步骤中的查询代码只描述查询。 它不执行查询。 此方法称为 " *延迟执行*"。 有关详细信息，请参阅 [LINQ 查询简介 (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)。
 
 您还将生成一个日志输出，显示 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 生成的 SQL 命令。 此日志记录功能（使用 <xref:System.Data.Linq.DataContext.Log%2A>）对调试有帮助，并有助于确定发送给数据库的命令是否准确地表示您的查询。
 
@@ -144,7 +145,7 @@ ms.locfileid: "70792117"
 2. 按 F5 调试该应用程序。
 
     > [!NOTE]
-    > 如果你的应用程序产生运行时错误，请参阅[通过演练学习](learning-by-walkthroughs.md)的疑难解答部分。
+    > 如果你的应用程序产生运行时错误，请参阅 [通过演练学习](learning-by-walkthroughs.md)的疑难解答部分。
 
      消息框会显示一个包含六个客户的列表。 控制台窗口会显示生成的 SQL 代码。
 
@@ -152,13 +153,13 @@ ms.locfileid: "70792117"
 
      应用程序即会关闭。
 
-4. 在“文件” 菜单上，单击“全部保存”。
+4. 在“文件”菜单上，单击“全部保存”。
 
      如果您要继续下一演练，您将需要此应用程序。
 
 ## <a name="next-steps"></a>后续步骤
 
-[演练：跨关系查询（Visual Basic）](walkthrough-querying-across-relationships-visual-basic.md)主题将继续本演练结束的位置。 "跨关系进行查询" 演练[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]演示如何跨表进行查询，这类似于关系数据库中的*联接*。
+[演练：跨关系查询 (Visual Basic) ](walkthrough-querying-across-relationships-visual-basic.md)主题将继续本演练结束的位置。 "跨关系进行查询" 演练演示如何 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 跨表进行查询，这类似于关系数据库中的 *联接* 。
 
 如果您希望进行“跨关系进行查询”演练，请务必保存您刚完成的演练的解决方案，这是一项必备条件。
 

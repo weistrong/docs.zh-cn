@@ -1,23 +1,24 @@
 ---
+description: 了解详细信息： IssuanceTokenProviderUsingCachedToken
 title: System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken
 ms.date: 03/30/2017
 ms.assetid: ee51ed4e-821c-4010-8d64-eabde522169f
-ms.openlocfilehash: d03c94d2ab1cc41008556b0c63f468118abdc400
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 66275261f562b518daced2c53bd55d065fb1b884
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276979"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798649"
 ---
 # <a name="systemservicemodelsecurityissuancetokenproviderusingcachedtoken"></a>System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken
 
 System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  IssuanceTokenProvider 已使用缓存服务令牌。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

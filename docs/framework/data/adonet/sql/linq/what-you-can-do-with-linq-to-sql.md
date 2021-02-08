@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：可以对 LINQ to SQL 执行的操作
 title: 使用 LINQ to SQL 可执行的操作
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
-ms.openlocfilehash: a2e65cb558eec3cec21ea0efbcc66bb8c56ec7b5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: adf1d8dfab69db27d15634a12dbdfbfa287dbb4c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791746"
 ---
 # <a name="what-you-can-do-with-linq-to-sql"></a>使用 LINQ to SQL 可执行的操作
 

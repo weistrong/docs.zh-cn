@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：动态启用分析跟踪
 title: 动态启用分析跟踪
 ms.date: 03/30/2017
 ms.assetid: 58b63cfc-307a-427d-b69d-9917ff9f44ac
-ms.openlocfilehash: 2c213507f6ed4e9fff4f1385b10f22e96b0a41b4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5fff4da8839b986ccb43a2280d6f994f31be7423
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798818"
 ---
 # <a name="dynamically-enabling-analytic-tracing"></a>动态启用分析跟踪
 
@@ -42,6 +43,6 @@ ms.locfileid: "96282348"
 |`ServiceHost`|由服务主机发出的事件。|  
 |`WCFMessageLogging`|WCF 消息日志记录事件。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [针对 Windows 的 WCF 服务和事件跟踪](../../samples/wcf-services-and-event-tracing-for-windows.md)

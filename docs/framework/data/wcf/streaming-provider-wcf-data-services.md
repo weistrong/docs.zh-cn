@@ -1,4 +1,5 @@
 ---
+description: '详细了解：流式处理提供程序 (WCF Data Services) '
 title: 流提供程序（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -10,14 +11,16 @@ helpviewer_keywords:
 - streaming data provider [WCF Data Services]
 - WCF Data Services, streams
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
-ms.openlocfilehash: 9ed728fa8d1d56c835aa27645a28921aa4f641e9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a87cd0764156e803bf30520160b54f6baaf4f644
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544448"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791733"
 ---
 # <a name="streaming-provider-wcf-data-services"></a>流提供程序（WCF 数据服务）
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 数据服务可公开二进制大型对象数据。 此二进制数据可以表示视频和音频流、图像、文档文件或其他类型的二进制媒体。 当数据模型中的某个实体包括一个或多个二进制属性时，数据服务会在响应源的入口内以 base-64 编码形式返回此二进制数据。 由于以这种方式加载和序列化大型二进制数据会影响性能，因此 Open Data Protocol (OData) 定义了一种机制，该机制独立于其所属的实体来检索二进制数据。 这一点是通过将实体和二进制数据分隔到一个或多个数据流来实现的。
 
@@ -25,7 +28,7 @@ ms.locfileid: "90544448"
 
 - 媒体链接入口 - 引用相关媒体资源流的实体。
 
-使用 WCF 数据服务，可以通过实现流式数据提供程序来定义二进制资源流。 流提供程序实现以对象的形式向数据服务提供与特定实体关联的媒体资源流 <xref:System.IO.Stream> 。 有了此实现，数据服务能够以指定 MIME 类型的二进制数据流的形式通过 HTTP 接受和返回媒体资源。
+使用 WCF Data Services，可以通过实现流式数据提供程序来定义二进制资源流。 流提供程序实现以对象的形式向数据服务提供与特定实体关联的媒体资源流 <xref:System.IO.Stream> 。 有了此实现，数据服务能够以指定 MIME 类型的二进制数据流的形式通过 HTTP 接受和返回媒体资源。
 
 将数据服务配置为支持二进制数据流需要以下步骤：
 
@@ -67,7 +70,7 @@ ms.locfileid: "90544448"
 
 若要创建支持二进制数据流的数据服务，必须实现 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 接口。 有了此实现，数据服务能够以流的形式将二进制数据返回给客户端，并使用从客户端发送的流形式的二进制数据。 每当数据服务需要访问流形式的二进制数据时，都会创建一个此接口实例。 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 接口指定以下成员：
 
-|成员名称|说明|
+|成员名称|描述|
 |-----------------|-----------------|
 |<xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>|当删除媒体资源的媒体链接入口时，数据服务将调用此方法来删除相应媒体资源。 当实现 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 时，此方法将包含会删除与所提供媒体链接入口关联的媒体资源的代码。|
 |<xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>|数据服务调用此方法来以流的形式返回媒体资源。 当实现 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 时，此方法将包含提供流的代码，数据服务使用提供的流返回与所提供媒体链接入口关联的媒体资源。|
@@ -79,7 +82,7 @@ ms.locfileid: "90544448"
 
 ## <a name="creating-the-streaming-data-service"></a>创建流数据服务
 
-若要为 WCF 数据服务运行时提供对实现的访问权限 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> ，则创建的数据服务还必须实现 <xref:System.IServiceProvider> 接口。 下面的示例演示如何实现 <xref:System.IServiceProvider.GetService%2A> 方法，以返回实现 `PhotoServiceStreamProvider` 的 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 类的实例。
+若要为 WCF Data Services 运行时提供对实现的访问权限 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> ，则创建的数据服务还必须实现 <xref:System.IServiceProvider> 接口。 下面的示例演示如何实现 <xref:System.IServiceProvider.GetService%2A> 方法，以返回实现 `PhotoServiceStreamProvider` 的 <xref:System.Data.Services.Providers.IDataServiceStreamProvider> 类的实例。
 
 [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_service/cs/photodata.svc.cs#photoservicestreamingprovider)]
 [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_service/vb/photodata.svc.vb#photoservicestreamingprovider)]
@@ -99,7 +102,7 @@ ms.locfileid: "90544448"
 
 ## <a name="using-data-streams-in-a-client-application"></a>在客户端应用程序中使用数据流
 
-利用 WCF 数据服务客户端库，您可以在客户端上以二进制流的形式检索和更新这些公开的资源。 有关详细信息，请参阅使用 [二进制数据](working-with-binary-data-wcf-data-services.md)。
+利用 WCF Data Services 客户端库，您可以在客户端上以二进制流的形式检索和更新这些公开的资源。 有关详细信息，请参阅使用 [二进制数据](working-with-binary-data-wcf-data-services.md)。
 
 ## <a name="considerations-for-working-with-a-streaming-provider"></a>使用流提供程序时的注意事项
 

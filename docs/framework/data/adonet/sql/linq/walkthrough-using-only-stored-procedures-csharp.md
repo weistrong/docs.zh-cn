@@ -1,30 +1,31 @@
 ---
+description: '了解详细信息：演练：仅使用存储过程 (c # ) '
 title: 演练：仅使用存储过程 (C#)
 ms.date: 03/30/2017
 ms.assetid: ecde4bf2-fa4d-4252-b5e4-96a46b9e097d
-ms.openlocfilehash: f980402c976db9ee327a7b726e36a0a4d9d6d73f
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 89cb6da9ec4e8d144726b6e3575a32c04d6aeec0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792110"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791772"
 ---
 # <a name="walkthrough-using-only-stored-procedures-c"></a>演练：仅使用存储过程 (C#)
 
 本演练提供了通过仅执行存储过程来访问数据的 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 基本端对端方案。 数据库管理员经常使用此方法来限制数据存储的访问方式。
 
 > [!NOTE]
-> 您还可以在 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 应用程序中使用存储过程来重写默认行为，尤其是 `Create`、`Update` 和 `Delete` 进程的默认行为。 有关详细信息，请参阅[自定义插入、更新和删除操作](customizing-insert-update-and-delete-operations.md)。
+> 您还可以在 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 应用程序中使用存储过程来重写默认行为，尤其是 `Create`、`Update` 和 `Delete` 进程的默认行为。 有关详细信息，请参阅 [自定义插入、更新和删除操作](customizing-insert-update-and-delete-operations.md)。
 
-出于本演练的目的，您将使用已映射到 Northwind 示例数据库中的存储过程的两个方法：CustOrdersDetail 和 CustOrderHist。 此映射发生在运行 SqlMetal 命令行工具来生成 C# 文件时。 有关更多信息，请参见本演练后面的“先决条件”一节。
+出于本演练的需要，您将用到已映射到 Northwind 示例数据库中存储过程的两个方法：CustOrdersDetail 和 CustOrderHist。 此映射发生在运行 SqlMetal 命令行工具来生成 C# 文件时。 有关更多信息，请参见本演练后面的“先决条件”一节。
 
-本演练并不依赖于对象关系设计器。 使用 Visual Studio 的开发人员还可以使用 O/R 设计器来实现存储过程功能。 请参阅[Visual Studio 中的 LINQ to SQL 工具](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)。
+本演练并不依赖于对象关系设计器。 使用 Visual Studio 的开发人员还可以使用 O/R 设计器来实现存储过程功能。 请参阅 [Visual Studio 中的 LINQ to SQL 工具](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)。
 
 [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]
 
 本演练是使用 Visual C# 开发设置编写的。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 
 本演练需要如下内容：
 
@@ -32,13 +33,13 @@ ms.locfileid: "70792110"
 
 - Northwind 示例数据库。
 
-     如果您的开发计算机上没有此数据库，您可以从 Microsoft 下载网站下载它。 有关说明，请参阅[下载示例数据库](downloading-sample-databases.md)。 下载此数据库后，请将 northwnd.mdf 文件复制到 c:\linqtest7 文件夹。
+     如果您的开发计算机上没有此数据库，您可以从 Microsoft 下载网站下载它。 有关说明，请参阅 [下载示例数据库](downloading-sample-databases.md)。 下载此数据库后，请将 northwnd.mdf 文件复制到 c:\linqtest7 文件夹。
 
 - 从 Northwind 数据库生成的 C# 代码文件。
 
      本演练是通过使用 SqlMetal 工具以及如下命令行编写的：
 
-     **sqlmetal /code:"c:\linqtest7\northwind.cs" /language:csharp "c:\linqtest7\northwnd.mdf" /sprocs /functions /pluralize**
+     **sqlmetal/code： "c:\linqtest7\northwind.cs"/language： csharp "c:\linqtest7\northwnd.mdf"/sprocs/functions/pluralize**
 
      有关详细信息，请参阅 [SqlMetal.exe（代码生成工具）](../../../../tools/sqlmetal-exe-code-generation-tool.md)。
 
@@ -46,7 +47,7 @@ ms.locfileid: "70792110"
 
 本演练由六项主要任务组成：
 
-- 在 Visual Studio 中设置解决方案。[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]
+- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]在 Visual Studio 中设置解决方案。
 
 - 将 System.Data.Linq 程序集添加到项目中。
 
@@ -60,21 +61,21 @@ ms.locfileid: "70792110"
 
 ## <a name="creating-a-linq-to-sql-solution"></a>创建 LINQ to SQL 解决方案
 
-在第一个任务中，您将创建一个 Visual Studio 解决方案，其中包含生成和运行[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]项目所必需的引用。
+在第一个任务中，您将创建一个 Visual Studio 解决方案，其中包含生成和运行项目所必需的引用 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 。
 
 ### <a name="to-create-a-linq-to-sql-solution"></a>创建 LINQ to SQL 解决方案
 
-1. 在 Visual Studio 的 "**文件**" 菜单上，指向 "**新建**"，然后单击 "**项目**"。
+1. 在 Visual Studio 的 " **文件** " 菜单上，指向 " **新建**"，然后单击 " **项目**"。
 
-2. 在 "**新建项目**" 对话框的 "**项目类型**" 窗格中，单击 "  **C#视觉对象**"。
+2. 在 "**新建项目**" 对话框的 "**项目类型**" 窗格中，单击 " **Visual c #**"。
 
-3. 在 **“模板”** 窗格中，单击 **“Windows 窗体应用程序”** 。
+3. 在 **“模板”** 窗格中，单击 **“Windows 窗体应用程序”**。
 
-4. 在 "**名称**" 框中，键入**SprocOnlyApp**。
+4. 在 " **名称** " 框中，键入 **SprocOnlyApp**。
 
-5. 在 "**位置**" 框中，验证要存储项目文件的位置。
+5. 在 " **位置** " 框中，验证要存储项目文件的位置。
 
-6. 单击 **“确定”** 。
+6. 单击“确定”。
 
      Windows 窗体设计器即会打开。
 
@@ -84,9 +85,9 @@ ms.locfileid: "70792110"
 
 ### <a name="to-add-systemdatalinqdll"></a>添加 System.Data.Linq.dll
 
-1. 在**解决方案资源管理器**中，右键单击 "**引用**"，然后单击 "**添加引用**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " **引用**"，然后单击 " **添加引用**"。
 
-2. 在 "**添加引用**" 对话框中，单击 " **.net**"，单击 "system.web" 程序集，然后单击 **"确定"** 。
+2. 在 " **添加引用** " 对话框中，单击 " **.net**"，单击 "system.web" 程序集，然后单击 **"确定"**。
 
      此程序集即被添加到项目中。
 
@@ -96,9 +97,9 @@ ms.locfileid: "70792110"
 
 ### <a name="to-add-the-northwind-code-file-to-the-project"></a>将 northwind 代码文件添加到项目
 
-1. 在 "**项目**" 菜单上，单击 "**添加现有项**"。
+1. 在“项目”菜单上，单击“添加现有项”。
 
-2. 在 "**添加现有项**" 对话框中，转到 "c:\linqtest7\northwind.cs"，然后单击 "**添加**"。
+2. 在 " **添加现有项** " 对话框中，转到 "c:\linqtest7\northwind.cs"，然后单击 " **添加**"。
 
      northwind.cs 文件即被添加到项目中。
 
@@ -108,7 +109,7 @@ ms.locfileid: "70792110"
 
 ### <a name="to-create-the-database-connection"></a>创建数据库连接
 
-1. 在**解决方案资源管理器**中，右键单击**Form1.cs**，然后单击 "**查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击 **Form1.cs**，然后单击 " **查看代码**"。
 
 2. 将下面的代码键入到 `Form1` 类中：
 
@@ -120,28 +121,28 @@ ms.locfileid: "70792110"
 
 ### <a name="to-set-up-the-user-interface"></a>设置用户界面
 
-1. 返回到 Windows 窗体设计器（**cs [Design]** ）。
+1. 返回到 Windows 窗体设计器 (" **cs [Design]**) "。
 
-2. 在 **“视图”** 菜单上单击 **“工具箱”** 。
+2. 在“视图”菜单上，单击“工具箱”。
 
      工具箱即会打开。
 
     > [!NOTE]
-    > 单击 "自动**隐藏**" 图钉，使工具箱保持打开状态。
+    > 单击 "自动 **隐藏** " 图钉，使工具箱保持打开状态。
 
-3. 将两个按钮、两个文本框和两个标签从工具箱拖到**Form1**上。
+3. 将两个按钮、两个文本框和两个标签从工具箱拖到 **Form1** 上。
 
      按照附图排列这些控件。 展开 " **Form1** "，使控件更容易。
 
-4. 右键单击 " **label1**"，然后单击 "**属性**"。
+4. 右键单击 " **label1**"，然后单击 " **属性**"。
 
-5. 将 " **Text** " 属性从 " **label1** " 更改为 "**输入订单 id：** "。
+5. 将 " **Text** " 属性从 " **label1** " 更改为 " **输入订单 id：**"。
 
-6. 与**label2**相同的方式，将 " **Text** " 属性从 " **Label2** " 更改为 "**输入 CustomerID：** "。
+6. 与 **label2** 相同的方式，将 " **Text** " 属性从 " **Label2** " 更改为 " **输入 CustomerID：**"。
 
-7. 同样，将**button1**的**Text**属性更改为 "**订单详细信息**"。
+7. 同样，将 **button1** 的 **Text** 属性更改为 "**订单详细信息**"。
 
-8. 将**button2**的**Text**属性更改为**Order History**。
+8. 将 **button2** 的 **Text** 属性更改为 **Order History**。
 
      将这些按钮控件加宽，以使所有文本均可见。
 
@@ -153,7 +154,7 @@ ms.locfileid: "70792110"
 
      [!code-csharp[DLinqWalk4CS#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk4CS/cs/Form1.cs#2)]
 
-3. 现在，双击 " **Form1** " 上的 " `button2` **button2** " 打开处理程序
+3. 现在，双击 " **Form1** " 上的 " **button2** " 打开 `button2` 处理程序
 
 4. 将如下代码键入到 `button2` 处理程序中：
 
@@ -169,25 +170,25 @@ ms.locfileid: "70792110"
 
      此时将显示 Form1。
 
-2. 在 "**输入订单 id** " 框`10249`中，键入，然后单击 "**订单详细信息**"。
+2. 在 " **输入订单 id** " 框中，键入 `10249` ，然后单击 " **订单详细信息**"。
 
      随即会显示一个消息框，其中列出了 10249 号订单中所包括的产品。
 
-     单击 **"确定"** 关闭消息框。
+     单击“确定”  关闭消息框。
 
-3. 在 "**输入 CustomerID** " 框中`ALFKI`键入，然后单击 "**订单历史记录**"。
+3. 在 " **输入 CustomerID** " 框中键入 `ALFKI` ，然后单击 " **订单历史记录**"。
 
      随即会显示一个消息框，其中列出了 ALFKI 客户的订单历史记录。
 
-     单击 **"确定"** 关闭消息框。
+     单击“确定”  关闭消息框。
 
-4. 在 "**输入订单 id** " 框`123`中，键入，然后单击 "**订单详细信息**"。
+4. 在 " **输入订单 id** " 框中，键入 `123` ，然后单击 " **订单详细信息**"。
 
      随即会显示一个消息框，其中显示“无结果”。
 
-     单击 **"确定"** 关闭消息框。
+     单击“确定”  关闭消息框。
 
-5. 在 "**调试**" 菜单上单击 "**停止调试**"。
+5. 在 " **调试** " 菜单上单击 " **停止调试**"。
 
      调试会话即会关闭。
 

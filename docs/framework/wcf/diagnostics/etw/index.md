@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：通过 ETW 进行分析跟踪
 title: 使用 ETW 进行分析跟踪
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - administration [WCF], analytic tracing
 - analytic tracing [WCF]
 ms.assetid: 1d518e47-a38d-41e8-93d7-8c3b361f6a56
-ms.openlocfilehash: 4bb31eeac7c5d3c8c30f66090b07de9f8af4d5a4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fd40d40de2508fd251c793e4455c1e656a1cbbf6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798792"
 ---
 # <a name="analytic-tracing-with-etw"></a>使用 ETW 进行分析跟踪
 
@@ -31,7 +32,7 @@ Windows Communication Foundation (WCF) 分析跟踪提供一种在执行 WCF 服
  [分析跟踪事件参考](analytic-trace-event-reference.md)  
  显示一张表，其中包括事件 ID 及其事件级别、事件消息和关键字。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [针对 Windows 的 WCF 服务和事件跟踪](../../samples/wcf-services-and-event-tracing-for-windows.md)
 - [在 Windows 事件跟踪中跟踪事件](../../../windows-workflow-foundation/samples/tracking-events-into-event-tracing-in-windows.md)

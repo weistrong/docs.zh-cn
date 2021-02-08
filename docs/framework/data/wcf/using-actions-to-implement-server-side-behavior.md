@@ -1,21 +1,24 @@
 ---
+description: 了解详细信息：使用操作来实现服务器端行为
 title: 使用操作来实现服务器端行为
 ms.date: 03/30/2017
 ms.assetid: 11a372db-7168-498b-80d2-9419ff557ba5
-ms.openlocfilehash: 19139a7efd955448a1f97c492a7245c1bbfe6c3d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6decd6134184de860ae2865b6dcf34b3c0b81813
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180590"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791707"
 ---
 # <a name="using-actions-to-implement-server-side-behavior"></a>使用操作来实现服务器端行为
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 OData 操作提供了用于实现这样一种行为方法，即该行为将作用于从 OData 服务检索的资源。 例如，请考虑将一部数字电影作为资源，你可能需要完成许多事情：签出、评级/注释或签入。 这些是用于管理数字电影的 WCF 数据服务可能实现的所有动作示例。 动作在 OData 响应中描述，而此响应包含对其调用此动作的资源。 当用户请求表示数字电影的资源时，从 WCF 数据服务返回的响应将包含有关可用于该资源的动作的信息。 动作的可用性可能取决于数据服务或资源的状态。 例如，一旦数字电影已被签出，其他用户就无法签出。 客户只需指定 URL 即可调用动作。 例如， `http://MyServer/MovieService.svc/Movies(6)` 将标识特定的数字电影，并 `http://MyServer/MovieService.svc/Movies(6)/Checkout` 对特定电影调用操作。 动作使您能够公开服务模型，但不必公开数据模型。 继续探讨此电影服务示例，您可能希望允许用户对电影评级，但不能直接将评级数据公开为资源。 您可以实现评级动作，以使用户能够对电影评级，但不能直接将评级数据作为资源进行访问。
 
 ## <a name="implementing-an-action"></a>实现动作
 
- 若要实现服务操作，必须实现 <xref:System.IServiceProvider> [此](/previous-versions/dotnet/wcf-data-services/hh859915(v=vs.103))和 [IDataServiceInvokable](/previous-versions/dotnet/wcf-data-services/hh859893(v=vs.103)) 接口。 <xref:System.IServiceProvider> 允许 WCF 数据服务实现 [此](/previous-versions/dotnet/wcf-data-services/hh859915(v=vs.103))的实现。 [此](/previous-versions/dotnet/wcf-data-services/hh859915(v=vs.103)) 允许 WCF 数据服务创建、查找、描述和调用服务操作。 [IDataServiceInvokable](/previous-versions/dotnet/wcf-data-services/hh859893(v=vs.103)) 使你能够调用实现服务操作行为的代码，并获得结果（如果有）。 请记住，WCF 数据服务是“每次调用”的 WCF 服务，也即，每次调用此服务时，都会创建此服务的一个新实例。  确保创建此服务时不执行多余的任务。
+ 若要实现服务操作，必须实现 <xref:System.IServiceProvider> [此](/previous-versions/dotnet/wcf-data-services/hh859915(v=vs.103))和 [IDataServiceInvokable](/previous-versions/dotnet/wcf-data-services/hh859893(v=vs.103)) 接口。 <xref:System.IServiceProvider> 允许 WCF Data Services 实现 [此](/previous-versions/dotnet/wcf-data-services/hh859915(v=vs.103))的实现。 [此](/previous-versions/dotnet/wcf-data-services/hh859915(v=vs.103)) 允许 WCF Data Services 创建、查找、描述和调用服务操作。 [IDataServiceInvokable](/previous-versions/dotnet/wcf-data-services/hh859893(v=vs.103)) 使你能够调用实现服务操作行为的代码，并获得结果（如果有）。 请记住，WCF 数据服务是“每次调用”的 WCF 服务，也即，每次调用此服务时，都会创建此服务的一个新实例。  确保创建此服务时不执行多余的任务。
 
 ### <a name="iserviceprovider"></a>IServiceProvider
 
@@ -43,7 +46,7 @@ OData 操作提供了用于实现这样一种行为方法，即该行为将作�
 
 #### <a name="tryresolveserviceaction"></a>TryResolveServiceAction
 
- 此方法搜索指定的 [ServiceAction](/previous-versions/dotnet/wcf-data-services/hh544089(v=vs.103)) ， `true` 如果找到 [ServiceAction](/previous-versions/dotnet/wcf-data-services/hh544089(v=vs.103)) ，则返回。 如果找到，则[ServiceAction](/previous-versions/dotnet/wcf-data-services/hh544089(v=vs.103))在参数中返回 ServiceAction `serviceAction` `out` 。
+ 此方法搜索指定的 [ServiceAction](/previous-versions/dotnet/wcf-data-services/hh544089(v=vs.103)) ， `true` 如果找到 [ServiceAction](/previous-versions/dotnet/wcf-data-services/hh544089(v=vs.103)) ，则返回。 如果找到，则[](/previous-versions/dotnet/wcf-data-services/hh544089(v=vs.103))在参数中返回 ServiceAction `serviceAction` `out` 。
 
 ### <a name="idataserviceinvokable"></a>IDataServiceInvokable
 
@@ -94,5 +97,5 @@ context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "PO
 
 - [WCF 数据服务 4.5](index.md)
 - [定义 WCF 数据服务](defining-wcf-data-services.md)
-- [开发和部署 WCF 数据服务](developing-and-deploying-wcf-data-services.md)
+- [开发和部署 WCF Data Services](developing-and-deploying-wcf-data-services.md)
 - [自定义数据服务提供程序](custom-data-service-providers-wcf-data-services.md)

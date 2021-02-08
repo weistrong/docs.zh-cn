@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： (实体 SQL 的文字) '
 title: 文本 (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 092ef693-6e5f-41b4-b868-5b9e82928abf
-ms.openlocfilehash: 4402f4c6ee38432a0f606e39dd4a18639076ce04
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: cae2ec7ab8cf19166dc3100a85473fca2ed0a7be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791876"
 ---
 # <a name="literals-entity-sql"></a>文本 (Entity SQL)
 
@@ -21,7 +22,7 @@ ms.locfileid: "91161771"
   
  有关可以使用自由浮动 null 文本的规则，请参阅 [Null 文本和类型推理](null-literals-and-type-inference-entity-sql.md)。  
   
-## <a name="boolean"></a>Boolean  
+## <a name="boolean"></a>布尔  
 
  布尔值文字由关键字 `true` 和 `false` 表示。  
   
@@ -104,7 +105,7 @@ X'' –- empty binary string
   
 ## <a name="guid"></a>Guid  
 
- `GUID` 文本表示全局唯一标识符。 它是由关键字构成的序列， `GUID` 后跟十六进制数字，格式为： 8-4-4-4-12 *registry*并用单引号括起来。 十六进制数字区分大小写。  
+ `GUID` 文本表示全局唯一标识符。 它是由关键字构成的序列， `GUID` 后跟十六进制数字，格式为： 8-4-4-4-12 并用单引号括起来。 十六进制数字区分大小写。  
   
  在 GUID 符号与文字负载之间可以存在任意数目的空格，但是不能存在新行。  
   

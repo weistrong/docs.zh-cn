@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：分析概述
 title: 分析概述
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - security, profiling API considerations
 - stack depth [.NET Framework profiling]
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
-ms.openlocfilehash: cf29260c36437aaf679498f648d0fcac5d65f321
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f83a4435f6a4a62a190383543cf824c76a54a838
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558324"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798909"
 ---
 # <a name="profiling-overview"></a>分析概述
 
@@ -46,7 +47,7 @@ ms.locfileid: "90558324"
 
 ## <a name="the-profiling-api"></a>分析 API
 
-通常情况下，分析 API 用于编写 *代码探查器，代码探查器*是一种监视托管应用程序执行情况的程序。
+通常情况下，分析 API 用于编写 *代码探查器，代码探查器* 是一种监视托管应用程序执行情况的程序。
 
 分析 API 由探查器 DLL 使用，加载到与所分析应用程序相同的进程中。 探查器 DLL 实现 .NET Framework 版本1.0 和1.1，在版本2.0 和更高版本[) 中 (](icorprofilercallback2-interface.md) [ICorProfilerCallback](icorprofilercallback-interface.md)的回调接口。 CLR 调用该接口的方法，以通知探查器所分析进程中发生的事件。 探查器可以通过使用 [ICorProfilerInfo](icorprofilerinfo-interface.md) 和 [ICorProfilerInfo2](icorprofilerinfo2-interface.md) 接口中的方法返回到运行时，以获取有关所分析应用程序状态的信息。
 
@@ -105,7 +106,7 @@ ms.locfileid: "90558324"
 
 API 可高效减少 CPU 和内存占用。 分析不包括对所分析应用程序进行足以导致误导性结果的更改。
 
-分析 API 有益于采样和非采样探查器。 *采样探查器*定期检查配置文件，如5毫秒。 *非采样探查器*与导致事件的线程同步通知事件。
+分析 API 有益于采样和非采样探查器。 *采样探查器* 定期检查配置文件，如5毫秒。 *非采样探查器* 与导致事件的线程同步通知事件。
 
 ### <a name="unsupported-functionality"></a>不支持的功能
 
@@ -127,9 +128,9 @@ API 可高效减少 CPU 和内存占用。 分析不包括对所分析应用程�
 
 在大多数情况下，生成事件的线程也会执行通知。 此类通知 (例如， [FunctionEnter](functionenter-function.md) 和 [FunctionLeave](functionleave-function.md)) 无需提供显式 `ThreadID` 。 此外，探查器还可能决定使用线程本地存储来存储和更新其分析块，而不是基于受影响线程的 `ThreadID` 对全局存储中的分析块建立索引。
 
-注意，这些回调未经过序列化。 用户必须通过创建线程安全数据结构并在必要时锁定探查器代码以防止从多个线程并行访问的方式保护代码。 因此，在某些情况下，会收到不正常的回调序列。 例如，假设托管应用程序正在生成执行相同代码的两个线程。 在这种情况下，在[ICorProfilerCallback::JITCompilationStarted](icorprofilercallback-jitcompilationstarted-method.md) `FunctionEnter` 接收[ICorProfilerCallback：： JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md)回调之前，可以从一个线程接收某个函数的 ICorProfilerCallback：： JITCompilationStarted 事件，并从另一个线程接收回调。 在这种情况下，用户将收到可能尚未完全实时 (JIT) 编译的函数的 `FunctionEnter` 回调。
+注意，这些回调未经过序列化。 用户必须通过创建线程安全数据结构并在必要时锁定探查器代码以防止从多个线程并行访问的方式保护代码。 因此，在某些情况下，会收到不正常的回调序列。 例如，假设托管应用程序正在生成执行相同代码的两个线程。 在这种情况下，在[](icorprofilercallback-jitcompilationstarted-method.md) `FunctionEnter` 接收[ICorProfilerCallback：： JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md)回调之前，可以从一个线程接收某个函数的 ICorProfilerCallback：： JITCompilationStarted 事件，并从另一个线程接收回调。 在这种情况下，用户将收到可能尚未完全实时 (JIT) 编译的函数的 `FunctionEnter` 回调。
 
-## <a name="security"></a>安全性
+## <a name="security"></a>安全
 
 探查器 DLL 是作为公共语言运行时执行引擎的一部分运行的非托管 DLL。 因此，探查器 DLL 中的代码并不受到托管代码访问安全性的约束。 探查器 DLL 的唯一限制是操作系统强加在运行所分析应用程序的用户身上的限制。
 

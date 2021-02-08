@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：演练：仅使用存储过程 (Visual Basic) '
 title: 演练：仅使用存储过程 (Visual Basic)
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: 5a736a30-ba66-4adb-b87c-57d19476e862
-ms.openlocfilehash: 57ae5dba89a299365e1ce3c2d54d844da0102f31
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b368bdd5717c0f424192c3eabb8058d633cac61e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163942"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791759"
 ---
 # <a name="walkthrough-using-only-stored-procedures-visual-basic"></a>演练：仅使用存储过程 (Visual Basic)
 
@@ -74,7 +75,7 @@ ms.locfileid: "91163942"
   
 4. 在 " **名称** " 框中，键入 **SprocOnlyApp**。  
   
-5. 单击“确定”。   
+5. 单击“确定”。  
   
      Windows 窗体设计器即会打开。  
   
@@ -84,9 +85,9 @@ ms.locfileid: "91163942"
   
 ### <a name="to-add-systemdatalinqdll"></a>添加 System.Data.Linq.dll  
   
-1. 在 **解决方案资源管理器**中，单击 " **显示所有文件**"。  
+1. 在 **解决方案资源管理器** 中，单击 " **显示所有文件**"。  
   
-2. 在 **解决方案资源管理器**中，右键单击 " **引用**"，然后单击 " **添加引用**"。  
+2. 在 **解决方案资源管理器** 中，右键单击 " **引用**"，然后单击 " **添加引用**"。  
   
 3. 在 " **添加引用** " 对话框中，单击 " **.net**"，单击 "system.web" 程序集，然后单击 **"确定"**。  
   
@@ -98,7 +99,7 @@ ms.locfileid: "91163942"
   
 ### <a name="to-add-the-northwind-code-file-to-the-project"></a>将 northwind 代码文件添加到项目  
   
-1. 在“项目”**** 菜单上，单击“添加现有项”****。  
+1. 在“项目”菜单上，单击“添加现有项”。  
   
 2. 在 " **添加现有项** " 对话框中，转到 "c:\linqtest3\northwind.vb"，然后单击 " **添加**"。  
   
@@ -110,7 +111,7 @@ ms.locfileid: "91163942"
   
 ### <a name="to-create-the-database-connection"></a>创建数据库连接  
   
-1. 在 **解决方案资源管理器**中，右键单击 " **Form1**"，然后单击 " **查看代码**"。  
+1. 在 **解决方案资源管理器** 中，右键单击 " **Form1**"，然后单击 " **查看代码**"。  
   
      `Class Form1` 将显示在代码编辑器中。  
   
@@ -126,14 +127,14 @@ ms.locfileid: "91163942"
   
 1. 返回到 Windows 窗体设计器 (" **Form1 [Design]**) "。  
   
-2. 在“视图”**** 菜单上，单击“工具箱”****。  
+2. 在“视图”菜单上，单击“工具箱”。  
   
      工具箱即会打开。  
   
     > [!NOTE]
     > 单击 "自动 **隐藏** " 图钉，使工具箱保持打开状态。  
   
-3. 将两个按钮、两个文本框和两个标签从工具箱拖到 **Form1**上。  
+3. 将两个按钮、两个文本框和两个标签从工具箱拖到 **Form1** 上。  
   
      按照附图排列这些控件。 展开 " **Form1** "，使控件更容易。  
   
@@ -141,11 +142,11 @@ ms.locfileid: "91163942"
   
 5. 将 " **Text** " 属性从 " **Label1** " 更改为 " **输入订单 id：**"。  
   
-6. 与 **Label2**相同的方式，将 " **Text** " 属性从 " **Label2** " 更改为 " **输入 CustomerID：**"。  
+6. 与 **Label2** 相同的方式，将 " **Text** " 属性从 " **Label2** " 更改为 " **输入 CustomerID：**"。  
   
-7. 同样，将**Button1**的**Text**属性更改为 "**订单详细信息**"。  
+7. 同样，将 **Button1** 的 **Text** 属性更改为 "**订单详细信息**"。  
   
-8. 将**Button2**的**Text**属性更改为**Order History**。  
+8. 将 **Button2** 的 **Text** 属性更改为 **Order History**。  
   
      将这些按钮控件加宽，以使所有文本均可见。  
   
@@ -177,19 +178,19 @@ ms.locfileid: "91163942"
   
      随即会显示一个消息框，其中列出了 10249 号订单中所包括的产品。  
   
-     单击“确定” **** 关闭消息框。  
+     单击“确定”  关闭消息框。  
   
 3. 在 " **输入 CustomerID** " 框中键入 `ALFKI` ，然后单击 " **订单历史记录**"。  
   
      随即会显示一个消息框，其中列出了 ALFKI 客户的订单历史记录。  
   
-     单击“确定” **** 关闭消息框。  
+     单击“确定”  关闭消息框。  
   
 4. 在 " **输入订单 id** " 框中，键入 `123` ，然后单击 " **订单详细信息**"。  
   
      随即会显示一个消息框，其中显示“无结果”。  
   
-     单击“确定” **** 关闭消息框。  
+     单击“确定”  关闭消息框。  
   
 5. 在 " **调试** " 菜单上单击 " **停止调试**"。  
   
