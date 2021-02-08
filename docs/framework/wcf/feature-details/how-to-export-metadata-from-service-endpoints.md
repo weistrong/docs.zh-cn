@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：从服务终结点导出元数据
 title: 如何：从服务终结点导出元数据
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b6c4dfd0-f270-43ec-961a-e16eb6af2f2c
-ms.openlocfilehash: c253358b68cf18a23bab4d12d4ad760874103bff
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f690d2dc0bd3ac0f89e527412a63ce0967daa8f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246402"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802874"
 ---
 # <a name="how-to-export-metadata-from-service-endpoints"></a>如何：从服务终结点导出元数据
 
@@ -58,7 +59,7 @@ ms.locfileid: "96246402"
 
  编译 Program.cs 时引用 System.ServiceModel.dll。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据体系结构概述](metadata-architecture-overview.md)
 - [使用元数据](using-metadata.md)

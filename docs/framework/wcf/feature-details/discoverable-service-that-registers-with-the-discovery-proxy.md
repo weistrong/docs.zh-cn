@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：实现使用发现代理注册的可发现服务
 title: 如何：实现向发现代理注册的可发现的服务
 ms.date: 03/30/2017
 ms.assetid: eb275bc1-535b-44c8-b9f3-0b75e9aa473b
-ms.openlocfilehash: 1e6b57193d25da7e5c9a865525dd5e9ea21110b0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 71991de6b7fd0180d4f87c2bfc48e99dc398fa53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254254"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802952"
 ---
 # <a name="how-to-implement-a-discoverable-service-that-registers-with-the-discovery-proxy"></a>如何：实现向发现代理注册的可发现的服务
 
@@ -291,7 +292,7 @@ namespace Microsoft.Samples.Discovery
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF Discovery](wcf-discovery.md)
 - [如何：实现发现代理](how-to-implement-a-discovery-proxy.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRIoCompletionManager 接口
 title: ICLRIoCompletionManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6c3ace6-e5e7-4450-8cc5-a9a48208c493
 topic_type:
 - apiref
-ms.openlocfilehash: e23675351e1fd0de510243c9ee8b3a6dd6f29cec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b2d18f9c9900d448f0c6517520c303eb4258f8d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714115"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789877"
 ---
 # <a name="iclriocompletionmanager-interface"></a>ICLRIoCompletionManager 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95714115"
 |------------|-----------------|  
 |[OnComplete 方法](iclriocompletionmanager-oncomplete-method.md)|使用对 [IHostIoCompletionManager：： Bind](ihostiocompletionmanager-bind-method.md) 方法的调用，将发出的 i/o 请求状态通知给 CLR。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主通过使用 [IHostIoCompletionManager](ihostiocompletionmanager-interface.md) 接口实现 i/o 完成抽象。 CLR 通过此接口发出 i/o 请求，主机使用接口通知运行时此类请求的结果 `ICLRIoCompletionManager` 。  
   
@@ -45,7 +46,7 @@ ms.locfileid: "95714115"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IHostIoCompletionManager 接口](ihostiocompletionmanager-interface.md)
 - [IHostThreadPoolManager 接口](ihostthreadpoolmanager-interface.md)

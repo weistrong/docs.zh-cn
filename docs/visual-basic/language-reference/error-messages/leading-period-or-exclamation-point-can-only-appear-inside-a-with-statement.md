@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC30157：前导 "." 或 "！" 只能出现在 "With" 语句内
 title: 前导“.”或“!”只能出现在“With”语句内
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30157
 ms.assetid: 70daaee1-14f9-45b7-9f30-53794310b95e
-ms.openlocfilehash: 4ff273d5930fe58a5bccf0f4f4c10e971d777d01
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e0325ac3c54046718d71df37edaac1edaf12f43e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162500"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795893"
 ---
 # <a name="bc30157-leading--or--can-only-appear-inside-a-with-statement"></a>BC30157：前导 "." 或 "！" 只能出现在 "With" 语句内
 
@@ -26,7 +27,7 @@ ms.locfileid: "92162500"
 
 2. 如果没有 `With` 块，请在取值函数左侧添加一个表达式，该表达式的计算结果为包含成员的已定义元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [代码中的特殊字符](../../programming-guide/program-structure/special-characters-in-code.md)
 - [With...End With 语句](../statements/with-end-with-statement.md)

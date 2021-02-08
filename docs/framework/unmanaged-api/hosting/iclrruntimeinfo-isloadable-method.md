@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRRuntimeInfo：： IsLoadable 方法
 title: ICLRRuntimeInfo::IsLoadable 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 205ca53b-e78e-49b2-9a46-2a7823e96b8c
 topic_type:
 - apiref
-ms.openlocfilehash: 2236e815211168d8e7105375b75f30128f7f209a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf63212350bfbd18e2a312add72818b163c32d0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714960"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789783"
 ---
 # <a name="iclrruntimeinfoisloadable-method"></a>ICLRRuntimeInfo::IsLoadable 方法
 
@@ -47,7 +48,7 @@ HRESULT IsLoadable(
 |S_OK|该方法已成功完成。|  
 |E_POINTER|`pbLoadable` 为 null。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果已将另一个运行时加载到进程中，并且可以为进程内并行执行加载与此接口关联的运行时，则 `pbLoadable` 返回 `true` 。 如果两个运行时不能并行运行，则 `pbLoadable` 返回 `false` 。 例如，公共语言运行时 (CLR) 版本4可在 CLR 版本2.0 或 CLR 版本1.1 的同一进程中并行运行。 但是，CLR 版本1.1 和 CLR 版本2.0 无法在进程中并行运行。  
   
@@ -63,7 +64,7 @@ HRESULT IsLoadable(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRRuntimeInfo 接口](iclrruntimeinfo-interface.md)
 - [承载接口](hosting-interfaces.md)

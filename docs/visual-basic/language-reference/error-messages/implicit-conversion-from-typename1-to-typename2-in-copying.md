@@ -1,4 +1,5 @@
 ---
+description: <typename1> <typename2> 在将 "ByRef" 参数 "" 的值复制 <parametername> 回匹配的参数时，请详细了解： BC41999：从 "" 到 "" 的隐式转换。
 title: 将“ByRef”参数“<typename1>”的值复制回匹配参数时，发生从“<typename2>”到“<parametername>”的隐式转换。
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC41999
 ms.assetid: ae48c738-dff8-4c0f-8931-bbb70b2c8b03
-ms.openlocfilehash: a95a4b792742efcc165f7c7a9592582d34618f11
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: debe9d248a41d1b5c1f541392a1846b8598c126f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796075"
 ---
 # <a name="bc41999-implicit-conversion-from-typename1-to-typename2-in-copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument"></a>BC41999： \<typename1> 将 \<typename2> "ByRef" 参数 "" 的值复制 \<parametername> 回匹配参数时，从 "" 到 "" 的隐式转换。
 
@@ -32,7 +33,7 @@ ms.locfileid: "92162799"
 
 - 如果需要调用实参类型与形参类型不同的过程，但不需要将值返回到调用实参中，请将形参定义为 [ByVal](../modifiers/byval.md) 而不是 `ByRef`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](../../programming-guide/language-features/procedures/index.md)
 - [过程形参和实参](../../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)

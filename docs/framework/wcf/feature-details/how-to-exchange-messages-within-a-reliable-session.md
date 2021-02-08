@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：在可靠会话内交换消息
 title: 如何：在可靠会话内交换消息
 ms.date: 03/30/2017
 ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea
-ms.openlocfilehash: 97371f8572d5d0db633ab8dd1ca82067d9d55c3f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e4a8f6a180b9c2ff9471558997034d02acc817e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550184"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802900"
 ---
 # <a name="how-to-exchange-messages-within-a-reliable-session"></a>如何：在可靠会话内交换消息
 
@@ -41,7 +42,7 @@ ms.locfileid: "90550184"
 
 ### <a name="configure-the-client-with-a-wshttpbinding-to-use-a-reliable-session"></a>使用 WSHttpBinding 配置客户端以使用可靠会话
 
-1. 使用 " ("，从命令行 [ *Svcutil.exe*) ](../servicemodel-metadata-utility-tool-svcutil-exe.md) ，从服务元数据生成代码：
+1. 使用 " ("，从命令行 [ *Svcutil.exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) ，从服务元数据生成代码：
 
    ```console
    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
@@ -67,7 +68,7 @@ ms.locfileid: "90550184"
 
 ## <a name="example"></a>示例
 
-默认情况下，有多种系统提供的绑定支持可靠会话。 这些方法包括：
+默认情况下，有多种系统提供的绑定支持可靠会话。 其中包括：
 
 - <xref:System.ServiceModel.WSDualHttpBinding>
 

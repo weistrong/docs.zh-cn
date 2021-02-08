@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30996：应为初始值设定项
 title: 应为初始值设定项
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30996
 ms.assetid: 6e183fe0-8888-43ed-a062-01571079455f
-ms.openlocfilehash: cbe77bab3e4f8bf2094c70c1c16d95ee897c729e
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: a9859dc319ec53cb42785d71b21447a097ce30f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163007"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796049"
 ---
 # <a name="bc30996-initializer-expected"></a>BC30996：应为初始值设定项
 
@@ -32,7 +33,7 @@ ms.locfileid: "92163007"
 
 - 在初始值设定项中初始化至少一个字段或属性，或不使用对象初始值设定项。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对象初始值设定项：命名和匿名类型](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 - [如何：使用对象初始值设定项声明对象](../../programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)

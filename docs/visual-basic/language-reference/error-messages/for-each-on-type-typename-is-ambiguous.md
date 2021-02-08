@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下方面的详细信息： BC32096： "For Each" （对于类型 " <typename> "）是不明确的，因为该类型实现 ("的多个实例化 T) '
 title: 类型“<typename>”的“For Each”不明确，因为此类型实现了“System.Collections.Generic.IEnumerable(Of T)”的多个实例化
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32096
 ms.assetid: ed20d09c-913f-482e-89f8-c0a596c3ec24
-ms.openlocfilehash: 0f19836efeabcf1d9e5097667c719c1f7d99cbbb
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: c96bab40d4f7216f90368cf4c5526c7b4e5532f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163462"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796205"
 ---
 # <a name="bc32096-for-each-on-type-typename-is-ambiguous-because-the-type-implements-multiple-instantiations-of-systemcollectionsgenericienumerableof-t"></a>类型 "" 的 BC32096： "" \<typename> 不明确，因为该类型实现 ("的多个实例化，而 T) "
 
@@ -26,7 +27,7 @@ ms.locfileid: "92163462"
 
 - 使用 [DirectCast 运算符](../operators/directcast-operator.md) 或 [TryCast 运算符](../operators/trycast-operator.md) 将迭代器变量类型强制转换为定义 <xref:System.Collections.IEnumerable.GetEnumerator%2A> 要使用的方法的接口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [For Each...Next 语句](../statements/for-each-next-statement.md)
 - [接口](../../programming-guide/language-features/interfaces/index.md)

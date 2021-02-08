@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：联合身份验证和信任关系
 title: 联合与信任
 ms.date: 03/30/2017
 helpviewer_keywords:
 - federation [WCF], and trust
 ms.assetid: 4bdec4f2-f8a2-4512-bdcf-14ef54b5877a
-ms.openlocfilehash: 6baa336f96f2349315cab2ed51bfb67c4745a110
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ccacb38f9542fab5522331d53dc29792318c5dea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802939"
 ---
 # <a name="federation-and-trust"></a>联合与信任
 
@@ -42,7 +43,7 @@ ms.locfileid: "96255476"
 
  在从客户端发送到联合终结点的消息中，是否对颁发的令牌进行序列化，是由 <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> 类的 <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> 属性的设置控制的。 此属性可以设置为 <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode> 枚举值之一，但它在大多数联合方案中并无用处。 如果是 `SecurityTokenInclusionMode.Never` 和 `SecurityTokenInclusionMode.AlwaysToInitiator` 值，客户端会向安全令牌服务颁发给依赖方的令牌发送一个引用。 除非依赖方拥有颁发的令牌的副本，否则会因令牌引用不可解析而导致身份验证失败。 WCF `SecurityTokenInclusionMode.Once` 将视为等效于 `SecurityTokenInclusionMode.AlwaysToRecipient` 。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>
 - [如何：创建联合客户端](how-to-create-a-federated-client.md)

@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：查询表达式语法示例：聚合运算符
 title: 查询表达式语法示例：聚合运算符
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d729120c-4c1b-4f34-bbe9-33694fca2dde
-ms.openlocfilehash: 4842bdb3aeb024afc72bde43d056b48b0d8258b8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c0fd9c3faf770a00a54341cf3718c2dda91a4d7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767929"
 ---
 # <a name="query-expression-syntax-examples-aggregate-operators"></a>查询表达式语法示例：聚合运算符
 
@@ -44,7 +45,7 @@ ms.locfileid: "91152996"
  [!code-csharp[DP L2E Examples#AverageElements_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#averageelements_mq)]
  [!code-vb[DP L2E Examples#AverageElements_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#averageelements_mq)]  
   
-## <a name="count"></a>Count  
+## <a name="count"></a>计数  
   
 ### <a name="example"></a>示例  
 
@@ -60,7 +61,7 @@ ms.locfileid: "91152996"
  [!code-csharp[DP L2E Examples#CountGrouped](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#countgrouped)]
  [!code-vb[DP L2E Examples#CountGrouped](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#countgrouped)]  
   
-## <a name="max"></a>最大值  
+## <a name="max"></a>Max  
   
 ### <a name="example"></a>示例  
 

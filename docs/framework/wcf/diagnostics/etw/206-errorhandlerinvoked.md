@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 206-ErrorHandlerInvoked
 title: 206 - ErrorHandlerInvoked
 ms.date: 03/30/2017
 ms.assetid: 97340f4d-4e09-4e42-a17a-982b3868dbcf
-ms.openlocfilehash: 99415733624752217d32f6f026a419b2b32bfa7b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: addbcbdea25c7f8e7515b743e98e426476fa0b28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783776"
 ---
 # <a name="206---errorhandlerinvoked"></a>206 - ErrorHandlerInvoked
 
@@ -17,10 +18,10 @@ ms.locfileid: "96244608"
 |-|-|  
 |ID|206|  
 |关键字|疑难解答，ServiceModel|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当 `ErrorHandler` 有机会处理在服务操作中发生的异常后，将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96244608"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |TypeName|`xs:string`|所调用 `ErrorHandler` 的类型的 CLR FullName。|  
 |已处理|`xs:unsignedByte`|如果错误处理程序已处理错误，则为 `true`；否则为 `false`。|  

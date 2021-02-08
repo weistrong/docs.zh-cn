@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：在控制台应用程序中轮询
 title: 在控制台应用程序中轮询
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4ff084d5-5956-4db1-8e18-c5a66b000882
-ms.openlocfilehash: 35275206e0486c35f262116fa1deb06b9f285723
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: be67132b80716079bb4694d1c7b8eb44b6c4d4a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183125"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767630"
 ---
 # <a name="polling-in-console-applications"></a>在控制台应用程序中轮询
 
@@ -20,7 +21,7 @@ ms.locfileid: "91183125"
   
 ## <a name="example"></a>示例  
 
- 以下控制台应用程序更新 AdventureWorks 示例数据库中的数据，异步完成其任务****。 为了模拟长时间运行的进程，此示例在命令文本中插入一个 WAITFOR 语句。 通常，你不会尝试使命令运行速度变慢，但是在这种情况下，这样做可以更轻松地演示异步行为。  
+ 以下控制台应用程序更新 AdventureWorks 示例数据库中的数据，异步完成其任务。 为了模拟长时间运行的进程，此示例在命令文本中插入一个 WAITFOR 语句。 通常，你不会尝试使命令运行速度变慢，但是在这种情况下，这样做可以更轻松地演示异步行为。  
   
 ```vb  
 Imports System  

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRAssemblyIdentityManager 接口
 title: ICLRAssemblyIdentityManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6a81c6fe-cc22-4062-ae27-d6eeee03a7b9
 topic_type:
 - apiref
-ms.openlocfilehash: 41d049c931091d2cc0b41bd1e9d74b3c15d7878d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d6238ec51a8cc1bb61eaa96e5297656c447df785
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679255"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790044"
 ---
 # <a name="iclrassemblyidentitymanager-interface"></a>ICLRAssemblyIdentityManager 接口
 
@@ -37,7 +38,7 @@ ms.locfileid: "95679255"
 |[GetReferencedAssembliesFromStream 方法](iclrassemblyidentitymanager-getreferencedassembliesfromstream-method.md)|获取一个指向 `ICLRReferenceAssemblyEnum` 对象的指针，该对象包含指定流中的程序集所引用的程序集的程序集标识数据。|  
 |[IsStronglyNamed 方法](iclrassemblyidentitymanager-isstronglynamed-method.md)|获取一个值，该值指示指定的程序集是否具有强名称。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  用于 `ICLRAssemblyIdentityManager` 获取的实例 `ICLRAssemblyReferenceList` 并枚举程序集标识。  
   
@@ -51,7 +52,7 @@ ms.locfileid: "95679255"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)
 - [ICLRProbingAssemblyEnum 接口](iclrprobingassemblyenum-interface.md)

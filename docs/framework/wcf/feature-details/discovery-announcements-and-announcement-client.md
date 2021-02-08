@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：发现公告和公告客户端
 title: 发现公告和公告客户端
 ms.date: 03/30/2017
 ms.assetid: 426c6437-f8d2-4968-b23a-18afd671aa4b
-ms.openlocfilehash: 4ad0b3ea5c257fa3117c426391bd59ad7b560d4f
-ms.sourcegitcommit: 581ab03291e91983459e56e40ea8d97b5189227e
+ms.openlocfilehash: 2076b4dbdc57bd3de47fccdb4a51ef9e6fc48366
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70040182"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802965"
 ---
 # <a name="discovery-announcements-and-announcement-client"></a>发现公告和公告客户端
 
@@ -18,7 +19,7 @@ WCF 发现功能使组件能够公布其可用性。 如果对某个服务进行
 如果配置了公告的服务加入网络并可以被检测到，该服务将发送 Hello 消息以向侦听客户端公告其可用性。 该消息包含与发现相关的服务信息，如服务的协定、终结点地址和相关范围。 可以使用 <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> 类指定公告消息的发送位置。 如果公告终结点是 <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>，则相应地多播 Hello 和 Bye；而如果公告终结点是单播，则消息将直接发送到指定终结点。
 
 > [!NOTE]
-> 在服务主机打开和关闭时发送公告。 如果这些调用没有正确完成，则可能不发出公告消息。例如，如果服务出错，则不发送 Bye 公告消息。
+> 在服务主机打开和关闭时发送公告。 如果这些调用未正确完成，则可能不会发送通知消息。例如，如果服务出现故障，则不发送再见公告消息。
 
 > [!TIP]
 > 您可以自定义公告功能，在选择的任何时间发送公告。
@@ -62,7 +63,7 @@ serviceHost.Description.Behaviors.Add(serviceDiscoveryBehavior);
 
 ### <a name="announcements-on-the-client"></a>客户端上的公告
 
-客户端应用程序必须承载公告服务，才能响应 Hello 和 Bye 消息以及订阅 <xref:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived> 和 <xref:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived> 事件。 下面的示例演示如何执行此操作。
+客户端应用程序必须承载公告服务，才能响应 Hello 和 Bye 消息以及订阅 <xref:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived> 和 <xref:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived> 事件。 以下示例演示如何执行此操作。
 
 ```csharp
 // Create an AnnouncementService instance

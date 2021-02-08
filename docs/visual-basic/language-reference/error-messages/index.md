@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的错误消息
 title: Visual Basic 错误消息
 titleSuffix: ''
 ms.date: 10/13/2020
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - errors [Visual Basic]
 - error messages
 ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
-ms.openlocfilehash: 70973b6d34ed1a84a38af3694e144dfcefa61c20
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 28e59a47c47ff7905dfec93b057f7cb534842b91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163371"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796062"
 ---
 # <a name="error-messages-in-visual-basic"></a>Visual Basic 中的错误消息
 
@@ -31,7 +32,7 @@ ms.locfileid: "92163371"
 
 ## <a name="compile-time-errors"></a>编译时错误
 
-如果 Visual Basic 编译器遇到代码问题，则会发生编译时错误。 在 Visual Studio 代码编辑器中，你可以轻松地识别导致错误的代码行，因为该代码行下出现一条波浪线。 指向波形下划线或打开“错误列表”****，即可看到错误消息（还可以查看其他消息）。
+如果 Visual Basic 编译器遇到代码问题，则会发生编译时错误。 在 Visual Studio 代码编辑器中，你可以轻松地识别导致错误的代码行，因为该代码行下出现一条波浪线。 指向波形下划线或打开“错误列表”，即可看到错误消息（还可以查看其他消息）。
 
 如果标识符具有波浪形下划线并且在最右边的字符下出现短下划线，则可以为类、构造函数、方法、属性、字段或枚举生成存根。 有关详细信息，请参阅 [使用 Visual Studio (生成) ](/visualstudio/ide/visual-csharp-intellisense#generate-from-usage)。
 

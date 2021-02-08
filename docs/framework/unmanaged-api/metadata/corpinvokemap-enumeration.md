@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorPinvokeMap 枚举
 title: CorPinvokeMap 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type:
 - apiref
-ms.openlocfilehash: da3ee54b1c3361149c11a9cfad8bdb07a5007ecf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8285632725096b4e6afc85fe54a89f12fc899dd1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784257"
 ---
 # <a name="corpinvokemap-enumeration"></a>CorPinvokeMap 枚举
 
@@ -79,9 +80,9 @@ typedef enum  CorPinvokeMap {
 |`pmThrowOnUnmappableCharUseAssem`|保留。|  
 |`pmThrowOnUnmappableCharEnabled`|当互操作封送拆收器遇到无法映射的字符时引发异常。|  
 |`pmThrowOnUnmappableCharDisabled`|在互操作封送拆收器遇到无法映射的字符时不引发异常。|  
-|`pmThrowOnUnmappableCharMask`|保留|  
+|`pmThrowOnUnmappableCharMask`|预留|  
 |`pmSupportsLastError`|允许被调用方在 `SetLastError` 从属性化方法返回之前调用 Win32 函数。|  
-|`pmCallConvMask`|保留|  
+|`pmCallConvMask`|预留|  
 |`pmCallConvWinapi`|使用默认平台调用约定。 例如，在 Windows 上，默认值为 `StdCall` ，在 Windows CE .net 上是 `Cdecl` 。|  
 |`pmCallConvCdecl`|使用 `Cdecl` 调用约定。 在这种情况下，调用方会清理堆栈。 这样就可以使用 (调用函数 `varargs` ，即接受数目可变的参数的函数) 。|  
 |`pmCallConvStdcall`|使用 `StdCall` 调用约定。 在这种情况下，被调用方清理堆栈。 这是使用平台 invoke 调用非托管函数的默认约定。|  
@@ -97,6 +98,6 @@ typedef enum  CorPinvokeMap {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

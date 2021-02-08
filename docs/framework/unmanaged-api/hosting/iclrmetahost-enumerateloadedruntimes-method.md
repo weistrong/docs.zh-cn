@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRMetaHost：： EnumerateLoadedRuntimes 方法
 title: ICLRMetaHost::EnumerateLoadedRuntimes 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22fc0a3f-dce4-4766-9a3c-9fab15f4b4ca
 topic_type:
 - apiref
-ms.openlocfilehash: 98184dd6ea16df066905039b028acd689ff3f290
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 508c4daca7e34366e0da35591f4e7a780301e823
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789861"
 ---
 # <a name="iclrmetahostenumerateloadedruntimes-method"></a>ICLRMetaHost::EnumerateLoadedRuntimes 方法
 
@@ -52,7 +53,7 @@ HRESULT EnumerateLoadedRuntimes (
 |S_OK|该方法已成功完成。|  
 |E_POINTER|`ppEnumerator` 为 null。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法列出所有加载的运行时，即使它们是用弃用的函数（如 [CorBindToRuntime](corbindtoruntime-function.md)）加载的。  
   
@@ -66,7 +67,7 @@ HRESULT EnumerateLoadedRuntimes (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRMetaHost 接口](iclrmetahost-interface.md)
 - [承载](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30494：行太长
 title: 行太长
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30494
 ms.assetid: 27270ec3-82a4-4693-a948-dd4664a5f060
-ms.openlocfilehash: c43ef096d2f6554cff1fa4490910315a1596337a
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 305691b0343245879e5555a1e63c2d8f9c5af777
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795880"
 ---
 # <a name="bc30494-line-is-too-long"></a>BC30494：行太长
 
@@ -24,6 +25,6 @@ ms.locfileid: "92162487"
 
 - 将行的长度缩短到65535个字符或更少。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [错误类型](../../programming-guide/language-features/error-types.md)

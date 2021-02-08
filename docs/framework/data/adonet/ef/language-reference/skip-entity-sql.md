@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：跳过 (实体 SQL) '
 title: SKIP (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec
-ms.openlocfilehash: 68f54dc5118e09d78f98c687e8a44def43b45c7d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f4924acae6e351e076b5795cf47d63966ebdcb43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90540987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768007"
 ---
 # <a name="skip-entity-sql"></a>SKIP (Entity SQL)
 
@@ -19,7 +20,7 @@ ms.locfileid: "90540987"
 [ SKIP n ]
 ```
 
-## <a name="arguments"></a>自变量
+## <a name="arguments"></a>参数
 
 `n` \
 要跳过的项数。

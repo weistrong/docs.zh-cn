@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorOpenFlags 枚举
 title: CorOpenFlags 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e27a83b5-2698-4996-9032-1e0fed8b91ca
 topic_type:
 - apiref
-ms.openlocfilehash: e676547d20dc9535241150d24b65e1fbaf9e89ab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b8bc31b5c2b7ff0c7984aa92c38e96569b80d22e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784296"
 ---
 # <a name="coropenflags-enumeration"></a>CorOpenFlags 枚举
 
@@ -73,6 +74,6 @@ typedef enum CorOpenFlags
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

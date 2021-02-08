@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： XML 子代轴属性 (Visual Basic) '
 title: XML Descendant Axis Property
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], descendant
 - XML [Visual Basic], accessing
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
-ms.openlocfilehash: 52544619171dbc7034baeb5feb61395d81096387
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c356d4d6f9a84755e9df171b26060fc6bfc4ead6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768774"
 ---
 # <a name="xml-descendant-axis-property-visual-basic"></a>XML 后代轴属性 (Visual Basic)
 
@@ -38,7 +39,7 @@ object...<descendant>
 |组成部分|说明|
 |----------|-----------------|
 |`prefix`|可选。 子代节点的 XML 命名空间前缀。 必须是使用语句定义的全局 XML 命名空间 `Imports` 。|
-|`name`|必需。 子代节点的本地名称。 请参阅已[声明的 XML 元素和属性的名称](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)。|
+|`name`|必需。 子代节点的本地名称。 请参阅已 [声明的 XML 元素和属性的名称](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)。|
 
 `>`（必需）。 表示子代轴属性的结尾。
 
@@ -48,13 +49,13 @@ object...<descendant>
 
 ## <a name="remarks"></a>备注
 
-您可以使用 XML 子代轴属性，按名称从或对象访问子代节点 <xref:System.Xml.Linq.XElement> <xref:System.Xml.Linq.XDocument> ，或者从或对象的集合访问子代节点 <xref:System.Xml.Linq.XElement> <xref:System.Xml.Linq.XDocument> 。 使用 XML `Value` 属性可访问返回的集合中的第一个子代节点的值。 有关详细信息，请参阅[XML Value 属性](xml-value-property.md)。
+您可以使用 XML 子代轴属性，按名称从或对象访问子代节点 <xref:System.Xml.Linq.XElement> <xref:System.Xml.Linq.XDocument> ，或者从或对象的集合访问子代节点 <xref:System.Xml.Linq.XElement> <xref:System.Xml.Linq.XDocument> 。 使用 XML `Value` 属性可访问返回的集合中的第一个子代节点的值。 有关详细信息，请参阅 [XML Value 属性](xml-value-property.md)。
 
 Visual Basic 编译器将子代轴属性转换为对方法的调用 <xref:System.Xml.Linq.XContainer.Descendants%2A> 。
 
 ## <a name="xml-namespaces"></a>XML 命名空间
 
-子代轴属性中的名称只能使用通过语句全局声明的 XML 命名空间 `Imports` 。 它不能使用在 XML 元素文本中本地声明的 XML 命名空间。 有关详细信息，请参阅[Imports 语句（XML 命名空间）](../statements/imports-statement-xml-namespace.md)。
+子代轴属性中的名称只能使用通过语句全局声明的 XML 命名空间 `Imports` 。 它不能使用在 XML 元素文本中本地声明的 XML 命名空间。 有关详细信息，请参阅 [ (XML 命名空间) 的 Imports 语句 ](../statements/imports-statement-xml-namespace.md)。
 
 ## <a name="example"></a>示例
 
@@ -78,7 +79,7 @@ Visual Basic 编译器将子代轴属性转换为对方法的调用 <xref:System
 
 `Name: Patrick Hines`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Xml.Linq.XElement>
 - [XML 轴属性](index.md)

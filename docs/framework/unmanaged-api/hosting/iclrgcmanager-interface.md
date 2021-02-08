@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRGCManager 接口
 title: ICLRGCManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fb511c9b-3fe4-41b0-822a-6ba4a079d1f5
 topic_type:
 - apiref
-ms.openlocfilehash: dbe3df6bb20e5ad8f9eb534a366405eb9c33984f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 648b2b131e28da8aabc7028b6d745351cae772fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678228"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789991"
 ---
 # <a name="iclrgcmanager-interface"></a>ICLRGCManager 接口
 
@@ -36,7 +37,7 @@ ms.locfileid: "95678228"
 |[GetStats 方法](iclrgcmanager-getstats-method.md)|获取有关垃圾回收系统的当前统计信息集。|  
 |[SetGCStartupLimits 方法](iclrgcmanager-setgcstartuplimits-method.md)|设置垃圾回收段的大小以及垃圾回收系统的第0代的最大大小。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  公共语言运行时 (CLR) 利用托管类型实现其垃圾回收机制 <xref:System.GC> 。 有关垃圾回收系统的详细信息，请参阅 [垃圾](../../../standard/garbage-collection/index.md)回收。  
   
@@ -50,7 +51,7 @@ ms.locfileid: "95678228"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自动内存管理](../../../standard/automatic-memory-management.md)
 - [COR_GC_STATS 结构](cor-gc-stats-structure.md)

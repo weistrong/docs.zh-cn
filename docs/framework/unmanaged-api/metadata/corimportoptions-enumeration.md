@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorImportOptions 枚举
 title: CorImportOptions 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e5d03cb-97c9-4ff4-8dbd-17d94ee374d3
 topic_type:
 - apiref
-ms.openlocfilehash: 3d5989d43644088403a77f26c02af9ffaae0732b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b942ed3f5b1b3c400b4f901e3dd3c4364e1d588c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677201"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784439"
 ---
 # <a name="corimportoptions-enumeration"></a>CorImportOptions 枚举
 
@@ -65,6 +66,6 @@ typedef enum CorImportOptions {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)
