@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IXCLRDataModule：： GetVersionId 方法
 title: IXCLRDataModule：： GetVersionId 方法
 ms.date: 01/16/2019
 api.name:
@@ -15,20 +16,20 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 9d5ef137a5d76c3d7545ab16921352123e978fb1
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 1b924757f43d106df555ea028270ac873f8f4558
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800755"
 ---
-# <a name="ixclrdatamodulegetversionid-method"></a><span data-ttu-id="7056e-102">IXCLRDataModule：： GetVersionId 方法</span><span class="sxs-lookup"><span data-stu-id="7056e-102">IXCLRDataModule::GetVersionId Method</span></span>
+# <a name="ixclrdatamodulegetversionid-method"></a><span data-ttu-id="cd8cc-103">IXCLRDataModule：： GetVersionId 方法</span><span class="sxs-lookup"><span data-stu-id="cd8cc-103">IXCLRDataModule::GetVersionId Method</span></span>
 
-<span data-ttu-id="7056e-103">获取模块的版本标识符。</span><span class="sxs-lookup"><span data-stu-id="7056e-103">Gets the module's version identifier.</span></span>
+<span data-ttu-id="cd8cc-104">获取模块的版本标识符。</span><span class="sxs-lookup"><span data-stu-id="cd8cc-104">Gets the module's version identifier.</span></span>
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
-## <a name="syntax"></a><span data-ttu-id="7056e-104">语法</span><span class="sxs-lookup"><span data-stu-id="7056e-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cd8cc-105">语法</span><span class="sxs-lookup"><span data-stu-id="cd8cc-105">Syntax</span></span>
 
 ```cpp
 HRESULT GetVersionId(
@@ -36,23 +37,23 @@ HRESULT GetVersionId(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7056e-105">参数</span><span class="sxs-lookup"><span data-stu-id="7056e-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cd8cc-106">参数</span><span class="sxs-lookup"><span data-stu-id="cd8cc-106">Parameters</span></span>
 
 `vid`\
-<span data-ttu-id="7056e-106">弄模块的版本标识符。</span><span class="sxs-lookup"><span data-stu-id="7056e-106">[out] The module's version identifier.</span></span>
+<span data-ttu-id="cd8cc-107">弄模块的版本标识符。</span><span class="sxs-lookup"><span data-stu-id="cd8cc-107">[out] The module's version identifier.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="7056e-107">备注</span><span class="sxs-lookup"><span data-stu-id="7056e-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cd8cc-108">备注</span><span class="sxs-lookup"><span data-stu-id="cd8cc-108">Remarks</span></span>
 
-<span data-ttu-id="7056e-108">提供的方法是接口的一部分 `IXCLRDataModule` ，并且对应于虚拟方法表的第41届槽。</span><span class="sxs-lookup"><span data-stu-id="7056e-108">The provided method is part of the `IXCLRDataModule` interface and corresponds to the 41st slot of the virtual method table.</span></span>
+<span data-ttu-id="cd8cc-109">提供的方法是接口的一部分 `IXCLRDataModule` ，并且对应于虚拟方法表的第41届槽。</span><span class="sxs-lookup"><span data-stu-id="cd8cc-109">The provided method is part of the `IXCLRDataModule` interface and corresponds to the 41st slot of the virtual method table.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="7056e-109">要求</span><span class="sxs-lookup"><span data-stu-id="7056e-109">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="cd8cc-110">要求</span><span class="sxs-lookup"><span data-stu-id="cd8cc-110">Requirements</span></span>
 
-<span data-ttu-id="7056e-110">**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="7056e-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-<span data-ttu-id="7056e-111">**标头：** 内容</span><span class="sxs-lookup"><span data-stu-id="7056e-111">**Header:** None</span></span>  
-<span data-ttu-id="7056e-112">**库：** 内容</span><span class="sxs-lookup"><span data-stu-id="7056e-112">**Library:** None</span></span>  
-<span data-ttu-id="7056e-113">**.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span><span class="sxs-lookup"><span data-stu-id="7056e-113">**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span></span>  
+<span data-ttu-id="cd8cc-111">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="cd8cc-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+<span data-ttu-id="cd8cc-112">**标头：** 内容</span><span class="sxs-lookup"><span data-stu-id="cd8cc-112">**Header:** None</span></span>  
+<span data-ttu-id="cd8cc-113">**库：** 内容</span><span class="sxs-lookup"><span data-stu-id="cd8cc-113">**Library:** None</span></span>  
+<span data-ttu-id="cd8cc-114">**.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span><span class="sxs-lookup"><span data-stu-id="cd8cc-114">**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="7056e-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7056e-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cd8cc-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="cd8cc-115">See also</span></span>
 
-- [<span data-ttu-id="7056e-115">调试</span><span class="sxs-lookup"><span data-stu-id="7056e-115">Debugging</span></span>](index.md)
-- [<span data-ttu-id="7056e-116">IXCLRDataModule 接口</span><span class="sxs-lookup"><span data-stu-id="7056e-116">IXCLRDataModule Interface</span></span>](ixclrdatamodule-interface.md)
+- [<span data-ttu-id="cd8cc-116">调试</span><span class="sxs-lookup"><span data-stu-id="cd8cc-116">Debugging</span></span>](index.md)
+- [<span data-ttu-id="cd8cc-117">IXCLRDataModule 接口</span><span class="sxs-lookup"><span data-stu-id="cd8cc-117">IXCLRDataModule Interface</span></span>](ixclrdatamodule-interface.md)
