@@ -1,13 +1,14 @@
 ---
+description: 了解更多相关信息：通过 SerializationBinder 控制序列化和反序列化
 title: 使用 SerializationBinder 控制序列化和反序列化
 ms.date: 07/14/2020
 ms.assetid: ba8dcecf-acc7-467c-939d-021bbac797d4
-ms.openlocfilehash: be4068411e2154db53a9616df6cf4d83803954e6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e1a437fa2f627fd3d5989d053a21540f139c9797
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293736"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780422"
 ---
 # <a name="controlling-serialization-and-deserialization-with-serializationbinder"></a>使用 SerializationBinder 控制序列化和反序列化
 
@@ -23,7 +24,7 @@ ms.locfileid: "96293736"
 
  <xref:System.Runtime.Serialization.SerializationBinder> 是抽象类，用于控制在序列化和反序列化期间使用的实际类型。 若要控制在序列化和反序列化期间使用的类型，请从 <xref:System.Runtime.Serialization.SerializationBinder> 派生一个类，并重写 <xref:System.Runtime.Serialization.SerializationBinder.BindToName(System.Type,System.String@,System.String@)> 和 <xref:System.Runtime.Serialization.SerializationBinder.BindToType(System.String,System.String)> 方法。 <xref:System.Runtime.Serialization.SerializationBinder.BindToName(System.Type,System.String@,System.String@)> 方法采用 <xref:System.Type>，并返回程序集名称和类型名称。 <xref:System.Runtime.Serialization.SerializationBinder.BindToType(System.String,System.String)> 方法采用程序集名称和类型名称，并返回 <xref:System.Type>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [序列化和反序列化](serialization-and-deserialization.md)
 - [序列化联编程序的用法](../samples/usage-of-serialization-binder.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：上下文交换协议
 title: 上下文交换协议
 ms.date: 03/30/2017
 ms.assetid: 3dfd38e0-ae52-491c-94f4-7a862b9843d4
-ms.openlocfilehash: ba613a2d12843ad00034057f8bbf08d5357d7f04
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c4c81ef28821cd7373d53822728490d50687d5f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780526"
 ---
 # <a name="context-exchange-protocol"></a>上下文交换协议
 
@@ -70,6 +71,6 @@ ms.locfileid: "96237815"
     <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  
     ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Web 服务协议互操作性指南](web-services-protocols-interoperability-guide.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：配置 WorkflowServiceHost
 title: 配置 WorkflowServiceHost
 ms.date: 03/30/2017
 ms.assetid: d8e961cb-0ef5-4f8c-8a25-e76ae6334fed
-ms.openlocfilehash: 3f452bf0a6edce42b8a42dee75faaa6c1ef39ad6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4e65272f41c447ecc21256deedcc916cc8ff69d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780591"
 ---
 # <a name="configuring-workflowservicehost"></a>配置 WorkflowServiceHost
 
@@ -27,7 +28,7 @@ ms.locfileid: "96283999"
  [如何：使用 WorkflowServiceHost 配置工作流未经处理的异常行为](config-workflow-unhandled-exception-workflowservicehost.md)  
  说明如何使用 <xref:System.ServiceModel.Activities.WorkflowServiceHost> 配置工作流服务的未经处理的异常行为。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流服务](workflow-services.md)
 - [承载工作流服务概述](hosting-workflow-services-overview.md)

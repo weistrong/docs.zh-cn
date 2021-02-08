@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：协定
 title: 协定
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - contracts [WCF]
 - Windows Communication Foundation [WCF], contracts
 ms.assetid: c8364183-4ac1-480b-804a-c5e6c59a5d7d
-ms.openlocfilehash: b51bbd1a8a9bfc8963cee429dab41fdf9b4f594c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: efa924970ce8d07a6b068e92ff85f099b696016d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286754"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780513"
 ---
 # <a name="contracts"></a>协定
 
@@ -69,7 +70,7 @@ ms.locfileid: "96286754"
   
  在设计、实现、配置和承载 Windows Communication Foundation (WCF) 服务应用程序时，这一加法要求过程非常重要。 例如，协定可能会指定需要支持某一会话。 如果是这样，您必须配置绑定以支持该协定性需求，否则服务实现将无法正常工作。 或者，如果您的服务要求集成 Windows 身份验证并在 Internet Information Services (IIS) 中承载，则服务所在的 Web 应用程序必须启用集成 Windows 身份验证并禁用匿名支持。 有关不同服务主机应用程序类型的功能和影响的详细信息，请参阅 [托管](hosting.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [终结点：地址、绑定和协定](endpoints-addresses-bindings-and-contracts.md)
 - [设计服务协定](../designing-service-contracts.md)

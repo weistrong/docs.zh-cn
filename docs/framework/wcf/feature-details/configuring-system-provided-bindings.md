@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：配置 System-Provided 绑定
 title: 配置系统提供的绑定
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF [WCF], system-provided bindings
 - bindings [WCF], system-provided
 ms.assetid: 443f8d65-f1f2-4311-83b3-4d8fdf7ccf16
-ms.openlocfilehash: ab608ba954eafd9035335f00c8755629c5703c22
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1254d40638dd27ea14d79888cdf326d49345e02a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780721"
 ---
 # <a name="configuring-system-provided-bindings"></a>配置系统提供的绑定
 
@@ -35,7 +36,7 @@ ms.locfileid: "96284155"
 
  以下绑定随 WCF 一起提供。  
   
-|绑定|配置元素|描述|  
+|绑定|配置元素|说明|  
 |-------------|---------------------------|-----------------|  
 |<xref:System.ServiceModel.BasicHttpBinding>|[\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md)|一个绑定，适用于与符合 WS-Basic Profile 的 Web 服务（例如基于 ASP.NET Web 服务 (ASMX) 的服务）进行的通信。 此绑定使用 HTTP 作为传输协议，并使用文本/XML 作为默认的消息编码。|  
 |<xref:System.ServiceModel.WSHttpBinding>|[\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md)|一个安全且可互操作的绑定，适合于非双工服务约定。|  
@@ -74,13 +75,13 @@ ms.locfileid: "96284155"
 |功能|说明|  
 |-------------|-----------------|  
 |互操作性类型|指定绑定用来确保互操作的协议或技术。|  
-|安全性|指定如何保护通道：<br /><br /> -None：不保护 SOAP 消息，并且不会对客户端进行身份验证。<br />-Transport：在传输层满足安全要求。<br />-Message：在消息层满足安全要求。<br />-Mixed：此安全模式称为 `TransportWithMessageCredentials` 。 此模式在消息级别上处理凭据，并由传输层来满足完整性和保密性需求。<br />-两者：同时使用消息级别和传输级别安全。 此功能仅可用于 <xref:System.ServiceModel.NetMsmqBinding>。|  
+|安全|指定如何保护通道：<br /><br /> -None：不保护 SOAP 消息，并且不会对客户端进行身份验证。<br />-Transport：在传输层满足安全要求。<br />-Message：在消息层满足安全要求。<br />-Mixed：此安全模式称为 `TransportWithMessageCredentials` 。 此模式在消息级别上处理凭据，并由传输层来满足完整性和保密性需求。<br />-两者：同时使用消息级别和传输级别安全。 此功能仅可用于 <xref:System.ServiceModel.NetMsmqBinding>。|  
 |会话|指定此绑定是否支持会话协定。|  
 |事务|指定是否启用事务。|  
 |双工|指定是否支持双工协定。 注意，此功能要求在绑定中支持会话。|  
 |流式处理|指定是否支持消息流处理。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [终结点创建概述](../endpoint-creation-overview.md)
 - [使用绑定配置服务和客户端](../using-bindings-to-configure-services-and-clients.md)

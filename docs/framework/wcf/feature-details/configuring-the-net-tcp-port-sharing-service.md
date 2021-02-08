@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：配置 Net.tcp 端口共享服务
 title: 配置 Net.TCP 端口共享服务
 ms.date: 03/30/2017
 ms.assetid: b6dd81fa-68b7-4e1b-868e-88e5901b7ea0
-ms.openlocfilehash: 854cd7d26e26ee340d577b1bfd890f750e581a38
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9e6a09c1dd986bc96a9d518d25226dd211b3e6ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780695"
 ---
 # <a name="configuring-the-nettcp-port-sharing-service"></a>配置 Net.TCP 端口共享服务
 
@@ -64,6 +65,6 @@ ms.locfileid: "96284142"
 > [!WARNING]
 > 默认 SMSvcHost.exe.config 文件指定自定义 `etwProviderId` 以阻止 SMSvcHost.exe 跟踪干扰服务跟踪。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [\<net.tcp>](../../configure-apps/file-schema/wcf/net-tcp.md)

@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：配置 WS-Atomic Transaction 支持
 title: 配置 WS-Atomic 事务支持
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-AT protocol [WCF], configuring WS-Atomic Transaction
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
-ms.openlocfilehash: 9c0e75d58fbcf61137ceae3fba9d8acfe3902171
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c9b732bd0d6b6aa8cb1cf04803ae302a00348987
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780539"
 ---
-# <a name="configure-ws-atomic-transaction-support"></a>配置 WS 原子事务支持
+# <a name="configure-ws-atomic-transaction-support"></a>配置 WS-Atomic Transaction 支持
 
 本主题介绍如何通过 WS-AT 配置实用工具来配置 WS-AtomicTransaction (WS-AT) 支持。
 
@@ -57,7 +58,7 @@ WS-AT 协议服务要求管理员显式授权各个帐户参与分布式事务�
 
 ### <a name="create-and-export-certificates"></a>创建和导出证书
 
-此过程需要使用 MMC“证书”管理单元。 打开“开始”/“运行”菜单，并在输入框中输入“mmc”，然后按“确定”可访问该管理单元。 然后，在 "**控制台**1" 窗口中，导航到 **"文件"/"添加/删除**" 管理单元，单击 "添加"，然后从 "**可用的独立管理单元**" 列表中选择 "**证书**"。 最后，选择要管理的 **计算机帐户** ，然后单击 **"确定"**。 " **证书** " 节点显示在管理单元控制台中。
+此过程需要使用 MMC“证书”管理单元。 打开“开始”/“运行”菜单，并在输入框中输入“mmc”，然后按“确定”可访问该管理单元。 然后，在 "**控制台** 1" 窗口中，导航到 **"文件"/"添加/删除**" 管理单元，单击 "添加"，然后从 "**可用的独立管理单元**" 列表中选择 "**证书**"。 最后，选择要管理的 **计算机帐户** ，然后单击 **"确定"**。 " **证书** " 节点显示在管理单元控制台中。
 
 必须拥有必需的证书才能建立信任。 若要了解如何在执行以下步骤之前创建和安装新证书，请参阅 [如何：在开发过程中在 WCF 中创建和安装临时客户端证书](/previous-versions/msp-n-p/ff650751(v=pandp.10))。
 
@@ -94,7 +95,7 @@ WS-AT 协议服务要求管理员显式授权各个帐户参与分布式事务�
 >
 > 如果计算机的名称更改，例如，当工作组计算机加入域时，必须重新颁发证书或手动配置 DNS 后缀。
 
-## <a name="security"></a>安全性
+## <a name="security"></a>安全
 
 由于某些与 MSDTC 和 WS-AT 关联的设置分别存储在注册表的 HKLM\Software\Microsoft\MSDTC 和 HKLM\Software\Microsoft\WSAT 下面，因此，请确保这些注册表项得到了保护，只有管理员才能写入这些项。 在 "注册表编辑器" 工具中，右键单击要保护的项，然后选择 " **权限** " 以设置适当的访问控制。 对于系统的安全性和完整性而言，重要的项对于低权限用户只读至关重要。
 
@@ -108,7 +109,7 @@ WS-AT 协议服务支持集成的事务特定跟踪，可通过使用 [Ws-atomic
 
 1. 打开 " **开始/运行** " 菜单，在 "输入" 框中键入 "regedit"，然后选择 **"确定**"。
 
-2. 在 **注册表编辑器**中，导航到左侧窗格中的以下文件夹，Hkey_Local_Machine \software\microsoft\wsat\3.0\
+2. 在 **注册表编辑器** 中，导航到左侧窗格中的以下文件夹，Hkey_Local_Machine \software\microsoft\wsat\3.0\
 
 3. 右键单击 `ServiceModelDiagnosticTracing` 右窗格中的值，然后选择 " **修改**"。
 

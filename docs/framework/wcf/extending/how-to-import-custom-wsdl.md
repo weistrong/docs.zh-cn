@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：导入自定义 WSDL
 title: 如何：导入自定义 WSDL
 ms.date: 03/30/2017
 ms.assetid: ddc3718d-ce60-44f6-92af-a5c67477dd99
-ms.openlocfilehash: c5aa554394743314a91afd6a5cdf86f9974e81f8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f21e5cace532bd6d20d409f297480f65bb23cbf4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249080"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780734"
 ---
 # <a name="how-to-import-custom-wsdl"></a>如何：导入自定义 WSDL
 
@@ -79,7 +80,7 @@ ms.locfileid: "96249080"
     System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
     ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - Metadata 
 - [导出和导入元数据](../feature-details/exporting-and-importing-metadata.md)
