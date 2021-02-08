@@ -1,16 +1,17 @@
 ---
+description: 详细了解：访问应用程序设置 (Visual Basic)
 title: 访问应用程序设置
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Settings object [Visual Basic], application settings
 - examples [Visual Basic], application settings
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
-ms.openlocfilehash: 1c564694c7ca047378c66fd2b7f3f3ecd5ce687b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e6803a5f175b4af8ef37b1cd2ba4d87ec96fde0a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410122"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797804"
 ---
 # <a name="accessing-application-settings-visual-basic"></a>访问应用程序设置 (Visual Basic)
 

@@ -1,13 +1,14 @@
 ---
+description: 详细了解：XML 文档和数据
 title: XML 文档和数据
 ms.date: 03/30/2017
 ms.assetid: e695047f-3c0f-4045-8708-5baea91cc380
-ms.openlocfilehash: db122d1f2fa4ad192bbcc92769873850916a4220
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c2f64c218f2f6051f27087a98616b17e57583f75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713658"
 ---
 # <a name="xml-documents-and-data"></a>XML 文档和数据
 
