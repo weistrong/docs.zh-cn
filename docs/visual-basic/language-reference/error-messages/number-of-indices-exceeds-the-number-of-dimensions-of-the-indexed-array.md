@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30106：索引数超过索引数组的维数
 title: 索引数超过索引数组的维数
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - BC30106
 ms.assetid: 2c5363e1-62c2-4f5a-b675-c7337aeb363d
-ms.openlocfilehash: 9a191ff7ec3ad6a607e6509cc143c359f64f21ea
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 35ec1ea106e67022046179412b142cd92712c822
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159906"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795605"
 ---
-# <a name="bc30106-number-of-indices-exceeds-the-number-of-dimensions-of-the-indexed-array"></a><span data-ttu-id="ead9f-102">BC30106：索引数超过索引数组的维数</span><span class="sxs-lookup"><span data-stu-id="ead9f-102">BC30106: Number of indices exceeds the number of dimensions of the indexed array</span></span>
+# <a name="bc30106-number-of-indices-exceeds-the-number-of-dimensions-of-the-indexed-array"></a><span data-ttu-id="a31e9-103">BC30106：索引数超过索引数组的维数</span><span class="sxs-lookup"><span data-stu-id="a31e9-103">BC30106: Number of indices exceeds the number of dimensions of the indexed array</span></span>
 
-<span data-ttu-id="ead9f-103">用于访问数组元素的索引数必须完全等同于数组的秩，即为其声明的维数。</span><span class="sxs-lookup"><span data-stu-id="ead9f-103">The number of indices used to access an array element must be exactly the same as the rank of the array, that is, the number of dimensions declared for it.</span></span>
+<span data-ttu-id="a31e9-104">用于访问数组元素的索引数必须完全等同于数组的秩，即为其声明的维数。</span><span class="sxs-lookup"><span data-stu-id="a31e9-104">The number of indices used to access an array element must be exactly the same as the rank of the array, that is, the number of dimensions declared for it.</span></span>
 
- <span data-ttu-id="ead9f-104">**错误 ID：** BC30106</span><span class="sxs-lookup"><span data-stu-id="ead9f-104">**Error ID:** BC30106</span></span>
+ <span data-ttu-id="a31e9-105">**错误 ID：** BC30106</span><span class="sxs-lookup"><span data-stu-id="a31e9-105">**Error ID:** BC30106</span></span>
 
-## <a name="to-correct-this-error"></a><span data-ttu-id="ead9f-105">更正此错误</span><span class="sxs-lookup"><span data-stu-id="ead9f-105">To correct this error</span></span>
+## <a name="to-correct-this-error"></a><span data-ttu-id="a31e9-106">更正此错误</span><span class="sxs-lookup"><span data-stu-id="a31e9-106">To correct this error</span></span>
 
-- <span data-ttu-id="ead9f-106">删除数组引用中的下标，直到下标的总数等于数组的秩。</span><span class="sxs-lookup"><span data-stu-id="ead9f-106">Remove subscripts from the array reference until the total number of subscripts equals the rank of the array.</span></span> <span data-ttu-id="ead9f-107">例如：</span><span class="sxs-lookup"><span data-stu-id="ead9f-107">For example:</span></span>
+- <span data-ttu-id="a31e9-107">删除数组引用中的下标，直到下标的总数等于数组的秩。</span><span class="sxs-lookup"><span data-stu-id="a31e9-107">Remove subscripts from the array reference until the total number of subscripts equals the rank of the array.</span></span> <span data-ttu-id="a31e9-108">例如：</span><span class="sxs-lookup"><span data-stu-id="a31e9-108">For example:</span></span>
 
     ```vb
     Dim gameBoard(3, 3) As String
@@ -36,6 +37,6 @@ ms.locfileid: "92159906"
     gameBoard(1, 0) = "O"
     ```
 
-## <a name="see-also"></a><span data-ttu-id="ead9f-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="ead9f-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a31e9-109">请参阅</span><span class="sxs-lookup"><span data-stu-id="a31e9-109">See also</span></span>
 
-- [<span data-ttu-id="ead9f-109">数组</span><span class="sxs-lookup"><span data-stu-id="ead9f-109">Arrays</span></span>](../../programming-guide/language-features/arrays/index.md)
+- [<span data-ttu-id="a31e9-110">数组</span><span class="sxs-lookup"><span data-stu-id="a31e9-110">Arrays</span></span>](../../programming-guide/language-features/arrays/index.md)
