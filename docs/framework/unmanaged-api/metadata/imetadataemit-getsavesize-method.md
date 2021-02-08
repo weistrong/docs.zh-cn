@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit：： GetSaveSize 方法
 title: IMetaDataEmit::GetSaveSize 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8aea2e2c-23a3-4cda-9a06-e19f97383830
 topic_type:
 - apiref
-ms.openlocfilehash: 5cb202f5284c1c18545ec750b2fa0f04d4b0d2e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 871e9f911eaaf1b1a7259466402e492d75aa7fb8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722058"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783932"
 ---
 # <a name="imetadataemitgetsavesize-method"></a>IMetaDataEmit::GetSaveSize 方法
 
@@ -49,7 +50,7 @@ HRESULT GetSaveSize (
  `pdwSaveSize`  
  弄一个指针，指向保存该文件所需的大小。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetSaveSize` 计算在当前作用域中保存程序集及其所有元数据所需的空间（以字节为单位）。  (对 [IMetaDataEmit：： SaveToStream](imetadataemit-savetostream-method.md) 方法的调用将发出此数目的字节。 )   
   
@@ -67,7 +68,7 @@ HRESULT GetSaveSize (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit 接口](imetadataemit-interface.md)
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)

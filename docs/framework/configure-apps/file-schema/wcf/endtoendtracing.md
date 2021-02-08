@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <endToEndTracing>
 title: <endToEndTracing>
 ms.date: 03/30/2017
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
-ms.openlocfilehash: 6b50c0c3db644787fe41ee58ced7eb640e7295f1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2ac4a7563d7d7881cdb503e843d34f84fd9c95a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190015"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782112"
 ---
 # \<endToEndTracing>
 
@@ -36,7 +37,7 @@ ms.locfileid: "91190015"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`activityTracing`|一个布尔值，指定是否启用活动跟踪。|  
 |`messageFlowTracing`|一个布尔值，指定是否启用消息流跟踪。|  
@@ -48,7 +49,7 @@ ms.locfileid: "91190015"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<diagnostics>](diagnostics.md)|定义管理员运行时检查和控制的 WCF 设置。|  
   

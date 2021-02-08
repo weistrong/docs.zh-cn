@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <NetFx40_LegacySecurityPolicy> 元素
 title: <NetFx40_LegacySecurityPolicy> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <NetFx40_LegacySecurityPolicy> element
 - NetFx40_LegacySecurityPolicy element
 ms.assetid: 07132b9c-4a72-4710-99d7-e702405e02d4
-ms.openlocfilehash: d5192eb56bb8b640544bdc52a0bb9d8a5277efef
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6be520d4cfd4f9ec05f4aceec82e4fef5440f55d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73116255"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782307"
 ---
 # <a name="netfx40_legacysecuritypolicy-element"></a>\<NetFx40_LegacySecurityPolicy> 元素
 
@@ -33,7 +34,7 @@ ms.locfileid: "73116255"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |`enabled`|必需的特性。<br /><br /> 指定运行时是否使用旧版 CAS 策略。|
 
@@ -50,21 +51,21 @@ ms.locfileid: "73116255"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|
 |`runtime`|包含有关运行时初始化选项的信息。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 在 .NET Framework 版本3.5 及更低版本中，CAS 策略始终有效。 在 .NET Framework 4 中，必须启用 CAS 策略。
 
 CA 策略是特定于版本的。 .NET Framework 早期版本中存在的自定义 CAS 策略必须在 .NET Framework 4 中 respecified。
 
-将 `<NetFx40_LegacySecurityPolicy>` 元素应用到 .NET Framework 4 程序集并不会影响[安全透明的代码](../../../misc/security-transparent-code.md); 透明规则仍适用。
+将 `<NetFx40_LegacySecurityPolicy>` 元素应用到 .NET Framework 4 程序集并不会影响 [安全透明的代码](../../../misc/security-transparent-code.md); 透明规则仍适用。
 
 > [!IMPORTANT]
-> `<NetFx40_LegacySecurityPolicy>`对于未安装在[全局程序集缓存](../../../app-domains/gac.md)中的[本机映像生成器（ngen.exe）](../../../tools/ngen-exe-native-image-generator.md)创建的本机映像程序集，应用元素可能会导致严重的性能下降。 性能下降是由运行时在应用属性时无法将程序集加载为本机映像而导致其作为实时程序集加载的。
+> 应用 `<NetFx40_LegacySecurityPolicy>` 元素可能会导致本机映像生成器创建的本机映像程序集出现严重的性能下降 [ ( # A0) ](../../../tools/ngen-exe-native-image-generator.md) 未安装在 [全局程序集缓存](../../../app-domains/gac.md)中。 性能下降是由运行时在应用属性时无法将程序集加载为本机映像而导致其作为实时程序集加载的。
 
 > [!NOTE]
 > 如果指定的目标 .NET Framework 版本早于 Visual Studio 项目的项目设置中的 .NET Framework 4，则将启用 CAS 策略，包括你为该版本指定的任何自定义 CAS 策略。 但是，您将不能使用新 .NET Framework 4 类型和成员。 你还可以使用[应用程序配置文件](../../index.md)中的 "启动设置" 架构中的[ \<supportedRuntime> 元素](../startup/supportedruntime-element.md)指定 .NET Framework 的早期版本。
@@ -88,7 +89,7 @@ CA 策略是特定于版本的。 .NET Framework 早期版本中存在的自定�
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时设置架构](index.md)
 - [配置文件架构](../index.md)

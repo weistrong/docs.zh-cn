@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 5002-DCSerializeWithSurrogateStop
 title: 5002 - DCSerializeWithSurrogateStop
 ms.date: 03/30/2017
 ms.assetid: 66fd4496-8b94-46d4-b987-19040b4ea4bc
-ms.openlocfilehash: 73834086ea75fa99bc35552f58e1aa776d434225
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9fbf2df18a477083f6c3fb17b8c3f871d89e87c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783542"
 ---
 # <a name="5002---dcserializewithsurrogatestop"></a>5002 - DCSerializeWithSurrogateStop
 
@@ -20,7 +21,7 @@ ms.locfileid: "96235657"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当 DataContract 停止使用代理项序列化时，发出此事件。  
   

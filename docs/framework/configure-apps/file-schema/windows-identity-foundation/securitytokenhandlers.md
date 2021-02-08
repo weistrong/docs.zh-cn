@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <securityTokenHandlers>
 title: <securityTokenHandlers>
 ms.date: 03/30/2017
 ms.assetid: f11a631d-4094-4e11-bb03-4ede74b30281
 author: BrucePerlerMS
-ms.openlocfilehash: d892fbd802ed366ca7af9b85fbf5c23d4d27e0f1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 14937f6763644f9b7f43c0f7be71ea2352b21402
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157000"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782021"
 ---
 # \<securityTokenHandlers>
 
@@ -42,7 +43,7 @@ ms.locfileid: "91157000"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add.md)|将安全标记处理程序添加到令牌处理程序集合。|  
 |[\<clear>](clear.md)|清除标记处理程序集合中的所有安全标记处理程序。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91157000"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<identityConfiguration>](identityconfiguration.md)|指定服务级别标识设置。|  
   

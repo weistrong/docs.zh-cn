@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <PreferComInsteadOfManagedRemoting> 元素
 title: <PreferComInsteadOfManagedRemoting> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <PreferComInsteadOfManagedRemoting> element
 - PreferComInsteadOfManagedRemoting element
 ms.assetid: a279a42a-c415-4e79-88cf-64244ebda613
-ms.openlocfilehash: 2fb0d94f91d28f9d9d4f247411d273f786f7b63b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b621af9b584d1ea2623ffe5a44f74b5b7bd520e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195280"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782268"
 ---
 # <a name="prefercominsteadofmanagedremoting-element"></a>\<PreferComInsteadOfManagedRemoting> 元素
 
@@ -38,7 +39,7 @@ ms.locfileid: "91195280"
   
 ## <a name="enabled-attribute"></a>enabled 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |`false`|运行时将跨应用程序域边界使用远程处理。 这是默认设置。|  
 |`true`|运行时将跨应用程序域边界使用 COM 互操作。|  
@@ -49,7 +50,7 @@ ms.locfileid: "91195280"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

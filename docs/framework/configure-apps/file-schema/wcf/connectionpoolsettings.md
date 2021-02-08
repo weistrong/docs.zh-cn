@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <connectionPoolSettings>
 title: <connectionPoolSettings>
 ms.date: 03/30/2017
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
-ms.openlocfilehash: d8787bc2ef8da4fdc01237ac9b041dfdd66fce03
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5acf2d800f1a18f45750d0fabd23516f987b2c5e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175988"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782164"
 ---
 # \<connectionPoolSettings>
 
@@ -35,7 +36,7 @@ ms.locfileid: "91175988"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`groupName`|一个字符串，定义用于传出通道的连接池的名称。 在流处理模式中，不共享连接，这意味着禁用连接池。 默认值为字符串 "default"。 可以修改此值，以便将特定客户端的连接隔离到不同的组中。|  
 |`idleTimeout`|一个值为正的 <xref:System.TimeSpan>，指定连接在断开前可以空闲的最长时间。 默认值为 00:02:00。|  
@@ -47,7 +48,7 @@ ms.locfileid: "91175988"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<namedPipeTransport>](namedpipetransport.md)|定义传输，该传输使通道使用命名管道传输消息。|  
   

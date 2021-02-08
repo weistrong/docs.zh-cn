@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <endpointDiscovery>
 title: <endpointDiscovery>
 ms.date: 03/30/2017
 ms.assetid: 70812717-888a-4748-9640-0df6715ff029
-ms.openlocfilehash: 621c742e3bb06ce91fa5a6b8951351295f73df9e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 01913de37ae426484d5bb1ff6a815a64302024fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185803"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782125"
 ---
 # \<endpointDiscovery>
 
@@ -45,11 +46,11 @@ ms.locfileid: "91185803"
   
 |属性|说明|  
 |---------------|-----------------|  
-|enabled|一个布尔值，指定是否在此终结点上启用可发现性。 默认为 `false`。|  
+|enabled|一个布尔值，指定是否在此终结点上启用可发现性。 默认值为 `false`。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<scopes>](scopes.md)|终结点的范围 URI 集合。 一个终结点可以与多个范围 URI 关联。|  
 |[\<extensions>](extensions.md) [of \<endpointDiscovery> ]|一个 XML 元素集合，用于指定要对终结点发布的自定义元数据。|  
@@ -57,7 +58,7 @@ ms.locfileid: "91185803"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定行为元素。|  
 |||  

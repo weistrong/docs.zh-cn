@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <entries>
 title: <entries>
 ms.date: 03/30/2017
 ms.assetid: 202e430c-c1b9-4343-abe2-ac78c181a3b7
-ms.openlocfilehash: d3dae510ac62735138a24b8fb97a8acfffde1a98
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e5aefce4328c341b6d132765c8e726910241aae1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782099"
 ---
 # \<entries>
 
@@ -47,13 +48,13 @@ ms.locfileid: "91189962"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<filters>](filters-of-routing.md)|将筛选器映射到以前定义的客户端终结点。 与此筛选器匹配的消息将发送到此目标。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<routing>](routing.md)|一个包含路由表的配置节。|  
   

@@ -1,4 +1,5 @@
 ---
+description: 详细了解：的 <filter> 元素 <add> <listeners><source>
 title: <filter>的的 <add> 的元素 <listeners><source>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - <filter> element for <add> for <listeners> for <source>
 - filter element for <add> for <listeners> for <source>
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
-ms.openlocfilehash: 2b83fd10da506202427aaeee454411822ff1ae5b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 65233aa2d9ea000d1d27d0241c734bee7097b7ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201676"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782255"
 ---
 # <a name="filter-element-for-add-for-listeners-for-source"></a>\<filter>的的 \<add> 的元素 \<listeners>\<source>
 
@@ -53,7 +54,7 @@ ms.locfileid: "91201676"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`system.diagnostics`|指定用于收集、存储和路由消息的跟踪侦听器以及对跟踪开关设置的级别。|  

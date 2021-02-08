@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4818-InnerChannelOpenFailed
 title: 4818 - InnerChannelOpenFailed
 ms.date: 03/30/2017
 ms.assetid: c8ac6447-4fbb-4e08-ab26-91acae48dd11
-ms.openlocfilehash: c0db97add82bed91e8e7e3ae763f6f52361b86b3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cc34d88b27d5a9d7344e00e00b2ee0c4e9d96cc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783620"
 ---
 # <a name="4818---innerchannelopenfailed"></a>4818 - InnerChannelOpenFailed
 
@@ -17,10 +18,10 @@ ms.locfileid: "96285780"
 |-|-|  
 |ID|4818|  
 |关键字|发现|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  在 DiscoveryClientChannel 无法使用已发现终结点打开通道时，将发出此事件。 DiscoveryClientChannel 现在将尝试使用下一个可用的已发现终结点。  
   

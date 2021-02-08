@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： <namedCaches> 元素 (缓存设置) '
 title: <namedCaches> 元素（缓存设置）
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - caching [.NET Framework], configuration
 - <namedCaches> element
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
-ms.openlocfilehash: ad76c01bba859934be399d73262bd974309efe98
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 543650513270c0cee24d965b8efe98a75d7b8f9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782320"
 ---
 # <a name="namedcaches-element-cache-settings"></a>\<namedCaches> 元素（缓存设置）
 
@@ -40,7 +41,7 @@ ms.locfileid: "91192394"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`cacheMemoryLimitMegabytes`|一个整数值，指定的实例可以增长到的最大允许大小（以 mb <xref:System.Runtime.Caching.MemoryCache> 为单位）。 默认值为0，这意味着 <xref:System.Runtime.Caching.MemoryCache> 默认情况下使用类的自动调整试探法。|  
 |`name`|缓存的名称。|  
@@ -49,7 +50,7 @@ ms.locfileid: "91192394"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<add>](add-element-for-namedcaches.md)|向内存缓存的 `namedCaches` 集合添加一个命名的缓存。|  
 |[\<clear>](clear-element-for-namedcaches.md)|清除内存缓存的 `namedCaches` 集合。|  
@@ -57,7 +58,7 @@ ms.locfileid: "91192394"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<configuration>](../configuration-element.md)|指定公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |[\<memoryCache>](memorycache-element-cache-settings.md)|定义一个用于配置基于 <xref:System.Runtime.Caching.MemoryCache> 类的缓存的元素。|  

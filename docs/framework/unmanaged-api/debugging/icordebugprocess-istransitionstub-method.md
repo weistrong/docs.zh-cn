@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugProcess：： IsTransitionStub 方法
 title: ICorDebugProcess::IsTransitionStub 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f7653317-7e48-4163-be03-f50f1a4b0f70
 topic_type:
 - apiref
-ms.openlocfilehash: 2996c219ccf4e975c45fb531807abc4a608bae73
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0da8527538c2573b1ec0d26f8711644fe8fcca2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95694771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781995"
 ---
 # <a name="icordebugprocessistransitionstub-method"></a>ICorDebugProcess::IsTransitionStub 方法
 
@@ -42,7 +43,7 @@ HRESULT IsTransitionStub(
  `pbTransitionStub`  
  弄指向布尔值的指针， `true` 如果指定的地址在将导致转换到托管代码的存根内，则为; 否则 `pbTransitionStub` 为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IsTransitionStub`非托管的单步执行代码可以使用方法来确定何时将单步执行控件返回给托管分档器。  
   

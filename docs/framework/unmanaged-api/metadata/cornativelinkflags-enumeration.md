@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CorNativeLinkFlags 枚举
 title: CorNativeLinkFlags 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8027df7c-cfad-4724-bda0-7538d9519070
 topic_type:
 - apiref
-ms.openlocfilehash: ef9b177bee0651b6b8ea994610315ce93524e8e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9025d192ca92c1160c1b072b0dcfe045fa3ceab7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676928"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784348"
 ---
 # <a name="cornativelinkflags-enumeration"></a>CorNativeLinkFlags 枚举
 
@@ -56,6 +57,6 @@ typedef enum
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据枚举](metadata-enumerations.md)

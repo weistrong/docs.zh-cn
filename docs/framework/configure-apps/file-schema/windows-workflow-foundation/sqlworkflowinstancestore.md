@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <sqlWorkflowInstanceStore>
 title: <sqlWorkflowInstanceStore>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 8a4e4214-fc51-4f4d-b968-0427c37a9520
-ms.openlocfilehash: d6c86d02e14a38c2a35ba4858c4abfea73268fd8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8fcf5dd970adf5aa668d90b012c94e04c5373752
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148706"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782006"
 ---
 # \<sqlWorkflowInstanceStore>
 
@@ -44,7 +45,7 @@ ms.locfileid: "91148706"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |connectionString|一个字符串，包含用于连接到基础持久性数据库的连接字符串。|  
 |connectionStringName|一个字符串，包含指向数据库服务器的已命名连接字符串。 命名连接字符串的示例为 "DefaultConnectionString"。|  
@@ -60,7 +61,7 @@ ms.locfileid: "91148706"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceBehaviors> 的 \<behavior>](behavior-of-servicebehaviors-of-workflow.md)|指定行为元素。|  
   
