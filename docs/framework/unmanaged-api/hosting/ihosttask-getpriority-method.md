@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTask：： GetPriority 方法
 title: IHostTask::GetPriority 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4b463cd6-77c1-4f9a-8518-346ad8fc4b70
 topic_type:
 - apiref
-ms.openlocfilehash: d30dcbe4e7c289c23c5af00e4bdadedc186809b4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fb64164a54806a362888e93f031713ccc0ac3578
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784686"
 ---
 # <a name="ihosttaskgetpriority-method"></a>IHostTask::GetPriority 方法
 
@@ -50,7 +51,7 @@ HRESULT GetPriority (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  线程优先级别值由 Win32 `SetThreadPriority` 函数定义。  
   
@@ -64,7 +65,7 @@ HRESULT GetPriority (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTaskManager：： BeginDelayAbort 方法
 title: IHostTaskManager::BeginDelayAbort 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 75f42a8b-ed68-4718-a030-a179cfba7d72
 topic_type:
 - apiref
-ms.openlocfilehash: f72cc15904d098e159dd7f75f673d43ae987998d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f991690af4f7e634c8d845bdbd09f690b4ea3af7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784608"
 ---
 # <a name="ihosttaskmanagerbegindelayabort-method"></a>IHostTaskManager::BeginDelayAbort 方法
 
@@ -44,7 +45,7 @@ HRESULT BeginDelayAbort ();
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_UNEXPECTED|`BeginDelayAbort` 已调用，但尚未接收到对 [EndDelayAbort](ihosttaskmanager-enddelayabort-method.md) 的相应调用。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在调用之前，主机不得中止当前任务 `EndDelayAbort` 。 如果在没有干预调用的情况下进行了对的另一次调用 `BeginDelayAbort` `EndDelayAbort` ，主机应从返回 E_UNEXPECTED `BeginDelayAbort` ，而不应采取任何措施。  
   
@@ -58,7 +59,7 @@ HRESULT BeginDelayAbort ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

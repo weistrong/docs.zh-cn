@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： CreateRWLockWriterEvent 方法
 title: IHostSyncManager::CreateRWLockWriterEvent 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 70e488c2-cf53-4dc0-ba52-74372d215c41
 topic_type:
 - apiref
-ms.openlocfilehash: 5b5faf14337f78d9b176787528ae8947f5810ba6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 509f18ff49966e5da3a25e39258d33caf69249a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704365"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784751"
 ---
 # <a name="ihostsyncmanagercreaterwlockwriterevent-method"></a>IHostSyncManager::CreateRWLockWriterEvent 方法
 
@@ -55,7 +56,7 @@ HRESULT CreateRWLockWriterEvent (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于创建请求的事件对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 调用 `CreateRWLockWriterEvent` 方法来获取对实例的引用 `IHostAutoEvent` ，以便在它的编写器锁实现中使用。 主机可以通过调用 [ICLRSyncManager](iclrsyncmanager-interface.md) 接口的迭代方法，使用指定的 cookie 来确定哪些任务正在等待锁定。  
   
@@ -69,7 +70,7 @@ HRESULT CreateRWLockWriterEvent (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostAutoEvent 接口](ihostautoevent-interface.md)

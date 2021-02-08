@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager 接口
 title: IHostSyncManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2e081a37-6a28-4c93-b7ab-1c96a464637c
 topic_type:
 - apiref
-ms.openlocfilehash: 8a5fc42191634a2e5a441baecc4b78212ffad687
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c3bd2928315567605d320c772de8ff824ad3cd09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720485"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784725"
 ---
 # <a name="ihostsyncmanager-interface"></a>IHostSyncManager 接口
 
@@ -39,7 +40,7 @@ ms.locfileid: "95720485"
 |[CreateSemaphore 方法](ihostsyncmanager-createsemaphore-method.md)|为 CLR 创建一个 [IHostSemaphore](ihostsemaphore-interface.md) 对象，以用作等待事件的信号量。|  
 |[SetCLRSyncManager 方法](ihostsyncmanager-setclrsyncmanager-method.md)|设置要与当前实例关联的 [ICLRSyncManager](iclrsyncmanager-interface.md) 实例 `IHostSyncManager` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR `IHostSyncManager` 通过使用 IID_IHostSyncManager 的调用 [IHostControl：： GetHostManager](ihostcontrol-gethostmanager-method.md) 方法来发现主机的实现 `IID` 。  
   
@@ -53,7 +54,7 @@ ms.locfileid: "95720485"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [承载接口](hosting-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTaskManager：： BeginThreadAffinity 方法
 title: IHostTaskManager::BeginThreadAffinity 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fea3ab88-ce41-4c5a-847b-bb78cd748da6
 topic_type:
 - apiref
-ms.openlocfilehash: 6f6d57a52d960c975d468f370477b5d7e29c3aa2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 15ee917f5c81ee605c0cb4df3180041797c18daf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784595"
 ---
 # <a name="ihosttaskmanagerbeginthreadaffinity-method"></a>IHostTaskManager::BeginThreadAffinity 方法
 
@@ -43,7 +44,7 @@ HRESULT BeginThreadAffinity ();
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 通常在对的 `IHostTaskManager::BeginThreadAffinity` 调用的上下文中调用 <xref:System.Threading.Thread.BeginThreadAffinity%2A?displayProperty=nameWithType> 。 在对 [IHostTaskManager：： EndThreadAffinity](ihosttaskmanager-endthreadaffinity-method.md)进行相应的调用之前，不能重新计划当前任务。 可以切换出任务，但当它们切换回时，必须将它们分配到从中进行切换的相同操作系统线程。对的嵌套调用 `BeginThreadAffinity` 不起作用，因为调用指的是当前任务。  
   
@@ -57,7 +58,7 @@ HRESULT BeginThreadAffinity ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

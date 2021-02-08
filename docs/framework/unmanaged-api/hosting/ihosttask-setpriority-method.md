@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTask：： SetPriority 方法
 title: IHostTask::SetPriority 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cd8c379b-c7a0-434f-8e23-899bd26be75d
 topic_type:
 - apiref
-ms.openlocfilehash: 80b4bb2f6a547250acbc16a89e7396c60cc50d87
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c3e8fee954e5cbea2d084141a4b2d22d2fa5e95b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720446"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784634"
 ---
 # <a name="ihosttasksetpriority-method"></a>IHostTask::SetPriority 方法
 
@@ -50,7 +51,7 @@ HRESULT SetPriority (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  将使用部分基于线程优先级别的轮循机制为线程授予处理时间。 `SetPriority` 允许 CLR 为当前任务设置该线程优先级别。 支持以下 `newPriority` 值。  
   
@@ -85,7 +86,7 @@ HRESULT SetPriority (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Threading.Thread>
 - [ICLRTask 接口](iclrtask-interface.md)

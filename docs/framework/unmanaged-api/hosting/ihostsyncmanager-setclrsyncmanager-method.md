@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： SetCLRSyncManager 方法
 title: IHostSyncManager::SetCLRSyncManager 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2b8bbe76-a45d-4989-bacb-11df42f8798c
 topic_type:
 - apiref
-ms.openlocfilehash: 79a41b6705b41414f0926c2ed819e437ecfb51d5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e2a6a54334f7b8a63696ead918f4f34e0c36e438
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714817"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784703"
 ---
 # <a name="ihostsyncmanagersetclrsyncmanager-method"></a>IHostSyncManager::SetCLRSyncManager 方法
 
@@ -50,7 +51,7 @@ HRESULT SetCLRSyncManager (
 |HOST_E_ABANDONED|已阻止的线程或纤程正在等待某个事件时，该事件被取消。|  
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  为了便于主机与 CLR 之间的通信，宿主接口通常成对出现。 该对的一个成员由主机实现，另一个成员由 CLR 实现。 作为宿主端实现， `IHostSyncManager` 接口对应于 `ICLRSyncManager` CLR 实现的接口。 CLR 将调用 `SetCLRSyncManager` 以提供 `ICLRSyncManager` 与当前实例关联的主机的实例 `IHostSyncManager` 。  
   
@@ -64,7 +65,7 @@ HRESULT SetCLRSyncManager (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostSyncManager 接口](ihostsyncmanager-interface.md)

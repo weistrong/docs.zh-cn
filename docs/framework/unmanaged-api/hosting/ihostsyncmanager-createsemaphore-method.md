@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostSyncManager：： CreateSemaphore 方法
 title: IHostSyncManager::CreateSemaphore 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 37679e94-5ff9-4173-8fa5-457febeb89bf
 topic_type:
 - apiref
-ms.openlocfilehash: 9af38a58ce8786c56d9f50089605dc994167497e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5a03ef7532e2ac8357ec015b40cc54942f5420e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784738"
 ---
 # <a name="ihostsyncmanagercreatesemaphore-method"></a>IHostSyncManager::CreateSemaphore 方法
 
@@ -59,7 +60,7 @@ HRESULT CreateSemaphore (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_OUTOFMEMORY|没有足够的内存可用于创建请求的事件对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CreateSemaphore` 镜像同名的 Win32 函数。 `dwInitial`和 `dwMax` 参数分别对信号量和参数使用相同的语义 `lInitialCount` `lMaximumCount` 。 `dwInitial` 必须介于零和 `dwMax` （含）之间。 `dwMax` 必须大于零。  
   
@@ -73,7 +74,7 @@ HRESULT CreateSemaphore (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostSemaphore 接口](ihostsemaphore-interface.md)
