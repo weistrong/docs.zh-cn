@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：篡改
 title: 篡改
 ms.date: 03/30/2017
 ms.assetid: 3bad93be-60bb-4f89-96ab-a1c3dc7c0fad
-ms.openlocfilehash: c2b0cae1dc57fac486122ca17fc8109ffe62f77d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3b14fef66e5c98737d8d2f6a8b889f16c83020f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793319"
 ---
 # <a name="tampering"></a>篡改
 
@@ -21,11 +22,11 @@ ms.locfileid: "96249795"
   
  为了避免这个问题，请不要将 <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> 属性设置为 <xref:System.ServiceModel.Channels.AddressingVersion.None%2A>，并避免使用 <xref:System.ServiceModel.Channels.MessageVersion>，如静态 <xref:System.ServiceModel.Channels.MessageVersion.Soap12%2A> 属性，它会将 <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> 属性设置为 <xref:System.ServiceModel.Channels.AddressingVersion.None%2A>。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全注意事项](security-considerations-in-wcf.md)
 - [信息泄露](information-disclosure.md)
 - [权限提升](elevation-of-privilege.md)
 - [拒绝服务](denial-of-service.md)
-- [不支持的方案](unsupported-scenarios.md)
+- [不受支持的方案](unsupported-scenarios.md)
 - [重播攻击](replay-attacks.md)

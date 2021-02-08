@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1223-SwitchCaseNotFound
 title: 1223 - SwitchCaseNotFound
 ms.date: 03/30/2017
 ms.assetid: 332ace82-2d9e-4fd9-a9a8-f077f43b4a08
-ms.openlocfilehash: b50f2bb9e6a507a2928a472310fdc2780c35885d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b1e679f5041c3f55bfb6ba7e0596d1dc521b1cfe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294633"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792799"
 ---
 # <a name="1223---switchcasenotfound"></a>1223 - SwitchCaseNotFound
 
@@ -17,10 +18,10 @@ ms.locfileid: "96294633"
 |-|-|  
 |ID|1223|  
 |关键字|WFActivities|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示在 Switch 活动中找不到具有匹配的 Expression 结果的 case 活动。  
   

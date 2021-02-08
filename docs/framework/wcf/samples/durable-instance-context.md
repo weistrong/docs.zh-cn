@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：持久性实例上下文
 title: 持久性实例上下文
 ms.date: 03/30/2017
 ms.assetid: 97bc2994-5a2c-47c7-927a-c4cd273153df
-ms.openlocfilehash: 567ca62d48e80993328548b11f8b59c4fcd355fe
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6f879b2f6c592e5d8f7294405fda403e918070ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793293"
 ---
 # <a name="durable-instance-context"></a>持久性实例上下文
 
-此示例演示如何自定义 Windows Communication Foundation （WCF）运行时以启用持久实例上下文。 它使用 SQL Server 2005 作为其后备存储（在本例中为 SQL Server 2005 Express）。 但是，它还提供了一种访问自定义存储机制的方法。
+此示例演示如何自定义 Windows Communication Foundation (WCF) 运行时以启用持久实例上下文。 它使用 SQL Server 2005 作为其后备存储（在本例中为 SQL Server 2005 Express）。 但是，它还提供了一种访问自定义存储机制的方法。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
@@ -49,7 +50,7 @@ class DurableInstanceContextChannelBase
 }
 ```
 
-这两种方法使用所实现的 `IContextManager` 将上下文 ID 写入消息中或从消息中读取上下文 ID。 （ `IContextManager` 是用于为所有上下文管理器定义协定的自定义接口。）通道可以在自定义 SOAP 标头或 HTTP cookie 标头中包含上下文 ID。 每个上下文管理器实现都继承自 `ContextManagerBase` 类，该类包含所有上下文管理器的常用功能。 使用该类中的 `GetContextId` 方法，可以客户端中产生上下文 ID。 首次产生某个上下文 ID 时，此方法会将该上下文 ID 保存到一个文本文件中，该文件的名称是由远程终结点地址构造的（典型 URI 中的无效文件名字符会替换为 @ 字符）。
+这两种方法使用所实现的 `IContextManager` 将上下文 ID 写入消息中或从消息中读取上下文 ID。  (`IContextManager` 是用于为所有上下文管理器定义协定的自定义接口。 ) 该通道可以在自定义 SOAP 标头或 HTTP cookie 标头中包含上下文 ID。 每个上下文管理器实现都继承自 `ContextManagerBase` 类，该类包含所有上下文管理器的常用功能。 使用该类中的 `GetContextId` 方法，可以客户端中产生上下文 ID。 首次产生某个上下文 ID 时，此方法会将该上下文 ID 保存到一个文本文件中，该文件的名称是由远程终结点地址构造的（典型 URI 中的无效文件名字符会替换为 @ 字符）。
 
 以后，当需要针对同一个远程终结点使用该上下文 ID 时，此方法会检查是否存在相应的文件。 如果存在的话，此方法会读取并返回该上下文 ID。 否则，此方法会返回一个新生成的上下文 ID 并将其保存到文件中。 使用默认配置时，这些文件放置在一个名为 ContextStore 的目录中，该目录位于当前用户的 temp 目录中。 不过，可以使用绑定元素来配置此位置。
 
@@ -89,7 +90,7 @@ message.Properties.Add(DurableInstanceContextUtility.ContextIdProperty, contextI
 
 在继续操作之前，一定要先了解 `Properties` 类的 `Message` 集合的用法。 通常，在将数据从较低的通道层传递到较高层时，将使用这个 `Properties` 集合。 这样，无论协议细节如何，都可以按照一致的方式向较高层提供所需的数据。 换句话说，通道层可以作为 SOAP 标头或 HTTP cookie 标头来发送和接收上下文 ID。 但是，较高层没有必要知道这些细节，因为通道层会使 `Properties` 集合中提供这些信息。
 
-现在，`DurableInstanceContextChannelBase` 类已经就绪，必须实现全部十个必要的接口（IOutputChannel、IInputChannel、IOutputSessionChannel、IInputSessionChannel、IRequestChannel、IReplyChannel、IRequestSessionChannel、IReplySessionChannel、IDuplexChannel 和 IDuplexSessionChannel）。 它们类似于每个可用的消息交换模式（数据报、单工、双工和它们的会话变体）。 其中每个实现都继承前面描述的基类，并 `ApplyContext` `ReadContextId` 相应地调用和。 例如，用来实现 IOutputChannel 接口的 `DurableInstanceContextOutputChannel` 从发送消息的每种方法中调用 `ApplyContext` 方法。
+现在，`DurableInstanceContextChannelBase` 类已经就绪，必须实现全部十个必要的接口（IOutputChannel、IInputChannel、IOutputSessionChannel、IInputSessionChannel、IRequestChannel、IReplyChannel、IRequestSessionChannel、IReplySessionChannel、IDuplexChannel 和 IDuplexSessionChannel）。 它们类似于每个可用的消息交换模式 (数据报、单工、双工、) 的会话变体。 其中每个实现都继承前面描述的基类，并 `ApplyContext` `ReadContextId` 相应地调用和。 例如，用来实现 IOutputChannel 接口的 `DurableInstanceContextOutputChannel` 从发送消息的每种方法中调用 `ApplyContext` 方法。
 
 ```csharp
 public void Send(Message message, TimeSpan timeout)
@@ -122,7 +123,7 @@ if (isFirstMessage)
 }
 ```
 
-然后， `DurableInstanceContextBindingElement` 类和类会相应地将这些通道实现添加到 WCF 信道运行时 `DurableInstanceContextBindingElementSection` 。 有关绑定元素和绑定元素部分的详细信息，请参阅[HttpCookieSession](httpcookiesession.md)信道示例文档。
+然后， `DurableInstanceContextBindingElement` 类和类会相应地将这些通道实现添加到 WCF 信道运行时 `DurableInstanceContextBindingElementSection` 。 有关绑定元素和绑定元素部分的详细信息，请参阅 [HttpCookieSession](httpcookiesession.md) 信道示例文档。
 
 ## <a name="service-model-layer-extensions"></a>服务模型层扩展
 
@@ -444,11 +445,11 @@ Press ENTER to shut down client
 
 #### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+1. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
-2. 若要生成解决方案，请按照[生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
+2. 若要生成解决方案，请按照 [生成 Windows Communication Foundation 示例](building-the-samples.md)中的说明进行操作。
 
-3. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
 > [!NOTE]
 > 必须运行 SQL Server 2005 或 SQL Express 2005 才能运行此示例。 如果您运行的是 SQL Server 2005，则必须修改服务连接字符串的配置。 在跨计算机运行时，只需要在服务器计算机上安装 SQL Server。
@@ -458,6 +459,6 @@ Press ENTER to shut down client
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Durable`

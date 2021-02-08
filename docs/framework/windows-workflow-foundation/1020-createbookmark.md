@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1020-CreateBookmark
 title: 1020 - CreateBookmark
 ms.date: 03/30/2017
 ms.assetid: 4bee948d-816f-4803-85cc-3883b5e23d10
-ms.openlocfilehash: 8c9c20fd4fb74f80779c1d2ef8f29ac3d44050d9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 39796eaf68d9cb52e9faa2605fc21955a2c167ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275370"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792838"
 ---
 # <a name="1020---createbookmark"></a>1020 - CreateBookmark
 
@@ -20,7 +21,7 @@ ms.locfileid: "96275370"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示已为活动创建了书签。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96275370"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |活动|xs:string|活动的类型名称。|  
 |DisplayName|xs:string|活动的显示名称。|  

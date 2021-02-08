@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：访问 OperationContext
 title: 访问 OperationContext
 ms.date: 03/30/2017
 ms.assetid: 4e92efe8-7e79-41f3-b50e-bdc38b9f41f8
-ms.openlocfilehash: 5cffae101c5d39fcc9500aa7ccafde7a836a5023
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 768475f115f653630aaedeee976d0c96bc9e4dd7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792617"
 ---
 # <a name="accessing-operationcontext"></a>访问 OperationContext
 
@@ -37,7 +38,7 @@ ms.locfileid: "96245726"
   
     3. 将 **服务** 和 **客户端** (按顺序添加) 为多个启动项目。  
   
-    4. 运行该应用程序。 客户端控制台显示运行两次的工作流，而服务窗口显示这些工作流的实例 ID。  
+    4. 运行应用程序。 客户端控制台显示运行两次的工作流，而服务窗口显示这些工作流的实例 ID。  
   
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：  

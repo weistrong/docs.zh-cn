@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：服务审核行为
 title: 服务审核行为
 ms.date: 03/30/2017
 ms.assetid: 59bf0cda-e496-4418-a3a1-2f0f6e85f8ce
-ms.openlocfilehash: ae7ed2059b491a71de9c806e78f1fb784da197fa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 101f737d790d7e5ec0fdefc3a60695cb3c432c28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262562"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793124"
 ---
 # <a name="service-auditing-behavior"></a>服务审核行为
 
@@ -51,7 +52,7 @@ ms.locfileid: "96262562"
   
 3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [审核](../feature-details/auditing-security-events.md)
 - [如何：审核安全事件](../feature-details/how-to-audit-wcf-security-events.md)

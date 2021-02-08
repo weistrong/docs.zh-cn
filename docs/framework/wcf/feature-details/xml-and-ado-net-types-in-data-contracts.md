@@ -1,16 +1,17 @@
 ---
+description: 了解有关在数据协定中的 XML 和 ADO.NET 类型的详细信息
 title: 数据协定中的 XML 和 ADO.NET 类型
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c2ce8461-3c15-4c41-8c81-1cb78f5b59a6
-ms.openlocfilehash: d4ac956af0addf9c3b38f3bfb8e8644757dc81c3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c83520b1be1bdf0f7985982dc498f9c12cef5722
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793306"
 ---
 # <a name="xml-and-adonet-types-in-data-contracts"></a>数据协定中的 XML 和 ADO.NET 类型
 

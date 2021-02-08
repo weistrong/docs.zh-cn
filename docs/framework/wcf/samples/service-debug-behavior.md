@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：服务调试行为
 title: 服务调试行为
 ms.date: 03/30/2017
 ms.assetid: 9d8fd3fb-dc39-427a-8235-336a7e7162ba
-ms.openlocfilehash: 53f21129860c644d09d1a2eb9cb956aecf8ab0ad
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3aae4a4cca53fce50bff8ec02896e748f430166f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596631"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793098"
 ---
 # <a name="service-debug-behavior"></a>服务调试行为
 
-本示例演示如何配置服务调试行为设置。 该示例基于实现服务协定的[入门](getting-started-sample.md) `ICalculator` 。 本示例在配置文件中显式定义服务调试行为。 也可以在代码中强制完成此操作。
+本示例演示如何配置服务调试行为设置。 该示例基于实现服务协定的 [入门](getting-started-sample.md) `ICalculator` 。 本示例在配置文件中显式定义服务调试行为。 也可以在代码中强制完成此操作。
 
 在此示例中，客户端是一个控制台应用程序 (.exe)，服务是由 Internet 信息服务 (IIS) 承载的。
 
@@ -32,7 +33,7 @@ ms.locfileid: "84596631"
 </behaviors>
 ```
 
-[\<serviceDebug>](../../configure-apps/file-schema/wcf/servicedebug.md)是允许更改服务调试行为属性的配置元素。 用户可以修改此行为以实现以下目标：
+[\<serviceDebug>](../../configure-apps/file-schema/wcf/servicedebug.md) 是允许更改服务调试行为属性的配置元素。 用户可以修改此行为以实现以下目标：
 
 - 这使服务可以返回应用程序代码引发的任何异常，即使未使用 <xref:System.ServiceModel.FaultContractAttribute> 声明该异常。 为此，需要将 `includeExceptionDetailInFaults` 设置为 `true`。 此设置在调试服务器引发意外异常的事例时很有用。
 
@@ -45,17 +46,17 @@ ms.locfileid: "84596631"
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 确保已对[Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
+1. 确保已对 [Windows Communication Foundation 示例执行了一次性安装过程](one-time-setup-procedure-for-the-wcf-samples.md)。
 
 2. 若要生成 C# 或 Visual Basic .NET 版本的解决方案，请按照 [Building the Windows Communication Foundation Samples](building-the-samples.md)中的说明进行操作。
 
-3. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\ServiceDebug`

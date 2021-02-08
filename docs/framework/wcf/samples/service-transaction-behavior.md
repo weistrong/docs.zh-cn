@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：服务事务行为
 title: 服务事务行为
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Service Transaction Behavior Sample [Windows Communication Foundation]
 ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
-ms.openlocfilehash: 0be5bf0dbe6416febb898fb5150c5a516c8b0969
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1f8b76de250ef87ec5ca2d4ea4353a9a28bac248
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793059"
 ---
 # <a name="service-transaction-behavior"></a>服务事务行为
 
-此示例演示客户端协调事务的用法，以及为了控制服务事务行为而对 ServiceBehaviorAttribute 和 OperationBehaviorAttribute 进行的设置。 此示例基于实现计算器服务的[入门](getting-started-sample.md)，但扩展为维护数据库表中所执行操作的服务器日志和计算器操作的有状态运行总计。 持久写入服务器日志表依赖于客户端协调事务的结果 - 如果客户端事务未完成，Web 服务事务可以确保不会提交对数据库的更新。
+此示例演示客户端协调事务的用法，以及为了控制服务事务行为而对 ServiceBehaviorAttribute 和 OperationBehaviorAttribute 进行的设置。 此示例基于实现计算器服务的 [入门](getting-started-sample.md) ，但扩展为维护数据库表中所执行操作的服务器日志和计算器操作的有状态运行总计。 持久写入服务器日志表依赖于客户端协调事务的结果 - 如果客户端事务未完成，Web 服务事务可以确保不会提交对数据库的更新。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
@@ -211,57 +212,57 @@ Creating new service instance...
 
 2. 若要生成 C# 或 Visual Basic .NET 版本的解决方案，请按照 [Building the Windows Communication Foundation Samples](building-the-samples.md)中的说明进行操作。
 
-3. 若要以单机配置或跨计算机配置来运行示例，请按照[运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
+3. 若要以单机配置或跨计算机配置来运行示例，请按照 [运行 Windows Communication Foundation 示例](running-the-samples.md)中的说明进行操作。
 
-如果跨计算机运行此示例，则必须配置 Microsoft 分布式事务处理协调器（MSDTC），以启用网络事务流并使用 Wsatconfig.exe 工具启用 Windows Communication Foundation （WCF）事务网络支持。
+如果跨计算机运行此示例，则必须配置 Microsoft 分布式事务处理协调器 (MSDTC) ，以启用网络事务流，并使用 WsatConfig.exe 工具启用 Windows Communication Foundation (WCF) 事务网络支持。
 
 ### <a name="to-configure-the-microsoft-distributed-transaction-coordinator-msdtc-to-support-running-the-sample-across-machines"></a>配置 Microsoft 分布式事务处理协调器 (MSDTC) 以支持跨计算机运行示例
 
 1. 在服务计算机上，配置 MSDTC 以允许传入网络事务。
 
-    1. 从 "**开始**" 菜单，导航到 **"控制面板**"，然后依次导航到 "**管理工具**" 和 "**组件服务**"。
+    1. 从 " **开始** " 菜单，导航到 **"控制面板**"，然后依次导航到 " **管理工具**" 和 " **组件服务**"。
 
-    2. 右键单击**我的电脑**，然后选择 "**属性**"。
+    2. 右键单击 **我的电脑** ，然后选择 " **属性**"。
 
-    3. 在 " **MSDTC** " 选项卡上，单击 "**安全配置**"。
+    3. 在 " **MSDTC** " 选项卡上，单击 " **安全配置**"。
 
-    4. 检查 "**网络 DTC 访问**" 和 "**允许入站**"。
+    4. 检查 " **网络 DTC 访问** " 和 " **允许入站**"。
 
     5. 单击 **"是"** 以重新启动 MS DTC 服务，然后单击 **"确定"**。
 
-    6. 单击“确定”  关闭对话框。
+    6. 单击 **“确定”** 关闭对话框。
 
 2. 在服务计算机和客户端计算机上，配置 Windows 防火墙以便在例外应用程序列表中包括 Microsoft 分布式事务处理协调器 (MSDTC)：
 
     1. 从“控制面板”上运行 Windows 防火墙应用程序。
 
-    2. 在 "**例外**" 选项卡中，单击 "**添加程序**"。
+    2. 在 " **例外** " 选项卡中，单击 " **添加程序**"。
 
     3. 浏览到文件夹 C:\WINDOWS\System32。
 
-    4. 选择 "Msdtc"，并单击 "**打开**"。
+    4. 选择 Msdtc.exe 并单击 " **打开**"。
 
-    5. 单击 **"确定"** 关闭 "**添加程序**" 对话框，然后再次单击 **"确定"** 关闭 Windows 防火墙小程序。
+    5. 单击 **"确定"** 关闭 " **添加程序** " 对话框，然后再次单击 **"确定"** 关闭 Windows 防火墙小程序。
 
 3. 在客户端计算机上，配置 MSDTC 以允许传出网络事务：
 
-    1. 从 "**开始**" 菜单，导航到 **"控制面板**"，然后依次导航到 "**管理工具**" 和 "**组件服务**"。
+    1. 从 " **开始** " 菜单，导航到 **"控制面板**"，然后依次导航到 " **管理工具**" 和 " **组件服务**"。
 
-    2. 右键单击**我的电脑**，然后选择 "**属性**"。
+    2. 右键单击 **我的电脑** ，然后选择 " **属性**"。
 
-    3. 在 " **MSDTC** " 选项卡上，单击 "**安全配置**"。
+    3. 在 " **MSDTC** " 选项卡上，单击 " **安全配置**"。
 
-    4. 检查 "**网络 DTC 访问**" 和 "**允许出站**"。
+    4. 检查 " **网络 DTC 访问** " 和 " **允许出站**"。
 
     5. 单击 **"是"** 以重新启动 MS DTC 服务，然后单击 **"确定"**。
 
-    6. 单击“确定”  关闭对话框。
+    6. 单击 **“确定”** 关闭对话框。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Transactions`

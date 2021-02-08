@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下内容的详细信息：支持的部署方案
 title: 支持的部署方案
 ms.date: 03/30/2017
 ms.assetid: 3399f208-3504-4c70-a22e-a7c02a8b94a6
-ms.openlocfilehash: 299c8f2e29806a123e0a8b6e1e70d8cc13daa7bf
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 090f0912660fc113bad8640afb1360b64071fa78
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546245"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793358"
 ---
 # <a name="supported-deployment-scenarios"></a>支持的部署方案
 
@@ -48,4 +49,4 @@ WCF 可用于与远程服务器进行通信，这些应用程序由 [ClickOnce �
 - [代码访问安全性](../../misc/code-access-security.md)
 - [Windows Presentation Foundation 浏览器托管的应用程序概述](/dotnet/desktop/wpf/app-development/wpf-xaml-browser-applications-overview)
 - [部分信任](partial-trust.md)
-- [ASP.NET 信任级别和策略文件](/previous-versions/wyts434y(v=vs.140))
+- [ASP.NET Trust Levels and Policy Files](/previous-versions/wyts434y(v=vs.140))

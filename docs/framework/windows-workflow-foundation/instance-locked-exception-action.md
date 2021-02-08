@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：实例锁定异常操作
 title: 实例锁定异常操作
 ms.date: 03/30/2017
 ms.assetid: 164a5419-315c-4987-ad72-54cbdb88d402
-ms.openlocfilehash: 3554975589bb6d55cef3611320d25687d1ee9ba6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ebbd86aad0f2e628f2656392fd464e3c1436c148
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279852"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792669"
 ---
 # <a name="instance-locked-exception-action"></a>实例锁定异常操作
 
-利用 SQL 工作流实例存储的 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction%2A> 属性，可以指定当 SQL 持久性提供程序收到 <xref:System.Runtime.DurableInstancing.InstanceLockedException> 时应采取什么操作。 当持久性提供程序尝试锁定当前已由另一个服务主机锁定的工作流服务实例时，将收到此异常。 此属性的值有 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>、<xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry> 和 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.AggressiveRetry>。 默认值为 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>。 以下列表对这三个选项进行了说明：  
+利用 SQL 工作流实例存储的 <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction%2A> 属性，可以指定当 SQL 持久性提供程序收到 <xref:System.Runtime.DurableInstancing.InstanceLockedException> 时应采取什么操作。 当持久性提供程序尝试锁定当前已由另一个服务主机锁定的工作流服务实例时，将收到此异常。 此属性的值有 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>、<xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry> 和 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.AggressiveRetry>。 默认值是 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>。 以下列表对这三个选项进行了说明：  
   
-- <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>. 服务主机不会尝试锁定工作流服务实例，并将传递 <xref:System.Runtime.DurableInstancing.InstanceLockedException> 给调用方。  如果工作流在内存中保留的时间超过了60秒，请使用 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry> 作为重试。 默认值为 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>。  
+- <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>. 服务主机不会尝试锁定工作流服务实例，并将传递 <xref:System.Runtime.DurableInstancing.InstanceLockedException> 给调用方。  如果工作流在内存中保留的时间超过了60秒，请使用 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry> 作为重试。 默认值是 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry>。  
   
 - <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry>. 服务主机将以线性间隔在重试尝试之间重新尝试锁定工作流服务实例，并在序列结尾将 <xref:System.Runtime.DurableInstancing.InstanceLockedException> 传递给调用方。 如果工作流在内存中将停留约 5-60 秒，并且消息分批到达（其中，消息更可能发送给相同主机上的相同实例，以便处理所有消息，然后再卸载工作流），则使用 <xref:System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry> 可实现最佳延迟并且不会浪费资源。  
   

@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： WS-AtomicTransaction 配置实用程序 ( # A0) '
 title: WS-AtomicTransaction 配置实用工具 (wsatConfig.exe)
 ms.date: 03/30/2017
 ms.assetid: 1c56cf98-3963-46d5-a4e1-482deae58c58
-ms.openlocfilehash: dbd33869de6b1ecee6406dfeede88afc4eca07f1
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: 8b315e5aa5df23a4d9bb032db41b7067accfa010
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90720486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792955"
 ---
 # <a name="ws-atomictransaction-configuration-utility-wsatconfigexe"></a>WS-AtomicTransaction 配置实用工具 (wsatConfig.exe)
 
@@ -21,7 +22,7 @@ wsatConfig [Options]
   
 ## <a name="remarks"></a>备注
 
- 此命令行工具仅可用于在本地计算机中配置基本的 WS-AT 设置。 如果你必须在本地计算机和远程计算机上都配置设置，则应使用 MMC 管理单元，如 [配置 WS 原子事务支持](./feature-details/configuring-ws-atomic-transaction-support.md)中所述。  
+ 此命令行工具仅可用于在本地计算机中配置基本的 WS-AT 设置。 如果你必须在本地计算机和远程计算机上都配置设置，则应使用 MMC 管理单元，如 [配置 WS-Atomic 事务支持](./feature-details/configuring-ws-atomic-transaction-support.md)中所述。  
   
  可在 Windows SDK 安装位置中找到命令行工具：
   

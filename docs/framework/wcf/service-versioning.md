@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：服务版本控制
 title: 服务版本控制
 ms.date: 03/30/2017
 ms.assetid: 37575ead-d820-4a67-8059-da11a2ab48e2
-ms.openlocfilehash: fae0a5eca5737c3d7885cbe6c678678adabbea01
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3a49b29b3f99caff688a0c1540698d80608a7ce2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245340"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792981"
 ---
 # <a name="service-versioning"></a>服务版本控制
 
@@ -198,7 +199,7 @@ public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2
   
  该服务协定将更新为包含按照 `PurchaseOrderV2` 编写的新操作。 按照 `IPurchaseOrderV1` 编写的现有业务逻辑对于 `PurchaseOrderV2` 仍然可用，并且需要 `OrderDate` 属性的新业务逻辑将按照 `IPurchaseOrderV2` 编写。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.DataContractAttribute>

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：使用 XmlSerializer 改善 WCF 客户端应用程序的启动时间
 title: 如何：使用 XmlSerializer 改善 WCF 客户端应用程序的启动时间
 ms.date: 03/30/2017
 ms.assetid: 21093451-0bc3-4b1a-9a9d-05f7f71fa7d0
-ms.openlocfilehash: ac54a766161db146331a3e072b97822b609344c0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8cf46cc35753934e8f4cb3abadc20c912e9efca9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246376"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793397"
 ---
 # <a name="how-to-improve-the-startup-time-of-wcf-client-applications-using-the-xmlserializer"></a>如何：使用 XmlSerializer 改善 WCF 客户端应用程序的启动时间
 
@@ -48,7 +49,7 @@ ms.locfileid: "96246376"
   
 1. 在 Visual Studio 中创建 WCF 服务和客户端项目。 然后，将服务引用添加到客户端项目。  
   
-2. 将添加 <xref:System.ServiceModel.XmlSerializerFormatAttribute> 到 " *reference.cs* " 文件中的 " **serviceReference**" 下的客户端应用项目中的服务协定  ->  **reference.svcmap**。 请注意，需要在 **解决方案资源管理器** 中显示所有文件以查看这些文件。  
+2. 将添加 <xref:System.ServiceModel.XmlSerializerFormatAttribute> 到 " *reference.cs* " 文件中的 " **serviceReference**" 下的客户端应用项目中的服务协定  ->  。 请注意，需要在 **解决方案资源管理器** 中显示所有文件以查看这些文件。  
   
 3. 生成客户端应用。  
   
@@ -88,6 +89,6 @@ ms.locfileid: "96246376"
 svcutil /t:xmlserializer myContractLibrary.exe  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ServiceModel 元数据实用工具 (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

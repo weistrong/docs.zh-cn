@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：流式处理邮件传输
 title: 流消息传输
 ms.date: 03/30/2017
 ms.assetid: 72a47a51-e5e7-4b76-b24a-299d51e0ae5a
-ms.openlocfilehash: 4b90e5bf15f5cb1c4684a3ba224371f6cc232034
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 282b16850e4babe73207e3f3e1a8bd5da24c70cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246324"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793384"
 ---
 # <a name="streaming-message-transfer"></a>流消息传输
 
@@ -51,6 +52,6 @@ Windows Communication Foundation (WCF) 传输支持两种模式传输消息：
 
  将传输模式从缓冲模式更改为流模式还会更改 TCP 和命名管道传输协议的本机通道形状。 对于缓冲传输模式，本机通道形状为 <xref:System.ServiceModel.Channels.IDuplexSessionChannel>。 对于流传输模式，本机通道为 <xref:System.ServiceModel.Channels.IRequestChannel> 和 <xref:System.ServiceModel.Channels.IReplyChannel>。 在直接（即，不是通过服务协定）使用这些传输协议的现有应用程序中更改传输模式需要更改通道工厂和侦听器的预期通道形状。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：启用流处理](how-to-enable-streaming.md)

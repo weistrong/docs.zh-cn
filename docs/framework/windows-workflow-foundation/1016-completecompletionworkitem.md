@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1016-CompleteCompletionWorkItem
 title: 1016 - CompleteCompletionWorkItem
 ms.date: 03/30/2017
 ms.assetid: 246929fb-6f14-440a-814b-cd8349350644
-ms.openlocfilehash: a192ffe19777ca3e2e9784f6506a0c2929ced000
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 849e192d63b5db19e5beea31befcdc38d4340c6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792903"
 ---
 # <a name="1016---completecompletionworkitem"></a>1016 - CompleteCompletionWorkItem
 
@@ -20,7 +21,7 @@ ms.locfileid: "96275526"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示 CompletionWorkItem 已完成。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96275526"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |ParentActivity|xs:string|父活动的类型名称。|  
 |ParentDisplayName|xs:string|父活动的显示名称。|  

@@ -1,20 +1,21 @@
 ---
+description: '了解详细信息：查找私钥工具 ( # A0) '
 title: “查找私钥”工具 (FindPrivateKey.exe)
 ms.date: 09/11/2017
 ms.assetid: b8846a95-3fcc-4e8c-b9c0-128d975a6307
-ms.openlocfilehash: 316f55b93cf4d867b99878bf483b73cb3f09ad04
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: 1d87d19e17c1de89c13db6d7ca092eedf630e6ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70990352"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793280"
 ---
 # <a name="find-private-key-tool-findprivatekeyexe"></a>“查找私钥”工具 (FindPrivateKey.exe)
 
-可以使用此命令行工具从证书存储区中检索私钥。 例如， *FindPrivateKey*可用于查找与证书存储区中的特定 x.509 证书关联的私钥文件的位置和名称。
+可以使用此命令行工具从证书存储区中检索私钥。 例如， *FindPrivateKey.exe* 可用于查找与证书存储区中特定 x.509 证书关联的私钥文件的位置和名称。
 
 > [!IMPORTANT]
-> FindPrivateKey 工具附带作为一个 WCF 示例。 有关在何处查找示例以及如何生成示例的详细信息，请参阅[FindPrivateKey](./samples/findprivatekey.md)。
+> FindPrivateKey 工具附带作为一个 WCF 示例。 有关在何处查找示例以及如何生成示例的详细信息，请参阅 [FindPrivateKey](./samples/findprivatekey.md)。
 
 ## <a name="syntax"></a>语法
 
@@ -26,12 +27,12 @@ FindPrivateKey<storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbprin
 
 下表介绍了可用于“查找私钥”工具 (FindPrivateKey.exe) 的自变量和选项。
 
-|参数|描述|
+|参数|说明|
 |--------------|-----------------|
 |`storeName`|证书存储区的名称。|
 |`storeLocation`|证书存储区的位置。|
 
-|选项|描述|
+|选项|说明|
 |------------|-----------------|
 |`/n <`*subjectName*`>`|指定证书的主题名称。|
 |`/t <`*指纹*`>`|指定证书的指纹。 使用 Certmgr.exe 来检索证书的指纹。|

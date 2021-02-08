@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：在服务协定中指定数据传输
 title: 在服务协定中指定数据传输
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - service contracts [WCF], data transfer
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
-ms.openlocfilehash: 30cdae7e15b80ca826eeea652566a535271477d9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 672d2127af95847c0a085a8ca1c358f2a8440dee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793423"
 ---
 # <a name="specifying-data-transfer-in-service-contracts"></a>在服务协定中指定数据传输
 
@@ -588,7 +589,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
   
  有关高级序列化概念的详细信息，请参阅 [序列化和反序列](serialization-and-deserialization.md)化。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 XmlSerializer 类](using-the-xmlserializer-class.md)
 - [如何：启用流处理](how-to-enable-streaming.md)

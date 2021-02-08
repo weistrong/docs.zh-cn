@@ -1,15 +1,16 @@
 ---
+description: 了解更多：配置的事务配置
 title: ServiceModel 事务配置
 ms.date: 03/30/2017
 helpviewer_keywords:
 - transactions [WCF], ServiceModel configuration
 ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
-ms.openlocfilehash: 27deaf38a8809b8a7fca560cc6783bd24dc43686
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 260e3cbe94ce0d22887554705134eef72a031981
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793462"
 ---
 # <a name="servicemodel-transaction-configuration"></a>ServiceModel 事务配置
 
@@ -66,7 +67,7 @@ Windows Communication Foundation (WCF) 提供三个属性，用于为服务配�
   
  请注意，所使用的超时值是此 `transactionTimeout` 配置设置和任何 <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> 属性之间的较小值。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [\<binding>](../../configure-apps/file-schema/wcf/bindings.md)
 - [WCF 配置架构](../../configure-apps/file-schema/wcf/index.md)

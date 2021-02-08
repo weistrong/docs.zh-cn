@@ -1,13 +1,14 @@
 ---
+description: 详细了解：联合扩展性
 title: 联合扩展性
 ms.date: 03/30/2017
 ms.assetid: 4d941175-74a2-4b15-81b3-086e8a95d25f
-ms.openlocfilehash: 39187f228e47ed4e82c8e737563b860ce5734416
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 103fa0a1b288068e724ab27f37cf096f3ececa42
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266527"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793345"
 ---
 # <a name="syndication-extensibility"></a>联合扩展性
 
@@ -47,7 +48,7 @@ ms.locfileid: "96266527"
   
 - 重写 MyExtensionFeed 类中的 <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateItem>，以便实例化 MyExtensionItem 而非默认的 <xref:System.ServiceModel.Syndication.SyndicationItem>。 在可以创建 <xref:System.ServiceModel.Syndication.SyndicationFeed>、<xref:System.ServiceModel.Syndication.SyndicationItem> 和 <xref:System.ServiceModel.Syndication.SyndicationLink> 对象（例如，<xref:System.ServiceModel.Syndication.SyndicationCategory>、<xref:System.ServiceModel.Syndication.SyndicationPerson> 和 <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateLink>）的 <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateCategory> 和 <xref:System.ServiceModel.Syndication.SyndicationFeed.CreatePerson> 中定义了一系列方法。 所有这些方法都可以重写以创建自定义派生类。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF 联合概述](wcf-syndication-overview.md)
 - [联合体系结构](architecture-of-syndication.md)

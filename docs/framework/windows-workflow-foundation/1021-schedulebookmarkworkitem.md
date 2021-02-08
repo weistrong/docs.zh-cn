@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1021-ScheduleBookmarkWorkItem
 title: 1021 - ScheduleBookmarkWorkItem
 ms.date: 03/30/2017
 ms.assetid: 2e0da311-b219-4637-9460-90cdafcc4ecd
-ms.openlocfilehash: 42ed23654622e29df8ffc210c8d5ba572fa69fd4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5153d2e90a75bab90c76ee8786dc82d4ddac19a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792812"
 ---
 # <a name="1021---schedulebookmarkworkitem"></a>1021 - ScheduleBookmarkWorkItem
 
@@ -20,7 +21,7 @@ ms.locfileid: "96275344"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示已安排 BookmarkWorkItem。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96275344"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |活动|xs:string|活动的类型名称。|  
 |DisplayName|xs:string|活动的显示名称。|  

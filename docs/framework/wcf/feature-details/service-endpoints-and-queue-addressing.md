@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：服务终结点和队列寻址
 title: 服务终结点和队列寻址
 ms.date: 03/30/2017
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
-ms.openlocfilehash: f7c3221d466d2599139eb29a8358d726c2b4edda
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 61b4e35de6bd89f45aa9f5e54a55beaf8536b74b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793553"
 ---
 # <a name="service-endpoints-and-queue-addressing"></a>服务终结点和队列寻址
 
@@ -113,6 +114,6 @@ ms.locfileid: "96253916"
   
  请注意，对于 `MsmqIntegrationBinding`，不能使用 net.msmq:// 寻址。 由于 `MsmqIntegrationBinding` 支持自由格式的 MSMQ 格式名寻址，因此你可以使用 WCF 服务，该服务使用此绑定来使用 MSMQ 中的多路广播和通讯组列表功能。 一个例外是在使用 `CustomDeadLetterQueue` 时指定 `MsmqIntegrationBinding`。 它必须采用 net.msmq:// 形式，这与使用 `NetMsmqBinding` 进行指定的方式相似。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载排队应用程序的 Web](web-hosting-a-queued-application.md)

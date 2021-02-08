@@ -1,13 +1,14 @@
 ---
+description: 了解有关以下方面的详细信息：服务协定
 title: 服务协定
 ms.date: 03/30/2017
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
-ms.openlocfilehash: 3b2acdd10c5f5e7280ef8caef537112c083ce52d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0100a57c7884c7c710a950dbd7a4df361cbeeb46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262549"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793111"
 ---
 # <a name="service-contracts"></a>服务协定
 
@@ -27,7 +28,7 @@ ms.locfileid: "96262549"
  [会话](session.md)  
  演示如何实现需要会话的协定。  
   
- [Stream](stream.md)  
+ [流](stream.md)  
  演示流传输模式通信的用法。  
   
  [XMLSerializer 错误](xmlserializer-faults.md)  

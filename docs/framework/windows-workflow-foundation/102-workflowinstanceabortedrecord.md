@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 102-WorkflowInstanceAbortedRecord
 title: 102 - WorkflowInstanceAbortedRecord
 ms.date: 03/30/2017
 ms.assetid: bde4378d-4eea-4907-aaf2-c1a2bc770a37
-ms.openlocfilehash: a48e3e27787a9f6dd133240f20ed67230d837698
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2fd192af1624618a2800843ad58a1fc65d5f86b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275461"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792851"
 ---
 # <a name="102---workflowinstanceabortedrecord"></a>102 - WorkflowInstanceAbortedRecord
 
@@ -17,10 +18,10 @@ ms.locfileid: "96275461"
 |-|-|  
 |ID|102|  
 |关键字|EndToEndMonitoring、Troubleshooting、HealthMonitoring、WFTracking|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当工作流实例发出 WorkflowInstanceAbortedRecord 时，ETW 跟踪参与者将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96275461"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |InstanceId|xs:GUID|工作流的实例 ID|  
 |RecordNumber|xs:long|发出的记录的序列号|  

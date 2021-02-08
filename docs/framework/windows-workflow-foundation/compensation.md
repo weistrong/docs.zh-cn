@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：补偿
 title: 补偿
 ms.date: 03/30/2017
 ms.assetid: 722e9766-48d7-456c-9496-d7c5c8f0fa76
-ms.openlocfilehash: 60e2789c4bbd29185af50eaf6555307b894d3902
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d2c57a248939d0485075a5cbf57d91789f58d01a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289186"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792786"
 ---
 # <a name="compensation"></a>补偿
 
@@ -62,7 +63,7 @@ ms.locfileid: "96289186"
  默认情况下，如果工作流被取消，则会对已成功完成以及尚未确认或补偿的任何可补偿的活动运行补偿逻辑。  
   
 > [!NOTE]
-> 确认后 <xref:System.Activities.Statements.CompensableActivity> ， *confirmed* 将无法再调用活动的补偿。 本节的后面部分介绍确认过程。  
+> 确认后 <xref:System.Activities.Statements.CompensableActivity> ， 将无法再调用活动的补偿。 本节的后面部分介绍确认过程。  
   
  在本示例中，预订航班之后，但在经理批准步骤之前引发了一个异常。  
   
@@ -333,7 +334,7 @@ Activity wf = new Sequence()
 
 可以将 <xref:System.Activities.Statements.CompensableActivity> 放置到另一个 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 的 <xref:System.Activities.Statements.CompensableActivity> 部分中。 <xref:System.Activities.Statements.CompensableActivity> 不能放置于另一个 <xref:System.Activities.Statements.CompensableActivity> 的处理程序中。 在父级完成取消、确认或补偿操作前，确保在 <xref:System.Activities.Statements.CompensableActivity> 父级取消、确认或补偿时，所有已成功完成的和尚未得到确认或补偿的子级可补偿活动必须得到确认和补偿是该父级的责任。 如果不对此进行显式建模，在该父级接收到取消或补偿信号时，<xref:System.Activities.Statements.CompensableActivity> 将隐式补偿可补偿的子级活动。 如果父级收到了确认信号，则该父级将隐式确认可补偿的子级活动。 如果用于处理取消、确认或补偿的逻辑在父 <xref:System.Activities.Statements.CompensableActivity> 的处理程序中被显式建模，则未显式处理的所有子级都将被隐式确定。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Activities.Statements.CompensableActivity>
 - <xref:System.Activities.Statements.Compensate>

@@ -1,13 +1,14 @@
 ---
+description: 了解有关详细信息：
 title: ServiceModel 属性和 ServiceDescription 引用
 ms.date: 03/30/2017
 ms.assetid: 4ab86b17-eab9-4846-a881-0099f9a7cc64
-ms.openlocfilehash: db2824d7452f1ec4c675782e18ad25bd4be6a483
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52d800d1aab7fc7d60f0b1234065aa876944ea3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793501"
 ---
 # <a name="servicemodel-attributes-and-servicedescription-reference"></a>ServiceModel 属性和 ServiceDescription 引用
 
@@ -49,7 +50,7 @@ ms.locfileid: "96253864"
 |IsOneWay|映射到 <xref:System.ServiceModel.Description.MessageDescription> 中的单个 <xref:System.ServiceModel.Description.OperationDescription.Messages%2A>|  
 |IsInitiating|<xref:System.ServiceModel.Description.OperationDescription.IsInitiating%2A>|  
 |IsTerminating|<xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A>|  
-|“属性”|<xref:System.ServiceModel.Description.OperationDescription.Name%2A>|  
+|名称|<xref:System.ServiceModel.Description.OperationDescription.Name%2A>|  
 |ProtectionLevel|<xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> 和可能的子保护级别。 有关保护级别层次结构的详细信息，请参阅 [了解保护级别](../understanding-protection-level.md)。|  
 |ReplyAction|用于输出消息或输入消息的 <xref:System.ServiceModel.Description.MessageDescription.Action%2A>，具体取决于协定/回调协定。|  
   
@@ -63,12 +64,12 @@ ms.locfileid: "96253864"
   
 |DataContractFormatAttribute 值|受影响的说明树值|  
 |---------------------------------------|-------------------------------------|  
-|使用|<xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> 值是在操作的 <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> 上设置的。|  
+|用途|<xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> 值是在操作的 <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> 上设置的。|  
   
 |XmlSerializerFormatAttribute 值|受影响的说明树值|  
 |----------------------------------------|-------------------------------------|  
 |Style|此 <xref:System.ServiceModel.XmlSerializerFormatAttribute> 属性是在操作的 <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> 上设置的。|  
-|使用|<xref:System.ServiceModel.XmlSerializerFormatAttribute> 是在操作的 <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> 上设置的。|  
+|用途|<xref:System.ServiceModel.XmlSerializerFormatAttribute> 是在操作的 <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> 上设置的。|  
   
 |TransactionFlowAttribute 值|受影响的说明树值|  
 |------------------------------------|-------------------------------------|  
@@ -84,14 +85,14 @@ ms.locfileid: "96253864"
 |----------------------------------|-------------------------------------|  
 |Actor|<xref:System.ServiceModel.Description.MessageHeaderDescription.Actor%2A> 对于中的相应标头 <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
 |MustUnderstand|<xref:System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand%2A> 对于中的相应标头 <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
-|“属性”|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> 对于中的相应标头 <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|名称|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> 对于中的相应标头 <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
 |命名空间|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A> 对于中的相应标头 <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
 |ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A> 对于中的相应标头 <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
 |中继|<xref:System.ServiceModel.Description.MessageHeaderDescription.Relay%2A> 对于中的相应标头 <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
   
 |MessageBodyMemberAttribute 值|受影响的说明树值|  
 |--------------------------------------|-------------------------------------|  
-|“属性”|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> 对于中的相应部分 <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|名称|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> 对于中的相应部分 <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
 |命名空间|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A> 对于中的相应部分 <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
 |订单|<xref:System.ServiceModel.Description.MessagePartDescription.Index%2A> 对于中的相应部分 <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
 |ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A> 对于中的相应部分 <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
@@ -107,14 +108,14 @@ ms.locfileid: "96253864"
   
 |MessagePropertyAttribute 值|受影响的说明树值|  
 |------------------------------------|-------------------------------------|  
-|“属性”|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>|  
+|名称|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>|  
   
 |MessageParameterAttribute 值|受影响的说明树值|  
 |-------------------------------------|-------------------------------------|  
-|“属性”|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> 对于中的相应部分 <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|名称|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> 对于中的相应部分 <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
   
  有关如何将说明树值转换为元数据的详细信息，请参阅 [ServiceDescription 和 WSDL 引用](servicedescription-and-wsdl-reference.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ServiceDescription 和 WSDL 引用](servicedescription-and-wsdl-reference.md)

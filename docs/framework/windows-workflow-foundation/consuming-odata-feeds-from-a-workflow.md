@@ -1,49 +1,50 @@
 ---
+description: 了解详细信息：使用工作流中的 OData 源
 title: 使用工作流中的 OData 源-WF
 ms.date: 03/30/2017
 ms.assetid: 1b26617c-53e9-476a-81af-675c36d95919
-ms.openlocfilehash: ceac2c2d07351fcb79e2345068f07fa22f356411
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 8296fe912b1f40deb10670c5ef7ea24cf8fd47eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76743796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792721"
 ---
 # <a name="consuming-odata-feeds-from-a-workflow"></a>使用工作流中的 OData 源
 
-WCF 数据服务是 .NET Framework 的一个组件，它使你能够使用具象状态传输（REST）的语义创建使用 Open Data Protocol （OData）在 Web 或 intranet 上公开和使用数据的服务。 OData 将数据公开为可通过 URI 进行寻址的资源。 如果任一应用程序可发送 HTTP 请求并处理数据服务返回的 OData 源，则该应用程序可与基于 OData 的数据服务进行交互。 此外，WCF 数据服务还包括客户端库，可在从 .NET Framework 应用程序使用 OData 源时提供更丰富的编程体验。 本主题概述如何在使用/未使用客户端库的情况下，在工作流中使用 OData 源。
+WCF Data Services 是 .NET Framework 的一个组件，它使你能够通过使用具象状态传输) REST (的语义，来创建使用 Open Data Protocol (OData) 来在 Web 或 intranet 上公开和使用数据的服务。 OData 将数据公开为可通过 URI 进行寻址的资源。 如果任一应用程序可发送 HTTP 请求并处理数据服务返回的 OData 源，则该应用程序可与基于 OData 的数据服务进行交互。 此外，WCF Data Services 还包括客户端库，可在从 .NET Framework 应用程序使用 OData 源时提供更丰富的编程体验。 本主题概述如何在使用/未使用客户端库的情况下，在工作流中使用 OData 源。
 
 ## <a name="using-the-sample-northwind-odata-service"></a>使用示例 Northwind OData 服务
 
-本主题中的示例使用位于 <https://services.odata.org/Northwind/Northwind.svc/>的 Northwind 数据服务示例。 此服务作为 [OData SDK](https://www.odata.org/ecosystem/#sdk) 的一部分提供，它提供了对示例 Northwind 数据库的只读访问。 如果需要写权限或需要本地 WCF 数据服务，可按照 [WCF 数据服务快速入门](../data/wcf/quickstart-wcf-data-services.md) 中的步骤执行操作，以创建可提供对 Northwind 数据库的访问的本地 OData 服务。 如果按照该快速入门中的步骤执行操作，则会用本地 URI 代替本主题中的代码示例中提供的 URI。
+本主题中的示例使用位于的示例 Northwind 数据服务 <https://services.odata.org/Northwind/Northwind.svc/> 。 此服务作为 [OData SDK](https://www.odata.org/ecosystem/#sdk) 的一部分提供，它提供了对示例 Northwind 数据库的只读访问。 如果需要写权限或需要本地 WCF 数据服务，可按照 [WCF 数据服务快速入门](../data/wcf/quickstart-wcf-data-services.md) 中的步骤执行操作，以创建可提供对 Northwind 数据库的访问的本地 OData 服务。 如果按照该快速入门中的步骤执行操作，则会用本地 URI 代替本主题中的代码示例中提供的 URI。
 
 ## <a name="consuming-an-odata-feed-using-the-client-libraries"></a>使用客户端库使用 OData 源
 
-WCF 数据服务包括客户端库，使你能够更轻松地从 .NET Framework 和客户端应用程序中使用 OData 源。 这些库简化了 HTTP 消息的发送和接收。 它们还可将消息负载转换为代表实体数据的 CLR 对象。 客户端库具有两个核心类 <xref:System.Data.Services.Client.DataServiceContext> 和 <xref:System.Data.Services.Client.DataServiceQuery%601>。 通过使用这些类，可以查询数据服务，然后作为 CLR 对象使用返回的实体数据。 本节介绍了用于创建使用客户端库的活动的两种方法。
+WCF Data Services 包括客户端库，使你能够更轻松地从 .NET Framework 和客户端应用程序中使用 OData 源。 这些库简化了 HTTP 消息的发送和接收。 它们还可将消息负载转换为代表实体数据的 CLR 对象。 客户端库具有两个核心类 <xref:System.Data.Services.Client.DataServiceContext> 和 <xref:System.Data.Services.Client.DataServiceQuery%601>。 通过使用这些类，可以查询数据服务，然后作为 CLR 对象使用返回的实体数据。 本节介绍了用于创建使用客户端库的活动的两种方法。
 
 ### <a name="adding-a-service-reference-to-the-wcf-data-service"></a>添加对 WCF 数据服务的服务引用
 
-若要生成 Northwind 客户端库，可以使用 Visual Studio 2012 中的 "**添加服务引用**" 对话框添加对 Northwind OData 服务的引用。
+若要生成 Northwind 客户端库，可以使用 Visual Studio 2012 中的 " **添加服务引用** " 对话框添加对 Northwind OData 服务的引用。
 
 ![显示 "添加服务引用" 对话框的屏幕截图。](./media/consuming-odata-feeds-from-a-workflow/add-service-reference-dialog.gif)
 
 请注意，此服务未公开任何服务操作，并且 **“服务”** 列表中包含表示由 Northwind 数据服务公开的实体的项目。 在添加服务引用时，将为这些实体生成类，并可在客户端代码中使用生成的类。 本主题中的示例使用这些类和 `NorthwindEntities` 类来执行查询。
 
 > [!NOTE]
-> 有关详细信息，请参阅[生成数据服务客户端库（WCF 数据服务）](../data/wcf/generating-the-data-service-client-library-wcf-data-services.md)。
+> 有关详细信息，请参阅 [生成数据服务客户端库 (WCF Data Services) ](../data/wcf/generating-the-data-service-client-library-wcf-data-services.md)。
 
 ### <a name="using-asynchronous-methods"></a>使用异步方法
 
-若要解决在通过 Web 访问资源时可能发生的延迟问题，建议您异步访问 WCF 数据服务。 WCF 数据服务客户端库包括用于调用查询的异步方法，而 Windows Workflow Foundation （WF）提供了用于创作异步活动的 <xref:System.Activities.AsyncCodeActivity> 类。 可以编写 <xref:System.Activities.AsyncCodeActivity> 派生的活动以利用具有异步方法的 .NET Framework 类，也可以将要异步执行的代码放入方法并使用委托进行调用。 本节提供了 <xref:System.Activities.AsyncCodeActivity> 派生的活动的两个示例；一个示例使用 WCF 数据服务客户端库的异步方法，另一个示例使用委托。
+若要解决在通过 Web 访问资源时可能发生的延迟问题，建议您异步访问 WCF 数据服务。 WCF Data Services 客户端库包括用于调用查询的异步方法，而 Windows Workflow Foundation (WF) 提供了 <xref:System.Activities.AsyncCodeActivity> 用于创作异步活动的类。 <xref:System.Activities.AsyncCodeActivity> 可以写入派生的活动以利用具有异步方法的 .NET Framework 类，或将要异步执行的代码放入方法并使用委托进行调用。 本节提供了 <xref:System.Activities.AsyncCodeActivity> 派生的活动的两个示例；一个示例使用 WCF 数据服务客户端库的异步方法，另一个示例使用委托。
 
 > [!NOTE]
-> 有关详细信息，请参阅[异步操作（WCF 数据服务）](../data/wcf/asynchronous-operations-wcf-data-services.md)和[创建异步活动](creating-asynchronous-activities-in-wf.md)。
+> 有关详细信息，请参阅 [异步操作 (WCF Data Services) ](../data/wcf/asynchronous-operations-wcf-data-services.md) 和 [创建异步活动](creating-asynchronous-activities-in-wf.md)。
 
 ### <a name="using-client-library-asynchronous-methods"></a>使用客户端库异步方法
 
-<xref:System.Data.Services.Client.DataServiceQuery%601> 类提供 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 和 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 方法来异步查询 OData 服务。 这些方法可从 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 派生的类的 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 和 <xref:System.Activities.AsyncCodeActivity> 重写调用。 当 <xref:System.Activities.AsyncCodeActivity> <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 重写返回时，工作流可处于空闲状态（但不持久），并且在异步工作完成后，运行时将调用 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A>。
+<xref:System.Data.Services.Client.DataServiceQuery%601> 类提供 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 和 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 方法来异步查询 OData 服务。 这些方法可从 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 派生的类的 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 和 <xref:System.Activities.AsyncCodeActivity> 重写调用。 当 <xref:System.Activities.AsyncCodeActivity> <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 重写返回时，工作流可以进入空闲状态 (但不会持久保存) ，异步工作完成后，运行时将调用该工作流 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 。
 
-下面的示例中定义了一个含有两个输入参数的 `OrdersByCustomer` 活动。 `CustomerId` 参数表示标识要返回的订单的客户， `ServiceUri` 参数表示要查询的 OData 服务的 URI。 由于活动派生自 `AsyncCodeActivity<IEnumerable<Order>>` ，因此还有一个用于返回查询结果的 <xref:System.Activities.Activity%601.Result%2A> 输出参数。 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 重写创建了一个用于选择指定客户的所有订单的 LINQ 查询。 此查询将指定为已传递的 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A> 的 <xref:System.Activities.AsyncCodeActivityContext>，然后将调用此查询的 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 方法。 请注意，传递到查询的 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 中的回调和状态是传递到活动的 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 方法中的回调和状态。 在执行完查询后，将调用 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 方法。 从 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>中检索查询，然后调用查询的 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 方法。 此方法将返回指定的实体类型的 <xref:System.Collections.Generic.IEnumerable%601> ；此示例中为 `Order`。 由于 `IEnumerable<Order>` 是 <xref:System.Activities.AsyncCodeActivity%601>的泛型类型，因此此 <xref:System.Collections.IEnumerable> 设置为活动的 <xref:System.Activities.Activity%601.Result%2A> <xref:System.Activities.OutArgument%601>。
+下面的示例中定义了一个含有两个输入参数的 `OrdersByCustomer` 活动。 `CustomerId` 参数表示标识要返回的订单的客户， `ServiceUri` 参数表示要查询的 OData 服务的 URI。 由于活动派生自 `AsyncCodeActivity<IEnumerable<Order>>` ，因此还有一个用于返回查询结果的 <xref:System.Activities.Activity%601.Result%2A> 输出参数。 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 重写创建了一个用于选择指定客户的所有订单的 LINQ 查询。 此查询将指定为已传递的 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A> 的 <xref:System.Activities.AsyncCodeActivityContext>，然后将调用此查询的 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 方法。 请注意，传递到查询的 <xref:System.Data.Services.Client.DataServiceQuery%601.BeginExecute%2A> 中的回调和状态是传递到活动的 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 方法中的回调和状态。 在执行完查询后，将调用 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 方法。 从 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>中检索查询，然后调用查询的 <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> 方法。 此方法将返回指定的实体类型的 <xref:System.Collections.Generic.IEnumerable%601> ；此示例中为 `Order`。 由于 `IEnumerable<Order>` 是的泛型类型 <xref:System.Activities.AsyncCodeActivity%601> ，因此将其 <xref:System.Collections.IEnumerable> 设置为活动的 <xref:System.Activities.Activity%601.Result%2A> <xref:System.Activities.OutArgument%601> 。
 
 [!code-csharp[CFX_WCFDataServicesActivityExample#100](~/samples/snippets/csharp/VS_Snippets_CFX/CFX_WCFDataServicesActivityExample/cs/Program.cs#100)]
 
@@ -72,17 +73,17 @@ Calling WCF Data Service...
 
 ### <a name="using-a-delegate"></a>使用委托
 
-除了调用 .NET Framework 类的异步方法之外，基于 <xref:System.Activities.AsyncCodeActivity>的活动还可以在其一个方法中定义异步逻辑。 此方法是通过使用活动的 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 重写中的委托来指定的。 当此方法返回时，运行时将调用活动的 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 重写。 当从工作流调用 OData 服务时，此方法可用于查询服务和提供任何其他处理。
+除了调用 .NET Framework 类的异步方法之外， <xref:System.Activities.AsyncCodeActivity> 基于的活动还可以在其一个方法中定义异步逻辑。 此方法是通过使用活动的 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 重写中的委托来指定的。 当此方法返回时，运行时将调用活动的 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 重写。 当从工作流调用 OData 服务时，此方法可用于查询服务和提供任何其他处理。
 
 下面的示例定义了一个 `ListCustomers` 活动。 此活动将查询示例 Northwind 数据服务并返回一个包含 Northwind 数据库中的所有客户的 `List<Customer>` 。 异步工作由 `GetCustomers` 方法执行。 此方法将查询所有客户的服务，然后将这些客户复制到 `List<Customer>`。 然后，此方法会检查结果是否已分页。 如果结果已分页，则此方法会查询下一页结果的服务，再将这些结果添加到列表，然后继续操作直到检索到所有客户数据。
 
 > [!NOTE]
-> 有关 WCF 数据服务中的分页的详细信息，请参阅[如何：加载分页结果（WCF 数据服务）](../data/wcf/how-to-load-paged-results-wcf-data-services.md)。
+> 有关 WCF Data Services 中的分页的详细信息，请参阅 [如何：加载分页结果 (WCF Data Services) ](../data/wcf/how-to-load-paged-results-wcf-data-services.md)。
 
 在添加所有客户后，将返回该列表。 活动的 `GetCustomers` 重写中指定了 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A> 方法。 由于该方法具有一个返回值，因此将创建一个 `Func<string, List<Customer>>` 来指定该方法。
 
 > [!NOTE]
-> 如果执行异步工作的方法不具有返回值，则使用 <xref:System.Action> 而非 <xref:System.Func%601>。 有关使用这两种方法创建异步示例的示例，请参阅[创建异步活动](creating-asynchronous-activities-in-wf.md)。
+> 如果执行异步工作的方法不具有返回值，则使用 <xref:System.Action> 而非 <xref:System.Func%601>。 有关使用这两种方法创建异步示例的示例，请参阅 [创建异步活动](creating-asynchronous-activities-in-wf.md)。
 
 将此 <xref:System.Func%601> 分配给 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>，然后调用 `BeginInvoke`。 由于要调用的方法无法访问活动的参数环境，因此 `ServiceUri` 参数的值将作为第一个参数与已传入 <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A>中的回调和状态一起传递。 当 `GetCustomers` 返回时，运行时将调用 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A>。 <xref:System.Activities.AsyncCodeActivity.EndExecute%2A> 中的代码将从 <xref:System.Activities.AsyncCodeActivityContext.UserState%2A>中检索委托，调用 `EndInvoke`并返回结果，该结果是从 `GetCustomers` 方法返回的客户列表。
 
@@ -154,4 +155,4 @@ xmlns="http://www.w3.org/2005/Atom">
 ...
 ```
 
-本示例提供了一个方法，工作流应用程序作者可通过该方法使用从 OData 服务返回的原始数据。 有关使用 Uri 访问 WCF 数据服务的详细信息，请参阅[访问数据服务资源（WCF 数据服务）](../data/wcf/accessing-data-service-resources-wcf-data-services.md)和[OData： URI 约定](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。
+本示例提供了一个方法，工作流应用程序作者可通过该方法使用从 OData 服务返回的原始数据。 有关使用 Uri 访问 WCF Data Services 的详细信息，请参阅 [访问数据服务资源 (WCF Data Services) ](../data/wcf/accessing-data-service-resources-wcf-data-services.md) 和 [OData： URI 约定](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)。

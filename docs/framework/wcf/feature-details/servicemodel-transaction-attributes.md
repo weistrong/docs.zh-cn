@@ -1,19 +1,20 @@
 ---
+description: 了解有关
 title: ServiceModel 事务属性
 ms.date: 03/30/2017
 helpviewer_keywords:
 - transactions [WCF], ServiceModel attributes
 ms.assetid: 1e0d2436-6ae5-439b-9765-a448d6f60000
-ms.openlocfilehash: d4b7482431404241577111d8dd3841319b65696e
-ms.sourcegitcommit: d6e27023aeaffc4b5a3cb4b88685018d6284ada4
+ms.openlocfilehash: 0b443fc6b9503007574608afe03c5e0508f666d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67663699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793475"
 ---
 # <a name="servicemodel-transaction-attributes"></a>ServiceModel 事务属性
 
-Windows Communication Foundation (WCF) 提供有关以下三个标准属性<xref:System.ServiceModel>属性，可使您可以配置的 WCF 服务事务行为：
+Windows Communication Foundation (WCF) 提供了三个标准 <xref:System.ServiceModel> 特性的属性，这些属性使你能够为 WCF 服务配置事务行为：
 
 - <xref:System.ServiceModel.TransactionFlowAttribute>
 
@@ -23,7 +24,7 @@ Windows Communication Foundation (WCF) 提供有关以下三个标准属性<xref
 
 ## <a name="transactionflowattribute"></a>TransactionFlowAttribute
 
-<xref:System.ServiceModel.TransactionFlowAttribute> 属性指定服务协定中的操作是否愿意接受来自客户端的传入事务。 该属性提供了此控件使用以下属性：事务使用<xref:System.ServiceModel.TransactionFlowOption>枚举来指定是否传入事务<xref:System.ServiceModel.TransactionFlowOption.Mandatory>， <xref:System.ServiceModel.TransactionFlowOption.Allowed>，或<xref:System.ServiceModel.TransactionFlowOption.NotAllowed>。
+<xref:System.ServiceModel.TransactionFlowAttribute> 属性指定服务协定中的操作是否愿意接受来自客户端的传入事务。 此属性 (attribute) 通过以下属性 (property) 提供此控制：事务使用 <xref:System.ServiceModel.TransactionFlowOption> 枚举指定传入事务是 <xref:System.ServiceModel.TransactionFlowOption.Mandatory>、<xref:System.ServiceModel.TransactionFlowOption.Allowed> 还是 <xref:System.ServiceModel.TransactionFlowOption.NotAllowed>。
 
 此属性是将服务操作和与客户端的外部交互操作相关联的唯一属性。 下面几节中说明的属性与在操作的执行中使用的事务有关。
 
@@ -41,7 +42,7 @@ Windows Communication Foundation (WCF) 提供有关以下三个标准属性<xref
 
 ## <a name="operationbehaviorattribute"></a>OperationBehaviorAttribute
 
-<xref:System.ServiceModel.OperationBehaviorAttribute> 属性指定服务实现中方法的行为。 可以用此属性指示操作的特定执行行为。 此属性的属性不会影响服务协定的 Web 服务描述语言 (WSDL) 说明，是纯粹启用常用的功能，开发人员将不得不自己实现 WCF 编程模型中的元素。
+<xref:System.ServiceModel.OperationBehaviorAttribute> 属性指定服务实现中方法的行为。 可以用此属性指示操作的特定执行行为。 此属性的属性不影响服务协定 (WSDL) 说明的 Web 服务描述语言，而是 WCF 编程模型的纯粹元素，这些元素允许开发人员自行实现的通用功能。
 
 此属性 (Attribute) 具有以下特定于事务的属性 (Property)：
 

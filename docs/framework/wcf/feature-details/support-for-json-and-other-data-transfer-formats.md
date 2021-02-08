@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：支持 JSON 和其他数据传输格式
 title: 对 JSON 和其他数据传输格式的支持
 ms.date: 03/30/2017
 ms.assetid: a527f1be-4e37-4beb-9a95-291480d19627
-ms.openlocfilehash: 5f625c4ac6f2fa65df4d5a046b747c58f7a725b0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4919082d75fd6e0b742b9ca17308c3b393afc632
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246298"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793371"
 ---
 # <a name="support-for-json-and-other-data-transfer-formats"></a>对 JSON 和其他数据传输格式的支持
 
@@ -24,7 +25,7 @@ JSON（JavaScript 对象符号）是一种高效的数据编码格式，可用�
  [JSON 和 XML 之间的映射](mapping-between-json-and-xml.md)  
  描述 JavaScript 对象表示法 (JSON) 编码与 XML 信息集之间的对应关系，这些信息由 Windows Communication Foundation (WCF) 用于表示 JSON 编码的数据和文档。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
 - <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>

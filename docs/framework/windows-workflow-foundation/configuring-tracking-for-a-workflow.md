@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：为工作流配置跟踪
 title: 为工作流配置跟踪
 ms.date: 03/30/2017
 ms.assetid: 905adcc9-30a0-4918-acd6-563f86db988a
-ms.openlocfilehash: 098b295be00b1b8283e26e79ea14e78634fdb504
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 061a0edf107296e04d86ed1a50b9a8bfefd7bfce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557549"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792760"
 ---
 # <a name="configuring-tracking-for-a-workflow"></a>为工作流配置跟踪
 
@@ -148,7 +149,7 @@ invoker.Invoke();
 
 ### <a name="viewing-tracking-records-in-event-viewer"></a>在事件查看器中查看跟踪记录
 
-在跟踪 WF 执行时有两种特殊的事件查看器日志可供查看 - 分析日志和调试日志。 两者都位于 "Microsoft&#124;Windows&#124;应用程序服务器-应用程序" 节点下。 此部分内的日志包含来自单一应用程序的事件，而不包含对整个系统范围产生影响的事件。
+在跟踪 WF 执行时有两种特殊的事件查看器日志可供查看 - 分析日志和调试日志。 两者都驻留在 Microsoft&#124;Windows&#124;应用程序 Server-Applications 节点下。 此部分内的日志包含来自单一应用程序的事件，而不包含对整个系统范围产生影响的事件。
 
 调试跟踪事件将写入调试日志。 若要收集事件查看器中的 WF 调试跟踪事件，请启用调试日志。
 
@@ -196,7 +197,7 @@ WF 4 提供跟踪参与者，可将跟踪记录写入 ETW（Windows 事件跟踪
     </system.serviceModel>
     ```
 
-2. 将清单文件从%windir%\Microsoft.NET\Framework \\ \<latest version of [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]> \microsoft.windows.applicationserver.applications.man 复制复制到临时位置，并将其重命名为 ApplicationServer Applications_Provider1。
+2. 将清单文件从%windir%\Microsoft.NET\Framework \\ \<latest version of [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]> \microsoft.windows.applicationserver.applications.man 复制复制到临时位置，并将其重命名为 Microsoft.Windows.ApplicationServer.Applications_Provider1。
 
 3. 将清单文件中的 GUID 更改为新的 GUID。
 
