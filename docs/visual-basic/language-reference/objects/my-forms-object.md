@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： My Forms 对象
 title: My.Forms 对象
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Forms object
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
-ms.openlocfilehash: 001f6fbfae2467ea0af5e98ca041b694d1e7b8f9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 18ef8ee475163ff7eb177dfee590d959a242a88e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84372435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774403"
 ---
 # <a name="myforms-object"></a>My.Forms 对象
 
@@ -22,9 +23,9 @@ ms.locfileid: "84372435"
 
 `My.Forms`对象为当前项目中的每个窗体提供一个实例。 属性的名称与属性访问的窗体的名称相同。
 
-您可以 `My.Forms` 通过使用窗体的名称，而无需限定来访问由对象提供的窗体。 因为属性名称与窗体的类型名称相同，所以这允许你像访问默认实例一样访问窗体。 例如，`My.Forms.Form1.Show` 与 `Form1.Show` 等效。
+您可以 `My.Forms` 通过使用窗体的名称，而无需限定来访问由对象提供的窗体。 因为属性名称与窗体的类型名称相同，所以这允许你像访问默认实例一样访问窗体。 例如，`My.Forms.Form1.Show` 等效于 `Form1.Show`。
 
-`My.Forms`对象只公开与当前项目关联的窗体。 它不提供对引用 Dll 中声明的窗体的访问。 若要访问 DLL 提供的窗体，必须使用以*DllName*形式编写的格式的限定名称。*FormName*。
+`My.Forms`对象只公开与当前项目关联的窗体。 它不提供对引用 Dll 中声明的窗体的访问。 若要访问 DLL 提供的窗体，必须使用以 *DllName* 形式编写的格式的限定名称。*FormName*。
 
 您可以使用 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A> 属性来获取应用程序的所有打开窗体的集合。
 
@@ -35,7 +36,7 @@ ms.locfileid: "84372435"
 对象的每个属性都 `My.Forms` 提供对当前项目中窗体的实例的访问。 属性的名称与属性访问的窗体的名称相同，属性类型与窗体的类型相同。
 
 > [!NOTE]
-> 如果存在名称冲突，则用于访问窗体的属性名称为*RootNamespace*_*命名空间* \_ *FormName*。 例如，假设有两个名为的窗体： `Form1.` 如果其中一个窗体位于根命名空间 `WindowsApplication1` 和命名空间中 `Namespace1` ，则可以通过访问该窗体 `My.Forms.WindowsApplication1_Namespace1_Form1` 。
+> 如果存在名称冲突，则用于访问窗体的属性名称为 *RootNamespace* _ *命名空间* \_ *FormName*。 例如，假设有两个名为的窗体： `Form1.` 如果其中一个窗体位于根命名空间 `WindowsApplication1` 和命名空间中 `Namespace1` ，则可以通过访问该窗体 `My.Forms.WindowsApplication1_Namespace1_Form1` 。
 
 `My.Forms`对象提供对启动时创建的应用程序主窗体实例的访问权限。 对于所有其他窗体， `My.Forms` 对象在被访问并存储时创建窗体的新实例。 后续尝试访问该属性将返回该窗体的实例。
 
