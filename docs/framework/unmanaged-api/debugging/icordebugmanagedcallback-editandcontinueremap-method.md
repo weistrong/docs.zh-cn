@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： EditAndContinueRemap 方法
 title: ICorDebugManagedCallback::EditAndContinueRemap 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 24a8fcce-317e-48ff-aefc-d86123ada935
 topic_type:
 - apiref
-ms.openlocfilehash: 1d8aa2cca9dbbeaa9e03813b177ca59125770803
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ad8932e41236cdb8ed213024efb4175292a5d5f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721278"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790994"
 ---
-# <a name="icordebugmanagedcallbackeditandcontinueremap-method"></a><span data-ttu-id="e1e67-102">ICorDebugManagedCallback::EditAndContinueRemap 方法</span><span class="sxs-lookup"><span data-stu-id="e1e67-102">ICorDebugManagedCallback::EditAndContinueRemap Method</span></span>
+# <a name="icordebugmanagedcallbackeditandcontinueremap-method"></a><span data-ttu-id="1c2c8-103">ICorDebugManagedCallback::EditAndContinueRemap 方法</span><span class="sxs-lookup"><span data-stu-id="1c2c8-103">ICorDebugManagedCallback::EditAndContinueRemap Method</span></span>
 
-<span data-ttu-id="e1e67-103">此方法已被否决。</span><span class="sxs-lookup"><span data-stu-id="e1e67-103">This method has been deprecated.</span></span> <span data-ttu-id="e1e67-104">它通知调试器已将重新映射事件发送到 (IDE) 的集成开发环境。</span><span class="sxs-lookup"><span data-stu-id="e1e67-104">It notifies the debugger that a remap event has been sent to the integrated development environment (IDE).</span></span>  
+<span data-ttu-id="1c2c8-104">此方法已被否决。</span><span class="sxs-lookup"><span data-stu-id="1c2c8-104">This method has been deprecated.</span></span> <span data-ttu-id="1c2c8-105">它通知调试器已将重新映射事件发送到 (IDE) 的集成开发环境。</span><span class="sxs-lookup"><span data-stu-id="1c2c8-105">It notifies the debugger that a remap event has been sent to the integrated development environment (IDE).</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="e1e67-105">语法</span><span class="sxs-lookup"><span data-stu-id="e1e67-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="1c2c8-106">语法</span><span class="sxs-lookup"><span data-stu-id="1c2c8-106">Syntax</span></span>  
   
 ```cpp  
 HRESULT EditAndContinueRemap (  
@@ -37,20 +38,20 @@ HRESULT EditAndContinueRemap (
 );  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="e1e67-106">备注</span><span class="sxs-lookup"><span data-stu-id="e1e67-106">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="1c2c8-107">备注</span><span class="sxs-lookup"><span data-stu-id="1c2c8-107">Remarks</span></span>  
 
- <span data-ttu-id="e1e67-107">`EditAndContinueRemap`当尝试在旧版本的更新函数中执行代码时，将调用方法。</span><span class="sxs-lookup"><span data-stu-id="e1e67-107">The `EditAndContinueRemap` method is called when the execution of the code in an old version of an updated function has been attempted.</span></span> <span data-ttu-id="e1e67-108">公共语言运行时调用 `EditAndContinueRemap` 方法，将重新映射事件发送到 IDE。</span><span class="sxs-lookup"><span data-stu-id="e1e67-108">The common language runtime calls the `EditAndContinueRemap` method to send a remap event to the IDE.</span></span>  
+ <span data-ttu-id="1c2c8-108">`EditAndContinueRemap`当尝试在旧版本的更新函数中执行代码时，将调用方法。</span><span class="sxs-lookup"><span data-stu-id="1c2c8-108">The `EditAndContinueRemap` method is called when the execution of the code in an old version of an updated function has been attempted.</span></span> <span data-ttu-id="1c2c8-109">公共语言运行时调用 `EditAndContinueRemap` 方法，将重新映射事件发送到 IDE。</span><span class="sxs-lookup"><span data-stu-id="1c2c8-109">The common language runtime calls the `EditAndContinueRemap` method to send a remap event to the IDE.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="e1e67-109">要求</span><span class="sxs-lookup"><span data-stu-id="e1e67-109">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="1c2c8-110">要求</span><span class="sxs-lookup"><span data-stu-id="1c2c8-110">Requirements</span></span>  
 
- <span data-ttu-id="e1e67-110">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="e1e67-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="1c2c8-111">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="1c2c8-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="e1e67-111">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="e1e67-111">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="1c2c8-112">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="1c2c8-112">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="e1e67-112">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e1e67-112">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="1c2c8-113">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="1c2c8-113">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="e1e67-113">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e1e67-113">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+ <span data-ttu-id="1c2c8-114">**.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1c2c8-114">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e1e67-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e1e67-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1c2c8-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="1c2c8-115">See also</span></span>
 
-- [<span data-ttu-id="e1e67-115">ICorDebugManagedCallback 接口</span><span class="sxs-lookup"><span data-stu-id="e1e67-115">ICorDebugManagedCallback Interface</span></span>](icordebugmanagedcallback-interface.md)
+- [<span data-ttu-id="1c2c8-116">ICorDebugManagedCallback 接口</span><span class="sxs-lookup"><span data-stu-id="1c2c8-116">ICorDebugManagedCallback Interface</span></span>](icordebugmanagedcallback-interface.md)

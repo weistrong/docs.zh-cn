@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugVariableHome 接口
 title: ICorDebugVariableHome 接口
 ms.date: 03/30/2017
 dev_langs:
@@ -16,32 +17,32 @@ helpviewer_keywords:
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
 topic_type:
 - apiref
-ms.openlocfilehash: 089e68278113dfdf509ed848f424ad32baa145ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a1dcc959ba9aeffc0e511dcd2f5bb15f58445139
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790628"
 ---
-# <a name="icordebugvariablehome-interface"></a><span data-ttu-id="57743-102">ICorDebugVariableHome 接口</span><span class="sxs-lookup"><span data-stu-id="57743-102">ICorDebugVariableHome Interface</span></span>
+# <a name="icordebugvariablehome-interface"></a><span data-ttu-id="542c5-103">ICorDebugVariableHome 接口</span><span class="sxs-lookup"><span data-stu-id="542c5-103">ICorDebugVariableHome Interface</span></span>
 
-<span data-ttu-id="57743-103">表示函数的局部变量或自变量。</span><span class="sxs-lookup"><span data-stu-id="57743-103">Represents a local variable or argument of a function.</span></span>  
+<span data-ttu-id="542c5-104">表示函数的局部变量或自变量。</span><span class="sxs-lookup"><span data-stu-id="542c5-104">Represents a local variable or argument of a function.</span></span>  
   
-## <a name="methods"></a><span data-ttu-id="57743-104">方法</span><span class="sxs-lookup"><span data-stu-id="57743-104">Methods</span></span>  
+## <a name="methods"></a><span data-ttu-id="542c5-105">方法</span><span class="sxs-lookup"><span data-stu-id="542c5-105">Methods</span></span>  
   
-|<span data-ttu-id="57743-105">方法</span><span class="sxs-lookup"><span data-stu-id="57743-105">Method</span></span>|<span data-ttu-id="57743-106">说明</span><span class="sxs-lookup"><span data-stu-id="57743-106">Description</span></span>|  
+|<span data-ttu-id="542c5-106">方法</span><span class="sxs-lookup"><span data-stu-id="542c5-106">Method</span></span>|<span data-ttu-id="542c5-107">说明</span><span class="sxs-lookup"><span data-stu-id="542c5-107">Description</span></span>|  
 |------------|-----------------|  
-|[<span data-ttu-id="57743-107">GetArgumentIndex 方法</span><span class="sxs-lookup"><span data-stu-id="57743-107">GetArgumentIndex Method</span></span>](icordebugvariablehome-getargumentindex-method.md)|<span data-ttu-id="57743-108">获取函数参数的索引。</span><span class="sxs-lookup"><span data-stu-id="57743-108">Gets the index of a function argument.</span></span>|  
-|[<span data-ttu-id="57743-109">GetCode 方法</span><span class="sxs-lookup"><span data-stu-id="57743-109">GetCode Method</span></span>](icordebugvariablehome-getcode-method.md)|<span data-ttu-id="57743-110">获取包含此对象的 "ICorDebugCode" 实例 `ICorDebugVariableHome` 。</span><span class="sxs-lookup"><span data-stu-id="57743-110">Gets the "ICorDebugCode" instance that contains this `ICorDebugVariableHome` object.</span></span>|  
-|[<span data-ttu-id="57743-111">GetLiveRange 方法</span><span class="sxs-lookup"><span data-stu-id="57743-111">GetLiveRange Method</span></span>](icordebugvariablehome-getliverange-method.md)|<span data-ttu-id="57743-112">获取此变量的生存期的本机范围。</span><span class="sxs-lookup"><span data-stu-id="57743-112">Gets the native range over which this variable is live.</span></span>|  
-|[<span data-ttu-id="57743-113">GetLocationType 方法</span><span class="sxs-lookup"><span data-stu-id="57743-113">GetLocationType Method</span></span>](icordebugvariablehome-getlocationtype-method.md)|<span data-ttu-id="57743-114">获取变量的本机位置的类型。</span><span class="sxs-lookup"><span data-stu-id="57743-114">Gets the type of the variable's native location.</span></span>|  
-|[<span data-ttu-id="57743-115">GetOffset 方法</span><span class="sxs-lookup"><span data-stu-id="57743-115">GetOffset Method</span></span>](icordebugvariablehome-getoffset-method.md)|<span data-ttu-id="57743-116">获取与基寄存器相对应的偏移量。</span><span class="sxs-lookup"><span data-stu-id="57743-116">Gets the offset from the base register for a variable.</span></span>|  
-|[<span data-ttu-id="57743-117">GetRegister 方法</span><span class="sxs-lookup"><span data-stu-id="57743-117">GetRegister Method</span></span>](icordebugvariablehome-getregister-method.md)|<span data-ttu-id="57743-118">获取一个寄存器，其中包含位置类型为的变量 `VLT_REGISTER` ，以及位置类型为的变量的基寄存器 `VLT_REGISTER_RELATIVE` 。</span><span class="sxs-lookup"><span data-stu-id="57743-118">Gets the register that contains a variable with a location type of `VLT_REGISTER`, and the base register for a variable with a location type of `VLT_REGISTER_RELATIVE`.</span></span>|  
-|[<span data-ttu-id="57743-119">GetSlotIndex 方法</span><span class="sxs-lookup"><span data-stu-id="57743-119">GetSlotIndex Method</span></span>](icordebugvariablehome-getslotindex-method.md)|<span data-ttu-id="57743-120">获取本地变量的托管槽索引。</span><span class="sxs-lookup"><span data-stu-id="57743-120">Gets the managed slot-index of a local variable.</span></span>|  
+|[<span data-ttu-id="542c5-108">GetArgumentIndex 方法</span><span class="sxs-lookup"><span data-stu-id="542c5-108">GetArgumentIndex Method</span></span>](icordebugvariablehome-getargumentindex-method.md)|<span data-ttu-id="542c5-109">获取函数参数的索引。</span><span class="sxs-lookup"><span data-stu-id="542c5-109">Gets the index of a function argument.</span></span>|  
+|[<span data-ttu-id="542c5-110">GetCode 方法</span><span class="sxs-lookup"><span data-stu-id="542c5-110">GetCode Method</span></span>](icordebugvariablehome-getcode-method.md)|<span data-ttu-id="542c5-111">获取包含此对象的 "ICorDebugCode" 实例 `ICorDebugVariableHome` 。</span><span class="sxs-lookup"><span data-stu-id="542c5-111">Gets the "ICorDebugCode" instance that contains this `ICorDebugVariableHome` object.</span></span>|  
+|[<span data-ttu-id="542c5-112">GetLiveRange 方法</span><span class="sxs-lookup"><span data-stu-id="542c5-112">GetLiveRange Method</span></span>](icordebugvariablehome-getliverange-method.md)|<span data-ttu-id="542c5-113">获取此变量的生存期的本机范围。</span><span class="sxs-lookup"><span data-stu-id="542c5-113">Gets the native range over which this variable is live.</span></span>|  
+|[<span data-ttu-id="542c5-114">GetLocationType 方法</span><span class="sxs-lookup"><span data-stu-id="542c5-114">GetLocationType Method</span></span>](icordebugvariablehome-getlocationtype-method.md)|<span data-ttu-id="542c5-115">获取变量的本机位置的类型。</span><span class="sxs-lookup"><span data-stu-id="542c5-115">Gets the type of the variable's native location.</span></span>|  
+|[<span data-ttu-id="542c5-116">GetOffset 方法</span><span class="sxs-lookup"><span data-stu-id="542c5-116">GetOffset Method</span></span>](icordebugvariablehome-getoffset-method.md)|<span data-ttu-id="542c5-117">获取与基寄存器相对应的偏移量。</span><span class="sxs-lookup"><span data-stu-id="542c5-117">Gets the offset from the base register for a variable.</span></span>|  
+|[<span data-ttu-id="542c5-118">GetRegister 方法</span><span class="sxs-lookup"><span data-stu-id="542c5-118">GetRegister Method</span></span>](icordebugvariablehome-getregister-method.md)|<span data-ttu-id="542c5-119">获取一个寄存器，其中包含位置类型为的变量 `VLT_REGISTER` ，以及位置类型为的变量的基寄存器 `VLT_REGISTER_RELATIVE` 。</span><span class="sxs-lookup"><span data-stu-id="542c5-119">Gets the register that contains a variable with a location type of `VLT_REGISTER`, and the base register for a variable with a location type of `VLT_REGISTER_RELATIVE`.</span></span>|  
+|[<span data-ttu-id="542c5-120">GetSlotIndex 方法</span><span class="sxs-lookup"><span data-stu-id="542c5-120">GetSlotIndex Method</span></span>](icordebugvariablehome-getslotindex-method.md)|<span data-ttu-id="542c5-121">获取本地变量的托管槽索引。</span><span class="sxs-lookup"><span data-stu-id="542c5-121">Gets the managed slot-index of a local variable.</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="57743-121">示例</span><span class="sxs-lookup"><span data-stu-id="57743-121">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="542c5-122">示例</span><span class="sxs-lookup"><span data-stu-id="542c5-122">Example</span></span>  
 
- <span data-ttu-id="57743-122">下面的代码片段使用名为的 [ICorDebugCode4](icordebugcode4-interface.md) 对象 `pCode4` 。</span><span class="sxs-lookup"><span data-stu-id="57743-122">The following code fragment uses the [ICorDebugCode4](icordebugcode4-interface.md) object named `pCode4`.</span></span>  
+ <span data-ttu-id="542c5-123">下面的代码片段使用名为的 [ICorDebugCode4](icordebugcode4-interface.md) 对象 `pCode4` 。</span><span class="sxs-lookup"><span data-stu-id="542c5-123">The following code fragment uses the [ICorDebugCode4](icordebugcode4-interface.md) object named `pCode4`.</span></span>  
   
 ```cpp  
 ICorDebugCode4 *pCode4 = NULL;  
@@ -82,17 +83,17 @@ for (int i = 0; i < celtFetched; i++)
 }  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="57743-123">要求</span><span class="sxs-lookup"><span data-stu-id="57743-123">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="542c5-124">要求</span><span class="sxs-lookup"><span data-stu-id="542c5-124">Requirements</span></span>  
 
- <span data-ttu-id="57743-124">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="57743-124">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="542c5-125">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="542c5-125">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="57743-125">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="57743-125">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="542c5-126">**标头**：CorDebug.idl、CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="542c5-126">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="57743-126">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="57743-126">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="542c5-127">**库：** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="542c5-127">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="57743-127">**.NET Framework 版本：**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="57743-127">**.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]</span></span>  
+ <span data-ttu-id="542c5-128">**.NET Framework 版本：**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="542c5-128">**.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="57743-128">另请参阅</span><span class="sxs-lookup"><span data-stu-id="57743-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="542c5-129">请参阅</span><span class="sxs-lookup"><span data-stu-id="542c5-129">See also</span></span>
 
-- [<span data-ttu-id="57743-129">调试接口</span><span class="sxs-lookup"><span data-stu-id="57743-129">Debugging Interfaces</span></span>](debugging-interfaces.md)
-- [<span data-ttu-id="57743-130">ICorDebugVariableHomeEnum 接口</span><span class="sxs-lookup"><span data-stu-id="57743-130">ICorDebugVariableHomeEnum Interface</span></span>](icordebugvariablehomeenum-interface.md)
+- [<span data-ttu-id="542c5-130">调试接口</span><span class="sxs-lookup"><span data-stu-id="542c5-130">Debugging Interfaces</span></span>](debugging-interfaces.md)
+- [<span data-ttu-id="542c5-131">ICorDebugVariableHomeEnum 接口</span><span class="sxs-lookup"><span data-stu-id="542c5-131">ICorDebugVariableHomeEnum Interface</span></span>](icordebugvariablehomeenum-interface.md)
