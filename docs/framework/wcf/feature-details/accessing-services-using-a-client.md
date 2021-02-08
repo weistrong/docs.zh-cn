@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：使用客户端访问服务
 title: 使用客户端访问服务
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c8329832-bf66-4064-9034-bf39f153fc2d
-ms.openlocfilehash: d136e094e4f1ea5258ff568527d10ac25a38f1a9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 112e401f96fb1bf4231fb6bef3e5a57b6f40949e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293957"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793878"
 ---
 # <a name="accessing-services-using-a-client"></a>使用客户端访问服务
 
@@ -100,7 +101,7 @@ ms.locfileid: "96293957"
   
  使用隐式方法的应用程序调用用户界面初始值设定项，但是如果应用程序的用户没有在绑定的发送超时期限内做出响应，则当用户界面返回时，将引发异常。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [双工服务](duplex-services.md)
 - [如何：使用单向和请求-答复协定访问服务](how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)

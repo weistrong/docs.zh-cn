@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDataTarget3：： GetExceptionThreadID 方法
 title: ICLRDataTarget3::GetExceptionThreadID 方法
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 307d6ac7-4a86-45f3-999d-6b47004a68f2
 topic_type:
 - apiref
-ms.openlocfilehash: 0a8b7a90cd909379f870f6a501a940386d2e1451
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8202b6d83d0c81853111c5da7cfb8deec4d4e222
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794814"
 ---
 # <a name="iclrdatatarget3getexceptionthreadid-method"></a>ICLRDataTarget3::GetExceptionThreadID 方法
 
@@ -45,7 +46,7 @@ HRESULT GetExceptionThreadID(
 |`S_OK`|方法成功。|  
 |`HRESULT_FROM_WIN32(ERROR_NOT_FOUND)`|找不到该异常的有效线程 ID。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法由调试应用程序的编写器实现。  
   
@@ -59,7 +60,7 @@ HRESULT GetExceptionThreadID(
   
  **.NET Framework 版本：**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRDataTarget3 接口](iclrdatatarget3-interface.md)
 - [GetExceptionContextRecord 方法](iclrdatatarget3-getexceptioncontextrecord-method.md)

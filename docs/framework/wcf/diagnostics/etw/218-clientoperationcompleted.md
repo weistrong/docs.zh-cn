@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 218-ClientOperationCompleted
 title: 218 - ClientOperationCompleted
 ms.date: 03/30/2017
 ms.assetid: b069bced-7bb2-4e01-8227-e5dbda17af09
-ms.openlocfilehash: d74aa77aff7b45b50f6891c999889011d9e03381
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3719b77ce653c5177cf7b92901ecd51982504b83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96278851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794333"
 ---
 # <a name="218---clientoperationcompleted"></a>218 - ClientOperationCompleted
 
@@ -17,10 +18,10 @@ ms.locfileid: "96278851"
 |-|-|  
 |ID|218|  
 |关键字|疑难解答，ServiceModel|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  此事件恰好在操作完成之后由客户端发出。 对于单向操作，此事件恰好在成功发送消息之后发送。 对于请求-响应操作，此事件在接收响应之后发送。  
   

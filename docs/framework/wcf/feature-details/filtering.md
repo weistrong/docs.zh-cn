@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：筛选
 title: 筛选
 ms.date: 03/30/2017
 ms.assetid: 4002946c-e34a-4356-8cfb-e25912a4be63
-ms.openlocfilehash: cc95852a5eb191befe7e3cd563939c340ef16e06
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d5f2abc1050ece8ebf2bed53a1c963134afad43a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793865"
 ---
 # <a name="filtering"></a>筛选
 
@@ -95,6 +96,6 @@ Windows Communication Foundation (WCF) 筛选系统可以使用声明性筛选�
   
 - `EndpointAddress` 中的其余终结点参数（如 <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> 中指定）。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [数据传输和序列化](data-transfer-and-serialization.md)

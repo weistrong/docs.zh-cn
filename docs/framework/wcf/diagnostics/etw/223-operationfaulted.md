@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 223-OperationFaulted
 title: 223 - OperationFaulted
 ms.date: 03/30/2017
 ms.assetid: 2f7d89d7-3a6a-40fe-9610-5424eb6bbf61
-ms.openlocfilehash: 310e91320d27dd9817302fc14ef088d180152b73
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e4155516e07568d4ee4ca76d63754ec4171e1064
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263069"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794281"
 ---
 # <a name="223---operationfaulted"></a>223 - OperationFaulted
 
@@ -17,10 +18,10 @@ ms.locfileid: "96263069"
 |-|-|  
 |ID|223|  
 |关键字|EndToEndMonitoring、HealthMonitoring、疑难解答、ServiceModel|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  服务模型的默认 `OperationInvoker` 在调用其方法期间出现派生自 `FaultException` 的异常时，将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96263069"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |MethodName|`xs:string`|由 `OperationInvoker` 调用的方法的 CLR 名称。|  
 |持续时间|`xs:long`|`OperationInvoker` 调用方法所花费的时间（以毫秒为单位）。|  

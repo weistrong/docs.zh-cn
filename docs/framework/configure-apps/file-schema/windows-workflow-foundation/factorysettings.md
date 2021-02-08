@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <factorySettings>
 title: <factorySettings>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 202aad17-1b8b-4c87-ad57-4ca5de18ed35
-ms.openlocfilehash: 9f9183d4c579c4f7c7985e5c7f372604d8d82947
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 766e68bbf2a48725b2603221bfbbcd25b0a83acb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795061"
 ---
 # \<factorySettings>
 
@@ -44,7 +45,7 @@ ms.locfileid: "91150851"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |idleTimeout|一个 TimeSpan 值，指定对象在被释放之前可在缓存中保持空闲的最大时间间隔。|  
 |leaseTimeout|一个 TimeSpan 值，指定从缓存中移除对象需要等待的时间间隔。|  
@@ -56,7 +57,7 @@ ms.locfileid: "91150851"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<sendMessageChannelCache>](sendmessagechannelcache.md)|一种服务行为，该行为支持缓存共享级别的自定义、通道工厂缓存的设置，以及使用 Send 消息传递活动将消息发送给服务终结点的工作流通道缓存的设置。|  
   

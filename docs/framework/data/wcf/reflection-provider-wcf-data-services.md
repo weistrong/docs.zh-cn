@@ -1,24 +1,27 @@
 ---
+description: '了解详细信息：反射提供程序 (WCF Data Services) '
 title: 反射提供程序（WCF 数据服务）
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, providers
 ms.assetid: ef5ba300-6d7c-455e-a7bd-d0cc6d211ad4
-ms.openlocfilehash: 0eeb223093d709cfe2722c2ad7cf622164eab32f
-ms.sourcegitcommit: 79a2d6a07ba4ed08979819666a0ee6927bbf1b01
+ms.openlocfilehash: e09c9a86bb940681d8de24f5082919aea897795d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74568876"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794918"
 ---
 # <a name="reflection-provider-wcf-data-services"></a>反射提供程序（WCF 数据服务）
 
-除了通过实体框架公开数据模型中的数据以外，WCF 数据服务可以公开未在基于实体的模型中严格定义的数据。 反射提供程序公开类中的数据，这些类返回实现 <xref:System.Linq.IQueryable%601> 接口的类型。 WCF 数据服务使用反射推断这些类的数据模型，并且可以将针对资源的基于地址的查询转换为针对公开 <xref:System.Linq.IQueryable%601> 类型的基于语言集成查询（LINQ）的查询。
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+除了通过实体框架公开数据模型中的数据以外，WCF Data Services 可以公开未在基于实体的模型中严格定义的数据。 反射提供程序公开类中的数据，这些类返回实现 <xref:System.Linq.IQueryable%601> 接口的类型。 WCF Data Services 使用反射推断这些类的数据模型，并且可以将针对资源的基于地址的查询转换为针对已公开类型的基于 LINQ) 的查询的语言集成 (查询 <xref:System.Linq.IQueryable%601> 。
 
 > [!NOTE]
 > 可使用 <xref:System.Linq.Queryable.AsQueryable%2A> 方法从实现 <xref:System.Linq.IQueryable%601> 接口的任何类返回 <xref:System.Collections.Generic.IEnumerable%601> 接口。 这允许将大多数泛型集合类型用作数据服务的数据源。
 
-反射提供程序支持类型层次结构。 有关详细信息，请参阅[如何：使用反射提供程序创建数据服务](create-a-data-service-using-rp-wcf-data-services.md)。
+反射提供程序支持类型层次结构。 有关详细信息，请参阅 [如何：使用反射提供程序创建数据服务](create-a-data-service-using-rp-wcf-data-services.md)。
 
 ## <a name="inferring-the-data-model"></a>推断数据模型
 
@@ -46,13 +49,13 @@ ms.locfileid: "74568876"
   - 如果属性的返回类型为一个值类型，则该属性表示一个复杂类型。
 
 > [!NOTE]
-> 与基于实体关系模型的数据模型不同，基于反射提供程序的模型不了解关系数据。 应使用实体框架通过 WCF 数据服务公开关系数据。
+> 与基于实体关系模型的数据模型不同，基于反射提供程序的模型不了解关系数据。 应使用实体框架通过 WCF Data Services 公开关系数据。
 
 ## <a name="data-type-mapping"></a>数据类型映射
 
 根据 .NET Framework 类推断数据模型时，数据模型中的基元类型按如下方式映射到 .NET Framework 数据类型：
 
-|.NET Framework 数据类型|数据模型类型|
+|.NET framework 数据类型|数据模型类型|
 |------------------------------|---------------------|
 |<xref:System.Byte> `[]`|`Edm.Binary`|
 |<xref:System.Boolean>|`Edm.Boolean`|
@@ -73,11 +76,11 @@ ms.locfileid: "74568876"
 
 ## <a name="enabling-updates-in-the-data-model"></a>在数据模型中启用更新
 
-为了对通过此类数据模型公开的数据进行更新，反射提供程序定义了一个 <xref:System.Data.Services.IUpdatable> 接口。 该接口指示数据服务如何保持对公开类型的更新。 若要启用对数据模型定义的资源的更新，实体容器类必须实现 <xref:System.Data.Services.IUpdatable> 接口。 有关 <xref:System.Data.Services.IUpdatable> 接口的实现的示例，请参阅[如何：使用 LINQ to SQL 数据源创建数据服务](create-a-data-service-using-linq-to-sql-wcf.md)。
+为了对通过此类数据模型公开的数据进行更新，反射提供程序定义了一个 <xref:System.Data.Services.IUpdatable> 接口。 该接口指示数据服务如何保持对公开类型的更新。 若要启用对数据模型定义的资源的更新，实体容器类必须实现 <xref:System.Data.Services.IUpdatable> 接口。 有关接口实现的示例 <xref:System.Data.Services.IUpdatable> ，请参阅 [如何：使用 LINQ to SQL 数据源创建数据服务](create-a-data-service-using-linq-to-sql-wcf.md)。
 
 <xref:System.Data.Services.IUpdatable> 接口要求实现以下成员，以便可使用反射提供程序将更新传播到数据源：
 
-|成员|描述|
+|成员|说明|
 |------------|-----------------|
 |<xref:System.Data.Services.IUpdatable.AddReferenceToCollection%2A>|提供将对象添加到从导航属性访问的相关对象集合的功能。|
 |<xref:System.Data.Services.IUpdatable.ClearChanges%2A>|提供取消挂起的数据更改的功能。|
@@ -94,12 +97,12 @@ ms.locfileid: "74568876"
 
 ## <a name="handling-concurrency"></a>处理并发
 
-通过使你能够为实体定义并发标记，WCF 数据服务支持开放式并发模型。 这样一个包含一个或多个实体属性的并发标记由数据服务用来确定，正在请求、更新或删除的数据中是否发生了更改。 如果从请求的 eTag 中获取的标记值与实体的当前值不相同，则数据服务将引发异常。 将 <xref:System.Data.Services.ETagAttribute> 应用于某个实体类型可在反射提供程序中定义并发标记。 并发标记不能包含键属性或导航属性。 有关详细信息，请参阅[更新数据服务](updating-the-data-service-wcf-data-services.md)。
+通过使你能够为实体定义并发标记，WCF Data Services 支持开放式并发模型。 这样一个包含一个或多个实体属性的并发标记由数据服务用来确定，正在请求、更新或删除的数据中是否发生了更改。 如果从请求的 eTag 中获取的标记值与实体的当前值不相同，则数据服务将引发异常。 将 <xref:System.Data.Services.ETagAttribute> 应用于某个实体类型可在反射提供程序中定义并发标记。 并发标记不能包含键属性或导航属性。 有关详细信息，请参阅 [更新数据服务](updating-the-data-service-wcf-data-services.md)。
 
 ## <a name="using-linq-to-sql-with-the-reflection-provider"></a>配合使用 LINQ to SQL 和反射提供程序
 
-由于默认情况下支持实体框架，因此它是建议用于将关系数据与 WCF 数据服务结合使用的数据提供程序。 但是，可以使用反射提供程序来配合使用 LINQ to SQL 类和数据服务。 由 LINQ to SQL 对象关系设计器（O/R 设计器）生成的 <xref:System.Data.Linq.DataContext> 上的方法返回的 <xref:System.Data.Linq.Table%601> 结果集实现 <xref:System.Linq.IQueryable%601> 接口。 这样，反射提供程序便可以通过使用生成的 LINQ to SQL 类从 SQL Server 访问这些方法和返回实体数据。 但是，由于 LINQ to SQL 不会实现 <xref:System.Data.Services.IUpdatable> 接口，因此需要添加一个可扩展现有 <xref:System.Data.Linq.DataContext> 分部类的分部类才能添加 <xref:System.Data.Services.IUpdatable> 实现。 有关详细信息，请参阅[如何：使用 LINQ to SQL 数据源创建数据服务](create-a-data-service-using-linq-to-sql-wcf.md)。
+由于默认情况下支持实体框架，因此它是建议用于将关系数据与 WCF Data Services 结合使用的数据提供程序。 但是，可以使用反射提供程序来配合使用 LINQ to SQL 类和数据服务。 <xref:System.Data.Linq.Table%601> <xref:System.Data.Linq.DataContext> LINQ to SQL 对象关系设计器 (O/R 设计器生成的方法返回的结果集) 实现 <xref:System.Linq.IQueryable%601> 接口。 这样，反射提供程序便可以通过使用生成的 LINQ to SQL 类从 SQL Server 访问这些方法和返回实体数据。 但是，由于 LINQ to SQL 不会实现 <xref:System.Data.Services.IUpdatable> 接口，因此需要添加一个可扩展现有 <xref:System.Data.Linq.DataContext> 分部类的分部类才能添加 <xref:System.Data.Services.IUpdatable> 实现。 有关详细信息，请参阅 [如何：使用 LINQ to SQL 数据源创建数据服务](create-a-data-service-using-linq-to-sql-wcf.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [数据服务提供程序](data-services-providers-wcf-data-services.md)

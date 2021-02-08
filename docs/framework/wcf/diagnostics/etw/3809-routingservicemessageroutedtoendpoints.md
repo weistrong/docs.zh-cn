@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3809-RoutingServiceMessageRoutedToEndpoints
 title: 3809 - RoutingServiceMessageRoutedToEndpoints
 ms.date: 03/30/2017
 ms.assetid: 22479cc6-72d1-48df-912c-fc37bddeb043
-ms.openlocfilehash: c34c4a96f708845ec639b77dd1fe53e56deed757
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 638d6652d8abac3302c2b98daaf3e4d114abdbd5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794164"
 ---
 # <a name="3809---routingservicemessageroutedtoendpoints"></a>3809 - RoutingServiceMessageRoutedToEndpoints
 
@@ -20,7 +21,7 @@ ms.locfileid: "96284831"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当路由服务路由到终结点时，将发出此事件。  
   

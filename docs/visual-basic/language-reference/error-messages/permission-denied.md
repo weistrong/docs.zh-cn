@@ -1,15 +1,16 @@
 ---
+description: '了解有关以下方面的详细信息：权限被拒绝 (Visual Basic) '
 title: 权限被拒绝
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID70
 ms.assetid: 71f46756-f522-4814-aab4-492bf9924245
-ms.openlocfilehash: 5ac585a86a783f36642545e368b1c2e694b89f62
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: dcd7f69c1294d22510a3600a3feb045da30faf17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871163"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795412"
 ---
 # <a name="permission-denied-visual-basic"></a>权限被拒绝 (Visual Basic)
 
@@ -23,6 +24,6 @@ ms.locfileid: "90871163"
   
 3. 若要访问注册表，请检查你的用户权限是否包括此类型的注册表访问权限。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [错误类型](../../programming-guide/language-features/error-types.md)

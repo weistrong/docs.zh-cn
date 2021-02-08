@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameSignatureVerificationFromImage 函数
 title: StrongNameSignatureVerificationFromImage 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9fb144d2-07e0-4a0e-8e05-907bbb6c9e03
 topic_type:
 - apiref
-ms.openlocfilehash: b90cc6fe99cf592f1b3fd117888462a957e4ce35
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9dca8d0b221dfe8959be2de9b8347b95d3802a0e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794489"
 ---
 # <a name="strongnamesignatureverificationfromimage-function"></a>StrongNameSignatureVerificationFromImage 函数
 
@@ -70,7 +71,7 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
 
  `true` 成功完成时;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `StrongNameSignatureVerificationFromImage` 函数未成功完成，请调用 [StrongNameErrorInfo](strongnameerrorinfo-function.md) 函数来检索上次生成的错误。  
   
@@ -84,7 +85,7 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameSignatureVerificationFromImage 方法](../hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md)
 - [ICLRStrongName 接口](../hosting/iclrstrongname-interface.md)

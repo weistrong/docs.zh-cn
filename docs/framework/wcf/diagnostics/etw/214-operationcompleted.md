@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 214-OperationCompleted
 title: 214 - OperationCompleted
 ms.date: 03/30/2017
 ms.assetid: a6287eef-023f-4816-813c-1802c82366df
-ms.openlocfilehash: 6147c70448efb122cb43a2b42a1e9b59980fab29
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aad1ac49667a2ebbf172b5132507584e05d0f03e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96278942"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794385"
 ---
 # <a name="214---operationcompleted"></a>214 - OperationCompleted
 
@@ -17,10 +18,10 @@ ms.locfileid: "96278942"
 |-|-|  
 |ID|214|  
 |关键字|HealthMonitoring，EndToEndMonitoring，疑难解答，ServiceModel|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  如果服务模型的默认 `OperationInvoker` 已完成对某一方法的调用且未导致该方法引发异常，将发出此事件。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96278942"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |方法名|`xs:string`|由 `OperationInvoker` 调用的方法的 CLR 名称。|  
 |持续时间|`xs:long`|`OperationInvoker` 调用方法所花费的时间（以毫秒为单位）。|  

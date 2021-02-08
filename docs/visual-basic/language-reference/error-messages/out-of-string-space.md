@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息： (Visual Basic 的字符串空间不足) '
 title: 字符串空间不足
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID14
 ms.assetid: 16681c75-a400-422d-9351-c691d3c7614e
-ms.openlocfilehash: 7854c822e6ed43908442b5e73ffb854d717906b5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e9dd3f8f249cf9fc32dc4560465a520d97e8c084
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795479"
 ---
 # <a name="out-of-string-space-visual-basic"></a>字符串空间不足 (Visual Basic)
 
@@ -21,7 +22,7 @@ ms.locfileid: "90871299"
   
 2. 从内存中删除所有不必要的应用程序以创建更多空间。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [错误类型](../../programming-guide/language-features/error-types.md)
 - [字符串操作摘要](../keywords/string-manipulation-summary.md)

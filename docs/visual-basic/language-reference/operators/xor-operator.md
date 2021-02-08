@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Xor 运算符 (Visual Basic) '
 title: Xor 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - Xor keyword [Visual Basic]
 - bitwise comparison [Visual Basic]
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
-ms.openlocfilehash: ce7592c73f387d6ddbfd328abce8555cb7dcd303
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 313ff30ace91b1832c0d35df13294e570a8e410d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795217"
 ---
 # <a name="xor-operator-visual-basic"></a>异或运算符 (Visual Basic)
 
@@ -78,7 +79,7 @@ result = expression1 Xor expression2
   
 ## <a name="overloading"></a>重载  
 
- `Xor`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果代码对这样的类或结构使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ `Xor`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果代码对这样的类或结构使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -96,7 +97,7 @@ result = expression1 Xor expression2
   
  前面的示例分别产生2、12和14的结果。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [逻辑/按位运算符 (Visual Basic)](logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](operator-precedence.md)

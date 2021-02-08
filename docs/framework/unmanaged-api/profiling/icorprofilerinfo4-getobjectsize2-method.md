@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo4：： GetObjectSize2 方法
 title: ICorProfilerInfo4::GetObjectSize2 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4a3e43ed-3ee3-4395-ab14-f78b903be13e
 topic_type:
 - apiref
-ms.openlocfilehash: 960f8f1fe2315e068d599aa5a31e03f521b235a8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 986c3d99501e21feec95dd3b6014f8d11d809704
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794518"
 ---
 # <a name="icorprofilerinfo4getobjectsize2-method"></a>ICorProfilerInfo4::GetObjectSize2 方法
 
@@ -42,7 +43,7 @@ HRESULT GetObjectSize2(
  `pcSize`  
  弄一个指针，指向对象的大小（以字节为单位）。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  相同类型的不同对象通常具有相同的大小。 但是，某些类型（例如数组或字符串）对于每个对象可能有不同的大小。  
   
@@ -56,6 +57,6 @@ HRESULT GetObjectSize2(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo4 接口](icorprofilerinfo4-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GetTypeLibInfo 函数
 title: GetTypeLibInfo 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
 topic_type:
 - apiref
-ms.openlocfilehash: e9f6ae9a0fcd6651395c54c2e44973e53668c1ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 61a830f3ce81345634da377f6fc815a307700e9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794463"
 ---
 # <a name="gettypelibinfo-function"></a>GetTypeLibInfo 函数
 
@@ -58,7 +59,7 @@ HRESULT GetTypeLibInfo(
  `pTypeLibMinorVer`  
  弄类型库的次版本号。 例如，对于版本 *x. y*，次版本号为 *y*。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `GetTypeLibInfo`函数由[Tlbexp.exe (类型库导出程序) ](../../tools/tlbexp-exe-type-library-exporter.md)调用。 此工具将生成一个类型库，该类型库描述公共语言运行时中的类型 (CLR) 程序集。  
   
@@ -74,7 +75,7 @@ HRESULT GetTypeLibInfo(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Tlbexp Helper 函数](index.md)
 - [LoadTypeLibEx 函数](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

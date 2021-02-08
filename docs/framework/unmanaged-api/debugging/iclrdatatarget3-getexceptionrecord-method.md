@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDataTarget3：： GetExceptionRecord 方法
 title: ICLRDataTarget3::GetExceptionRecord 方法
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 6643c2af-2ee6-4789-aa25-1d8eaf500c94
 topic_type:
 - apiref
-ms.openlocfilehash: 8f6eaa6ad310e9a01b2307bff091b670c3e1d6cb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb816d1be72ee57b556b78dba6ed7503d941b210
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723605"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794801"
 ---
 # <a name="iclrdatatarget3getexceptionrecord-method"></a>ICLRDataTarget3::GetExceptionRecord 方法
 
@@ -54,7 +55,7 @@ HRESULT GetExceptionRecord(
 |`HRESULT_FROM_WIN32(ERROR_NOT_FOUND)`|没有与目标关联的异常记录。|  
 |`HRESULT_FROM_WIN32(ERROR_BAD_LENGTH)`|输入缓冲区大小不等于 `sizeof(MINIDUMP_EXCEPTION)`。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [MINIDUMP_EXCEPTION](/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception) 是在 Windows SDK 中的 dbghelp.dll 和 imagehlp.dll 中定义的结构。  
   
@@ -70,7 +71,7 @@ HRESULT GetExceptionRecord(
   
  **.NET Framework 版本：**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRDataTarget3 接口](iclrdatatarget3-interface.md)
 - [GetExceptionContextRecord 方法](iclrdatatarget3-getexceptioncontextrecord-method.md)

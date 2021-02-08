@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：子表达式 (Visual Basic) '
 title: Sub 表达式
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Sub Expression [Visual Basic]
 - subroutines [Visual Basic], sub expressions
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
-ms.openlocfilehash: e564fa3f717fc1a9f4e9961d9b3e961912a4d56b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e47aa8f9707701b5fd9d90fb3fabb31e9c052b53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795282"
 ---
 # <a name="sub-expression-visual-basic"></a>Sub 表达式 (Visual Basic)
 
@@ -37,7 +38,7 @@ End Sub
   
 ## <a name="remarks"></a>备注  
 
- *Lambda 表达式*是不具有名称并执行一个或多个语句的子例程。 可以在任何可使用委托类型的位置使用 lambda 表达式，但参数除外 `RemoveHandler` 。 有关委托的详细信息以及对委托使用 lambda 表达式的详细信息，请参阅 [委托语句](../statements/delegate-statement.md) 和 [宽松委托转换](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)。  
+ *Lambda 表达式* 是不具有名称并执行一个或多个语句的子例程。 可以在任何可使用委托类型的位置使用 lambda 表达式，但参数除外 `RemoveHandler` 。 有关委托的详细信息以及对委托使用 lambda 表达式的详细信息，请参阅 [委托语句](../statements/delegate-statement.md) 和 [宽松委托转换](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)。  
   
 ## <a name="lambda-expression-syntax"></a>Lambda 表达式语法  
 
@@ -61,7 +62,7 @@ End Sub
   
  [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Sub 语句](../statements/sub-statement.md)
 - [Lambda 表达式](../../programming-guide/language-features/procedures/lambda-expressions.md)

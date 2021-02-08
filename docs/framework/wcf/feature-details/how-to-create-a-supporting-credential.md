@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：创建支持凭据
 title: 如何：创建支持凭据
 ms.date: 03/30/2017
 ms.assetid: d0952919-8bb4-4978-926c-9cc108f89806
-ms.openlocfilehash: 1e11da11de68b1d3e24115387ec61ad22ec031b1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2f84e58eb0b8df5e1297fcbc50ddcac96db4fe5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793813"
 ---
 # <a name="how-to-create-a-supporting-credential"></a>如何：创建支持凭据
 
@@ -30,7 +31,7 @@ ms.locfileid: "96286300"
 
  支持凭据会导致在消息内传输 *支持令牌* 。 WS-SecurityPolicy 规范定义了四种将支持令牌附加到消息的方法，如下表所述。  
   
-|目的|描述|  
+|目的|说明|  
 |-------------|-----------------|  
 |有符号|支持令牌包含在安全标头中，并由消息签名进行签名。|  
 |认可|*认可令牌* 对消息签名进行签名。|  
@@ -79,7 +80,7 @@ ms.locfileid: "96286300"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的示例创建 <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> 的一个实例，并将 <xref:System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters> 类的一个实例添加到 Endorsing 属性返回的集合中。  
   

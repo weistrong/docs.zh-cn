@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： <codeBase> 元素
 title: <codeBase> 元素
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - container tags, <codeBase> element
 - codeBase element
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
-ms.openlocfilehash: 475b7df55ed509157c1da0aeb8f979de238c72b5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 714392444d3ee3db9126e9fe67832cb5f0bf5e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70971887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795113"
 ---
 # <a name="codebase-element"></a>\<codeBase> 元素
 
@@ -40,10 +41,10 @@ ms.locfileid: "70971887"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |`href`|必需的特性。<br /><br /> 指定运行时可在其中找到程序集的指定版本的 URL。|
-|`version`|必需的特性。<br /><br /> 指定基本代码所应用的程序集的版本。 程序集版本号的格式为 "主要版本. 次要版本. 内部版本.*修订*版本"。|
+|`version`|必需的特性。<br /><br /> 指定基本代码所应用的程序集的版本。 程序集版本号的格式为 "主要版本. 次要版本. 内部版本. *修订* 版本"。|
 
 ## <a name="version-attribute"></a>version 特性
 
@@ -57,14 +58,14 @@ ms.locfileid: "70971887"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |`buildproviders`|定义用于编译自定义资源文件的生成提供程序的集合。 您可以拥有任意数量的生成提供程序。|
 |`compilation`|配置 ASP.NET 使用的所有编译设置。|
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|
 |`System.web`|为 ASP.NET 配置节指定根元素。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 为了使运行时 **\<codeBase>** 在计算机配置文件或发布服务器策略文件中使用该设置，该文件还必须重定向程序集版本。 应用程序配置文件可以具有基本代码设置，而不会重定向程序集版本。 确定要使用的程序集版本后，运行时将从确定版本的文件应用基本代码设置。 如果未指定基本代码，则运行时以常规方式探测程序集。
 
@@ -92,7 +93,7 @@ ms.locfileid: "70971887"
 </configuration>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [运行时设置架构](index.md)
 - [配置文件架构](../index.md)

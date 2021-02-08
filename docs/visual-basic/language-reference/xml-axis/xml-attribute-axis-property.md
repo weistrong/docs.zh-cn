@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的 XML 特性轴属性) '
 title: XML Attribute Axis Property
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], attribute
 - XML [Visual Basic], accessing
 ms.assetid: 7a4777e1-0618-4de9-9510-fb9ace2bf4db
-ms.openlocfilehash: 9eddd132b2d4dd6ffbd935a0c8c57a03a3d65435
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 2085ef2151e7aef7c5642e0ba9ac2e6fa90bfd4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869438"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795165"
 ---
 # <a name="xml-attribute-axis-property-visual-basic"></a>XML 特性轴属性 (Visual Basic)
 
@@ -43,7 +44,7 @@ object.@<attribute>
  `attribute`  
  必需。 要访问的属性的名称，格式为 [ `prefix` ：] `name` 。  
   
-|部件|描述|  
+|组成部分|说明|  
 |----------|-----------------|  
 |`prefix`|可选。 特性的 XML 命名空间前缀。 必须是使用 `Imports` 语句定义的全局 XML 命名空间。|  
 |`name`|必需。 本地属性名称。 请参阅已 [声明的 XML 元素和属性的名称](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)。|  
@@ -115,7 +116,7 @@ object.@<attribute>
   
  `Phone type: home`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Xml.Linq.XElement>
 - [XML 轴属性](index.md)

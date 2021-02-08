@@ -1,5 +1,6 @@
 ---
-title: '- 运算符'
+description: '了解有关以下方面的详细信息：-Operator (Visual Basic) '
+title: '- 操作员'
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Negate
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - operators [Visual Basic], negation
 - minus operator [Visual Basic]
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
-ms.openlocfilehash: b5129c2dbb361940fa6da2cb424ee23736ba72c5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 858e887fa7c5c0cc6129996c98bddb78bc53045c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875325"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795256"
 ---
 # <a name="--operator-visual-basic"></a>- 运算符 (Visual Basic)
 
@@ -67,7 +68,7 @@ or
  如果其中一个表达式的计算结果为 [Nothing](../nothing.md)，则 `–` 运算符将其视为零。  
   
 > [!NOTE]
-> `–`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果代码对这样的类或结构使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+> `–`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果代码对这样的类或结构使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -77,7 +78,7 @@ or
   
  执行这些语句后， `binaryResult` 包含124.45， `unaryResult` 包含–334.90。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [-= 运算符 (Visual Basic) ](subtraction-assignment-operator.md)
 - [算术运算符](arithmetic-operators.md)

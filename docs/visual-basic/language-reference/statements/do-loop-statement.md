@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Do .。。Loop 语句 (Visual Basic) '
 title: Do...Loop 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - loops, exiting
 - Loop keyword [Visual Basic], Do...Loop statement
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
-ms.openlocfilehash: 86a702aefeea1e5e359a579a3f29e9c06f1c619c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d170074c44d1692517f6b51abd4a6b3d005941c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90865931"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795178"
 ---
 # <a name="doloop-statement-visual-basic"></a>Do...Loop 语句 (Visual Basic)
 
@@ -83,7 +84,7 @@ Loop { While | Until } condition
 
  [Exit Do](exit-statement.md)语句可以提供退出的替代方法 `Do…Loop` 。 `Exit Do` 将控制立即传输到语句后面的语句 `Loop` 。  
   
- `Exit Do` 通常在计算某些条件后（例如在结构中）使用 `If...Then...Else` 。 如果检测到可能导致不必要或无法继续迭代的条件（如错误值或终止请求），则可能需要退出循环。 的一种用途 `Exit Do` 是测试可能导致 *无限循环*的情况，这是一个可运行很大甚至无限次数的循环。 您可以使用 `Exit Do` 来转义循环。  
+ `Exit Do` 通常在计算某些条件后（例如在结构中）使用 `If...Then...Else` 。 如果检测到可能导致不必要或无法继续迭代的条件（如错误值或终止请求），则可能需要退出循环。 的一种用途 `Exit Do` 是测试可能导致 *无限循环* 的情况，这是一个可运行很大甚至无限次数的循环。 您可以使用 `Exit Do` 来转义循环。  
   
  可以在中的任意位置包含任意数量的 `Exit Do` 语句 `Do…Loop` 。  
   
@@ -113,7 +114,7 @@ Loop { While | Until } condition
   
  [!code-vb[VbVbalrStatements#134](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#134)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [循环结构](../../programming-guide/language-features/control-flow/loop-structures.md)
 - [For...Next 语句](for-next-statement.md)

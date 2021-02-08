@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息： BC40035： <proceduresignature1> 不符合 CLS，因为它重载了 <proceduresignature2> 仅由数组参数类型的数组或数组参数类型的秩不同的
 title: <proceduresignature1> 不符合 CLS，因为它重载仅在数组参数类型的数组或数组参数类型的秩方面与它不同的 <proceduresignature2>
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40035
 ms.assetid: 50a66dbe-2c1e-41bf-96bc-369301c891ac
-ms.openlocfilehash: 5376f0513b1180da511a508cf8e0e754e8938384
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 056683033a4eacdc6ad783f5056b639e849e3507
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795386"
 ---
 # <a name="bc40035-proceduresignature1-is-not-cls-compliant-because-it-overloads-proceduresignature2-which-differs-from-it-only-by-array-of-array-parameter-types-or-by-the-rank-of-the-array-parameter-types"></a>BC40035： \<proceduresignature1> 不符合 CLS，因为它重载了 \<proceduresignature2> 仅由数组参数类型的数组或数组参数类型的秩不同的
 
@@ -41,7 +42,7 @@ ms.locfileid: "92159789"
 - 如果你需要 CLS 符合性，请将你的重载定义为与其他方法不同，而不只是此帮助页上提到的更改。
 - 如果要求重载只是在此帮助页上引用的更改不同，请 <xref:System.CLSCompliantAttribute> 从其定义中删除或将其标记为 `<CLSCompliant(False)>` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程重载](../../programming-guide/language-features/procedures/procedure-overloading.md)
 - [重载](../modifiers/overloads.md)

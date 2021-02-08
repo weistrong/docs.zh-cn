@@ -1,4 +1,5 @@
 ---
+description: '详细了解： TypeOf 运算符 (Visual Basic) '
 title: TypeOf 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - TypeOf operator [Visual Basic]
 - compatible data types [Visual Basic]
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
-ms.openlocfilehash: 0a01b49cf1e0bf9ad7b2ce541cee39cba83025ca
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 59a03095b2abbaa304221b30402b9a058954db63
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875304"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795230"
 ---
 # <a name="typeof-operator-visual-basic"></a>TypeOf 运算符 (Visual Basic)
 
@@ -50,7 +51,7 @@ result = TypeOf objectexpression IsNot typename
   
 |`typename` 的类型类别|兼容性条件|  
 |---------------------------------|-----------------------------|  
-|类|`objectexpression` 属于类型 `typename` 或继承自 `typename`|  
+|实例|`objectexpression` 属于类型 `typename` 或继承自 `typename`|  
 |结构|`objectexpression` 属于类型 `typename`|  
 |接口|`objectexpression` 实现 `typename` 或继承自实现 `typename` 的类|  
   
@@ -66,7 +67,7 @@ result = TypeOf objectexpression IsNot typename
   
  变量 `refInteger` 具有运行时类型 `Integer`。 它与 `Integer` 兼容，但不与 `Double` 兼容。 变量 `refForm` 具有运行时类型 <xref:System.Windows.Forms.Form>。 它与 <xref:System.Windows.Forms.Form> 兼容因为这是其类型，与 <xref:System.Windows.Forms.Control> 兼容因为 <xref:System.Windows.Forms.Form> 继承自 <xref:System.Windows.Forms.Control>，与 <xref:System.ComponentModel.IComponent> 兼容因为 <xref:System.Windows.Forms.Form> 继承自 <xref:System.ComponentModel.Component>（它实现 <xref:System.ComponentModel.IComponent>）。 但是，`refForm` 与 <xref:System.Windows.Forms.Label> 不兼容。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Is 运算符](is-operator.md)
 - [IsNot 运算符](isnot-operator.md)

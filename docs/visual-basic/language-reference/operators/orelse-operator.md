@@ -1,4 +1,5 @@
 ---
+description: '详细了解： OrElse Operator (Visual Basic) '
 title: OrElse 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - short-circuit evaluation
 - OrElse operator [Visual Basic]
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
-ms.openlocfilehash: edac3eeaef5d0127f10a0d570ca27c8158806ff3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 48ccbda1e0cb4f655b28e902b22fbfe0c3e66ac8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866722"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795321"
 ---
 # <a name="orelse-operator-visual-basic"></a>OrElse 运算符 (Visual Basic)
 
@@ -58,7 +59,7 @@ result = expression1 OrElse expression2
   
 ## <a name="overloading"></a>重载  
 
- 可以*重载* [Or 运算符](or-operator.md)和[IsTrue 运算符](istrue-operator.md)，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `Or` 和 `IsTrue` 运算符会影响运算符的行为 `OrElse` 。 如果你的代码 `OrElse` 在重载和的类或结构上使用 `Or` `IsTrue` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ 可以 *重载* [Or 运算符](or-operator.md)和 [IsTrue 运算符](istrue-operator.md)，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `Or` 和 `IsTrue` 运算符会影响运算符的行为 `OrElse` 。 如果你的代码 `OrElse` 在重载和的类或结构上使用 `Or` `IsTrue` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -74,7 +75,7 @@ result = expression1 OrElse expression2
   
  [!code-vb[VbVbalrOperators#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#38)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [逻辑/按位运算符 (Visual Basic)](logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](operator-precedence.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3823-RoutingServiceSendingFaultResponse
 title: 3823 - RoutingServiceSendingFaultResponse
 ms.date: 03/30/2017
 ms.assetid: 843cbce6-f2df-4067-aaf2-394b65034282
-ms.openlocfilehash: bbff8d25f76dd9a4469c9381979e02d6d3e78af0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 57d5688ab35248ed6cf84752eafeac3d4f892712
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243145"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794073"
 ---
 # <a name="3823---routingservicesendingfaultresponse"></a>3823 - RoutingServiceSendingFaultResponse
 
@@ -17,10 +18,10 @@ ms.locfileid: "96243145"
 |-|-|  
 |ID|3823|  
 |关键字|RoutingServices|  
-|Level|警告|  
+|级别|警告|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当路由服务发回故障响应消息时，发出此事件。  
   

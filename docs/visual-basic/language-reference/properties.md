@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：属性 (Visual Basic) '
 title: 属性
 ms.date: 07/20/2015
 helpviewer_keywords:
 - properties [Visual Basic]
 ms.assetid: c995caf9-8d0e-4fb8-ae02-e9e6087d7651
-ms.openlocfilehash: 1e56be71c1841c202f08b64716e62b003bda4d97
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 86b7949c2b4693221ebc43781bc31e4b512cb4d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795204"
 ---
 # <a name="properties-visual-basic"></a>属性 (Visual Basic)
 
@@ -30,6 +31,6 @@ ms.locfileid: "84406296"
 |<xref:Microsoft.VisualBasic.DateAndTime.TimeString%2A>|返回或设置一个 `String` 值，该值表示根据系统的当前时间。|  
 |<xref:Microsoft.VisualBasic.DateAndTime.Today%2A>|返回或设置一个 `Date` 值，该值包含对应于系统的当前日期。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 语言参考](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDataTarget：： WriteVirtual 方法
 title: ICLRDataTarget::WriteVirtual 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d627e8b7-a605-40ac-b9bb-da9a3f1b66d9
 topic_type:
 - apiref
-ms.openlocfilehash: df9315d4e007305fb38153e116dde02ba7f3a1b7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 29ff8d629c5797099dab155802fff99786f4ce15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794853"
 ---
 # <a name="iclrdatatargetwritevirtual-method"></a>ICLRDataTarget::WriteVirtual 方法
 
@@ -62,6 +63,6 @@ HRESULT WriteVirtual (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRDataTarget 接口](iclrdatatarget-interface.md)

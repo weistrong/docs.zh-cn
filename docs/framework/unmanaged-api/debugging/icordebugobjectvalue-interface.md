@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugObjectValue 接口
 title: ICorDebugObjectValue 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 937de6a0-6fbf-4ddc-80ea-a6217b73e62b
 topic_type:
 - apiref
-ms.openlocfilehash: 2a5a618491bf2c624669728d97a690cca315bff8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a2af438bbb4c2f56eb1a72151e339b6b0a978eec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724671"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794762"
 ---
 # <a name="icordebugobjectvalue-interface"></a>ICorDebugObjectValue 接口
 
@@ -37,7 +38,7 @@ ms.locfileid: "95724671"
 |[IsValueClass 方法](icordebugobjectvalue-isvalueclass-method.md)|获取一个值，该值指示由此引用的对象是否 `ICorDebugObjectValue` 为值类型。|  
 |[SetFromManagedCopy 方法](icordebugobjectvalue-setfrommanagedcopy-method.md)|已过时。 请勿调用此方法。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 `ICorDebugObjectValue` 继续进行调试之前，将一直有效。  
   
@@ -54,6 +55,6 @@ ms.locfileid: "95724671"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解更多详细信息：在会话中对排队消息进行分组
 title: 在会话中对排队消息进行分组
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - queues [WCF]. grouping messages
 ms.assetid: 63b23b36-261f-4c37-99a2-cc323cd72a1a
-ms.openlocfilehash: 9ad3bd29535e14231d07b9e491e606f8349ca3ac
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5a23133090ebfd5db9f59bb37a69cdca83ce2bc0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793839"
 ---
 # <a name="grouping-queued-messages-in-a-session"></a>在会话中对排队消息进行分组
 
@@ -72,7 +73,7 @@ Windows Communication Foundation (WCF) 提供了一个会话，该会话可用�
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的示例提供 `IProcessOrder` 服务的代码和一个使用此服务的客户端的代码。 其中显示了 WCF 如何使用排队会话来提供分组行为。  
   
@@ -86,7 +87,7 @@ Windows Communication Foundation (WCF) 提供了一个会话，该会话可用�
  [!code-csharp[S_Msmq_Session#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_session/cs/client.cs#3)]
  [!code-vb[S_Msmq_Session#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_session/vb/client.vb#3)]  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [会话和队列](../samples/sessions-and-queues.md)
 - [队列概述](queues-overview.md)

@@ -1,17 +1,18 @@
 ---
+description: 了解详细信息：如何：使用 Windows Server App Fabric 承载工作流服务
 title: 如何：使用 Windows Server App Fabric 承载工作流服务
 ms.date: 03/30/2017
 ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
-ms.openlocfilehash: 2cf77753a0540e75ae6778065f7fa006729f8d6a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 057e81c50844d1a36e32fe899de3469f024d775b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793800"
 ---
 # <a name="how-to-host-a-workflow-service-with-windows-server-app-fabric"></a>如何：使用 Windows Server App Fabric 承载工作流服务
 
-在 App Fabric 中承载工作流服务类似于在 IIS/WAS 下承载。 唯一的区别在于 App Fabric 提供的用于部署、监控和管理工作流服务的工具。 本主题使用在 [创建长时间运行的工作流服务](creating-a-long-running-workflow-service.md)中创建的工作流服务。 本主题将指导您创建工作流服务。 本主题将介绍如何使用 App Fabric 承载工作流服务。 有关 Windows Server App Fabric 的详细信息，请参阅 [Windows Server App Fabric 文档](/previous-versions/appfabric/ff384253(v=azure.10))。 完成以下步骤之前，请确保已安装 Windows Server App Fabric。  为此，请打开 Internet Information Services ( # A0) ，在 " **连接** " 视图中单击您的服务器名称，单击 "站点"，然后单击 " **默认**网站"。 在屏幕右侧，应会看到一个名为 " **App Fabric**" 的部分。 如果您看不到这一部分（它位于右侧窗格的顶部），则表示您还未安装 App Fabric。 有关安装 Windows Server App Fabric 的详细信息，请参阅 [安装 Windows Server App fabric](/previous-versions/appfabric/ee790960(v=azure.10))。  
+在 App Fabric 中承载工作流服务类似于在 IIS/WAS 下承载。 唯一的区别在于 App Fabric 提供的用于部署、监控和管理工作流服务的工具。 本主题使用在 [创建长时间运行的工作流服务](creating-a-long-running-workflow-service.md)中创建的工作流服务。 本主题将指导您创建工作流服务。 本主题将介绍如何使用 App Fabric 承载工作流服务。 有关 Windows Server App Fabric 的详细信息，请参阅 [Windows Server App Fabric 文档](/previous-versions/appfabric/ff384253(v=azure.10))。 完成以下步骤之前，请确保已安装 Windows Server App Fabric。  为此，请打开 Internet Information Services ( # A0) ，在 " **连接** " 视图中单击您的服务器名称，单击 "站点"，然后单击 " **默认** 网站"。 在屏幕右侧，应会看到一个名为 " **App Fabric**" 的部分。 如果您看不到这一部分（它位于右侧窗格的顶部），则表示您还未安装 App Fabric。 有关安装 Windows Server App Fabric 的详细信息，请参阅 [安装 Windows Server App fabric](/previous-versions/appfabric/ee790960(v=azure.10))。  
   
 ### <a name="creating-a-simple-workflow-service"></a>创建简单工作流服务  
   
@@ -35,23 +36,23 @@ ms.locfileid: "90555980"
   
 4. 选择 " **常规** " 选项卡以显示有关应用程序的一般信息，如以下屏幕截图所示。  
   
-     ![“App Fabric 配置”对话框的“常规”选项卡](media/appfabricconfiguration-general.gif "AppFabricConfiguration-常规")  
+     ![“App Fabric 配置”对话框的“常规”选项卡](media/appfabricconfiguration-general.gif "AppFabricConfiguration-General")  
   
 5. 选择 " **监视** " 选项卡。这会显示各种监视设置，如以下屏幕截图所示。  
   
-     ![“App Fabric 配置监视”选项卡](media/appfabricconfiguration-monitoring.gif "AppFabricConfiguration-监视")  
+     ![“App Fabric 配置监视”选项卡](media/appfabricconfiguration-monitoring.gif "AppFabricConfiguration-Monitoring")  
   
      有关在应用结构中配置工作流服务监视的详细信息，请参阅 [配置应用构造监视](/previous-versions/appfabric/ee677384(v=azure.10))。  
   
 6. 选择 " **工作流持久性** " 选项卡。这使你可以将应用程序配置为使用 App Fabric 的默认永久性提供程序，如以下屏幕截图所示。  
   
-     ![应用程序结构配置 &#45; 持久性](media/appfabricconfiguration-persistence.gif "AppFabricConfiguration-持久性")  
+     ![应用程序结构配置 &#45; 持久性](media/appfabricconfiguration-persistence.gif "AppFabricConfiguration-Persistence")  
   
      有关在 Windows Server App Fabric 中配置工作流持久性的详细信息，请参阅 [在应用结构中配置工作流持久性](/previous-versions/appfabric/ee677353(v=azure.10))。  
   
 7. 选择 " **工作流主机管理** " 选项卡。这样，你可以指定何时卸载和持久保存空闲工作流服务实例，如以下屏幕截图中所示。  
   
-     ![应用结构配置工作流主机管理](media/appfabricconfiguration-management.gif "AppFabricConfiguration-管理")  
+     ![应用结构配置工作流主机管理](media/appfabricconfiguration-management.gif "AppFabricConfiguration-Management")  
   
      有关工作流主机管理配置的详细信息，请参阅 [在应用结构中配置工作流主机管理](/previous-versions/appfabric/ff383424(v=azure.10))。  
   
@@ -69,7 +70,7 @@ ms.locfileid: "90555980"
   
 10. 选择 " **安全** " 选项卡。这允许你为应用程序配置安全设置，如以下屏幕截图所示。  
   
-     ![App Fabric 安全配置](media/appfabricconfiguration-security.gif "AppFabricConfiguration-安全性")  
+     ![App Fabric 安全配置](media/appfabricconfiguration-security.gif "AppFabricConfiguration-Security")  
   
      有关配置 Windows Server App Fabric 安全性的详细信息，请参阅 [配置应用程序结构的安全性](/previous-versions/appfabric/ee677278(v=azure.10))。  
   
@@ -85,7 +86,7 @@ ms.locfileid: "90555980"
   
      ![显示 App Fabric 仪表板的屏幕截图。](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/app-fabric-dashboard.gif)  
   
-     **WF 实例历史记录**列出了有关工作流服务的信息，例如工作流服务激活次数、工作流服务实例完成的数目，以及有故障的工作流实例数。 在 "活动" 或 "空闲实例" 下，将显示一个链接，单击该链接将显示有关空闲工作流实例的详细信息，如以下屏幕截图中所示。  
+     **WF 实例历史记录** 列出了有关工作流服务的信息，例如工作流服务激活次数、工作流服务实例完成的数目，以及有故障的工作流实例数。 在 "活动" 或 "空闲实例" 下，将显示一个链接，单击该链接将显示有关空闲工作流实例的详细信息，如以下屏幕截图中所示。  
   
      ![显示保存的工作流实例详细信息的屏幕截图。](./media/how-to-host-a-workflow-service-with-windows-server-app-fabric/persisted-workflow-instance-detail.gif)  
   

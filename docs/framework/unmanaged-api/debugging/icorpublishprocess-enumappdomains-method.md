@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorPublishProcess：： EnumAppDomains 方法
 title: ICorPublishProcess::EnumAppDomains 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7da621fc-e7d0-4c00-9439-5c93619d7414
 topic_type:
 - apiref
-ms.openlocfilehash: 2acf8fb507ab617e066a31c9c2657b1ef0d18e47
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c7834b23967ab467c1589ee31929bf346b4b3b8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95693276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794600"
 ---
 # <a name="icorpublishprocessenumappdomains-method"></a>ICorPublishProcess::EnumAppDomains 方法
 
@@ -39,7 +40,7 @@ HRESULT EnumAppDomains (
  `ppEnum`  
  弄一个指针，指向允许在此进程中通过应用程序域集合进行迭代的 [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md) 实例的地址。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  应用程序域的列表基于在调用方法时存在的应用程序域的快照 `EnumAppDomains` 。 可以多次调用此方法来创建新的最新列表。 此方法的后续调用将不会影响现有列表。  
   
@@ -55,6 +56,6 @@ HRESULT EnumAppDomains (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorPublishProcess 接口](icorpublishprocess-interface.md)

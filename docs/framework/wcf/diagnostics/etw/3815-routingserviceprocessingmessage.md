@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3815-RoutingServiceProcessingMessage
 title: 3815 - RoutingServiceProcessingMessage
 ms.date: 03/30/2017
 ms.assetid: c632b4a6-31f2-4f81-a484-02eb340ae951
-ms.openlocfilehash: 45f8d7e3bffab9e385678b14b0f754b710966924
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2b01e35aee261d173d26b7fa1fb3c1e719beefaf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284727"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794151"
 ---
 # <a name="3815---routingserviceprocessingmessage"></a>3815 - RoutingServiceProcessingMessage
 
@@ -17,10 +18,10 @@ ms.locfileid: "96284727"
 |-|-|  
 |ID|3815|  
 |关键字|RoutingServices|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当路由服务正在处理某一消息时，将发出此事件。  
   

@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：路径/文件访问错误
 title: 路径/文件访问错误
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID75
 ms.assetid: 6ce3a161-7316-46bd-a785-0d50e5414020
-ms.openlocfilehash: 70de8f9cb33ab3d889f4916ae3d5de48cd218092
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d4fc7e716f025c0a482ab414f4a25a2b521634e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871190"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795438"
 ---
 # <a name="pathfile-access-error"></a>路径/文件访问错误
 
@@ -25,6 +26,6 @@ ms.locfileid: "90871190"
   
 4. 请确保未尝试在数据库或文档中更改 Visual Basic 项目。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [错误类型](../../programming-guide/language-features/error-types.md)
