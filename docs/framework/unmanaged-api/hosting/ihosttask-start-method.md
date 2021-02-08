@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTask：： Start 方法
 title: IHostTask::Start 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,47 +16,47 @@ helpviewer_keywords:
 ms.assetid: b18742b0-d8c4-401c-ae89-e6eccdaa81d0
 topic_type:
 - apiref
-ms.openlocfilehash: 4143c3d25dd5262a10b53708a249910cc79f5314
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 48352a3df49ba2ef3e008ed211da19f54deb82f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784621"
 ---
-# <a name="ihosttaskstart-method"></a><span data-ttu-id="01c29-102">IHostTask::Start 方法</span><span class="sxs-lookup"><span data-stu-id="01c29-102">IHostTask::Start Method</span></span>
+# <a name="ihosttaskstart-method"></a><span data-ttu-id="363e1-103">IHostTask::Start 方法</span><span class="sxs-lookup"><span data-stu-id="363e1-103">IHostTask::Start Method</span></span>
 
-<span data-ttu-id="01c29-103">请求宿主将当前 [IHostTask](ihosttask-interface.md) 实例表示的任务从挂起状态移动到实时状态，在此状态下可以执行代码。</span><span class="sxs-lookup"><span data-stu-id="01c29-103">Requests that the host move the task represented by the current [IHostTask](ihosttask-interface.md) instance from a suspended to a live state, in which code can be executed.</span></span>  
+<span data-ttu-id="363e1-104">请求宿主将当前 [IHostTask](ihosttask-interface.md) 实例表示的任务从挂起状态移动到实时状态，在此状态下可以执行代码。</span><span class="sxs-lookup"><span data-stu-id="363e1-104">Requests that the host move the task represented by the current [IHostTask](ihosttask-interface.md) instance from a suspended to a live state, in which code can be executed.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="01c29-104">语法</span><span class="sxs-lookup"><span data-stu-id="01c29-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="363e1-105">语法</span><span class="sxs-lookup"><span data-stu-id="363e1-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT Start ();  
 ```  
   
-## <a name="return-value"></a><span data-ttu-id="01c29-105">返回值</span><span class="sxs-lookup"><span data-stu-id="01c29-105">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="363e1-106">返回值</span><span class="sxs-lookup"><span data-stu-id="363e1-106">Return Value</span></span>  
   
-|<span data-ttu-id="01c29-106">HRESULT</span><span class="sxs-lookup"><span data-stu-id="01c29-106">HRESULT</span></span>|<span data-ttu-id="01c29-107">说明</span><span class="sxs-lookup"><span data-stu-id="01c29-107">Description</span></span>|  
+|<span data-ttu-id="363e1-107">HRESULT</span><span class="sxs-lookup"><span data-stu-id="363e1-107">HRESULT</span></span>|<span data-ttu-id="363e1-108">说明</span><span class="sxs-lookup"><span data-stu-id="363e1-108">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="01c29-108">S_OK</span><span class="sxs-lookup"><span data-stu-id="01c29-108">S_OK</span></span>|<span data-ttu-id="01c29-109">已成功启动。</span><span class="sxs-lookup"><span data-stu-id="01c29-109">Start returned successfully.</span></span>|  
-|<span data-ttu-id="01c29-110">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="01c29-110">E_FAIL</span></span>|<span data-ttu-id="01c29-111">发生未知的灾难性故障。</span><span class="sxs-lookup"><span data-stu-id="01c29-111">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="01c29-112">当方法返回 E_FAIL 时，公共语言运行时 (CLR) 在该进程内不再可用。</span><span class="sxs-lookup"><span data-stu-id="01c29-112">When a method returns E_FAIL, the common language runtime (CLR) is no longer usable within the process.</span></span> <span data-ttu-id="01c29-113">对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。</span><span class="sxs-lookup"><span data-stu-id="01c29-113">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
+|<span data-ttu-id="363e1-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="363e1-109">S_OK</span></span>|<span data-ttu-id="363e1-110">已成功启动。</span><span class="sxs-lookup"><span data-stu-id="363e1-110">Start returned successfully.</span></span>|  
+|<span data-ttu-id="363e1-111">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="363e1-111">E_FAIL</span></span>|<span data-ttu-id="363e1-112">发生未知的灾难性故障。</span><span class="sxs-lookup"><span data-stu-id="363e1-112">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="363e1-113">当方法返回 E_FAIL 时，公共语言运行时 (CLR) 在该进程内不再可用。</span><span class="sxs-lookup"><span data-stu-id="363e1-113">When a method returns E_FAIL, the common language runtime (CLR) is no longer usable within the process.</span></span> <span data-ttu-id="363e1-114">对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。</span><span class="sxs-lookup"><span data-stu-id="363e1-114">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="01c29-114">注解</span><span class="sxs-lookup"><span data-stu-id="01c29-114">Remarks</span></span>  
+## <a name="remarks"></a><span data-ttu-id="363e1-115">备注</span><span class="sxs-lookup"><span data-stu-id="363e1-115">Remarks</span></span>  
 
- <span data-ttu-id="01c29-115">`Start` 始终返回 S_OK 的 HRESULT 值，但发生灾难性故障的情况除外。</span><span class="sxs-lookup"><span data-stu-id="01c29-115">`Start` always returns an HRESULT value of S_OK, except in cases where a catastrophic failure has occurred.</span></span>  
+ <span data-ttu-id="363e1-116">`Start` 始终返回 S_OK 的 HRESULT 值，但发生灾难性故障的情况除外。</span><span class="sxs-lookup"><span data-stu-id="363e1-116">`Start` always returns an HRESULT value of S_OK, except in cases where a catastrophic failure has occurred.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="01c29-116">要求</span><span class="sxs-lookup"><span data-stu-id="01c29-116">Requirements</span></span>  
+## <a name="requirements"></a><span data-ttu-id="363e1-117">要求</span><span class="sxs-lookup"><span data-stu-id="363e1-117">Requirements</span></span>  
 
- <span data-ttu-id="01c29-117">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="01c29-117">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+ <span data-ttu-id="363e1-118">**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。</span><span class="sxs-lookup"><span data-stu-id="363e1-118">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="01c29-118">**标头：** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="01c29-118">**Header:** MSCorEE.h</span></span>  
+ <span data-ttu-id="363e1-119">**标头：** Mscoree.dll</span><span class="sxs-lookup"><span data-stu-id="363e1-119">**Header:** MSCorEE.h</span></span>  
   
- <span data-ttu-id="01c29-119">**库：** 作为中的资源包含 MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="01c29-119">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+ <span data-ttu-id="363e1-120">**库：** 作为中的资源包含 MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="363e1-120">**Library:** Included as a resource in MSCorEE.dll</span></span>  
   
- <span data-ttu-id="01c29-120">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="01c29-120">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+ <span data-ttu-id="363e1-121">**.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="363e1-121">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="01c29-121">另请参阅</span><span class="sxs-lookup"><span data-stu-id="01c29-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="363e1-122">请参阅</span><span class="sxs-lookup"><span data-stu-id="363e1-122">See also</span></span>
 
-- [<span data-ttu-id="01c29-122">ICLRTask 接口</span><span class="sxs-lookup"><span data-stu-id="01c29-122">ICLRTask Interface</span></span>](iclrtask-interface.md)
-- [<span data-ttu-id="01c29-123">ICLRTaskManager 接口</span><span class="sxs-lookup"><span data-stu-id="01c29-123">ICLRTaskManager Interface</span></span>](iclrtaskmanager-interface.md)
-- [<span data-ttu-id="01c29-124">IHostTask 接口</span><span class="sxs-lookup"><span data-stu-id="01c29-124">IHostTask Interface</span></span>](ihosttask-interface.md)
-- [<span data-ttu-id="01c29-125">IHostTaskManager 接口</span><span class="sxs-lookup"><span data-stu-id="01c29-125">IHostTaskManager Interface</span></span>](ihosttaskmanager-interface.md)
+- [<span data-ttu-id="363e1-123">ICLRTask 接口</span><span class="sxs-lookup"><span data-stu-id="363e1-123">ICLRTask Interface</span></span>](iclrtask-interface.md)
+- [<span data-ttu-id="363e1-124">ICLRTaskManager 接口</span><span class="sxs-lookup"><span data-stu-id="363e1-124">ICLRTaskManager Interface</span></span>](iclrtaskmanager-interface.md)
+- [<span data-ttu-id="363e1-125">IHostTask 接口</span><span class="sxs-lookup"><span data-stu-id="363e1-125">IHostTask Interface</span></span>](ihosttask-interface.md)
+- [<span data-ttu-id="363e1-126">IHostTaskManager 接口</span><span class="sxs-lookup"><span data-stu-id="363e1-126">IHostTaskManager Interface</span></span>](ihosttaskmanager-interface.md)
