@@ -1,15 +1,16 @@
 ---
-title: 安全性
+description: 了解详细信息：安全性
+title: 安全
 ms.date: 03/30/2017
 ms.assetid: 737ec121-bfc5-4b75-a504-2d53c2c8af39
-ms.openlocfilehash: e4419a7a73015541e0a75b4f8c615485c5fdac1b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8f095292deac77c1c72cf87a93064569f7dab982
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798090"
 ---
-# <a name="security"></a>安全性
+# <a name="security"></a>安全
 
 SQL 工作流实例存储使用以下数据库安全角色确保安全访问持久性数据库中的实例状态信息。  
   

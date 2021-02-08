@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： WorkflowHostingEndpoint 恢复书签
 title: WorkflowHostingEndpoint 恢复书签
 ms.date: 03/30/2017
 ms.assetid: a708064f-50b0-4751-b44e-d5410d08d451
-ms.openlocfilehash: b7f701c012c05dcc7e05c56123436af3dbacf4c4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3da4579a7c0c09122cacaa5e3db39359b8e62936
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267437"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798129"
 ---
 # <a name="workflowhostingendpoint-resume-bookmark"></a>WorkflowHostingEndpoint 恢复书签
 
@@ -31,7 +32,7 @@ ms.locfileid: "96267437"
   
 1. 生成解决方案。  
   
-2. 运行该应用程序。 当创建工作流实例时，`CreationEndpoint` 控制台会显示一条消息，其中包含该工作流实例 ID。 消息 "Hello World！" 在成功恢复书签时，工作流将打印。  
+2. 运行应用程序。 当创建工作流实例时，`CreationEndpoint` 控制台会显示一条消息，其中包含该工作流实例 ID。 消息 "Hello World！" 在成功恢复书签时，工作流将打印。  
   
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：  

@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：参数 not optional (Visual Basic) '
 title: 自变量不可选
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID449
 ms.assetid: 76e7bcf3-24ed-4cd5-945b-b98f1c76944b
-ms.openlocfilehash: cac81d364d71af65d922faa2f2db5d7ede415126
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3683f07174b980f6ceebf42151658a5be4615310
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797154"
 ---
 # <a name="argument-not-optional-visual-basic"></a>非可选自变量 (Visual Basic)
 
@@ -21,6 +22,6 @@ ms.locfileid: "84409980"
   
 2. 请确保省略的参数是可选的。 如果不是，则在调用中提供参数，或在定义中声明参数 `Optional` 。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [错误类型](../../programming-guide/language-features/error-types.md)

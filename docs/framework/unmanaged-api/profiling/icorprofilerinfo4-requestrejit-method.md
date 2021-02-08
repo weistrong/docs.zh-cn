@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo4：： RequestReJIT 方法
 title: ICorProfilerInfo4::RequestReJIT 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 781ed736-f30c-4816-920e-3552e36542c6
 topic_type:
 - apiref
-ms.openlocfilehash: 92e2901b2c228e4b774fbb1dbcc66cd0b4f82087
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2da65c2db5722f689f1a8588169ea099aff71be6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799013"
 ---
 # <a name="icorprofilerinfo4requestrejit-method"></a>ICorProfilerInfo4::RequestReJIT 方法
 
@@ -59,7 +60,7 @@ HRESULT RequestReJIT (
 |||  
 |E_OUTOFMEMORY|CLR 无法完成请求，因为它已耗尽内存。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用 `RequestReJIT` 以使运行时重新编译一组指定的函数。 然后，代码探查器可以使用 [ICorProfilerFunctionControl](icorprofilerfunctioncontrol-interface.md) 接口来调整重新编译函数时生成的代码。 这不会影响当前正在执行的函数，仅影响将来的函数调用。 如果此前已 JIT 重新编译任意指定函数，请求重新编译是指还原和重新编译函数。 若要保留可还原性，当 JIT 编译器编译函数的原始版本时，将仅考虑被调用方用于内联决定的原始版本。 JIT 编译器重新编译函数时，将考虑被调用方用于内联的当前版本（重新编译版本或原始版本）。  
   
@@ -75,7 +76,7 @@ HRESULT RequestReJIT (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo4 接口](icorprofilerinfo4-interface.md)
 - [分析接口](profiling-interfaces.md)

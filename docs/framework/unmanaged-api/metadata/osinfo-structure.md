@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： OSINFO 结构
 title: OSINFO 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fac7b480-7adb-4450-a5e9-690fed81ffae
 topic_type:
 - apiref
-ms.openlocfilehash: 49e29cc0367d5162dffcd641b163fd7b9a56ffd0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5027ef5cf4137aa1e781134b325407e1251fdd31
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799091"
 ---
 # <a name="osinfo-structure"></a>OSINFO 结构
 
@@ -43,7 +44,7 @@ typedef struct {
 |`dwOSMajorVersion`|操作系统主版本，或指示任何版本的 NULL 值。|  
 |`dwOSMinorVersion`|操作系统次要版本，或指示任何版本的 NULL 值。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `OSINFO` 基于对 `OSVERSIONINFOEX` Microsoft Windows 平台函数的调用中使用的结构 `GetVersionEx` 。 ASSEMBLYMETADATA 结构使用此结构来指示其操作系统支持。  
   
@@ -57,7 +58,7 @@ typedef struct {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据结构](metadata-structures.md)
 - [IMetaDataAssemblyEmit 接口](imetadataassemblyemit-interface.md)

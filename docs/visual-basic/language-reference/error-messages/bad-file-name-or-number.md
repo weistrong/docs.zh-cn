@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：文件名错误或号码无效
 title: 错误的文件名或文件号
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID52
 ms.assetid: d0e96aea-7621-48f6-a78b-5d37d18aaa4e
-ms.openlocfilehash: d57a9e78e6ae179d3050e5a92399ca731fa16ba7
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6e568a721fb3606c5b4bc046041c9d6f24b6d126
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874907"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797063"
 ---
 # <a name="bad-file-name-or-number"></a>错误的文件名或文件号
 
@@ -29,7 +30,7 @@ ms.locfileid: "90874907"
   
 3. 检查文件名，确保它们符合操作系统约定。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
 - [Visual Basic 命名约定](../../programming-guide/program-structure/naming-conventions.md)

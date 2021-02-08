@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC42033：错误的校验和值、非十六进制数字或奇数个十六进制数字
 title: 错误的校验和值、非十六进制数字或奇数个十六进制数字
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42033
 ms.assetid: 4575554d-3615-46e4-9c6a-18e9c338e4ed
-ms.openlocfilehash: e380033f9353781ee7dc86696e93c8d0f18a1a73
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 8af1ca5e3f733278054300c2a79134817c56cf5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162968"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797102"
 ---
 # <a name="bc42033-bad-checksum-value-non-hex-digits-or-odd-number-of-hex-digits"></a>BC42033：错误的校验和值、非十六进制数字或奇数个十六进制数字
 
@@ -32,7 +33,7 @@ ms.locfileid: "92162968"
 
 3. 如果警告仍然存在或者你没有使用 ASP.NET，请收集有关此情形的信息，并通知 Microsoft 产品支持服务。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ASP.NET 概述](/aspnet/overview)
 - [与我们交流](/visualstudio/ide/feedback-options)

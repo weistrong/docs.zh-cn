@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerObjectEnum：： Clone 方法
 title: ICorProfilerObjectEnum::Clone 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0b2facd-5991-4f4c-932d-c4937f45cef9
 topic_type:
 - apiref
-ms.openlocfilehash: df1d5881bccdb357b16c7f02cd090388e0f66273
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 59971f6f6e7edab4b4c4f796ee7bea3c4d8b4e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798948"
 ---
 # <a name="icorprofilerobjectenumclone-method"></a>ICorProfilerObjectEnum::Clone 方法
 
@@ -48,6 +49,6 @@ HRESULT Clone (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerObjectEnum 接口](icorprofilerobjectenum-interface.md)

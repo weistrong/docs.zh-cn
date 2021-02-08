@@ -1,15 +1,16 @@
 ---
+description: 了解更多相关信息：出现了意外错误，因为无法获取单一实例启动所需的操作系统资源
 title: 发生错误，因为无法获得单个实例启动所需的操作系统资源
 ms.date: 07/20/2015
 f1_keywords:
 - vbrAppModel_CantGetMemoryMappedFile
 ms.assetid: 0d9f2a30-ff72-4355-8060-744f22339359
-ms.openlocfilehash: 640e32dc7f748ecd0a999a8432512103f46862c2
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 43ac84e053def32cd5fa0dfc798bd47a022c0471
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73976180"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797167"
 ---
 # <a name="an-unexpected-error-has-occurred-because-an-operating-system-resource-required-for-single-instance-startup-cannot-be-acquired"></a>发生错误，因为无法获得单个实例启动所需的操作系统资源
 
@@ -31,7 +32,7 @@ ms.locfileid: "73976180"
   
 4. 记录发生错误的环境，并与 Microsoft 产品支持服务联系  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [“项目设计器”->“应用程序”页 (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)
 - [调试器基础知识](/visualstudio/debugger/debugger-basics)

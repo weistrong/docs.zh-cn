@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumUnresolvedMethods 方法
 title: IMetaDataImport::EnumUnresolvedMethods 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eb3187d7-74cf-44b1-aeeb-7a8d2b60e3b7
 topic_type:
 - apiref
-ms.openlocfilehash: 6b5e7bbe2303a200d7829fea12e228a513595f97
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e894ecdde91a2263783234d73fa50d890a13e413
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799325"
 ---
 # <a name="imetadataimportenumunresolvedmethods-method"></a>IMetaDataImport::EnumUnresolvedMethods 方法
 
@@ -58,7 +59,7 @@ HRESULT EnumUnresolvedMethods (
 |`S_OK`|`EnumUnresolvedMethods` 已成功返回。|  
 |`S_FALSE`|没有要枚举的令牌。 在这种情况下， `pcTokens` 为零。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  未解析的方法是已声明但未实现的方法。 如果方法已标记 `miForwardRef` 并且 `mdPinvokeImpl` 或 `miRuntime` 设置为零，则枚举中将包含方法。 换句话说，未解析的方法是已标记 `miForwardRef` 但未在非托管代码中实现的类方法 (通过 PInvoke) 或由运行时本身内部实现  
   
@@ -74,7 +75,7 @@ HRESULT EnumUnresolvedMethods (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

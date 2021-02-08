@@ -1,15 +1,16 @@
 ---
+description: 了解更多：文件模式错误
 title: 错误的文件模式
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID54
 ms.assetid: 74891e96-884b-4c8d-872d-cd11ae272372
-ms.openlocfilehash: 99b84902ddf032f2ecb6e26400e200bea862dfdf
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: da792407fb37f5c206be7ff39da14d314ef1e2d2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875145"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797076"
 ---
 # <a name="bad-file-mode"></a>错误的文件模式
 
@@ -35,7 +36,7 @@ ms.locfileid: "90875145"
   
 - 使用 `My.Computer.FileSystem` 对象中的可用功能。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.FileSystem>
 - [疑难解答：读取和写入文本文件](../../developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： #Region 指令'
 title: '#Region 指令'
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - region directive (#region)
 - '#Region keyword [Visual Basic]'
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
-ms.openlocfilehash: cd53a6079c1564a8c73a0a1a6273fc166d18d3e6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4ba1645cfc51a69d39e6a60b5ea236dd65883e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409929"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797219"
 ---
 # <a name="region-directive"></a>#Region 指令
 
@@ -37,7 +38,7 @@ ms.locfileid: "84409929"
   
 ## <a name="remarks"></a>备注  
 
- 使用 `#Region` 指令指定使用 Visual Studio Code 编辑器的大纲显示功能时要展开或折叠的代码块。 您可以在其他区域中放置或*嵌套*区域，以将类似区域组合在一起。  
+ 使用 `#Region` 指令指定使用 Visual Studio Code 编辑器的大纲显示功能时要展开或折叠的代码块。 您可以在其他区域中放置或 *嵌套* 区域，以将类似区域组合在一起。  
   
 ## <a name="example"></a>示例  
 
@@ -45,7 +46,7 @@ ms.locfileid: "84409929"
   
  [!code-vb[VbVbalrConditionalComp#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#4)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [#If...Then...#Else 指令](if-then-else-directives.md)
 - [大纲显示](/visualstudio/ide/outlining)

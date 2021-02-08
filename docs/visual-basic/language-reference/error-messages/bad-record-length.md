@@ -1,15 +1,16 @@
 ---
+description: 了解更多：错误的记录长度
 title: 错误的记录长度
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID59
 ms.assetid: 0926a3a4-177b-4452-9b33-d8a01e24cc21
-ms.openlocfilehash: 6967015572b2567f52697f7ddcb1ff594013a2c4
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 820597a3c4e157894aadb280ae141098cae7eed4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797050"
 ---
 # <a name="bad-record-length"></a>错误的记录长度
 
@@ -29,7 +30,7 @@ ms.locfileid: "90869264"
   
 3. 如果或中的变量 `FilePut` `FilePutObject` 为或包含， `Variant` 请确保长度可变的字符串至少比语句的子句中指定的记录长度少4个字节 `Len` `FileOpen` 。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.FileSystem.FileGet%2A>
 - <xref:Microsoft.VisualBasic.FileSystem.FileGetObject%2A>

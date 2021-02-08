@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： #If .。。Then ... #Else 指令'
 title: '#If...Then...#Else 指令'
 ms.date: 04/11/2018
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - else directive (#else)
 - '#Else directive [Visual Basic]'
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
-ms.openlocfilehash: 7054a6ada4583c5d89e020437eb622a59d3eb17a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fd95d259315e0bd6fd6ab2a3f222288bb4726ce6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410005"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797245"
 ---
 # <a name="ifthenelse-directives"></a>#If...Then...#Else 指令
 
@@ -84,7 +85,7 @@ Public Function SomeFunction() As String
 
 [!code-vb[VbVbalrConditionalComp#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#1)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [#Const 指令](const-directive.md)
 - [If...Then...Else 语句](../statements/if-then-else-statement.md)

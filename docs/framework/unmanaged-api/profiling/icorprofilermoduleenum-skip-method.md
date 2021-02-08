@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerModuleEnum：： Skip 方法
 title: ICorProfilerModuleEnum::Skip 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8dc29c6a-e2ba-41d8-a1e0-0fdd21421e0b
 topic_type:
 - apiref
-ms.openlocfilehash: 6a967f9a50b3220e2d5e206503330a2bab764c4b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4d814e5e9e369fe286b471fadc9675345cfb5b94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798961"
 ---
 # <a name="icorprofilermoduleenumskip-method"></a>ICorProfilerModuleEnum::Skip 方法
 
@@ -46,7 +47,7 @@ HRESULT Skip([in] ULONG celt);
 |S_OK|`celt` 元素已被跳过。|  
 |S_FALSE|`celt`跳过的元素数少于个，这表示没有更多元素。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此枚举器的游标的新位置 (当前位置) + `celt` 。  
   
@@ -60,7 +61,7 @@ HRESULT Skip([in] ULONG celt);
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerModuleEnum 接口](icorprofilermoduleenum-interface.md)
 - [分析接口](profiling-interfaces.md)

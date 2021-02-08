@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： EnumTypeSpecs 方法
 title: IMetaDataImport::EnumTypeSpecs 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 75331c7b-988b-436c-9eb9-a270d37b4f06
 topic_type:
 - apiref
-ms.openlocfilehash: 38c9f8df12b0fc83a236d2cb7c32d1198be7096d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7446bbf3296ffb6cfa3a20f594b4a7da22acff5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799338"
 ---
 # <a name="imetadataimportenumtypespecs-method"></a>IMetaDataImport::EnumTypeSpecs 方法
 
@@ -58,7 +59,7 @@ HRESULT EnumTypeSpecs (
 |`S_OK`|`EnumTypeSpecs` 已成功返回。|  
 |`S_FALSE`|没有要枚举的令牌。 在这种情况下， `pcTypeSpecs` 为零。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  TypeSpec 标记由 [IMetaDataEmit：： GetTokenFromTypeSpec](imetadataemit-gettokenfromtypespec-method.md) 方法创建。  
   
@@ -72,7 +73,7 @@ HRESULT EnumTypeSpecs (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

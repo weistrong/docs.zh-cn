@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： FindMember 方法
 title: IMetaDataImport::FindMember 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ad32fb84-c2b6-41cd-888d-787ff3a90449
 topic_type:
 - apiref
-ms.openlocfilehash: bcd9499d0aef34fb34065ed58c0f0d69cc4ecedc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdf02f57b8c4ff912d732515576fc05045474517
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711437"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799286"
 ---
 # <a name="imetadataimportfindmember-method"></a>IMetaDataImport::FindMember 方法
 
@@ -55,7 +56,7 @@ HRESULT FindMember (
  `pmb`  
  弄指向匹配的 MemberDef 标记的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  你使用其封闭类或接口指定成员 (`td`) ，其名称 (`szName`) ，还可以指定其签名 (`pvSigBlob`) 。 类或接口中可能存在多个具有相同名称的成员。 在这种情况下，传递成员的签名以查找唯一匹配项。  
   
@@ -76,7 +77,7 @@ HRESULT FindMember (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)
