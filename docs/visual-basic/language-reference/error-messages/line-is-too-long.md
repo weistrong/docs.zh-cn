@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： BC30494：行太长
 title: 行太长
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30494
 ms.assetid: 27270ec3-82a4-4693-a948-dd4664a5f060
-ms.openlocfilehash: c43ef096d2f6554cff1fa4490910315a1596337a
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 305691b0343245879e5555a1e63c2d8f9c5af777
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795880"
 ---
-# <a name="bc30494-line-is-too-long"></a><span data-ttu-id="fd847-102">BC30494：行太长</span><span class="sxs-lookup"><span data-stu-id="fd847-102">BC30494: Line is too long</span></span>
+# <a name="bc30494-line-is-too-long"></a><span data-ttu-id="92b78-103">BC30494：行太长</span><span class="sxs-lookup"><span data-stu-id="92b78-103">BC30494: Line is too long</span></span>
 
-<span data-ttu-id="fd847-103">源文本行不能超过65535个字符。</span><span class="sxs-lookup"><span data-stu-id="fd847-103">Source text lines cannot exceed 65535 characters.</span></span>
+<span data-ttu-id="92b78-104">源文本行不能超过65535个字符。</span><span class="sxs-lookup"><span data-stu-id="92b78-104">Source text lines cannot exceed 65535 characters.</span></span>
 
- <span data-ttu-id="fd847-104">**错误 ID：** BC30494</span><span class="sxs-lookup"><span data-stu-id="fd847-104">**Error ID:** BC30494</span></span>
+ <span data-ttu-id="92b78-105">**错误 ID：** BC30494</span><span class="sxs-lookup"><span data-stu-id="92b78-105">**Error ID:** BC30494</span></span>
 
-## <a name="to-correct-this-error"></a><span data-ttu-id="fd847-105">更正此错误</span><span class="sxs-lookup"><span data-stu-id="fd847-105">To correct this error</span></span>
+## <a name="to-correct-this-error"></a><span data-ttu-id="92b78-106">更正此错误</span><span class="sxs-lookup"><span data-stu-id="92b78-106">To correct this error</span></span>
 
-- <span data-ttu-id="fd847-106">将行的长度缩短到65535个字符或更少。</span><span class="sxs-lookup"><span data-stu-id="fd847-106">Shorten the length of the line to 65535 characters or fewer.</span></span>
+- <span data-ttu-id="92b78-107">将行的长度缩短到65535个字符或更少。</span><span class="sxs-lookup"><span data-stu-id="92b78-107">Shorten the length of the line to 65535 characters or fewer.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="fd847-107">另请参阅</span><span class="sxs-lookup"><span data-stu-id="fd847-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="92b78-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="92b78-108">See also</span></span>
 
-- [<span data-ttu-id="fd847-108">错误类型</span><span class="sxs-lookup"><span data-stu-id="fd847-108">Error Types</span></span>](../../programming-guide/language-features/error-types.md)
+- [<span data-ttu-id="92b78-109">错误类型</span><span class="sxs-lookup"><span data-stu-id="92b78-109">Error Types</span></span>](../../programming-guide/language-features/error-types.md)
