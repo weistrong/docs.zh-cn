@@ -492,6 +492,8 @@ items:
                     href: code-analysis/code-style-rule-options.md
           - name: 规则引用
             items:
+              - name: 类别
+                href: code-analysis/categories.md
               - name: 代码质量规则
                 items:
                   - name: 概述
@@ -1255,15 +1257,9 @@ items:
                       - name: IDE0077
                         href: code-analysis/style-rules/ide0077.md
                   - name: 格式设置规则
-                    items:
-                      - name: 概述
-                        displayName: formatting rules
-                        href: code-analysis/style-rules/formatting-rules.md
+                    href: code-analysis/style-rules/formatting-rules.md
                   - name: 命名规则
-                    items:
-                      - name: 概述
-                        displayName: naming rules
-                        href: code-analysis/style-rules/naming-rules.md
+                    href: code-analysis/style-rules/naming-rules.md
           - name: 平台兼容性分析器
             href: ../standard/analyzers/platform-compat-analyzer.md
           - name: API 分析器

@@ -1,17 +1,18 @@
 ---
+description: 了解详细 <add> 信息： <contractTypeNames>
 title: <add> 的 <contractTypeNames>
 ms.date: 03/30/2017
 ms.assetid: 03aff6be-5dfb-4a64-ada3-e36227cd43c7
-ms.openlocfilehash: 69a0bbbc8774251dbdc062875bb06453f355c882
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0708aa277b4250cb4134a98ddf7af661840981a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149135"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803992"
 ---
-# <a name="add-of-contracttypenames"></a><span data-ttu-id="0d4aa-102">\<add> 的 \<contractTypeNames></span><span class="sxs-lookup"><span data-stu-id="0d4aa-102">\<add> of \<contractTypeNames></span></span>
+# <a name="add-of-contracttypenames"></a><span data-ttu-id="f61ce-103">\<add> 的 \<contractTypeNames></span><span class="sxs-lookup"><span data-stu-id="f61ce-103">\<add> of \<contractTypeNames></span></span>
 
-<span data-ttu-id="0d4aa-103">一个配置元素，指定要搜索的服务的协定名称以及搜索服务时通常使用的条件。</span><span class="sxs-lookup"><span data-stu-id="0d4aa-103">A configuration element that specifies the contract name of the services being searched for, and the criteria typically used when searching for a service.</span></span> <span data-ttu-id="0d4aa-104">如果指定多个协定名称，则只有与全部协定都匹配的服务终结点才会进行答复。</span><span class="sxs-lookup"><span data-stu-id="0d4aa-104">If more than one contract name is specified, only service endpoints matching ALL contracts will reply.</span></span> <span data-ttu-id="0d4aa-105">请注意，在 Windows Communication Foundation (WCF) ，终结点只能支持一个协定。</span><span class="sxs-lookup"><span data-stu-id="0d4aa-105">Note that in Windows Communication Foundation (WCF), an endpoint can only support one contract.</span></span>  
+<span data-ttu-id="f61ce-104">一个配置元素，指定要搜索的服务的协定名称以及搜索服务时通常使用的条件。</span><span class="sxs-lookup"><span data-stu-id="f61ce-104">A configuration element that specifies the contract name of the services being searched for, and the criteria typically used when searching for a service.</span></span> <span data-ttu-id="f61ce-105">如果指定多个协定名称，则只有与全部协定都匹配的服务终结点才会进行答复。</span><span class="sxs-lookup"><span data-stu-id="f61ce-105">If more than one contract name is specified, only service endpoints matching ALL contracts will reply.</span></span> <span data-ttu-id="f61ce-106">请注意，在 Windows Communication Foundation (WCF) ，终结点只能支持一个协定。</span><span class="sxs-lookup"><span data-stu-id="f61ce-106">Note that in Windows Communication Foundation (WCF), an endpoint can only support one contract.</span></span>  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
@@ -23,7 +24,7 @@ ms.locfileid: "91149135"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<contractTypeNames>**](contracttypenames.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a><span data-ttu-id="0d4aa-106">语法</span><span class="sxs-lookup"><span data-stu-id="0d4aa-106">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="f61ce-107">语法</span><span class="sxs-lookup"><span data-stu-id="f61ce-107">Syntax</span></span>  
   
 ```xml  
 <system.serviceModel>
@@ -49,28 +50,28 @@ ms.locfileid: "91149135"
 </system.serviceModel>
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="0d4aa-107">特性和元素</span><span class="sxs-lookup"><span data-stu-id="0d4aa-107">Attributes and Elements</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="f61ce-108">特性和元素</span><span class="sxs-lookup"><span data-stu-id="f61ce-108">Attributes and Elements</span></span>  
 
- <span data-ttu-id="0d4aa-108">下列各节描述了特性、子元素和父元素。</span><span class="sxs-lookup"><span data-stu-id="0d4aa-108">The following sections describe attributes, child elements, and parent elements.</span></span>  
+ <span data-ttu-id="f61ce-109">下列各节描述了特性、子元素和父元素。</span><span class="sxs-lookup"><span data-stu-id="f61ce-109">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="0d4aa-109">特性</span><span class="sxs-lookup"><span data-stu-id="0d4aa-109">Attributes</span></span>  
+### <a name="attributes"></a><span data-ttu-id="f61ce-110">特性</span><span class="sxs-lookup"><span data-stu-id="f61ce-110">Attributes</span></span>  
   
-|<span data-ttu-id="0d4aa-110">属性</span><span class="sxs-lookup"><span data-stu-id="0d4aa-110">Attribute</span></span>|<span data-ttu-id="0d4aa-111">说明</span><span class="sxs-lookup"><span data-stu-id="0d4aa-111">Description</span></span>|  
+|<span data-ttu-id="f61ce-111">属性</span><span class="sxs-lookup"><span data-stu-id="f61ce-111">Attribute</span></span>|<span data-ttu-id="f61ce-112">说明</span><span class="sxs-lookup"><span data-stu-id="f61ce-112">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="0d4aa-112">name</span><span class="sxs-lookup"><span data-stu-id="0d4aa-112">name</span></span>|<span data-ttu-id="0d4aa-113">一个字符串，指定协定类型的名称。</span><span class="sxs-lookup"><span data-stu-id="0d4aa-113">A string that specifies the name of the contract type.</span></span>|  
-|<span data-ttu-id="0d4aa-114">命名空间</span><span class="sxs-lookup"><span data-stu-id="0d4aa-114">namespace</span></span>|<span data-ttu-id="0d4aa-115">一个字符串，指定协定类型的命名空间。</span><span class="sxs-lookup"><span data-stu-id="0d4aa-115">A string that specifies the namespace of the contract type.</span></span>|  
+|<span data-ttu-id="f61ce-113">name</span><span class="sxs-lookup"><span data-stu-id="f61ce-113">name</span></span>|<span data-ttu-id="f61ce-114">一个字符串，指定协定类型的名称。</span><span class="sxs-lookup"><span data-stu-id="f61ce-114">A string that specifies the name of the contract type.</span></span>|  
+|<span data-ttu-id="f61ce-115">命名空间</span><span class="sxs-lookup"><span data-stu-id="f61ce-115">namespace</span></span>|<span data-ttu-id="f61ce-116">一个字符串，指定协定类型的命名空间。</span><span class="sxs-lookup"><span data-stu-id="f61ce-116">A string that specifies the namespace of the contract type.</span></span>|  
   
-### <a name="child-elements"></a><span data-ttu-id="0d4aa-116">子元素</span><span class="sxs-lookup"><span data-stu-id="0d4aa-116">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="f61ce-117">子元素</span><span class="sxs-lookup"><span data-stu-id="f61ce-117">Child Elements</span></span>  
 
- <span data-ttu-id="0d4aa-117">无</span><span class="sxs-lookup"><span data-stu-id="0d4aa-117">None</span></span>  
+ <span data-ttu-id="f61ce-118">无</span><span class="sxs-lookup"><span data-stu-id="f61ce-118">None</span></span>  
   
-### <a name="parent-elements"></a><span data-ttu-id="0d4aa-118">父元素</span><span class="sxs-lookup"><span data-stu-id="0d4aa-118">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="f61ce-119">父元素</span><span class="sxs-lookup"><span data-stu-id="f61ce-119">Parent Elements</span></span>  
   
-|<span data-ttu-id="0d4aa-119">元素</span><span class="sxs-lookup"><span data-stu-id="0d4aa-119">Element</span></span>|<span data-ttu-id="0d4aa-120">描述</span><span class="sxs-lookup"><span data-stu-id="0d4aa-120">Description</span></span>|  
+|<span data-ttu-id="f61ce-120">元素</span><span class="sxs-lookup"><span data-stu-id="f61ce-120">Element</span></span>|<span data-ttu-id="f61ce-121">说明</span><span class="sxs-lookup"><span data-stu-id="f61ce-121">Description</span></span>|  
 |-------------|-----------------|  
-|[\<contractTypeNames>](contracttypenames.md)|<span data-ttu-id="0d4aa-121">协定类型名称的集合。</span><span class="sxs-lookup"><span data-stu-id="0d4aa-121">A collection of contract type names.</span></span>|  
+|[\<contractTypeNames>](contracttypenames.md)|<span data-ttu-id="f61ce-122">协定类型名称的集合。</span><span class="sxs-lookup"><span data-stu-id="f61ce-122">A collection of contract type names.</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="0d4aa-122">请参阅</span><span class="sxs-lookup"><span data-stu-id="0d4aa-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f61ce-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="f61ce-123">See also</span></span>
 
 - <xref:System.ServiceModel.Discovery.FindCriteria>
 - <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>
