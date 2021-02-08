@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： JSON 和 XML 之间的映射
 title: JSON 和 XML 之间的映射
 ms.date: 03/30/2017
 ms.assetid: 22ee1f52-c708-4024-bbf0-572e0dae64af
-ms.openlocfilehash: 649d0f50aae806394587c7b79a7970c2de03e087
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1d9652d1683446da9946987a31a92906d5e38e55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793670"
 ---
 # <a name="mapping-between-json-and-xml"></a>JSON 和 XML 之间的映射
 
@@ -144,7 +145,7 @@ JSON 类型属性的 AII 具有以下特征：
 |`boolean`|4或 5 (个 cii，它对应于 `true` 或 `false`) ，可能括在额外的空白个 cii 中。|对应于字符串“true”的 CII 序列被映射到文字 `true`，而对应于字符串“false”的 CII 序列被映射到文字 `false`。 将保留周围的空白区域。<br /><br /> 示例：下面的元素映射到 JSON 片段。<br /><br /> `<root type="boolean"> false</root>`<br /><br /> JSON 片段是 `false`。|
 |`null`|都不允许。|文字 `null`。 在 JSON 到 XML 的映射上， `null` 可能会将空格括在第2部分中的空白 ( "ws") ，而不会映射到 xml。<br /><br /> 示例：下面的元素映射到 JSON 片段。<br /><br /> `<root type="null"/>`<br /><br /> 或<br /><br /> `<root type="null"></root>`<br /><br /> :<br /><br /> 在这两种情况下 JSON 片段都是 `Null`。|
 |`object`|0 个或多个 EII。|如 JSON RFC 第 2.2 节中的 `begin-object`（左花括号），后跟每个 EII 的成员记录，将进一步说明。 如果存在多个 EII，则在成员记录之间存在值分隔符（逗号）。 所有这一切后跟 end-object（右花括号）。<br /><br /> 示例：下面的元素映射到 JSON 片段。<br /><br /> `<root type="object">`<br /><br /> `<type1 type="string">aaa\</type1>`<br /><br /> `<type2 type="string">bbb\</type2>`<br /><br /> `</root >`<br /><br /> JSON 片段是 `{"type1":"aaa","type2":"bbb"}`。<br /><br /> 如果在 XML 到 JSON 的映射上存在数据协定类型属性，则在开头插入其他成员记录。 其名称是数据协定类型属性的 [本地名称] ( " \_ \_ Type" ) ，其值为属性的 "规范化值"。 相反，在 JSON 到 XML 的映射中，如果第一个成员记录的名称是数据协定类型属性的 [local name] (即 " \_ \_ Type" ) ，则映射的 XML 中将显示相应的数据协定类型属性，但不存在相应的 EII。 请注意，此成员记录必须首先出现在 JSON 对象中才能应用此特殊映射。 这与通常的 JSON 处理（成员记录的顺序是不重要的）相背离。<br /><br /> 例如：<br /><br /> 下面的 JSON 片段映射到 XML。<br /><br /> `{"__type":"Person","name":"John"}`<br /><br /> XML 是下面的代码。<br /><br /> `<root type="object" __type="Person">   <name type="string">John</name> </root>`<br /><br /> 请注意， \_ \_ 类型 AII 存在，但没有 \_ \_ 类型为 EII。<br /><br /> 但是，如果保留 JSON 中的顺序，如下面的示例所示。<br /><br /> `{"name":"John","\_\_type":"Person"}`<br /><br /> 则显示对应的 XML。<br /><br /> `<root type="object">   <name type="string">John</name>   <__type type="string">Person</__type> </root>`<br /><br /> 也就是说， \_ _type 停止具有特殊意义，并像平常一样（而非 AII）映射到 EII。<br /><br /> 映射到 JSON 值时，AII 的 [正常化值] 的转义/未转义规则与在此表的“string”行中指定的 JSON 字符串的相同。<br /><br /> 例如：<br /><br /> `<root type="object" __type="\abc" />`<br /><br /> 前面的示例可以映射到下面的 JSON。<br /><br /> `{"__type":"\\abc"}`<br /><br /> 在 XML 到 JSON 的映射中，第一个 EII 的 [本地名称] 不得为 " \_ \_ type"。<br /><br /> `ws`在 xml 到 json 的映射上从不生成空白 () ，在 json 到 XML 的映射上将忽略空格。<br /><br /> 示例：下面的 JSON 片段映射到 XML 元素。<br /><br /> `{ "ccc" : "aaa", "ddd" :"bbb"}`<br /><br /> 在下面的代码中显示了 XML 元素。<br /><br /> `<root type="object">    <ccc type="string">aaa</ccc>    <ddd type="string">bbb</bar> </root >`|
-|数组|0 个或多个 EII|如 JSON RFC 第 2.3 节中的 begin-array（左花括号），后跟每个 EII 的数组记录，将进一步描述。 如果存在多个 EII，则在数组记录之间存在值分隔符（逗号）。 所有这一切后跟 end-array。<br /><br /> 示例：下面的 XML 元素映射到 JSON 片段。<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> JSON 片段是 `["aaa","bbb"]`<br /><br /> `ws`在 xml 到 json 的映射上从不生成空白 () ，且在 json 到 XML 的映射上将忽略空格。<br /><br /> 示例： JSON 片段。<br /><br />`["aaa", "bbb"]`<br /><br /> 它映射到的 XML 元素。<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
+|array|0 个或多个 EII|如 JSON RFC 第 2.3 节中的 begin-array（左花括号），后跟每个 EII 的数组记录，将进一步描述。 如果存在多个 EII，则在数组记录之间存在值分隔符（逗号）。 所有这一切后跟 end-array。<br /><br /> 示例：下面的 XML 元素映射到 JSON 片段。<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> JSON 片段是 `["aaa","bbb"]`<br /><br /> `ws`在 xml 到 json 的映射上从不生成空白 () ，且在 json 到 XML 的映射上将忽略空格。<br /><br /> 示例： JSON 片段。<br /><br />`["aaa", "bbb"]`<br /><br /> 它映射到的 XML 元素。<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
 
 成员记录的工作原理如下：
 
@@ -218,7 +219,7 @@ JSON 类型属性的 AII 具有以下特征：
 ["myValue1",2,[true,null]]
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>

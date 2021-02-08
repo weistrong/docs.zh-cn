@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：有害消息处理
 title: 病毒消息处理
 ms.date: 03/30/2017
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
-ms.openlocfilehash: 9aeb404cea18a7dd6a9c416c0728d9905c0d782d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1d6c8027d44da4d79562e4e427654a3d85df3e88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244816"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793618"
 ---
 # <a name="poison-message-handling"></a>病毒消息处理
 
@@ -111,7 +112,7 @@ ms.locfileid: "96244816"
   
 - Windows Vista 中的消息队列支持一个消息属性，该属性保留尝试消息传递的次数。 此中止计数属性在 Windows Server 2003 和 Windows XP 上不可用。 WCF 在内存中维护中止计数，因此当在场中的多个 WCF 服务读取同一条消息时，此属性可能不包含准确值。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [队列概述](queues-overview.md)
 - [Windows Vista、Windows Server 2003 和 Windows XP 在排队功能方面的差异](diff-in-queue-in-vista-server-2003-windows-xp.md)

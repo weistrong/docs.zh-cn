@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：在 Json 中用消息级编程进行序列化
 title: 使用消息级编程在 Json 中序列化
 ms.date: 03/30/2017
 ms.assetid: 5f940ba2-57ee-4c49-a779-957c5e7e71fa
-ms.openlocfilehash: 8343f7a8aa3c01557aae7df420351fa318cbb4b5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 715e44b0e2137197f5883e2327288555513f29cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253929"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793540"
 ---
 # <a name="serializing-in-json-with-message-level-programming"></a>使用消息级编程在 Json 中序列化
 
@@ -34,7 +35,7 @@ WCF 支持以 JSON 格式序列化数据。 本主题描述如何使用 <xref:Sy
                     new WebBodyFormatMessageProperty(WebContentFormat.Json)); // Use JSON format  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AJAX 集成和 JSON 支持](ajax-integration-and-json-support.md)
 - [独立 JSON 序列化](stand-alone-json-serialization.md)

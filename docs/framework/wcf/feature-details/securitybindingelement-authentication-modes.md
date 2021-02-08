@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： SecurityBindingElement Authentication 模式
 title: SecurityBindingElement 身份验证模式
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 12300bf4-c730-4405-9f65-d286f68b5a43
-ms.openlocfilehash: bf1b8103714c174fc2746bc864a7d7e0e5ea5ff1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bf91f0fbb112e8a0fcd4d03fe7dd82a3a4eebbd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793579"
 ---
 # <a name="securitybindingelement-authentication-modes"></a>SecurityBindingElement 身份验证模式
 
@@ -140,7 +141,7 @@ Windows Communication Foundation (WCF) 提供多种模式，客户端和服务�
 
  在此身份验证模式中，客户端使用用户名令牌进行身份验证，此证书作为经过签名的支持令牌（即签署消息签名的令牌）显示在 SOAP 层上。 在传输层，服务是用 X.509 证书进行身份验证的。 安全绑定元素是由 `TransportSecurityBindingElement` 方法返回的 <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameOverTransportBindingElement%2A>。 或者，将 `authenticationMode` 属性设置为 `UserNameOverTransport`。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.SecurityBindingElement>
 - [如何：为指定的身份验证模式创建 SecurityBindingElement](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

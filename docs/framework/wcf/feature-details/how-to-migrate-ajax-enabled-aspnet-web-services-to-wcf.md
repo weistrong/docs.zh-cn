@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如何：将 AJAX-Enabled ASP.NET Web 服务迁移到 WCF
 title: 如何：将支持 AJAX 的 ASP.NET Web 服务迁移到 WCF
 ms.date: 03/30/2017
 ms.assetid: 1428df4d-b18f-4e6d-bd4d-79ab3dd5147c
-ms.openlocfilehash: 89c9601ba6afcef9733d7653564a98664a1ed70f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fe79660f0ed8ef01a2607c94362d484cacc6a7b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793722"
 ---
 # <a name="how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf"></a>如何：将支持 AJAX 的 ASP.NET Web 服务迁移到 WCF
 
@@ -205,7 +206,7 @@ d.Add("two", 2);
 
 |差异类别|DataContractJsonSerializer|ASP.NET AJAX JavaScriptSerializer|
 |-----------------------------|--------------------------------|---------------------------------------|
-|将空缓冲区（新 byte[0]）反序列化为 <xref:System.Object>（或 <xref:System.Uri>，或某些其他类）。|SerializationException|Null|
+|将空缓冲区（新 byte[0]）反序列化为 <xref:System.Object>（或 <xref:System.Uri>，或某些其他类）。|SerializationException|NULL|
 |<xref:System.DBNull.Value> 的序列化|{} (或 {"__type"： "#System"} ) |Null|
 |[Serializable] 类型的私有成员的序列化。|已序列化|未序列化|
 |<xref:System.Runtime.Serialization.ISerializable> 类型的公共属性的序列化。|未序列化|已序列化|
@@ -214,6 +215,6 @@ d.Add("two", 2);
 |词典的表示形式|KeyValuePair 的数组 \<K,V> ，处理不是字符串的键类型。|作为实际的 JSON 对象 - 但仅处理是字符串的键类型。|
 |转义符|始终应带有转义正斜杠 (/)；切勿使用非转义的无效 JSON 字符，例如“\n”。|对于 DateTime 值，带有转义正斜杠 (/)。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：使用配置来添加 ASP.NET AJAX 终结点](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)

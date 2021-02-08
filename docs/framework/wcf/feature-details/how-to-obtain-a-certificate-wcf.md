@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：如何：获取 (WCF 的证书) '
 title: 如何：获取证书 (WCF)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - certificates [WCF], obtaining
 ms.assetid: d53762fd-15ea-42dc-b0ea-6a6597aa23f7
-ms.openlocfilehash: 20e936feb5839a7e71f6579583d558abfc2fd9cf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2ca40c9646bbdeb6c29a94966fd24ec00d9b5306
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793696"
 ---
 # <a name="how-to-obtain-a-certificate-wcf"></a>如何：获取证书 (WCF)
 
@@ -28,7 +29,7 @@ ms.locfileid: "96234487"
     > [!NOTE]
     > 无论采取哪种方法，包含 X.509 证书的 SOAP 请求的接收方都必须信任 X.509 证书。 这意味着证书链中的 X.509 证书或颁发者位于“受信任的人”证书存储区中，并且 X.509 证书不在“不受信任的证书”存储区中。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用证书](working-with-certificates.md)
 - [如何：创建开发期间使用的临时证书](how-to-create-temporary-certificates-for-use-during-development.md)

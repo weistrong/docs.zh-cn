@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：可靠消息传送协议版本1。0
 title: 可靠消息传送协议版本 1.0
 ms.date: 03/30/2017
 ms.assetid: a5509a5c-de24-4bc2-9a48-19138055dcce
-ms.openlocfilehash: 8d192afcffca52136d6d71de49770c5a5ad13895
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: dbd0184fd6ea9f92c96639d71088ac61bec20f3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793592"
 ---
 # <a name="reliable-messaging-protocol-version-10"></a>可靠消息传送协议版本 1.0
 
-本主题介绍了使用 HTTP 传输进行互操作所需的 WS-TRUST 2005 年2月（版本1.0）协议的 Windows Communication Foundation （WCF）实现细节。 WCF 遵循与本主题中所述的约束和说明相关的 WS 可靠消息传送规范。 请注意，ws-reliablemessaging 版本1.0 协议是从 WinFX 开始实现的。
+本主题介绍 Windows Communication Foundation (WCF)  (2005 年2月) 使用 HTTP 传输进行互操作所需的版本1.0 协议的实现详细 WS-Reliable 信息。 WCF 遵循本主题中所述的约束和说明，遵循 WS-Reliable 消息传递规范。 请注意，WS-ReliableMessaging 版本1.0 协议是从 WinFX 开始实现的。
 
-WS-可靠消息2月2005协议在 WCF 中由实现 <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> 。
+WS-Reliable 2005 年2月协议在 WCF 中由实现 <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> 。
 
 为方便起见，本主题使用以下角色：
 
@@ -31,11 +32,11 @@ WS-可靠消息2月2005协议在 WCF 中由实现 <xref:System.ServiceModel.Chan
 |wsa|`http://schemas.xmlsoap.org/ws/2005/08/addressing`|
 |wsse|`http://docs.oasis-open.org/wss/2004/01/oasis-200401-wssecurity-secext-1.0.xsd`|
 
-## <a name="messaging"></a>消息传递
+## <a name="messaging"></a>Messaging
 
 ### <a name="sequence-establishment-messages"></a>序列建立消息
 
-WCF 实现 `CreateSequence` 和 `CreateSequenceResponse` 消息以建立可靠的消息序列。 适用以下约束：
+WCF 实现 `CreateSequence` 和 `CreateSequenceResponse` 消息以建立可靠的消息序列。 应用以下约束：
 
 - B1101： WCF 发起方不会在消息中生成可选的 Expires 元素，也不会 `CreateSequence` 在 `CreateSequence` 消息包含元素的情况下，在 `Offer` `Expires` 元素中包含可选元素 `Offer` 。
 
@@ -61,7 +62,7 @@ WS-Reliable Messaging 引入了 `Offer` 机制来建立两个形成会话的反�
 
 - R1109：在使用 `Offer` 机制建立两个反向序列时，发起方发送的消息和响应方的消息确认必须发送到同一个终结点引用。
 
-  WCF 使用 WS 可靠的消息传送在发起方和响应方之间建立可靠会话。 WCF 的 WS 可靠消息传递实现为单向、请求-答复和全双工消息传递模式提供可靠的会话。 上的 WS 可靠消息传送 `Offer` 机制 `CreateSequence` / `CreateSequenceResponse` 允许你建立两个相关的反向序列，并提供适用于所有消息终结点的会话协议。 因为 WCF 为此类会话提供了安全保证，包括会话完整性的端到端保护，所以确保向同一方发送的消息到达同一目标是不切实际的。 这也允许在应用程序消息上捎带序列确认消息。 因此，约束 R1104、R1105 和 R1108 适用于 WCF。
+  WCF 使用 WS-Reliable 消息传递在发起方和响应方之间建立可靠会话。 WCF 的 WS-Reliable 消息传递实现为单向、请求-答复和全双工消息传递模式提供可靠的会话。 利用上的 WS-Reliable 消息传送 `Offer` 机制 `CreateSequence` / `CreateSequenceResponse` ，你可以建立两个相关的反向序列，并提供适用于所有消息终结点的会话协议。 因为 WCF 为此类会话提供了安全保证，包括会话完整性的端到端保护，所以确保向同一方发送的消息到达同一目标是不切实际的。 这也允许在应用程序消息上捎带序列确认消息。 因此，约束 R1104、R1105 和 R1108 适用于 WCF。
 
 `CreateSequence` 消息的一个示例。
 
@@ -170,11 +171,11 @@ WCF 使用 `AckRequested` 标头作为 keep-alive 机制。 WCF 不会生成可�
 
 ### <a name="sequenceacknowledgement-header"></a>SequenceAcknowledgement 标头
 
-WCF 对 WS-TRUST 消息中提供的序列确认使用非法携带机制。
+WCF 使用非法携带机制来处理 WS-Reliable 消息传递中提供的序列确认。
 
 - R1401：使用 `Offer` 机制建立两个相反序列时，`SequenceAcknowledgement` 头可能包括在传输到预期接收方的任何应用程序消息中。
 
-- B1402：在接收任何序列消息（例如，为了满足消息）之前，WCF 必须生成确认时 `AckRequested` ，wcf 将生成 `SequenceAcknowledgement` 包含范围0-0 的标头，如以下示例中所示。
+- B1402：在接收任何序列消息之前，WCF 必须生成确认 (例如，为了满足 `AckRequested`) 的消息，wcf 将生成 `SequenceAcknowledgement` 包含范围0-0 的标头，如以下示例中所示。
 
   ```xml
   <wsrm:SequenceAcknowledgement>
@@ -189,7 +190,7 @@ WCF 对 WS-TRUST 消息中提供的序列确认使用非法携带机制。
 
 ### <a name="ws-reliablemessaging-faults"></a>WS-ReliableMessaging 错误
 
-下面列出了适用于 WS-TRUST 消息错误的 WCF 实现的约束：
+下面列出了适用于 WCF 实现 WS-Reliable 消息错误的约束：
 
 - B1501： WCF 不会生成 `MessageNumberRollover` 错误。
 
@@ -233,7 +234,7 @@ WCF 对 WS-TRUST 消息中提供的序列确认使用非法携带机制。
 
 ### <a name="ws-addressing-faults"></a>WS-Addressing 错误
 
-由于 WS 可靠消息传送使用 WS-ADDRESSING，WCF WS-TRUST 消息的实现可能会产生 WS-ADDRESSING 错误。 本部分介绍 WCF 在 WS-TRUST 消息层上显式生成的 WS 寻址错误：
+由于 WS-Reliable 消息传递使用 WS-ADDRESSING，因此 WCF WS-Reliable 消息实现可能会生成 WS-Addressing 错误。 本部分介绍 WCF 在 WS-Reliable 消息层上显式生成的 WS-Addressing 错误：
 
 - B1601：在以下条件之一成立时，WCF 将生成所需的错误消息寻址标头：
 
@@ -243,7 +244,7 @@ WCF 对 WS-TRUST 消息中提供的序列确认使用非法携带机制。
 
   - `CreateSequence` 消息缺少 `ReplyTo` 标头。
 
-- B1602： WCF 在答复缺少标头的消息时生成不支持的错误操作 `Sequence` ，并且具有不能 `Action` 在 ws-trust 消息规范中识别的标头。
+- B1602： WCF 在答复缺少标头的消息时生成不支持的错误操作 `Sequence` ，并且具有不能 `Action` 在 WS-Reliable 消息传送规范中识别的标头。
 
 - B1603： WCF 生成错误终结点不可用，以指示终结点不会根据 `CreateSequence` 消息的寻址标头的检查来处理序列。
 
@@ -251,23 +252,23 @@ WCF 对 WS-TRUST 消息中提供的序列确认使用非法携带机制。
 
 ### <a name="composition-with-ws-addressing"></a>与 WS-Addressing 组合
 
-WCF 支持两个版本的 WS-ADDRESSING： WS-ADDRESSING 2004/08 [WS-ADDRESSING] 和 W3C WS 寻址1.0 建议 [WS-ATOMICTRANSACTION] 和 [WS-ADDRESSING-SOAP]。
+WCF 支持两个版本的 WS-ADDRESSING： WS-Addressing 2004/08 [WS-ADDRESSING] 和 W3C WS-Addressing 1.0 建议 [WS-ATOMICTRANSACTION] 和 [WS-ATOMICTRANSACTION-SOAP]。
 
 尽管 WS-Reliable Messaging 规范只提及 WS-Addressing 2004/08，它并未限制要使用的 WS-Addressing 版本。 下面列出了适用于 WCF 的约束：
 
 - R2101：WS-Addressing 2004/08 和 WS-Addressing 1.0 都可以与 WS-Reliable Messaging 一起使用。
 
-- R2102：必须在给定的 WS-TRUST 消息传递序列或使用机制关联的一对反向序列中使用一对 WS-ADDRESSING 的单版本 `wsrm:Offer` 。
+- R2102：必须在给定 WS-Reliable 消息传递序列或使用机制关联的一对反向序列中使用 WS-Addressing 的单个版本 `wsrm:Offer` 。
 
 ### <a name="composition-with-soap"></a>与 SOAP 组合
 
-WCF 支持将 SOAP 1.1 和 SOAP 1.2 同时用于 WS-TRUST 消息。
+WCF 支持将 SOAP 1.1 和 SOAP 1.2 与 WS-Reliable 消息传递一起使用。
 
 ### <a name="composition-with-ws-security-and-ws-secureconversation"></a>与 WS-Security 和 WS-SecureConversation 组合
 
-WCF 通过使用安全传输（HTTPS）、使用 WS 安全机制和结合 WS 安全会话撰写，为 WS-MANAGEMENT 消息传递序列提供保护。 下面列出了适用于 WCF 的约束：
+WCF 通过使用安全传输 (HTTPS) 、使用 WS 安全性组合和结合 WS-Secure 会话，为 WS-Reliable 消息传递序列提供保护。 下面列出了适用于 WCF 的约束：
 
-- R2301：若要保护 WS-TRUST 消息序列的完整性，以及单个消息的完整性和保密性，WCF 需要使用 WS 安全对话。
+- R2301：若要保护 WS-Reliable 消息序列的完整性，以及单个消息的完整性和保密性，WCF 需要使用 WS-Secure 会话。
 
 - R2302：WS-Secure Conversation 会话必须在建立 WS-Reliable Messaging 序列之前建立。
 
@@ -277,15 +278,15 @@ WCF 通过使用安全传输（HTTPS）、使用 WS 安全机制和结合 WS 安
 
   WCF 源在 `wsse:SecurityTokenReference` 消息的元素可扩展性部分生成元素 `CreateSequence` 。
 
-- R2305：使用 WS 安全会话撰写时， `CreateSequence` 消息必须包含 `wsse:SecurityTokenReference` 元素。
+- R2305：使用 WS-Secure 会话撰写时， `CreateSequence` 消息必须包含 `wsse:SecurityTokenReference` 元素。
 
 ## <a name="ws-reliable-messaging-ws-policy-assertion"></a>WS-Reliable Messaging WS-Policy 断言
 
-WCF 使用 WS 可靠的消息传递 WS 策略断言 `wsrm:RMAssertion` 来描述终结点功能。 下面列出了适用于 WCF 的约束：
+WCF 使用 WS-Reliable 消息传递 WS-Policy 断言 `wsrm:RMAssertion` 来描述终结点功能。 下面列出了适用于 WCF 的约束：
 
-- B3001： WCF `wsrm:RMAssertion` 将 WS 策略断言附加到 `wsdl:binding` 元素。 WCF 同时支持 `wsdl:binding` 和元素的附件 `wsdl:port` 。
+- B3001： WCF `wsrm:RMAssertion` 将 WS-Policy 断言附加到 `wsdl:binding` 元素。 WCF 同时支持 `wsdl:binding` 和元素的附件 `wsdl:port` 。
 
-- B3002： WCF 支持 WS 可靠消息传递断言的以下可选属性，并在 WCF 上提供对这些属性的控制 `ReliableMessagingBindingElement` ：
+- B3002： WCF 支持 WS-Reliable 消息传递断言的以下可选属性，并在 WCF 上提供对这些属性的控制 `ReliableMessagingBindingElement` ：
 
   - `wsrm:InactivityTimeout`
 
@@ -302,7 +303,7 @@ WCF 使用 WS 可靠的消息传递 WS 策略断言 `wsrm:RMAssertion` 来描述
 
 ## <a name="flow-control-ws-reliable-messaging-extension"></a>流控制 WS-Reliable Messaging 扩展
 
-WCF 使用 WS 可靠的消息传递扩展性提供对序列消息流的可选更严格的控制。
+WCF 使用 WS-Reliable 消息传递扩展性提供对序列消息流的可选的更紧密控制。
 
 通过将属性设置为，启用流控制 <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled?displayProperty=nameWithType> `true` 。 下面列出了适用于 WCF 的约束：
 
@@ -330,7 +331,7 @@ WCF 使用 WS 可靠的消息传递扩展性提供对序列消息流的可选更
 
 ## <a name="message-exchange-patterns"></a>消息交换模式
 
-本部分介绍在将 WS-TRUST 消息用于不同消息交换模式时，WCF 的行为。 对于每个消息交换模式，可以考虑下面的两个部署方案：
+本部分介绍在将 WS-Reliable 消息传送用于不同消息交换模式时，WCF 的行为。 对于每个消息交换模式，可以考虑下面的两个部署方案：
 
 - 不可寻址发起方：发起方位于防火墙后面；响应方仅可以通过 HTTP 响应向发起方传递消息。
 

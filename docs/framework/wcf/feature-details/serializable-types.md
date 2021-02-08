@@ -1,13 +1,14 @@
 ---
+description: 了解更多：可序列化类型
 title: 可序列化类型
 ms.date: 03/30/2017
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
-ms.openlocfilehash: 4ba5fb80b3a7f4149eb49aa838826f2792147dd1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0316946a2d373f6fec4df388e5ed50bd4dc2b1c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793566"
 ---
 # <a name="serializable-types"></a>可序列化类型
 
@@ -41,7 +42,7 @@ ms.locfileid: "96253955"
 
  未标记类型（没有 <xref:System.Runtime.Serialization.DataContractAttribute> 属性的类型）可以从具有此属性的类型继承；但是反过来则不允许：具有该属性的类型不能从未标记类型继承。 此规则主要用于确保向后兼容在 .NET Framework 早期版本中编写的代码。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
