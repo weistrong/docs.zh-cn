@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit：： SetRVA 方法
 title: IMetaDataEmit::SetRVA 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4d69fb6d-ee35-4318-8224-5eea2bd16818
 topic_type:
 - apiref
-ms.openlocfilehash: df9dc1a36a9adcef3f93a9929565cef117e84d75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 52294250df2b7a677bb4ecb09ea0a97baca595a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771777"
 ---
 # <a name="imetadataemitsetrva-method"></a>IMetaDataEmit::SetRVA 方法
 
@@ -53,7 +54,7 @@ HRESULT SetRVA (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit 接口](imetadataemit-interface.md)
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)

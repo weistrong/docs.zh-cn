@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：管理和诊断
 title: 管理和诊断
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - administration [WCF]
 - WCF, administration
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
-ms.openlocfilehash: 703724c3040f2508f011e002c22fa45dd3197884
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aa2efe31431f80dda6c98b0ac13162e32390b12c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771257"
 ---
 # <a name="administration-and-diagnostics"></a>管理和诊断
 
@@ -41,7 +42,7 @@ Windows Communication Foundation (WCF) 提供了一组丰富的功能，可帮�
   
  WCF 还提供多个 GUI 和命令行工具，使您可以更轻松地创建、部署和管理 WCF 应用程序。 有关详细信息，请参阅 [Windows Communication Foundation 工具](../tools.md)。 例如，您可以使用 [配置编辑器工具 ( # A0) ](../configuration-editor-tool-svcconfigeditor-exe.md) 使用向导来创建和编辑 WCF 配置设置，而不是直接编辑 XML。 你还可以使用 [服务跟踪查看器工具 ( # A0) ](../service-trace-viewer-tool-svctraceviewer-exe.md) 查看、分组和筛选跟踪消息，以便能够诊断、修复和验证 WCF 服务的问题。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [配置应用程序](configuring-your-application.md)
 - [部署服务](deploying-services.md)

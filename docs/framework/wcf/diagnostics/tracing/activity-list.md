@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：活动列表
 title: 活动列表
 ms.date: 03/30/2017
 ms.assetid: 5540e185-ce8e-4db3-83b0-2b9f5bf71829
-ms.openlocfilehash: d28ae2e4750c718c35105d090aff8d085025b9d6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 656c605e81872405aa8637b647b40278b06913cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770867"
 ---
 # <a name="activity-list"></a>活动列表
 
@@ -20,7 +21,7 @@ ms.locfileid: "96236086"
 
  下表列出了用于主要使用方案的所有活动。  
   
-|Label|活动名称|活动类型|描述|  
+|Label|活动名称|活动类型|说明|  
 |-----------|-------------------|-------------------|-----------------|  
 |A、M|环境活动|N/A（不受 ServiceModel 控制）|该活动的 ID 是在调用任何 ServiceModel 代码（客户端或服务器端）之前，在 TLS 中设置的。<br /><br /> 示例：在 WCF 客户端或 serviceHost 上调用 open 的活动。调用。|  
 |B|构造<br /><br /> ChannelFactory。 ContractType : ‘[Type]’。|构造||  
@@ -39,14 +40,14 @@ ms.locfileid: "96236086"
 
  下表列出了所有与安全有关的活动。  
   
-|活动名称|活动类型|描述|  
+|活动名称|活动类型|说明|  
 |-------------------|-------------------|-----------------|  
 |设置安全会话|SetupSecurity|仅在客户端存在。 包含用于身份验证和设置安全上下文的所有 RST*/SCT 交换。 如果 `propagateActivity` = `true` 为，则此活动与服务的对应处理操作 RST \* /SCT 活动合并。|  
 |关闭安全会话|SetupSecurity|存在于客户端。 包含用于关闭安全会话的“取消”消息交换。 如果 `propagateActivity` = `true` 为，则此活动与服务中的处理操作 "取消" 合并在一起。|  
   
  下表列出了所有与 COM+ 有关的活动。  
   
-|活动名称|活动类型|描述|  
+|活动名称|活动类型|说明|  
 |-------------------|-------------------|-----------------|  
 |创建 COM+ 实例。|TransferToCOMPlus|WCF 代码中的每个 COM + 调用1个活动实例|  
 |执行 COM + \<operation>|TransferToCOMPlus|WCF 代码中的每个 COM + 调用1个活动实例|  
@@ -55,7 +56,7 @@ ms.locfileid: "96236086"
 
  下表列出了所有与 WMI 有关的活动。  
   
-|活动名称|活动类型|描述|  
+|活动名称|活动类型|说明|  
 |-------------------|-------------------|-----------------|  
 |WMI get|WMIGetObject|用户正从 WMI 检索数据。|  
 |WMI put|WmiPutInstance|用户正向 WMI 更新数据。|

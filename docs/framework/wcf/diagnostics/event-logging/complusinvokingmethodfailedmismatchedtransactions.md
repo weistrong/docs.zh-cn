@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ComPlusInvokingMethodFailedMismatchedTransactions
 title: ComPlusInvokingMethodFailedMismatchedTransactions
 ms.date: 03/30/2017
 ms.assetid: d13f1978-ff42-443a-939f-75c8c8d50286
-ms.openlocfilehash: ce95179f34084c8b26a517ac774b926cf2e3ce72
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0cc8ea86606f55fffb5994ac9cb122520ffc788d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254813"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771348"
 ---
 # <a name="complusinvokingmethodfailedmismatchedtransactions"></a>ComPlusInvokingMethodFailedMismatchedTransactions
 
@@ -17,11 +18,11 @@ ID：135
   
  类别：ServiceModel  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  ComPlus: 方法调用事务不匹配。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [事件日志记录](index.md)
 - [事件常规参考](events-general-reference.md)

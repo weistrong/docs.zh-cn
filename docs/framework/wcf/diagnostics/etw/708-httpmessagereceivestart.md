@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 708-HttpMessageReceiveStart
 title: 708 - HttpMessageReceiveStart
 ms.date: 03/30/2017
 ms.assetid: fde15725-fca8-4e8c-963c-6d9ae9552a8a
-ms.openlocfilehash: e01d97377ca649f80ed424327eee0ebb8b92ffd9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 71cbdf5de10c621a5aa48f43c5d9688e60d583c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290863"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771478"
 ---
 # <a name="708---httpmessagereceivestart"></a>708 - HttpMessageReceiveStart
 
@@ -20,7 +21,7 @@ ms.locfileid: "96290863"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  在从 http 传输接收消息时，将发出此事件。  
   

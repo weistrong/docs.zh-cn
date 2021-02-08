@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit2：： SetGenericParamProps 方法
 title: IMetaDataEmit2::SetGenericParamProps 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cd93a48d-1fed-4706-bec6-a05dc3b64fbd
 topic_type:
 - apiref
-ms.openlocfilehash: 8858e692d66f7b34a66334bd4e8b906dd12962ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9c6946bbd301450203bc6fb2b1202352119dc792
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771634"
 ---
 # <a name="imetadataemit2setgenericparamprops-method"></a>IMetaDataEmit2::SetGenericParamProps 方法
 
@@ -65,7 +66,7 @@ HRESULT SetGenericParamProps (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)
 - [IMetaDataEmit 接口](imetadataemit-interface.md)

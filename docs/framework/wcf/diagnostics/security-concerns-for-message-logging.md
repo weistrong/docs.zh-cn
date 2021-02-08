@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：消息日志记录的安全问题
 title: 消息日志记录的安全问题
 ms.date: 03/30/2017
 ms.assetid: 21f513f2-815b-47f3-85a6-03c008510038
-ms.openlocfilehash: 8594329fb27aa1d77a2baffee2a7e37ea0d009c4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 88adc4eb772ad8c39ace23f2771ee68fa2288c3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771010"
 ---
 # <a name="security-concerns-for-message-logging"></a>消息日志记录的安全问题
 
@@ -109,11 +110,11 @@ ms.locfileid: "96283765"
   
 - 启用记录已知 PII：当启用记录已知 PII 时发出此事件。 如果 `enableLoggingKnownPii` Machine.config 文件的元素中的属性 `machineSettings` 设置为 `true` ，并且 `logKnownPii` `source` App.config 或 Web.config 文件中元素的属性设置为， `true` 则会发生这种情况。  
   
-- 不允许记录已知 PII：当不允许记录已知 PII 时发出此事件。 如果 `logKnownPii` `source` App.config 或 Web.config 文件中元素的属性设置为 `true` ，但 `enableLoggingKnownPii` Machine.config 文件的元素中的属性 `machineSettings` 设置为， `false` 则会发生这种情况。 不引发异常。  
+- 不允许记录已知 PII：当不允许记录已知 PII 时发出此事件。 如果 `logKnownPii` `source` App.config 或 Web.config 文件中元素的属性设置为 `true` ，但 `enableLoggingKnownPii` Machine.config 文件的元素中的属性 `machineSettings` 设置为， `false` 则会发生这种情况。 不会引发异常。  
   
  可以在 Windows 附带的事件查看器工具中查看这些事件。 有关此内容的详细信息，请参阅 [事件日志记录](./event-logging/index.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [消息日志记录](message-logging.md)
 - [有关跟踪的安全注意事项和有用提示](./tracing/security-concerns-and-useful-tips-for-tracing.md)

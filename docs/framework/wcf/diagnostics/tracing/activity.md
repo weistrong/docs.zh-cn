@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：活动
 title: 活动
 ms.date: 03/30/2017
 ms.assetid: 70471705-f55f-4da1-919f-4b580f172665
-ms.openlocfilehash: 96d89a69071a90a81ead7d594eb495c5d0cdfc63
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1cedda295e6bf2c6d1a16a88275bdcfa4d15d083
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770840"
 ---
 # <a name="activity"></a>活动
 
@@ -105,7 +106,7 @@ traceSource.TraceEvent(TraceEventType.Warning, eventId, "Information");
   
 - 活动表示的是活动本身，而未必是对象。 活动应解释为 "发生此情况。 . . （发出有意义的跟踪）时发生的”。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [配置跟踪](configuring-tracing.md)
 - [使用服务跟踪查看器查看相关跟踪和进行故障诊断](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
