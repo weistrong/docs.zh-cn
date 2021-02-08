@@ -1,20 +1,21 @@
 ---
+description: 了解详细信息：与 POX 应用程序的互操作性
 title: 与 POX 应用程序的互操作性
 ms.date: 03/30/2017
 ms.assetid: 449276b8-4633-46f0-85c9-81f01d127636
-ms.openlocfilehash: 64a6d850a32b14bc60cd43466e04b53a7a39be81
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 832b9ae93f6046ca9995b57bdcbbfbfeb46d2a09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802705"
 ---
 # <a name="interoperability-with-pox-applications"></a>与 POX 应用程序的互操作性
 
-"纯旧式 XML" （POX）应用程序通过交换原始 HTTP 消息进行通信，这些消息仅包含未包含在 SOAP 信封中的 XML 应用程序数据。 Windows Communication Foundation （WCF）可以同时提供使用 POX 消息的服务和客户端。 在服务上，WCF 可用于实现向客户端公开终结点的服务，如用于发送和接收 POX 消息的 Web 浏览器和脚本语言。 在客户端上，可以使用 WCF 编程模型实现与基于 POX 的服务进行通信的客户端。  
+"纯旧 XML" (POX) 应用程序通过交换原始 HTTP 消息进行通信，这些消息仅包含未包含在 SOAP 信封中的 XML 应用程序数据。 Windows Communication Foundation (WCF) 可以同时提供使用 POX 消息的服务和客户端。 在服务上，WCF 可用于实现向客户端公开终结点的服务，如用于发送和接收 POX 消息的 Web 浏览器和脚本语言。 在客户端上，可以使用 WCF 编程模型实现与基于 POX 的服务进行通信的客户端。  
   
 > [!NOTE]
-> 本文档最初是为 .NET Framework 3.0 编写的。  .NET Framework 3.5 内置了对 POX 应用程序的支持。 有关详细信息，请参阅[WCF WEB HTTP 编程模型](wcf-web-http-programming-model.md)。
+> 本文档最初是为 .NET Framework 3.0 编写的。  .NET Framework 3.5 内置了对 POX 应用程序的支持。 有关详细信息，请参阅 [WCF WEB HTTP 编程模型](wcf-web-http-programming-model.md)。
   
 ## <a name="pox-programming-with-wcf"></a>POX 编程和 WCF
 
@@ -37,7 +38,7 @@ ms.locfileid: "84579262"
 
 标准 WCF 文本消息编码器专门配置为使用 <xref:System.ServiceModel.Channels.MessageVersion.None%2A> 值，这使它能够处理未包装在 SOAP 信封中的 XML 消息负载。
 
-使用 POX 消息通过 HTTP 进行通信的 WCF 客户端使用类似的绑定（如下面的命令性代码中所示）。
+使用 POX 消息通过 HTTP 进行通信的 WCF 客户端使用类似的绑定 (如下命令性代码) 中所示。
 
 ```csharp
 private static Binding CreatePoxBinding()

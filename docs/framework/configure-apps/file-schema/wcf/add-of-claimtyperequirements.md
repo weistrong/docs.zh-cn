@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <add> 信息： <claimTypeRequirements>
 title: <add> 的 <claimTypeRequirements>
 ms.date: 03/30/2017
 ms.assetid: c68e83c9-39e8-4264-b1ce-b6a9eb5b98aa
-ms.openlocfilehash: 00699a6fa5d0de7ac554db6ef8d0bbe511a85c0a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 63cdbce62c20cda1cabe18bbd7b045e2b9a109d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149213"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804018"
 ---
 # <a name="add-of-claimtyperequirements"></a>\<add> 的 \<claimTypeRequirements>
 
@@ -38,7 +39,7 @@ ms.locfileid: "91149213"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |claimType|一个 URI，定义声明类型。 例如，若要从网站上购买产品，用户必须提供具有足够信用额度的有效信用卡。 声明类型将为信用卡 URI。|  
 |isOptional|一个布尔值，指定声明是否为可选的。 如果声明是必选的，则将此属性设置为 `false`。<br /><br /> 当服务请求一些并非必要的信息时，可以使用此属性。 例如，如果要求用户输入其名字、姓氏和地址，但决定电话号码是可选的。|  
@@ -49,7 +50,7 @@ ms.locfileid: "91149213"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](claimtyperequirements-element.md)|指定所需声明类型的集合。<br /><br /> 在联合方案中，服务规定有关传入凭据的要求。 例如，传入凭据必须具有某组声明类型。 此集合中的每个元素都指定希望出现在联合凭据中的必选和可选的声明类型。|  
   

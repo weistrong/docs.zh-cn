@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：与 ASP.NET Web 服务的互操作性
 title: 与 ASP.NET Web 服务的互操作性
 ms.date: 03/30/2017
 ms.assetid: 622422f8-6651-442f-b8be-e654a4aabcac
-ms.openlocfilehash: cca4e1b3da26d8026d41d0a7107432cdd2960545
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f5e439bac3be4c12231653f7059792792edbc21e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802731"
 ---
 # <a name="interoperability-with-aspnet-web-services"></a>与 ASP.NET Web 服务的互操作性
 
@@ -57,6 +58,6 @@ public class Service : IEcho
 </httpModules>
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：配置 WCF 服务以与 ASP.NET Web 服务客户端进行互操作](config-wcf-service-with-aspnet-web-service.md)

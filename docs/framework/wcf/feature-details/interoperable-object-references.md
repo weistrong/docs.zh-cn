@@ -1,13 +1,14 @@
 ---
+description: 了解更多：可互操作的对象引用
 title: 可互操作的对象引用
 ms.date: 04/15/2019
 ms.assetid: cb8da4c8-08ca-4220-a16b-e04c8f527f1b
-ms.openlocfilehash: bf395c187c46e88406bfb81798c7e359b48255e3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 27c801fb3954c7ea3f821a6588a2229502702989
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802679"
 ---
 # <a name="interoperable-object-references"></a>可互操作的对象引用
 
@@ -86,7 +87,7 @@ public class SomeClass
   
  使用 `IsReference` 可确保消息往返时遵从架构要求。 如果没有此方法，则在从架构生成类型时，该类型的 XML 输出不一定与最初假设的架构兼容。 换言之，虽然 `id` 和 `ref` 属性进行了序列化，但原始架构可能禁止这些属性（或所有属性）在 XML 中出现。 `IsReference`应用于数据成员后，在往返时，将继续将成员识别为 *可引用*。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.CollectionDataContractAttribute>

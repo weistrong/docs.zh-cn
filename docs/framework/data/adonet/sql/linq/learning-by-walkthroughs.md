@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：通过演练学习
 title: 通过演练学习
 ms.date: 03/30/2017
 ms.assetid: a8ae2965-6a49-4155-89b0-7fab2c488ab1
-ms.openlocfilehash: f3d313fd50108420b631cff783708191f97a8b04
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8a0163e03ee7e992d75c8f8864a6a2b256c40a7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803819"
 ---
 # <a name="learning-by-walkthroughs"></a>通过演练学习
 
@@ -60,9 +61,9 @@ ms.locfileid: "91158235"
   
 1. 在 Windows 的 " **开始** " 菜单上，依次指向 " **所有程序**"、 **Microsoft SQL Server 2005**"和" **配置工具**"，然后单击" **SQL Server 配置管理器**"。  
   
-2. 在 **SQL Server 配置管理器**的左窗格中，单击 " **SQL Server 2005 服务**"。  
+2. 在 **SQL Server 配置管理器** 的左窗格中，单击 " **SQL Server 2005 服务**"。  
   
-3. 在右侧窗格中，右键单击 **SQL Server " (SQLEXPRESS) **"，然后单击 " **属性**"。  
+3. 在右侧窗格中，右键单击 **SQL Server " (SQLEXPRESS)**"，然后单击 " **属性**"。  
   
 4. 单击 " **登录** " 选项卡，然后验证尝试登录到服务器的方式。  
   
@@ -76,7 +77,7 @@ ms.locfileid: "91158235"
   
 ##### <a name="to-enable-the-named-pipes-protocol"></a>启用 Named Pipes 协议  
   
-1. 在 **SQL Server 配置管理器**的左窗格中，展开 " **SQL Server 2005 网络配置**"，然后单击 " **SQLEXPRESS 的协议**"。  
+1. 在 **SQL Server 配置管理器** 的左窗格中，展开 " **SQL Server 2005 网络配置**"，然后单击 " **SQLEXPRESS 的协议**"。  
   
 2. 在右侧窗格中，确保已启用 **Named Pipes** 协议。 如果不是，请右键单击 " **命名管道** "，然后单击 " **启用**"。  
   
@@ -88,11 +89,11 @@ ms.locfileid: "91158235"
   
 ##### <a name="to-stop-and-restart-the-service"></a>停止并重新启动服务  
   
-1. 在 **SQL Server 配置管理器**的左窗格中，单击 " **SQL Server 2005 服务**"。  
+1. 在 **SQL Server 配置管理器** 的左窗格中，单击 " **SQL Server 2005 服务**"。  
   
-2. 在右侧窗格中，右键单击 **SQL Server " (SQLEXPRESS) **"，然后单击 " **停止**"。  
+2. 在右侧窗格中，右键单击 **SQL Server " (SQLEXPRESS)**"，然后单击 " **停止**"。  
   
-3. 右键单击 **SQL Server (SQLEXPRESS) **"，然后单击" **重新启动**"。  
+3. 右键单击 **SQL Server (SQLEXPRESS)**"，然后单击" **重新启动**"。  
   
 ## <a name="see-also"></a>请参阅
 

@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：如何：与 WCF 终结点交换排队消息
 title: 如何：使用 WCF 终结点交换排队消息
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 938e7825-f63a-4c3d-b603-63772fabfdb3
-ms.openlocfilehash: 3f69286a2b4d4ec55f18931f9156c20a38da9c34
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fe7195719c57454cb0035c1b6f06134cf3380a46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265422"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802887"
 ---
 # <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>如何：使用 WCF 终结点交换排队消息
 
@@ -77,7 +78,7 @@ ms.locfileid: "96265422"
  [!code-csharp[S_Msmq_Transacted#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/client.cs#12)]
  [!code-vb[S_Msmq_Transacted#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#12)]  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.NetMsmqBinding>
 - [已经过事务处理的 MSMQ 绑定](../samples/transacted-msmq-binding.md)

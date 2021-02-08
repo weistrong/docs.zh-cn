@@ -1,19 +1,20 @@
 ---
+description: 了解详细信息：与 COM 应用程序集成概述
 title: COM 应用程序集成概述
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], integration overview
 ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
-ms.openlocfilehash: c283e7cbc4cb4b8bc37dd1313480410df93a93bf
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a179fd73c8065fff1e16d3f86202d717df155b81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802809"
 ---
 # <a name="integrating-with-com-applications-overview"></a>COM 应用程序集成概述
 
-Windows Communication Foundation （WCF）为托管代码开发人员提供了一个用于创建连接的应用程序的丰富环境。 但是，如果你对基于 COM 的非托管代码进行了大量投资并且不想迁移，则仍可以使用 WCF 服务名字对象将 WCF Web 服务直接集成到现有代码中。 服务标记可以在众多基于 COM 的开发环境（如 Office VBA、Visual Basic 6.0 或 Visual C++ 6.0）中使用。
+Windows Communication Foundation (WCF) 为托管代码开发人员提供用于创建连接的应用程序的丰富环境。 但是，如果你对基于 COM 的非托管代码进行了大量投资并且不想迁移，则仍可以使用 WCF 服务名字对象将 WCF Web 服务直接集成到现有代码中。 服务标记可以在众多基于 COM 的开发环境（如 Office VBA、Visual Basic 6.0 或 Visual C++ 6.0）中使用。
 
 > [!NOTE]
 > 服务标记使用 WCF 信道来进行所有通信。 用于该通道的安全和标识机制不同于标准 COM 和 DCOM 代理中使用的机制。 此外，由于服务标记使用 WCF 信道，因此所有调用的默认超时期限为一分钟。
@@ -32,7 +33,7 @@ Windows Communication Foundation （WCF）为托管代码开发人员提供了�
 
 下表显示了服务标记支持的参数。
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |`address`|服务的 URL 位置。|
 |`binding`|应用程序配置中的绑定节名。|
@@ -67,6 +68,6 @@ Windows Communication Foundation （WCF）为托管代码开发人员提供了�
 >
 > `</configuration>`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：注册和配置服务名字对象](how-to-register-and-configure-a-service-moniker.md)

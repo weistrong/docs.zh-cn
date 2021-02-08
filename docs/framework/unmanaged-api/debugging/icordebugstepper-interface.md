@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugStepper 接口
 title: ICorDebugStepper 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ed8364eb-f01b-46f6-b5e3-5dda9cae2dfe
 topic_type:
 - apiref
-ms.openlocfilehash: 8b5bbb65034e5b715532397c9ecc650da9aee912
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a16df9d25b4d87b0638448c1fdf8fec4759261d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718288"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803576"
 ---
 # <a name="icordebugstepper-interface"></a>ICorDebugStepper 接口
 
@@ -38,7 +39,7 @@ ms.locfileid: "95718288"
 |[StepOut 方法](icordebugstepper-stepout-method.md)|使此在 `ICorDebugStepper` 其包含线程中单步执行，并在当前帧将控件返回到调用帧时完成。|  
 |[StepRange 方法](icordebugstepper-steprange-method.md)|使此操作在 `ICorDebugStepper` 其包含线程中单步执行，并在到达指定范围最后一个以上的代码时返回。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugStepper`接口具有以下用途：  
   
@@ -65,6 +66,6 @@ ms.locfileid: "95718288"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

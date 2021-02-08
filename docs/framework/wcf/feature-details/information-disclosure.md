@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：信息泄漏
 title: 信息泄露
 ms.date: 03/30/2017
 ms.assetid: 4064c89f-afa6-444a-aa7e-807ef072131c
-ms.openlocfilehash: a58ac4dd3715052031c7fb5c1da480c0d01396ea
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 420437703fab883698cdd7217efb14c214a1f529
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802848"
 ---
 # <a name="information-disclosure"></a>信息泄露
 
@@ -19,7 +20,7 @@ ms.locfileid: "84596859"
 
 ## <a name="policy-information"></a>策略信息
 
-保持策略安全是十分重要的，在联合方案中尤其如此 — 在这些方案中，会在策略中公开敏感的已颁发令牌要求或令牌颁发者信息。 在这些情况下，建议保护联合服务的策略终结点，以防止攻击者获取服务的有关信息（如要放置在已颁发令牌中的声明的类型）或是将客户端重定向到恶意的令牌颁发者。 例如，攻击者可能通过将联合信任链重新配置为终止于执行中间人攻击的颁发者处，来发现用户名/密码对。 此外，还建议通过策略检索来获取绑定的联合客户端验证是否信任所获得的联合信任链中的颁发者。 有关联合方案的详细信息，请参阅[联合](federation.md)。
+保持策略安全是十分重要的，在联合方案中尤其如此 — 在这些方案中，会在策略中公开敏感的已颁发令牌要求或令牌颁发者信息。 在这些情况下，建议保护联合服务的策略终结点，以防止攻击者获取服务的有关信息（如要放置在已颁发令牌中的声明的类型）或是将客户端重定向到恶意的令牌颁发者。 例如，攻击者可能通过将联合信任链重新配置为终止于执行中间人攻击的颁发者处，来发现用户名/密码对。 此外，还建议通过策略检索来获取绑定的联合客户端验证是否信任所获得的联合信任链中的颁发者。 有关联合方案的详细信息，请参阅 [联合](federation.md)。
 
 ## <a name="memory-dumps-can-reveal-claim-information"></a>内存转储可能泄露声明信息
 
@@ -35,7 +36,7 @@ ms.locfileid: "84596859"
 
 ## <a name="service-references"></a>服务引用
 
-服务引用是对另一个服务的引用。 例如，服务可能会在操作过程中将服务引用传递给客户端。 服务引用还用于*信任标识验证*程序，这是一个内部组件，它在向目标公开应用程序数据或凭据等信息之前确保目标主体的标识。 如果远程信任标识无法验证或不正确，则发送方应确保没有泄露任何可能危及自身、应用程序或用户的数据。
+服务引用是对另一个服务的引用。 例如，服务可能会在操作过程中将服务引用传递给客户端。 服务引用还用于 *信任标识验证* 程序，这是一个内部组件，它在向目标公开应用程序数据或凭据等信息之前确保目标主体的标识。 如果远程信任标识无法验证或不正确，则发送方应确保没有泄露任何可能危及自身、应用程序或用户的数据。
 
 缓解措施包括：
 
@@ -63,12 +64,12 @@ MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCr
 
 这段代码未指定域名，因而将使用 NTLM。
 
-如果指定了域，但使用终结点标识功能指定了无效的服务主体名称，则会使用 NTLM。 有关如何指定终结点标识的详细信息，请参阅[服务标识和身份验证](service-identity-and-authentication.md)。
+如果指定了域，但使用终结点标识功能指定了无效的服务主体名称，则会使用 NTLM。 有关如何指定终结点标识的详细信息，请参阅 [服务标识和身份验证](service-identity-and-authentication.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [安全注意事项](security-considerations-in-wcf.md)
-- [特权提升](elevation-of-privilege.md)
+- [权限提升](elevation-of-privilege.md)
 - [拒绝服务](denial-of-service.md)
 - [篡改](tampering.md)
 - [不受支持的方案](unsupported-scenarios.md)

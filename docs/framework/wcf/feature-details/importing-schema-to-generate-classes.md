@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：导入架构以生成类
 title: 导入架构以生成类
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, schema import and export
 - XsdDataContractImporter class
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
-ms.openlocfilehash: 7f7c13cda2dcaeec16ad1ee49ff3dddf369906e5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 787d2a40db6de8181c7e4d27df72fbc4ac032da2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802861"
 ---
 # <a name="importing-schema-to-generate-classes"></a>导入架构以生成类
 
@@ -191,7 +192,7 @@ ms.locfileid: "96280516"
   
 - <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> 属性。 一个可用此属性指定的 <xref:System.Runtime.Serialization.IDataContractSurrogate> 实现。 <xref:System.Runtime.Serialization.IDataContractSurrogate> 自定义导入过程。 有关详细信息，请参阅 [数据协定代理](../extending/data-contract-surrogates.md)项。 默认情况下，不使用代理项。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>

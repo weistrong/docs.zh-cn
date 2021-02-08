@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <add> 信息： <commonParameters>
 title: <add> 的 <commonParameters>
 ms.date: 03/30/2017
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
-ms.openlocfilehash: 11be233d846f9025f041a26174e5b3bd2abdab55
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d7a1b78ed79b7eab472460b364b90bd372ecf6bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804005"
 ---
 # <a name="add-of-commonparameters"></a>\<add> 的 \<commonParameters>
 
@@ -41,7 +42,7 @@ ms.locfileid: "91149187"
 |属性|说明|  
 |---------------|-----------------|  
 |name|为服务指定的参数的名称。|  
-|值|为服务指定的参数的值。|  
+|value|为服务指定的参数的值。|  
   
 ### <a name="child-elements"></a>子元素  
 
@@ -49,7 +50,7 @@ ms.locfileid: "91149187"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<commonParameters>](commonparameters.md)|服务使用的公用参数的集合。 此集合通常将包括可由持久性服务共享的数据库连接字符串。|  
   

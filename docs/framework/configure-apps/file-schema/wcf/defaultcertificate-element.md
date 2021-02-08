@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <defaultCertificate> 元素
 title: <defaultCertificate> 元素
 ms.date: 03/30/2017
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
-ms.openlocfilehash: 2eaec4f4296f90579ca32d817f0a20da4ccc9a37
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 580236e521e91c8b475586f6c6378630960f233c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803914"
 ---
 # <a name="defaultcertificate-element"></a>\<defaultCertificate> 元素
 
@@ -37,7 +38,7 @@ ms.locfileid: "91153893"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |findValue|字符串。 要搜索的值。|  
 |x509FindType|枚举。 要搜索的证书字段之一。|  
@@ -52,19 +53,19 @@ ms.locfileid: "91153893"
   
 ## <a name="x509findtype-attribute"></a>x509FindType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|值包括：FindByThumbprint、FindBySubjectName、FindBySubjectDistinguishedName、FindByIssuerName、FindByIssuerDistinguishedName、FindBySerialNumber、FindByTimeValid、FindByTimeNotYetValid、FindBySerialNumber、FindByTimeExpired、FindByTemplateName、FindByApplicationPolicy、FindByCertificatePolicy、FindByExtension、FindByKeyUsage 和 FindBySubjectKeyIdentifier。|  
   
 ## <a name="storelocation-attribute"></a>storeLocation 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|CurrentUser 或 LocalMachine。|  
   
 ## <a name="storename-attribute"></a>storeName 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |枚举|值包括：AddressBook、AuthRoot、CertificateAuthority、Disallowed、My、Root、TrustedPeople 和 TrustedPublisher。|  
   
@@ -74,7 +75,7 @@ ms.locfileid: "91153893"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<serviceCertificate>](servicecertificate-of-clientcredentials-element.md)|指定客户端对服务进行身份验证时使用的证书。|  
   

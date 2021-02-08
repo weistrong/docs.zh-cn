@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugHeapValue 接口
 title: ICorDebugHeapValue 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1bca66db-0359-4ae8-846e-e35f7e547e8b
 topic_type:
 - apiref
-ms.openlocfilehash: ee3ea319360bba1a113c15daf8cf143ea512e5cd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7c65cbce530f0d1f00d8610031fb604a0118ee29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803667"
 ---
 # <a name="icordebugheapvalue-interface"></a>ICorDebugHeapValue 接口
 
@@ -32,7 +33,7 @@ ms.locfileid: "95733316"
 |[CreateRelocBreakpoint 方法](icordebugheapvalue-createrelocbreakpoint-method.md)|未实现。|  
 |[IsValid 方法](icordebugheapvalue-isvalid-method.md)|获取一个值，该值指示由此表示的对象是否 `ICorDebugHeapValue` 有效，或者是否已被垃圾回收器回收。 此方法在 .NET Framework 版本2.0 中已弃用。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -47,6 +48,6 @@ ms.locfileid: "95733316"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

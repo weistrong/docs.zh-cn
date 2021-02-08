@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugRemoteTarget：： GetHostName 方法
 title: ICorDebugRemoteTarget::GetHostName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1c7276f7-7e54-470c-808c-e13745ac07a1
 topic_type:
 - apiref
-ms.openlocfilehash: 3e946d8a27ec6b568b2f3c3633695c9f6795c938
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a24f34dd638c7031211c2185cd761af0aa24105e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803521"
 ---
 # <a name="icordebugremotetargetgethostname-method"></a>ICorDebugRemoteTarget::GetHostName 方法
 
@@ -55,7 +56,7 @@ HRESULT GetHostName (
  E_FAIL（或其他 E_ 返回代码）  
  无法返回主机名或 IP 地址。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法由调试器编写器实现。 它必须遵循多个调用范例：在第一次调用时，调用方将 null 传递给 `cchHostName` 和 `szHostName` ，并 `pcchHostName` 返回所需的缓冲区大小。 第二次调用时，先前返回的大小在 `cchHostName` 中传递，相应大小的缓冲区在 `szHostName` 中传递。  
   
@@ -69,7 +70,7 @@ HRESULT GetHostName (
   
  **.NET Framework 版本：** 3.5 SP1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugRemoteTarget 接口](icordebugremotetarget-interface.md)
 - [ICorDebug 接口](icordebug-interface.md)

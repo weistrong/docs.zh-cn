@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <defaultPorts>
 title: <defaultPorts>
 ms.date: 03/30/2017
 ms.assetid: 725d4ee5-bd46-4f0e-9c20-30ba75d6eb2c
-ms.openlocfilehash: 08ca8a2bfcf5b905152f7e64a45cbae4992a7b78
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7cd0635568bf80734900f5e54f918150ea657322
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192368"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803901"
 ---
 # \<defaultPorts>
 
@@ -42,13 +43,13 @@ ms.locfileid: "91192368"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<defaultPorts> 的 \<add>](add-of-defaultports.md)|客户端应用程序侦听的默认通信终结点。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<useRequestHeadersForMetadataAddress>](userequestheadersformetadataaddress.md)|默认端口列表。|  
   

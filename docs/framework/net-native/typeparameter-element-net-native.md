@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： <TypeParameter> 元素 ( .NET Native) '
 title: <TypeParameter>元素 (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
-ms.openlocfilehash: dc04115914b7571b677c6d069d2d4b820b895d59
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 182cd62dc0584991b8ef0f5757d6005173d6d7a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803641"
 ---
 # <a name="typeparameter-element-net-native"></a>\<TypeParameter>元素 (.NET Native)
 
@@ -35,7 +36,7 @@ ms.locfileid: "96287665"
   
 ### <a name="attributes"></a>特性  
   
-|属性|属性类型|描述|  
+|属性|属性类型|说明|  
 |---------------|--------------------|-----------------|  
 |`Name`|常规|必需的特性。 类型 <xref:System.Type> 的参数名称。 例如，对于方法签名 `Type.GetInterfaceMap(Type interfaceType)`，`Name` 特性的值为“接口类型”。|  
 |`Activate`|反射|可选特性。 控制运行时对构造函数的访问，以启用实例激活。|  
@@ -51,13 +52,13 @@ ms.locfileid: "96287665"
   
 ## <a name="name-attribute"></a>Name 特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*parameter_name*|类型 <xref:System.Type> 的参数名称。 例如，对于方法签名 `Type.GetInterfaceMap(Type interfaceType)`，`Name` 特性的值为“接口类型”。|  
   
 ## <a name="all-other-attributes"></a>所有其他特性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |*策略_设置*|该设置将应用到这种策略类型。 可能值为 `All`、`Public`、`PublicAndInternal`、`Required Public`、`Required PublicAndInternal` 以及 `Required All`。 有关详细信息，请参阅[运行时指令策略设置](runtime-directive-policy-settings.md)。|  
   
@@ -67,7 +68,7 @@ ms.locfileid: "96287665"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<Method>](method-element-net-native.md)|将运行时反射策略应用到一个构造函数或方法。|  
   

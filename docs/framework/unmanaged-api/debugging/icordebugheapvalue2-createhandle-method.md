@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugHeapValue2：： CreateHandle 方法
 title: ICorDebugHeapValue2::CreateHandle 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fbc418e8-fa22-420d-84ec-e0e1800db041
 topic_type:
 - apiref
-ms.openlocfilehash: 278120c6e1bc87a061a3f81f71bdb7b89cd421be
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d93fee71441b9c510d517acb9582b8d1d9ce9e10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803654"
 ---
 # <a name="icordebugheapvalue2createhandle-method"></a>ICorDebugHeapValue2::CreateHandle 方法
 
@@ -43,7 +44,7 @@ HRESULT CreateHandle (
  `ppHandle`  
  弄指向 ICorDebugHandleValue 对象的地址的指针，该对象表示此堆值的新句柄。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  该句柄将在与堆值相关联的应用程序域中创建，如果应用程序域已卸载，则将变为无效。  
   

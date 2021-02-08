@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <issuerNameRegistry>
 title: <issuerNameRegistry>
 ms.date: 03/30/2017
 ms.assetid: 58b39d12-c953-40c4-88af-d7eb3343ca28
 author: BrucePerlerMS
-ms.openlocfilehash: 9991430f09cb6a63d0a3cdde24a4ff03d3dd746d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 73eb0d9d4d19f8e25f2db501e8cb3858d346ac2c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803849"
 ---
 # \<issuerNameRegistry>
 
@@ -49,13 +50,13 @@ ms.locfileid: "91165047"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<trustedIssuers>](trustedissuers.md)|当 `type` 属性指定基于配置的颁发者名称注册表 (<xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> 类) 时， [\<trustedIssuers>](trustedissuers.md) 必须指定元素。 [\<trustedIssuers>](trustedissuers.md)元素可以将 `<add>` 、 `<clear>` 或 `<remove>` 元素作为子元素。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|为安全标记处理程序的集合提供配置。|  
   

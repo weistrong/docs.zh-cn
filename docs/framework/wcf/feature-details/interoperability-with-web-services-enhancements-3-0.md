@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：与 Web 服务增强3.0 的互操作性
 title: 与 Web Services Enhancements 3.0 的互操作性
 ms.date: 03/30/2017
 ms.assetid: e8e589d2-12c6-4794-8a11-1ee90b47dfaa
-ms.openlocfilehash: 9c921909980f14a79e365925eab241ee2b84ea88
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 43963226ec97538cda529db7715a7ca60d7ed62f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802692"
 ---
 # <a name="interoperability-with-web-services-enhancements-30"></a>与 Web Services Enhancements 3.0 的互操作性
 
@@ -25,6 +26,6 @@ ms.locfileid: "96276615"
 
  [将 WSE 3.0 Web 服务迁移到 WCF](migrating-wse-3-0-web-services-to-wcf.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [与 ASP.NET Web 服务的互操作性](interop-with-aspnet-web-services.md)

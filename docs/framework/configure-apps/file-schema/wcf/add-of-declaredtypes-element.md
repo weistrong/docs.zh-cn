@@ -1,4 +1,5 @@
 ---
+description: 了解有关 <add> 元素的详细 <declaredTypes> 信息
 title: <add> of <declaredTypes> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - DataContractSerializer
 - DataContractAttribute
 ms.assetid: c3d37ae4-8f1c-463f-b195-658c5a7e90a1
-ms.openlocfilehash: 9af47848b03074ec88f38a5884089bc50239ee50
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8e2be6e553ee5dc5c96bcae81d1c1c6bf609afed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201663"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803979"
 ---
 # <a name="add-of-declaredtypes-element"></a>\<add> of \<declaredTypes> 元素
 
@@ -47,13 +48,13 @@ ms.locfileid: "91201663"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<knownType>](knowntype.md)|指定要添加的声明类型的已知类型。 如果声明类型是泛型类型，则还必须向 `<knownType>` 元素添加一个参数元素，以指定用于返回已知类型的泛型参数。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<declaredTypes>](declaredtypes.md)|包含在 <xref:System.Runtime.Serialization.DataContractSerializer> 进行反序列化过程中需要已知类型的类型。|  
   

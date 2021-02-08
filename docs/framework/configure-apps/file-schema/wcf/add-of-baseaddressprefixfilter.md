@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <add> 信息： <baseAddressPrefixFilter>
 title: <add> 的 <baseAddressPrefixFilter>
 ms.date: 03/30/2017
 ms.assetid: b226bede-8459-4de9-b2ac-3d39604ce2bc
-ms.openlocfilehash: fefe85381aec113da123e6f2246aee340b0cf97a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f3abdf59223921a56c96e02dd95babc54f91dc03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804044"
 ---
 # <a name="add-of-baseaddressprefixfilter"></a>\<add> 的 \<baseAddressPrefixFilter>
 
@@ -35,7 +36,7 @@ ms.locfileid: "91181591"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |前缀|用于与基址的一部分进行匹配的 URI。|  
   
@@ -45,7 +46,7 @@ ms.locfileid: "91181591"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<baseAddressPrefixFilters>](baseaddressprefixfilters.md)|用于指定传递筛选器的配置元素的集合，这些筛选器提供一种机制，用于在 IIS 中承载 Windows Communication Foundation (WCF) 应用程序时选取适当的 IIS 绑定。|  
   

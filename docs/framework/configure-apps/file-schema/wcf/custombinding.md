@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <customBinding>
 title: <customBinding>
 ms.date: 03/30/2017
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
-ms.openlocfilehash: cdaaacf0dfa75209d001f6e8d6ac7175816048aa
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a4d297750d107648aa10b349c6febc1a8929a30b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74140792"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803940"
 ---
 # \<customBinding>
 
@@ -182,14 +183,14 @@ ms.locfileid: "74140792"
 |属性|说明|
 |---------------|-----------------|
 |closeTimeout|一个 <xref:System.TimeSpan> 值，指定为完成关闭操作提供的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|
-|NAME|一个包含绑定的配置名称的字符串。 此值是用户定义的一个字符串，可充当自定义绑定的标识字符串。 从 .NET Framework 4 开始，绑定和行为不需要具有名称。 有关默认配置和无值绑定和行为的详细信息，请参阅[WCF 服务的](../../../wcf/samples/simplified-configuration-for-wcf-services.md)[简化配置](../../../wcf/simplified-configuration.md)和简化配置。|
+|name|一个包含绑定的配置名称的字符串。 此值是用户定义的一个字符串，可充当自定义绑定的标识字符串。 从 .NET Framework 4 开始，绑定和行为不需要具有名称。 有关默认配置和无值绑定和行为的详细信息，请参阅[WCF 服务的](../../../wcf/samples/simplified-configuration-for-wcf-services.md)[简化配置](../../../wcf/simplified-configuration.md)和简化配置。|
 |openTimeout|一个 <xref:System.TimeSpan> 值，指定为完成打开操作提供的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|
 |receiveTimeout|一个 <xref:System.TimeSpan> 值，指定为完成接收操作提供的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|
 |sendTimeout|一个 <xref:System.TimeSpan> 值，指定为完成发送操作提供的时间间隔。 此值应大于或等于 <xref:System.TimeSpan.Zero>。 默认值为 00:01:00。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<compositeDuplex>](compositeduplex.md)|对自定义绑定指定双向消息处理。 它与本身不允许进行双工通信的传输（例如，HTTP）一起使用。 与此相反，TCP 本身允许进行双工通信，并且不要求服务在将消息发送回客户端时使用此绑定元素。<br /><br /> 客户端必须公开一个地址，以便服务进行联系和建立连接。 此客户端地址由 `ClientBaseAddress` 属性提供。<br /><br /> 此元素的类型为 <xref:System.ServiceModel.Configuration.CompositeDuplexElement>。|
 |[\<pnrpPeerResolver>](pnrppeerresolver.md)|指定对等名称解析协议 (PNRP) 对等名称解析程序。 此元素的类型为 <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>。|
@@ -201,11 +202,11 @@ ms.locfileid: "74140792"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |绑定|包含 Windows Communication Foundation 应用程序的所有绑定。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 自定义绑定提供了对 WCF 消息堆栈的完全控制。 通过添加特定实体的配置元素，可以创建特别定制的绑定。 例如，用户可以合并 `httpsTransport` 节、`reliableSession` 节和 `security` 节以创建一个安全可靠的基于 https 的绑定。
 
@@ -231,7 +232,7 @@ ms.locfileid: "74140792"
 
 - 接下来是一个可选的 <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>，它提供了 WS-ReliableMessaging 规范中定义的会话和排序机制。 此会话概念可跨 SOAP 和传输中介。
 
-- 接下来是一个可选的安全绑定元素，它提供了授权、身份验证、保护和机密性之类的安全功能。 Windows Communication Foundation （WCF）提供以下安全绑定元素：
+- 接下来是一个可选的安全绑定元素，它提供了授权、身份验证、保护和机密性之类的安全功能。 Windows Communication Foundation (WCF) 提供以下安全绑定元素：
 
   - <xref:System.ServiceModel.Channels.SecurityBindingElement>
 
@@ -261,7 +262,7 @@ ms.locfileid: "74140792"
 
   - <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>
 
-- 底层是一个必需的传输元素。 你可以使用自己的传输，或者使用 Windows Communication Foundation （WCF）提供的传输绑定元素之一：
+- 底层是一个必需的传输元素。 你可以使用自己的传输，或者使用 Windows Communication Foundation (WCF) 提供的传输绑定元素之一：
 
   - <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
 
@@ -279,7 +280,7 @@ ms.locfileid: "74140792"
 
 下表总结了每层的选项。
 
-|层|选项|必选|
+|层|选项|必须|
 |-----------|-------------|--------------|
 |事务流|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|否|
 |可靠性|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement>|否|
@@ -291,9 +292,9 @@ ms.locfileid: "74140792"
 
 此外，可以定义自己的绑定元素，并将它们插在前面定义的任何层之间。
 
-有关如何使用自定义绑定来修改系统提供的绑定的讨论，请参阅[如何：自定义系统提供的绑定](../../../wcf/extending/how-to-customize-a-system-provided-binding.md)。
+有关如何使用自定义绑定来修改系统提供的绑定的讨论，请参阅 [如何：自定义 System-Provided 绑定](../../../wcf/extending/how-to-customize-a-system-provided-binding.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Channels.Binding>
 - <xref:System.ServiceModel.Channels.BindingElement>

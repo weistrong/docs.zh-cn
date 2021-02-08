@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： SQL-CLR 类型映射
 title: SQL-CLR 类型映射
 ms.date: 07/23/2018
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
-ms.openlocfilehash: 313fd81bd84a99e4a2d32925a7d3bb4776f8472b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 59d3594287ceb20f5c3887c58a0f5527df35218a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203535"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803732"
 ---
 # <a name="sql-clr-type-mapping"></a>SQL-CLR 类型映射
 

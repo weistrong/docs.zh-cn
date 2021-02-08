@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： FindMethod 方法
 title: IMetaDataImport::FindMethod 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0f9bde1d-e306-438d-941b-d0925b322304
 topic_type:
 - apiref
-ms.openlocfilehash: 111e42a6d8f413c616779bc44e0722ab38781588
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0d2866554fcb4dcf3984310e4da24d501f1fc7b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711333"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803544"
 ---
 # <a name="imetadataimportfindmethod-method"></a>IMetaDataImport::FindMethod 方法
 
@@ -55,7 +56,7 @@ HRESULT FindMethod (
  `pmb`  
  弄指向匹配 MethodDef 标记的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  使用其封闭类或接口指定方法 (`td`) ，其名称 (`szName`) ，还可以指定其签名 (`pvSigBlob`) 。 类或接口中可能有多个具有相同名称的方法。 在这种情况下，传递该方法的签名以查找唯一匹配项。  
   
@@ -73,7 +74,7 @@ HRESULT FindMethod (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Reflection.MethodInfo>
 - [IMetaDataImport 接口](imetadataimport-interface.md)

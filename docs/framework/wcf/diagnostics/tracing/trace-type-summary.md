@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：跟踪类型摘要
 title: 跟踪类型摘要
 ms.date: 03/30/2017
 ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
-ms.openlocfilehash: e8d222d6f093f5db3bd620194bfde7edd4b998a8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ebfe9de16766494a6aebe0a8d2501954855dc4df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259240"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803212"
 ---
 # <a name="trace-type-summary"></a>跟踪类型摘要
 
@@ -23,8 +24,8 @@ ms.locfileid: "96259240"
 |错误|可恢复的错误。|  
 |警告|信息性消息。|  
 |信息|非严重问题。|  
-|“详细”|调试跟踪。|  
-|启动|开始处理逻辑单元。|  
+|详细|调试跟踪。|  
+|开始|开始处理逻辑单元。|  
 |挂起|挂起逻辑单元处理。|  
 |继续|继续逻辑单元处理。|  
 |停止|停止处理逻辑单元。|  

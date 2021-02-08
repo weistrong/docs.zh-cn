@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：与 COM + 应用程序集成概述
 title: 与 COM+ 应用程序集成的概述
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Communication Foundation, COM+ integration
 - WCF, COM+ integration
 ms.assetid: e481e48f-7096-40eb-9f20-7f0098412941
-ms.openlocfilehash: 1b9b7e57760c2aba0a8e9eadd53ca8e72529b787
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c24ce95651aff222b8374243143afc7166406fcf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248963"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802783"
 ---
 # <a name="integrating-with-com-applications-overview"></a>与 COM+ 应用程序集成的概述
 
@@ -106,6 +107,6 @@ Windows Communication Foundation (WCF) 提供了一个用于创建分布式应�
   
  COM+ 进程回收功能不能在集成应用程序上使用。 如果该应用程序配置为使用进程回收功能，并且组件正在 COM+ 承载的进程中运行，则服务将无法启动。 此需求不包括使用进程内 Web 承载模式的服务，这是因为没有应用进程回收设置。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [COM 应用程序集成概述](integrating-with-com-applications-overview.md)

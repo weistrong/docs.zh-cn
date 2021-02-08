@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： MsmqBindingElementBase
 title: MsmqBindingElementBase
 ms.date: 03/30/2017
 ms.assetid: 210d41ab-a2a4-4d7a-afd2-0916c08a4015
-ms.openlocfilehash: 48d26bfa9074fd605e3545579f0bdc2744dfc7d8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3aa5ec2343d73798f1cf5e3c7d4b5a8282f97ac9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803173"
 ---
 # <a name="msmqbindingelementbase"></a>MsmqBindingElementBase
 
@@ -134,7 +135,7 @@ class MsmqBindingElementBase : TransportBindingElement
 |---------|-----------------------------------|  
 |命名空间|已在 root\ServiceModel 中定义|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.NetMsmqBinding>
 - <xref:System.ServiceModel.MsmqBindingBase>

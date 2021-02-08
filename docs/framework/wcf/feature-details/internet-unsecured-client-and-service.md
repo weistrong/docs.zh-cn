@@ -1,16 +1,17 @@
 ---
+description: 了解更多相关信息： Internet 不安全的客户端和服务
 title: 不安全的 Internet 客户端和服务
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-ms.openlocfilehash: 32c08daaacb482aa98a58d7f8882da2c9389293d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8b402b276c80b2e1c148de0837d8644aad7a2d4a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802770"
 ---
 # <a name="internet-unsecured-client-and-service"></a>不安全的 Internet 客户端和服务
 
@@ -116,7 +117,7 @@ ms.locfileid: "96276667"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [常用安全方案](common-security-scenarios.md)
 - [安全性概述](security-overview.md)
