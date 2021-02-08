@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： ExitProcess 方法
 title: ICorDebugManagedCallback::ExitProcess 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 63a7d47a-0d54-4e29-9767-9f09feaa38b7
 topic_type:
 - apiref
-ms.openlocfilehash: 67f3e63b58e08a4b9ccfbd555e6edcdef0d00d90
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3418931b8397edefcb801986275c35b28e00072d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790953"
 ---
 # <a name="icordebugmanagedcallbackexitprocess-method"></a>ICorDebugManagedCallback::ExitProcess 方法
 
@@ -39,7 +40,7 @@ HRESULT ExitProcess (
  `pProcess`  
  中指向表示进程的 ICorDebugProcess 对象的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  无法从 `ExitProcess` 事件继续。 此事件可能会在进程显示为停止时异步激发其他事件。 如果进程在停止时终止，通常是由某个外部强制导致的，则可能会发生这种情况。  
   
@@ -57,6 +58,6 @@ HRESULT ExitProcess (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

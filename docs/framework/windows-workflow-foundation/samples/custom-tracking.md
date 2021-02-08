@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：自定义跟踪
 title: 自定义跟踪
 ms.date: 03/30/2017
 ms.assetid: 2d191c9f-62f4-4c63-92dd-cda917fcf254
-ms.openlocfilehash: 3d125c59196cb2a7d33961e0f271aab8c5663a50
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a06faaaa50a06d613f7183ca018438a8f2b4460b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234565"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792552"
 ---
 # <a name="custom-tracking"></a>自定义跟踪
 
@@ -25,7 +26,7 @@ ms.locfileid: "96234565"
 
  下表详细介绍工作流运行时发出的跟踪记录。
 
-|跟踪记录|描述|
+|跟踪记录|说明|
 |---------------------|-----------------|
 |工作流实例跟踪记录。|描述工作流实例的生命周期。 例如，当工作流启动或完成时发出一个实例记录。|
 |活动状态跟踪记录。|详细说明活动执行情况。 这些记录指示工作流活动的状态，例如，当安排活动时、活动完成时或引发错误时。|
@@ -152,6 +153,6 @@ context.Track(customRecord);
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [AppFabric 监视示例](/previous-versions/appfabric/ff383407(v=azure.10))

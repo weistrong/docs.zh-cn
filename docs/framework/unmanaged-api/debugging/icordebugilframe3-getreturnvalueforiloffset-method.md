@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugILFrame3：： GetReturnValueForILOffset 方法
 title: ICorDebugILFrame3::GetReturnValueForILOffset 方法
 ms.date: 03/30/2017
 dev_langs:
@@ -13,12 +14,12 @@ api_type:
 ms.assetid: 06522727-5f64-4391-9331-11386883c352
 topic_type:
 - apiref
-ms.openlocfilehash: 11207298b071527151535144330790df767c2101
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4be4cb3a108394f2701f6690b06f6c2252ae25cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791265"
 ---
 # <a name="icordebugilframe3getreturnvalueforiloffset-method"></a>ICorDebugILFrame3::GetReturnValueForILOffset 方法
 
@@ -41,7 +42,7 @@ HRESULT GetReturnValueForILOffset(
  `ppReturnValue`  
  一个指向 "ICorDebugValue" 接口对象地址的指针，该对象提供有关函数调用的返回值的信息。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法与 [ICorDebugCode3：： GetReturnValueLiveOffset](icordebugcode3-getreturnvalueliveoffset-method.md) 方法一起使用，以获取方法的返回值。 这对于返回值被忽略的方法特别有用，如以下两个代码示例所示。 第一个示例调用 <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> 方法，但忽略方法的返回值。  
   
@@ -74,7 +75,7 @@ HRESULT GetReturnValueForILOffset(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [GetReturnValueLiveOffset 方法](icordebugcode3-getreturnvalueliveoffset-method.md)
 - [ICorDebugILFrame3 接口](icordebugilframe3-interface.md)

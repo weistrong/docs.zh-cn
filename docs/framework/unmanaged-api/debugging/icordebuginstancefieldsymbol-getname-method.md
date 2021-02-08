@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugInstanceFieldSymbol：： GetName 方法
 title: ICorDebugInstanceFieldSymbol::GetName 方法
 ms.date: 03/30/2017
 ms.assetid: d9c12b1f-9c1d-4943-8e9e-93b55faf085f
-ms.openlocfilehash: e466a62761cc6dd1f1fc0a54f05d54f85c190d07
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9cc2106d1527aa0b4d9e5c52115b703ffe55037f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724931"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791187"
 ---
 # <a name="icordebuginstancefieldsymbolgetname-method"></a>ICorDebugInstanceFieldSymbol::GetName 方法
 
@@ -34,7 +35,7 @@ HRESULT GetName(
  `szName`  
  [out] 用于存储返回名称的字符数组。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此方法仅适用于 .NET Native。  
@@ -49,7 +50,7 @@ HRESULT GetName(
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugInstanceFieldSymbol 接口](icordebuginstancefieldsymbol-interface.md)
 - [调试接口](debugging-interfaces.md)

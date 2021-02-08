@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： ExitThread 方法
 title: ICorDebugManagedCallback::ExitThread 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 62db708b-6cf0-45c5-b897-4b5c75bd2505
 topic_type:
 - apiref
-ms.openlocfilehash: 2ccb06b974cb17dff987ba42b647224cdc4c4ff2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c9472d6377246833c7c30f072549da9c44f05d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790940"
 ---
 # <a name="icordebugmanagedcallbackexitthread-method"></a>ICorDebugManagedCallback::ExitThread 方法
 
@@ -43,7 +44,7 @@ HRESULT ExitThread (
  `thread`  
  中指向 ICorDebugThread 对象的指针，该对象表示托管线程。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ExitThread`引发回调后，线程将不再出现在线程枚举中。  
   
@@ -57,6 +58,6 @@ HRESULT ExitThread (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

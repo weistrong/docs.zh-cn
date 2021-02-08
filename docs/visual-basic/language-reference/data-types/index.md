@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：数据类型摘要 (Visual Basic) '
 title: 数据类型摘要
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - storage order, controlling in Visual Basic
 - data types [Visual Basic], memory requirements
 ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
-ms.openlocfilehash: 5eb52ef937a677c0b7498d058b5a39a375351ddc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ac5b8e438210c2d1407e0d6a12d560f29523620c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792188"
 ---
 # <a name="data-type-summary-visual-basic"></a>数据类型摘要 (Visual Basic)
 
@@ -50,30 +51,30 @@ ms.locfileid: "84415617"
   
 |Visual Basic 类型|公共语言运行时类型结构|标称存储分配|取值范围|  
 |-----------------------|--------------------------------------------|--------------------------------|-----------------|  
-|[布尔值](boolean-data-type.md)|<xref:System.Boolean>|依赖于实现平台|`True` 或 `False`|  
-|[Byte](byte-data-type.md)|<xref:System.Byte>|1 个字节|0到255（无符号）|  
-|[Char](char-data-type.md) （单个字符）|<xref:System.Char>|2 个字节|0到65535（无符号）|  
-|[Date](date-data-type.md)|<xref:System.DateTime>|8 个字节|0:00:00 年1月1日至12月31日下午11:59:59，（午夜）9999|  
-|[小数](decimal-data-type.md)|<xref:System.Decimal>|16 个字节|0到 +/-79228162514264337593543950335 （+/-7.9...E + 28） <sup>†</sup> ，无小数点;0到 +/-7.9228162514264337593543950335，小数点右侧有28个位置;<br /><br /> 最小非零数字为 +/-0.0000000000000000000000000001 （+/-1E-28） <sup>†</sup>|  
-|[双](double-data-type.md)精度（双精度浮点）|<xref:System.Double>|8 个字节|-1.79769313486231570 e + 308 到-4.94065645841246544 E-324 <sup>†</sup>表示负值;<br /><br /> 4.94065645841246544 e-324 到 1.79769313486231570 E + 308 <sup>†</sup>用于正值|  
-|[整数](integer-data-type.md)|<xref:System.Int32>|4 个字节|-2147483648 到2147483647（有符号）|  
-|[Long](long-data-type.md) （长整型）|<xref:System.Int64>|8 个字节|-9223372036854775808 到9223372036854775807（9.2. E + 18 <sup>†</sup>）（有符号）|  
-|[对象](object-data-type.md)|<xref:System.Object>班级|32位平台上的4个字节<br /><br /> 64位平台上的8个字节|任何类型都可以存储在类型的变量中`Object`|  
-|[SByte](sbyte-data-type.md)|<xref:System.SByte>|1 个字节|-128 到127（有符号）|  
-|[Short](short-data-type.md) （短整型）|<xref:System.Int16>|2 个字节|-32768 到32767（有符号）|  
-|[单](single-data-type.md)精度（单精度浮点）|<xref:System.Single>|4 个字节|-3.4028235 e + 38 到-1.401298 E-45 <sup>†</sup>表示负值;<br /><br /> 1.401298 e-45 到 3.4028235 E + 38 <sup>†</sup>用于正值|  
-|[字符串](string-data-type.md)（可变长度）|<xref:System.String>班级|依赖于实现平台|0到约 2000000000 Unicode 字符|  
-|[UInteger](uinteger-data-type.md)|<xref:System.UInt32>|4 个字节|0到4294967295（无符号）|  
-|[ULong](ulong-data-type.md)|<xref:System.UInt64>|8 个字节|0到18446744073709551615（1.8 ... E + 19 <sup>†</sup>）（无符号）|  
-|[用户定义的](user-defined-data-type.md)（结构）|（继承自 <xref:System.ValueType> ）|依赖于实现平台|结构的每个成员都有一个由其数据类型确定的范围，并与其他成员的范围无关|  
-|[UShort](ushort-data-type.md)|<xref:System.UInt16>|2 个字节|0到65535（无符号）|  
+|布尔 |<xref:System.Boolean>|依赖于实现平台|`True` 或 `False`|  
+|[Byte](byte-data-type.md)|<xref:System.Byte>|1 个字节|0到 255 (无符号) |  
+|[Char](char-data-type.md) (单个字符) |<xref:System.Char>|2 个字节|0到 65535 (无符号) |  
+|[日期](date-data-type.md)|<xref:System.DateTime>|8 个字节|0:00:00 (0001 年1月1日午夜) 9999，年12月1日到 11:59:59 PM|  
+|十进制 |<xref:System.Decimal>|16 个字节|0到 +/-79228162514264337593543950335 (+/-7.9...E + 28) <sup>†</sup> ，无小数点;0到 +/-7.9228162514264337593543950335，小数点右侧有28个位置;<br /><br /> 最小非零数字为 +/-0.0000000000000000000000000001 (+/-1E-28) <sup>†</sup>|  
+|[双](double-data-type.md) 精度 (双精度浮点) |<xref:System.Double>|8 个字节|-1.79769313486231570 e + 308 到-4.94065645841246544 E-324 <sup>†</sup> 表示负值;<br /><br /> 4.94065645841246544 e-324 到 1.79769313486231570 E + 308 <sup>†</sup> 用于正值|  
+|[Integer](integer-data-type.md)|<xref:System.Int32>|4 个字节|-2147483648 到 2147483647 (有符号) |  
+|[长](long-data-type.md) (长整型) |<xref:System.Int64>|8 个字节|-9223372036854775808 到 9223372036854775807 (9.2. E + 18 <sup>†</sup>)  (签名) |  
+|[对象](object-data-type.md)|<xref:System.Object> (类) |32位平台上的4个字节<br /><br /> 64位平台上的8个字节|任何类型都可以存储在类型的变量中 `Object`|  
+|[SByte](sbyte-data-type.md)|<xref:System.SByte>|1 个字节|-128 到 127 (有符号) |  
+|[Short](short-data-type.md) (短整型) |<xref:System.Int16>|2 个字节|-32768 到 32767 (有符号) |  
+|[单个](single-data-type.md) (单精度浮点) |<xref:System.Single>|4 个字节|-3.4028235 e + 38 到-1.401298 E-45 <sup>†</sup> 表示负值;<br /><br /> 1.401298 e-45 到 3.4028235 E + 38 <sup>†</sup> 用于正值|  
+|[字符串](string-data-type.md) (长度可变的) |<xref:System.String> (类) |依赖于实现平台|0到约 2000000000 Unicode 字符|  
+|[UInteger](uinteger-data-type.md)|<xref:System.UInt32>|4 个字节|0到 4294967295 (无符号) |  
+|[ULong](ulong-data-type.md)|<xref:System.UInt64>|8 个字节|0到 18446744073709551615 (1.8 ... E + 19 <sup>†</sup>)  (无符号) |  
+|[用户定义的](user-defined-data-type.md) (结构) | (继承自 <xref:System.ValueType>) |依赖于实现平台|结构的每个成员都有一个由其数据类型确定的范围，并与其他成员的范围无关|  
+|[UShort](ushort-data-type.md)|<xref:System.UInt16>|2 个字节|0到 65535 (无符号) |  
   
- <sup>†</sup>使用*科学记数法*时，"E" 指的是10的幂。 因此，3.56 E + 2 表示 3.56 x 10<sup>2</sup>或356，3.56 e-2 表示 3.56/10<sup>2</sup>或0.0356。  
+ <sup>†</sup> 使用 *科学记数法* 时，"E" 指的是10的幂。 因此，3.56 E + 2 表示 3.56 x 10<sup>2</sup> 或356，3.56 e-2 表示 3.56/10<sup>2</sup> 或0.0356。  
   
 > [!NOTE]
 > 对于包含文本的字符串，请使用 <xref:Microsoft.VisualBasic.Strings.StrConv%2A> 函数从一种文本格式转换为另一种文本格式。  
   
- 除了在声明语句中指定数据类型之外，还可以使用类型字符强制某些编程元素的数据类型。 请参阅[类型字符](../../programming-guide/language-features/data-types/type-characters.md)。  
+ 除了在声明语句中指定数据类型之外，还可以使用类型字符强制某些编程元素的数据类型。 请参阅 [类型字符](../../programming-guide/language-features/data-types/type-characters.md)。  
   
 ## <a name="memory-consumption"></a>内存消耗  
 
@@ -95,7 +96,7 @@ ms.locfileid: "84415617"
 
  `Object`除数据类型中包含的数据外，引用任何基本数据类型或复合数据类型的也使用4个字节。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Strings.StrConv%2A>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>

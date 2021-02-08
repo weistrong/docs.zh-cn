@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugAssemblyEnum 接口
 title: ICorDebugAssemblyEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 891ceb43-5161-421e-a0bf-299962fd7efd
 topic_type:
 - apiref
-ms.openlocfilehash: dea5c0fd5d4ed1f830d9e75097d49c544dac2e57
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e9dab7560da10efcb33fc48f5718f26b960cdaa3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719237"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791486"
 ---
 # <a name="icordebugassemblyenum-interface"></a>ICorDebugAssemblyEnum 接口
 
@@ -29,9 +30,9 @@ ms.locfileid: "95719237"
   
 |方法|说明|  
 |------------|-----------------|  
-|[Next 方法](icordebugassemblyenum-next-method.md)|`ICorDebugAssembly`从当前位置开始，获取枚举中指定数量的实例。|  
+|[下一方法](icordebugassemblyenum-next-method.md)|`ICorDebugAssembly`从当前位置开始，获取枚举中指定数量的实例。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -46,6 +47,6 @@ ms.locfileid: "95719237"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

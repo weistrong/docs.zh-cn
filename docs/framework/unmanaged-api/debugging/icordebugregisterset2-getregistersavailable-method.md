@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugRegisterSet2：： GetRegistersAvailable 方法
 title: ICorDebugRegisterSet2::GetRegistersAvailable 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
 topic_type:
 - apiref
-ms.openlocfilehash: cb56ea817d4045c19793a6290d68ae8b6236f14a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3839647e69efd63aefd1aa154c457f292e684336
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712308"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790716"
 ---
 # <a name="icordebugregisterset2getregistersavailable-method"></a>ICorDebugRegisterSet2::GetRegistersAvailable 方法
 
@@ -43,7 +44,7 @@ HRESULT GetRegistersAvailable (
  `availableRegChunks`  
  弄字节数组，其中每个位对应于寄存器。 如果寄存器可用，则会设置寄存器的相应位。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CorDebugRegister 枚举的值指定不同微处理器的寄存器。 每个值的前五位是字节数组中的索引 `availableRegChunks` 。 每个值的下三位标识索引字节内的位位置。 给定一个 `CorDebugRegister` 指定特定寄存器的值时，将按如下所示确定此寄存器在掩码中的位置：  
   
@@ -65,7 +66,7 @@ HRESULT GetRegistersAvailable (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugRegisterSet2 接口](icordebugregisterset2-interface.md)
 - [ICorDebugRegisterSet 接口](icordebugregisterset-interface.md)

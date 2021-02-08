@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： UpdateModuleSymbols 方法
 title: ICorDebugManagedCallback::UpdateModuleSymbols 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0863f644-58e8-45a0-b0c3-a28e99b20938
 topic_type:
 - apiref
-ms.openlocfilehash: 1615d00a9a25cd2f4aa7d9b84de54b5e7670a3fc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1e20ee50cdbe0b36d0677051f1fe2b1c777e6cd6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790927"
 ---
 # <a name="icordebugmanagedcallbackupdatemodulesymbols-method"></a>ICorDebugManagedCallback::UpdateModuleSymbols 方法
 
@@ -47,7 +48,7 @@ HRESULT UpdateModuleSymbols (
  `pSymbolStream`  
  中指向 Win32 COM `IStream` 对象的指针，该对象包含修改后的符号。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法通过调用 [ISymUnmanagedReader：： UpdateSymbolStore](../diagnostics/isymunmanagedreader-updatesymbolstore-method.md) 或 [ISymUnmanagedReader：： ReplaceSymbolStore](../diagnostics/isymunmanagedreader-replacesymbolstore-method.md)，提供更新模块的符号的调试器视图的机会。  
   
@@ -65,6 +66,6 @@ HRESULT UpdateModuleSymbols (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

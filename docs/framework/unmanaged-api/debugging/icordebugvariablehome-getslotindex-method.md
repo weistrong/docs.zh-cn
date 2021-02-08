@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugVariableHome：： GetSlotIndex 方法
 title: ICorDebugVariableHome：： GetSlotIndex 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 966da50d-5665-4fff-bf7b-1c72bbadd9a4
 topic_type:
 - apiref
-ms.openlocfilehash: 4b071bd8e9d96084848c1553385eec5f8beca624
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f6ee01c2bfcee4c78f8463a7cefac1f90a3295f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790641"
 ---
 # <a name="icordebugvariablehomegetslotindex-method"></a>ICorDebugVariableHome：： GetSlotIndex 方法
 
@@ -43,12 +44,12 @@ HRESULT GetSlotIndex(
 
  方法返回以下值。  
   
-|Value|说明|  
+|值|说明|  
 |-----------|-----------------|  
 |`S_OK`|方法调用返回中的槽索引值 `pSlotIndex` 。|  
 |`E_FAIL`|当前 [ICorDebugVariableHome](icordebugvariablehome-interface.md) 实例表示函数参数。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  槽索引可用于检索此局部变量的元数据。  
   
@@ -62,6 +63,6 @@ HRESULT GetSlotIndex(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugVariableHome 接口](icordebugvariablehome-interface.md)

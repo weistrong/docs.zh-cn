@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugILFrame2：： RemapFunction 方法
 title: ICorDebugILFrame2::RemapFunction 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dd639ba0-f77b-426d-9ff6-f92706840348
 topic_type:
 - apiref
-ms.openlocfilehash: 5eb6299526d69624056961cfb7f0387ff8f873cf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d8a6c7f966488e7b74a9661e3a18b5248df7400b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791278"
 ---
 # <a name="icordebugilframe2remapfunction-method"></a>ICorDebugILFrame2::RemapFunction 方法
 
@@ -41,7 +42,7 @@ HRESULT RemapFunction (
   
  调用方负责确保此值的有效性。 例如，如果 MSIL 偏移量在函数的边界之外，则它是无效的。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  编辑框架的函数后，调试器可以调用 `RemapFunction` 方法以在框架的函数的最新版本中进行交换，以便可以执行。 代码执行将以给定的 MSIL 偏移量开始。  
   

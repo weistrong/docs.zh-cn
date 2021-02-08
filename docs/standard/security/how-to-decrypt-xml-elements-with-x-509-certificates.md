@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何：用 x.509 证书对 XML 元素进行解密
 title: 如何：使用 X.509 证书解密 XML 元素
 ms.date: 07/14/2020
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - X.509 certificates
 - certificates, X.509 certificates
 ms.assetid: bd015722-d88d-408d-8ca8-e4e475c441ed
-ms.openlocfilehash: 02a4a4ada6dcc242a96d630699797f2ea76987e3
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 40006ca1d3e76dbbc0899c0c22090b27c2cfb0de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820275"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792370"
 ---
 # <a name="how-to-decrypt-xml-elements-with-x509-certificates"></a>如何：使用 X.509 证书解密 XML 元素
 
@@ -79,7 +80,7 @@ ms.locfileid: "94820275"
 
 此示例中使用的 X.509 证书仅用于测试目的。  应用程序应使用由受信任的证书颁发机构生成的 x.509 证书。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [加密模型](cryptography-model.md)
 - [加密服务](cryptographic-services.md)

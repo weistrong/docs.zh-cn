@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ILCodeKind 枚举
 title: ILCodeKind 枚举
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af
 topic_type:
 - apiref
-ms.openlocfilehash: 7e9cf760ec609786804a05177349ee2eacd79eaf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2d3163b2c601c6f53d9a532fa877c014a67b3e18
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790459"
 ---
 # <a name="ilcodekind-enumeration"></a>ILCodeKind 枚举
 
@@ -36,12 +37,12 @@ typedef enum ILCodeKind {
   
 ## <a name="members"></a>成员  
   
-|成员名称|说明|  
+|成员名称|描述|  
 |-----------------|-----------------|  
 |`ILCODE_ORIGINAL_IL`|调试器无法访问 ReJIT 检测的信息。|  
 |`ILCODE_REJIT_IL`|调试器可以访问 ReJIT 检测的信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  枚举的成员 `ILCodeKind` 可以传递给 [EnumerateLocalVariablesEx](icordebugilframe4-enumeratelocalvariablesex-method.md) 和 [GetLocalVariableEx](icordebugilframe4-getlocalvariableex-method.md) 方法，以确定调试器是否可以访问在探查器 ReJIT 检测中添加的变量，以及如何访问 [GetCodeEx](icordebugilframe4-getcodeex-method.md) 方法，以确定调试器是否可以访问检测的 IL。  
   
@@ -55,7 +56,7 @@ typedef enum ILCodeKind {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试枚举](debugging-enumerations.md)
 - [ICorDebugILFrame4 接口](icordebugilframe4-interface.md)

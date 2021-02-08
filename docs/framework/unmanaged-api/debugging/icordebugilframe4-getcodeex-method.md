@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugILFrame4：： GetCodeEx 方法
 title: ICorDebugILFrame4::GetCodeEx 方法
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: aeda0e42-29ee-4ca8-9f21-ac4641677a62
 topic_type:
 - apiref
-ms.openlocfilehash: a88bb02626dc125c494e4bbe68bfe6ed8bfd3b7b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1d17dfa531354b8a4b0dd3c0d3d2eb47206900cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791226"
 ---
 # <a name="icordebugilframe4getcodeex-method"></a>ICorDebugILFrame4::GetCodeEx 方法
 
@@ -42,7 +43,7 @@ HRESULT GetCodeEx(
  `ppCode`  
  弄一个指向 "ICorDebugCode" 对象地址的指针，该对象表示此堆栈帧正在执行的代码。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法类似于 [ICorDebugFrame：： GetCode](icordebugframe-getcode-method.md) 方法，不同之处在于它可以访问由探查器的 ReJIT 请求定义的代码。 使用的值调用此方法 `flags` `ILCODE_ORIGINAL_IL` 等效于调用 [GetCode](icordebugframe-getcode-method.md); 如果检测到此方法，则将无法访问其 IL。 `ILCODE_REJIT_IL` 允许调试器访问由探查器的 ReJIT 请求定义的 IL。 如果未检测到 IL， `ppCode` 则为 **null**，并且该方法将返回 `S_OK` 。  
   
@@ -56,7 +57,7 @@ HRESULT GetCodeEx(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugILFrame4 接口](icordebugilframe4-interface.md)
 - [调试接口](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback2：:D estroyConnection 方法
 title: ICorDebugManagedCallback2::DestroyConnection 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cf7940e9-4558-4319-925c-09f6c98c8fcd
 topic_type:
 - apiref
-ms.openlocfilehash: d725cbe89e0631630affb6b0540a7d5f57ab6b89
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f17def5599dc02ed6b7b49d7f8ed4db02eb40181
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790884"
 ---
 # <a name="icordebugmanagedcallback2destroyconnection-method"></a>ICorDebugManagedCallback2::DestroyConnection 方法
 
@@ -43,7 +44,7 @@ HRESULT DestroyConnection (
  `dwConnectionId`  
  中已销毁的连接的 ID。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `DestroyConnection`当主机在[宿主 API](../hosting/index.md)中调用[ICLRDebugManager：： EndConnection](../hosting/iclrdebugmanager-endconnection-method.md)时，将触发回调。  
   
@@ -57,7 +58,7 @@ HRESULT DestroyConnection (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugManagedCallback2 接口](icordebugmanagedcallback2-interface.md)
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

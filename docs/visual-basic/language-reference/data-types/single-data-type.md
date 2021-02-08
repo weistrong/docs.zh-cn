@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：单一数据类型 (Visual Basic) '
 title: Single 数据类型
 ms.date: 07/20/2015
 f1_keywords:
@@ -20,16 +21,16 @@ helpviewer_keywords:
 - zeros, trailing
 - numbers [Visual Basic], floating point
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
-ms.openlocfilehash: ecb0f5f6416a2dd4ddd6888cb80ed3ac11ee58df
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f30e21d3b2d2960a040609a9422ec71cc029f5be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792123"
 ---
 # <a name="single-data-type-visual-basic"></a>Single 数据类型 (Visual Basic)
 
-为负值，保留已签名的 IEEE 32 位（4字节）单精度浮点数，介于-3.4028235 E + 38 到-1.401298 E-45 之间，对于正值，为正值，从 1.401298 E-45 到 3.4028235 E + 38。 单精度数字存储实数的近似值。  
+为正值，保留已签名的 IEEE 32 位 (4 个) 字节的单精度浮点数，范围为-3.4028235 E + 38 到-1.401298 E-45，表示负值，从 1.401298 E-45 到 3.4028235 E + 38。 单精度数字存储实数的近似值。  
   
 ## <a name="remarks"></a>备注  
 
@@ -39,7 +40,7 @@ ms.locfileid: "84415526"
   
 ## <a name="programming-tips"></a>编程提示  
   
-- **Precision.** 使用浮点数时，请记住，它们在内存中不一定有精确的表示形式。 这可能会导致某些操作产生意外结果，如值比较和 `Mod` 运算符。 有关详细信息，请参阅[数据类型疑难解答](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)。  
+- **Precision.** 使用浮点数时，请记住，它们在内存中不一定有精确的表示形式。 这可能会导致某些操作产生意外结果，如值比较和 `Mod` 运算符。 有关详细信息，请参阅 [数据类型疑难解答](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)。  
   
 - **扩大.** `Single`数据类型扩大到 `Double` 。 这意味着你可以转换 `Single` 为， `Double` 而不会遇到 <xref:System.OverflowException?displayProperty=nameWithType> 错误。  
   
@@ -49,7 +50,7 @@ ms.locfileid: "84415526"
   
 - **Framework 类型。** .NET Framework 中的对应类型是 <xref:System.Single?displayProperty=nameWithType> 结构。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Single?displayProperty=nameWithType>
 - [数据类型](index.md)

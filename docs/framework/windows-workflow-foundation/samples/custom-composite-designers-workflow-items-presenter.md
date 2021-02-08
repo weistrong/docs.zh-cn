@@ -1,16 +1,17 @@
 ---
+description: 了解更多相关信息：自定义复合设计器-工作流项演示者
 title: 自定义复合设计器 — 工作流项演示器
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 70055c4b-1173-47a3-be80-b5bce6f59e9a
-ms.openlocfilehash: 081dce85946fab85cff474508c46770c762b9e76
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 07970763e12eccd981370f1241642cc28f675824
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75338728"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792578"
 ---
 # <a name="custom-composite-designers---workflow-items-presenter"></a>自定义复合设计器 — 工作流项演示器
 
@@ -26,9 +27,9 @@ ms.locfileid: "75338728"
 
 ## <a name="set-up-build-and-run-the-sample"></a>设置、生成和运行示例
 
-1. 在 Visual Studio 2010 中，为 Visual Basic C#打开或的 usingworkflowitemspresenter.sln 示例解决方案。
+1. 在 Visual Studio 2010 中打开适用于 c # 或 Visual Basic 的 **usingworkflowitemspresenter.sln** 示例解决方案。
 
-2. 生成和运行解决方案。
+2. 生成并运行解决方案。
 
    此时将打开一个重新承载工作流设计器应用程序，你可以将活动拖动到画布上。
 
@@ -157,11 +158,11 @@ ms.locfileid: "75338728"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Activities.Presentation.WorkflowItemsPresenter>
 - [使用工作流设计器开发应用程序](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

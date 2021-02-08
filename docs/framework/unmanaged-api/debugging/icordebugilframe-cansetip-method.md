@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugILFrame：： CanSetIP 方法
 title: ICorDebugILFrame::CanSetIP 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 16caf02f-c71e-486c-90b0-f0e54357d8f0
 topic_type:
 - apiref
-ms.openlocfilehash: 99c80fba594e9eaf69a3cc9a025509aa4c3c26a4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d6ba0d073e8807ac6173f7f3e3982fe1d3eb4e01
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791434"
 ---
 # <a name="icordebugilframecansetip-method"></a>ICorDebugILFrame::CanSetIP 方法
 
@@ -39,7 +40,7 @@ HRESULT CanSetIP (
  `nOffset`  
  中指令指针所需的设置。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在 `CanSetIP` 调用 [ICorDebugILFrame：： SetIP](icordebugilframe-setip-method.md) 方法之前，请使用方法。 如果 `CanSetIP` 返回除 S_OK 以外的任何 HRESULT，则仍可调用 `ICorDebugILFrame::SetIP` ，但是无法保证调试器将继续安全且正确地执行正在调试的代码。  
   

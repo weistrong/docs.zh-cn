@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugInternalFrame2 接口
 title: ICorDebugInternalFrame2 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d4755569-85b8-4ff4-bf50-0e608e76429f
 topic_type:
 - apiref
-ms.openlocfilehash: a17c46d5ef08963bb0d7fc280ba8b90531e41c5b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3edc666c043513562b2fcece478b2879f294ce33
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791096"
 ---
 # <a name="icordebuginternalframe2-interface"></a>ICorDebugInternalFrame2 接口
 
@@ -32,7 +33,7 @@ ms.locfileid: "95719627"
 |[GetFrameAddress 方法](icordebuginternalframe2-getframeaddress-method.md)|返回内部帧的堆栈地址。|  
 |[IsCloserToLeaf 方法](icordebuginternalframe2-isclosertoleaf-method.md)|检查 `this` 内部帧是否接近于指定的 ICorDebugFrame 对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此接口扩展 ICorDebugInternalFrame 接口。  
   
@@ -49,7 +50,7 @@ ms.locfileid: "95719627"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

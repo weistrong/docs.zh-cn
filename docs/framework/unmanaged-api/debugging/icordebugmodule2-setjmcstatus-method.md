@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule2：： SetJMCStatus 方法
 title: ICorDebugModule2::SetJMCStatus 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8c6d2089-4dbb-4715-b9e9-2a4491c8c9ce
 topic_type:
 - apiref
-ms.openlocfilehash: cfa6df7a812559f05a4c57381a5007c9c90238e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7d91d098c21eac39d18a0aa7c3d4fd795be509ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790797"
 ---
 # <a name="icordebugmodule2setjmcstatus-method"></a>ICorDebugModule2::SetJMCStatus 方法
 
@@ -47,7 +48,7 @@ HRESULT SetJMCStatus (
  `pTokens`  
  中值的数组 `mdToken` ，其中每个值都是一个将其 JMC 状态设置为！的方法 `bIsJustMycode` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  数组中指定的每个方法的 JMC 状态 `pTokens` 设置为与值相反的状态 `bIsJustMycode` 。 此模块中所有其他方法的状态将设置为 `bIsJustMycode` 值。  
   

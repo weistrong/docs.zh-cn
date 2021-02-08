@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugILFrame3 接口
 title: ICorDebugILFrame3 接口
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: 15212cb5-93d4-4025-bec9-d4b9919eb1fe
 topic_type:
 - apiref
-ms.openlocfilehash: dab5329086971b9349deaf84535fa251744f3cf0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a34a3f0941871a2d0a63fb2d9f78ccb7ff455866
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724983"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791252"
 ---
 # <a name="icordebugilframe3-interface"></a>ICorDebugILFrame3 接口
 
@@ -27,7 +28,7 @@ ms.locfileid: "95724983"
 |------------|-----------------|  
 |[GetReturnValueForILOffset 方法](icordebugilframe3-getreturnvalueforiloffset-method.md)|获取一个 ICorDebugValue 对象，该对象封装函数的返回值。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -42,7 +43,7 @@ ms.locfileid: "95724983"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugCode3 接口](icordebugcode3-interface.md)
 - [调试接口](debugging-interfaces.md)

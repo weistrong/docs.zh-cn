@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugVariableHomeEnum 接口
 title: ICorDebugVariableHomeEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c312ae6d-c8dc-48d6-9f1e-ead515c88fdf
 topic_type:
 - apiref
-ms.openlocfilehash: 8e8caad9f0fc60121dbd1c738a6024da3e4d02f6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c56c68a6b5f9d329fe8af23f47b40fa629bfe3ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790615"
 ---
 # <a name="icordebugvariablehomeenum-interface"></a>ICorDebugVariableHomeEnum 接口
 
@@ -29,9 +30,9 @@ ms.locfileid: "95725997"
   
 |方法|说明|  
 |------------|-----------------|  
-|[Next 方法](icordebugvariablehomeenum-next-method.md)|获取指定数量的 [ICorDebugVariableHome](icordebugvariablehome-interface.md) 实例，其中包含有关函数中的局部变量和参数的信息。|  
+|[下一方法](icordebugvariablehomeenum-next-method.md)|获取指定数量的 [ICorDebugVariableHome](icordebugvariablehome-interface.md) 实例，其中包含有关函数中的局部变量和参数的信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugVariableHomeEnum`接口实现 ICorDebugEnum 接口。  
   
@@ -47,7 +48,7 @@ ms.locfileid: "95725997"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugVariableHome 接口](icordebugvariablehome-interface.md)
 - [调试接口](debugging-interfaces.md)

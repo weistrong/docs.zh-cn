@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugValueBreakpoint 接口
 title: ICorDebugValueBreakpoint 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c02338fe-da6c-467f-9567-70ebb387e901
 topic_type:
 - apiref
-ms.openlocfilehash: cf0a87afd1c0057c054205432fea7aa5844afb53
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff53b1f6e1557a3e98cc642f80eaaa2feaeac473
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684390"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790680"
 ---
 # <a name="icordebugvaluebreakpoint-interface"></a>ICorDebugValueBreakpoint 接口
 
@@ -31,7 +32,7 @@ ms.locfileid: "95684390"
 |------------|-----------------|  
 |[GetValue 方法](icordebugvaluebreakpoint-getvalue-method.md)|获取一个指向 ICorDebugValue 对象的接口指针，该对象表示在其上设置断点的对象的值。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!NOTE]
 > 此接口不支持跨计算机或跨进程远程调用。  
@@ -46,6 +47,6 @@ ms.locfileid: "95684390"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

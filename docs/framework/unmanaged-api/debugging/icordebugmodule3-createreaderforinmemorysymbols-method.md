@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugModule3：： CreateReaderForInMemorySymbols 方法
 title: ICorDebugModule3::CreateReaderForInMemorySymbols 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: af317171-d66d-4114-89eb-063554c74940
 topic_type:
 - apiref
-ms.openlocfilehash: 44f4c59f95c28f9982d67875584e2f9803c0ed3b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: af037cc891e83f53fd94bad290f40286ed665e6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709565"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790771"
 ---
 # <a name="icordebugmodule3createreaderforinmemorysymbols-method"></a>ICorDebugModule3::CreateReaderForInMemorySymbols 方法
 
@@ -56,7 +57,7 @@ HRESULT CreateReaderForInMemorySymbols (
  E_FAIL（或其他 E_ 返回代码）  
  无法创建读取器。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法还可用于为内存中 (非动态) 模块创建符号读取器对象，但仅在符号首次可用之后 ([UpdateModuleSymbols 方法](icordebugmanagedcallback-updatemodulesymbols-method.md) 回调) 指示。  
   
@@ -74,7 +75,7 @@ HRESULT CreateReaderForInMemorySymbols (
   
  **.NET Framework 版本：** 4.5、4、3.5 SP1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugRemoteTarget 接口](icordebugremotetarget-interface.md)
 - [ICorDebug 接口](icordebug-interface.md)

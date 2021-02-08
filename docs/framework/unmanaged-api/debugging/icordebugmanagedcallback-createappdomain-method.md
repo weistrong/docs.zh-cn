@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugManagedCallback：： CreateAppDomain 方法
 title: ICorDebugManagedCallback::CreateAppDomain 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 48d410d7-6749-4125-a8fd-f9562c7088e9
 topic_type:
 - apiref
-ms.openlocfilehash: 5f831f0f42231f594e170567535af75216e68c45
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5f4aa49ce90e8ec1343794db71ae3aa911c9e09f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721304"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791060"
 ---
 # <a name="icordebugmanagedcallbackcreateappdomain-method"></a>ICorDebugManagedCallback::CreateAppDomain 方法
 
@@ -53,6 +54,6 @@ HRESULT CreateAppDomain (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugManagedCallback 接口](icordebugmanagedcallback-interface.md)

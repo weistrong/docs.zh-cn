@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息：数据库访问活动
 title: 数据库访问活动
 ms.date: 03/30/2017
 ms.assetid: 174a381e-1343-46a8-a62c-7c2ae2c4f0b2
-ms.openlocfilehash: ed3f0ad3f2fd19f622c9cb0faf7d5cd864b81995
-ms.sourcegitcommit: 011314e0c8eb4cf4a11d92078f58176c8c3efd2d
+ms.openlocfilehash: 421da4a55997dac62ccc5c598bc401a20711ec61
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2020
-ms.locfileid: "77094639"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792539"
 ---
 # <a name="database-access-activities"></a>数据库访问活动
 
-数据库访问活动可用于在一个工作流内访问数据库。 这些活动允许访问数据库以检索或修改信息，并使用[ADO.NET](../../data/adonet/index.md)来访问数据库。
+数据库访问活动可用于在一个工作流内访问数据库。 这些活动允许访问数据库以检索或修改信息，并使用 [ADO.NET](../../data/adonet/index.md) 来访问数据库。
 
 > [!IMPORTANT]
 > 您的计算机上可能已安装这些示例。 在继续操作之前，请先检查以下（默认）目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅（下载页）下载所有 Windows Communication Foundation （WCF）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅 (下载页面) 下载所有 Windows Communication Foundation (WCF) 和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\DbActivities`
 
@@ -79,7 +80,7 @@ Public class DbUpdate: AsyncCodeActivity
 |ConfigName|存储连接信息的配置文件部分的名称。 设置此自变量之后，将不再需要 `ProviderName` 和 `ConnectionString`。|
 |CommandType|要执行的 <xref:System.Data.Common.DbCommand> 的类型。|
 |Sql|要执行的 SQL 命令。|
-|parameters|SQL 查询的参数集合。|
+|参数|SQL 查询的参数集合。|
 |AffectedRecords|最后一个操作影响的记录的数量。|
 
 ## <a name="dbqueryscalar"></a>DbQueryScalar
@@ -92,7 +93,7 @@ Public class DbUpdate: AsyncCodeActivity
 
 要执行的查询在其 `Sql` 属性中配置，并通过 `Parameters` 集合传递参数。
 
-执行 `DbQueryScalar` 后，将在 `Result out` 参数（类型 `TResult`，在基类 <xref:System.Activities.AsyncCodeActivity%601>中定义）中返回标量。
+`DbQueryScalar`执行之后，将在类型为的参数 (中返回标量， `Result out` `TResult` 该参数在基类) 中定义 <xref:System.Activities.AsyncCodeActivity%601> 。
 
 ```csharp
 public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
@@ -133,18 +134,18 @@ public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
 |ConfigName|存储连接信息的配置文件部分的名称。 设置此自变量之后，将不再需要 `ProviderName` 和 `ConnectionString`。|
 |CommandType|要执行的 <xref:System.Data.Common.DbCommand> 的类型。|
 |Sql|要执行的 SQL 命令。|
-|parameters|SQL 查询的参数集合。|
+|参数|SQL 查询的参数集合。|
 |结果|执行查询后获得的标量。 此自变量的类型为 `TResult`。|
 
 ## <a name="dbquery"></a>DbQuery
 
-执行可检索对象列表的查询。 执行查询后，将执行一个映射函数（它可以 <xref:System.Func%601><`DbDataReader`、`TResult`> 或 <xref:System.Activities.ActivityFunc%601><`DbDataReader``TResult`>）。 此映射函数在 `DbDataReader` 中获取一个记录，并将其映射到要返回的对象。
+执行可检索对象列表的查询。 执行查询后，将执行一个映射函数 (它可以是 <xref:System.Func%601> < `DbDataReader` 、 `TResult`> 或 <xref:System.Activities.ActivityFunc%601> < `DbDataReader` `TResult`>) 。 此映射函数在 `DbDataReader` 中获取一个记录，并将其映射到要返回的对象。
 
 通过设置提供程序固定名称 (`ProviderName`) 和连接字符串 (`ConnectionString`)，或仅使用应用程序配置文件中的连接字符串配置名称 (`ConfigFileSectionName`)，可以配置连接信息。
 
 要执行的查询在其 `Sql` 属性中配置，并通过 `Parameters` 集合传递参数。
 
-使用 `DbDataReader` 检索 SQL 查询的结果。 此活动将循环访问 `DbDataReader`，并将 `DbDataReader` 中的行映射到 `TResult` 的实例。 `DbQuery` 的用户必须提供映射代码，可以通过两种方式完成此操作：使用 <xref:System.Func%601><`DbDataReader`、`TResult`> 或 <xref:System.Activities.ActivityFunc%601><`DbDataReader``TResult`>。 在第一种情况下，将在单个执行脉冲中完成映射。 因此，此方法的速度更快，但无法序列化为 XAML。 在后一种情况下，将在多个脉冲中完成映射。 因此，此方法的速度较慢，但可序列化为 XAML，并以声明方式进行创作（任何现有活动均可参与映射）。
+使用 `DbDataReader` 检索 SQL 查询的结果。 此活动将循环访问 `DbDataReader`，并将 `DbDataReader` 中的行映射到 `TResult` 的实例。 的用户 `DbQuery` 必须提供映射代码，可以通过两种方式完成此操作：使用 <xref:System.Func%601> < `DbDataReader` 、 `TResult`> 或 <xref:System.Activities.ActivityFunc%601> < `DbDataReader` `TResult`>。 在第一种情况下，将在单个执行脉冲中完成映射。 因此，此方法的速度更快，但无法序列化为 XAML。 在后一种情况下，将在多个脉冲中完成映射。 因此，此方法的速度较慢，但可序列化为 XAML，并以声明方式进行创作（任何现有活动均可参与映射）。
 
 ```csharp
 public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult : class
@@ -193,20 +194,20 @@ public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult 
 |ConfigName|存储连接信息的配置文件部分的名称。 设置此自变量之后，将不再需要 `ProviderName` 和 `ConnectionString`。|
 |CommandType|要执行的 <xref:System.Data.Common.DbCommand> 的类型。|
 |Sql|要执行的 SQL 命令。|
-|parameters|SQL 查询的参数集合。|
-|Mapper|映射函数（<xref:System.Func%601><`DbDataReader`，`TResult`>），该函数采用在执行查询后获得的 `DataReader` 中的记录，并返回要添加到 `TResult` 集合的类型 `Result` 的对象的实例。<br /><br /> 在这种情况下，将在单个执行脉冲中完成映射，但不能使用设计器以声明方式创作它。|
-|MapperFunc|映射函数（<xref:System.Activities.ActivityFunc%601><`DbDataReader`，`TResult`>），该函数采用在执行查询后获得的 `DataReader` 中的记录，并返回要添加到 `TResult` 集合的类型 `Result` 的对象的实例。<br /><br /> 在这种情况下，将在多个执行脉冲中完成映射。 此函数可序列化为 XAML，并以声明方式进行创作（任何现有活动均可参与映射）。|
+|参数|SQL 查询的参数集合。|
+|Mapper|映射函数 (<xref:System.Func%601> < `DbDataReader` ， `TResult`>) ，它采用 `DataReader` 作为执行查询的结果获取的中的记录，并返回 `TResult` 要添加到集合的类型的对象的实例 `Result` 。<br /><br /> 在这种情况下，将在单个执行脉冲中完成映射，但不能使用设计器以声明方式创作它。|
+|MapperFunc|映射函数 (<xref:System.Activities.ActivityFunc%601> < `DbDataReader` ， `TResult`>) ，它采用 `DataReader` 作为执行查询的结果获取的中的记录，并返回 `TResult` 要添加到集合的类型的对象的实例 `Result` 。<br /><br /> 在这种情况下，将在多个执行脉冲中完成映射。 此函数可序列化为 XAML，并以声明方式进行创作（任何现有活动均可参与映射）。|
 |结果|对象列表，这些对象是通过执行查询并对 `DataReader` 中的每个记录执行映射函数得到的。|
 
 ## <a name="dbquerydataset"></a>DbQueryDataSet
 
-执行可返回 <xref:System.Data.DataSet> 的查询。 此类以异步方式执行其工作。 它派生自 <xref:System.Activities.AsyncCodeActivity><`TResult`> 并使用其异步功能。
+执行可返回 <xref:System.Data.DataSet> 的查询。 此类以异步方式执行其工作。 它派生自 <xref:System.Activities.AsyncCodeActivity> < `TResult`>，并使用其异步功能。
 
 通过设置提供程序固定名称 (`ProviderName`) 和连接字符串 (`ConnectionString`)，或仅使用应用程序配置文件中的连接字符串配置名称 (`ConfigFileSectionName`)，可以配置连接信息。
 
 要执行的查询在其 `Sql` 属性中配置，并通过 `Parameters` 集合传递参数。
 
-执行 `DbQueryDataSet` 后，`DataSet` 将返回到 `Result out` 参数（类型 `TResult`，该参数在基类 <xref:System.Activities.AsyncCodeActivity%601>中定义）。
+执行之后，将 `DbQueryDataSet` `DataSet` 在类型为的参数 (中返回 `Result out` `TResult` ，该参数在基类) 中定义 <xref:System.Activities.AsyncCodeActivity%601> 。
 
 ```csharp
 public class DbQueryDataSet : AsyncCodeActivity<DataSet>
@@ -247,7 +248,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 |ConfigName|存储连接信息的配置文件部分的名称。 设置此自变量之后，将不再需要 `ProviderName` 和 `ConnectionString`。|
 |CommandType|要执行的 <xref:System.Data.Common.DbCommand> 的类型。|
 |Sql|要执行的 SQL 命令。|
-|parameters|SQL 查询的参数集合。|
+|参数|SQL 查询的参数集合。|
 |结果|执行查询后获得的 <xref:System.Data.DataSet>。|
 
 ## <a name="configuring-connection-information"></a>配置连接信息
@@ -333,6 +334,6 @@ Setup.cmd 脚本调用 CreateDb.sql 脚本文件，该文件包含可执行下�
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> 如果此目录不存在，请参阅[.NET Framework 4 的 Windows Communication Foundation （wcf）和 Windows Workflow Foundation （WF）示例](https://www.microsoft.com/download/details.aspx?id=21459)以下载所有 WINDOWS COMMUNICATION FOUNDATION （wcf）和 [!INCLUDE[wf1](../../../../includes/wf1-md.md)] 示例。 此示例位于以下目录：
+> 如果此目录不存在，请参阅[Windows Communication Foundation (wcf) ，并 Windows Workflow Foundation (的 WF](https://www.microsoft.com/download/details.aspx?id=21459)) .NET Framework Windows Communication Foundation ([!INCLUDE[wf1](../../../../includes/wf1-md.md)] 此示例位于以下目录：
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\DbActivities`

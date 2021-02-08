@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugMutableDataTarget 接口
 title: ICorDebugMutableDataTarget 接口
 ms.date: 03/30/2017
 ms.assetid: 14aad5b3-84ab-4bbc-94e3-1eb92e258d10
-ms.openlocfilehash: cd22707832504ca2f08299872bc39bca2af782bb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 387c5317bea015459e306994c36761571b427628
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790693"
 ---
 # <a name="icordebugmutabledatatarget-interface"></a>ICorDebugMutableDataTarget 接口
 
@@ -21,7 +22,7 @@ ms.locfileid: "95709344"
 |[SetThreadContext 方法](icordebugmutabledatatarget-setthreadcontext-method.md)|设置某个线程的上下文（寄存器值）。|  
 |[WriteVirtual 方法](icordebugmutabledatatarget-writevirtual-method.md)|将内存写入目标进程地址空间。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  [ICorDebugDataTarget](icordebugdatatarget-interface.md)接口的这一扩展可通过调试工具来实现，这些工具要修改目标进程 (例如，执行实时侵害性调试) 。  
   
@@ -39,7 +40,7 @@ ms.locfileid: "95709344"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)
 - [调试](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： ICorDebugInstanceFieldSymbol 接口
 title: ICorDebugInstanceFieldSymbol 接口
 ms.date: 03/30/2017
 ms.assetid: a4a8f259-b83a-4425-ae8b-72b067dbc0d9
-ms.openlocfilehash: 4ef0f7a46acf7e9df732d630c9eb22044e09d658
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa47c858ec5b4b0d04b851357fe81c0fc9b2e30a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791127"
 ---
 # <a name="icordebuginstancefieldsymbol-interface"></a>ICorDebugInstanceFieldSymbol 接口
 
@@ -21,7 +22,7 @@ ms.locfileid: "95724892"
 |[GetOffset 方法](icordebuginstancefieldsymbol-getoffset-method.md)|获取父类中此示例字段的偏移量（以字节为单位）。|  
 |[GetSize 方法](icordebuginstancefieldsymbol-getsize-method.md)|获取实例字段的大小（以字节为单位）。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebugInstanceFieldSymbol` 接口用于检索实例字段的调试符号信息。  
   
@@ -38,7 +39,7 @@ ms.locfileid: "95724892"
   
  **.NET Framework 版本：**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorDebugStaticFieldSymbol 接口](icordebugstaticfieldsymbol-interface.md)
 - [调试接口](debugging-interfaces.md)
