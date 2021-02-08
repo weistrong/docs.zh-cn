@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRDebugManager：： SetSymbolReadingPolicy 方法
 title: ICLRDebugManager::SetSymbolReadingPolicy 方法
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bd921fa2-d377-4d79-acfc-64c38d4dcae9
 topic_type:
 - apiref
-ms.openlocfilehash: a311166e79f930e763b0338451f6356c8c93f929
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2c0862f3c572808ffbf418b275e1ad1c62c2ac89
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95670130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781943"
 ---
 # <a name="iclrdebugmanagersetsymbolreadingpolicy-method"></a>ICLRDebugManager::SetSymbolReadingPolicy 方法
 
@@ -58,6 +59,6 @@ HRESULT SetSymbolReadingPolicy (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRDebugManager 接口](iclrdebugmanager-interface.md)

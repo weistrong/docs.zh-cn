@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback8：:D ynamicMethodJITCompilationStarted 方法
 title: ICorProfilerCallback8：:D ynamicMethodJITCompilationStarted 方法
 ms.date: 04/10/2018
 api_name:
@@ -8,12 +9,12 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 46a25fc6e9119481f728275e0569429cc6c46dc9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 186b41564e0aabb069b06356b8eccbe90296ec4b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781696"
 ---
 # <a name="icorprofilercallback8dynamicmethodjitcompilationstarted-method"></a>ICorProfilerCallback8：:D ynamicMethodJITCompilationStarted 方法
 
@@ -44,7 +45,7 @@ HRESULT DynamicMethodJITCompilationStarted(
 
 [in] `cbILHeader` IL 标头中的字节数。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
 只要 JIT 编译动态方法，就会触发此回调。 这包括各种 IL 存根和 LCG 方法。 其目标是为探查器编写者提供足够的信息，以便向用户标识编译的方法。
 
@@ -63,7 +64,7 @@ HRESULT DynamicMethodJITCompilationStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [DynamicMethodJITCompilationFinished 方法](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)
 - [ICorProfilerCallback8 接口](icorprofilercallback8-interface.md)

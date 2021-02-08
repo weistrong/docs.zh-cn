@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerFunctionControl：： SetILFunctionBody 方法
 title: ICorProfilerFunctionControl::SetILFunctionBody 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
 topic_type:
 - apiref
-ms.openlocfilehash: fa82cd1e646777c9841c1b3d653134aa7ba7ed7c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 470eefce5b211adcfd111951be9a004b3bd7d8fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712737"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781605"
 ---
 # <a name="icorprofilerfunctioncontrolsetilfunctionbody-method"></a>ICorProfilerFunctionControl::SetILFunctionBody 方法
 
@@ -50,7 +51,7 @@ HRESULT SetILFunctionBody(
 |-------------|-----------------|  
 |S_OK|替换成功。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  与 [ICorProfilerInfo：： SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) 方法不同， `SetILFunctionBody` 方法管理新 CIL 主体所需的内存。 这意味着，无需通过使用 [IMethodMalloc](imethodmalloc-interface.md) 接口来分配探查器提供的 CIL 主体，也不必在特定范围内进行分配。 它可在任何堆上进行分配。 探查器可以在返回后释放用于其 CIL 体的内存 `SetILFunctionBody` 。  
   
@@ -64,6 +65,6 @@ HRESULT SetILFunctionBody(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerFunctionControl 接口](icorprofilerfunctioncontrol-interface.md)

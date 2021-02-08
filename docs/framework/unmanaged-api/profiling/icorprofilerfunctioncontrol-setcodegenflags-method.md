@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerFunctionControl：： SetCodegenFlags 方法
 title: ICorProfilerFunctionControl::SetCodegenFlags 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a2d5daa5-b990-4ae5-bf2a-c0862fe58bd7
 topic_type:
 - apiref
-ms.openlocfilehash: 3593b07759b4d6feee239042e5aabaf0876fdd1c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 61fa8be0993a06a3b2d352af408ac47b7b30e385
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781618"
 ---
 # <a name="icorprofilerfunctioncontrolsetcodegenflags-method"></a>ICorProfilerFunctionControl::SetCodegenFlags 方法
 
@@ -38,7 +39,7 @@ HRESULT SetCodegenFlags(
  `flags`  
  中 [COR_PRF_CODEGEN_FLAGS](cor-prf-codegen-flags-enumeration.md) 枚举中的一个或多个标志。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  探查器通过 [ICorProfilerCallback4：： GetReJITParameters](icorprofilercallback4-getrejitparameters-method.md) 回调获取此接口的实例。 `SetCodegenFlags` 允许探查器控制重新编译函数的代码生成。 与所有其他 JIT 重新编译参数一样，代码生成标志适用于函数的所有实例。  
   
@@ -54,6 +55,6 @@ HRESULT SetCodegenFlags(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerFunctionControl 接口](icorprofilerfunctioncontrol-interface.md)

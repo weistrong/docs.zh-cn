@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerObjectEnum：： Next 方法
 title: ICorProfilerObjectEnum::Next 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b420433c-5ebe-4986-bba1-97902e6db819
 topic_type:
 - apiref
-ms.openlocfilehash: e0c10549ab9075c2e7604a9adb18cae8b9a3b32b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f61fa1d4e28043bf5eda95f67dde0d8e87d8c0d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781401"
 ---
 # <a name="icorprofilerobjectenumnext-method"></a>ICorProfilerObjectEnum::Next 方法
 
@@ -58,6 +59,6 @@ HRESULT Next (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerObjectEnum 接口](icorprofilerobjectenum-interface.md)

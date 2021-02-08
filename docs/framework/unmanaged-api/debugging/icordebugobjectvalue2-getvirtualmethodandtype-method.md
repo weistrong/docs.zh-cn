@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebugObjectValue2：： GetVirtualMethodAndType 方法
 title: ICorDebugObjectValue2::GetVirtualMethodAndType 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 621b4543-a8f7-4117-98e4-930992cd688a
 topic_type:
 - apiref
-ms.openlocfilehash: 2a74688b90fbce63c9107d9389ddfd7bf5cd717b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 73866cc902d60316e3f1f31a86473116c0bff129
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695174"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781917"
 ---
 # <a name="icordebugobjectvalue2getvirtualmethodandtype-method"></a>ICorDebugObjectValue2::GetVirtualMethodAndType 方法
 
@@ -40,4 +41,4 @@ HRESULT GetVirtualMethodAndType (
 
  获取指向 "ICorDebugFunction" 和 "ICorDebugType" 实例的接口指针，这些实例表示指定成员引用的派生程度最高的方法和类型。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅

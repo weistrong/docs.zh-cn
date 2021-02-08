@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRSyncManager：： CreateRWLockOwnerIterator 方法
 title: ICLRSyncManager::CreateRWLockOwnerIterator 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b5535b87-9439-424e-b9b3-7d6fafb9819e
 topic_type:
 - apiref
-ms.openlocfilehash: 2b6a2082d27fca4c78dcb15a13cfd87e8066e388
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6997b7720586f422cba3c96ca06a93f747d05bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781774"
 ---
 # <a name="iclrsyncmanagercreaterwlockowneriterator-method"></a>ICLRSyncManager::CreateRWLockOwnerIterator 方法
 
@@ -55,7 +56,7 @@ HRESULT CreateRWLockOwnerIterator (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |HOST_E_INVALIDOPERATION|`CreateRWLockOwnerIterator` 在当前正在运行托管代码的线程上调用了。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CreateRWLockOwnerIterator` `DeleteRWLockOwnerIterator` 在死锁检测期间，主机通常会调用、和 `GetRWLockOwnerNext` 方法。 宿主负责确保读取器-编写器锁仍有效，因为 CLR 不会尝试使读取器-编写器锁保持活动状态。 主机可以使用多种策略来确保锁的有效性：  
   
@@ -76,7 +77,7 @@ HRESULT CreateRWLockOwnerIterator (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRSyncManager 接口](iclrsyncmanager-interface.md)
 - [IHostSyncManager 接口](ihostsyncmanager-interface.md)

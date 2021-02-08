@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRStrongName：： StrongNameSignatureGeneration 方法
 title: ICLRStrongName::StrongNameSignatureGeneration 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4cdb1284-947a-4ed4-94c1-c5ff5cdfce56
 topic_type:
 - apiref
-ms.openlocfilehash: 9fc517b081a1df48d943d03a9c3ce223a428bde7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea8a6a9ea1e85af9d4e78cc950a02dbbc6815e4c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671624"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781878"
 ---
 # <a name="iclrstrongnamestrongnamesignaturegeneration-method"></a>ICLRStrongName::StrongNameSignatureGeneration 方法
 
@@ -71,7 +72,7 @@ HRESULT StrongNameSignatureGeneration (
 
  `S_OK` 如果该方法已成功完成，则为;否则，表示失败的 HRESULT 值 (参阅) 列表的 [常见 HRESULT 值](/windows/win32/seccrypto/common-hresult-values) 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  指定 null 以 `wszFilePath` 计算签名大小，而不创建签名。  
   
@@ -87,7 +88,7 @@ HRESULT StrongNameSignatureGeneration (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameSignatureGenerationEx 方法](iclrstrongname-strongnamesignaturegenerationex-method.md)
 - [ICLRStrongName 接口](iclrstrongname-interface.md)

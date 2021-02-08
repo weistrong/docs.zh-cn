@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRStrongName：： StrongNameTokenFromAssembly 方法
 title: ICLRStrongName::StrongNameTokenFromAssembly 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fc725afb-b66b-4015-aa44-1c0d1304197f
 topic_type:
 - apiref
-ms.openlocfilehash: 90a7e60e35e1fc555681102ffa62967eb5ac01fc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 520d327767f91763f8f2b3efea098c7c2790939e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781813"
 ---
 # <a name="iclrstrongnamestrongnametokenfromassembly-method"></a>ICLRStrongName::StrongNameTokenFromAssembly 方法
 
@@ -51,7 +52,7 @@ HRESULT StrongNameTokenFromAssembly (
 
  `S_OK` 如果该方法已成功完成，则为;否则，表示失败的 HRESULT 值 (参阅) 列表的 [常见 HRESULT 值](/windows/win32/seccrypto/common-hresult-values) 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  强名称标记是公钥的缩写形式。 标记是从用于对程序集进行签名的公钥创建的64位哈希。 该令牌是程序集的强名称的一部分，并且可以从程序集元数据中读取。  
   
@@ -67,7 +68,7 @@ HRESULT StrongNameTokenFromAssembly (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameTokenFromAssemblyEx 方法](iclrstrongname-strongnametokenfromassemblyex-method.md)
 - [ICLRStrongName 接口](iclrstrongname-interface.md)

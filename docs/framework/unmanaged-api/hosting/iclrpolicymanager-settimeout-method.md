@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRPolicyManager：： SetTimeout 方法
 title: ICLRPolicyManager::SetTimeout 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 954404fd-d52d-4e68-b582-8692f3a5f608
 topic_type:
 - apiref
-ms.openlocfilehash: 459c5bc0699487b62d5dcf76f1044faf53ebab8b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5fb65e93cc6eea7826498ff6b03147773f06e0b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732458"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781891"
 ---
 # <a name="iclrpolicymanagersettimeout-method"></a>ICLRPolicyManager::SetTimeout 方法
 
@@ -73,7 +74,7 @@ HRESULT SetTimeout (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [EClrOperation 枚举](eclroperation-enumeration.md)
 - [ICLRControl 接口](iclrcontrol-interface.md)

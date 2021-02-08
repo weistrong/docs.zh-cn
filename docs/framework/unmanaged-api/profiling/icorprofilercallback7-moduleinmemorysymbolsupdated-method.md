@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback7：： ModuleInMemorySymbolsUpdated 方法
 title: ICorProfilerCallback7：： ModuleInMemorySymbolsUpdated 方法
 ms.date: 03/30/2017
 api_name:
@@ -9,12 +10,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-ms.openlocfilehash: 248d2f749ddcbd772313558af2b2721f4d1c0f58
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 74adf7edc5269824a924933eb3284a5964e1bac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723085"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781722"
 ---
 # <a name="icorprofilercallback7moduleinmemorysymbolsupdated-method"></a>ICorProfilerCallback7：： ModuleInMemorySymbolsUpdated 方法
 
@@ -35,7 +36,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
  [in] `moduleId`  
  已更新其符号流的内存中模块的标识符。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  调用[ICorProfilerCallback5：： SetEventMask2](icorprofilerinfo5-seteventmask2-method.md)方法时，可通过设置[COR_PRF_HIGH_IN_MEMORY_SYMBOLS_UPDATED](cor-prf-high-monitor-enumeration.md)事件掩码标志来控制此回调。  
   
@@ -54,7 +55,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ModuleLoadFinished 方法](icorprofilercallback-moduleloadfinished-method.md)
 - [SetEventMask2 方法](icorprofilerinfo5-seteventmask2-method.md)

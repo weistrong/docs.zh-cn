@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback8 接口
 title: ICorProfilerCallback8 接口
 ms.date: 04/10/2018
 api_name:
@@ -8,12 +9,12 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 22a133d02bb69026190428905379323362943d40
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8dd9b8eea82f38b7598d578bd718743af826070d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732380"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781670"
 ---
 # <a name="icorprofilercallback8-interface"></a>ICorProfilerCallback8 接口
 
@@ -36,7 +37,7 @@ ms.locfileid: "95732380"
   
 **.NET Framework 版本：**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
 - [ICorProfilerCallback9 接口](icorprofilercallback9-interface.md)

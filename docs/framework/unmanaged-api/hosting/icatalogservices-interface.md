@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICatalogServices 接口
 title: ICatalogServices 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f0d7e49b-2394-4ae0-8820-1b64cae0cfe8
 topic_type:
 - apiref
-ms.openlocfilehash: 5198efc14a57bf0a496a9c78569af45595d0b4a6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 579ad06e3388c6b7397b68e95fd8f9a2d4d2f29f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781904"
 ---
 # <a name="icatalogservices-interface"></a>ICatalogServices 接口
 
@@ -34,6 +35,6 @@ ms.locfileid: "95698424"
 |[Autodone 方法](icatalogservices-autodone-method.md)|保留以仅供内部使用。|  
 |[NotAutodone 方法](icatalogservices-notautodone-method.md)|保留以仅供内部使用。|  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [承载接口](hosting-interfaces.md)

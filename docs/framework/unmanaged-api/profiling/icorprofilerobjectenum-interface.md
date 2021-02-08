@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerObjectEnum 接口
 title: ICorProfilerObjectEnum 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 13e1651c-9523-40ef-bfd7-87fb94519f8b
 topic_type:
 - apiref
-ms.openlocfilehash: 73c9f07ff9a7bffc2fb01c0dde390ca8364500b4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a41900c104818566704af0070a8cd3c6cf1bba8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731171"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781358"
 ---
 # <a name="icorprofilerobjectenum-interface"></a>ICorProfilerObjectEnum 接口
 
@@ -31,11 +32,11 @@ ms.locfileid: "95731171"
 |------------|-----------------|  
 |[Clone 方法](icorprofilerobjectenum-clone-method.md)|获取指向此 `ICorProfilerObjectEnum` 接口副本的接口指针。|  
 |[GetCount 方法](icorprofilerobjectenum-getcount-method.md)|获取集合中冻结对象的总数。|  
-|[Next 方法](icorprofilerobjectenum-next-method.md)|从对象的顺序集合中获取指定数目的连续对象，从该序列中的枚举器的当前位置开始。|  
+|[下一方法](icorprofilerobjectenum-next-method.md)|从对象的顺序集合中获取指定数目的连续对象，从该序列中的枚举器的当前位置开始。|  
 |[Reset 方法](icorprofilerobjectenum-reset-method.md)|将此枚举器的光标移动到序列的起始位置。|  
 |[Skip 方法](icorprofilerobjectenum-skip-method.md)|将此枚举器的光标从其当前位置前移，以便跳过指定数目的元素。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorProfilerObjectEnum` 接口是一个枚举器。 它可以让数组接收器以其合适的速率从发送器拉取元素。 换句话说，接收方能够显式控制数组元素的流，从而避免了将大型数组作为方法参数传递的相关问题。  
   
@@ -51,7 +52,7 @@ ms.locfileid: "95731171"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
 - [EnumModuleFrozenObjects 方法](icorprofilerinfo2-enummodulefrozenobjects-method.md)
