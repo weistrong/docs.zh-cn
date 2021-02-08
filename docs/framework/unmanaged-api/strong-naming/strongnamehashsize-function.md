@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： StrongNameHashSize 函数
 title: StrongNameHashSize 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 738c98d7-a60c-45fe-a296-220af05e6991
 topic_type:
 - apiref
-ms.openlocfilehash: 1116fcde754f966a783f4fdca85df8bd3ca1b0ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3e6700bfce3ba480814f3837011c5f8f7107bbd5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781228"
 ---
 # <a name="strongnamehashsize-function"></a>StrongNameHashSize 函数
 
@@ -48,7 +49,7 @@ BOOLEAN StrongNameHashSize (
 
  `true` 成功完成时;否则为 `false` 。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  如果 `StrongNameHashSize` 函数未成功完成，请调用 [StrongNameErrorInfo](strongnameerrorinfo-function.md) 函数来检索上次生成的错误。  
   
@@ -62,7 +63,7 @@ BOOLEAN StrongNameHashSize (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [StrongNameHashSize 方法](../hosting/iclrstrongname-strongnamehashsize-method.md)
 - [ICLRStrongName 接口](../hosting/iclrstrongname-interface.md)

@@ -1,19 +1,20 @@
 ---
+description: 了解有关以下方面的详细信息： PeerFlooderReceiveMessageQuotaExceeded
 title: System.ServiceModel.Channels.PeerFlooderReceiveMessageQuotaExceeded
 ms.date: 03/30/2017
 ms.assetid: b8371d0a-843e-440b-b86a-6996db131cb0
-ms.openlocfilehash: d4fbbeaaa1daeea62b5495d0b30c37d0297ccd75
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8ad164b253491f3a533c4828cd76f915eb5aed68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780864"
 ---
 # <a name="systemservicemodelchannelspeerflooderreceivemessagequotaexceeded"></a>System.ServiceModel.Channels.PeerFlooderReceiveMessageQuotaExceeded
 
 消息的入站接收速率过高。  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  此跟踪在尝试处理入站消息时发生。 无法将消息转发给特定的邻居，因为已经超过了为该邻居设置的配额。 当无响应邻居无法清除为该邻居挂起的积压工作 (backlog) 消息时会发生此情况。  
   
@@ -21,7 +22,7 @@ ms.locfileid: "96249912"
 
  降低在网格中发送消息的速率。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [跟踪](index.md)
 - [使用跟踪来排除应用程序故障](using-tracing-to-troubleshoot-your-application.md)

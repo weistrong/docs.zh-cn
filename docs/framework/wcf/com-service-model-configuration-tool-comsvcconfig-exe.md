@@ -1,16 +1,17 @@
 ---
+description: '详细了解： COM + 服务模型配置工具 ( # A0) '
 title: COM+ 服务模块配置工具 (ComSvcConfig.exe)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Communication Foundation, COM+ integration
 - WCF, COM+ integration
 ms.assetid: 7717c6c2-85fc-418b-a8ed-bad8e61cec5c
-ms.openlocfilehash: ee0fb5f08446b03485f97de0037e898415016fea
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 81bfcbd468cb5401646a49967b6381b48e2f7cf0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295270"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781059"
 ---
 # <a name="com-service-model-configuration-tool-comsvcconfigexe"></a>COM+ 服务模块配置工具 (ComSvcConfig.exe)
 
@@ -35,7 +36,7 @@ ComSvcConfig.exe /install | /uninstall | /list [/application:<ApplicationID | Ap
   
  下表介绍可用于 ComSvcConfig.exe 的模式。  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |`install`|为服务模块集成安装 COM+ 接口配置。<br /><br /> 缩写形式：`/i`。|  
 |`uninstall`|从服务模块集成中卸载 COM+ 接口配置。<br /><br /> 缩写形式：`/u`。|  
