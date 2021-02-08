@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <transactionFlow>
 title: <transactionFlow>
 ms.date: 03/30/2017
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
-ms.openlocfilehash: c4e5cbac24e2c72791c2f5c0faed0703363c99e1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8a853beaec1837606ecb96156b8ec9381fa3e07a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773545"
 ---
 # \<transactionFlow>
 
@@ -32,7 +33,7 @@ ms.locfileid: "91201416"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |transactionProtocol|指定要使用的事务处理协议。 有效值包括以下值：<br /><br /> -OleTransactions<br />-WSAtomicTransactionOctober2004<br /><br /> 默认值为 OleTransactions。<br /><br /> 此属性的类型为 <xref:System.ServiceModel.TransactionProtocol>。|  
   
@@ -42,7 +43,7 @@ ms.locfileid: "91201416"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|定义自定义绑定的所有绑定功能。|  
   

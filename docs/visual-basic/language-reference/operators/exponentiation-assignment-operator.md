@@ -1,4 +1,5 @@
 ---
+description: '详细了解： ^ = 运算符 (Visual Basic) '
 title: ^= 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - ^= operator [Visual Basic]
 - compound assignment statements [Visual Basic]
 ms.assetid: 397da132-2d96-4a85-a7bc-f7c730a608c9
-ms.openlocfilehash: a956ffdaa3456ed09443f25c3383b6aab52fb5bf
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5894fdbedb411c6324a9355bd2d335bb6c6c5867
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867055"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773883"
 ---
 # <a name="-operator-visual-basic"></a>^= 运算符 (Visual Basic)
 
@@ -46,7 +47,7 @@ variableorproperty ^= expression
   
 ## <a name="overloading"></a>重载  
 
- [^ 运算符](exponentiation-operator.md)可*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `^` 运算符会影响运算符的行为 `^=` 。 如果你的代码 `^=` 在重载的类或结构上使用 `^` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ [^ 运算符](exponentiation-operator.md)可 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 重载 `^` 运算符会影响运算符的行为 `^=` 。 如果你的代码 `^=` 在重载的类或结构上使用 `^` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -54,7 +55,7 @@ variableorproperty ^= expression
   
  [!code-vb[VbVbalrOperators#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#21)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [^ 运算符](exponentiation-operator.md)
 - [赋值运算符](assignment-operators.md)

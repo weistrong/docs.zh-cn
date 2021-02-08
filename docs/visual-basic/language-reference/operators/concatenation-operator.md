@@ -1,4 +1,5 @@
 ---
+description: '详细了解： &amp; 操作员 (Visual Basic) '
 title: '&amp; 运算符'
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - concatenation operators [Visual Basic], syntax
 - strings [Visual Basic], concatenating
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
-ms.openlocfilehash: 20c2e2088691e68221872cc1dfc5486413515a4d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ba7c94805e805c841d05241fef557ca972a19ae9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867148"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774091"
 ---
 # <a name="amp-operator-visual-basic"></a>&amp; 操作员 (Visual Basic) 
 
@@ -45,7 +46,7 @@ result = expression1 & expression2
  的数据类型 `result` 为 `String` 。 如果一个或两个表达式的计算结果都不为，或者其 [值为](../nothing.md) <xref:System.DBNull.Value?displayProperty=nameWithType> ，则将它们视为值为 "" 的字符串。  
   
 > [!NOTE]
-> `&`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+> `&`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 > [!NOTE]
 > 与号 ( # A0) 字符也可用于将变量标识为类型 `Long` 。 有关详细信息，请参阅 [类型字符](../../programming-guide/language-features/data-types/type-characters.md)。  
@@ -56,7 +57,7 @@ result = expression1 & expression2
   
  [!code-vb[VbVbalrOperators#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#2)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [&= 运算符](and-assignment-operator.md)
 - [串联运算符](concatenation-operators.md)

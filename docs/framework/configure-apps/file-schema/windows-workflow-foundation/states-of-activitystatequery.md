@@ -1,14 +1,15 @@
 ---
+description: 了解详细 <states> 信息： <activityStateQuery>
 title: <states> 的 <activityStateQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: a7cc2018-2b79-44f1-825a-bb7ca08690a3
-ms.openlocfilehash: e56df08813c091a9c9390db6fc19a7c39f2e8592
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 16a0af865508f0ebc50d16728c35188310c95043
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773272"
 ---
 # <a name="states-of-activitystatequery"></a>\<states> 的 \<activityStateQuery>
 
@@ -52,13 +53,13 @@ ms.locfileid: "91169695"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<state>](state-of-states.md)|一个配置元素，该元素包含应为其发出跟踪记录的已订阅活动的状态。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<activityStateQuery>](activitystatequery.md)|表示一个配置元素，该元素用于跟踪父活动取消子活动的请求。 跟踪参与者需要用此查询来订阅取消请求记录对象。|  
   

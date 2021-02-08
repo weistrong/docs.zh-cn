@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的赋值运算符) '
 title: 赋值运算符
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - = assignment statements [Visual Basic]
 - assignment operators [Visual Basic]
 ms.assetid: 43b7e40c-b7af-45f6-b100-198a90f2561e
-ms.openlocfilehash: 29b0083508d10758f0fbb75b3d0e8ee5f9dd2591
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 049edada0c228e0b74dd42d1687df665589e5b6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874808"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774169"
 ---
 # <a name="assignment-operators-visual-basic"></a>赋值运算符 (Visual Basic)
 
@@ -38,7 +39,7 @@ ms.locfileid: "90874808"
   
  [&= 运算符](and-assignment-operator.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的运算符优先级](operator-precedence.md)
 - [按功能列出的运算符](operators-listed-by-functionality.md)

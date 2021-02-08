@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：比较运算符 (Visual Basic) '
 title: 比较运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -30,28 +31,28 @@ helpviewer_keywords:
 - Is operator [Visual Basic]
 - comparison operators [Visual Basic], Visual Basic
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
-ms.openlocfilehash: fcbb9052a79fa4b20b5a0f8fdc15de73d55a4281
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 28eded0cfae54ec83ad9546b801243e4de0e45fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873440"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774104"
 ---
 # <a name="comparison-operators-visual-basic"></a>比较运算符 (Visual Basic)
 
 下面是 Visual Basic 中定义的比较运算符。
 
- `<` 操作员
+ `<` 运算符
 
- `<=` 操作员
+ `<=` 运算符
 
- `>` 操作员
+ `>` 运算符
 
- `>=` 操作员
+ `>=` 运算符
 
- `=` 操作员
+ `=` 运算符
 
- `<>` 操作员
+ `<>` 运算符
 
  [Is 运算符](is-operator.md)
 
@@ -93,7 +94,7 @@ result = string Like pattern
 
  下表包含关系比较运算符和确定是还是的条件的列表 `result` `True` `False` 。
 
-|运算符|`True` 是否|`False` 是否|
+|操作员|`True` 是否|`False` 是否|
 |--------------|---------------|----------------|
 |`<` (小于) |`expression1` < `expression2`|`expression1` >= `expression2`|
 |`<=` (小于或等于) |`expression1` <= `expression2`|`expression1` > `expression2`|
@@ -160,7 +161,7 @@ result = string Like pattern
 
  在前面的示例中，第一个比较返回， `False` 其余比较返回 `True` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.InvalidCastException>
 - [= 运算符](assignment-operator.md)

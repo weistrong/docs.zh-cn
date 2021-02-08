@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： REF CURSOR 示例
 title: REF CURSOR 示例
 ms.date: 03/30/2017
 ms.assetid: c257da03-c6c9-4cf8-b591-b7740a962c40
-ms.openlocfilehash: b45ef971ccb6b785988cc351d02be9e0844f6e11
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e7cb411778b325400d37511b082032e590b339c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773220"
 ---
 # <a name="ref-cursor-examples"></a>REF CURSOR 示例
 
@@ -16,7 +17,7 @@ REF CURSOR 示例包括下列三个 Visual Basic 示例，演示如何使用 REF
 |示例|说明|  
 |------------|-----------------|  
 |[OracleDataReader 中的 REF CURSOR 参数](ref-cursor-parameters-in-an-oracledatareader.md)|此示例执行一个 PL/SQL 存储过程，返回 REF CURSOR 参数，并将值作为 <xref:System.Data.OracleClient.OracleDataReader> 读取。|  
-|[使用 OracleDataReader 从多个 REF CURSOR 中检索数据](retrieving-data-from-multiple-ref-cursors.md)|此示例执行一个 PL/SQL 存储过程，该存储过程返回两个 REF CURSOR 参数，并使用 **OracleDataReader**读取值。|  
+|[使用 OracleDataReader 从多个 REF CURSOR 中检索数据](retrieving-data-from-multiple-ref-cursors.md)|此示例执行一个 PL/SQL 存储过程，该存储过程返回两个 REF CURSOR 参数，并使用 **OracleDataReader** 读取值。|  
 |[使用一个或多个 REF CURSOR 填充数据集](filling-a-dataset-using-one-or-more-ref-cursors.md)|此示例执行一个 PL/SQL 存储过程，返回两个 REF CURSOR 参数，并使用返回的行填充 <xref:System.Data.DataSet>。|  
   
  要使用这些示例，可能需要创建 Oracle 表，并且必须创建 PL/SQL 包和包正文。  

@@ -1,4 +1,5 @@
 ---
+description: '详细了解： DirectCast Operator (Visual Basic) '
 title: DirectCast 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - DirectCast keyword [Visual Basic]
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
-ms.openlocfilehash: 7b070b8eba240440821f7984a9336c2ecaf61706
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: be1eb4885940571788769bae968b1a094e256c79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773896"
 ---
 # <a name="directcast-operator-visual-basic"></a>DirectCast 运算符 (Visual Basic)
 
@@ -46,7 +47,7 @@ ms.locfileid: "90867089"
   
  在前面的示例中，的运行时类型 `q` 为 `Double` 。 `CType` 成功 `Double` ，因为可以转换为 `Integer` 。 但是，第一次 `DirectCast` 在运行时失败，因为的运行时类型 `Double` 与没有继承关系 `Integer` ，即使存在转换也是如此。 第二个 `DirectCast` 成功，因为它从类型转换 <xref:System.Windows.Forms.Form> 为类型 <xref:System.Windows.Forms.Control> ，后者 <xref:System.Windows.Forms.Form> 继承自。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Convert.ChangeType%2A?displayProperty=nameWithType>
 - [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

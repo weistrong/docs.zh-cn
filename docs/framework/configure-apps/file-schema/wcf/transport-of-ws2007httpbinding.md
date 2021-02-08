@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <transport> 信息： <ws2007HttpBinding>
 title: <transport> 的 <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 692befa3-8b0b-4ec5-b601-755874e98eb0
-ms.openlocfilehash: 60e8758d653848176ca3f287e253bd7990e78470
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8c6890bc291458ba0849ab7a206487431b279576
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162044"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773428"
 ---
 # <a name="transport-of-ws2007httpbinding"></a>\<transport> 的 \<ws2007HttpBinding>
 
@@ -39,7 +40,7 @@ ms.locfileid: "91162044"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |`clientCredentialType`|指定用于向服务证明客户端身份的凭据。 此属性的类型为 <xref:System.ServiceModel.HttpClientCredentialType>。|  
 |`proxyCredentialType`|指定用于向域代理证明客户端身份的凭据。 此属性的类型为 <xref:System.ServiceModel.HttpProxyCredentialType>。|  
@@ -47,7 +48,7 @@ ms.locfileid: "91162044"
   
 ## <a name="clientcredentialtype-attribute"></a>clientCredentialType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|禁用安全性。|  
 |基本|使用基本身份验证。|  
@@ -58,7 +59,7 @@ ms.locfileid: "91162044"
   
 ## <a name="proxycredentialtype-attribute"></a>proxyCredentialType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|禁用安全性。|  
 |基本|使用基本身份验证。|  
@@ -73,7 +74,7 @@ ms.locfileid: "91162044"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-ws2007httpbinding.md)|表示元素的安全功能 [\<ws2007HttpBinding>](ws2007httpbinding.md) 。|  
   

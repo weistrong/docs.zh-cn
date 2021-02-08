@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataEmit：： SetMethodProps 方法
 title: IMetaDataEmit::SetMethodProps 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e0c6ac12-22ea-43f5-b799-8cda0faf3336
 topic_type:
 - apiref
-ms.openlocfilehash: c461582cc22f7185ee2707db91be83bc1aa0ba4c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: edecdc14abb386f8fa4cd70535f2b8c012bdc59f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706828"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772089"
 ---
 # <a name="imetadataemitsetmethodprops-method"></a>IMetaDataEmit::SetMethodProps 方法
 
@@ -61,7 +62,7 @@ HRESULT SetMethodProps (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataEmit 接口](imetadataemit-interface.md)
 - [IMetaDataEmit2 接口](imetadataemit2-interface.md)

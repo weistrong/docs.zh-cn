@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorDebug 接口
 title: ICorDebug 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 33f431d7-ab1a-494d-8af2-20ab15aba194
 topic_type:
 - apiref
-ms.openlocfilehash: 21838bdd8ff45f8f74524dc4da52364fb032b396
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b989013f7eb54e163feeb965e10448a3a1756e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772518"
 ---
 # <a name="icordebug-interface"></a>ICorDebug 接口
 
@@ -42,7 +43,7 @@ ms.locfileid: "95723397"
 |[SetUnmanagedHandler 方法](icordebug-setunmanagedhandler-method.md)|指定非托管事件的事件处理程序对象。|  
 |[Terminate 方法](icordebug-terminate-method.md)|终止 `ICorDebug` 对象。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ICorDebug` 表示调试器进程的事件处理循环。 调试程序必须等待所有正在调试的进程中的 [ICorDebugManagedCallback：： ExitProcess](icordebugmanagedcallback-exitprocess-method.md) 回调，然后释放此接口。  
   
@@ -61,6 +62,6 @@ ms.locfileid: "95723397"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试接口](debugging-interfaces.md)

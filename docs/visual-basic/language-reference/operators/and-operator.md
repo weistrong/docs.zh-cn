@@ -1,4 +1,5 @@
 ---
+description: '详细了解：和运算符 (Visual Basic) '
 title: And 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - bitwise comparison [Visual Basic]
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
-ms.openlocfilehash: b4d6d08cca2907befeab2e31c6804b69849c9e38
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 238ef0b2f14f2014da6e65684bfac183e03d963e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874869"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774273"
 ---
 # <a name="and-operator-visual-basic"></a>And 运算符 (Visual Basic)
 
@@ -53,7 +54,7 @@ result = expression1 And expression2
 |`False`|`False`|`False`|  
   
 > [!NOTE]
-> 在布尔比较中， `And` 运算符始终计算两个表达式，这可能包括进行过程调用。 [AndAlso 运算符](andalso-operator.md)执行*短路*，这意味着，如果 `expression1` 为，则 `False` `expression2` 不计算。  
+> 在布尔比较中， `And` 运算符始终计算两个表达式，这可能包括进行过程调用。 [AndAlso 运算符](andalso-operator.md)执行 *短路*，这意味着，如果 `expression1` 为，则 `False` `expression2` 不计算。  
   
  当应用于数值时，运算符将对 `And` 两个数值表达式中的相同位置执行按位比较，并根据下表设置中的相应位 `result` 。  
   
@@ -74,7 +75,7 @@ result = expression1 And expression2
  对于布尔值比较，结果的数据类型为 `Boolean` 。 对于按位比较，结果数据类型是适用于和的数据类型的数值类型 `expression1` `expression2` 。 请参阅 [运算符结果的数据类型](data-types-of-operator-results.md)中的 "关系和按位比较" 表。  
   
 > [!NOTE]
-> `And`运算符可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+> `And`运算符可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义其行为。 如果你的代码在该类或结构上使用此运算符，请确保了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -92,7 +93,7 @@ result = expression1 And expression2
   
  前面的示例分别生成8、2和0的结果。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [逻辑/按位运算符 (Visual Basic)](logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](operator-precedence.md)

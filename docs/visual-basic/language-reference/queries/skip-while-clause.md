@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Skip While 子句 (Visual Basic) '
 title: Skip While 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Skip While clause [Visual Basic]
 - queries [Visual Basic], Skip While
 ms.assetid: 5dee8350-7520-4f1a-b00d-590cacd572d6
-ms.openlocfilehash: af722f7aee021f244b411cdc61619b7de3c20607
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6f2785fde1a62c10c914904ccba51510dbb1a041
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773844"
 ---
 # <a name="skip-while-clause-visual-basic"></a>Skip While 子句 (Visual Basic)
 
@@ -45,7 +46,7 @@ Skip While expression
   
  [!code-vb[VbSimpleQuerySamples#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#3)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的 LINQ 简介](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [查询](index.md)

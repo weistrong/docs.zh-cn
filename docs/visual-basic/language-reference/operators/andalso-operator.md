@@ -1,4 +1,5 @@
 ---
+description: '详细了解： AndAlso Operator (Visual Basic) '
 title: AndAlso 运算符
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - short-circuit evaluation
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
-ms.openlocfilehash: aff4621b8f415b9441ad1edf537b9b0736892bb8
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: dcf6c2685bf8f9ffee27b00543786cd3b315b327
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774260"
 ---
 # <a name="andalso-operator-visual-basic"></a>AndAlso 运算符 (Visual Basic)
 
@@ -55,7 +56,7 @@ result = expression1 AndAlso expression2
   
 ## <a name="overloading"></a>重载  
 
- [And 运算符](and-operator.md)和[IsFalse 运算符](isfalse-operator.md)可以*重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义它们的行为。 重载 `And` 和 `IsFalse` 运算符会影响运算符的行为 `AndAlso` 。 如果你的代码 `AndAlso` 在重载和的类或结构上使用 `And` `IsFalse` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
+ [And 运算符](and-operator.md)和 [IsFalse 运算符](isfalse-operator.md)可以 *重载*，这意味着当操作数具有该类或结构的类型时，该类或结构可以重新定义它们的行为。 重载 `And` 和 `IsFalse` 运算符会影响运算符的行为 `AndAlso` 。 如果你的代码 `AndAlso` 在重载和的类或结构上使用 `And` `IsFalse` ，请确保你了解其重新定义的行为。 有关详细信息，请参阅 [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)。  
   
 ## <a name="example"></a>示例  
 
@@ -71,7 +72,7 @@ result = expression1 AndAlso expression2
   
  [!code-vb[VbVbalrOperators#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#25)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [逻辑/按位运算符 (Visual Basic)](logical-bitwise-operators.md)
 - [Visual Basic 中的运算符优先级](operator-precedence.md)

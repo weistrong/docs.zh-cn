@@ -1,14 +1,15 @@
 ---
+description: 了解详细信息： <identityConfiguration>
 title: <identityConfiguration>
 ms.date: 03/30/2017
 ms.assetid: 1db76253-07da-447b-9e7a-3705c7228cf4
 author: BrucePerlerMS
-ms.openlocfilehash: 0fa8c574fd5663606cf081f1000a24884306edfe
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 987dfb006984f757ad117157e915f1909ab3a8c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70251986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773402"
 ---
 # \<identityConfiguration>
 
@@ -40,11 +41,11 @@ ms.locfileid: "70251986"
 |---------------|-----------------|
 |name|标识配置节的名称。 您可以使用此名称来引用特定的配置节。 如果未 `name` 指定任何属性，则节将定义默认配置。 默认配置始终用于被动联合身份验证方案。 有关详细信息，请参阅 [\<federationConfiguration>](federationconfiguration.md) 元素。|
 |saveBootstrapContext|指定是否应在会话令牌中包含启动令牌。 还可以通过在元素上设置属性，在令牌处理程序集合上设置值 `saveBootstrapContext` [\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md) 。 标记处理程序集合上设置的值将覆盖在服务上设置的值。|
-|maximumClockSkew|一个 <xref:System.TimeSpan> ，它指定允许的最大时钟偏差。 控制执行区分时间的操作时允许的最大时钟偏差，如验证登录会话的过期时间。 默认值为5分钟 "00:05:00"。 有关如何指定值的详细信息 <xref:System.TimeSpan> ，请参阅[Timespan 值](../windows-workflow-foundation/index.md)。 通过在元素上设置属性，还可以对令牌处理程序集合设置最大时钟偏差 `maximumClockSkew` [\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md) 。 标记处理程序集合上设置的值将覆盖在服务上设置的值。|
+|maximumClockSkew|一个 <xref:System.TimeSpan> ，它指定允许的最大时钟偏差。 控制执行区分时间的操作时允许的最大时钟偏差，如验证登录会话的过期时间。 默认值为5分钟 "00:05:00"。 有关如何指定值的详细信息 <xref:System.TimeSpan> ，请参阅 [Timespan 值](../windows-workflow-foundation/index.md)。 通过在元素上设置属性，还可以对令牌处理程序集合设置最大时钟偏差 `maximumClockSkew` [\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md) 。 标记处理程序集合上设置的值将覆盖在服务上设置的值。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<caches>](caches.md)|注册用于会话令牌和令牌重播检测的缓存。 可在服务级别或安全标记处理程序集合上指定。 可选。|
 |[\<certificateValidation>](certificatevalidation.md)|控制标记处理程序用于验证证书的设置。 可在服务级别或安全标记处理程序集合上指定。 可选。|
@@ -56,11 +57,11 @@ ms.locfileid: "70251986"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[\<system.identityModel>](system-identitymodel.md)|为在应用程序中启用 Windows Identity Foundation （WIF）选项提供配置。|
+|[\<system.identityModel>](system-identitymodel.md)|提供用于在应用程序中启用 Windows Identity Foundation (WIF) 选项的配置。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 可以定义多个标识配置，每个配置都具有唯一的名称。 此行为如下所示：
 
@@ -76,7 +77,7 @@ ms.locfileid: "70251986"
  元素中指定的某些设置 `<identityConfiguration>` 可由安全令牌处理程序集合上的设置重写，或由单个安全令牌处理程序上的设置重写。
 
 > [!IMPORTANT]
-> 当使用 <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> 或 <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> 类在代码中提供基于声明的访问控制时，元素引用的标识配置将 `<federationConfiguration>` 配置用于做出授权决定的声明授权管理器和策略。 即使在非被动 Web 方案（例如 Windows Communication Foundation （WCF）应用程序或不是基于 Web 的应用程序）情况下，也是如此。 如果应用程序不是被动 Web 应用程序，则 [\<claimsAuthorizationManager>](claimsauthorizationmanager.md) 仅应用所引用标识配置的元素（及其子策略元素，如果存在）。 忽略所有其他设置。 有关详细信息，请参阅 [\<federationConfiguration>](federationconfiguration.md) 元素。
+> 当使用 <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> 或 <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> 类在代码中提供基于声明的访问控制时，元素引用的标识配置将 `<federationConfiguration>` 配置用于做出授权决定的声明授权管理器和策略。 即使在非被动 Web 应用场景的情况下（例如 Windows Communication Foundation (WCF) 应用程序或不是基于 Web 的应用程序），也是如此。 如果应用程序不是被动 Web 应用程序，则 [\<claimsAuthorizationManager>](claimsauthorizationmanager.md) 元素 (及其子策略元素，如果只应用了引用的标识配置) 。 忽略所有其他设置。 有关详细信息，请参阅 [\<federationConfiguration>](federationconfiguration.md) 元素。
 
 `<identityConfiguration>`元素由 <xref:System.IdentityModel.Configuration.IdentityConfigurationElement> 类表示。 标识配置部分由 <xref:System.IdentityModel.Configuration.IdentityConfiguration> 类表示。
 
@@ -98,7 +99,7 @@ ms.locfileid: "70251986"
 </system.identityModel>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.IdentityModel.Configuration.IdentityConfiguration>
 - <xref:System.IdentityModel.Configuration.IdentityConfigurationElement>

@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：为数据服务请求指定客户端凭据 (WCF Data Services) '
 title: 如何：为数据服务请求（WCF 数据服务）指定客户端凭据
 ms.date: 03/30/2017
 dev_langs:
@@ -7,18 +8,20 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, customizing requests
 ms.assetid: 1632f9af-e45f-4363-9222-03823daa8e28
-ms.openlocfilehash: fd69d5f7eddf713612000b0ad677e7ada378553e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 45ccb237d310479d708b6ab0a7dcfe8812c1ea3f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773051"
 ---
 # <a name="how-to-specify-client-credentials-for-a-data-service-request-wcf-data-services"></a>如何：为数据服务请求（WCF 数据服务）指定客户端凭据
 
-默认情况下，客户端库在向 OData 服务发送请求时不提供凭据。 但是，可以通过为 <xref:System.Net.NetworkCredential> 的 <xref:System.Data.Services.Client.DataServiceContext.Credentials%2A> 属性提供 <xref:System.Data.Services.Client.DataServiceContext> 以指定发送凭据，对发送到数据服务的请求进行身份验证。 有关更多信息，请参见 [Securing WCF Data Services](securing-wcf-data-services.md)。 本主题中的示例演示如何显式提供在从数据服务请求数据时 WCF 数据服务客户端使用的凭据。  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+默认情况下，客户端库在向 OData 服务发送请求时不提供凭据。 但是，可以通过为 <xref:System.Net.NetworkCredential> 的 <xref:System.Data.Services.Client.DataServiceContext.Credentials%2A> 属性提供 <xref:System.Data.Services.Client.DataServiceContext> 以指定发送凭据，对发送到数据服务的请求进行身份验证。 有关更多信息，请参见 [Securing WCF Data Services](securing-wcf-data-services.md)。 本主题中的示例演示如何显式提供在从数据服务请求数据时 WCF Data Services 客户端使用的凭据。  
   
- 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF 数据服务快速入门](quickstart-wcf-data-services.md)时创建的。 你还可以使用在 OData 网站上发布的 [Northwind 示例数据服务](https://services.odata.org/Northwind/Northwind.svc/) ;此示例数据服务是只读的，尝试保存更改将返回错误。 OData 网站上的示例数据服务允许匿名身份验证。  
+ 本主题中的示例使用罗斯文示例数据服务和自动生成的客户端数据服务类。 此服务和客户端数据类是在完成 [WCF Data Services 快速入门](quickstart-wcf-data-services.md)时创建的。 你还可以使用在 OData 网站上发布的 [Northwind 示例数据服务](https://services.odata.org/Northwind/Northwind.svc/) ;此示例数据服务是只读的，尝试保存更改将返回错误。 OData 网站上的示例数据服务允许匿名身份验证。  
   
 ## <a name="example"></a>示例  
 

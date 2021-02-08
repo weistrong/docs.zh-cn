@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：服务操作 (WCF Data Services) '
 title: 服务操作（WCF 数据服务）
 ms.date: 03/30/2017
 dev_langs:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - service operations [WCF Data Services]
 - WCF Data Services, service operations
 ms.assetid: 583a690a-e60f-4990-8991-d6efce069d76
-ms.openlocfilehash: c254a7362c7bc28f4b38fc0189ae0ea763bc90cc
-ms.sourcegitcommit: 79a2d6a07ba4ed08979819666a0ee6927bbf1b01
+ms.openlocfilehash: 3c811da86b1654f33675b46575d45884a6ba9b1f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74568851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773090"
 ---
 # <a name="service-operations-wcf-data-services"></a>服务操作（WCF 数据服务）
 
-WCF 数据服务使你能够在数据服务上定义服务操作，以便在服务器上公开方法。 与其他数据服务资源一样，服务操作也是通过 URI 进行寻址。 使用服务操作可以在数据服务中公开业务逻辑；例如，实现验证逻辑，应用基于角色的安全性或公开专用查询功能。 服务操作是添加到派生自 <xref:System.Data.Services.DataService%601> 的数据服务类的方法。 与所有其他数据服务资源一样，也可以向服务操作方法提供参数。 例如，以下服务操作 URI （基于[快速入门](quickstart-wcf-data-services.md)数据服务）将值 `London` 传递给 `city` 参数：
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+WCF Data Services 使你能够在数据服务上定义服务操作，以便在服务器上公开方法。 与其他数据服务资源一样，服务操作也是通过 URI 进行寻址。 使用服务操作可以在数据服务中公开业务逻辑；例如，实现验证逻辑，应用基于角色的安全性或公开专用查询功能。 服务操作是添加到派生自 <xref:System.Data.Services.DataService%601> 的数据服务类的方法。 与所有其他数据服务资源一样，也可以向服务操作方法提供参数。 例如，以下服务操作 URI 基于 [快速入门](quickstart-wcf-data-services.md) 数据服务 () 将值传递 `London` 给 `city` 参数：
 
 ```http
 http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'
@@ -28,9 +31,9 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'
 [!code-csharp[Astoria Northwind Service#ServiceOperationDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#serviceoperationdef)]
 [!code-vb[Astoria Northwind Service#ServiceOperationDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#serviceoperationdef)]
 
-使用 <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> 的 <xref:System.Data.Services.DataService%601> 可以直接访问数据服务正在使用的数据源。 有关详细信息，请参阅[如何：定义服务操作](how-to-define-a-service-operation-wcf-data-services.md)。
+使用 <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> 的 <xref:System.Data.Services.DataService%601> 可以直接访问数据服务正在使用的数据源。 有关详细信息，请参阅 [如何：定义服务操作](how-to-define-a-service-operation-wcf-data-services.md)。
 
-有关如何从 .NET Framework 客户端应用程序调用服务操作的信息，请参阅[调用服务操作](calling-service-operations-wcf-data-services.md)。
+有关如何从 .NET Framework 客户端应用程序调用服务操作的信息，请参阅 [调用服务操作](calling-service-operations-wcf-data-services.md)。
 
 ## <a name="service-operation-requirements"></a>服务操作要求
 
@@ -80,7 +83,7 @@ http://localhost:12345/Northwind.svc/GetOrdersByState?state='CA'&includeItems=tr
 
 |有效的返回类型|URI 规则|
 |------------------------|---------------|
-|`void`（在 Visual Basic 中为 `Nothing`）<br /><br /> 或<br /><br /> 实体类型<br /><br /> 或<br /><br /> 基元类型|URI 必须是作为服务操作名称的单个路径段。 不允许使用查询选项。|
+|`void`（在 Visual Basic 中为 `Nothing`）<br /><br /> \- 或 -<br /><br /> 实体类型<br /><br /> \- 或 -<br /><br /> 基元类型|URI 必须是作为服务操作名称的单个路径段。 不允许使用查询选项。|
 |<xref:System.Collections.Generic.IEnumerable%601>|URI 必须是作为服务操作名称的单个路径段。 由于结果类型不是 <xref:System.Linq.IQueryable%601> 类型，因此不允许使用查询选项。|
 |<xref:System.Linq.IQueryable%601>|除了作为服务操作名称的路径之外，还允许使用查询路径段。 也允许使用查询选项。|
 
@@ -100,7 +103,7 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'&$expand=Order
 > [!NOTE]
 > 如果服务操作的返回类型已通过限制访问基础实体集的方式被隐藏，则该服务操作将不能用于客户端应用程序。
 
-有关详细信息，请参阅[如何：定义服务操作](how-to-define-a-service-operation-wcf-data-services.md)。
+有关详细信息，请参阅 [如何：定义服务操作](how-to-define-a-service-operation-wcf-data-services.md)。
 
 ## <a name="raising-exceptions"></a>引发异常
 
@@ -109,6 +112,6 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'&$expand=Order
 [!code-csharp[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#handleexceptions)]
 [!code-vb[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#handleexceptions)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [侦听器](interceptors-wcf-data-services.md)

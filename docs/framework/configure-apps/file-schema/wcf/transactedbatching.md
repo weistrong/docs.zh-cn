@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： <transactedBatching>
 title: <transactedBatching>
 ms.date: 03/30/2017
 ms.assetid: 2f790a0d-8f03-4b86-81b5-ce1bc1a6c575
-ms.openlocfilehash: 6167a4ad56a9481a9f695b770605991a0a88d2d9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9a57226c3a2f2b026c69324e37b00e87fd3dd693
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773688"
 ---
 # \<transactedBatching>
 
@@ -42,11 +43,11 @@ ms.locfileid: "70399404"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[\<behavior>](behavior-of-endpointbehaviors.md)|指定终结点行为。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 采用事务批处理配置的传输尝试将若干接收操作成批归入到一个事务中。 这样做可以避免因创建事务以及在每个接收操作中提交事务所产生的相对较高的成本。
 
@@ -89,7 +90,7 @@ ms.locfileid: "70399404"
 </system.serviceModel>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Configuration.TransactedBatchingElement>
 - <xref:System.ServiceModel.Description.TransactedBatchingBehavior>

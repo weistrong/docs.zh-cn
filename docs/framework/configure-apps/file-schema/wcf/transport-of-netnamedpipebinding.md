@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <transport> 信息： <netNamedPipeBinding>
 title: <transport> 的 <netNamedPipeBinding>
 ms.date: 03/30/2017
 ms.assetid: d9eff52d-4bde-4586-b56a-b0ec24611f8d
-ms.openlocfilehash: 81c52405478d4c1ab5c65aab73f7feff61b879d0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a54c429bcac192ddc46df7232c33ab98bd1a4c58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773480"
 ---
 # <a name="transport-of-netnamedpipebinding"></a>\<transport> 的 \<netNamedPipeBinding>
 
@@ -39,7 +40,7 @@ ms.locfileid: "91178016"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
 |protectionLevel|定义命名管道的保护级别。 消息签名降低了在消息传输过程中第三方对消息进行篡改的风险。 加密为传输过程提供了数据级保密功能。 有效值包括以下值：<br /><br /> -None：无保护。<br />-Sign：对消息进行签名。<br />-EncryptAndSign：对消息进行加密和签名。<br /><br /> 默认值为 EncryptAndSign。|  
   
@@ -49,7 +50,7 @@ ms.locfileid: "91178016"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-netnamedpipebinding.md)|定义绑定的安全设置。|  
   

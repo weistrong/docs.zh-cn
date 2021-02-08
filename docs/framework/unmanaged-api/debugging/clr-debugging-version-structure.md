@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： CLR_DEBUGGING_VERSION 结构
 title: CLR_DEBUGGING_VERSION 结构
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4d821186-3ddf-405a-ac44-d79438a9f7f3
 topic_type:
 - apiref
-ms.openlocfilehash: 8a2abe847728a2bb1f1345ef73e55b58e4704001
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2d274a91948b98dc309cd5670c3dd3bf6cd01e2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729806"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772778"
 ---
 # <a name="clr_debugging_version-structure"></a>CLR_DEBUGGING_VERSION 结构
 
@@ -48,7 +49,7 @@ typedef struct _CLR_DEBUGGING_VERSION
 |`wBuild`|内部版本号。|  
 |`wRevision`|修订号。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `CLR_DEBUGGING_VERSION`结构与 COR_VERSION 结构相同，但 `CLR_DEBUGGING_VERSION` 结构提供了 () 的附加结构版本字段 `wStructVersion` 。 此字段当前必须设置为零。  
   
@@ -62,7 +63,7 @@ typedef struct _CLR_DEBUGGING_VERSION
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [调试结构](debugging-structures.md)
 - [调试](index.md)

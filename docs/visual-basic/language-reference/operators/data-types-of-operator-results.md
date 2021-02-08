@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：运算符结果的数据类型 (Visual Basic) '
 title: 运算符结果的数据类型
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - data types [Visual Basic], ranges
 - operators [Visual Basic], result data types
 ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
-ms.openlocfilehash: f7a1249cec159f98ede48b960fadc5e2ff4a75f3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ebc99d5d735c30124feb52232e28a5fe6fe5fd50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867102"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773922"
 ---
 # <a name="data-types-of-operator-results-visual-basic"></a>运算符结果的数据类型 (Visual Basic)
 
@@ -50,7 +51,7 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
   
  如果、、、或运算的任一操作数为，而另一个不 `+` `–` `*` `/` `Mod` `Decimal` 是 `Single` 或 `Double` ，则 Visual Basic 将其他操作数扩展为 `Decimal` 。 它在中执行操作 `Decimal` ，结果数据类型为 `Decimal` 。  
   
-## <a name="floating-point-arithmetic"></a>浮点运算  
+## <a name="floating-point-arithmetic"></a>Floating-Point 算术  
 
  Visual Basic 在 [Double](../data-types/double-data-type.md)中执行大多数浮点运算，这是此类操作的最有效的数据类型。 但是，如果一个操作数为 [Single](../data-types/single-data-type.md) ，而另一个操作数为 not `Double` ，则 Visual Basic 在中执行该操作 `Single` 。 它在操作之前将每个操作数扩展为适当的数据类型，并且结果具有该数据类型。  
   
@@ -92,8 +93,8 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|运算符 `+`|Short|SByte|Byte|Short|UShort|整数|UInteger|Long|ULong|  
-|运算符 `–`|Short|SByte|Short|Short|整数|整数|Long|Long|小数|  
+|运算符 `+`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+|运算符 `–`|Short|SByte|Short|Short|Integer|Integer|Long|Long|小数|  
   
 ### <a name="-and--operators"></a><\< and >> 运算符  
 
@@ -102,7 +103,7 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`<<`, `>>`|Short|SByte|Byte|Short|UShort|整数|UInteger|Long|ULong|  
+|`<<`, `>>`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
   
  如果左操作数为 `Decimal` 、、 `Single` `Double` 或，则 `String` Visual Basic 尝试在操作之前将其转换为， `Long` 结果数据类型为 `Long` 。 右操作数 (要移位的位数) 必须是 `Integer` 或扩展到的类型 `Integer` 。  
   
@@ -113,12 +114,12 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|Short|SByte|Short|Short|整数|整数|Long|Long|小数|  
-|`SByte`|SByte|SByte|Short|Short|整数|整数|Long|Long|小数|  
-|`Byte`|Short|Short|Byte|Short|UShort|整数|UInteger|Long|ULong|  
-|`Short`|Short|Short|Short|Short|整数|整数|Long|Long|小数|  
-|`UShort`|整数|整数|UShort|整数|UShort|整数|UInteger|Long|ULong|  
-|`Integer`|整数|整数|整数|整数|整数|整数|Long|Long|小数|  
+|`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|小数|  
+|`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|小数|  
+|`Byte`|Short|Short|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+|`Short`|Short|Short|Short|Short|Integer|Integer|Long|Long|小数|  
+|`UShort`|Integer|Integer|UShort|Integer|UShort|Integer|UInteger|Long|ULong|  
+|`Integer`|Integer|Integer|Integer|Integer|Integer|Integer|Long|Long|小数|  
 |`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|小数|  
 |`ULong`|小数|小数|ULong|小数|ULong|小数|ULong|小数|ULong|  
@@ -130,12 +131,12 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|Short|SByte|Short|Short|整数|整数|Long|Long|Long|  
-|`SByte`|SByte|SByte|Short|Short|整数|整数|Long|Long|Long|  
-|`Byte`|Short|Short|Byte|Short|UShort|整数|UInteger|Long|ULong|  
-|`Short`|Short|Short|Short|Short|整数|整数|Long|Long|Long|  
-|`UShort`|整数|整数|UShort|整数|UShort|整数|UInteger|Long|ULong|  
-|`Integer`|整数|整数|整数|整数|整数|整数|Long|Long|Long|  
+|`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
+|`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
+|`Byte`|Short|Short|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+|`Short`|Short|Short|Short|Short|Integer|Integer|Long|Long|Long|  
+|`UShort`|Integer|Integer|UShort|Integer|UShort|Integer|UInteger|Long|ULong|  
+|`Integer`|Integer|Integer|Integer|Integer|Integer|Integer|Long|Long|Long|  
 |`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Long|  
 |`ULong`|Long|Long|ULong|Long|ULong|Long|ULong|Long|ULong|  
@@ -159,7 +160,7 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Not`|布尔|SByte|Byte|Short|UShort|整数|UInteger|Long|ULong|  
+|`Not`|布尔|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
   
  如果操作数为 `Decimal` 、、 `Single` `Double` 或，则 `String` Visual Basic 尝试在操作之前将其转换为， `Long` 结果数据类型为 `Long` 。  
   
@@ -170,12 +171,12 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|布尔|SByte|Short|Short|整数|整数|Long|Long|Long|  
-|`SByte`|SByte|SByte|Short|Short|整数|整数|Long|Long|Long|  
-|`Byte`|Short|Short|Byte|Short|UShort|整数|UInteger|Long|ULong|  
-|`Short`|Short|Short|Short|Short|整数|整数|Long|Long|Long|  
-|`UShort`|整数|整数|UShort|整数|UShort|整数|UInteger|Long|ULong|  
-|`Integer`|整数|整数|整数|整数|整数|整数|Long|Long|Long|  
+|`Boolean`|布尔|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
+|`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
+|`Byte`|Short|Short|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+|`Short`|Short|Short|Short|Short|Integer|Integer|Long|Long|Long|  
+|`UShort`|Integer|Integer|UShort|Integer|UShort|Integer|UInteger|Long|ULong|  
+|`Integer`|Integer|Integer|Integer|Integer|Integer|Integer|Long|Long|Long|  
 |`UInteger`|Long|Long|UInteger|Long|UInteger|Long|UInteger|Long|ULong|  
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Long|  
 |`ULong`|Long|Long|ULong|Long|ULong|Long|ULong|Long|ULong|  
@@ -190,7 +191,7 @@ Visual Basic 根据操作数的数据类型确定操作的结果数据类型。 
   
  `Like`仅为操作数的模式匹配定义运算符 `String` 。 Visual Basic 尝试在操作之前将每个操作数转换为必需 `String` 的。 结果数据类型始终为 `Boolean` 。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [数据类型](../data-types/index.md)
 - [运算符和表达式](../../programming-guide/language-features/operators-and-expressions/index.md)

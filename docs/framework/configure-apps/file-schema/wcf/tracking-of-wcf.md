@@ -1,13 +1,14 @@
 ---
+description: 了解有关 WCF 的详细信息： <tracking>
 title: <tracking> WCF 的
 ms.date: 03/30/2017
 ms.assetid: 70cfaf24-a91c-4e56-ac47-d2ed87a963b3
-ms.openlocfilehash: 223a30cd79d346d6ae36ca64fa887a683e6bfc8d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e372139623cd0b92bde74a6b19761d8a4c5ad6db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201429"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773818"
 ---
 # <a name="tracking-of-wcf"></a>\<tracking> WCF 的
 
@@ -87,14 +88,14 @@ ms.locfileid: "91201429"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<participants>](../windows-workflow-foundation/participants.md)|一个配置元素集合，这些元素定义了订阅跟踪记录的参与者。 跟踪参与者包含用于处理跟踪记录中负载的逻辑（例如，它们可以选择向某个文件中写入）。|  
 |[\<trackingProfile>](../windows-workflow-foundation/trackingprofile.md)|一个跟踪配置文件，用于筛选从工作流实例发出的跟踪记录。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |system.ServiceModel|所有工作流配置元素的根元素。|  
   

@@ -1,13 +1,14 @@
 ---
+description: 了解有关 WCF 的详细信息： <trackingProfile>
 title: <trackingProfile> WCF 的
 ms.date: 10/08/2018
 ms.assetid: 09b651c2-c0d2-4850-a101-b0e009a1dc3a
-ms.openlocfilehash: 97a494e492fcdd298dd14fd989f00d972e815f85
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d896457f45905739abd61892ac6058ddfc0f5034
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201403"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773766"
 ---
 # <a name="trackingprofile-of-wcf"></a>\<trackingProfile> WCF 的
 
@@ -90,13 +91,13 @@ ms.locfileid: "91201403"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<participants>](../windows-workflow-foundation/participants.md)|一个配置元素，包含 <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId?displayProperty=nameWithType> 属性所标识的特定工作流的所有查询。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<tracking>](../windows-workflow-foundation/tracking.md)|表示一个配置节，用于定义工作流服务的跟踪设置。|  
   

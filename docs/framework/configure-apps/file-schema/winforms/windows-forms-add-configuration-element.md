@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： Windows 窗体添加配置元素
 title: Windows 窗体添加配置元素
 ms.date: 04/07/2017
 helpviewer_keywords:
 - Windows Forms Add configuration element
 - configuring Windows Forms applications
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
-ms.openlocfilehash: dc1786f1f2dcc7bd01488dd24c6ef454f7e1cfbd
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a0db81e0dd86f9ee6f2a47183100645ece78280c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773252"
 ---
 # <a name="windows-forms-add-configuration-element"></a>Windows 窗体添加配置元素
 
@@ -69,13 +70,13 @@ ms.locfileid: "90557627"
 
 ### <a name="dpiawareness"></a>DpiAwareness
 
-在 Windows 版本下运行的 Windows 窗体应用（从 Windows 10 创意者版开始）以及从 .NET Framework 4.7 开始的目标版本 .NET Framework 可配置为利用 .NET Framework 4.7 中引入的高 DPI 改进。 这些方法包括：
+在 Windows 版本下运行的 Windows 窗体应用（从 Windows 10 创意者版开始）以及从 .NET Framework 4.7 开始的目标版本 .NET Framework 可配置为利用 .NET Framework 4.7 中引入的高 DPI 改进。 其中包括：
 
 - 支持动态 DPI 方案，在此方案中，用户在启动 Windows 窗体应用程序后更改了 DPI 或缩放系数。
 
 - 对许多 Windows 窗体控件（如控件和控件）的缩放和布局进行了改进 <xref:System.Windows.Forms.MonthCalendar> <xref:System.Windows.Forms.CheckedListBox> 。
 
-高 DPI 感知是一项选择功能;默认情况下，的值 `DpiAwareness` 为 `false` 。 可以通过 `PerMonitorV2` 在应用程序配置文件中将此项的值设置为来 Windows 窗体选择支持 DPI 感知。 如果启用了 DPI 感知，还会启用所有的 DPI 功能。 这些方法包括：
+高 DPI 感知是一项选择功能;默认情况下，的值 `DpiAwareness` 为 `false` 。 可以通过 `PerMonitorV2` 在应用程序配置文件中将此项的值设置为来 Windows 窗体选择支持 DPI 感知。 如果启用了 DPI 感知，还会启用所有的 DPI 功能。 其中包括：
 
 - DPI 更改的消息，由 `DisableDpiChangedMessageHandling` 键控制。
 

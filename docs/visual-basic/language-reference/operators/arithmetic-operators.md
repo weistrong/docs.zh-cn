@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：算术运算符 (Visual Basic) '
 title: 算术运算符
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - arithmetic operators [Visual Basic]
 - math operators [Visual Basic]
 ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
-ms.openlocfilehash: 3a300ab5d72a0fdbdbdfaf47a72dcb89a0d21743
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ce73df474e605408cec67319c950c1aa39749c72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774234"
 ---
 # <a name="arithmetic-operators-visual-basic"></a>算术运算符 (Visual Basic)
 
@@ -31,7 +32,7 @@ ms.locfileid: "90874842"
   
  [-Operator](subtraction-operator.md) (一元和二元)   
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 中的运算符优先级](operator-precedence.md)
 - [算术运算符 (Visual Basic)](../../programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

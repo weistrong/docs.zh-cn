@@ -1,13 +1,14 @@
 ---
+description: 了解详细 <transport> 信息： <netHttpBinding>
 title: <transport> 的 <netHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
-ms.openlocfilehash: 996b3655b0698595256c9a7197f705d46e6e9fcf
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1c2029fcbc57632b828fa180ba0ffbbf6b974775
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773506"
 ---
 # <a name="transport-of-nethttpbinding"></a>\<transport> 的 \<netHttpBinding>
 
@@ -47,17 +48,17 @@ ms.locfileid: "91169812"
   
 ### <a name="attributes"></a>特性  
   
-|属性|描述|  
+|属性|说明|  
 |---------------|-----------------|  
-|clientCredentialType|-指定执行使用 HTTP 身份验证的客户端身份验证时要使用的凭据类型。  默认为 `None`。 此属性的类型为 <xref:System.ServiceModel.HttpClientCredentialType>。|  
+|clientCredentialType|-指定执行使用 HTTP 身份验证的客户端身份验证时要使用的凭据类型。  默认值为 `None`。 此属性的类型为 <xref:System.ServiceModel.HttpClientCredentialType>。|  
 |proxyCredentialType|-指定使用代理通过 HTTP 在域中执行客户端身份验证时使用的凭据类型。 只有当父 `mode` 元素的 `security` 属性为 `Transport` 或 `TransportCredentialsOnly` 时，此属性才适用。 此属性的类型为 <xref:System.ServiceModel.HttpProxyCredentialType>。|  
-|realm|一个字符串，指定摘要式或基本身份验证的 HTTP 身份验证方案所使用的领域。 默认值为空字符串。|  
+|realm|一个字符串，指定摘要式或基本身份验证的 HTTP 身份验证方案所使用的领域。 默认值为一个空字符串。|  
 |policyEnforcement|此枚举指定应何时强制实施 <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>。<br /><br /> 1. 从不–不会强制实施策略 (禁用扩展保护) 。<br />WhenSupported-仅当客户端支持扩展保护时才强制实施策略。<br />3. always –始终强制实施策略。 不支持扩展保护的客户端将无法进行身份验证。|  
 |protectionScenario|此枚举指定此策略强制实施的保护方案。|  
   
 ## <a name="clientcredentialtype-attribute"></a>clientCredentialType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|在传输过程中不能保证消息的安全。|  
 |基本|指定基本身份验证。|  
@@ -67,7 +68,7 @@ ms.locfileid: "91169812"
   
 ## <a name="proxycredentialtype-attribute"></a>proxyCredentialType 属性  
   
-|值|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |无|-传输过程中消息不受保护。|  
 |基本|指定“RFC 2617 – HTTP 身份验证：基本和摘要式身份验证”所定义的基本身份验证。|  
@@ -82,7 +83,7 @@ ms.locfileid: "91169812"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[\<security>](security-of-nethttpbinding.md)|定义的安全功能 [\<netHttpBinding>](nethttpbinding.md) 。|  
   
