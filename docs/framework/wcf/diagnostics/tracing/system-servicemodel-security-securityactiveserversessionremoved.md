@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息： SecurityActiveServerSessionRemoved
 title: System.ServiceModel.Security.SecurityActiveServerSessionRemoved
 ms.date: 03/30/2017
 ms.assetid: f62789ea-d455-43f5-ab6c-21588184b528
-ms.openlocfilehash: 40464c90322016191cfdff8ee07800fac60f60d7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 02bf588ced37e8cadadbc4b7f89f7139f7971a8d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798610"
 ---
-# <a name="systemservicemodelsecuritysecurityactiveserversessionremoved"></a><span data-ttu-id="17cab-102">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span><span class="sxs-lookup"><span data-stu-id="17cab-102">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span></span>
+# <a name="systemservicemodelsecuritysecurityactiveserversessionremoved"></a><span data-ttu-id="da177-103">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span><span class="sxs-lookup"><span data-stu-id="da177-103">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span></span>
 
-<span data-ttu-id="17cab-103">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span><span class="sxs-lookup"><span data-stu-id="17cab-103">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span></span>  
+<span data-ttu-id="da177-104">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span><span class="sxs-lookup"><span data-stu-id="da177-104">System.ServiceModel.Security.SecurityActiveServerSessionRemoved</span></span>  
   
-## <a name="description"></a><span data-ttu-id="17cab-104">描述</span><span class="sxs-lookup"><span data-stu-id="17cab-104">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="da177-105">说明</span><span class="sxs-lookup"><span data-stu-id="da177-105">Description</span></span>  
 
- <span data-ttu-id="17cab-105">服务器已移除活动安全会话。</span><span class="sxs-lookup"><span data-stu-id="17cab-105">An active security session was removed by the server.</span></span>  
+ <span data-ttu-id="da177-106">服务器已移除活动安全会话。</span><span class="sxs-lookup"><span data-stu-id="da177-106">An active security session was removed by the server.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="17cab-106">另请参阅</span><span class="sxs-lookup"><span data-stu-id="17cab-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="da177-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="da177-107">See also</span></span>
 
-- [<span data-ttu-id="17cab-107">跟踪</span><span class="sxs-lookup"><span data-stu-id="17cab-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="17cab-108">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="17cab-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="17cab-109">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="17cab-109">Administration and Diagnostics</span></span>](../index.md)
+- [<span data-ttu-id="da177-108">跟踪</span><span class="sxs-lookup"><span data-stu-id="da177-108">Tracing</span></span>](index.md)
+- [<span data-ttu-id="da177-109">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="da177-109">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="da177-110">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="da177-110">Administration and Diagnostics</span></span>](../index.md)

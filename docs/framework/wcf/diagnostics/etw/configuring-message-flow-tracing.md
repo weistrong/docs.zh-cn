@@ -1,23 +1,24 @@
 ---
+description: 了解详细信息：配置消息流跟踪
 title: 配置消息流跟踪
 ms.date: 03/30/2017
 ms.assetid: 15571ca2-bee2-47fb-ba10-fcbc09152ad0
-ms.openlocfilehash: 6c271c26eb4e57014b3aaebf306b283bd06c7119
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c91362ca0d0a8fd83f69c6988d2ad2786b08b339
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798844"
 ---
-# <a name="configuring-message-flow-tracing"></a><span data-ttu-id="da715-102">配置消息流跟踪</span><span class="sxs-lookup"><span data-stu-id="da715-102">Configuring Message Flow Tracing</span></span>
+# <a name="configuring-message-flow-tracing"></a><span data-ttu-id="6df19-103">配置消息流跟踪</span><span class="sxs-lookup"><span data-stu-id="6df19-103">Configuring Message Flow Tracing</span></span>
 
-<span data-ttu-id="da715-103">启用 Windows Communication Foundation (WCF) 活动跟踪时，端对端活动 Id 会分配给整个 WCF 堆栈中的逻辑活动。</span><span class="sxs-lookup"><span data-stu-id="da715-103">When Windows Communication Foundation (WCF) activity tracing is enabled, End-To-End Activity IDs are assigned to logical activities throughout the WCF stack.</span></span> <span data-ttu-id="da715-104">在 [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] 中，此功能现在具备性能更高的版本。它与 Windows 事件跟踪 (ETW) 一起使用，称为消息流跟踪。</span><span class="sxs-lookup"><span data-stu-id="da715-104">In [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)], there is now a higher performance version of this feature that works with Event Tracing for Windows (ETW) called message flow tracing.</span></span> <span data-ttu-id="da715-105">启用此功能时，端对端活动 ID 取自（如果为空，则分配到）传入消息，并传播到在通道解码消息之后发出的所有跟踪事件。</span><span class="sxs-lookup"><span data-stu-id="da715-105">When enabled, End-To-End activity IDs are taken from (or assigned to if empty) incoming messages and are propagated to all tracing events that are emitted after the message has been decoded by the channel.</span></span> <span data-ttu-id="da715-106">客户通过此功能，可以在解码来自不同服务的跟踪日志后重新构造消息流。</span><span class="sxs-lookup"><span data-stu-id="da715-106">Customers can use this feature to reconstruct message flows with trace logs from different services after decoding.</span></span>  
+<span data-ttu-id="6df19-104">启用 Windows Communication Foundation (WCF) 活动跟踪时，端对端活动 Id 会分配给整个 WCF 堆栈中的逻辑活动。</span><span class="sxs-lookup"><span data-stu-id="6df19-104">When Windows Communication Foundation (WCF) activity tracing is enabled, End-To-End Activity IDs are assigned to logical activities throughout the WCF stack.</span></span> <span data-ttu-id="6df19-105">在 [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] 中，此功能现在具备性能更高的版本。它与 Windows 事件跟踪 (ETW) 一起使用，称为消息流跟踪。</span><span class="sxs-lookup"><span data-stu-id="6df19-105">In [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)], there is now a higher performance version of this feature that works with Event Tracing for Windows (ETW) called message flow tracing.</span></span> <span data-ttu-id="6df19-106">启用此功能时，端对端活动 ID 取自（如果为空，则分配到）传入消息，并传播到在通道解码消息之后发出的所有跟踪事件。</span><span class="sxs-lookup"><span data-stu-id="6df19-106">When enabled, End-To-End activity IDs are taken from (or assigned to if empty) incoming messages and are propagated to all tracing events that are emitted after the message has been decoded by the channel.</span></span> <span data-ttu-id="6df19-107">客户通过此功能，可以在解码来自不同服务的跟踪日志后重新构造消息流。</span><span class="sxs-lookup"><span data-stu-id="6df19-107">Customers can use this feature to reconstruct message flows with trace logs from different services after decoding.</span></span>  
   
- <span data-ttu-id="da715-107">检测到应用程序存在问题后，可以启用跟踪，然后在解决问题之后立即禁用跟踪。</span><span class="sxs-lookup"><span data-stu-id="da715-107">Tracing can be enabled after a problem is detected with the application and then disabled once the problem is resolved.</span></span>  
+ <span data-ttu-id="6df19-108">检测到应用程序存在问题后，可以启用跟踪，然后在解决问题之后立即禁用跟踪。</span><span class="sxs-lookup"><span data-stu-id="6df19-108">Tracing can be enabled after a problem is detected with the application and then disabled once the problem is resolved.</span></span>  
   
-## <a name="enabling-tracing"></a><span data-ttu-id="da715-108">启用跟踪</span><span class="sxs-lookup"><span data-stu-id="da715-108">Enabling Tracing</span></span>  
+## <a name="enabling-tracing"></a><span data-ttu-id="6df19-109">启用跟踪</span><span class="sxs-lookup"><span data-stu-id="6df19-109">Enabling Tracing</span></span>  
 
- <span data-ttu-id="da715-109">通过将 .NET Framework 4 `messageFlowTracing` 配置元素设置为 `true`，可以启用消息流跟踪，如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="da715-109">You can enable message flow tracing by setting the .NET Framework 4 `messageFlowTracing` configuration element to `true`, as shown in the following example.</span></span>  
+ <span data-ttu-id="6df19-110">通过将 .NET Framework 4 `messageFlowTracing` 配置元素设置为 `true`，可以启用消息流跟踪，如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="6df19-110">You can enable message flow tracing by setting the .NET Framework 4 `messageFlowTracing` configuration element to `true`, as shown in the following example.</span></span>  
   
 ```xml  
 <system.servicemodel>  
@@ -28,13 +29,13 @@ ms.locfileid: "96254878"
 ```  
   
 > [!NOTE]
-> <span data-ttu-id="da715-110">由于 `endToEndTracing` 配置元素驻留在 Web.config 文件中，因此不能采用与 ETW 一样的方法来动态配置该配置元素。</span><span class="sxs-lookup"><span data-stu-id="da715-110">Because the `endToEndTracing` configuration element resides in a Web.config file, it cannot be dynamically configured in the same way as ETW.</span></span> <span data-ttu-id="da715-111">若要使 `endToEndTracing` 配置元素生效，必须回收应用程序。</span><span class="sxs-lookup"><span data-stu-id="da715-111">For the `endToEndTracing` configuration element to take effect, the application must be recycled.</span></span>  
+> <span data-ttu-id="6df19-111">由于 `endToEndTracing` 配置元素驻留在 Web.config 文件中，因此不能采用与 ETW 一样的方法来动态配置该配置元素。</span><span class="sxs-lookup"><span data-stu-id="6df19-111">Because the `endToEndTracing` configuration element resides in a Web.config file, it cannot be dynamically configured in the same way as ETW.</span></span> <span data-ttu-id="6df19-112">若要使 `endToEndTracing` 配置元素生效，必须回收应用程序。</span><span class="sxs-lookup"><span data-stu-id="6df19-112">For the `endToEndTracing` configuration element to take effect, the application must be recycled.</span></span>  
   
- <span data-ttu-id="da715-112">活动通过一个标识符（称为活动 ID）的交换进行关联。</span><span class="sxs-lookup"><span data-stu-id="da715-112">Activities are correlated by the interchange of an identifier called the activity ID.</span></span> <span data-ttu-id="da715-113">此标识符是 GUID，由 System.Diagnostics.CorrelationManager 类生成。</span><span class="sxs-lookup"><span data-stu-id="da715-113">This identifier is a GUID, and is generated by the System.Diagnostics.CorrelationManager class.</span></span> <span data-ttu-id="da715-114">如果你操作 System.Diagnostics.Trace.CorrelationManager.ActivityID，请确保在执行控制传输回 WCF 代码时，值设置为原始值。</span><span class="sxs-lookup"><span data-stu-id="da715-114">If you manipulate System.Diagnostics.Trace.CorrelationManager.ActivityID, ensure that the value is set to original when execution control transfers back to WCF code.</span></span>  <span data-ttu-id="da715-115">此外，如果您使用异步 WCF 编程模型，请确保在线程之间传输 System.Diagnostics.Trace.CorrelationManager.ActivityID。</span><span class="sxs-lookup"><span data-stu-id="da715-115">Also, if you use an asynchronous WCF programming model ensure that System.Diagnostics.Trace.CorrelationManager.ActivityID is transferred between the threads.</span></span>  
+ <span data-ttu-id="6df19-113">活动通过一个标识符（称为活动 ID）的交换进行关联。</span><span class="sxs-lookup"><span data-stu-id="6df19-113">Activities are correlated by the interchange of an identifier called the activity ID.</span></span> <span data-ttu-id="6df19-114">此标识符是 GUID，由 System.Diagnostics.CorrelationManager 类生成。</span><span class="sxs-lookup"><span data-stu-id="6df19-114">This identifier is a GUID, and is generated by the System.Diagnostics.CorrelationManager class.</span></span> <span data-ttu-id="6df19-115">如果你操作 System.Diagnostics.Trace.CorrelationManager.ActivityID，请确保在执行控制传输回 WCF 代码时，值设置为原始值。</span><span class="sxs-lookup"><span data-stu-id="6df19-115">If you manipulate System.Diagnostics.Trace.CorrelationManager.ActivityID, ensure that the value is set to original when execution control transfers back to WCF code.</span></span>  <span data-ttu-id="6df19-116">此外，如果您使用异步 WCF 编程模型，请确保在线程之间传输 System.Diagnostics.Trace.CorrelationManager.ActivityID。</span><span class="sxs-lookup"><span data-stu-id="6df19-116">Also, if you use an asynchronous WCF programming model ensure that System.Diagnostics.Trace.CorrelationManager.ActivityID is transferred between the threads.</span></span>  
   
-## <a name="message-flow-tracing-and-rest-services"></a><span data-ttu-id="da715-116">消息流跟踪和 REST 服务</span><span class="sxs-lookup"><span data-stu-id="da715-116">Message Flow Tracing and REST Services</span></span>  
+## <a name="message-flow-tracing-and-rest-services"></a><span data-ttu-id="6df19-117">消息流跟踪和 REST 服务</span><span class="sxs-lookup"><span data-stu-id="6df19-117">Message Flow Tracing and REST Services</span></span>  
 
- <span data-ttu-id="da715-117">消息流跟踪使您能够端对端跟踪请求。</span><span class="sxs-lookup"><span data-stu-id="da715-117">Message flow tracing allows you to trace a request end to end.</span></span>  <span data-ttu-id="da715-118">借助于基于 SOAP 的服务，将在 SOAP 消息标头中发送活动 ID。</span><span class="sxs-lookup"><span data-stu-id="da715-118">With SOAP-based services an Activity ID is sent in a SOAP message header.</span></span> <span data-ttu-id="da715-119">REST 请求不包含此标头，因此改用特殊的 HTTP 事件标头。</span><span class="sxs-lookup"><span data-stu-id="da715-119">REST requests do not contain this header so a special HTTP event header is used instead.</span></span> <span data-ttu-id="da715-120">下面的代码段演示如何以编程方式检索活动 ID的值：</span><span class="sxs-lookup"><span data-stu-id="da715-120">The following code snippet shows how you can programmatically retrieve the Activity ID value:</span></span>  
+ <span data-ttu-id="6df19-118">消息流跟踪使您能够端对端跟踪请求。</span><span class="sxs-lookup"><span data-stu-id="6df19-118">Message flow tracing allows you to trace a request end to end.</span></span>  <span data-ttu-id="6df19-119">借助于基于 SOAP 的服务，将在 SOAP 消息标头中发送活动 ID。</span><span class="sxs-lookup"><span data-stu-id="6df19-119">With SOAP-based services an Activity ID is sent in a SOAP message header.</span></span> <span data-ttu-id="6df19-120">REST 请求不包含此标头，因此改用特殊的 HTTP 事件标头。</span><span class="sxs-lookup"><span data-stu-id="6df19-120">REST requests do not contain this header so a special HTTP event header is used instead.</span></span> <span data-ttu-id="6df19-121">下面的代码段演示如何以编程方式检索活动 ID的值：</span><span class="sxs-lookup"><span data-stu-id="6df19-121">The following code snippet shows how you can programmatically retrieve the Activity ID value:</span></span>  
   
 ```csharp
 Object output = null;
@@ -46,7 +47,7 @@ if (OperationContext.Current.IncomingMessageProperties.TryGetValue(HttpRequestMe
 }
 ```
 
- <span data-ttu-id="da715-121">你可以使用下面的代码，以编程方式添加标头：</span><span class="sxs-lookup"><span data-stu-id="da715-121">You can programmatically add the header using the following code:</span></span>  
+ <span data-ttu-id="6df19-122">你可以使用下面的代码，以编程方式添加标头：</span><span class="sxs-lookup"><span data-stu-id="6df19-122">You can programmatically add the header using the following code:</span></span>  
   
 ```csharp  
 HttpContent content = new StreamContent(contentStream);  

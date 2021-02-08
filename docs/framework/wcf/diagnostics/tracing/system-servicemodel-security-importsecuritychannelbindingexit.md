@@ -1,24 +1,25 @@
 ---
+description: 了解详细信息： ImportSecurityChannelBindingExit
 title: System.ServiceModel.Security.ImportSecurityChannelBindingExit
 ms.date: 03/30/2017
 ms.assetid: a174db12-23e4-49ec-b8b3-40ca7b2c1ba1
-ms.openlocfilehash: d7f05b7f685e42650a2bec052b24fcf7bb0f9ec6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aa79f5819d5f314ed2396c9feee2b2a3d5f4a472
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277069"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798727"
 ---
-# <a name="systemservicemodelsecurityimportsecuritychannelbindingexit"></a><span data-ttu-id="11e13-102">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="11e13-102">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span></span>
+# <a name="systemservicemodelsecurityimportsecuritychannelbindingexit"></a><span data-ttu-id="c145f-103">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="c145f-103">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span></span>
 
-<span data-ttu-id="11e13-103">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="11e13-103">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span></span>  
+<span data-ttu-id="c145f-104">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="c145f-104">System.ServiceModel.Security.ImportSecurityChannelBindingExit</span></span>  
   
-## <a name="description"></a><span data-ttu-id="11e13-104">描述</span><span class="sxs-lookup"><span data-stu-id="11e13-104">Description</span></span>  
+## <a name="description"></a><span data-ttu-id="c145f-105">说明</span><span class="sxs-lookup"><span data-stu-id="c145f-105">Description</span></span>  
 
- <span data-ttu-id="11e13-105">安全 ImportChannelBinding 已完成。</span><span class="sxs-lookup"><span data-stu-id="11e13-105">The Security ImportChannelBinding finished.</span></span>  
+ <span data-ttu-id="c145f-106">安全 ImportChannelBinding 已完成。</span><span class="sxs-lookup"><span data-stu-id="c145f-106">The Security ImportChannelBinding finished.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="11e13-106">另请参阅</span><span class="sxs-lookup"><span data-stu-id="11e13-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c145f-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="c145f-107">See also</span></span>
 
-- [<span data-ttu-id="11e13-107">跟踪</span><span class="sxs-lookup"><span data-stu-id="11e13-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="11e13-108">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="11e13-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="11e13-109">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="11e13-109">Administration and Diagnostics</span></span>](../index.md)
+- [<span data-ttu-id="c145f-108">跟踪</span><span class="sxs-lookup"><span data-stu-id="c145f-108">Tracing</span></span>](index.md)
+- [<span data-ttu-id="c145f-109">使用跟踪来排除应用程序故障</span><span class="sxs-lookup"><span data-stu-id="c145f-109">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="c145f-110">管理和诊断</span><span class="sxs-lookup"><span data-stu-id="c145f-110">Administration and Diagnostics</span></span>](../index.md)
