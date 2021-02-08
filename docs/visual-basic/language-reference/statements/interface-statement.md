@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Interface 语句 (Visual Basic) '
 title: Interface 语句
 ms.date: 05/12/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - interface statement [Visual Basic]
 - interfaces [Visual Basic], interface definition
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-ms.openlocfilehash: 3025adfe8c881a08df3b5f03253510c263c624d1
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e7fccec585fdbfd3946c2fa9874b5ea9b65ff014
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873219"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768904"
 ---
 # <a name="interface-statement-visual-basic"></a>Interface 语句 (Visual Basic)
 
@@ -39,7 +40,7 @@ End Interface
 |术语|定义|  
 |---|---|  
 |`attributelist`|可选。 请参阅 [特性列表](attribute-list.md)。|  
-|`accessmodifier`|可选。 可以是以下值之一：<br /><br /> -   [公布](../modifiers/public.md)<br />-   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />-  [受保护的朋友](../modifiers/protected-friend.md)<br/>- [私有受保护](../modifiers/private-protected.md)<br /><br /> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|  
+|`accessmodifier`|可选。 可以是以下其中一个值：<br /><br /> -   [公布](../modifiers/public.md)<br />-   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />-  [受保护的朋友](../modifiers/protected-friend.md)<br/>- [私有受保护](../modifiers/private-protected.md)<br /><br /> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|  
 |`Shadows`|可选。 请参阅 [阴影](../modifiers/shadows.md)。|  
 |`name`|必需。 此接口的名称。 请参阅 [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)。|  
 |`Of`|可选。 指定这是一个泛型接口。|  
@@ -59,7 +60,7 @@ End Interface
   
 ## <a name="remarks"></a>备注  
 
- *接口*定义类和结构可以实现的一组成员（如属性和过程）。 接口仅定义成员的签名，而不定义其内部工作原理。  
+ *接口* 定义类和结构可以实现的一组成员（如属性和过程）。 接口仅定义成员的签名，而不定义其内部工作原理。  
   
  类或结构通过为接口所定义的每个成员提供代码来实现接口。 最后，当应用程序从该类或结构创建实例时，对象存在并在内存中运行。 有关详细信息，请参阅 [对象和类](../../programming-guide/language-features/objects-and-classes/index.md) 和 [接口](../../programming-guide/language-features/interfaces/index.md)。  
   
@@ -95,13 +96,13 @@ End Interface
   
 - **访问级别。** 所有接口成员隐式具有 [公共](../modifiers/public.md) 访问权限。 定义成员时，不能使用任何访问修饰符。 但是，实现接口的类可以为每个已实现的成员声明一个访问级别。  
   
-     如果向变量分配类实例，则其成员的访问级别可依赖于该变量的数据类型是基础接口还是实现类。 下面的示例对此进行了演示。  
+     如果向变量分配类实例，则其成员的访问级别可依赖于该变量的数据类型是基础接口还是实现类。 下面的示例阐释了这一点。  
   
      [!code-vb[VbVbalrStatements#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#39)]  
   
      如果通过访问类成员 `varAsInterface` ，它们都具有公共访问权限。 但是，如果通过访问成员 `varAsClass` ，则该 `Sub` 过程 `doSomething` 具有私有访问权限。  
   
-- **内.** 接口在其命名空间、类、结构或模块中的作用域内。  
+- **划分范围。** 接口在其命名空间、类、结构或模块中的作用域内。  
   
      每个接口成员的作用域都是整个接口。  
   
@@ -115,7 +116,7 @@ End Interface
   
  请注意， `Property` 和 `Function` 语句不会引入在接口中以和结尾的块 `End Property` `End Function` 。 接口仅定义其成员的签名。 完整的 `Property` 和 `Function` 块显示在实现的类中 `thisInterface` 。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [接口](../../programming-guide/language-features/interfaces/index.md)
 - [Class 语句](class-statement.md)
@@ -127,4 +128,4 @@ End Interface
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [泛型接口中的变体](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
 - [位于](../modifiers/in-generic-modifier.md)
-- [弄](../modifiers/out-generic-modifier.md)
+- [Out](../modifiers/out-generic-modifier.md)

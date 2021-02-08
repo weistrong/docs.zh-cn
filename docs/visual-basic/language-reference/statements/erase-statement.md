@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Erase 语句 (Visual Basic) '
 title: Erase 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Erase keyword [Visual Basic]
 - Erase statement [Visual Basic]
 ms.assetid: 7a8133d7-b750-4d74-8b66-ba1dd9778d4b
-ms.openlocfilehash: 33d88b5ce71ceab8d4b4b59d356c53a804c360be
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 295abec89f3d69f8f2641a5a3d574a2d10f98474
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769151"
 ---
 # <a name="erase-statement-visual-basic"></a>Erase 语句 (Visual Basic)
 
@@ -41,7 +42,7 @@ Erase arraylist
   
  [!code-vb[VbVbalrStatements#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#19)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [没](../nothing.md)
+- [Nothing](../nothing.md)
 - [ReDim 语句](redim-statement.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Get 语句
 title: Get 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Get keyword [Visual Basic]
 - property procedures [Visual Basic], Get statements
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
-ms.openlocfilehash: 3da6c099b3f43a144484eaddf58605609eb0bbfe
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 1cda485867a941129ab2453d4c0900d1403f4e8d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866208"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769034"
 ---
 # <a name="get-statement"></a>Get 语句
 
@@ -35,7 +36,7 @@ End Get
 |术语|定义|  
 |---|---|  
 |`attributelist`|可选。 请参阅 [特性列表](attribute-list.md)。|  
-|`accessmodifier`|在 `Get` 此属性中的最多一个和语句上是可选的 `Set` 。 可以是以下值之一：<br /><br /> -   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|  
+|`accessmodifier`|在 `Get` 此属性中的最多一个和语句上是可选的 `Set` 。 可以是以下其中一个值：<br /><br /> -   [避免](../modifiers/protected.md)<br />-   [友好](../modifiers/friend.md)<br />-   [专有](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> 请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。|  
 |`statements`|可选。 调用属性过程时运行的一个或多个语句 `Get` 。|  
 |`End Get`|必需。 终止属性过程的定义 `Get` 。|  
   
@@ -85,7 +86,7 @@ End Get
   
  [!code-vb[VbVbalrStatements#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#30)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Set 语句](set-statement.md)
 - [Property Statement](property-statement.md)

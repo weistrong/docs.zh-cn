@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Operator 语句
 title: Operator Statement
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - Operator statement [Visual Basic]
 - CType function [Visual Basic], Operator statement
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
-ms.openlocfilehash: f9e6ffe5a49715592399321ab471d73826e05d8e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f6a8ae2ac51e8bc8fe1be0de3549004b9dda4ef4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404390"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768813"
 ---
 # <a name="operator-statement"></a>Operator Statement
 
@@ -43,42 +44,42 @@ End Operator
 ## <a name="parts"></a>组成部分
 
 `attrlist`  
-可选。 请参阅[特性列表](attribute-list.md)。
+可选。 请参阅 [特性列表](attribute-list.md)。
 
 `Public`  
-必需。 指示此运算符过程具有[公共](../modifiers/public.md)访问权限。
+必需。 指示此运算符过程具有 [公共](../modifiers/public.md) 访问权限。
 
 `Overloads`  
-可选。 请参阅[重载](../modifiers/overloads.md)。
+可选。 请参阅 [重载](../modifiers/overloads.md)。
 
 `Shared`  
-必需。 指示此运算符过程是一个[共享](../modifiers/shared.md)过程。
+必需。 指示此运算符过程是一个 [共享](../modifiers/shared.md) 过程。
 
 `Shadows`  
-可选。 请参阅[阴影](../modifiers/shadows.md)。
+可选。 请参阅 [阴影](../modifiers/shadows.md)。
 
 `Widening`  
-除非指定，否则转换运算符是必需的 `Narrowing` 。 指示此运算符过程定义[扩大](../modifiers/widening.md)转换。 请参阅此帮助页上的 "扩大和收缩转换"。
+除非指定，否则转换运算符是必需的 `Narrowing` 。 指示此运算符过程定义 [扩大](../modifiers/widening.md) 转换。 请参阅此帮助页上的 "扩大和收缩转换"。
 
 `Narrowing`  
-除非指定，否则转换运算符是必需的 `Widening` 。 指示此运算符过程定义[收缩](../modifiers/narrowing.md)转换。 请参阅此帮助页上的 "扩大和收缩转换"。
+除非指定，否则转换运算符是必需的 `Widening` 。 指示此运算符过程定义 [收缩](../modifiers/narrowing.md) 转换。 请参阅此帮助页上的 "扩大和收缩转换"。
 
 `operatorsymbol`  
 必需。 此运算符过程所定义的运算符的符号或标识符。
 
 `operand1`  
-必需。 一元运算符的单个操作数的名称和类型（包括转换运算符）或二元运算符的左操作数。
+必需。 一元运算符的单个操作数的名称和类型 (包括转换运算符) 或二元运算符的左操作数。
 
 `operand2`  
 对于二元运算符是必需的。 二元运算符的右操作数的名称和类型。
 
-`operand1`和 `operand2` 具有以下语法和部分：
+`operand1` 和 `operand2` 具有以下语法和部分：
 
 `[ ByVal ] operandname [ As operandtype ]`
 
 |组成部分|说明|
 |----------|-----------------|
-|`ByVal`|可选，但传递机制必须是[ByVal](../modifiers/byval.md)。|
+|`ByVal`|可选，但传递机制必须是 [ByVal](../modifiers/byval.md)。|
 |`operandname`|必需。 表示此操作数的变量的名称。 请参阅 [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)。|
 |`operandtype`|除非 `Option Strict` 为，否则为可选 `On` 。 此操作数的数据类型。|
 
@@ -96,13 +97,13 @@ End Operator
 
 ## <a name="remarks"></a>备注
 
-`Operator`只能在类或结构中使用。 这意味着运算符的*声明上下文*不能是源文件、命名空间、模块、接口、过程或块。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
+`Operator`只能在类或结构中使用。 这意味着运算符的 *声明上下文* 不能是源文件、命名空间、模块、接口、过程或块。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
 
 所有运算符都必须是 `Public Shared` 。 不能 `ByRef` `Optional` `ParamArray` 为任一操作数指定、或。
 
 不能使用运算符符号或标识符来保存返回值。 必须使用 `Return` 语句，并且必须指定一个值。 任意数量的 `Return` 语句可以出现在过程中的任何位置。
 
-用这种方式定义运算符称为*运算符重载*，无论是否使用关键字都是如此 `Overloads` 。 下表列出了可定义的运算符。
+用这种方式定义运算符称为 *运算符重载*，无论是否使用关键字都是如此 `Overloads` 。 下表列出了可定义的运算符。
 
 |类型|运算符|
 |----------|---------------|
@@ -160,7 +161,7 @@ End Operator
 
 ## <a name="widening-and-narrowing-conversions"></a>Widening and Narrowing Conversions
 
-在运行时，*扩大转换*始终会成功，而*收缩转换*可能会在运行时失败。 有关详细信息，请参阅 [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)。
+在运行时， *扩大转换* 始终会成功，而 *收缩转换* 可能会在运行时失败。 有关详细信息，请参阅 [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)。
 
 如果将转换过程声明为，则 `Widening` 过程代码不得生成任何失败。 这表示：
 
@@ -178,7 +179,7 @@ End Operator
 
 [!code-vb[VbVbalrStatements#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#44)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IsFalse 运算符](../operators/isfalse-operator.md)
 - [IsTrue 运算符](../operators/istrue-operator.md)

@@ -1,4 +1,5 @@
 ---
+description: 详细了解： Implements 语句
 title: Implements 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Implements statement [Visual Basic]
 - interface implementation [Visual Basic], Implements statement
 ms.assetid: 1fafb83f-f55a-4215-8ea9-681e8622613d
-ms.openlocfilehash: b982057d2094f807b68d5190dfad388fb9a2c65a
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: aa53d1f3b4ba9d9111f5ffb09198a11511f8d9e9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768982"
 ---
 # <a name="implements-statement"></a>Implements 语句
 
@@ -42,7 +43,7 @@ Implements interfacename.interfacemember [, ...]
   
  `Implements`语句必须紧跟 `Class` 或 `Structure` 语句。  
   
- 实现接口时，必须实现在接口中声明的所有成员。 省略任何成员均视为语法错误。 若要实现单个成员，请在[Implements](implements-clause.md) `Implements` 声明类或结构中的成员时，指定与语句) 不同的 Implements 关键字 (。 有关详细信息，请参阅[接口](../../programming-guide/language-features/interfaces/index.md)。  
+ 实现接口时，必须实现在接口中声明的所有成员。 省略任何成员均视为语法错误。 若要实现单个成员，请在[](implements-clause.md) `Implements` 声明类或结构中的成员时，指定与语句) 不同的 Implements 关键字 (。 有关详细信息，请参阅[接口](../../programming-guide/language-features/interfaces/index.md)。  
   
  类可以使用属性和过程的 [私有](../modifiers/private.md) 实现，但只能通过将实现类的实例强制转换为声明为接口类型的变量来访问这些成员。  
   
@@ -60,7 +61,7 @@ Implements interfacename.interfacemember [, ...]
   
  [!code-vb[VbVbalrStatements#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#34)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [实现](implements-clause.md)
 - [Interface 语句](interface-statement.md)

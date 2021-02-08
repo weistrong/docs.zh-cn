@@ -1,4 +1,5 @@
 ---
+description: 详细了解： Inherits 语句
 title: Inherits Statement
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Inherits statement [Visual Basic]
 - Inherits statement [Visual Basic], syntax
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
-ms.openlocfilehash: dd8fbc71fdc859bb127764951464278267c0984c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fba574ec207b384c1e7219341526a4a89c8a619c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875223"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768917"
 ---
 # <a name="inherits-statement"></a>Inherits Statement
 
@@ -29,7 +30,7 @@ Inherits basetypenames
   
 |术语|定义|  
 |---|---|  
-|`basetypenames`|必需。 此类派生自的类的名称。<br /><br /> - 或 -<br /><br /> 此接口派生自的接口的名称。 使用逗号分隔多个名称。|  
+|`basetypenames`|必需。 此类派生自的类的名称。<br /><br /> \- 或 -<br /><br /> 此接口派生自的接口的名称。 使用逗号分隔多个名称。|  
   
 ## <a name="remarks"></a>备注  
 
@@ -67,7 +68,7 @@ Inherits basetypenames
   
  名为的接口 `thisInterface` 现在包括 <xref:System.IComparable> 、和接口中的所有定义， <xref:System.IDisposable> <xref:System.IFormattable> 这些继承成员分别提供两个对象的特定于类型的比较，释放已分配的资源，并将对象的值表示为 `String` 。 实现的类 `thisInterface` 必须实现每个基接口的每个成员。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [MustInherit](../modifiers/mustinherit.md)
 - [NotInheritable](../modifiers/notinheritable.md)

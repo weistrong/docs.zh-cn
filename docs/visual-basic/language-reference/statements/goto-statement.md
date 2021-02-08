@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： GoTo 语句
 title: GoTo 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - conditional statements [Visual Basic], GoTo statement
 - GoTo statement [Visual Basic], syntax
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
-ms.openlocfilehash: 000f6754575bcce6b2d79d85541e755219aca956
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 804baec130111562225b09cbdc7b5fb2d73adba5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769047"
 ---
 # <a name="goto-statement"></a>GoTo 语句
 
@@ -30,7 +31,7 @@ ms.locfileid: "90866620"
 GoTo line  
 ```  
   
-## <a name="part"></a>部件  
+## <a name="part"></a>组成部分  
 
  `line`  
  必需。 任何行标签。  
@@ -66,7 +67,7 @@ GoTo line
   
  [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Do...Loop 语句](do-loop-statement.md)
 - [For...Next 语句](for-next-statement.md)

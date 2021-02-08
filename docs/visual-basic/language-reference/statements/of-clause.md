@@ -1,4 +1,5 @@
 ---
+description: '详细了解： of 子句 (Visual Basic) '
 title: Of 子句
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,20 +18,20 @@ helpviewer_keywords:
 - type parameters
 - data type arguments
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
-ms.openlocfilehash: 0595356fb75fc0ac73a49622d71fe1d28fa7b648
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d6002041a2fe8db5b07e12e9e396a65fde30b716
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90865902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768839"
 ---
 # <a name="of-clause-visual-basic"></a>Of 子句 (Visual Basic)
 
-引入一个 `Of` 子句，该子句标识*泛型*类、结构、接口、委托或过程中的*类型参数*。 有关泛型类型的信息，请参阅 [Visual Basic 中的泛型类型](../../programming-guide/language-features/data-types/generic-types.md)。  
+引入一个 `Of` 子句，该子句标识 *泛型* 类、结构、接口、委托或过程中的 *类型参数*。 有关泛型类型的信息，请参阅 [Visual Basic 中的泛型类型](../../programming-guide/language-features/data-types/generic-types.md)。  
   
 ## <a name="using-the-of-keyword"></a>使用关键字 of  
 
- 下面的代码示例使用 `Of` 关键字定义带有两个类型参数的类的轮廓。 它*constrains* `keyType` 通过接口约束参数 <xref:System.IComparable> ，这意味着使用的代码必须提供实现的类型参数 <xref:System.IComparable> 。 这是必需的，以便 `add` 过程可以调用 <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> 方法。 有关约束的详细信息，请参阅 [Type List](type-list.md)。  
+ 下面的代码示例使用 `Of` 关键字定义带有两个类型参数的类的轮廓。 它 `keyType` 通过接口约束参数 <xref:System.IComparable> ，这意味着使用的代码必须提供实现的类型参数 <xref:System.IComparable> 。 这是必需的，以便 `add` 过程可以调用 <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> 方法。 有关约束的详细信息，请参阅 [Type List](type-list.md)。  
   
 ```vb  
 Public Class Dictionary(Of entryType, keyType As IComparable)  
@@ -66,10 +67,10 @@ Dim d As New dictionary(Of String, Integer)
   
  [Sub 语句](sub-statement.md)  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.IComparable>
 - [Type List](type-list.md)
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [位于](../modifiers/in-generic-modifier.md)
-- [弄](../modifiers/out-generic-modifier.md)
+- [Out](../modifiers/out-generic-modifier.md)

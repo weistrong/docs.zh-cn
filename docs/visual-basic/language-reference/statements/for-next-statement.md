@@ -1,4 +1,5 @@
 ---
+description: '了解以下方面的详细信息： .。。下一条语句 (Visual Basic) '
 title: For...Next 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For...Next statements
 - For statement [Visual Basic]
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
-ms.openlocfilehash: 6896c6cfb4ec5d6207011e56b72639c459120e53
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f26d9cb1885d9d22b96d622f44325aad64e34d1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769073"
 ---
 # <a name="fornext-statement-visual-basic"></a>For...Next 语句 (Visual Basic)
 
@@ -50,8 +51,8 @@ Next [ counter ]
 
 |组成部分|说明|
 |----------|-----------------|
-|`counter`|语句中必需 `For` 。 数值变量。 循环的控制变量。 有关详细信息，请参阅本主题后面的[计数器参数](#BKMK_Counter)。|
-|`datatype`|可选。 的数据类型 `counter` 。 有关详细信息，请参阅本主题后面的[计数器参数](#BKMK_Counter)。|
+|`counter`|语句中必需 `For` 。 数值变量。 循环的控制变量。 有关详细信息，请参阅本主题后面的 [计数器参数](#BKMK_Counter) 。|
+|`datatype`|可选。 的数据类型 `counter` 。 有关详细信息，请参阅本主题后面的 [计数器参数](#BKMK_Counter) 。|
 |`start`|必需。 数值表达式。 `counter` 的初始值。|
 |`end`|必需。 数值表达式。 的最终值 `counter` 。|
 |`step`|可选。 数值表达式。 `counter`每次通过循环增加的量。|
@@ -61,7 +62,7 @@ Next [ counter ]
 |`Next`|必需。 终止循环的定义 `For` 。|
 
 > [!NOTE]
-> `To`此语句使用关键字来指定计数器的范围。 你还可以在[Select .。。Case 语句](select-case-statement.md)和数组声明。 有关数组声明的详细信息，请参阅[Dim 语句](dim-statement.md)。
+> `To`此语句使用关键字来指定计数器的范围。 你还可以在 [Select .。。Case 语句](select-case-statement.md) 和数组声明。 有关数组声明的详细信息，请参阅 [Dim 语句](dim-statement.md)。
 
 ## <a name="simple-examples"></a> 简单示例
 
@@ -76,7 +77,7 @@ Next [ counter ]
 [!code-vb[VbVbalrStatements#112](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#112)]
 
 > [!TIP]
-> ... [End While 语句](while-end-while-statement.md)或[Do .。。](do-loop-statement.md)当您事先不知道在循环中运行语句的次数时，Loop 语句可以正常工作。 但是，当你想要运行循环特定次数时，" `For` ..." `Next` 循环是更好的选择。 您在第一次进入循环时确定迭代次数。
+> ... [End While 语句](while-end-while-statement.md) 或 [Do .。。](do-loop-statement.md) 当您事先不知道在循环中运行语句的次数时，Loop 语句可以正常工作。 但是，当你想要运行循环特定次数时，" `For` ..." `Next` 循环是更好的选择。 您在第一次进入循环时确定迭代次数。
 
 ## <a name="nesting-loops"></a>嵌套循环
 
@@ -86,13 +87,13 @@ Next [ counter ]
 
 嵌套循环时，每个循环必须具有唯一 `counter` 变量。
 
-你还可以在彼此之间嵌套不同种类的控制结构。 有关详细信息，请参阅[嵌套控制结构](../../programming-guide/language-features/control-flow/nested-control-structures.md)。
+你还可以在彼此之间嵌套不同种类的控制结构。 有关详细信息，请参阅 [嵌套控制结构](../../programming-guide/language-features/control-flow/nested-control-structures.md)。
 
 ## <a name="exit-for-and-continue-for"></a>退出并继续进行
 
 `Exit For`语句立即退出 `For` .。。`Next` 循环并将控制转移到语句后面的语句 `Next` 。
 
-`Continue For`语句将控制立即传输到循环的下一次迭代。 有关详细信息，请参阅[Continue 语句](continue-statement.md)。
+`Continue For`语句将控制立即传输到循环的下一次迭代。 有关详细信息，请参阅 [Continue 语句](continue-statement.md)。
 
 下面的示例演示如何使用 `Continue For` 和 `Exit For` 语句。
 
@@ -100,17 +101,17 @@ Next [ counter ]
 
 可以将任意数量的语句放入 `Exit For` `For` .。。`Next` 圈. 当在嵌套 `For` .。。`Next` 循环， `Exit For` 退出最内层的循环，并将控制转移到下一个更高的嵌套级别。
 
-`Exit For`在你计算某个条件（例如，在 `If` ... `Then`...`Else`结构）。 你可能想要将 `Exit For` 用于以下情况：
+`Exit For` 通常在你计算某个条件后使用 (例如，在 `If` ... `Then`...`Else` 结构) 。 你可能想要将 `Exit For` 用于以下情况：
 
 - 不需要继续循环访问。 错误的值或终止请求可能会创建此条件。
 
 - `Try`... `Catch`...`Finally`语句捕获异常。 可以 `Exit For` 在块的末尾使用 `Finally` 。
 
-- 您有一个无限循环，该循环是一种循环，它可以运行很大甚至无限次。 如果检测到这种情况，则可以使用 `Exit For` 来转义循环。 有关详细信息，请参阅[Do .。。循环语句](do-loop-statement.md)。
+- 您有一个无限循环，该循环是一种循环，它可以运行很大甚至无限次。 如果检测到这种情况，则可以使用 `Exit For` 来转义循环。 有关详细信息，请参阅 [Do .。。循环语句](do-loop-statement.md)。
 
 ## <a name="technical-implementation"></a>技术实现
 
-当 `For` ... `Next` 循环启动时，Visual Basic 将计算 `start` 、 `end` 和 `step` 。 Visual Basic 此时仅计算这些值，然后将赋值 `start` 给 `counter` 。 在语句块运行之前，Visual Basic 与进行比较 `counter` `end` 。 如果已大于 `counter` `end` 值（如果为负，则为较小的值 `step` ）， `For` 循环将结束并控制传递到语句后面的语句 `Next` 。 否则，语句块将运行。
+当 `For` ... `Next` 循环启动时，Visual Basic 将计算 `start` 、 `end` 和 `step` 。 Visual Basic 此时仅计算这些值，然后将赋值 `start` 给 `counter` 。 在语句块运行之前，Visual Basic 与进行比较 `counter` `end` 。 如果的 `counter` `end` 值大于)  (或更小的值 `step` ，则循环将 `For` 结束并控制传递到语句后面的语句 `Next` 。 否则，语句块将运行。
 
 每次 Visual Basic 遇到 `Next` 语句时，它会 `counter` 递增 `step` 并返回到 `For` 语句。 同样，它与进行比较 `counter` `end` ，并再次运行该块或退出循环，具体取决于结果。 此过程将一直 `counter` 继续 `end` ，直到 `Exit For` 遇到传递或语句。
 
@@ -127,18 +128,18 @@ Next [ counter ]
 |**步骤值**|**如果**|
 |--------------------|--------------------------|
 |正或零|`counter` <= `end`|
-|负|`counter` >= `end`|
+|负数|`counter` >= `end`|
 
 `step` 的默认值为 1。
 
-### <a name="counter-argument"></a><a name="BKMK_Counter"></a>计数器参数
+### <a name="counter-argument"></a><a name="BKMK_Counter"></a> 计数器参数
 
 下表指示是否 `counter` 定义了作用域为整个循环的新局部变量 `For…Next` 。 此确定取决于是否 `datatype` 存在以及是否 `counter` 已定义。
 
-|是否 `datatype` 存在？|已 `counter` 定义？|Result （是否 `counter` 定义一个作用域为整个循环的新局部变量 `For...Next` ）|
+|是否 `datatype` 存在？|已 `counter` 定义？|结果 (是否 `counter` 定义了作用域为整个循环的新局部变量 `For...Next`) |
 |----------------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------|
 |否|是|不是，因为已 `counter` 定义。 如果该过程的作用域 `counter` 不是本地的，则会发生编译时警告。|
-|否|否|是。 数据类型是从 `start` 、和表达式中推断出来的 `end` `step` 。 有关类型推理的信息，请参阅[选项推断语句](option-infer-statement.md)和[局部类型推理](../../programming-guide/language-features/variables/local-type-inference.md)。|
+|否|否|是。 数据类型是从 `start` 、和表达式中推断出来的 `end` `step` 。 有关类型推理的信息，请参阅 [选项推断语句](option-infer-statement.md) 和 [局部类型推理](../../programming-guide/language-features/variables/local-type-inference.md)。|
 |是|是|是，但仅当现有 `counter` 变量在过程外定义时才存在。 该变量保持独立。 如果现有变量的作用域 `counter` 是过程的本地值，则会发生编译时错误。|
 |是|否|是。|
 
@@ -146,9 +147,9 @@ Next [ counter ]
 
 - `Byte`、、 `SByte` 、 `UShort` `Short` 、 `UInteger` 、、、、、 `Integer` `ULong` `Long` `Decimal` `Single` 或 `Double` 。
 
-- 使用[Enum 语句](enum-statement.md)声明的枚举。
+- 使用 [Enum 语句](enum-statement.md)声明的枚举。
 
-- 一个`Object`。
+- `Object`。
 
 - `T`具有以下运算符的类型，其中 `B` 是可在表达式中使用的类型 `Boolean` 。
 
@@ -166,13 +167,13 @@ Next [ counter ]
 
 ## <a name="example"></a>示例
 
-下面的示例从泛型列表中移除所有元素。 而不是[为每个 .。。下一条语句](for-each-next-statement.md)中，该示例显示了一个 `For` `Next` "..." 语句，该语句将按降序循环访问。 该示例使用此方法，因为 `removeAt` 方法会使删除的元素之后的元素具有更低的索引值。
+下面的示例从泛型列表中移除所有元素。 而不是 [为每个 .。。下一条语句](for-each-next-statement.md)中，该示例显示了一个 `For` `Next` "..." 语句，该语句将按降序循环访问。 该示例使用此方法，因为 `removeAt` 方法会使删除的元素之后的元素具有更低的索引值。
 
 [!code-vb[VbVbalrStatements#114](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#114)]
 
 ## <a name="example"></a>示例
 
-下面的示例循环访问通过使用[Enum 语句](enum-statement.md)声明的枚举。
+下面的示例循环访问通过使用 [Enum 语句](enum-statement.md)声明的枚举。
 
 [!code-vb[VbVbalrStatements#116](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#116)]
 
@@ -182,7 +183,7 @@ Next [ counter ]
 
 [!code-vb[VbVbalrStatements#117](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#117)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Collections.Generic.List%601>
 - [循环结构](../../programming-guide/language-features/control-flow/loop-structures.md)

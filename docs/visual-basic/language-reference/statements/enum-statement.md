@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Enum 语句 (Visual Basic) '
 title: Enum 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - variables [Visual Basic], enumeration
 - constants [Visual Basic], enumerated
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
-ms.openlocfilehash: 976cc68d67c69ec86918962ab2dd3406d15aed9a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dcaf28e949f8d34b8d72b07d8029ea10d6baeabf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404727"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769164"
 ---
 # <a name="enum-statement-visual-basic"></a>Enum 语句 (Visual Basic)
 
@@ -35,7 +36,7 @@ End Enum
 
 - `attributelist`
 
-  可选。 应用于此枚举的特性的列表。 必须将[特性列表](attribute-list.md)括在尖括号（" `<` " 和 " `>` "）中。
+  可选。 应用于此枚举的特性的列表。 必须将 [属性列表](attribute-list.md) 用尖括号括起来 ( " `<` " 和 " `>` " ) 。
 
   <xref:System.FlagsAttribute>特性指示枚举实例的值可以包含多个枚举成员，并且每个成员表示枚举值中的一个位域。
 
@@ -45,23 +46,23 @@ End Enum
 
   - [公共](../modifiers/public.md)
 
-  - [避免](../modifiers/protected.md)
+  - [Protected](../modifiers/protected.md)
 
-  - [友好](../modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - 专用 
+  - [专用](../modifiers/private.md)
 
   - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [私有受保护](../modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
 - `Shadows`
 
-  可选。 指定此枚举重新声明并隐藏基类中具有相同名称的编程元素或重载元素集。 只能为枚举本身指定阴影，而不能在其任何成员上指定[阴影](../modifiers/shadows.md)。
+  可选。 指定此枚举重新声明并隐藏基类中具有相同名称的编程元素或重载元素集。 只能为枚举本身指定阴影，而不能在其任何成员上指定 [阴影](../modifiers/shadows.md) 。
 
 - `enumerationname`
 
-  必需。 枚举的名称。 有关有效名称的信息，请参阅已[声明的元素名称](../../programming-guide/language-features/declared-elements/declared-element-names.md)。
+  必需。 枚举的名称。 有关有效名称的信息，请参阅已 [声明的元素名称](../../programming-guide/language-features/declared-elements/declared-element-names.md)。
 
 - `datatype`
 
@@ -71,7 +72,7 @@ End Enum
 
   必需。 在此语句中声明的成员常量的列表。 多个成员出现在单独的源代码行上。
 
-  每个 `member` 都具有以下语法和部分：`[<attribute list>] member name [ = initializer ]`
+  每个 `member` 都具有以下语法和部分： `[<attribute list>] member name [ = initializer ]`
 
   |组成部分|说明|
   |---|---|
@@ -98,13 +99,13 @@ End Enum
 
 枚举具有名称、基础数据类型和成员集。 每个成员都表示一个常量。
 
-在类、结构、模块或接口级别（在任何过程之外）声明的枚举是*成员枚举*。 它是声明它的类、结构、模块或接口的成员。
+在类、结构、模块或接口级别（在任何过程之外）声明的枚举是 *成员枚举*。 它是声明它的类、结构、模块或接口的成员。
 
-成员枚举可以从其类、结构、模块或接口中的任何位置进行访问。 类、结构或模块外的代码必须使用该类、结构或模块的名称来限定成员枚举的名称。 您可以通过向源文件添加[Imports](imports-statement-net-namespace-and-type.md)语句来避免使用完全限定的名称。
+成员枚举可以从其类、结构、模块或接口中的任何位置进行访问。 类、结构或模块外的代码必须使用该类、结构或模块的名称来限定成员枚举的名称。 您可以通过向源文件添加 [Imports](imports-statement-net-namespace-and-type.md) 语句来避免使用完全限定的名称。
 
 在任何类、结构、模块或接口的命名空间级别声明的枚举是它所显示的命名空间的成员。
 
-枚举的*声明上下文*必须是源文件、命名空间、类、结构、模块或接口，不能是过程。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
+枚举的 *声明上下文* 必须是源文件、命名空间、类、结构、模块或接口，不能是过程。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
 
 您可以将属性作为一个整体应用于枚举，而不是单独应用于其成员。 属性将信息提供给程序集的元数据。
 
@@ -118,7 +119,7 @@ End Enum
 
 `Enum`语句可初始化中所选成员的内容 `memberlist` 。 用于 `initializer` 提供要分配给成员的表达式。
 
-如果不 `initializer` 为成员指定，Visual Basic 会将其初始化为零（如果它是中的第一个 `member` `memberlist` ），或者将其值指定为大于前面的值 `member` 。
+如果不 `initializer` 为成员指定，则 Visual Basic 会将其初始化为零 (如果该成员是) 的第一项，则为; `member` `memberlist` 否则为大于前面的值的值 `member` 。
 
 每个中提供的表达式 `initializer` 可以是文本的任意组合、已经定义的其他常数以及已定义的枚举成员（包括此枚举的上一个成员）。 可以使用算术运算符和逻辑运算符来合并此类元素。
 
@@ -130,7 +131,7 @@ End Enum
 
 ## <a name="modifiers"></a>修饰符
 
-类、结构、模块和接口成员枚举默认为公共访问。 您可以使用访问修饰符调整其访问级别。 命名空间成员枚举默认为 friend 访问。 可以将其访问级别调整为 "公共"，而不是 "私有" 或 "受保护"。 有关详细信息，请参阅[Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
+类、结构、模块和接口成员枚举默认为公共访问。 您可以使用访问修饰符调整其访问级别。 命名空间成员枚举默认为 friend 访问。 可以将其访问级别调整为 "公共"，而不是 "私有" 或 "受保护"。 有关详细信息，请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
 
 所有枚举成员均具有公共访问权限，因此不能对它们使用任何访问修饰符。 但是，如果枚举本身具有限制性更高的访问级别，则将优先使用指定的枚举访问级别。
 
@@ -138,7 +139,7 @@ End Enum
 
 ## <a name="assigning-multiple-values"></a>分配多个值
 
-枚举通常表示互斥的值。 通过 <xref:System.FlagsAttribute> 在声明中包含特性 `Enum` ，可以将多个值分配给枚举的实例。 <xref:System.FlagsAttribute>特性指定将枚举视为位域（即一组标志）。 它们称为*按位*枚举。
+枚举通常表示互斥的值。 通过 <xref:System.FlagsAttribute> 在声明中包含特性 `Enum` ，可以将多个值分配给枚举的实例。 <xref:System.FlagsAttribute>特性指定将枚举视为位域（即一组标志）。 它们称为 *按位* 枚举。
 
 使用属性声明枚举时 <xref:System.FlagsAttribute> ，我们建议你使用2的幂，即1、2、4、8、16等值作为值。 我们还建议将 "无" 作为值为0的成员的名称。 有关其他指南，请参阅 <xref:System.FlagsAttribute> 和 <xref:System.Enum> 。
 
@@ -184,7 +185,7 @@ End Enum
 
 [!code-vb[VbEnumsTask#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#51)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Enum>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

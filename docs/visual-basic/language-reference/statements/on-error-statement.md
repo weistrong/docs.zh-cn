@@ -1,4 +1,5 @@
 ---
+description: '详细了解： Visual Basic 的错误语句 () '
 title: On Error 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], handling
 - On Error statement [Visual Basic]
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
-ms.openlocfilehash: 7e007d59292fc577c0c8927766423ba6f7896a71
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 593e90b07101d08d18a0db127bcb74cf6509f317
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873183"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768826"
 ---
 # <a name="on-error-statement-visual-basic"></a>On Error 语句 (Visual Basic)
 
@@ -48,7 +49,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 
 |术语|定义|
 |---|---|
-|`GoTo`*行*|启用从必需 *line* 参数所指定的行开始的错误处理例程。 *Line*参数是任意行标签或行号。 如果出现运行时错误，控制将分支到指定的行，使错误处理程序处于活动状态。 指定的行必须与语句位于同一过程中， `On Error` 否则将发生编译时错误。|
+|`GoTo`*行*|启用从必需 *line* 参数所指定的行开始的错误处理例程。 *Line* 参数是任意行标签或行号。 如果出现运行时错误，控制将分支到指定的行，使错误处理程序处于活动状态。 指定的行必须与语句位于同一过程中， `On Error` 否则将发生编译时错误。|
 |`GoTo 0`|禁用当前过程中启用的错误处理程序，并将其重置为 `Nothing` 。|
 |`GoTo -1`|在当前过程中禁用已启用的异常并将其重置为 `Nothing` 。|
 |`Resume Next`|指定在发生运行时错误时，控制转到紧随发生错误的语句之后的语句，然后从该点继续执行。 在访问对象时，请使用此窗体而不是 `On Error GoTo` 。|
@@ -125,7 +126,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 
  **程序集：** Microsoft.VisualBasic.dll) 中的 Visual Basic 运行时库 (
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Information.Err%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
@@ -135,4 +136,4 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 - [Exit 语句](exit-statement.md)
 - [Resume 语句](resume-statement.md)
 - [错误消息](../error-messages/index.md)
-- [尝试 .。。Catch .。。Finally 语句](try-catch-finally-statement.md)
+- [Try...Catch...Finally 语句](try-catch-finally-statement.md)

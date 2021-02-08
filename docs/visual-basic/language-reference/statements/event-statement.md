@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：事件语句
 title: Event 语句
 ms.date: 05/12/2018
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - ByRef keyword [Visual Basic], Event statements
 - declaring user-defined events
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
-ms.openlocfilehash: 0575a67f89f734c79259036fe48d6e2671c2d1ed
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 719b7af664795e2ff39d86bfa204112b7a90e1b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769113"
 ---
 # <a name="event-statement"></a>Event 语句
 
@@ -57,10 +58,10 @@ End Event
   
 ## <a name="parts"></a>组成部分  
   
-|部件|描述|  
+|组成部分|说明|  
 |---|---|  
 |`attrlist`|可选。 应用于此事件的特性列表。 用逗号分隔多个属性。 必须将 [属性列表](attribute-list.md) 用尖括号括起来 ( " `<` " 和 " `>` " ) 。|  
-|`accessmodifier`|可选。 指定哪些代码可以访问事件。 可以是以下值之一：<br /><br /> -   [Public](../modifiers/public.md)-可访问声明它的元素的任何代码都可以访问它。<br />-   [Protected](../modifiers/protected.md)-只有其类或派生类中的代码可以访问它。<br />-   [Friend](../modifiers/friend.md)-只有同一程序集中的代码才能访问它。<br />-   [Private](../modifiers/private.md)-只有声明它的元素中的代码才能访问它。<br /> -   在事件的类、派生类或同一程序集内，[受保护](../modifiers/protected-friend.md)的仅限 Friend 的代码可以访问它。 <br />- 在事件的类中，或在同一程序集中的派生类中，仅限[私有保护](../modifiers/private-protected.md)的代码可以访问它。|  
+|`accessmodifier`|可选。 指定哪些代码可以访问事件。 可以是以下其中一个值：<br /><br /> -   [Public](../modifiers/public.md)-可访问声明它的元素的任何代码都可以访问它。<br />-   [Protected](../modifiers/protected.md)-只有其类或派生类中的代码可以访问它。<br />-   [Friend](../modifiers/friend.md)-只有同一程序集中的代码才能访问它。<br />-   [Private](../modifiers/private.md)-只有声明它的元素中的代码才能访问它。<br /> -   在事件的类、派生类或同一程序集内，[受保护](../modifiers/protected-friend.md)的仅限 Friend 的代码可以访问它。 <br />- 在事件的类中，或在同一程序集中的派生类中，仅限[私有保护](../modifiers/private-protected.md)的代码可以访问它。|  
 |`Shared`|可选。 指定此事件不与类或结构的特定实例关联。|  
 |`Shadows`|可选。 指示此事件重新声明并隐藏基类中具有相同名称的编程元素（或重载元素集）。 可以与任何其他类型一起隐藏任何类型的已声明元素。<br /><br /> 隐藏的元素不可在隐藏它的派生类中使用（除了从隐藏元素不可访问的位置）。 例如，如果 `Private` 元素隐藏一个基类元素，则无权访问 `Private` 元素的代码会改为访问该基类元素。|  
 |`eventname`|必需。 事件的名称；遵循标准变量命名约定。|  
@@ -120,7 +121,7 @@ End Event
 > [!NOTE]
 > `My.Application.DoEvents` 方法不会按照与窗体相同的方式来处理事件。 若要使窗体可以直接处理事件，可以使用多线程处理。 有关详细信息，请参阅 [托管线程处理](../../../standard/threading/index.md)。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [RaiseEvent 语句](raiseevent-statement.md)
 - [Implements 语句](implements-statement.md)

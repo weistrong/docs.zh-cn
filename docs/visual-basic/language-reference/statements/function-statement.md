@@ -1,4 +1,5 @@
 ---
+description: '详细了解：函数语句 (Visual Basic) '
 title: Function 语句
 ms.date: 05/12/2018
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Function statements
 - Handles keyword [Visual Basic], Function statements
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
-ms.openlocfilehash: 49cf4fead2c5594b7ac6815f82fea0dc995ea436
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e8a05b02c3a214f0572e85c1fc973cb9f03118ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404623"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769060"
 ---
 # <a name="function-statement-visual-basic"></a>Function 语句 (Visual Basic)
 
@@ -54,7 +55,7 @@ End Function
 
 - `attributelist`
 
-  可选。 请参阅[特性列表](attribute-list.md)。
+  可选。 请参阅 [特性列表](attribute-list.md)。
 
 - `accessmodifier`
 
@@ -62,17 +63,17 @@ End Function
 
   - [公共](../modifiers/public.md)
 
-  - [避免](../modifiers/protected.md)
+  - [Protected](../modifiers/protected.md)
 
-  - [友好](../modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - 专用 
+  - [专用](../modifiers/private.md)
 
   - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [私有受保护](../modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
-  请参阅[Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
+  请参阅 [Visual Basic 中的访问级别](../../programming-guide/language-features/declared-elements/access-levels.md)。
 
 - `proceduremodifiers`
 
@@ -94,19 +95,19 @@ End Function
 
 - `Shared`
 
-  可选。 请参阅[共享](../modifiers/shared.md)。
+  可选。 请参阅 [共享](../modifiers/shared.md)。
 
 - `Shadows`
 
-  可选。 请参阅[阴影](../modifiers/shadows.md)。
+  可选。 请参阅 [阴影](../modifiers/shadows.md)。
 
 - `Async`
 
-  可选。 请参阅[Async](../modifiers/async.md)。
+  可选。 请参阅 [Async](../modifiers/async.md)。
 
 - `Iterator`
 
-  可选。 请参阅[迭代器](../modifiers/iterator.md)。
+  可选。 请参阅 [迭代器](../modifiers/iterator.md)。
 
 - `name`
 
@@ -114,11 +115,11 @@ End Function
 
 - `typeparamlist`
 
-  可选。 泛型过程的类型参数的列表。 请参阅[类型列表](type-list.md)。
+  可选。 泛型过程的类型参数的列表。 请参阅 [类型列表](type-list.md)。
 
 - `parameterlist`
 
-  可选。 表示此过程参数的本地变量名称列表。 请参阅[参数列表](parameter-list.md)。
+  可选。 表示此过程参数的本地变量名称列表。 请参阅 [参数列表](parameter-list.md)。
 
 - `returntype`
 
@@ -126,7 +127,7 @@ End Function
 
 - `Implements`
 
-  可选。 指示此过程实现了一个或多个 `Function` 过程，每个过程都在此过程的包含类或结构实现的接口中定义。 请参阅[Implements 语句](implements-statement.md)。
+  可选。 指示此过程实现了一个或多个 `Function` 过程，每个过程都在此过程的包含类或结构实现的接口中定义。 请参阅 [Implements 语句](implements-statement.md)。
 
 - `implementslist`
 
@@ -145,7 +146,7 @@ End Function
 
 - `Handles`
 
-  可选。 指示此过程可以处理一个或多个特定事件。 请参阅[句柄](handles-clause.md)。
+  可选。 指示此过程可以处理一个或多个特定事件。 请参阅 [句柄](handles-clause.md)。
 
 - `eventlist`
 
@@ -180,14 +181,14 @@ End Function
 
 只能 `Function` 在模块级别定义过程。 因此，函数的声明上下文必须是类、结构、模块或接口，不能是源文件、命名空间、过程或块。 有关详细信息，请参阅[声明上下文和默认访问级别](declaration-contexts-and-default-access-levels.md)。
 
-`Function`过程默认为公共访问。 您可以使用访问修饰符调整其访问级别。
+`Function` 过程默认为公共访问。 您可以使用访问修饰符调整其访问级别。
 
 `Function`过程可以声明过程返回的值的数据类型。 您可以指定任何数据类型或枚举、结构、类或接口的名称。 如果未指定 `returntype` 参数，则过程返回 `Object` 。
 
-如果此过程使用 `Implements` 关键字，则包含类或结构还必须具有紧跟在 `Implements` 其或语句后面的 `Class` 语句 `Structure` 。 `Implements`语句必须包括在中指定的每个接口 `implementslist` 。 但是，接口用于定义 `Function` （在中）的名称 `definedname` 不需要与此过程的名称匹配（在中为 `name` ）。
+如果此过程使用 `Implements` 关键字，则包含类或结构还必须具有紧跟在 `Implements` 其或语句后面的 `Class` 语句 `Structure` 。 `Implements`语句必须包括在中指定的每个接口 `implementslist` 。 但是，接口用于定义 `Function`) 中的 (的名称无 `definedname` 需匹配该过程在) 中 (的名称 `name` 。
 
 > [!NOTE]
-> 您可以使用 lambda 表达式来定义内联函数表达式。 有关详细信息，请参阅[函数表达式](../operators/function-expression.md)和[Lambda 表达式](../../programming-guide/language-features/procedures/lambda-expressions.md)。
+> 您可以使用 lambda 表达式来定义内联函数表达式。 有关详细信息，请参阅 [函数表达式](../operators/function-expression.md) 和 [Lambda 表达式](../../programming-guide/language-features/procedures/lambda-expressions.md)。
 
 ## <a name="returning-from-a-function"></a>从函数返回
 
@@ -213,15 +214,15 @@ End Function
 
 调用 `Function` 过程的方法与调用任何库函数（如、或）的方法相同 `Sqrt` `Cos` `ChrW` 。
 
-还可以使用关键字调用函数 `Call` 。 在这种情况下，将忽略返回值。 `Call`在大多数情况下不建议使用关键字。 有关详细信息，请参阅[Call 语句](call-statement.md)。
+还可以使用关键字调用函数 `Call` 。 在这种情况下，将忽略返回值。 `Call`在大多数情况下不建议使用关键字。 有关详细信息，请参阅 [Call 语句](call-statement.md)。
 
 Visual Basic 有时会重新排列算术表达式以提高内部效率。 出于此原因， `Function` 当函数更改同一表达式中变量的值时，不应使用算术表达式中的过程。
 
 ## <a name="async-functions"></a>异步函数
 
-使用*异步*功能可以调用异步函数，而无需使用显式回调或在多个函数或 lambda 表达式中手动拆分代码。
+使用 *异步* 功能可以调用异步函数，而无需使用显式回调或在多个函数或 lambda 表达式中手动拆分代码。
 
-如果使用[Async](../modifiers/async.md)修饰符标记函数，则可以在函数中使用[Await](../operators/await-operator.md)运算符。 当控件 `Await` 在函数中到达表达式时 `Async` ，控件将返回到调用方，在等待的任务完成之前，将挂起函数中的进度。 任务完成后，可以在函数中继续执行。
+如果使用 [Async](../modifiers/async.md) 修饰符标记函数，则可以在函数中使用 [Await](../operators/await-operator.md) 运算符。 当控件 `Await` 在函数中到达表达式时 `Async` ，控件将返回到调用方，在等待的任务完成之前，将挂起函数中的进度。 任务完成后，可以在函数中继续执行。
 
 > [!NOTE]
 > `Async`当过程遇到尚未完成的第一个等待对象时，或在过程结束时（以先发生者为准），过程返回到调用方 `Async` 。
@@ -230,15 +231,15 @@ Visual Basic 有时会重新排列算术表达式以提高内部效率。 出于
 
 `Async`函数不能声明任何[ByRef](../modifiers/byref.md)参数。
 
-还可以使用修饰符来标记[Sub 语句](sub-statement.md) `Async` 。 这主要用于事件处理程序，其中不能返回值。 `Async` `Sub` 无法等待过程，并且过程的调用方 `Async` `Sub` 无法捕获过程所引发的异常 `Sub` 。
+还可以使用修饰符来标记 [Sub 语句](sub-statement.md) `Async` 。 这主要用于事件处理程序，其中不能返回值。 `Async` `Sub` 无法等待过程，并且过程的调用方 `Async` `Sub` 无法捕获过程所引发的异常 `Sub` 。
 
-有关函数的详细信息 `Async` ，请参阅[采用 Async 和 Await 的异步编程](../../programming-guide/concepts/async/index.md)、[异步程序中的控制流](../../programming-guide/concepts/async/control-flow-in-async-programs.md)和[异步返回类型](../../programming-guide/concepts/async/async-return-types.md)。
+有关函数的详细信息 `Async` ，请参阅 [采用 Async 和 Await 的异步编程](../../programming-guide/concepts/async/index.md)、 [异步程序中的控制流](../../programming-guide/concepts/async/control-flow-in-async-programs.md)和 [异步返回类型](../../programming-guide/concepts/async/async-return-types.md)。
 
 ## <a name="iterator-functions"></a>迭代器函数
 
-*迭代器*函数在集合上执行自定义迭代，如列表或数组。 Iterator 函数使用[Yield](yield-statement.md)语句每次返回一个元素。 当到达[Yield](yield-statement.md)语句时，将记住代码中的当前位置。 下次调用迭代器函数时，将从该位置重新开始执行。
+*迭代器* 函数在集合上执行自定义迭代，如列表或数组。 Iterator 函数使用 [Yield](yield-statement.md) 语句每次返回一个元素。 当到达 [Yield](yield-statement.md) 语句时，将记住代码中的当前位置。 下次调用迭代器函数时，将从该位置重新开始执行。
 
-使用 For Each ... 将从客户端代码调用迭代器[下一](for-each-next-statement.md)语句。
+使用 For Each ... 将从客户端代码调用迭代器 [下一](for-each-next-statement.md) 语句。
 
 迭代器函数的返回类型可以是 <xref:System.Collections.IEnumerable> 、、 <xref:System.Collections.Generic.IEnumerable%601> <xref:System.Collections.IEnumerator> 或 <xref:System.Collections.Generic.IEnumerator%601> 。
 
@@ -264,7 +265,7 @@ Visual Basic 有时会重新排列算术表达式以提高内部效率。 出于
 
 [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Sub 语句](sub-statement.md)
 - [Function 过程](../../programming-guide/language-features/procedures/function-procedures.md)

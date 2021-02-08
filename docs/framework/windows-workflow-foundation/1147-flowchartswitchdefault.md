@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 1147-FlowchartSwitchDefault
 title: 1147 - FlowchartSwitchDefault
 ms.date: 03/30/2017
 ms.assetid: 03bb91f4-bfa4-4420-97fe-8443ee9b03e5
-ms.openlocfilehash: 197618ec2feb04d346521705d935321104ebcf20
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b686ce24f5b30207f5b6c13b80dc7e5a3a6432c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295686"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769385"
 ---
 # <a name="1147---flowchartswitchdefault"></a>1147 - FlowchartSwitchDefault
 
@@ -17,10 +18,10 @@ ms.locfileid: "96295686"
 |-|-|  
 |ID|1147|  
 |关键字|WFActivities|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示在 Flowchart 开关中已选择了 Default Case。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96295686"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |FlowChart|xs:string|FlowChart 的显示名称。|  
 |应用程序域|xs:string|由 AppDomain.CurrentDomain.FriendlyName 返回的字符串。|
