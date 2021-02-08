@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionEnter2 函数
 title: FunctionEnter2 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51
 topic_type:
 - apiref
-ms.openlocfilehash: e8466970a1c137276e842b37f0305fdfd9169be6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8b8061b213d02efd845e214c1177db4e5351869b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788977"
 ---
 # <a name="functionenter2-function"></a>FunctionEnter2 函数
 
@@ -58,7 +59,7 @@ void __stdcall FunctionEnter2 (
 
   为了访问参数信息， `COR_PRF_ENABLE_FUNCTION_ARGS` 必须设置标志。 探查器可以使用 [ICorProfilerInfo：： SetEventMask](icorprofilerinfo-seteventmask-method.md) 方法来设置事件标志。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `func` `argumentInfo` 当函数返回后，和参数的值无效， `FunctionEnter2` 因为值可能会更改或被销毁。  
   
@@ -84,7 +85,7 @@ void __stdcall FunctionEnter2 (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [FunctionLeave2 函数](functionleave2-function.md)
 - [FunctionTailcall2 函数](functiontailcall2-function.md)

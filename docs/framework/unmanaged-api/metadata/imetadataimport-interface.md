@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport 接口
 title: IMetaDataImport 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0adbbd35-5e8d-4fec-8268-dc70a07c5975
 topic_type:
 - apiref
-ms.openlocfilehash: 0049db66d7a753488388c85e87e1f907db56c7cf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4fb0dc4cce6901858cde8cfbc494fce7ddbfeb0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789081"
 ---
 # <a name="imetadataimport-interface"></a>IMetaDataImport 接口
 
@@ -92,7 +93,7 @@ ms.locfileid: "95679086"
 |[ResetEnum 方法](imetadataimport-resetenum-method.md)|将指定的枚举器重置到指定位置。|  
 |[ResolveTypeRef 方法](imetadataimport-resolvetyperef-method.md)|获取指定的 TypeRef 标记所引用的类型的类型信息。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `IMetaDataImport` 接口的设计主要供将要导入类型信息（例如，开发工具）或管理已部署组件（例如，解析/激活服务）的工具和服务使用。 `IMetaDataImport` 中的方法属于下列任务类别：  
   
@@ -114,7 +115,7 @@ ms.locfileid: "95679086"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据接口](metadata-interfaces.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

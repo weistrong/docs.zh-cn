@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataConverter：： GetTypeLibFromMetaData 方法
 title: IMetaDataConverter::GetTypeLibFromMetaData 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 90eab7b3-1fae-4af4-8bce-f7bc0e188a99
 topic_type:
 - apiref
-ms.openlocfilehash: eed8661f8885ca16492ab336a599b5290057843a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5eecc87f938740366b7938d6ec3d1460ebcfb7eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789263"
 ---
 # <a name="imetadataconvertergettypelibfrommetadata-method"></a>IMetaDataConverter::GetTypeLibFromMetaData 方法
 
@@ -57,6 +58,6 @@ HRESULT GetTypeLibFromMetaData (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataConverter 接口](imetadataconverter-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： RootReferences 方法
 title: ICorProfilerCallback::RootReferences 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbdf853b-d1a4-4828-8ef7-53d121d8e6ae
 topic_type:
 - apiref
-ms.openlocfilehash: 2d084ce0a785ba37c5b7dc937ed116cee74b7594
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e09434c425784e646c9856693abdfd4ac0d49273
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788860"
 ---
 # <a name="icorprofilercallbackrootreferences-method"></a>ICorProfilerCallback::RootReferences 方法
 
@@ -42,7 +43,7 @@ HRESULT RootReferences(
  `rootRefIds`  
  中对象 Id 的数组，这些对象 Id 引用静态对象或堆栈上的对象。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  同时 `RootReferences` 调用和 [ICorProfilerCallback2：： RootReferences2](icorprofilercallback2-rootreferences2-method.md) 来通知探查器。 探查器通常会实现一个或另一个，但不能同时实现两者，因为传入的信息 `RootReferences2` 是传入的的 `RootReferences` 超集。  
   
@@ -60,6 +61,6 @@ HRESULT RootReferences(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTaskManager：： EndThreadAffinity 方法
 title: IHostTaskManager::EndThreadAffinity 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7738a904-0cd7-4fde-a3eb-2323a5533157
 topic_type:
 - apiref
-ms.openlocfilehash: c662e242cf6745223b1e87716ce4f64971347d2a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0bbe42d8e14d20fb5be18fe7ebb266100ae72fd7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789419"
 ---
 # <a name="ihosttaskmanagerendthreadaffinity-method"></a>IHostTaskManager::EndThreadAffinity 方法
 
@@ -44,7 +45,7 @@ HRESULT EndThreadAffinity ();
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_UNEXPECTED|`EndThreadAffinity` 在没有对的早期调用的情况下调用 `BeginThreadAffinity` 。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在调用之前，CLR 对当前任务进行相应的调用 `BeginThreadAffinity` `EndThreadAffinity` 。 如果没有此类对应的调用，主机的 [IHostTaskManager](ihosttaskmanager-interface.md) 实现应返回 E_UNEXPECTED，而不执行任何操作。  
   
@@ -58,7 +59,7 @@ HRESULT EndThreadAffinity ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Threading>
 - [ICLRTask 接口](iclrtask-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback4：： GetReJITParameters 方法
 title: ICorProfilerCallback4::GetReJITParameters 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0e9bfe07-9f20-498c-b568-9017c8f6056c
 topic_type:
 - apiref
-ms.openlocfilehash: 2cee763674da7472ca48355e7eaba3b7dfb7adbe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f8dbf2c6ae80e41b8427fdaf0ef617a83138bb14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788756"
 ---
 # <a name="icorprofilercallback4getrejitparameters-method"></a>ICorProfilerCallback4::GetReJITParameters 方法
 
@@ -43,7 +44,7 @@ HRESULT GetReJITParameters(     [in] ModuleID moduleId,     [in] mdMethodDef met
  `pFunctionControl`  
  中指向 [ICorProfilerFunctionControl](icorprofilerfunctioncontrol-interface.md) 接口的指针，探查器可以使用该接口为要重新编译的方法提供 JIT 重新编译信息。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  CLR 发出 `GetReJITParameters` 回调，以便探查器可以指定用于重新编译给定方法的参数。 `GetReJITParameters`仅对每个函数发出一次回调; 探查器提供的参数将应用于该函数的所有实例。  
   
@@ -57,7 +58,7 @@ HRESULT GetReJITParameters(     [in] ModuleID moduleId,     [in] mdMethodDef met
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ICorProfilerCallback4 接口](icorprofilercallback4-interface.md)

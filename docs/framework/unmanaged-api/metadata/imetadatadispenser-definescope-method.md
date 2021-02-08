@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataDispenser：:D efineScope 方法
 title: IMetaDataDispenser::DefineScope 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: af28db02-29af-45ac-aec6-8d6c6123c2ff
 topic_type:
 - apiref
-ms.openlocfilehash: 87a39350986cb7bb62f76b0d9a6a9aae8f82e2f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b7a7870ec06af4c08a4ef3609077eb93f74da776
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726088"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789237"
 ---
 # <a name="imetadatadispenserdefinescope-method"></a>IMetaDataDispenser::DefineScope 方法
 
@@ -53,7 +54,7 @@ HRESULT DefineScope (
  `ppIUnk`  
  弄指向返回的接口的指针。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `DefineScope` 创建一组内存中的元数据表，为元数据生成一个唯一的 GUID (模块版本标识符或 MVID) ，并在模块表中为发出的编译单元创建一个条目。  
   
@@ -69,7 +70,7 @@ HRESULT DefineScope (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataDispenser 接口](imetadatadispenser-interface.md)
 - [IMetaDataDispenserEx 接口](imetadatadispenserex-interface.md)

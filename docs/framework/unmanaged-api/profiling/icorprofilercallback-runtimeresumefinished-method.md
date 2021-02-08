@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： RuntimeResumeFinished 方法
 title: ICorProfilerCallback::RuntimeResumeFinished 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 76de0494-dc49-426b-887d-bee98806a982
 topic_type:
 - apiref
-ms.openlocfilehash: e7bd07205a87ecefb658e01db17100a48681b54b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a8a38ff8372df9890239966c90175d72bda4b09d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788847"
 ---
 # <a name="icorprofilercallbackruntimeresumefinished-method"></a>ICorProfilerCallback::RuntimeResumeFinished 方法
 
@@ -46,6 +47,6 @@ HRESULT RuntimeResumeFinished();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

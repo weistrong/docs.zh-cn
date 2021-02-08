@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅 (Visual Basic 的 XML 处理指令文字) '
 title: XML 处理指令文本
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - XML processing instruction literal [Visual Basic]
 - processing instruction literal [Visual Basic]
 ms.assetid: cef4f7f8-0011-4f64-8602-795077ad4f15
-ms.openlocfilehash: 3d18e58cb643fa075f6eb08eb6fe909d27a6737b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5037aab343cbe50ebc48614991e96da8198a481f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787521"
 ---
 # <a name="xml-processing-instruction-literal-visual-basic"></a>XML 处理指令文本 (Visual Basic)
 
@@ -65,7 +66,7 @@ ms.locfileid: "90866413"
   
  [!code-vb[VbXMLSamples#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#28)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Xml.Linq.XProcessingInstruction>
 - [XML 文档文本](xml-document-literal.md)

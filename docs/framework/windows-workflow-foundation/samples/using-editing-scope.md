@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：使用编辑范围
 title: 使用编辑范围
 ms.date: 03/30/2017
 ms.assetid: 79306f9e-318b-4687-9863-8b93d1841716
-ms.openlocfilehash: 738ed7a21d28963e9e37c24f2e14887d00b9533b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9d91c787bb1b44d5cd07245fe48bd31ed2ccab3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267632"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787768"
 ---
 # <a name="using-editing-scope"></a>使用编辑范围
 

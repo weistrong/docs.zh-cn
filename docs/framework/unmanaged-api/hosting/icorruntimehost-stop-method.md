@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorRuntimeHost：： Stop 方法
 title: ICorRuntimeHost::Stop 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 46a0d450-b516-4bef-8b71-8d3bf265cbed
 topic_type:
 - apiref
-ms.openlocfilehash: 9342233317535ebecbcddea48b9029b81868eb0c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b44c77b7d0fe3a078efa11756f5fac7ba400ca5e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690143"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789588"
 ---
 # <a name="icorruntimehoststop-method"></a>ICorRuntimeHost::Stop 方法
 
@@ -41,7 +42,7 @@ HRESULT Stop ();
 |E_FAIL|发生了未知的灾难性故障。 如果某个方法返回 E_FAIL，则公共语言运行时 (CLR) 在该进程中不再可用。 对任何宿主 Api 的后续调用都会返回 HOST_E_CLRNOTAVAILABLE。|  
 |HOST_E_CLRNOTAVAILABLE|CLR 未加载到进程中，或 CLR 处于无法运行托管代码或成功处理调用的状态。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  通常不需要调用 `Stop` 方法，因为在进程退出时代码将停止执行。  
   
@@ -58,6 +59,6 @@ HRESULT Stop ();
   
  **.NET Framework 版本：** 1.0、1。1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorRuntimeHost 接口](icorruntimehost-interface.md)

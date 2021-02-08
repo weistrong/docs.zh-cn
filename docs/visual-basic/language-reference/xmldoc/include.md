@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <include> (Visual Basic)
 title: <include>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - include XML tag
 - <include> XML tag
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
-ms.openlocfilehash: df8749ca9d6c92cf9ef95f03eea2704812ff495a
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 8207b74ed74bd529f2da865777e287320b23d293
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787456"
 ---
 # <a name="include-visual-basic"></a>\<include> (Visual Basic)
 
@@ -63,6 +64,6 @@ ms.locfileid: "90872872"
 </Docs>  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [XML 注释标记](index.md)

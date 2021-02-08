@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： .。。End While 语句 (Visual Basic) '
 title: While...End While 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - While statement [Visual Basic]
 - While...End While statements [Visual Basic]
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-ms.openlocfilehash: e3ab95f43e101a9ad8abe6fa61b94ae7542e409c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ab452e2d9446c9c44b952c6ebf026f7a6f9080cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787573"
 ---
 # <a name="whileend-while-statement-visual-basic"></a>While...End While 语句 (Visual Basic)
 
@@ -61,7 +62,7 @@ End While
 
  [Exit While](exit-statement.md)语句可以提供另一种退出循环的方法 `While` 。 `Exit While` 立即将控制转移到语句后面的语句 `End While` 。  
   
- `Exit While` (例如，在结构) 中计算某些条件后，通常使用 `If...Then...Else` 。 如果检测到可能导致不必要或无法继续迭代的条件（如错误值或终止请求），则可能需要退出循环。 `Exit While`当您测试可能导致*无限循环*的情况时，可以使用，这是一个循环，该循环可以运行极大规模甚至无限次。 然后，可以使用 `Exit While` 来转义循环。  
+ `Exit While` (例如，在结构) 中计算某些条件后，通常使用 `If...Then...Else` 。 如果检测到可能导致不必要或无法继续迭代的条件（如错误值或终止请求），则可能需要退出循环。 `Exit While`当您测试可能导致 *无限循环* 的情况时，可以使用，这是一个循环，该循环可以运行极大规模甚至无限次。 然后，可以使用 `Exit While` 来转义循环。  
   
  可以将任意数量的 `Exit While` 语句置于循环中的任意位置 `While` 。  
   
@@ -87,7 +88,7 @@ End While
   
  [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [循环结构](../../programming-guide/language-features/control-flow/loop-structures.md)
 - [Do...Loop 语句](do-loop-statement.md)

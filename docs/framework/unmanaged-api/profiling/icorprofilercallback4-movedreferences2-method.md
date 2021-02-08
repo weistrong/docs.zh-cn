@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback4：： MovedReferences2 方法
 title: ICorProfilerCallback4::MovedReferences2 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d17a065b-5bc6-4817-b3e1-1e413fcb33a8
 topic_type:
 - apiref
-ms.openlocfilehash: 41f7010b6c13327e45a4da7fdae1b9e1fe6e41a0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 37bd1c91866a583bf4ba04e3e532d0efe5a11fc9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730274"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788730"
 ---
 # <a name="icorprofilercallback4movedreferences2-method"></a>ICorProfilerCallback4::MovedReferences2 方法
 
@@ -54,7 +55,7 @@ HRESULT MovedReferences2(
   
  `oldObjectIDRangeStart` 和 `newObjectIDRangeStart` 数组中引用的每个块均有指定的大小。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  压缩垃圾回收器将收回由不活动对象占用的内存，但不会压缩释放的空间。 因此，可能在堆中移动活动对象，并且由以前的通知分发的 `ObjectID` 值也可能更改。  
   
@@ -88,7 +89,7 @@ HRESULT MovedReferences2(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [MovedReferences 方法](icorprofilercallback-movedreferences-method.md)

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：公司购买流程
 title: 企业采购过程
 ms.date: 03/30/2017
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
-ms.openlocfilehash: aa2ca2577eb68204ffcb755ce1b16b9354348ee3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c26b1f46f29b7a6ec06acf5d19381b5c8f460433
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787859"
 ---
 # <a name="corporate-purchase-process"></a>企业采购过程
 
@@ -93,7 +94,7 @@ ms.locfileid: "96293463"
 
  下表包含对 WfDefinition 项目中最重要文件的说明。  
   
-|文件|描述|  
+|文件|说明|  
 |----------|-----------------|  
 |IPurchaseProcessHost.cs|工作流主机的接口。|  
 |PurchaseProcessHost.cs|工作流主机的实现。 该主机提取工作流运行时的详细信息，并在所有客户端应用程序中用于加载和运行 `PurchaseProcess` 工作流实例并与其进行交互。|  
@@ -121,7 +122,7 @@ ms.locfileid: "96293463"
 
  下表包含对 Web Client 项目中最重要网页的说明。  
   
-|文件|描述|  
+|文件|说明|  
 |-|-|  
 |CreateRfp.aspx|创建和提交新的征求建议书。|  
 |Default.aspx|显示所有活动的和已完成的征求建议书。|  
@@ -132,7 +133,7 @@ ms.locfileid: "96293463"
 
  下表包含对 Win Forms 项目中最重要的窗体的说明。  
   
-|窗体|描述|  
+|窗体|说明|  
 |-|-|  
 |NewRfp|创建和提交新的征求建议书。|  
 |ShowProposals|显示所有活动的和已完成的征求建议书。 **注意：**  你可能需要单击 UI 中的 " **刷新** " 按钮，才能在创建或修改建议请求后查看该屏幕中的更改。|  

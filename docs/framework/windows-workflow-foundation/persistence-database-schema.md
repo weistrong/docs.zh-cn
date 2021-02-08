@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：持久性数据库架构
 title: 持久性数据库架构
 ms.date: 03/30/2017
 ms.assetid: 34f69f4c-df81-4da7-b281-a525a9397a5c
-ms.openlocfilehash: f0ee076aa327f298007dfb18af324fb81c309067
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 40c47c5bfcb6c974eab6f2f2c926e0fa13054a38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787833"
 ---
 # <a name="persistence-database-schema"></a>持久性数据库架构
 
@@ -17,7 +18,7 @@ ms.locfileid: "96246090"
 
  " **实例** " 视图包含有关数据库中所有工作流实例的一般信息。  
   
-|列名|列类型|描述|  
+|列名|列类型|说明|  
 |-----------------|-----------------|-----------------|  
 |InstanceId|UniqueIdentifier|工作流实例的 ID。|  
 |PendingTimer|DateTime|指示工作流在延迟活动上发生阻塞，并将在计时器过期后恢复。 如果在等待计时器过期时工作流没有发生阻塞，则此值可以为 null。|  
@@ -30,9 +31,9 @@ ms.locfileid: "96246090"
 |CurrentMachine|Nvarchar(128)|指示当前已将工作流实例加载到内存中的计算机的名称。|  
 |LastMachine|Nvarchar(450)|指示最后加载工作流实例的计算机。|  
 |ExecutionStatus|Nvarchar(450)|指示工作流的当前执行状态。 可能的状态包括 **执行**、 **空闲** 和 **关闭**。|  
-|IsInitialized|位|指示工作流实例是否已初始化。 已初始化的工作流实例是至少已持久化一次的工作流实例。|  
-|IsSuspended|位|指示工作流实例是否已挂起。|  
-|IsCompleted|位|指示工作流实例是否已执行完毕。 **注意：**  如果将 **InstanceCompletionAction** 属性设置为 **DeleteAll**，则在完成时将从视图中删除实例。|  
+|IsInitialized|bit|指示工作流实例是否已初始化。 已初始化的工作流实例是至少已持久化一次的工作流实例。|  
+|IsSuspended|bit|指示工作流实例是否已挂起。|  
+|IsCompleted|bit|指示工作流实例是否已执行完毕。 **注意：**  如果将 **InstanceCompletionAction** 属性设置为 **DeleteAll**，则在完成时将从视图中删除实例。|  
 |EncodingOption|TinyInt|描述用于序列化数据属性的编码。<br /><br /> -0-无编码<br />-1 – GzipStream|  
 |ReadWritePrimitiveDataProperties|Varbinary(max)|包含已序列化的实例数据属性，当加载实例时，这些属性将会重新提供给工作流运行时。<br /><br /> 每个基元属性都是本机 CLR 类型，这意味着，对 Blob 进行反序列化不需要特殊程序集。|  
 |WriteOnlyPrimitiveDataProperties|Varbinary(max)|包含已序列化的实例数据属性，当加载实例时，这些属性不会重新提供给工作流运行时。<br /><br /> 每个基元属性都是本机 CLR 类型，这意味着，对 Blob 进行反序列化不需要特殊程序集。|  
@@ -40,7 +41,7 @@ ms.locfileid: "96246090"
 |WriteOnlyComplexDataProperties|Varbinary(max)|包含已序列化的实例数据属性，当加载实例时，这些属性不会重新提供给工作流运行时。<br /><br /> 反序列化程序需要知道此 Blob 中存储的所有对象类型。|  
 |IdentityName|Nvarchar(max)|工作流定义的名称。|  
 |IdentityPackage|Nvarchar(max)|创建工作流时提供的包信息（例如，程序集名称）。|  
-|生成|BigInt|工作流版本的生成号。|  
+|构建|BigInt|工作流版本的生成号。|  
 |主要|BigInt|工作流版本的主版本号。|  
 |次要|BigInt|工作流版本的次版本号。|  
 |修订|BigInt|工作流版本的修订号。|  
@@ -52,7 +53,7 @@ ms.locfileid: "96246090"
 
  **ServiceDeployments** 视图包含所有 WEB (IIS/WAS) 托管的工作流服务的部署信息。 Web 承载的每个工作流实例都将包含引用此视图中的行的 **ServiceDeploymentId** 。  
   
-|列名|列类型|描述|  
+|列名|列类型|说明|  
 |-----------------|-----------------|-----------------|  
 |ServiceDeploymentId|BigInt|此视图的主键。|  
 |SiteName|Nvarchar(max)|表示包含工作流服务的站点的名称 (例如， **默认网站**) 。|  
@@ -71,7 +72,7 @@ ms.locfileid: "96246090"
 
  **InstancePromotedProperties** 视图包含用户指定的所有升级属性的信息。 促销属性用作一类属性，用户可以在查询中使用它来检索实例。  例如，用户可以添加 PurchaseOrder 升级，该升级始终将订单的成本存储在 **Value1** 列中。 这样用户可以查询所有成本超过某个值的购买订单。  
   
-|列类型|列类型|描述|  
+|列类型|列类型|说明|  
 |-|-|-|  
 |InstanceId|UniqueIdentifier|工作流实例的 ID|  
 |EncodingOption|TinyInt|描述用于序列化促销二进制属性的编码。<br /><br /> -0-无编码<br />-1 – GZipStream|  

@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 0687bcb16cae6a0a2dde6c7864a1af1d0027e122
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 8f76c9c86c202ef1bad23bffe8379b0b93a53f17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787716"
 ---
 # <a name="configuration-options-for-code-analysis"></a>代码分析的配置选项
 
@@ -80,7 +80,7 @@ generated_code = true
 dotnet_diagnostic.<rule ID>.severity = <severity value>
 ```
 
-若要为某一类别的分析器规则设置默认规则严重性，请使用以下语法。 每个规则的类别在各个规则引用页中提供，例如， [CA1000](quality-rules/ca1000.md)。
+若要为 [规则类别](categories.md)设置默认规则严重性，请使用以下语法。 每个规则的类别在各个规则引用页中提供，例如， [CA1000](quality-rules/ca1000.md)。
 
 ```ini
 dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>

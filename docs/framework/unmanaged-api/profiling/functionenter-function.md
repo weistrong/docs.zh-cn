@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： FunctionEnter 函数
 title: FunctionEnter 函数
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bf4ffa50-4506-4dd4-aa13-a0457b47ca74
 topic_type:
 - apiref
-ms.openlocfilehash: 9bc88d7dd5b00213da634dc9f511cfe0d39b42f1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07b91a81480e453be16e840b89fa822cb91002ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788951"
 ---
 # <a name="functionenter-function"></a>FunctionEnter 函数
 
@@ -42,7 +43,7 @@ void __stdcall FunctionEnter (
 
   \[in] 控件传递到的函数的标识符。
 
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `FunctionEnter`函数是回调; 必须实现它。 实现必须使用 `__declspec` `naked`) 存储类特性的 (。  
   
@@ -66,7 +67,7 @@ void __stdcall FunctionEnter (
   
  **.NET Framework 版本：** 1.1、1。0  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [FunctionEnter2 函数](functionenter2-function.md)
 - [FunctionLeave2 函数](functionleave2-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataImport：： GetScopeProps 方法
 title: IMetaDataImport::GetScopeProps 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8ba42d2-d9fa-43cb-bbc0-f33e1e592cb6
 topic_type:
 - apiref
-ms.openlocfilehash: 5a89d1406daa9a2416a708b63d88fd9005234015
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2ed7c08cc876f467a46fe38c7c27719e5608e623
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789146"
 ---
 # <a name="imetadataimportgetscopeprops-method"></a>IMetaDataImport::GetScopeProps 方法
 
@@ -51,7 +52,7 @@ HRESULT GetScopeProps (
  `pmvid`  
  [out，optional]一个指向 GUID 的指针，该 GUID 用于唯一标识程序集或模块的版本。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  使用 [IMetaDataEmit：： SetModuleProps](imetadataemit-setmoduleprops-method.md) 方法设置这些属性。  
   
@@ -65,7 +66,7 @@ HRESULT GetScopeProps (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataImport 接口](imetadataimport-interface.md)
 - [IMetaDataImport2 接口](imetadataimport2-interface.md)

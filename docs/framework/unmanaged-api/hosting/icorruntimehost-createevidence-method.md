@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorRuntimeHost：： CreateEvidence 方法
 title: ICorRuntimeHost::CreateEvidence 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e235ea80-b84c-4442-a4c3-fc96c25a8eb9
 topic_type:
 - apiref
-ms.openlocfilehash: 6627fce519934177aefd26a612e5b00ca1941d02
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 34694f7e867066430a28120b412237ef9c64c740
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715662"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789666"
 ---
 # <a name="icorruntimehostcreateevidence-method"></a>ICorRuntimeHost::CreateEvidence 方法
 
@@ -48,7 +49,7 @@ HRESULT CreateEvidence (
 |E_FAIL|发生了未知的灾难性故障。 如果某个方法返回 E_FAIL，则公共语言运行时 (CLR) 在该进程中不再可用。 对任何宿主 Api 的后续调用都会返回 HOST_E_CLRNOTAVAILABLE。|  
 |HOST_E_CLRNOTAVAILABLE|CLR 未加载到进程中，或 CLR 处于无法运行托管代码或成功处理调用的状态。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  此方法返回一个不能从本机代码中填充的空集合。 应 <xref:System.Security.Policy.Evidence> 改用方法。  
   
@@ -62,7 +63,7 @@ HRESULT CreateEvidence (
   
  **.NET Framework 版本：** 1.0、1。1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

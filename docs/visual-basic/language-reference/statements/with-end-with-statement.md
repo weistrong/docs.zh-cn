@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下内容的详细信息： .。。End With 语句 (Visual Basic) '
 title: With...End With 语句
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - With block
 - End keyword [Visual Basic], With...End With statements
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
-ms.openlocfilehash: 50f3bd0c6e96254274b429794901e2e4ac719ad0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 86393d5dee7a03b2b8396b34b31326d1b0ea3c28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401376"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787560"
 ---
 # <a name="withend-with-statement-visual-basic"></a>With...End With 语句 (Visual Basic)
 
@@ -64,10 +65,10 @@ End With
 
 你不能从 `With` 语句块的外部分支到此语句块。
 
-除非此语句块包含循环，否则这些语句只运行一次。 你可嵌套不同类型的控制结构。 有关详细信息，请参阅[嵌套控制结构](../../programming-guide/language-features/control-flow/nested-control-structures.md)。
+除非此语句块包含循环，否则这些语句只运行一次。 你可嵌套不同类型的控制结构。 有关详细信息，请参阅 [嵌套控制结构](../../programming-guide/language-features/control-flow/nested-control-structures.md)。
 
 > [!NOTE]
-> 你还可在对象初始值设定项中使用 `With` 关键字。 有关详细信息和示例，请参阅[对象初始值设定项：命名类型和匿名](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)类型和[匿名类型](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)。
+> 你还可在对象初始值设定项中使用 `With` 关键字。 有关详细信息和示例，请参阅 [对象初始值设定项：命名类型和匿名](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) 类型和 [匿名类型](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)。
 >
 > 如果你使用 `With` 块只是为了初始化已实例化的对象的属性或字段，请考虑改用对象初始值设定项。
 
@@ -83,7 +84,7 @@ End With
 
 [!code-vb[VbVbalrWithStatement#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#1)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Collections.Generic.List%601>
 - [嵌套的控件结构](../../programming-guide/language-features/control-flow/nested-control-structures.md)

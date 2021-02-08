@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback3：:P rofilerAttachComplete 方法
 title: ICorProfilerCallback3::ProfilerAttachComplete 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 257d6076-06e0-4d93-bb33-651fbb2b92d7
 topic_type:
 - apiref
-ms.openlocfilehash: a16e77619ec85ebdf47a2b821309bbb3af63282b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dcd8ab9fed402593fc955050b0d3be6f8a46730a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788782"
 ---
 # <a name="icorprofilercallback3profilerattachcomplete-method"></a>ICorProfilerCallback3::ProfilerAttachComplete 方法
 
@@ -52,7 +53,7 @@ HRESULT ProfilerAttachComplete ();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ICorProfilerInfo3 接口](icorprofilerinfo3-interface.md)

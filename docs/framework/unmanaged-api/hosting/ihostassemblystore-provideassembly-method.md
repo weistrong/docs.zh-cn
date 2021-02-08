@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostAssemblyStore：:P rovideAssembly 方法
 title: IHostAssemblyStore::ProvideAssembly 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 625c3dd5-a3f0-442c-adde-310dadbb5054
 topic_type:
 - apiref
-ms.openlocfilehash: db65519579104dd01816bb6d7cacaec947f24f53
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f8917cb28dd3898343a7b6ee08bd54096df8cfa7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789497"
 ---
 # <a name="ihostassemblystoreprovideassembly-method"></a>IHostAssemblyStore::ProvideAssembly 方法
 
@@ -68,7 +69,7 @@ HRESULT ProvideAssembly (
 |COR_E_FILENOTFOUND (0x80070002) |找不到请求的程序集。|  
 |E_NOT_SUFFICIENT_BUFFER|指定的缓冲区大小 `pAssemblyId` 不够大，无法容纳主机需要返回的标识符。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  为返回的标识值 `pAssemblyId` 由主机指定。 标识符在进程的生存期内必须是唯一的。 CLR 使用此值作为流的唯一标识符。 它会对照的值检查每个值，以使其他对的 `pAssemblyId` 调用返回 `ProvideAssembly` 。 如果主机为其他主机返回相同的 `pAssemblyId` 值 `IStream` ，则 CLR 将检查是否已映射该流的内容。 如果是这样，则运行时加载映像的现有副本，而不是映射一个新副本。  
   
@@ -82,7 +83,7 @@ HRESULT ProvideAssembly (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager 接口](ihostassemblymanager-interface.md)

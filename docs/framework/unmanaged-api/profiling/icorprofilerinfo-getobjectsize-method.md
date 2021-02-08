@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerInfo：： GetObjectSize 方法
 title: ICorProfilerInfo::GetObjectSize 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9f02e763-73f7-42cb-a41c-f78499d9482c
 topic_type:
 - apiref
-ms.openlocfilehash: 4abcf9f4575b32dd125fd8a00783043900993c3e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c762b43e87c6f25b301f3f677728ca8cbe19b138
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724099"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788626"
 ---
 # <a name="icorprofilerinfogetobjectsize-method"></a>ICorProfilerInfo::GetObjectSize 方法
 
@@ -42,7 +43,7 @@ HRESULT GetObjectSize(
  `pcSize`  
  弄一个指针，指向对象的大小（以字节为单位）。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 > [!IMPORTANT]
 > 此方法已过时。 它在64位平台上为大于4GB 的对象返回 COR_E_OVERFLOW。 改为使用  [ICorProfilerInfo4：： GetObjectSize2](icorprofilerinfo4-getobjectsize2-method.md) 方法。  
@@ -65,6 +66,6 @@ HRESULT GetObjectSize(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerInfo 接口](icorprofilerinfo-interface.md)

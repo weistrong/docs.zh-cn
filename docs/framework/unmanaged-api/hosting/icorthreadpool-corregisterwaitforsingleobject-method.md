@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorThreadpool：： CorRegisterWaitForSingleObject 方法
 title: ICorThreadpool::CorRegisterWaitForSingleObject 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cade1feb-71d2-43ed-85ca-7b2e9da12994
 topic_type:
 - apiref
-ms.openlocfilehash: 9f555d3119ede5eabe61467aa81d35aa5c354751
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdbb41f78f7aeb4a426de48e2da7616cfaecaa6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727843"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789549"
 ---
 # <a name="icorthreadpoolcorregisterwaitforsingleobject-method"></a>ICorThreadpool::CorRegisterWaitForSingleObject 方法
 
@@ -50,6 +51,6 @@ HRESULT CorRegisterWaitForSingleObject (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorThreadpool 接口](icorthreadpool-interface.md)

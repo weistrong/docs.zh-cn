@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback4：： ReJITCompilationStarted 方法
 title: ICorProfilerCallback4::ReJITCompilationStarted 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 512fdd00-262a-4456-a075-365ef4133c4d
 topic_type:
 - apiref
-ms.openlocfilehash: 43db4ce0ba7a95a029e6c4928f55a99df9085164
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7656f68ff6b10dcd58e48df212a036a590d0c3b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788704"
 ---
 # <a name="icorprofilercallback4rejitcompilationstarted-method"></a>ICorProfilerCallback4::ReJITCompilationStarted 方法
 
@@ -46,7 +47,7 @@ HRESULT ReJITCompilationStarted(
  `fIsSafeToBlock`  
  [in] `true` 指示阻止可能会导致运行时等待调用线程从该回调返回; `false` 指示阻止操作不会影响运行时的操作。 的值 `true` 不会损害运行时，但会影响分析结果。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `ReJITCompilationStarted`由于运行时处理类构造函数的方式，每个函数可以接收多对和[ReJITCompilationFinished](icorprofilercallback4-rejitcompilationfinished-method.md)方法调用。 例如，运行时开始重新编译方法 A，但类 B 的类构造函数需要运行。 因此，运行时将为类 B 重新编译构造函数并运行它。 当构造函数正在运行时，它会调用方法 A，这将导致重新编译方法 A。 在此方案中，方法 A 的第一次重新编译将暂停。 但是，将使用 JIT 重新编译事件来报告对方法 A 的重新编译。  
   
@@ -62,7 +63,7 @@ HRESULT ReJITCompilationStarted(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ICorProfilerCallback4 接口](icorprofilercallback4-interface.md)

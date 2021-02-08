@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： <appDomainManagerType> 元素
 title: <appDomainManagerType> 元素
 ms.date: 03/30/2017
 helpviewer_keywords:
 - appDomainManagerType element
 - <appDomainManagerType> element
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
-ms.openlocfilehash: e21384de6ca07c637a79ee54207d1e3ddfbf20e6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 633dcce2e370bda96efc61447611519d0ed04a3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787131"
 ---
 # <a name="appdomainmanagertype-element"></a>\<appDomainManagerType> 元素
 
@@ -43,7 +44,7 @@ ms.locfileid: "91170306"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |`configuration`|公共语言运行时和 .NET Framework 应用程序所使用的每个配置文件中的根元素。|  
 |`runtime`|包含有关程序集绑定和垃圾回收的信息。|  

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback5 接口
 title: ICorProfilerCallback5 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 61d2e9ef-5f1f-4771-8847-239616e35d84
 topic_type:
 - apiref
-ms.openlocfilehash: 8e94aebc489fff1c81593e54b17c471e7228d810
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b80b27dc994ad556381228370ece92935d89d293
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788652"
 ---
 # <a name="icorprofilercallback5-interface"></a>ICorProfilerCallback5 接口
 
@@ -27,7 +28,7 @@ ms.locfileid: "95689285"
   
  `ICorProfilerCallback5` 必须由托管的内存探查器实现，才能订阅与依赖句柄相关的通知。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
   
 ## <a name="methods"></a>方法  
   
@@ -43,7 +44,7 @@ ms.locfileid: "95689285"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析接口](profiling-interfaces.md)
 - [ICorProfilerCallback2 接口](icorprofilercallback2-interface.md)

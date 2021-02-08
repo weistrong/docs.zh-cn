@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback3：:P rofilerDetachSucceeded 方法
 title: ICorProfilerCallback3::ProfilerDetachSucceeded 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 05164966-16ce-4cc9-a530-43a640c00711
 topic_type:
 - apiref
-ms.openlocfilehash: b9b284de102dc75a637803ca5be0f2769da452ec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bc80b5bd5301bb5b0278534cfba6ac23e5968620
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730313"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788769"
 ---
 # <a name="icorprofilercallback3profilerdetachsucceeded-method"></a>ICorProfilerCallback3::ProfilerDetachSucceeded 方法
 
@@ -36,7 +37,7 @@ HRESULT ProfilerDetachSucceeded();
 
  将忽略来自此回调的返回值。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在所有线程均退出探查器的代码之后，发出`ProfilerDetachSucceeded` 回调。 当调用此方法时，探查器应执行任何不适合用于其析构函数的的最后执行的任务，例如通知其 UI 或日志记录组件。 但是，探查器不能在此 (回调期间（如 [ICorProfilerInfo](icorprofilerinfo-interface.md) 或接口) ）调用 CLR 提供的接口上的函数 `IMetaData*` 。  
   
@@ -54,7 +55,7 @@ HRESULT ProfilerDetachSucceeded();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [元数据接口](../metadata/metadata-interfaces.md)
 - [ICorProfilerInfo3 接口](icorprofilerinfo3-interface.md)

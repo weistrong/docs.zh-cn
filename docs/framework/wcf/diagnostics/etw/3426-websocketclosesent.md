@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 3426-WebSocketCloseSent
 title: 3426 - WebSocketCloseSent
 ms.date: 03/30/2017
 ms.assetid: 2eedb6bb-c114-40bb-9b24-e5f00723a24a
-ms.openlocfilehash: cdc645882698e9cdd08bf87e183cade141aeb90a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1a782e41b5cac07329d71cb0c354c3737ce4f7c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788522"
 ---
 # <a name="3426---websocketclosesent"></a>3426 - WebSocketCloseSent
 
@@ -20,7 +21,7 @@ ms.locfileid: "96265591"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当发送 WebSocket 关闭时发出此事件。  
   

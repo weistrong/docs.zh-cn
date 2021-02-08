@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorRuntimeHost：： CreateDomainSetup 方法
 title: ICorRuntimeHost::CreateDomainSetup 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c21dab60-fb65-47d9-8a94-7fd47ca53b48
 topic_type:
 - apiref
-ms.openlocfilehash: 1be7eee5c2591f26c33572446080a4fa4b3b929d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b7c2dc55fa9f0d3d5a5c18e38c2c825048ae5f53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789679"
 ---
 # <a name="icorruntimehostcreatedomainsetup-method"></a>ICorRuntimeHost::CreateDomainSetup 方法
 
@@ -48,7 +49,7 @@ HRESULT CreateDomainSetup (
 |E_FAIL|发生了未知的灾难性故障。 如果某个方法返回 E_FAIL，则公共语言运行时 (CLR) 在该进程中不再可用。 对任何宿主 Api 的后续调用都会返回 HOST_E_CLRNOTAVAILABLE。|  
 |HOST_E_CLRNOTAVAILABLE|CLR 未加载到进程中，或 CLR 处于无法运行托管代码或成功处理调用的状态。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  从此方法返回的指针通常作为参数传递给 [CreateDomainEx](icorruntimehost-createdomainex-method.md) 方法。  
   
@@ -62,7 +63,7 @@ HRESULT CreateDomainSetup (
   
  **.NET Framework 版本：** 1.0、1。1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

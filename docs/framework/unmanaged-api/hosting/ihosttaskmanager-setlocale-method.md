@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IHostTaskManager：： SetLocale 方法
 title: IHostTaskManager::SetLocale 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 747ee407-ee8c-484d-9583-25089236d2d1
 topic_type:
 - apiref
-ms.openlocfilehash: 7730c2dddaca98e4cb06cdb381e8a46ff23c97f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 522a3da9bcd8d61754684091f6de3f11f7ed478c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789406"
 ---
 # <a name="ihosttaskmanagersetlocale-method"></a>IHostTaskManager::SetLocale 方法
 
@@ -51,7 +52,7 @@ HRESULT SetLocale (
 |E_FAIL|发生未知的灾难性故障。 当方法返回 E_FAIL 时，CLR 在该进程内将不再可用。 对宿主方法的后续调用会返回 HOST_E_CLRNOTAVAILABLE。|  
 |E_NOTIMPL|宿主不允许托管用户代码修改区域设置。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  `SetLocale`当 <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> 托管代码更改属性的值时，运行时调用。 此方法为主机提供了对区域设置同步所需的任何机制的机会。 如果主机不允许从托管代码更改区域设置，或未实现同步区域设置的机制，则它应从此方法返回 E_NOTIMPL。  
   
@@ -65,7 +66,7 @@ HRESULT SetLocale (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [ICLRTaskManager 接口](iclrtaskmanager-interface.md)

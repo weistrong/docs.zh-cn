@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyImport：： FindAssembliesByName 方法
 title: IMetaDataAssemblyImport::FindAssembliesByName 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4db97cf9-e4c1-4233-8efa-cbdc0e14a8e4
 topic_type:
 - apiref
-ms.openlocfilehash: a2bf0335f8d75c7dbd1a651afdb54da8c7be2460
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f9c25392cc2c70a0ebc17181b876cf9c6ba03c78
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731605"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789289"
 ---
 # <a name="imetadataassemblyimportfindassembliesbyname-method"></a>IMetaDataAssemblyImport::FindAssembliesByName 方法
 
@@ -66,7 +67,7 @@ HRESULT FindAssembliesByName (
 |`S_OK`|`FindAssembliesByName` 已成功返回。|  
 |`S_FALSE`|没有程序集。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在给定程序集名称的 `FindAssembliesByName` 情况下，方法通过遵循用于解析程序集引用的标准规则查找程序集。  (有关详细信息，请参阅 [运行时如何定位程序集](../../deployment/how-the-runtime-locates-assemblies.md)。 ) `FindAssembliesByName` 使调用方可以配置程序集解析程序上下文的各个方面，例如应用程序基和专用搜索路径。  
   

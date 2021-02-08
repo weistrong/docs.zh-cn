@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorRuntimeHost：： CreateDomainEx 方法
 title: ICorRuntimeHost::CreateDomainEx 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1bdde382-f8ba-4cc8-94b2-d1ac919c585e
 topic_type:
 - apiref
-ms.openlocfilehash: d6d9e06b6ed40bb0e5a65fd64f8bca7abe3afa84
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aec759cec4fd68fff4bdfaaf3403a0da026fb9ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789692"
 ---
 # <a name="icorruntimehostcreatedomainex-method"></a>ICorRuntimeHost::CreateDomainEx 方法
 
@@ -60,9 +61,9 @@ HRESULT CreateDomainEx (
 |E_FAIL|发生了未知的灾难性故障。 如果某个方法返回 E_FAIL，则公共语言运行时 (CLR) 在该进程中不再可用。 对任何宿主 Api 的后续调用都会返回 HOST_E_CLRNOTAVAILABLE。|  
 |HOST_E_CLRNOTAVAILABLE|CLR 未加载到进程中，或 CLR 处于无法运行托管代码或成功处理调用的状态。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
- `CreateDomainEx`通过允许调用方[CreateDomain](icorruntimehost-createdomain-method.md)传入 `IAppDomainSetup` 具有属性值的实例来配置应用程序域，从而扩展了 CreateDomain 的功能。  
+ `CreateDomainEx`通过允许调用方[](icorruntimehost-createdomain-method.md)传入 `IAppDomainSetup` 具有属性值的实例来配置应用程序域，从而扩展了 CreateDomain 的功能。  
   
 ## <a name="requirements"></a>要求  
 
@@ -74,7 +75,7 @@ HRESULT CreateDomainEx (
   
  **.NET Framework 版本：** 1.0、1。1  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

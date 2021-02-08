@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 603-AspNetRoutingService
 title: 603 - AspNetRoutingService
 ms.date: 03/30/2017
 ms.assetid: 4a63dddc-72a2-4b43-b1f1-bfce434dcee9
-ms.openlocfilehash: 5055c231cf3da6f69a8dfd660c110bac3a4e0fe5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f8559bc9592bda6a03967b9602447eada20e5073
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247000"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788327"
 ---
 # <a name="603---aspnetroutingservice"></a>603 - AspNetRoutingService
 
@@ -20,7 +21,7 @@ ms.locfileid: "96247000"
 |级别|“详细”|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当传入请求与地址为 %1 的 ASP.NET 路由中定义的某个 WCF 服务匹配时，将发出此事件。  
   

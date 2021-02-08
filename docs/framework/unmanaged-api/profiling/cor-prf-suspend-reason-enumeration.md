@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_SUSPEND_REASON 枚举
 title: COR_PRF_SUSPEND_REASON 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 75594833-bed3-47b2-a426-b75c5fe6fbcf
 topic_type:
 - apiref
-ms.openlocfilehash: f7d76c72ed5db95425f5b1fa2db5e4346983daa4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9e8b3dc98aa6b1a989088f5f4d0efb74d488d927
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696669"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789003"
 ---
 # <a name="cor_prf_suspend_reason-enumeration"></a>COR_PRF_SUSPEND_REASON 枚举
 
@@ -52,7 +53,7 @@ typedef enum {
 |`COR_PRF_FIELD_SUSPEND_FOR_GC_PREP`|运行时挂起，以便准备垃圾回收。|  
 |`COR_PRF_SUSPEND_FOR_REJIT`|运行时将被挂起，以便进行 JIT 重新编译。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  在非托管代码中的所有运行时线程都允许继续运行，直到它们尝试重新进入运行时为止，此时它们也将挂起，直到运行时恢复。 这也适用于输入运行时的新线程。 如果运行时中的所有线程都处于中断的代码中，或者在它们确实到达中断的代码时要求挂起，则该线程会立即挂起。  
   
@@ -66,6 +67,6 @@ typedef enum {
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [分析枚举](profiling-enumerations.md)

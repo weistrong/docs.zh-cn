@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IMetaDataAssemblyEmit：： SetFileProps 方法
 title: IMetaDataAssemblyEmit::SetFileProps 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 85667d38-611c-45a9-938d-930ac7a7b681
 topic_type:
 - apiref
-ms.openlocfilehash: 9cf5f3d926c1e742dd9134e7bf292df53e1a4909
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 482aa11b85eaf05d126c4fcc0d5a1aced85002d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789302"
 ---
 # <a name="imetadataassemblyemitsetfileprops-method"></a>IMetaDataAssemblyEmit::SetFileProps 方法
 
@@ -51,7 +52,7 @@ HRESULT SetFileProps (
  `dwFileFlags`  
  中 [CorFileFlags](corfileflags-enumeration.md) 值的按位组合，用于指定文件的各种属性。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  若要创建 `File` 元数据结构，请使用 [IMetaDataAssemblyEmit：:D efinefile](imetadataassemblyemit-definefile-method.md) 方法。  
   
@@ -65,6 +66,6 @@ HRESULT SetFileProps (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IMetaDataAssemblyEmit 接口](imetadataassemblyemit-interface.md)

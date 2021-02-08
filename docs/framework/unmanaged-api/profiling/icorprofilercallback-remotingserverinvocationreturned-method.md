@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback：： RemotingServerInvocationReturned 方法
 title: ICorProfilerCallback::RemotingServerInvocationReturned 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a4de6805-e159-4280-99e5-3390c86166d0
 topic_type:
 - apiref
-ms.openlocfilehash: ff1670472b34292cb216a1a8817243ced6a938af
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 97f9fda42059ac66fc3a29689adc252556798e4b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704833"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788912"
 ---
 # <a name="icorprofilercallbackremotingserverinvocationreturned-method"></a>ICorProfilerCallback::RemotingServerInvocationReturned 方法
 
@@ -42,6 +43,6 @@ HRESULT RemotingServerInvocationReturned();
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)

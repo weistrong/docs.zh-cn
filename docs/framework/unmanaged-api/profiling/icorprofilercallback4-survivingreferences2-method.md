@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback4：： SurvivingReferences2 方法
 title: ICorProfilerCallback4::SurvivingReferences2 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 02b51888-5d89-4e50-a915-45b7e329aad9
 topic_type:
 - apiref
-ms.openlocfilehash: fb10057a406bd2192e0da61f916f81697dfa4a7d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d092729c77b0c4feb253bb2f54968f7ff8bdbb2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689311"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788678"
 ---
 # <a name="icorprofilercallback4survivingreferences2-method"></a>ICorProfilerCallback4::SurvivingReferences2 方法
 
@@ -52,7 +53,7 @@ HRESULT SurvivingReferences2(
   
  `objectIDRangeStart` 数组中引用的每个块均指定了大小。  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  应按以下方式解释 `objectIDRangeStart` 和 `cObjectIDRangeLength` 数组的元素，以确定垃圾回收后对象是否仍存在。 假定 `ObjectID` 值 (`ObjectID`) 在以下范围内：  
   
@@ -80,7 +81,7 @@ HRESULT SurvivingReferences2(
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback 接口](icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 接口](icorprofilercallback2-interface.md)

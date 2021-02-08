@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 712-DispatchMessageStop
 title: 712 - DispatchMessageStop
 ms.date: 03/30/2017
 ms.assetid: 5e1894a6-9c44-4533-aaec-64063a2cbb06
-ms.openlocfilehash: e0451c439e45c46753521273989522de2ae96bdc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4693c888068ffbd1eb35aad16ee87e6ebaaa85d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788197"
 ---
 # <a name="712---dispatchmessagestop"></a>712 - DispatchMessageStop
 
@@ -17,10 +18,10 @@ ms.locfileid: "96259572"
 |-|-|  
 |ID|712|  
 |关键字|ServiceModel|  
-|Level|信息|  
+|级别|信息|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/分析|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  当完成消息调度时，发出此事件。  
   

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRTaskManager 接口
 title: ICLRTaskManager 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2bd55e0c-001b-41fd-b29d-f01670fe8216
 topic_type:
 - apiref
-ms.openlocfilehash: 1170b29c01275b108a6ccdf6e324c96d97c10c82
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ce3641042725bc2f3acb95933ccd7a5bbe3bc4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789731"
 ---
 # <a name="iclrtaskmanager-interface"></a>ICLRTaskManager 接口
 
@@ -35,7 +36,7 @@ ms.locfileid: "95732445"
 |[SetLocale 方法](iclrtaskmanager-setlocale-method.md)|通知 CLR 宿主已经修改了当前正在执行的任务的区域设置标识符。|  
 |[SetUILocale 方法](iclrtaskmanager-setuilocale-method.md)|通知公共语言运行时宿主已经修改了当前正在执行的任务的用户界面区域设置标识符。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  宿主环境中运行的每个任务都在宿主端 (一个实例，该实例在 [IHostTask](ihosttask-interface.md)) 的实例和 CLR 端 [ () 的](iclrtask-interface.md) 实例上。 宿主或 CLR 可以启动任务创建，但宿主端表示形式必须与相应的 CLR 端表示形式相关联，以确保主机与 CLR 之间的有关任务的通信成功。 必须先创建并实例化两个对象，然后托管代码才能在操作系统线程上执行。  
   
@@ -49,7 +50,7 @@ ms.locfileid: "95732445"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRTask 接口](iclrtask-interface.md)
 - [IHostTask 接口](ihosttask-interface.md)

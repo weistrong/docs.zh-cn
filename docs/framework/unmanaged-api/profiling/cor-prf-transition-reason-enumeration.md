@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： COR_PRF_TRANSITION_REASON 枚举
 title: COR_PRF_TRANSITION_REASON 枚举
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: da941118-01b7-4197-ae5b-9f2f8adcd623
 topic_type:
 - apiref
-ms.openlocfilehash: 747313f217092652d5a9404fbf81383fa0828ee9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8d0b7852f80f80a47f910e9f1240a5315772cd23
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788990"
 ---
 # <a name="cor_prf_transition_reason-enumeration"></a>COR_PRF_TRANSITION_REASON 枚举
 
@@ -41,7 +42,7 @@ typedef enum {
 |`COR_PRF_TRANSITION_CALL`|由于调用了函数，因此转换。|  
 |`COR_PRF_TRANSITION_RETURN`|由于从函数返回，因此转换。|  
   
-## <a name="remarks"></a>注解  
+## <a name="remarks"></a>备注  
 
  发生转换时，探查器会接收 [ICorProfilerCallback：： ManagedToUnmanagedTransition](icorprofilercallback-managedtounmanagedtransition-method.md) 或 [ICorProfilerCallback：： UnmanagedToManagedTransition](icorprofilercallback-unmanagedtomanagedtransition-method.md) 回调，其中任何一个都提供枚举的值， `COR_PRF_TRANSITION_REASON` 以指示转换的原因。  
   

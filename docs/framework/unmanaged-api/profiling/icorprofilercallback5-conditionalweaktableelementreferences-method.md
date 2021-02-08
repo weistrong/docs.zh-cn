@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICorProfilerCallback5：： ConditionalWeakTableElementReferences 方法
 title: ICorProfilerCallback5::ConditionalWeakTableElementReferences 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 532c7a02-a9de-4cea-bb2b-7f470da594de
 topic_type:
 - apiref
-ms.openlocfilehash: 17fbc99b30921f795c1f7ff882ec73432aade8c6
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 40114f6e1d80719eceaf2dbc398b74c1e790c76a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788665"
 ---
 # <a name="icorprofilercallback5conditionalweaktableelementreferences-method"></a>ICorProfilerCallback5::ConditionalWeakTableElementReferences 方法
 
@@ -46,7 +47,7 @@ HRESULT ConditionalWeakTableElementReferences(
 [in] 一个包含对象 ID 的数组，其中每个对象 ID 都包含相关句柄对中主要元素的 `ObjectID`。
 
 `valueRefIds`\
-[in] 一个包含对象 ID 的数组，其中每个对象 ID 都包含相关句柄对中次要元素的 `ObjectID`。 （ `keyRefIds[i]` 保持 `valueRefIds[i]` 活动状态。）
+[in] 一个包含对象 ID 的数组，其中每个对象 ID 都包含相关句柄对中次要元素的 `ObjectID`。  (`keyRefIds[i]` 保持 `valueRefIds[i]` 活动状态 ) 
 
 `rootIds`\
 [in] 一个包含 `GCHandleID` 值的数组，这些值指向包含有关垃圾回收根的附加信息的整数。
@@ -55,7 +56,7 @@ HRESULT ConditionalWeakTableElementReferences(
 
 ## <a name="example"></a>示例
 
-下面的代码示例演示如何实现[ICorProfilerCallback5](icorprofilercallback5-interface.md)并使用此方法。
+下面的代码示例演示如何实现 [ICorProfilerCallback5](icorprofilercallback5-interface.md) 并使用此方法。
 
 ```cpp
 HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
@@ -78,18 +79,18 @@ HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
-.NET Framework 4.5 或更高版本的探查器将实现[ICorProfilerCallback5](icorprofilercallback5-interface.md)接口并记录由方法指定的依赖项 `ConditionalWeakTableElementReferences` 。 `ICorProfilerCallback5`提供条目所表示的活动对象之间的依赖关系的完整集合 `ConditionalWeakTable` 。 使用[ICorProfilerCallback：： ObjectReferences](icorprofilercallback-objectreferences-method.md)方法指定的这些依赖项和成员字段引用，托管探查器可以生成活动对象的完整对象图。
+.NET Framework 4.5 或更高版本的探查器将实现 [ICorProfilerCallback5](icorprofilercallback5-interface.md) 接口并记录由方法指定的依赖项 `ConditionalWeakTableElementReferences` 。 `ICorProfilerCallback5` 提供条目所表示的活动对象之间的依赖关系的完整集合 `ConditionalWeakTable` 。 使用 [ICorProfilerCallback：： ObjectReferences](icorprofilercallback-objectreferences-method.md) 方法指定的这些依赖项和成员字段引用，托管探查器可以生成活动对象的完整对象图。
 
 ## <a name="requirements"></a>要求
 
-**平台：** 请参阅[系统要求](../../get-started/system-requirements.md)。
+**平台：** 请参阅 [系统要求](../../get-started/system-requirements.md)。
 
 **头文件：** CorProf.idl、CorProf.h
 
 **.NET Framework 版本：**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICorProfilerCallback5 接口](icorprofilercallback5-interface.md)

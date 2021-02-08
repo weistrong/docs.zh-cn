@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息： 4209-TimeoutOpeningSqlConnection
 title: 4209 - TimeoutOpeningSqlConnection
 ms.date: 03/30/2017
 ms.assetid: f0e56518-9758-41dc-a760-50d1a10fba6e
-ms.openlocfilehash: 9aa8cdffebb0cdf8b1e8225a394edf78ecf032b9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9c7540e328530fdc01b9f065dfb75b92c467bd43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238673"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787989"
 ---
 # <a name="4209---timeoutopeningsqlconnection"></a>4209 - TimeoutOpeningSqlConnection
 
@@ -17,10 +18,10 @@ ms.locfileid: "96238673"
 |-|-|  
 |ID|4209|  
 |关键字|WFInstanceStore|  
-|Level|错误|  
+|级别|错误|  
 |通道|Microsoft-Windows-应用程序服务器-应用程序/调试|  
   
-## <a name="description"></a>描述  
+## <a name="description"></a>说明  
 
  指示在尝试打开 SQL 连接时遇到了超时。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "96238673"
   
 ## <a name="details"></a>详细信息  
   
-|数据项名称|数据项类型|描述|  
+|数据项名称|数据项类型|说明|  
 |--------------------|--------------------|-----------------|  
 |超时|xs:string|用于打开 SQL 连接的超时值。|  
 |应用程序域|xs:string|由 AppDomain.CurrentDomain.FriendlyName 返回的字符串。|
