@@ -5,16 +5,16 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 05/18/2020
 zone_pivot_groups: unit-testing-framework-set-one
-ms.openlocfilehash: eb426b790e0623b0cf233a763e93d2bd501b8034
-ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
+ms.openlocfilehash: a7b6b66e4cc865d4ec6b7cfc31ac79767935df2f
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86100816"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506378"
 ---
 # <a name="order-unit-tests"></a>对单元测试排序
 
-有时，你可能希望按特定顺序运行单元测试。 理想情况下，单元测试的运行顺序__ 不重要，[最佳做法](unit-testing-best-practices.md)是避免对单元测试排序。 但无论如何，可能会有需要这样做。 为此，本文将演示如何对测试运行进行排序。
+有时，你可能希望按特定顺序运行单元测试。 理想情况下，单元测试的运行顺序不重要，[最佳做法](unit-testing-best-practices.md)是避免对单元测试排序。 但无论如何，可能会有需要这样做。 为此，本文将演示如何对测试运行进行排序。
 
 如果你更喜欢浏览源代码，请参阅[对 .NET Core 单元测试排序](/samples/dotnet/samples/order-unit-tests-cs)示例存储库。
 
@@ -30,7 +30,7 @@ ms.locfileid: "86100816"
 > [!NOTE]
 > 名为 `Test14` 的测试将在 `Test2` 之前运行，即使数字 `2` 小于 `14` 也是如此。 这是因为，测试名称排序使用的是测试的文本名称。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/MSTest.Project/ByAlphabeticalOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/MSTest.Project/ByAlphabeticalOrder.cs":::
 
 :::zone-end
 :::zone pivot="xunit"
@@ -41,35 +41,35 @@ xUnit 测试框架允许对测试运行顺序进行更细致的控制。 可以�
 
 若要按其方法名称对测试用例排序，可以实现 `ITestCaseOrderer` 并提供排序机制。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/AlphabeticalOrderer.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Orderers/AlphabeticalOrderer.cs":::
 
 然后，在测试类中，使用 `TestCaseOrdererAttribute` 设置测试用例的顺序。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/ByAlphabeticalOrder.cs":::
 
 ## <a name="order-by-collection-alphabetically"></a>按集合的字母顺序排序
 
 若要按其显示名称对测试集合排序，可以实现 `ITestCollectionOrderer` 并提供排序机制。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/DisplayNameOrderer.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Orderers/DisplayNameOrderer.cs":::
 
 由于测试集合可能会并行运行，因此必须使用 `CollectionBehaviorAttribute` 显式禁用集合的测试并行化。 然后，将实现指定到 `TestCollectionOrdererAttribute`。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByDisplayName.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/ByDisplayName.cs":::
 
 ## <a name="order-by-custom-attribute"></a>按自定义属性排序
 
 若要使用自定义属性对 xUnit 测试排序，首先需要一个要依赖的属性。 按如下所示定义 `TestPriorityAttribute`：
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Attributes/TestPriorityAttribute.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Attributes/TestPriorityAttribute.cs":::
 
 接下来，请考虑 `ITestCaseOrderer` 接口的以下 `PriorityOrderer` 实现。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/PriorityOrderer.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Orderers/PriorityOrderer.cs":::
 
 然后，在测试类中，使用 `TestCaseOrdererAttribute` 将测试用例的顺序设置为 `PriorityOrderer`。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByPriorityOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/ByPriorityOrder.cs":::
 
 :::zone-end
 :::zone pivot="nunit"
@@ -78,7 +78,7 @@ xUnit 测试框架允许对测试运行顺序进行更细致的控制。 可以�
 
 为了显式对测试排序，NUnit 提供了 [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute)。 具有此属性的测试先于没有此属性的测试启动。 顺序值用于确定运行单元测试的顺序。
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.TestProject/ByOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/NUnit.TestProject/ByOrder.cs":::
 
 :::zone-end
 
