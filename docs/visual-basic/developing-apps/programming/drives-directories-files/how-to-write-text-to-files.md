@@ -1,5 +1,6 @@
 ---
-title: 如何：向文件内写入文本
+description: 详细了解：操作说明：在 Visual Basic 中向文件内写入文本
+title: 如何：向文件写入文本
 ms.date: 07/20/2015
 helpviewer_keywords:
 - files [Visual Basic], writing to
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - writing to files [Visual Basic]
 - examples [Visual Basic], text files
 ms.assetid: 304956eb-530d-4df7-b48f-9b4d1f2581a0
-ms.openlocfilehash: f95a0c4df4a2eab0069a6dab0d4c3fa338d1d8ef
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3f94999c1d20002074ecf57577d3402c350248ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797336"
 ---
 # <a name="how-to-write-text-to-files-in-visual-basic"></a>如何：在 Visual Basic 中向文件内写入文本
 
@@ -54,7 +55,7 @@ ms.locfileid: "84411533"
   
 - 磁盘已满，且对 `WriteAllText` 的调用失败 (<xref:System.IO.IOException>)。  
   
- 如果在部分信任上下文中运行，该代码可能会因特权不足而引发异常。 有关详细信息，请参阅[代码访问安全性基础知识](../../../../framework/misc/code-access-security-basics.md)。  
+ 如果在部分信任上下文中运行，该代码可能会因特权不足而引发异常。 有关详细信息，请参阅 [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)。  
   
 ## <a name="see-also"></a>另请参阅
 

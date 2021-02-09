@@ -1,4 +1,5 @@
 ---
+description: 详细了解：操作说明：在 Visual Basic 中将字符串发送到串行端口
 title: 如何：将字符串发送到串行端口
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - My.Computer.Ports object
 - serial ports, sending strings to
 ms.assetid: 6ebf46cd-b2d0-4b2c-9a1f-be177b22ad52
-ms.openlocfilehash: f78df9cf1bd75432ea645c4dcc06498915ceee49
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 66dedaab05090af2659701e57b37b4813447b8ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360288"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666480"
 ---
 # <a name="how-to-send-strings-to-serial-ports-in-visual-basic"></a>如何：在 Visual Basic 中将字符串发送到串行端口
 

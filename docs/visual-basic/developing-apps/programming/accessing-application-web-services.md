@@ -1,4 +1,5 @@
 ---
+description: 详细了解：访问应用程序 Web 服务 (Visual Basic)
 title: 访问应用程序 Web 服务
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My.WebServices object
 - applications [Visual Basic], Web services
 ms.assetid: 8ad5405b-e771-42b1-82d3-ce97af2cea9e
-ms.openlocfilehash: cf9a0c9840b9228b59af9959cf3a4efb9a1d1ea0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4efd35ed7c8f4251a749b85a45242af299a51e6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797882"
 ---
 # <a name="accessing-application-web-services-visual-basic"></a>访问应用程序 Web 服务 (Visual Basic)
 
@@ -21,10 +22,10 @@ ms.locfileid: "84410187"
 
 下表列出了访问应用程序所引用的 Web 服务的可能方法。
 
-|到|请参阅|
+|功能|查看|
 |---|---|
 |调用 Web 服务|[My.WebServices 对象](../../language-reference/objects/my-webservices-object.md)|
-|以异步方式调用 Web 服务，并在事件完成时处理该事件|[如何：异步调用 Web 服务](how-to-call-a-web-service-asynchronously.md)|
+|以异步方式调用 Web 服务，并在事件完成时处理该事件|[如何：以异步方式调用 Web 服务](how-to-call-a-web-service-asynchronously.md)|
 
 ## <a name="see-also"></a>另请参阅
 

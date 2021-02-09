@@ -1,17 +1,17 @@
 ---
 title: .NET 微服务。 适用于容器化 .NET 应用程序的体系结构
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 微服务可是模块化且可独立部署的服务。 （适用于 Linux 和 Windows）的 Docker 容器可将服务及其依赖项绑定到单个单元，使该单元在一个独立的环境中运行，因而可简化部署和测试。
-ms.date: 01/13/2021
-ms.openlocfilehash: a9017d2e9acbcbb861a35f0187632dc90c52e171
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/02/2021
+ms.openlocfilehash: e9862445414dbe0bf9a1c5d36d790b57710028f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665298"
 ---
 # <a name="net-microservices-architecture-for-containerized-net-applications"></a>.NET 微服务：适用于容器化 .NET 应用程序的体系结构
 
-![封面](./media/cover-small.png)
+![封面](./media/cover-large.png)
 
 **EDITION v5.0** - 已更新到 ASP.NET Core 5.0
 
@@ -68,9 +68,9 @@ Docker 正在逐渐成为容器行业的事实标准，受到 Windows 和 Linux 
 
 ### <a name="how-to-use-this-guide"></a>如何使用本指南
 
-本指南的第一部分介绍 Docker 容器，探讨用作开发框架时如何在 .NET Core 和 .NET Framework 之间选择，并提供有关微服务的概述。 此内容适合希望大概了解而不关注代码实现细节的架构师和技术决策制定者。
+本指南的第一部分介绍 Docker 容器，探讨用作开发框架时如何在 .NET 5 和 .NET Framework 之间选择，并提供有关微服务的概述。 此内容适合希望大概了解而不关注代码实现细节的架构师和技术决策制定者。
 
-本指南的第二部分从[基于 Docker 的应用程序的开发过程](./docker-application-development-process/index.md)一节开始。 重点介绍使用 .NET Core 和 Docker 实现应用程序的开发和微服务模式。 对于要重点了解代码以及模式和实现详细信息的开发人员和架构师，此部分最有吸引力。
+本指南的第二部分从[基于 Docker 的应用程序的开发过程](./docker-application-development-process/index.md)一节开始。 重点介绍使用 .NET 和 Docker 实现应用程序的开发和微服务模式。 对于要重点了解代码以及模式和实现详细信息的开发人员和架构师，此部分最有吸引力。
 
 ## <a name="related-microservice-and-container-based-reference-application-eshoponcontainers"></a>相关微服务和基于容器的参考应用程序：eShopOnContainers
 
@@ -162,7 +162,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-版权所有 © 2020 Microsoft Corporation
+版权所有 © 2021 Microsoft Corporation
 
 保留所有权利。 未经发布者书面许可，不得以任何形式或任何方式复制或传播本书中的任何内容。
 

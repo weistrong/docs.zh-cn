@@ -1,4 +1,5 @@
 ---
+description: 详细了解：如何：自定义基于时间的缓存策略
 title: 如何：自定义基于时间的缓存策略
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - customizing time-based cache policies
 - cache [.NET Framework], time-based policies
 ms.assetid: 8d84f936-2376-4356-9264-03162e0f9279
-ms.openlocfilehash: 1a2ba404e333eeec2a23758c834876d0df5aba81
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bb00faa5c2cd3170a0f56b74032867d489c1fb8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73040637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747447"
 ---
 # <a name="how-to-customize-a-time-based-cache-policy"></a>如何：自定义基于时间的缓存策略
 
@@ -43,7 +44,7 @@ Public Shared Function CreateLastSyncPolicy([when] As DateTime) As HttpRequestCa
 End Function
 ```
 
-此输出类似于以下内容：
+输出与下面类似：
 
 ```output
 When: 1/14/2004 8:07:30 AM

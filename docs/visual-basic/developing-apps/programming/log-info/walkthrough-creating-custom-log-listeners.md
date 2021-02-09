@@ -1,16 +1,17 @@
 ---
+description: 详细了解：演练：创建自定义日志侦听器 (Visual Basic)
 title: 创建自定义日志侦听器
 ms.date: 07/20/2015
 helpviewer_keywords:
 - custom log listeners
 - My.Application.Log object, custom log listeners
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
-ms.openlocfilehash: 5a140607a4fe7e1e13de54e8d56cab53e52aaa2a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bc5e1743eeaec427adf909ca95aa1979ce61a993
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398261"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792292"
 ---
 # <a name="walkthrough-creating-custom-log-listeners-visual-basic"></a>演练：创建自定义日志侦听器 (Visual Basic)
 
@@ -85,7 +86,7 @@ ms.locfileid: "84398261"
 
     1. 在 **“项目”** 菜单上选择 **“添加新项”** 。
 
-    2. 在“添加新项”  对话框中，选择“应用程序配置文件” 。
+    2. 在“添加新项”  对话框中，选择“应用程序配置文件”  。
 
     3. 单击 **添加**。
 

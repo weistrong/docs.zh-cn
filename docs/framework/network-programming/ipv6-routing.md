@@ -1,13 +1,14 @@
 ---
+description: 详细了解：IPv6 路由
 title: IPv6 路由
 ms.date: 03/30/2017
 ms.assetid: c98731b4-b542-46a2-9947-1cea63c186b2
-ms.openlocfilehash: 646eef4ec178472a99f60de4785fd53381296c3a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 75499a7380ab0ea7c38c83a6407a0c2a269b5fce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258330"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672031"
 ---
 # <a name="ipv6-routing"></a>IPv6 路由
 
@@ -35,7 +36,7 @@ ms.locfileid: "96258330"
   
 - 重定向。 由路由器发送，以指示特定目标的下一个更好的跃点地址，用于发送节点。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Internet 协议版本 6](internet-protocol-version-6.md)
 - [套接字](sockets.md)

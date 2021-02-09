@@ -1,4 +1,5 @@
 ---
+description: 详细了解：播放声音 (Visual Basic)
 title: 播放声音
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - sounds, background
 - playing sounds
 ms.assetid: f0d9e4ab-57c7-47b6-86d3-99ff07078040
-ms.openlocfilehash: 416fedd011ff35d2b32d1b64932e3908a73ed14e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 247af8274108ca8374cf87e53aa2aaad8e5e736c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74345524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641507"
 ---
 # <a name="playing-sounds-visual-basic"></a>播放声音 (Visual Basic)
 
@@ -44,7 +45,7 @@ ms.locfileid: "74345524"
   
  [!code-vb[VbVbalrMyComputer#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#12)]  
   
- 前面的代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，它位于“Windows 窗体应用程序”>“声音”中。  有关详细信息，请参阅[代码片段](/visualstudio/ide/code-snippets)。  
+ 前面的代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，它位于“Windows 窗体应用程序”>“声音”中。 有关详细信息，请参阅[代码片段](/visualstudio/ide/code-snippets)。  
   
  一般情况下，应用程序播放循环声音时，声音最终将停止。  
   
@@ -58,7 +59,7 @@ ms.locfileid: "74345524"
   
  [!code-vb[VbVbalrMyComputer#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#18)]  
   
- 前面的代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，它位于“Windows 窗体应用程序”>“声音”中。  有关详细信息，请参阅[代码片段](/visualstudio/ide/code-snippets)。  
+ 前面的代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，它位于“Windows 窗体应用程序”>“声音”中。 有关详细信息，请参阅[代码片段](/visualstudio/ide/code-snippets)。  
   
 ## <a name="playing-system-sounds"></a>播放系统声音  
 

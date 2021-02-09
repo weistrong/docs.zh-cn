@@ -1,4 +1,5 @@
 ---
+description: 详细了解：操作说明：在 Visual Basic 中将一个目录复制到另一个目录
 title: 如何：将目录复制到另一个目录
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - folders [Visual Basic], copying
 - directories [Visual Basic], copying
 ms.assetid: 2a370bd7-10ba-4219-afc4-4519d031eb6c
-ms.openlocfilehash: e28f50f6a812188ac7af801cea691818488bd6cd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 37eb63449ce355382c5ed058fda6c1142b7d3e3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401714"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797648"
 ---
 # <a name="how-to-copy-a-directory-to-another-directory-in-visual-basic"></a>如何：在 Visual Basic 中将一个目录复制到另一个目录
 
@@ -26,7 +27,7 @@ ms.locfileid: "84401714"
 
     [!code-vb[VbVbcnMyFileSystem#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#16)]
 
-    此代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，该代码段位于“文件系统 - 处理驱动器、文件夹和文件”。  有关详细信息，请参阅[代码片段](/visualstudio/ide/code-snippets)。
+    此代码示例也可作为 IntelliSense 代码片段。 在代码片段选取器中，该代码段位于“文件系统 - 处理驱动器、文件夹和文件”。 有关详细信息，请参阅[代码片段](/visualstudio/ide/code-snippets)。
 
 ## <a name="robust-programming"></a>可靠编程
 

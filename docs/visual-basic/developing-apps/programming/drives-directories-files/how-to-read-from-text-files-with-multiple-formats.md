@@ -1,5 +1,6 @@
 ---
-title: 如何：读取具有多种格式的文本文件
+description: 详细了解：操作说明：在 Visual Basic 中读取具有多种格式的文本文件
+title: 操作说明：读取具有多种格式的文本文件
 ms.date: 07/20/2015
 helpviewer_keywords:
 - TextFieldParser object, reading from a file
@@ -11,20 +12,20 @@ helpviewer_keywords:
 - I/O [Visual Basic], reading text files
 - text files [Visual Basic], reading
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
-ms.openlocfilehash: b36c781d5f8333749d346bb8f19540f0d1bd1692
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 90d981ad051fb395d57604434cf9ba6b74603e7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74334570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797440"
 ---
-# <a name="how-to-read-from-fext-files-with-multiple-formats-in-visual-basic"></a>如何：在 Visual Basic 中读取具有多种格式的文本文件
+# <a name="how-to-read-from-fext-files-with-multiple-formats-in-visual-basic"></a>操作说明：在 Visual Basic 中读取具有多种格式的文本文件
 
 <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> 对象提供一种可以轻松而高效地分析结构化文本文件（如日志）的方法。 可以使用 `PeekChars` 方法处理具有多种格式的文件，以便在分析整个文件时确定每行的格式。
   
 ### <a name="to-parse-a-text-file-with-multiple-formats"></a>分析具有多种格式的文本文件
 
-1. 将名为 testfile.txt  的文本文件添加到你的项目中。 向文本文件添加以下内容：
+1. 将名为 testfile.txt 的文本文件添加到你的项目中。 向文本文件添加以下内容：
 
     ```text
     Err  1001 Cannot access resource.
@@ -67,7 +68,7 @@ ms.locfileid: "74334570"
 - 路径过长 (<xref:System.IO.PathTooLongException>)。
 - 用户没有足够的权限访问文件 (<xref:System.UnauthorizedAccessException>)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>

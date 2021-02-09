@@ -1,17 +1,18 @@
 ---
-title: 'How to: Write Event Information to a Text File'
+description: 详细了解：操作说明：将事件信息写入文本文件 (Visual Basic)
+title: 如何：将事件信息写入文本文件
 ms.date: 07/20/2015
 helpviewer_keywords:
 - event logs [Visual Studio], writing event information
 - text files [Visual Basic], writing event information to a text file
 - events [Visual Basic], writing event information to a text file
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
-ms.openlocfilehash: 6e83f8450ca7be8a2dcd5ff43eab3dd2ec0d2f1b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: eb6fab9976c010080c0cffa37edd4f790dc73956
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775131"
 ---
 # <a name="how-to-write-event-information-to-a-text-file-visual-basic"></a>如何：将事件信息写入文本文件 (Visual Basic)
 
@@ -19,7 +20,7 @@ ms.locfileid: "84410057"
 
 ### <a name="to-add-and-configure-the-file-log-listener"></a>添加和配置文件日志侦听器
 
-1. 在“解决方案资源管理器”  中右键单击 app.config，然后选择“打开”  。
+1. 在“解决方案资源管理器”  中右键单击 app.config，然后选择“打开” 。
 
      \- 或 -
 
@@ -66,7 +67,7 @@ ms.locfileid: "84410057"
 
 为程序集配置文件日志侦听器后，它将接收该程序集写入 `My.Application.Log` 的所有消息。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>

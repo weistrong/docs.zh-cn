@@ -1,5 +1,6 @@
 ---
-title: 如何：写入应用程序事件日志
+description: 详细了解：操作说明：写入应用程序事件日志 (Visual Basic)
+title: 如何：将信息写入应用程序事件日志
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Computer.EventLog element
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - My.Computer.EventLog element
 - event logs, writing to
 ms.assetid: cadbc8c1-87af-4746-934e-55b79a4f6e2b
-ms.openlocfilehash: 298d6d85f8b21176b72db8e676617577eb03fada
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ea53ff84f1fcf175912e35eb7433ece26886cf44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410031"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797284"
 ---
 # <a name="how-to-write-to-an-application-event-log-visual-basic"></a>如何：写入应用程序事件日志 (Visual Basic)
 
@@ -20,11 +21,11 @@ ms.locfileid: "84410031"
 
 不能将信息写入安全日志。 只有 LocalSystem 或 Administrator 帐户的成员可以将信息写入系统日志。
 
-若要查看事件日志，可以使用“服务器资源管理器”  或“Windows 事件查看器”。   有关详细信息，请参阅 [ETW Events in the .NET Framework](../../../../framework/performance/etw-events.md)。
+若要查看事件日志，可以使用“服务器资源管理器”  或“Windows 事件查看器” 。 有关详细信息，请参阅 [.NET Framework 中的 ETW 事件](../../../../framework/performance/etw-events.md)。
 
 ## <a name="to-add-and-configure-the-event-log-listener"></a>添加和配置事件日志侦听器
 
-1. 在“解决方案资源管理器”  中右键单击 app.config，然后选择“打开”  。
+1. 在“解决方案资源管理器”  中右键单击 app.config，然后选择“打开” 。
 
     \- 或 -
 
@@ -67,11 +68,11 @@ ms.locfileid: "84410031"
 
 为程序集配置事件日志侦听器后，它将接收该程序集写入 `My.Application.Log` 的所有消息。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>
 - [使用应用程序日志](working-with-application-logs.md)
 - [如何：日志异常](how-to-log-exceptions.md)
-- [演练：确定 My.Application.Log 写入信息的位置](walkthrough-determining-where-my-application-log-writes-information.md)
+- [演练：确定 My.Application.Log 在哪里写入信息](walkthrough-determining-where-my-application-log-writes-information.md)

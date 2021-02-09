@@ -1,15 +1,16 @@
 ---
+description: 详细了解：3.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份验证的更改
 title: 3\.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份验证的更改
 ms.date: 03/30/2017
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
-ms.openlocfilehash: 388e6dc648e1fd68e24a852cb08de107f09f9c9f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cdb17317dbafc167cce7a9b2785be68a35d3bd5b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "64754876"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791629"
 ---
-# <a name="changes-to-ntlm-authentication-for-httpwebrequest-in-version-35-sp1"></a>3\.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份验证的更改
+# <a name="changes-to-ntlm-authentication-for-httpwebrequest-in-version-35-sp1"></a>3.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份验证的更改
 
 在 .NET Framework 版本 3.5 SP1 及以上版本中做出了安全性更改，这些更改影响以下类处理集成式 Windows 身份验证的方式：<xref:System.Net.HttpWebRequest>、 <xref:System.Net.HttpListener>、 <xref:System.Net.Security.NegotiateStream>以及 System.Net 命名空间中的相关类。 这些更改会影响使用这些类来发出 Web 请求和接收响应的应用程序，这些应用程序使用基于 NTLM 的集成式 Windows 身份验证。 此更改会影响配置为使用集成式 Windows 身份验证的 Web 服务器和客户端应用程序。
 
@@ -19,7 +20,7 @@ ms.locfileid: "64754876"
 
 <xref:System.Net> 和 <xref:System.Net.Security> 命名空间中的多个组件代表调用应用程序执行集成式 Windows 身份验证。 本部分介绍为扩展 System.Net 组件在使用集成式 Windows 身份验证方面的保护对这些组件做出的更改。
 
-## <a name="changes"></a>Changes
+## <a name="changes"></a>更改
 
 与集成式 Windows 身份验证搭配使用的 NTLM 身份验证过程包括由目标计算机发出并发送回客户端计算机的质询。 计算机接收到它自己产生的质询时，身份验证将失败，除非连接为环回连接（例如 IPv4 地址 127.0.0.1）。
 

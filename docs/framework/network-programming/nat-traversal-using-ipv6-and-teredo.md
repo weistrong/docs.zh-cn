@@ -1,13 +1,14 @@
 ---
+description: 详细了解：使用 IPv6 和 Teredo 的 NAT 遍历
 title: 使用 IPv6 和 Teredo 的 NAT 遍历
 ms.date: 03/30/2017
 ms.assetid: 568cd245-3300-49ef-a995-d81bf845d961
-ms.openlocfilehash: a6448ddf117e1f454338869820751ae5d9e0070e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4ff7f273c01ef52f4d307cbd3e0698c5cc2ead4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785739"
 ---
 # <a name="nat-traversal-using-ipv6-and-teredo"></a>使用 IPv6 和 Teredo 的 NAT 遍历
 

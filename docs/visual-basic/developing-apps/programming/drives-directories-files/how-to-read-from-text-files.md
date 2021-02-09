@@ -1,4 +1,5 @@
 ---
+description: 详细了解：操作说明：在 Visual Basic 中读取文本文件
 title: 如何：读取文本文件
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - examples [Visual Basic], reading text files
 - text files [Visual Basic], reading
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
-ms.openlocfilehash: 0d99209ed123686355e8d49c82ba23f94084f895
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 76f8bbbb7a0064818d324fc6dd9f1f37f7271401
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411611"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797427"
 ---
 # <a name="how-to-read-from-text-files-in-visual-basic"></a>如何：在 Visual Basic 中读取文本文件
 
@@ -22,7 +23,7 @@ ms.locfileid: "84411611"
 若要读取包含扩展字符的文件，则需要指定文件编码。
 
 > [!NOTE]
-> 若要以一次读取一行文本的方式读取文件，请使用 <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.OpenTextFileReader%2A> 对象的 `My.Computer.FileSystem` 方法。 `OpenTextFileReader` 方法返回 <xref:System.IO.StreamReader> 对象。 可以使用 <xref:System.IO.StreamReader.ReadLine%2A> 对象的 `StreamReader` 方法以一次读取一行的方式读取文件。 可以使用 <xref:System.IO.StreamReader.EndOfStream%2A> 对象的 `StreamReader` 方法测试文件的结尾。
+> 若要以一次读取一行文本的方式读取文件，请使用 <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.OpenTextFileReader%2A> 对象的 `My.Computer.FileSystem` 方法。 `OpenTextFileReader` 方法将返回 <xref:System.IO.StreamReader> 对象。 可以使用 <xref:System.IO.StreamReader.ReadLine%2A> 对象的 `StreamReader` 方法以一次读取一行的方式读取文件。 可以使用 <xref:System.IO.StreamReader.EndOfStream%2A> 对象的 `StreamReader` 方法测试文件的结尾。
 
 ## <a name="to-read-from-a-text-file"></a>读取文本文件
 
@@ -60,7 +61,7 @@ ms.locfileid: "84411611"
 
 在应用程序中使用输入的数据之前，需验证所有的输入内容。 文件的内容可能不是预期内容，并且用来读取该文件的方法可能失败。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A>
@@ -68,6 +69,6 @@ ms.locfileid: "84411611"
 - [如何：读取逗号分隔的文本文件](how-to-read-from-comma-delimited-text-files.md)
 - [如何：读取固定宽度的文本文件](how-to-read-from-fixed-width-text-files.md)
 - [如何：读取具有多种格式的文本文件](how-to-read-from-text-files-with-multiple-formats.md)
-- [排除故障：读取和写入文本文件](troubleshooting-reading-from-and-writing-to-text-files.md)
+- [疑难解答：读取和写入文本文件](troubleshooting-reading-from-and-writing-to-text-files.md)
 - [演练：在 Visual Basic 中操作文件和目录](walkthrough-manipulating-files-and-directories.md)
 - [文件编码](file-encodings.md)

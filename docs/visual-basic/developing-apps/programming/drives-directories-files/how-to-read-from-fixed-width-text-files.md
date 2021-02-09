@@ -1,4 +1,5 @@
 ---
+description: 详细了解：如何：在 Visual Basic 中读取定宽文本文件
 title: 如何：读取固定宽度的文本文件
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - text files [Visual Basic], tasks
 - text files [Visual Basic], reading
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
-ms.openlocfilehash: 77b2e0a4ebe36b68501f821ef5731935ee3b16a7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4f5868fa68009851cc65eeaf5ff6431ac22840d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411624"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797453"
 ---
 # <a name="how-to-read-from-fixed-width-text-files-in-visual-basic"></a>如何：在 Visual Basic 中读取定宽文本文件
 
@@ -23,7 +24,7 @@ ms.locfileid: "84411624"
   
 ### <a name="to-parse-a-fixed-width-text-file"></a>分析定宽文本文件  
   
-1. 创建一个新的 `TextFieldParser`。 下面的代码创建名为 `Reader` 的 `TextFieldParser`，并打开 `test.log` 文件。  
+1. 创建新的 `TextFieldParser`。 下面的代码创建名为 `Reader` 的 `TextFieldParser`，并打开 `test.log` 文件。  
   
      [!code-vb[VbFileIORead#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#9)]  
   
@@ -49,7 +50,7 @@ ms.locfileid: "84411624"
 
  以下情况可能会导致异常：  
   
-- 无法使用指定的格式 (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>) 分析行。 此异常消息指定导致发生异常的行，同时将 <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> 属性分配给该行中包含的文本。  
+- 无法使用指定的格式分析行 (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>)。 此异常消息指定导致发生异常的行，同时将 <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> 属性分配给该行中包含的文本。  
   
 - 指定的文件不存在 (<xref:System.IO.FileNotFoundException>)。  
   

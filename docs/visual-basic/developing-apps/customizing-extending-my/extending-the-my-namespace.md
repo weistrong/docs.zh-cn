@@ -1,4 +1,5 @@
 ---
+description: 详细了解：扩展 Visual Basic 中的 `My` 命名空间
 title: 扩展 My 命名空间
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - My namespace
 - My namespace [Visual Basic], extending
 ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
-ms.openlocfilehash: 2a7b0b84061fccd9a333a68e4a19477bd19ca4ff
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 896e85da14e6e8a417c93560b1d3b78a5954b769
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74330317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797960"
 ---
 # <a name="extending-the-my-namespace-in-visual-basic"></a>扩展 Visual Basic 中的 `My` 命名空间
 
@@ -53,7 +54,7 @@ Visual Basic 中的 `My` 命名空间公开有关应用程序、计算机等的�
 
 ## <a name="adding-events-to-custom-my-objects"></a>将事件添加到自定义 `My` 对象
 
-通过扩展 `My` 命名空间中的 `MyApplication` 分部类，可以使用 `My.Application` 对象公开自定义 `My` 对象的事件。 对于基于 Windows 的项目，可以在**解决方案资源管理器**中双击项目的“ My 项目”节点  。 在 Visual Basic **项目设计器**中，单击“应用程序”选项卡，然后单击“查看应用程序事件”按钮   。 将创建一个名为 *ApplicationEvents.vb* 的新文件。 它包含以下用于扩展 `MyApplication` 类的代码：
+通过扩展 `My` 命名空间中的 `MyApplication` 分部类，可以使用 `My.Application` 对象公开自定义 `My` 对象的事件。 对于基于 Windows 的项目，可以在 **解决方案资源管理器** 中双击项目的“ My 项目”节点  。 在 Visual Basic **项目设计器** 中，单击“应用程序”选项卡，然后单击“查看应用程序事件”按钮   。 将创建一个名为 *ApplicationEvents.vb* 的新文件。 它包含以下用于扩展 `MyApplication` 类的代码：
 
 [!code-vb[VbVbcnExtendingMy#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnExtendingMy/VB/Class1.vb#5)]
 

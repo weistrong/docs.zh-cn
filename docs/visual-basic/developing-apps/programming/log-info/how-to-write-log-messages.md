@@ -1,15 +1,16 @@
 ---
-title: 如何：编写日志消息
+description: 详细了解：操作说明：编写日志消息 (Visual Basic)
+title: 如何：写入日志消息
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application.Log object, writing log messages
 ms.assetid: 972a3e0c-2996-4623-a7a9-d7ebc4d207f8
-ms.openlocfilehash: 28c5fe77e2711dfcac96e621a90fb9506eb74775
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ed455fdb2cebda908981514bef932942adf499ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410044"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797297"
 ---
 # <a name="how-to-write-log-messages-visual-basic"></a>如何：编写日志消息 (Visual Basic)
 
@@ -27,7 +28,7 @@ ms.locfileid: "84410044"
 
 请确保写入日志的数据不包含敏感信息，如用户密码。 有关详细信息，请参阅[使用应用程序日志](working-with-application-logs.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>

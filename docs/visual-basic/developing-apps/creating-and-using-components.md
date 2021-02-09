@@ -1,15 +1,16 @@
 ---
+description: 详细了解：创建和使用组件 (Visual Basic)
 title: 创建和使用组件
 ms.date: 07/20/2015
 helpviewer_keywords:
 - components [Visual Basic]
 ms.assetid: ee6a4156-73f7-4e9b-8e01-c74c4798b65c
-ms.openlocfilehash: 106b8791ee5cb3db95759ccca2fddd799661ef3c
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: f59b4774556d95dcbc1befb16409d68a51c50535
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282059"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666584"
 ---
 # <a name="creating-and-using-components-in-visual-basic"></a>创建和使用组件 (Visual Basic)
 
@@ -39,7 +40,7 @@ ms.locfileid: "93282059"
   
 - <xref:System.ComponentModel.Component>. <xref:System.ComponentModel.IComponent> 接口的基实现。 此类可以实现在应用程序之间共享对象。  
   
-- <xref:System.ComponentModel.MarshalByValueComponent>. <xref:System.ComponentModel.IComponent> 接口的基实现。  
+- <xref:System.ComponentModel.MarshalByValueComponent>。 <xref:System.ComponentModel.IComponent> 接口的基实现。  
   
 - <xref:System.ComponentModel.Container>. <xref:System.ComponentModel.IContainer> 接口的基实现。 此类封装零个或多个组件。  
   
@@ -47,17 +48,17 @@ ms.locfileid: "93282059"
   
 - <xref:System.ComponentModel.License>. 所有许可证的抽象基类。 对组件的特定实例授予许可证。  
   
-- <xref:System.ComponentModel.LicenseManager>. 提供属性和方法，用以将许可证添加到组件和管理 <xref:System.ComponentModel.LicenseProvider>。  
+- <xref:System.ComponentModel.LicenseManager>。 提供属性和方法，用以将许可证添加到组件和管理 <xref:System.ComponentModel.LicenseProvider>。  
   
-- <xref:System.ComponentModel.LicenseProvider>. 实现许可证提供程序的抽象基类。  
+- <xref:System.ComponentModel.LicenseProvider>。 实现许可证提供程序的抽象基类。  
   
 - <xref:System.ComponentModel.LicenseProviderAttribute>. 指定要与某个类一起使用的 <xref:System.ComponentModel.LicenseProvider> 类。  
   
  常用于描述和保存组件的类。  
   
-- <xref:System.ComponentModel.TypeDescriptor>. 提供有关组件特征的信息，如组件的特性、属性和事件。  
+- <xref:System.ComponentModel.TypeDescriptor>。 提供有关组件特征的信息，如组件的特性、属性和事件。  
   
-- <xref:System.ComponentModel.EventDescriptor>. 提供有关事件的信息。  
+- <xref:System.ComponentModel.EventDescriptor>。 提供有关事件的信息。  
   
 - <xref:System.ComponentModel.PropertyDescriptor>. 提供有关属性的信息。  
   

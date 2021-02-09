@@ -1,5 +1,6 @@
 ---
-title: 如何：在另一个目录中创建文件的副本
+description: 详细了解：操作说明：在 Visual Basic 中在不同的目录中创建文件的副本
+title: 如何：在不同的目录中创建文件的副本
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Computer.FileSystem.CopyFile method, copying files [Visual Basic]
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CopyFile method [Visual Basic], copying files in Visual Basic
 - I/O [Visual Basic], copying files
 ms.assetid: 88e2145c-d414-45a5-ad03-6f5d58ecca26
-ms.openlocfilehash: 3b4b41e105d6bb6a17fbb688aa4718b33c23b9d6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 128a813ec3e5c759d5320d59a1e83f9d66af3bbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401688"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797635"
 ---
 # <a name="how-to-create-a-copy-of-a-file-in-a-different-directory-in-visual-basic"></a>如何：在 Visual Basic 中在不同的目录中创建文件的副本
 
@@ -63,5 +64,5 @@ ms.locfileid: "84401688"
 - <xref:Microsoft.VisualBasic.FileIO.UICancelOption>
 - [如何：将具有特定模式的文件复制到目录中](how-to-copy-files-with-a-specific-pattern-to-a-directory.md)
 - [如何：在同一目录中创建文件副本](how-to-create-a-copy-of-a-file-in-the-same-directory.md)
-- [如何：将一个目录复制到另一个目录](how-to-copy-a-directory-to-another-directory.md)
+- [如何：将目录复制到另一个目录](how-to-copy-a-directory-to-another-directory.md)
 - [如何：重命名文件](how-to-rename-a-file.md)

@@ -1,22 +1,23 @@
 ---
+description: 详细了解：演练：更改 My.Application.Log 写入信息的位置 (Visual Basic)
 title: 更改 My.Application.Log 写入信息的位置
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application.Log object, walkthroughs
 - event logs, changing output location
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
-ms.openlocfilehash: f9e45cdf4507840f62e32678f4c0a7be2c0be054
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aa4e1b8ce33e2afd8dd51c68340feb3e85eb8966
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398287"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731417"
 ---
 # <a name="walkthrough-changing-where-myapplicationlog-writes-information-visual-basic"></a>演练：更改 My.Application.Log 写入信息的位置 (Visual Basic)
 
 可以使用 `My.Application.Log` 和 `My.Log` 对象来记录有关应用程序中所发生事件的信息。 本演练将演示如何重写默认设置，以及如何使 `Log` 对象将信息写入其他日志侦听器。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 
 `Log` 对象可以将信息写入多个日志侦听器。 在更改配置之前，需要确定日志侦听器的当前配置。 有关详细信息，请参阅[演练：确定 My.Application.Log 写入信息的位置](walkthrough-determining-where-my-application-log-writes-information.md)。
 
@@ -24,7 +25,7 @@ ms.locfileid: "84398287"
 
 ### <a name="to-add-listeners"></a>添加侦听器
 
-1. 在“解决方案资源管理器”  中右键单击 app.config，然后选择“打开”  。
+1. 在“解决方案资源管理器”  中右键单击 app.config，然后选择“打开” 。
 
      \- 或 -
 
@@ -32,7 +33,7 @@ ms.locfileid: "84398287"
 
     1. 在 **“项目”** 菜单上选择 **“添加新项”** 。
 
-    2. 在“添加新项”  对话框中，选择“应用程序配置文件”  。
+    2. 在“添加新项”  对话框中，选择“应用程序配置文件” 。
 
     3. 单击 **添加**。
 
@@ -190,4 +191,4 @@ ms.locfileid: "84398287"
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType>
 - <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>
 - [如何：将事件信息写入文本文件](how-to-write-event-information-to-a-text-file.md)
-- [如何：写入应用程序事件日志](how-to-write-to-an-application-event-log.md)
+- [如何：将信息写入应用程序事件日志](how-to-write-to-an-application-event-log.md)

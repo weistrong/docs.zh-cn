@@ -1,4 +1,5 @@
 ---
+description: 详细了解：创建、删除和移动文件和目录 (Visual Basic)
 title: 创建、删除和移动文件和目录
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - I/O [Visual Basic], renaming folders
 - I/O [Visual Basic], moving files
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
-ms.openlocfilehash: 12f5e8d29ea92750884e45bf1d9ef05bbfe672b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3f0a718a5222fc9840152b3379ce3d56af25f9c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666298"
 ---
 # <a name="creating-deleting-and-moving-files-and-directories-in-visual-basic"></a>创建、删除和移动文件和目录 (Visual Basic)
 
@@ -59,7 +60,7 @@ ms.locfileid: "84401753"
  [如何：重命名文件](how-to-rename-a-file.md)  
  演示如何重命名文件。  
   
- [如何：将一个目录复制到另一个目录](how-to-copy-a-directory-to-another-directory.md)  
+ [如何：将目录复制到另一个目录](how-to-copy-a-directory-to-another-directory.md)  
  演示如何将目录复制到另一位置。  
   
  [如何：创建目录](how-to-create-a-directory.md)  

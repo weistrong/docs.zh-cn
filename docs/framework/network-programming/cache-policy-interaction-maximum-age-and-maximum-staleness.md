@@ -1,4 +1,5 @@
 ---
+description: 详细了解：缓存策略交互 — 最长使用期限和最长过期时间
 title: 缓存策略交互 — 最长使用期限和最长过期时间
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - staleness of cached resources
 - age of cached resources
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
-ms.openlocfilehash: bdfa608b5169755b2b4daaaa26e562308ae2be01
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 909a7203d4c9813c90dc0dea9bae7f8a1f7336cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791655"
 ---
 # <a name="cache-policy-interactionmaximum-age-and-maximum-staleness"></a>缓存策略交互 — 最长使用期限和最长过期时间
 
@@ -43,4 +44,4 @@ ms.locfileid: "96250601"
 - [基于位置的缓存策略](location-based-cache-policies.md)
 - [基于时间的缓存策略](time-based-cache-policies.md)
 - [在网络应用程序中配置缓存](configuring-caching-in-network-applications.md)
-- [缓存策略交互 — 最长使用时间和最低新鲜度](cache-policy-interaction-maximum-age-and-minimum-freshness.md)
+- [缓存策略交互 — 最长使用期限和最低新鲜度](cache-policy-interaction-maximum-age-and-minimum-freshness.md)

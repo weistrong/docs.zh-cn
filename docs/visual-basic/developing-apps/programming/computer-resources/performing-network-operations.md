@@ -1,16 +1,17 @@
 ---
+description: 详细了解：执行网络操作 (Visual Basic)
 title: 执行网络操作
 ms.date: 07/20/2015
 helpviewer_keywords:
 - network operations, performing
 - My.Computer.Network object, tasks
 ms.assetid: 8ecc47ce-7730-49cd-b21d-3a13477eec6b
-ms.openlocfilehash: 67cfc1363c840c98f1df6529498fce1a82a0a5bf
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c4d2d867d9cec85562c93fb40fb688ba07fa6599
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360145"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792318"
 ---
 # <a name="performing-network-operations-visual-basic"></a>执行网络操作 (Visual Basic)
 
@@ -18,7 +19,7 @@ ms.locfileid: "84360145"
   
 ## <a name="in-this-section"></a>本节内容  
 
- [如何：上载文件](how-to-upload-a-file.md)  
+ [如何：上传文件](how-to-upload-a-file.md)  
  演示如何使用 `My.Computer.Network` 上传文件并将文件存储到远程位置。  
   
  [如何：下载文件](how-to-download-a-file.md)  

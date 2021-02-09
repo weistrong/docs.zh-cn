@@ -1,16 +1,17 @@
 ---
+description: 详细了解：操作说明：在 Visual Basic 中查找具有特定模式的子目录
 title: 如何：查找具有特定模式的子目录
 ms.date: 07/20/2015
 helpviewer_keywords:
 - pattern matching
 - folders, finding
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
-ms.openlocfilehash: 5b57914a518b568732955e5c73bb2031824c84dd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aaf1fe0e844c6a3db2b011289613a80dbd1b43fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401623"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797544"
 ---
 # <a name="how-to-find-subdirectories-with-a-specific-pattern-in-visual-basic"></a>如何：在 Visual Basic 中查找具有特定模式的子目录
 

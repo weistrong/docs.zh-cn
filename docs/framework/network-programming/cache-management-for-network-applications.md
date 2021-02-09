@@ -1,4 +1,5 @@
 ---
+description: 详细了解：网络应用程序的缓存管理
 title: 网络应用程序的缓存管理
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - network resources, caching
 - Internet, caching
 ms.assetid: fc258a40-f370-434f-ae09-4a8cb11ddaeb
-ms.openlocfilehash: 81f0eaa33b185c6bfbc8758e73a68a6bfc248872
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6383403b41440f26b29fbb5a22c5b25ee6aab465
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791668"
 ---
 # <a name="cache-management-for-network-applications"></a>网络应用程序的缓存管理
 
@@ -21,7 +22,7 @@ ms.locfileid: "96287561"
   
  缓存可以允许未经授权的用户或进程读取敏感数据。 在无需进行额外授权的情况下，可以从缓存中检索缓存的已经过身份验证的响应。 如果已启用缓存，请将 <xref:System.Net.WebRequest.CachePolicy%2A> 更改为 <xref:System.Net.Cache.RequestCacheLevel.BypassCache> 或 <xref:System.Net.Cache.RequestCacheLevel.NoCacheNoStore> 以针对此请求禁用缓存。  
   
- 出于安全考虑，不建议将缓存用于中间层方案  。  
+ 出于安全考虑，不建议将缓存用于中间层方案。  
   
 ## <a name="in-this-section"></a>本节内容  
 

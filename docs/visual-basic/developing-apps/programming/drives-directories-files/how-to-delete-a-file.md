@@ -1,4 +1,5 @@
 ---
+description: 详细了解：操作说明：在 Visual Basic 中删除文件
 title: 如何：删除文件
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - files [Visual Basic], manipulating
 - File object
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
-ms.openlocfilehash: 0c8213786b8073d784f1f3ea51417741d5ad4cba
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 49bfe2e4a0d9114e2f653ae14dab303e35e2dfeb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401649"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797570"
 ---
 # <a name="how-to-delete-a-file-in-visual-basic"></a>如何：在 Visual Basic 中删除文件
 
-通过 `My.Computer.FileSystem` 对象的 `DeleteFile` 方法，可以删除文件。 它提供的选项包括：是否将已删除的文件发送到“回收站”  、是否要求用户确认应删除该文件，以及当用户取消操作时要执行的操作。  
+通过 `My.Computer.FileSystem` 对象的 `DeleteFile` 方法，可以删除文件。 它提供的选项包括：是否将已删除的文件发送到“回收站”、是否要求用户确认应删除该文件，以及当用户取消操作时要执行的操作。  
   
 ### <a name="to-delete-a-text-file"></a>删除文本文件  
   
@@ -32,7 +33,7 @@ ms.locfileid: "84401649"
   
 ### <a name="to-delete-a-text-file-and-send-it-to-the-recycle-bin"></a>删除文本文件并将其发送到“回收站”  
   
-- 使用 `DeleteFile` 方法删除文件，并为 `recycle` 参数指定 `SendToRecycleBin`。 以下代码演示如何删除名为 `test.txt` 的文件并将其发送到“回收站”  。  
+- 使用 `DeleteFile` 方法删除文件，并为 `recycle` 参数指定 `SendToRecycleBin`。 以下代码演示如何删除名为 `test.txt` 的文件并将其发送到“回收站”。  
   
      [!code-vb[VbFileIOMisc#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#10)]  
   

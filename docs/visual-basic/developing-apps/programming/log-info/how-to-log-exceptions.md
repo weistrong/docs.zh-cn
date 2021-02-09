@@ -1,22 +1,23 @@
 ---
-title: 如何：日志异常
+description: 详细了解：操作说明：在 Visual Basic 中记录异常
+title: 如何：记录异常
 ms.date: 07/20/2015
 helpviewer_keywords:
 - exceptions, logging
 - exceptions, tracking
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
-ms.openlocfilehash: 59ed7b836126a38f32b7c6f479570a566d236e6c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a4155de4e73c632edf071256976161cfdbffba77
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410109"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775209"
 ---
 # <a name="how-to-log-exceptions-in-visual-basic"></a>如何：在 Visual Basic 中记录异常
 
 可以使用 `My.Application.Log` 和 `My.Log` 对象来记录有关应用程序中所发生异常的信息。 这些示例演示如何使用 `My.Application.Log.WriteException` 方法来记录显式捕获的异常和未处理的异常。  
   
- 若要记录跟踪信息，请使用 `My.Application.Log.WriteEntry` 方法。 有关详细信息，请参阅<xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>。  
+ 若要记录跟踪信息，请使用 `My.Application.Log.WriteEntry` 方法。 有关详细信息，请参阅 <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>  
   
 ### <a name="to-log-a-handled-exception"></a>记录已处理的异常  
   
@@ -52,9 +53,9 @@ ms.locfileid: "84410109"
   
      此时将打开 ApplicationEvents.vb 文件。  
   
-4. 在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件”  。  
+4. 在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件” 。  
   
-5. 在“声明”  菜单上，选择“UnhandledException”  。  
+5. 在“声明”菜单上，选择“UnhandledException”。  
   
      在主应用程序运行之前，应用程序将引发 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> 事件。  
   
@@ -66,12 +67,12 @@ ms.locfileid: "84410109"
   
      [!code-vb[VbVbalrMyApplicationLog#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/MyEventsFake.vb#5)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>
 - [使用应用程序日志](working-with-application-logs.md)
-- [如何：编写日志消息](how-to-write-log-messages.md)
+- [如何：写入日志消息](how-to-write-log-messages.md)
 - [演练：确定 My.Application.Log 写入信息的位置](walkthrough-determining-where-my-application-log-writes-information.md)
-- [演练：更改 My.Application.Log 写入信息的位置](walkthrough-changing-where-my-application-log-writes-information.md)
+- [演练：更改 My.Application.Log 在哪里写入信息](walkthrough-changing-where-my-application-log-writes-information.md)

@@ -1,4 +1,5 @@
 ---
+description: 详细了解：演练：筛选 My.Application.Log 输出 (Visual Basic)
 title: 筛选 My.Application.Log 输出
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My.Application.Log object, filtering output
 - application event logs, output filtering
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
-ms.openlocfilehash: e77a56b2be33555bc02157c8e643ac655b083bc3
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 0fa64bde27be17b1809e45bfe294e70c7dd33563
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282205"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792253"
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>演练：筛选 My.Application.Log 输出 (Visual Basic)
 
@@ -84,7 +85,7 @@ ms.locfileid: "93282205"
 
     2. 在“添加新项”  对话框中，选择“应用程序配置文件”  。
 
-    3. 单击 **添加** 。
+    3. 单击 **添加**。
 
 2. 找到 `<switches>` 部分，该部分位于 `<system.diagnostics>` 部分中，后者位于顶级 `<configuration>` 部分中。
 
@@ -160,7 +161,7 @@ ms.locfileid: "93282205"
 
     2. 在“添加新项”  对话框中，选择“应用程序配置文件”  。
 
-    3. 单击 **添加** 。
+    3. 单击 **添加**。
 
 2. 在“解决方案资源管理器”中右键单击 app.config。  选择“打开”。 
 

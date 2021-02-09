@@ -1,5 +1,6 @@
 ---
-title: 如何：当应用程序启动或关闭时记录消息
+description: 详细了解：操作说明：当应用程序启动或关闭时记录消息 (Visual Basic)
+title: 如何：在应用程序启动或关闭时记录消息
 ms.date: 07/20/2015
 helpviewer_keywords:
 - event logs, shutdown
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Shutdown event [Visual Basic]
 - My.Log object, logging
 ms.assetid: 67624d05-cddf-48b7-8c36-5c99baa4c621
-ms.openlocfilehash: ac5fb17e527bcbcb55f98ec0ced06c152555ce6c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 545a57c3666aa12e3763961d05067face9fe324a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775183"
 ---
 # <a name="how-to-log-messages-when-the-application-starts-or-shuts-down-visual-basic"></a>如何：当应用程序启动或关闭时记录消息 (Visual Basic)
 
@@ -32,9 +33,9 @@ ms.locfileid: "84410070"
   
 ### <a name="to-log-messages-when-the-application-starts"></a>在应用程序启动时记录消息  
   
-1. 在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件”  。  
+1. 在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件” 。  
   
-2. 在“声明”  菜单上，选择“启动”  。  
+2. 在“声明”  菜单上，选择“启动” 。  
   
      在主应用程序运行之前，应用程序将引发 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> 事件。  
   
@@ -44,9 +45,9 @@ ms.locfileid: "84410070"
   
 ### <a name="to-log-messages-when-the-application-shuts-down"></a>在应用程序关闭时记录消息  
   
-1. 在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件”  。  
+1. 在“代码编辑器”中打开 ApplicationEvents.vb 文件。 在“常规”  菜单上，选择“MyApplication 事件” 。  
   
-2. 在“声明”  菜单上，选择“关闭”  。  
+2. 在“声明”  菜单上，选择“关闭” 。  
   
      在主应用程序运行之后、关闭之前，应用程序将引发 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown> 事件。  
   

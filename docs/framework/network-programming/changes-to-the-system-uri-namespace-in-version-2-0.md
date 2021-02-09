@@ -1,13 +1,14 @@
 ---
+description: 详细了解：对 2.0 版中的 System.Uri 命名空间的更改
 title: 对 2.0 版中的 System.Uri 命名空间的更改
 ms.date: 03/30/2017
 ms.assetid: 35883fe9-2d09-4d8b-80ca-cf23a941e459
-ms.openlocfilehash: 987010b8367069e8089df3f809d23f258bb68f2b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8b5e2f2b3b59fba96e20e40a4df18273a2f6034f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "61642758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791616"
 ---
 # <a name="changes-to-the-systemuri-namespace-in-version-20"></a>对 2.0 版中的 System.Uri 命名空间的更改
 
@@ -37,7 +38,7 @@ ms.locfileid: "61642758"
 
 - <xref:System.Uri.EscapeString%2A>
 
-## <a name="changes"></a>Changes
+## <a name="changes"></a>更改
 
 - 对于已知不含有查询部件（文件、ftp 等）的 URI 方案，“?”字符始终转义，不将它视为 <xref:System.Uri.Query%2A> 部件的开头。
 

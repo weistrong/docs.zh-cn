@@ -1,15 +1,16 @@
 ---
+description: 详细了解：在 .NET Framework 文件 I/O 和文件系统中使用的类 (Visual Basic)
 title: 在 .NET Framework 文件 I/O 和文件系统中使用的类
 ms.date: 07/20/2015
 helpviewer_keywords:
 - file I/O classes
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
-ms.openlocfilehash: 2c696d5b8c83ae55caf61e4710630ad1e34c088d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a8cbe476044df92fcdbdd0421b91f3c7c098e063
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666324"
 ---
 # <a name="classes-used-in-net-framework-file-io-and-the-file-system-visual-basic"></a>在 .NET Framework 文件 I/O 和文件系统中使用的类 (Visual Basic)
 

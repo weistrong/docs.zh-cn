@@ -1,16 +1,17 @@
 ---
+description: 详细了解：安全性与注册表 (Visual Basic)
 title: 安全性与注册表
 ms.date: 07/20/2015
 helpviewer_keywords:
 - security [Visual Basic], registry
 - registry [Visual Basic], security issues
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
-ms.openlocfilehash: 2eba9d177769b22de3f931bc7af4905a80e316b5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2dc6413328bc32c004d281b096ee095d4f827feb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359963"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666376"
 ---
 # <a name="security-and-the-registry-visual-basic"></a>安全性与注册表 (Visual Basic)
 
@@ -26,13 +27,13 @@ ms.locfileid: "84359963"
   
  通过 <xref:System.Security.Permissions.RegistryPermissionAccess> 枚举定义注册表权限访问值。 下表详细说明了其成员。  
   
-|“值”|对注册表变量的访问|  
+|Value|对注册表变量的访问|  
 |-----------|----------------------------------|  
 |`AllAccess`|创建、读取和写入|  
 |`Create`|创建|  
 |`NoAccess`|无访问权限|  
 |`Read`|读取|  
-|`Write`|Write|  
+|`Write`|写入|  
   
 ## <a name="checking-values-in-registry-keys"></a>检查注册表项中的值  
 

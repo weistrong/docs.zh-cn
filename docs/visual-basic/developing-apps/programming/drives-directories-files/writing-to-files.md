@@ -1,4 +1,5 @@
 ---
+description: 详细了解：写入文件 (Visual Basic)
 title: 写入文件
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - writing to files [Visual Basic]
 - Visual Basic, writing to files
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
-ms.openlocfilehash: 06809ce8a846ea06ff2decdd87f304d1b26a7750
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c56714a0f8c2679a99fd0851999d886b426e62fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775274"
 ---
 # <a name="writing-to-files-in-visual-basic"></a>写入文件 (Visual Basic)
 
@@ -31,7 +32,7 @@ ms.locfileid: "84406607"
  演示如何写入二进制文件。  
   
  [如何：将文本写入“我的文档”目录中的文件](how-to-write-text-to-files-in-the-my-documents-directory.md)  
- 演示如何创建并写入“我的文档”  目录中的新文本文件。  
+ 演示如何创建并写入“我的文档”目录中的新文本文件。  
   
  [如何：使用 StreamWriter 向文件中写入文本](how-to-write-text-to-files-with-a-streamwriter.md)  
  演示如何使用 <xref:System.IO.StreamWriter?displayProperty=nameWithType> 对象写入文件。  

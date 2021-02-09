@@ -1,4 +1,5 @@
 ---
+description: 详细了解：操作说明：在 Visual Basic 中将文本写入“我的文档”目录中的文件
 title: 如何：将文本写入“我的文档”目录中的文件
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - examples [Visual Basic], text files
 - writing to files [Visual Basic], in My Documents
 ms.assetid: 1c726124-781d-4976-9baa-ed46814ff3fe
-ms.openlocfilehash: bb3a9bdc44f86fbcdb3c56ee088740efdfebe95d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: da7472e9d8d4c39509dda814a18e7c0149236eeb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797362"
 ---
 # <a name="how-to-write-text-to-files-in-the-my-documents-directory-in-visual-basic"></a>如何：在 Visual Basic 中将文本写入“我的文档”目录中的文件
 
-`My.Computer.FileSystem.SpecialDirectories` 对象允许用户访问特殊目录，如 MyDocuments  目录。  
+`My.Computer.FileSystem.SpecialDirectories` 对象允许用户访问特殊目录，如 MyDocuments 目录。  
   
 ## <a name="procedure"></a>过程  
   
@@ -44,9 +45,9 @@ ms.locfileid: "90546453"
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
 
- 如果在部分信任上下文中运行，该代码可能会因特权不足而引发异常。 有关详细信息，请参阅[代码访问安全性基础知识](../../../../framework/misc/code-access-security-basics.md)。  
+ 如果在部分信任上下文中运行，该代码可能会因特权不足而引发异常。 有关详细信息，请参阅 [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md)。  
   
- 此示例创建一个新文件。 如果某个应用程序需要创建文件，则该应用程序需要文件夹的“创建”权限。 可使用访问控制列表设置权限。 如果文件已存在，则该应用程序只需要“写入”权限（这是较弱的权限）。 如有可能，在部署过程中创建文件，并且仅授予针对单个文件的“读取”权限（而不是针对文件夹授予“创建”权限）会更加安全。 此外，较安全的做法是将数据写入用户文件夹，而不是根文件夹或“Program Files”  文件夹。 有关详细信息，请参阅 [ACL 技术概述](/previous-versions/dotnet/netframework-4.0/ms229742(v=vs.100))。  
+ 此示例创建一个新文件。 如果某个应用程序需要创建文件，则该应用程序需要文件夹的“创建”权限。 可使用访问控制列表设置权限。 如果文件已存在，则该应用程序只需要“写入”权限（这是较弱的权限）。 如有可能，在部署过程中创建文件，并且仅授予针对单个文件的“读取”权限（而不是针对文件夹授予“创建”权限）会更加安全。 此外，较安全的做法是将数据写入用户文件夹，而不是根文件夹或“Program Files”文件夹。 有关详细信息，请参阅 [ACL 技术概述](/previous-versions/dotnet/netframework-4.0/ms229742(v=vs.100))。  
   
 ## <a name="see-also"></a>另请参阅
 

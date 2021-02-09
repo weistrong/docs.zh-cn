@@ -1,13 +1,14 @@
 ---
+description: 详细了解：对等名称和 PNRP ID
 title: 对等名称和 PNRP ID
 ms.date: 03/30/2017
 ms.assetid: afa538e8-948f-4a98-aa9f-305134004115
-ms.openlocfilehash: a56200d599d417dac549af000b35024338d43796
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ff9f77917ef05754f2373369d623b66e66b5a753
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239219"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801860"
 ---
 # <a name="peer-names-and-pnrp-ids"></a>对等名称和 PNRP ID
 
@@ -27,13 +28,13 @@ ms.locfileid: "96239219"
   
  PNRP ID 由以下内容组成：  
   
-- 高序位 128 位，也就是对等 (P2P) ID，是分配至终结点的对等名称的哈希代码。 对等名称采用以下格式：*Authority.Classifier*。 对于安全名称，Authority 是对等名称公钥的安全哈希算法 1 (SHA1) 的哈希代码，是十六进制字符。 对于不安全名称，Authority 为单字符“0”。  是标识应用程序的字符串。 对等名称 Classifier 最多长 149 个字符，包括 `null` 终止符在内。  
+- 高序位 128 位，也就是对等 (P2P) ID，是分配至终结点的对等名称的哈希代码。 对等名称采用以下格式：Authority.Classifier。 对于安全名称，Authority 是对等名称公钥的安全哈希算法 1 (SHA1) 的哈希代码，是十六进制字符。 对于不安全名称，Authority 为单字符“0”。  是标识应用程序的字符串。 对等名称 Classifier 最多长 149 个字符，包括 `null` 终止符在内。  
   
 - 低序位 128 位用于服务定位，它是标识同一云中同一 P2P ID 的不同实例的生成数字。  
   
  P2P ID 和服务定位的这种组合实现从一台计算机注册多个 PNRP ID。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.Net.PeerToPeer.PeerName>
 - <xref:System.Net.PeerToPeer>

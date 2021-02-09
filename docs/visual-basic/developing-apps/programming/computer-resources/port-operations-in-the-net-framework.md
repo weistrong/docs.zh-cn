@@ -1,15 +1,16 @@
 ---
+description: 详细了解：使用 Visual Basic 在 .NET Framework 中执行的端口操作
 title: .NET Framework 中的端口操作
 ms.date: 07/20/2015
 helpviewer_keywords:
 - ports, Visual Basic
 ms.assetid: 1eba223b-7bd3-401a-b097-982bce96df1b
-ms.openlocfilehash: 0ef0b8a7aec40603185d227d972cea655fd238c1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 072baac53589f8a5d6405eb786b4e692cbaf6181
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641520"
 ---
 # <a name="port-operations-in-the-net-framework-with-visual-basic"></a>使用 Visual Basic 在 .NET Framework 中执行的端口操作
 
@@ -24,7 +25,7 @@ ms.locfileid: "84360132"
 
 此表列出并描述了用于访问串行端口的主要枚举：
 
-|枚举|说明|
+|枚举|描述|
 |---|---|
 |<xref:System.IO.Ports.Handshake>|指定在为 <xref:System.IO.Ports.SerialPort> 对象建立串行端口通信时使用的控制协议。|
 |<xref:System.IO.Ports.Parity>|指定 <xref:System.IO.Ports.SerialPort> 对象的奇偶校验位。|

@@ -1,4 +1,5 @@
 ---
+description: 详细了解：文件编码 (Visual Basic)
 title: 文件编码
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Unicode, file encoding
 - file encoding
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
-ms.openlocfilehash: f906b2f2d747a7950c70a24549bbf5423e5b87b4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f573b5d8f83c27cbf4ddacb9fd40474d7d1be1ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401740"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675359"
 ---
 # <a name="file-encodings-visual-basic"></a>文件编码 (Visual Basic)
 
@@ -30,7 +31,7 @@ ms.locfileid: "84401740"
 
 <xref:System.Text.Encoding> 类表示字符编码。 下表列出并描述了每个可用的编码类型。
 
-|名称|说明|
+|“属性”|说明|
 |---|---|
 |<xref:System.Text.ASCIIEncoding>|表示 Unicode 字符的 ASCII 字符编码。|
 |<xref:System.Text.UnicodeEncoding>|表示 Unicode 字符的 UTF-16 编码。|
