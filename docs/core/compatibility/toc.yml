@@ -28,6 +28,8 @@
                   href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
             - name: Windows 窗体
               items:
+                - name: API 引发 ArgumentNullException
+                  href: windows-forms/6.0/apis-throw-argumentnullexception.md
                 - name: 增加了 NotifyIcon.Text 最大文本长度
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: TableLayoutSettings 属性引发 InvalidEnumArgumentException
@@ -574,6 +576,8 @@
           items:
             - name: .NET 6.0
               items:
+                - name: API 引发 ArgumentNullException
+                  href: windows-forms/6.0/apis-throw-argumentnullexception.md
                 - name: 增加了 NotifyIcon.Text 最大文本长度
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: TableLayoutSettings 属性引发 InvalidEnumArgumentException
