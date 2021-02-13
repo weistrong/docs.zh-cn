@@ -2,12 +2,12 @@
 title: 中断性变更：ConsoleLoggerOptions 上已过时的属性
 description: 了解核心 .NET 库中的以下 .NET 5.0 中断性变更：ConsoleLoggerFormat 类型和 ConsoleLoggerOptions 上的某些属性现已过时。
 ms.date: 11/01/2020
-ms.openlocfilehash: e38ba3bda371c713a8b2cb4cda8b4c585dac29f5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bd039dfa84ae3399d7fb36f992010a9a3c9f6ddf
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759260"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548378"
 ---
 # <a name="obsolete-properties-on-consoleloggeroptions"></a>ConsoleLoggerOptions 上已过时的属性
 
@@ -53,12 +53,23 @@ ms.locfileid: "95759260"
   - `"Format": "Systemd"` 映射到 `"FormatterName": "Systemd"`。
   - `"Format": "Default"` 映射到 `"FormatterName": "Simple"`。
 
-- 对于 <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors>、<xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes>、<xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat> 和 <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp> 属性，请改为在新的 <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions>、<xref:Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions> 或 <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions> 类型上使用相应的属性。 例如：
+- 对于 <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors>、<xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes>、<xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat> 和 <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp> 属性，请改为在新的 <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions>、<xref:Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions> 或 <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions> 类型上使用相应的属性。 例如，<xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors?displayProperty=nameWithType> 的相应设置为 <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions.ColorBehavior?displayProperty=nameWithType>。
+
+  之前的代码：
+
+  ```csharp
+  loggingBuilder.AddConsole(options =>
+  {
+      options.DisableColors = true;
+  });
+  ```
+
+  新代码：
 
   ```csharp
   loggingBuilder.AddSimpleConsole(options =>
   {
-      options.DisableColors = true;
+      options.ColorBehavior = LoggerColorBehavior.Disabled;
   });
   ```
 

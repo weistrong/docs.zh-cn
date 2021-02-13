@@ -1,7 +1,7 @@
 ---
 title: 浮点数值类型 - C# 引用
 description: 了解内置 C# 浮点类型：float、double 和 decimal
-ms.date: 02/10/2020
+ms.date: 02/04/2021
 f1_keywords:
 - float
 - float_CSharpKeyword
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - floating-point numbers [C#], float keyword
 - double data type [C#]
 - decimal keyword [C#]
-ms.openlocfilehash: a1142d1aa04003ae1942902672cfc7a05edc99c0
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: a086e8de60bbb63408c3f2cd557feb36c4baa0f8
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662662"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585749"
 ---
 # <a name="floating-point-numeric-types-c-reference"></a>浮点数值类型（C# 引用）
 
@@ -48,7 +48,7 @@ System.Double b = 12.3;
 
 每个浮点类型的默认值都为零，`0`。 每个浮点类型都有 `MinValue` 和 `MaxValue` 常量，提供该类型的最小值和最大有限值。 `float` and `double` 类型还提供可表示非数字和无穷大值的常量。 例如，`double` 类型提供以下常量：<xref:System.Double.NaN?displayProperty=nameWithType>、<xref:System.Double.NegativeInfinity?displayProperty=nameWithType> 和 <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>。
 
-与 `float` 和 `double` 相比，`decimal` 类型具有更高的精度和更小的范围，因此它适合于财务和货币计算。
+当所需的精度由小数点右侧的位数决定时，`decimal` 类型是合适的。 此类数字通常用于财务应用程序、货币金额（例如 $1.00）、利率（例如 2.625%）等。 精确到只有一个小数的偶数用 `decimal` 类型处理会更准确：例如，0.1 可以由 `decimal` 实例精确表示，而没有精确表示 0.1 的 `double` 或 `float` 实例。 由于数值类型存在这种差异，因此当你对十进制数据使用 `double` 或 `float` 时，算术计算可能会出现意外的舍入错误。 当优化性能比确保准确度更重要时，可以使用 `double` 代替 `decimal`。 然而，除了大多数计算密集型应用程序之外，所有应用程序都不会注意到性能上的任何差异。 避免使用 `decimal` 的另一个可能原因是为了最大限度地降低存储需求。 例如，[ML.NET](../../../machine-learning/how-does-mldotnet-work.md) 使用 `float`，因为对于非常大的数据集，4 个字节与 16 个字节之间的差异合乎情理。 有关详细信息，请参阅 <xref:System.Decimal?displayProperty=nameWithType>。
 
 可在表达式中将[整型](integral-numeric-types.md)类型与 `float` 和 `double` 类型混合使用功能。 在这种情况下，整型类型隐式转换为其中一种浮点类型，且必要时，`float` 类型隐式转换为 `double`。 此表达式的计算方式如下：
 

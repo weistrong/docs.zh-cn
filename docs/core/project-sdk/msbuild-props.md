@@ -4,12 +4,12 @@ description: .NET SDK 可以理解的 MSBuild 属性和项的引用。
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 21bbe46cf60540c01344cc8fcb82c62ff0fbbee5
-ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
+ms.openlocfilehash: e140491c694291438fe1db7fd60d581ffed0319d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98692703"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802666"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>.NET SDK 项目的 MSBuild 引用
 
@@ -344,7 +344,12 @@ MSBuild 项上的 `CopyToPublishDirectory` 元数据控制何时将项复制到�
 
 ### <a name="analysislevel"></a>AnalysisLevel
 
-`AnalysisLevel` 属性可指定代码分析级别。 例如，如果要访问预览代码分析器，请将 `AnalysisLevel` 设置为 `preview`。 默认值为 `latest`。
+`AnalysisLevel` 属性可指定代码分析级别。 例如，如果要访问预览代码分析器，请将 `AnalysisLevel` 设置为 `preview`。
+
+默认值：
+
+- 如果你的项目以 .NET 5.0 或更高版本为目标，或你添加了 [AnalysisMode](#analysismode) 属性，则默认值为 `latest`。
+- 否则，此属性被省略，除非你将它明确添加到项目文件中。
 
 ```xml
 <PropertyGroup>
@@ -398,9 +403,6 @@ MSBuild 项上的 `CopyToPublishDirectory` 元数据控制何时将项复制到�
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
-
-> [!TIP]
-> 有关面向 .NET 5.0 之前的 .NET 版本的项目，启用 .NET 代码分析的另一种方法是将 [AnalysisLevel](#analysislevel) 属性设置为 `latest`。
 
 ### <a name="enforcecodestyleinbuild"></a>EnforceCodeStyleInBuild
 

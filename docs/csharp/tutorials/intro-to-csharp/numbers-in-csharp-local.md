@@ -1,20 +1,22 @@
 ---
 title: C# 中的数字 - C# 教程简介
 description: 通过探索数字类型及其用途、属性和方法了解 C#。
-ms.date: 10/31/2017
+ms.date: 02/02/2021
 ms.custom: mvc
-ms.openlocfilehash: 3dc2a5afc6321da45351525a632f586cb84bf7fe
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 253ecbc089722961013d058aff900bdde23fd366
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794606"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585632"
 ---
 # <a name="manipulate-integral-and-floating-point-numbers-in-c"></a>处理 C\# 中的整数和浮点数
 
 本教程以交互方式介绍了 C# 中的数字类型。 你将编写少量的代码，然后编译并运行这些代码。 本教程包含一系列课程，介绍了 C# 中的数字和数学运算。 这些课程介绍了 C# 语言的基础知识。
 
-本教程要求你有一台可用于开发的计算机。 .NET 教程 [Hello World 10 分钟入门](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)介绍了如何在 Windows、Linux 或 macOS 上设置本地开发环境。 [熟悉开发工具](local-environment.md)不仅简要概述了将用到的命令，还收录了详细信息链接。
+## <a name="prerequisites"></a>先决条件
+
+本教程要求你设置一台可用于本地开发的计算机。 在 Windows、Linux 或 macOS 上，可以使用 .NET CLI 创建、生成和运行应用程序。 在 Windows 上，可以使用 Visual Studio 2019。 有关设置说明，请参阅[设置本地环境](local-environment.md)。
 
 ## <a name="explore-integer-math"></a>探索整数数学运算
 
@@ -113,7 +115,7 @@ namespace NumbersInCSharp
 //WorkingWithIntegers();
 ```
 
-`//` 在 C# 中启动  注释。 注释是你想要保留在源代码中但不能作为代码执行的任何文本。 编译器不会从注释中生成任何可执行代码。
+`//` 在 C# 中启动 注释。 注释是你想要保留在源代码中但不能作为代码执行的任何文本。 编译器不会从注释中生成任何可执行代码。
 
 C# 语言使用与数学运算规则一致的规则，定义不同数学运算的优先级。
 乘法和除法的优先级高于加法和减法。
@@ -252,7 +254,7 @@ Console.WriteLine($"An example of overflow: {what}");
 ```
 
 可以看到，答案非常接近最小（负）整数。 与 `min + 2` 相同。
-加法运算会让整数溢出  允许的值。
+加法运算会让整数溢出允许的值。
 答案是一个非常大的负数，因为溢出从最大整数值覆盖回最小整数值。
 
 如果 `int` 类型无法满足需求，还会用到限值和精度不同的其他数字类型。 接下来，让我们来研究一下其他类型。

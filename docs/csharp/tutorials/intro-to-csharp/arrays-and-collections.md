@@ -3,18 +3,20 @@ title: 使用集合 - C# 教程简介
 description: 在本教程中通过探索列表集合了解 C#。
 ms.date: 10/13/2017
 ms.custom: mvc
-ms.openlocfilehash: e2282df21420630634911e07f4fb3b94f34a792b
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 4ecd2cfebddf460d3766d708d2f6740bd1c6e29a
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414678"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585658"
 ---
 # <a name="learn-to-manage-data-collections-using-the-generic-list-type"></a>了解如何使用泛型列表类型管理数据集合
 
 本介绍性教程介绍了 C# 语言和 <xref:System.Collections.Generic.List%601> 类的基础知识。
 
-本教程要求你有一台可用于开发的计算机。 .NET 教程 [Hello World 10 分钟入门](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)介绍了如何在 Windows、Linux 或 macOS 上设置本地开发环境。 [熟悉开发工具](local-environment.md)不仅简要概述了将用到的命令，还收录了详细信息链接。
+## <a name="prerequisites"></a>先决条件
+
+本教程要求你设置一台可用于本地开发的计算机。 在 Windows、Linux 或 macOS 上，可以使用 .NET CLI 创建、生成和运行应用程序。 在 Windows 上，可以使用 Visual Studio 2019。 有关设置说明，请参阅[设置本地环境](local-environment.md)。
 
 ## <a name="a-basic-list-example"></a>基本列表示例
 

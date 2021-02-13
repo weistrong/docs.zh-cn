@@ -3,18 +3,20 @@ title: 分支和循环 - C# 教程简介
 description: 在本教程的“分支和循环”中，将编写 C# 代码以研究支持条件分支和循环重复执行语句的语言语法。
 ms.date: 10/31/2017
 ms.custom: mvc
-ms.openlocfilehash: d67cfe359634783bb542e9ac34df52a095b45c20
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 1c93c96217abf041b14b94aafcdfe85bb7018528
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396884"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585697"
 ---
 # <a name="learn-conditional-logic-with-branch-and-loop-statements"></a>通过分支和循环语句了解条件逻辑
 
 本教程介绍了如何编写代码，从而检查变量，并根据这些变量更改执行路径。 读者可以编写 C# 代码并查看代码编译和运行结果。 本教程包含一系列课程，介绍了 C# 中的分支和循环构造。 这些课程介绍了 C# 语言的基础知识。
 
-本教程要求你有一台可用于开发的计算机。 .NET 教程 [Hello World 10 分钟入门](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)介绍了如何在 Windows、Linux 或 macOS 上设置本地开发环境。 [熟悉开发工具](local-environment.md)不仅简要概述了将用到的命令，还收录了详细信息链接。
+## <a name="prerequisites"></a>先决条件
+
+本教程要求安装一台虚拟机，以用于本地开发。 在 Windows、Linux 或 macOS 上，可以使用 .NET CLI 创建、生成和运行应用程序。 在 Windows 上，可以使用 Visual Studio 2019。 有关创建说明，请参阅[创建本地环境](local-environment.md)。
 
 ## <a name="make-decisions-using-the-if-statement"></a>使用 `if` 语句做出决定
 
@@ -24,7 +26,7 @@ ms.locfileid: "83396884"
 dotnet new console -n BranchesAndLoops -o .
 ```
 
-此命令会在当前目录中创建一个新的 .NET Core 控制台应用程序。
+此命令在当前目录中新建一个 .NET 控制台应用程序。
 
 在常用编辑器中，打开 Program.cs，并将行 `Console.WriteLine("Hello World!");` 替换为以下代码：
 

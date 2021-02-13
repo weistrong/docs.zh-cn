@@ -3,16 +3,20 @@ title: 类和对象 - C# 简介教程
 description: 创建首个 C# 程序，并探索面向对象的概念
 ms.date: 10/11/2017
 ms.custom: mvc
-ms.openlocfilehash: 0955b0ac33b346b9880c8af70bd73cb458120f35
-ms.sourcegitcommit: 98d20cb038669dca4a195eb39af37d22ea9d008e
+ms.openlocfilehash: a48e5790d2872ca3074bd7ce06c23412086b00f3
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434894"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585359"
 ---
 # <a name="explore-object-oriented-programming-with-classes-and-objects"></a>使用类和对象探索面向对象的编程
 
-本教程要求你有一台可用于开发的计算机。 .NET 教程 [Hello World 10 分钟入门](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)介绍了如何在 Windows、Linux 或 macOS 上设置本地开发环境。 [熟悉开发工具](local-environment.md)不仅简要概述了将用到的命令，还收录了详细信息链接。
+在本教程中，你将生成一个控制台应用程序，并了解 C# 语言中的面向对象的基本功能。
+
+## <a name="prerequisites"></a>先决条件
+
+本教程要求安装一台虚拟机，以用于本地开发。 在 Windows、Linux 或 macOS 上，可以使用 .NET CLI 创建、生成和运行应用程序。 在 Windows 上，可以使用 Visual Studio 2019。 有关创建说明，请参阅[创建本地环境](local-environment.md)。
 
 ## <a name="create-your-application"></a>创建应用程序
 
@@ -35,7 +39,7 @@ namespace classes
 
 在本教程中，将要新建表示银行帐户的类型。 通常情况下，开发者都会在不同的文本文件中定义每个类。 这样可以更轻松地管理不断增大的程序。 在 classes 目录中，新建名为 BankAccount.cs 的文件。
 
-此文件包含“银行帐户”定义。 面向对象的编程组织代码的方式为，创建类形式的类型。 这些类包含表示特定实体的代码。 `BankAccount` 类表示银行帐户。 代码通过方法和属性实现特定操作。 在本教程中，银行帐户支持以下行为：
+此文件包含“银行帐户”定义。 面向对象的编程通过创建类_***形式的类型来组织代码。 这些类包含表示特定实体的代码。 `BankAccount` 类表示银行帐户。 代码通过方法和属性实现特定操作。 在本教程中，银行帐户支持以下行为：
 
 1. 用一个 10 位数唯一标识银行帐户。
 1. 用字符串存储一个或多个所有者名称。
@@ -73,13 +77,13 @@ namespace classes
 
 继续操作前，先来看看已经生成的内容。  借助 `namespace` 声明，可以按逻辑组织代码。 由于本教程的篇幅较小，因此所有代码都将添加到一个命名空间中。
 
-`public class BankAccount` 定义要创建的类或类型。 类声明后面 `{` 和 `}` 中的所有内容定义了类的状态和行为。 `BankAccount` 类有五个成员。 前三个成员是属性。 属性是数据元素，可以包含强制执行验证或其他规则的代码。 最后两个成员是方法。 方法是执行一个函数的代码块。 读取每个成员的名称应该能够为自己或其他开发者提供了解类用途的足够信息。
+`public class BankAccount` 定义要创建的类或类型。 类声明后面 `{` 和 `}` 中的所有内容定义了类的状态和行为。 `BankAccount` 类有五个成员。 前三个成员是属性。 属性是数据元素，可以包含强制执行验证或其他规则的代码。 最后两个是方法_***。 方法是执行一个函数的代码块。 读取每个成员的名称应该能够为自己或其他开发者提供了解类用途的足够信息。
 
 ## <a name="open-a-new-account"></a>打开新帐户
 
 要实现的第一个功能是打开银行帐户。 打开帐户时，客户必须提供初始余额，以及此帐户的一个或多个所有者的相关信息。
 
-新建 `BankAccount` 类型的对象意味着，定义可分配这些值的构造函数。 构造函数是与类同名的成员。 用于初始化相应类类型的对象。 将以下构造函数添加到 `BankAccount` 类型。 将下面的代码放在 `MakeDeposit` 声明的上方：
+新建 `BankAccount` 类型的对象意味着定义构造函数*_来赋值。 构造函数_*是与类同名的成员。 用于初始化相应类类型的对象。 将以下构造函数添加到 `BankAccount` 类型。 将下面的代码放在 `MakeDeposit` 声明的上方：
 
 ```csharp
 public BankAccount(string name, decimal initialBalance)

@@ -4,12 +4,12 @@ description: 了解哪些 Linux 发行版支持在 Linux 上安装 .NET。
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 3834bd7d977bb13e9543d511bee7170161a755ac
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 27be7151d95810d8cc607564d5c0ce8dfe5b9ed8
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970728"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506274"
 ---
 # <a name="install-net-on-linux"></a>在 Linux 上安装 .NET
 
@@ -34,6 +34,16 @@ ms.locfileid: "97970728"
 - 2.0
 
 以下部分未详细介绍这些不受支持的版本，如果你尝试安装它们，则实际数据可能有所不同。
+
+## <a name="manual-installation"></a>手动安装
+
+如果你不想在 Linux 上使用包管理器来安装 .NET，可以通过下列方法之一来安装 .NET：
+
+- [Snap 包](linux-snap.md)
+- [使用 install-dotnet.sh 脚本安装](linux-scripted-manual.md#scripted-install)
+- [手动提取二进制文件](linux-scripted-manual.md#manual-install)
+
+请务必查看相应的发行页，以详细了解任何可能会在手动安装时缺失的必需依赖项。
 
 ## <a name="alpine"></a>Alpine
 

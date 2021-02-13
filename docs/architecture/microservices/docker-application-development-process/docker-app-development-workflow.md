@@ -1,13 +1,13 @@
 ---
 title: Docker 应用开发工作流
 description: 了解用于开发基于 Docker 的应用程序的工作流的详细信息。 分步深入了解有关优化 Dockerfile 的详细信息，最后了解使用 Visual Studio 时使用的简化工作流。
-ms.date: 01/13/2021
-ms.openlocfilehash: fff0a59bb6001eeb50c31c68bfeceeb71c439223
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/02/2021
+ms.openlocfilehash: 678ff76575c70a253fbb06253fadb2f721f16831
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189534"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719964"
 ---
 # <a name="development-workflow-for-docker-apps"></a>Docker 应用开发工作流
 
@@ -53,7 +53,7 @@ Docker 应用的开发流程：1 - 编写应用代码，2 - 编写 Dockerfile/s�
 
 [适用于 Windows 的 Docker CE 入门](https://docs.docker.com/docker-for-windows/)
 
-此外，需要安装了“.NET Core 跨平台开发”工作负载的 Visual Studio 2019 版本 16.4 或更高版本，如图 5-2 所示  。
+此外，需要安装了“.NET Core 跨平台开发”工作负荷的 Visual Studio 2019 版本 16.8，如图 5-2 所示。
 
 ![“.NET Core 跨平台”开发选择的屏幕截图。](./media/docker-app-development-workflow/dotnet-core-cross-platform-development.png)
 
@@ -132,7 +132,7 @@ ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 
 ### <a name="using-multi-arch-image-repositories"></a>使用多体系结构映像存储库
 
-单个存储库中可包含平台变量，如 Linux 映像和 Windows 映像。 借助此功能，Microsoft （基础映像创建者）等供应商可创建涵盖多个平台（即 Linux 和 Windows）的单个存储库。 例如，Docker 中心注册表中提供的 [dotnet/core](https://hub.docker.com/_/microsoft-dotnet/) 存储库可使用相同的存储库名称为 Linux 和 Windows Nano Server 提供支持。
+单个存储库中可包含平台变量，如 Linux 映像和 Windows 映像。 借助此功能，Microsoft （基础映像创建者）等供应商可创建涵盖多个平台（即 Linux 和 Windows）的单个存储库。 例如，Docker 中心注册表中提供的 [.NET](https://hub.docker.com/_/microsoft-dotnet/) 存储库可使用相同的存储库名称为 Linux 和 Windows Nano Server 提供支持。
 
 如果指定了标签，请明确指定一个平台，如下所示：
 
@@ -506,7 +506,7 @@ docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
 
 ## <a name="step-6-test-your-docker-application-using-your-local-docker-host"></a>步骤 6。 使用本地 Docker 主机测试 Docker 应用程序
 
-这一步骤会因应用程序的用途而有所不同。 对于部署为单个容器或服务的简单 .NET Core Web 应用程序而言，在 Docker 主机上打开浏览器并导航到该站点即可访问该服务，如图 5-13 所示。 （如果 Dockerfile 中的配置将容器映射到除主机上的 80 端口以外的任何端口，请在 URL 中包含该主机端口。）
+这一步骤会因应用程序的用途而有所不同。 对于部署为单个容器或服务的简单 .NET Web 应用程序而言，在 Docker 主机上打开浏览器并导航到该站点即可访问该服务，如图 5-13 所示。 （如果 Dockerfile 中的配置将容器映射到除主机上的 80 端口以外的任何端口，请在 URL 中包含该主机端口。）
 
 ![来自 localhost/API/values 的响应的屏幕截图。](./media/docker-app-development-workflow/test-docker-app-locally-localhost.png)
 

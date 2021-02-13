@@ -5,12 +5,12 @@ ms.date: 08/09/2019
 author: sdmaclea
 ms.author: stmaclea
 ms.topic: overview
-ms.openlocfilehash: 34deb802183f20cc92449c21eb7e149cc002850f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2eaa01fad3913272dc90891592d0e35cd89ad2ab
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84284217"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506313"
 ---
 # <a name="dependency-loading-in-net-core"></a>.NET Core 中的依赖项加载
 
@@ -40,3 +40,7 @@ ms.locfileid: "84284217"
 ## <a name="how-to-use-and-debug-assembly-unloadability-in-net-core"></a>如何在 .NET Core 中使用和调试程序集可卸载性
 
 [如何在 .NET Core 中使用和调试程序集可卸载性](../../standard/assembly/unloadability.md)一文是逐步骤教程。 其中显示了如何加载 .NET Core 应用程序、执行以及将其卸载。 该文章还提供了调试提示。
+
+## <a name="collect-detailed-assembly-loading-information"></a>收集详细的程序集加载信息
+
+[收集详细的程序集加载信息](collect-details.md)一文介绍了如何收集运行时中托管程序集加载的详细信息。 它使用 [dotnet-trace](../diagnostics/dotnet-trace.md) 工具在正在运行的进程的跟踪中捕获程序集加载程序事件。

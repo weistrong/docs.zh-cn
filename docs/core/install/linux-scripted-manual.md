@@ -4,12 +4,12 @@ description: 演示如何在 Linux 上无包管理器的情况下安装 .NET SDK
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 5879d4d66aba8bfa00caadbe3c33d6df0d7da59a
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 14789587a58c7b9d5ef2c9251ed599ce18a48f24
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970923"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505571"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-manually"></a>手动安装 .NET SDK 或 .NET Runtime
 
@@ -119,20 +119,15 @@ ms.locfileid: "97970923"
 
 若要提取运行时并使 .NET CLI 命令可用于终端，请先下载 .NET 二进制版本。 然后，打开终端并从保存文件的目录运行以下命令。 根据下载内容，存档文件名称可能不同。
 
-**使用以下命令来提取运行时**：
+使用以下命令提取已下载的运行时或 SDK。 请记得将 `DOTNET_FILE` 值更改为你的文件名：
 
 ```bash
-mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-5.0.0-linux-x64.tar.gz -C "$HOME/dotnet"
+DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
 export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
 
-**使用以下命令来提取 SDK**：
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-```bash
-mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-5.0.100-linux-x64.tar.gz -C "$HOME/dotnet"
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
+export PATH=$PATH:$DOTNET_ROOT
 ```
 
 > [!TIP]

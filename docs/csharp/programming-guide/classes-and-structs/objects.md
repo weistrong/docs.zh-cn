@@ -1,17 +1,17 @@
 ---
 title: 对象 - C# 编程指南
 description: C# 使用类或结构定义来定义对象的类型。 在 C# 等面向对象的语言中，程序由动态交互的对象组成。
-ms.date: 07/20/2015
+ms.date: 02/03/2021
 helpviewer_keywords:
 - objects [C#], about objects
 - variables [C#]
 ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
-ms.openlocfilehash: 61d79f5647fa05edade9aef90653544b08c20c83
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: df549b76c5bd49fa91424915928527ec14d7689c
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181825"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585704"
 ---
 # <a name="objects-c-programming-guide"></a>对象（C# 编程指南）
 
@@ -24,7 +24,7 @@ ms.locfileid: "91181825"
 
  由于类是引用类型，因此类对象的变量引用该对象在托管堆上的地址。 如果将同一类型的第二个对象分配给第一个对象，则两个变量都引用该地址的对象。 这一点将在本主题后面部分进行更详细的讨论。  
   
- 类的实例是使用 [new 运算符](../../language-reference/operators/new-operator.md)创建的。 在下面的示例中，`Person` 为类型，`person1` 和 `person 2` 为该类型的实例（即对象）。  
+ 类的实例是使用 [new 运算符](../../language-reference/operators/new-operator.md)创建的。 在下面的示例中，`Person` 为类型，`person1` 和 `person2` 为该类型的实例（即对象）。  
   
  [!code-csharp[csProgGuideStatements#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   
@@ -47,8 +47,8 @@ ms.locfileid: "91181825"
   
  [!code-csharp[csProgGuideStatements#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
- `Equals` 的 <xref:System.ValueType?displayProperty=nameWithType> 实现使用反射，因为它必须能够确定任何结构中有哪些字段。 在创建自己的结构时，重写 `Equals` 方法可以提供特定于你的类型的高效求等算法。  
-  
+ `Equals` 的 <xref:System.ValueType?displayProperty=nameWithType> 实现在某些情况下使用装箱和反射。 若要了解如何提供特定于类型的高效相等性算法，请参阅[如何为类型定义值相等性](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md)
+
 - 若要确定两个类实例中字段的值是否相等，可以使用 <xref:System.Object.Equals%2A> 方法或 [== 运算符](../../language-reference/operators/equality-operators.md#equality-operator-)。 但是，只有类通过重写或重载提供关于那种类型对象的“相等”含义的自定义时，才能使用它们。 类也可能实现 <xref:System.IEquatable%601> 接口或 <xref:System.Collections.Generic.IEqualityComparer%601> 接口。 这两个接口都提供可用于测试值相等性的方法。 设计好替代 `Equals` 的类后，请务必遵循[如何为类型定义值相等性](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md)和 <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> 中介绍的准则。
   
 ## <a name="related-sections"></a>相关章节  

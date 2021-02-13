@@ -1,22 +1,22 @@
 ---
 title: 启用 tab 自动补全
-description: 本文介绍如何针对适用于 PowerShell、Bash 和 zsh 的 .NET CLI 启用 Tab 自动补全。
+description: 本文介绍了如何为 .NET CLI 的 PowerShell、Bash、zsh 和 fish 启用 Tab 自动补全。
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
 ms.date: 11/03/2019
-ms.openlocfilehash: 31bf5e74644680fc30ca5b79972fbed6367363e1
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: b5b63166faa1762d9fa82a93aa70aebb33167630
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634007"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585554"
 ---
 # <a name="how-to-enable-tab-completion-for-the-net-cli"></a>如何为 .NET CLI 启用 Tab 自动补全
 
  本文适用于： ✔️ .NET Core 2.1 SDK 及更高版本
 
-本文介绍如何为三个 shell、PowerShell、Bash 和 zsh 配置 tab 自动补全。 对于其他 shell，请参阅相关文档，了解如何配置 tab 自动补全。
+本文介绍了如何为四种 shell（PowerShell、Bash、zsh 和 fish）配置 Tab 自动补全。 对于其他 shell，请参阅相关文档，了解如何配置 tab 自动补全。
 
 设置完成后，通过在 shell 中键入 `dotnet` 命令，然后按下 Tab 键即可触发 .NET CLI 的 Tab 自动补全。 当前命令行将发送到 `dotnet complete` 命令，结果将由 shell 处理。 可以通过直接向 `dotnet complete` 命令发送内容来测试结果而无需启用 tab 自动补全。 例如：
 
@@ -97,4 +97,12 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
+```
+
+## <a name="fish"></a>fish
+
+若要向 .NET CLI 的 fish shell 添加 Tab 自动补全，请将以下代码添加到 `config.fish` 文件中：
+
+```fish
+complete -f -c dotnet -a "(dotnet complete)"
 ```

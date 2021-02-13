@@ -4,12 +4,12 @@ description: 了解如何析构元组和其他类型。
 ms.technology: csharp-fundamentals
 ms.date: 11/23/2017
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
-ms.openlocfilehash: 96168b729ae3ec11d7a38444b8c100bdbff4efbf
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 5aaf7157b87de4f67f6e4beba18794a6dd13b6d0
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94439698"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585346"
 ---
 # <a name="deconstructing-tuples-and-other-types"></a>析构元组和其他类型
 
@@ -81,11 +81,7 @@ var (name, address, city, zip) = contact.GetAddressInfo();
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
-因为可重载 `Deconstruct` 方法来反映通常从对象中提取的数据组，所以应使用独特明确的签名来定义 `Deconstruct` 方法。 如果有多个 `Deconstruct` 方法具有相同数量的 `out` 参数，或具有相同数量和类型的 `out` 参数且顺序不同，则可能会造成混淆。
-
-以下示例中的重载 `Deconstruct` 方法演示一种混淆的可能性。 第一个重载按该顺序返回 `Person` 对象的名字、中间名、姓氏和年龄。 第二个重载仅将姓名信息与年收入一起返回，但名字、中间名和姓氏的顺序不同。 这使得在析构 `Person` 实例时容易混淆参数的顺序。
-
-[!code-csharp[Deconstruct-ambiguity](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-ambiguous.cs)]
+具有相同数量参数的多个 `Deconstruct` 方法是不明确的。 在定义 `Deconstruct` 方法时，必须小心使用不同数量的参数或“arity”。 在重载解析过程中，不能区分具有相同数量参数的 `Deconstruct` 方法。
 
 ## <a name="deconstructing-a-user-defined-type-with-discards"></a>使用弃元析构用户定义类型
 

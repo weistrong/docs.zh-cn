@@ -1,13 +1,13 @@
 ---
 title: 何时为 Docker 容器选择 .NET 5
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 何时为 Docker 容器选择 .NET
-ms.date: 01/13/2021
-ms.openlocfilehash: 61909c91d795582af499456c65ae0d7b4f2911e2
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/02/2021
+ms.openlocfilehash: d0480ac43c0090b72185bd23bbd11ac7e26001e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189273"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653415"
 ---
 # <a name="when-to-choose-net-for-docker-containers"></a>何时为 Docker 容器选择 .NET
 
@@ -33,7 +33,7 @@ ms.locfileid: "98189273"
 
 ## <a name="using-containers-for-new-green-field-projects"></a>为新（“绿地”）项目使用容器
 
-虽然容器通常与微服务体系结构结合使用，但是也可用于对遵循任何体系结构模式的 Web 应用或服务进行容器化。 虽然能够将 .NET Framework 用于 Windows 容器，但 .NET 5 的模块化和轻型特点使之成为容器和微服务体系结构的最佳选择。 在创建和部署容器时，使用 .NET Core 时容器的映像大小要远小于使用 .NET Framework 时的大小。
+虽然容器通常与微服务体系结构结合使用，但是也可用于对遵循任何体系结构模式的 Web 应用或服务进行容器化。 虽然能够将 .NET Framework 用于 Windows 容器，但 .NET 5 的模块化和轻型特点使之成为容器和微服务体系结构的最佳选择。 在创建和部署容器时，使用 .NET 5 时容器的映像大小要远小于使用 .NET Framework 时的大小。
 
 ## <a name="create-and-deploy-microservices-on-containers"></a>在容器上创建和部署微服务
 

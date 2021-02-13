@@ -4,12 +4,12 @@ description: 了解可在其上安装 .NET 的 macOS 版本。
 author: adegeo
 ms.author: adegeo
 ms.date: 11/10/2020
-ms.openlocfilehash: b1434938a8e8e81da81e495a6b99e6c99467aae1
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 871263b820aaf4cc04e573dd4aa3022caa401857
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009353"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506300"
 ---
 # <a name="install-net-on-macos"></a>在 macOS 上安装 .NET
 
@@ -53,13 +53,13 @@ ms.locfileid: "97009353"
 
 运行时用于运行使用 .NET 创建的应用。 应用作者发布应用时，可以在其应用中包含运行时。 如果作者未包含运行时，则由用户安装运行时。
 
-可以在 macOS 上安装三个不同的运行时：
+macOS 上可以安装两种不同的运行时：
 
-*ASP.NET Core 运行时*\
-运行 ASP.NET Core 应用。 包括 .NET 运行时。
+- *ASP.NET Core 运行时*\
+  运行 ASP.NET Core 应用。 包括 .NET 运行时。
 
-.NET 运行时\
-此运行时是最简单的运行时，不包括任何其他运行时。 强烈建议安装 ASP.NET Core 运行时，以最大限度地提升与 .NET 应用的兼容性。
+- .NET 运行时\
+  此运行时是最简单的运行时，不包括任何其他运行时。 强烈建议安装 ASP.NET Core 运行时，以最大限度地提升与 .NET 应用的兼容性。
 
 > [!div class="button"]
 > [下载 .NET 运行时](https://dotnet.microsoft.com/download/dotnet-core)
@@ -125,20 +125,15 @@ macOS 具有独立的安装程序，可用于安装 .NET 5.0 SDK：
 
 若要提取运行时并使 .NET CLI 命令可用于终端，请先下载 .NET 二进制版本。 然后，打开终端并从保存文件的目录运行以下命令。 根据下载内容，存档文件名称可能不同。
 
-**使用以下命令来提取运行时**：
+使用以下命令来提取你下载的运行时或 SDK。 请务必将 `DOTNET_FILE` 值更改为你的文件名：
 
 ```bash
-mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-5.0.0-osx-x64.tar.gz -C "$HOME/dotnet"
+DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
 export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
 
-**使用以下命令来提取 SDK**：
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-```bash
-mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-5.0.100-osx-x64.tar.gz -C "$HOME/dotnet"
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
+export PATH=$PATH:$DOTNET_ROOT
 ```
 
 > [!TIP]

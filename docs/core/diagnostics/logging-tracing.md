@@ -2,12 +2,12 @@
 title: 日志记录和跟踪 - .NET Core
 description: .NET Core 日志记录和跟踪简介。
 ms.date: 10/12/2020
-ms.openlocfilehash: fac8eeed63e8737ad42699d81b421747b207c69a
-ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
+ms.openlocfilehash: a8c6d82ddb7bc3f8b4cc9eae9dd7aaf65732a0b8
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753622"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548390"
 ---
 # <a name="net-core-logging-and-tracing"></a>.NET Core 日志记录和跟踪
 
@@ -72,6 +72,10 @@ ms.locfileid: "97753622"
   - 仅限 Windows。
   - 将消息写入 Windows 事件日志。
   - 系统管理员希望严重的应用程序错误消息会在 Windows 事件日志中出现。
+
+## <a name="distributed-tracing"></a>分布式跟踪
+
+[分布式跟踪](./distributed-tracing.md)是在分布式系统中发布和观察跟踪数据的方法。
 
 ## <a name="ilogger-and-logging-frameworks"></a>ILogger 和日志记录框架
 

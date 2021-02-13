@@ -4,12 +4,12 @@ description: 本高级教程教你使用索引和范围来探索数据，以检�
 ms.date: 09/11/2020
 ms.technology: csharp-fundamentals
 ms.custom: mvc
-ms.openlocfilehash: cf6c83484332ed517b2326b3fd9d7458f191227e
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: c0484a42233466e3a2a70a673aee81fce91fe31b
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "90738861"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585398"
 ---
 # <a name="indices-and-ranges"></a>索引和范围
 
@@ -93,7 +93,7 @@ string[] words = new string[]
 
 例如，以下 .NET 类型同时支持索引和范围：<xref:System.String>、<xref:System.Span%601> 和 <xref:System.ReadOnlySpan%601>。 <xref:System.Collections.Generic.List%601> 支持索引，但不支持范围。
 
-<xref:System.Array> 具有更多的微妙行为。 单个维度数组同时支持索引和范围。 多维数组则不支持。 多维数组的索引器具有多个参数，而不是一个参数。 交错数组（也称为数组的数组）同时支持范围和索引器。 下面的示例演示如何循环访问交错数组的矩形子节。 它循环访问位于中心的节，不包括前三行和后三行，以及每个选定行中的前两列和后两列：
+<xref:System.Array> 具有更多的微妙行为。 单个维度数组同时支持索引和范围。 多维数组不支持索引器或范围。 多维数组的索引器具有多个参数，而不是一个参数。 交错数组（也称为数组的数组）同时支持范围和索引器。 下面的示例演示如何循环访问交错数组的矩形子节。 它循环访问位于中心的节，不包括前三行和后三行，以及每个选定行中的前两列和后两列：
 
 [!code-csharp[JaggedArrays](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_JaggedArrays)]
 

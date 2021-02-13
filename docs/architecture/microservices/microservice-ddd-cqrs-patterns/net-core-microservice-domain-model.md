@@ -1,15 +1,15 @@
 ---
 title: 使用 .NET 实现微服务域模型
 description: 适用于容器化 .NET 应用程序的 .NET 微服务体系结构 | 获取面向 DDD 的域模型的实现详细信息。
-ms.date: 01/13/2021
-ms.openlocfilehash: 9689058b77701eee35ef018ed2e3f18bd648b0f4
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/02/2021
+ms.openlocfilehash: 87d832101d95f3ab69d1a40bbdc820e1e09af5db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665271"
 ---
-# <a name="implement-a-microservice-domain-model-with-net-core"></a>使用 .NET Core 实现微服务域模型
+# <a name="implement-a-microservice-domain-model-with-net"></a>使用 .NET 实现微服务域模型
 
 上一节解释了域模型设计的基本设计原则和模式。 现在开始探索使用 .NET（纯 C\# 代码）和 EF Core 实现域模型的可能方式。 域模型将仅由代码组成。 它只有 EF Core 模型要求，并不真正依赖于 EF。 你不应该硬依赖或引用 EF Core 或域模型中的任何其他 ORM。
 

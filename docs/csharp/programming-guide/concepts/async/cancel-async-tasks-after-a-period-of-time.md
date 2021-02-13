@@ -1,15 +1,15 @@
 ---
 title: 在一段时间后取消异步任务 (C#)
 description: 了解如何计划取消未在一段时间内完成的任何关联任务。
-ms.date: 08/19/2020
+ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
-ms.openlocfilehash: ad9064f8f45a737982ffc35ab4ea2395ddae9016
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 98c42a2df6153d668b99b6dec49ffe380293b205
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811413"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585372"
 ---
 # <a name="cancel-async-tasks-after-a-period-of-time-c"></a>在一段时间后取消异步任务 (C#)
 
@@ -52,12 +52,16 @@ static async Task Main()
     {
         Console.WriteLine("\nTasks cancelled: timed out.\n");
     }
+    finally
+    {
+        s_cts.Dispose();
+    }
 
     Console.WriteLine("Application ending.");
 }
 ```
 
-更新后的 `Main` 方法将一些说明性消息写入控制台。 在[尝试捕获](../../../language-reference/keywords/try-catch.md)内，调用 <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> 以计划取消。 一段时间后将发出取消信号。
+更新后的 `Main` 方法将一些说明性消息写入控制台。 在 [try catch](../../../language-reference/keywords/try-catch.md) 内，对 <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> 调用安排取消。 一段时间后将发出取消信号。
 
 接下来，等待 `SumPageSizesAsync` 方法。 如果处理所有 URL 的速度比计划取消的速度快，应用程序将结束。 但如果在处理所有 URL 之前触发了计划取消，则会引发 <xref:System.Threading.Tasks.TaskCanceledException>。
 

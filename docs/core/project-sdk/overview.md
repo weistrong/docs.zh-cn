@@ -4,12 +4,12 @@ titleSuffix: ''
 description: 了解 .NET 项目 SDK。
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 2adb0713fabda142d071425a2affe66cc9d4c172
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: d0eb4291f4def9263f37d2d09f09ef43d40dfbac
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189663"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506391"
 ---
 # <a name="net-project-sdks"></a>.NET 项目 SDK
 
@@ -131,6 +131,30 @@ SDK 中定义了 [`Compile` 项](/visualstudio/msbuild/common-msbuild-project-it
   ```
 
   如果仅禁用 `Compile` glob，则 Visual Studio 中的解决方案资源管理器仍将 \*.cs 项显示为项目的一部分，并作为 `None` 项包含在内。 若要禁用隐式 `None` glob，请将 `EnableDefaultNoneItems` 也设置为 `false`。
+
+## <a name="implicit-package-references"></a>隐式包引用
+
+如果以 .NET Core 1.0 - 2.2 或 .NET Standard 1.0 - 2.0 为目标，则 .NET SDK 会添加对某些元包的隐式引用。 元包是一种基于框架的包，其中只包含对其他包的依赖项。 元包根据项目文件的 [TargetFramework](msbuild-props.md#targetframework) 或 [TargetFrameworks](msbuild-props.md#targetframeworks) 属性中指定的目标框架被隐式引用。
+
+```xml
+<PropertyGroup>
+  <TargetFramework>netcoreapp2.1</TargetFramework>
+</PropertyGroup>
+```
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
+</PropertyGroup>
+```
+
+如果需要，可以使用 [DisableImplicitFrameworkReferences](msbuild-props.md#disableimplicitframeworkreferences) 属性来禁用隐式包引用，并只添加对所需的框架或包的显式引用。
+
+建议：
+
+- 如果以 .NET Framework、.NET Core 1.0 - 2.2 或 .NET Standard 1.0 - 2.0 为目标，不要通过项目文件中的 `<PackageReference>` 项添加对 `Microsoft.NETCore.App` 或 `NETStandard.Library` 元包的显式引用。 对于 .NET Core 1.0 - 2.2 和 .NET Standard 1.0 - 2.0 项目，这些元包被隐式引用。 对于 .NET Framework 项目，如果在使用基于 .NET Standard 的 NuGet 包时需要任何版本的 `NETStandard.Library`，则 NuGet 会自动安装相应版本。
+- 如果在以 .NET Core 1.0 - 2.2 为目标时需要特定版本的运行时，请在项目中使用 `<RuntimeFrameworkVersion>` 属性（例如，`1.0.4`），而不是引用元包。 例如，如果在使用[独立式部署](../deploying/index.md#publish-self-contained)，则可能需要特定补丁版本的 1.0.0 LTS 运行时。
+- 如果在以 .NET Standard 1.0 - 2.0 为目标时需要特定版本的 `NETStandard.Library` 元包，则可以使用 `<NetStandardImplicitPackageVersion>` 属性，并设置所需的版本。
 
 ## <a name="build-events"></a>生成事件
 

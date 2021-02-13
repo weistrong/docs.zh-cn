@@ -2,12 +2,12 @@
 title: 顶级语句 - C# 教程
 description: 本教程介绍如何使用顶级语句来试验和证明概念，同时探索你的想法
 ms.date: 10/28/2020
-ms.openlocfilehash: 5e5dc6cec382baa69ac8cb4625684315bb2cd5e0
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: c56a40e7a9715ff0265a897c494b457a32e52df2
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282255"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585619"
 ---
 # <a name="tutorial-explore-ideas-using-top-level-statements-to-build-code-as-you-learn"></a>教程：在学习过程中，探索使用顶级语句生成代码的想法
 
@@ -84,7 +84,7 @@ System.String[]
 
 若要将问题写入控制台，需要枚举参数，并使用空格分隔参数。 将 `WriteLine` 调用替换为以下代码：
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="EchoInput":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="EchoInput":::
 
 现在，运行该程序时，它会将问题正确地显示为参数字符串。
 
@@ -92,11 +92,11 @@ System.String[]
 
 在回显问题后，你可以添加代码以生成随机答案。 首先添加可能的答案的数组：
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="Answers":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="Answers":::
 
 此数组有 12 个肯定答案，6 个态度不明确的答案，以及 6 个否定答案。 接下来，添加以下代码以生成并显示来自数组的随机答案：
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="GenerateAnswer":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="GenerateAnswer":::
 
 你可以再次运行该应用程序以查看结果。 显示的内容应与以下输出类似：
 
@@ -212,7 +212,11 @@ static async Task ShowConsoleAnimation()
 
 :::code language="csharp" source="snippets/top-level-statements/Utilities.cs" ID="Animation":::
 
-现在你有了一个完整的应用程序，并且已经重构了可重用部分供以后使用。
+现在你有了一个完整的应用程序，并且已经重构了可重用部分供以后使用。 可以从顶级语句中调用新的实用工具方法，如下面主程序的最终版本所示：
+
+:::code language="csharp" source="snippets/top-level-statements/Program.cs":::
+
+这样就增加了对 `Utilities.ShowConsoleAnimation` 的调用，并增加了一条 `using` 语句。
 
 ## <a name="summary"></a>摘要
 

@@ -4,12 +4,12 @@ description: 在本教程中，你将了解如何使用 Docker 容器化 .NET Co
 ms.date: 04/27/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 7605f847a76907f4f9d0a451ba69332d6d174615
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c92f5823f56f74941afdd28638d30e759b2c51c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740751"
 ---
 # <a name="tutorial-containerize-a-net-core-app"></a>教程：使 .NET Core 应用程序容器化
 
@@ -33,7 +33,7 @@ ms.locfileid: "95724723"
 
 安装以下必备组件：
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download)\
+- [.NET Core 5.0 SDK](https://dotnet.microsoft.com/download)\
 如果已安装 .NET Core，请使用 `dotnet --info` 命令来确定使用的是哪个 SDK。
 - [Docker 社区版](https://www.docker.com/products/docker-desktop)
 - Dockerfile 和 .NET Core 示例应用的临时工作文件夹  。 在本教程中，docker-working  用作工作文件夹的名称。
@@ -144,16 +144,16 @@ Counter: 4
 dotnet publish -c Release
 ```
 
-此命令将应用编译到“发布”文件夹中  。 从工作文件夹到“发布”文件夹的路径应为 `.\App\bin\Release\netcoreapp3.1\publish\`
+此命令将应用编译到“发布”文件夹中  。 从工作文件夹到“发布”文件夹的路径应为 `.\App\bin\Release\net5.0\publish\`
 
 #### <a name="windows"></a>[Windows](#tab/windows)
 
 在“应用”文件夹中获取“发布”文件夹的目录列表，以验证 NetCore.Docker.dll 文件是否已创建   。
 
 ```powershell
-dir .\bin\Release\netcoreapp3.1\publish\
+dir .\bin\Release\net5.0\publish\
 
-    Directory: C:\Users\dapine\App\bin\Release\netcoreapp3.1\publish
+    Directory: C:\Users\dapine\App\bin\Release\net5.0\publish
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -169,7 +169,7 @@ Mode                LastWriteTime         Length Name
 使用 `ls` 命令获取目录列表，并验证 NetCore.Docker.dll 文件是否已创建  。
 
 ```bash
-me@DESKTOP:/docker-working/app$ ls bin/Release/netcoreapp3.1/publish
+me@DESKTOP:/docker-working/app$ ls bin/Release/net5.0/publish
 NetCore.Docker.deps.json  NetCore.Docker.dll  NetCore.Docker.pdb  NetCore.Docker.runtimeconfig.json
 ```
 
@@ -182,13 +182,13 @@ NetCore.Docker.deps.json  NetCore.Docker.dll  NetCore.Docker.pdb  NetCore.Docker
 在包含 .csproj 的目录中创建名为“Dockerfile”的文件，并在文本编辑器中将其打开   。 本教程将使用 ASP.NET Core 运行时映像（包含 .NET Core 运行时映像），并与 .NET Core 控制台应用程序相对应。
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:3.1
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
 ```
 
 > [!NOTE]
-> 尽管可能已使用 `mcr.microsoft.com/dotnet/runtime:3.1` 映像，但此处有意使用 ASP.NET Core 运行时映像。
+> 尽管可能已使用 `mcr.microsoft.com/dotnet/runtime:5.0` 映像，但此处有意使用 ASP.NET Core 运行时映像。
 
-`FROM` 关键字需要完全限定的 Docker 容器映像名称。 Microsoft 容器注册表（MCR，mcr.microsoft.com）是 Docker Hub 的联合，可托管可公开访问的容器。 `dotnet/core` 段是容器存储库，其中 `aspnet` 段是容器映像名称。 该映像使用 `3.1` 进行标记，它用于版本控制。 因此，`mcr.microsoft.com/dotnet/aspnet:3.1` 是 .NET Core 3.1 运行时。 请确保拉取的运行时版本与 SDK 面向的运行时一致。 例如，在上一节中创建的应用使用的是 .NET Core 3.1 SDK，并且 Dockerfile  中引用的基本映像标记有 3.1  。
+`FROM` 关键字需要完全限定的 Docker 容器映像名称。 Microsoft 容器注册表（MCR，mcr.microsoft.com）是 Docker Hub 的联合，可托管可公开访问的容器。 `dotnet/core` 段是容器存储库，其中 `aspnet` 段是容器映像名称。 该映像使用 `5.0` 进行标记，它用于版本控制。 因此，`mcr.microsoft.com/dotnet/aspnet:5.0` 是 .NET Core 5.0 运行时。 请确保拉取的运行时版本与 SDK 面向的运行时一致。 例如，在上一节中创建的应用使用了 .NET Core 5.0 SDK，在 Dockerfile 中引用的基础映像被标记为 5.0。
 
 保存 Dockerfile 文件  。 工作文件夹的目录结果应如下所示。 为节省本文的空间，省略了一些更深级别的文件和文件夹：
 
@@ -200,7 +200,7 @@ docker-working
         ├──Program.cs
         ├──bin
         │   └──Release
-        │       └──netcoreapp3.1
+        │       └──net5.0
         │           └──publish
         │               ├──NetCore.Docker.deps.json
         │               ├──NetCore.Docker.exe
@@ -223,13 +223,13 @@ Docker 会处理 Dockerfile  中的每一行。 `docker build` 命令中的 `.` 
 docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 counter-image                           latest              e6780479db63        4 days ago          190MB
-mcr.microsoft.com/dotnet/aspnet         3.1                 e6780479db63        4 days ago          190MB
+mcr.microsoft.com/dotnet/aspnet         5.0                 e6780479db63        4 days ago          190MB
 ```
 
 请注意，两个映像共用相同的“IMAGE ID”  值。 两个映像使用的 ID 值相同是因为，Dockerfile  中的唯一命令是在现有映像的基础之上生成新映像。 接下来，在 Dockerfile 中添加三个命令  。 两个命令都新建映像层，最后一个命令表示 counter-image 存储库条目指向的映像  。
 
 ```dockerfile
-COPY bin/Release/netcoreapp3.1/publish/ App/
+COPY bin/Release/net5.0/publish/ App/
 WORKDIR /App
 ENTRYPOINT ["dotnet", "NetCore.Docker.dll"]
 ```
@@ -245,9 +245,9 @@ ENTRYPOINT ["dotnet", "NetCore.Docker.dll"]
 ```console
 docker build -t counter-image -f Dockerfile .
 Sending build context to Docker daemon  1.117MB
-Step 1/4 : FROM mcr.microsoft.com/dotnet/aspnet:3.1
+Step 1/4 : FROM mcr.microsoft.com/dotnet/aspnet:5.0
  ---> e6780479db63
-Step 2/4 : COPY bin/Release/netcoreapp3.1/publish/ App/
+Step 2/4 : COPY bin/Release/net5.0/publish/ App/
  ---> d1732740eed2
 Step 3/4 : WORKDIR /App
  ---> Running in b1701a42f3ff
@@ -263,7 +263,7 @@ Successfully tagged counter-image:latest
 docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 counter-image                           latest              cd11c3df9b19        41 seconds ago      190MB
-mcr.microsoft.com/dotnet/aspnet         3.1                 e6780479db63        4 days ago          190MB
+mcr.microsoft.com/dotnet/aspnet         5.0                 e6780479db63        4 days ago          190MB
 ```
 
 Dockerfile  中的每个命令生成了一个层，并创建了“IMAGE ID”  。 最终“IMAGE ID”是“cd11c3df9b19”（你的 ID 会有所不同），接下来在此映像的基础之上创建容器   。
@@ -470,7 +470,7 @@ Docker 包含许多不同的命令，可用于创建、管理以及与容器和�
 
 ```console
 docker rmi counter-image:latest
-docker rmi mcr.microsoft.com/dotnet/aspnet:3.1
+docker rmi mcr.microsoft.com/dotnet/aspnet:5.0
 ```
 
 使用 `docker images` 命令来列出已安装的映像。

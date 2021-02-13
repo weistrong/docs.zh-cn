@@ -4,12 +4,12 @@ description: 了解如何使用 .NET CLI 创建 .NET 库。 将创建一个支�
 author: cartermp
 ms.topic: how-to
 ms.date: 12/14/2020
-ms.openlocfilehash: 6f4c1feac7630a6a0250e4b0b39ef01152f5a400
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 76d08007e191fe9090f3f14c906a40e84e37bd19
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633671"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548404"
 ---
 # <a name="develop-libraries-with-the-net-cli"></a>使用 .NET CLI 开发库
 
@@ -17,11 +17,11 @@ ms.locfileid: "97633671"
 
 ## <a name="prerequisites"></a>先决条件
 
-需要在计算机上安装 [.NET SDK 和 CLI](https://dotnet.microsoft.com/download) 。
+需要在计算机上安装 [.NET SDK](https://dotnet.microsoft.com/download)。
 
-对于本文档中处理 .NET Framework 版本的部分，需要在 Windows 计算机上安装 [.NET Framework](https://dotnet.microsoft.com)。
+对于本文档中处理 .NET Framework 版本的部分，需要在 Windows 计算机上安装 [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)。
 
-此外，如果想要支持较旧的 .NET Framework 目标，需要从 [.NET 下载存档页](https://dotnet.microsoft.com/download/archives)安装目标包或开发人员工具包。 请参阅此表：
+此外，如果想要支持较旧的 .NET Framework 目标，需要从 [.NET Framework 下载页](https://dotnet.microsoft.com/download/dotnet-framework)安装目标包或开发人员工具包。 请参阅此表：
 
 | .NET Framework 版本 | 下载内容                                       |
 | ---------------------- | ------------------------------------------------------ |

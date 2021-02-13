@@ -1,22 +1,22 @@
 ---
 title: C# 保留的特性：可为空的静态分析
-ms.date: 04/14/2020
+ms.date: 02/02/2021
 description: 编译器会解释这些属性，以便为可为 null 和不可为 null 的引用类型提供更好的静态分析。
-ms.openlocfilehash: 6678cd21de23d4ed391eff089e33939b5adff0fa
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: c1c3e0a0fe1ee9000e0a1a85ee08e6e966200be5
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955598"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548352"
 ---
 # <a name="reserved-attributes-contribute-to-the-compilers-null-state-static-analysis"></a>保留的特性有助于编译器的 null 状态静态分析
 
 在可为 null 的上下文中，编译器对代码执行静态分析，以确定所有引用类型变量的 null 状态：
 
 - 非 null：静态分析确定将变量分配给非 null 值。
-- 可能为 null  ：静态分析无法确定为变量分配非 null 值。
+- 可能为 null：静态分析无法确定变量是否被赋值为非 null 值。
 
-可以应用多个特性，以向编译器提供有关 API 语义的信息。 这些信息有助于编译器执行静态分析并确定变量何时不为 null。 本文提供每个特性的简要说明以及它们的使用方法。 所有示例都假设使用 C# 8.0 或更高版本，并且代码处于可为 null 的上下文中。
+可以应用向编译器提供有关 API 语义的信息的特性。 此类信息有助于编译器执行静态分析，并确定变量何时不为 null。 本文提供每个特性的简要说明以及它们的使用方法。 所有示例都假设使用 C# 8.0 或更高版本，并且代码处于可为 null 的上下文中。
 
 首先，让我们看一个熟悉的示例。 假设你的库具有以下用于检索资源字符串的 API：
 
@@ -41,14 +41,16 @@ API 的规则可能更复杂，正如你在 `TryGetValue` API 方案中看到的
 - [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute)：不可为 null 的返回值可以为 null。
 - [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute)：可为 null 的返回值永远不会为 null。
 - [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute)：当方法返回指定的 `bool` 值时，不可为 null 的输入参数可以为 null。
-- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute)：当方法返回指定的 `bool` 值时，可为 null 的输入参数将不为 null。
+- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute)：当方法返回指定的 `bool` 值时，可以为 null 的输入参数不会为 null。
 - [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute)：如果指定参数的参数不为 null，则返回值不为 null。
 - [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute)：方法从不返回。 换句话说，它总是引发异常。
 - [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute)：如果关联的 `bool` 参数具有指定值，则此方法永远不会返回。
+- [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute)：当方法返回时，列出的成员不会为 null。
+- [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute)：当方法返回指定的 `bool` 值时，列出的成员不会为 null。
 
 上述说明是对每个特性的快速参考。 以下各节介绍了行为和含义。
 
-添加这些特性将为编译器提供有关 API 规则的更多信息。 当调用代码在可为 null 的上下文中编译时，编译器将在调用方违反这些规则时发出警告。 这些特性不会对实现启用其他检查。
+添加这些特性将为编译器提供有关 API 规则的更多信息。 当调用代码在可为 null 的上下文中编译时，编译器将在调用方违反这些规则时发出警告。 这些特性不会启用对实现进行更多检查。
 
 ## <a name="specify-preconditions-allownull-and-disallownull"></a>指定前提条件：`AllowNull` 和 `DisallowNull`
 
@@ -63,7 +65,7 @@ public string ScreenName
 private string _screenName;
 ```
 
-当你在忽略可为 null 的上下文中编译前面的代码时，一切都是正常的。 启用可为 null 的引用类型后，`ScreenName` 属性将成为不可为 null 的引用。 这对于 `get` 访问器是正确的：它从不返回 `null`。 调用方不需要检查返回的 `null` 属性。 但现在将属性设置为 `null` 将生成警告。 为了继续支持这种类型的代码，请将 <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute?displayProperty=nameWithType> 特性添加到该属性，如以下代码所示：
+当你在忽略可为 null 的上下文中编译前面的代码时，一切都是正常的。 启用可为 null 的引用类型后，`ScreenName` 属性将成为不可为 null 的引用。 这对于 `get` 访问器是正确的：它从不返回 `null`。 调用方不需要检查返回的 `null` 属性。 但现在将属性设置为 `null` 将生成警告。 若要支持这种类型的代码，请向属性添加 <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute?displayProperty=nameWithType> 特性，如下面的代码所示：
 
 ```csharp
 [AllowNull]
@@ -107,7 +109,7 @@ public string? ReviewComment
 string? _comment;
 ```
 
-在可为 null 的上下文中，`ReviewComment` `get` 访问器可以返回默认值 `null`。 编译器会警告在访问之前必须进行检查。 此外，它警告调用方，即使它可能是 `null`，调用方也不应显式地将其设置为 `null`。 `DisallowNull` 特性还指定了前置条件，它不会影响 `get` 访问器  。 当你观察到以下特征时，可以使用 `DisallowNull` 特性：
+在可为 null 的上下文中，`ReviewComment` `get` 访问器可以返回默认值 `null`。 编译器会警告在访问之前必须进行检查。 此外，它警告调用方，即使它可能是 `null`，调用方也不应显式地将其设置为 `null`。 `DisallowNull` 特性还指定了前置条件，它不影响 `get` 访问器。 当你观察到以下特征时，可以使用 `DisallowNull` 特性：
 
 1. 在核心方案中（通常是在首次实例化时），变量可以是 `null`。
 1. 变量不应显式设置为 `null`。
@@ -129,7 +131,7 @@ public Customer FindCustomer(string lastName, string firstName)
 
 你可能已经编写了类似的方法，以便在未找到所查找的名称时返回 `null`。 `null` 清楚地表明未找到记录。 在本例中，你可能会将返回类型从 `Customer` 更改为 `Customer?`。 将返回值声明为可为 null 的引用类型可以清楚地指定此 API 的意图。
 
-基于[泛型定义和为 null 性](../../nullable-migration-strategies.md#generic-definitions-and-nullability)中所述的原因，该技术不适用于泛型方法。 你可能具有遵循类似模式的泛型方法：
+由于[泛型定义和为 Null 性](../../nullable-migration-strategies.md#generic-definitions-and-nullability)中介绍的原因，这种技术不能用于泛型方法。 你可能具有遵循类似模式的泛型方法：
 
 ```csharp
 public T Find<T>(IEnumerable<T> sequence, Func<T, bool> predicate)
@@ -180,7 +182,7 @@ public void EnsureCapacity<T>([NotNull] ref T[]? storage, int size)
 bool IsNullOrEmpty([NotNullWhen(false)] string? value);
 ```
 
-该特性通知编译器返回值为 `false` 的任何代码都不需要进行 null 检查。 添加特性通知编译器的静态分析，`IsNullOrEmpty` 执行必要的 null 检查：当它返回 `false` 时，输入参数不是 `null`。
+这通知编译器，任何返回值为 `false` 的代码都不需要 null 检查。 添加特性通知编译器的静态分析，`IsNullOrEmpty` 执行必要的 null 检查：当它返回 `false` 时，输入参数不是 `null`。
 
 ```csharp
 string? userInput = GetUserInput();
@@ -215,7 +217,7 @@ bool TryGetMessage(string key, [NotNullWhen(true)] out string? message)
 string GetTopLevelDomainFromFullUrl(string url);
 ```
 
-如果 `url` 参数不为 null，则输出不是 `null`。 启用可为 null 的引用后，只要 API 永不接受 null 输入，该签名就能正常运行。 但是，如果输入可以为 null，那么返回值也可以为 null。 因此，你可以将签名更改为以下代码：
+如果 `url` 参数不为 null，则输出不是 `null`。 启用可为 null 的引用后，只要 API 永不接受 null 输入，该签名就能正常运行。 但是，如果输入可以为 null，那么返回值也可以为 null。 可以将签名更改为以下代码：
 
 ```csharp
 string? GetTopLevelDomainFromFullUrl(string? url);
@@ -233,14 +235,24 @@ string? GetTopLevelDomainFromFullUrl(string? url);
 可以使用以下特性指定条件的后置条件：
 
 - [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute)：当方法返回指定的 `bool` 值时，不可为 null 的输入参数可以为 null。
-- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute)：当方法返回指定的 `bool` 值时，可为 null 的输入参数将不为 null。
+- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute)：当方法返回指定的 `bool` 值时，可以为 null 的输入参数不会为 null。
 - [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute)：如果指定参数的输入参数不为 null，则返回值不为 null。
+
+## <a name="constructor-helper-methods-membernotnull-and-membernotnullwhen"></a>构造函数帮助程序方法：`MemberNotNull` 和 `MemberNotNullWhen`。
+
+这些特性指定了将构造函数中的公共代码重构为帮助程序方法时的意图。 C# 编译器分析构造函数和字段初始值设定项，以确保在每个构造函数返回之前，所有不可为 null 的引用字段都已初始化。 然而，C# 编译器不会通过所有帮助程序方法跟踪字段赋值。 当字段没有在构造函数中直接初始化，而在帮助程序方法中初始化时，编译器会发出警告 `CS8618`。 可以将 <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> 添加到方法声明中，并将其添加到方法中初始化为非 null 值的字段中。 例如，考虑以下情况：
+
+:::code language="csharp" source="snippets/InitializeMembers.cs" ID="MemberNotNullExample":::
+
+可以指定多个字段名称作为 `MemberNotNull` 特性构造函数的参数。
+
+<xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute> 有 `bool` 参数。 在帮助程序方法返回指明帮助程序方法是否初始化了字段的 `bool` 的情况下，可以使用 `MemberNotNullWhen`。
 
 ## <a name="verify-unreachable-code"></a>验证无法访问的代码
 
 某些方法（通常是异常帮助程序或其他实用工具方法）始终通过引发异常来退出。 或者，帮助程序可以基于布尔参数的值引发异常。
 
-在第一种情况下，可以将 `DoesNotReturn` 特性添加到方法声明中。 编译器通过三种方式为你提供帮助。 首先，如果存在方法可以退出而不引发异常的路径，编译器将发出警告。 其次，编译器会将调用该方法后的任何代码标记为不可访问，直到遇到适当的 `catch` 子句  。 第三，无法访问的代码不会影响任何 null 状态。 请考虑此方法：
+在第一种情况下，可以将 `DoesNotReturn` 特性添加到方法声明中。 编译器通过三种方式为你提供帮助。 首先，如果存在方法可以退出而不抛出异常的路径，则编译器会发出警告。 其次，编译器将调用此方法后的任何代码标记为“不可访问”，直到找到合适的 `catch` 子句。 第三，无法访问的代码不会影响任何 null 状态。 请考虑此方法：
 
 ```csharp
 [DoesNotReturn]
@@ -285,7 +297,7 @@ public void SetState(object containedField)
 
 [!INCLUDE [C# version alert](../../includes/csharp-version-alert.md)]
 
-添加可为 null 的引用类型提供了一个初始词汇表，用于描述 API 对可能为 `null` 的变量的期望。 其他特性使用更丰富的词汇表来描述变量作为前置条件和后置条件的 null 状态。 这些特性更清楚地描述了你的期望，并为使用 API 的开发人员提供了更好的体验。
+添加可为 null 的引用类型提供了一个初始词汇表，用于描述 API 对可能为 `null` 的变量的期望。 这些特性提供了更丰富的词汇来将变量的 null 状态描述为前置条件和后置条件。 这些特性更清楚地描述了你的期望，并为使用 API 的开发人员提供了更好的体验。
 
 在为可为 null 的上下文中更新库时，添加这些特性可指导用户正确使用 API。 这些特性有助于你完全描述输入参数和返回值的 null 状态：
 
@@ -294,7 +306,7 @@ public void SetState(object containedField)
 - [MaybeNull](xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute)：不可为 null 的返回值可以为 null。
 - [NotNull](xref:System.Diagnostics.CodeAnalysis.NotNullAttribute)：可为 null 的返回值永远不会为 null。
 - [MaybeNullWhen](xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute)：当方法返回指定的 `bool` 值时，不可为 null 的输入参数可以为 null。
-- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute)：当方法返回指定的 `bool` 值时，可为 null 的输入参数将不为 null。
+- [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute)：当方法返回指定的 `bool` 值时，可以为 null 的输入参数不会为 null。
 - [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute)：如果指定参数的输入参数不为 null，则返回值不为 null。
 - [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute)：方法从不返回。 换句话说，它总是引发异常。
 - [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute)：如果关联的 `bool` 参数具有指定值，则此方法永远不会返回。
