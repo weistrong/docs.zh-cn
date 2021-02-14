@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：参数 "" 的类型 <argumentname> 为 " <typename> "，它不是数值
 title: 参数“<argumentname>”的类型为“<typename>”，它不是数值类型
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_NotNumericType2
 ms.assetid: 6eca32a6-9a44-4f05-8791-abdb4cb316d2
-ms.openlocfilehash: aaef8f8c03d9e9bf8e35964f015fbc949459f0fb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 51169ccd00647e36ac1e468a780e04ad31923072
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078406"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455309"
 ---
 # <a name="type-of-argument-argumentname-is-typename-which-is-not-numeric"></a>参数“\<argumentname>”的类型为“\<typename>”，它不是数值类型
 

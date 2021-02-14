@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的算术运算符
 title: 算术运算符
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - Visual Basic code, operators
 - arithmetic operators [Visual Basic], about arithmetic operators
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
-ms.openlocfilehash: 023e479736285aa2d04509e05f49fe930cb4721d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3a7005b0a44f9b0358e393d8580a2a19a9a19881
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090074"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465322"
 ---
 # <a name="arithmetic-operators-in-visual-basic"></a>算术运算符 (Visual Basic)
 
@@ -66,7 +67,7 @@ ms.locfileid: "91090074"
   
  捕获 <xref:System.DivideByZeroException> 异常时，可以使用其成员帮助处理异常。 例如， <xref:System.Exception.Message%2A> 属性包含异常的消息文本。 有关详细信息，请参阅 [Try...Catch...Finally 语句](../../../language-reference/statements/try-catch-finally-statement.md)。  
   
-## <a name="bit-shift-operations"></a>移位运算  
+## <a name="bit-shift-operations"></a>Bit-Shift 操作  
 
  移位运算对位模式执行算术移位运算。 模式包含在左侧的操作数中，而右侧的操作数指定了要将模式移位到的位置数。 您可以用 [>> 运算符](../../../language-reference/operators/right-shift-operator.md) 将模式向右移动，或将 [<< 运算符](../../../language-reference/operators/left-shift-operator.md)左移。  
   

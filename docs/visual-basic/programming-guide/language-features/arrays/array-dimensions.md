@@ -1,4 +1,5 @@
 ---
+description: 了解有关以下内容的详细信息：数组维度 Visual Basic
 title: 数组维度
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,23 +10,23 @@ helpviewer_keywords:
 - rectangular arrays
 - ranking, arrays
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
-ms.openlocfilehash: f971f0c3693177adbcb8869d487e3ad41d49ddc2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 055a3efc1410bf80daf3804453adc2c20266733c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413099"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486545"
 ---
 # <a name="array-dimensions-in-visual-basic"></a>Array Dimensions in Visual Basic
 
-*维度*是可以改变数组元素规范的方向。 保存月份每一天的销售总额的数组有一个维度（月中的第几天）。 每个月的每一天都包含按部门列出的销售总额的数组有两个维度（部门号和月份日期）。 数组的维数称为 "*秩*"。
+*维度* 是可以改变数组元素规范的方向。 保存月份中每一天的销售额的数组包含一个) 月份 (的维度。 每个月中的每一天都包含按部门列出的销售总额的数组有两个维度， (部门号和月份) 日期。 数组的维数称为 " *秩*"。
 
 > [!NOTE]
 > 您可以使用 <xref:System.Array.Rank%2A> 属性来确定数组的维数。
 
 ## <a name="working-with-dimensions"></a>使用维度
 
-您可以通过为数组的每个维度提供*索引*或*下标*来指定数组的元素。 元素是从索引0到该维度的最高索引的每个维度连续的。
+您可以通过为数组的每个维度提供 *索引* 或 *下标* 来指定数组的元素。 元素是从索引0到该维度的最高索引的每个维度连续的。
 
 下图显示具有不同秩的数组的概念结构。 图中的每个元素都显示了访问它的索引值。 例如，您可以通过指定索引来访问二维数组的第二行的第一个元素 `(1, 0)` 。
 
@@ -37,7 +38,7 @@ ms.locfileid: "84413099"
 
 ### <a name="one-dimension"></a>一个维度
 
-许多数组只有一个维度，例如每个年龄段的人员数。 指定元素的唯一要求是该元素保留计数的期限。 因此，此类数组只使用一个索引。 下面的示例声明一个变量，用于保存 age 0 到120的*一维*期限计数。
+许多数组只有一个维度，例如每个年龄段的人员数。 指定元素的唯一要求是该元素保留计数的期限。 因此，此类数组只使用一个索引。 下面的示例声明一个变量，用于保存 age 0 到120的 *一维* 期限计数。
 
 ```vb
 Dim ageCounts(120) As UInteger
@@ -45,17 +46,17 @@ Dim ageCounts(120) As UInteger
 
 ### <a name="two-dimensions"></a>两个维度
 
-某些阵列有两个维度，例如每个校园建筑的每个楼层的办公室数。 元素的规范要求生成号和楼层，每个元素都包含建筑物和地面的组合的计数。 因此，此类数组使用两个索引。 下面的示例声明一个变量，用于保存办公室计数的二维*数组*（即建筑物0到40，地面0到5）。
+某些阵列有两个维度，例如每个校园建筑的每个楼层的办公室数。 元素的规范要求生成号和楼层，每个元素都包含建筑物和地面的组合的计数。 因此，此类数组使用两个索引。 下面的示例声明一个变量，用于保存办公室计数的二维 *数组* （即建筑物0到40，地面0到5）。
 
 ```vb
 Dim officeCounts(40, 5) As Byte
 ```
 
-二维数组也称为*矩形数组*。
+二维数组也称为 *矩形数组*。
 
 ### <a name="three-dimensions"></a>三个维度
 
-几个数组具有三个维度，如三维空间中的值。 此类数组使用三个索引，在此示例中，表示物理空间的 x、y 和 z 坐标。 下面的示例声明一个变量，以便在三维卷中的各个点上保存一*维*的空气温度。
+几个数组具有三个维度，如三维空间中的值。 此类数组使用三个索引，在此示例中，表示物理空间的 x、y 和 z 坐标。 下面的示例声明一个变量，以便在三维卷中的各个点上保存一 *维* 的空气温度。
 
 ```vb
 Dim airTemperatures(99, 99, 24) As Single
@@ -76,7 +77,7 @@ Dim airTemperatures(99, 99, 24) As Single
 Dim salesAmounts(30) As Double
 ```
 
-现在，假设您想要跟踪每个月的每一天的相同信息，而不是一年中的每个月。 您可以声明一个二维数组，其中包含12个行（对于月份）和31个列（表示天数），如下例所示。
+现在，假设您想要跟踪每个月的每一天的相同信息，而不是一年中的每个月。 您可以声明一个二维数组，其中包含12行 () 和31列 (日期) ，如以下示例所示。
 
 ```vb
 Dim salesAmounts(11, 30) As Double
@@ -93,7 +94,7 @@ Dim salesAmounts(4, 11, 30) As Double
 > [!NOTE]
 > 无需使用 `Dim` 语句或子句即可创建数组 `New` 。 例如，您可以调用 <xref:System.Array.CreateInstance%2A> 方法，或其他组件可以通过此方式传递您的代码。 此类数组可以具有0以外的下限。 您始终可以通过使用方法或函数测试某个维度的下限 <xref:System.Array.GetLowerBound%2A> `LBound` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [数组](index.md)
 - [数组疑难解答](troubleshooting-arrays.md)

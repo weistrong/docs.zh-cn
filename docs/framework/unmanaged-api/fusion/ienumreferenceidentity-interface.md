@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： IEnumReferenceIdentity 接口
 title: IEnumReferenceIdentity 接口
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a17b3155-7216-4e16-8c9f-abce21f549e7
 topic_type:
 - apiref
-ms.openlocfilehash: bea357fe9a154ffb8f69228c7332c026dc2759e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a7f17793fd737b5153c27dae59fb2aa87b46cf48
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728962"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465296"
 ---
 # <a name="ienumreferenceidentity-interface"></a>IEnumReferenceIdentity 接口
 
@@ -42,7 +43,7 @@ ms.locfileid: "95728962"
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [合成接口](fusion-interfaces.md)
 - [IReferenceIdentity 接口](ireferenceidentity-interface.md)

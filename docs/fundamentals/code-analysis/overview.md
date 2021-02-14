@@ -8,21 +8,21 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: 2cda5a23bbc90ca5dc2305b5d7023e8ea6120b79
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: eb978d6af6695fd2e4b5473ac5c0dc216e726e52
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99643067"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100459950"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>.NET 源代码分析概述
 
-.NET Compiler Platform (Roslyn) 分析器会检查 C# 或 Visual Basic 代码的代码质量和代码样式问题。 从 .NET 5.0 开始，这些分析器包含在 .NET SDK 中，无需单独安装。 如果项目面向 .NET 5 或更高版本，则默认情况下启用代码分析。 如果你的项目面向不同的 .NET 实现（例如，.NET Core、.NET Standard 或 .NET Framework），则必须通过将 [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) 属性设置为来手动启用代码分析 `true` 。
+.NET 编译器平台 (Roslyn) 分析器检查 c # 或 Visual Basic 代码以了解代码质量和样式问题。 从 .NET 5.0 开始，这些分析器包含在 .NET SDK 中，无需单独安装。 如果项目面向 .NET 5 或更高版本，则默认情况下启用代码分析。 如果你的项目面向不同的 .NET 实现（例如，.NET Core、.NET Standard 或 .NET Framework），则必须通过将 [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) 属性设置为来手动启用代码分析 `true` 。
 
-如果不想移到 .NET 5 + SDK，或者想要使用基于 NuGet 包的模型，也可以在 [CodeAnalysis. NetAnalyzers NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)中使用该分析器。 对于按需版本更新，你可能更倾向于使用基于包的模型。
+如果不想移到 .NET 5 + SDK、具有非 SDK 样式的 .NET Framework 项目，或喜欢基于 NuGet 包的模型，则还可以在 [NetAnalyzers NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)中使用该分析器。 对于按需版本更新，你可能更倾向于使用基于包的模型。
 
 > [!NOTE]
-> .NET 分析器是不可知的。 也就是说，你的项目不需要面向特定的 .NET 实现。 分析器适用于目标为的项目以及 `net5.0` 更早的 .net 版本，如 `netcoreapp3.1` 和 `net472` 。
+> .NET 分析器是不可知的。 也就是说，你的项目不需要面向特定的 .NET 实现。 分析器适用于目标为的项目以及 `net5.0` 更早的 .net 版本，如 `netcoreapp3.1` 和 `net472` 。 但是，若要使用 [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) 属性启用代码分析，你的项目必须引用 [项目 SDK](../../core/project-sdk/overview.md)。
 
 如果分析器发现规则冲突，则会将其报告为建议、警告或错误，具体情况视每个规则的 [配置](configuration-options.md)方式而定。 代码分析冲突以前缀 "CA" 或 "IDE" 显示，以便将它们与编译器错误区分开来。
 
@@ -58,9 +58,9 @@ ms.locfileid: "99643067"
 
 ### <a name="enable-additional-rules"></a>启用其他规则
 
-*分析模式* 是指预定义的代码分析配置，其中未启用任何、部分或全部规则。 在默认分析模式下，仅将少量规则 [作为生成警告启用](#enabled-rules)。 可以通过在项目文件中设置 [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) 属性来更改项目的分析模式。 允许的值为：
+*分析模式* 是指预定义的代码分析配置，其中未启用任何、部分或全部规则。 在默认分析模式下，仅将少量规则 [作为生成警告启用](#enabled-rules)。 可以通过 [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) 在项目文件中设置属性来更改项目的分析模式。 允许的值为：
 
-| 值 | 说明 |
+| “值” | 说明 |
 | - | - |
 | `AllDisabledByDefault` | 这是最保守的模式。 默认情况下，所有规则都处于禁用状态。 可以选择[选择加入](configuration-options.md)各条规则，以启用它们。<br /><br />`<AnalysisMode>AllDisabledByDefault</AnalysisMode>` |
 | `AllEnabledByDefault` | 这是最严格的模式。 所有规则都作为生成警告启用。 您可以选择性地 [选择退出](configuration-options.md) 个别规则来禁用它们。<br /><br />`<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |

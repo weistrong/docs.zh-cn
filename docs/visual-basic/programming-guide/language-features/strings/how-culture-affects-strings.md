@@ -1,22 +1,23 @@
 ---
+description: 了解详细信息：区域性如何影响中的字符串 Visual Basic
 title: 区域性对字符串的影响
 ms.date: 07/20/2015
 helpviewer_keywords:
 - locale [Visual Basic], effect on strings
 - strings [Visual Basic], locale dependence
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
-ms.openlocfilehash: 878e028f7c7f0e93752765272e93baa3ffe1426d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e1d330c9bf879ad174f58d7a91c0ddac7e68c0dd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059206"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100459963"
 ---
 # <a name="how-culture-affects-strings-in-visual-basic"></a>区域性对字符串的影响 (Visual Basic)
 
 此帮助页讨论 Visual Basic 如何使用区域性信息来执行字符串转换和比较。  
   
-## <a name="when-to-use-culture-specific-strings"></a>何时使用特定于区域性的字符串  
+## <a name="when-to-use-culture-specific-strings"></a>何时使用 Culture-Specific 字符串  
 
  通常，应为向用户显示的所有数据使用特定于区域性的字符串，并对应用程序的内部数据使用区域性固定字符串。  
   
@@ -24,7 +25,7 @@ ms.locfileid: "91059206"
   
  但是，如果应用程序将日期上传到中央服务器，则应根据特定区域性设置字符串的格式，以防止可能不同的日期格式之间发生混淆。  
   
-## <a name="culture-sensitive-functions"></a>区分区域性的函数  
+## <a name="culture-sensitive-functions"></a>Culture-Sensitive 函数  
 
  除和函数外，所有 Visual Basic 字符串转换函数 (`Str` `Val`) 使用应用程序的区域性信息来确保转换和比较适用于应用程序用户的区域性。  
   

@@ -1,15 +1,16 @@
 ---
+description: '了解有关详细信息，请参阅如何：创建集合初始值设定项使用的集合 (Visual Basic) '
 title: 如何：创建供集合初始化程序使用的集合
 ms.date: 07/20/2015
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: c858db10-424d-47e0-92cd-e08087cc5ebc
-ms.openlocfilehash: b332ffb44ebc20ce8431e586fc380b8c6a29967d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 09928cb0fbeb0346fd0e1148ffcd6ddce54279c0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086369"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460015"
 ---
 # <a name="how-to-create-a-collection-used-by-a-collection-initializer-visual-basic"></a>如何：创建集合初始值设定项所使用的集合 (Visual Basic)
 

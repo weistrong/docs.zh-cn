@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的逻辑运算符和位运算符
 title: 逻辑运算符和位运算符
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -21,42 +22,42 @@ helpviewer_keywords:
 - OrElse operator [Visual Basic]
 - logical operators [Visual Basic], unary
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
-ms.openlocfilehash: c15b9337f262563941699c0ff8fe5219ca6a5c93
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 55d9567813a9114573e1e3f70fe181cb8621b350
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085992"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472717"
 ---
 # <a name="logical-and-bitwise-operators-in-visual-basic"></a>Visual Basic 中的逻辑运算符和位运算符
 
-逻辑运算符比较 `Boolean` 表达式并返回 `Boolean` 结果。 `And`、、 `Or` `AndAlso` 、 `OrElse` 和 `Xor` 运算符都是*二进制*，因为运算符采用两个操作数，而 `Not` 运算符是*一元*，因为它采用单个操作数。 其中一些运算符还可以对整数值执行按位逻辑运算。  
+逻辑运算符比较 `Boolean` 表达式并返回 `Boolean` 结果。 `And`、、 `Or` `AndAlso` 、 `OrElse` 和 `Xor` 运算符都是 *二进制*，因为运算符采用两个操作数，而 `Not` 运算符是 *一元*，因为它采用单个操作数。 其中一些运算符还可以对整数值执行按位逻辑运算。  
   
 ## <a name="unary-logical-operator"></a>一元逻辑运算符  
 
- [Not 运算符](../../../language-reference/operators/not-operator.md)对表达式执行*negation*逻辑非运算 `Boolean` 。 它生成其操作数的逻辑相反。 如果表达式的计算结果为 `True` ，则 `Not` 返回 `False` ; 如果表达式的计算结果为， `False` `Not` `True` 则返回。 下面的示例对此进行了演示。  
+ [Not 运算符](../../../language-reference/operators/not-operator.md)对表达式执行逻辑非运算 `Boolean` 。 它生成其操作数的逻辑相反。 如果表达式的计算结果为 `True` ，则 `Not` 返回 `False` ; 如果表达式的计算结果为， `False` `Not` `True` 则返回。 下面的示例对此进行了演示。  
   
  [!code-vb[VbVbalrOperators#77](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#77)]  
   
 ## <a name="binary-logical-operators"></a>二元逻辑运算符  
 
- [And 运算符](../../../language-reference/operators/and-operator.md)对两个表达式执行逻辑与*运算* `Boolean` 。 如果两个表达式的计算结果都为 `True` ，则 `And` 返回 `True` 。 如果至少有一个表达式的计算结果为 `False` ，则 `And` 返回 `False` 。  
+ [And 运算符](../../../language-reference/operators/and-operator.md)对两个表达式执行逻辑与 *运算* `Boolean` 。 如果两个表达式的计算结果都为 `True` ，则 `And` 返回 `True` 。 如果至少有一个表达式的计算结果为 `False` ，则 `And` 返回 `False` 。  
   
- [Or 运算符](../../../language-reference/operators/or-operator.md)对两个表达式执行*逻辑或**运算* `Boolean` 。 如果两个表达式的计算结果为 `True` ，或均为计算结果 `True` ，则 `Or` 返回 `True` 。 如果两个表达式的计算结果均为 `True` ，则 `Or` 返回 `False` 。  
+ [Or 运算符](../../../language-reference/operators/or-operator.md)对两个表达式执行 *逻辑或**运算* `Boolean` 。 如果两个表达式的计算结果为 `True` ，或均为计算结果 `True` ，则 `Or` 返回 `True` 。 如果两个表达式的计算结果均为 `True` ，则 `Or` 返回 `False` 。  
   
- [Xor 运算符](../../../language-reference/operators/xor-operator.md)对两个表达式执行逻辑*异*运算 `Boolean` 。 如果恰好一个表达式的计算结果为 `True` ，而不是同时返回，则 `Xor` 返回 `True` 。 如果两个表达式的计算结果都为 `True` ，或者都为 `False` ，则 `Xor` 返回 `False` 。  
+ [Xor 运算符](../../../language-reference/operators/xor-operator.md)对两个表达式执行逻辑 *异* 运算 `Boolean` 。 如果恰好一个表达式的计算结果为 `True` ，而不是同时返回，则 `Xor` 返回 `True` 。 如果两个表达式的计算结果都为 `True` ，或者都为 `False` ，则 `Xor` 返回 `False` 。  
   
  下面的示例演示了 `And` 、 `Or` 和 `Xor` 运算符。  
   
  [!code-vb[VbVbalrOperators#78](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#78)]  
   
-## <a name="short-circuiting-logical-operations"></a>短路逻辑运算  
+## <a name="short-circuiting-logical-operations"></a>Short-Circuiting 逻辑操作  
 
  [AndAlso 运算符](../../../language-reference/operators/andalso-operator.md)与运算符非常类似 `And` ，因为它还对两个表达式执行逻辑与运算 `Boolean` 。 这两者之间的主要区别在于 `AndAlso` 表现 *短路* 行为。 如果表达式中的第一个表达式的 `AndAlso` 计算结果为 `False` ，则不会计算第二个表达式，因为它不能更改最终结果，并 `AndAlso` 返回 `False` 。  
   
  同样， [OrElse 运算符](../../../language-reference/operators/orelse-operator.md) 对两个表达式执行短路逻辑析取 `Boolean` 。 如果表达式中的第一个表达式的 `OrElse` 计算结果为 `True` ，则不会计算第二个表达式，因为它不能更改最终结果，并 `OrElse` 返回 `True` 。  
   
-### <a name="short-circuiting-trade-offs"></a>短路权衡  
+### <a name="short-circuiting-trade-offs"></a>Short-Circuiting Trade-Offs  
 
  短路可以通过不计算无法更改逻辑操作结果的表达式来提高性能。 但是，如果该表达式执行其他操作，则短路将跳过这些操作。 例如，如果表达式包含对过程的调用，则在 `Function` 表达式为短路时不会调用该过程，并且中包含的任何其他代码都不 `Function` 会运行。 因此，该函数可能会偶尔运行，并且可能无法正确测试。 或程序逻辑可能依赖于中的代码 `Function` 。  
   
