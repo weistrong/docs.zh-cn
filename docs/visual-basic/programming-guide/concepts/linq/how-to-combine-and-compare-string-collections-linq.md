@@ -1,21 +1,22 @@
 ---
+description: '了解更多相关信息，请参阅如何：合并和比较字符串集合 (LINQ)  (Visual Basic) '
 title: 如何：组合和比较字符串集合 (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 243cfafc-9eaa-4354-a9df-d329f1d39913
-ms.openlocfilehash: 271ef7805cd2285fa2d8796a31257c0f31bb9a76
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9265750bfc55f60cc683fe0e8235174eee76272c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374857"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424497"
 ---
-# <a name="how-to-combine-and-compare-string-collections-linq-visual-basic"></a><span data-ttu-id="dacba-102">如何：合并和比较字符串集合（LINQ）（Visual Basic）</span><span class="sxs-lookup"><span data-stu-id="dacba-102">How to: Combine and Compare String Collections (LINQ) (Visual Basic)</span></span>
+# <a name="how-to-combine-and-compare-string-collections-linq-visual-basic"></a><span data-ttu-id="442be-103">如何：合并和比较字符串集合 (LINQ)  (Visual Basic) </span><span class="sxs-lookup"><span data-stu-id="442be-103">How to: Combine and Compare String Collections (LINQ) (Visual Basic)</span></span>
 
-<span data-ttu-id="dacba-103">此示例演示如何合并包含文本行的文件，并对结果排序。</span><span class="sxs-lookup"><span data-stu-id="dacba-103">This example shows how to merge files that contain lines of text and then sort the results.</span></span> <span data-ttu-id="dacba-104">具体而言，此示例演示如何对两组文本行执行简单的串联、联合和交集。</span><span class="sxs-lookup"><span data-stu-id="dacba-104">Specifically, it shows how to perform a simple concatenation, a union, and an intersection on the two sets of text lines.</span></span>
+<span data-ttu-id="442be-104">此示例演示如何合并包含文本行的文件，并对结果排序。</span><span class="sxs-lookup"><span data-stu-id="442be-104">This example shows how to merge files that contain lines of text and then sort the results.</span></span> <span data-ttu-id="442be-105">具体而言，此示例演示如何对两组文本行执行简单的串联、联合和交集。</span><span class="sxs-lookup"><span data-stu-id="442be-105">Specifically, it shows how to perform a simple concatenation, a union, and an intersection on the two sets of text lines.</span></span>
 
-## <a name="set-up-the-project-and-the-text-files"></a><span data-ttu-id="dacba-105">设置项目和文本文件</span><span class="sxs-lookup"><span data-stu-id="dacba-105">Set up the project and the text files</span></span>
+## <a name="set-up-the-project-and-the-text-files"></a><span data-ttu-id="442be-106">设置项目和文本文件</span><span class="sxs-lookup"><span data-stu-id="442be-106">Set up the project and the text files</span></span>
 
-1. <span data-ttu-id="dacba-106">将下面的姓名复制到名为 names1.txt 的文本文件，然后将此文件保存到项目文件夹：</span><span class="sxs-lookup"><span data-stu-id="dacba-106">Copy these names into a text file that is named names1.txt and save it in your project folder:</span></span>
+1. <span data-ttu-id="442be-107">将下面的姓名复制到名为 names1.txt 的文本文件，然后将此文件保存到项目文件夹：</span><span class="sxs-lookup"><span data-stu-id="442be-107">Copy these names into a text file that is named names1.txt and save it in your project folder:</span></span>
 
     ```text
     Bankov, Peter
@@ -30,7 +31,7 @@ ms.locfileid: "84374857"
     Garcia, Debra
     ```
 
-2. <span data-ttu-id="dacba-107">将下面的姓名复制到名为 names2.txt 的文本文件，然后将此文件保存到项目文件夹。</span><span class="sxs-lookup"><span data-stu-id="dacba-107">Copy these names into a text file that is named names2.txt and save it in your project folder.</span></span> <span data-ttu-id="dacba-108">请注意，这两个文件拥有一些共同的名称。</span><span class="sxs-lookup"><span data-stu-id="dacba-108">Note that the two files have some names in common.</span></span>
+2. <span data-ttu-id="442be-108">将下面的姓名复制到名为 names2.txt 的文本文件，然后将此文件保存到项目文件夹。</span><span class="sxs-lookup"><span data-stu-id="442be-108">Copy these names into a text file that is named names2.txt and save it in your project folder.</span></span> <span data-ttu-id="442be-109">请注意，这两个文件拥有一些共同的名称。</span><span class="sxs-lookup"><span data-stu-id="442be-109">Note that the two files have some names in common.</span></span>
 
     ```text
     Liu, Jinghao
@@ -45,7 +46,7 @@ ms.locfileid: "84374857"
     El Yassir, Mehdi
     ```
 
-## <a name="example"></a><span data-ttu-id="dacba-109">示例</span><span class="sxs-lookup"><span data-stu-id="dacba-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="442be-110">示例</span><span class="sxs-lookup"><span data-stu-id="442be-110">Example</span></span>
 
 ```vb
 Class ConcatenateStrings
@@ -163,11 +164,11 @@ End Class
 ' 2 total names in list
 ```
 
-## <a name="compile-the-code"></a><span data-ttu-id="dacba-110">编译代码</span><span class="sxs-lookup"><span data-stu-id="dacba-110">Compile the code</span></span>
+## <a name="compile-the-code"></a><span data-ttu-id="442be-111">编译代码</span><span class="sxs-lookup"><span data-stu-id="442be-111">Compile the code</span></span>
 
-<span data-ttu-id="dacba-111">创建 Visual Basic 的控制台应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="dacba-111">Create a Visual Basic console application project.</span></span> <span data-ttu-id="dacba-112">为 system.exception `Imports` 命名空间添加语句。</span><span class="sxs-lookup"><span data-stu-id="dacba-112">Add an `Imports` statement for the System.Linq namespace.</span></span>
+<span data-ttu-id="442be-112">创建 Visual Basic 的控制台应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="442be-112">Create a Visual Basic console application project.</span></span> <span data-ttu-id="442be-113">为 system.exception `Imports` 命名空间添加语句。</span><span class="sxs-lookup"><span data-stu-id="442be-113">Add an `Imports` statement for the System.Linq namespace.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="dacba-113">另请参阅</span><span class="sxs-lookup"><span data-stu-id="dacba-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="442be-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="442be-114">See also</span></span>
 
-- [<span data-ttu-id="dacba-114">LINQ 和字符串 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="dacba-114">LINQ and Strings (Visual Basic)</span></span>](linq-and-strings.md)
-- [<span data-ttu-id="dacba-115">LINQ 和文件目录 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="dacba-115">LINQ and File Directories (Visual Basic)</span></span>](linq-and-file-directories.md)
+- [<span data-ttu-id="442be-115">LINQ 和字符串 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="442be-115">LINQ and Strings (Visual Basic)</span></span>](linq-and-strings.md)
+- [<span data-ttu-id="442be-116">LINQ 和文件目录 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="442be-116">LINQ and File Directories (Visual Basic)</span></span>](linq-and-file-directories.md)

@@ -1,30 +1,31 @@
 ---
+description: '了解详细信息：如何：比较两个文件夹的内容 (LINQ)  (Visual Basic) '
 title: 如何：比较两个文件夹的内容 (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 903c7e9a-f48d-4a07-a8a8-5450d2646efa
-ms.openlocfilehash: 63a062c562e2c79ea81ac270651aa16776801b99
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8891617b7b95bf4543603ca40e7b85abb914da34
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410755"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424484"
 ---
-# <a name="how-to-compare-the-contents-of-two-folders-linq-visual-basic"></a><span data-ttu-id="0c315-102">如何：比较两个文件夹的内容（LINQ）（Visual Basic）</span><span class="sxs-lookup"><span data-stu-id="0c315-102">How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)</span></span>
+# <a name="how-to-compare-the-contents-of-two-folders-linq-visual-basic"></a><span data-ttu-id="b317c-103">如何：比较两个文件夹 (LINQ)  (Visual Basic 的内容) </span><span class="sxs-lookup"><span data-stu-id="b317c-103">How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)</span></span>
 
-<span data-ttu-id="0c315-103">此示例演示了比较两个文件列表的 3 种方法：</span><span class="sxs-lookup"><span data-stu-id="0c315-103">This example demonstrates three ways to compare two file listings:</span></span>
+<span data-ttu-id="b317c-104">此示例演示了比较两个文件列表的 3 种方法：</span><span class="sxs-lookup"><span data-stu-id="b317c-104">This example demonstrates three ways to compare two file listings:</span></span>
 
-- <span data-ttu-id="0c315-104">通过查询布尔值指定两个文件列表是否相同。</span><span class="sxs-lookup"><span data-stu-id="0c315-104">By querying for a Boolean value that specifies whether the two file lists are identical.</span></span>
+- <span data-ttu-id="b317c-105">通过查询布尔值指定两个文件列表是否相同。</span><span class="sxs-lookup"><span data-stu-id="b317c-105">By querying for a Boolean value that specifies whether the two file lists are identical.</span></span>
 
-- <span data-ttu-id="0c315-105">通过查询交集检索同时存在于两个文件夹中的文件。</span><span class="sxs-lookup"><span data-stu-id="0c315-105">By querying for the intersection to retrieve the files that are in both folders.</span></span>
+- <span data-ttu-id="b317c-106">通过查询交集检索同时存在于两个文件夹中的文件。</span><span class="sxs-lookup"><span data-stu-id="b317c-106">By querying for the intersection to retrieve the files that are in both folders.</span></span>
 
-- <span data-ttu-id="0c315-106">通过查询差集检索仅存在于一个文件夹中的文件。</span><span class="sxs-lookup"><span data-stu-id="0c315-106">By querying for the set difference to retrieve the files that are in one folder but not the other.</span></span>
+- <span data-ttu-id="b317c-107">通过查询差集检索仅存在于一个文件夹中的文件。</span><span class="sxs-lookup"><span data-stu-id="b317c-107">By querying for the set difference to retrieve the files that are in one folder but not the other.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="0c315-107">此处的方法适用于比较任何类型的对象序列。</span><span class="sxs-lookup"><span data-stu-id="0c315-107">The techniques shown here can be adapted to compare sequences of objects of any type.</span></span>
+    > <span data-ttu-id="b317c-108">此处的方法适用于比较任何类型的对象序列。</span><span class="sxs-lookup"><span data-stu-id="b317c-108">The techniques shown here can be adapted to compare sequences of objects of any type.</span></span>
 
-<span data-ttu-id="0c315-108">此处的 `FileComparer` 类演示如何将自定义比较器类与标准查询运算符结合使用。</span><span class="sxs-lookup"><span data-stu-id="0c315-108">The `FileComparer` class shown here demonstrates how to use a custom comparer class together with the Standard Query Operators.</span></span> <span data-ttu-id="0c315-109">此类不适合在实际方案中使用。</span><span class="sxs-lookup"><span data-stu-id="0c315-109">The class is not intended for use in real-world scenarios.</span></span> <span data-ttu-id="0c315-110">它仅使用每个文件的名称和字节长度来确定每个文件夹的内容是否相同。</span><span class="sxs-lookup"><span data-stu-id="0c315-110">It just uses the name and length in bytes of each file to determine whether the contents of each folder are identical or not.</span></span> <span data-ttu-id="0c315-111">在实际方案中，应修改此比较器以执行更严格的等同性检查。</span><span class="sxs-lookup"><span data-stu-id="0c315-111">In a real-world scenario, you should modify this comparer to perform a more rigorous equality check.</span></span>
+<span data-ttu-id="b317c-109">此处的 `FileComparer` 类演示如何将自定义比较器类与标准查询运算符结合使用。</span><span class="sxs-lookup"><span data-stu-id="b317c-109">The `FileComparer` class shown here demonstrates how to use a custom comparer class together with the Standard Query Operators.</span></span> <span data-ttu-id="b317c-110">此类不适合在实际方案中使用。</span><span class="sxs-lookup"><span data-stu-id="b317c-110">The class is not intended for use in real-world scenarios.</span></span> <span data-ttu-id="b317c-111">它仅使用每个文件的名称和字节长度来确定每个文件夹的内容是否相同。</span><span class="sxs-lookup"><span data-stu-id="b317c-111">It just uses the name and length in bytes of each file to determine whether the contents of each folder are identical or not.</span></span> <span data-ttu-id="b317c-112">在实际方案中，应修改此比较器以执行更严格的等同性检查。</span><span class="sxs-lookup"><span data-stu-id="b317c-112">In a real-world scenario, you should modify this comparer to perform a more rigorous equality check.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0c315-112">示例</span><span class="sxs-lookup"><span data-stu-id="0c315-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b317c-113">示例</span><span class="sxs-lookup"><span data-stu-id="b317c-113">Example</span></span>
 
 ```vb
 Module CompareDirs
@@ -114,11 +115,11 @@ Module CompareDirs
 End Module
 ```
 
-## <a name="compile-the-code"></a><span data-ttu-id="0c315-113">编译代码</span><span class="sxs-lookup"><span data-stu-id="0c315-113">Compile the code</span></span>
+## <a name="compile-the-code"></a><span data-ttu-id="b317c-114">编译代码</span><span class="sxs-lookup"><span data-stu-id="b317c-114">Compile the code</span></span>
 
-<span data-ttu-id="0c315-114">使用 `Imports` System. Linq 命名空间的语句创建 Visual Basic 控制台应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="0c315-114">Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.</span></span>
+<span data-ttu-id="b317c-115">使用 `Imports` System. Linq 命名空间的语句创建 Visual Basic 控制台应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="b317c-115">Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="0c315-115">另请参阅</span><span class="sxs-lookup"><span data-stu-id="0c315-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b317c-116">请参阅</span><span class="sxs-lookup"><span data-stu-id="b317c-116">See also</span></span>
 
-- [<span data-ttu-id="0c315-116">LINQ to Objects (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="0c315-116">LINQ to Objects (Visual Basic)</span></span>](linq-to-objects.md)
-- [<span data-ttu-id="0c315-117">LINQ 和文件目录 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="0c315-117">LINQ and File Directories (Visual Basic)</span></span>](linq-and-file-directories.md)
+- [<span data-ttu-id="b317c-117">LINQ to Objects (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="b317c-117">LINQ to Objects (Visual Basic)</span></span>](linq-to-objects.md)
+- [<span data-ttu-id="b317c-118">LINQ 和文件目录 (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="b317c-118">LINQ and File Directories (Visual Basic)</span></span>](linq-and-file-directories.md)
