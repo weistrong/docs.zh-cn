@@ -1,13 +1,14 @@
 ---
+description: '了解有关详细信息，请参阅如何：查询包含一组指定词语的句子 (LINQ)  (Visual Basic) '
 title: 如何：查询包含一组指定词语的句子 (LINQ)
 ms.date: 07/20/2015
 ms.assetid: a5ae8ced-61fe-4c10-bb8a-95630e50f603
-ms.openlocfilehash: ce88bf001346f90eb9b08ca1ff14afc7dcb04fa0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b6d2f428e499b8b22fa5bc13015f2405430c1bbd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397955"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435091"
 ---
 # <a name="how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq-visual-basic"></a>如何：查询包含一组指定词语的句子 (LINQ) (Visual Basic)
 
@@ -67,6 +68,6 @@ End Class
 
 使用 `Imports` System. Linq 命名空间的语句创建 Visual Basic 控制台应用程序项目。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LINQ 和字符串 (Visual Basic)](linq-and-strings.md)
