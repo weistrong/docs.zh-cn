@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： XML 文本概述 (Visual Basic) '
 title: XML 文本概述
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], XML literals
 - literals [Visual Basic], XML
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
-ms.openlocfilehash: c65cac4f6e8f5f314587f20d5c373c92ea0c51e5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5544c0238b117ed5b9b2f9cdab312127736e97d7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085381"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423844"
 ---
 # <a name="xml-literals-overview-visual-basic"></a>XML 文本概述 (Visual Basic)
 
-*Xml 文本*允许将 xml 直接合并到 Visual Basic 代码。 XML 文本语法表示 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 对象，它类似于 XML 1.0 语法。 这样可以更轻松地以编程方式创建 XML 元素和文档，因为你的代码具有与最终 XML 相同的结构。  
+*Xml 文本* 允许将 xml 直接合并到 Visual Basic 代码。 XML 文本语法表示 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 对象，它类似于 XML 1.0 语法。 这样可以更轻松地以编程方式创建 XML 元素和文档，因为你的代码具有与最终 XML 相同的结构。  
   
- Visual Basic 将 XML 文本编译为 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 对象。 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 提供了一个用于创建和操作 XML 的简单对象模型，此模型可很好地与语言集成查询 (LINQ) 集成。 有关详细信息，请参阅 <xref:System.Xml.Linq.XElement>。  
+ Visual Basic 将 XML 文本编译为 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 对象。 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 提供了用于创建和操作 XML 的简单对象模型，此模型很好地与 Language-Integrated 查询 (LINQ) 集成。 有关详细信息，请参阅 <xref:System.Xml.Linq.XElement>。  
   
  您可以在 XML 文本中嵌入 Visual Basic 表达式。 在运行时，应用程序将 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 为每个文本创建一个对象，并合并嵌入式表达式的值。 这使您可以在 XML 文本中指定动态内容。 有关详细信息，请参阅 [XML 中的嵌入式表达式](embedded-expressions-in-xml.md)。  
   

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：修改 XML 文本 (Visual Basic) '
 title: 如何：修改 XML 文本
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - XML literals [Visual Basic]
 - XML literals [Visual Basic], modifying
 ms.assetid: 4e864522-a37a-43a2-8236-af80277c5482
-ms.openlocfilehash: a2ac2e9802d4c8ab522bb430d15cce5616430437
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 23b900c3da5864ac7a91e6c7a43f44a0d4ab1a21
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374870"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483607"
 ---
 # <a name="how-to-modify-xml-literals-visual-basic"></a>如何：修改 XML 文本 (Visual Basic)
 
@@ -110,7 +111,7 @@ Visual Basic 提供了修改 XML 文本的便利方法。 您可以添加或删�
     </Catalog>
     ```
 
-    有关 XML 特性轴属性的详细信息，请参阅[Xml 特性轴属性](../../../language-reference/xml-axis/xml-attribute-axis-property.md)。
+    有关 XML 特性轴属性的详细信息，请参阅 [Xml 特性轴属性](../../../language-reference/xml-axis/xml-attribute-axis-property.md)。
 
 ### <a name="to-add-an-element-to-an-xml-literal"></a>向 XML 文本添加元素
 
@@ -286,7 +287,7 @@ Visual Basic 提供了修改 XML 文本的便利方法。 您可以添加或删�
     </Catalog>
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Basic 中操作 XML](manipulating-xml.md)
 - [XML](index.md)

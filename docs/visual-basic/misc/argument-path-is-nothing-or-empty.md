@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：参数 "Path" 是 Nothing 或空
 title: 自变量“Path”是 Nothing 或是空的
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_PathNullOrEmpty
 ms.assetid: ba8aed14-2543-4c8e-ad88-c35b49078dd6
-ms.openlocfilehash: dcc31f14404b224d3cd9281f462520810f14cff0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c45720f8a4d4adee53bc3e78a25afec44616dc36
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087123"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456388"
 ---
 # <a name="argument-path-is-nothing-or-empty"></a>自变量“Path”是 Nothing 或是空的
 
@@ -23,4 +24,4 @@ ms.locfileid: "91087123"
 
 - [DirectoryPath。](xref:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath)
 - [如何：分析文件路径](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
-- [没](../language-reference/nothing.md)
+- [无](../language-reference/nothing.md)

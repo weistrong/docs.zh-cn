@@ -1,20 +1,21 @@
 ---
+description: '详细了解：事件 (Visual Basic) '
 title: 事件
 ms.date: 07/20/2015
 helpviewer_keywords:
 - events [Visual Basic], about events
 - events [Visual Basic]
 ms.assetid: 8fb0353a-e41b-4e23-b78f-da65db832f70
-ms.openlocfilehash: 15ab02c20c1baf0fbc9087bfe2e75ec97acd0734
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6cd4a4b997ec13b394cae38e9d66c7dd9c283aaf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057931"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483672"
 ---
 # <a name="events-visual-basic"></a>事件 (Visual Basic)
 
-虽然你可以将 Visual Studio 项目可视化为一系列按顺序执行的过程，但实际上，大多数程序都是事件驱动型的，这意味着执行流是由称为 *事件*的外部事件确定的。  
+虽然你可以将 Visual Studio 项目可视化为一系列按顺序执行的过程，但实际上，大多数程序都是事件驱动型的，这意味着执行流是由称为 *事件* 的外部事件确定的。  
   
  事件是一种信号，可指示应用程序某重要事件已发生。 例如，当用户单击窗体控件时，窗体会引发 `Click` 事件，并调用可处理此事件的过程。 借助事件，各个不同的任务还可以相互通信。 例如，应用程序执行的排序任务与主应用程序是分开的。 如果用户取消排序，应用程序便会发送 cancel 事件，指示停止排序过程。  
   
@@ -30,7 +31,7 @@ ms.locfileid: "91057931"
   
 ### <a name="raising-events"></a>引发事件  
 
- 事件类似于消息，指示某重要事件已发生。 广播消息的行为称为*引发*事件。 在 Visual Basic 中，将引发包含语句的事件 `RaiseEvent` ，如以下示例中所示：  
+ 事件类似于消息，指示某重要事件已发生。 广播消息的行为称为 *引发* 事件。 在 Visual Basic 中，将引发包含语句的事件 `RaiseEvent` ，如以下示例中所示：  
   
  [!code-vb[VbVbalrEvents#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#25)]  
   
@@ -38,11 +39,11 @@ ms.locfileid: "91057931"
   
 ### <a name="event-senders"></a>事件发送方  
 
- 所有能够引发事件的对象都是*事件发送方*，亦称为“*事件源*”。 例如，窗体、控件和用户定义对象都是事件发送方。  
+ 所有能够引发事件的对象都是 *事件发送方*，亦称为“*事件源*”。 例如，窗体、控件和用户定义对象都是事件发送方。  
   
 ### <a name="event-handlers"></a>事件处理程序  
 
- *事件处理程序*是在相应事件发生时调用的过程。 可以将签名一致的任意有效子例程用作事件处理程序。 不过，不能将函数用作事件处理程序，因为它不能向事件源返回值。  
+ *事件处理程序* 是在相应事件发生时调用的过程。 可以将签名一致的任意有效子例程用作事件处理程序。 不过，不能将函数用作事件处理程序，因为它不能向事件源返回值。  
   
  Visual Basic 对事件处理程序使用标准命名约定，这些事件处理程序将事件发送方的名称、下划线和事件的名称组合在一起。 例如，`button1` 按钮的 `Click` 事件将命名为 `Sub button1_Click`。  
   
@@ -97,7 +98,7 @@ ms.locfileid: "91057931"
   
 ## <a name="handling-events-inherited-from-a-base-class"></a>处理继承自基类的事件  
 
- *派生类*继承了基类特征的类，可以使用 `Handles MyBase` 语句处理基类引发的事件。  
+ *派生类* 继承了基类特征的类，可以使用 `Handles MyBase` 语句处理基类引发的事件。  
   
 ### <a name="to-handle-events-from-a-base-class"></a>处理继承自基类的事件的具体操作  
   
@@ -107,7 +108,7 @@ ms.locfileid: "91057931"
   
 ## <a name="related-sections"></a>相关章节  
   
-|Title|描述|  
+|Title|说明|  
 |-----------|-----------------|  
 |[演练：声明和引发事件](walkthrough-declaring-and-raising-events.md)|分步展示了如何声明和引发类事件。|  
 |[演练：处理事件](walkthrough-handling-events.md)|展示了如何编写事件处理程序过程。|  

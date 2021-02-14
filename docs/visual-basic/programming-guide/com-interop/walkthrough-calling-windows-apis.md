@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：演练：调用 Windows Api (Visual Basic) '
 title: 演练：调用 Windows API
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - DllImport attribute, calling Windows API
 - Declare statement [Visual Basic], declaring DLL functions
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
-ms.openlocfilehash: 88b3df2f18add6641d0355d2c605bc5f74dabbc7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9ffe89cabade780dbe1ced189a92c37e822c59e9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098315"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427253"
 ---
 # <a name="walkthrough-calling-windows-apis-visual-basic"></a>演练：调用 Windows API (Visual Basic)
 
@@ -41,7 +42,7 @@ Windows Api 是 (Dll) 的动态链接库，这是 Windows 操作系统的一部�
     > [!NOTE]
     > 有关 Windows Api 的完整信息，请参阅 Platform sdk Windows API 中的 Win32 SDK 文档。 有关 Windows Api 使用的常量的详细信息，请检查在平台 SDK 中包含的头文件（如 Windows）。  
   
-2. 在 "**文件**" 菜单上单击 "**新建**"，然后单击 "**项目**"，以打开新的 Windows 应用程序项目。 将显示“新建项目”对话框。  
+2. 在 "**文件**" 菜单上单击 "**新建**"，然后单击 "**项目**"，以打开新的 Windows 应用程序项目。 此时将出现“新建项目”  对话框。  
   
 3. 从 Visual Basic 项目模板列表中选择 " **Windows 应用程序** "。 将显示新项目。  
   
@@ -67,7 +68,7 @@ Windows Api 是 (Dll) 的动态链接库，这是 Windows 操作系统的一部�
   
 #### <a name="argument-and-data-type-declarations"></a>参数和数据类型声明  
 
- 声明参数及其数据类型。 此部分可能具有挑战性，因为 Windows 使用的数据类型与 Visual Studio 数据类型不对应。 Visual Basic 通过将参数转换为兼容的数据类型（称为 *封送*处理的进程）来执行大量的工作。 您可以通过使用 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 命名空间中定义的属性来显式控制如何对参数进行封送处理 <xref:System.Runtime.InteropServices> 。  
+ 声明参数及其数据类型。 此部分可能具有挑战性，因为 Windows 使用的数据类型与 Visual Studio 数据类型不对应。 Visual Basic 通过将参数转换为兼容的数据类型（称为 *封送* 处理的进程）来执行大量的工作。 您可以通过使用 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 命名空间中定义的属性来显式控制如何对参数进行封送处理 <xref:System.Runtime.InteropServices> 。  
   
 > [!NOTE]
 > 以前版本的 Visual Basic 允许你声明参数 `As Any` ，这意味着可以使用任何数据类型的数据。 Visual Basic 要求对所有语句使用特定数据类型 `Declare` 。  
@@ -118,11 +119,11 @@ Windows Api 是 (Dll) 的动态链接库，这是 Windows 操作系统的一部�
 
  `DllImport`特性提供了另一种方法来调用不带类型库的 dll 中的函数。 `DllImport` 大致等效于使用语句， `Declare` 但可以更好地控制调用函数的方式。  
   
- `DllImport`只要调用引用共享 (有时称为*静态*) 方法，就可以将用于大多数 Windows API 调用。 不能使用需要类的实例的方法。 与 `Declare` 语句不同， `DllImport` 调用不能使用 `MarshalAs` 属性。  
+ `DllImport`只要调用引用共享 (有时称为 *静态*) 方法，就可以将用于大多数 Windows API 调用。 不能使用需要类的实例的方法。 与 `Declare` 语句不同， `DllImport` 调用不能使用 `MarshalAs` 属性。  
   
 ### <a name="to-call-a-windows-api-using-the-dllimport-attribute"></a>使用 DllImport 特性调用 Windows API  
   
-1. 在 "**文件**" 菜单上单击 "**新建**"，然后单击 "**项目**"，以打开新的 Windows 应用程序项目。 将显示“新建项目”对话框。  
+1. 在 "**文件**" 菜单上单击 "**新建**"，然后单击 "**项目**"，以打开新的 Windows 应用程序项目。 此时将出现“新建项目”  对话框。  
   
 2. 从 Visual Basic 项目模板列表中选择 " **Windows 应用程序** "。 将显示新项目。  
   
