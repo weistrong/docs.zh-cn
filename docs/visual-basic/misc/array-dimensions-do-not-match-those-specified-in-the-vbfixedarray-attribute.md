@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：数组维度与 "VBFixedArray" 特性中指定的维数不匹配
 title: 数组维数与 "VBFixedArray" 特性中指定的维数不匹配
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_ArrayDimensionsDontMatch
 ms.assetid: 71809e3b-8147-4314-9c4c-e4a5bc9a5530
-ms.openlocfilehash: e48a3c843d245e97f6ddaf948ef893b056bc66dd
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f220d1ce626fee1db86927313c2f242dac972bba
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91079667"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424900"
 ---
 # <a name="array-dimensions-do-not-match-those-specified-in-the-vbfixedarray-attribute"></a>数组维数与 "VBFixedArray" 特性中指定的维数不匹配
 

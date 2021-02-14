@@ -1,15 +1,16 @@
 ---
+description: 了解更多相关信息：此系统不包含对日文区域设置的支持
 title: 此系统不包含对日文区域设置的支持
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_JPNNotSupported
 ms.assetid: 986d0379-c9d1-4004-b9ac-8d3bd95dfe85
-ms.openlocfilehash: 83fb7423375d3fa9c9936148bbe0d720f6cda46c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c3ec90138ec40ec3945fa2e586d225791a44b480
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91060401"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434766"
 ---
 # <a name="this-system-does-not-contain-support-for-the-japanese-locale"></a>此系统不包含对日文区域设置的支持
 

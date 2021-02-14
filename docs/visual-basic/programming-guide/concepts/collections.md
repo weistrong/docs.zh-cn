@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：集合 (Visual Basic) '
 title: 集合
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
-ms.openlocfilehash: 91c6048caf622f21a02032bac31cb2ba5565c54c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8189eb6d3b95ef81b47f5694092a20a18894103c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551062"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435104"
 ---
 # <a name="collections-visual-basic"></a>集合 (Visual Basic)
 
@@ -22,7 +23,7 @@ ms.locfileid: "90551062"
 如果集合中只包含一种数据类型的元素，则可以使用 <xref:System.Collections.Generic?displayProperty=nameWithType> 命名空间中的一个类。 泛型集合强制类型安全，因此无法向其添加任何其他数据类型。 当你从泛型集合检索元素时，你无需确定其数据类型或对其进行转换。
 
 > [!NOTE]
-> 对于本主题中的示例，包括[Imports](../../language-reference/statements/imports-statement-net-namespace-and-type.md)用于 `System.Collections.Generic` 和命名空间的 Imports 语句 `System.Linq` 。
+> 对于本主题中的示例，包括[](../../language-reference/statements/imports-statement-net-namespace-and-type.md)用于 `System.Collections.Generic` 和命名空间的 Imports 语句 `System.Linq` 。
 
 <a name="BKMK_SimpleCollection"></a>
 

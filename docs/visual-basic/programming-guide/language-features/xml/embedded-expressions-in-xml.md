@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： XML (Visual Basic 中的嵌入表达式) '
 title: XML 中的嵌入式表达式
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], embedded expressions
 - XML literals [Visual Basic], embedded expressions
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
-ms.openlocfilehash: 44a6c3408b57fa7f89e2834aa677fe8801ef21f3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 52cf8341cb0a55abad230543bbc6367aea071142
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058308"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433182"
 ---
 # <a name="embedded-expressions-in-xml-visual-basic"></a>XML 中的嵌入式表达式 (Visual Basic)
 

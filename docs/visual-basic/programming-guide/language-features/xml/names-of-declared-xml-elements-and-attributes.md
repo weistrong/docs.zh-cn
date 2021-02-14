@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：已声明的 XML 元素和属性的名称 (Visual Basic) '
 title: 已声明的 XML 元素和属性的名称
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - attribute names [XML in Visual Basic]
 - XML literals [Visual Basic], element names
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
-ms.openlocfilehash: 2142674c3de4c5ac9e806c1328daa3efb697beb9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0c5d049a7d877a23562b91c5d7b3306d8e68ea3a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085615"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422726"
 ---
 # <a name="names-of-declared-xml-elements-and-attributes-visual-basic"></a>已声明的 XML 元素和特性的名称 (Visual Basic)
 

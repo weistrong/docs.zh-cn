@@ -1,15 +1,16 @@
 ---
+description: '了解更多相关信息，请参阅如何：合并和比较字符串集合 (LINQ)  (Visual Basic) '
 title: 如何：组合和比较字符串集合 (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 243cfafc-9eaa-4354-a9df-d329f1d39913
-ms.openlocfilehash: 271ef7805cd2285fa2d8796a31257c0f31bb9a76
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9265750bfc55f60cc683fe0e8235174eee76272c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374857"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424497"
 ---
-# <a name="how-to-combine-and-compare-string-collections-linq-visual-basic"></a>如何：合并和比较字符串集合（LINQ）（Visual Basic）
+# <a name="how-to-combine-and-compare-string-collections-linq-visual-basic"></a>如何：合并和比较字符串集合 (LINQ)  (Visual Basic) 
 
 此示例演示如何合并包含文本行的文件，并对结果排序。 具体而言，此示例演示如何对两组文本行执行简单的串联、联合和交集。
 
@@ -167,7 +168,7 @@ End Class
 
 创建 Visual Basic 的控制台应用程序项目。 为 system.exception `Imports` 命名空间添加语句。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LINQ 和字符串 (Visual Basic)](linq-and-strings.md)
 - [LINQ 和文件目录 (Visual Basic)](linq-and-file-directories.md)

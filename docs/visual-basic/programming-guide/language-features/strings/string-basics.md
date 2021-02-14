@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的字符串基础
 title: 字符串基础
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - strings [Visual Basic], Visual Basic
 - strings [Visual Basic], regular expressions
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
-ms.openlocfilehash: 44736f4db9977d9f69a0571cc80fa327dcf96581
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 25d76ee177e5b3eaaa8aa6b2b1b1787dc29095a1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072504"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424354"
 ---
 # <a name="string-basics-in-visual-basic"></a>字符串基础 (Visual Basic)
 
@@ -65,7 +66,7 @@ World]]></xml>.Value
   
 ## <a name="the-immutability-of-strings"></a>字符串的不可变性  
 
- 字符串是 *不可变*的，这意味着在创建后，不能更改其值。 但是，这不会阻止你将多个值分配给字符串变量。 请考虑以下示例：  
+ 字符串是 *不可变* 的，这意味着在创建后，不能更改其值。 但是，这不会阻止你将多个值分配给字符串变量。 请看下面的示例：  
   
  [!code-vb[VbVbalrStrings#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#69)]  
   

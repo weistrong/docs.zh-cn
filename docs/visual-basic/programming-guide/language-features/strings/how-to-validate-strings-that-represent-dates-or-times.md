@@ -1,16 +1,17 @@
 ---
+description: '了解有关详细信息，请参阅如何：验证表示日期或时间的字符串 (Visual Basic) '
 title: 如何：验证表示日期或时间的字符串
 ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], validating
 - String data type [Visual Basic], validation
 ms.assetid: ae7d4b29-3436-4032-bdbf-4650eb1c8e19
-ms.openlocfilehash: f3654894e274404410179dab04422e20f6040440
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4e9255717d1711d8e9839c218a78b359549d9eef
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072595"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424250"
 ---
 # <a name="how-to-validate-strings-that-represent-dates-or-times-visual-basic"></a>如何：验证表示日期或时间的字符串 (Visual Basic)
 

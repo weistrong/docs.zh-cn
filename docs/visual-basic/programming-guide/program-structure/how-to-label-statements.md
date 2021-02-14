@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：标记语句 (Visual Basic) '
 title: 如何：标记语句
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - ': separator character'
 - Visual Basic code, labeling statements
 ms.assetid: 38f1ff43-2054-42cb-963b-1998e60c6ed4
-ms.openlocfilehash: 8f04d592c51b6a0630bfe623fd3574555aef9ff8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4efb320dad7d52f6e9b94f6e6f81730f94b5966b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403208"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433247"
 ---
 # <a name="how-to-label-statements-visual-basic"></a>如何：标记语句 (Visual Basic)
 
-语句块由用冒号分隔的代码行组成。 以标识字符串或整数开头的代码行称为 "*标记*"。 语句标签用于标记代码行，以将其标识为与等语句一起使用 `On Error Goto` 。
+语句块由用冒号分隔的代码行组成。 以标识字符串或整数开头的代码行称为 " *标记*"。 语句标签用于标记代码行，以将其标识为与等语句一起使用 `On Error Goto` 。
 
 标签可以是有效 Visual Basic 标识符（如标识编程元素的标识符），也可以是整数文本。 标签必须出现在源代码行的开头，并且必须后跟一个冒号，而不考虑它是否后跟同一行中的语句。
 

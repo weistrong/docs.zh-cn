@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：如何将 LINQ 查询与正则表达式组合 (Visual Basic) '
 title: 如何将 LINQ 查询与正则表达式合并在一起
 ms.date: 07/20/2015
 ms.assetid: 3da1bd10-b0d8-4d5b-a637-966891c13592
-ms.openlocfilehash: a091418be1f7cc30d42a98f80ebae2d36d29b5d8
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: a2fd06f76c5c278ad1a67f3822151e5f73a2630e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75337550"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424509"
 ---
-# <a name="how-to-combine-linq-queries-with-regular-expressions-visual-basic"></a>如何结合 LINQ 查询与正则表达式（Visual Basic）
+# <a name="how-to-combine-linq-queries-with-regular-expressions-visual-basic"></a>如何将 LINQ 查询与正则表达式组合 (Visual Basic) 
 
 此示例演示如何使用 <xref:System.Text.RegularExpressions.Regex> 类在文本字符串中为更复杂的匹配创建正则表达式。 通过 LINQ 查询可以轻松地准确筛选要用正则表达式搜索的文件，并对结果进行改良。
 
@@ -88,7 +89,7 @@ End Class
 
 创建 Visual Basic 的控制台应用程序项目，复制并粘贴代码示例，并调整项目属性中的启动对象值。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [LINQ 和字符串（Visual Basic）](linq-and-strings.md)
+- [LINQ 和字符串 (Visual Basic)](linq-and-strings.md)
 - [LINQ 和文件目录 (Visual Basic)](linq-and-file-directories.md)
