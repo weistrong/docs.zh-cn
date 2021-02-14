@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息：如何：使用 ActiveX 控件 (Visual Basic) '
 title: 如何：使用 ActiveX 控件
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Toolbox, adding controls
 - ActiveX controls, adding to Toolbox
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
-ms.openlocfilehash: d1346d362bf030e794212d74040f1ff0845eb704
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3c38a38bf573ecee8425a837ce472cee60fb031f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083249"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438978"
 ---
 # <a name="how-to-work-with-activex-controls-visual-basic"></a>如何：使用 ActiveX 控件 (Visual Basic)
 
@@ -26,7 +27,7 @@ ActiveX 控件是可以插入到网页或其他应用程序中以重用打包功
   
 3. 选中想要使用的 ActiveX 控件旁边的复选框，然后单击 **"确定"**。  
   
-     新控件将与其他工具一起显示在 **工具箱**中。  
+     新控件将与其他工具一起显示在 **工具箱** 中。  
   
     > [!NOTE]
     > 可以使用 Aximp.exe 实用工具为 ActiveX 控件手动创建互操作程序集。 有关详细信息，请参阅 [Aximp.exe (Windows 窗体 ActiveX 控件导入程序) ](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md)。  

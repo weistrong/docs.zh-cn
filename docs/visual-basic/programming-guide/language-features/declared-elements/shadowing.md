@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中隐藏
 title: 阴影操作
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -18,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Basic], names
 - names [Visual Basic], shadowing
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
-ms.openlocfilehash: 81e54875a3c1a4bbc5f5631e7ebac649a2e5afaf
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 468ad72808d689016cacb8d2be56fa9f9fcd1eec
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085888"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434818"
 ---
 # <a name="shadowing-in-visual-basic"></a>Visual Basic 中的隐藏
 
-当两个编程元素共享同一名称时，其中一个元素可以 *隐藏或隐藏*另一个。 在这种情况下，隐藏的元素不可用于引用;相反，当你的代码使用元素名称时，Visual Basic 编译器会将其解析为隐藏元素。  
+当两个编程元素共享同一名称时，其中一个元素可以 *隐藏或隐藏* 另一个。 在这种情况下，隐藏的元素不可用于引用;相反，当你的代码使用元素名称时，Visual Basic 编译器会将其解析为隐藏元素。  
   
-## <a name="purpose"></a>用途  
+## <a name="purpose"></a>目的  
 
  隐藏的主要目的是保护类成员的定义。 基类可能会发生更改，该更改将创建一个与已定义的元素同名的元素。 如果发生这种情况， `Shadows` 修饰符会强制通过类的引用解析为你定义的成员而不是新的基类元素。  
   
 ## <a name="types-of-shadowing"></a>隐藏类型  
 
- 元素可通过两种不同的方式隐藏其他元素。 可以在包含隐藏元素的区域的子区域内声明隐藏元素，在这种情况下，隐藏是 *通过范围*实现的。 或派生类可以重新定义基类的成员，在这种情况下，将 *通过继承*来完成隐藏。  
+ 元素可通过两种不同的方式隐藏其他元素。 可以在包含隐藏元素的区域的子区域内声明隐藏元素，在这种情况下，隐藏是 *通过范围* 实现的。 或派生类可以重新定义基类的成员，在这种情况下，将 *通过继承* 来完成隐藏。  
   
 ### <a name="shadowing-through-scope"></a>通过范围隐藏  
 

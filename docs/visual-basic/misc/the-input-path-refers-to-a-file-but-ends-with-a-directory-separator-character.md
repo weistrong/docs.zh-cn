@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：输入路径引用文件，但以目录分隔符字符结尾
 title: 输入的路径引用了一个文件，但是以目录分隔符字符结尾
 ms.date: 07/20/2015
 ms.assetid: 319181c1-a015-4038-a23f-f53c0d91d806
-ms.openlocfilehash: a23bf75dec58dd07c4cc9ebf30a541ea36e153e0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 30cedf7286fd505bbe11745aaf14ae4bb3859914
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078458"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430802"
 ---
 # <a name="the-input-path-refers-to-a-file-but-ends-with-a-directory-separator-character"></a>输入的路径引用了一个文件，但是以目录分隔符字符结尾
 

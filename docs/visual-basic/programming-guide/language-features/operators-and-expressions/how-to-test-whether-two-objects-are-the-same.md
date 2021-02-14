@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：测试两个对象是否具有相同的 (Visual Basic) '
 title: 如何：测试两个对象是否相同
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - objects [Visual Basic], variables referring to same
 - Visual Basic code, operators
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
-ms.openlocfilehash: d29d1b0026b3f62d47859cd5b4b7a601532e27b8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a0136d9db487ad0ce70b9d55ff8ee014ec30b05a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071685"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435533"
 ---
 # <a name="how-to-test-whether-two-objects-are-the-same-visual-basic"></a>如何：测试两个对象是否相同 (Visual Basic)
 

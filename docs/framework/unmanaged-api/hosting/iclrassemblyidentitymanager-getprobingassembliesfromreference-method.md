@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： ICLRAssemblyIdentityManager：： GetProbingAssembliesFromReference 方法
 title: ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference 方法
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: aec05744-e8d4-44c6-b4a8-e583229ac34e
 topic_type:
 - apiref
-ms.openlocfilehash: 263058131e63205aa37f81847ed647944fef7540
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 38fcea460537ebed0e54103b460a48c2e58d8173
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731379"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431420"
 ---
 # <a name="iclrassemblyidentitymanagergetprobingassembliesfromreference-method"></a>ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference 方法
 
@@ -37,7 +38,7 @@ HRESULT GetProbingAssembliesFromReference (
 );  
 ```  
   
-## <a name="parameters"></a>参数  
+## <a name="parameters"></a>parameters  
 
  `dwMachineType`  
  中一个有效的值，该值指定处理器体系结构（如 WinNT 中所定义）。  
@@ -72,7 +73,7 @@ HRESULT GetProbingAssembliesFromReference (
   
  **.NET Framework 版本：**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ICLRAssemblyIdentityManager 接口](iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList 接口](iclrassemblyreferencelist-interface.md)

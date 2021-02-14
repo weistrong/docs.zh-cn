@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的数组
 title: 数组
 ms.date: 12/06/2017
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - arrays [Visual Basic]
 - Visual Basic, arrays
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
-ms.openlocfilehash: 5093f28f05c5b72294dce9a4e69723acafb31a9f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b6e8349fe02e77f12fb827618f84d44288914b62
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413087"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454594"
 ---
 # <a name="arrays-in-visual-basic"></a>Visual Basic 中的数组
 
-数组是一组值，这些值是逻辑上相互关联的*元素*。 例如，数组可能包含语法学校每个年级的学生数;数组中的每个元素都是一年级的学生数。 同样，数组可能包含学生对类的成绩;数组的每个元素都是一个级别。
+数组是一组值，这些值是逻辑上相互关联的 *元素*。 例如，数组可能包含语法学校每个年级的学生数;数组中的每个元素都是一年级的学生数。 同样，数组可能包含学生对类的成绩;数组的每个元素都是一个级别。
 
 可以通过单独的变量存储我们的每个数据项。 例如，如果我们的应用程序分析学生评分，则可以为每位学生的成绩使用单独的变量，如 `englishGrade1` 、等 `englishGrade2` 。此方法有三个主要限制：
 
@@ -24,7 +25,7 @@ ms.locfileid: "84413087"
 - 处理大量成绩很快就会变得难以处理。 这进而会使应用程序更有可能出现严重错误。
 - 很难维护。 我们添加的每个新评分要求修改、重新编译和重新部署应用程序。
 
-通过使用数组，可以按相同的名称引用这些相关的值，并使用名为*索引*或*下标*的数字来根据元素在数组中的位置来识别单个元素。 数组的索引范围为0到数组中元素总数减1之间的值。 如果使用 Visual Basic 语法来定义数组的大小，则指定其最高索引，而不是数组中元素的总数。 您可以将数组作为一个单元处理，并能够循环访问其元素，而无需确切了解它在设计时所包含的元素数目。
+通过使用数组，可以按相同的名称引用这些相关的值，并使用名为 *索引* 或 *下标* 的数字来根据元素在数组中的位置来识别单个元素。 数组的索引范围为0到数组中元素总数减1之间的值。 如果使用 Visual Basic 语法来定义数组的大小，则指定其最高索引，而不是数组中元素的总数。 您可以将数组作为一个单元处理，并能够循环访问其元素，而无需确切了解它在设计时所包含的元素数目。
 
 在进行说明之前，请看几个简单的示例：
 
@@ -73,7 +74,7 @@ Dim sales()() As Double = New Double(11)() {}
 - 它将值分配给数组中的每个元素。 数组元素通过使用数组名称访问，并在括号中包含单个元素的索引。
 - 它列出数组的每个值。 该示例使用 [`For`](../../../language-reference/statements/for-next-statement.md) 语句通过索引号来访问数组的每个元素。
 
-`students`上面的示例中的数组是一维数组，因为它使用一个索引。 使用多个索引或下标的数组称为*多维*。 有关详细信息，请参阅本文的其余部分和[Visual Basic 中的数组维度](array-dimensions.md)。
+`students`上面的示例中的数组是一维数组，因为它使用一个索引。 使用多个索引或下标的数组称为 *多维*。 有关详细信息，请参阅本文的其余部分和 [Visual Basic 中的数组维度](array-dimensions.md)。
 
 ## <a name="creating-an-array"></a>创建数组
 
@@ -91,11 +92,11 @@ Dim sales()() As Double = New Double(11)() {}
 
 [!code-vb[redimensioning](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#3)]
 
-有关详细信息，请参阅[ReDim 语句](../../../language-reference/statements/redim-statement.md)。
+有关详细信息，请参阅 [ReDim 语句](../../../language-reference/statements/redim-statement.md)。
 
 ## <a name="storing-values-in-an-array"></a>在数组中存储值
 
-你可以通过使用类型 `Integer`的索引访问数组中的每个位置。 你可以使用括号内的索引来引用每个数组位置，从而存储和检索数组中的值。 多维数组的索引用逗号（，）分隔。 每个数组维度都需要一个索引。
+你可以通过使用类型 `Integer`的索引访问数组中的每个位置。 你可以使用括号内的索引来引用每个数组位置，从而存储和检索数组中的值。 多维数组的索引用逗号分隔 (，) 。 每个数组维度都需要一个索引。
 
 下面的示例演示在数组中存储和检索值的一些语句。
 
@@ -109,14 +110,14 @@ Dim sales()() As Double = New Double(11)() {}
 
 [!code-vb[create-with-literals](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#4)]
 
-使用类型推理时，数组的类型由文本值列表中的*主导类型*确定。 主导类型是数组中所有其他类型可以扩大到的类型。 如果无法确定此唯一类型，基准类型是数组中所有其他类型可以缩小到的唯一类型。 如果无法确定为这两种唯一类型之一，则基准类型是 `Object`。 例如，如果提供给数组文本的值的列表包含 `Integer`、 `Long`和 `Double`类型的值，则生成的数组类型是 `Double`。 由于 `Integer` 和 `Long` 仅扩大到 `Double` ，因此 `Double` 是基准类型。 有关详细信息，请参阅 [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md)。
+使用类型推理时，数组的类型由文本值列表中的 *主导类型* 确定。 主导类型是数组中所有其他类型可以扩大到的类型。 如果无法确定此唯一类型，基准类型是数组中所有其他类型可以缩小到的唯一类型。 如果无法确定为这两种唯一类型之一，则基准类型是 `Object`。 例如，如果提供给数组文本的值的列表包含 `Integer`、 `Long`和 `Double`类型的值，则生成的数组类型是 `Double`。 由于 `Integer` 和 `Long` 仅扩大到 `Double` ，因此 `Double` 是基准类型。 有关详细信息，请参阅 [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md)。
 
 > [!NOTE]
-> 只能对定义为类型成员中的局部变量的数组使用类型推理。 如果不存在显式类型定义，则在类级别使用数组文本定义的数组的类型为 `Object[]` 。 有关详细信息，请参阅[局部类型推理](../variables/local-type-inference.md)。
+> 只能对定义为类型成员中的局部变量的数组使用类型推理。 如果不存在显式类型定义，则在类级别使用数组文本定义的数组的类型为 `Object[]` 。 有关详细信息，请参阅 [局部类型推理](../variables/local-type-inference.md)。
 
 请注意，上面的示例将定义 `values` 为类型的数组， `Double` 即使所有数组文本都为类型，也是如此 `Integer` 。 你可以创建此数组，因为数组文本中的值可以扩大到 `Double` 值。
 
-还可以使用*嵌套的数组文本*来创建和填充多维数组。 嵌套的数组文本必须具有与生成的数组一致的多个维度。 下面的示例通过使用嵌套的数组文本创建一个二维整数数组。
+还可以使用 *嵌套的数组文本* 来创建和填充多维数组。 嵌套的数组文本必须具有与生成的数组一致的多个维度。 下面的示例通过使用嵌套的数组文本创建一个二维整数数组。
 
 [!code-vb[nested-array-literals](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/create-array.vb#5)]
 
@@ -130,28 +131,28 @@ Dim sales()() As Double = New Double(11)() {}
 
 ## <a name="iterating-through-an-array"></a>循环访问数组
 
-循环访问数组时，可将数组中的每个元素从最小索引访问到最高级别或从最高到最低。 通常，使用[For .。。下一语句](../../../language-reference/statements/for-next-statement.md)或[每个 .。。Next 语句](../../../language-reference/statements/for-each-next-statement.md)来循环访问数组的元素。 如果不知道数组的上限，可以调用 <xref:System.Array.GetUpperBound%2A?displayProperty=nameWithType> 方法来获取索引的最大值。 尽管最低索引值几乎始终为0，但您可以调用 <xref:System.Array.GetLowerBound%2A?displayProperty=nameWithType> 方法来获取索引的最小值。
+循环访问数组时，可将数组中的每个元素从最小索引访问到最高级别或从最高到最低。 通常，使用 [For .。。下一语句](../../../language-reference/statements/for-next-statement.md) 或 [每个 .。。Next 语句](../../../language-reference/statements/for-each-next-statement.md) 来循环访问数组的元素。 如果不知道数组的上限，可以调用 <xref:System.Array.GetUpperBound%2A?displayProperty=nameWithType> 方法来获取索引的最大值。 尽管最低索引值几乎始终为0，但您可以调用 <xref:System.Array.GetLowerBound%2A?displayProperty=nameWithType> 方法来获取索引的最小值。
 
 下面的示例通过使用语句循环访问一维数组 [`For...Next`](../../../language-reference/statements/for-next-statement.md) 。
 
 [!code-vb[iterate-one-dimensional-array](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/iterate1d.vb)]
 
-下面的示例通过使用语句循环访问多维数组 [`For...Next`](../../../language-reference/statements/for-next-statement.md) 。 <xref:System.Array.GetUpperBound%2A> 方法具有用于指定维度的参数。 `GetUpperBound(0)`返回第一个维度的最高索引，并 `GetUpperBound(1)` 返回第二个维度的最高索引。
+下面的示例通过使用语句循环访问多维数组 [`For...Next`](../../../language-reference/statements/for-next-statement.md) 。 <xref:System.Array.GetUpperBound%2A> 方法具有用于指定维度的参数。 `GetUpperBound(0)` 返回第一个维度的最高索引，并 `GetUpperBound(1)` 返回第二个维度的最高索引。
 
 [!code-vb[iterate-two-dimensional-array](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/iterate2d.vb)]
 
-下面的示例使用[For Each .。。](../../../language-reference/statements/for-each-next-statement.md)用于循环访问一维数组和二维数组的 Next 语句。
+下面的示例使用 [For Each .。。](../../../language-reference/statements/for-each-next-statement.md)用于循环访问一维数组和二维数组的 Next 语句。
 
 [!code-vb[iterate-for-each-next](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/iterate-for-each-next.vb)]
 
 ## <a name="array-size"></a>数组大小
 
-数组的大小是数组所有维度的长度的产物。 它表示数组中当前所包含的元素总数。  例如，下面的示例声明一个二维数组，每个维度中包含四个元素。 如示例中的输出所示，数组的大小为16（或（3 + 1） * （3 + 1）。
+数组的大小是数组所有维度的长度的产物。 它表示数组中当前所包含的元素总数。  例如，下面的示例声明一个二维数组，每个维度中包含四个元素。 如示例中的输出所示，数组的大小为 16 (或 (3 + 1) * (3 + 1) 。
 
 [!code-vb[array-size](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/array-size.vb)]
 
 > [!NOTE]
-> 对数组大小的讨论不适用于交错数组。 有关交错数组和确定交错数组大小的信息，请参阅[交错](#jagged-arrays)数组部分。
+> 对数组大小的讨论不适用于交错数组。 有关交错数组和确定交错数组大小的信息，请参阅 [交错](#jagged-arrays) 数组部分。
 
 可以通过使用 <xref:System.Array.Length%2A?displayProperty=nameWithType> 属性查找数组大小。 您可以通过使用方法查找多维数组的每个维度的长度 <xref:System.Array.GetLength%2A?displayProperty=nameWithType> 。
 
@@ -164,7 +165,7 @@ Dim sales()() As Double = New Double(11)() {}
 |||
 |---|---|
 |维度长度|每个维度的索引都是从0开始的，这意味着它的范围介于0到其上限之间。 因此，给定维度的长度比该维度已声明的上限大1。|
-|长度限制|数组的每个维度的长度限制为数据类型的最大值 `Integer` ，即 <xref:System.Int32.MaxValue?displayProperty=nameWithType> 或（2 ^ 31）-1。 但是，数组的总大小还受到系统上可用的内存限制。 如果你尝试初始化的数组超过可用内存量，则运行时将引发 <xref:System.OutOfMemoryException> 。|
+|长度限制|数组的每个维度的长度限制为数据类型的最大值 `Integer` ，即 <xref:System.Int32.MaxValue?displayProperty=nameWithType> (2 ^ 31) 为1。 但是，数组的总大小还受到系统上可用的内存限制。 如果你尝试初始化的数组超过可用内存量，则运行时将引发 <xref:System.OutOfMemoryException> 。|
 |大小和元素大小|数组的大小独立于其元素的数据类型。 大小始终表示元素总数，而不是在内存中使用的字节数。|
 |内存消耗|做出关于数组如何存储在内存中的假设是不可靠的。 由于不同数据宽度的平台上的存储会有所变化，因此同一数组在 64 位系统上可以占用比在 32 位系统上更多的内存。 具体取决于数组初始化时的系统配置，公共语言运行时 (CLR) 可以尽可能地将存储分配到靠近包元素的地方，或者将它们全部在自然硬件边界上对齐。 此外，数组需要存储开销的控制信息，而且每添加一个维度，这种开销随之增加。|
 
@@ -203,13 +204,13 @@ Dim sales()() As Double = New Double(11)() {}
 
 ## <a name="jagged-arrays"></a>交错数组
 
-有时应用程序中的数据结构是二维而不是矩形。 例如，你可以使用一个数组来存储有关每个月中每一天的高温数据。 数组的第一个维度表示月份，但第二个维度表示天数，月份中的天数不统一。 *交错数组*（也称为*数组*）是为这种情况设计的。 交错数组是指其元素也是数组的数组。 交错数组和交错数组中的每个元素都可以具有一个或多个维度。
+有时应用程序中的数据结构是二维而不是矩形。 例如，你可以使用一个数组来存储有关每个月中每一天的高温数据。 数组的第一个维度表示月份，但第二个维度表示天数，月份中的天数不统一。 *交错数组*（也称为 *数组*）是为这种情况设计的。 交错数组是指其元素也是数组的数组。 交错数组和交错数组中的每个元素都可以具有一个或多个维度。
 
 下面的示例使用月份数组，其中的每个元素是天数的数组。 该示例使用交错数组，因为不同的月份有不同的天数。  该示例演示如何创建交错数组，为其赋值，以及检索和显示其值。
 
 [!code-vb[jagged-arrays](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged.vb)]
 
-前面的示例使用循环将值逐个元素地分配给交错数组 `For...Next` 。 还可以使用嵌套的数组文本将值分配给交错数组的元素。 不过，尝试使用嵌套的数组文本（例如 `Dim valuesjagged = {{1, 2}, {2, 3, 4}}` ）会生成编译器错误[BC30568](../../../misc/bc30568.md)。 若要更正此错误，请将内部数组文本括在括号中。 括号强制计算数组文本表达式，并将生成的值用于外部数组文本，如下面的示例所示。
+前面的示例使用循环将值逐个元素地分配给交错数组 `For...Next` 。 还可以使用嵌套的数组文本将值分配给交错数组的元素。 但是，尝试使用嵌套的数组文本 (例如，) 会 `Dim valuesjagged = {{1, 2}, {2, 3, 4}}` 生成编译器错误 [BC30568](../../../misc/bc30568.md)。 若要更正此错误，请将内部数组文本括在括号中。 括号强制计算数组文本表达式，并将生成的值用于外部数组文本，如下面的示例所示。
 
 [!code-vb[jagged-array-initialization](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/jagged-assign.vb)]
 
@@ -219,7 +220,7 @@ Dim sales()() As Double = New Double(11)() {}
 
 ## <a name="zero-length-arrays"></a>长度为零的数组
 
-Visual Basic 区分未初始化的数组（值为的数组 `Nothing` ）和*零长度数组*或空数组（没有元素的数组）。未初始化的数组是指尚未对其进行尺寸或分配任何值的数组。 例如：
+Visual Basic 在未初始化的数组 (一个数组，该数组的值为 `Nothing`) ， *零长度的数组* 或空数组 (没有元素的数组。 ) 未初始化的数组是指未经过维度计算的数组，或者没有为其赋值的任何值。 例如：
 
 ```vb
 Dim arr() As String
@@ -254,7 +255,7 @@ Dim arrZ(-1) As String
 
 确定了应拆分数组的索引后，可以通过调用方法来创建各个数组 <xref:System.Array.Copy%2A?displayProperty=nameWithType> 。
 
-下面的示例将一个数组拆分为大小大致相等的两个数组。 （如果数组元素的总数为奇数，则第一个数组的元素数比第二个多。）
+下面的示例将一个数组拆分为大小大致相等的两个数组。  (如果数组元素的总数为奇数，则第一个数组的元素比第二个数组多一个。 ) 
 
 [!code-vb[splitting-an-array-by-length](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/split1.vb)]
 
@@ -304,7 +305,7 @@ Dim arrZ(-1) As String
 |[如何：将一个数组赋给另一个数组](how-to-assign-one-array-to-another-array.md)|说明将数组分配到另一个数组变量的规则和步骤。|
 |[数组疑难解答](troubleshooting-arrays.md)|讨论在使用数组时出现的一些常见问题。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Array?displayProperty=nameWithType>
 - [Dim 语句](../../../language-reference/statements/dim-statement.md)

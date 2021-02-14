@@ -1,21 +1,22 @@
 ---
+description: '了解详细信息：匿名类型定义 (Visual Basic) '
 title: 匿名类型定义
 ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous types [Visual Basic], type definition
 ms.assetid: 7a8a0ddc-55ba-4d67-869e-87a84d938bac
-ms.openlocfilehash: 952eb295cc71eab5d0ad6e18f2b697a9b701b434
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2e3f847f5f844e3ed6e036c26efc330a237d193f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404896"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436911"
 ---
 # <a name="anonymous-type-definition-visual-basic"></a>匿名类型定义 (Visual Basic)
 
 为了响应匿名类型的实例的声明，编译器会创建一个新的类定义，其中包含类型的指定属性。
 
-## <a name="compiler-generated-code"></a>编译器生成的代码
+## <a name="compiler-generated-code"></a>Compiler-Generated 代码
 
 对于的以下定义 `product` ，编译器将创建包含属性、和的新类定义 `Name` `Price` `OnHand` 。
 
@@ -70,9 +71,9 @@ End Class
 
     [!code-vb[VbVbalrAnonymousTypes#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#24)]
 
-- `GetHashcode`提供适当唯一的 GetHashCode 算法。 算法只使用键属性来计算哈希代码。
+- `GetHashcode` 提供适当唯一的 GetHashCode 算法。 算法只使用键属性来计算哈希代码。
 
-- `ToString`返回连接的属性值的字符串，如下面的示例中所示。 同时包含键属性和非键属性。
+- `ToString` 返回连接的属性值的字符串，如下面的示例中所示。 同时包含键属性和非键属性。
 
   [!code-vb[VbVbalrAnonymousTypes#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#29)]
 
@@ -83,7 +84,7 @@ End Class
 > [!NOTE]
 > 仅当匿名类型声明出现在同一程序集中时，才创建相同的匿名类型，其属性具有相同的名称和相同的推断类型，属性以相同顺序声明，相同的属性被标记为键属性。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [匿名类型](anonymous-types.md)
 - [如何：推断匿名类型声明中的属性名和类型](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)

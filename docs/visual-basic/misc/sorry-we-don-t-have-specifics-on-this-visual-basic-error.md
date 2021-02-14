@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：抱歉，我们没有关于此 Visual Basic 错误的具体信息
 title: 很抱歉，我们没有关于此 Visual Basic 错误的具体信息
 ms.date: 07/20/2015
 f1_keywords:
@@ -3044,12 +3045,12 @@ f1_keywords:
 - bc30233
 - bc30829
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
-ms.openlocfilehash: d96f2512e2fae038853baedfb78fcf2feb84542b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 51cd9e21ba40677953fc63d64758dd9c122bc69c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059634"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431140"
 ---
 # <a name="sorry-we-dont-have-specifics-on-this-visual-basic-error"></a>很抱歉，我们没有关于此 Visual Basic 错误的具体信息
 
@@ -3070,7 +3071,7 @@ ms.locfileid: "91059634"
  [StackOverflow](https://stackoverflow.com/questions/tagged/vb.net)  
  提供有关 Visual Basic 问题和问题的论坛。  
   
- 另请参见：  
+ 另请参阅：  
  [为 Visual Basic 程序员提供的附加资源](../getting-started/additional-resources.md)  
   
 ## <a name="see-also"></a>请参阅

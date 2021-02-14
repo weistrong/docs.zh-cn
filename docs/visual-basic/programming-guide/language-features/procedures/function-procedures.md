@@ -1,4 +1,5 @@
 ---
+description: '了解 (Visual Basic 的函数过程的详细信息) '
 title: Function 过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,14 +10,14 @@ helpviewer_keywords:
 - procedures [Visual Basic], Function procedures
 - syntax [Visual Basic], function procedures
 ms.assetid: 1b9f632c-553b-4cb6-920a-ded117ead8c0
-ms.openlocfilehash: b0ba96a875fd8785e45eee565beefe4b961ffc9d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4997059fc33fb5d438519356b2c9fdd9e6a27cce
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388746"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436144"
 ---
-# <a name="function-procedures-visual-basic"></a>Function 过程（Visual Basic）
+# <a name="function-procedures-visual-basic"></a>函数过程 (Visual Basic) 
 
 `Function`过程是由和语句括起来的一系列 Visual Basic `Function` 语句 `End Function` 。 该 `Function` 过程执行任务，然后将控制权返回给调用代码。 当它返回 control 时，它还会将值返回到调用代码。
 
@@ -36,9 +37,9 @@ ms.locfileid: "84388746"
 End Function
 ```
 
-*修饰符*可以指定有关重载、重写、共享和隐藏的访问级别和信息。 有关详细信息，请参阅[函数语句](../../../language-reference/statements/function-statement.md)。
+*修饰符* 可以指定有关重载、重写、共享和隐藏的访问级别和信息。 有关详细信息，请参阅 [函数语句](../../../language-reference/statements/function-statement.md)。
 
-声明每个参数的方式与处理[Sub 过程](./sub-procedures.md)的方式相同。
+声明每个参数的方式与处理 [Sub 过程](./sub-procedures.md)的方式相同。
 
 ### <a name="data-type"></a>数据类型
 
@@ -52,7 +53,7 @@ Function FindSqrt(radicand As Single) As Single
 End Function
 ```
 
-有关详细信息，请参阅[Function 语句](../../../language-reference/statements/function-statement.md)中的 "part"。
+有关详细信息，请参阅 [Function 语句](../../../language-reference/statements/function-statement.md)中的 "part"。
 
 ### <a name="returning-values"></a>返回值
 
@@ -80,7 +81,7 @@ End Function
 
 将返回值分配给函数名称的优点是，在遇到或语句之前，控件不会从过程返回 `Exit Function` `End Function` 。 这使您可以分配一个初步的值并在以后必要时进行调整。
 
-有关返回值的详细信息，请参阅[函数语句](../../../language-reference/statements/function-statement.md)。 有关返回数组的信息，请参阅[数组](../arrays/index.md)。
+有关返回值的详细信息，请参阅 [函数语句](../../../language-reference/statements/function-statement.md)。 有关返回数组的信息，请参阅 [数组](../arrays/index.md)。
 
 ## <a name="calling-syntax"></a>调用语法
 
@@ -92,7 +93,7 @@ End Function
 
 `If ((`*functionname* `[(`*argumentlist* `)] / 3) <=`*表达式*  `) Then`
 
-调用 `Function` 过程时，无需使用其返回值。 否则，将执行该函数的所有操作，但将忽略返回值。 <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>通常以这种方式调用。
+调用 `Function` 过程时，无需使用其返回值。 否则，将执行该函数的所有操作，但将忽略返回值。 <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> 通常以这种方式调用。
 
 ### <a name="illustration-of-declaration-and-call"></a>声明和调用的插图
 
@@ -104,7 +105,7 @@ End Function
 
 [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](./index.md)
 - [Sub 过程](./sub-procedures.md)

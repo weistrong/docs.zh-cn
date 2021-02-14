@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的 LINQ 简介
 title: LINQ 介绍
 ms.date: 08/28/2018
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - deferred execution
 - iteration variables [Visual Basic]
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-ms.openlocfilehash: 00022fc7790548dbc0ed8018f202e136bdbcc033
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6dc260f7c7305dc3380cbd7c7c9f2402e000b986
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075247"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438796"
 ---
 # <a name="introduction-to-linq-in-visual-basic"></a>Visual Basic 中的 LINQ 简介
 
-语言集成查询 (LINQ) 将查询功能添加到 Visual Basic，并在使用各种数据时提供简单而强大的功能。 LINQ 会引入查询作为 Visual Basic 语言的一部分，而不是将查询发送到要处理的数据库，或对要搜索的每个数据类型使用不同的查询语法。 它使用统一语法，而不考虑数据的类型。  
+Language-Integrated 查询 (LINQ) 将查询功能添加到 Visual Basic，并在使用各种数据时提供简单而强大的功能。 LINQ 会引入查询作为 Visual Basic 语言的一部分，而不是将查询发送到要处理的数据库，或对要搜索的每个数据类型使用不同的查询语法。 它使用统一语法，而不考虑数据的类型。  
   
  LINQ 使你能够从 SQL Server 数据库、XML、内存中数组和集合、ADO.NET 数据集或支持 LINQ 的任何其他远程或本地数据源查询数据。 您可以通过常用 Visual Basic 语言元素来执行所有这些操作。 因为查询是用 Visual Basic 语言编写的，所以查询结果以强类型对象的形式返回。 这些对象支持 IntelliSense，这使你能够更快地编写代码，并在编译时（而不是在运行时）捕获查询中的错误。 可将 LINQ 查询用作其他查询的源，以便缩小结果的范围。 还可将它们绑定到控件，使用户能够轻松地查看和修改查询结果。  
   
@@ -37,7 +38,7 @@ ms.locfileid: "91075247"
   
 ## <a name="linq-providers"></a>LINQ 提供程序  
 
- *Linq 提供程序*将 Visual Basic LINQ 查询映射到要查询的数据源。 编写 LINQ 查询时，该提供程序将接受该查询，并将其转换为数据源能够执行的命令。 该提供程序还将来自源的数据转换为构成查询结果的对象。 最后，当你将更新发送至数据源时，它又将这些对象转换为数据。  
+ *Linq 提供程序* 将 Visual Basic LINQ 查询映射到要查询的数据源。 编写 LINQ 查询时，该提供程序将接受该查询，并将其转换为数据源能够执行的命令。 该提供程序还将来自源的数据转换为构成查询结果的对象。 最后，当你将更新发送至数据源时，它又将这些对象转换为数据。  
   
  Visual Basic 包括以下 LINQ 提供程序。  
   
@@ -180,7 +181,7 @@ ms.locfileid: "91075247"
 
  在 Visual Basic 中，你将通过使用 LINQ to SQL 文件来标识要访问的 SQL Server 数据库对象，例如表、视图和存储过程。 LINQ to SQL 文件具有 .dbml 扩展名。  
   
- 如果与 SQL Server 数据库之间存在有效连接，则可以将 **LINQ to SQL 类** 项模板添加到项目。 此操作将显示对象关系设计器（O/R 设计器）。 O/R 设计器使你能够将你想要在代码中访问的项从**服务器资源管理器** / **数据库资源管理器**拖到设计器图面上。 LINQ to SQL 文件可向项目添加 <xref:System.Data.Linq.DataContext> 对象。 此对象包括你希望访问的表和视图的属性和集合，以及希望调用的存储过程的方法。 保存对 LINQ to SQL (.dbml) 文件所作的更改后，即可通过引用由 O/R 设计器定义的 <xref:System.Data.Linq.DataContext> 对象，在代码中访问这些对象。 项目的 <xref:System.Data.Linq.DataContext> 对象根据 LINQ to SQL 文件的名称进行命名。 例如，名为 Northwind.dbml 的 LINQ to SQL 文件将创建名为 `NorthwindDataContext` 的 <xref:System.Data.Linq.DataContext> 对象。  
+ 如果与 SQL Server 数据库之间存在有效连接，则可以将 **LINQ to SQL 类** 项模板添加到项目。 此操作将显示对象关系设计器（O/R 设计器）。 O/R 设计器使你能够将你想要在代码中访问的项从 **服务器资源管理器** / **数据库资源管理器** 拖到设计器图面上。 LINQ to SQL 文件可向项目添加 <xref:System.Data.Linq.DataContext> 对象。 此对象包括你希望访问的表和视图的属性和集合，以及希望调用的存储过程的方法。 保存对 LINQ to SQL (.dbml) 文件所作的更改后，即可通过引用由 O/R 设计器定义的 <xref:System.Data.Linq.DataContext> 对象，在代码中访问这些对象。 项目的 <xref:System.Data.Linq.DataContext> 对象根据 LINQ to SQL 文件的名称进行命名。 例如，名为 Northwind.dbml 的 LINQ to SQL 文件将创建名为 `NorthwindDataContext` 的 <xref:System.Data.Linq.DataContext> 对象。  
   
  有关分步说明的示例，请参阅 [如何：查询数据库](how-to-query-a-database-by-using-linq.md) 和 [如何：调用存储过程](how-to-call-a-stored-procedure-by-using-linq.md)。  
   
@@ -198,7 +199,7 @@ ms.locfileid: "91075247"
   
 ## <a name="deferred-and-immediate-query-execution"></a>延迟和立即执行查询
 
- 执行查询与创建查询相互独立。 创建查询后，通过单独的机制触发其执行。 可以在定义查询 *后立即执行查询 () * ，或者可以存储定义，稍后 (*延迟执行*) 执行查询。  
+ 执行查询与创建查询相互独立。 创建查询后，通过单独的机制触发其执行。 可以在定义查询 *后立即执行查询 ()* ，或者可以存储定义，稍后 (*延迟执行*) 执行查询。  
   
  默认情况下，创建查询后，它本身不会立即执行。 而会将查询定义存储在用于引用查询结果的变量中。 当稍后在代码中（如在 `For…Next` 循环中）访问查询结果变量时，将执行该查询。 此过程称为 " *延迟执行*"。  
   

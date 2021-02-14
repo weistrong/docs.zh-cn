@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：使用字符串名称 (Visual Basic 调用属性或方法) '
 title: 使用字符串名调用属性或方法
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - properties [Visual Basic], setting at run time
 - CallByName function
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
-ms.openlocfilehash: 9f28548c27545d94dde38cef3e9c56f98a69b259
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ad14f66ef4e3e06b969cb39a0203442cb0a4f1bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086083"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434415"
 ---
 # <a name="calling-a-property-or-method-using-a-string-name-visual-basic"></a>使用字符串名调用属性或方法 (Visual Basic)
 
@@ -29,9 +30,9 @@ ms.locfileid: "91086083"
   
  `CallByName`函数使您可以在运行时使用字符串来指定属性或方法。 函数的签名如下所 `CallByName` 示：  
   
- *Result*  =  结果 `CallByName` (*Object*、 *ProcedureName*、 *CallType*、 *Arguments* ( # A2 # A3  
+   =  结果 `CallByName` (*Object*、 *ProcedureName*、 *CallType*、 *Arguments* () )   
   
- 第一个参数 " *对象*" 采用要对其执行操作的对象的名称。 *ProcedureName*参数采用一个字符串，该字符串包含要调用的方法或属性过程的名称。 *CallType*参数采用一个常数，该常数表示要调用的过程的类型：一个方法 (`Microsoft.VisualBasic.CallType.Method`) ，一个属性 read (`Microsoft.VisualBasic.CallType.Get`) 或 () 的属性集 `Microsoft.VisualBasic.CallType.Set` 。 *参数*自变量是可选的，它采用类型为的数组， `Object` 该数组包含过程的所有参数。  
+ 第一个参数 " *对象*" 采用要对其执行操作的对象的名称。 *ProcedureName* 参数采用一个字符串，该字符串包含要调用的方法或属性过程的名称。 *CallType* 参数采用一个常数，该常数表示要调用的过程的类型：一个方法 (`Microsoft.VisualBasic.CallType.Method`) ，一个属性 read (`Microsoft.VisualBasic.CallType.Get`) 或 () 的属性集 `Microsoft.VisualBasic.CallType.Set` 。 *参数* 自变量是可选的，它采用类型为的数组， `Object` 该数组包含过程的所有参数。  
   
  你可以 `CallByName` 在当前解决方案中将与类一起使用，但它通常用于从 .NET Framework 程序集访问 COM 对象或对象。  
   

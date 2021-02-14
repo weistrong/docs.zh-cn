@@ -1,13 +1,14 @@
 ---
+description: '了解有关详细信息，请参阅如何：使用特性创建 C/c + + 联合 (Visual Basic) '
 title: 如何：使用特性创建 C + + + 联合
 ms.date: 07/20/2015
 ms.assetid: 9352a7e4-c0da-4d07-aa14-55ed43736fcb
-ms.openlocfilehash: ebab0ad947f776932f9379af3969e369eeec1941
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 10717ec97efe866f4c3993cc26789f29d97b148a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400676"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437743"
 ---
 # <a name="how-to-create-a-cc-union-by-using-attributes-visual-basic"></a>如何：使用特性创建 C/C++ 联合 (Visual Basic)
 
@@ -69,7 +70,7 @@ Structure TestExplicit
 
 两个整数字段 `i1` 和 `i2` 共享与 `lg` 相同的内存位置。 使用平台调用时，这种对结构布局的控制很有用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>

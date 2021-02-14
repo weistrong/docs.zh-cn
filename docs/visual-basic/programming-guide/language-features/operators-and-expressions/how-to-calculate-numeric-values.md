@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：计算 (Visual Basic 的数值) '
 title: 如何：计算数值
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - Visual Basic code, expressions
 - numeric expressions
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
-ms.openlocfilehash: 452a8392b46f0c25b6ad2a8a30c51071f2ae1d93
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 35acd7b9b1732514a8fe4399b6a815dce62b2468
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071711"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435585"
 ---
 # <a name="how-to-calculate-numeric-values-visual-basic"></a>如何：计算数值 (Visual Basic)
 
-您可以通过使用数值表达式来计算数字值。 *数值表达式*是一种表达式，其中包含表示数值的文本、常量和变量，以及对这些值进行操作的运算符。  
+您可以通过使用数值表达式来计算数字值。 *数值表达式* 是一种表达式，其中包含表示数值的文本、常量和变量，以及对这些值进行操作的运算符。  
   
 ## <a name="calculating-numeric-values"></a>计算数值  
   

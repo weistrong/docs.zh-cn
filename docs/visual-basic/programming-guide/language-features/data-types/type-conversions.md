@@ -1,4 +1,5 @@
 ---
+description: 详细了解：中的类型转换 Visual Basic
 title: 类型转换
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - changing data types [Visual Basic]
 - data type conversion [Visual Basic]
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
-ms.openlocfilehash: ee8700ea757cee9c20e2598de029f54ae33a7114
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1f40951856710eb6f2892a7f7a4e04173ee3ee44
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090152"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454477"
 ---
 # <a name="type-conversions-in-visual-basic"></a>Visual Basic 中的类型转换
 
-将值从一种数据类型更改为另一种类型的过程称为 *转换*。 转换可以是 *扩大* 或 *收缩*转换，具体取决于所涉及的类型的数据容量。 它们也是 *隐式* 或 *显式*的，具体取决于源代码中的语法。  
+将值从一种数据类型更改为另一种类型的过程称为 *转换*。 转换可以是 *扩大* 或 *收缩* 转换，具体取决于所涉及的类型的数据容量。 它们也是 *隐式* 或 *显式* 的，具体取决于源代码中的语法。  
   
 ## <a name="in-this-section"></a>本节内容  
 

@@ -1,19 +1,20 @@
 ---
+description: '了解详细信息：标准查询运算符概述 (Visual Basic) '
 title: 标准查询运算符概述
 ms.date: 07/20/2015
 ms.assetid: 302bd39e-2ec1-495b-94bf-37d370d6f05f
-ms.openlocfilehash: 7c229a576f6695282473352d6253d2c699c76604
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: febf0fa85c020504858587bdb080c1bd6725158e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406776"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434896"
 ---
 # <a name="standard-query-operators-overview-visual-basic"></a>标准查询运算符概述 (Visual Basic)
 
-*标准查询运算符*是组成 LINQ 模式的方法。 这些方法中的大多数都作用于序列；其中序列指其类型实现 <xref:System.Collections.Generic.IEnumerable%601> 接口或 <xref:System.Linq.IQueryable%601> 接口的对象。 标准查询运算符提供包括筛选、投影、聚合、排序等在内的查询功能。
+*标准查询运算符* 是组成 LINQ 模式的方法。 这些方法中的大多数都作用于序列；其中序列指其类型实现 <xref:System.Collections.Generic.IEnumerable%601> 接口或 <xref:System.Linq.IQueryable%601> 接口的对象。 标准查询运算符提供包括筛选、投影、聚合、排序等在内的查询功能。
 
-共有两组 LINQ 标准查询运算符，一组作用于类型 <xref:System.Collections.Generic.IEnumerable%601> 的对象，另一组作用于类型 <xref:System.Linq.IQueryable%601> 的对象。 构成每个集合的方法分别是 <xref:System.Linq.Enumerable> 和 <xref:System.Linq.Queryable> 类的静态成员。 这些方法被定义为作为方法运行目标的类型的*扩展方法*。 这意味着可以使用静态方法语法或实例方法语法来调用它们。
+共有两组 LINQ 标准查询运算符，一组作用于类型 <xref:System.Collections.Generic.IEnumerable%601> 的对象，另一组作用于类型 <xref:System.Linq.IQueryable%601> 的对象。 构成每个集合的方法分别是 <xref:System.Linq.Enumerable> 和 <xref:System.Linq.Queryable> 类的静态成员。 这些方法被定义为作为方法运行目标的类型的 *扩展方法*。 这意味着可以使用静态方法语法或实例方法语法来调用它们。
 
 此外，多个标准查询运算符方法作用于那些基于 <xref:System.Collections.Generic.IEnumerable%601> 或 <xref:System.Linq.IQueryable%601> 的类型外的类型。 <xref:System.Linq.Enumerable> 类型定义了两种这样的方法，这两种方法都作用于类型 <xref:System.Collections.IEnumerable> 的对象。 这些方法（<xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29> 和 <xref:System.Linq.Enumerable.OfType%60%601%28System.Collections.IEnumerable%29>）均允许在 LINQ 模式中查询非参数化或非泛型集合。 这些方法通过创建一个强类型的对象集合来实现这一点。 <xref:System.Linq.Queryable> 类定义了两种类似的方法 <xref:System.Linq.Queryable.Cast%60%601%28System.Linq.IQueryable%29> 和 <xref:System.Linq.Queryable.OfType%60%601%28System.Linq.IQueryable%29>，这两种方法都作用于类型 <xref:System.Linq.Queryable> 的对象。
 
@@ -66,7 +67,7 @@ MsgBox(output.ToString())
 
 ## <a name="query-expression-syntax"></a>查询表达式语法
 
-某些使用更频繁的标准查询运算符具有专用的 C# 和 Visual Basic 语言关键字语法，使用这些语法可以在“查询表达式”中调用这些运算符 。 有关具有专用关键字及其相应语法的标准查询运算符的详细信息，请参阅[标准查询运算符的查询表达式语法（Visual Basic）](query-expression-syntax-for-standard-query-operators.md)。
+某些使用更频繁的标准查询运算符具有专用的 C# 和 Visual Basic 语言关键字语法，使用这些语法可以在“查询表达式”中调用这些运算符 。 有关具有专用关键字及其相应语法的标准查询运算符的详细信息，请参阅 [标准查询运算符的查询表达式语法 (Visual Basic) ](query-expression-syntax-for-standard-query-operators.md)。
 
 ## <a name="extending-the-standard-query-operators"></a>扩展标准查询运算符
 
@@ -78,37 +79,37 @@ MsgBox(output.ToString())
 
 - [对数据进行排序](sorting-data.md)
 
-- [设置操作（Visual Basic）](set-operations.md)
+- [设置操作 (Visual Basic) ](set-operations.md)
 
-- [筛选数据（Visual Basic）](filtering-data.md)
+- [筛选数据 (Visual Basic) ](filtering-data.md)
 
-- [限定符运算（Visual Basic）](quantifier-operations.md)
+- [限定符操作 (Visual Basic) ](quantifier-operations.md)
 
-- [投影操作（Visual Basic）](projection-operations.md)
+- [投影操作 (Visual Basic) ](projection-operations.md)
 
-- [数据分区（Visual Basic）](partitioning-data.md)
+- [将数据分区 (Visual Basic) ](partitioning-data.md)
 
-- [联接操作（Visual Basic）](join-operations.md)
+- [联接操作 (Visual Basic) ](join-operations.md)
 
-- [数据分组（Visual Basic）](grouping-data.md)
+- [将数据分组 (Visual Basic) ](grouping-data.md)
 
-- [生成操作（Visual Basic）](generation-operations.md)
+- [Visual Basic) 的生成操作 (](generation-operations.md)
 
-- [相等运算（Visual Basic）](equality-operations.md)
+- [相等运算 (Visual Basic) ](equality-operations.md)
 
-- [元素操作（Visual Basic）](element-operations.md)
+- [元素操作 (Visual Basic) ](element-operations.md)
 
-- [转换数据类型（Visual Basic）](converting-data-types.md)
+- [将数据类型转换 (Visual Basic) ](converting-data-types.md)
 
-- [串联运算（Visual Basic）](concatenation-operations.md)
+- [串联操作 (Visual Basic) ](concatenation-operations.md)
 
-- [聚合运算（Visual Basic）](aggregation-operations.md)
+- [聚合操作 (Visual Basic) ](aggregation-operations.md)
 
 ## <a name="see-also"></a>请参阅
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>
 - [LINQ 简介 (Visual Basic)](introduction-to-linq.md)
-- [标准查询运算符的查询表达式语法（Visual Basic）](query-expression-syntax-for-standard-query-operators.md)
-- [标准查询运算符按执行方式的分类（Visual Basic）](classification-of-standard-query-operators-by-manner-of-execution.md)
+- [标准查询运算符的查询表达式语法 (Visual Basic) ](query-expression-syntax-for-standard-query-operators.md)
+- [标准查询运算符通过执行 (Visual Basic 的方式分类) ](classification-of-standard-query-operators-by-manner-of-execution.md)
 - [扩展方法](../../language-features/procedures/extension-methods.md)
