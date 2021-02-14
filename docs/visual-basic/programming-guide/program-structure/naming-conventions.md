@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 命名约定
 title: 命名约定
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - names [Visual Basic], naming conventions
 - naming conventions [Visual Basic], classes
 ms.assetid: 164949a4-2a7c-4736-9d82-9c3078e2e56c
-ms.openlocfilehash: b25d246bd31147b7a9ba2c72214926fdb5ca8895
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 058d3b06ca1da71c4d8993c6bd451531ec758dbd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072140"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461003"
 ---
 # <a name="visual-basic-naming-conventions"></a>Visual Basic 命名约定
 
-在 Visual Basic 应用程序中为某个元素命名时，该名称的第一个字符必须是字母字符或下划线。 但请注意，以下划线开头的名称不符合 [语言独立性和与语言无关的组件](../../../standard/language-independence-and-language-independent-components.md) (CLS) 。  
+在 Visual Basic 应用程序中为某个元素命名时，该名称的第一个字符必须是字母字符或下划线。 但请注意，以下划线开头的名称不符合 [语言独立性和 Language-Independent 组件](../../../standard/language-independence-and-language-independent-components.md) (CLS) 。  
   
  以下建议适用于命名。  
   

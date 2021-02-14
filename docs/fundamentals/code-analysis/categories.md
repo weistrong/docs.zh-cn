@@ -5,16 +5,16 @@ ms.date: 02/05/2021
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, categories
-ms.openlocfilehash: 3eaff57a7ea175fbe0895fb7bb8d8d0d8df1365d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: fdb4662f52a13906a2d9bcb3fd9a90860e394e72
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99804187"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467324"
 ---
 # <a name="rule-categories"></a>规则类别
 
-每个代码分析规则都属于一类规则。 例如，设计规则支持遵从 .NET 设计准则，安全规则可帮助防止出现安全漏洞。 您可以 [禁用或启用整个类别](configuration-options.md#scope) 的规则。 还可以基于每个类别 [配置其他选项](code-quality-rule-options.md#category-of-rules) 。
+每个代码分析规则都属于一类规则。 例如，设计规则支持遵从 .NET 设计准则，安全规则可帮助防止出现安全漏洞。 您可以为整个类别的规则 [配置严重级别](configuration-options.md#scope) 。 还可以基于每个类别 [配置其他选项](code-quality-rule-options.md#category-of-rules) 。
 
 下表显示了不同的代码分析规则类别，并提供指向每个类别中的规则的链接。
 

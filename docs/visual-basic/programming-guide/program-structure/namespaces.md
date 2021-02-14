@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：中的命名空间 Visual Basic
 title: 命名空间
 ms.date: 07/20/2015
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], naming conflicts
 - namespaces
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
-ms.openlocfilehash: f4521fa10c3bb9e8e121e3c228a23061becd1741
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2f7c0bfd29bf6fe104252aa125b4ddff1259b50a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072192"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460743"
 ---
 # <a name="namespaces-in-visual-basic"></a>Visual Basic 中的命名空间
 
@@ -33,7 +34,7 @@ ms.locfileid: "91072192"
   
 ## <a name="avoiding-name-collisions"></a>避免名称冲突  
 
- .NET Framework 命名空间解决有时被称为 *命名空间污染*的问题，在这种情况下，类库的开发人员会受到另一个库中使用类似名称的阻碍。 这些冲突及其现有组件有时被称为 *名称冲突*。  
+ .NET Framework 命名空间解决有时被称为 *命名空间污染* 的问题，在这种情况下，类库的开发人员会受到另一个库中使用类似名称的阻碍。 这些冲突及其现有组件有时被称为 *名称冲突*。  
   
  例如，如果创建一个名为 `ListBox`的新类，你可以在项目中不加限定地使用它。 但是，如果您想要 <xref:System.Windows.Forms.ListBox> 在同一项目中使用 .NET Framework 类，则必须使用完全限定引用来使引用唯一。 如果引用不唯一，Visual Basic 将产生一个错误，指出名称不明确。 下面的代码示例演示如何声明这些对象：  
   
@@ -49,7 +50,7 @@ ms.locfileid: "91072192"
   
 ## <a name="fully-qualified-names"></a>完全限定名  
 
- 完全限定名是以在其中定义对象的命名空间的名称为前缀的对象引用。 如果创建对类的引用（通过选择“项目” **** 菜单中的“添加引用” **** ），然后为代码中的对象使用完全限定名，则可以使用在其他项目中定义的对象。 以下代码段演示如何为来自另一个项目命名空间的对象使用完全限定名：  
+ 完全限定名是以在其中定义对象的命名空间的名称为前缀的对象引用。 如果创建对类的引用（通过选择“项目”  菜单中的“添加引用”  ），然后为代码中的对象使用完全限定名，则可以使用在其他项目中定义的对象。 以下代码段演示如何为来自另一个项目命名空间的对象使用完全限定名：  
   
  [!code-vb[VbVbalrApplication#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrApplication/VB/Class1.vb#8)]  
   
@@ -115,7 +116,7 @@ End Namespace
   
  在命名空间声明中， `Global` 不能嵌套于另一个命名空间中。  
   
- 可以使用 [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic) 查看和修改项目的“根命名空间” **** 。  对于新项目，“根命名空间” **** 默认为该项目的名称。 若要使 `Global` 成为顶级命名空间，可以清除“根命名空间” **** 条目，以便此框为空。 清除“根命名空间” **** 移除了命名空间声明中需要的 `Global` 关键字。  
+ 可以使用 [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic) 查看和修改项目的“根命名空间”  。  对于新项目，“根命名空间”  默认为该项目的名称。 若要使 `Global` 成为顶级命名空间，可以清除“根命名空间”  条目，以便此框为空。 清除“根命名空间”  移除了命名空间声明中需要的 `Global` 关键字。  
   
  如果 `Namespace` 语句声明一个名称，而该名称也是.NET Framework 中的命名空间，则如果 `Global` 关键字未在完全限定名中使用，.NET Framework 命名空间会变得不可用。 在不使用 `Global` 关键字的情况下，若要启用对该 .NET Framework 命名空间的访问，可以将 `Global` 关键字包括到 `Namespace` 语句中。  
   

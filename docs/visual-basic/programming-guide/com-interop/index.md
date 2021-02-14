@@ -1,16 +1,17 @@
 ---
+description: '详细了解： COM 互操作 (Visual Basic) '
 title: COM 互操作
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic code, COM interop
 - COM interop [Visual Basic], in Visual Basic
 ms.assetid: 3ffd1bdf-1b8d-47f5-87eb-75b659f64294
-ms.openlocfilehash: 66762d4551e458b36b70fb0831bf17ade70aa8cb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 02ce21c6175f76bca17ae6ab57aa1569800167f4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083223"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460704"
 ---
 # <a name="com-interop-visual-basic"></a>COM 互操作 (Visual Basic)
 
