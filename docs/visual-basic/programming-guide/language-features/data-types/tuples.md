@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：元组 (Visual Basic) '
 title: 元组
 ms.date: 04/23/2017
 helpviewer_keywords:
 - tuples [Visual Basic]
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
-ms.openlocfilehash: b169a1c13b3f20d7b5e2a1386cfb28a9cc093dcd
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: f598facb446b7d50864c0cf9151195cfcde158bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559084"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454451"
 ---
 # <a name="tuples-visual-basic"></a>元组 (Visual Basic)
 
@@ -72,7 +73,7 @@ Visual Basic 元组的字段是读写的;实例化元组后，可以修改其值
 
 ## <a name="tuples-versus-structures"></a>元组与结构
 
-Visual Basic 元组是一个值类型，它是 **ValueTuple** 泛型类型之一的实例。 例如， `holiday` 在上一个示例中定义的元组是结构的实例 <xref:System.ValueTuple%603> 。 它设计为数据的轻型容器。 由于元组旨在使创建包含多个数据项的对象变得更加容易，因此它缺少自定义结构可能具有的某些功能。 其中包括：
+Visual Basic 元组是一个值类型，它是 **ValueTuple** 泛型类型之一的实例。 例如， `holiday` 在上一个示例中定义的元组是结构的实例 <xref:System.ValueTuple%603> 。 它设计为数据的轻型容器。 由于元组旨在使创建包含多个数据项的对象变得更加容易，因此它缺少自定义结构可能具有的某些功能。 这些方法包括：
 
 - 自定义成员。 不能为元组定义自己的属性、方法或事件。
 
@@ -157,15 +158,15 @@ named = differentShape
 
 Visual Basic 元组是 .NET Framework 4.7 中引入的 ValueTuple 泛型类型之一的实例 **。** .NET Framework 还包括一组通用的 **系统元组** 类。 不过，这些类与 Visual Basic 元组和 **ValueTuple** 泛型类型的不同之处在于：
 
-- **元组**类的元素是名为 `Item1` 、等的属性 `Item2` 。 在 Visual Basic 元组和 **ValueTuple** 类型中，元组元素是字段。
+- **元组** 类的元素是名为 `Item1` 、等的属性 `Item2` 。 在 Visual Basic 元组和 **ValueTuple** 类型中，元组元素是字段。
 
 - 不能为 **元组** 实例或 **ValueTuple** 实例的元素分配有意义的名称。 Visual Basic 允许您分配用于传达字段含义的名称。
 
-- **元组**实例的属性是只读的;元组是不可变的。 在 Visual Basic 元组和 **ValueTuple** 类型中，元组字段是读写的;元组是可变的。
+- **元组** 实例的属性是只读的;元组是不可变的。 在 Visual Basic 元组和 **ValueTuple** 类型中，元组字段是读写的;元组是可变的。
 
 - 泛型 **元组** 类型为引用类型。 使用这些 **元组** 类型意味着分配对象。 在热路径中，这可能会对应用程序性能产生明显的影响。 Visual Basic 元组和 **ValueTuple** 类型为值类型。
 
-类中的扩展方法可以轻松地在 <xref:System.TupleExtensions> Visual Basic 元组和 .Net **元组** 对象之间进行转换。 **ToTuple**方法将 Visual Basic 元组转换为 .Net**元组**对象， **ToValueTuple**方法将 .net**元组**对象转换为 Visual Basic 元组。
+类中的扩展方法可以轻松地在 <xref:System.TupleExtensions> Visual Basic 元组和 .Net **元组** 对象之间进行转换。 **ToTuple** 方法将 Visual Basic 元组转换为 .Net **元组** 对象， **ToValueTuple** 方法将 .net **元组** 对象转换为 Visual Basic 元组。
 
 下面的示例创建一个元组，将其转换为 .NET **元组** 对象，然后将其转换回 Visual Basic 元组。 然后，该示例将此元组与原始元组进行比较以确保它们相等。
 

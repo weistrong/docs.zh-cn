@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： "ReDim" 只能更改最右边的维度
 title: “ReDim”只能更改最右边的维度
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArray_TypeMismatch
 ms.assetid: d53cf41b-7a7a-466c-a29a-920d99698fa9
-ms.openlocfilehash: c3a18bb93d1253628d73919b18fe4614d742d280
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6816e5b2e9c7c079b78ce53e168f46b337831512
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077379"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454685"
 ---
 # <a name="redim-can-only-change-the-right-most-dimension"></a>“ReDim”只能更改最右边的维度
 

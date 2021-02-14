@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：使用 LINQ (Visual Basic 对数据进行计数、求和或求平均值) '
 title: 如何：使用 LINQ 对数据进行计数、求和与求平均值计算
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - count operator [LINQ in Visual Basic]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
-ms.openlocfilehash: 617c6959e2d3add6d36266b0827ef7281b0c77a9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1759a2f990c2e61a862d032f2a09f29f65a05103
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059244"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422780"
 ---
 # <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>如何：使用 LINQ 对数据进行计数、求和与求平均值计算 (Visual Basic)
 
-使用语言集成查询 (LINQ) 可以轻松地访问数据库信息和执行查询。  
+Language-Integrated 查询 (LINQ) 可以轻松地访问数据库信息和执行查询。  
   
  下面的示例演示如何创建一个新应用程序，用于对 SQL Server 数据库执行查询。 该示例通过使用和子句对结果进行计数、求和和求平均值 `Aggregate` `Group By` 。 有关详细信息，请参阅 [Aggregate 子句](../../../language-reference/queries/aggregate-clause.md) 和 [Group By 子句](../../../language-reference/queries/group-by-clause.md)。  
   
@@ -34,9 +35,9 @@ ms.locfileid: "91059244"
   
 ### <a name="to-create-a-connection-to-a-database"></a>创建与数据库的连接  
   
-1. 在 Visual Studio 中， **Server Explorer** / **Database Explorer**单击**Server Explorer** / "**视图**" 菜单上的 "服务器资源管理器"**数据库资源管理器**打开服务器资源管理器数据库资源管理器。  
+1. 在 Visual Studio 中，  / 单击 / "**视图**" 菜单上的 "服务器资源管理器"**数据库资源管理器** 打开服务器资源管理器数据库资源管理器。  
   
-2. 右键单击**服务器资源管理器**数据库资源管理器中的 "**数据连接**" / **Database Explorer** ，然后单击 "**添加连接**"。  
+2. 右键单击 **服务器资源管理器** 数据库资源管理器中的 "**数据连接**" /  ，然后单击 "**添加连接**"。  
   
 3. 指定与 Northwind 示例数据库的有效连接。  
   
@@ -46,11 +47,11 @@ ms.locfileid: "91059244"
   
 2. 在 **“项目”** 菜单上，单击 **“添加新项”**。 选择 " **LINQ to SQL 类** " 项模板。  
   
-3. 命名文件 `northwind.dbml`。 单击“添加”  。 将为 northwind 文件打开对象关系设计器 (O/R 设计器) 。  
+3. 命名文件 `northwind.dbml`。 单击 **添加**。 将为 northwind 文件打开对象关系设计器 (O/R 设计器) 。  
   
 ### <a name="to-add-tables-to-query-to-the-or-designer"></a>添加要查询到 O/R 设计器的表  
   
-1. 在**服务器资源管理器** / **数据库资源管理器**中，展开与 Northwind 数据库的连接。 展开 **“表”** 文件夹。  
+1. 在 **服务器资源管理器** / **数据库资源管理器** 中，展开与 Northwind 数据库的连接。 展开 **“表”** 文件夹。  
   
      如果关闭了 O/R 设计器，则可以通过双击先前添加的 northwind 文件来重新打开它。  
   
@@ -78,7 +79,7 @@ ms.locfileid: "91059244"
   
 4. 按 F5 运行项目并查看结果。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [LINQ](index.md)
 - [查询](../../../language-reference/queries/index.md)

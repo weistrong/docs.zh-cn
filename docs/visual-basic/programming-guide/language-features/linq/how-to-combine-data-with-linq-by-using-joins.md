@@ -1,4 +1,5 @@
 ---
+description: '有关详细信息，请参阅如何：使用联接将数据与 LINQ 组合 (Visual Basic) '
 title: 如何：通过 LINQ 使用联接合并数据
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - joining [LINQ in Visual Basic]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
-ms.openlocfilehash: ebda8d3b7fa2e712c337ed2c1fadc580bed7fe61
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 69cf0bcfb8d9241afdd0616621f35d7ca93bbb9e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075065"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422739"
 ---
 # <a name="how-to-combine-data-with-linq-by-using-joins-visual-basic"></a>如何：通过 LINQ 使用联接合并数据 (Visual Basic)
 
@@ -83,7 +84,7 @@ Visual Basic 提供了 `Join` 和 `Group Join` 查询子句，使你能够基于
   
 2. 按 F5 运行示例。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [LINQ](index.md)
 - [Visual Basic 中的 LINQ 简介](introduction-to-linq.md)

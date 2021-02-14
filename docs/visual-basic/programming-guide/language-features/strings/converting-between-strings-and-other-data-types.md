@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：在 Visual Basic 中的字符串和其他数据类型之间进行转换
 title: 字符串和其他数据类型之间的转换
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - conversions [Visual Basic], Visual Basic
 - string conversion [Visual Basic], Visual Basic
 ms.assetid: 06085ed5-191d-4930-8fbc-da63930da400
-ms.openlocfilehash: da9f4fb707b2df2812afd0f8b0a5317a75e69935
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 6cb5b649556238ac8fad1fdb590595a5b4ee167b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352488"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436872"
 ---
 # <a name="converting-between-strings-and-other-data-types-in-visual-basic"></a>在 Visual Basic 中的字符串和其他数据类型之间进行转换
 
@@ -32,7 +33,7 @@ ms.locfileid: "74352488"
 [如何：将十六进制字符串转换为数字](how-to-convert-hexadecimal-strings-to-numbers.md)  
 如何将十六进制字符串转换为整数。
 
-[如何：将字符串转换为 Visual Basic 中的字符数组](how-to-convert-a-string-to-an-array-of-characters.md)  
+[如何：在 Visual Basic 中将字符串转换为字符数组](how-to-convert-a-string-to-an-array-of-characters.md)  
 如何将字符串转换为字符数组。
 
 [如何：在 Visual Basic 中访问字符串中的字符](how-to-access-characters-in-strings.md)  

@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： "ReDim" 无法更改维数
 title: “ReDim”无法更改维数
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArray_RankMismatch
 ms.assetid: 52505298-9985-4682-8f6e-ff7d56077f34
-ms.openlocfilehash: 8d80af7682f27b403e0f463fdbebbcac71f18b01
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4552dd6b1cce54813b57e5b8c76a3580b81b8def
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077366"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454633"
 ---
 # <a name="redim-cannot-change-the-number-of-dimensions"></a>“ReDim”无法更改维数
 

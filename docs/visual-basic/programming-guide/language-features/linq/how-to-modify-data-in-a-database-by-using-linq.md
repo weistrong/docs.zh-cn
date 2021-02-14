@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：使用 LINQ (修改数据库中的数据 Visual Basic) '
 title: 如何：使用 LINQ 修改数据库中的数据
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,40 +13,40 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], data changes in database
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
-ms.openlocfilehash: eb076d9156fa66858f2e560422eef0dc61ba22b5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b58ca542fbc6f4d63705e45b53edc8ded83ab88b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403480"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422765"
 ---
 # <a name="how-to-modify-data-in-a-database-by-using-linq-visual-basic"></a>如何：使用 LINQ 修改数据库中的数据 (Visual Basic)
 
-使用语言集成查询（LINQ）查询可以轻松地访问数据库信息和修改数据库中的值。
+Language-Integrated Query (LINQ) 查询可以轻松地访问数据库信息和修改数据库中的值。
 
 下面的示例演示如何创建一个新的应用程序，用于检索和更新 SQL Server 数据库中的信息。
 
-本主题中的示例使用 Northwind 示例数据库。 如果你的开发计算机上没有此数据库，可以从 Microsoft 下载中心进行下载。 有关说明，请参阅[下载示例数据库](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md)。
+本主题中的示例使用 Northwind 示例数据库。 如果你的开发计算机上没有此数据库，可以从 Microsoft 下载中心进行下载。 有关说明，请参阅 [下载示例数据库](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md)。
 
 ### <a name="to-create-a-connection-to-a-database"></a>创建与数据库的连接
 
-1. 在 Visual Studio 中， **Server Explorer** / 通过单击 "**查看**" 菜单打开服务器资源管理器**数据库资源管理器**，然后选择 "**服务器资源管理器** / **数据库资源管理器**"。
+1. 在 Visual Studio 中，  / 通过单击 "**查看**" 菜单打开服务器资源管理器 **数据库资源管理器**，然后选择 "**服务器资源管理器** / **数据库资源管理器**"。
 
-2. 右键单击**服务器资源管理器**数据库资源管理器中的 "**数据连接** / **Database Explorer**"，然后单击 "**添加连接**"。
+2. 右键单击 **服务器资源管理器** 数据库资源管理器中的 "**数据连接** / "，然后单击 "**添加连接**"。
 
 3. 指定与 Northwind 示例数据库的有效连接。
 
 ### <a name="to-add-a-project-with-a-linq-to-sql-file"></a>使用 LINQ to SQL 文件添加项目
 
-1. 在 Visual Studio 的 "**文件**" 菜单上，指向 "**新建**"，然后单击 "**项目**"。 选择 Visual Basic **Windows 窗体应用程序**作为项目类型。
+1. 在 Visual Studio 中的“文件”菜单上，指向“新建”，然后单击“项目”。 选择 Visual Basic **Windows 窗体应用程序** 作为项目类型。
 
-2. 在 **“项目”** 菜单上，单击 **“添加新项”**。 选择 " **LINQ to SQL 类**" 项模板。
+2. 在 **“项目”** 菜单上，单击 **“添加新项”**。 选择 " **LINQ to SQL 类** " 项模板。
 
-3. 命名文件 `northwind.dbml`。 单击“添加”。 将为文件打开对象关系设计器（O/R 设计器） `northwind.dbml` 。
+3. 命名文件 `northwind.dbml`。 单击 **添加**。 将为文件打开对象关系设计器 (O/R 设计器) `northwind.dbml` 。
 
 ### <a name="to-add-tables-to-query-and-modify-to-the-designer"></a>添加要查询和修改设计器的表
 
-1. 在**服务器资源管理器** / **数据库资源管理器**中，展开与 Northwind 数据库的连接。 展开 **“表”** 文件夹。
+1. 在 **服务器资源管理器** / **数据库资源管理器** 中，展开与 Northwind 数据库的连接。 展开 **“表”** 文件夹。
 
      如果关闭了 O/R 设计器，则可以通过双击先前添加的文件重新打开它 `northwind.dbml` 。
 
@@ -59,7 +60,7 @@ ms.locfileid: "84403480"
 
 ### <a name="to-add-code-to-modify-the-database-and-display-the-results"></a>添加代码以修改数据库并显示结果
 
-1. 从 "**工具箱**" 中，将 <xref:System.Windows.Forms.DataGridView> 控件拖动到项目的默认 Windows 窗体 "Form1"。
+1. 从 " **工具箱**" 中，将 <xref:System.Windows.Forms.DataGridView> 控件拖动到项目的默认 Windows 窗体 "Form1"。
 
 2. 在将表添加到 O/R 设计器后，设计器会将 <xref:System.Data.Linq.DataContext> 对象添加到项目。 此对象包含可用于访问 Customers 表的代码。 它还包含用于定义表的本地 Customer 对象和 Customer 集合的代码。 <xref:System.Data.Linq.DataContext>项目的对象根据 .dbml 文件的名称进行命名。 对于此项目，该 <xref:System.Data.Linq.DataContext> 对象的名称为 `northwindDataContext` 。
 
@@ -87,9 +88,9 @@ ms.locfileid: "84403480"
     End Sub
     ```
 
-3. 从 "**工具箱**" 中，将三个 <xref:System.Windows.Forms.Button> 控件拖到窗体上。 选择第一个 `Button` 控件。 在 "**属性**" 窗口中，将控件的设置为，并将设置为 `Name` `Button` `AddButton` `Text` `Add` 。 选择第二个按钮，并将 `Name` 属性设置为 `UpdateButton` ，并将属性设置 `Text` 为 `Update` 。 选择第三个按钮，并将 `Name` 属性设置为 `DeleteButton` ，并将属性设置 `Text` 为 `Delete` 。
+3. 从 " **工具箱**" 中，将三个 <xref:System.Windows.Forms.Button> 控件拖到窗体上。 选择第一个 `Button` 控件。 在 " **属性** " 窗口中，将控件的设置为，并将设置为 `Name` `Button` `AddButton` `Text` `Add` 。 选择第二个按钮，并将 `Name` 属性设置为 `UpdateButton` ，并将属性设置 `Text` 为 `Update` 。 选择第三个按钮，并将 `Name` 属性设置为 `DeleteButton` ，并将属性设置 `Text` 为 `Delete` 。
 
-4. 双击 "**添加**" 按钮，将代码添加到其 `Click` 事件。 添加以下代码：
+4. 双击 " **添加** " 按钮，将代码添加到其 `Click` 事件。 添加以下代码：
 
     ```vb
     Private Sub AddButton_Click(ByVal sender As System.Object,
@@ -114,7 +115,7 @@ ms.locfileid: "84403480"
     End Sub
     ```
 
-5. 双击 "**更新**" 按钮以向其 `Click` 事件中添加代码。 添加以下代码：
+5. 双击 " **更新** " 按钮以向其 `Click` 事件中添加代码。 添加以下代码：
 
     ```vb
     Private Sub UpdateButton_Click(ByVal sender As System.Object, _
@@ -138,7 +139,7 @@ ms.locfileid: "84403480"
     End Sub
     ```
 
-6. 双击 "**删除**" 按钮以向其事件添加代码 `Click` 。 添加以下代码：
+6. 双击 " **删除** " 按钮以向其事件添加代码 `Click` 。 添加以下代码：
 
     ```vb
     Private Sub DeleteButton_Click(ByVal sender As System.Object, _
@@ -159,7 +160,7 @@ ms.locfileid: "84403480"
     End Sub
     ```
 
-7. 按 F5 运行项目。 单击 "**添加**" 以添加新记录。 单击 "**更新**" 以修改新记录。 单击 "**删除**" 以删除新记录。
+7. 按 F5 运行项目。 单击 " **添加** " 以添加新记录。 单击 " **更新** " 以修改新记录。 单击 " **删除** " 以删除新记录。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：过程参数和参数 (Visual Basic) '
 title: 过程形参和实参
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -18,22 +19,22 @@ helpviewer_keywords:
 - argument lists [Visual Basic]
 - procedures [Visual Basic], parameter lists
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
-ms.openlocfilehash: c7f8eb1fa4e1fa3d87474d048d5a60994b0b7fc5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c2239c76450f503e74dbf5f191cd212e05d11600
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071269"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423155"
 ---
 # <a name="procedure-parameters-and-arguments-visual-basic"></a>过程参数和自变量 (Visual Basic)
 
 在大多数情况下，过程需要一些有关调用环境的信息。 执行重复或共享任务的过程对每个调用使用不同的信息。 此信息包含变量、常量和在您调用过程时传递给该过程的表达式。  
   
- *参数*表示一个值，该过程期望在调用时提供。 过程声明定义了其参数。  
+ *参数* 表示一个值，该过程期望在调用时提供。 过程声明定义了其参数。  
   
  您可以定义没有参数、一个参数或多个参数的过程。 过程定义中指定参数的部分称为 *参数列表*。  
   
- *参数*表示在调用过程时提供给过程参数的值。 调用代码在调用过程时提供自变量。 过程调用中指定参数的部分称为 *参数列表*。  
+ *参数* 表示在调用过程时提供给过程参数的值。 调用代码在调用过程时提供自变量。 过程调用中指定参数的部分称为 *参数列表*。  
   
  下图显示了 `safeSquareRoot` 从两个不同的位置调用过程的代码。 第一次调用将变量的值 `x` (4.0) 传递给参数 `number` ， (2.0) 中的返回值 `root` 将分配给该变量 `y` 。 第二个调用将文本值9.0 传递到 `number` ，并将 (3.0) 的返回值分配给变量 `z` 。  
   
@@ -59,7 +60,7 @@ ms.locfileid: "91071269"
   
 ### <a name="type-parameters"></a>类型参数  
 
- *泛型过程*除了定义其正常参数外，还定义了一个或多个*类型参数*。 泛型过程允许调用代码在每次调用该过程时传递不同的数据类型，因此它可以根据每个调用的要求来定制数据类型。 请参阅 [Generic Procedures in Visual Basic](../data-types/generic-procedures.md)。  
+ *泛型过程* 除了定义其正常参数外，还定义了一个或多个 *类型参数*。 泛型过程允许调用代码在每次调用该过程时传递不同的数据类型，因此它可以根据每个调用的要求来定制数据类型。 请参阅 [Generic Procedures in Visual Basic](../data-types/generic-procedures.md)。  
   
 ## <a name="see-also"></a>请参阅
 
