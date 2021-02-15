@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：文件 " <filename> " 受写保护
 title: 文件“<filename>”受写入保护
 ms.date: 07/20/2015
 ms.assetid: 6e5105b1-a634-4cde-a753-5bf1ae85a55a
-ms.openlocfilehash: b82ab26e22579c38de7571775cd326b90c608bf1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a5518c3ac4cef8a6596df8101545c044ce6bbcdb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91091010"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100459026"
 ---
 # <a name="file-filename-is-write-protected"></a>文件“\<filename>”受写入保护
 

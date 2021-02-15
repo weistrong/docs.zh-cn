@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的布尔表达式) '
 title: 布尔表达式
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - operators [Visual Basic], Boolean
 - Visual Basic code, expressions
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
-ms.openlocfilehash: 51340bf95795d837c055df796424f3cad912adc7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3b752e2146755e1272b261f32931e3022e8ef354
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085745"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465309"
 ---
 # <a name="boolean-expressions-visual-basic"></a>布尔表达式 (Visual Basic)
 
-*布尔表达式*是计算结果为[布尔数据类型](../../../language-reference/data-types/boolean-data-type.md)的值的表达式： `True` 或 `False` 。 `Boolean` 表达式可以采用多种形式。 最简单的方式是将变量值直接 `Boolean` 与文本进行比较 `Boolean` ，如下面的示例中所示。  
+*布尔表达式* 是计算结果为 [布尔数据类型](../../../language-reference/data-types/boolean-data-type.md)的值的表达式： `True` 或 `False` 。 `Boolean` 表达式可以采用多种形式。 最简单的方式是将变量值直接 `Boolean` 与文本进行比较 `Boolean` ，如下面的示例中所示。  
   
  [!code-vb[VbVbalrOperators#87](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#87)]  
   
@@ -51,9 +52,9 @@ ms.locfileid: "91085745"
   
  在前面的示例中，整个表达式的值取决于运算符两侧的表达式的值 `And` 。 如果两个表达式都是 `True` ，则整个表达式的计算结果为 `True` 。 如果任一表达式为 `False` ，则整个表达式的计算结果为 `False` 。  
   
-## <a name="short-circuiting-operators"></a>短路运算符  
+## <a name="short-circuiting-operators"></a>Short-Circuiting 运算符  
 
- 逻辑运算符 `AndAlso` 和 `OrElse` 表现为 *短路*的行为。 短路运算符首先计算左操作数。 如果左操作数确定整个表达式的值，则程序执行将继续，而不计算正确的表达式。 下面的示例对此进行了演示。  
+ 逻辑运算符 `AndAlso` 和 `OrElse` 表现为 *短路* 的行为。 短路运算符首先计算左操作数。 如果左操作数确定整个表达式的值，则程序执行将继续，而不计算正确的表达式。 下面的示例对此进行了演示。  
   
  [!code-vb[VbVbalrOperators#89](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#89)]  
   

@@ -1,29 +1,30 @@
 ---
+description: '了解详细信息： (Visual Basic 的公共属性) '
 title: 通用属性
 ms.date: 07/20/2015
 ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
-ms.openlocfilehash: 57ef8f103d64a51d896f46d2889d78ec99ff3223
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 875554b69a23640c2d67367c93b56c34c286df37
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400714"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437782"
 ---
 # <a name="common-attributes-visual-basic"></a>常见特性 (Visual Basic)
 
 本主题介绍 Visual Basic 程序中最常用的属性。
 
-- [全局特性](#Global)
+- [全局属性](#Global)
 
-- [Obsolete 特性](#Obsolete)
+- [过时特性](#Obsolete)
 
-- [Conditional 特性](#Conditional)
+- [条件属性](#Conditional)
 
 - [调用方信息特性](#CallerInfo)
 
 - [Visual Basic 特性](#VB)
 
-## <a name="global-attributes"></a><a name="Global"></a>全局属性
+## <a name="global-attributes"></a><a name="Global"></a> 全局属性
 
 大多数特性应用于特定语言元素，如类或方法；但是，一些特性是全局特性 - 它们应用于整个程序集或模块。 例如，<xref:System.Reflection.AssemblyVersionAttribute> 属性可用于将版本信息嵌入程序集，如下所示：
 
@@ -31,7 +32,7 @@ ms.locfileid: "84400714"
 <Assembly: AssemblyVersion("1.0.0.0")>
 ```
 
-全局特性显示在任何顶级 `Imports` 语句之后、任何类型、模块或命名空间声明之前的源代码中。 全局特性可以出现在多个源文件中，但必须在单个编译过程中编译这些文件。 对于 Visual Basic 项目，全局属性通常放在 AssemblyInfo 文件中（当您在 Visual Studio 中创建项目时，将自动创建文件）。
+全局特性显示在任何顶级 `Imports` 语句之后、任何类型、模块或命名空间声明之前的源代码中。 全局特性可以出现在多个源文件中，但必须在单个编译过程中编译这些文件。 对于 Visual Basic 项目，全局属性通常放在 AssemblyInfo 文件中 (在 Visual Studio 中创建项目时，将自动创建该文件) 。
 
 程序集特性是提供程序集相关信息的值。 它们分为以下几类：
 
@@ -79,7 +80,7 @@ ms.locfileid: "84400714"
 |<xref:System.Reflection.AssemblyConfigurationAttribute>|定义为程序集清单指定程序集配置（如零售或调试）的自定义属性。|
 |<xref:System.Reflection.AssemblyDefaultAliasAttribute>|定义程序集清单的友好默认别名|
 
-## <a name="obsolete-attribute"></a><a name="Obsolete"></a>过时特性
+## <a name="obsolete-attribute"></a><a name="Obsolete"></a> 过时特性
 
 `Obsolete` 特性将程序实体标记为不再推荐使用。 每次使用标记为过时的实体后，将生成警告或错误，具体取决于该特性的配置方式。 例如：
 
@@ -218,21 +219,21 @@ Class SampleClass
 End Class
 ```
 
-## <a name="caller-info-attributes"></a><a name="CallerInfo"></a>调用方信息特性
+## <a name="caller-info-attributes"></a><a name="CallerInfo"></a> 调用方信息特性
 
 通过使用调用方信息特性，可获取有关方法的调用方的信息。 可以获取源代码的文件路径、源代码中的行号和调用方的成员名称。
 
 若要获取成员调用方信息，可以使用应用于可选参数的特性。 每个可选参数指定一个默认值。 下表列出在 <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> 命名空间中定义的调用方信息特性：
 
-|属性|说明|类型|
+|特性|说明|类型|
 |---|---|---|
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|包含调用方的源文件的完整路径。 这是编译时的路径。|`String`|
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|源文件中调用方法的行号。|`Integer`|
-|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|调用方的方法名称或属性名称。 有关详细信息，请参阅[调用方信息（Visual Basic）](../caller-information.md)。|`String`|
+|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|调用方的方法名称或属性名称。 有关详细信息，请参阅 [ (Visual Basic) 的调用方信息 ](../caller-information.md)。|`String`|
 
-有关调用方信息属性的详细信息，请参阅[调用方信息（Visual Basic）](../caller-information.md)。
+有关调用方信息属性的详细信息，请参阅 [调用方信息 (Visual Basic) ](../caller-information.md)。
 
-## <a name="visual-basic-attributes"></a><a name="VB"></a>Visual Basic 特性
+## <a name="visual-basic-attributes"></a><a name="VB"></a> Visual Basic 特性
 
 下表列出了特定于 Visual Basic 的特性。
 
@@ -269,7 +270,7 @@ End Structure
 
 用于 `VBFixedArrayAttribute` 声明大小固定的数组。 与 Visual Basic 字符串一样，数组在默认情况下为可变长度。 将数据序列化或写入到文件时，此属性很有用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>

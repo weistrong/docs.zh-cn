@@ -1,4 +1,5 @@
 ---
+description: 了解更多：通过 Visual Basic 运算符执行的常见任务
 title: 使用 Visual Basic 运算符执行的常规任务
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - operators [Visual Basic], comparison
 - operators [Visual Basic], short-circuiting logical
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
-ms.openlocfilehash: a8a8d7898e52077fef47b91172e34ad50d7f54e7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5103241c7c92ffe7264178e9abb6a56ba03d4b52
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075208"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465257"
 ---
 # <a name="common-tasks-performed-with-visual-basic-operators"></a>使用 Visual Basic 运算符执行的常规任务
 
-运算符执行涉及一个或多个称为 *操作数*的表达式的许多常见任务。  
+运算符执行涉及一个或多个称为 *操作数* 的表达式的许多常见任务。  
   
 ## <a name="arithmetic-and-bit-shift-tasks"></a>算术和移位任务  
 
@@ -31,8 +32,8 @@ ms.locfileid: "91075208"
 |功能|查看|  
 |---|---|  
 |向另一个数值添加一个数值|[+ 运算符](../../../language-reference/operators/addition-operator.md)|  
-|从一个数值中减去另一个数值|[-Operator (Visual Basic) ](../../../language-reference/operators/subtraction-operator.md)|  
-|反转数值的符号|[-Operator (Visual Basic) ](../../../language-reference/operators/subtraction-operator.md)|  
+|从一个数值中减去另一个数值|[- 运算符 (Visual Basic)](../../../language-reference/operators/subtraction-operator.md)|  
+|反转数值的符号|[- 运算符 (Visual Basic)](../../../language-reference/operators/subtraction-operator.md)|  
 |将一个数值乘以另一个数值|[* 运算符](../../../language-reference/operators/multiplication-operator.md)|  
 |将一个数值除以另一个数值|[/Operator (Visual Basic) ](../../../language-reference/operators/floating-point-division-operator.md)|  
 |查找一个数值除以另 (一个数值的商，而不包含余数) |[\ 运算符 (Visual Basic) ](../../../language-reference/operators/integer-division-operator.md)|  

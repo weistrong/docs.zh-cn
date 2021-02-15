@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：调用重载过程 (Visual Basic) '
 title: 如何：调用重载过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], multiple versions
 - procedure calls [Visual Basic], overloaded
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
-ms.openlocfilehash: 68b8a9898cba846b63ed8ce9d8329516f12e90cb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6a67a598bd4a42964fd8fc01bc22b1b919f5e2a9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075169"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472587"
 ---
 # <a name="how-to-call-an-overloaded-procedure-visual-basic"></a>如何：调用重载过程 (Visual Basic)
 

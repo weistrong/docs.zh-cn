@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的重载过程的注意事项) '
 title: 重载过程注意事项
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - restrictions [Visual Basic], overloading procedures
 - procedures [Visual Basic], parameter lists
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
-ms.openlocfilehash: 6197fa4041a22944542b2657e35bc293a6e5c244
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ee6dc0ce23f0706f52ac58673d37d1b72936d2bc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075052"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472613"
 ---
 # <a name="considerations-in-overloading-procedures-visual-basic"></a>重载过程注意事项 (Visual Basic)
 

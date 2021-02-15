@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下内容的详细信息：自动实现的属性 (Visual Basic) '
 title: 自动实现的属性
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - properties [Visual Basic], auto-implemented
 - auto-implemented properties [Visual Basic]
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
-ms.openlocfilehash: f50b1f40ef9843391c6622561bfd8a8eaae6fc17
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 61f6565f9d4e7ea8731bb09c59cd6d942ab8c129
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090049"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472691"
 ---
 # <a name="auto-implemented-properties-visual-basic"></a>自动实现的属性 (Visual Basic)
 
-使用*自动实现的属性*，可以快速指定类的属性，而无需向 `Get` 和属性写入代码 `Set` 。 为自动实现的属性编写代码时，Visual Basic 编译器会自动创建私有字段以存储属性变量，并且会创建关联的 `Get` 和 `Set` 过程。  
+使用 *自动实现的属性*，可以快速指定类的属性，而无需向 `Get` 和属性写入代码 `Set` 。 为自动实现的属性编写代码时，Visual Basic 编译器会自动创建私有字段以存储属性变量，并且会创建关联的 `Get` 和 `Set` 过程。  
   
  使用自动实现的属性，可以在单行中声明一个属性（包括默认值）。 下面的示例演示三个属性声明。  
   
@@ -77,7 +78,7 @@ End Class
   
 ## <a name="property-definitions-that-require-standard-syntax"></a>需要标准语法的属性定义  
 
- 自动实现的属性十分方便，支持很多编程方案。 但是，在某些情况下，你不能使用自动实现的属性，而是必须使用标准或 *扩展*的属性语法。  
+ 自动实现的属性十分方便，支持很多编程方案。 但是，在某些情况下，你不能使用自动实现的属性，而是必须使用标准或 *扩展* 的属性语法。  
   
  如果要执行以下任一操作，则必须使用扩展属性定义语法：  
   

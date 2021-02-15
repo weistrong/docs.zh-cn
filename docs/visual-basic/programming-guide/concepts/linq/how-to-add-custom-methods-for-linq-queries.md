@@ -1,17 +1,18 @@
 ---
+description: '了解详细信息：如何：为 LINQ 查询添加自定义方法 (Visual Basic) '
 title: 如何：为 LINQ 查询添加自定义方法
 ms.date: 08/28/2020
 ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
-ms.openlocfilehash: 7d38a45263135fa10dc53dc0d09b8129838e78e6
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 62acf22a8be9986388233ee34121a97d65a87f43
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89117774"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424523"
 ---
 # <a name="how-to-add-custom-methods-for-linq-queries-visual-basic"></a>如何：为 LINQ 查询添加自定义方法 (Visual Basic) 
 
-通过向接口添加扩展方法，可以扩展用于 LINQ 查询的方法集 <xref:System.Collections.Generic.IEnumerable%601> 。 例如，除了标准平均运算或最大运算之外，还可以创建自定义聚合方法，以便从一系列值计算单个值。 还会创建一个方法，该方法可用作自定义筛选器或值序列的特定数据转换，并返回新序列。 <xref:System.Linq.Enumerable.Distinct%2A>、<xref:System.Linq.Enumerable.Skip%2A> 和 <xref:System.Linq.Enumerable.Reverse%2A> 就是此类方法的示例。
+通过向 <xref:System.Collections.Generic.IEnumerable%601> 接口添加扩展方法扩展可用于 LINQ 查询的方法集。 例如，除了标准平均值或最大值运算，还可创建自定义聚合方法，从一系列值计算单个值。 此外，还可创建一种方法，用作值序列的自定义筛选器或特定数据转换，并返回新的序列。 <xref:System.Linq.Enumerable.Distinct%2A>、<xref:System.Linq.Enumerable.Skip%2A> 和 <xref:System.Linq.Enumerable.Reverse%2A> 就是此类方法的示例。
 
 扩展 <xref:System.Collections.Generic.IEnumerable%601> 接口时，可以将自定义方法应用于任何可枚举集合。 有关详细信息，请参阅[扩展方法](../../language-features/procedures/extension-methods.md)。
 

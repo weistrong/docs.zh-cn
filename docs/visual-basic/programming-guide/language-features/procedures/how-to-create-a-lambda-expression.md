@@ -1,20 +1,21 @@
 ---
+description: '了解详细信息：如何：创建 Lambda 表达式 (Visual Basic) '
 title: 如何：创建 lambda 表达式
 ms.date: 07/20/2015
 helpviewer_keywords:
 - lambda expressions [Visual Basic]
 - expressions [Visual Basic], lambda
 ms.assetid: 3279bd5c-80f7-410a-a7ba-f7085ed36aa5
-ms.openlocfilehash: cc2de38f7375848d104edff6f419656d9caa9cb2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 386d40c1e2021c9b02b2f785300c4e978b4da87d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071919"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472561"
 ---
 # <a name="how-to-create-a-lambda-expression-visual-basic"></a>如何：创建 Lambda 表达式 (Visual Basic)
 
-*Lambda 表达式*是没有名称的函数或子例程。 如果委托类型有效，可以使用 lambda 表达式。  
+*Lambda 表达式* 是没有名称的函数或子例程。 如果委托类型有效，可以使用 lambda 表达式。  
   
 ### <a name="to-create-a-single-line-lambda-expression-function"></a>创建单行 lambda 表达式函数  
   
@@ -102,7 +103,7 @@ ms.locfileid: "91071919"
   
  [!code-vb[VbVbalrLambdas#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class4.vb#10)]  
   
- 前面的示例等效于以下代码，该代码用语言集成查询编写 (LINQ) 语法：  
+ 前面的示例等效于以下代码，该代码以 Language-Integrated 查询编写 (LINQ) 语法：  
   
  [!code-vb[VbVbalrLambdas#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class5.vb#11)]  
   

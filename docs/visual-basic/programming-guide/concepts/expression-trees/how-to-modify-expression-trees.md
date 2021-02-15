@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：如何：修改表达式树 (Visual Basic) '
 title: 如何：修改表达式树
 ms.date: 07/20/2015
 ms.assetid: d1309fff-28bd-4d8e-a2cf-75725999e8f2
-ms.openlocfilehash: 1f052120a2e7e12f5a985adce3ae193afec0e9af
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 13098f5588fe44be8e57c9be52a9cfe5f7cd661f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410987"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455894"
 ---
 # <a name="how-to-modify-expression-trees-visual-basic"></a>如何：修改表达式树 (Visual Basic)
 
@@ -15,7 +16,7 @@ ms.locfileid: "84410987"
 
 ## <a name="to-modify-an-expression-tree"></a>修改表达式树
 
-1. 创建新的**控制台应用程序**项目。
+1. 创建新的 **控制台应用程序** 项目。
 
 2. 向 `Imports` 命名空间的文件添加语句 `System.Linq.Expressions` 。
 
@@ -71,7 +72,7 @@ ms.locfileid: "84410987"
 
 6. 编译并运行该应用程序。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：执行表达式树 (Visual Basic)](how-to-execute-expression-trees.md)
 - [表达式树 (Visual Basic)](index.md)

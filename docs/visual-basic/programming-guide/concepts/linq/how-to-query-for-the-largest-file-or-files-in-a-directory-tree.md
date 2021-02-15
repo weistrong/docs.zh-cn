@@ -1,13 +1,14 @@
 ---
+description: '了解有关详细信息，请参阅如何：查询目录树中的最大文件或文件 (LINQ)  (Visual Basic) '
 title: 如何：查询最大的文件或目录树中的文件 (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 8c1c9f0c-95dd-4222-9be2-9ec026a13e81
-ms.openlocfilehash: 9ae4a1442a0ecbb11d37b56302bec6a387c662aa
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5ceebd94ed74f9df05ad8f610d1cc79d6eb45b83
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078263"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435065"
 ---
 # <a name="how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq-visual-basic"></a>如何：查询目录树中的一个或多个最大的文件 (LINQ) (Visual Basic)
 

@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：创建自定义属性 (Visual Basic) '
 title: 创建自定义特性
 ms.date: 07/20/2015
 ms.assetid: 5c9ef584-6c7c-496b-92a9-6e42f8d9ca28
-ms.openlocfilehash: 84b400c2fa1b2d4019eec32092f954d680e64978
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e989a4ce219609aafcec90d12f9d460681e98be9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400689"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437769"
 ---
 # <a name="creating-custom-attributes-visual-basic"></a>创建自定义特性 (Visual Basic)
 
@@ -63,7 +64,7 @@ End Class
 > [!NOTE]
 > 如果特性类包含属性，则该属性必须为读写属性。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Reflection>
 - [Visual Basic 编程指南](../../index.md)
@@ -71,4 +72,4 @@ End Class
 - [反射 (Visual Basic)](../reflection.md)
 - [特性 (Visual Basic)](../../../language-reference/attributes.md)
 - [使用反射访问特性 (Visual Basic)](accessing-attributes-by-using-reflection.md)
-- [AttributeUsage （Visual Basic）](attributeusage.md)
+- [AttributeUsage (Visual Basic) ](attributeusage.md)
