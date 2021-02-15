@@ -1,5 +1,6 @@
 ---
-title: 界面
+description: '了解详细信息：接口 (Visual Basic) '
+title: 接口
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic code, interfaces
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - interfaces
 - interfaces [Visual Basic]
 ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
-ms.openlocfilehash: ac5db62fec3548bfd4a99477958f4f29463267c0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9778ed770b6aef81f4804add075f6014913fce22
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057827"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468403"
 ---
 # <a name="interfaces-visual-basic"></a>接口 (Visual Basic)
 
-接口** 定义了类可以实现的属性、方法和事件。 接口允许将功能定义为一些紧密相关的属性、方法和事件的小组；这样就减少了兼容性问题，因为可以在不损害现有代码的情况下开发接口的增强型实现。 在任何时候都可以通过开发附加接口和实现来添加新的功能。  
+接口定义了类可以实现的属性、方法和事件。 接口允许将功能定义为一些紧密相关的属性、方法和事件的小组；这样就减少了兼容性问题，因为可以在不损害现有代码的情况下开发接口的增强型实现。 在任何时候都可以通过开发附加接口和实现来添加新的功能。  
   
  以下是为何要使用接口继承而不用类继承的一些其他原因：  
   
@@ -87,7 +88,7 @@ ms.locfileid: "91057827"
   
 ## <a name="related-topics"></a>相关主题  
   
-|Title|描述|  
+|Title|说明|  
 |-----------|-----------------|  
 |[演练：创建和实现接口](walkthrough-creating-and-implementing-interfaces.md)|提供引导你定义和实现自己的接口的详细过程。|  
 |[泛型接口中的变体](../../concepts/covariance-contravariance/variance-in-generic-interfaces.md)|讨论泛型接口中的协变和逆变，提供 .NET Framework 中的变体泛型接口列表。|

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：按值传递自变量和通过引用传递参数 (Visual Basic 的差异) '
 title: 通过值传递参数和通过引用传递参数之间的差异
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], passing arguments by value
 - arguments [Visual Basic], passing by value or by reference
 ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
-ms.openlocfilehash: f9fdb1e98fb827391b615f5fe0afd1ee43c9f8e1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 632895eae82a20c9bcd773da71f88ebef26d786c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075039"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464724"
 ---
 # <a name="differences-between-passing-an-argument-by-value-and-by-reference-visual-basic"></a>通过值传递参数和通过引用传递参数之间的差异 (Visual Basic)
 
@@ -25,7 +26,7 @@ ms.locfileid: "91075039"
   
 ## <a name="passing-by-reference"></a>按引用传递  
 
- 通过在过程定义中为相应的参数指定[ByRef](../../../language-reference/modifiers/byref.md)关键字，可以通过*引用*传递自变量。 使用此传递机制时，Visual Basic 为过程提供对调用代码中的基础编程元素的直接引用。  
+ 通过在过程定义中为相应的参数指定 [ByRef](../../../language-reference/modifiers/byref.md)关键字，可以通过 *引用* 传递自变量。 使用此传递机制时，Visual Basic 为过程提供对调用代码中的基础编程元素的直接引用。  
   
 ## <a name="passing-mechanism-and-element-type"></a>传递机制和元素类型  
 

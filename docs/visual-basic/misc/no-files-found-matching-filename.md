@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：找不到与 "" 匹配的文件 <filename>
 title: 找不到与 "" 匹配的文件 <filename>
 ms.date: 07/20/2015
 f1_keywords:
 - vbrKILL_NoFilesFound1
 ms.assetid: 218808a2-8e36-4f13-a60a-770624e1ace3
-ms.openlocfilehash: 8072aa72f8357cedf3a0bcef24d7fa265dcb95f0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 297b6cc9ca62b8f2500ff89839a5b43e5b3bd6b3
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078874"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100479135"
 ---
 # <a name="no-files-found-matching-filename"></a>找不到与 "" 匹配的文件 \<filename>
 

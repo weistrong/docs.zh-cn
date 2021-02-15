@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： User-Defined 常量 (Visual Basic) '
 title: 用户定义常数
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - constants [Visual Basic], user-defined
 - circular references between constants [Visual Basic]
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
-ms.openlocfilehash: 351bdb6963e278341c13e53ef19aea0876010aa9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 290d4122249315ae3c6dc5e18ca4faefecb72044
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095637"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485219"
 ---
 # <a name="user-defined-constants-visual-basic"></a>用户定义的常量 (Visual Basic)
 
-常量是有意义的名称，用来代替不会更改的数字或字符串。 顾名思义，常量存储在应用程序的执行过程中保持不变的值。 您可以使用您使用的控件或组件定义的常量，也可以创建自己的常量。 您自己创建的常量被描述为 *用户定义*的常量。  
+常量是有意义的名称，用来代替不会更改的数字或字符串。 顾名思义，常量存储在应用程序的执行过程中保持不变的值。 您可以使用您使用的控件或组件定义的常量，也可以创建自己的常量。 您自己创建的常量被描述为 *用户定义* 的常量。  
   
  使用语句声明一个常数 `Const` ，使用与创建变量名称相同的准则。 如果 `Option Strict` 为 `On` ，则必须显式声明常量类型。  
   
@@ -36,7 +37,7 @@ ms.locfileid: "91095637"
   
  [!code-vb[VbEnumsTask#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#15)]  
   
-## <a name="scope-of-user-defined-constants"></a>用户定义的常量的作用域  
+## <a name="scope-of-user-defined-constants"></a>User-Defined 常量的作用域  
 
  `Const`语句的范围与同一位置中声明的变量的范围相同。 可以通过以下任一方式指定作用域：  
   
@@ -52,7 +53,7 @@ ms.locfileid: "91095637"
   
 ### <a name="avoiding-circular-references"></a>避免循环引用  
 
- 由于可以使用其他常量来定义常量，因此可能会在两个或多个常量之间意外创建 *循环*或循环引用。 如果有两个或多个公共常量，则会发生循环，其中每个常量都是以其他方式定义的，如以下示例中所示：  
+ 由于可以使用其他常量来定义常量，因此可能会在两个或多个常量之间意外创建 *循环* 或循环引用。 如果有两个或多个公共常量，则会发生循环，其中每个常量都是以其他方式定义的，如以下示例中所示：  
   
  [!code-vb[VbEnumsTask#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#16)]  
 [!code-vb[VbEnumsTask#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#17)]  

@@ -1,4 +1,5 @@
 ---
+description: '了解更多相关信息：高效使用数据类型 (Visual Basic) '
 title: 有效使用数据类型
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], optimizing
 - ChrW function [Visual Basic], preferred to Chr
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
-ms.openlocfilehash: 7f446b264dcb5c05ed6ddfba34acbbf66be0e447
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e7660bbdec530ef18d663975e314d90b64e4b055
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084107"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476431"
 ---
 # <a name="efficient-use-of-data-types-visual-basic"></a>有效使用数据类型 (Visual Basic)
 
@@ -26,7 +27,7 @@ ms.locfileid: "91084107"
 
 ## <a name="strong-typing"></a>强类型化
 
- 为所有变量指定数据类型称为 *强*类型。 使用强类型具有以下优点：
+ 为所有变量指定数据类型称为 *强* 类型。 使用强类型具有以下优点：
 
 - 它为你的变量启用 IntelliSense 支持。 这使您可以在代码中键入时查看它们的属性和其他成员。
 

@@ -1,5 +1,5 @@
 ---
-description: 详细了解： BC30969：需要对包含类型 "" 的程序集 "" 的引用 <assemblyidentity> <typename> ，但由于项目 " <projectname1> " 和 "" 之间存在二义性，未能找到合适的引用<projectname2>
+description: 详细了解： BC30969：需要对包含类型 "" 的程序集 "" 的引用 <assemblyidentity> <typename> ，但由于项目 " <projectname1> " 和 "" 之间存在二义性，未能找到合适的引用 <projectname2>
 title: 需要引用包含类型“<assemblyidentity>”的程序集“<typename>”，但由于项目“<projectname1>”和“<projectname2>”之间存在二义性，未能找到合适的引用
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30969
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
-ms.openlocfilehash: 945a6558ff9eea20a28bc27da27e495d0eddfb15
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 93713fe2175c303b7d126a7c3d5e33f9990955a1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99792032"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481657"
 ---
 # <a name="bc30969-reference-required-to-assembly-assemblyidentity-containing-type-typename-but-a-suitable-reference-could-not-be-found-due-to-ambiguity-between-projects-projectname1-and-projectname2"></a>BC30969：需要引用 \<assemblyidentity> 包含类型 "" 的程序集 "" \<typename> ，但由于项目 " \<projectname1> " 和 "" 之间存在二义性，未能找到合适的引用 \<projectname2>
 

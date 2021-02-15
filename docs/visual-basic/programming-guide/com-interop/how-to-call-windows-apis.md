@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：调用 Windows Api (Visual Basic) '
 title: 如何：调用 Windows API
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - API calls [Visual Basic], platform invoke
 - calls [Visual Basic], stored procedures
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
-ms.openlocfilehash: 40b40c1a489d514c82cbccdeacda27900d9ec87d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ec25df3715b1f8a4612c1575b5f7192d0a133c4b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083353"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464906"
 ---
 # <a name="how-to-call-windows-apis-visual-basic"></a>如何：调用 Windows API (Visual Basic)
 
@@ -34,7 +35,7 @@ ms.locfileid: "91083353"
   
 - 方法不是静态的，也不是抽象的，或者以前定义过。 父类型为接口，或 *name* 或 *dllName* 的长度为零。 (<xref:System.ArgumentException>)  
   
-- *名称*或*dllName*为 `Nothing` 。 (<xref:System.ArgumentNullException>)  
+- *名称* 或 *dllName* 为 `Nothing` 。 (<xref:System.ArgumentNullException>)  
   
 - 之前已使用 `CreateType` 创建包含类型。 (<xref:System.InvalidOperationException>)  
   

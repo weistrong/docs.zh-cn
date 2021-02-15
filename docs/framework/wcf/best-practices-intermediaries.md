@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：最佳实践：中介
 title: 最佳做法：中介
 ms.date: 03/30/2017
 ms.assetid: 2d41b337-8132-4ac2-bea2-6e9ae2f00f8d
-ms.openlocfilehash: 57be78681147dfc5bc37701a76c1347040f5da1f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 54fd367c9dd7a3b40f585d095d51042acd8b5722
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277889"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430490"
 ---
 # <a name="best-practices-intermediaries"></a>最佳做法：中介
 
@@ -33,7 +34,7 @@ catch (Exception e)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [WCF 错误处理](wcf-error-handling.md)
 - [在协定和服务中指定和处理错误](specifying-and-handling-faults-in-contracts-and-services.md)
