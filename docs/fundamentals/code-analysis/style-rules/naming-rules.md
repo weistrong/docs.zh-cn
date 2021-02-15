@@ -16,22 +16,24 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 1fce275204b729b4d23729ca432e06a5a249620d
-ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
+ms.openlocfilehash: df2cbc8299d853b5730bc39eb25c6f97b6575655
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99065130"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429203"
 ---
 # <a name="naming-rules"></a>命名规则
 
-在 `.editorconfig` 文件中，可以定义 .net 编程语言代码元素 &mdash; （例如类、属性和方法）的命名规则 &mdash; 。 例如，你可以指定公共成员必须大写，或者私有字段必须以开头 `_` 。
+在 `.editorconfig` 文件中，可以定义指定和强制执行 .net 编程语言代码元素 &mdash; （例如类、属性和方法）的命名规则 &mdash; 。 例如，你可以指定公共成员必须大写，或者私有字段必须以开头 `_` 。
 
 命名规则有三个组件：
 
-* **符号组** &mdash; 规则应用到的符号组。
-* 要与规则关联的 **命名样式** 。
+* 规则应用于的 **符号组** ，例如，公共成员或私有字段。
+* 要与规则关联的 **命名样式** ，例如，名称必须大写或以下划线开头。
 * 强制实施约定的严重性。
+
+首先，必须指定符号组和命名样式，并为每个名称指定一个标题。 然后指定命名规则，该规则将所有内容链接在一起。
 
 ## <a name="general-syntax"></a>常规语法
 

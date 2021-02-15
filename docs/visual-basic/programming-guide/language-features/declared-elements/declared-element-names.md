@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Visual Basic (声明的元素名称) '
 title: Declared Element Names
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - names [Visual Basic], naming conventions
 - identifiers [Visual Basic], elements
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
-ms.openlocfilehash: 327a18644c1dc1d8dae59016b8e30600357d2ca9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ba0a6d6b236c0c4e9ce81c37a1cca4e709cc5588
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086174"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425680"
 ---
 # <a name="declared-element-names-visual-basic"></a>已声明的元素名称 (Visual Basic)
 
@@ -65,7 +66,7 @@ ms.locfileid: "91086174"
  `xyz$wv`  
   
 > [!CAUTION]
-> 以下划线 () 开头的元素名称 `_` 不属于 [语言独立性和与语言无关的组件](../../../../standard/language-independence-and-language-independent-components.md) (CLS) ，因此符合 cls 的代码不能使用定义此类名称的组件。 但元素名称中任何其他位置的下划线都符合 CLS。  
+> 以下划线 () 开头的元素名称 `_` 不是 [语言独立性的一部分，Language-Independent 组件](../../../../standard/language-independence-and-language-independent-components.md) (cls) ，因此符合 cls 的代码不能使用定义此类名称的组件。 但元素名称中任何其他位置的下划线都符合 CLS。  
   
 ### <a name="name-length-guidelines"></a>名称长度准则  
 
@@ -97,7 +98,7 @@ ms.locfileid: "91086174"
   
 ## <a name="see-also"></a>请参阅
 
-- [已声明元素](index.md)
+- [已声明的元素](index.md)
 - [已声明元素的特性](declared-element-characteristics.md)
 - [References to Declared Elements](references-to-declared-elements.md)
 - [语句](../../../language-reference/statements/index.md)

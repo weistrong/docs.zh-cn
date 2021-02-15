@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：遇到 Stop 语句
 title: 遇到 Stop 语句
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID999
 ms.assetid: 4ef7216c-761a-41dc-a20c-ba133f4f1d18
-ms.openlocfilehash: 3ec7e78638f83bb63b573e3541769963bc2bec47
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 22a06d9ae95757b264a5bc6e0decad5895a9b121
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078705"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455439"
 ---
 # <a name="stop-statement-encountered"></a>遇到 Stop 语句
 

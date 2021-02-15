@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Visual Basic (中的泛型类型 Visual Basic) '
 title: 泛型类型
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
-ms.openlocfilehash: f9b343c664baaf316e5cd6df72da8dcf56222382
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1164513825240b1e83fbce2aeb6478430b0bc250
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090256"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428540"
 ---
 # <a name="generic-types-in-visual-basic-visual-basic"></a>Visual Basic 中的泛型类型 (Visual Basic)
 
