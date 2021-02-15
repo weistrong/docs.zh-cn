@@ -1,4 +1,5 @@
 ---
+description: '详细了解：运算符过程 (Visual Basic) '
 title: 运算符过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - operator overloading
 - operator procedures
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b
-ms.openlocfilehash: a1dd183570c8aa50efff85bdaebef90bd3b0120f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 836eeb2e705a96c49b5fa53e277ccf025d1915b2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84364313"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100479954"
 ---
 # <a name="operator-procedures-visual-basic"></a>运算符过程 (Visual Basic)
 
-运算符过程是一系列 Visual Basic 语句，用于定义标准运算符（如 `*` 、 `<>` 或 `And` ）在已定义的类或结构中的行为。 这也称为*运算符重载*。
+运算符过程是一系列 Visual Basic 语句，这些语句定义标准 (运算符的行为（例如 `*` ， `<>` 或 `And` 已定义的类或结构中的、或) ）。 这也称为 *运算符重载*。
 
 ## <a name="when-to-define-operator-procedures"></a>何时定义操作员过程
 
@@ -28,7 +29,7 @@ ms.locfileid: "84364313"
 
 Visual Basic 仅定义其基本数据类型的运算符。 如果两个操作数或其中一个操作数为类或结构的类型，则可以定义运算符的行为。
 
-有关详细信息，请参阅[Operator 语句](../../../language-reference/statements/operator-statement.md)。
+有关详细信息，请参阅 [Operator 语句](../../../language-reference/statements/operator-statement.md)。
 
 ## <a name="types-of-operator-procedure"></a>运算符过程的类型
 
@@ -56,17 +57,17 @@ Public Shared [Widening | Narrowing] Operator operatorsymbol ( operand1 [,  oper
 End Operator
 ```
 
-`Widening` `Narrowing` 仅对类型转换运算符使用或关键字。 对于类型转换运算符，运算符符号始终是[CType 函数](../../../language-reference/functions/ctype-function.md)。
+`Widening` `Narrowing` 仅对类型转换运算符使用或关键字。 对于类型转换运算符，运算符符号始终是 [CType 函数](../../../language-reference/functions/ctype-function.md) 。
 
 您可以声明两个操作数来定义一个二元运算符，并声明一个操作数来定义一元运算符，包括类型转换运算符。 必须声明所有操作数 `ByVal` 。
 
-声明每个操作数的方式与声明[Sub 过程](./sub-procedures.md)的参数的方式相同。
+声明每个操作数的方式与声明 [Sub 过程](./sub-procedures.md)的参数的方式相同。
 
 ### <a name="data-type"></a>数据类型
 
 由于你在定义的类或结构上定义运算符，因此至少一个操作数必须是该类或结构的数据类型。 对于类型转换运算符，操作数或返回类型必须是类或结构的数据类型。
 
-有关更多详细信息，请参阅[Operator 语句](../../../language-reference/statements/operator-statement.md)。
+有关更多详细信息，请参阅 [Operator 语句](../../../language-reference/statements/operator-statement.md)。
 
 ## <a name="calling-syntax"></a>调用语法
 
@@ -88,7 +89,7 @@ End Operator
 
 [!code-vb[VbVbcnProcedures#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#24)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](./index.md)
 - [Sub 过程](./sub-procedures.md)

@@ -1,4 +1,5 @@
 ---
+description: '详细了解：重载属性和方法 (Visual Basic) '
 title: 重载属性和方法
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,14 +13,14 @@ helpviewer_keywords:
 - method overloading
 - Overloads keyword [Visual Basic], overloaded members
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
-ms.openlocfilehash: 1672f12773ece012c580253b6dafbf9d0ac8f07c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fb46876d346ad5f391241aee0b07175df290e656
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84389147"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438770"
 ---
-# <a name="overloaded-properties-and-methods-visual-basic"></a>重载属性和方法（Visual Basic）
+# <a name="overloaded-properties-and-methods-visual-basic"></a>重载属性和方法 (Visual Basic) 
 
 重载是在具有相同名称但参数类型不同的类中创建多个过程、实例构造函数或属性。
 
@@ -51,9 +52,9 @@ ms.locfileid: "84389147"
 
 `Overloads`当重载时，关键字是可选的，但是，如果任何重载成员使用 `Overloads` 关键字，则所有其他具有相同名称的重载成员也必须指定此关键字。
 
-派生类可以重载具有相同参数和参数类型的成员的继承成员，这一过程称为*按名称和签名进行隐藏*。 如果在 `Overloads` 按名称和签名进行隐藏时使用关键字，则将使用该成员的派生类的实现，而不是基类中的实现，并且该成员的所有其他重载将可用于派生类的实例。
+派生类可以重载具有相同参数和参数类型的成员的继承成员，这一过程称为 *按名称和签名进行隐藏*。 如果在 `Overloads` 按名称和签名进行隐藏时使用关键字，则将使用该成员的派生类的实现，而不是基类中的实现，并且该成员的所有其他重载将可用于派生类的实例。
 
-如果 `Overloads` 在使用具有相同参数和参数类型的成员重载继承成员时省略关键字，则会将重载称为*按名称隐藏*。 按名称隐藏将替换成员的继承实现，并使所有其他重载不可用于派生类及其 decedents 的实例。
+如果 `Overloads` 在使用具有相同参数和参数类型的成员重载继承成员时省略关键字，则会将重载称为 *按名称隐藏*。 按名称隐藏将替换成员的继承实现，并使所有其他重载不可用于派生类及其 decedents 的实例。
 
 `Overloads`和 `Shadows` 修饰符不能同时用于相同的属性或方法。
 
@@ -79,7 +80,7 @@ ms.locfileid: "84389147"
 
 在运行时，编译器选择与所使用的参数匹配的适当重载函数。 单击该按钮时，将首先调用重载的方法，该方法的 `Price` 参数为字符串，而 "Price" 是一个字符串。 税率为 $5.12 "。 `TaxAmount``Decimal`在第二次和消息 "Price 为十进制值" 的情况下调用。 税率为 $5.12 "。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对象和类](index.md)
 - [Visual Basic 中的隐藏](../declared-elements/shadowing.md)

@@ -1,4 +1,5 @@
 ---
+description: 详细了解：运算符重载
 title: 运算符重载
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,44 +8,44 @@ helpviewer_keywords:
 - member design guidelines, operators
 - overloaded operators
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
-ms.openlocfilehash: 7757e6cfdb9ae31f6e94c26a2684f8176174499a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
-ms.translationtype: MT
+ms.openlocfilehash: e6552f35081afa542e4dc14239206a63c7c1bd59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713320"
 ---
 # <a name="operator-overloads"></a>运算符重载
 
-运算符重载允许框架类型看起来像是内置语言基元。
+运算符重载可以使框架类型看起来像是内置语言基元一样。
 
- 尽管在某些情况下允许和有用，但应慎重使用运算符重载。 在许多情况下，运算符重载已经被滥用，例如，当框架设计器开始对应该为简单方法的操作使用运算符时。 以下准则可帮助您决定何时以及如何使用运算符重载。
+ 尽管运算符重载在某些情况下是允许使用的，而且很有用，但还是应该谨慎使用它们。 在许多情况下，运算符重载被滥用，例如当框架设计者开始使用运算符来执行本应是简单方法的运算时。 以下准则应该可帮助你决定何时以及如何使用运算符重载。
 
- ❌ 避免定义运算符重载，但在应像基元 (内置) 类型的类型中除外。
+ ❌ 请避免定义运算符重载，除非在感觉像是基元（内置）类型的类型中。
 
- ✔️考虑在应感觉为基元类型的类型中定义运算符重载。
+ ✔️ 请考虑在一个感觉像是基元类型的类型中定义运算符重载。
 
- 例如， <xref:System.String?displayProperty=nameWithType> 具有 `operator==` 并定义了 `operator!=` 。
+ 例如，<xref:System.String?displayProperty=nameWithType> 定义了 `operator==` 和 `operator!=`。
 
- ✔️在表示数字 (例如) 的结构中定义运算符重载 <xref:System.Decimal?displayProperty=nameWithType> 。
+ ✔️ 请务必在表示数字的结构（如 <xref:System.Decimal?displayProperty=nameWithType>）中定义运算符重载。
 
- ❌ 在定义运算符重载时不太刻意。
+ ❌ 在定义运算符重载时请勿太刻意。
 
- 运算符重载非常有用，在这种情况下，操作的结果将是什么。 例如，可以 <xref:System.DateTime> 从一个中减去另一个 `DateTime` 并获取 <xref:System.TimeSpan> 。 但是，不适合使用逻辑联合运算符来联合两个数据库查询，或使用 shift 运算符将写入到流中。
+ 运算符重载在运算结果显而易见的情况下非常有用。 例如，能够从另一个 `DateTime` 中减去一个 <xref:System.DateTime> 并得到一个 <xref:System.TimeSpan>，这是有意义的。 但是，以下操作是不恰当的：使用逻辑 union 运算符来联合两个数据库查询或使用 shift 运算符写入到流中。
 
- ❌ 除非至少有一个操作数为定义重载的类型，否则不要提供运算符重载。
+ ❌ 除非至少有一个操作数属于定义重载的类型，否则请勿提供运算符重载。
 
- ✔️以对称方式重载运算符。
+ ✔️ 请确保以对称方式重载运算符。
 
- 例如，如果你重载 `operator==` ，则还应重载 `operator!=` 。 同样，如果你重载 `operator<` ，则还应重载 `operator>` ，依此类推。
+ 例如，如果你重载了 `operator==`，则还应重载 `operator!=`。 同样，如果你重载了 `operator<`，则还应重载 `operator>`，诸如此类。
 
- ✔️考虑为具有对应于每个重载运算符的友好名称提供方法。
+ ✔️ 请考虑为方法提供与每个重载的运算符相对应的友好名称。
 
- 许多语言不支持运算符重载。 出于此原因，建议重载运算符的类型包含辅助方法，该方法具有提供等效功能的适当的特定于域的名称。
+ 许多语言不支持运算符重载。 出于此原因，建议重载运算符的类型包含一个辅助方法，该方法具有适当的特定于域的名称且提供等效功能。
 
- 下表包含一个运算符列表和相应的友好方法名称。
+ 下表包含一个运算符列表及相应的友好方法名称。
 
-|C # 运算符符号|元数据名称|友好名称|
+|C# 运算符符号|元数据名称|友好名称|
 |-------------------------|-------------------|-------------------|
 |`N/A`|`op_Implicit`|`To<TypeName>/From<TypeName>`|
 |`N/A`|`op_Explicit`|`To<TypeName>/From<TypeName>`|
@@ -85,35 +86,35 @@ ms.locfileid: "95734811"
 |`+ (unary)`|`op_UnaryPlus`|`Plus`|
 |`~`|`op_OnesComplement`|`OnesComplement`|
 
-### <a name="overloading-operator-"></a>重载运算符 = =
+### <a name="overloading-operator-"></a>重载运算符 ==
 
- 重载 `operator ==` 非常复杂。 运算符的语义需要与其他一些成员（如）兼容 <xref:System.Object.Equals%2A?displayProperty=nameWithType> 。
+ 重载 `operator ==` 非常复杂。 该运算符的语义需要与其他一些成员（如 <xref:System.Object.Equals%2A?displayProperty=nameWithType>）兼容。
 
 ### <a name="conversion-operators"></a>转换运算符
 
- 转换运算符是允许从一种类型转换为另一种类型的一元运算符。 运算符必须在操作数或返回类型上定义为静态成员。 有两种类型的转换运算符：隐式和显式。
+ 转换运算符是允许从一种类型转换为另一种类型的一元运算符。 该运算符必须对操作数或返回类型定义为静态成员。 有两种类型的转换运算符：隐式和显式。
 
- ❌ 如果最终用户不需要此类转换，请不要提供转换运算符。
+ ❌ 如果最终用户没有明确期望进行此类转换，请勿提供转换运算符。
 
- ❌ 不要定义类型的域之外的转换运算符。
+ ❌ 请勿在类型的域外定义转换运算符。
 
- 例如，、 <xref:System.Int32> <xref:System.Double> 和 <xref:System.Decimal> 都是数值类型，而 <xref:System.DateTime> 不是。 因此，不应将转换运算符转换为 `Double(long)` `DateTime` 。 在这种情况下，构造函数是首选的。
+ 例如，<xref:System.Int32>、<xref:System.Double> 和 <xref:System.Decimal> 均为数值类型，而 <xref:System.DateTime> 则不是。 因此，应该没有转换运算符能够将 `Double(long)` 转换为 `DateTime`。 在这种情况下，首选使用构造函数。
 
- ❌ 如果转换可能有损，请不要提供隐式转换运算符。
+ ❌ 如果转换可能有损，请勿提供隐式转换运算符。
 
- 例如，不应从到的隐式转换， `Double` `Int32` 因为的 `Double` 范围超出了 `Int32` 。 即使转换可能会有损，也可以提供显式转换运算符。
+ 例如，不应存在从 `Double` 到 `Int32` 的隐式转换，因为 `Double` 的范围比 `Int32` 大。 即使转换可能会有损，也可以提供显式转换运算符。
 
- ❌ 不从隐式强制转换引发异常。
+ ❌ 请勿从隐式强制转换引发异常。
 
- 最终用户很难了解发生的情况，因为他们可能不知道转换正在进行。
+ 最终用户很难了解发生的情况，因为他们可能没有意识到正在进行转换。
 
- <xref:System.InvalidCastException?displayProperty=nameWithType>如果调用强制转换运算符导致了有损转换，并且该运算符的协定不允许有损转换，✔️将引发。
+ ✔️ 如果对强制转换运算符的调用导致有损转换，而该运算符的协定不允许有损转换，请务必引发 <xref:System.InvalidCastException?displayProperty=nameWithType>。
 
- *部分©2005，2009 Microsoft Corporation。保留所有权利。*
+ *Portions © 2005, 2009 Microsoft Corporation 版权所有。保留所有权利。*
 
- *经许可重印皮尔逊教育，Inc. 的作者 [：从框架设计指导原则：用于可重复使用的 .Net 库的约定、惯例和模式; 第2版](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) By Krzysztof Cwalina，Brad Abrams，通过 Addison-Wesley Professional 作为 Microsoft Windows 开发系列的一部分2008发布。*
+ 在 Pearson Education, Inc. 授权下，由 Addison-Wesley Professional 作为 Microsoft Windows 开发系列的一部分再版自 [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619)（Framework 设计准则：可重用 .NET 库的约定、惯例和模式第 2 版），由 Krzysztof Cwalina 和 Brad Abrams 发布于 2008 年 10 月 22 日。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [成员设计准则](member.md)
-- [框架设计准则](index.md)
+- [框架设计指南](index.md)

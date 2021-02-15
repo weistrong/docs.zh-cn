@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：无法读取分隔字段，因为当 EscapeQuotes 设置为 True 时，双引号不是合法的分隔符
 title: 无法读取分隔字段，因为当 EscapeQuotes 设置为 True 时，双引号不是合法的分隔符
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_IllegalDelimiter
 ms.assetid: ab8a0c3a-b89c-4617-9e31-7e81f5dca433
-ms.openlocfilehash: 29682edb78b848897ac2999f2d84dc1a9c1a3367
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 066b5110eaddad74b64f1d86683d7ca2a0a619f7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100347"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474390"
 ---
 # <a name="unable-to-read-delimited-fields-because-a-double-quote-is-not-a-legal-delimiter-when-escapequotes-is-set-to-true"></a>无法读取分隔字段，因为当 EscapeQuotes 设置为 True 时，双引号不是合法的分隔符
 

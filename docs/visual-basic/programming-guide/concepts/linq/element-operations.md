@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：元素操作 (Visual Basic) '
 title: 元素运算
 ms.date: 07/20/2015
 ms.assetid: 5fcb0631-dce5-45ff-8abb-353cae21e14f
-ms.openlocfilehash: c082bf18f19e29485cc80a0c9c86e09c270ecb25
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1d4ff153f1100b4a7e6696aa65a26cce9543d75b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078315"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428670"
 ---
 # <a name="element-operations-visual-basic"></a>元素操作 (Visual Basic) 
 
