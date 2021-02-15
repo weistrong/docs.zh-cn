@@ -2,12 +2,12 @@
 title: 教程：创建类型提供程序
 description: '了解如何在 F # 3.0 中创建自己的 F # 类型提供程序，具体方法是检查几个简单的类型提供程序来说明基本概念。'
 ms.date: 11/04/2019
-ms.openlocfilehash: 65cb9616f66b5850135dbfcdd9b9a9dad30421de
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 803b6ea141ed4404daf5daccd1a53212d8b42234
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739693"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468299"
 ---
 # <a name="tutorial-create-a-type-provider"></a>教程：创建类型提供程序
 
@@ -15,7 +15,7 @@ F # 中的类型提供程序机制是其对信息丰富编程支持的重要组�
 
 F # 生态系统包含一系列常用的 Internet 和企业数据服务的类型提供程序。 例如：
 
-- [Fsharp.core](https://fsharp.github.io/FSharp.Data/) 包含 JSON、XML、CSV 和 HTML 文档格式的类型提供程序。
+- Fsharp.core 包含 JSON、XML、CSV 和 HTML 文档格式的类型提供程序。
 
 - [SQLProvider](https://fsprojects.github.io/SQLProvider/) 通过对象映射以及针对这些数据源的 F # LINQ 查询，提供对 SQL 数据库的强类型访问。
 
@@ -1054,7 +1054,7 @@ ProvidedTypes API 提供了提供度量值注释的帮助器。 例如，若要�
 
 ### <a name="invalidation"></a>失效
 
-提供程序可以引发无效信号，以通知 F # 语言服务，架构假设可能已发生更改。 当发生失效时，如果提供程序承载于 Visual Studio 中，将重做 typecheck。 当提供程序托管在 F# 交互窗口或 F # 编译器 ( # A0) 中时，将忽略此信号。
+提供程序可以引发无效信号，以通知 F # 语言服务，架构假设可能已发生更改。 当发生失效时，如果提供程序承载于 Visual Studio 中，将重做 typecheck。 当提供程序托管在 F# 交互窗口或由 F # 编译器 (fsc.exe) 时，将忽略此信号。
 
 ### <a name="caching-schema-information"></a>缓存架构信息
 

@@ -1,13 +1,14 @@
 ---
+description: '了解有关以下内容的详细信息： Fine-Tuning 异步应用程序 (Visual Basic) '
 title: 微调异步应用程序
 ms.date: 07/20/2015
 ms.assetid: 4c3e7997-a95f-4fbe-a6ac-60ba042d30b9
-ms.openlocfilehash: 6ad4f9a526e0497029ff8ddc3e93637a4f9acb00
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1e31ffdee4d2af9379e8073010ed2b1925023e43
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075429"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464412"
 ---
 # <a name="fine-tuning-your-async-application-visual-basic"></a>微调异步应用程序 (Visual Basic)
 

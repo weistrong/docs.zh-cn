@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中属性和变量之间的差异
 title: 属性和变量之间的差异
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - variables [Visual Basic], and properties
 - properties [Visual Basic], and variables
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
-ms.openlocfilehash: 95bafcaca98e1a0fbdd62a550291c8ece932c1ba
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6118d37616f3df1f21dda8e3a6392b6a6f37a24e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075026"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464711"
 ---
 # <a name="differences-between-properties-and-variables-in-visual-basic"></a>Visual Basic 中属性和变量的差异
 
@@ -27,22 +28,22 @@ ms.locfileid: "91075026"
   
 ## <a name="variables"></a>变量  
 
- *变量*直接对应于内存位置。 使用单个声明语句定义变量。 变量可以是在过程中定义的 *本地变量*，只能在该过程中使用，也可以是在模块、类或结构中定义但不在任何过程内的 *成员变量*。 成员变量也称为 *字段*。  
+ *变量* 直接对应于内存位置。 使用单个声明语句定义变量。 变量可以是在过程中定义的 *本地变量*，只能在该过程中使用，也可以是在模块、类或结构中定义但不在任何过程内的 *成员变量*。 成员变量也称为 *字段*。  
   
 ## <a name="properties"></a>属性  
 
- *属性*是在模块、类或结构上定义的数据元素。 使用和语句之间的代码块定义属性 `Property` `End Property` 。 代码块包含 `Get` 过程和 `Set` /或过程。 这些过程称为 *属性过程* 或 *属性访问器*。 除了检索或存储属性值以外，还可以执行自定义操作，如更新访问计数器。  
+ *属性* 是在模块、类或结构上定义的数据元素。 使用和语句之间的代码块定义属性 `Property` `End Property` 。 代码块包含 `Get` 过程和 `Set` /或过程。 这些过程称为 *属性过程* 或 *属性访问器*。 除了检索或存储属性值以外，还可以执行自定义操作，如更新访问计数器。  
   
 ## <a name="differences"></a>差异  
 
  下表显示了变量和属性之间的一些重要差异。  
   
-|差异点|变量|属性|  
+|差异点|变量|properties|  
 |-------------------------|--------------|--------------|  
 |声明|单个声明语句|代码块中的一系列语句|  
 |实现|单个存储位置|可执行代码 (属性过程) |  
 |存储|直接与变量的值关联|通常，内部存储在属性的包含类或模块外部不可用<br /><br /> 属性的值不能作为存储元素<sup>1</sup>存在，也可能不存在。|  
-|可执行代码|None|必须至少有一个过程|  
+|可执行代码|无|必须至少有一个过程|  
 |读写访问权限|读/写或只读|读/写、只读或只写|  
 |除了接受或返回值外， (自定义操作) |不可用|可以在设置或检索属性值的过程中执行|  
   

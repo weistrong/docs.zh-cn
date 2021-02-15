@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：处理 XML 文件 (Visual Basic) '
 title: 处理 .xml 文件
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML comments [Visual Basic], parsing [Visual Basic]
 ms.assetid: 78a15cd0-7708-4e79-85d1-c154b7a14a8c
-ms.openlocfilehash: 9e12f6f5d86957a7f9aaea6047a79957fac8ce1e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2314e7dafbd747f9a19b73d06d71c73631e53861
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072127"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468390"
 ---
 # <a name="processing-the-xml-file-visual-basic"></a>处理 XML 文件 (Visual Basic)
 
@@ -23,7 +24,7 @@ ms.locfileid: "91072127"
   
 - ID 字符串的第一部分标识被标识的成员类型，单个字符后跟一个冒号。 使用以下成员类型。  
   
-|字符|描述|  
+|字符|说明|  
 |---|---|  
 |N|namespace<br /><br /> 不能将文档注释添加到命名空间，但可以对其进行 CREF 引用（如果支持）。|  
 |T|类型： `Class` 、 `Module` 、 `Interface` 、 `Structure` 、 `Enum` 、 `Delegate`|  

@@ -1,22 +1,23 @@
 ---
+description: 了解更多：延迟与立即加载
 title: 推迟加载与即时加载
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d1d7247f-a3b7-460b-b342-5c1a2365aa1a
-ms.openlocfilehash: 4e2cb7c90eb703985cbb1b8673522a9e253564d0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8c2237bd726ca79c7c168040e2a701f51ec3d238
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164293"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464750"
 ---
 # <a name="deferred-versus-immediate-loading"></a>推迟加载与即时加载
 
 查询某对象时，实际上您只检索请求的对象。 不会同时自动提取 *相关* 的对象。  (有关详细信息，请参阅 [跨关系进行查询](querying-across-relationships.md)。 ) 找不到相关对象尚未加载的事实，因为尝试访问它们会生成检索它们的请求。  
   
- 例如，你可能需要查询一组特定的订单，然后仅偶尔向特定客户发送电子邮件通知。 您最初不一定需要检索与每个订单有关的所有客户数据。 您可以使用延迟加载将额外信息的检索操作延迟到您确实需要检索它们时再进行。 请考虑以下示例：  
+ 例如，你可能需要查询一组特定的订单，然后仅偶尔向特定客户发送电子邮件通知。 您最初不一定需要检索与每个订单有关的所有客户数据。 您可以使用延迟加载将额外信息的检索操作延迟到您确实需要检索它们时再进行。 请看下面的示例：  
   
  [!code-csharp[DLinqQueryConcepts#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#1)]
  [!code-vb[DLinqQueryConcepts#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#1)]  

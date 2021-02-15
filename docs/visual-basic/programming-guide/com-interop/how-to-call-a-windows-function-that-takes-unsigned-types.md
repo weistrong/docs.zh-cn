@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：调用采用无符号类型的 Windows 函数 (Visual Basic) '
 title: 如何：调用需要使用无符号类型的 Windows 函数
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - data types [Visual Basic], numeric
 - unsigned types [Visual Basic], using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.openlocfilehash: 5b78c808de4a16060d37844ad0f17e89fa6f6d84
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 45851e22db88b9d35e5315398fb4cdbc2a7b920c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548073"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475638"
 ---
 # <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>如何：调用采用无符号类型的 Windows 函数 (Visual Basic)
 
@@ -70,7 +71,7 @@ ms.locfileid: "90548073"
     ```
 
     > [!CAUTION]
-    > `UInteger`、 `ULong` 、 `UShort` 和 `SByte` 数据类型不是[语言独立性和与语言无关的组件](../../../standard/language-independence-and-language-independent-components.md) (CLS) 的一部分，因此符合 cls 的代码无法使用使用它们的组件。
+    > `UInteger`、 `ULong` 、 `UShort` 和 `SByte` 数据类型不是语言独立性的一部分，[并且 Language-Independent 组件](../../../standard/language-independence-and-language-independent-components.md) (cls) ，因此符合 cls 的代码无法使用使用它们的组件。
 
     > [!IMPORTANT]
     > 调用非托管代码（如 (API) 的 Windows 应用程序编程接口）会使代码面临潜在的安全风险。

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 程序的结构
 title: Visual Basic 程序的结构
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - procedures [Visual Basic], structure
 - Visual Basic code, program structure
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
-ms.openlocfilehash: 90bc1fd62a05f670424e1fac368376401d1030c0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e5941b1cbdfdc460e3e860a5449e8ccae0673612
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097769"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468195"
 ---
 # <a name="structure-of-a-visual-basic-program"></a>Visual Basic 程序的结构
 
-Visual Basic 程序由标准构建基块构建。 *解决方案*由一个或多个项目组成。 一个 *项目* 又可以包含一个或多个程序集。 每个 *程序集* 都从一个或多个源文件进行编译。 *源文件*提供类、结构、模块和接口的定义和实现，它们最终包含所有代码。  
+Visual Basic 程序由标准构建基块构建。 *解决方案* 由一个或多个项目组成。 一个 *项目* 又可以包含一个或多个程序集。 每个 *程序集* 都从一个或多个源文件进行编译。 *源文件* 提供类、结构、模块和接口的定义和实现，它们最终包含所有代码。  
   
  有关 Visual Basic 程序的这些构建基块的详细信息，请参阅 .NET 中的 [解决方案和项目](/visualstudio/ide/solutions-and-projects-in-visual-studio) 和 [程序集](../../../standard/assembly/index.md)。  
   
-## <a name="file-level-programming-elements"></a>文件级编程元素  
+## <a name="file-level-programming-elements"></a>File-Level 编程元素  
 
  当您启动项目或文件并打开 "代码编辑器" 时，您将看到一些代码已存在并按正确的顺序排列。 你编写的任何代码都应遵循以下顺序：  
   
@@ -50,7 +51,7 @@ Visual Basic 程序由标准构建基块构建。 *解决方案*由一个或多�
 
  条件编译语句几乎可以出现在源文件中的任何位置。 它们会在编译时包含或排除部分代码，具体取决于特定的条件。 你还可以使用它们来调试应用程序，因为条件代码仅在调试模式下运行。 有关详细信息，请参阅 [条件编译](conditional-compilation.md)。  
   
-## <a name="namespace-level-programming-elements"></a>命名空间级编程元素  
+## <a name="namespace-level-programming-elements"></a>Namespace-Level 编程元素  
 
  类、结构和模块包含源文件中的所有代码。 它们是 *命名空间级别* 的元素，可出现在命名空间或源文件级别。 它们保留所有其他编程元素的声明。 接口用于定义元素签名，但不提供实现，也显示在模块级别。 有关模块级元素的详细信息，请参阅以下内容：  
   
@@ -64,7 +65,7 @@ Visual Basic 程序由标准构建基块构建。 *解决方案*由一个或多�
   
  命名空间级别的数据元素是枚举和委托。  
   
-## <a name="module-level-programming-elements"></a>模块级编程元素  
+## <a name="module-level-programming-elements"></a>Module-Level 编程元素  
 
  过程、运算符、属性和事件是唯一的编程元素，这些元素可以保存可执行代码 (在运行时) 执行操作的语句。 它们是程序的 *模块级* 元素。 有关过程级元素的详细信息，请参阅以下内容：  
   
@@ -82,9 +83,9 @@ Visual Basic 程序由标准构建基块构建。 *解决方案*由一个或多�
   
  模块级的数据元素包括变量、常量、枚举和委托。  
   
-## <a name="procedure-level-programming-elements"></a>过程级编程元素  
+## <a name="procedure-level-programming-elements"></a>Procedure-Level 编程元素  
 
- *过程级*元素的大部分内容是可执行语句，这些语句构成程序的运行时代码。 所有可执行代码都必须在 (`Function` 、 `Sub` 、、 `Operator` `Get` 、、、) `Set` `AddHandler` `RemoveHandler` `RaiseEvent` 的过程中。 有关详细信息，请参阅[语句](../language-features/statements.md)。  
+ *过程级* 元素的大部分内容是可执行语句，这些语句构成程序的运行时代码。 所有可执行代码都必须在 (`Function` 、 `Sub` 、、 `Operator` `Get` 、、、) `Set` `AddHandler` `RemoveHandler` `RaiseEvent` 的过程中。 有关详细信息，请参阅[语句](../language-features/statements.md)。  
   
  过程级别的数据元素仅限于局部变量和常量。  
   

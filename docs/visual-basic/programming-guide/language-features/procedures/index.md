@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的过程
 title: 过程
 ms.date: 04/28/2017
 helpviewer_keywords:
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - structured code [Visual Basic], procedures
 - procedures
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
-ms.openlocfilehash: 926d2dcc7f29102457d5ed9632e7455f8f0c7b96
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: faff01163511d71f6dc5c6fd540b292e1dea72fb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071321"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475144"
 ---
 # <a name="procedures-in-visual-basic"></a>Visual Basic 中的过程
 
-*过程*是由声明语句括起来的 Visual Basic 语句块 `Function` ， (、 `Sub` 、 `Operator` 、 `Get` 、 `Set`) 和匹配 `End` 声明。 Visual Basic 中的所有可执行语句都必须在某一过程中。  
+*过程* 是由声明语句括起来的 Visual Basic 语句块 `Function` ， (、 `Sub` 、 `Operator` 、 `Get` 、 `Set`) 和匹配 `End` 声明。 Visual Basic 中的所有可执行语句都必须在某一过程中。  
   
 ## <a name="calling-a-procedure"></a>调用过程  
 
- 从代码中的其他位置调用过程。 这称为过程调用**。 过程运行完毕后，会将控件返回到调用它的代码，称为调用代码**。 调用代码是一个语句或语句中的一个表达式，它通过名称指定过程并将控件转移给该过程。  
+ 从代码中的其他位置调用过程。 这称为过程调用。 过程运行完毕后，会将控件返回到调用它的代码，称为调用代码。 调用代码是一个语句或语句中的一个表达式，它通过名称指定过程并将控件转移给该过程。  
   
 ## <a name="returning-from-a-procedure"></a>从过程中返回  
 
@@ -35,7 +36,7 @@ ms.locfileid: "91071321"
   
 ## <a name="parameters-and-arguments"></a>形参和实参  
 
- 在大多数情况下，每次调用过程时，过程都需对不同数据进行操作。 可将此信息作为过程调用的一部分传递给该过程。 过程定义零个或多个形参**，每个形参表示一个该过程希望你传递给它的值。 过程调用中，与过程定义中每个形参相对应的是的实参**。 实参表示给定过程调用中传递给相应形参的值。  
+ 在大多数情况下，每次调用过程时，过程都需对不同数据进行操作。 可将此信息作为过程调用的一部分传递给该过程。 过程定义零个或多个形参，每个形参表示一个该过程希望你传递给它的值。 过程调用中，与过程定义中每个形参相对应的是的实参。 实参表示给定过程调用中传递给相应形参的值。  
   
 ## <a name="types-of-procedures"></a>过程类型  
 
@@ -47,13 +48,13 @@ ms.locfileid: "91071321"
   
 - [Function 过程](./function-procedures.md)向调用代码返回值。 其可在返回前执行其他操作。
 
-    某些用 C# 编写的函数会返回引用返回值**。 函数调用方可修改返回值，这种修改反映在被调用对象的状态中。 从 Visual Basic 2017 开始，Visual Basic 代码可以使用引用返回值，但不能返回引用的值。 有关详细信息，请参阅[引用返回值](ref-return-values.md)。
+    某些用 C# 编写的函数会返回引用返回值。 函数调用方可修改返回值，这种修改反映在被调用对象的状态中。 从 Visual Basic 2017 开始，Visual Basic 代码可以使用引用返回值，但不能返回引用的值。 有关详细信息，请参阅[引用返回值](ref-return-values.md)。
   
 - [属性过程](./property-procedures.md)返回并分配对象或模块上的属性值。  
   
 - 如果一个或两个操作数是新定义的类或结构，则[运算符过程](./operator-procedures.md)定义标准运算符的行为。  
   
-- [Visual Basic 中的泛型过程](../data-types/generic-procedures.md)除定义其正常参数外，还定义一个或多个类型参数**，因此调用代码可在每次调用时传递特定的数据类型。  
+- [Visual Basic 中的泛型过程](../data-types/generic-procedures.md)除定义其正常参数外，还定义一个或多个类型参数，因此调用代码可在每次调用时传递特定的数据类型。  
   
 ## <a name="procedures-and-structured-code"></a>过程和结构化代码  
 

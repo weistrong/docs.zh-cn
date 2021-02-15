@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：代码中的特殊字符 (Visual Basic) '
 title: 代码中的特殊字符
 ms.date: 07/20/2015
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - exclamation point operator (!)
 - Visual Basic code, special characters
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
-ms.openlocfilehash: 60f815f0d30fa785f4a2166db5a041d3851aa954
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4afadc13cea6cc41480cb1674b7ff6f31629b569
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097821"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468247"
 ---
 # <a name="special-characters-in-code-visual-basic"></a>代码中的特殊字符 (Visual Basic)
 

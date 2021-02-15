@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：如何：在 CSV 文本文件中计算列值 (LINQ)  (Visual Basic) '
 title: 如何：在 CSV 文本文件中计算列值 (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 88b2b9f3-c82e-41f3-b1b4-26ede5973a02
-ms.openlocfilehash: 679d53787b1392181696c05e0327ca1b1b910015
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f2bed49cf69d812659aae0cee398a735b3b42dbe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357499"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100484179"
 ---
-# <a name="how-to-compute-column-values-in-a-csv-text-file-linq-visual-basic"></a>如何：在 CSV 文本文件中计算列值（LINQ）（Visual Basic）
+# <a name="how-to-compute-column-values-in-a-csv-text-file-linq-visual-basic"></a>如何：在 CSV 文本文件中计算列值 (LINQ)  (Visual Basic) 
 
 此示例演示如何对 .csv 文件的列执行 Sum、Average、Min 和 Max 等聚合计算。 此处所示的示例原则可以应用于其他类型的结构化文本。
 
@@ -147,7 +148,7 @@ End Class
 
 使用 `Imports` System. Linq 命名空间的语句创建 Visual Basic 控制台应用程序项目。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LINQ 和字符串 (Visual Basic)](linq-and-strings.md)
 - [LINQ 和文件目录 (Visual Basic)](linq-and-file-directories.md)
