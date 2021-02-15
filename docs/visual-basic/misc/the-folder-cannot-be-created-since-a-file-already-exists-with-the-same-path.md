@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：无法创建文件夹，因为已存在具有相同路径的文件
 title: 无法创建该文件夹，因为存在具有相同路径的文件
 ms.date: 07/20/2015
 ms.assetid: 1085c60d-4d38-4d67-a149-d3923eef0cfd
-ms.openlocfilehash: 216b39bbbd4da478ba1dc4796a0b183d4eb1d9d9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 865596203a82221e884db281105f27d1d7bb423c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090451"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430815"
 ---
 # <a name="the-folder-cannot-be-created-since-a-file-already-exists-with-the-same-path"></a>无法创建该文件夹，因为存在具有相同路径的文件
 

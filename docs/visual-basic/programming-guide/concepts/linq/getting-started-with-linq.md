@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：入门与 LINQ in Visual Basic
 title: LINQ 入门
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - LINQ [Visual Basic]
 - LINQ, Visual Basic
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
-ms.openlocfilehash: 2097eb9caccd65a7983244cd06cbc18759677be1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 264ee4cef26cd2ee965771e50aeaafbeb71d91f9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090308"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469807"
 ---
 # <a name="getting-started-with-linq-in-visual-basic"></a>Visual Basic 中的 LINQ 入门
 
-本部分包含可帮助您了解和使用 (LINQ) Visual Basic 和语言集成查询的概述、示例和背景信息。  
+本部分包含可帮助你了解和使用 Visual Basic 和 Language-Integrated 查询 (LINQ) 的概述、示例和背景信息。  
   
 ## <a name="in-this-section"></a>本节内容  
 

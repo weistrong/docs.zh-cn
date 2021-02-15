@@ -1,4 +1,5 @@
 ---
+description: 了解更多：值类型和引用类型
 title: Value Types and Reference Types
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - data types [Visual Basic], value types
 - data types [Visual Basic], reference types
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
-ms.openlocfilehash: 72cb1455300e1ff00d9d558aa5a9df95f32aa7b0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 22cce68260955545e810f6fefe645b5ad6a37ca5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090113"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462134"
 ---
 # <a name="value-types-and-reference-types"></a>Value Types and Reference Types
 
@@ -39,7 +40,7 @@ Visual Basic 中有两种类型：引用类型和值类型。 引用类型的变
   
 ## <a name="reference-types"></a>引用类型  
 
- *引用类型*存储对其数据的引用。 引用类型包括：  
+ *引用类型* 存储对其数据的引用。 引用类型包括：  
   
 - `String`  
   

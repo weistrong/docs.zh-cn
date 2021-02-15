@@ -1,4 +1,5 @@
 ---
+description: 详细了解：虚成员
 title: 虚成员
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -6,38 +7,38 @@ helpviewer_keywords:
 - virtual members
 - members [.NET Framework], virtual
 ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
-ms.openlocfilehash: 7727ea7fcfdbbecf2e53ddd7a44b4cf907211f80
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
-ms.translationtype: MT
+ms.openlocfilehash: 7618686764fb3a24ef53e5168b871366b7ffb5bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641780"
 ---
 # <a name="virtual-members"></a>虚成员
 
-可以重写虚拟成员，从而更改子类的行为。 它们与回调在其提供的扩展性上非常相似，但它们在执行性能和内存消耗方面都更好。 此外，在需要创建一种特殊类型 (特殊化) 的方案中，虚拟成员更加自然。
+可替代虚拟成员，从而更改子类的行为。 就它们提供的扩展性而言，它们与回调非常相似，但就执行性能和内存消耗而言，它们则更佳。 此外，在需要创建一种特殊的现有类型（专用化）的场景中，虚拟成员感觉更自然。
 
- 虚拟成员比回调和事件更好，但其性能不如非虚拟方法。
+ 虚拟成员的性能优于回调和事件，但并不比非虚拟方法好。
 
- 虚拟成员的主要缺点是，在编译时只能修改虚拟成员的行为。 可以在运行时修改回调行为。
+ 虚拟成员的主要缺点是虚拟成员的行为只能在编译时进行修改。 而回调行为可在运行时进行修改。
 
- 由于对虚拟成员的任何调用都可以以不可预知的方式重写，并且可以执行任意代码，因此虚拟成员（如回调 (和回调) 可能更多的设计、测试和维护。 此外，通常还需要更多的工作来清楚地定义虚拟成员的协定，因此设计和记录这些成员的成本更高。
+ 与回调（可能不止回调）一样，虚拟成员的设计、测试和维护成本很高，因为对虚拟成员的任何调用都可能以不可预测的方式被替代，并可能执行任意代码。 此外，通常还需要执行更多的工作以清楚地定义虚拟成员的协定，因此设计和记录这些成员的成本更高。
 
- ❌ 不要将成员设为虚拟的，除非您有充分的理由这样做，并且您知道与设计、测试和维护虚拟成员相关的所有成本。
+ ❌ 请勿使成员虚拟化，除非你有充分的理由这样做，并且知道与设计、测试和维护虚拟成员相关的所有成本。
 
- 在无需中断兼容性的情况下，虚拟成员就可以对其进行更改，而不是包容性。 而且，它们比非虚拟成员慢，主要是因为对虚拟成员的调用不内联。
+ 在不破坏兼容性的情况下，虚拟成员对可对其进行的更改不太宽容。 此外，它们比非虚拟成员慢，主要是因为对虚拟成员的调用没有内联。
 
- ✔️考虑将扩展性限制为仅绝对必要的。
+ ✔️ 请考虑将扩展性限制在绝对必要的范围内。
 
- ✔️比虚拟成员的公共可访问性更喜欢受保护的可访问性。 公共成员应通过调用受保护的虚拟成员) 来提供扩展性 (。
+ ✔️ 相对于虚拟成员的公共可访问性，请务必首选受保护的可访问性。 公共成员应通过调用受保护的虚拟成员提供扩展性（如需要）。
 
- 类的公共成员应为该类的直接使用者提供正确的一组功能。 虚拟成员设计为在子类中被重写，受保护的可访问性是将所有虚拟扩展点的范围限定为可使用这些扩展点的最佳方式。
+ 类的公共成员应为该类的直接使用者提供正确的功能集。 虚拟成员设计为在子类中被替代，而受保护的可访问性是将所有虚拟扩展点的范围限定在可使用这些扩展点的位置的好方法。
 
- *部分 &copy; 2005，2009 Microsoft Corporation。保留所有权利。*
+ *Portions &copy; 2005, 2009 Microsoft Corporation。保留所有权利。*
 
- *经许可重印皮尔逊教育，Inc. 的作者 [：从框架设计指导原则：用于可重复使用的 .Net 库的约定、惯例和模式; 第2版](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) By Krzysztof Cwalina，Brad Abrams，通过 Addison-Wesley Professional 作为 Microsoft Windows 开发系列的一部分2008发布。*
+ 在 Pearson Education, Inc. 授权下，由 Addison-Wesley Professional 作为 Microsoft Windows 开发系列的一部分再版自 [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619)（Framework 设计准则：可重用 .NET 库的约定、惯例和模式第 2 版），由 Krzysztof Cwalina 和 Brad Abrams 发布于 2008 年 10 月 22 日。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [框架设计准则](index.md)
+- [框架设计指南](index.md)
 - [扩展性设计](designing-for-extensibility.md)
