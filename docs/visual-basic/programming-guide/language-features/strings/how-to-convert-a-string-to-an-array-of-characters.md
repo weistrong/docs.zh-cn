@@ -1,4 +1,5 @@
 ---
+description: 了解有关详细信息，请参阅如何：将字符串转换为 Visual Basic 中的字符数组
 title: 如何：将字符串转换为字符数组
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - strings [Visual Basic], converting to arrays
 - string conversion [Visual Basic], arrays
 ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
-ms.openlocfilehash: e1f634fcdb23f16e794449f8fe7b53c451c8c5b8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f85b0801cf013e207eacd70a256a3ed0a8dc7887
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059166"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476145"
 ---
 # <a name="how-to-convert-a-string-to-an-array-of-characters-in-visual-basic"></a>如何：在 Visual Basic 中将字符串转换为字符数组
 

@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：如何在 Visual Basic 中调用事件处理程序
 title: 如何调用事件处理程序
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 no-loc:
 - WithEvents
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
-ms.openlocfilehash: 3762c79dd3d883ae2ccfe76b335cf98ac87d4246
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 7e65b36d392211be533bb4881658b1cdb8057d5d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89464956"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476249"
 ---
 # <a name="how-to-call-an-event-handler-in-visual-basic"></a>如何在 Visual Basic 中调用事件处理程序
 
-事件是指由某些程序组件识别的操作或 *事件* （例如鼠标单击或信用限制），可以为其编写代码来做出响应。 *事件处理程序*是为响应事件而编写的代码。
+事件是指由某些程序组件识别的操作或 *事件* （例如鼠标单击或信用限制），可以为其编写代码来做出响应。 *事件处理程序* 是为响应事件而编写的代码。
 
 Visual Basic 中的事件处理程序是一个 `Sub` 过程。 不过，通常不会像其他过程那样调用它 `Sub` 。 而是将该过程标识为事件的处理程序。 可以通过 [`Handles`](../../../language-reference/statements/handles-clause.md) 子句和 [`WithEvents`](../../../language-reference/modifiers/withevents.md) 变量或使用 [AddHandler 语句](../../../language-reference/statements/addhandler-statement.md)来执行此操作。 使用 `Handles` 子句是在 Visual Basic 中声明事件处理程序的默认方式。 当你在集成开发环境中 (IDE) 编程时，这就是设计器编写事件处理程序的方式。 `AddHandler`语句适用于在运行时动态引发事件。
 
@@ -27,7 +28,7 @@ Visual Basic 中的事件处理程序是一个 `Sub` 过程。 不过，通常�
 
 可以将多个事件处理程序与同一事件关联。 在某些情况下，您可以取消关联事件的处理程序。 有关详细信息，请参阅[事件](../events/index.md)。
 
-## <a name="call-an-event-handler-using-no-loc-texthandles-and-no-locwithevents"></a>使用和调用事件处理程序 :::no-loc text="Handles":::WithEvents
+## <a name="call-an-event-handler-using-no-loc-texthandles-and-withevents"></a>使用和调用事件处理程序 :::no-loc text="Handles":::WithEvents
 
 1. 请确保事件是用 [事件语句](../../../language-reference/statements/event-statement.md)声明的。
 
@@ -55,7 +56,7 @@ Visual Basic 中的事件处理程序是一个 `Sub` 过程。 不过，通常�
 
     可以通过执行 [RemoveHandler 语句](../../../language-reference/statements/removehandler-statement.md)，将事件处理程序与事件取消关联。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](index.md)
 - [Sub 过程](sub-procedures.md)

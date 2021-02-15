@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：定义可在不同数据类型上提供相同功能的类 (Visual Basic) '
 title: 如何：定义可对不同数据类型提供相同功能的类
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
-ms.openlocfilehash: 268daf333dc5463e5436304cec188a9e6d477166
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 14be6c748ccb311c6a2974e8947b01a1c55a90b6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077119"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469742"
 ---
 # <a name="how-to-define-a-class-that-can-provide-identical-functionality-on-different-data-types-visual-basic"></a>如何：定义可对不同数据类型提供相同功能的类 (Visual Basic)
 
@@ -45,7 +46,7 @@ ms.locfileid: "91077119"
   
 1. 采用常规方式定义类。  
   
-2. `(Of` *typeparameter* `)` 紧靠类名称之后添加 typeparameter，以指定一个类型参数。  
+2. `(Of`  `)` 紧靠类名称之后添加 typeparameter，以指定一个类型参数。  
   
 3. 如果有一个以上的类型形参，请在括号内列出这些参数（以逗号分隔）。 不要重复 `Of` 关键字。  
   

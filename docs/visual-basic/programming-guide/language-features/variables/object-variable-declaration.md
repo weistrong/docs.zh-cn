@@ -1,4 +1,5 @@
 ---
+description: '详细了解：对象变量声明 (Visual Basic) '
 title: 对象变量声明
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - declaring classes [Visual Basic]
 - late binding [Visual Basic]
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
-ms.openlocfilehash: 74b1401df3dbb2d744de74734d10cbcd92e9689e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 853f9e775976022e52121c164884fd91ef0a831c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077041"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463710"
 ---
 # <a name="object-variable-declaration-visual-basic"></a>对象变量声明 (Visual Basic)
 
@@ -47,7 +48,7 @@ Dim objC As System.OperatingSystem
 
  有时，在代码运行之前，特定类是未知的。 在这种情况下，必须声明数据类型的对象变量 `Object` 。 这会创建对任何类型的对象的常规引用，并在运行时分配特定类。 这称为 *后期绑定*。 后期绑定需要额外的执行时间。 它还将代码限制为最近分配给它的类的方法和属性。 如果你的代码尝试访问不同类的成员，这可能会导致运行时错误。  
   
- 如果在编译时知道特定类，则应将对象变量声明为该类的。 这称为*早期绑定*。 早期绑定可提高性能，并保证代码访问特定类的所有方法和属性。 在前面的示例声明中，如果变量 `objA` 仅使用类的对象 <xref:System.Windows.Forms.Label?displayProperty=nameWithType> ，则应 `As System.Windows.Forms.Label` 在其声明中指定。  
+ 如果在编译时知道特定类，则应将对象变量声明为该类的。 这称为 *早期绑定*。 早期绑定可提高性能，并保证代码访问特定类的所有方法和属性。 在前面的示例声明中，如果变量 `objA` 仅使用类的对象 <xref:System.Windows.Forms.Label?displayProperty=nameWithType> ，则应 `As System.Windows.Forms.Label` 在其声明中指定。  
   
 ### <a name="advantages-of-early-binding"></a>早期绑定的优点  
 
@@ -138,6 +139,6 @@ Dim anyForm As System.Windows.Forms.Form
 - [对象变量值](object-variable-values.md)
 - [如何：在 Visual Basic 中声明对象变量并为它分配对象](how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
 - [如何：访问对象的成员](how-to-access-members-of-an-object.md)
-- [New 运算符](../../../language-reference/operators/new-operator.md)
+- [新建操作员](../../../language-reference/operators/new-operator.md)
 - [Option Strict 语句](../../../language-reference/statements/option-strict-statement.md)
 - [局部类型推理](local-type-inference.md)

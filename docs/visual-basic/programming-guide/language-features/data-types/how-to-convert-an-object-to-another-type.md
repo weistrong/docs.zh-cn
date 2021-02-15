@@ -1,15 +1,16 @@
 ---
+description: 了解有关详细信息，请参阅如何：在 Visual Basic 中将对象转换为另一种类型
 title: 如何：将一个对象转换为其他类型
 ms.date: 07/20/2015
 helpviewer_keywords:
 - objects [Visual Basic], converting
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
-ms.openlocfilehash: b89e996324d9ec22fc243b59502f3d36fefdee60
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d6840cfd440483720f8ca9a0fa0140c3727a8688
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090217"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100484023"
 ---
 # <a name="how-to-convert-an-object-to-another-type-in-visual-basic"></a>如何：在 Visual Basic 中将一个对象转换为其他类型
 

@@ -1,4 +1,5 @@
 ---
+description: '有关详细信息，请参阅如何：在匿名类型声明中推断属性名和类型 (Visual Basic) '
 title: 如何：推断匿名类型声明中的属性名和类型
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - anonymous types [Visual Basic], inferring property names and types
 - inferring property types [Visual Basic]
 ms.assetid: 7c748b22-913f-4d9d-b747-6b7bf296a0bc
-ms.openlocfilehash: 9ebbbe9d2e6d36f5ab2bc7f7c916d18c9240a06d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e4bff8cd8dd879b97618a3bc69e1eaf1c7c269b7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404883"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483893"
 ---
 # <a name="how-to-infer-property-names-and-types-in-anonymous-type-declarations-visual-basic"></a>如何：推断匿名类型声明中的属性名和类型 (Visual Basic)
 
@@ -126,9 +127,9 @@ ms.locfileid: "84404883"
 
   [!code-vb[VbVbalrAnonymousTypes#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#16)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [对象初始值设定项：命名和匿名类型](object-initializers-named-and-anonymous-types.md)
 - [局部类型推理](../variables/local-type-inference.md)
 - [匿名类型](anonymous-types.md)
-- [密钥](../../../language-reference/modifiers/key.md)
+- [Key](../../../language-reference/modifiers/key.md)

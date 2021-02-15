@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：结构和类 (Visual Basic) '
 title: 结构和类
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - structures [Visual Basic], structure variables
 - structure variables [Visual Basic]
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
-ms.openlocfilehash: e7ca5b9d55611eafad88517e71f9807fe2aa4416
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 129948bd9a16309ffea5b1e4c690d8883c450b74
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086213"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430620"
 ---
 # <a name="structures-and-classes-visual-basic"></a>结构和类 (Visual Basic)
 
@@ -76,7 +77,7 @@ Visual Basic 统一了结构和类的语法，因此，这两个实体支持大�
 
  由于结构是值类型，因此每个结构变量将永久绑定到单个结构实例。 但类是引用类型，而对象变量可在不同时间引用各种类实例。 这种区分会按以下方式影响结构和类的使用：  
   
-- **起始.** 结构变量使用结构的无参数构造函数隐式包括元素的初始化。 因此， `Dim s As struct1` 等效于 `Dim s As struct1 = New struct1()` 。  
+- **初始化。** 结构变量使用结构的无参数构造函数隐式包括元素的初始化。 因此， `Dim s As struct1` 等效于 `Dim s As struct1 = New struct1()` 。  
   
 - **分配变量。** 将一个结构变量分配给另一个结构变量或将结构实例传递给过程参数时，所有变量元素的当前值都将复制到新结构。 当您将一个对象变量分配给另一个对象变量，或将一个对象变量传递给某个过程时，只会复制引用指针。  
   

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：声明常量 (Visual Basic) '
 title: 如何：声明常量
 ms.date: 07/20/2015
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - module-level constants and variables
 - Object data type [Visual Basic], declaring constants
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
-ms.openlocfilehash: 138dd58dac9d1983e35e61f8b98a77810fc6e38b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 42b0ecce90e12a7e777b8e51bc9a23ab454f433d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058841"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477497"
 ---
 # <a name="how-to-declare-a-constant-visual-basic"></a>如何：声明常量 (Visual Basic)
 

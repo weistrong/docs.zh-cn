@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：指定的注册表路径不是以有效的配置单元名称开头
 title: 指定的注册表路径开头不是有效的配置单元名称
 ms.date: 07/20/2015
 ms.assetid: afb1a03b-4516-450b-aab1-827a93f9e99d
-ms.openlocfilehash: 59479691a8e23395378a816a30749e749c9a2c72
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ece79ab210b37d2384a0a9625d89c21f37d94602
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078718"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431010"
 ---
 # <a name="specified-registry-path-does-not-start-with-a-valid-hive-name"></a>指定的注册表路径开头不是有效的配置单元名称
 

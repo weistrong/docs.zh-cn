@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：编写第一个 LINQ 查询 (Visual Basic) '
 title: 编写第一个 LINQ 查询
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: c7d0595b991bdad6ef05b567f95ead8c7fccdbc2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: cb57ae3c22b7e2ee2c3b66a8f033eda6fd72e16a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077275"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477510"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>编写第一个 LINQ 查询 (Visual Basic)
 
-*查询*是一种从数据源检索数据的表达式。 查询以专用查询语言表示。 随着时间的推移，为不同类型的数据源开发了不同的语言，例如，用于关系数据库的 SQL 和用于 XML 的 XQuery。 这样，应用程序开发人员就可以为所支持的每种类型的数据源或数据格式学习一种新的查询语言。  
+*查询* 是一种从数据源检索数据的表达式。 查询以专用查询语言表示。 随着时间的推移，为不同类型的数据源开发了不同的语言，例如，用于关系数据库的 SQL 和用于 XML 的 XQuery。 这样，应用程序开发人员就可以为所支持的每种类型的数据源或数据格式学习一种新的查询语言。  
   
- 语言集成查询 (LINQ) 通过提供一种跨各种数据源和格式使用数据的一致模型，简化了这种情况。 在 LINQ 查询中，始终会用到对象。 您可以使用相同的基本编码模式来查询和转换 XML 文档、SQL 数据库、ADO.NET 数据集和实体中的数据、.NET Framework 集合以及 LINQ 提供程序可用的任何其他源或格式。 本文档介绍了创建和使用基本 LINQ 查询的三个阶段。  
+ Language-Integrated 查询 (LINQ) 通过提供一种跨各种数据源和格式使用数据的一致模型，简化了这种情况。 在 LINQ 查询中，始终会用到对象。 您可以使用相同的基本编码模式来查询和转换 XML 文档、SQL 数据库、ADO.NET 数据集和实体中的数据、.NET Framework 集合以及 LINQ 提供程序可用的任何其他源或格式。 本文档介绍了创建和使用基本 LINQ 查询的三个阶段。  
   
 ## <a name="three-stages-of-a-query-operation"></a>查询操作的三个阶段  
 
@@ -34,7 +35,7 @@ ms.locfileid: "91077275"
  下面的示例演示了查询操作的三个部分。 为了便于演示，该示例使用一个整数数组作为方便的数据源。 不过，相同的概念也适用于其他数据源。  
   
 > [!NOTE]
-> 在 "编译" 页上的 " [项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)上，确保 " **选项推断** " 设置为 **"开"**。  
+> 在 "编译" 页上的 " [项目设计器" (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)上，确保 " **选项推断** " 设置为 **"开"**。  
   
  [!code-vb[VbLINQFirstQuery#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#1)]  
   
@@ -79,7 +80,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
 ## <a name="query-execution"></a>查询执行  
 
- 查询执行与查询创建分离。 查询创建定义查询，但执行由不同的机制触发。 可以在定义查询 *后立即执行查询 () * ，或者可以存储定义，稍后 (*延迟执行*) 执行查询。  
+ 查询执行与查询创建分离。 查询创建定义查询，但执行由不同的机制触发。 可以在定义查询 *后立即执行查询 ()* ，或者可以存储定义，稍后 (*延迟执行*) 执行查询。  
   
 ### <a name="deferred-execution"></a>延迟执行  
 

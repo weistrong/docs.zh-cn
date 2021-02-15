@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：无法完成操作，因为目标目录位于源目录下
 title: 未能完成操作，因为目标目录位于源目录下
 ms.date: 07/20/2015
 f1_keywords:
 - vbrIO_CyclicOperation
 ms.assetid: 850d3a24-5d51-4ac8-a912-630efcd75278
-ms.openlocfilehash: d159b9bb3a765a2fefe99fa15dff42e979fda9e3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5fb0bf1d761faf9d3d0c64e8815e28e14841b1fd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91079134"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463515"
 ---
 # <a name="could-not-complete-operation-since-target-directory-is-under-source-directory"></a>未能完成操作，因为目标目录位于源目录下
 
