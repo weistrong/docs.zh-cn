@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：演练：在 Visual Basic 中编写查询
 title: 编写查询
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - LINQ [Visual Basic], writing queries
 - writing LINQ queries [Visual Basic]
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
-ms.openlocfilehash: c2abca183f1241cff314a4367c7bd9f1b9f239ea
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 55a1b3382d587b7982b79448334c4688895fa6e6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554588"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466804"
 ---
 # <a name="walkthrough-writing-queries-in-visual-basic"></a>演练：用 Visual Basic 编写查询
 
-本演练演示如何使用 Visual Basic 语言功能 (LINQ) 查询表达式编写语言集成查询。 本演练演示如何对学生对象列表创建查询，如何运行查询，以及如何修改查询。 查询包含多个功能，包括对象初始值设定项、本地类型推理和匿名类型。
+本演练演示如何使用 Visual Basic 语言功能编写 Language-Integrated Query (LINQ) 查询表达式。 本演练演示如何对学生对象列表创建查询，如何运行查询，以及如何修改查询。 查询包含多个功能，包括对象初始值设定项、本地类型推理和匿名类型。
 
 完成本演练后，你将准备好进入你感兴趣的特定 LINQ 提供程序的示例和文档。 LINQ 提供程序包括 [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] 、LINQ to DataSet 和 [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 。
 
@@ -32,11 +33,11 @@ ms.locfileid: "90554588"
 
 4. 在项目类型列表中，单击 " **控制台应用程序**"。 在 " **名称** " 框中，键入项目的名称，然后单击 **"确定"**。
 
-    创建一个项目。 默认情况下，它包含对 System.Core.dll 的引用。 此外，"引用" 页上的 "[项目设计器" (Visual Basic) ](/visualstudio/ide/reference/references-page-project-designer-visual-basic)的 "已**导入命名空间**" 列表包括 <xref:System.Linq?displayProperty=nameWithType> 命名空间。
+    创建一个项目。 默认情况下，它包含对 System.Core.dll 的引用。 此外，"引用" 页上的 "[项目设计器" (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)的 "已 **导入命名空间**" 列表包括 <xref:System.Linq?displayProperty=nameWithType> 命名空间。
 
-5. 在 "编译" 页上的 " [项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)上，确保 " **选项推断** " 设置为 **"开"**。
+5. 在 "编译" 页上的 " [项目设计器" (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)上，确保 " **选项推断** " 设置为 **"开"**。
 
-## <a name="add-an-in-memory-data-source"></a>添加内存中数据源
+## <a name="add-an-in-memory-data-source"></a>添加 In-Memory 数据源
 
 此演练中的查询的数据源是对象的列表 `Student` 。 每个 `Student` 对象都包含学生正文中的名字、姓氏、课程年份和学术排名。
 

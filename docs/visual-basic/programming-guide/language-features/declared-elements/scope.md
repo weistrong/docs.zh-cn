@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：范围 Visual Basic
 title: 范围
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - scope [Visual Basic], Visual Basic
 - procedure scope [Visual Basic]
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
-ms.openlocfilehash: 1bee904996257474b7457b2aefb1f17d250933cb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5b5412f5743162bb91fc3651d08f5c7ff9ba8abd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410729"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480201"
 ---
 # <a name="scope-in-visual-basic"></a>Visual Basic 中的范围
 
-已声明元素的*作用域*是所有可引用它的代码的集合，无需限定其名称或通过[Imports 语句（.net 命名空间和类型）](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)提供它。 元素可以具有以下级别之一的作用域：
+已声明元素的 *作用域* 是所有可引用它的代码的集合，而无需限定其名称，也不能通过 [导入语句 ( .net 命名空间和类型)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)提供。 元素可以具有以下级别之一的作用域：
 
 |级别|说明|
 |-----------|-----------------|
@@ -33,13 +34,13 @@ ms.locfileid: "84410729"
 |模块范围|适用于声明它的模块、类或结构中的所有代码|
 |命名空间范围|可用于声明它的命名空间中的所有代码|
 
-这种级别的作用域从最小（块）到最宽（命名空间）的范围进度，其中最*窄的范围*指的是可以引用元素而不进行限定的最小代码集。 有关详细信息，请参阅本页上的 "范围级别"。
+这些范围内的范围进度从最小的 (块) 到最广泛的 (命名空间) ，其中最 *窄的范围* 指的是可以引用元素而不进行限定的最小代码集。 有关详细信息，请参阅本页上的 "范围级别"。
 
 ## <a name="specifying-scope-and-defining-variables"></a>指定作用域和定义变量
 
 在声明元素时指定其作用域。 范围可能取决于以下因素：
 
-- 声明元素的区域（块、过程、模块、类或结构）
+- 区域 (块、过程、模块、类或结构中声明元素) 
 
 - 包含元素声明的命名空间
 
@@ -57,7 +58,7 @@ ms.locfileid: "84410729"
 
 - `Do` 和 `Loop`
 
-- `For`[ `Each` ] 和`Next`
+- `For` [ `Each` ] 和 `Next`
 
 - `If` 和 `End If`
 
@@ -85,20 +86,20 @@ End If
 
 ### <a name="procedure-scope"></a>过程范围
 
-在过程中声明的元素在该过程之外不可用。 只有包含声明的过程可以使用它。 此级别的变量也称为*局部变量*。 用[Dim 语句](../../../language-reference/statements/dim-statement.md)声明它们，无论是还是不带[Static](../../../language-reference/modifiers/static.md)关键字。
+在过程中声明的元素在该过程之外不可用。 只有包含声明的过程可以使用它。 此级别的变量也称为 *局部变量*。 用 [Dim 语句](../../../language-reference/statements/dim-statement.md)声明它们，无论是还是不带 [Static](../../../language-reference/modifiers/static.md) 关键字。
 
 过程和块范围密切相关。 如果在过程内但在该过程中的任何块外声明变量，则可以将变量视为具有块范围，其中块是整个过程。
 
 > [!NOTE]
-> 所有本地元素（即使它们是 `Static` 变量）都专用于它们出现的过程。 不能在过程中使用[Public](../../../language-reference/modifiers/public.md)关键字声明任何元素。
+> 所有本地元素（即使它们是 `Static` 变量）都专用于它们出现的过程。 不能在过程中使用 [Public](../../../language-reference/modifiers/public.md) 关键字声明任何元素。
 
 ### <a name="module-scope"></a>模块范围
 
-为方便起见，单术语*模块级别*同样适用于模块、类和结构。 您可以通过将声明语句置于任何过程或块的外部，但在模块、类或结构中，在此级别声明元素。
+为方便起见，单术语 *模块级别* 同样适用于模块、类和结构。 您可以通过将声明语句置于任何过程或块的外部，但在模块、类或结构中，在此级别声明元素。
 
 在模块级别进行声明时，所选的访问级别将确定范围。 包含模块、类或结构的命名空间还会影响范围。
 
-声明[专用](../../../language-reference/modifiers/private.md)访问级别的元素可用于该模块中的每个过程，但不能用于不同模块中的任何代码。 `Dim` `Private` 如果不使用任何访问级别关键字，模块级别的语句将默认为。 但是，可以在语句中使用关键字，使作用域和访问级别更明显 `Private` `Dim` 。
+声明 [专用](../../../language-reference/modifiers/private.md) 访问级别的元素可用于该模块中的每个过程，但不能用于不同模块中的任何代码。 `Dim` `Private` 如果不使用任何访问级别关键字，模块级别的语句将默认为。 但是，可以在语句中使用关键字，使作用域和访问级别更明显 `Private` `Dim` 。
 
 在下面的示例中，模块中定义的所有过程都可以引用字符串变量 `strMsg` 。 调用第二个过程时，将在对话框中显示字符串变量的内容 `strMsg` 。
 
@@ -117,7 +118,7 @@ End Sub
 
 ### <a name="namespace-scope"></a>命名空间范围
 
-如果使用[Friend](../../../language-reference/modifiers/friend.md)或[Public](../../../language-reference/modifiers/public.md)关键字在模块级别声明一个元素，则该元素将可用于声明该元素的整个命名空间中的所有过程。 对于前面的示例的以下更改，字符串变量 `strMsg` 可以在其声明的命名空间中的任何位置通过代码引用。
+如果使用 [Friend](../../../language-reference/modifiers/friend.md) 或 [Public](../../../language-reference/modifiers/public.md) 关键字在模块级别声明一个元素，则该元素将可用于声明该元素的整个命名空间中的所有过程。 对于前面的示例的以下更改，字符串变量 `strMsg` 可以在其声明的命名空间中的任何位置通过代码引用。
 
 ```vb
 ' Include this declaration at module level (not inside any procedure).
@@ -126,7 +127,7 @@ Public strMsg As String
 
 命名空间范围包括嵌套命名空间。 命名空间中的可用元素也可以从嵌套在该命名空间中的任何命名空间中使用。
 
-如果你的项目不包含任何[命名空间语句](../../../language-reference/statements/namespace-statement.md)，则项目中的所有内容都在相同的命名空间中。 在这种情况下，可以将命名空间范围视为项目范围。 `Public`模块、类或结构中的元素也可用于引用其项目的任何项目。
+如果你的项目不包含任何 [命名空间语句](../../../language-reference/statements/namespace-statement.md)，则项目中的所有内容都在相同的命名空间中。 在这种情况下，可以将命名空间范围视为项目范围。 `Public` 模块、类或结构中的元素也可用于引用其项目的任何项目。
 
 ## <a name="choice-of-scope"></a>范围选择
 
@@ -138,13 +139,13 @@ Public strMsg As String
 
 - **避免名称冲突。** 局部变量名称不容易发生冲突。 例如，可以创建几个不同的过程，其中包含一个名为的变量 `intTemp` 。 只要每个 `intTemp` 都声明为局部变量，每个过程就只能识别自己的版本 `intTemp` 。 任何一个过程都可以更改其本地中的值， `intTemp` 而不会影响 `intTemp` 其他过程中的变量。
 
-- **内存消耗。** 局部变量仅在其过程正在运行时占用内存。 当过程返回到调用代码时，将释放其内存。 相反，[共享](../../../language-reference/modifiers/shared.md)和[静态](../../../language-reference/modifiers/static.md)变量将消耗内存资源，直到应用程序停止运行，因此仅在必要时才使用它们。 *实例变量*会在其实例继续存在时使用内存，这使得它们的效率低于局部变量，但可能更高效 `Shared` `Static` 。
+- **内存消耗。** 局部变量仅在其过程正在运行时占用内存。 当过程返回到调用代码时，将释放其内存。 相反， [共享](../../../language-reference/modifiers/shared.md) 和 [静态](../../../language-reference/modifiers/static.md) 变量将消耗内存资源，直到应用程序停止运行，因此仅在必要时才使用它们。 *实例变量* 会在其实例继续存在时使用内存，这使得它们的效率低于局部变量，但可能更高效 `Shared` `Static` 。
 
 ### <a name="minimizing-scope"></a>最小化范围
 
-通常情况下，在声明任何变量或常量时，最好将范围设置为尽可能缩小（块范围是最小）。 这有助于节省内存，并最大程度地减少代码错误引用错误变量的几率。 同样，仅当需要在过程调用之间保留变量值时，才应将该变量声明为[静态](../../../language-reference/modifiers/static.md)。
+通常情况下，在声明任何变量或常量时，最好将范围设置为 "窄" (块范围是最窄的) 。 这有助于节省内存，并最大程度地减少代码错误引用错误变量的几率。 同样，仅当需要在过程调用之间保留变量值时，才应将该变量声明为 [静态](../../../language-reference/modifiers/static.md) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [已声明元素的特性](declared-element-characteristics.md)
 - [如何：控制变量的范围](how-to-control-the-scope-of-a-variable.md)

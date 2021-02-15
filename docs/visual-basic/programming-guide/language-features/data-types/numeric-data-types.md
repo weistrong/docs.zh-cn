@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：数值数据类型 (Visual Basic) '
 title: 数值数据类型
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - Single data type [Visual Basic], numeric types
 - Decimal data type [Visual Basic], numeric data types
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
-ms.openlocfilehash: 317c0862953e7bb866faa4712d42dfd5995ecf35
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0e44301d953ab75378aabbec82fdb6dce00a02e2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086226"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430685"
 ---
 # <a name="numeric-data-types-visual-basic"></a>数值型数据类型 (Visual Basic)
 
@@ -40,9 +41,9 @@ Visual Basic 提供了几种 *数值数据类型* 来处理各种表示形式的
 
  *整数数据类型* 是指仅表示没有小数部分的数字的数据类型。  
   
- *带符号*的整型数据类型为[SByte 数据类型](../../../language-reference/data-types/sbyte-data-type.md) (8 位) ， [Short 数据类型](../../../language-reference/data-types/short-data-type.md) (16 位) ， [Integer 数据类型](../../../language-reference/data-types/integer-data-type.md) (32 位) ， [Long 数据类型](../../../language-reference/data-types/long-data-type.md) (64-位) 。 如果变量始终存储整数而不是小数，则将其声明为这些类型之一。  
+ *带符号* 的整型数据类型为 [SByte 数据类型](../../../language-reference/data-types/sbyte-data-type.md) (8 位) ， [Short 数据类型](../../../language-reference/data-types/short-data-type.md) (16 位) ， [Integer 数据类型](../../../language-reference/data-types/integer-data-type.md) (32 位) ， [Long 数据类型](../../../language-reference/data-types/long-data-type.md) (64-位) 。 如果变量始终存储整数而不是小数，则将其声明为这些类型之一。  
   
- *无符号*整型类型为[Byte 数据类型](../../../language-reference/data-types/byte-data-type.md) (8 位) ， [UShort 数据类型](../../../language-reference/data-types/ushort-data-type.md) (16 位) ， [UInteger 数据类型](../../../language-reference/data-types/uinteger-data-type.md) (32 位) ，以及[ULong 数据类型](../../../language-reference/data-types/ulong-data-type.md) (64-位) 。 如果变量包含二进制数据或未知性质的数据，则将其声明为这些类型之一。  
+ *无符号* 整型类型为 [Byte 数据类型](../../../language-reference/data-types/byte-data-type.md) (8 位) ， [UShort 数据类型](../../../language-reference/data-types/ushort-data-type.md) (16 位) ， [UInteger 数据类型](../../../language-reference/data-types/uinteger-data-type.md) (32 位) ，以及 [ULong 数据类型](../../../language-reference/data-types/ulong-data-type.md) (64-位) 。 如果变量包含二进制数据或未知性质的数据，则将其声明为这些类型之一。  
   
 ### <a name="performance"></a>性能  
 
@@ -60,11 +61,11 @@ Visual Basic 提供了几种 *数值数据类型* 来处理各种表示形式的
   
 ### <a name="unsigned-integers"></a>无符号整数  
 
- 如果你知道你的变量从不需要保存负数，则可以使用*无符号类型* `Byte` 、 `UShort` 、 `UInteger` 和 `ULong` 。 这些数据类型中的每个数据类型都可以保存两倍于其对应的带符号类型 (`SByte` 、 `Short` 、 `Integer` 和 `Long`) 。 就性能而言，每个未签名的类型与其对应的已签名类型的有效性完全相同。 特别是， `UInteger` 共享的 `Integer` 区别是所有基本数值数据类型都是最有效的。  
+ 如果你知道你的变量从不需要保存负数，则可以使用 *无符号类型* `Byte` 、 `UShort` 、 `UInteger` 和 `ULong` 。 这些数据类型中的每个数据类型都可以保存两倍于其对应的带符号类型 (`SByte` 、 `Short` 、 `Integer` 和 `Long`) 。 就性能而言，每个未签名的类型与其对应的已签名类型的有效性完全相同。 特别是， `UInteger` 共享的 `Integer` 区别是所有基本数值数据类型都是最有效的。  
   
 ## <a name="nonintegral-numeric-types"></a>非整型数值类型  
 
- 非*整型数据类型*是指具有整数部分和小数部分的数字。  
+ 非 *整型数据类型* 是指具有整数部分和小数部分的数字。  
   
  非整型数值数据类型为 `Decimal` (128 位固定点) ， [单数据类型](../../../language-reference/data-types/single-data-type.md) (32 位浮点) ， [双精度数据类型](../../../language-reference/data-types/double-data-type.md) (64 位浮点) 。 它们都是已签名的类型。 如果变量可以包含一个分数，则将其声明为这些类型之一。  
   

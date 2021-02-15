@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：使用 LINQ (调用存储过程 Visual Basic) '
 title: 如何：使用 LINQ 调用存储过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - stored procedures [LINQ to SQL]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 6436d384-d1e0-40aa-8afd-451007477260
-ms.openlocfilehash: 7e5fecf0c4c0d3a561ec7d0c4ac03c9d9ce7f759
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f6fca7ac008e5f0d5f68fdf9c192eaadae9412ef
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075130"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466323"
 ---
 # <a name="how-to-call-a-stored-procedure-by-using-linq-visual-basic"></a>如何：使用 LINQ 调用存储过程 (Visual Basic)
 
-使用语言集成查询 (LINQ) 可以轻松地访问数据库信息，其中包括数据库对象（如存储过程）。  
+Language-Integrated 查询 (LINQ) 使访问数据库信息（包括数据库对象，如存储过程）变得简单。  
   
  下面的示例演示如何创建一个应用程序，用于调用 SQL Server 数据库中的存储过程。 该示例演示如何调用数据库中的两个不同的存储过程。 每个过程都返回查询的结果。 一个过程采用输入参数，而另一个过程不接受参数。  
   
@@ -26,9 +27,9 @@ ms.locfileid: "91075130"
   
 ### <a name="to-create-a-connection-to-a-database"></a>创建与数据库的连接  
   
-1. 在 Visual Studio 中， **Server Explorer** / **Database Explorer**单击**Server Explorer** / "**视图**" 菜单上的 "服务器资源管理器"**数据库资源管理器**打开服务器资源管理器数据库资源管理器。  
+1. 在 Visual Studio 中，  / 单击 / "**视图**" 菜单上的 "服务器资源管理器"**数据库资源管理器** 打开服务器资源管理器数据库资源管理器。  
   
-2. 右键单击**服务器资源管理器**数据库资源管理器中的 "**数据连接**" / **Database Explorer** ，然后单击 "**添加连接**"。  
+2. 右键单击 **服务器资源管理器** 数据库资源管理器中的 "**数据连接**" /  ，然后单击 "**添加连接**"。  
   
 3. 指定与 Northwind 示例数据库的有效连接。  
   
@@ -38,11 +39,11 @@ ms.locfileid: "91075130"
   
 2. 在 **“项目”** 菜单上，单击 **“添加新项”**。 选择 " **LINQ to SQL 类** " 项模板。  
   
-3. 命名文件 `northwind.dbml`。 单击“添加”  。 将为 northwind 文件打开对象关系设计器 (O/R 设计器) 。  
+3. 命名文件 `northwind.dbml`。 单击 **添加**。 将为 northwind 文件打开对象关系设计器 (O/R 设计器) 。  
   
 ### <a name="to-add-stored-procedures-to-the-or-designer"></a>将存储过程添加到 O/R 设计器  
   
-1. 在**服务器资源管理器** / **数据库资源管理器**中，展开与 Northwind 数据库的连接。 展开 **“存储过程”** 文件夹。  
+1. 在 **服务器资源管理器** / **数据库资源管理器** 中，展开与 Northwind 数据库的连接。 展开 **“存储过程”** 文件夹。  
   
      如果关闭了 O/R 设计器，则可以通过双击先前添加的 northwind 文件来重新打开它。  
   
@@ -69,7 +70,7 @@ ms.locfileid: "91075130"
   
 4. 按 F5 运行项目并查看结果。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [LINQ](index.md)
 - [查询](../../../language-reference/queries/index.md)

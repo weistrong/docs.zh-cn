@@ -1,13 +1,14 @@
 ---
+description: '了解更多详细信息：将数据分区 (Visual Basic) '
 title: 数据分区
 ms.date: 07/20/2015
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
-ms.openlocfilehash: 07e33c4ce0d062a0f083d8970c0ad01f98923a52
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 264a81d1217c7f5034058761033171b9c232fae2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075312"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465608"
 ---
 # <a name="partitioning-data-visual-basic"></a>将数据分区 (Visual Basic) 
 

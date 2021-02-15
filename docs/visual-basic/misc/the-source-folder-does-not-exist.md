@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：源文件夹不存在
 title: 源文件夹不存在
 ms.date: 07/20/2015
 ms.assetid: c891d006-b721-4d93-b57d-ce51d91fca00
-ms.openlocfilehash: 8dc4fa80c4328cbeea5c63eb110c62b988da91c4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: afae118614fca4b80ad34bf339187d64b3c680e1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086551"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430737"
 ---
 # <a name="the-source-folder-does-not-exist"></a>源文件夹不存在
 

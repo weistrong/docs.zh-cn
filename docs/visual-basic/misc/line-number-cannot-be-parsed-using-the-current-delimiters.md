@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： <number> 无法使用当前分隔符解析行
 title: 无法使用当前的 Delimiters 分析行 <number>
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_MalFormedDelimitedLine
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
-ms.openlocfilehash: 0f8a60f698ef19c1b039544cb085d757e26d4024
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b7b24ac18e6a2d7503db8ce5bc883df8b5980eb7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090594"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430178"
 ---
 # <a name="line-number-cannot-be-parsed-using-the-current-delimiters"></a>无法使用当前的 Delimiters 分析行 \<number>
 

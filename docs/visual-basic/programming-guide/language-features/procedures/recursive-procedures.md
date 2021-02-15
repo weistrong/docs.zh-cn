@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：递归过程 (Visual Basic) '
 title: 递归过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - functions [Visual Basic], calling recursively
 - recursion
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
-ms.openlocfilehash: 646d4e29ed7a0b6367d4b35a7f8641bcf659e616
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 378b279a6664cd494fb2e26ff3276afcea56cc16
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352559"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466557"
 ---
 # <a name="recursive-procedures-visual-basic"></a>递归过程 (Visual Basic)
 
-*递归*过程是指调用自身的过程。 通常，这并不是编写 Visual Basic 代码的最有效方法。  
+*递归* 过程是指调用自身的过程。 通常，这并不是编写 Visual Basic 代码的最有效方法。  
   
  下面的过程使用递归来计算其原始参数的阶乘。  
   
@@ -29,7 +30,7 @@ ms.locfileid: "74352559"
 
  **限制条件**。 必须设计一个递归过程来测试至少一个可以终止递归的条件，并且还必须处理在合理的递归调用中不满足此类条件的情况。 如果至少有一种情况不会失败，则您的过程会在无限循环中运行。
 
- **内存使用率**。 应用程序的本地变量空间量有限。 当过程每次调用自身时，它会使用更多的空间来获取其局部变量的其他副本。 如果此过程无限期继续，则最终会导致 <xref:System.StackOverflowException> 错误。
+ **内存使用率**。 应用程序的本地变量空间量有限。 当过程每次调用自身时，它会使用更多的空间来获取其局部变量的其他副本。 如果此过程持续下去，最终会导致 <xref:System.StackOverflowException> 错误。
 
  **效率**。 几乎始终可以将递归替换为循环。 循环不会产生传递参数的开销、初始化附加存储以及返回值。 如果没有递归调用，性能可能会更好。
 
@@ -39,15 +40,15 @@ ms.locfileid: "74352559"
 
  **测试**。 如果编写递归过程，应仔细测试该过程，以确保它始终满足某些限制条件。 你还应确保不会因为有太多递归调用而耗尽内存。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.StackOverflowException>
 - [过程](index.md)
 - [Sub 过程](sub-procedures.md)
 - [Function 过程](function-procedures.md)
-- [属性过程](property-procedures.md)
+- [Property 过程](property-procedures.md)
 - [运算符过程](operator-procedures.md)
-- [过程参数和自变量](procedure-parameters-and-arguments.md)
+- [过程形参和实参](procedure-parameters-and-arguments.md)
 - [过程重载](procedure-overloading.md)
 - [过程疑难解答](troubleshooting-procedures.md)
 - [循环结构](../control-flow/loop-structures.md)

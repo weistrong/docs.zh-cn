@@ -1,13 +1,14 @@
 ---
+description: '详细了解：聚合运算 (Visual Basic) '
 title: 聚合运算
 ms.date: 07/20/2015
 ms.assetid: 0f47e92c-5dd2-4007-baf4-c5fe5dc3b4a8
-ms.openlocfilehash: 1cf82d8acfdb1f8b0fc33c324064574b0dd01f4a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2ef41faf03100814e062ec98afb8fe17b1ef64bc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078393"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462160"
 ---
 # <a name="aggregation-operations-visual-basic"></a>聚合操作 (Visual Basic) 
 
@@ -39,7 +40,7 @@ ms.locfileid: "91078393"
   
  [!code-vb[CsLINQAggregating#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAggregating/VB/Aggregating.vb#1)]  
   
-### <a name="count"></a>Count  
+### <a name="count"></a>计数  
 
  下面的代码示例使用 `Aggregate Into Count` Visual Basic 中的子句来计算数组中大于或等于80的值的数目。  
   
@@ -51,7 +52,7 @@ ms.locfileid: "91078393"
   
  [!code-vb[CsLINQAggregating#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAggregating/VB/Aggregating.vb#3)]  
   
-### <a name="max"></a>最大值  
+### <a name="max"></a>Max  
 
  下面的代码示例使用 `Aggregate Into Max` 子句来计算表示温度的数字数组中的最大温度。  
   

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：无效的模式字符串
 title: 无效模式字符串
 ms.date: 07/20/2015
 ms.assetid: ec1aecdb-5339-4a93-be71-eec56b1d7438
-ms.openlocfilehash: 5ef12ac27e96205f9ef1c964293847f56b11cb78
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4fbf16dd43ac4ae44e1a99d85caae4a7baf99109
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090685"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462056"
 ---
 # <a name="invalid-pattern-string"></a>无效模式字符串
 

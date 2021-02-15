@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： Visual Basic 的编程概念 () '
 title: 编程概念
 ms.date: 02/27/2017
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
-ms.openlocfilehash: 500e2670e9f2aafce31f814a08d1da4f0a1d06fd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 83cf59325de4616cce705d87c702eccee27c42ad
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410950"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462199"
 ---
 # <a name="programming-concepts-visual-basic"></a>编程概念 (Visual Basic)
 

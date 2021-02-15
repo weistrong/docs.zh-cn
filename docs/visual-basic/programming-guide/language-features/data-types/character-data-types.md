@@ -1,4 +1,5 @@
 ---
+description: '了解更多相关信息：字符数据类型 (Visual Basic) '
 title: 字符数据类型
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Char data type [Visual Basic], character data types
 - data types [Visual Basic], choosing
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
-ms.openlocfilehash: 5fde5eff40d83bdd7d90cd611bd6749106db6e16
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2197c0210cb0c2287baff9856889334f5f95bd4d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077171"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466388"
 ---
 # <a name="character-data-types-visual-basic"></a>字符数据类型 (Visual Basic)
 
@@ -27,10 +28,10 @@ Visual Basic 提供了用于处理可打印和可显示字符的 *字符数据�
   
  [!code-vb[VbVbalrCharTypes#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrchartypes/vb/module1.vb#1)]
   
- 或变量中的每个可能值 `Char` `String` 都是 Unicode 字符集中的一个 *码位*或字符代码。 Unicode 字符包含基本 ASCII 字符集、各种其他字母数字、重音、货币符号、分数、音调符号和数学符号以及技术符号。  
+ 或变量中的每个可能值 `Char` `String` 都是 Unicode 字符集中的一个 *码位* 或字符代码。 Unicode 字符包含基本 ASCII 字符集、各种其他字母数字、重音、货币符号、分数、音调符号和数学符号以及技术符号。  
   
 > [!NOTE]
-> Unicode 字符集为 *代理项对*保留了 D800 到 DFFF (55296 到 55551 decimal) 的代码点，这需要 2 16 位值来表示单个码位。 `Char`变量不能包含代理项对，且 `String` 使用两个位置来保存这种对。  
+> Unicode 字符集为 *代理项对* 保留了 D800 到 DFFF (55296 到 55551 decimal) 的代码点，这需要 2 16 位值来表示单个码位。 `Char`变量不能包含代理项对，且 `String` 使用两个位置来保存这种对。  
   
  有关详细信息，请参阅 [Char Data Type](../../../language-reference/data-types/char-data-type.md)。  
   

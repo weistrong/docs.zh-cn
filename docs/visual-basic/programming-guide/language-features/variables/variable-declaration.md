@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：中的变量声明 Visual Basic
 title: 变量声明
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - local variables [Visual Basic], declarations
 - scope [Visual Basic], variables
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
-ms.openlocfilehash: 8d78509e1604fee4a151608f6166de6fc8ccfdaa
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ef0e7bc7a99f320bd40788ef019b05c7ebf4ce46
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080148"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462693"
 ---
 # <a name="variable-declaration-in-visual-basic"></a>Visual Basic 中的变量声明
 
@@ -34,7 +35,7 @@ ms.locfileid: "91080148"
   
 ### <a name="local-and-member-variables"></a>局部变量和成员变量  
 
- 局部变量是在过程中声明的 *变量* 。 *成员变量*是 Visual Basic 类型的成员;它在模块级别、类、结构或模块中声明，但不在该类、结构或模块内部的任何过程中声明。  
+ 局部变量是在过程中声明的 *变量* 。 *成员变量* 是 Visual Basic 类型的成员;它在模块级别、类、结构或模块中声明，但不在该类、结构或模块内部的任何过程中声明。  
   
 ### <a name="shared-and-instance-variables"></a>共享变量和实例变量  
 
@@ -88,9 +89,9 @@ Dim l, m As Long, x, y As Single
 - [如何：创建新变量](how-to-create-a-new-variable.md)
 - [如何：将数据移入和移出变量](how-to-move-data-into-and-out-of-a-variable.md)
 - [数据类型](../../../language-reference/data-types/index.md)
-- [避免](../../../language-reference/modifiers/protected.md)
+- [Protected](../../../language-reference/modifiers/protected.md)
 - [Friend](../../../language-reference/modifiers/friend.md)
-- [Static](../../../language-reference/modifiers/static.md)
+- [静态](../../../language-reference/modifiers/static.md)
 - [已声明元素的特性](../declared-elements/declared-element-characteristics.md)
 - [局部类型推理](local-type-inference.md)
 - [Option Infer 语句](../../../language-reference/statements/option-infer-statement.md)

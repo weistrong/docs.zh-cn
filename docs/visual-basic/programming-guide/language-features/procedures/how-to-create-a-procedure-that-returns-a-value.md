@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：创建返回值的过程 (Visual Basic) '
 title: 如何：创建返回值的过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - procedures [Visual Basic], returning a value
 ms.assetid: 8ee19f95-a9ef-4033-963b-d224dca207c4
-ms.openlocfilehash: 3d28162d2a2103477a20b08fc03c937de8b5a475
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: fa2ea50febd1cc4e7aecf1e6f5cca671789b36fd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071867"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467051"
 ---
 # <a name="how-to-create-a-procedure-that-returns-a-value-visual-basic"></a>如何：创建返回值的过程 (Visual Basic)
 
