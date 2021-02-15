@@ -1,16 +1,17 @@
 ---
+description: '了解有关详细信息，请参阅如何：从 Char 值的数组创建字符串 (Visual Basic) '
 title: 如何：从 Char 值的数组创建字符串
 ms.date: 07/20/2015
 helpviewer_keywords:
 - examples [Visual Basic], arrays
 - examples [Visual Basic], Char data type
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
-ms.openlocfilehash: 08ad2f1c9455853e92533a7f00726c73b6adb87e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 67b675f5f02c92b785e374b99f49248d43d12fb4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071152"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429827"
 ---
 # <a name="how-to-create-a-string-from-an-array-of-char-values-visual-basic"></a>如何：从 Char 值的数组创建字符串 (Visual Basic)
 

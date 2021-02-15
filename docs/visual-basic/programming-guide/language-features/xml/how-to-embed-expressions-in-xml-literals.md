@@ -1,16 +1,17 @@
 ---
+description: '了解有关详细信息，请参阅如何：在 XML 文本中嵌入表达式 (Visual Basic) '
 title: 如何：在 XML 文本中嵌入表达式
 ms.date: 07/20/2015
 helpviewer_keywords:
 - embedded expressions [Visual Basic]
 - XML literals [Visual Basic], embedded expressions
 ms.assetid: 75016fad-0141-42de-8564-5051be29487e
-ms.openlocfilehash: 5ce1386e6a1ff8ffce296f5cea694499633eb011
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 18bc6164c4466532956f1a5df70c1ff2a8dbbfd5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071204"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480045"
 ---
 # <a name="how-to-embed-expressions-in-xml-literals-visual-basic"></a>如何：在 XML 文本中嵌入表达式 (Visual Basic)
 

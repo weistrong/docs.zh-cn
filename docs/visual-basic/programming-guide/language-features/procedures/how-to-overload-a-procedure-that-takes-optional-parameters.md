@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：重载带有可选参数的过程 (Visual Basic) '
 title: 如何：重载带有可选参数的过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], overloading
 - procedures [Visual Basic], multiple versions
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
-ms.openlocfilehash: 78ca6b2b95dfd5a7f208e5251f08dfccc5514946
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: dccef9d27c08ede2f35edc02c8bd5116aa6969b2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071516"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472938"
 ---
 # <a name="how-to-overload-a-procedure-that-takes-optional-parameters-visual-basic"></a>如何：重载带有可选参数的过程 (Visual Basic)
 

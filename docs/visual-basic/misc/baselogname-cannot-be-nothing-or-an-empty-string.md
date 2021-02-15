@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息： BaseLogName 不能为 Nothing 或空字符串
 title: BaseLogName 不能为 Nothing 或为空字符串
 ms.date: 07/20/2015
 f1_keywords:
 - vbrApplicationLogBaseNameNull
 ms.assetid: 8e7665e3-5343-45fa-bc79-64e235a0477f
-ms.openlocfilehash: a0e46eccb29d1ced1a979f86f96f761141720174
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5cd4f4e48842fb9da752fc18226c4f645baff8e7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083132"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460977"
 ---
 # <a name="baselogname-cannot-be-nothing-or-an-empty-string"></a>BaseLogName 不能为 Nothing 或为空字符串
 

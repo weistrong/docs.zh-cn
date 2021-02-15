@@ -1,5 +1,5 @@
 ---
-description: 了解有关以下内容的详细信息： BC30007：需要对程序集 " <assemblyname> " （包含基类 ""）的引用<classname>
+description: 了解有关以下内容的详细信息： BC30007：需要对 <assemblyname> 包含基类 "" 的程序集 "" 的引用 <classname>
 title: 需要对程序集“<assemblyname>”（包含基类“<classname>”）的引用
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30007
 ms.assetid: 5f34cf47-6c6e-4954-bd8e-d6b020b75fb7
-ms.openlocfilehash: f01795d3e8147015f9f46697b047a8c63099ff32
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e6d4cf660453078d9a0f9825bc81bb990c1f55b9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99792045"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456882"
 ---
 # <a name="bc30007-reference-required-to-assembly-assemblyname-containing-the-base-class-classname"></a>BC30007：需要对 \<assemblyname> 包含基类 "" 的程序集 "" 的引用 \<classname>
 

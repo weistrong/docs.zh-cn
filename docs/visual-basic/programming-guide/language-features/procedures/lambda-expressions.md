@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： Lambda 表达式 (Visual Basic) '
 title: Lambda 表达式
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - expressions [Visual Basic], lambda
 - inline functions [Visual Basic]
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
-ms.openlocfilehash: 54a9c0cf275a67c77748c32771c3c5dcbdb916d7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: adac7f0d0dbbff575837f691d70c7752eebb39f1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406698"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480084"
 ---
 # <a name="lambda-expressions-visual-basic"></a>Lambda 表达式 (Visual Basic)
 
-*Lambda 表达式*是没有名称的函数或子例程，只要委托有效，就可以使用该函数。 Lambda 表达式可以是函数或子例程，可以是单行或多行。 可以将值从当前作用域传递到 lambda 表达式。
+*Lambda 表达式* 是没有名称的函数或子例程，只要委托有效，就可以使用该函数。 Lambda 表达式可以是函数或子例程，可以是单行或多行。 可以将值从当前作用域传递到 lambda 表达式。
 
 > [!NOTE]
 > `RemoveHandler`语句是一个异常。 不能为的委托参数传递中的 lambda 表达式 `RemoveHandler` 。
@@ -37,7 +38,7 @@ ms.locfileid: "84406698"
 
 [!code-vb[VbVbalrLambdas#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#3)]
 
-Lambda 表达式可以作为函数调用的值返回（如本主题后面的[上下文](#context)部分的示例中所示），或者作为参数传递给采用委托类型的参数，如下面的示例中所示。
+Lambda 表达式可以作为函数调用的值返回 (如本主题后面的 [上下文](#context) 部分的示例中所示) ，或作为参数传递给采用委托类型的参数，如下面的示例所示。
 
 [!code-vb[VbVbalrLambdas#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class2.vb#8)]
 
@@ -51,7 +52,7 @@ Lambda 表达式的语法与标准函数或子例程的语法相似。 不同之
 
 - 单行 lambda 函数不使用 `As` 子句来指定返回类型。 相反，该类型是从 lambda 表达式体的计算结果为的值推断出来的。 例如，如果 lambda 表达式的主体为 `cust.City = "London"` ，则其返回类型为 `Boolean` 。
 
-- 在多行 lambda 函数中，可以使用子句指定返回类型 `As` ，或省略 `As` 子句以便推断返回类型。 如果 `As` 为多行 lambda 函数省略子句，则会将返回类型推断为来自 `Return` 多行 lambda 函数中所有语句的基准类型。 *主导类型*是所有其他类型可以扩大到的唯一类型。 如果无法确定此唯一类型，则主导类型是数组中所有其他类型可以缩小到的唯一类型。 如果无法确定为这两种唯一类型之一，则基准类型是 `Object`。 在这种情况下，如果将 `Option Strict` 设置为 `On` ，则会发生编译器错误。
+- 在多行 lambda 函数中，可以使用子句指定返回类型 `As` ，或省略 `As` 子句以便推断返回类型。 如果 `As` 为多行 lambda 函数省略子句，则会将返回类型推断为来自 `Return` 多行 lambda 函数中所有语句的基准类型。 *主导类型* 是所有其他类型可以扩大到的唯一类型。 如果无法确定此唯一类型，则主导类型是数组中所有其他类型可以缩小到的唯一类型。 如果无法确定为这两种唯一类型之一，则基准类型是 `Object`。 在这种情况下，如果将 `Option Strict` 设置为 `On` ，则会发生编译器错误。
 
      例如，如果提供给语句的表达式 `Return` 包含类型为、和的值， `Integer` `Long` `Double` 则生成的数组的类型为 `Double` 。 `Integer`和都 `Long` 仅扩大到 `Double` 和 `Double` 。 因此， `Double` 是基准类型。 有关详细信息，请参阅 [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md)。
 
@@ -69,7 +70,7 @@ Lambda 表达式的语法与标准函数或子例程的语法相似。 不同之
 
 ## <a name="async-lambdas"></a>异步 lambda
 
-通过使用[Async](../../../language-reference/modifiers/async.md)和[Await 运算符](../../../language-reference/operators/await-operator.md)关键字，你可以轻松创建包含异步处理的 lambda 表达式和语句。 例如，下面的 Windows 窗体示例包含一个调用和等待异步方法 `ExampleMethodAsync`的事件处理程序。
+通过使用 [Async](../../../language-reference/modifiers/async.md) 和 [Await 运算符](../../../language-reference/operators/await-operator.md) 关键字，你可以轻松创建包含异步处理的 lambda 表达式和语句。 例如，下面的 Windows 窗体示例包含一个调用和等待异步方法 `ExampleMethodAsync`的事件处理程序。
 
 ```vb
 Public Class Form1
@@ -88,7 +89,7 @@ Public Class Form1
 End Class
 ```
 
-可以通过在[AddHandler 语句](../../../language-reference/statements/addhandler-statement.md)中使用 async lambda 来添加同一事件处理程序。 若要添加此处理程序，请在 lambda 参数列表前添加一个 `Async` 修饰符，如下例所示。
+可以通过在 [AddHandler 语句](../../../language-reference/statements/addhandler-statement.md)中使用 async lambda 来添加同一事件处理程序。 若要添加此处理程序，请在 lambda 参数列表前添加一个 `Async` 修饰符，如下例所示。
 
 ```vb
 Public Class Form1
@@ -110,7 +111,7 @@ Public Class Form1
 End Class
 ```
 
-有关如何创建和使用异步方法的详细信息，请参阅[使用 async 和 Await 进行异步编程](../../concepts/async/index.md)。
+有关如何创建和使用异步方法的详细信息，请参阅 [使用 async 和 Await 进行异步编程](../../concepts/async/index.md)。
 
 ## <a name="context"></a>上下文
 
@@ -122,21 +123,21 @@ Lambda 表达式将其上下文与定义它的范围共享。 它与在包含范
 
 下面的示例演示了嵌套 lambda 表达式的各种访问权限。 当从执行返回的 lambda 表达式时 `Main` `aDel` ，它将访问这些元素：
 
-- 定义它的类的字段：`aField`
+- 定义它的类的字段： `aField`
 
-- 定义它的类的属性：`aProp`
+- 定义它的类的属性： `aProp`
 
-- 定义它的方法的参数 `functionWithNestedLambda` ：`level1`
+- 定义它的方法的参数 `functionWithNestedLambda` ： `level1`
 
-- 的局部变量 `functionWithNestedLambda` ：`localVar`
+- 的局部变量 `functionWithNestedLambda` ： `localVar`
 
-- 它在其中进行嵌套的 lambda 表达式的参数：`level2`
+- 它在其中进行嵌套的 lambda 表达式的参数： `level2`
 
  [!code-vb[VbVbalrLambdas#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class3.vb#9)]
 
 ## <a name="converting-to-a-delegate-type"></a>转换为委托类型
 
-Lambda 表达式可隐式转换为兼容的委托类型。 有关兼容性的一般要求的信息，请参阅[宽松委托转换](../delegates/relaxed-delegate-conversion.md)。 例如，下面的代码示例演示一个隐式转换为 `Func(Of Integer, Boolean)` 或匹配的委托签名的 lambda 表达式。
+Lambda 表达式可隐式转换为兼容的委托类型。 有关兼容性的一般要求的信息，请参阅 [宽松委托转换](../delegates/relaxed-delegate-conversion.md)。 例如，下面的代码示例演示一个隐式转换为 `Func(Of Integer, Boolean)` 或匹配的委托签名的 lambda 表达式。
 
 [!code-vb[VbVbalrLambdas#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#16)]
 
@@ -156,7 +157,7 @@ Lambda 表达式可隐式转换为兼容的委托类型。 有关兼容性的一
 
      [!code-vb[VbVbalrLambdas#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#5)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](./index.md)
 - [Visual Basic 中的 LINQ 简介](../linq/introduction-to-linq.md)

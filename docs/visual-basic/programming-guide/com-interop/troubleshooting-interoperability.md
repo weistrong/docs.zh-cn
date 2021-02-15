@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：解决互操作性 (Visual Basic) '
 title: 互操作性疑难解答
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - interoperability, sharing components
 - shared components, using with assemblies
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
-ms.openlocfilehash: 135b121638b92adc5a3b0920aa29d10fd1d62d14
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 49a108e47c9614f11db6f6c1e7ba0b8714e936b2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075988"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438952"
 ---
 # <a name="troubleshooting-interoperability-visual-basic"></a>互操作性疑难解答 (Visual Basic)
 
@@ -31,7 +32,7 @@ ms.locfileid: "91075988"
 
  有时，可能需要使用不属于 .NET Framework 的数据类型。 互操作程序集处理 COM 对象的大部分工作，但您可能需要控制向 COM 公开托管对象时使用的数据类型。 例如，类库中的结构必须 `BStr` 在发送到由 Visual Basic 6.0 及更早版本创建的 COM 对象的字符串上指定非托管类型。 在这种情况下，可以使用 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 属性来将托管类型公开为非托管类型。  
   
-## <a name="exporting-fixed-length-strings-to-unmanaged-code"></a><a name="vbconinteroperabilitymarshalinganchor2"></a> 将固定长度的字符串导出到非托管代码  
+## <a name="exporting-fixed-length-strings-to-unmanaged-code"></a><a name="vbconinteroperabilitymarshalinganchor2"></a> 将 Fixed-Length 字符串导出到非托管代码  
 
  在 Visual Basic 6.0 及更早版本中，字符串将以字节序列的形式导出到 COM 对象，而不包含 null 终止字符。 为了与其他语言兼容，在导出字符串时 Visual Basic .NET 包含终止字符。 解决这种不兼容问题的最佳方式是将缺少终止字符的字符串导出为 `Byte` 或数组 `Char` 。  
   
@@ -115,7 +116,7 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
 - Microsoft Forms 2.0 框架控件  
   
-- Up-down 控件，也称为数值调节钮控件  
+- Up-Down 控件，也称为数值调节钮控件  
   
 - Sheridan 选项卡控件  
   
