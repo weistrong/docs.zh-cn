@@ -1,4 +1,5 @@
 ---
+description: 详细了解：运算符重载
 title: 运算符重载
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,44 +8,44 @@ helpviewer_keywords:
 - member design guidelines, operators
 - overloaded operators
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
-ms.openlocfilehash: 7757e6cfdb9ae31f6e94c26a2684f8176174499a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
-ms.translationtype: MT
+ms.openlocfilehash: e6552f35081afa542e4dc14239206a63c7c1bd59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713320"
 ---
-# <a name="operator-overloads"></a><span data-ttu-id="50da4-102">运算符重载</span><span class="sxs-lookup"><span data-stu-id="50da4-102">Operator Overloads</span></span>
+# <a name="operator-overloads"></a><span data-ttu-id="63cf7-103">运算符重载</span><span class="sxs-lookup"><span data-stu-id="63cf7-103">Operator Overloads</span></span>
 
-<span data-ttu-id="50da4-103">运算符重载允许框架类型看起来像是内置语言基元。</span><span class="sxs-lookup"><span data-stu-id="50da4-103">Operator overloads allow framework types to appear as if they were built-in language primitives.</span></span>
+<span data-ttu-id="63cf7-104">运算符重载可以使框架类型看起来像是内置语言基元一样。</span><span class="sxs-lookup"><span data-stu-id="63cf7-104">Operator overloads allow framework types to appear as if they were built-in language primitives.</span></span>
 
- <span data-ttu-id="50da4-104">尽管在某些情况下允许和有用，但应慎重使用运算符重载。</span><span class="sxs-lookup"><span data-stu-id="50da4-104">Although allowed and useful in some situations, operator overloads should be used cautiously.</span></span> <span data-ttu-id="50da4-105">在许多情况下，运算符重载已经被滥用，例如，当框架设计器开始对应该为简单方法的操作使用运算符时。</span><span class="sxs-lookup"><span data-stu-id="50da4-105">There are many cases in which operator overloading has been abused, such as when framework designers started to use operators for operations that should be simple methods.</span></span> <span data-ttu-id="50da4-106">以下准则可帮助您决定何时以及如何使用运算符重载。</span><span class="sxs-lookup"><span data-stu-id="50da4-106">The following guidelines should help you decide when and how to use operator overloading.</span></span>
+ <span data-ttu-id="63cf7-105">尽管运算符重载在某些情况下是允许使用的，而且很有用，但还是应该谨慎使用它们。</span><span class="sxs-lookup"><span data-stu-id="63cf7-105">Although allowed and useful in some situations, operator overloads should be used cautiously.</span></span> <span data-ttu-id="63cf7-106">在许多情况下，运算符重载被滥用，例如当框架设计者开始使用运算符来执行本应是简单方法的运算时。</span><span class="sxs-lookup"><span data-stu-id="63cf7-106">There are many cases in which operator overloading has been abused, such as when framework designers started to use operators for operations that should be simple methods.</span></span> <span data-ttu-id="63cf7-107">以下准则应该可帮助你决定何时以及如何使用运算符重载。</span><span class="sxs-lookup"><span data-stu-id="63cf7-107">The following guidelines should help you decide when and how to use operator overloading.</span></span>
 
- <span data-ttu-id="50da4-107">❌ 避免定义运算符重载，但在应像基元 (内置) 类型的类型中除外。</span><span class="sxs-lookup"><span data-stu-id="50da4-107">❌ AVOID defining operator overloads, except in types that should feel like primitive (built-in) types.</span></span>
+ <span data-ttu-id="63cf7-108">❌ 请避免定义运算符重载，除非在感觉像是基元（内置）类型的类型中。</span><span class="sxs-lookup"><span data-stu-id="63cf7-108">❌ AVOID defining operator overloads, except in types that should feel like primitive (built-in) types.</span></span>
 
- <span data-ttu-id="50da4-108">✔️考虑在应感觉为基元类型的类型中定义运算符重载。</span><span class="sxs-lookup"><span data-stu-id="50da4-108">✔️ CONSIDER defining operator overloads in a type that should feel like a primitive type.</span></span>
+ <span data-ttu-id="63cf7-109">✔️ 请考虑在一个感觉像是基元类型的类型中定义运算符重载。</span><span class="sxs-lookup"><span data-stu-id="63cf7-109">✔️ CONSIDER defining operator overloads in a type that should feel like a primitive type.</span></span>
 
- <span data-ttu-id="50da4-109">例如， <xref:System.String?displayProperty=nameWithType> 具有 `operator==` 并定义了 `operator!=` 。</span><span class="sxs-lookup"><span data-stu-id="50da4-109">For example, <xref:System.String?displayProperty=nameWithType> has `operator==` and `operator!=` defined.</span></span>
+ <span data-ttu-id="63cf7-110">例如，<xref:System.String?displayProperty=nameWithType> 定义了 `operator==` 和 `operator!=`。</span><span class="sxs-lookup"><span data-stu-id="63cf7-110">For example, <xref:System.String?displayProperty=nameWithType> has `operator==` and `operator!=` defined.</span></span>
 
- <span data-ttu-id="50da4-110">✔️在表示数字 (例如) 的结构中定义运算符重载 <xref:System.Decimal?displayProperty=nameWithType> 。</span><span class="sxs-lookup"><span data-stu-id="50da4-110">✔️ DO define operator overloads in structs that represent numbers (such as <xref:System.Decimal?displayProperty=nameWithType>).</span></span>
+ <span data-ttu-id="63cf7-111">✔️ 请务必在表示数字的结构（如 <xref:System.Decimal?displayProperty=nameWithType>）中定义运算符重载。</span><span class="sxs-lookup"><span data-stu-id="63cf7-111">✔️ DO define operator overloads in structs that represent numbers (such as <xref:System.Decimal?displayProperty=nameWithType>).</span></span>
 
- <span data-ttu-id="50da4-111">❌ 在定义运算符重载时不太刻意。</span><span class="sxs-lookup"><span data-stu-id="50da4-111">❌ DO NOT be cute when defining operator overloads.</span></span>
+ <span data-ttu-id="63cf7-112">❌ 在定义运算符重载时请勿太刻意。</span><span class="sxs-lookup"><span data-stu-id="63cf7-112">❌ DO NOT be cute when defining operator overloads.</span></span>
 
- <span data-ttu-id="50da4-112">运算符重载非常有用，在这种情况下，操作的结果将是什么。</span><span class="sxs-lookup"><span data-stu-id="50da4-112">Operator overloading is useful in cases in which it is immediately obvious what the result of the operation will be.</span></span> <span data-ttu-id="50da4-113">例如，可以 <xref:System.DateTime> 从一个中减去另一个 `DateTime` 并获取 <xref:System.TimeSpan> 。</span><span class="sxs-lookup"><span data-stu-id="50da4-113">For example, it makes sense to be able to subtract one <xref:System.DateTime> from another `DateTime` and get a <xref:System.TimeSpan>.</span></span> <span data-ttu-id="50da4-114">但是，不适合使用逻辑联合运算符来联合两个数据库查询，或使用 shift 运算符将写入到流中。</span><span class="sxs-lookup"><span data-stu-id="50da4-114">However, it is not appropriate to use the logical union operator to union two database queries, or to use the shift operator to write to a stream.</span></span>
+ <span data-ttu-id="63cf7-113">运算符重载在运算结果显而易见的情况下非常有用。</span><span class="sxs-lookup"><span data-stu-id="63cf7-113">Operator overloading is useful in cases in which it is immediately obvious what the result of the operation will be.</span></span> <span data-ttu-id="63cf7-114">例如，能够从另一个 `DateTime` 中减去一个 <xref:System.DateTime> 并得到一个 <xref:System.TimeSpan>，这是有意义的。</span><span class="sxs-lookup"><span data-stu-id="63cf7-114">For example, it makes sense to be able to subtract one <xref:System.DateTime> from another `DateTime` and get a <xref:System.TimeSpan>.</span></span> <span data-ttu-id="63cf7-115">但是，以下操作是不恰当的：使用逻辑 union 运算符来联合两个数据库查询或使用 shift 运算符写入到流中。</span><span class="sxs-lookup"><span data-stu-id="63cf7-115">However, it is not appropriate to use the logical union operator to union two database queries, or to use the shift operator to write to a stream.</span></span>
 
- <span data-ttu-id="50da4-115">❌ 除非至少有一个操作数为定义重载的类型，否则不要提供运算符重载。</span><span class="sxs-lookup"><span data-stu-id="50da4-115">❌ DO NOT provide operator overloads unless at least one of the operands is of the type defining the overload.</span></span>
+ <span data-ttu-id="63cf7-116">❌ 除非至少有一个操作数属于定义重载的类型，否则请勿提供运算符重载。</span><span class="sxs-lookup"><span data-stu-id="63cf7-116">❌ DO NOT provide operator overloads unless at least one of the operands is of the type defining the overload.</span></span>
 
- <span data-ttu-id="50da4-116">✔️以对称方式重载运算符。</span><span class="sxs-lookup"><span data-stu-id="50da4-116">✔️ DO overload operators in a symmetric fashion.</span></span>
+ <span data-ttu-id="63cf7-117">✔️ 请确保以对称方式重载运算符。</span><span class="sxs-lookup"><span data-stu-id="63cf7-117">✔️ DO overload operators in a symmetric fashion.</span></span>
 
- <span data-ttu-id="50da4-117">例如，如果你重载 `operator==` ，则还应重载 `operator!=` 。</span><span class="sxs-lookup"><span data-stu-id="50da4-117">For example, if you overload the `operator==`, you should also overload the `operator!=`.</span></span> <span data-ttu-id="50da4-118">同样，如果你重载 `operator<` ，则还应重载 `operator>` ，依此类推。</span><span class="sxs-lookup"><span data-stu-id="50da4-118">Similarly, if you overload the `operator<`, you should also overload the `operator>`, and so on.</span></span>
+ <span data-ttu-id="63cf7-118">例如，如果你重载了 `operator==`，则还应重载 `operator!=`。</span><span class="sxs-lookup"><span data-stu-id="63cf7-118">For example, if you overload the `operator==`, you should also overload the `operator!=`.</span></span> <span data-ttu-id="63cf7-119">同样，如果你重载了 `operator<`，则还应重载 `operator>`，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="63cf7-119">Similarly, if you overload the `operator<`, you should also overload the `operator>`, and so on.</span></span>
 
- <span data-ttu-id="50da4-119">✔️考虑为具有对应于每个重载运算符的友好名称提供方法。</span><span class="sxs-lookup"><span data-stu-id="50da4-119">✔️ CONSIDER providing methods with friendly names that correspond to each overloaded operator.</span></span>
+ <span data-ttu-id="63cf7-120">✔️ 请考虑为方法提供与每个重载的运算符相对应的友好名称。</span><span class="sxs-lookup"><span data-stu-id="63cf7-120">✔️ CONSIDER providing methods with friendly names that correspond to each overloaded operator.</span></span>
 
- <span data-ttu-id="50da4-120">许多语言不支持运算符重载。</span><span class="sxs-lookup"><span data-stu-id="50da4-120">Many languages do not support operator overloading.</span></span> <span data-ttu-id="50da4-121">出于此原因，建议重载运算符的类型包含辅助方法，该方法具有提供等效功能的适当的特定于域的名称。</span><span class="sxs-lookup"><span data-stu-id="50da4-121">For this reason, it is recommended that types that overload operators include a secondary method with an appropriate domain-specific name that provides equivalent functionality.</span></span>
+ <span data-ttu-id="63cf7-121">许多语言不支持运算符重载。</span><span class="sxs-lookup"><span data-stu-id="63cf7-121">Many languages do not support operator overloading.</span></span> <span data-ttu-id="63cf7-122">出于此原因，建议重载运算符的类型包含一个辅助方法，该方法具有适当的特定于域的名称且提供等效功能。</span><span class="sxs-lookup"><span data-stu-id="63cf7-122">For this reason, it is recommended that types that overload operators include a secondary method with an appropriate domain-specific name that provides equivalent functionality.</span></span>
 
- <span data-ttu-id="50da4-122">下表包含一个运算符列表和相应的友好方法名称。</span><span class="sxs-lookup"><span data-stu-id="50da4-122">The following table contains a list of operators and the corresponding friendly method names.</span></span>
+ <span data-ttu-id="63cf7-123">下表包含一个运算符列表及相应的友好方法名称。</span><span class="sxs-lookup"><span data-stu-id="63cf7-123">The following table contains a list of operators and the corresponding friendly method names.</span></span>
 
-|<span data-ttu-id="50da4-123">C # 运算符符号</span><span class="sxs-lookup"><span data-stu-id="50da4-123">C# Operator Symbol</span></span>|<span data-ttu-id="50da4-124">元数据名称</span><span class="sxs-lookup"><span data-stu-id="50da4-124">Metadata Name</span></span>|<span data-ttu-id="50da4-125">友好名称</span><span class="sxs-lookup"><span data-stu-id="50da4-125">Friendly Name</span></span>|
+|<span data-ttu-id="63cf7-124">C# 运算符符号</span><span class="sxs-lookup"><span data-stu-id="63cf7-124">C# Operator Symbol</span></span>|<span data-ttu-id="63cf7-125">元数据名称</span><span class="sxs-lookup"><span data-stu-id="63cf7-125">Metadata Name</span></span>|<span data-ttu-id="63cf7-126">友好名称</span><span class="sxs-lookup"><span data-stu-id="63cf7-126">Friendly Name</span></span>|
 |-------------------------|-------------------|-------------------|
 |`N/A`|`op_Implicit`|`To<TypeName>/From<TypeName>`|
 |`N/A`|`op_Explicit`|`To<TypeName>/From<TypeName>`|
@@ -85,35 +86,35 @@ ms.locfileid: "95734811"
 |`+ (unary)`|`op_UnaryPlus`|`Plus`|
 |`~`|`op_OnesComplement`|`OnesComplement`|
 
-### <a name="overloading-operator-"></a><span data-ttu-id="50da4-126">重载运算符 = =</span><span class="sxs-lookup"><span data-stu-id="50da4-126">Overloading Operator ==</span></span>
+### <a name="overloading-operator-"></a><span data-ttu-id="63cf7-127">重载运算符 ==</span><span class="sxs-lookup"><span data-stu-id="63cf7-127">Overloading Operator ==</span></span>
 
- <span data-ttu-id="50da4-127">重载 `operator ==` 非常复杂。</span><span class="sxs-lookup"><span data-stu-id="50da4-127">Overloading `operator ==` is quite complicated.</span></span> <span data-ttu-id="50da4-128">运算符的语义需要与其他一些成员（如）兼容 <xref:System.Object.Equals%2A?displayProperty=nameWithType> 。</span><span class="sxs-lookup"><span data-stu-id="50da4-128">The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=nameWithType>.</span></span>
+ <span data-ttu-id="63cf7-128">重载 `operator ==` 非常复杂。</span><span class="sxs-lookup"><span data-stu-id="63cf7-128">Overloading `operator ==` is quite complicated.</span></span> <span data-ttu-id="63cf7-129">该运算符的语义需要与其他一些成员（如 <xref:System.Object.Equals%2A?displayProperty=nameWithType>）兼容。</span><span class="sxs-lookup"><span data-stu-id="63cf7-129">The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=nameWithType>.</span></span>
 
-### <a name="conversion-operators"></a><span data-ttu-id="50da4-129">转换运算符</span><span class="sxs-lookup"><span data-stu-id="50da4-129">Conversion Operators</span></span>
+### <a name="conversion-operators"></a><span data-ttu-id="63cf7-130">转换运算符</span><span class="sxs-lookup"><span data-stu-id="63cf7-130">Conversion Operators</span></span>
 
- <span data-ttu-id="50da4-130">转换运算符是允许从一种类型转换为另一种类型的一元运算符。</span><span class="sxs-lookup"><span data-stu-id="50da4-130">Conversion operators are unary operators that allow conversion from one type to another.</span></span> <span data-ttu-id="50da4-131">运算符必须在操作数或返回类型上定义为静态成员。</span><span class="sxs-lookup"><span data-stu-id="50da4-131">The operators must be defined as static members on either the operand or the return type.</span></span> <span data-ttu-id="50da4-132">有两种类型的转换运算符：隐式和显式。</span><span class="sxs-lookup"><span data-stu-id="50da4-132">There are two types of conversion operators: implicit and explicit.</span></span>
+ <span data-ttu-id="63cf7-131">转换运算符是允许从一种类型转换为另一种类型的一元运算符。</span><span class="sxs-lookup"><span data-stu-id="63cf7-131">Conversion operators are unary operators that allow conversion from one type to another.</span></span> <span data-ttu-id="63cf7-132">该运算符必须对操作数或返回类型定义为静态成员。</span><span class="sxs-lookup"><span data-stu-id="63cf7-132">The operators must be defined as static members on either the operand or the return type.</span></span> <span data-ttu-id="63cf7-133">有两种类型的转换运算符：隐式和显式。</span><span class="sxs-lookup"><span data-stu-id="63cf7-133">There are two types of conversion operators: implicit and explicit.</span></span>
 
- <span data-ttu-id="50da4-133">❌ 如果最终用户不需要此类转换，请不要提供转换运算符。</span><span class="sxs-lookup"><span data-stu-id="50da4-133">❌ DO NOT provide a conversion operator if such conversion is not clearly expected by the end users.</span></span>
+ <span data-ttu-id="63cf7-134">❌ 如果最终用户没有明确期望进行此类转换，请勿提供转换运算符。</span><span class="sxs-lookup"><span data-stu-id="63cf7-134">❌ DO NOT provide a conversion operator if such conversion is not clearly expected by the end users.</span></span>
 
- <span data-ttu-id="50da4-134">❌ 不要定义类型的域之外的转换运算符。</span><span class="sxs-lookup"><span data-stu-id="50da4-134">❌ DO NOT define conversion operators outside of a type’s domain.</span></span>
+ <span data-ttu-id="63cf7-135">❌ 请勿在类型的域外定义转换运算符。</span><span class="sxs-lookup"><span data-stu-id="63cf7-135">❌ DO NOT define conversion operators outside of a type’s domain.</span></span>
 
- <span data-ttu-id="50da4-135">例如，、 <xref:System.Int32> <xref:System.Double> 和 <xref:System.Decimal> 都是数值类型，而 <xref:System.DateTime> 不是。</span><span class="sxs-lookup"><span data-stu-id="50da4-135">For example, <xref:System.Int32>, <xref:System.Double>, and <xref:System.Decimal> are all numeric types, whereas <xref:System.DateTime> is not.</span></span> <span data-ttu-id="50da4-136">因此，不应将转换运算符转换为 `Double(long)` `DateTime` 。</span><span class="sxs-lookup"><span data-stu-id="50da4-136">Therefore, there should be no conversion operator to convert a `Double(long)` to a `DateTime`.</span></span> <span data-ttu-id="50da4-137">在这种情况下，构造函数是首选的。</span><span class="sxs-lookup"><span data-stu-id="50da4-137">A constructor is preferred in such a case.</span></span>
+ <span data-ttu-id="63cf7-136">例如，<xref:System.Int32>、<xref:System.Double> 和 <xref:System.Decimal> 均为数值类型，而 <xref:System.DateTime> 则不是。</span><span class="sxs-lookup"><span data-stu-id="63cf7-136">For example, <xref:System.Int32>, <xref:System.Double>, and <xref:System.Decimal> are all numeric types, whereas <xref:System.DateTime> is not.</span></span> <span data-ttu-id="63cf7-137">因此，应该没有转换运算符能够将 `Double(long)` 转换为 `DateTime`。</span><span class="sxs-lookup"><span data-stu-id="63cf7-137">Therefore, there should be no conversion operator to convert a `Double(long)` to a `DateTime`.</span></span> <span data-ttu-id="63cf7-138">在这种情况下，首选使用构造函数。</span><span class="sxs-lookup"><span data-stu-id="63cf7-138">A constructor is preferred in such a case.</span></span>
 
- <span data-ttu-id="50da4-138">❌ 如果转换可能有损，请不要提供隐式转换运算符。</span><span class="sxs-lookup"><span data-stu-id="50da4-138">❌ DO NOT provide an implicit conversion operator if the conversion is potentially lossy.</span></span>
+ <span data-ttu-id="63cf7-139">❌ 如果转换可能有损，请勿提供隐式转换运算符。</span><span class="sxs-lookup"><span data-stu-id="63cf7-139">❌ DO NOT provide an implicit conversion operator if the conversion is potentially lossy.</span></span>
 
- <span data-ttu-id="50da4-139">例如，不应从到的隐式转换， `Double` `Int32` 因为的 `Double` 范围超出了 `Int32` 。</span><span class="sxs-lookup"><span data-stu-id="50da4-139">For example, there should not be an implicit conversion from `Double` to `Int32` because `Double` has a wider range than `Int32`.</span></span> <span data-ttu-id="50da4-140">即使转换可能会有损，也可以提供显式转换运算符。</span><span class="sxs-lookup"><span data-stu-id="50da4-140">An explicit conversion operator can be provided even if the conversion is potentially lossy.</span></span>
+ <span data-ttu-id="63cf7-140">例如，不应存在从 `Double` 到 `Int32` 的隐式转换，因为 `Double` 的范围比 `Int32` 大。</span><span class="sxs-lookup"><span data-stu-id="63cf7-140">For example, there should not be an implicit conversion from `Double` to `Int32` because `Double` has a wider range than `Int32`.</span></span> <span data-ttu-id="63cf7-141">即使转换可能会有损，也可以提供显式转换运算符。</span><span class="sxs-lookup"><span data-stu-id="63cf7-141">An explicit conversion operator can be provided even if the conversion is potentially lossy.</span></span>
 
- <span data-ttu-id="50da4-141">❌ 不从隐式强制转换引发异常。</span><span class="sxs-lookup"><span data-stu-id="50da4-141">❌ DO NOT throw exceptions from implicit casts.</span></span>
+ <span data-ttu-id="63cf7-142">❌ 请勿从隐式强制转换引发异常。</span><span class="sxs-lookup"><span data-stu-id="63cf7-142">❌ DO NOT throw exceptions from implicit casts.</span></span>
 
- <span data-ttu-id="50da4-142">最终用户很难了解发生的情况，因为他们可能不知道转换正在进行。</span><span class="sxs-lookup"><span data-stu-id="50da4-142">It is very difficult for end users to understand what is happening, because they might not be aware that a conversion is taking place.</span></span>
+ <span data-ttu-id="63cf7-143">最终用户很难了解发生的情况，因为他们可能没有意识到正在进行转换。</span><span class="sxs-lookup"><span data-stu-id="63cf7-143">It is very difficult for end users to understand what is happening, because they might not be aware that a conversion is taking place.</span></span>
 
- <span data-ttu-id="50da4-143"><xref:System.InvalidCastException?displayProperty=nameWithType>如果调用强制转换运算符导致了有损转换，并且该运算符的协定不允许有损转换，✔️将引发。</span><span class="sxs-lookup"><span data-stu-id="50da4-143">✔️ DO throw <xref:System.InvalidCastException?displayProperty=nameWithType> if a call to a cast operator results in a lossy conversion and the contract of the operator does not allow lossy conversions.</span></span>
+ <span data-ttu-id="63cf7-144">✔️ 如果对强制转换运算符的调用导致有损转换，而该运算符的协定不允许有损转换，请务必引发 <xref:System.InvalidCastException?displayProperty=nameWithType>。</span><span class="sxs-lookup"><span data-stu-id="63cf7-144">✔️ DO throw <xref:System.InvalidCastException?displayProperty=nameWithType> if a call to a cast operator results in a lossy conversion and the contract of the operator does not allow lossy conversions.</span></span>
 
- <span data-ttu-id="50da4-144">*部分©2005，2009 Microsoft Corporation。保留所有权利。*</span><span class="sxs-lookup"><span data-stu-id="50da4-144">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>
+ <span data-ttu-id="63cf7-145">*Portions © 2005, 2009 Microsoft Corporation 版权所有。保留所有权利。*</span><span class="sxs-lookup"><span data-stu-id="63cf7-145">*Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*</span></span>
 
- <span data-ttu-id="50da4-145">*经许可重印皮尔逊教育，Inc. 的作者 [：从框架设计指导原则：用于可重复使用的 .Net 库的约定、惯例和模式; 第2版](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) By Krzysztof Cwalina，Brad Abrams，通过 Addison-Wesley Professional 作为 Microsoft Windows 开发系列的一部分2008发布。*</span><span class="sxs-lookup"><span data-stu-id="50da4-145">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>
+ <span data-ttu-id="63cf7-146">在 Pearson Education, Inc. 授权下，由 Addison-Wesley Professional 作为 Microsoft Windows 开发系列的一部分再版自 [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619)（Framework 设计准则：可重用 .NET 库的约定、惯例和模式第 2 版），由 Krzysztof Cwalina 和 Brad Abrams 发布于 2008 年 10 月 22 日。</span><span class="sxs-lookup"><span data-stu-id="63cf7-146">*Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="50da4-146">另请参阅</span><span class="sxs-lookup"><span data-stu-id="50da4-146">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="63cf7-147">请参阅</span><span class="sxs-lookup"><span data-stu-id="63cf7-147">See also</span></span>
 
-- [<span data-ttu-id="50da4-147">成员设计准则</span><span class="sxs-lookup"><span data-stu-id="50da4-147">Member Design Guidelines</span></span>](member.md)
-- [<span data-ttu-id="50da4-148">框架设计准则</span><span class="sxs-lookup"><span data-stu-id="50da4-148">Framework Design Guidelines</span></span>](index.md)
+- [<span data-ttu-id="63cf7-148">成员设计准则</span><span class="sxs-lookup"><span data-stu-id="63cf7-148">Member Design Guidelines</span></span>](member.md)
+- [<span data-ttu-id="63cf7-149">框架设计指南</span><span class="sxs-lookup"><span data-stu-id="63cf7-149">Framework Design Guidelines</span></span>](index.md)
