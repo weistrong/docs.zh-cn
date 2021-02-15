@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：文件当前已关闭
 title: 此文件当前已关闭
 ms.date: 07/20/2015
 ms.assetid: 095c38ae-a741-4b46-b099-bc6826a49c83
-ms.openlocfilehash: 9a4767a7d510336fa388caf59aafa1c1d6443b5e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c25151e23e8d4aaf4bc3ecd966525ab084f30483
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059465"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430880"
 ---
 # <a name="the-file-is-currently-closed"></a>此文件当前已关闭
 

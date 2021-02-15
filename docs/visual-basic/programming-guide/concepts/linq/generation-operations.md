@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： (Visual Basic 的生成操作) '
 title: 生成运算
 ms.date: 07/20/2015
 ms.assetid: 22b8e380-8eb0-4c93-b4ff-7ac21caf27d5
-ms.openlocfilehash: 89e5c6b05d4912835210f39295fd390a2c573d93
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6182de8e313bea6a359f437e8242d5bf48ab46ed
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078276"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464880"
 ---
 # <a name="generation-operations-visual-basic"></a>Visual Basic) 的生成操作 (
 

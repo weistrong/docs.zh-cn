@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
-ms.openlocfilehash: b61fede9144e554ee68f0b41adac36209adb7288
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ff5ee6569d8526f44ca489ddc48b09b02f6f8804
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177796"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461653"
 ---
 # <a name="net-framework-data-providers"></a>.NET Framework 数据提供程序
 
@@ -19,7 +19,7 @@ ms.locfileid: "91177796"
   
  下表列出了 .NET Framework 中包含的数据提供程序。  
   
-|.NET Framework data provider — .NET Framework 数据提供程序|描述|  
+|.NET Framework data provider — .NET Framework 数据提供程序|说明|  
 |-------------------------------------------------------------------------------|-----------------|  
 |用于 SQL Server 的 .NET Framework 数据访问接口|提供 Microsoft SQL Server 的数据访问。 使用 <xref:System.Data.SqlClient> 命名空间。|  
 |用于 OLE DB 的 .NET Framework 数据提供程序|提供对使用 OLE DB 公开的数据源中数据的访问。 使用 <xref:System.Data.OleDb> 命名空间。|  
@@ -32,7 +32,7 @@ ms.locfileid: "91177796"
 
  下表概述了组成 .NET Framework 数据提供程序的四个核心对象。  
   
-|对象|描述|  
+|对象|说明|  
 |------------|-----------------|  
 |`Connection`|建立与特定数据源的连接。 所有 `Connection` 对象的基类均为 <xref:System.Data.Common.DbConnection> 类。|  
 |`Command`|对数据源执行命令。 公开 `Parameters` ，并可在 `Transaction` 范围内从 `Connection`执行。 所有 `Command` 对象的基类均为 <xref:System.Data.Common.DbCommand> 类。|  
@@ -41,7 +41,7 @@ ms.locfileid: "91177796"
   
  除了本文档前面的表中列出的核心类之外，.NET Framework 数据提供程序还包含下表中列出的类。  
   
-|对象|描述|  
+|对象|说明|  
 |------------|-----------------|  
 |`Transaction`|将命令登记在数据源处的事务中。 所有 `Transaction` 对象的基类均为 <xref:System.Data.Common.DbTransaction> 类。 ADO.NET 还使用 <xref:System.Transactions> 命名空间中的类提供对事务的支持。|  
 |`CommandBuilder`|一个帮助器对象，它自动生成 `DataAdapter` 的命令属性或从存储过程中派生参数信息，并填充 `Parameters` 对象的 `Command` 集合。 所有 `CommandBuilder` 对象的基类均为 <xref:System.Data.Common.DbCommandBuilder> 类。|  
@@ -129,7 +129,7 @@ using System.Data.Odbc;
 ```  
   
 > [!NOTE]
-> 适用于 ODBC 的 .NET Framework 数据提供程序需要 MDAC 2.6 或更高版本，建议使用 MDAC 2.8 SP1。 你可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=5793)下载 MDAC 2.8 SP1。
+> 适用于 ODBC 的 .NET Framework 数据提供程序需要 MDAC 2.6 或更高版本，建议使用 MDAC 2.8 SP1。
   
 ## <a name="net-framework-data-provider-for-oracle"></a>用于 Oracle 的 .NET Framework 数据提供程序  
 

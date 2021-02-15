@@ -1,21 +1,22 @@
 ---
+description: '了解详细信息：属性概述 (Visual Basic) '
 title: 属性概述
 ms.date: 07/20/2015
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
-ms.openlocfilehash: a0a080d44796289cc3562803c84ec915dcedd314
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f25e69452f0af1c89af667619e673f8906704d1f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400702"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437717"
 ---
 # <a name="attributes-overview-visual-basic"></a>特性概述 (Visual Basic)
 
-使用特性，可以有效地将元数据或声明性信息与代码（程序集、类型、方法、属性等）相关联。 将特性与程序实体相关联后，可以在运行时使用*反射*这项技术查询特性。 有关详细信息，请参阅[反射 (Visual Basic)](../reflection.md)。
+使用特性，可以有效地将元数据或声明性信息与代码（程序集、类型、方法、属性等）相关联。 将特性与程序实体相关联后，可以在运行时使用 *反射* 这项技术查询特性。 有关详细信息，请参阅[反射 (Visual Basic)](../reflection.md)。
 
 特性具有以下属性：
 
-- 特性向程序添加元数据。 *元数据*是程序中定义的类型的相关信息。 所有 .NET 程序集都包含一组指定的元数据，用于描述程序集中定义的类型和类型成员。 可以添加自定义特性来指定所需的其他任何信息。 有关详细信息，请参阅[创建自定义特性 (Visual Basic)](creating-custom-attributes.md)。
+- 特性向程序添加元数据。 *元数据* 是程序中定义的类型的相关信息。 所有 .NET 程序集都包含一组指定的元数据，用于描述程序集中定义的类型和类型成员。 可以添加自定义特性来指定所需的其他任何信息。 有关详细信息，请参阅[创建自定义特性 (Visual Basic)](creating-custom-attributes.md)。
 
 - 可以将一个或多个特性应用于整个程序集、模块或较小的程序元素（如类和属性）。
 
@@ -25,7 +26,7 @@ ms.locfileid: "84400702"
 
 ## <a name="using-attributes"></a>使用属性
 
-可以将特性附加到大多数的声明中，尽管特定特性可能会限制可有效附加到的声明的类型。 在 Visual Basic 中，特性括在尖括号（）中 \< > 。 特性的后面必须紧接着应用它的元素，且两者必须位于同一代码行。
+可以将特性附加到大多数的声明中，尽管特定特性可能会限制可有效附加到的声明的类型。 在 Visual Basic 中，特性用尖括号括起来 (\< >) 中。 特性的后面必须紧接着应用它的元素，且两者必须位于同一代码行。
 
 在此示例中，<xref:System.SerializableAttribute> 特性用于将具体特征应用于类：
 
@@ -85,7 +86,7 @@ End Sub
 
 ### <a name="attribute-targets"></a>特性目标
 
-特性的*目标*是指应用特性的实体。 例如，特性可应用于类、特定方法或整个程序集。 默认情况下，特性应用于它后面紧接着的元素。 不过，还可以进行显式标识。例如，可以标识为将特性应用于方法，还是应用于其参数或返回值。
+特性的 *目标* 是指应用特性的实体。 例如，特性可应用于类、特定方法或整个程序集。 默认情况下，特性应用于它后面紧接着的元素。 不过，还可以进行显式标识。例如，可以标识为将特性应用于方法，还是应用于其参数或返回值。
 
 若要显式标识特性目标，请使用以下语法：
 
@@ -148,7 +149,7 @@ Module: CLSCompliant(True)>
 
 - [调用方信息 (Visual Basic)](../caller-information.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Basic 编程指南](../../index.md)
 - [反射 (Visual Basic)](../reflection.md)

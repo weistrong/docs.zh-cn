@@ -3,12 +3,12 @@ description: 了解详细信息：将 Windows 应用商店应用迁移到 .NET N
 title: 将 Windows 应用商店应用迁移到 .NET Native
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: 39f8427474b37c42d856366bf4e4d677ba77e7f1
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 7a9e8f7108ca21dbbae7ca0097b15af078c8c6bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99738710"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464672"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>将 Windows 应用商店应用迁移到 .NET Native
 
@@ -59,7 +59,7 @@ ms.locfileid: "99738710"
 > [!NOTE]
 > 在将应用程序移植到 .NET Native 时，应彻底测试所有动态代码路径。
 
-.NET Native 的默认配置对于大多数开发人员来说已经足够，但某些开发人员可能希望通过使用运行时指令 ( # A0) 文件来微调其配置。 此外，在某些情况下，.NET Native 编译器无法确定哪些元数据必须可用于反射，并依赖于提示，尤其是在以下情况下：
+.NET Native 的默认配置对于大多数开发人员来说已经足够，但某些开发人员可能希望通过使用运行时指令 (.rd.xml) 文件来微调其配置。 此外，在某些情况下，.NET Native 编译器无法确定哪些元数据必须可用于反射，并依赖于提示，尤其是在以下情况下：
 
 - <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> 和 <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> 等一些构造无法静态确定。
 
@@ -160,7 +160,7 @@ ms.locfileid: "99738710"
 
 - [](xref:System.Type.GUID) <xref:System.PlatformNotSupportedException> 如果 <xref:System.Runtime.InteropServices.GuidAttribute> 特性未应用于该类型，则 TypeInfo 属性将引发异常。 GUID 主要用于 COM 支持。
 
-- 此 <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> 方法会正确分析在 .NET Native 中包含短日期的字符串。 然而，它不会继续兼容 Microsoft 知识库文章 [KB2803771](https://support.microsoft.com/kb/2803771) 和 [KB2803755](https://support.microsoft.com/kb/2803755)中描述的日期和时间解析的变更。
+- 此 <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> 方法会正确分析在 .NET Native 中包含短日期的字符串。 但是，它不会保持与日期和时间分析中的某些更改的兼容性。
 
 - <xref:System.Numerics.BigInteger.ToString%2A?displayProperty=nameWithType>`("E")`在 .NET Native 中正确舍入。 在某些版本的 CLR 中，结果字符串会缩短，而不是舍入。
 
