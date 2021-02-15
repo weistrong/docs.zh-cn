@@ -1,13 +1,14 @@
 ---
+description: '了解更多相关信息： Visual Studio IDE 和工具支持 LINQ (Visual Basic) '
 title: 对 LINQ 的 Visual Studio IDE 和工具支持
 ms.date: 07/20/2015
 ms.assetid: e3bfe0d9-4a79-49cf-a31c-93297c688829
-ms.openlocfilehash: 9b1fa503b3c51cf50872e82d9a60206874c8e642
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 96d1cd54e8b4cc507aa697a2228d341b29f94f8f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077288"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428098"
 ---
 # <a name="visual-studio-ide-and-tools-support-for-linq-visual-basic"></a>对 LINQ 的 Visual Studio IDE 和工具支持 (Visual Basic)
 

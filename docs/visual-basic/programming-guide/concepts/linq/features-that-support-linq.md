@@ -1,20 +1,21 @@
 ---
+description: 了解有关以下内容的详细信息：支持 LINQ 的 Visual Basic 功能
 title: 支持 LINQ 的功能
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic, LINQ features
 - LINQ [Visual Basic], features supporting LINQ
 ms.assetid: c821bb50-b6f6-4cf9-8aba-2717e465bd3a
-ms.openlocfilehash: bd63cd36c1f85fd89349293a71ecc5b281165380
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 58862ac4083bcd58ee08ef1afeebf95541c53e98
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078301"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428632"
 ---
 # <a name="visual-basic-features-that-support-linq"></a>支持 LINQ 的 Visual Basic 功能
 
- (LINQ) 的名称语言集成查询是指 Visual Basic 中的技术，该技术在语言中直接支持查询语法和其他语言构造。 使用 LINQ，无需学习新语言即可针对外部数据源进行查询。 您可以使用 Visual Basic 对关系数据库、XML 存储或对象中的数据进行查询。 这种将查询功能集成到语言中可实现语法错误和类型安全的编译时检查。 此集成还确保你已了解在 Visual Basic 中编写丰富的可变查询所必须了解的大部分内容。  
+LINQ) Language-Integrated (查询名称是指 Visual Basic 中的技术，该技术在语言中直接支持查询语法和其他语言构造。 使用 LINQ，无需学习新语言即可针对外部数据源进行查询。 您可以使用 Visual Basic 对关系数据库、XML 存储或对象中的数据进行查询。 这种将查询功能集成到语言中可实现语法错误和类型安全的编译时检查。 此集成还确保你已了解在 Visual Basic 中编写丰富的可变查询所必须了解的大部分内容。  
   
  以下部分介绍支持 LINQ 的语言构造，以使你能够开始阅读介绍性文档、代码示例和示例应用程序。 您还可以单击链接以查找有关语言功能如何集成以实现语言集成查询的更详细说明。 [演练：在 Visual Basic 中编写查询](walkthrough-writing-queries.md)是一种很好的起点。  
   
@@ -54,7 +55,7 @@ ms.locfileid: "91078301"
 
  匿名类型提供了一种简便的方法，可将一组属性暂时分组到要包含在查询结果中的元素中。 这使你可以按任意顺序在查询中选择可用字段的任意组合，而无需为元素定义命名的数据类型。  
   
- *匿名类型*由编译器动态构造。 该类型的名称由编译器分配，并且它可能会随每个新的编译而更改。 因此，不能直接使用该名称。 匿名类型的初始化方式如下：  
+ *匿名类型* 由编译器动态构造。 该类型的名称由编译器分配，并且它可能会随每个新的编译而更改。 因此，不能直接使用该名称。 匿名类型的初始化方式如下：  
   
  [!code-vb[VbLINQVbFeatures#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQVbFeatures/VB/Class1.vb#5)]  
   

@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：匿名类型 (Visual Basic) '
 title: 匿名类型
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - anonymous types [Visual Basic]
 - types [Visual Basic], anonymous
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
-ms.openlocfilehash: 5ab3cf8c3c02ff35890f71ad6c7f314b51b87133
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 447ca914726d4b426ad4ba2ec370a4bbe9589b81
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075234"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425615"
 ---
 # <a name="anonymous-types-visual-basic"></a>匿名类型 (Visual Basic)
 
@@ -23,7 +24,7 @@ Visual Basic 支持匿名类型，这使您无需为数据类型编写类定义�
   
  [!code-vb[VbVbalrAnonymousTypes#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#1)]  
   
- *查询表达式*使用匿名类型来合并查询选择的数据列。 不能提前定义结果类型，因为无法预测特定查询可能选择的列。 利用匿名类型，您可以编写一个查询，以任意顺序选择任意数量的列。 编译器将创建与指定的属性和指定的顺序相匹配的数据类型。  
+ *查询表达式* 使用匿名类型来合并查询选择的数据列。 不能提前定义结果类型，因为无法预测特定查询可能选择的列。 利用匿名类型，您可以编写一个查询，以任意顺序选择任意数量的列。 编译器将创建与指定的属性和指定的顺序相匹配的数据类型。  
   
  在下面的示例中， `products` 是产品对象的列表，其中每个对象都有多个属性。 变量 `namePriceQuery` 包含查询的定义，该查询在执行时返回具有两个属性（和）的匿名类型的实例的集合 `Name` `Price` 。  
   
@@ -82,7 +83,7 @@ Visual Basic 支持匿名类型，这使您无需为数据类型编写类定义�
   
  [!code-vb[VbVbalrAnonymousTypes#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#7)]  
   
-### <a name="read-only-values"></a>只读值  
+### <a name="read-only-values"></a>Read-Only 值  
 
  键属性的值不能更改。 例如，在 `prod8` 前面的示例中， `Name` 和 `Price` 字段为 `read-only` ，但 `OnHand` 可以更改。  
   

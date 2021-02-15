@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：如何：声明结构 (Visual Basic) '
 title: 如何：声明结构
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - statements [Visual Basic], structure
 - structures [Visual Basic], declaring
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.openlocfilehash: bffdc5974eff6b71e0abc4780a61aa300769eed6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 7560f22db70fd5804ca309720d32477bcb9a3782
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058542"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436924"
 ---
 # <a name="how-to-declare-a-structure-visual-basic"></a>如何：声明结构 (Visual Basic)
 
@@ -54,7 +55,7 @@ ms.locfileid: "91058542"
   
      `salary`前面的示例中的字段是 `Private` ，这意味着它在结构外部不可访问，甚至是从包含类中访问。 但是，该 `giveRaise` 过程是 `Public` ，因此可以从结构外部调用它。 同样，您可以 `salaryReviewTime` 从结构外部引发事件。  
   
-     除了变量、 `Sub` 过程和事件外，还可以在结构中定义常量、 `Function` 过程和属性。 最多可以将一个属性指定为 *默认属性*，前提是它至少采用一个参数。 您可以使用共享过程处理事件[Shared](../../../language-reference/modifiers/shared.md) `Sub` 。 有关详细信息，请参阅 [如何：在 Visual Basic 中声明和调用默认属性](../procedures/how-to-declare-and-call-a-default-property.md)。  
+     除了变量、 `Sub` 过程和事件外，还可以在结构中定义常量、 `Function` 过程和属性。 最多可以将一个属性指定为 *默认属性*，前提是它至少采用一个参数。 您可以使用共享过程处理事件[](../../../language-reference/modifiers/shared.md) `Sub` 。 有关详细信息，请参阅 [如何：在 Visual Basic 中声明和调用默认属性](../procedures/how-to-declare-and-call-a-default-property.md)。  
   
 ## <a name="see-also"></a>请参阅
 

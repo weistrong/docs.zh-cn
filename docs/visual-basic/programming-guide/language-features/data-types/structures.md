@@ -1,5 +1,6 @@
 ---
-title: 结构
+description: '了解详细信息：结构 (Visual Basic) '
+title: 結構
 ms.date: 07/20/2015
 helpviewer_keywords:
 - structures [Visual Basic]
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - user-defined data types [Visual Basic], about user-defined data types
 - types [Visual Basic], user-defined
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
-ms.openlocfilehash: 04ccb5d39ea7c76a1e75dbeafd9230f2cb604d7c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c79ba7b4ea8e80aced6c2a280c4896ed9f8c9916
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090230"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427616"
 ---
 # <a name="structures-visual-basic"></a>结构 (Visual Basic)
 
-*结构*是 Visual Basic 早期版本支持的用户定义类型 (UDT) 的一般化。 除了字段外，结构还可以公开属性、方法和事件。 结构可以实现一个或多个接口，并且可以为每个字段声明单独的访问级别。  
+*结构* 是 Visual Basic 早期版本支持的用户定义类型 (UDT) 的一般化。 除了字段外，结构还可以公开属性、方法和事件。 结构可以实现一个或多个接口，并且可以为每个字段声明单独的访问级别。  
   
  您可以组合不同类型的数据项来创建结构。 结构将一个或多个 *元素* 与另一个或多个元素彼此关联。 在声明结构时，它将成为 *复合数据类型*，并且可以声明该类型的变量。  
   

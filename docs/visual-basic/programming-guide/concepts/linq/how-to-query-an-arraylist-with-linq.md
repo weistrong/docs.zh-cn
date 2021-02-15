@@ -1,17 +1,18 @@
 ---
+description: '了解详细信息：如何：使用 LINQ (Visual Basic 查询 ArrayList) '
 title: 如何：使用 LINQ 查询 ArrayList
 ms.date: 07/20/2015
 ms.assetid: 176358a9-d765-4b57-9557-7feb4428138d
-ms.openlocfilehash: b7b75e017fb314b5e5998b743dbf922f34fd9b7c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: df7c6e1cee6d8e37074ce209f3bea97a402d8dbe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396462"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428514"
 ---
-# <a name="how-to-query-an-arraylist-with-linq-visual-basic"></a>如何：使用 LINQ 查询 ArrayList （Visual Basic）
+# <a name="how-to-query-an-arraylist-with-linq-visual-basic"></a>如何：使用 LINQ (Visual Basic 查询 ArrayList) 
 
-如果使用 LINQ 来查询非泛型 <xref:System.Collections.IEnumerable> 集合（例如 <xref:System.Collections.ArrayList>），必须显式声明范围变量的类型，以反映集合中对象的特定类型。 例如，如果有 <xref:System.Collections.ArrayList> 对象的，那么 `Student` [from 子句](../../../language-reference/queries/from-clause.md)应如下所示：
+如果使用 LINQ 来查询非泛型 <xref:System.Collections.IEnumerable> 集合（例如 <xref:System.Collections.ArrayList>），必须显式声明范围变量的类型，以反映集合中对象的特定类型。 例如，如果有 <xref:System.Collections.ArrayList> 对象的，那么 `Student` [from 子句](../../../language-reference/queries/from-clause.md) 应如下所示：
 
 ```vb
 Dim query = From student As Student In arrList
@@ -20,7 +21,7 @@ Dim query = From student As Student In arrList
 
 通过指定范围变量的类型，可将 <xref:System.Collections.ArrayList> 中的每项强制转换为 `Student`。
 
-在查询表达式中使用显式类型范围变量等效于调用 <xref:System.Linq.Enumerable.Cast%2A> 方法。 如果无法执行指定的强制转换，<xref:System.Linq.Enumerable.Cast%2A> 将引发异常。 <xref:System.Linq.Enumerable.Cast%2A> 和 <xref:System.Linq.Enumerable.OfType%2A> 是两个标准查询运算符方法，可对非泛型 <xref:System.Collections.IEnumerable> 类型执行操作。 在 Visual Basic 中，必须对 <xref:System.Linq.Enumerable.Cast%2A> 数据源显式调用方法，以确保特定范围变量类型。 有关详细信息，请参阅[查询操作中的类型关系（Visual Basic）](type-relationships-in-query-operations.md)。
+在查询表达式中使用显式类型范围变量等效于调用 <xref:System.Linq.Enumerable.Cast%2A> 方法。 如果无法执行指定的强制转换，<xref:System.Linq.Enumerable.Cast%2A> 将引发异常。 <xref:System.Linq.Enumerable.Cast%2A> 和 <xref:System.Linq.Enumerable.OfType%2A> 是两个标准查询运算符方法，可对非泛型 <xref:System.Collections.IEnumerable> 类型执行操作。 在 Visual Basic 中，必须对 <xref:System.Linq.Enumerable.Cast%2A> 数据源显式调用方法，以确保特定范围变量类型。 有关详细信息，请参阅 [查询操作中的类型关系 (Visual Basic) ](type-relationships-in-query-operations.md)。
 
 ## <a name="example"></a>示例
 
@@ -78,6 +79,6 @@ End Module
 '   Garcia: 97
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LINQ to Objects (Visual Basic)](linq-to-objects.md)
