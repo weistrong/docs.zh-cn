@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：无法写入日志文件，因为写入日志文件会导致其超过 MaximumSize 值
 title: 无法写入日志文件，原因是写入将导致日志文件超过 MaximumSize 值。
 ms.date: 07/20/2015
 f1_keywords:
 - vbrApplicationLog_FileExceedsMaximumSize
 ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
-ms.openlocfilehash: 95a7b9036e7c1494cd44c250b0580bab5144417b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5c305c550f7a63183a0ac529adc788fa79b5794f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059452"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456934"
 ---
 # <a name="unable-to-write-to-log-file-because-writing-to-it-would-cause-it-to-exceed-maximumsize-value"></a>无法写入日志文件，原因是写入将导致日志文件超过 MaximumSize 值。
 

@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 8f76c9c86c202ef1bad23bffe8379b0b93a53f17
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9c09fc381a161a9deea012d98d06ab57f2f7345e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99787716"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480539"
 ---
 # <a name="configuration-options-for-code-analysis"></a>代码分析的配置选项
 
@@ -60,14 +60,14 @@ generated_code = true
 
 下表显示了可为所有分析器规则（包括 [代码质量](quality-rules/index.md) 和 [代码样式](style-rules/index.md) 规则）配置的不同规则严重性。
 
-| 严重性 | 生成时行为 |
+| 严重性配置值 | 生成时行为 |
 |-|-|
 | `error` | 冲突显示为生成 *错误* 并导致生成失败。|
 | `warning` | 冲突显示为生成 *警告* ，但不会导致生成失败 (除非您将选项设置为 "将警告视为错误") 。 |
 | `suggestion` | 冲突显示为生成 *消息* ，在 VISUAL Studio IDE 中显示为建议。 |
 | `silent` | 冲突对用户不可见。 |
 | `none` | 完全禁止显示规则。 |
-| `default` | 使用规则的默认严重性。 |
+| `default` | 使用规则的默认严重性。 [Roslyn](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md)存储库中列出了每个 .net 版本的默认严重性。 在该表中，"Disabled" 对应于 `none` ，"Hidden" 对应于 `silent` ，而 "Info" 对应于 `suggestion` 。 |
 
 > [!TIP]
 > 有关 Visual Studio 中规则严重性的详细信息，请参阅 [严重性级别](/visualstudio/ide/editorconfig-language-conventions#severity-levels)。
@@ -91,6 +91,12 @@ dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
 ```ini
 dotnet_analyzer_diagnostic.severity = <severity value>
 ```
+
+> [!IMPORTANT]
+> 使用单个条目为多个规则配置严重级别（对于规则 *类别* 或为 *所有* 规则），严重性仅适用于 [默认情况下启用](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md)的规则。 若要启用默认情况下禁用的规则，必须执行以下操作之一：
+>
+> - `dotnet_diagnostic.<rule ID>.severity = <severity>`为每个规则添加显式配置条目。
+> - 通过将设置为来启用 *所有* 规则 [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) `AllEnabledByDefault` 。
 
 #### <a name="precedence"></a>优先级
 

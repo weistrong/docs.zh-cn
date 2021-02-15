@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：访问被派生类隐藏的变量 (Visual Basic) '
 title: 如何：访问被派生类隐藏的变量
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - declared elements [Visual Basic], referencing
 - variables [Visual Basic], accessing hidden
 ms.assetid: ae21a8ac-9cd4-4fba-a3ec-ecc4321ef93c
-ms.openlocfilehash: c5ff802a0f6e081acd00d7cdfab4a8296b4daad9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5ac1dd8afc8c32c91b748c8316d035d69468d887
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392852"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430047"
 ---
 # <a name="how-to-access-a-variable-hidden-by-a-derived-class-visual-basic"></a>如何：访问被派生类隐藏的变量 (Visual Basic)
 
@@ -24,7 +25,7 @@ ms.locfileid: "84392852"
 
 ### <a name="to-access-a-base-class-variable-hidden-by-a-derived-class"></a>访问由派生类隐藏的基类变量
 
-- 在表达式或赋值语句中，在变量名称之前加上 `MyBase` 关键字和一个句点（ `.` ）。
+- 在表达式或赋值语句中，在变量名称之前加上 `MyBase` 关键字和一个句点 (`.`) 。
 
     编译器将引用解析为对变量的基类版本的引用。
 
@@ -45,13 +46,13 @@ ms.locfileid: "84392852"
     End Class
     ```
 
-    前面的示例声明 `shadowString` 基类中的变量，并将其隐藏在派生类中。 `showStrings`派生类中的过程在名称不合格时显示字符串的隐藏版本 `shadowString` 。 当用关键字限定时，它会显示隐藏的版本 `shadowString` `MyBase` 。
+    前面的示例声明 `shadowString` 基类中的变量，并将其隐藏在派生类中。 `showStrings`派生类中的过程在名称不合格时显示字符串的隐藏版本 `shadowString` 。 当用关键字限定时，它会显示隐藏的版本 `shadowString` `MyBase`  。
 
 ## <a name="robust-programming"></a>可靠编程
 
 为了降低引用隐藏变量的意外版本的风险，可以完全限定对隐藏变量的所有引用。 隐藏引入了一个具有相同名称的变量的多个版本。 当代码语句引用变量名时，编译器解析引用的版本取决于一些因素，如代码语句的位置和符合条件的字符串的状态。 这可能会增加引用错误的变量版本的风险。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [References to Declared Elements](references-to-declared-elements.md)
 - [Visual Basic 中的隐藏](shadowing.md)

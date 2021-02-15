@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：控制变量 (Visual Basic 的作用域) '
 title: 如何：控制变量的范围
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - declared elements [Visual Basic], visibility
 - visibility [Visual Basic], variables
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
-ms.openlocfilehash: 2ce7c1700eec54542719e6e0880466ca136e86f6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c6da599f76883cba545efbdf9570aa05770602a2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095427"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429866"
 ---
 # <a name="how-to-control-the-scope-of-a-variable-visual-basic"></a>如何：控制变量的范围 (Visual Basic)
 
-通常，变量在声明它的整个区域内处于 *范围*内，或者在引用中可见。 在某些情况下，变量的 *访问级别* 会影响其作用域。  
+通常，变量在声明它的整个区域内处于 *范围* 内，或者在引用中可见。 在某些情况下，变量的 *访问级别* 会影响其作用域。  
   
  有关详细信息，请参阅 [Scope in Visual Basic](scope.md)。  
   

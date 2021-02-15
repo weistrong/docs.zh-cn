@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的控制流
 title: 控制流
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structures [Visual Basic], control
 - conditional statements [Visual Basic], control flow
 ms.assetid: 5623ef47-52b1-4202-befd-9af36422ec6f
-ms.openlocfilehash: e47a48755c6752dc8c46e35399f1a1efae9c4a08
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 01db948049e0dd964aa94d80b43ba648e296a797
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74353934"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480630"
 ---
 # <a name="control-flow-in-visual-basic"></a>控制流 (Visual Basic)
 
@@ -37,5 +38,5 @@ ms.locfileid: "74353934"
 
 ## <a name="related-sections"></a>相关章节
 
- [控件流摘要](../../../language-reference/keywords/control-flow-summary.md)  
+ [控制流摘要](../../../language-reference/keywords/control-flow-summary.md)  
  收录了此主题的语言参考页链接。

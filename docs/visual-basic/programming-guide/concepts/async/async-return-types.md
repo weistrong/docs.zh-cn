@@ -1,17 +1,18 @@
 ---
+description: '了解详细信息：异步返回类型 (Visual Basic) '
 title: 异步返回类型
 ms.date: 07/20/2015
 ms.assetid: 07890291-ee72-42d3-932a-fa4d312f2c60
-ms.openlocfilehash: 5d19fc9831580412da24333be0885fce55384658
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 12a7f577a89ff8f8037de879f9e37d6fdb917aa8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396709"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438913"
 ---
 # <a name="async-return-types-visual-basic"></a>异步返回类型 (Visual Basic)
 
-异步方法具有三个可能的返回类型：<xref:System.Threading.Tasks.Task%601>、<xref:System.Threading.Tasks.Task>和 void。 在 Visual Basic 中，void 返回类型被写为 [Sub](../../language-features/procedures/sub-procedures.md) 过程。 有关异步方法的详细信息，请参阅[采用 async 和 Await 的异步编程（Visual Basic）](index.md)。
+异步方法具有三个可能的返回类型：<xref:System.Threading.Tasks.Task%601>、<xref:System.Threading.Tasks.Task>和 void。 在 Visual Basic 中，void 返回类型被写为 [Sub](../../language-features/procedures/sub-procedures.md) 过程。 有关异步方法的详细信息，请参阅 [异步编程与 async 和 Await (Visual Basic) ](index.md)。
 
 在以下其中一节检查每个返回类型，且在本主题末尾可以找到使用全部三种类型的完整示例。
 
@@ -47,7 +48,7 @@ Async Function TaskOfT_MethodAsync() As Task(Of Integer)
 End Function
 ```
 
-当 `TaskOfT_MethodAsync` 从 await 表达式中调用时，await 表达式将检索存储在由 `TaskOfT_MethodAsync` 返回的任务中的整数值（`leisureHours` 的值）。 有关 await 表达式的详细信息，请参阅[Await 运算符](../../../language-reference/operators/await-operator.md)。
+当 `TaskOfT_MethodAsync` 从 await 表达式中调用时，await 表达式将检索存储在由 `TaskOfT_MethodAsync` 返回的任务中的整数值（`leisureHours` 的值）。 有关 await 表达式的详细信息，请参阅 [Await 运算符](../../../language-reference/operators/await-operator.md)。
 
 以下代码调用和等待方法 `TaskOfT_MethodAsync`。 此结果分配给 `result1` 变量。
 
@@ -81,9 +82,9 @@ textBox1.Text &= $"Value of result2 variable:   {result2}" & vbCrLf
 textBox1.Text &= $"Value of resultTask.Result:  {integerTask.Result}" & vbCrLf
 ```
 
-## <a name="task-return-type"></a><a name="BKMK_TaskReturnType"></a>任务返回类型
+## <a name="task-return-type"></a><a name="BKMK_TaskReturnType"></a> 任务返回类型
 
-不包含 return 语句或包含不返回操作数的 return 语句的异步方法通常具有返回类型 <xref:System.Threading.Tasks.Task>。 如果将这些方法编写为同步运行，则这些方法将是[Sub](../../language-features/procedures/sub-procedures.md)过程。 如果在异步方法中使用 `Task` 返回类型，调用方法可以使用 `Await` 运算符暂停调用方的完成，直至被调用的异步方法结束。
+不包含 return 语句或包含不返回操作数的 return 语句的异步方法通常具有返回类型 <xref:System.Threading.Tasks.Task>。 如果将这些方法编写为同步运行，则这些方法将是 [Sub](../../language-features/procedures/sub-procedures.md) 过程。 如果在异步方法中使用 `Task` 返回类型，调用方法可以使用 `Await` 运算符暂停调用方的完成，直至被调用的异步方法结束。
 
 在下面的示例中，异步方法 `Task_MethodAsync` 不包含 return 语句。 因此，为此方法指定 `Task` 返回类型，这将启用 `Task_MethodAsync` 为等待。 `Task` 类型的定义不包括存储返回值的 `Result` 属性。
 
@@ -124,9 +125,9 @@ textBox1.Text &= vbCrLf & "Application can continue working while the Task runs.
 Await simpleTask
 ```
 
-## <a name="void-return-type"></a><a name="BKMK_VoidReturnType"></a>Void 返回类型
+## <a name="void-return-type"></a><a name="BKMK_VoidReturnType"></a> Void 返回类型
 
-过程的主要用途 `Sub` 是在事件处理程序中，其中没有返回类型（在其他语言中称为 void 返回类型）。 Void 返回还可用于替代返回 void 的方法，或者用于执行可分类为"发后不理"活动的方法。 但是，你应尽可能地返回 `Task`，因为不能等待返回 void 的异步方法。 这种方法的任何调用方必须能够继续完成，而无需等待调用的异步方法完成，并且调用方必须独立于异步方法生成的任何值或异常。
+过程的主要用途 `Sub` 是在事件处理程序中，在这种情况下，不会在其他语言)  (称为 void 返回类型的返回类型。 Void 返回还可用于替代返回 void 的方法，或者用于执行可分类为"发后不理"活动的方法。 但是，你应尽可能地返回 `Task`，因为不能等待返回 void 的异步方法。 这种方法的任何调用方必须能够继续完成，而无需等待调用的异步方法完成，并且调用方必须独立于异步方法生成的任何值或异常。
 
 返回 void 的异步方法的调用方无法捕获从该方法引发的异常，且此类未经处理的异常可能会导致应用程序故障。 如果返回 <xref:System.Threading.Tasks.Task> 或 <xref:System.Threading.Tasks.Task%601> 的异步方法中出现异常，此异常将存储于返回的任务中，并在等待该任务时再次引发。 因此，请确保可以产生异常的任何异步方法都具有返回类型 <xref:System.Threading.Tasks.Task> 或 <xref:System.Threading.Tasks.Task%601>，并确保会等待对方法的调用。
 
@@ -149,7 +150,7 @@ Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.
 End Sub
 ```
 
-## <a name="complete-example"></a><a name="BKMK_Example"></a>完整示例
+## <a name="complete-example"></a><a name="BKMK_Example"></a> 完整示例
 
 以下 Windows Presentation Foundation (WPF) 项目包含本主题中的代码示例。
 
@@ -157,21 +158,21 @@ End Sub
 
 1. 启动 Visual Studio。
 
-2. 在菜单栏上，依次选择“文件”  、“新建”  、“项目”  。
+2. 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。
 
      **“新建项目”** 对话框随即打开。
 
-3. 在 "**已安装**的**模板**" 类别中，选择 " **Visual Basic**"，然后选择 " **Windows**"。 从项目类型列表中，选择“WPF 应用程序”****。
+3. 在 " **已安装** 的 **模板** " 类别中，选择 " **Visual Basic**"，然后选择 " **Windows**"。 从项目类型列表中，选择“WPF 应用程序”。
 
-4. 输入 `AsyncReturnTypes` 作为项目名称，然后选择“确定”**** 按钮。
+4. 输入 `AsyncReturnTypes` 作为项目名称，然后选择“确定”按钮。
 
-     新项目将出现在“解决方案资源管理器”  中。
+     新项目将出现在“解决方案资源管理器”中。
 
 5. 在 Visual Studio 代码编辑器中，选择 **“MainWindow.xaml”** 选项卡。
 
-     如果此选项卡不可见，则在“解决方案资源管理器”**** 中，打开 MainWindow.xaml 的快捷菜单，然后选择“打开”****。
+     如果此选项卡不可见，则在“解决方案资源管理器”中，打开 MainWindow.xaml 的快捷菜单，然后选择“打开”。
 
-6. 在 MainWindow.xaml 的“XAML”**** 窗口中，将代码替换为下面的代码。
+6. 在 MainWindow.xaml 的“XAML”窗口中，将代码替换为下面的代码。
 
     ```vb
     <Window x:Class="MainWindow"
@@ -186,9 +187,9 @@ End Sub
     </Window>
     ```
 
-     MainWindow.xaml 的“设计”**** 视图中将显示一个简单的窗口，其中包含一个文本框和一个按钮。
+     MainWindow.xaml 的“设计”视图中将显示一个简单的窗口，其中包含一个文本框和一个按钮。
 
-7. 在**解决方案资源管理器**中，打开 mainwindow.xaml 的快捷菜单，然后选择 "**查看代码**"。
+7. 在 **解决方案资源管理器** 中，打开 mainwindow.xaml 的快捷菜单，然后选择 " **查看代码**"。
 
 8. 将 MainWindow.xaml.vb 中的代码替换为以下代码。
 
@@ -277,7 +278,7 @@ End Sub
     End Class
     ```
 
-9. 按 F5 键运行程序，然后选择“启动”**** 按钮。
+9. 按 F5 键以运行程序，然后选择 **“启动”** 按钮。
 
      应显示以下输出：
 

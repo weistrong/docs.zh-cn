@@ -1,4 +1,5 @@
 ---
+description: '了解有关以下内容的详细信息：对象生存期：如何创建和销毁对象 (Visual Basic) '
 title: 对象生存期：如何创建和销毁对象
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - Sub Dispose destructor
 - garbage collection [Visual Basic], Visual Basic
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
-ms.openlocfilehash: a32a5d075b5b1d02632c80216e7c2c12920bf4a2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 424a5619ea50d9da9bf069488ce7cac16527efbe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544136"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438822"
 ---
 # <a name="object-lifetime-how-objects-are-created-and-destroyed-visual-basic"></a>对象生存期：如何创建和销毁对象 (Visual Basic)
 
 使用 `New` 关键字创建类的实例（即对象）。 通常，初始化任务必须在使用之前在新对象上执行。 常见的初始化任务包括打开文件、连接到数据库以及读取注册表项的值。 Visual Basic 使用称为 " *构造函数* " 的过程来控制新对象的初始化， (允许控制初始化) 的特殊方法。
 
-对象离开范围之后，由公共语言运行时 (CLR) 进行释放。 Visual Basic 使用称为 *析构函数*的过程控制系统资源的发行。 同时，构造函数和析构函数支持强大、可预测的类库的创建。
+对象离开范围之后，由公共语言运行时 (CLR) 进行释放。 Visual Basic 使用称为 *析构函数* 的过程控制系统资源的发行。 同时，构造函数和析构函数支持强大、可预测的类库的创建。
 
 ## <a name="using-constructors-and-destructors"></a>使用构造函数和析构函数
 
@@ -159,6 +160,6 @@ End Sub
 
 - <xref:System.IDisposable.Dispose%2A>
 - [组件的初始化和终止](/previous-versions/visualstudio/visual-studio-2013/ws9dc6t6(v=vs.120))
-- [New 运算符](../../../language-reference/operators/new-operator.md)
+- [新建操作员](../../../language-reference/operators/new-operator.md)
 - [清理未托管资源](../../../../standard/garbage-collection/unmanaged.md)（清理未托管资源）
-- [没](../../../language-reference/nothing.md)
+- [无](../../../language-reference/nothing.md)

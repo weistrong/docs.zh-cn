@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息：其他控制结构 (Visual Basic) '
 title: 其他控件结构
 ms.date: 07/20/2015
 helpviewer_keywords:
 - statements [Visual Basic], control flow
 - control structures [Visual Basic]
 ms.assetid: 24b811f7-98ba-40ec-8dd3-4d528cfa4574
-ms.openlocfilehash: 8e7ca699e532ac7cfbe7918d850e7a28d1b27bcf
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 39654b8c780369eeea043087c8a04e2ba1f928c2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058607"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100473571"
 ---
 # <a name="other-control-structures-visual-basic"></a>其他控件结构 (Visual Basic)
 

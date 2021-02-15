@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：无法将类型为 <argumentname> "" 的参数 "" 转换 <type1> 为类型 " <type2> "
 title: 无法将类型为 <argumentname> "" 的参数 "" 转换 <type1> 为类型 " <type2> "
 ms.date: 07/20/2015
 f1_keywords:
 - vbrForLoop_ConvertToType3
 ms.assetid: fdf6c571-9c6c-4db2-8960-f394720b01e5
-ms.openlocfilehash: d17962eb91d423d12f7ef9887075ca423a4da8fe
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ca1693193f869a5469fd4a1076c8abcf4928649c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059790"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430230"
 ---
 # <a name="cannot-convert-argument-argumentname-of-type-type1-to-type-type2"></a>无法将类型为 \<argumentname> "" 的参数 "" 转换 \<type1> 为类型 " \<type2> "
 
