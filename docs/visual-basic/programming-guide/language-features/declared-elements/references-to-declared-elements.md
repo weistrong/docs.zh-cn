@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：引用 (Visual Basic 的已声明元素) '
 title: References to Declared Elements
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - references [Visual Basic], declared elements
 - qualified names [Visual Basic]
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
-ms.openlocfilehash: af5be47335b6d48bd6c0bccc30b8db15c9912807
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 75cc05381f01af00ac75995739647810fb7ff1d7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085875"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471430"
 ---
 # <a name="references-to-declared-elements-visual-basic"></a>对已声明元素的引用 (Visual Basic)
 
 当代码引用已声明的元素时，Visual Basic 编译器会将引用中的名称与该名称的相应声明进行匹配。 如果用相同的名称声明了多个元素，则可以通过 *限定* 其名称来控制要引用的元素。  
   
- 编译器尝试将名称引用与最 *窄的范围*进行匹配。 这意味着，它从发出引用的代码开始，并通过连续的包含元素级别进行处理。  
+ 编译器尝试将名称引用与最 *窄的范围* 进行匹配。 这意味着，它从发出引用的代码开始，并通过连续的包含元素级别进行处理。  
   
  下面的示例显示对两个名称相同的变量的引用。 该示例在 `totalCount` 模块的不同范围内声明了两个变量，每个变量都命名为 `container` 。 如果过程 `showCount` 显示时 `totalCount` 未进行限定，则 Visual Basic 编译器会将引用解析为范围最窄的声明，即内的本地声明 `showCount` 。 当它符合 `totalCount` 包含模块时 `container` ，编译器会将引用解析为范围更广的声明。  
   
@@ -154,7 +155,7 @@ End Module
   
 ## <a name="references-to-projects"></a>对项目的引用  
 
- 若要使用另一个项目中定义的 [公共](../../../language-reference/modifiers/public.md) 元素，必须首先设置对该项目的程序集或类型库的 *引用* 。 若要设置引用，请在 "**项目**" 菜单上单击 "**添加引用**"，或使用[引用 (Visual Basic) ](../../../reference/command-line-compiler/reference.md)命令行编译器选项。  
+ 若要使用另一个项目中定义的 [公共](../../../language-reference/modifiers/public.md) 元素，必须首先设置对该项目的程序集或类型库的 *引用* 。 若要设置引用，请在 "**项目**" 菜单上单击 "**添加引用**"，或使用 [引用 (Visual Basic)](../../../reference/command-line-compiler/reference.md)命令行编译器选项。  
   
  例如，可以使用 .NET Framework 的 XML 对象模型。 如果设置了对 <xref:System.Xml> 命名空间的引用，则可以声明并使用它的任何类，如 <xref:System.Xml.XmlDocument> 。 下面的示例使用 <xref:System.Xml.XmlDocument>。  
   
@@ -166,7 +167,7 @@ Dim xDoc As System.Xml.XmlDocument
   
 ## <a name="importing-containing-elements"></a>导入包含元素  
 
- 您可以使用 import [语句 ( .Net 命名空间，并键入) ](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) 以 *导入* 包含您要使用的模块或类的命名空间。 这使您可以引用在导入的命名空间中定义的元素，而无需完全限定其名称。 下面的示例重写上一示例以导入 <xref:System.Xml> 命名空间。  
+ 您可以使用 import [语句 ( .Net 命名空间，并键入)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) 以 *导入* 包含您要使用的模块或类的命名空间。 这使您可以引用在导入的命名空间中定义的元素，而无需完全限定其名称。 下面的示例重写上一示例以导入 <xref:System.Xml> 命名空间。  
   
 ```vb  
 ' Assume this project has a reference to System.Xml  
@@ -198,7 +199,7 @@ Dim xDoc As xD.XmlDocument
   
 ## <a name="shadowing"></a>阴影操作  
 
- 当两个编程元素共享同一名称时，其中一个元素可以 *隐藏或隐藏*另一个。 隐藏的元素不可用于引用;相反，当代码使用隐藏的元素名称时，Visual Basic 编译器会将其解析为隐藏元素。 有关示例的更详细说明，请参阅 [Visual Basic 中的隐藏](shadowing.md)。  
+ 当两个编程元素共享同一名称时，其中一个元素可以 *隐藏或隐藏* 另一个。 隐藏的元素不可用于引用;相反，当代码使用隐藏的元素名称时，Visual Basic 编译器会将其解析为隐藏元素。 有关示例的更详细说明，请参阅 [Visual Basic 中的隐藏](shadowing.md)。  
   
 ## <a name="see-also"></a>请参阅
 
@@ -207,5 +208,5 @@ Dim xDoc As xD.XmlDocument
 - [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)
 - [变量](../variables/index.md)
 - [Imports 语句（.NET 命名空间和类型）](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [New 运算符](../../../language-reference/operators/new-operator.md)
+- [新建操作员](../../../language-reference/operators/new-operator.md)
 - [公共](../../../language-reference/modifiers/public.md)

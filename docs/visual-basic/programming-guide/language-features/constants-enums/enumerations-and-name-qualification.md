@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的枚举和名称限定) '
 title: 枚举和名称限定
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], naming conflicts
 - declarations [Visual Basic], namespaces
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
-ms.openlocfilehash: 6e067d72e557b97f8626b148e173e3d1583f92b8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 83f5b894dad821fea920386be905de0b51f9c42f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086265"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477471"
 ---
 # <a name="enumerations-and-name-qualification-visual-basic"></a>枚举和名称限定 (Visual Basic)
 
@@ -40,7 +41,7 @@ ms.locfileid: "91086265"
   
  [!code-vb[VbEnumsTask#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#24)]  
   
- 通过组织枚举中的相关常量集，可以在不同的上下文中使用相同的常量名称。 例如，可以对和枚举中的 weekday 常量使用相同的名称 `Days` `WorkDays` 。 如果对枚举使用 `Imports` 语句，则必须小心，以避免不明确的引用。 请考虑以下示例：  
+ 通过组织枚举中的相关常量集，可以在不同的上下文中使用相同的常量名称。 例如，可以对和枚举中的 weekday 常量使用相同的名称 `Days` `WorkDays` 。 如果对枚举使用 `Imports` 语句，则必须小心，以避免不明确的引用。 请看下面的示例：  
   
  [!code-vb[VbEnumsTask#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#22)]  
   

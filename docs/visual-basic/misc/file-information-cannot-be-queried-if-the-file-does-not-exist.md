@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：如果该文件不存在，则无法查询文件信息
 title: 如果文件不存在，则无法查询文件信息
 ms.date: 07/20/2015
 ms.assetid: 2bf50d79-2a74-403f-833c-6cabd2c213ce
-ms.openlocfilehash: a23fcb01196588618cdb1b87a11924c9812d164f
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d0ad7d2d0ca7bb00e2a7fc5ff0f2e3933f66a258
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090906"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480851"
 ---
 # <a name="file-information-cannot-be-queried-if-the-file-does-not-exist"></a>如果文件不存在，则无法查询文件信息
 

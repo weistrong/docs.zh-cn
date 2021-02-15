@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息： Visual Basic 引用 (内插的字符串) '
 title: 内插字符串
 ms.date: 10/31/2017
-ms.openlocfilehash: c427b48ce58a59ff3878f24f1989db6ac8c8239a
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: c054401070079bdf85181619ef43c246feea5e18
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805273"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429655"
 ---
 # <a name="interpolated-strings-visual-basic-reference"></a>Visual Basic 引用 (的内插字符串) 
 
-用于构造字符串。  内插字符串类似于包含内插表达式** 的模板字符串。  内插字符串返回的字符串可替换内插表达式并且包含其字符串表示形式。 此功能在 Visual Basic 14 及更高版本中可用。
+用于构造字符串。  内插字符串类似于包含内插表达式的模板字符串。  内插字符串返回的字符串可替换内插表达式并且包含其字符串表示形式。 此功能在 Visual Basic 14 及更高版本中可用。
 
 与[复合格式字符串](../../../../standard/base-types/composite-formatting.md#composite-format-string)相比，内插字符串的参数更易于理解。  例如，内插字符串
 
@@ -34,7 +35,7 @@ $"<text> {<interpolated-expression> [,<field-width>] [:<format-string>] } <text>
 
 - *field-width* 是一个带符号整数，表示字段中的字符数。 如果为正数，则字段右对齐；如果为负数，则左对齐。
 
-- “格式字符串”** 是适合正在设置格式的对象类型的格式字符串。 例如，对于 <xref:System.DateTime> 值，它可以是 [标准日期和时间格式字符串](../../../../standard/base-types/standard-date-and-time-format-strings.md) ，例如 "d" 或 "d"。
+- “格式字符串”是适合正在设置格式的对象类型的格式字符串。 例如，对于 <xref:System.DateTime> 值，它可以是 [标准日期和时间格式字符串](../../../../standard/base-types/standard-date-and-time-format-strings.md) ，例如 "d" 或 "d"。
 
 > [!IMPORTANT]
 > 字符串开头的 `$` 和 `"` 之间不能有任何空格。 这样做会导致编译器错误。
@@ -51,7 +52,7 @@ $"<text> {<interpolated-expression> [,<field-width>] [:<format-string>] } <text>
 
 内插字符串有 3 种隐式类型转换：
 
-1. 将内插字符串转换为 <xref:System.String>。 下例返回一个字符串，其内插字符串表达式已替换为字符串表示形式。 例如： 。
+1. 将内插字符串转换为 <xref:System.String>。 下例返回一个字符串，其内插字符串表达式已替换为字符串表示形式。 例如：
 
    [!code-vb[interpolated-strings1](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings1.vb)]
 

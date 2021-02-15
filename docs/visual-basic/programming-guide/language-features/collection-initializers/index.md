@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的集合初始值设定项) '
 title: 集合初始值设定项
 ms.date: 07/20/2015
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
-ms.openlocfilehash: 1d2d5adc7266faaa1636e568d6433429761eeaab
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: afae9278092934ead4572f16fb1ec4a29d631803
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414539"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475456"
 ---
 # <a name="collection-initializers-visual-basic"></a>集合初始值设定项 (Visual Basic)
 
-集合初始值设定项** 提供了用于创建集合并在其中填充一组初始值的缩短语法。 若要通过一组已知值（例如，菜单选项或类别列表、一组初始数字值、字符串（如日期或月份名称）或地理位置（如用于验证的州或省/自治区/直辖市列表）静态列表）创建集合，将会发现集合初始值设定项非常有用。
+集合初始值设定项提供了用于创建集合并在其中填充一组初始值的缩短语法。 若要通过一组已知值（例如，菜单选项或类别列表、一组初始数字值、字符串（如日期或月份名称）或地理位置（如用于验证的州或省/自治区/直辖市列表）静态列表）创建集合，将会发现集合初始值设定项非常有用。
 
 有关集合的详细信息，请参阅[集合](../../concepts/collections.md)。
 
@@ -80,12 +81,12 @@ ms.locfileid: "84414539"
 |[如何：创建供集合初始化程序使用的 Add 扩展方法](how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)|展示了如何创建 `Add` 扩展方法，以便在集合中填充集合初始值设定项中的值。|
 |[如何：创建供集合初始化程序使用的集合](how-to-create-a-collection-used-by-a-collection-initializer.md)|展示了如何在实现 `IEnumerable` 的集合类中添加 `Add` 方法，从而启用集合初始值设定项。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [集合](../../concepts/collections.md)
 - [数组](../arrays/index.md)
 - [对象初始值设定项：命名和匿名类型](../objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [New 运算符](../../../language-reference/operators/new-operator.md)
+- [新建操作员](../../../language-reference/operators/new-operator.md)
 - [自动实现的属性](../procedures/auto-implemented-properties.md)
 - [如何：在 Visual Basic 中初始化数组变量](../arrays/how-to-initialize-an-array-variable.md)
 - [局部类型推理](../variables/local-type-inference.md)

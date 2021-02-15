@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息： (Visual Basic 的串联操作) '
 title: 串联运算
 ms.date: 07/20/2015
 ms.assetid: 4021e019-a8f7-477b-879e-07dd7f44feb9
-ms.openlocfilehash: 24897f6d17974adffd9e00831e00244baceb09ae
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6b400897f37b87ffd3f11004981da5d5dc3c2d12
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078328"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428696"
 ---
 # <a name="concatenation-operations-visual-basic"></a>串联操作 (Visual Basic) 
 

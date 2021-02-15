@@ -1,5 +1,5 @@
 ---
-description: 了解详细信息： BC30909： " <membername> " 不能 <typename> 通过 "在项目外部公开类型 <containertype> "<containertypename>
+description: 了解详细信息： BC30909： " <membername> " 不能 <typename> 通过 <containertype> "" 在项目外部公开类型 "" <containertypename>
 title: “<membername>”不能通过 <typename>“<containertype>”在项目外部公开类型“<containertypename>”
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30909
 ms.assetid: ffa7395d-e182-4087-8ce8-079810fdae54
-ms.openlocfilehash: e2cc1d950b646bb787dfe714c39efea78a530129
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 8acff03c80316e0f2aa4157ea9cce399c2e6975d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99795854"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100470988"
 ---
 # <a name="bc30909-membername-cannot-expose-type-typename-outside-the-project-through-containertype-containertypename"></a>BC30909： " \<membername> " 不能 \<typename> 通过 \<containertype> "" 在项目外部公开类型 "" \<containertypename>
 

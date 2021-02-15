@@ -1,15 +1,16 @@
 ---
+description: 了解更多相关信息：无法 <methodname> 在不进行收缩转换的情况下使用这些参数调用可访问的重载 ""： <list>
 title: 无 <methodname> 需收缩转换即可用这些参数调用可访问的重载 ""： <list>
 ms.date: 07/20/2015
 f1_keywords:
 - vbrAmbiguousCall2
 ms.assetid: 13b20ffa-9f02-4971-a3cb-e08b402fd971
-ms.openlocfilehash: 0c39f3eab77bd58d4f1f81cd8e7f1c95b0753c7f
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a802b420a01c1894feca2c61c0bfdbb7be5104f5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91079030"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475703"
 ---
 # <a name="no-accessible-overloaded-methodname-can-be-called-with-these-arguments-without-a-narrowing-conversion-list"></a>无 \<methodname> 需收缩转换即可用这些参数调用可访问的重载 ""： \<list>
 

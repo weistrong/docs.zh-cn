@@ -1,4 +1,5 @@
 ---
+description: 详细了解：Visual Basic 命令行编译器
 title: 命令行编译器
 ms.date: 02/20/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - compiler options, Visual Basic
 - Visual Basic compiler, options
 ms.assetid: 6b57c444-50c7-4b88-8f59-ed65cff5e05c
-ms.openlocfilehash: 67606df833eeab17e878056d372a82ef95cdd24e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a3deb0a4ef18158bb85d357ef6e2655d28b9c732
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "85840282"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100470170"
 ---
 # <a name="visual-basic-command-line-compiler"></a>Visual Basic 命令行编译器
 
@@ -31,4 +32,3 @@ Visual Basic 命令行编译器提供了一种替代方法，可用于在 Visual
 
 [按类别列出的 Visual Basic 编译器选项](compiler-options-listed-by-category.md)  
 显示功能组中的编译器选项。
-  

@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：控制变量 (Visual Basic 的可用性) '
 title: 如何：控制变量的可用性
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,20 +12,20 @@ helpviewer_keywords:
 - declared elements [Visual Basic], access level
 - Protected keyword [Visual Basic], accessing variables
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
-ms.openlocfilehash: e6173a0eaa0bf84abb1979711c6df932533c5ce9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3fa21a804008f31da9003aa847752f749154d602
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086109"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429879"
 ---
 # <a name="how-to-control-the-availability-of-a-variable-visual-basic"></a>如何：控制变量的可用性 (Visual Basic)
 
-可以通过指定变量的 *访问级别*来控制变量的可用性。 访问级别确定哪些代码有权读取或写入变量。  
+可以通过指定变量的 *访问级别* 来控制变量的可用性。 访问级别确定哪些代码有权读取或写入变量。  
   
 - *成员变量* (在模块级和任何过程外部定义) 默认为公共访问权限，这意味着可查看它们的任何代码都可以访问这些变量。 可以通过指定访问修饰符来更改此。  
   
--  (在过程中定义的*本地变量*) 通常具有公共访问权限，但只有其过程中的代码可以访问它们。 不能更改本地变量的访问级别，但可以更改包含它的过程的访问级别。  
+-  (在过程中定义的 *本地变量*) 通常具有公共访问权限，但只有其过程中的代码可以访问它们。 不能更改本地变量的访问级别，但可以更改包含它的过程的访问级别。  
   
  有关详细信息，请参阅 [Visual Basic 中的访问级别](access-levels.md)。  
   
@@ -46,7 +47,7 @@ ms.locfileid: "91086109"
   
      可以从与程序集互操作的任何代码读取或写入变量。  
   
- \- 或 -  
+ - 或 -  
   
 1. 对于局部变量，请将变量的 `Dim` 语句放置到过程内。  
   
@@ -95,6 +96,6 @@ Private numberForMeOnly As Integer
 - [Visual Basic 中的访问级别](access-levels.md)
 - [Dim 语句](../../../language-reference/statements/dim-statement.md)
 - [公共](../../../language-reference/modifiers/public.md)
-- [避免](../../../language-reference/modifiers/protected.md)
+- [Protected](../../../language-reference/modifiers/protected.md)
 - [Friend](../../../language-reference/modifiers/friend.md)
 - [专用](../../../language-reference/modifiers/private.md)

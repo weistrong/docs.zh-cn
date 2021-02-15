@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 过程重载) '
 title: 过程重载
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,16 +18,16 @@ helpviewer_keywords:
 - procedure overloading
 - procedures [Visual Basic], parameter lists
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
-ms.openlocfilehash: f8accc74fbdd9b1d8cf9bc3d8f6ddd26f73452b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 27e79e12153bc7ac6a9e3b3b5997a50c1c354195
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363871"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466635"
 ---
 # <a name="procedure-overloading-visual-basic"></a>过程重载 (Visual Basic)
 
-*重载*过程意味着使用相同的名称但不同的参数列表在多个版本中定义它。 重载的目的是定义过程中的多个紧密相关的版本，而不必按名称对其进行区分。 可以通过改变参数列表来实现此目的。
+*重载* 过程意味着使用相同的名称但不同的参数列表在多个版本中定义它。 重载的目的是定义过程中的多个紧密相关的版本，而不必按名称对其进行区分。 可以通过改变参数列表来实现此目的。
 
 ## <a name="overloading-rules"></a>重载规则
 
@@ -42,25 +43,25 @@ ms.locfileid: "84363871"
 
   - 参数的数据类型
 
-  - 类型参数的数目（针对泛型过程）
+  - 泛型过程的类型参数 (的数目) 
 
-  - 返回类型（仅适用于转换运算符）
+  - 仅为转换运算符返回类型 () 
 
-  与过程名称一起，以上各项统称为过程的*签名*。 调用重载过程时，编译器将使用签名来检查调用是否与定义正确匹配。
+  与过程名称一起，以上各项统称为过程的 *签名* 。 调用重载过程时，编译器将使用签名来检查调用是否与定义正确匹配。
 
 - **项不是签名的一部分**。 不能重载过程而不会改变签名。 具体而言，你不能通过仅改变一个或多个以下项来重载过程：
 
-  - 过程修饰符关键字，如 `Public` 、 `Shared` 和`Static`
+  - 过程修饰符关键字，如 `Public` 、 `Shared` 和 `Static`
 
   - 参数或类型参数名称
 
-  - 类型参数约束（针对泛型过程）
+  - 泛型过程的类型参数约束 () 
 
-  - 参数修饰符关键字，如 `ByRef` 和`Optional`
+  - 参数修饰符关键字，如 `ByRef` 和 `Optional`
 
   - 是否返回值
 
-  - 返回值的数据类型（转换运算符除外）
+  - 除转换运算符外，返回值的数据类型 () 
 
   前面列表中的项不是签名的一部分。 尽管不能使用它们来区分重载版本，但你可以根据其签名正确区分的重载版本来区分它们。
 
@@ -74,7 +75,7 @@ ms.locfileid: "84363871"
 
 ### <a name="overloaded-versions"></a>重载版本
 
-一种替代方法是重载单个过程名称。 您可以使用[Overloads](../../../language-reference/modifiers/overloads.md)关键字为每个参数列表定义过程的版本，如下所示：
+一种替代方法是重载单个过程名称。 您可以使用 [Overloads](../../../language-reference/modifiers/overloads.md) 关键字为每个参数列表定义过程的版本，如下所示：
 
 [!code-vb[VbVbcnProcedures#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#72)]
 
@@ -90,7 +91,7 @@ ms.locfileid: "84363871"
 
 [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](./index.md)
 - [如何：定义一个过程的多个版本](./how-to-define-multiple-versions-of-a-procedure.md)

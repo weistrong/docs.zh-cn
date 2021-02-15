@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：如何：使用 Async 和 Await (Visual Basic 并行发出多个 Web 请求) '
 title: 如何：使用 Async 和 Await 并行发出多个 Web 请求
 ms.date: 07/20/2015
 ms.assetid: a894b99b-7cfd-4a38-adfb-20d24f986730
-ms.openlocfilehash: 40bab392af94ba941c2562e885a8d2e08aeea5b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e1137424911b77ba94a760a4b4b034e45ef83462
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396579"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474338"
 ---
 # <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-visual-basic"></a>如何：使用 Async 和 Await 并行发出多个 Web 请求 (Visual Basic)
 
@@ -39,13 +40,13 @@ Dim result = Await myTask
 > [!NOTE]
 > 若要完成此项目，计算机上必须安装有 Visual Studio 2012 或更高版本和 .NET Framework 4.5 或更高版本。
 
-对于同时启动多个任务的另一个示例，请参阅[如何：使用 System.threading.tasks.task.whenall 扩展 Async 演练（Visual Basic）](how-to-extend-the-async-walkthrough-by-using-task-whenall.md)。
+对于同时启动多个任务的另一个示例，请参阅 [如何：使用 system.threading.tasks.task.whenall (Visual Basic) 扩展 Async 演练 ](how-to-extend-the-async-walkthrough-by-using-task-whenall.md)。
 
 可以从[开发人员代码示例](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)下载此示例的代码。
 
 ### <a name="to-set-up-the-project"></a>设置项目
 
-1. 若要设置 WPF 应用程序，请完成以下步骤。 可以在[演练：使用 Async 和 Await 访问 Web （Visual Basic）](walkthrough-accessing-the-web-by-using-async-and-await.md)中找到有关这些步骤的详细说明。
+1. 若要设置 WPF 应用程序，请完成以下步骤。 可以在 [演练：使用 Async 和 Await 访问 Web (Visual Basic) ](walkthrough-accessing-the-web-by-using-async-and-await.md)中找到有关这些步骤的详细说明。
 
     - 创建包含一个文本框和一个按钮的 WPF 应用程序。 将按钮命名为 `startButton`，将文本框命名为 `resultsTextBox`。
 
@@ -205,7 +206,7 @@ Class MainWindow
 End Class
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [演练：使用 Async 和 Await 访问 Web (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [使用 Async 和 Await 的异步编程 (Visual Basic)](index.md)

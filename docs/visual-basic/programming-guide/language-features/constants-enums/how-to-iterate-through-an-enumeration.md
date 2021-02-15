@@ -1,4 +1,5 @@
 ---
+description: 了解有关详细信息，请参阅如何：在 Visual Basic 中循环访问枚举
 title: 如何：循环访问枚举
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - enumerations [Visual Basic], iterating
 - ListBox control [Windows Forms], populating from an enumeration
 ms.assetid: e5aa10eb-cfcd-4a3b-8e76-f06b8f2002be
-ms.openlocfilehash: 21c170d4708b90987a3f1e9c18969b8803fcdbe0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a14d65a33e8a2f7872203a6a332dec1e753704f8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058711"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471560"
 ---
 # <a name="how-to-iterate-through-an-enumeration-in-visual-basic"></a>如何：在 Visual Basic 中循环访问枚举
 

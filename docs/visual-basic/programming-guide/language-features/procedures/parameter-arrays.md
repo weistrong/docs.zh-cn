@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的参数数组) '
 title: 参数数组
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], indefinite number of argument values
 - arrays [Visual Basic], parameter arrays
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
-ms.openlocfilehash: 2c8c60015d834ffa3f8618dd98616350e13f0e5c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e71524d9d62f0ece3a8310934eba15e9db16aaa1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100654"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427578"
 ---
 # <a name="parameter-arrays-visual-basic"></a>参数数组 (Visual Basic)
 

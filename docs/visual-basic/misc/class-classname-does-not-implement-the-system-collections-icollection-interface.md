@@ -1,15 +1,16 @@
 ---
+description: 了解有关的详细信息：类 " <classname> " 未实现 system.object 接口
 title: 类“<classname>”不实现 System.Collections.ICollection 接口
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID100
 ms.assetid: cc73bbc6-a283-41e0-b750-61ef553e83b3
-ms.openlocfilehash: 87cf730b454f7fdb98d7c778edcc607a54e13cf3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0e6f0d2445c3bae8934d690196888d7a8fec83a9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91060895"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474910"
 ---
 # <a name="class-classname-does-not-implement-the-systemcollectionsicollection-interface"></a>类“\<classname>”不实现 System.Collections.ICollection 接口
 

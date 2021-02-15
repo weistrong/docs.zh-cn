@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息：如何：将数据移入和移出变量 (Visual Basic) '
 title: 如何：将数据移入和移出变量
 ms.date: 07/20/2015
 helpviewer_keywords:
 - variables [Visual Basic], retrieving values
 - variables [Visual Basic], storing data
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
-ms.openlocfilehash: fe19a6160623aa9ea867becdf7a15b51319abf45
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e75be83f82a3e1418099375eb52a2d2cc4fdbd18
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410433"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481813"
 ---
 # <a name="how-to-move-data-into-and-out-of-a-variable-visual-basic"></a>如何：将数据移入和移出变量 (Visual Basic)
 
@@ -40,7 +41,7 @@ ms.locfileid: "84410433"
 
   \- 或 -
 
-- 在赋值语句中使用等号（）后面的变量名称 `=` 。
+- 使用等号后面的变量名 `=`) 在赋值语句中 (。
 
   下面的示例读取变量的值 `startValue` ，然后 `counter` 在表达式中使用该变量的值。
 
@@ -51,7 +52,7 @@ ms.locfileid: "84410433"
 
   变量的值将作为常数加入表达式，然后将其存储在赋值语句左侧的变量或属性中。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [变量](index.md)
 - [变量声明](variable-declaration.md)

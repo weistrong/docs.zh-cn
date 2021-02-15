@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：为过程定义参数 (Visual Basic) '
 title: 如何：为过程定义参数
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - procedure parameters [Visual Basic], defining
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
-ms.openlocfilehash: 73b53dcf7cd732af1a4f1d23cd0d3b9ef5b5529b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e9405e01c81f50c361c8e7ff9736e2ac0cde144d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087435"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476223"
 ---
 # <a name="how-to-define-a-parameter-for-a-procedure-visual-basic"></a>如何：为过程定义参数 (Visual Basic)
 
-*参数*允许调用代码在调用时将值传递给过程。 声明过程的每个参数的方式与声明变量的方式相同，即指定其名称和数据类型。 还可指定传递机制，以及参数是否为可选。  
+*参数* 允许调用代码在调用时将值传递给过程。 声明过程的每个参数的方式与声明变量的方式相同，即指定其名称和数据类型。 还可指定传递机制，以及参数是否为可选。  
   
  有关详细信息，请参阅 [过程参数和参数](./procedure-parameters-and-arguments.md)。  
   
@@ -39,13 +40,13 @@ ms.locfileid: "91087435"
   
      [!code-vb[VbVbcnProcedures#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#33)]  
   
-     第一个参数接受一个 `customer` 对象，并且 `updateCustomer` 可以直接更新传递给的变量， `c` 因为参数是传递[ByRef](../../../language-reference/modifiers/byref.md)的。 此过程无法更改最后两个参数的值，因为它们是通过 [ByVal](../../../language-reference/modifiers/byval.md)传递的。  
+     第一个参数接受一个 `customer` 对象，并且 `updateCustomer` 可以直接更新传递给的变量， `c` 因为参数是传递[](../../../language-reference/modifiers/byref.md)的。 此过程无法更改最后两个参数的值，因为它们是通过 [ByVal](../../../language-reference/modifiers/byval.md)传递的。  
   
      如果调用代码未提供参数的值 `level` ，Visual Basic 将其设置为默认值0。  
   
      如果类型检查开关 ([Option Strict 语句](../../../language-reference/statements/option-strict-statement.md)) 为，则在 `Off` `As` 定义参数时，子句是可选的。 但是，如果任何一个参数使用 `As` 子句，则所有参数都必须使用它。 如果类型检查开关为 `On` ，则 `As` 每个参数定义都需要子句。  
   
-     为所有编程元素指定数据类型称为 *强*类型。 设置时 `Option Strict On` ，Visual Basic 强制执行强类型化。 出于以下原因，强烈建议执行此操作：  
+     为所有编程元素指定数据类型称为 *强* 类型。 设置时 `Option Strict On` ，Visual Basic 强制执行强类型化。 出于以下原因，强烈建议执行此操作：  
   
     - 它为你的变量和参数启用 IntelliSense 支持。 这使您可以在代码中键入时查看它们的属性和其他成员。  
   

@@ -2,12 +2,12 @@
 title: 类型提供程序
 description: 了解 F# 类型提供程序如何成为提供在程序中使用的类型、属性和方法的组件。
 ms.date: 04/02/2018
-ms.openlocfilehash: eae64d2e318ee93f0b8d5b91f0c6da6c91743527
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: f01e207407b2282005d5722bed798df1d49d3ef6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202109"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468221"
 ---
 # <a name="type-providers"></a>类型提供程序
 
@@ -29,7 +29,7 @@ F# 类型提供程序是提供在程序中使用的类型、属性和方法的�
 
 下列广泛使用的库包含适合不同用途的类型提供程序：
 
-- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) 包含用于 JSON、XML、CSV 和 HTML 文档格式和资源的类型提供程序。
+- FSharp.Data 包含用于 JSON、XML、CSV 和 HTML 文档格式和资源的类型提供程序。
 - [SQLProvider](https://fsprojects.github.io/SQLProvider/) 通过对象映射以及 F# 针对这些数据源的 LINQ 查询，提供对关系数据库的强类型访问。
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) 包含一组类型提供程序，用于在 F# 中对 T-SQL 进行编译时检查。
 - [Azure 存储类型提供程序](https://fsprojects.github.io/AzureStorageTypeProvider/) 提供 Azure Blob、表和队列的类型，让你无需在整个程序中将资源名称指定为字符串就能访问这些资源。

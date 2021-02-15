@@ -1,15 +1,16 @@
 ---
+description: '了解详细信息：何时使用枚举 (Visual Basic) '
 title: 何时使用枚举
 ms.date: 07/20/2015
 helpviewer_keywords:
 - enumerations [Visual Basic]
 ms.assetid: e6e47b5b-3ed9-452d-a481-9c3fed88519a
-ms.openlocfilehash: 7b1b269a5d28d89cd491bac88fbefd4547fdc3c3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a29d0e3bb8ac99baf5d43827a8b58701eddcfbdd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095624"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480734"
 ---
 # <a name="when-to-use-an-enumeration-visual-basic"></a>何时使用枚举 (Visual Basic)
 
