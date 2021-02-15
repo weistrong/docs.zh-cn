@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：不存在鼠标
 title: 没有鼠标
 ms.date: 07/20/2015
 f1_keywords:
 - vbrMouse_NoMouseIsPresent
 ms.assetid: 4472fd57-4217-4463-9d3c-dc4a8fe88f1b
-ms.openlocfilehash: ceb850d98d29c232da304fbdfaddf5611714ef1a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1964f1def655a1e38ce2b8919a69ab2e6ac929a7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078848"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100479122"
 ---
 # <a name="no-mouse-is-present"></a>没有鼠标
 
@@ -27,4 +28,4 @@ ms.locfileid: "91078848"
 
 - [My.Computer.Mouse](xref:Microsoft.VisualBasic.Devices.Mouse)
 - [在 .NET 中处理和引发异常](../../standard/exceptions/index.md)
-- [尝试 .。。Catch .。。Finally 语句](../language-reference/statements/try-catch-finally-statement.md)
+- [Try...Catch...Finally 语句](../language-reference/statements/try-catch-finally-statement.md)

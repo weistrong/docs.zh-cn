@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息： (Visual Basic 的本地类型推理) '
 title: 局部类型推理
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - inference [Visual Basic]
 - type inference [Visual Basic]
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
-ms.openlocfilehash: 3979396d32aa5d3b853aa087d43f70d5987e510b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 50be8544229360287d2aef27f31360d7140640ac
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410394"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481696"
 ---
 # <a name="local-type-inference-visual-basic"></a>局部类型推理 (Visual Basic)
 
-Visual Basic 编译器使用*类型推理*来确定在没有子句的情况下声明的局部变量的数据类型 `As` 。 编译器从初始化表达式的类型推断出变量的类型。 这样，便可以在不显式声明类型的情况下声明变量，如下面的示例中所示。 作为声明的结果， `num1` 和 `num2` 均强类型化为整数。
+Visual Basic 编译器使用 *类型推理* 来确定在没有子句的情况下声明的局部变量的数据类型 `As` 。 编译器从初始化表达式的类型推断出变量的类型。 这样，便可以在不显式声明类型的情况下声明变量，如下面的示例中所示。 作为声明的结果， `num1` 和 `num2` 均强类型化为整数。
 
 [!code-vb[VbVbalrTypeInference#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#1)]
 
@@ -31,13 +32,13 @@ Visual Basic 编译器使用*类型推理*来确定在没有子句的情况下�
 > [!NOTE]
 > 类型推理只能用于非静态局部变量;它不能用于确定类字段、属性或函数的类型。
 
-局部类型推理适用于过程级别。 它不能用于在模块级别（在类、结构、模块或接口中，而不是在过程或块中）声明变量。 如果 `num2` 在前面的示例中是某个类的字段，而不是过程中的局部变量，则声明会导致 `Option Strict` 在上出现错误，并将 `num2` `Object` 使用 off 作为进行分类 `Option Strict` 。 同样，局部类型推理不适用于声明为的过程级别变量 `Static` 。
+局部类型推理适用于过程级别。 它不能用于在类、结构、模块或接口中的模块级 (声明变量，而不能在过程或块) 中声明。 如果 `num2` 在前面的示例中是某个类的字段，而不是过程中的局部变量，则声明会导致 `Option Strict` 在上出现错误，并将 `num2` `Object` 使用 off 作为进行分类 `Option Strict` 。 同样，局部类型推理不适用于声明为的过程级别变量 `Static` 。
 
 ## <a name="type-inference-vs-late-binding"></a>类型推理与后期绑定
 
 使用类型推理的代码与依赖后期绑定的代码类似。 但是，类型推理强类型变量，而不是将其保留原样 `Object` 。 编译器在编译时使用变量的初始值设定项来确定变量的类型以生成早期绑定的代码。 在上一个示例中，like 为， `num2` `num1` 类型为 `Integer` 。
 
-早期绑定变量的行为与后期绑定变量的行为不同，后者的类型仅在运行时已知。 事先知道类型使编译器能够在执行之前识别问题，精确分配内存并执行其他优化。 早期绑定还允许 Visual Basic 集成开发环境（IDE）为对象的成员提供 IntelliSense 帮助。 早期绑定也是性能的首选。 这是因为，后期绑定变量中存储的所有数据都必须包装为类型 `Object` ，并且在运行时访问该类型的成员会使程序运行较慢。
+早期绑定变量的行为与后期绑定变量的行为不同，后者的类型仅在运行时已知。 事先知道类型使编译器能够在执行之前识别问题，精确分配内存并执行其他优化。 早期绑定还启用 Visual Basic 集成开发环境 (IDE) ，为对象的成员提供 IntelliSense 帮助。 早期绑定也是性能的首选。 这是因为，后期绑定变量中存储的所有数据都必须包装为类型 `Object` ，并且在运行时访问该类型的成员会使程序运行较慢。
 
 ## <a name="examples"></a>示例
 
@@ -63,7 +64,7 @@ Visual Basic 编译器使用*类型推理*来确定在没有子句的情况下�
 
 ## <a name="option-infer"></a>Option Infer
 
-`Option Infer`使您能够指定是否允许在特定文件中进行局部类型推理。 若要启用或阻止该选项，请在文件开头键入以下语句之一。
+`Option Infer` 使您能够指定是否允许在特定文件中进行局部类型推理。 若要启用或阻止该选项，请在文件开头键入以下语句之一。
 
 `Option Infer On`
 
@@ -73,9 +74,9 @@ Visual Basic 编译器使用*类型推理*来确定在没有子句的情况下�
 
 如果为文件中 `Option Infer` 设置的值与在 IDE 中或在命令行上设置的值冲突，则文件中的值优先。
 
-有关详细信息，请参阅[选项推断语句](../../../language-reference/statements/option-infer-statement.md)和[编译页，项目设计器（Visual Basic）](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)。
+有关详细信息，请参阅 " [选项推断语句](../../../language-reference/statements/option-infer-statement.md) 和 [编译" 页，"项目设计器" (Visual Basic) ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [匿名类型](../objects-and-classes/anonymous-types.md)
 - [早期绑定和后期绑定](../early-late-binding/index.md)

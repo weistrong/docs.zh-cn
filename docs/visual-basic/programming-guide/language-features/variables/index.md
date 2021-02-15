@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：中的变量 Visual Basic
 title: 变量
 ms.date: 07/20/2015
 helpviewer_keywords:
 - variables [Visual Basic]
 - values [Visual Basic], storing
 ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
-ms.openlocfilehash: bd6417033a6c2626d17ad003de6c637dd1e8adaa
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d00907e451fa09c6e9b6be990a24a4d39b386622
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080213"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481709"
 ---
 # <a name="variables-in-visual-basic"></a>变量 (Visual Basic)
 
@@ -18,7 +19,7 @@ ms.locfileid: "91080213"
   
 ## <a name="usage"></a>使用情况  
 
- 与大多数编程语言一样，Visual Basic 使用变量来存储值。 变量** 有名称（用于引用变量中值的词语）。 变量还具有数据类型（用于确定变量可存储的数据种类）。 如果变量需要存储一组密切相关的索引数据项，可以表示数组。  
+ 与大多数编程语言一样，Visual Basic 使用变量来存储值。 变量有名称（用于引用变量中值的词语）。 变量还具有数据类型（用于确定变量可存储的数据种类）。 如果变量需要存储一组密切相关的索引数据项，可以表示数组。  
   
  使用本地类型推断，可以声明变量，而无需显式声明数据类型。 相反，编译器将通过初始化表达式的类型推断出变量的类型。 有关详细信息，请参阅[本地类型推断](local-type-inference.md)和 [Option Infer 语句](../../../language-reference/statements/option-infer-statement.md)。  
   
@@ -35,7 +36,7 @@ ms.locfileid: "91080213"
   
 ## <a name="variables-and-properties"></a>变量和属性  
 
- 与变量一样，属性** 表示可访问的值。 不过，它比变量更复杂。 属性使用代码块来控制如何设置并检索值。 有关详细信息，请参阅 [Visual Basic 中属性和变量的差异](../procedures/differences-between-properties-and-variables.md)。  
+ 与变量一样，属性表示可访问的值。 不过，它比变量更复杂。 属性使用代码块来控制如何设置并检索值。 有关详细信息，请参阅 [Visual Basic 中属性和变量的差异](../procedures/differences-between-properties-and-variables.md)。  
   
 ## <a name="see-also"></a>请参阅
 

@@ -1,16 +1,17 @@
 ---
+description: '了解有关详细信息，请参阅如何：使对象变量不引用任何实例 (Visual Basic) '
 title: 如何：使对象变量不引用任何实例
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Nothing keyword [Visual Basic], variable assignment
 - object variables [Visual Basic], null reference
 ms.assetid: e6d30578-bdae-4142-a3ac-a10697bf696a
-ms.openlocfilehash: 61bb06401ebd1e479c9256a80a12d87240831063
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2897720b52e708847fdd139be512e578a7420241
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080247"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481865"
 ---
 # <a name="how-to-make-an-object-variable-not-refer-to-any-instance-visual-basic"></a>如何：使对象变量不引用任何实例 (Visual Basic)
 
@@ -39,5 +40,5 @@ ms.locfileid: "91080247"
 - <xref:System.NullReferenceException>
 - [对象变量](object-variables.md)
 - [对象变量赋值](object-variable-assignment.md)
-- [没](../../../language-reference/nothing.md)
-- [尝试 .。。Catch .。。Finally 语句](../../../language-reference/statements/try-catch-finally-statement.md)
+- [无](../../../language-reference/nothing.md)
+- [Try...Catch...Finally 语句](../../../language-reference/statements/try-catch-finally-statement.md)

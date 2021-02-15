@@ -1,4 +1,5 @@
 ---
+description: 详细了解：中的运算符和表达式 Visual Basic
 title: 运算符和表达式
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - operands
 - expressions [Visual Basic]
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
-ms.openlocfilehash: 01e3a53e998774caee8863675b9151a140606852
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 526051e16da29cd139abf587e1393ad331fdcdaa
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071672"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471391"
 ---
 # <a name="operators-and-expressions-in-visual-basic"></a>Visual Basic 中的运算符和表达式
 
-运算符** 是对包含值的一个或多个代码元素执行运算的代码元素。 值元素包括变量、常量、文本、属性、`Function` 和 `Operator` 过程的返回结果以及表达式。  
+运算符是对包含值的一个或多个代码元素执行运算的代码元素。 值元素包括变量、常量、文本、属性、`Function` 和 `Operator` 过程的返回结果以及表达式。  
   
- 表达式** 是一系列与运算符结合使用的值元素，将生成新值。 运算符通过执行计算、比较或其他运算来处理值元素。  
+ 表达式是一系列与运算符结合使用的值元素，将生成新值。 运算符通过执行计算、比较或其他运算来处理值元素。  
   
 ## <a name="types-of-operators"></a>运算符类型  
 
@@ -35,7 +36,7 @@ ms.locfileid: "91071672"
   
 - [Visual Basic 中的逻辑和位运算运算符](logical-and-bitwise-operators.md)：合并 `Boolean` 或数字值，并以值的形式返回数据类型相同的结果。  
   
- 与运算符合并的值元素称为相应运算符的操作数**。 运算符与值元素共同构成了表达式，构成语句** 的赋值运算符除外。 有关详细信息，请参阅[语句](../statements.md)。  
+ 与运算符合并的值元素称为相应运算符的操作数。 运算符与值元素共同构成了表达式，构成语句的赋值运算符除外。 有关详细信息，请参阅[语句](../statements.md)。  
   
 ## <a name="evaluation-of-expressions"></a>表达式计算  
 

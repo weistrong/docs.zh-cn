@@ -1,21 +1,22 @@
 ---
+description: '了解详细信息：在委托中使用变体 (Visual Basic) '
 title: 使用委托中的变体
 ms.date: 07/20/2015
 ms.assetid: 7b5c20f1-6416-46a3-94b6-f109c31c842c
-ms.openlocfilehash: 842392a1342f7d3689d4d1f2a2adb7470eeda05e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d146460c515c1579a9a98d31aa48441f9584b83b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84375779"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481995"
 ---
 # <a name="using-variance-in-delegates-visual-basic"></a>使用委托中的变体 (Visual Basic)
 
-向委托分配方法时，协变  和逆变  为匹配委托类型和方法签名提供了灵活性。 协变允许方法具有的派生返回类型多于委托中定义的类型。 逆变允许方法具有的派生参数类型少于委托类型中的类型。
+向委托分配方法时，协变和逆变为匹配委托类型和方法签名提供了灵活性。 协变允许方法具有的派生返回类型多于委托中定义的类型。 逆变允许方法具有的派生参数类型少于委托类型中的类型。
 
 ## <a name="example-1-covariance"></a>示例 1：协变
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
 
 本示例演示如何将委托与具有返回类型的方法一起使用，这些返回类型派生自委托签名中的返回类型。 `DogsHandler` 返回的数据类型属于 `Dogs` 类型，它派生自委托中定义的 `Mammals` 类型。
 
@@ -46,7 +47,7 @@ End Class
 
 ## <a name="example-2-contravariance"></a>示例 2：逆变
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
 
 本示例演示如何将委托与具有参数的方法一起使用，这些参数的类型是委托签名参数类型的基类型。 通过逆变可以使用一个事件处理程序而不是多个单独的处理程序。 下面的示例使用两个委托：
 
@@ -86,7 +87,7 @@ Private Sub Form1_Load(ByVal sender As System.Object,
 End Sub
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [委托中的变体 (Visual Basic)](variance-in-delegates.md)
 - [对 Func 和 Action 泛型委托使用变体 (Visual Basic)](using-variance-for-func-and-action-generic-delegates.md)

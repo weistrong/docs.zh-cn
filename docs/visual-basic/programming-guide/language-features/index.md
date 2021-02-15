@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息： Visual Basic 语言功能
 title: 语言功能
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic code, elements of
 - Visual Basic code
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
-ms.openlocfilehash: ae226520ecd7dff09023bcc88e610ff400c4019d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9d02d6e17c0f2bea852130c5e975a1ed315a0aba
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057853"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468468"
 ---
 # <a name="visual-basic-language-features"></a>Visual Basic 语言功能
 
@@ -37,7 +38,7 @@ ms.locfileid: "91057853"
  [数据类型](data-types/index.md)  
  介绍了编程元素可以保留的数据类型以及数据的存储方式。  
   
- [已声明元素](declared-elements/index.md)  
+ [已声明的元素](declared-elements/index.md)  
  介绍了可以声明的编程元素及其名称和特征，以及编译器如何解析对这些元素的引用。  
   
  [委托](delegates/index.md)  
@@ -56,7 +57,7 @@ ms.locfileid: "91057853"
  介绍了什么是接口，以及如何在应用程序中使用接口。  
   
  [LINQ](linq/index.md)  
- 提供指向一些主题的链接，这些主题介绍 (LINQ) 功能和编程的语言集成查询。  
+ 提供指向一些主题的链接，这些主题介绍 Language-Integrated 查询 (LINQ) 功能和编程。  
   
  [对象和类](objects-and-classes/index.md)  
  概述了对象和类及其使用方式、相互之间的关系，以及它们公开的属性、方法和事件。  

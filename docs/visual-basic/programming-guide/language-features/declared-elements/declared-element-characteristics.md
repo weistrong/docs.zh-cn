@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：已声明的元素特征 (Visual Basic) '
 title: 已声明元素的特性
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], declared elements
 - declared elements [Visual Basic], visibility
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
-ms.openlocfilehash: 36c55475b4930dc6c3202d52ef742072d5cee3e1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c441b5f55144bead5b11b1d5ddbd0119d6def86b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075273"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468455"
 ---
 # <a name="declared-element-characteristics-visual-basic"></a>已声明元素的特性 (Visual Basic)
 
@@ -39,10 +40,10 @@ ms.locfileid: "91075273"
 |元素|数据类型|生存期|作用域 <sup>1</sup>|访问级别|  
 |-------------|---------------|--------------|------------------------|------------------|  
 |变量|是|是|是|是|  
-|常数|是|否|是|是|  
+|返回的常量|是|否|是|是|  
 |枚举|是|否|是|是|  
 |结构|否|否|是|是|  
-|属性|是|是|是|是|  
+|properties|是|是|是|是|  
 |方法|否|是|是|是|  
 |过程 (`Sub` 或 `Function`) |否|是|是|是|  
 |过程参数|是|是|是|否|  
@@ -57,7 +58,7 @@ ms.locfileid: "91075273"
   
 ## <a name="see-also"></a>请参阅
 
-- [已声明元素](index.md)
+- [已声明的元素](index.md)
 - [Declared Element Names](declared-element-names.md)
 - [References to Declared Elements](references-to-declared-elements.md)
 - [Visual Basic 中的生存期](lifetime.md)

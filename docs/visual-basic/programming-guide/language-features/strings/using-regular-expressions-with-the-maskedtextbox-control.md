@@ -1,16 +1,17 @@
 ---
+description: 了解详细信息：在 Visual Basic 中将正则表达式与 MaskedTextBox 控件一起使用
 title: 在 MaskedTextBox 控件中使用正则表达式
 ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], regular expressions
 - strings [Visual Basic], masked edit
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
-ms.openlocfilehash: 493da7b8583b5cc73a9832afa81b7b1d84742f2d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 68ffca6761d8f0634634ea2755786d3c0c02a6e2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072426"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471131"
 ---
 # <a name="using-regular-expressions-with-the-maskedtextbox-control-in-visual-basic"></a>在 MaskedTextBox 控件中使用正则表达式 (Visual Basic)
 
@@ -31,7 +32,7 @@ ms.locfileid: "91072426"
 |?|ASCII 字符。 输入可选。|[a zA-Z]？|  
 |&|字符。 需要输入。|[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo}]|  
 |C|字符。 输入可选。|[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo}]?|  
-|A|字符. 输入可选。|\W|  
+|包含当前请求的 URL 的|字符. 输入可选。|\W|  
 |.|区域性适当的小数点占位符。|不可用。|  
 |,|区域性适当的千位占位符。|不可用。|  
 |:|区域性适当的时间分隔符。|不可用。|  
@@ -51,7 +52,7 @@ ms.locfileid: "91072426"
   
  下表比较了四个正则表达式和每个正则表达式的等效掩码。  
   
-|Regular Expression|Mask|备注|  
+|正则表达式|Mask|说明|  
 |------------------------|----------|-----------|  
 |`\d{2}/\d{2}/\d{4}`|`00/00/0000`|`/`掩码中的字符是一个逻辑日期分隔符，并向用户显示与应用程序的当前区域性相对应的日期分隔符。|  
 |`\d{2}-[A-Z][a-z]{2}-\d{4}`|`00->L<LL-0000`|美国格式的日期 (日、月份缩写和年份) ，其中，三个字母的月份缩写以后跟两个小写字母的前大写字母显示。|  
