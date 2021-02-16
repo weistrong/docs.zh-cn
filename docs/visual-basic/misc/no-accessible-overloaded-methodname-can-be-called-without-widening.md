@@ -1,15 +1,16 @@
 ---
+description: 了解更多相关信息：无法 <methodname> 使用这些参数调用可访问的重载 ""，而无需扩大转换： <list>
 title: 必须进行扩大转换才能用这些参数调用可访问的重载“<methodname>”： <list>
 ms.date: 07/20/2015
 f1_keywords:
 - vbrAmbiguousCall_WideningConversion2
 ms.assetid: 5e74f5cf-80bd-4b48-b58a-465f981ec694
-ms.openlocfilehash: cd4e53a7e7add983eefbf9c7176ebd7841e00563
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 68e3ecf16aac19ef644b0060b49b2b316f72e22e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078900"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100479148"
 ---
 # <a name="no-accessible-overloaded-methodname-can-be-called-with-these-arguments-without-a-widening-conversion-list"></a>必须进行扩大转换才能用这些参数调用可访问的重载“\<methodname>”：\<list>
 

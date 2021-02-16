@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：演练：在 Visual Studio 中保持对象 (Visual Basic) '
 title: 在 Visual Basic 中保持对象
 ms.date: 07/20/2015
 ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
-ms.openlocfilehash: 0b2fff171164a29e6066839371fc95ad41b452f1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4145f84d14eadae6a305a4a1f5860cdcc38450c8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086460"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486857"
 ---
 # <a name="walkthrough-persisting-an-object-in-visual-studio-visual-basic"></a>演练：在 Visual Studio 中暂留对象 (Visual Basic)
 
@@ -35,7 +36,7 @@ ms.locfileid: "91086460"
   
 1. 新建“类库”项目，并将其命名为“LoanClass”。 有关详细信息，请参阅[创建解决方案和项目](/visualstudio/ide/creating-solutions-and-projects)。  
   
-2. 在“解决方案资源管理器”**** 中，打开 Class1 文件的快捷菜单，选择“重命名”****。 将文件重命名为 `Loan`，然后按 Enter。 重命名文件也会将类重命名为 `Loan`。  
+2. 在“解决方案资源管理器”中，打开 Class1 文件的快捷菜单，选择“重命名”。 将文件重命名为 `Loan`，然后按 Enter。 重命名文件也会将类重命名为 `Loan`。  
   
 3. 将以下公共成员添加到该类中：  
   
@@ -79,19 +80,19 @@ ms.locfileid: "91086460"
   
 ### <a name="to-create-a-test-application"></a>创建测试应用程序  
   
-1. 若要将 Windows 窗体应用程序项目添加到解决方案，请在“文件”**** 菜单上依次选择“添加”****、“新建项目”****。  
+1. 若要将 Windows 窗体应用程序项目添加到解决方案，请在“文件”菜单上依次选择“添加”、“新建项目”。  
   
-2. 在“添加新项目”**** 对话框中，选择“Windows 窗体应用程序”****，然后输入 `LoanApp` 作为项目名称，然后单击“确定”**** 关闭对话框。  
+2. 在“添加新项目”对话框中，选择“Windows 窗体应用程序”，然后输入 `LoanApp` 作为项目名称，然后单击“确定”关闭对话框。  
   
-3. 在“解决方案资源管理器”**** 中，选择 LoanApp 项目。  
+3. 在“解决方案资源管理器”中，选择 LoanApp 项目。  
   
-4. 在“项目”**** 菜单上，选择“设为启动项目”****。  
+4. 在“项目”菜单上，选择“设为启动项目”。  
   
-5. 在“项目”**** 菜单上，选择“添加引用” ****。  
+5. 在“项目”菜单上，选择“添加引用” 。  
   
-6. 在“添加引用”**** 对话框中，选择“项目”**** 选项卡，然后选择 LoanClass 项目。  
+6. 在“添加引用”对话框中，选择“项目”选项卡，然后选择 LoanClass 项目。  
   
-7. 单击“确定”  关闭对话框。  
+7. 单击 **“确定”** 关闭对话框。  
   
 8. 在设计器中，向窗体添加四个 <xref:System.Windows.Forms.TextBox> 控件。  
   

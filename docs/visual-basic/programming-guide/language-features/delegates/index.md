@@ -1,20 +1,21 @@
 ---
+description: '了解详细信息：委托 (Visual Basic) '
 title: 委托
 ms.date: 07/20/2015
 helpviewer_keywords:
 - delegates [Visual Basic]
 - Visual Basic code, delegates
 ms.assetid: 410b60dc-5e60-4ec0-bfae-426755a2ee28
-ms.openlocfilehash: 1f161248fa04f8fab0e5335413e69ca565732f71
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aba3c1483f2875600d925ec3edb0167ddfb18125
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410678"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434428"
 ---
 # <a name="delegates-visual-basic"></a>委托 (Visual Basic)
 
-委托是引用方法的对象。 有时亦称为*类型安全函数指针*，因为它们与其他编程语言中使用的函数指针类似。 但与函数指针不同的是，Visual Basic 委托是基于类的引用类型 <xref:System.Delegate?displayProperty=nameWithType> 。 委托既可以引用共享方法（无需特定类实例即可调用的方法），也可以引用实例方法。
+委托是引用方法的对象。 有时亦称为 *类型安全函数指针*，因为它们与其他编程语言中使用的函数指针类似。 但与函数指针不同的是，Visual Basic 委托是基于类的引用类型 <xref:System.Delegate?displayProperty=nameWithType> 。 委托既可以引用共享方法（无需特定类实例即可调用的方法），也可以引用实例方法。
 
 ## <a name="delegates-and-events"></a>委托和事件
 
@@ -60,7 +61,7 @@ ms.locfileid: "84410678"
 
 [!code-vb[VbVbalrDelegates#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class2.vb#15)]
 
-函数的签名必须与委托类型的签名一致。 有关 lambda 表达式的详细信息，请参阅[Lambda 表达式](../procedures/lambda-expressions.md)。 有关委托的 lambda 表达式和 `AddressOf` 赋值的更多示例，请参阅[宽松委托转换](relaxed-delegate-conversion.md)。
+函数的签名必须与委托类型的签名一致。 有关 lambda 表达式的详细信息，请参阅 [Lambda 表达式](../procedures/lambda-expressions.md)。 有关委托的 lambda 表达式和 `AddressOf` 赋值的更多示例，请参阅[宽松委托转换](relaxed-delegate-conversion.md)。
 
 ## <a name="related-topics"></a>相关主题
 

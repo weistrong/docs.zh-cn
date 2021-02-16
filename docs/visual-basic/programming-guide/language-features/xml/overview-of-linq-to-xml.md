@@ -1,22 +1,23 @@
 ---
+description: 了解详细信息： LINQ to XML 的概述 Visual Basic
 title: LINQ to XML 概述
 ms.date: 07/20/2015
 helpviewer_keywords:
 - LINQ to XML [Visual Basic], about LINQ to XML
 - LINQ [Visual Basic], LINQ to XML
 ms.assetid: 01c62a79-6d58-468e-84fb-039c05947701
-ms.openlocfilehash: 4ec1c96bdca96a6e9b68b240c147b70536514d85
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e70998706f62076a2528ac646df29e0c7081cb3d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91099185"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480214"
 ---
 # <a name="overview-of-linq-to-xml-in-visual-basic"></a>Visual Basic 中的 LINQ to XML 概述
 
-Visual Basic [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 通过 xml 文本和 xml 轴属性提供对的支持。 这使你可以使用熟悉的方便语法在 Visual Basic 代码中处理 XML。 使用*xml 文本*可以将 xml 直接包含在代码中。 利用*xml 轴属性*，您可以访问 xml 文本的子节点、子代节点和属性。 有关详细信息，请参阅 [Xml 文本概述](xml-literals-overview.md) 和 [访问 VISUAL BASIC 中的 xml](accessing-xml.md)。  
+Visual Basic [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 通过 xml 文本和 xml 轴属性提供对的支持。 这使你可以使用熟悉的方便语法在 Visual Basic 代码中处理 XML。 使用 *xml 文本* 可以将 xml 直接包含在代码中。 利用 *xml 轴属性*，您可以访问 xml 文本的子节点、子代节点和属性。 有关详细信息，请参阅 [Xml 文本概述](xml-literals-overview.md) 和 [访问 VISUAL BASIC 中的 xml](accessing-xml.md)。  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 是内存中的 XML 编程 API，旨在利用 (LINQ) 的语言集成查询。 尽管可以直接调用 LINQ Api，但只有 Visual Basic 允许你声明 XML 文本和直接访问 XML 轴属性。  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] 是内存中的 XML 编程 API，专门设计用于利用 Language-Integrated 查询 (LINQ) 。 尽管可以直接调用 LINQ Api，但只有 Visual Basic 允许你声明 XML 文本和直接访问 XML 轴属性。  
   
 > [!NOTE]
 > ASP.NET 页面中的声明性代码不支持 XML 文本和 XML 轴属性。 若要使用 Visual Basic XML 功能，请将代码放在 ASP.NET 应用程序的代码隐藏页中。  

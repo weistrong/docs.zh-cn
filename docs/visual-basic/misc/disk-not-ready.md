@@ -1,15 +1,16 @@
 ---
+description: 了解更多：磁盘尚未就绪
 title: 磁盘未准备好
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID71
 ms.assetid: 5e2528f5-81b3-4e5e-a294-a43cc738a42e
-ms.openlocfilehash: cdd853ddcf5958326711b180ab1d57b44ea19c90
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1975b5303b83d601355b65546abec48ae2799df3
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084445"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483737"
 ---
 # <a name="disk-not-ready"></a>磁盘未准备好
 

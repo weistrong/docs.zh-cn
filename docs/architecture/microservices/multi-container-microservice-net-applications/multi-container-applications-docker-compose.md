@@ -2,12 +2,12 @@
 title: 使用 docker-compose.yml 定义多容器应用程序
 description: 如何使用 docker-compose.yml 指定多容器应用程序的微服务组合。
 ms.date: 01/13/2021
-ms.openlocfilehash: 224b06c6a10834b42218746964f05b055d947235
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: fa8a5736905f6bae7fec8da35638048707bb6fa1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188785"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430555"
 ---
 # <a name="defining-your-multi-container-application-with-docker-composeyml"></a>使用 docker-compose.yml 定义多容器应用程序
 
@@ -410,7 +410,7 @@ IdentityUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5105
 
 创建和初始化环境变量的方式不同，具体取决于主机环境（Linux、Windows、云集群等）。 但是，便捷方法是使用 .env 文件。 docker-compose 文件支持在 .env 文件中声明默认环境变量。 这些环境变量的值是默认值。 但开发人员在每个环境（主机操作系统或群集中的环境变量）中定义的值可重写这些默认值。 将此 .env 文件放置在执行 docker-compose 命令的文件夹中。
 
-以下示例展示了 .env 文件，例如用于 eShopOnContainers 应用程序的 [.env](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/.env) 文件。
+以下示例展示了 .env 文件，例如用于 eShopOnContainers 应用程序的 [.env](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/.env) 文件。
 
 ```sh
 # .env file

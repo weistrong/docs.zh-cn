@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的泛型过程
 title: 泛型过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - generics [Visual Basic], procedures
 - generic procedures [Visual Basic], type inference
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
-ms.openlocfilehash: 558601f038fccdcb9b94acb7c796e2b49fb6e6f4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c8f26d66f7b657e00382ea94ed0d6093211a3e96
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059192"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434701"
 ---
 # <a name="generic-procedures-in-visual-basic"></a>Generic Procedures in Visual Basic
 
-*泛型过程*（也称为*泛型方法*）是定义了至少一个类型参数的过程。 这样，每次调用该过程时，调用代码都可以根据其需求来定制数据类型。  
+*泛型过程*（也称为 *泛型方法*）是定义了至少一个类型参数的过程。 这样，每次调用该过程时，调用代码都可以根据其需求来定制数据类型。  
   
  过程不是泛型的，只是在泛型类或泛型结构中进行定义。 若要为泛型，该过程除了需要使用任何常规参数外，还必须使用至少一个类型参数。 泛型类或结构可以包含非泛型过程，非泛型类、结构或模块可以包含泛型过程。  
   
@@ -51,7 +52,7 @@ End Sub
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的示例定义了一个泛型 `Function` 过程，用于查找数组中的特定元素。 它定义了一个类型参数，并使用它在参数列表中构造两个参数。  
   

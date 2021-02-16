@@ -3,13 +3,13 @@ title: 将代码覆盖率用于单元测试
 description: 了解如何将代码覆盖率功能用于 .NET 单元测试。
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/01/2020
-ms.openlocfilehash: 98652de8e8b5c3765dfee8e1b511399bc5a0be25
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/10/2021
+ms.openlocfilehash: 492e036593dcdc81f8256b05183c8f0a9e13b414
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189650"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432655"
 ---
 # <a name="use-code-coverage-for-unit-testing"></a>将代码覆盖率用于单元测试
 
@@ -271,7 +271,7 @@ cd XUnit.Coverlet.Collector && dotnet test --collect:"XPlat Code Coverage"
 > dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
 > ```
 >
-> 生成的 coverage.cobertura.xml 文件为输出。  
+> 生成的 coverage.cobertura.xml 文件为输出。
 > 可按照[此处](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)的 msbuild 集成指南操作
 
 ## <a name="generate-reports"></a>生成报告
