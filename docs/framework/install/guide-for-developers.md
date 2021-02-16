@@ -8,12 +8,12 @@ helpviewer_keywords:
 - installing .NET Framework
 - installation [.NET Framework]
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
-ms.openlocfilehash: 45ae10a92b66bc1b487e3ed4e1e29b6905b895f5
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 48bbdcabcf025b2924fd722308664ebe9affaad0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190775"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464776"
 ---
 # <a name="install-the-net-framework-for-developers"></a>安装面向开发人员的 .NET Framework
 
@@ -138,7 +138,7 @@ Web 和脱机安装程序均针对基于 x86 和 x64 的计算机而设计（请
 
 - 你必须拥有管理凭据才能安装 .NET Framework 4.5 或更高版本。
 
-- .NET Framework 4.5 可再发行组件于 2012 年 10 月 9 日进行了更新，纠正了一个与数字证书中的错误时间戳相关的问题，此问题会导致 Microsoft 生成并签名的文件中的数字签名提前过期。 如果之前安装了日期为 2012 年 8 月 16 日的 .NET Framework 4.5 可再发行组件包，建议使用 [.NET Framework 下载页](https://dotnet.microsoft.com/download/dotnet-framework/net45)内的最新可再发行组件来更新副本。 有关此问题的详细信息，请参阅 [Microsoft 安全公告 2749655](/security-updates/SecurityAdvisories/2012/2749655) 和[知识库文章 2770445](https://support.microsoft.com/kb/2770445)。
+- .NET Framework 4.5 可再发行组件于 2012 年 10 月 9 日进行了更新，纠正了一个与数字证书中的错误时间戳相关的问题，此问题会导致 Microsoft 生成并签名的文件中的数字签名提前过期。 如果之前安装了日期为 2012 年 8 月 16 日的 .NET Framework 4.5 可再发行组件包，建议使用 [.NET Framework 下载页](https://dotnet.microsoft.com/download/dotnet-framework/net45)内的最新可再发行组件来更新副本。 有关此问题的更多信息，请参阅 [Microsoft 安全公告 2749655](/security-updates/SecurityAdvisories/2012/2749655)。
 
 ## <a name="to-install-language-packs"></a>安装语言包
 

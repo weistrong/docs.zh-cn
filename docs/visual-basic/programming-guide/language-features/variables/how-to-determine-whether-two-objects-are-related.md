@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：确定两个对象是否与 (Visual Basic 相关) '
 title: 如何：确定两个对象是否相关
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - objects [Visual Basic], inheritance
 - object variables [Visual Basic], determining relation
 ms.assetid: da002e3f-6616-4bad-a229-f842d06652bb
-ms.openlocfilehash: b33815d58b0ef40f7f75a6a41bb4b1eeef591859
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 79a6dae83cc780a3aed64fd40fb284e7479ffacc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072218"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481903"
 ---
 # <a name="how-to-determine-whether-two-objects-are-related-visual-basic"></a>如何：确定两个对象是否相关 (Visual Basic)
 

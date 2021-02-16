@@ -2,12 +2,12 @@
 title: 分布式跟踪 - .NET
 description: 介绍了 .NET 分布式跟踪。
 ms.date: 02/02/2021
-ms.openlocfilehash: d21d2a978cfe58d89db689dec07107f089363912
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: d29c803dfec00474562abdc61ce65ea3f3faa133
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99640116"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431433"
 ---
 # <a name="net-distributed-tracing"></a>.NET 分布式跟踪
 
@@ -79,7 +79,7 @@ ms.locfileid: "99640116"
 发布跟踪数据的第一步是，创建 ActivitySource 类的实例。 ActivitySource 是一个类，它提供 API 来创建和启动 Activity 对象，以及注册 ActivityListener 对象来侦听 Activity 事件。
 
 ```csharp
-    internal static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
+    private static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
 ```
 
 #### <a name="best-practices"></a>最佳方案

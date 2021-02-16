@@ -2,12 +2,12 @@
 title: 实现可复原的应用程序
 description: 了解恢复能力，这是微服务体系结构中的核心概念。 必须了解如何在发生瞬间失败时进行适当的处理。
 ms.date: 01/30/2020
-ms.openlocfilehash: 46276a6b9b36a494bfae657275692ca9d5554d86
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3ed4474eaa1225e80f05db86965e4ba53b5d2301
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78847227"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429320"
 ---
 # <a name="implement-resilient-applications"></a>实现可复原的应用程序
 
@@ -20,7 +20,7 @@ ms.locfileid: "78847227"
 应用程序的各个组件还应涵盖运行状况监视功能。 遵循本章节中的准则，可创建这样的应用程序：即使在基于云的复杂部署中出现短暂停机或暂时中断，它也能平稳运行。
 
 >[!IMPORTANT]
-> 在版本 3.0.0 之前，eShopOnContainer 一直在使用 [Polly 库](http://www.thepollyproject.org/)通过[类型化客户端](./use-httpclientfactory-to-implement-resilient-http-requests.md)实现复原。
+> 在版本 3.0.0 之前，eShopOnContainer 一直在使用 [Polly 库](https://thepollyproject.azurewebsites.net/)通过[类型化客户端](./use-httpclientfactory-to-implement-resilient-http-requests.md)实现复原。
 >
 > 从版本 3.0.0 开始，HTTP 调用复原通过使用 [Linkerd 网格](https://linkerd.io/)来实现，该网格在 Kubernetes 群集内以透明且可配置的方式处理重试，而不必在代码中处理这些问题。
 >

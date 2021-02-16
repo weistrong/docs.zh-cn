@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息： Visual Basic 中的生存期
 title: 生存期
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - lifetime [Visual Basic], Visual Basic
 - lifetime [Visual Basic]
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
-ms.openlocfilehash: 67fe63eecd2aa0c134682708cdeddb21ba06db12
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 7c95358209c61b42862f4e995d02a97dfb6e8487
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087487"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471456"
 ---
 # <a name="lifetime-in-visual-basic"></a>Visual Basic 中的生存期
 
@@ -61,7 +62,7 @@ ms.locfileid: "91087487"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
 
  下面的示例使用 [Static](../../../language-reference/modifiers/static.md) 关键字声明一个变量。  (注意， `Dim` [Dim 语句](../../../language-reference/statements/dim-statement.md) 使用修饰符（如）时不需要关键字 `Static` 。 )   
   
@@ -86,7 +87,7 @@ ms.locfileid: "91087487"
 ## <a name="see-also"></a>请参阅
 
 - [共享](../../../language-reference/modifiers/shared.md)
-- [没](../../../language-reference/nothing.md)
+- [无](../../../language-reference/nothing.md)
 - [Declared Element Names](declared-element-names.md)
 - [References to Declared Elements](references-to-declared-elements.md)
 - [Visual Basic 中的范围](scope.md)
@@ -94,4 +95,4 @@ ms.locfileid: "91087487"
 - [变量](../variables/index.md)
 - [变量声明](../variables/variable-declaration.md)
 - [数据类型疑难解答](../data-types/troubleshooting-data-types.md)
-- [Static](../../../language-reference/modifiers/static.md)
+- [静态](../../../language-reference/modifiers/static.md)

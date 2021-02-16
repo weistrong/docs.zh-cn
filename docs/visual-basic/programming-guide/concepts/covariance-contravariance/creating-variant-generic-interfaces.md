@@ -1,27 +1,28 @@
 ---
+description: '了解有关以下内容的详细信息：创建变体泛型接口 (Visual Basic) '
 title: 创建变体泛型接口
 ms.date: 07/20/2015
 ms.assetid: d4037dd2-dfe9-4811-9150-93d4e8b20113
-ms.openlocfilehash: 884349159d2738d8481b217f9dab383483616f2b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 41da9040709ff053ba05cc7c44be989b7fa39c44
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400637"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485258"
 ---
 # <a name="creating-variant-generic-interfaces-visual-basic"></a>创建变体泛型接口 (Visual Basic)
 
-接口中的泛型类型参数可以声明为协变或逆变。 协变  允许接口方法具有与泛型类型参数定义的返回类型相比，派生程度更大的返回类型。 逆变  允许接口方法具有与泛型形参指定的实参类型相比，派生程度更小的实参类型。 具有协变或逆变泛型类型参数的泛型接口称为“变体”  。
+接口中的泛型类型参数可以声明为协变或逆变。 协变允许接口方法具有与泛型类型参数定义的返回类型相比，派生程度更大的返回类型。 逆变允许接口方法具有与泛型形参指定的实参类型相比，派生程度更小的实参类型。 具有协变或逆变泛型类型参数的泛型接口称为“变体”。
 
 > [!NOTE]
-> .NET Framework 4 引入了对多个现有泛型接口的变体支持。 有关 .NET Framework 中的变体接口的列表，请参阅[泛型接口中的变体（Visual Basic）](variance-in-generic-interfaces.md)。
+> .NET Framework 4 引入了对多个现有泛型接口的变体支持。 有关 .NET Framework 中的变体接口的列表，请参阅 [泛型接口中的变体 (Visual Basic) ](variance-in-generic-interfaces.md)。
 
 ## <a name="declaring-variant-generic-interfaces"></a>声明变体泛型接口
 
 可通过对泛型类型参数使用 `in` 和 `out` 关键字来声明变体泛型接口。
 
 > [!IMPORTANT]
-> `ByRef`Visual Basic 中的参数不能为变体。 值类型也不支持变体。
+> `ByRef` Visual Basic 中的参数不能为变体。 值类型也不支持变体。
 
 可以使用 `out` 关键字将泛型类型参数声明为协变。 协变类型必须满足以下条件：
 
@@ -35,7 +36,7 @@ ms.locfileid: "84400637"
     End Interface
     ```
 
-    此规则有一个例外。 如果具有用作方法参数的逆变泛型委托，则可将类型用作该委托的泛型类型参数。 下例中的类型 `R` 演示了此情形。 有关详细信息，请参阅[委托中的变体（Visual Basic）](variance-in-delegates.md)和[对 Func 和 Action 泛型委托使用变体（Visual Basic）](using-variance-for-func-and-action-generic-delegates.md)。
+    此规则有一个例外。 如果具有用作方法参数的逆变泛型委托，则可将类型用作该委托的泛型类型参数。 下例中的类型 `R` 演示了此情形。 有关详细信息，请参阅 [ (Visual Basic 的委托中的变体) ](variance-in-delegates.md) 和 [对 Func 和 Action 泛型委托使用变体 (Visual Basic) ](using-variance-for-func-and-action-generic-delegates.md)。
 
     ```vb
     Interface ICovariant(Of Out R)
@@ -230,7 +231,7 @@ End Sub
 
 在此示例中，没有指定 `pets.GetEnumerator` 方法如何在 `Cat` 和 `Dog` 之间选择。 这可能导致代码中出现问题。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [泛型接口中的变体 (Visual Basic)](variance-in-generic-interfaces.md)
 - [对 Func 和 Action 泛型委托使用变体 (Visual Basic)](using-variance-for-func-and-action-generic-delegates.md)
