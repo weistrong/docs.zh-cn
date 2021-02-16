@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：基本查询操作 (Visual Basic) '
 title: 基本查询操作
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - grouping data [LINQ in Visual Basic]
 - Select clause [LINQ in Visual Basic]
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
-ms.openlocfilehash: 6f4c58b15c33d8d2007069df88b2984e692df0a8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1f8fbda83c21fe9032415d96ff2d7e184083a839
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078367"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428683"
 ---
 # <a name="basic-query-operations-visual-basic"></a>基本查询操作 (Visual Basic)
 
-本主题简要介绍了在 Visual Basic 中 (LINQ) 表达式的语言集成查询，以及在查询中执行的一些典型操作。 有关详细信息，请参阅下列主题：  
+本主题简要介绍了如何在 Visual Basic 中 Language-Integrated 查询 (LINQ) 表达式，以及在查询中执行的一些典型操作。 有关详细信息，请参阅下列主题：  
   
  [Visual Basic 中的 LINQ 简介](../../language-features/linq/introduction-to-linq.md)  
   
@@ -38,7 +39,7 @@ ms.locfileid: "91078367"
   
  [!code-vb[VbLINQBasicOps#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#1)]  
   
- `From`子句指定数据源、 `customers` 和*范围变量* `cust` 。 范围变量类似于循环迭代变量，但在查询表达式中，不会发生实际迭代。 当执行查询时，通常使用 `For Each` 循环，范围变量充当对中每个后续元素的引用 `customers` 。 由于编译器可以推断 `cust` 的类型，因此无需显式指定它。 有关用和编写的查询的示例，但没有显式类型化，请参阅 [查询操作中的类型关系 (Visual Basic) ](type-relationships-in-query-operations.md)。  
+ `From`子句指定数据源、 `customers` 和 *范围变量* `cust` 。 范围变量类似于循环迭代变量，但在查询表达式中，不会发生实际迭代。 当执行查询时，通常使用 `For Each` 循环，范围变量充当对中每个后续元素的引用 `customers` 。 由于编译器可以推断 `cust` 的类型，因此无需显式指定它。 有关用和编写的查询的示例，但没有显式类型化，请参阅 [查询操作中的类型关系 (Visual Basic) ](type-relationships-in-query-operations.md)。  
   
  有关如何 `From` 在 Visual Basic 中使用子句的详细信息，请参阅 [from 子句](../../../language-reference/queries/from-clause.md)。  
   
@@ -92,7 +93,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
      [!code-vb[VbLINQBasicOps#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#6)]  
   
-     \- 或 -  
+     - 或 -  
   
 - 定义包含要包含在结果中的特定字段的命名类型，并在子句中创建和初始化该类型的实例 `Select` 。 仅在以下情况下使用此选项：必须在返回的集合之外使用各个结果，或者必须在方法调用中将它们作为参数传递。 `londonCusts5`以下示例中的类型为 NamePhone) 的 IEnumerable (。  
   

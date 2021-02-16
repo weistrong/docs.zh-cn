@@ -1,4 +1,5 @@
 ---
+description: 了解详细信息：演练：用 Visual Basic 创建 COM 对象
 title: 演练：创建 COM 对象
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - object creation [Visual Basic], COM objects
 - COM objects, walkthroughs
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
-ms.openlocfilehash: 90a21b70b45902a9f4fd559a97e777f26043fffb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 469466189e264253f3588a0a2735afe651bbd36f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075611"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427266"
 ---
 # <a name="walkthrough-creating-com-objects-with-visual-basic"></a>演练：使用 Visual Basic 创建 COM 对象
 
@@ -34,7 +35,7 @@ ms.locfileid: "91075611"
   
 3. 从 "**项目**" 菜单中选择 "**添加新项**"。 随即出现“添加新项”对话框。  
   
-4. 从 "**模板**" 列表中选择**COM 类**，然后单击 "**添加**"。 Visual Basic 添加一个新类，并为 COM 互操作配置新的项目。  
+4. 从 "**模板**" 列表中选择 **COM 类**，然后单击 "**添加**"。 Visual Basic 添加一个新类，并为 COM 互操作配置新的项目。  
   
 5. 向 COM 类中添加代码，如属性、方法和事件。  
   
@@ -58,7 +59,7 @@ ms.locfileid: "91075611"
   
 #### <a name="to-set-up-the-code-in-your-class-to-create-a-com-object"></a>在类中设置代码以创建 COM 对象  
   
-1. 在 **解决方案资源管理器**中，双击 " **Class1** " 以显示其代码。  
+1. 在 **解决方案资源管理器** 中，双击 " **Class1** " 以显示其代码。  
   
 2. 将类重命名为 `ComClass1`。  
   
@@ -66,7 +67,7 @@ ms.locfileid: "91075611"
   
      [!code-vb[VbVbalrInterop#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#2)]  
   
-4. 在“工具”**** 菜单上，单击“创建 Guid”****。 在“创建 GUID”**** 对话框中，单击“注册表格式”****，然后单击“复制”****。 单击 **“退出”**。  
+4. 在“工具”菜单上，单击“创建 Guid”。 在“创建 GUID”对话框中，单击“注册表格式”，然后单击“复制”。 单击“退出”  。  
   
 5. 用 GUID 替换的空字符串 `ClassId` ，同时删除前导大括号和尾随大括号。 例如，如果 Guidgen.exe 提供的 GUID 为， `"{2C8B0AEE-02C9-486e-B809-C780A11530FE}"` 则代码应如下所示。  
   

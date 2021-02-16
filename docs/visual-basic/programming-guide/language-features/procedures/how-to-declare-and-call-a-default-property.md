@@ -1,4 +1,5 @@
 ---
+description: 了解有关详细信息，请参阅如何：在 Visual Basic 中声明和调用默认属性
 title: 如何：声明和调用默认属性
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - default properties
 ms.assetid: 68b4026e-09ef-4613-808e-f6287494ff63
-ms.openlocfilehash: 21aa6e6a9bba23d767b9d1fac610eaac3265550d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2a0e82fe89bb89613996f613930ace1aa6e41b7f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087448"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472444"
 ---
 # <a name="how-to-declare-and-call-a-default-property-in-visual-basic"></a>如何：在 Visual Basic 中声明和调用默认属性
 
-*默认属性*是您的代码无需指定即可访问的类或结构属性。 当调用代码命名类或结构而不是属性，并且上下文允许访问属性时，Visual Basic 解析对该类或结构的默认属性（如果存在）的访问。  
+*默认属性* 是您的代码无需指定即可访问的类或结构属性。 当调用代码命名类或结构而不是属性，并且上下文允许访问属性时，Visual Basic 解析对该类或结构的默认属性（如果存在）的访问。  
   
  一个类或结构最多只能有一个默认属性。 不过，你可以重载一个默认属性，并拥有多个版本的属性。  
   

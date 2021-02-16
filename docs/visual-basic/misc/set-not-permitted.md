@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：不允许设置
 title: 不允许进行设置
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID387
 ms.assetid: 809f6768-7dd7-4632-b4dd-83856edfdb48
-ms.openlocfilehash: 061e611d5b35068f82a76e0ad642ad14679362c9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 891a34401266c095260e3cedcdb51784b9eed1af
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91060635"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485765"
 ---
 # <a name="set-not-permitted"></a>不允许进行设置
 
@@ -19,6 +20,6 @@ ms.locfileid: "91060635"
   
 1. 检查该属性并确定可以在什么情况下对其进行设置。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [管理项目和解决方案属性](/visualstudio/ide/managing-project-and-solution-properties)

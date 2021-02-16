@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：参数不能为空字符串
 title: 参数不能为空字符串
 ms.date: 07/20/2015
 ms.assetid: 17dd3385-8655-44f6-bf36-3ef570afb1cb
-ms.openlocfilehash: 636581afcd358baaaccea4d97ca405a55ddd1f70
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6d118b1ea247a68d030e273fb35da819d317a555
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087266"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472314"
 ---
 # <a name="argument-cannot-be-an-empty-string"></a>参数不能为空字符串
 

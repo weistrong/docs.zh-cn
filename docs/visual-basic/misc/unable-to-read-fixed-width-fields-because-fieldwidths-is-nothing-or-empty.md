@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：无法读取固定宽度字段，因为 FieldWidths 为 Nothing 或为空
 title: 无法读取固定宽度的字段，因为 FieldWidths 为 Nothing 或为空
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_FieldWidthsNothing
 ms.assetid: 623e0825-5640-4e47-8341-7eeec80fc145
-ms.openlocfilehash: d5c02e8f81353e3e797190b5d72d10b72168afb0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 505b88f4a88b2c062d3491b984f054db5a596379
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075650"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100478342"
 ---
 # <a name="unable-to-read-fixed-width-fields-because-fieldwidths-is-nothing-or-empty"></a>无法读取固定宽度的字段，因为 FieldWidths 为 Nothing 或为空
 

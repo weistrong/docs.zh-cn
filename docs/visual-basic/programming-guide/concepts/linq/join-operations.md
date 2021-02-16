@@ -1,13 +1,14 @@
 ---
+description: '了解详细信息：联接操作 (Visual Basic) '
 title: 联接运算
 ms.date: 07/20/2015
 ms.assetid: 39ab4854-ac84-4738-9d0b-3cb79be84db4
-ms.openlocfilehash: e69e060447c0103c3c47be0fb34cad90e88c4516
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d5566de71bf96d2af86329929a5ab6ab34e6d154
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077314"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100426772"
 ---
 # <a name="join-operations-visual-basic"></a>联接操作 (Visual Basic) 
 
@@ -25,7 +26,7 @@ ms.locfileid: "91077314"
   
 |方法名|描述|Visual Basic 查询表达式语法|更多信息|  
 |-----------------|-----------------|------------------------------------------|----------------------|  
-|联接|根据键选择器函数联接两个序列并提取值对。|`From x In …, y In … Where x.a = y.a`<br /><br /> \- 或 -<br /><br /> `Join … [As …]In … On …`|<xref:System.Linq.Enumerable.Join%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join%2A?displayProperty=nameWithType>|  
+|联接|根据键选择器函数联接两个序列并提取值对。|`From x In …, y In … Where x.a = y.a`<br /><br /> - 或 -<br /><br /> `Join … [As …]In … On …`|<xref:System.Linq.Enumerable.Join%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Join%2A?displayProperty=nameWithType>|  
 |GroupJoin|根据键选择器函数联接两个序列，并对每个元素的结果匹配项进行分组。|`Group Join … In … On …`|<xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=nameWithType>|  
   
 ## <a name="see-also"></a>请参阅

@@ -2,12 +2,12 @@
 title: 使用 IHttpClientFactory 实现复原 HTTP 请求
 description: 了解如何使用自 .NET Core 2.1 起可用的 IHttpClientFactory 来创建 `HttpClient` 实例，使其更轻松地在应用程序中使用。
 ms.date: 01/13/2021
-ms.openlocfilehash: 056a8982fe4331e7e680b33cf1f43785b48da7d6
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: fc5da088b1ed7573532dff101aff03d39a02a6f4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188993"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429307"
 ---
 # <a name="use-ihttpclientfactory-to-implement-resilient-http-requests"></a>使用 IHttpClientFactory 实现复原 HTTP 请求
 
@@ -27,7 +27,7 @@ ms.locfileid: "98188993"
 
 若要解决上述问题并使 `HttpClient` 实例可管理，.NET Core 2.1 引入了 <xref:System.Net.Http.IHttpClientFactory> 接口，该接口可用于在应用中通过依赖关系注入 (DI) 来配置和创建 `HttpClient` 实例。 它还提供基于 Polly 的中间件的扩展，以利用 HttpClient 中的委托处理程序。
 
-[Polly](http://www.thepollyproject.org/) 是瞬态故障处理库，它可以通过流畅且线程安全的方式使用一些预定义的策略，帮助开发人员为其应用程序增加弹性。
+[Polly](https://thepollyproject.azurewebsites.net/) 是瞬态故障处理库，它可以通过流畅且线程安全的方式使用一些预定义的策略，帮助开发人员为其应用程序增加弹性。
 
 ## <a name="benefits-of-using-ihttpclientfactory"></a>使用 IHttpClientFactory 的好处
 
@@ -197,7 +197,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
   <https://github.com/dotnet/extensions/tree/v3.1.8/src/HttpClientFactory>
 
 - **Polly（.NET 的恢复和暂时性故障处理库）**  
-  <http://www.thepollyproject.org/>
+  <https://thepollyproject.azurewebsites.net/>
   
 - 使用无依赖项注入的 IHttpClientFactory（GitHub 问题）   
   <https://github.com/dotnet/extensions/issues/1345>
