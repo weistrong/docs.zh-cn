@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：代码中的注释 (Visual Basic) '
 title: 代码中的注释
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - comments
 - code comments
 ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
-ms.openlocfilehash: b0077bdae3bad1d67c3d26e503d05f318982eb80
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 66e12a18c2532bb5b694affccb84153f01bcddd5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91099016"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461926"
 ---
 # <a name="comments-in-code-visual-basic"></a>代码中的注释 (Visual Basic)
 
@@ -42,7 +43,7 @@ ms.locfileid: "91099016"
 |||  
 |---|---|  
 |注释类型|注释说明|  
-|用途|描述过程的用途（而不是其实现方式）|  
+|目的|描述过程的用途（而不是其实现方式）|  
 |假设|列举每个外部变量、控件、打开的文件或过程访问的其他元素|  
 |效果|列举每个受影响的外部变量、控件、文件以及它的作用（仅在作用不明显时列举）|  
 |输入|指定自变量的用途|  
@@ -59,7 +60,7 @@ ms.locfileid: "91099016"
  您可以通过在 Visual Studio 中选择一个或多个代码行，然后选择 " **注释** " ("Visual Basic 注释" 按钮，为代码块添加或删除注释符号 ![ 。 ](./media/comments-in-code/visual-basic-comment-button.gif)) 和 **取消注释** (![ visual studio 中的 Visual Basic 取消注释按钮。 ](./media/comments-in-code/visual-basic-uncomment-button.gif) **编辑** 工具栏上的) 按钮。  
   
 > [!NOTE]
-> 也可以用在文本前加关键字 `REM` 的方式给代码添加注释。 但是， `'` 符号和注释的**Comment** / **取消**注释按钮更易于使用，并且需要的空间和内存更少。  
+> 也可以用在文本前加关键字 `REM` 的方式给代码添加注释。 但是， `'` 符号和注释的 / **取消** 注释按钮更易于使用，并且需要的空间和内存更少。  
   
 ## <a name="see-also"></a>请参阅
 

@@ -2,12 +2,12 @@
 title: 使用作为容器运行的数据库服务器
 description: 了解使用仅作为开发容器运行的数据库服务器的重要性。 从不用于生产。
 ms.date: 01/13/2021
-ms.openlocfilehash: 1292bf37e3baaeb6284f6fba15b4bc7c9c17b4a7
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: f24e9561c2d3d950fd017403ff91d961e134d11f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188733"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424302"
 ---
 # <a name="use-a-database-server-running-as-a-container"></a>使用作为容器运行的数据库服务器
 
@@ -15,7 +15,7 @@ ms.locfileid: "98188733"
 
 ## <a name="sql-server-running-as-a-container-with-a-microservice-related-database"></a>SQL Server 作为包含微服务相关数据库的容器运行
 
-在 eShopOnContainers 中，有一个名为 `sqldata` 的容器（如 [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) 文件中所定义），该容器运行 SQL Server for Linux 实例，包含需要该实例的所有微服务的 SQL Server 数据库。
+在 eShopOnContainers 中，有一个名为 `sqldata` 的容器（如 [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/docker-compose.yml) 文件中所定义），该容器运行 SQL Server for Linux 实例，包含需要该实例的所有微服务的 SQL Server 数据库。
 
 微服务中的一个关键点是每个微服务都拥有其相关数据，因此它应该具有自己的数据库。 但是，数据库可以位于任何位置。 在这种情况下，它们都位于同一容器中，以尽可能降低 Docker 内存需求。 请记住，这对于开发和测试是一个很好的解决方案，但对于生产而言却不是。
 

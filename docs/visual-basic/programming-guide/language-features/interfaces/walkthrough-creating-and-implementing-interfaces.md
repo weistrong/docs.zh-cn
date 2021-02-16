@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：演练：创建和实现 (Visual Basic 的接口) '
 title: 创建和实现接口
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - interface implementation [Visual Basic], walkthrough
 - interfaces [Visual Basic], creating
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
-ms.openlocfilehash: 89e8f91a04b25b84bc783d5c4f4b91cf12426f72
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 058011d311fdecba626a59228816f9bced319c97
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405062"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468416"
 ---
 # <a name="walkthrough-creating-and-implementing-interfaces-visual-basic"></a>演练：创建和实现接口 (Visual Basic)
 
@@ -31,9 +32,9 @@ ms.locfileid: "84405062"
   
 2. 通过单击 "**项目**" 菜单上的 "**添加模块**"，将新模块添加到项目。  
   
-3. 将新模块命名为 `Module1.vb` ，然后单击 "**添加**"。 新模块的代码随即显示。  
+3. 将新模块命名为 `Module1.vb` ，然后单击 " **添加**"。 新模块的代码随即显示。  
   
-4. `TestInterface` `Module1` 通过在 `Interface TestInterface` `Module` 和语句之间键入，然后 `End Module` 按 enter，在中定义名为的接口。 **代码编辑器**会缩进 `Interface` 关键字并添加 `End Interface` 语句来形成代码块。  
+4. `TestInterface` `Module1` 通过在 `Interface TestInterface` `Module` 和语句之间键入，然后 `End Module` 按 enter，在中定义名为的接口。 **代码编辑器** 会缩进 `Interface` 关键字并添加 `End Interface` 语句来形成代码块。  
   
 5. 通过在和语句之间放置以下代码，为接口定义属性、方法和事件 `Interface` `End Interface` ：  
   
@@ -49,7 +50,7 @@ ms.locfileid: "84405062"
   
      [!code-vb[VbVbalrOOP#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#99)]
   
-     如果在集成开发环境中工作，则按 ENTER 时，**代码编辑器**将提供一个匹配的 `End Class` 语句。  
+     如果在集成开发环境中工作，则按 ENTER 时， **代码编辑器** 将提供一个匹配的 `End Class` 语句。  
   
 2. 将以下 `Implements` 语句添加到 `ImplementationClass` ，命名类实现的接口：  
   
@@ -57,7 +58,7 @@ ms.locfileid: "84405062"
   
      当与类或结构顶部的其他项分开列出时， `Implements` 语句指示类或结构实现接口。  
   
-     如果你在集成开发环境中工作，则在按下 ENTER 键时，**代码编辑器**将实现所需的类成员， `TestInterface` 并且你可以跳过下一步。  
+     如果你在集成开发环境中工作，则在按下 ENTER 键时， **代码编辑器** 将实现所需的类成员， `TestInterface` 并且你可以跳过下一步。  
   
 3. 如果未在集成开发环境中工作，则必须实现该接口的所有成员 `MyInterface` 。 将以下代码添加到以 `ImplementationClass` 实现 `Event1` 、 `Method1` 和 `Prop1` ：  
   
@@ -83,7 +84,7 @@ ms.locfileid: "84405062"
   
 ### <a name="to-test-the-implementation-of-the-interface"></a>测试接口的实现
   
-1. 右键单击 "**解决方案资源管理器**中项目的启动窗体，然后单击"**查看代码**"。 编辑器显示您的启动窗体的类。 默认情况下，将调用启动窗体 `Form1` 。  
+1. 右键单击 " **解决方案资源管理器** 中项目的启动窗体，然后单击" **查看代码**"。 编辑器显示您的启动窗体的类。 默认情况下，将调用启动窗体 `Form1` 。  
   
 2. 将以下 `testInstance` 字段添加到 `Form1` 类：  
   
@@ -107,7 +108,7 @@ ms.locfileid: "84405062"
   
 6. `Test`按 F5 运行该过程。 将显示消息 "Prop1 已设置为 9"。 单击 "确定" 后，将显示消息 "Method1 的 X 参数是 5"。 单击 "确定"，将显示消息 "事件处理程序捕获到事件"。  
   
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Implements 语句](../../../language-reference/statements/implements-statement.md)
 - [接口](index.md)

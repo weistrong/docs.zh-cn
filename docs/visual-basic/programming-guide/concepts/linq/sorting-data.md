@@ -1,15 +1,16 @@
 ---
+description: '了解更多详细信息：对数据进行排序 (Visual Basic) '
 title: 对数据进行排序
 ms.date: 07/20/2015
 ms.assetid: 6f81065c-0c89-4bf3-a6d8-442273f8810e
-ms.openlocfilehash: a5ccff745995ed7f41731cf98fb7c49d3247d994
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 83e05b2af1b3421d004a87630cd5df43f2a21ae4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406789"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468546"
 ---
-# <a name="sorting-data-visual-basic"></a>对数据进行排序（Visual Basic）
+# <a name="sorting-data-visual-basic"></a>对数据进行排序 (Visual Basic) 
 
 排序操作基于一个或多个属性对序列的元素进行排序。 第一个排序条件对元素执行主要排序。 通过指定第二个排序条件，您可以对每个主要排序组内的元素进行排序。
 
@@ -21,7 +22,7 @@ ms.locfileid: "84406789"
 
 ## <a name="methods"></a>方法
 
-|方法名|说明|Visual Basic 查询表达式语法|详细信息|
+|方法名|描述|Visual Basic 查询表达式语法|更多信息|
 |-----------------|-----------------|------------------------------------------|----------------------|
 |OrderBy|按升序对值排序。|`Order By`|<xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderBy%2A?displayProperty=nameWithType>|
 |OrderByDescending|按降序对值排序。|`Order By … Descending`|<xref:System.Linq.Enumerable.OrderByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderByDescending%2A?displayProperty=nameWithType>|
@@ -147,7 +148,7 @@ MsgBox(sb.ToString())
 ' brown
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Linq>
 - [标准查询运算符概述 (Visual Basic)](standard-query-operators-overview.md)

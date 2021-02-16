@@ -1,13 +1,14 @@
 ---
+description: '了解有关以下内容的详细信息：使用反射访问属性 (Visual Basic) '
 title: 使用反射访问特性
 ms.date: 07/20/2015
 ms.assetid: c56e41da-5433-464f-a7bf-2a722e78bc9f
-ms.openlocfilehash: c0da5c4ae00eb2bc80b10f63f4bfd39763445e55
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e585bb427456f1187eaf8c39937eaa67651d9309
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400753"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437860"
 ---
 # <a name="accessing-attributes-by-using-reflection-visual-basic"></a>使用反射访问特性 (Visual Basic)
 
@@ -101,7 +102,7 @@ Class TestAuthorAttribute
 End Class
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>

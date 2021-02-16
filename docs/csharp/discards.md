@@ -3,12 +3,12 @@ title: 弃元 - C# 指南
 description: 介绍 C# 对弃元的支持（弃元是未赋值的可丢弃变量），以及弃元的使用方式。
 ms.technology: csharp-fundamentals
 ms.date: 09/22/2020
-ms.openlocfilehash: 7562da880ff3136dfc04ce4061bafa8ed55f5a23
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: 3c18fbb0bbb80c2c29c9f5d8334a5dd711b68cc5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99426913"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432629"
 ---
 # <a name="discards---c-guide"></a>弃元 - C# 指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "99426913"
 
 有关使用弃元析构用户定义的类型的详细信息，请参阅 [析构元组和其他类型](deconstruct.md#deconstructing-a-user-defined-type-with-discards)。
 
-## <a name="pattern-matching-with-switch"></a>使用 `switch 的模式匹配
+## <a name="pattern-matching-with-switch"></a>利用 `switch` 的模式匹配
 
 弃元模式可通过 [switch](language-reference/keywords/switch.md) 关键字用于模式匹配。 每个表达式始终匹配弃元模式。 （可将其与 [is](language-reference/keywords/is.md) 表达式一起使用。 不过，这种情况很少出现，因为可以删除弃元，但不会更改其含义。）
 

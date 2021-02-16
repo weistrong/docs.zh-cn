@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：属性过程 (Visual Basic) '
 title: Property 过程
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,33 +14,33 @@ helpviewer_keywords:
 - property procedures
 - Get statement [Visual Basic], property procedures
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
-ms.openlocfilehash: cb5b0e12512e476b7c96bbfb19f8e4f470f6b498
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 55588278cdb8423a4f13a4e7ecc02f7ea692a618
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363728"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466583"
 ---
 # <a name="property-procedures-visual-basic"></a>Property 过程 (Visual Basic)
 
-属性过程是一系列 Visual Basic 语句，这些语句操作模块、类或结构上的自定义属性。 属性过程也称为*属性访问器*。
+属性过程是一系列 Visual Basic 语句，这些语句操作模块、类或结构上的自定义属性。 属性过程也称为 *属性访问器*。
 
 Visual Basic 为以下属性过程提供：
 
 - `Get`过程返回属性的值。 当您访问表达式中的属性时，将调用它。
 - `Set`过程将属性设置为一个值，包括对象引用。 向属性赋值时，将调用此方法。
 
-通常使用和语句来成对定义属性过程 `Get` `Set` ，但是，如果属性是只读的（[Get 语句](../../../language-reference/statements/get-statement.md)）或只写的（[Set 语句](../../../language-reference/statements/set-statement.md)），则可以单独定义任何一个过程。
+通常使用和语句来成对定义属性过程 `Get` `Set` ，但是，如果属性是只读的 ([Get 语句](../../../language-reference/statements/get-statement.md)) 或只写 ([Set 语句](../../../language-reference/statements/set-statement.md)) ，则可以单独定义任何过程。
 
 `Get` `Set` 使用自动实现的属性时，可以忽略和过程。 有关详细信息，请参阅[自动实现的属性](./auto-implemented-properties.md)。
 
 可以在类、结构和模块中定义属性。 `Public`默认情况下，属性为，这意味着您可以从应用程序中可访问该属性的容器的任何位置调用它们。
 
-有关属性和变量的比较，请参阅[Visual Basic 中属性和变量之间的差异](differences-between-properties-and-variables.md)。
+有关属性和变量的比较，请参阅 [Visual Basic 中属性和变量之间的差异](differences-between-properties-and-variables.md)。
 
 ## <a name="declaration-syntax"></a>声明语法
 
-属性本身由[属性语句](../../../language-reference/statements/property-statement.md)和语句中包含的代码块定义 `End Property` 。 在此块中，每个属性过程显示为包含在声明语句（ `Get` 或 `Set` ）和匹配声明中的内部块 `End` 。
+属性本身由 [属性语句](../../../language-reference/statements/property-statement.md) 和语句中包含的代码块定义 `End Property` 。 在此块中，每个属性过程都显示为包含在声明语句中的内部块 (`Get` 或 `Set`) 和匹配 `End` 声明。
 
 声明属性及其过程的语法如下所示：
 
@@ -60,7 +61,7 @@ End Property
 [Default] [Modifiers] Property PropertyName [(ParameterList)] [As DataType]
 ```
 
-`Modifiers`可以指定有关重载、重写、共享和隐藏的访问级别和信息，以及属性是只读还是只写。 `AccessLevel` `Get` 或过程的可以是 `Set` 比为属性本身指定的访问级别更严格的任何级别。 有关详细信息，请参阅[Property 语句](../../../language-reference/statements/property-statement.md)。
+`Modifiers`可以指定有关重载、重写、共享和隐藏的访问级别和信息，以及属性是只读还是只写。 `AccessLevel` `Get` 或过程的可以是 `Set` 比为属性本身指定的访问级别更严格的任何级别。 有关详细信息，请参阅 [Property 语句](../../../language-reference/statements/property-statement.md)。
 
 ### <a name="data-type"></a>数据类型
 
@@ -68,11 +69,11 @@ End Property
 
 ### <a name="access-level"></a>访问级别
 
-但是，您可以为属性定义主体访问级别，并在它的某个属性过程中进一步限制访问级别。 例如，可以定义 `Public` 属性，然后定义 `Private Set` 过程。 此 `Get` 过程仍然有效 `Public` 。 只能更改某个属性过程的访问级别，并且只能使其比主体访问级别更严格。 有关详细信息，请参阅[如何：声明具有混合访问级别的属性](how-to-declare-a-property-with-mixed-access-levels.md)。
+但是，您可以为属性定义主体访问级别，并在它的某个属性过程中进一步限制访问级别。 例如，可以定义 `Public` 属性，然后定义 `Private Set` 过程。 此 `Get` 过程仍然有效 `Public` 。 只能更改某个属性过程的访问级别，并且只能使其比主体访问级别更严格。 有关详细信息，请参阅 [如何：声明具有混合访问级别的属性](how-to-declare-a-property-with-mixed-access-levels.md)。
 
 ## <a name="parameter-declaration"></a>参数声明
 
-声明每个参数的方式与处理[Sub 过程](sub-procedures.md)的方法相同，只不过传递机制必须是 `ByVal` 。
+声明每个参数的方式与处理 [Sub 过程](sub-procedures.md)的方法相同，只不过传递机制必须是 `ByVal` 。
 
 参数列表中每个参数的语法如下所示：
 
@@ -119,7 +120,7 @@ Do While (propertyname[(argumentlist)] > expression)
 
 [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [过程](index.md)
 - [Function 过程](function-procedures.md)

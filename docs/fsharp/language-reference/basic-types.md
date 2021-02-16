@@ -2,12 +2,12 @@
 title: 基本类型
 description: '了解 F # 语言中使用的基本基本类型。'
 ms.date: 08/15/2020
-ms.openlocfilehash: 659ac8424c62985affcca1741e1b2a74c9c3ee8d
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 2bfc9ba9370cb8ba1fcc1d42369c2551cbb57623
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557693"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456908"
 ---
 # <a name="basic-types"></a>基本类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "88557693"
 |`unit`|不适用|指示缺少实际值。 该类型仅有一个表示的形式值 `()` 。 Unit 值通常用作 `()` 占位符，其中需要值，但没有实际值可用或有意义。|`()`|
 
 > [!NOTE]
-> 可以使用 [bigint](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-bigint.html) 类型对64位整数类型的整数进行太大的计算。 `bigint` 不被视为基本类型;它是的缩写 `System.Numerics.BigInteger` 。
+> 您可以使用类型对64位整数类型的整数进行太大的计算 `bigint` 。 `bigint` 不被视为基本类型;它是的缩写 `System.Numerics.BigInteger` 。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -1,4 +1,5 @@
 ---
+description: 了解更多相关信息： Visual Basic 中继承的事件处理程序疑难解答
 title: 继承的事件处理程序疑难解答
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - event handling, troubleshooting
 - event handlers, troubleshooting
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
-ms.openlocfilehash: d228e916e45054bc088aa633afd9d591e592210d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b489b6c85510bb942b403a508b6bbe232c3e1853
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057996"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424471"
 ---
 # <a name="troubleshooting-inherited-event-handlers-in-visual-basic"></a>有关 Visual Basic 中继承的事件处理程序的疑难解答
 
