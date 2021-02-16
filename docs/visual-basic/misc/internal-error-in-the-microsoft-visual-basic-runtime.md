@@ -1,15 +1,16 @@
 ---
+description: 了解有关以下内容的详细信息： Microsoft Visual Basic 运行时中的内部错误
 title: Microsoft Visual Basic 运行时的内部错误。
 ms.date: 07/20/2015
 f1_keywords:
 - vbrInternalError
 ms.assetid: 1a106880-dec8-4e75-a935-de3ec2096b25
-ms.openlocfilehash: a4f600fd8d9370d3ba362d22b2bd5df6ae6f7b77
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 82eb900605b51c76904c99c5c484da376c83b08c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090711"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462823"
 ---
 # <a name="internal-error-in-the-microsoft-visual-basic-runtime"></a>Microsoft Visual Basic 运行时的内部错误。
 

@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：指定的事件日志在此计算机上不存在
 title: 指定事件日志在此计算机上不存在
 ms.date: 07/20/2015
 ms.assetid: 974a23e7-37ea-4de2-b282-4cf46600694f
-ms.openlocfilehash: 1dbe2554238809e80599e88ba2d9c3ecf548488b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ef3293ad76584ca73bd41a9017551db7f5065d34
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059569"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485752"
 ---
 # <a name="specified-event-log-does-not-exist-on-this-machine"></a>指定事件日志在此计算机上不存在
 

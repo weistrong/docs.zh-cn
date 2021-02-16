@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：扩大和收缩转换 (Visual Basic) '
 title: Widening and Narrowing Conversions
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -19,18 +20,18 @@ helpviewer_keywords:
 - data type conversion [Visual Basic], exceptions during conversion
 - conversions [Visual Basic], widening
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
-ms.openlocfilehash: c0e10f5593ce5c81002233516444e415571541f3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2ccd7d51b811aaf0f3e29dc0dc1730dffad2106b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058529"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468429"
 ---
 # <a name="widening-and-narrowing-conversions-visual-basic"></a>扩大转换和收缩转换 (Visual Basic)
 
 类型转换的一个重要注意事项是转换的结果是否在目标数据类型的范围内。  
   
- *扩大转换*将值更改为数据类型，可允许原始数据的任何可能值。  扩大转换保留源值，但可以更改其表示形式。 如果从整型转换为或从整型转换为，则会发生这种情况 `Decimal` `Char` `String` 。  
+ *扩大转换* 将值更改为数据类型，可允许原始数据的任何可能值。  扩大转换保留源值，但可以更改其表示形式。 如果从整型转换为或从整型转换为，则会发生这种情况 `Decimal` `Char` `String` 。  
   
  *“收缩转换”* 将值更改为可能无法保存某些可能值的数据类型。 例如，当将小数值转换为整型时，将对其进行舍入，并且将转换为的数值类型 `Boolean` 减小为 `True` 或 `False` 。  
   
@@ -44,20 +45,20 @@ ms.locfileid: "91058529"
 |[Byte](../../../language-reference/data-types/byte-data-type.md)|`Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, `Double`|  
 |[Short](../../../language-reference/data-types/short-data-type.md)|`Short`, `Integer`, `Long`, `Decimal`, `Single`, `Double`|  
 |[UShort](../../../language-reference/data-types/ushort-data-type.md)|`UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, `Double`|  
-|[整数](../../../language-reference/data-types/integer-data-type.md)|`Integer`、 `Long` 、 `Decimal` 、 `Single` 、 `Double` <sup>2</sup>|  
+|[Integer](../../../language-reference/data-types/integer-data-type.md)|`Integer`、 `Long` 、 `Decimal` 、 `Single` 、 `Double` <sup>2</sup>|  
 |[UInteger](../../../language-reference/data-types/uinteger-data-type.md)|`UInteger`、 `Long` 、 `ULong` 、 `Decimal` 、 `Single` 、 `Double` <sup>2</sup>|  
 |[Long](../../../language-reference/data-types/long-data-type.md)|`Long`， `Decimal` ， `Single` ， `Double` <sup>2</sup>|  
 |[ULong](../../../language-reference/data-types/ulong-data-type.md)|`ULong`， `Decimal` ， `Single` ， `Double` <sup>2</sup>|  
-|[小数](../../../language-reference/data-types/decimal-data-type.md)|`Decimal`， `Single` ， `Double` <sup>2</sup>|  
+|十进制 |`Decimal`， `Single` ， `Double` <sup>2</sup>|  
 |[单精度](../../../language-reference/data-types/single-data-type.md)|`Single`, `Double`|  
 |[双精度](../../../language-reference/data-types/double-data-type.md)|`Double`|  
 |枚举类型 ([枚举](../../../language-reference/statements/enum-statement.md)) |它的基础整型类型和基础类型扩展到的任何类型。|  
 |[Char](../../../language-reference/data-types/char-data-type.md)|`Char`, `String`|  
 |`Char` 数组|`Char` 组成 `String`|  
-|任何类型|[Object](../../../language-reference/data-types/object-data-type.md)|  
+|任何类型|[对象](../../../language-reference/data-types/object-data-type.md)|  
 |任何派生类型|它派生自的任何基类型 <sup>3</sup>。|  
 |任何类型|它所实现的任何接口。|  
-|[没](../../../language-reference/nothing.md)|任何数据类型或对象类型。|  
+|[无](../../../language-reference/nothing.md)|任何数据类型或对象类型。|  
   
  <sup>1</sup> 根据定义，每个数据类型扩大到自身。  
   

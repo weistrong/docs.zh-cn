@@ -1,4 +1,5 @@
 ---
+description: '了解更多相关信息：字符串和其他类型之间的转换 (Visual Basic) '
 title: 字符串和其他类型之间的转换
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - type conversion [Visual Basic], string
 - regional options
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
-ms.openlocfilehash: 823931f7d6beb8218e8b99d4a8d45716b7214304
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c0f7f7637d173d039d58b2516fba41ae55b990ac
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077145"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477211"
 ---
 # <a name="conversions-between-strings-and-other-types-visual-basic"></a>字符串和其他类型之间的转换 (Visual Basic)
 
@@ -26,7 +27,7 @@ ms.locfileid: "91077145"
   
 ## <a name="conversion-of-numbers-to-strings"></a>将数字转换为字符串  
 
- 您可以使用 `Format` 函数将数字转换为带格式的字符串，该字符串不仅可以包含适当的数字，还可以包含格式符号 `$` ，如) 、千位分隔符或 *数字分组 (符号* （例如 `,`) ）和小数点分隔符 (（如) ） (`.` 。 `Format`根据 Windows**控制面板**中指定的**区域选项**设置自动使用适当的符号。  
+ 您可以使用 `Format` 函数将数字转换为带格式的字符串，该字符串不仅可以包含适当的数字，还可以包含格式符号 `$` ，如) 、千位分隔符或 *数字分组 (符号* （例如 `,`) ）和小数点分隔符 (（如) ） (`.` 。 `Format`根据 Windows **控制面板** 中指定的 **区域选项** 设置自动使用适当的符号。  
   
  请注意，串联 (`&`) 运算符可以隐式将数字转换为字符串，如下面的示例所示。  
   
@@ -41,7 +42,7 @@ Str = "The total count is " & count
   
  `Val("   14   1.825 miles")`  
   
- 当 Visual Basic 将字符串转换为数值时，它将使用 Windows**控制面板**中指定的 "**区域选项**" 设置来解释千位分隔符、小数点分隔符和货币符号。 这意味着，转换可能会在一个设置中失败，而不是另一个设置。 例如， `"$14.20"` 在英语 (美国) 区域设置，而不是任何法语区域设置。  
+ 当 Visual Basic 将字符串转换为数值时，它将使用 Windows **控制面板** 中指定的 "**区域选项**" 设置来解释千位分隔符、小数点分隔符和货币符号。 这意味着，转换可能会在一个设置中失败，而不是另一个设置。 例如， `"$14.20"` 在英语 (美国) 区域设置，而不是任何法语区域设置。  
   
 ## <a name="see-also"></a>请参阅
 

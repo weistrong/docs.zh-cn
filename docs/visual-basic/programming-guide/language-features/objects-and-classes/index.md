@@ -1,20 +1,21 @@
 ---
+description: 详细了解：中的对象和类 Visual Basic
 title: 对象和类
 ms.date: 05/26/2020
 helpviewer_keywords:
 - classes [Visual Basic]
 - objects [Visual Basic]
 ms.assetid: c68c5752-1006-46e1-975a-6717b62a42fc
-ms.openlocfilehash: 9e3cf262ef617a1ae5ee92bcc3d6fd5c691602f9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9cefcc117c9dd4ac42940f342dbf75d8ddb4f41d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600408"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462719"
 ---
 # <a name="objects-and-classes-in-visual-basic"></a>Visual Basic 中的对象和类
 
-*对象*结合了可以视为一个单元的代码和数据。 对象可以是应用程序的一部分（如控件或窗体）， 也可以是整个应用程序。
+*对象* 结合了可以视为一个单元的代码和数据。 对象可以是应用程序的一部分（如控件或窗体）， 也可以是整个应用程序。
 
 在 Visual Basic 中创建应用程序时，会不断地处理对象。 您可以使用 Visual Basic 提供的对象，例如控件、窗体和数据访问对象。 你还可以使用 Visual Basic 应用程序中的其他应用程序的对象。 甚至可以创建你自己的对象，并为它们定义附加属性和方法。 对象类似于程序的预制构建基块，可方便你编写一次代码片段，然后不断重用它。
 
@@ -22,13 +23,13 @@ ms.locfileid: "84600408"
 
 ## <a name="objects-and-classes"></a>对象和类
 
-Visual Basic 中的每个对象都由一个*类*定义。 类描述了对象的变量、属性、过程和事件。 对象是类实例；定义类之后，便可以根据需要创建任意多个对象。
+Visual Basic 中的每个对象都由一个 *类* 定义。 类描述了对象的变量、属性、过程和事件。 对象是类实例；定义类之后，便可以根据需要创建任意多个对象。
 
 想想饼干切模和饼干，即可理解对象与其类之间的关系。 饼干切模是类。 它定义了每个饼干的特征，例如大小和形状。 类用于创建对象。 对象是饼干。
 
 必须先创建对象，然后才能访问其成员，但可以访问的成员除外， [`Shared`](../../../language-reference/modifiers/shared.md) 无需使用类的对象。
 
-### <a name="create-an-object-from-a-class"></a>从类创建对象
+### <a name="create-an-object-from-a-class"></a>基于类创建对象
 
 1. 确定要从哪个类创建对象，或定义自己的类。 例如：
 
@@ -57,7 +58,7 @@ Visual Basic 中的每个对象都由一个*类*定义。 类描述了对象的�
    ```
 
 > [!NOTE]
-> 应尽可能将变量声明为要向其分配的类类型。 这称为*早期绑定*。 如果在编译时不知道类类型，可将变量声明为 [Object 数据类型](../../../language-reference/data-types/object-data-type.md)，从而调用晚期绑定**。 不过，晚期绑定可能会降低性能，并限制对运行时对象成员的访问。 有关详细信息，请参阅[对象变量声明](../variables/object-variable-declaration.md)。
+> 应尽可能将变量声明为要向其分配的类类型。 这称为 *早期绑定*。 如果在编译时不知道类类型，可将变量声明为 [Object 数据类型](../../../language-reference/data-types/object-data-type.md)，从而调用晚期绑定。 不过，晚期绑定可能会降低性能，并限制对运行时对象成员的访问。 有关详细信息，请参阅[对象变量声明](../variables/object-variable-declaration.md)。
 
 ### <a name="multiple-instances"></a>多个实例
 
@@ -65,7 +66,7 @@ Visual Basic 中的每个对象都由一个*类*定义。 类描述了对象的�
 
 ## <a name="object-members"></a>对象成员
 
-对象是应用程序元素，表示类*实例*。 字段、属性、方法和事件是对象的构建基块，构成了它的*成员*。
+对象是应用程序元素，表示类 *实例*。 字段、属性、方法和事件是对象的构建基块，构成了它的 *成员*。
 
 ### <a name="member-access"></a>成员访问
 
@@ -81,7 +82,7 @@ warningLabel.Text = "Data not saved"
 
 ### <a name="fields-and-properties"></a>字段和属性
 
-*字段*和*属性*表示对象中存储的信息。 可以使用赋值语句检索和设置它们的值，方法与在过程中检索和设置局部变量的方法一样。 下面的示例检索 <xref:System.Windows.Forms.Control.Width%2A> 属性，并设置 <xref:System.Windows.Forms.Label> 对象的 <xref:System.Windows.Forms.Control.ForeColor%2A> 属性。
+*字段* 和 *属性* 表示对象中存储的信息。 可以使用赋值语句检索和设置它们的值，方法与在过程中检索和设置局部变量的方法一样。 下面的示例检索 <xref:System.Windows.Forms.Control.Width%2A> 属性，并设置 <xref:System.Windows.Forms.Label> 对象的 <xref:System.Windows.Forms.Control.ForeColor%2A> 属性。
 
 ```vb
 Dim warningWidth As Integer = warningLabel.Width
@@ -126,21 +127,21 @@ Dim safetyTimer As New System.Windows.Forms.Timer
 safetyTimer.Start()
 ```
 
-请注意，方法只是对象公开的*过程*。
+请注意，方法只是对象公开的 *过程*。
 
 有关详细信息，请参阅[过程](../procedures/index.md)。
 
 ### <a name="events"></a>事件
 
-事件是由对象识别的操作（如单击鼠标或按某个键），可以编写代码来响应这些操作。 事件可能是由用户操作或程序代码生成，也可能是由系统生成。 提示事件发生的代码可以说是负责*引发*事件，而响应事件的代码则可以说是负责*处理*事件。
+事件是由对象识别的操作（如单击鼠标或按某个键），可以编写代码来响应这些操作。 事件可能是由用户操作或程序代码生成，也可能是由系统生成。 提示事件发生的代码可以说是负责 *引发* 事件，而响应事件的代码则可以说是负责 *处理* 事件。
 
 还可以开发你自己的自定义事件，以便由对象引发并由其他对象处理。 有关详细信息，请参阅[事件](../events/index.md)。
 
 ### <a name="instance-members-and-shared-members"></a>实例成员和共享成员
 
-创建类对象时，生成的是相应类实例。 未使用 [Shared](../../../language-reference/modifiers/shared.md) 关键字声明的成员是*实例成员*，严格属于特定实例。 一个实例中的实例成员与同一类的另一实例中的同一成员互不影响。 例如，一个实例成员变量可以在不同的实例中有不同的值。
+创建类对象时，生成的是相应类实例。 未使用 [Shared](../../../language-reference/modifiers/shared.md) 关键字声明的成员是 *实例成员*，严格属于特定实例。 一个实例中的实例成员与同一类的另一实例中的同一成员互不影响。 例如，一个实例成员变量可以在不同的实例中有不同的值。
 
-使用 `Shared` 关键字声明的成员是*共享成员*，属于整个类，而不属于任何特定实例。 无论创建多少类实例，或者即便未创建实例，共享成员也都只有一个。 例如，共享成员变量只有一个值，可供访问相应类的所有代码使用。
+使用 `Shared` 关键字声明的成员是 *共享成员*，属于整个类，而不属于任何特定实例。 无论创建多少类实例，或者即便未创建实例，共享成员也都只有一个。 例如，共享成员变量只有一个值，可供访问相应类的所有代码使用。
 
 #### <a name="accessing-non-shared-members"></a>访问非共享成员
 
@@ -150,7 +151,7 @@ safetyTimer.Start()
    Dim secondForm As New System.Windows.Forms.Form
    ```
 
-2. 在访问成员的语句中，使用*成员访问运算符*（ `.` ）和成员名称后面的对象变量名称。
+2. 在访问成员的语句中，使用 *成员访问运算符* 的对象变量名称 (`.`) ，然后单击成员名称。
 
    ```vb
    secondForm.Show()
@@ -158,7 +159,7 @@ safetyTimer.Start()
 
 #### <a name="accessing-shared-members"></a>访问共享成员
 
-- 在类名称后跟*成员访问运算符*（ `.` ）和成员名称。 应始终通过类名直接访问对象的 `Shared` 成员。
+- 在类名称后跟 *成员访问运算符* (`.`) ，然后是成员名称。 应始终通过类名直接访问对象的 `Shared` 成员。
 
    ```vb
    Console.WriteLine("This computer is called " & Environment.MachineName)
@@ -168,7 +169,7 @@ safetyTimer.Start()
 
 ### <a name="differences-between-classes-and-modules"></a>类和模块的区别
 
-类和模块的主要区别是，类可以实例化成对象，而标准模块则不能。 因为只有一个标准模块数据副本，所以当程序的一部分更改标准模块中的公共变量时，如果程序的其他任何部分读取了此变量，也会获得相同的值。 相反，每个实例化的对象都有各自的对象数据。 还有一个区别是，与标准模块不同，类可以实现接口。 如果用[MustInherit](../../../language-reference/modifiers/mustinherit.md)修饰符标记了某个类，则不能直接对其进行实例化。 但是，它仍与模块不同，因为在模块无法继承时可以继承。
+类和模块的主要区别是，类可以实例化成对象，而标准模块则不能。 因为只有一个标准模块数据副本，所以当程序的一部分更改标准模块中的公共变量时，如果程序的其他任何部分读取了此变量，也会获得相同的值。 相反，每个实例化的对象都有各自的对象数据。 还有一个区别是，与标准模块不同，类可以实现接口。 如果用 [MustInherit](../../../language-reference/modifiers/mustinherit.md) 修饰符标记了某个类，则不能直接对其进行实例化。 但是，它仍与模块不同，因为在模块无法继承时可以继承。
 
 > [!NOTE]
 > 将 `Shared` 修饰符应用于类成员时，它是与类本身相关联，而不是与特定的类实例相关联。 类成员是使用类名直接访问，方法与访问模块成员一样。
@@ -201,11 +202,11 @@ End Sub
 
 ## <a name="relationships-among-objects"></a>对象之间的关系
 
-对象可通过多种方式彼此关联。 两种主要关系是*分层*和*包含*关系。
+对象可通过多种方式彼此关联。 两种主要关系是 *分层* 和 *包含* 关系。
 
 ### <a name="hierarchical-relationship"></a>分层关系
 
-如果类派生自更为基础的类，可以认为构成了*分层关系*。 当描述更为通用的类的子类型项时，类层次结构就很有用。
+如果类派生自更为基础的类，可以认为构成了 *分层关系*。 当描述更为通用的类的子类型项时，类层次结构就很有用。
 
 在下面的示例中，假设要定义一种特殊类型的 <xref:System.Windows.Forms.Button>，类似于普通的 <xref:System.Windows.Forms.Button>，不同之处在于公开了用于保留前景色和背景色的方法。
 
@@ -250,11 +251,11 @@ End Sub
 
 ### <a name="containment-relationship"></a>包含关系
 
-另一种对象关联方式是使用*包含关系*。 容器对象在逻辑上封装其他对象。 例如，<xref:System.OperatingSystem> 对象在逻辑上包含一个通过其 <xref:System.OperatingSystem.Version%2A> 属性返回的 <xref:System.Version> 对象。 请注意，容器对象实际上并不包含其他任何对象。
+另一种对象关联方式是使用 *包含关系*。 容器对象在逻辑上封装其他对象。 例如，<xref:System.OperatingSystem> 对象在逻辑上包含一个通过其 <xref:System.OperatingSystem.Version%2A> 属性返回的 <xref:System.Version> 对象。 请注意，容器对象实际上并不包含其他任何对象。
 
 #### <a name="collections"></a>集合
 
-一种特殊类型的对象包含关系用*集合*来表示。 集合是一组可以枚举的类似对象。 Visual Basic 支持中的特定语法[.。。](../../../language-reference/statements/for-each-next-statement.md)允许您循环访问集合中的项的下一条语句。 此外，借助集合，通常还可以使用 <xref:Microsoft.VisualBasic.Collection.Item%2A> 根据索引检索元素，或通过将元素与唯一字符串相关联进行检索。 集合比数组更易于使用，因为无需使用索引，即可添加或删除项。 鉴于它的易用性，集合通常用于存储窗体和控件。
+一种特殊类型的对象包含关系用 *集合* 来表示。 集合是一组可以枚举的类似对象。 Visual Basic 支持中的特定语法 [.。。](../../../language-reference/statements/for-each-next-statement.md) 允许您循环访问集合中的项的下一条语句。 此外，借助集合，通常还可以使用 <xref:Microsoft.VisualBasic.Collection.Item%2A> 根据索引检索元素，或通过将元素与唯一字符串相关联进行检索。 集合比数组更易于使用，因为无需使用索引，即可添加或删除项。 鉴于它的易用性，集合通常用于存储窗体和控件。
 
 ## <a name="related-topics"></a>相关主题
 

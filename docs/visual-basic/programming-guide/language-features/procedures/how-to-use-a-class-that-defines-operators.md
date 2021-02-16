@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：使用定义运算符的类 (Visual Basic) '
 title: 如何：使用定义运算符的类
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
-ms.openlocfilehash: 083916a420bf4ad182536363ea46448f6b4c1da5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4bf5321fbf1868ad0214d0f4781df30dc8f92ac9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071347"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455738"
 ---
 # <a name="how-to-use-a-class-that-defines-operators-visual-basic"></a>如何：使用定义运算符的类 (Visual Basic)
 
@@ -26,7 +27,7 @@ ms.locfileid: "91071347"
   
 ## <a name="example"></a>示例  
 
- 下面的示例访问 SQL 结构，该结构 <xref:System.Data.SqlTypes.SqlString> 定义了在 sql 字符串和 Visual Basic 字符串之间的两个方向 ([CType 函数](../../../language-reference/functions/ctype-function.md)) 的转换运算符。 使用 `CType(` *sql 字符串表达式*，将 `String)` sql 字符串转换为 Visual Basic 字符串，将 `CType(` *Visual Basic 字符串表达式*转换为 <xref:System.Data.SqlTypes.SqlString> `)` 其他方向。  
+ 下面的示例访问 SQL 结构，该结构 <xref:System.Data.SqlTypes.SqlString> 定义了在 sql 字符串和 Visual Basic 字符串之间的两个方向 ([CType 函数](../../../language-reference/functions/ctype-function.md)) 的转换运算符。 使用 `CType(` *sql 字符串表达式*，将 `String)` sql 字符串转换为 Visual Basic 字符串，将 `CType(` *Visual Basic 字符串表达式* 转换为 <xref:System.Data.SqlTypes.SqlString> `)` 其他方向。  
   
  [!code-vb[VbVbcnProcedures#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#30)]  
   

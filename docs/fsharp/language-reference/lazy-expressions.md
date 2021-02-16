@@ -2,12 +2,12 @@
 title: 延迟表达式
 description: '了解 F # 惰性表达式如何提高应用程序和库的性能。'
 ms.date: 08/15/2020
-ms.openlocfilehash: 71c466ca3b74c9e92b81a3c268e07438ec944905
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 0b8496467295ce6793f80c341af88bb1819f4a47
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558083"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425498"
 ---
 # <a name="lazy-expressions"></a>延迟表达式
 
@@ -21,7 +21,7 @@ let identifier = lazy ( expression )
 
 ## <a name="remarks"></a>备注
 
-在前面的语法中， *expression* 是只在需要结果时计算的代码，而 *标识符* 是存储结果的值。 值的类型为 [`Lazy<'T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-lazy-1-0.html) ，其中用于的实际类型 `'T` 由表达式的结果确定。
+在前面的语法中， *expression* 是只在需要结果时计算的代码，而 *标识符* 是存储结果的值。 值的类型为 `Lazy<'T>` ，其中用于的实际类型 `'T` 由表达式的结果确定。
 
 利用迟缓表达式，你可以通过将表达式的执行限制为仅需要结果的情况来提高性能。
 

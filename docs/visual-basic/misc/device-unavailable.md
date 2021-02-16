@@ -1,15 +1,16 @@
 ---
+description: 了解详细信息：设备不可用
 title: 设备不可用
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID68
 ms.assetid: 9a89beda-140e-4b32-8d0a-2dc598ef279a
-ms.openlocfilehash: 251df96d9e3c461f108b7ebb08ddfca576e0ad7f
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 78148eaa4b5075e53b2b3efab4763250190a8df7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91079043"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463003"
 ---
 # <a name="device-unavailable"></a>设备不可用
 

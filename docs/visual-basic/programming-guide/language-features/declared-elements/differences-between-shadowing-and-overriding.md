@@ -1,16 +1,17 @@
 ---
+description: '了解详细信息：隐藏和重写 (Visual Basic 之间的差异) '
 title: 隐藏和重写之间的差异
 ms.date: 07/20/2015
 helpviewer_keywords:
 - shadowing, vs. overriding
 - overriding, vs. shadowing
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
-ms.openlocfilehash: 98c073f8fa403416b2425431ff4334b990726f44
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 94e661c83b95448e7a78931b81c87b6e974059ed
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095442"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485193"
 ---
 # <a name="differences-between-shadowing-and-overriding-visual-basic"></a>隐藏和重写之间的差异 (Visual Basic)
 
@@ -25,13 +26,13 @@ ms.locfileid: "91095442"
 ||||  
 |---|---|---|  
 |比较点|阴影操作|替代|  
-|用途|针对引入已在派生类中定义的成员的后续基类修改进行保护|通过定义具有相同调用序列的过程或属性的不同实现来实现多态性<sup>1</sup>|  
+|目的|针对引入已在派生类中定义的成员的后续基类修改进行保护|通过定义具有相同调用序列的过程或属性的不同实现来实现多态性<sup>1</sup>|  
 |重新定义的元素|任何声明的元素类型|只有过程 (`Function` 、 `Sub` 或 `Operator`) 或属性|  
 |重定义元素|任何声明的元素类型|仅具有相同调用序列的过程或属性<sup>1</sup>|  
 |重定义元素的访问级别|任何访问级别|无法更改重写元素的访问级别|  
 |重定义元素的可读性和可写性|任何组合|无法更改重写属性的可读性或可写性|  
 |控制重定义|基类元素无法强制或禁止隐藏|基类元素可以指定 `MustOverride` 、 `NotOverridable` 或 `Overridable`|  
-|关键字用法|`Shadows`建议在派生类中使用;`Shadows`如果和均 `Shadows` 未 `Overrides` 指定<sup>2</sup> ，则假定|`Overridable` 或 `MustOverride` 在基类中是必需的; `Overrides` 派生类中需要|  
+|关键字用法|`Shadows`建议在派生类中使用;`Shadows`如果和均 `Shadows` 未 `Overrides` 指定<sup></sup> ，则假定|`Overridable` 或 `MustOverride` 在基类中是必需的; `Overrides` 派生类中需要|  
 |从派生类派生的类的重定义元素的继承|由进一步的派生类继承的隐藏元素;隐藏的元素仍隐藏<sup>3</sup>|重写由进一步派生的类继承的元素;重写的元素仍将被重写|  
   
  <sup>1</sup> *调用序列* 由元素类型（ (`Function` 、 `Sub` 、 `Operator` 或 `Property`) 、名称、参数列表和返回类型）组成。 不能使用属性或其他方法来重写过程。 不能用另一种类型的过程 (`Function` 、 `Sub` 或 `Operator`) 进行重写。  

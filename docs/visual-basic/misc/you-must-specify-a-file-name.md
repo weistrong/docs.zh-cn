@@ -1,13 +1,14 @@
 ---
+description: 了解详细信息：必须指定文件名
 title: 必须指定文件名
 ms.date: 07/20/2015
 ms.assetid: e011825a-019f-4c01-8d5b-3194f172e495
-ms.openlocfilehash: bb91318456f25ecb53a31df2928f5386c473ef61
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: fd64b433790b989cfc520f4b4d325dffd8e17f8a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100277"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428176"
 ---
 # <a name="you-must-specify-a-file-name"></a>必须指定文件名
 
