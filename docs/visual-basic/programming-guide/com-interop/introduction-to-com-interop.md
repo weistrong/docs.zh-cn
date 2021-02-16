@@ -1,22 +1,23 @@
 ---
+description: '了解详细信息： COM 互操作简介 (Visual Basic) '
 title: COM 互操作介绍
 ms.date: 07/20/2015
 helpviewer_keywords:
 - interop assemblies
 - COM interop [Visual Basic], about COM interop
 ms.assetid: 8bd62e68-383d-407f-998b-29aa0ce0fd67
-ms.openlocfilehash: 7bfbf0c6de8519e91a458ab4cbb5693024cdbeb2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 86741958e63263f0788384a1261063d71d16df16
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090386"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480786"
 ---
 # <a name="introduction-to-com-interop-visual-basic"></a>COM 互操作介绍 (Visual Basic)
 
 组件对象模型 (COM) 使对象向其他组件和宿主应用程序公开其功能。 虽然 COM 对象多年来一直是 Windows 编程的基础，但为公共语言运行时设计的应用程序 (CLR) 提供多种优势。  
   
- .NET Framework 应用程序最终将取代通过 COM 开发的应用程序。 在此之前，你可能必须使用 Visual Studio 来使用或创建 COM 对象。 与 COM 或 *com 互操作*的互操作性使你能够在按自己的节奏转换到 .NET Framework 时使用现有的 com 对象。  
+ .NET Framework 应用程序最终将取代通过 COM 开发的应用程序。 在此之前，你可能必须使用 Visual Studio 来使用或创建 COM 对象。 与 COM 或 *com 互操作* 的互操作性使你能够在按自己的节奏转换到 .NET Framework 时使用现有的 com 对象。  
   
  通过使用 .NET Framework 创建 COM 组件，你可以使用无注册 COM 互操作。 这样，你就可以在计算机上安装了多个版本时控制启用了哪个 DLL 版本，并允许最终用户使用 XCOPY 或 FTP 将你的应用程序复制到其计算机上可以运行它的相应目录。 有关详细信息，请参阅 [免注册 COM 互操作](../../../framework/interop/registration-free-com-interop.md)。  
   

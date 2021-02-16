@@ -1,15 +1,16 @@
 ---
+description: 详细了解：按字母顺序列出的 Visual Basic 编译器选项
 title: 按字母顺序列出的编译器选项
 ms.date: 04/12/2018
 helpviewer_keywords:
 - Visual Basic compiler, options
 ms.assetid: e67febba-bacf-4e1f-a143-c141e063f90e
-ms.openlocfilehash: d0dbe785edf7a9aa029d4be08a9b854cf1fb2b79
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 67967220f1293c40053472d4fc2f85d85d54118b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085290"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483919"
 ---
 # <a name="visual-basic-compiler-options-listed-alphabetically"></a>按字母顺序列出的 Visual Basic 编译器选项
 

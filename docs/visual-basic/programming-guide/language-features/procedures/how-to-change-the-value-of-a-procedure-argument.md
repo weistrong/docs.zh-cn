@@ -1,4 +1,5 @@
 ---
+description: '了解有关详细信息，请参阅如何：更改过程参数的值 (Visual Basic) '
 title: 如何：更改过程参数的值
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], ByRef
 - arguments [Visual Basic], changing value
 ms.assetid: 6fad2368-5da7-4c07-8bf8-0f4e65a1be67
-ms.openlocfilehash: 9960dacc053c5dc8d8cfdfd6eaa0ea3258ed0fea
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f8ccc80f7a9cb5d2b090fbc6b7f7e3423e5a1cae
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077067"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472574"
 ---
 # <a name="how-to-change-the-value-of-a-procedure-argument-visual-basic"></a>如何：更改过程参数的值 (Visual Basic)
 
@@ -50,7 +51,7 @@ ms.locfileid: "91077067"
   
 1. 在过程声明中，为对应于参数的参数指定 [ByVal](../../../language-reference/modifiers/byval.md) 。  
   
-     \- 或 -  
+     - 或 -  
   
      在调用代码中，将参数括在参数列表的括号中。 这会强制 Visual Basic 按值传递参数，即使相应的参数指定 `ByRef` 。  
   

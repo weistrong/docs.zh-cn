@@ -1,13 +1,14 @@
 ---
+description: '了解有关详细信息，请参阅如何：查找两个列表之间的差集 (LINQ)  (Visual Basic) '
 title: 如何：查找两个列表之间的差集 (LINQ)
 ms.date: 07/20/2015
 ms.assetid: b5b25474-10a8-4df6-aab5-75621bb6b68e
-ms.openlocfilehash: 1671cd32c0c0b8a3ff7fa6be87bd43dde9750776
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c877be03c3ff82d4be4814035a6401385d907e60
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100212"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483685"
 ---
 # <a name="how-to-find-the-set-difference-between-two-lists-linq-visual-basic"></a>如何：查找两个列表之间的差集 (LINQ)  (Visual Basic) 
 

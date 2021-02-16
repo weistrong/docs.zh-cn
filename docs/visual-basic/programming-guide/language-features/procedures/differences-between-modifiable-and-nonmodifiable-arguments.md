@@ -1,4 +1,5 @@
 ---
+description: '了解详细信息：可修改和不可修改参数之间的差异 (Visual Basic) '
 title: 可修改和不可修改参数之间的差异
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - arguments [Visual Basic], modifiable
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
-ms.openlocfilehash: 662ad3039bb3fd5c44847d5b2a97a033a18ad063
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 8d83802b4b8830a17412fdef44eabd2e5b8a7f2d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071952"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472626"
 ---
 # <a name="differences-between-modifiable-and-nonmodifiable-arguments-visual-basic"></a>可修改和不可修改自变量之间的差异 (Visual Basic)
 
@@ -36,7 +37,7 @@ ms.locfileid: "91071952"
 
  可 *修改的自变量* 是具有可修改基础元素的自变量。 调用代码随时可以存储新值，并且如果传递参数 [ByRef](../../../language-reference/modifiers/byref.md)，则过程中的代码还可以修改调用代码中的基础元素。  
   
- *不可更改的参数*具有不可更改的基础元素，或被传递了[ByVal](../../../language-reference/modifiers/byval.md)。 过程不能修改调用代码中的基础元素，即使它是可修改的元素。 如果它是不可更改的元素，则调用代码本身无法修改它。  
+ *不可更改的参数* 具有不可更改的基础元素，或被传递了 [ByVal](../../../language-reference/modifiers/byval.md)。 过程不能修改调用代码中的基础元素，即使它是可修改的元素。 如果它是不可更改的元素，则调用代码本身无法修改它。  
   
  被调用的过程可能会修改其不可更改参数的本地副本，但该修改不会影响调用代码中的基础元素。  
   

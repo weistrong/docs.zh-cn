@@ -1,16 +1,17 @@
 ---
+description: '了解更多相关信息，请参阅如何：使用 LINQ (转换 XML Visual Basic) '
 title: 如何：使用 LINQ 转换 XML
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML [Visual Basic], transforming
 - LINQ to XML [Visual Basic], transforming XML
 ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
-ms.openlocfilehash: dab394ec45567589e002b5d2ac76ec19fb0f76c6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 67e6f5f94cd71d960f742b660d3f223137bbd6d4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374876"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483633"
 ---
 # <a name="how-to-transform-xml-by-using-linq-visual-basic"></a>如何：使用 LINQ 转换 XML (Visual Basic)
 
@@ -22,7 +23,7 @@ ms.locfileid: "84374876"
 
 ### <a name="to-transform-an-xml-document"></a>转换 XML 文档
 
-1. 在 Visual Studio 中，在 "**控制台应用程序**" 项目模板中创建新的 Visual Basic 项目。
+1. 在 Visual Studio 中，在 " **控制台应用程序** " 项目模板中创建新的 Visual Basic 项目。
 
 2. 双击在项目中创建的 Module1 文件以修改 Visual Basic 代码。 将以下代码添加到 `Sub Main` `Module1` 模块的。 此代码将源 XML 文档创建为 <xref:System.Xml.Linq.XDocument> 对象。
 
@@ -83,9 +84,9 @@ ms.locfileid: "84374876"
     htmlOutput.Save("BookDescription.html")
     ```
 
-4. 在 `Sub Main` 之后 `Module1` ，添加一个新方法（ `Sub` ）以将 \<Description> 节点转换为指定的 HTML 格式。 此方法由上一步中的代码调用，用于保留元素的格式 \<Description> 。
+4. 在 `Sub Main` 之后 `Module1` ，添加一个新方法 (`Sub`) 将节点转换为 \<Description> 指定的 HTML 格式。 此方法由上一步中的代码调用，用于保留元素的格式 \<Description> 。
 
-     此方法用 HTML 替换元素的子元素 \<Description> 。 `ReplaceWith`方法用于保留子元素的位置。 元素的转换内容 \<Description> 包含在 HTML 段落（ \<p> ）元素中。 <xref:System.Xml.Linq.XContainer.Nodes%2A>属性用于检索元素的转换内容 \<Description> 。 这可确保子元素包含在转换后的内容中。
+     此方法用 HTML 替换元素的子元素 \<Description> 。 `ReplaceWith`方法用于保留子元素的位置。 元素的转换内容 \<Description> 包含在 HTML 段落中 (\<p>) 元素。 <xref:System.Xml.Linq.XContainer.Nodes%2A>属性用于检索元素的转换内容 \<Description> 。 这可确保子元素包含在转换后的内容中。
 
      在的后面添加以下 `Sub Main` 代码 `Module1` 。
 
@@ -115,7 +116,7 @@ ms.locfileid: "84374876"
     End Function
     ```
 
-5. 保存更改。
+5. 保存所做更改。
 
 6. 按 F5 运行代码。 生成的已保存文档将类似于以下内容：
 
@@ -156,7 +157,7 @@ ms.locfileid: "84374876"
     </html>
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [XML 文本](../../../language-reference/xml-literals/index.md)
 - [在 Visual Basic 中操作 XML](manipulating-xml.md)

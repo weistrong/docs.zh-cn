@@ -1,15 +1,16 @@
 ---
+description: 详细了解：按类别列出的 Visual Basic 编译器选项
 title: 按类别列出的编译器选项
 ms.date: 04/12/2018
 helpviewer_keywords:
 - Visual Basic compiler, options
 ms.assetid: fbe36f7a-7cfa-4f77-a8d4-2be5958568e3
-ms.openlocfilehash: 77a130b684d26cf7e4b9df9382348a371a60bc5d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f0535e2aa94cda96610acb0edb24f6d46cc4afa0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072036"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474169"
 ---
 # <a name="visual-basic-compiler-options-listed-by-category"></a>按类别列出的 Visual Basic 编译器选项
 
