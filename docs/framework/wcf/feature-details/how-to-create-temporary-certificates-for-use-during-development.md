@@ -6,19 +6,19 @@ helpviewer_keywords:
 - certificates [WCF], creating temporary certificates
 - temporary certificates [WCF]
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
-ms.openlocfilehash: a249f0de00c45b1588762ffa0f826e890f961334
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 45df7b2c4dad1aa84ad39ca38fba8d2ec16c8fb3
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91607767"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100585350"
 ---
 # <a name="how-to-create-temporary-certificates-for-use-during-development"></a>如何：创建开发期间使用的临时证书
 
 使用 Windows Communication Foundation (WCF) 开发安全服务或客户端时，通常需要提供要用作凭据的 x.509 证书。 该证书通常是证书链的一部分，在计算机的受信任的根证书颁发机构存储区中可找到根证书颁发机构。 拥有一个证书链，使您可以限定一组证书，其中根证书颁发机构通常来自于您的组织或业务单元。 若要在开发时模拟此情况，请创建两个证书以满足安全要求。 第一个证书是自签名证书，放置在受信任的根证书颁发机构存储区中；第二个证书是从第一个证书创建的，放置在本地计算机位置的个人存储区中或当前用户位置的个人存储区中。 本主题将指导完成使用 PowerShell [new-selfsignedcertificate) ](/powershell/module/pkiclient/new-selfsignedcertificate) cmdlet 创建这两个证书的步骤。
 
 > [!IMPORTANT]
-> 新的 New-selfsignedcertificate cmdlet 生成的证书仅供测试之用。 部署服务或客户程序时，请确保使用证书颁发机构提供的适当证书。 这可能是来自组织或第三方的 Windows Server 证书服务器。
+> New-SelfSignedCertificate cmdlet 生成的证书仅供测试之用。 部署服务或客户程序时，请确保使用证书颁发机构提供的适当证书。 这可能是来自组织或第三方的 Windows Server 证书服务器。
 >
 > 默认情况下， [new-selfsignedcertificate](/powershell/module/pkiclient/new-selfsignedcertificate) cmdlet 创建自签名证书，这些证书是不安全的。 将自签名证书放置在 "受信任的根证书颁发机构" 存储中使您能够创建更密切地模拟您的部署环境的开发环境。
 
@@ -29,15 +29,15 @@ ms.locfileid: "91607767"
 以下命令在当前用户个人存储中创建使用者名称为 "Rootca.cer" 的自签名证书。
 
 ```powershell
-$rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
+$rootCert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
 ```
 
 我们需要将该证书导出到 PFX 文件中，以便可以将其导入到后面的步骤中所需的位置。 导出带私钥的证书时，需要使用密码来保护密码。 我们将密码保存在中 `SecureString` ，并使用 [get-pfxcertificate](/powershell/module/pkiclient/export-pfxcertificate) cmdlet 将具有关联私钥的证书导出到 PFX 文件。 我们还使用 [导出证书](/powershell/module/pkiclient/export-certificate) cmdlet 将公共证书仅保存到 CRT 文件中。
 
 ```powershell
-[System.Security.SecureString]$rootcertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
-[String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootcert.Thumbprint)"
-Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootcertPassword
+[System.Security.SecureString]$rootCertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
+[String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootCert.Thumbprint)"
+Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootCertPassword
 Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
 ```
 
@@ -53,7 +53,7 @@ $testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -
 
 ```powershell
 [String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert.Thumbprint)"
-Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword
+Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootCertPassword
 Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 ```
 

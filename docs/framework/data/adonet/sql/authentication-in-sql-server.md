@@ -3,12 +3,12 @@ title: SQL Server 中的身份验证
 description: 了解 SQL Server ADO.NET 的身份验证，包括 Windows 身份验证模式和混合模式。
 ms.date: 05/22/2018
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
-ms.openlocfilehash: 2c4f62391a0d9b5ada27f56eef4c3467d99b4c6d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a1ecc0debd584797f72a89318aadc6ccc8a41062
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197522"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100581923"
 ---
 # <a name="authentication-in-sql-server"></a>SQL Server 中的身份验证
 
@@ -69,7 +69,7 @@ SQL Server 支持两种身份验证模式，即 Windows 身份验证模式和混
  如果必须使用混合模式身份验证，则必须创建 SQL Server 登录名，这些登录名存储在 SQL Server 中。 然后，必须在运行时提供 SQL Server 用户名和密码。  
   
 > [!IMPORTANT]
-> SQL Server 安装有名为 `sa`（“系统管理员”的首字母缩写）的 SQL Server 登录名。 请向 `sa` 登录名分配强密码，并且不在应用程序中使用 `sa` 登录名。 `sa` 登录名映射到 `sysadmin` 固定服务器角色，此角色在整个服务器上具有不可撤销的管理凭据。 如果攻击者以系统管理员身份获得访问权限，潜在损害是无限的。 默认情况下，Windows `BUILTIN\Administrators` 组（本地管理员组）的所有成员均为 `sysadmin` 角色的成员，但可以从该角色中移除这些成员。  
+> SQL Server 安装有名为 `sa`（“系统管理员”的首字母缩写）的 SQL Server 登录名。 请向 `sa` 登录名分配强密码，并且不在应用程序中使用 `sa` 登录名。 `sa` 登录名映射到 `sysadmin` 固定服务器角色，此角色在整个服务器上具有不可撤销的管理凭据。 如果攻击者以系统管理员身份获得访问权限，潜在损害是无限的。
   
  SQL Server 提供 SQL Server 登录名的 Windows 密码策略机制。 密码复杂性策略通过增加可能密码的数量来阻止强力攻击。 SQL Server 可以将相同的复杂性和过期策略应用于 SQL Server 内使用的密码。  
   
@@ -84,10 +84,10 @@ SQL Server 支持两种身份验证模式，即 Windows 身份验证模式和混
 |--------------|-----------------|  
 |[主体](/sql/relational-databases/security/authentication-access/principals-database-engine)|描述 SQL Server 中的登录名和其他安全主体。|  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [保证 ADO.NET 应用程序的安全](../securing-ado-net-applications.md)
 - [SQL Server 中的应用程序安全方案](application-security-scenarios-in-sql-server.md)
-- [连接数据源](../connecting-to-a-data-source.md)
+- [连接到数据源](../connecting-to-a-data-source.md)
 - [连接字符串](../connection-strings.md)
 - [ADO.NET 概述](../ado-net-overview.md)
