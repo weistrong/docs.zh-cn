@@ -311,22 +311,16 @@ items:
             tocHref: /dotnet/csharp/
             topicHref: /dotnet/csharp/index
             items:
-              - name: C# 简介
-                tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
-                topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
               - name: 入门
-                tocHref: /dotnet/csharp/getting-started/
-                topicHref: /dotnet/csharp/getting-started/index
+                tocHref: /dotnet/csharp/tour-of-csharp/
+                topicHref: /dotnet/csharp/tour-of-csharp/index
                 items:
-                  - name: C# 教程
-                    tocHref: /dotnet/csharp/tour-of-csharp/
-                    topicHref: /dotnet/csharp/tour-of-csharp/index
+                  - name: 教程
+                    tocHref: /dotnet/csharp/tour-of-csharp/tutorials/
+                    topicHref: /dotnet/csharp/tour-of-csharp/tutorials/index
               - name: 教程
                 tocHref: /dotnet/csharp/tutorials/
                 topicHref: /dotnet/csharp/tutorials/index
-              - name: 导览
-                tocHref: /dotnet/csharp/tour-of-csharp/
-                topicHref: /dotnet/csharp/tour-of-csharp/index
               - name: 新增功能
                 tocHref: /dotnet/csharp/whats-new/
                 topicHref: /dotnet/csharp/whats-new/index
