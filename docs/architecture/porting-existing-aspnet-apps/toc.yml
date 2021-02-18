@@ -1,0 +1,68 @@
+- name: 将现有 ASP.NET 应用移植到 .NET Core
+  href: index.md
+  items:
+    - name: 将应用移植到 .NET Core 简介
+      href: introduction.md
+      items:
+        - name: 迁移注意事项
+          href: migration-considerations.md
+        - name: 迁移到 ASP.NET Core 2.1
+          href: migrate-aspnet-core-2-1.md
+        - name: 选择正确的 .NET Core 版本
+          href: choose-net-core-version.md
+        - name: 增量迁移策略
+          href: incremental-migration-strategies.md
+        - name: 有关迁移 ASP.NET Web Forms 应用的策略
+          href: migrate-web-forms.md
+        - name: 部署策略
+          href: deployment-strategies.md
+        - name: 其他迁移资源
+          href: additional-migration-resources.md
+    - name: ASP.NET MVC 和 ASP.NET Core 之间的体系结构差异
+      href: architectural-differences.md
+      items:
+        - name: 应用启动差异
+          href: app-startup-differences.md
+        - name: 托管差异
+          href: hosting-differences.md
+        - name: 提供静态文件
+          href: serving-static-files.md
+        - name: 依赖关系注入差异
+          href: dependency-injection-differences.md
+        - name: 中间件、模块和处理程序
+          href: middleware-modules-handlers.md
+        - name: 配置差异
+          href: configuration-differences.md
+        - name: 路由差异
+          href: routing-differences.md
+        - name: 将 Razor Pages 与 ASP.NET MVC 进行比较
+          href: comparing-razor-pages-aspnet-mvc.md
+        - name: Web API 差异
+          href: webapi-differences.md
+        - name: 身份验证差异
+          href: authentication-differences.md
+        - name: 标识差异
+          href: identity-differences.md
+        - name: 控制器差异
+          href: controller-differences.md
+        - name: Razor 差异
+          href: razor-differences.md
+        - name: SignalR 差异
+          href: signalr-differences.md
+        - name: 测试差异
+          href: testing-differences.md
+    - name: 迁移大型解决方案
+      href: migrate-large-solutions.md
+      items:
+        - name: 确定要迁移的项目序列
+          href: identify-migration-sequence.md
+        - name: 了解和更新依赖项
+          href: understand-update-dependencies.md
+        - name: 在生产环境中运行时的迁移策略
+          href: strategies-migrating-in-production.md
+    - name: eShop 项目迁移示例
+      href: example-migration-eshop.md
+    - name: 部署方案
+      href: deployment-scenarios.md
+    - name: 总结
+      href: summary.md
