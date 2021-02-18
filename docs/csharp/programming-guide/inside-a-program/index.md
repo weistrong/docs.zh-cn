@@ -6,20 +6,18 @@ helpviewer_keywords:
 - C# language, about C# program
 - Visual C#, program structure
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
-ms.openlocfilehash: 05b0d6542e5a786d0aa36a034c08b07acea26e74
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: b060d44833cd5a1d02e16e629945cce9df16d333
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216819"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100583484"
 ---
 # <a name="inside-a-c-program"></a>C# 程序内部探究
 
 本节讨论 C# 程序的一般结构，并包括标准的“Hello, World!” 示例。
 
 ## <a name="in-this-section"></a>本节内容
-
-- [Hello World -- 你的第一个程序](hello-world-your-first-program.md)
 
 - [C# 程序的通用结构](general-structure-of-a-csharp-program.md)
 

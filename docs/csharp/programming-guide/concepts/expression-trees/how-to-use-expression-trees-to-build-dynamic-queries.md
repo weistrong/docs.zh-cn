@@ -1,113 +1,172 @@
 ---
-title: 如何使用表达式树来生成动态查询 (C#)
-description: 了解如何使用表达式树来创建动态 LINQ 查询。 如果在编译时不知道查询的细节，这些查询将十分有用。
-ms.date: 07/20/2015
+title: 基于运行时状态进行查询 (C#)
+description: 介绍了可由代码用来根据运行时状态，通过改变 LINQ 方法调用或传入这些方法的表达式树来进行动态查询的各种技术。
+ms.date: 02/11/2021
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
-ms.openlocfilehash: 284e7fa4534d1648c8e2bd6f4feaa62796ca60d8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0dcf1696ca323ac4823c80c7993fef7873fd8ed5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202586"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433778"
 ---
-# <a name="how-to-use-expression-trees-to-build-dynamic-queries-c"></a>如何使用表达式树来生成动态查询 (C#)
+# <a name="querying-based-on-runtime-state-c"></a>基于运行时状态进行查询 (C#)
 
-在 LINQ 中，表达式树用于表示针对数据源的结构化查询，这些数据源可实现 <xref:System.Linq.IQueryable%601>。 例如，LINQ 提供程序可实现 <xref:System.Linq.IQueryable%601> 接口，用于查询关系数据存储。 C# 编译器将针对此类数据源的查询编译为代码，该代码在运行时会生成一个表达式树。 然后，查询提供程序可以遍历表达式树数据结构，并将其转换为适合于数据源的查询语言。  
-  
- 表达式树还可以用在 LINQ 中，用于表示分配给类型为 <xref:System.Linq.Expressions.Expression%601> 的变量的 lambda 表达式。  
-  
- 本主题描述如何使用表达式树来创建动态 LINQ 查询。 如果在编译时不知道查询的细节，动态查询将十分有用。 例如，应用程序可能会提供一个用户界面，最终用户可以使用该用户界面指定一个或多个谓词来筛选数据。 为了使用 LINQ 进行查询，这种应用程序必须使用表达式树在运行时创建 LINQ 查询。  
-  
-## <a name="example"></a>示例  
+考虑针对数据源定义 <xref:System.Linq.IQueryable> 或 [IQueryable\<T>](<xref:System.Linq.IQueryable%601>) 的代码：
 
- 下面的示例演示如何使用表达式树依据 `IQueryable` 数据源构造一个查询，然后执行该查询。 代码将生成一个表达式树来表示以下查询：  
-  
- ```csharp
- companies.Where(company => (company.ToLower() == "coho winery" || company.Length > 16))
-          .OrderBy(company => company)
- ```
-  
- <xref:System.Linq.Expressions> 命名空间中的工厂方法用于创建表达式树，这些表达式树表示构成总体查询的表达式。 表示标准查询运算符方法调用的表达式将引用这些方法的 <xref:System.Linq.Queryable> 实现。 最终的表达式树将传递给 `IQueryable` 数据源的提供程序的 <xref:System.Linq.IQueryProvider.CreateQuery%60%601%28System.Linq.Expressions.Expression%29> 实现，以创建 `IQueryable` 类型的可执行查询。 通过枚举该查询变量获得结果。  
-  
-```csharp  
-// Add a using directive for System.Linq.Expressions.  
-  
-string[] companies = { "Consolidated Messenger", "Alpine Ski House", "Southridge Video", "City Power & Light",  
-                   "Coho Winery", "Wide World Importers", "Graphic Design Institute", "Adventure Works",  
-                   "Humongous Insurance", "Woodgrove Bank", "Margie's Travel", "Northwind Traders",  
-                   "Blue Yonder Airlines", "Trey Research", "The Phone Company",  
-                   "Wingtip Toys", "Lucerne Publishing", "Fourth Coffee" };  
-  
-// The IQueryable data to query.  
-IQueryable<String> queryableData = companies.AsQueryable<string>();  
-  
-// Compose the expression tree that represents the parameter to the predicate.  
-ParameterExpression pe = Expression.Parameter(typeof(string), "company");  
-  
-// ***** Where(company => (company.ToLower() == "coho winery" || company.Length > 16)) *****  
-// Create an expression tree that represents the expression 'company.ToLower() == "coho winery"'.  
-Expression left = Expression.Call(pe, typeof(string).GetMethod("ToLower", System.Type.EmptyTypes));  
-Expression right = Expression.Constant("coho winery");  
-Expression e1 = Expression.Equal(left, right);  
-  
-// Create an expression tree that represents the expression 'company.Length > 16'.  
-left = Expression.Property(pe, typeof(string).GetProperty("Length"));  
-right = Expression.Constant(16, typeof(int));  
-Expression e2 = Expression.GreaterThan(left, right);  
-  
-// Combine the expression trees to create an expression tree that represents the  
-// expression '(company.ToLower() == "coho winery" || company.Length > 16)'.  
-Expression predicateBody = Expression.OrElse(e1, e2);  
-  
-// Create an expression tree that represents the expression  
-// 'queryableData.Where(company => (company.ToLower() == "coho winery" || company.Length > 16))'  
-MethodCallExpression whereCallExpression = Expression.Call(  
-    typeof(Queryable),  
-    "Where",  
-    new Type[] { queryableData.ElementType },  
-    queryableData.Expression,  
-    Expression.Lambda<Func<string, bool>>(predicateBody, new ParameterExpression[] { pe }));  
-// ***** End Where *****  
-  
-// ***** OrderBy(company => company) *****  
-// Create an expression tree that represents the expression  
-// 'whereCallExpression.OrderBy(company => company)'  
-MethodCallExpression orderByCallExpression = Expression.Call(  
-    typeof(Queryable),  
-    "OrderBy",  
-    new Type[] { queryableData.ElementType, queryableData.ElementType },  
-    whereCallExpression,  
-    Expression.Lambda<Func<string, string>>(pe, new ParameterExpression[] { pe }));  
-// ***** End OrderBy *****  
-  
-// Create an executable query from the expression tree.  
-IQueryable<string> results = queryableData.Provider.CreateQuery<string>(orderByCallExpression);  
-  
-// Enumerate the results.  
-foreach (string company in results)  
-    Console.WriteLine(company);  
-  
-/*  This code produces the following output:  
-  
-    Blue Yonder Airlines  
-    City Power & Light  
-    Coho Winery  
-    Consolidated Messenger  
-    Graphic Design Institute  
-    Humongous Insurance  
-    Lucerne Publishing  
-    Northwind Traders  
-    The Phone Company  
-    Wide World Importers  
-*/  
-```  
-  
- 此代码在传递到 `Queryable.Where` 方法的谓词中使用固定数量的表达式。 但是，可以编写一个视用户输入而定来合并可变数量谓词表达式的应用程序。 视用户输入而定，也可以更改在查询中调用的标准查询运算符。  
-  
-## <a name="compiling-the-code"></a>编译代码  
-  
-- 包括 System.Linq.Expressions 命名空间。  
-  
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Initialize":::
+
+每次运行此代码时，都将执行相同的确切查询。 这通常不是很有用，因为你可能希望代码根据运行时的情况执行不同的查询。 本文介绍如何根据运行时状态执行不同的查询。
+
+## <a name="iqueryable--iqueryablet-and-expression-trees"></a>IQueryable/IQueryable\<T> 和表达式树
+
+从根本上讲，<xref:System.Linq.IQueryable> 有两个组件：
+
+* <xref:System.Linq.IQueryable.Expression> &mdash; 当前查询的组件的与语言和数据源无关的表示形式，以表达式树的形式表示。
+* <xref:System.Linq.IQueryable.Provider> &mdash; LINQ 提供程序的实例，它知道如何将当前查询具体化为一个值或一组值。
+
+在动态查询的上下文中，提供程序通常会保持不变；查询的表达式树将因查询而异。
+
+表达式树是不可变的；如果需要不同的表达式树 &mdash; 并因此需要不同的查询 &mdash; 则需要将现有表达式树转换为新的表达式树，从而转换为新的 <xref:System.Linq.IQueryable>。
+
+以下各部分介绍了根据运行时状态，以不同方式进行查询的具体技术：
+
+- 从表达式树中使用运行时状态
+- 调用其他 LINQ 方法
+- 改变传入到 LINQ 方法的表达式树
+- 使用 <xref:System.Linq.Expressions.Expression> 中的工厂方法构造 [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) 表达式树
+- 将方法调用节点添加到 <xref:System.Linq.IQueryable> 的表达式树
+- 构造字符串，并使用 [动态 LINQ 库](https://dynamic-linq.net/)
+
+## <a name="use-runtime-state-from-within-the-expression-tree"></a>从表达式树中使用运行时状态
+
+假设 LINQ 提供程序支持，进行动态查询的最简单方式是通过封闭的变量（如以下代码示例中的 `length`）直接在查询中引用运行时状态：
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Runtime_state_from_within_expression_tree":::
+
+内部表达式树 &mdash; 以及查询 &mdash; 尚未修改；查询只返回不同的值，因为 `length` 的值已更改。
+
+## <a name="call-additional-linq-methods"></a>调用其他 LINQ 方法
+
+通常，<xref:System.Linq.Queryable> 的[内置 LINQ 方法](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs)执行两个步骤：
+
+* 在表示方法调用的 <xref:System.Linq.Expressions.MethodCallExpression> 中包装当前的表达式树。
+* 将包装的表达式树传递回提供程序，以便通过提供程序的 <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> 方法返回值；或通过 <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> 方法返回转换后的查询对象。
+
+可以将原始查询替换为 [IQueryable\<T>](xref:System.Linq.IQueryable%601) 返回方法的结果，以获取新的查询。 可以基于运行时状态执行此操作，如以下示例中所示：
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Added_method_calls":::
+
+## <a name="vary-the-expression-tree-passed-into-the-linq-methods"></a>改变传入到 LINQ 方法的表达式树
+
+可以将不同的表达式传入到 LINQ 方法，具体取决于运行时状态：
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Varying_expressions":::
+
+你可能还希望使用第三方库（如 [LinqKit](http://www.albahari.com/nutshell/linqkit.aspx) 的 [PredicateBuilder](http://www.albahari.com/nutshell/predicatebuilder.aspx)）来编写各种子表达式：
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Compose_expressions":::
+
+## <a name="construct-expression-trees-and-queries-using-factory-methods"></a>使用工厂方法构造表达式树和查询
+
+在到此为止的所有示例中，我们已知道编译时的元素类型 &mdash;`string`&mdash; 并因此知道查询的类型 &mdash; `IQueryable<string>`。 你可能需要将组件添加到任何元素类型的查询中。 你可能需要添加不同的组件，具体取决于元素类型。 可以使用 <xref:System.Linq.Expressions.Expression?displayProperty=fullName> 的工厂方法从头开始创建表达式树，从而将表达式定制为特定的元素类型。
+
+### <a name="constructing-an-expressiontdelegate"></a>构造 [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)
+
+构造要传入到某个 LINQ 方法的表达式时，实际上是在构造 [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) 的实例，其中 `TDelegate` 是某个委托类型，例如 `Func<string, bool>`、`Action` 或自定义委托类型。
+
+[Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) 继承自 <xref:System.Linq.Expressions.LambdaExpression>，后者表示完整的 lambda 表达式，如下所示：
+
+```csharp
+Expression<Func<string, bool>> expr = x => x.StartsWith("a");
+```
+
+<xref:System.Linq.Expressions.LambdaExpression> 具有两个组件：
+
+* 参数列表 &mdash;`(string x)`&mdash; 由 <xref:System.Linq.Expressions.LambdaExpression.Parameters> 属性表示
+* 主体 &mdash;`x.StartsWith("a")`&mdash; 由 <xref:System.Linq.Expressions.LambdaExpression.Body> 属性表示。
+
+构造 [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) 的基本步骤如下所示：
+
+* 使用 <xref:System.Linq.Expressions.Expression.Parameter%2A> 工厂方法为 lambda 表达式中的每个参数（如果有）定义 <xref:System.Linq.Expressions.ParameterExpression> 的对象。
+
+    ```csharp
+    ParameterExpression x = Parameter(typeof(string), "x");
+    ```
+
+* 使用已定义的 <xref:System.Linq.Expressions.ParameterExpression> 构造 <xref:System.Linq.Expressions.LambdaExpression> 的主体。 例如，表示 `x.StartsWith("a")` 的表达式的构造方式如下：
+
+    ```csharp
+    Expression body = Call(
+        x,
+        typeof(string).GetMethod("StartsWith", new [] {typeof(string)}),
+        Constant("a")
+    );
+    ```
+
+* 使用适当的 <xref:System.Linq.Expressions.Expression.Lambda%2A> 工厂方法重载，将参数和主体包装到编译时类型的 [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) 中：
+
+    ```csharp
+    Expression<Func<string, bool>> expr = Lambda<Func<string, bool>>(body, prm);
+    ```
+
+以下部分介绍了一种方案（在该方案中，你可能需要构造要传递到 LINQ 方法中的 [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)），并提供了使用工厂方法完成此操作的完整示例。
+
+### <a name="scenario"></a>方案
+
+假设你有多个实体类型：
+
+```csharp
+record Person(string LastName, string FirstName, DateTime DateOfBirth);
+record Car(string Model, int Year);
+```
+
+对于这些实体类型中的任何一个，你都需要筛选并仅返回那些在其某个 `string` 字段内具有给定文本的实体。 对于 `Person`，你希望搜索 `FirstName` 和 `LastName` 属性：
+
+```csharp
+string term = /* ... */;
+var personsQry = new List<Person>()
+    .AsQueryable()
+    .Where(x => x.FirstName.Contains(term) || x.LastName.Contains(term));
+```
+
+但对于 `Car`，你希望仅搜索 `Model` 属性：
+
+```csharp
+string term = /* ... */;
+var carsQry = new List<Car>()
+    .AsQueryable()
+    .Where(x => x.Model.Contains(term));
+```
+
+尽管可以为 `IQueryable<Person>` 编写一个自定义函数，并为 `IQueryable<Car>` 编写另一个自定义函数，但以下函数会将此筛选添加到任何现有查询，而不考虑特定的元素类型如何。
+
+### <a name="example"></a>示例
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_expression_of_tdelegate":::
+
+由于 `TextFilter` 函数采用并返回 [IQueryable\<T>](xref:System.Linq.IQueryable%601)（而不仅仅是 <xref:System.Linq.IQueryable>），因此你可以在文本筛选器后添加更多的编译时类型的查询元素。
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_expression_of_tdelegate_usage":::
+
+## <a name="adding-method-call-nodes-to-the-xrefsystemlinqiqueryables-expression-tree"></a>将方法调用节点添加到 <xref:System.Linq.IQueryable> 的表达式树
+
+如果你有 <xref:System.Linq.IQueryable>（而不是 [IQueryable\<T>](xref:System.Linq.IQueryable%601)），则不能直接调用泛型 LINQ 方法。 一种替代方法是按上面所述构建内部表达式树，并在传入表达树时使用反射来调用适当的 LINQ 方法。
+
+还可以通过在表示调用 LINQ 方法的 <xref:System.Linq.Expressions.MethodCallExpression> 中包装整个树来复制 LINQ 方法的功能：
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_lambdaexpression":::
+
+请注意，在这种情况下，你没有编译时 `T` 泛型占位符，因此你将使用不需要编译时类型信息的 <xref:System.Linq.Expressions.Expression.Lambda%2A> 重载，这会生成 <xref:System.Linq.Expressions.LambdaExpression>，而不是 [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)。
+
+## <a name="the-dynamic-linq-library"></a>动态 LINQ 库
+
+使用工厂方法构造表达式树比较复杂；编写字符串较为容易。 [动态 LINQ 库](https://dynamic-linq.net/)公开了 <xref:System.Linq.IQueryable> 上的一组扩展方法，这些方法对应于 <xref:System.Linq.Queryable> 上的标准 LINQ 方法，后者接受采用[特殊语法](https://dynamic-linq.net/expression-language)的字符串而不是表达式树。 该库基于字符串生成相应的表达式树，并可以返回生成的已转换 <xref:System.Linq.IQueryable>。
+
+例如，可以重新编写上一示例，如下所示：
+
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Dynamic_linq":::
+
 ## <a name="see-also"></a>请参阅
 
 - [表达式树 (C#)](./index.md)
