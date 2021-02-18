@@ -24,8 +24,18 @@
               href: 6.0.md
             - name: ASP.NET Core
               items:
+                - name: Blazor：RequestImageFileAsync 方法中的参数名称已更改
+                  href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel：日志消息属性已更改
                   href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                - name: 中间件：HTTPS 重定向中间件会在不明确的 HTTPS 端口上引发异常
+                  href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                - name: Razor：RazorEngine API 标记为已过时
+                  href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+            - name: Core .NET 库
+              items:
+                - name: 为 Null 性注释更改
+                  href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
             - name: Windows 窗体
               items:
                 - name: API 引发 ArgumentNullException
@@ -306,8 +316,14 @@
           items:
             - name: .NET 6.0
               items:
+                - name: Blazor：RequestImageFileAsync 方法中的参数名称已更改
+                  href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
                 - name: Kestrel：日志消息属性已更改
                   href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                - name: 中间件：HTTPS 重定向中间件会在不明确的 HTTPS 端口上引发异常
+                  href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                - name: Razor：RazorEngine API 标记为已过时
+                  href: aspnet-core/6.0/razor-engine-apis-obsolete.md
             - name: .NET 5.0
               items:
                 - name: ASP.NET Core 应用反序列化带引号的数字
@@ -406,6 +422,10 @@
                   href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
         - name: Core .NET 库
           items:
+            - name: .NET 6.0
+              items:
+                - name: 为 Null 性注释更改
+                  href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
             - name: .NET 5.0
               items:
                 - name: 适用于单文件发布的与程序集相关的 API 更改
