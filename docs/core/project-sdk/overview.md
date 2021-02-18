@@ -4,12 +4,16 @@ titleSuffix: ''
 description: 了解 .NET 项目 SDK。
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: d0eb4291f4def9263f37d2d09f09ef43d40dfbac
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+no-loc:
+- EmbeddedResource
+- Compile
+- None
+ms.openlocfilehash: e5a6d0a1c988818e507936b567fa0188675cedc3
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506391"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432642"
 ---
 # <a name="net-project-sdks"></a>.NET 项目 SDK
 
@@ -25,7 +29,7 @@ ms.locfileid: "99506391"
 | `Microsoft.NET.Sdk.Web` | .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | .NET 辅助角色服务 SDK |
-| `Microsoft.NET.Sdk.WindowsDesktop` | WinForms 和 WPF SDK\* | <https://github.com/dotnet/winforms> 和 <https://github.com/dotnet/wpf> |
+| `Microsoft.NET.Sdk.WindowsDesktop` | .NET [桌面 SDK](msbuild-props-desktop.md)，其中包括 Windows 窗体 (WinForms) 和 Windows Presentation Foundation (WPF)。\* | <https://github.com/dotnet/winforms> 和 <https://github.com/dotnet/wpf> |
 
 .NET SDK 是 .NET 的基本 SDK。 其他 SDK 引用 .NET SDK，与其他 SDK 关联的项目具有所有可用的 .NET SDK 属性。 例如，Web SDK 依赖于 .NET SDK 和 Razor SDK。
 
@@ -98,13 +102,15 @@ SDK 中定义了 [`Compile` 项](/visualstudio/msbuild/common-msbuild-project-it
 > [!NOTE]
 > 默认情况下，由 `$(BaseOutputPath)` 和 `$(BaseIntermediateOutputPath)` MSBuild 属性表示的 `./bin` 和 `./obj` 文件夹不包含在 glob 中。 排除由 [DefaultItemExcludes 属性](msbuild-props.md#defaultitemexcludes)表示。
 
+.NET 桌面 SDK 对于 WPF 有更多包含和排除的内容。 有关详细信息，请参阅 [WPF 默认包含和排除的内容](msbuild-props-desktop.md#wpf-default-includes-and-excludes)。
+
 ### <a name="build-errors"></a>生成错误
 
 如果在项目文件中显式定义这些项中的任何项，可能会出现类似于以下内容的“NETSDK1022”生成错误：
 
-  > 包含重复的“编译”项。 默认情况下，.NET SDK 包括项目目录中的“编译”项。 可从项目文件中删除这些项，或如果想要在项目文件中显式包括它们，则将“EnableDefaultCompileItems”属性设为“false”。
+> 包含重复的“Compile”项。 默认情况下，.NET SDK 包括项目目录中的“Compile”项。 可从项目文件中删除这些项，或如果想要在项目文件中显式包括它们，则将“EnableDefaultCompileItems”属性设为“false”。
 
-  > 包含重复的“EmbeddedResource”项。 默认情况下，.NET SDK 包括项目目录中的“EmbeddedResource”项。 可从项目文件中删除这些项，或如果想要在项目文件中显式包括它们，则将“EnableDefaultEmbeddedResourceItems”属性设为“false”。
+> 包含重复的“EmbeddedResource”项。 默认情况下，.NET SDK 包括项目目录中的“EmbeddedResource”项。 可从项目文件中删除这些项，或如果想要在项目文件中显式包括它们，则将“EnableDefaultEmbeddedResourceItems”属性设为“false”。
 
 若要解决此错误，请执行以下操作之一：
 

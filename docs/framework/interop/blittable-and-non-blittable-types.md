@@ -6,12 +6,12 @@ helpviewer_keywords:
 - interop marshaling, blittable types
 - blittable types, interop marshaling
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
-ms.openlocfilehash: 5f0f6b2f35c184b4df8c93af1c85e7169cb0cc95
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c9168bd245e10232a798b3e6f3b9448b24996a77
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283141"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436118"
 ---
 # <a name="blittable-and-non-blittable-types"></a>可直接复制到本机结构中的类型和非直接复制到本机结构中的类型
 
@@ -47,13 +47,13 @@ ms.locfileid: "96283141"
   
  下面的复杂类型也是 blittable 类型：  
   
-- 所有 blittable 类型的一维数组，如整数数组。 但是，包含 blittable 类型变量数组的类型本身不是 blittable 类型。  
+- blittable 基元类型的一维数组，如整数数组。 但是，包含 blittable 类型变量数组的类型本身不是 blittable 类型。
   
 - 所有只包含 blittable 类型（和作为格式化类型进行封送的类）的格式化的值类型。 有关格式化的值类型的详细信息，请参阅[值类型的默认封送处理](default-marshaling-behavior.md#default-marshaling-for-value-types)。  
   
  对象引用不是 blittable 类型。 这包括本身是 blittable 的对象的引用数组。 例如，可以定义一个属于 blittable 类型的结构，但不能定义包含这些结构的引用数组的 blittable 类型。  
   
- 作为一种优化方式，所有 blittable 类型数组和只包含 blittable 成员的类都是[固定的](copying-and-pinning.md)，因此无需在封送处理期间进行复制。 若调用方和被调用方位于同一单元中，这些类型会显示为作为 In/Out 参数被封送。 但是，这些类型实际上是作为 In 形参进行封送的，而且，如果要将实参作为 In/Out 形参进行封送，则必须应用 <xref:System.Runtime.InteropServices.InAttribute> 和 <xref:System.Runtime.InteropServices.OutAttribute> 属性。  
+ 作为一种优化方式，blittable 基元类型数组和仅包含 blittable 成员的类在封送处理期间会进行[锁定](copying-and-pinning.md)，而不会进行复制。 若调用方和被调用方位于同一单元中，这些类型会显示为作为 In/Out 参数被封送。 但是，这些类型实际上是作为 In 形参进行封送的，而且，如果要将实参作为 In/Out 形参进行封送，则必须应用 <xref:System.Runtime.InteropServices.InAttribute> 和 <xref:System.Runtime.InteropServices.OutAttribute> 属性。
   
  在非托管环境中，某些托管数据类型要求具有不同的表示形式。 必须将这些 non-blittable 数据类型转换为可以封送的形式。 例如，托管字符串就是 non-blittable 类型，因为这些字符串必须转换为字符串对象后才能进行封送。  
   

@@ -3,12 +3,12 @@ description: 详细了解：3.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份�
 title: 3\.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份验证的更改
 ms.date: 03/30/2017
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
-ms.openlocfilehash: cdb17317dbafc167cce7a9b2785be68a35d3bd5b
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 24787894d89f65024f7022a44b507c689bb0beb5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99791629"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434844"
 ---
 # <a name="changes-to-ntlm-authentication-for-httpwebrequest-in-version-35-sp1"></a>3.5 SP1 版本中对 HttpWebRequest 的 NTLM 身份验证的更改
 
@@ -52,7 +52,7 @@ ms.locfileid: "99791629"
 
 7. 退出注册表编辑器，然后重新启动 IISAdmin 服务并运行 IISReset。
 
-如 <https://support.microsoft.com/kb/896861> 中所述，安全级别较低的变通方法是禁用环回检查。 这将禁用反射攻击保护。 因此，最好将一组备用名称限制为仅希望计算机实际使用的那些名称。
+安全级别较低的变通方法是禁用环回检查。 这将禁用反射攻击保护。 因此，最好将一组备用名称限制为仅希望计算机实际使用的那些名称。
 
 ## <a name="see-also"></a>另请参阅
 

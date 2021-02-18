@@ -4,12 +4,12 @@ description: .NET SDK 可以理解的 MSBuild 属性和项的引用。
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: e140491c694291438fe1db7fd60d581ffed0319d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9cd387a4a8ad7f5b31a797d4d019a53799d926ff
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99802666"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432697"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>.NET SDK 项目的 MSBuild 引用
 
@@ -366,6 +366,9 @@ MSBuild 项上的 `CopyToPublishDirectory` 元数据控制何时将项复制到�
 | `5.0` | 即使有较新的规则可用，也会使用为 .NET 5.0 版本启用的规则集。 |
 | `5` | 即使有较新的规则可用，也会使用为 .NET 5.0 版本启用的规则集。 |
 
+> [!NOTE]
+> 此属性对未引用[项目 SDK](overview.md) 的项目（例如，引用 Microsoft.CodeAnalysis.NetAnalyzers NuGet 包的旧版 .NET Framework 项目）中的代码分析没有影响。
+
 ### <a name="analysismode"></a>AnalysisMode
 
 从 .NET 5.0 开始，.NET SDK 附带了所有[“CA”代码质量规则](../../fundamentals/code-analysis/quality-rules/index.md)。 默认情况下，只有[一些规则作为生成警告启用](../../fundamentals/code-analysis/overview.md#enabled-rules)。 `AnalysisMode` 属性允许自定义默认启用的一组规则。 可以切换到更主动的（选择退出）分析模式，也可以切换到更保守的（选择加入）分析模式。 例如，如果要作为生成警告默认启用所有规则，请将值设置为 `AllEnabledByDefault`。
@@ -384,6 +387,9 @@ MSBuild 项上的 `CopyToPublishDirectory` 元数据控制何时将项复制到�
 | `AllEnabledByDefault` | 主动或选择退出模式，默认情况下所有规则都作为生成警告启用。 可以选择[选择退出](../../fundamentals/code-analysis/configuration-options.md)各条规则，以禁用它们。 |
 | `AllDisabledByDefault` | 保守或选择加入模式，默认情况下所有规则都处于禁用状态。 可以选择[选择加入](../../fundamentals/code-analysis/configuration-options.md)各条规则，以启用它们。 |
 
+> [!NOTE]
+> 此属性对未引用[项目 SDK](overview.md) 的项目（例如，引用 Microsoft.CodeAnalysis.NetAnalyzers NuGet 包的旧版 .NET Framework 项目）中的代码分析没有影响。
+
 ### <a name="codeanalysistreatwarningsaserrors"></a>CodeAnalysisTreatWarningsAsErrors
 
 `CodeAnalysisTreatWarningsAsErrors` 属性可配置是否应将代码质量分析警告 (CAxxxx) 视为警告并中断生成。 如果在生成项目时使用 `-warnaserror` 标志，则 [.NET 代码质量分析](../../fundamentals/code-analysis/overview.md#code-quality-analysis)警告也会被视为错误。 如果不希望将代码质量分析警告视为错误，可以在项目文件中将 `CodeAnalysisTreatWarningsAsErrors` MSBuild 属性设置为 `false`。
@@ -396,7 +402,7 @@ MSBuild 项上的 `CopyToPublishDirectory` 元数据控制何时将项复制到�
 
 ### <a name="enablenetanalyzers"></a>EnableNETAnalyzers
 
-默认情况下，为面向 .NET 5.0 或更高版本的项目启用 [.NET 代码质量分析](../../fundamentals/code-analysis/overview.md#code-quality-analysis)。 可通过将 `EnableNETAnalyzers` 属性设置为 `true`，来为面向 .NET 早期版本的项目启用 .NET 代码分析。 若要禁用任何项目中的代码分析，可将此属性设置为 `false`。
+默认情况下，为面向 .NET 5.0 或更高版本的项目启用 [.NET 代码质量分析](../../fundamentals/code-analysis/overview.md#code-quality-analysis)。 可通过将 `EnableNETAnalyzers` 属性设置为 `true`，来为面向 .NET 早期版本的 SDK 样式项目启用 .NET 代码分析。 若要禁用任何项目中的代码分析，可将此属性设置为 `false`。
 
 ```xml
 <PropertyGroup>

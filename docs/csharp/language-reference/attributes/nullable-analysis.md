@@ -2,12 +2,12 @@
 title: C# 保留的特性：可为空的静态分析
 ms.date: 02/02/2021
 description: 编译器会解释这些属性，以便为可为 null 和不可为 null 的引用类型提供更好的静态分析。
-ms.openlocfilehash: c1c3e0a0fe1ee9000e0a1a85ee08e6e966200be5
-ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
+ms.openlocfilehash: 91bba16506e2e8bbac9fdef2d1c4badcf59c1546
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99548352"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432564"
 ---
 # <a name="reserved-attributes-contribute-to-the-compilers-null-state-static-analysis"></a>保留的特性有助于编译器的 null 状态静态分析
 
@@ -240,7 +240,7 @@ string? GetTopLevelDomainFromFullUrl(string? url);
 
 ## <a name="constructor-helper-methods-membernotnull-and-membernotnullwhen"></a>构造函数帮助程序方法：`MemberNotNull` 和 `MemberNotNullWhen`。
 
-这些特性指定了将构造函数中的公共代码重构为帮助程序方法时的意图。 C# 编译器分析构造函数和字段初始值设定项，以确保在每个构造函数返回之前，所有不可为 null 的引用字段都已初始化。 然而，C# 编译器不会通过所有帮助程序方法跟踪字段赋值。 当字段没有在构造函数中直接初始化，而在帮助程序方法中初始化时，编译器会发出警告 `CS8618`。 可以将 <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> 添加到方法声明中，并将其添加到方法中初始化为非 null 值的字段中。 例如，考虑以下情况：
+这些特性指定了将构造函数中的公共代码重构为帮助程序方法时的意图。 C# 编译器分析构造函数和字段初始值设定项，以确保在每个构造函数返回之前，所有不可为 null 的引用字段都已初始化。 然而，C# 编译器不会通过所有帮助程序方法跟踪字段赋值。 当字段没有在构造函数中直接初始化，而在帮助程序方法中初始化时，编译器会发出警告 `CS8618`。 可以将 <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> 添加到方法声明中，并指定在方法中初始化为非 NULL 值的字段。 例如，考虑以下情况：
 
 :::code language="csharp" source="snippets/InitializeMembers.cs" ID="MemberNotNullExample":::
 

@@ -1,4 +1,5 @@
 ---
+description: 详细了解：-keyfile
 title: -keyfile
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - keyfile compiler option [Visual Basic]
 - -keyfile compiler option [Visual Basic]
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-ms.openlocfilehash: c81486243195f7d022bd474ef6db20d069b3a018
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6d19f136d5961e8a933380164a3a77055e1da329
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085147"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466934"
 ---
 # <a name="-keyfile"></a>-keyfile
 
@@ -45,7 +46,7 @@ ms.locfileid: "91085147"
  有关对程序集签名的详细信息，请参阅[创建和使用具有强名称的程序集](../../../standard/assembly/create-use-strong-named.md)。  
   
 > [!NOTE]
-> `-keyfile` 选项不适用于 Visual Studio 开发环境内，仅当从命令行编译时可用。
+> Visual Studio 开发环境内无法使用 `-keyfile` 选项；仅当从命令行编译时才可用。
 
 ## <a name="example"></a>示例
 

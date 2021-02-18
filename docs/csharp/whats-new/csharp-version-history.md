@@ -3,12 +3,12 @@ title: C# 发展历史 - C# 指南
 description: 这些语言在最早版本中是什么样的，它又是如何演化的？
 author: erikdietrich
 ms.date: 04/08/2020
-ms.openlocfilehash: 7258dc8b8fcfbd6354b5ceee4183429bfee14038
-ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
+ms.openlocfilehash: 0f6739ba7a2dd0488c52b917c4a60a1b3f04a930
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97110723"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456414"
 ---
 # <a name="the-history-of-c"></a>C\# 发展历史
 
@@ -70,7 +70,7 @@ C# 1.0 的主要功能包括：
 
 C# 一开始是面向对象的 (OO) 通用语言，而 C# 2.0 版很快改变了这一点。 做好基础准备后，他们开始追求解决一些严重影响开发者的难点。 且他们以显著的方式追求这些难点。
 
-通过泛型，类型和方法可以操作任意类型，同时保持类型安全性。 例如，通过 <xref:System.Collections.Generic.List%601>，将获得 `List<string>` 或 `List<int>` 并且可以对这些字符串或整数执行类型安全操作，同时对其进行循环访问。 使用泛型优于创建派生自 `ArrayList` 的 `ListInt` 或者从每个操作的 `Object` 强制转换。
+通过泛型，类型和方法可以操作任意类型，同时保持类型安全性。 例如，通过 <xref:System.Collections.Generic.List%601>，将获得 `List<string>` 或 `List<int>` 并且可以对这些字符串或整数执行类型安全操作，同时对其进行循环访问。 使用泛型优于创建派生自 `ArrayList` 的 `ListInt` 类型，也优于从每个操作的 `Object` 强制转换。
 
 C# 2.0 版引入了迭代器。 简单来说，迭代器允许使用 `foreach` 循环来检查 `List`（或其他可枚举类型）中的所有项。 拥有迭代器是该语言最重要的一部分，显著提升了语言的可读性以及人们推出代码的能力。
 

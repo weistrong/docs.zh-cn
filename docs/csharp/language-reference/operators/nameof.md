@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - nameof expression [C#]
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
-ms.openlocfilehash: 04109cde2a1f9146bf9bb44f301272808797ded0
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 568127a64efc02717b34fbd9d1e508e2e40596fd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89118307"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464386"
 ---
 # <a name="nameof-expression-c-reference"></a>nameof 表达式（C# 参考）
 
@@ -21,7 +21,7 @@ ms.locfileid: "89118307"
 
 [!code-csharp-interactive[nameof expression](snippets/shared/NameOfOperator.cs#Examples)]
 
-如前面的示例所示，对于类型和命名空间，生成的名称通常不是[完全限定的](~/_csharplang/spec/basic-concepts.md#fully-qualified-names)名称。
+如前面的示例所示，对于类型和命名空间，生成的名称不是[完全限定的](~/_csharplang/spec/basic-concepts.md#fully-qualified-names)名称。
 
 在[逐字标识符](../tokens/verbatim.md)的情况下，`@` 字符不是名称的一部分，如以下示例所示：
 

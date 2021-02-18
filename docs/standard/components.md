@@ -3,12 +3,12 @@ title: .NET 体系结构组件
 description: 描述 .NET 体系结构组件，例如 .NET Standard、.NET 实现、.NET 运行时和工具。
 author: cartermp
 ms.date: 10/05/2020
-ms.openlocfilehash: 00d05ee328087042f7603779438436656c45be48
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c5f174034ce0cd0e1cf0b799c7b3f4bff99447a2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819417"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423130"
 ---
 # <a name="net-architectural-components"></a>.NET 体系结构组件
 
@@ -106,8 +106,8 @@ C# 语言和公共语言基础结构 (CLI) 规范通过 [Ecma International&reg;
 以下官方 Ecma 文档可用于 [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) 和 [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm))：
 
 - **C# 语言标准（版本 5.0）** ：[ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
-- **公共语言基础结构**：提供 [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) 和 [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip) 形式。
-- **派生自分区 IV XML 文件的信息**：提供 [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) 和 [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip) 格式。
+- **公共语言基础结构**：[ECMA-335.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf)。
+- **派生自分区 IV XML 文件的信息**：[ECMA-084.pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) 格式。
 
 官方 ISO/IEC 文档可从 ISO/IEC [公开标准](https://standards.iso.org/ittf/PubliclyAvailableStandards/)页获取。 以下链接可从该页面直接获得：
 

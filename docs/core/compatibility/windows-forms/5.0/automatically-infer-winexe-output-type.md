@@ -2,12 +2,12 @@
 title: 中断性变更：对于 WPF 和 WinForms 应用，OutputType 设置为 WinExe
 description: 了解 .NET SDK 5.0.100 中的以下中断性变更：对于 Windows 窗体应用，OutputType 自动设置为 WinExe。
 ms.date: 09/18/2020
-ms.openlocfilehash: 0b56db57d5242f2fb001c4de339a7f696c088dfc
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 38d9b910374f9e44f7e35296808930c6a6d45f0d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633850"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431459"
 ---
 # <a name="outputtype-set-to-winexe-for-wpf-and-winforms-apps"></a>对于 WPF 和 WinForms 应用，OutputType 设置为 WinExe
 
@@ -23,13 +23,15 @@ ms.locfileid: "97633850"
 </PropertyGroup>
 ```
 
-从 .NET SDK 的 5.0.100 版本开始，对于面向任何框架版本（包括 .NET Framework）的 WPF 和 Windows Forms 应用，`OutputType` 会自动设置为 `WinExe`。 例如：
+从 .NET SDK 的 5.0.100 版本开始，当 `OutputType` 设置为 `Exe` 时，对于面向任何框架版本（包括 .NET Framework）的 WPF 和 Windows Forms 应用，它将自动更改为 `WinExe`。
 
 ```xml
 <PropertyGroup>
   <OutputType>WinExe</OutputType>
 </PropertyGroup>
 ```
+
+ 如果未在项目文件中指定 `OutputType`，则它会默认为 `Library`，并且该值不会更改。
 
 ## <a name="reason-for-change"></a>更改原因
 

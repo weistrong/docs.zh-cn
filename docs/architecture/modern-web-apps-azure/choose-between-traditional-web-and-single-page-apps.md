@@ -7,12 +7,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 12/01/2020
-ms.openlocfilehash: c29e58fb4c748d6025b7c2fbe62a54a85cc71fba
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 309630b4b20105d0f64903c1920006dcfb945f76
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851648"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429696"
 ---
 # <a name="choose-between-traditional-web-apps-and-single-page-apps-spas"></a>在传统 Web 应用和单页应用 (SPA) 之间选择
 
@@ -89,18 +89,15 @@ SPA 可支持丰富客户端功能，当用户执行操作或在应用的各区�
 
 > ### <a name="references--spa-frameworks"></a>参考 - SPA 框架
 >
-> - **Angular**  
->   <https://angular.io>
-> - **React**
->   <https://reactjs.org/>
-> - **JavaScript 框架的比较**  
->   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
+> - **Angular**：<https://angular.io>
+> - **React**：<https://reactjs.org/>
+> - **Vue.js**：<https://vuejs.org/>
 
 **应用程序已为其他（内部或公共）客户端公开 API**
 
 如果已提供一个 Web API 供其他客户端使用，则相较于在服务器端窗体中复制逻辑，创建一个利用这些 API 的 SPA 实现更加容易。 用户与应用程序交互时，SPA 广泛使用 Web API 来查询和更新数据。
 
-## <a name="when-to-choose-no-locblazor"></a>何时选择 Blazor
+## <a name="when-to-choose-blazor"></a>何时选择 Blazor
 
 以下部分是有关何时为 Web 应用选择 Blazor 更加详细的说明。
 

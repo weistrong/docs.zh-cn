@@ -3,18 +3,20 @@ title: 调试内存泄漏教程
 description: 了解如何调试 .NET Core 中的内存泄漏。
 ms.topic: tutorial
 ms.date: 04/20/2020
-ms.openlocfilehash: 7fa87a411606e81ffe91348c3cbce5f258a6e4e2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6764663eedc28cd75f9f68927a12ae5b2255d11b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538587"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431446"
 ---
 # <a name="debug-a-memory-leak-in-net-core"></a>调试 .NET Core 中的内存泄漏
 
 **本文适用于：** ✔️ .NET Core 3.1 SDK 及更高版本
 
-本教程演示用于分析 .NET Core 内存泄漏的工具。
+当应用引用不再需要执行所需任务的对象时，可能会发生内存泄漏。 引用上述对象会使垃圾回收器无法回收所使用的内存，这通常会导致性能降低，并可能最终引发 <xref:System.OutOfMemoryException>。
+
+本教程演示如何使用 .NET 诊断 CLI 工具分析 .NET Core 应用中的内存泄漏。 如果所在的操作系统是 Windows，则可以[使用 Visual Studio 的内存诊断工具](/visualstudio/profiling/memory-usage)调试内存泄漏。
 
 本教程使用一个示例应用程序，它设计为有意泄漏内存。 本示例作为练习提供。 还可以分析无意中泄漏内存的应用程序。
 
@@ -238,6 +240,7 @@ Found 2 roots.
 - 用于检查托管内存使用情况的 [dotnet-counters](dotnet-counters.md)
 - 用于收集和分析转储文件的 [dotnet-dump](dotnet-dump.md)
 - [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [使用 Visual Studio 调试内存泄漏](/visualstudio/profiling/memory-usage)
 
 ## <a name="next-steps"></a>后续步骤
 
