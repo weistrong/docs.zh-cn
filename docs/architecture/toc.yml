@@ -21,3 +21,5 @@
       href: microservices/
     - name: 无服务器应用：体系结构、模式和 Azure 实现
       href: serverless/
+    - name: 面向 .NET 开发人员的 Dapr
+      href: dapr-for-net-developers/

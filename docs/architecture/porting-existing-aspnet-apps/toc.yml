@@ -62,6 +62,9 @@
           href: strategies-migrating-in-production.md
     - name: eShop 项目迁移示例
       href: example-migration-eshop.md
+      items:
+        - name: 更多迁移方案
+          href: more-migration-scenarios.md
     - name: 部署方案
       href: deployment-scenarios.md
     - name: 总结
