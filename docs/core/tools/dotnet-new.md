@@ -5,12 +5,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 09/04/2020
-ms.openlocfilehash: 3ee644f05ea5929ffc7b11054ef1d974b811f418
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: acaaf025555c46f720452b8c9d4f875b8656125a
+ms.sourcegitcommit: b924ade6426cf61a4604c4e2ee54cb3592c29317
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634450"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101096813"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -58,43 +58,43 @@ dotnet new -h|--help
 
   下表显示随 .NET SDK 一起预安装的模板。 模板的默认语言显示在括号内。 单击短名称链接可查看特定的模板选项。
 
-| 模板                                    | 短名称                      | 语言     | Tags                                  | 已引入 |
-|----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
-| 控制台应用程序                          | [控制台](#console)             | [C#]、F#、VB | 常用/控制台                        | 1.0        |
-| 类库                                | [classlib](#classlib)           | [C#]、F#、VB | 常用/库                        | 1.0        |
-| WPF 应用程序                              | [wpf](#wpf)                     | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
-| WPF 类库                            | [wpflib](#wpf)                  | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
-| WPF 自定义控件库                   | [wpfcustomcontrollib](#wpf)     | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
-| WPF 用户控件库                     | [wpfusercontrollib](#wpf)       | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
-| Windows 窗体 (WinForms) 应用程序         | [winforms](#winforms)           | [C#]、VB     | 常用/WinForms                       | 3.0（对于 VB，则为 5.0）|
-| Windows 窗体 (WinForms) 类库       | [winformslib](#winforms)        | [C#]、VB     | 常用/WinForms                       | 3.0（对于 VB，则为 5.0）|
-| Worker Service                               | [worker](#web-others)           | [C#]         | 常用/Worker/Web                     | 3.0        |
-| 单元测试项目                            | [mstest](#test)                 | [C#]、F#、VB | 测试/MSTest                           | 1.0        |
-| NUnit 3 测试项目                         | [nunit](#nunit)                 | [C#]、F#、VB | 测试/NUnit                            | 2.1.400    |
-| NUnit 3 测试项                            | `nunit-test`                    | [C#]、F#、VB | 测试/NUnit                            | 2.2        |
-| xUnit 测试项目                           | [xunit](#test)                  | [C#]、F#、VB | 测试/xUnit                            | 1.0        |
-| Razor 组件                              | `razorcomponent`                | [C#]         | Web/ASP.NET                           | 3.0        |
-| Razor 页                                   | [page](#page)                   | [C#]         | Web/ASP.NET                           | 2.0        |
-| MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2.0        |
-| MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
-| Blazor 服务器应用                            | [blazorserver](#blazorserver)   | [C#]         | Web/Blazor                            | 3.0        |
-| Blazor WebAssembly 应用                       | [blazorwasm](#blazorwasm)       | [C#]         | Web/Blazor/WebAssembly                | 3.1.300    |
-| ASP.NET Core 空                           | [web](#web)                     | [C#]，F#     | Web/空                             | 1.0        |
-| ASP.NET Core Web 应用程序 (Model-View-Controller) | [mvc](#web-options)             | [C#]，F#     | Web/MVC                               | 1.0        |
-| ASP.NET Core Web 应用程序                         | [webapp、razor](#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2.2、2.0   |
-| 含 Angular 的 ASP.NET Core                    | [angular](#spa)                 | [C#]         | Web/MVC/SPA                           | 2.0        |
-| 含 React.js 的 ASP.NET Core                   | [react](#spa)                   | [C#]         | Web/MVC/SPA                           | 2.0        |
-| 含 React.js 和 Redux 的 ASP.NET Core         | [reactredux](#reactredux)       | [C#]         | Web/MVC/SPA                           | 2.0        |
-| Razor 类库                          | [razorclasslib](#razorclasslib) | [C#]         | Web/Razor/库/Razor 类库 | 2.1        |
-| ASP.NET Core Web API                         | [webapi](#webapi)               | [C#]，F#     | Web/WebAPI                            | 1.0        |
-| ASP.NET Core gRPC 服务                    | [grpc](#web-others)             | [C#]         | Web/gRPC                              | 3.0        |
-| dotnet gitignore 文件                        | `gitignore`                     |              | 配置                                | 3.0        |
-| global.json 文件                             | [globaljson](#globaljson)       |              | 配置                                | 2.0        |
-| NuGet 配置                                 | `nugetconfig`                   |              | 配置                                | 1.0        |
-| Dotnet 本地工具清单文件              | `tool-manifest`                 |              | 配置                                | 3.0        |
-| Web 配置                                   | `webconfig`                     |              | 配置                                | 1.0        |
-| 解决方案文件                                | `sln`                           |              | 解决方案                              | 1.0        |
-| 协议缓冲区文件                         | [proto](#namespace)             |              | Web/gRPC                              | 3.0        |
+| 模板                                    | 短名称                        | 语言     | Tags                                  | 已引入 |
+|----------------------------------------------|-----------------------------------|--------------|---------------------------------------|------------|
+| 控制台应用程序                          | [`console`](#console)             | [C#]、F#、VB | 常用/控制台                        | 1.0        |
+| 类库                                | [`classlib`](#classlib)           | [C#]、F#、VB | 常用/库                        | 1.0        |
+| WPF 应用程序                              | [`wpf`](#wpf)                     | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
+| WPF 类库                            | [`wpflib`](#wpf)                  | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
+| WPF 自定义控件库                   | [`wpfcustomcontrollib`](#wpf)     | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
+| WPF 用户控件库                     | [`wpfusercontrollib`](#wpf)       | [C#]、VB     | 常用/WPF                            | 3.0（对于 VB，则为 5.0）|
+| Windows 窗体 (WinForms) 应用程序         | [`winforms`](#winforms)           | [C#]、VB     | 常用/WinForms                       | 3.0（对于 VB，则为 5.0）|
+| Windows 窗体 (WinForms) 类库       | [`winformslib`](#winforms)        | [C#]、VB     | 常用/WinForms                       | 3.0（对于 VB，则为 5.0）|
+| Worker Service                               | [`worker`](#web-others)           | [C#]         | 常用/Worker/Web                     | 3.0        |
+| 单元测试项目                            | [`mstest`](#test)                 | [C#]、F#、VB | 测试/MSTest                           | 1.0        |
+| NUnit 3 测试项目                         | [`nunit`](#nunit)                 | [C#]、F#、VB | 测试/NUnit                            | 2.1.400    |
+| NUnit 3 测试项                            | `nunit-test`                      | [C#]、F#、VB | 测试/NUnit                            | 2.2        |
+| xUnit 测试项目                           | [`xunit`](#test)                  | [C#]、F#、VB | 测试/xUnit                            | 1.0        |
+| Razor 组件                              | `razorcomponent`                  | [C#]         | Web/ASP.NET                           | 3.0        |
+| Razor 页                                   | [`page`](#page)                   | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewImports                              | [`viewimports`](#namespace)       | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewStart                                | `viewstart`                       | [C#]         | Web/ASP.NET                           | 2.0        |
+| Blazor 服务器应用                            | [`blazorserver`](#blazorserver)   | [C#]         | Web/Blazor                            | 3.0        |
+| Blazor WebAssembly 应用                       | [`blazorwasm`](#blazorwasm)       | [C#]         | Web/Blazor/WebAssembly                | 3.1.300    |
+| ASP.NET Core 空                           | [`web`](#web)                     | [C#]，F#     | Web/空                             | 1.0        |
+| ASP.NET Core Web 应用程序 (Model-View-Controller) | [`mvc`](#web-options)             | [C#]，F#     | Web/MVC                               | 1.0        |
+| ASP.NET Core Web 应用程序                         | [`webapp, razor`](#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2.2、2.0   |
+| 含 Angular 的 ASP.NET Core                    | [`angular`](#spa)                 | [C#]         | Web/MVC/SPA                           | 2.0        |
+| 含 React.js 的 ASP.NET Core                   | [`react`](#spa)                   | [C#]         | Web/MVC/SPA                           | 2.0        |
+| 含 React.js 和 Redux 的 ASP.NET Core         | [`reactredux`](#reactredux)       | [C#]         | Web/MVC/SPA                           | 2.0        |
+| Razor 类库                          | [`razorclasslib`](#razorclasslib) | [C#]         | Web/Razor/库/Razor 类库 | 2.1        |
+| ASP.NET Core Web API                         | [`webapi`](#webapi)               | [C#]，F#     | Web/WebAPI                            | 1.0        |
+| ASP.NET Core gRPC 服务                    | [`grpc`](#web-others)             | [C#]         | Web/gRPC                              | 3.0        |
+| dotnet gitignore 文件                        | `gitignore`                       |              | 配置                                | 3.0        |
+| global.json 文件                             | [`globaljson`](#globaljson)       |              | 配置                                | 2.0        |
+| NuGet 配置                                 | `nugetconfig`                     |              | 配置                                | 1.0        |
+| Dotnet 本地工具清单文件              | `tool-manifest`                   |              | 配置                                | 3.0        |
+| Web 配置                                   | `webconfig`                       |              | 配置                                | 1.0        |
+| 解决方案文件                                | `sln`                             |              | 解决方案                              | 1.0        |
+| 协议缓冲区文件                         | [`proto`](#namespace)             |              | Web/gRPC                              | 3.0        |
 
 ## <a name="options"></a>选项
 
@@ -167,7 +167,7 @@ dotnet new -h|--help
 
 每个项目模板都可能有附加选项。 核心模板有以下附加选项：
 
-### <a name="console"></a>控制台
+### `console`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -191,11 +191,11 @@ dotnet new -h|--help
 
   如已指定，则在项目创建期间不执行隐式还原。 自 .NET Core 2.2 SDK 起可用。
 
-**_
+***
 
-### <a name="classlib"></a>classlib
+### `classlib`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   指定目标[框架](../../standard/frameworks.md)。 值：`net5.0` 或 `netcoreapp<version>`（若要创建 .NET 类库），或`netstandard<version>`（若要创建 .NET Standard 类库）。 .NET 5.0 SDK 的默认值是 `net5.0`。
 
@@ -209,11 +209,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a> wpf、wpflib、wpfcustomcontrollib、wpfusercontrollib
+### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a> `wpf`, `wpflib`, `wpfcustomcontrollib`, `wpfusercontrollib`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   指定目标[框架](../../standard/frameworks.md)。 默认值为 `net5.0`。 自 .NET Core 3.1 SDK 起可用。
 
@@ -227,11 +227,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="winforms-winformslib"></a><a name="winforms"></a> winforms、winformslib
+### <a name="winforms-winformslib"></a><a name="winforms"></a> `winforms`, `winformslib`
 
-- _ *`--langVersion <VERSION_NUMBER>`**
+- **`--langVersion <VERSION_NUMBER>`**
 
   在已创建的项目文件中设置 `LangVersion` 属性。 例如，使用 `--langVersion 7.3` 以使用 C# 7.3。
 
@@ -241,11 +241,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="worker-grpc"></a><a name="web-others"></a> worker、grpc
+### <a name="worker-grpc"></a><a name="web-others"></a> `worker`, `grpc`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   指定目标[框架](../../standard/frameworks.md)。 默认值为 `netcoreapp3.1`。 自 .NET Core 3.1 SDK 起可用。
 
@@ -257,11 +257,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="mstest-xunit"></a><a name="test"></a> mstest、xunit
+### <a name="mstest-xunit"></a><a name="test"></a> `mstest`, `xunit`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   指定目标[框架](../../standard/frameworks.md)。 自 .NET Core 3.0 SDK 起可用的选项。
 
@@ -281,11 +281,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="nunit"></a>nunit
+### `nunit`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   指定目标[框架](../../standard/frameworks.md)。
 
@@ -307,11 +307,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="page"></a>页
+### `page`
 
-- _ *`-na|--namespace <NAMESPACE_NAME>`**
+- **`-na|--namespace <NAMESPACE_NAME>`**
 
   已生成代码的命名空间。 默认值为 `MyApp.Namespace`。
 
@@ -319,19 +319,19 @@ dotnet new -h|--help
 
   创建不含 PageModel 的页。
 
-**_
+***
 
-### <a name="viewimports-proto"></a><a name="namespace"></a> viewimports、proto
+### <a name="viewimports-proto"></a><a name="namespace"></a> `viewimports`, `proto`
 
-- _ *`-na|--namespace <NAMESPACE_NAME>`**
+- **`-na|--namespace <NAMESPACE_NAME>`**
 
   已生成代码的命名空间。 默认值为 `MyApp.Namespace`。
 
-**_
+***
 
-### <a name="blazorserver"></a>blazorserver
+### `blazorserver`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   要使用的身份验证类型。 可能的值为：
 
@@ -398,11 +398,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="blazorwasm"></a>blazorwasm
+### `blazorwasm`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   指定目标[框架](../../standard/frameworks.md)。
 
@@ -502,11 +502,11 @@ dotnet new -h|--help
 
   为从 Web 应用调用 API 而请求的作用域。 仅适用于未指定 ASP.NET Core 主机的 `SingleOrg` 或 `IndividualB2C` 身份验证。 默认值为 `user.read`。
 
-**_
+***
 
-### <a name="web"></a>Web
+### `web`
 
-- _ *`--exclude-launch-settings`**
+- **`--exclude-launch-settings`**
 
   从生成的模板中排除 launchSettings.json。
 
@@ -531,11 +531,11 @@ dotnet new -h|--help
 
   关闭 HTTPS。
 
-**_
+***
 
-### <a name="mvc-webapp"></a><a name="web-options"></a> mvc、webapp
+### <a name="mvc-webapp"></a><a name="web-options"></a> `mvc`, `webapp`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   要使用的身份验证类型。 可能的值为：
 
@@ -622,11 +622,11 @@ dotnet new -h|--help
 
   确定项目是否配置为在调试生成中使用 [Razor 运行时编译](/aspnet/core/mvc/views/view-compilation#runtime-compilation)。 自 .NET Core 3.1.201 SDK 起可用的选项。
 
-**_
+***
 
-### <a name="angular-react"></a><a name="spa"></a> angular、react
+### <a name="angular-react"></a><a name="spa"></a> `angular`, `react`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   要使用的身份验证类型。 自 .NET Core 3.0 SDK 起可用。
   
@@ -664,11 +664,11 @@ dotnet new -h|--help
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
 
-**_
+***
 
-### <a name="reactredux"></a>reactredux
+### `reactredux`
 
-- _ *`--exclude-launch-settings`**
+- **`--exclude-launch-settings`**
 
   从生成的模板中排除 launchSettings.json。
 
@@ -693,11 +693,11 @@ dotnet new -h|--help
 
   关闭 HTTPS。
 
-**_
+***
 
-### <a name="razorclasslib"></a>razorclasslib
+### `razorclasslib`
 
-- _ *`--no-restore`**
+- **`--no-restore`**
 
   在项目创建期间不执行隐式还原。
 
@@ -705,11 +705,11 @@ dotnet new -h|--help
 
   除了将组件添加到此库以外，还支持添加传统的 Razor 页面和视图。 自 .NET Core 3.0 SDK 起可用。
 
-**_
+***
   
-### <a name="webapi"></a>webapi
+### `webapi`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   要使用的身份验证类型。 可能的值为：
 
@@ -775,11 +775,11 @@ dotnet new -h|--help
 
   在项目创建期间不执行隐式还原。
 
-**_
+***
 
-### <a name="globaljson"></a>globaljson
+### `globaljson`
 
-- _ *`--sdk-version <VERSION_NUMBER>`**
+- **`--sdk-version <VERSION_NUMBER>`**
 
   指定要在 global.json 文件中使用的 .NET SDK 版本。
 

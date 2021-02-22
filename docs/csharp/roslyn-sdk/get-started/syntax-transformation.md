@@ -3,12 +3,12 @@ title: 语法转换 (Roslyn API) 入门
 description: 介绍如何遍历、查询及浏览语法树。
 ms.date: 06/01/2018
 ms.custom: mvc
-ms.openlocfilehash: 5879dfd6ed0a5f6465829eec496d10cfcfd07362
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 706e4643ecc81d252a9192dc5e8850024770628f
+ms.sourcegitcommit: 456b3cd82a87b453fa737b4661295070d1b6d684
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202123"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100639398"
 ---
 # <a name="get-started-with-syntax-transformation"></a>语法转换入门
 
@@ -30,7 +30,7 @@ ms.locfileid: "84202123"
 
 第一个语法转换演示工厂方法。 将 `using System.Collections;` 语句替换为 `using System.Collections.Generic;` 语句。 此示例演示如何使用 <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> 工厂方法创建 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxNode?displayProperty=nameWithType> 对象。 对于每一类节点、令牌或琐事，都有创建该类型实例的工厂方法。 可以通过以自下而上的方式按层次结构组合节点来创建语法树。 然后，转换现有程序，用你所创建的新树替换现有节点。
 
-启动 Visual Studio，并新建 C#“独立代码分析工具”项目。 在 Visual Studio 中，选择“文件” > “新建” > “项目”，显示新建项目对话框。 在“Visual C#” > “扩展性”下，选择“独立代码分析工具”。 本快速入门教程有两个示例项目，因此将解决方案命名为“SyntaxTransformationQuickStart”，并将项目命名为“ConstructionCS”。 单击 **“确定”** 。
+启动 Visual Studio，并新建 C#“独立代码分析工具”项目。 在 Visual Studio 中，选择“文件”   > “新建”   > “项目”  ，显示新建项目对话框。 在“Visual C#” > “扩展性”下，选择“独立代码分析工具”。 本快速入门教程有两个示例项目，因此将解决方案命名为“SyntaxTransformationQuickStart”，并将项目命名为“ConstructionCS”。 单击 **“确定”** 。
 
 此项目使用 <xref:Microsoft.CodeAnalysis.CSharp.SyntaxFactory?displayProperty=nameWithType> 类方法构造 <xref:Microsoft.CodeAnalysis.CSharp.Syntax.NameSyntax?displayProperty=nameWithType> 来表示 `System.Collections.Generic` 命名空间。
 
@@ -82,7 +82,7 @@ ms.locfileid: "84202123"
 
 [!code-csharp[create a new subtree](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#BuildNewUsing "Create the subtree with the replaced namespace")]
 
-运行程序，并仔细查看输出。 `newusing` 尚未置于根树中。 原始树尚未更改。
+运行程序，并仔细查看输出。 `newUsing` 尚未置于根树中。 原始树尚未更改。
 
 使用 <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> 扩展方法添加以下代码以创建新树。 新树是将现有导入替换为更新后的 `newUsing` 节点的结果。 将此新树分配给现有 `root` 变量：
 
@@ -94,7 +94,7 @@ ms.locfileid: "84202123"
 
 `With*` 和 <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> 方法提供了方便的方法来转换语法树的单独分支。 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> 类在语法树上执行多个转换。 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter?displayProperty=nameWithType> 类是 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor%601?displayProperty=nameWithType> 的一个子类。 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> 将转换应用于特定类型的 <xref:Microsoft.CodeAnalysis.SyntaxNode>。 你可以将转换应用于多个类型的 <xref:Microsoft.CodeAnalysis.SyntaxNode> 对象，只要它们显示在语法树中。 本快速入门教程中的第二个项目创建命令行重构，以便在可以使用类型推理的任何位置删除本地变量声明中的显式类型。
 
-新建 C#“独立代码分析工具”项目。 在 Visual Studio 中，右键单击 `SyntaxTransformationQuickStart` 解决方案节点。 选择“添加” > “新项目”以显示“新项目对话框”。 在“Visual C#” > “扩展性”下，选择“独立代码分析工具”。 给项目 `TransformationCS` 命名，然后单击“确定”。
+新建 C#“独立代码分析工具”项目。 在 Visual Studio 中，右键单击 `SyntaxTransformationQuickStart` 解决方案节点。 选择“添加” > “新项目”以显示“新项目对话框”。 在“Visual C#”   > “扩展性”  下，选择“独立代码分析工具”  。 给项目 `TransformationCS` 命名，然后单击“确定”。
 
 第一步是创建一个派生自 <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter> 的类，以执行转换。 向项目添加一个新类文件。 在 Visual Studio 中，依次选择“项目” > “添加类...”。在“添加新项”对话框中键入 `TypeInferenceRewriter.cs` 作为文件名。
 

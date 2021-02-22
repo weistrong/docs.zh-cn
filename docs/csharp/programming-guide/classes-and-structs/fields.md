@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - fields [C#]
 ms.assetid: 3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7
-ms.openlocfilehash: 58e60e1dc0b574ae922e6a27a22978b91aca4ec4
-ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
+ms.openlocfilehash: 3210500719529f8bb7f2627abf634cc7b9dcb772
+ms.sourcegitcommit: b924ade6426cf61a4604c4e2ee54cb3592c29317
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98899043"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101096832"
 ---
 # <a name="fields-c-programming-guide"></a>字段（C# 编程指南）
 
@@ -26,11 +26,11 @@ ms.locfileid: "98899043"
 
 [!code-csharp[fields#1](snippets/fields/Program.cs#1)]
 
-若要访问对象中的字段，请在对象名称后添加一个句点，后跟字段的名称，如 `objectname.fieldname` 中所示。 例如：
+若要访问对象中的字段，请在对象名称后添加一个句点，后跟字段的名称，如 `objectname._fieldName` 中所示。 例如：
 
 [!code-csharp[fields#2](snippets/fields/Program.cs#2)]
 
-声明字段时，可以使用赋值运算符为字段指定一个初始值。 例如，若要为 `day` 字段自动赋值 `"Monday"`，则需要声明 `day`，如以下示例所示：
+声明字段时，可以使用赋值运算符为字段指定一个初始值。 例如，若要为 `Day` 字段自动赋值 `"Monday"`，则需要声明 `Day`，如以下示例所示：
 
 [!code-csharp[fields#3](snippets/fields/Program.cs#3)]
 

@@ -2,12 +2,12 @@
 title: 日志记录和跟踪 - .NET Core
 description: .NET Core 日志记录和跟踪简介。
 ms.date: 10/12/2020
-ms.openlocfilehash: a8c6d82ddb7bc3f8b4cc9eae9dd7aaf65732a0b8
-ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
+ms.openlocfilehash: 70cff297688270d30b9850d123ffc8bb27ef7fbe
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99548390"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100582968"
 ---
 # <a name="net-core-logging-and-tracing"></a>.NET Core 日志记录和跟踪
 
@@ -64,9 +64,6 @@ ms.locfileid: "99548390"
   - 包含在 .NET Core 中，用作 .NET Framework 的 [NuGet 包](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource)。
   - 允许对非序列化对象进行进程内跟踪。
   - 包括一个桥，以允许将已记录对象的所选字段写入 <xref:System.Diagnostics.Tracing.EventSource>。
-
-- <xref:System.Diagnostics.Activity?displayProperty=nameWithType>
-  - 提供了一种明确的方法来标识由特定活动或事务生成的日志消息。 此对象可用于关联不同服务中的日志。
 
 - <xref:System.Diagnostics.EventLog?displayProperty=nameWithType>
   - 仅限 Windows。

@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: f22ee4accf9ff00814fa540adce4b9ecc6686da4
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.sourcegitcommit: 456b3cd82a87b453fa737b4661295070d1b6d684
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
+ms.lasthandoff: 02/18/2021
 ms.locfileid: "90537726"
 ---
 无需运行 [`dotnet restore`](~/docs/core/tools/dotnet-restore.md)，因为它由所有需要还原的命令隐式运行，如 `dotnet new`、`dotnet build`、`dotnet run`、`dotnet test`、`dotnet publish` 和 `dotnet pack`。 若要禁用隐式还原，请使用 `--no-restore` 选项。
