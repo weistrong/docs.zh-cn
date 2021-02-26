@@ -2,24 +2,24 @@
 title: C# 程序的构建基块
 description: 了解 C# 成员、表达式和语句。 类型包含你编写的成员。 这些成员是根据语句和表达式生成的。
 ms.date: 08/06/2020
-ms.openlocfilehash: 0ac45eee180b60062a328fca9ab5c63a1537debe
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 79ba391a6c4c6dc453f6c6e07107e4dd831e111d
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216611"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100582959"
 ---
 # <a name="program-building-blocks"></a>程序构建基块
 
-上文中介绍的类型是使用以下构建基块生成的：[成员](../programming-guide/classes-and-structs/members.md)、[表达式和语句](../programming-guide/statements-expressions-operators/index.md)_*__ 。
+上文中介绍的类型是使用以下构建基块生成的：[成员*_](../programming-guide/classes-and-structs/members.md)、[表达式和语句_*](../programming-guide/statements-expressions-operators/index.md)。
 
 ## <a name="members"></a>成员
 
-`class` 的成员要么是静态成员，要么是实例成员 。 静态成员属于类，而实例成员则属于对象（类实例）。
+`class` 的成员要么是静态成员，要么是实例成员。 静态成员属于类，而实例成员则属于对象（类实例）。
 
 以下列表概述了类可以包含的成员类型。
 
-- _*常数**：与类相关联的常量值
+- **常量**：与类相关联的常量值
 - **字段**：与类关联的变量
 - **方法**：类可执行的操作
 - **属性**：与读取和写入类的已命名属性相关联的操作

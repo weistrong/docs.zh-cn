@@ -4,14 +4,14 @@ description: 本高级教程展示了如何使用模式匹配技术，通过单�
 ms.date: 10/06/2020
 ms.technology: csharp-whats-new
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: be1c330973859df62cd4706e5f6f9ca4326fb221
-ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
+ms.openlocfilehash: b0ee4ee905c130876cf201cb3a1a441d54226c52
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794820"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100582792"
 ---
-# <a name="tutorial-use-pattern-matching-to-build-type-driven-and-data-driven-algorithms"></a>教程：使用模式匹配来构建类型驱动和数据驱动的算法。
+# <a name="tutorial-use-pattern-matching-to-build-type-driven-and-data-driven-algorithms"></a>教程：使用模式匹配来生成类型驱动和数据驱动的算法
 
 C# 7 引入了基本模式匹配功能。 C# 8 和 C# 9 通过新增表达式和模式，扩展了这些功能。 可以编写行为类似于扩展其他库中可能有的类型的功能。 模式的另一个用途是，创建应用程序需要的功能，但此功能不是要扩展的类型的基本功能。
 

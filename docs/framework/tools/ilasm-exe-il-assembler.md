@@ -1,6 +1,6 @@
 ---
 title: Ilasm.exe（IL 汇编程序）
-description: 开始使用 Ilasm.exe（IL 汇编程序）。 此工具从中间语言 (IL) 生成可移植可执行 (PE) 文件。
+description: 开始使用 Ilasm.exe（IL 汇编程序）。 此工具从中间语言 (IL) 程序集生成可移植可执行 (PE) 文件。
 ms.date: 03/30/2017
 helpviewer_keywords:
 - MSIL generators
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - Ilasm.exe
 - verifying MSIL performance
 ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
-ms.openlocfilehash: 1a85b3bf9509ffba6c2331d14196a6bef2bfa080
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 50dbb0688a75d8588cb6d8679410a4a07abc6b50
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87166985"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100584265"
 ---
 # <a name="ilasmexe-il-assembler"></a>Ilasm.exe（IL 汇编程序）
 
-IL 汇编程序可利用中间语言 (IL) 生成可移植可执行 (PE) 文件。 （有关 IL 的详细信息，请参阅[托管执行过程](../../standard/managed-execution-process.md)。）可以运行生成的可执行文件（包含 IL 和所需的元数据）以确定 IL 是否按预期执行。
+IL 汇编程序可利用中间语言 (IL) 程序集生成可移植可执行 (PE) 文件。 （有关 IL 的详细信息，请参阅[托管执行过程](../../standard/managed-execution-process.md)。）可以运行生成的可执行文件（包含 IL 和所需的元数据）以确定 IL 是否按预期执行。
 
 此工具会自动随 Visual Studio 一起安装。 若要运行此工具，请使用 Visual Studio 开发人员命令提示（或 Windows 7 中的 Visual Studio 命令提示）。 有关详细信息，请参阅[命令提示](developer-command-prompt-for-vs.md)。
 
@@ -51,9 +51,9 @@ ilasm [options] filename [[options]filename...]
 |**/dll**|生成 .dll 文件作为输出。|
 |/enc: `file`|从指定的源文件创建“编辑并继续”增量。<br /><br /> 此参数仅可用于教学目的，不支持商业使用。|
 |**/exe**|生成可执行文件作为输出。 这是默认设置。|
-|**/flags:** `integer`|将 ImageFlags 设置为由公共语言运行时标头中的 `integer` 指定的值。 如果在文件中指定了 .corflags IL 指令，则此选项将重写它。 有关 *integer*的有效值的列表，请参见 CorHdr.h 中的 COMIMAGE_FLAGS。|
+|**/flags:** `integer`|将 ImageFlags 设置为由公共语言运行时标头中的 `integer` 指定的值。 如果在文件中指定了 .corflags IL 指令，则此选项将重写它。 有关 *integer* 的有效值的列表，请参见 CorHdr.h 中的 COMIMAGE_FLAGS。|
 |**/fold**|将相同的方法体合并为一体。|
-|/**highentropyva**|生成支持高熵地址空间布局随机化 (ASLR) 的可执行输出。 （ **/appcontainer**的默认值。）|
+|/**highentropyva**|生成支持高熵地址空间布局随机化 (ASLR) 的可执行输出。 （ **/appcontainer** 的默认值。）|
 |/include: `includePath`|设置要在其中搜索 `#include`包含的文件的路径。|
 |**/itanium**|指定 Intel 的 Itanium 作为目标处理器。<br /><br /> 如果未指定映像位数，则默认值为 **/pe64**。|
 |/key: `keyFile`|使用 `keyFile` 中包含的私钥编译具有强签名的 `filename`。|

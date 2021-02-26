@@ -2,12 +2,12 @@
 title: dotnet-counters 诊断工具 - .NET CLI
 description: 了解如何安装和使用 dotnet-counter CLI 工具进行临时运行状况监视和初级性能调查。
 ms.date: 11/17/2020
-ms.openlocfilehash: 1842b1fb9cde0e0b7a570456766cbfdeb64c5896
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 1c802e33602c2d8f18600b9771a1f68e722d8fdf
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188577"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100583298"
 ---
 # <a name="investigate-performance-counters-dotnet-counters"></a>调查性能计数器 (dotnet-counters)
 
@@ -236,6 +236,9 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 > [!NOTE]
 > 若要使用 `dotnet-counters` 监视指标，需要以与运行目标进程的用户相同的用户身份或以根身份运行。
+
+> [!NOTE]
+> 如果你看到一条类似于以下内容的错误消息：`[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`，你正在尝试使用的 `dotnet-counters` 存在与目标进程不一致的位数。 请务必在[安装](#install)链接中下载工具的正确位数。
 
 ### <a name="examples"></a>示例
 

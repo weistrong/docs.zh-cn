@@ -4,12 +4,12 @@ description: 了解用于构建多种应用的免费开源开发平台 .NET。
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: e0c86b377d4ea73bb275bc48c0f0cccb2db249dd
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: d08e00ee9702c71cacc8a6588c1f4290b4ab3ae9
+ms.sourcegitcommit: b924ade6426cf61a4604c4e2ee54cb3592c29317
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189995"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101096798"
 ---
 # <a name="introduction-to-net"></a>.NET 简介
 

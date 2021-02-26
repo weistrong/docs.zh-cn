@@ -3,12 +3,12 @@ title: EventPipe 概述
 description: 了解 EventPipe 以及如何使用它来跟踪 .NET 应用程序，以诊断性能问题。
 ms.date: 11/09/2020
 ms.topic: overview
-ms.openlocfilehash: 00378c4f409b307afa9183e40de6078cdafd3ae7
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f315beafabbd99bf78647b3f714fd76d93fcac28
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820613"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100582977"
 ---
 # <a name="eventpipe"></a>EventPipe
 
@@ -94,3 +94,5 @@ EventPipe 和 ETW/LTTng 之间的另一个主要区别是管理员/根用户权�
   - `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
   - `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`
   - `Microsoft-DotNETCore-SampleProfiler:0:5`
+
+  若要详细了解 .NET 中的一些已知提供程序，请参阅[已知事件提供程序](./well-known-event-providers.md)。

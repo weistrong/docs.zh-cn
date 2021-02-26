@@ -2,16 +2,16 @@
 title: dotnet-trace 诊断工具 - .NET CLI
 description: 了解如何通过使用 .NET EventPipe 来安装和使用 dotnet-trace CLI 工具，以在没有本机探查器的情况下收集运行中的进程的 .NET 跟踪。
 ms.date: 11/17/2020
-ms.openlocfilehash: 93698882e94f58eda84abebc277e1eacfe22a3da
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: abf98df6e31747ea3e8013fc77b246613a3402ad
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189694"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100582998"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>dotnet-trace 性能分析实用工具
 
-本文适用于： ✔️ .NET Core 3.0 SDK 及更高版本
+ 本文适用于： ✔️ .NET Core 3.0 SDK 及更高版本
 
 ## <a name="install"></a>安装
 
@@ -180,6 +180,8 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   - `Provider` 的格式为：`KnownProviderName[:Flags[:Level][:KeyValueArgs]]`。
   - `KeyValueArgs` 的格式为：`[key1=value1][;key2=value2]`。
 
+  若要详细了解 .NET 中的一些已知提供程序，请参阅[已知事件提供程序](./well-known-event-providers.md)。
+
 - `-- <command>`（仅适用于运行 .NET 5.0 的目标应用程序）
 
   在集合配置参数之后，用户可以追加 `--`，后跟一个命令，以启动至少具有 5.0 运行时的 .NET 应用程序。 这在过程早期发生诊断问题（如启动性能问题或程序集加载程序和绑定器错误）时可能会有所帮助。
@@ -195,6 +197,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > [!NOTE]
 > 若要使用 `dotnet-trace` 收集跟踪，需要以与运行目标进程的用户相同的用户身份或以根身份运行。 否则，该工具将无法与目标进程建立连接。
+
+> [!NOTE]
+> 如果你看到一条类似于以下内容的错误消息：`[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`，你正在尝试使用的 `dotnet-trace` 存在与目标进程不一致的位数。 请务必在[安装](#install)链接中下载工具的正确位数。
 
 ## <a name="dotnet-trace-convert"></a>dotnet-trace convert
 
