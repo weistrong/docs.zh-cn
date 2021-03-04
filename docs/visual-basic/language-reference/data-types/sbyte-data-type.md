@@ -15,12 +15,12 @@ helpviewer_keywords:
 - data types [Visual Basic], integral
 - SByte data type
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-ms.openlocfilehash: e6e314a34469083433289c0fff9b404d4549824d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: a6a63ec742cf4a93080c9cc2f9906c5c6c21f0a8
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99792162"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102102888"
 ---
 # <a name="sbyte-data-type-visual-basic"></a>SByte 数据类型 (Visual Basic) 
 
@@ -65,7 +65,7 @@ Dim number As SByte = &H_F9
 
 ## <a name="programming-tips"></a>编程提示
 
-- **CLS 遵从性。** `SByte`数据类型不是[公共语言规范](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS) 的一部分，因此符合 cls 的代码不能使用使用它的组件。
+- **CLS 遵从性。** `SByte`数据类型不是[公共语言规范](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) (CLS) 的一部分，因此符合 cls 的代码不能使用使用它的组件。
 
 - **扩大.** `SByte`数据类型扩大到、、、 `Short` `Integer` `Long` `Decimal` 、 `Single` 和 `Double` 。 这意味着你可以转换 `SByte` 为这些类型中的任何一种，而不会遇到 <xref:System.OverflowException?displayProperty=nameWithType> 错误。
 
@@ -73,7 +73,7 @@ Dim number As SByte = &H_F9
 
 - **Framework 类型。** .NET Framework 中的对应类型是 <xref:System.SByte?displayProperty=nameWithType> 结构。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.SByte?displayProperty=nameWithType>
 - [数据类型](index.md)
