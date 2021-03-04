@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - BC30136
 ms.assetid: 05a813e4-9d65-4ce8-be8f-7ca20bbba2af
-ms.openlocfilehash: a247833cfb5fc89a500a4b644fff25f0f50d2efb
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: a3da70341ee32fd2dae42e227d729030e8d6eb82
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99796517"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106587"
 ---
 # <a name="bc30136-error-creating-win32-resources-error-message"></a>BC30136：创建 Win32 资源时出错： \<error message>
 
-Visual Basic 编译器调用程序集链接器 ( # A0 （也称为 Alink) ）以生成包含清单的程序集。 该链接器已报告在创建内存中资源时出错。 原因可能是环境有问题，或计算机的内存不足。
+Visual Basic 编译器调用程序集链接器 (Al.exe （也称为 Alink) ）以生成包含清单的程序集。 该链接器已报告在创建内存中资源时出错。 原因可能是环境有问题，或计算机的内存不足。
 
  **错误 ID：** BC30136
 
@@ -27,7 +27,7 @@ Visual Basic 编译器调用程序集链接器 ( # A0 （也称为 Alink) ）以
 
 2. 如果仍然出现错误，则收集有关该情况的信息并通知 Microsoft 产品支持服务。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
-- [与我们交流](/visualstudio/ide/feedback-options)
+- [Visual Studio 反馈选项](/visualstudio/ide/feedback-options)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30251
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
-ms.openlocfilehash: 32ae854e9f1b037a17d9c378ce7ee4a3f9b43ad2
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 3961ba557ad2afd9c94f071b6615573419d7325b
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99641169"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106574"
 ---
 # <a name="bc30251-type-typename-has-no-constructors"></a>BC30251：类型 " \<typename> " 没有构造函数
 
@@ -31,7 +31,7 @@ ms.locfileid: "99641169"
 
 4. 如果仍然出现错误，则收集有关该情况的信息并通知 Microsoft 产品支持服务。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [对象和类](../../programming-guide/language-features/objects-and-classes/index.md)
-- [与我们交流](/visualstudio/ide/feedback-options)
+- [Visual Studio 反馈选项](/visualstudio/ide/feedback-options)

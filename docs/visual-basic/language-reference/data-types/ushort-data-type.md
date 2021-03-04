@@ -17,12 +17,12 @@ helpviewer_keywords:
 - UShort data type
 - US literal type characters [Visual Basic]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-ms.openlocfilehash: 9c709e2110aef4281c348f697408044a191314c6
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 43c18bad3e24e14c28d2ca3d5d88170d584e55a8
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99774975"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106639"
 ---
 # <a name="ushort-data-type-visual-basic"></a>UShort 数据类型 (Visual Basic) 
 
@@ -67,7 +67,7 @@ Dim number = &H_5826us
   
 - **负数。** 由于 `UShort` 是一个无符号类型，因此它不能表示负数。 如果 `-` 对计算结果为类型的表达式使用一元减号 () 运算符 `UShort` ，Visual Basic 会将表达式转换为 `Integer` 第一个表达式。  
   
-- **CLS 遵从性。** `UShort`数据类型不是[公共语言规范](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS) 的一部分，因此符合 cls 的代码不能使用使用它的组件。
+- **CLS 遵从性。** `UShort`数据类型不是[公共语言规范](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) (CLS) 的一部分，因此符合 cls 的代码不能使用使用它的组件。
   
 - **扩大.** `UShort`数据类型扩大到、、、 `Integer` `UInteger` 、、 `Long` `ULong` `Decimal` `Single` 和 `Double` 。 这意味着你可以转换 `UShort` 为这些类型中的任何一种，而不会遇到 <xref:System.OverflowException?displayProperty=nameWithType> 错误。  
   
@@ -75,7 +75,7 @@ Dim number = &H_5826us
   
 - **Framework 类型。** .NET Framework 中的对应类型是 <xref:System.UInt16?displayProperty=nameWithType> 结构。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.UInt16>
 - [数据类型](index.md)

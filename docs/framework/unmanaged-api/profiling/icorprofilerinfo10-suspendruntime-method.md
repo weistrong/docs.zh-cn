@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: d019b163c8c71331b2d9a77fc0384d42a04c1fbd
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 8cc098e4ae5f139f729ca0593b51c25eaf031704
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99794554"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106873"
 ---
 # <a name="icorprofilerinfo10suspendruntime-method"></a>ICorProfilerInfo10：： SuspendRuntime 方法
 
@@ -37,8 +37,8 @@ HRESULT SuspendRuntime();
 
 **库：** CorGuids.lib
 
-**.Net 版本：**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.Net 版本：**[!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [ICorProfilerInfo10 接口](icorprofilerinfo10-interface.md)

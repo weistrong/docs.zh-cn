@@ -1,7 +1,7 @@
 ---
 title: .NET 加密模型
 description: 查看 .NET 中的常用加密算法实现。 了解对象继承、流设计、& 配置的可扩展加密模型。
-ms.date: 07/14/2020
+ms.date: 02/26/2021
 dev_langs:
 - csharp
 - vb
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cryptography [.NET], model
 - encryption [.NET], model
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-ms.openlocfilehash: f9ec08992cb8db8f81f11de661612e1b7d15131c
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 2208e36ac4521f43cfd2960d92588c8349a119ca
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831112"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106925"
 ---
 # <a name="net-cryptography-model"></a>.NET 加密模型
 
@@ -48,14 +48,14 @@ ms.locfileid: "94831112"
 
 大多数情况下，不需要直接引用算法实现类，如 `AesCryptoServiceProvider` 。 通常需要的方法和属性在基本算法类上，如 `Aes` 。 使用基算法类的工厂方法创建默认实现类的实例，并引用基本算法类。 例如，请参阅以下示例中突出显示的代码行：
 
-:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="16":::
-:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="12":::
+:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="20":::
+:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="17":::
 
 ## <a name="cryptographic-configuration"></a>加密配置
 
 加密配置允许你将算法的特定实现解析到算法名称，从而允许 .NET 加密类的可扩展性。 可以添加自己算法的硬件或软件实现，并将该实现映射到所选择的算法名称。 如果配置文件中未指定算法，则使用默认设置。
 
-## <a name="choosing-an-algorithm"></a>选择算法
+## <a name="choose-an-algorithm"></a>选择一种算法
 
 可以出于各种原因选择一种算法：例如，为了保护数据完整性，为了保护数据隐私或为了生成密钥。 为了保护完整性（防止更改）或保护隐私（防止查看），对称算法和哈希算法用于保护数据。 哈希算法主要用于保护数据完整性。
 

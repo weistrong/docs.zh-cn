@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 665a08ae226f04d5282b9584932078736751d5d0
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 96c502dba5b2807f9cd9c3c5cceb6b3b9985a406
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99737302"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106951"
 ---
 # <a name="icorprofilerinfo10getlohobjectsizethreshold-method"></a>ICorProfilerInfo10：： GetLOHObjectSizeThreshold 方法
 
@@ -47,8 +47,8 @@ HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 
 **库：** CorGuids.lib
 
-**.Net 版本：**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.Net 版本：**[!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [ICorProfilerInfo10 接口](icorprofilerinfo10-interface.md)

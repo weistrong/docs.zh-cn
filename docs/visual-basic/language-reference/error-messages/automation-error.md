@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID440
 ms.assetid: 2c4be5c5-2f0d-4a2b-96fe-d1b24f08fc4c
-ms.openlocfilehash: e4d283b16b4c54e2488fedfc58d3c881cf6b0218
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: bf3e61bb9b8fec9a831d211b70abdca322c1fe06
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99797115"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106600"
 ---
 # <a name="automation-error"></a>自动错误
 
@@ -22,7 +22,7 @@ ms.locfileid: "99797115"
   
 2. 在紧邻访问语句之前使用 `On Error Resume Next` 语句，然后检查紧邻访问语句之后是否存在错误。  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [错误类型](../../programming-guide/language-features/error-types.md)
-- [与我们交流](/visualstudio/ide/feedback-options)
+- [Visual Studio 反馈选项](/visualstudio/ide/feedback-options)
