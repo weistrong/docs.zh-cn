@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30145
 ms.assetid: 2e7eb2b9-eda6-4bdb-95cc-72c7f0be7528
-ms.openlocfilehash: 015ab6e1d186495d72bddd65678ab15088c0f1b2
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 393571f5b1fab518f379bbd6f4e6f1cb62a74b26
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99674878"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104778"
 ---
 # <a name="bc30145-unable-to-emit-assembly-error-message"></a>BC30145：无法发出程序集： \<error message>
 
@@ -39,8 +39,6 @@ Visual Basic 编译器调用程序集链接器 (*Al.exe*（也称为 Alink) ）�
 
 3. 打开 [Visual Studio 的开发人员命令提示](../../../framework/tools/developer-command-prompt-for-vs.md)。
 
-   在 Windows 10 中，在任务栏上的搜索框中输入 " **开发人员命令提示** "。 然后，从结果列表中选择 **VS 2017 开发人员命令提示** 。
-
 4. 将目录更改为要在其中放置程序集包装的目录。
 
 5. 输入以下命令：
@@ -60,9 +58,9 @@ Visual Basic 编译器调用程序集链接器 (*Al.exe*（也称为 Alink) ）�
 
 6. 在 Visual Studio 中，将 .NET 程序集引用添加到刚创建的文件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe（强名称工具）](../../../framework/tools/sn-exe-strong-name-tool.md)
 - [如何：创建公钥/私钥对](../../../standard/assembly/create-public-private-key-pair.md)
-- [与我们交流](/visualstudio/ide/feedback-options)
+- [Visual Studio 反馈选项](/visualstudio/ide/feedback-options)

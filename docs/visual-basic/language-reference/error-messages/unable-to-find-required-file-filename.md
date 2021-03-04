@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30655
 ms.assetid: 756db378-e758-48a9-88ff-496bc55bc0b6
-ms.openlocfilehash: aea1a80c0dbab60a57f8255837fbeba442b3623a
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 21d979789b5b04a0c2ef11753202124994ffa46e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100455205"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103888"
 ---
 # <a name="bc30655-unable-to-find-required-file-filename"></a>BC30655：找不到所需的文件 " \<filename> "
 
@@ -27,4 +27,4 @@ Visual Studio 所需的文件丢失或已损坏。
 
 ## <a name="see-also"></a>请参阅
 
-- [与我们交流](/visualstudio/ide/feedback-options)
+- [Visual Studio 反馈选项](/visualstudio/ide/feedback-options)

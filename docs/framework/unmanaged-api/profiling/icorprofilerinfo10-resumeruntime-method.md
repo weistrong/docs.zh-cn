@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 42cad42c5fb6706e395c1c172e48bf12b563590e
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 6e40270377fab07e110bbd1ea0f94e4e10c3d033
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99794567"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103577"
 ---
 # <a name="icorprofilerinfo10resumeruntime-method"></a>ICorProfilerInfo10：： ResumeRuntime 方法
 
@@ -37,8 +37,8 @@ HRESULT ResumeRuntime();
 
 **库：** CorGuids.lib
 
-**.Net 版本：**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**.Net 版本：**[!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [ICorProfilerInfo10 接口](icorprofilerinfo10-interface.md)

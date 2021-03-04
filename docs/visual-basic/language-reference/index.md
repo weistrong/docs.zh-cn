@@ -11,12 +11,12 @@ helpviewer_keywords:
 - language reference, Visual Basic
 - Visual Basic, language reference
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
-ms.openlocfilehash: 47a299437b5f3ceab1cb24b8a09666366c546a64
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 01a696d5faf4f33efd0f54aee7ba62a8d9f29467
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99731027"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103850"
 ---
 # <a name="visual-basic-language-reference"></a>Visual Basic 语言参考
 
@@ -42,7 +42,7 @@ ms.locfileid: "99731027"
  [数据类型](data-types/index.md)  
  记录 Visual Basic 中可用的数据类型。  
   
- [指令](directives/index.md)  
+ [指令](./directives/disable-enable.md)  
  记录 Visual Basic 中可用的编译器指令。  
   
  [函数](functions/index.md)  
@@ -54,7 +54,7 @@ ms.locfileid: "99731027"
  [模块](modules.md)  
  记录 Visual Basic 及其成员中可用的模块。  
   
- [Nothing](nothing.md)  
+ [无](nothing.md)  
  介绍了任意数据类型的默认值。  
   
  [对象](objects/index.md)  

@@ -2,12 +2,12 @@
 title: 适用于桌面的 .NET 有哪些新功能？
 description: 了解 .NET，.NET 与 .NET Framework 之间的差异，以及添加的新功能。
 ms.date: 12/29/2020
-ms.openlocfilehash: 9cae715f64e9de959b5b1ee6fb58ef381bab1040
-ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
+ms.openlocfilehash: 03dea849ad8a797b917dca953d93be6878d7ec72
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98618032"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106176"
 ---
 # <a name="whats-new-with-net-for-desktop"></a>适用于桌面的 .NET 有哪些新功能？
 
@@ -63,7 +63,7 @@ ms.locfileid: "98618032"
 - 通过充分利用 .NET Core、.NET Framework、Xamarin 和 Mono 来扩展 .NET 的功能。
 - 根据单个基本代码构建开发人员（Microsoft 和社区）可处理且协同扩展，同时可改善所有方案的产品。
 
-此新版本和方向是适用于 .NET 的游戏变换器。 对于 .NET 5，无论正在生成哪种类型的应用，你的代码和项目文件的外观和感觉都相同。 对于每个应用，都可以访问相同的运行时、Api 和语言功能。 这包括几乎每天都会提交给运行时的新 [性能改进](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/) 。 有关更多详细信息，请参阅 [.net 5 中的新增功能](https://docs.microsoft.com/dotnet/core/dotnet-five)。
+此新版本和方向是适用于 .NET 的游戏变换器。 对于 .NET 5，无论正在生成哪种类型的应用，你的代码和项目文件的外观和感觉都相同。 对于每个应用，都可以访问相同的运行时、Api 和语言功能。 这包括几乎每天都会提交给运行时的新 [性能改进](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/) 。 有关更多详细信息，请参阅 [.net 5 中的新增功能](../../core/dotnet-five.md)。
 
 ![.NET 5 的所有域](./media/whats-new-dotnet-core/all-domains-of-dotnet5.png)
 

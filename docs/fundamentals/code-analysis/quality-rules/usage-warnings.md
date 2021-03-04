@@ -11,12 +11,12 @@ helpviewer_keywords:
 - usage rules
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: c8b14d2f92502d5a82e41a322e599745bdcf8b85
-ms.sourcegitcommit: a6bd4cad438fe479cbd112eae10f2cd449f06e40
+ms.openlocfilehash: b05edde3c6faef39aa724dd49d159abe23d049f5
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "96590885"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102102966"
 ---
 # <a name="usage-rules"></a>用法规则
 
@@ -55,6 +55,6 @@ ms.locfileid: "96590885"
 |[CA2244:不要复制已索引的元素初始值设定项](ca2244.md)|对象初始值设定项具有多个具有相同的常量索引的索引元素初始值设定项。 除最后一个初始值设定项之外的所有都是冗余的。|
 |[CA2245:请勿将属性分配给其自身](ca2245.md)|属性意外分配给自身。|
 |[CA2246:请勿在同一语句中分配符号及其成员](ca2246.md)|不建议在同一语句中分配符号及其成员（即，字段或属性）。 如果成员访问权限打算在赋值前使用符号的旧值，或者在此语句的赋值中使用新值，则不清楚。|
-|[CA2247:传递给 TaskCompletionSource 构造函数的参数应为 TaskCreationOptions 枚举，而不是 TaskContinuationOptions 枚举](ca2246.md)|TaskCompletionSource 具有采用 TaskCreationOptions 的构造函数，这些构造函数控制基础任务，以及采用任务中存储的对象状态的构造函数。  意外传递 System.threading.tasks.taskcontinuationoptions 而不是 TaskCreationOptions 将导致调用将选项视为状态。|
+|[CA2247:传递给 TaskCompletionSource 构造函数的参数应为 TaskCreationOptions 枚举，而不是 TaskContinuationOptions 枚举](ca2247.md)|TaskCompletionSource 具有采用 TaskCreationOptions 的构造函数，这些构造函数控制基础任务，以及采用任务中存储的对象状态的构造函数。  意外传递 System.threading.tasks.taskcontinuationoptions 而不是 TaskCreationOptions 将导致调用将选项视为状态。|
 |[CA2248：将正确的 "enum" 参数提供给 "Enum.hasflag\"](ca2248.md)|作为参数传递给方法调用的枚举类型 `HasFlag` 不同于调用枚举类型。|
 |[CA2249：请考虑使用 String.Contains 而不是 String.IndexOf](ca2249.md)|对结果的调用 `string.IndexOf` （其中，用于检查是否存在子字符串）可以替换为 `string.Contains` 。|
