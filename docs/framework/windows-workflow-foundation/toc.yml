@@ -241,9 +241,8 @@
             - name: 暂停和继续工作流
               href: pausing-and-resuming-a-workflow.md
         - name: 迁移指南
-          href: wf-migration-guidance.md
           items:
-            - name: 迁移指南
+            - name: 概述
               href: migration-guidance.md
             - name: 在 .NET Framework 4 中将 .NET Framework 3.0 WF 活动与 Interop 活动一起使用
               href: net-framework-3-0-wf-in-net-framework-4-interop.md
