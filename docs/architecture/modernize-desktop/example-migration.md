@@ -2,12 +2,12 @@
 title: 迁移到 .NET 5 的示例
 description: 演示如何将目标 .NET Framework 的示例应用程序迁移到 .NET 5。
 ms.date: 01/19/2021
-ms.openlocfilehash: 39ecdfa639f4d68a4a8821da839f014c8de42ab0
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 5b3743c68ee0426efffda6f999dffea788f493e9
+ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216260"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102206537"
 ---
 # <a name="example-of-migrating-to-net"></a>迁移到 .NET 的示例
 
@@ -72,6 +72,9 @@ try-convert -p "<path to your project file>"
 ```dotnetcli
 try-convert -w "<path to your solution>"
 ```
+
+> [!NOTE]
+> "Try-转换" 工具作为 [.Net 升级助手工具](https://aka.ms/dotnet-upgrade-assistant)的一部分自动运行。 请考虑运行完整的升级助手，而不只是尝试转换。
 
 在该工具尝试转换后，在 Visual Studio 中重新加载文件以运行和测试。 由于你的项目的具体情况，可能无法尝试转换来执行转换。 在这种情况下，可以参考以下步骤。
 
@@ -224,7 +227,7 @@ try-convert -w "<path to your solution>"
 string image_name = Environment.CurrentDirectory + "\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;
 ```
 
-设置为
+to
 
 ```csharp
 string image_name = Environment.CurrentDirectory + "\\..\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;
