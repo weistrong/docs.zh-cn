@@ -4,16 +4,16 @@ description: 有关可帮助了解 .NET 的 .NET Core、ASP.NET Core 和 C# 语�
 author: BillWagner
 ms.author: wiwagn
 ms.date: 02/01/2021
-ms.openlocfilehash: c7bbb99eeb4e00771cd1e4a3ab33b7690620b194
-ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
+ms.openlocfilehash: 35cc5e74e764148b072438eea994905df778c835
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99585723"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103564"
 ---
 # <a name="net-samples-and-tutorials"></a>.NET 示例和教程
 
-.NET 文档包含指导用户如何使用 .NET 的一系列示例和教程。 本文介绍了如何查找、查看和下载 .NET、ASP.NET Core 和 C# 示例和教程。 可在 [F# 基础站点](https://fsharp.org/learn/)找到学习 F# 编程语言的资源。 如果想要使用联机代码编辑器来探索 C#，请先查看[此交互式教程](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1)然后再继续学习 [C# 交互式教程](../csharp/tutorials/intro-to-csharp/index.md)。 有关如何查看和下载示例代码的说明，请参阅[查看和下载示例](#view-and-download-samples)部分。
+.NET 文档包含指导用户如何使用 .NET 的一系列示例和教程。 本文介绍了如何查找、查看和下载 .NET、ASP.NET Core 和 C# 示例和教程。 可在 [F# 基础站点](https://fsharp.org/learn/)找到学习 F# 编程语言的资源。 如果想要使用联机代码编辑器来探索 C#，请先查看[此交互式教程](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1)然后再继续学习 [C# 交互式教程](../csharp/tour-of-csharp/tutorials/index.md)。 有关如何查看和下载示例代码的说明，请参阅[查看和下载示例](#view-and-download-samples)部分。
 
 ## <a name="net"></a>.NET
 

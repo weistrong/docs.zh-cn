@@ -12,12 +12,12 @@ helpviewer_keywords:
 - C# language, reference
 - reference, C# language
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
-ms.openlocfilehash: 663d08921b1fb6c5013ce8dddb044ba12ead8409
-ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
+ms.openlocfilehash: dfbf7a2548f403bce895d388fe2cd1483e092b2e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98235230"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104058"
 ---
 # <a name="c-reference"></a>C# 参考
 
@@ -44,7 +44,7 @@ ms.locfileid: "98235230"
  包括演示原因和更正 C# 编译器错误和警告的代码片段。  
   
  [C# 语言规范](../../../_csharplang/spec/introduction.md)  
- C# 6.0 语言规范。 本文是针对 C# 6.0 语言的建议草案。 本文档将通过与 ECMA C# 标准委员会协作来进行优化。 版本 5.0 已于 2017 年 12 月发布为 [Standard ECMA-334 第 5 版](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)文档。
+ C# 6.0 语言规范。 本文是针对 C# 6.0 语言的建议草案。 本文档将通过与 ECMA C# 标准委员会协作来进行优化。 版本 5.0 已于 2017 年 12 月发布为 [Standard ECMA-334 第 5 版](https://www.ecma-international.org/wp-content/uploads/ECMA-334_5th_edition_december_2017.pdf)文档。
 
 已在 C# 6.0 之后的版本中实现的功能将表示在语言规范建议中。 这些文档描述了语言规范的增量，以便添加这些新功能。 这些文档位于草稿建议窗体中。 这些规范将经过优化并提交到 ECMA 标准委员会，以便正式审查并合并到 C# 标准的未来版本。
 

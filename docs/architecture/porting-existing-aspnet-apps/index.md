@@ -3,12 +3,12 @@ title: 将现有 ASP.NET 应用移植到 .NET Core
 description: 该免费指南指导你将 ASP.NET MVC 和 Web API 应用转换为 ASP.NET Core。
 author: ardalis
 ms.date: 11/13/2020
-ms.openlocfilehash: 36c0cdbe03fb97ae82336d53e15be2108e9c6367
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 848f0e9533a65b59055853f1d502307abb69118c
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100488161"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105940"
 ---
 # <a name="porting-existing-aspnet-apps-to-net-core"></a>将现有 ASP.NET 应用移植到 .NET Core
 
@@ -62,7 +62,7 @@ Docker 的鲸鱼徽标是 Docker Inc. 的注册商标经许可方可使用。
 
 ## <a name="who-should-use-this-guide"></a>本指南的目标读者
 
-本指南的受众是有意将为 ASP.NET MVC 和 Web API (.NET Framework 4.x) 编写的现有应用迁移到 .NET Core 的开发人员、开发组长和架构师。 ASP.NET Web Forms 开发人员将从本指南中受益，但还应参阅[面向 ASP.NET Web Forms 开发人员的 Blazor](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/) 电子书。
+本指南的受众是有意将为 ASP.NET MVC 和 Web API (.NET Framework 4.x) 编写的现有应用迁移到 .NET Core 的开发人员、开发组长和架构师。 ASP.NET Web Forms 开发人员将从本指南中受益，但还应参阅[面向 ASP.NET Web Forms 开发人员的 Blazor](../blazor-for-web-forms-developers/index.md) 电子书。
 
 第二受众是计划何时将应用迁移到 .NET Core 的技术决策者。
 
