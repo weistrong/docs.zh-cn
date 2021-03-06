@@ -2,12 +2,12 @@
 title: F# 代码格式设置准则
 description: '了解设置 F # 代码格式的准则。'
 ms.date: 08/31/2020
-ms.openlocfilehash: 6f1cf8decbaf02aa7d5e202010d4c240c24bdcf9
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 4562242b82b0d7efac19bdcf2c04c29482af11dc
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102103668"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259897"
 ---
 # <a name="f-code-formatting-guidelines"></a>F# 代码格式设置准则
 
@@ -928,6 +928,20 @@ let printListWithOffsetPiped a list1 =
 
 如果 lambda 表达式的主体长度为多行，则应考虑将其重构为本地范围内的函数。
 
+当函数采用单个多行元组参数时，适用于 [格式设置构造函数、静态成员和成员调用](#formatting-constructors-static-members-and-member-invocations) 的相同规则。
+
+```fsharp
+let myFunction (a: int, b: string, c: int, d: bool) =
+    ()
+
+myFunction(
+    478815516,
+    "A very long string making all of this multi-line",
+    1515,
+    false
+)
+```
+
 ### <a name="formatting-infix-operators"></a>格式化中缀运算符
 
 用空格分隔运算符。 此规则的明显例外是 `!` 和 `.` 运算符。
@@ -1084,6 +1098,26 @@ let untypedRes =
         sourceText,
         parsingOptionsWithDefines
     )
+```
+
+即使只有一个多行参数，相同的规则也适用。
+
+```fsharp
+let poemBuilder = StringBuilder()
+poemBuilder.AppendLine(
+    """
+The last train is nearly due
+The Underground is closing soon
+And in the dark, deserted station
+Restless in anticipation
+A man waits in the shadows
+    """
+)
+
+Option.traverse(
+    create
+    >> Result.setError [ invalidHeader "Content-Checksum" ]
+)
 ```
 
 ## <a name="formatting-attributes"></a>格式设置特性

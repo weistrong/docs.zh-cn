@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/14/2020
 ms.topic: tutorial
 ms.prod: dotnet
-ms.openlocfilehash: 1270e7629e9afc12b1d76d260d4b8b51428f1040
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: bc5c2b9f0876603c152da859547c58b83826969c
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96591093"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259832"
 ---
 # <a name="read-environmental-conditions-from-a-sensor"></a>从传感器读取环境条件
 
@@ -22,7 +22,7 @@ IoT 设备的最常见方案之一就是检测环境情况。 有多种传感器
 ## <a name="prerequisites"></a>先决条件
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) <span class="docon docon-navigate-external x-hidden-focus"></span> 湿度/大气压力/温度传感器分类
+- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) 湿度/大气压力/温度传感器分类
 - 跳线
 - 试验板 (可选) 
 - Raspberry Pi GPIO (可选) 
@@ -98,11 +98,11 @@ IoT 设备的最常见方案之一就是检测环境情况。 有多种传感器
 
 1. 通过按 <kbd>Ctrl + C</kbd>终止节目。
 
-恭喜！ 你已使用 I2C 读取温度/湿度/大气压力传感器的值！
+祝贺你！ 你已使用 I2C 读取温度/湿度/大气压力传感器的值！
 
 ## <a name="get-the-source-code"></a>获取源代码
 
-[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial)了本教程的源 <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial)了本教程的源。
 
 ## <a name="next-steps"></a>后续步骤
 

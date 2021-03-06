@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
-ms.openlocfilehash: 7cf25f181997ed66639842727be57e7824ef5466
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 509616e3423fbb83b74bfbb8ecec1a7df49f0a20
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739982"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259730"
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # <a name="read-values-from-an-analog-to-digital-converter"></a>从模拟到数字转换器读取值
@@ -23,7 +23,7 @@ ms.locfileid: "96739982"
 ## <a name="prerequisites"></a>先决条件
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) <span class="docon docon-navigate-external x-hidden-focus"></span> 模拟到数字转换器
+- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) 的模拟到数字转换器
 - 三针 potentiometer
 - 试验板
 - 跳线
@@ -100,11 +100,11 @@ MCP3008 使用串行外围设备接口 (SPI) 进行通信。 下面是从 MCP300
 
 1. 通过按 <kbd>Ctrl + C</kbd>终止节目。
 
-恭喜！ 已使用 SPI 从模拟到数字转换器读取值。
+祝贺你！ 已使用 SPI 从模拟到数字转换器读取值。
 
 ## <a name="get-the-source-code"></a>获取源代码
 
-[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial)了本教程的源 <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial)了本教程的源。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
-ms.openlocfilehash: 07a050c0655f9cae3d7f2b924c0dd07ac1c6c0b9
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 0d5db19faac0293b9982731f26dfd85d6ce07b3a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96591092"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259007"
 ---
 # <a name="blink-an-led"></a>闪烁 LED
 
@@ -81,11 +81,11 @@ ms.locfileid: "96591092"
 
 1. 通过按 <kbd>Ctrl + C</kbd>终止节目。
 
-恭喜！ 已使用 GPIO 闪烁 LED。
+祝贺你！ 已使用 GPIO 闪烁 LED。
 
 ## <a name="get-the-source-code"></a>获取源代码
 
-[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial)了本教程的源 <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial)了本教程的源。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - bypasslist element
 - <bypasslist> element
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
-ms.openlocfilehash: 58cdcf046b2a5a292493c5704739b22aa4ec4f17
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0a03b391c839b7255fdd423a305d474d0e48ad39
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178406"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259351"
 ---
 # <a name="bypasslist-element-network-settings"></a>\<bypasslist> 元素（网络设置）
 
@@ -46,7 +46,7 @@ ms.locfileid: "91178406"
 |-----------------|---------------------|  
 |[add](add-element-for-bypasslist-network-settings.md)|将 IP 地址或 DNS 名称添加到代理跳过列表。|  
 |[clear](clear-element-for-bypasslist-network-settings.md)|清除跳过列表。|  
-|[remove](remove-element-for-bypasslist-network-settings.md)|从代理跳过列表中删除 IP 地址或 DNS 名称。|  
+|[删除](remove-element-for-bypasslist-network-settings.md)|从代理跳过列表中删除 IP 地址或 DNS 名称。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -58,7 +58,7 @@ ms.locfileid: "91178406"
 
  绕过列表包含用于描述 <xref:System.Net.WebRequest> 实例直接访问而不是通过代理服务器访问的 uri 的正则表达式。  
   
- 为此元素指定正则表达式时，应格外小心。 正则表达式 "[a-z] + \\ \\ .com" 与 contoso.com 域中的任何主机匹配，但它还匹配 contoso.com.cpandl.com 域中的任何主机。 若要仅匹配 contoso.com 域中的主机，请使用锚 ( "$" ) ： "[a-z] + \\ \\ .com $"。  
+ 为此元素指定正则表达式时，应格外小心。 正则表达式 `[a-z]+\\.contoso\\.com` 匹配 contoso.com 域中的任何主机，但它还匹配 contoso.com.cpandl.com 域中的任何主机。 若要仅匹配 contoso.com 域中的主机，请使用锚 (`$`) ： `[a-z]+\\.contoso\\.com$` 。
   
  有关正则表达式的详细信息，请参阅。[.NET Framework 正则表达式](../../../../standard/base-types/regular-expressions.md)。  
   

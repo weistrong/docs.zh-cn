@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30145
 ms.assetid: 2e7eb2b9-eda6-4bdb-95cc-72c7f0be7528
-ms.openlocfilehash: 393571f5b1fab518f379bbd6f4e6f1cb62a74b26
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: fc3b61c80cfd3b40d802c517cdca4085bc274197
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102104778"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259429"
 ---
 # <a name="bc30145-unable-to-emit-assembly-error-message"></a>BC30145：无法发出程序集： \<error message>
 
@@ -37,7 +37,7 @@ Visual Basic 编译器调用程序集链接器 (*Al.exe*（也称为 Alink) ）�
 
 2. 从项目中删除生成错误的 COM 引用。
 
-3. 打开 [Visual Studio 的开发人员命令提示](../../../framework/tools/developer-command-prompt-for-vs.md)。
+3. 打开 [开发人员命令行外壳](/visualstudio/ide/reference/command-prompt-powershell)。
 
 4. 将目录更改为要在其中放置程序集包装的目录。
 
@@ -58,7 +58,7 @@ Visual Basic 编译器调用程序集链接器 (*Al.exe*（也称为 Alink) ）�
 
 6. 在 Visual Studio 中，将 .NET 程序集引用添加到刚创建的文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe（强名称工具）](../../../framework/tools/sn-exe-strong-name-tool.md)

@@ -3,12 +3,12 @@ description: 了解更多相关信息：通过 CacheMetadata 公开数据
 title: 使用 CacheMetadata 公开数据
 ms.date: 03/30/2017
 ms.assetid: 34832f23-e93b-40e6-a80b-606a855a00d9
-ms.openlocfilehash: ac4623881ebd76270f773a3b7acfe205ad365118
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e3f4dc83a0e268ae548c904a714753fa025c77ae
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99742337"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259780"
 ---
 # <a name="exposing-data-with-cachemetadata"></a>使用 CacheMetadata 公开数据
 
@@ -60,7 +60,7 @@ protected override void CacheMetadata(NativeActivityMetadata metadata)
 
 为了使用变量将数据传递给将由活动安排的子活动，有必要将变量添加为实现变量；不能用这种方式设置公共变量的值。 原因在于，活动将更有可能作为功能的实现（有参数）执行，而不是作为封装类（有属性）执行。 但是，在有些情况下，必须显式设置参数，如使用 <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A> 时，因为安排的活动不能像子活动那样访问父活动的参数。
 
-下面的代码段演示如何使用 <xref:System.Activities.Activity.CacheMetadata%2A> 将自变量从本机活动传入一个安排的活动。
+下面的代码段演示如何使用将参数从本机活动传递到计划的活动 <xref:System.Activities.Activity.CacheMetadata%2A> 。
 
 ```csharp
 public sealed class ChildActivity : NativeActivity

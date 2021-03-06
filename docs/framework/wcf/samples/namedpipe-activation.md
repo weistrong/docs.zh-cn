@@ -3,16 +3,16 @@ description: 了解详细信息： NamedPipe 激活
 title: NamedPipe 激活
 ms.date: 03/30/2017
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
-ms.openlocfilehash: 4955511f24d831f4aa9e3aa67fdb3f6a218d7af0
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 32878b08450b6d4d2d88b3d36c019b3e2138625f
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99752181"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259533"
 ---
 # <a name="namedpipe-activation"></a>NamedPipe 激活
 
-本示例演示如何承载使用 Windows 进程激活服务 (WAS) 的服务以激活通过命名管道进行通信的服务。 此示例基于 [入门](getting-started-sample.md) ，并要求运行 Windows Vista。
+此示例演示如何承载使用 Windows 进程激活服务 () 的服务以激活通过命名管道进行通信的服务。 此示例基于 [入门](getting-started-sample.md) ，并要求运行 Windows Vista。
 
 > [!NOTE]
 > 本主题的最后介绍了此示例的设置过程和生成说明。
