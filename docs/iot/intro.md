@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: overview
 ms.prod: dotnet
-ms.openlocfilehash: c3d05ec5b05780f91404c3c27e91bcd602b0faeb
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 13460fdafbfd7ef4e047cb7537e832ae4039c614
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "96591052"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255426"
 ---
 # <a name="develop-apps-for-iot-devices-with-the-net-iot-libraries"></a>利用 .NET IoT 库为 IoT 设备开发应用
 
@@ -26,12 +26,12 @@ ms.locfileid: "96591052"
 
 .NET IoT 库由两个 NuGet 包组成：
 
-- [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/) <span class="docon docon-navigate-external x-hidden-focus"></span>
-- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/) <span class="docon docon-navigate-external x-hidden-focus"></span>
+- [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/)
+- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/)
 
 ### <a name="systemdevicegpio"></a>System.Device.Gpio
 
-`System.Device.Gpio` 支持各种协议，用于与低级别硬件 pin 交互以控制设备。 其中包括：
+`System.Device.Gpio` 支持各种协议，用于与低级别硬件 pin 交互以控制设备。 这些方法包括：
 
 - 常规用途 I/O (GPIO)
 - Inter-Integrated 线路 (I2C) 
@@ -43,23 +43,23 @@ ms.locfileid: "96591052"
 
 `Iot.Device.Bindings`包：
 
-* 包含 [设备绑定](https://github.com/dotnet/iot/blob/master/src/devices/README.md) <span class="docon docon-navigate-external x-hidden-focus"></span> ，用于通过包装 system.web 来简化应用程序开发。
+* 包含 [设备绑定](https://github.com/dotnet/iot/blob/master/src/devices/README.md) ，用于通过包装 system.web 来简化应用程序开发。
 * 支持社区，并持续添加其他绑定。
 
 常用的设备绑定包括：
 
-- [CharacterLcd-LCD 字符显示](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [SN74HC595-8 位移位寄存器](https://github.com/dotnet/iot/tree/master/src/devices/Sn74hc595)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [BrickPi3](https://github.com/dotnet/iot/tree/master/src/devices/BrickPi3)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [Max7219 导向 Matrix 驱动程序](https://github.com/dotnet/iot/tree/master/src/devices/Max7219)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [RGBLedMatrix-RGB LED 矩阵](https://github.com/dotnet/iot/tree/master/src/devices/RGBLedMatrix)<span class="docon docon-navigate-external x-hidden-focus"></span>
+- [CharacterLcd-LCD 字符显示](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd)
+- [SN74HC595-8 位移位寄存器](https://github.com/dotnet/iot/tree/master/src/devices/Sn74hc595)
+- [BrickPi3](https://github.com/dotnet/iot/tree/master/src/devices/BrickPi3)
+- [Max7219 导向 Matrix 驱动程序](https://github.com/dotnet/iot/tree/master/src/devices/Max7219)
+- [RGBLedMatrix-RGB LED 矩阵](https://github.com/dotnet/iot/tree/master/src/devices/RGBLedMatrix)
 
 ## <a name="supported-operating-systems"></a>支持的操作系统
 
 `System.Device.Gpio` 支持 ARM/ARM64 和 Windows 10 IoT Core 的大多数 Linux 版本都支持。
 
 > [!TIP]
-> 对于 Raspberry Pi，建议使用[Raspberry PI OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) <span class="docon docon-navigate-external x-hidden-focus"></span> (以前的 Raspbian) 。  
+> 对于 Raspberry Pi，建议使用 [Raspberry PI OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  (以前的 Raspbian) 。
 
 ## <a name="supported-hardware-platforms"></a>支持的硬件平台
 
@@ -72,4 +72,4 @@ ms.locfileid: "96591052"
 
 ## <a name="resources"></a>资源
 
-- [Github 上的 .Net IoT 库](https://github.com/dotnet/iot)<span class="docon docon-navigate-external x-hidden-focus"></span>
+- [Github 上的 .NET IoT 库](https://github.com/dotnet/iot)

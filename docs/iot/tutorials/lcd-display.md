@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
-ms.openlocfilehash: d4c3e373207e23877903491871f4d09e11000c1a
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 005b40a7d9f46b84fcd90541248f5f4fd243e612
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96591087"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255506"
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # <a name="display-text-on-an-lcd"></a>在 LCD 上显示文本
@@ -25,14 +25,14 @@ LCD 字符显示适用于显示信息，而无需使用外部监视器。 常见
 ## <a name="prerequisites"></a>先决条件
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [带有 I2C 接口的 20X4 LCD 字符显示](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)<span class="docon docon-navigate-external x-hidden-focus"></span>
+- [带有 I2C 接口的 20x4 LCD 字符显示](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)
 - 跳线
 - 试验板 (可选/推荐) 
 - Raspberry Pi GPIO (可选/推荐的) 
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
 > [!NOTE]
-> LCD 字符显示有许多制造商。 大多数设计都是相同的，并且制造商不会对功能产生任何影响。 作为参考，本教程是通过 [SUNFOUNDER LCD2004](https://www.sunfounder.com/lcd2004-module.html)开发的 <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+> LCD 字符显示有许多制造商。 大多数设计都是相同的，并且制造商不会对功能产生任何影响。 作为参考，本教程是通过 [SUNFOUNDER LCD2004](https://www.sunfounder.com/lcd2004-module.html)开发的。
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 
@@ -49,7 +49,7 @@ LCD 字符显示适用于显示信息，而无需使用外部监视器。 常见
 
 | I2C 接口 (显示的背面)  | Raspberry Pi GPIO |
 |---------------------------------|-------------------|
-| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="显示 I2C GPIO 扩展器的字符显示的背景图像。" lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="显示 Raspberry Pi GPIO 标头引线的关系图。Image 礼节性 Raspberry Pi Foundation。" lightbox="../media/gpio-pinout-diagram.png":::<br />[Image 礼节性 Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/) <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="显示 I2C GPIO 扩展器的字符显示的背景图像。" lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="显示 Raspberry Pi GPIO 标头引线的关系图。Image 礼节性 Raspberry Pi Foundation。" lightbox="../media/gpio-pinout-diagram.png":::<br />[Image 礼节性 Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/)。
  |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
@@ -100,11 +100,11 @@ LCD 字符显示适用于显示信息，而无需使用外部监视器。 常见
 
 1. 通过按 <kbd>Ctrl + C</kbd>终止节目。
 
-恭喜！ 已使用 I2C 和 GPIO 扩展器在液晶屏上显示文本！
+祝贺你！ 已使用 I2C 和 GPIO 扩展器在液晶屏上显示文本！
 
 ## <a name="get-the-source-code"></a>获取源代码
 
-[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial)了本教程的源 <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+[GitHub 上提供](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial)了本教程的源。
 
 ## <a name="next-steps"></a>后续步骤
 

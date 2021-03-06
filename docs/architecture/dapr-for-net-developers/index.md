@@ -3,12 +3,12 @@ title: 面向 .NET 开发人员的 Dapr
 description: 可帮助 .NET 开发人员了解并充分利用 Microsoft 开源分散式应用程序运行时的全部功能的指南。
 author: robvet
 ms.date: 02/07/2021
-ms.openlocfilehash: 53d5356c8e010f0c4e168a2186d48dd9af369ff6
-ms.sourcegitcommit: b924ade6426cf61a4604c4e2ee54cb3592c29317
+ms.openlocfilehash: fc38dd1a98570cc4d2b367d272a107e3ad67ead9
+ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101096730"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102206563"
 ---
 # <a name="dapr-for-net-developers"></a>面向 .NET 开发人员的 Dapr
 
@@ -65,7 +65,7 @@ Docker 的鲸鱼徽标是 Docker Inc. 的注册商标经许可方可使用。
 编辑：
 
 > David Pine，Microsoft .NET 团队资深内容开发人员
-
+>
 > Microsoft .NET 团队高级项目经理 Maira Wenzel 
 
 ## <a name="version"></a>Version

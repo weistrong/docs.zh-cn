@@ -7,21 +7,21 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 11/20/2020
-ms.openlocfilehash: 5d80b28642ee1e975d334f89504a1748d13dea8f
-ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
+ms.openlocfilehash: 18258c54cffdc538ddd11ec1393639216f86f85a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509775"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255452"
 ---
-# <a name="no-locblazor-app-hosting-models"></a>Blazor 应用托管模型
+# <a name="blazor-app-hosting-models"></a>Blazor 应用托管模型
 
-Blazor 应用程序可以在 IIS 中托管，就像 ASP.NET Web 窗体应用程序一样。 Blazor 还可以通过以下方式之一来托管应用：
+Blazor 可以通过以下方式之一来托管应用：
 
 - 在浏览器中的客户端 WebAssembly 。
 - ASP.NET Core 应用中的服务器端。
 
-## <a name="no-locblazor-no-locwebassembly-apps"></a>BlazorWebAssembly应用
+## <a name="blazor-webassembly-apps"></a>BlazorWebAssembly应用
 
 BlazorWebAssembly应用在 WebAssembly 基于的 .net 运行时上的浏览器中直接执行。 BlazorWebAssembly应用的工作方式类似于前端 JavaScript 框架，如角度或反应。 不过，编写 c # 不是编写 JavaScript。 .NET 运行时随应用程序一起下载，并随应用程序集和任何所需的依赖项一起下载。 不需要浏览器插件或扩展。
 
@@ -35,7 +35,7 @@ BlazorWebAssembly应用纯粹运行客户端。 此类应用可部署到静态�
 
 若要获得 Blazor 和全堆栈 .net web 开发的所有优点，请在 ASP.NET Core 中托管 Blazor WebAssembly 应用程序。 通过在客户端和服务器上使用 .NET，可以轻松地共享代码，并使用一组一致的语言、框架和工具来生成应用程序。 Blazor 提供方便的模板，用于设置包含 Blazor WebAssembly 应用程序和 ASP.NET Core 主机项目的解决方案。 构建解决方案时，应用中的生成静态文件 Blazor 由已设置了回退路由的 ASP.NET Core 应用程序托管。
 
-## <a name="no-locblazor-server-apps"></a>Blazor 服务器应用
+## <a name="blazor-server-apps"></a>Blazor 服务器应用
 
 从[ Blazor 体系结构](architecture-comparison.md#blazor)讨论中回忆，组件会将 Blazor 其输出呈现为名为的中间抽象 `RenderTree` 。 然后，框架会将 Blazor 呈现的内容与之前呈现的内容进行比较。 这些差异应用于 DOM。 Blazor 组件与应用呈现输出的方式是分离的。 因此，组件本身不必在更新 UI 的过程中运行。 事实上，它们甚至不需要在同一台计算机上运行。
 
@@ -45,7 +45,7 @@ BlazorWebAssembly应用纯粹运行客户端。 此类应用可部署到静态�
 
 Blazor如果你使用了 ASP.NET AJAX 和控件，则服务器托管模型可能听起来非常熟悉 <xref:System.Web.UI.UpdatePanel> 。 `UpdatePanel`控件处理应用部分页面更新以响应页面上的触发器事件。 触发时， `UpdatePanel` 请求部分更新，然后应用该更新，而无需刷新页面。 UI 的状态使用进行管理 `ViewState` 。 Blazor 服务器应用略有不同，因为应用需要与客户端建立活动连接。 此外，还会在服务器上维护所有 UI 状态。 除了这些差异以外，这两个模型在概念上类似。
 
-## <a name="how-to-choose-the-right-no-locblazor-hosting-model"></a>如何选择正确的 Blazor 托管模型
+## <a name="how-to-choose-the-right-blazor-hosting-model"></a>如何选择正确的 Blazor 托管模型
 
 如[ Blazor 宿主模型文档](/aspnet/core/blazor/hosting-models)中所述，不同的 Blazor 宿主模型有不同的折衷方式。
 

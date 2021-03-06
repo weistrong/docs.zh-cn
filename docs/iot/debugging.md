@@ -7,12 +7,12 @@ ms.date: 11/13/2020
 ms.topic: how-to
 ms.prod: dotnet
 zone_pivot_groups: ide-set-one
-ms.openlocfilehash: 7b9872304ee53071452772e3da02081a7def4d80
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 58858384c49a296e0b33d663f3ef930caf9cace6
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "96591048"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258060"
 ---
 # <a name="debug-net-apps-on-raspberry-pi"></a>在 Raspberry Pi 上调试 .NET 应用
 
@@ -26,7 +26,7 @@ ms.locfileid: "96591048"
 
 ### <a name="enable-ssh-on-the-raspberry-pi"></a>在 Raspberry Pi 上启用 SSH
 
-远程调试需要 SSH。 若要启用 SSH，请 [参阅 Raspberry Pi 文档中的 *enable ssh*](https://www.raspberrypi.org/documentation/remote-access/ssh/) <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+远程调试需要 SSH。 若要启用 SSH，请 [参阅 Raspberry Pi 文档中的 *enable ssh*](https://www.raspberrypi.org/documentation/remote-access/ssh/)。
 
 ### <a name="install-the-visual-studio-remote-debugger-on-the-raspberry-pi"></a>在 Raspberry Pi 上安装 Visual Studio 远程调试器
 
@@ -46,7 +46,7 @@ ms.locfileid: "96591048"
 
 1. Visual Studio Code 使用 SSH 协议进行远程调试。 出于安全考虑， `root` 默认情况下不允许通过 SSH 登录。 若要启用 `root` 通过 SSH 登录，请完成以下步骤：
 
-    1. 执行以下命令以在 [nano](https://www.nano-editor.org/docs.php)中打开 */etc/ssh/sshd_config* <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+    1. 执行以下命令以在 [nano](https://www.nano-editor.org/docs.php)中打开 */etc/ssh/sshd_config* 。
 
         ```bash
         sudo nano /etc/ssh/sshd_config
@@ -110,11 +110,11 @@ ms.locfileid: "96591048"
 - `pipeArgs` 要传递到 SSH 客户端的参数。 请确保指定 password 参数，以及 `root` 该格式的用户 `<user>@<hostname>` 。
 
 > [!IMPORTANT]
-> 上面的示例使用 *plink*，它是 [PuTTY](https://www.ssh.com/ssh/putty/) <span class="docon docon-navigate-external x-hidden-focus"></span> SSH 客户端的一个组件。 [OpenSSH](https://www.openssh.com/)适用 <span class="docon docon-navigate-external x-hidden-focus"></span> 于最新版本的 Windows 和 Linux 的 OpenSSH 可以改为使用。 但是，OpenSSH 不支持以命令行参数的形式发送密码。 若要使用 OpenSSH，请 [为无密码 SSH 访问配置 Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md) <span class="docon docon-navigate-external x-hidden-focus"></span> 。
+> 上面的示例使用 *plink*，它是 [PuTTY](https://www.ssh.com/ssh/putty/) <span class="docon docon-navigate-external x-hidden-focus"></span> SSH 客户端的一个组件。 [](https://www.openssh.com/)适用 <span class="docon docon-navigate-external x-hidden-focus"></span> 于最新版本的 Windows 和 Linux 的 OpenSSH 可以改为使用。 但是，OpenSSH 不支持以命令行参数的形式发送密码。 若要使用 OpenSSH，请 [为无密码 SSH 访问配置 Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md)。
 
 ### <a name="deploy-the-app"></a>部署应用
 
-部署应用，如 [将 .net 应用部署到 Raspberry Pi](deployment.md)中所述。 确保部署路径与在配置的launch.js中的参数中指定的路径相同 `cwd` 。 *launch.json*
+部署应用，如 [将 .net 应用部署到 Raspberry Pi](deployment.md)中所述。 确保部署路径与在配置的launch.js中的参数中指定的路径相同 `cwd` 。 
 
 ### <a name="launch-the-debugger"></a>启动调试程序
 
@@ -122,7 +122,7 @@ ms.locfileid: "96591048"
 
 ## <a name="references"></a>参考
 
-[使用 ARM 上的 .Net Core 在 Windows 上使用 VS Code 远程调试到 Raspberry Pi](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm)<span class="docon docon-navigate-external x-hidden-focus"></span>
+[使用 ARM 上的 .NET Core 在 Windows 上使用 VS Code 远程调试到 Raspberry Pi](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm)
 
 ::: zone-end
 

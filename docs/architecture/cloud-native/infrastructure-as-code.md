@@ -2,12 +2,12 @@
 title: 基础结构即代码
 description: 将基础结构用作代码 (IaC) 与云本机应用程序
 ms.date: 05/13/2020
-ms.openlocfilehash: d130705e19e0d3d7a9e15c73f4758a22ee8ecd43
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5a7cd3a0b4906b1a4aec9e1015d6128867ae9963
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163734"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255439"
 ---
 # <a name="infrastructure-as-code"></a>基础结构即代码
 
@@ -60,7 +60,7 @@ Azure 资源管理器模板是一种基于 JSON 的语言，用于定义 Azure �
 
 可以使用动态环境和配置信息对 ARM 模板进行参数化。 这样一来，就可以重复使用它来定义不同的环境，例如开发、QA 或生产环境。 通常，模板会在单个 Azure 资源组中创建所有资源。 如果需要，可以在单个资源管理器模板中定义多个资源组。 可以通过删除资源组本身来删除环境中的所有资源。 成本分析还可以在资源组级别运行，从而可以快速评估每个环境的成本。
 
-GitHub 上的 [Azure 快速入门模板](https://github.com/Azure/azure-quickstart-templates) 项目中提供了许多示例或 ARM 模板。 它们可以帮助加速创建新模板或修改现有模板。
+GitHub 上的 [Azure 快速入门模板](https://github.com/Azure/azure-quickstart-templates) 项目中提供了许多 ARM 模板的示例。 它们可以帮助加速创建新模板或修改现有模板。
 
 可以通过多种方式运行资源管理器模板。 最简单的方法是将它们粘贴到 Azure 门户中。 对于实验部署，这种方法很简单。 它们还可以作为 Azure DevOps 中的生成或发布过程的一部分运行。 有一些任务将利用连接到 Azure 运行模板。 对资源管理器模板的更改以增量方式应用，这意味着，若要添加新资源，只需将其添加到模板。 工具将协调当前资源与模板中定义的差异之间的差异。 然后，将创建或更改资源，使其与模板中定义的内容相匹配。  
 
