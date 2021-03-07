@@ -397,8 +397,6 @@ items:
         href: tools/certmgr-exe-certificate-manager-tool.md
       - name: Clrver.exe（CLR 版本工具）
         href: tools/clrver-exe-clr-version-tool.md
-      - name: 命令提示符
-        href: tools/developer-command-prompt-for-vs.md
       - name: CorFlags.exe（CorFlags 转换工具）
         href: tools/corflags-exe-corflags-conversion-tool.md
       - name: Fuslogvw.exe（程序集绑定日志查看器）
