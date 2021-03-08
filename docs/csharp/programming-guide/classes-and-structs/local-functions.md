@@ -4,16 +4,16 @@ description: C# 中的本地函数是嵌套在另一成员中并且可以从其�
 ms.date: 10/16/2020
 helpviewer_keywords:
 - local functions [C#]
-ms.openlocfilehash: 75accda2e40443073274ece4d8964c13a0945dad
-ms.sourcegitcommit: dfcbc096ad7908cd58a5f0aeabd2256f05266bac
+ms.openlocfilehash: 1c0cd1b8122f9069e5d6385d698f0ff8278912dd
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92332895"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103239"
 ---
 # <a name="local-functions-c-programming-guide"></a>本地函数（C# 编程指南）
 
-从 C# 7.0 开始，C# *支持本地函数* 。 本地函数是一种嵌套在另一成员中的类型的私有方法。 仅能从其包含成员中调用它们。 可以在以下位置中声明和调用本地函数：
+从 C# 7.0 开始，C# *支持本地函数*。 本地函数是一种嵌套在另一成员中的类型的私有方法。 仅能从其包含成员中调用它们。 可以在以下位置中声明和调用本地函数：
 
 - 方法（尤其是迭代器方法和异步方法）
 - 构造函数
@@ -71,16 +71,6 @@ ms.locfileid: "92332895"
 如果将迭代器逻辑放入本地函数，则在检索枚举器时会引发参数验证异常，如下面的示例所示：
 
 :::code language="csharp" source="snippets/local-functions/IteratorWithLocal.cs" :::
-
-你可以通过类似于异步操作的方式来使用本地函数。 等待相应的任务时，异步方法图面中引发的异常。 本地函数允许代码快速失败，并允许同步引发和观察异常。
-
-以下示例使用名为 `GetMultipleAsync` 的异步方法暂停指定的秒数并返回一个值，该值是该秒数的任意倍数。 最大延迟为 5 秒；如果该值大于 5，则结果为 <xref:System.ArgumentOutOfRangeException>。 如下面的示例所示，仅当任务处于等待状态时，才会观察到将值 6 传递到 `GetMultipleAsync` 方法时引发的异常。
-
-:::code language="csharp" source="snippets/local-functions/AsyncWithoutLocal.cs" :::
-
-与方法迭代器类似，你可以重构前面的示例，将异步操作的代码放入本地函数。 如以下示例中的输出所示，调用 `GetMultiple` 方法后，会引发 <xref:System.ArgumentOutOfRangeException>。
-
-:::code language="csharp" source="snippets/local-functions/AsyncWithLocal.cs" :::
 
 ## <a name="local-functions-vs-lambda-expressions"></a>本地函数与 Lambda 表达式
 

@@ -3,12 +3,12 @@ title: 卸载工具
 description: .NET 卸载工具概述，它是一种可实现 .NET SDK 和运行时的受控清理的引导式工具。
 author: sfoslund
 ms.date: 01/28/2021
-ms.openlocfilehash: a3819b11af94d4fec3ecb072ec3d5ddf6de706c9
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 9afcac150659a8f58a04f4c254b0a0219af42e74
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216312"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105429"
 ---
 # <a name="net-uninstall-tool"></a>.NET 卸载工具
 
@@ -302,8 +302,8 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 > [!CAUTION]
 > 请记住以下注意事项：
 >
->- 此工具可以卸载计算机上 `global.json` 文件所需的 .NET SDK 版本。 可以从[下载 .NET](https://dotnet.microsoft.com/download/dotnet-core) 页重新安装 .NET SDK。
->- 此工具可以卸载计算机上依赖于框架的应用程序所需的 .NET 运行时版本。 可以从[下载 .NET](https://dotnet.microsoft.com/download/dotnet-core) 页重新安装 .NET 运行时。
+>- 此工具可以卸载计算机上 `global.json` 文件所需的 .NET SDK 版本。 可以从[下载 .NET](https://dotnet.microsoft.com/download/dotnet) 页重新安装 .NET SDK。
+>- 此工具可以卸载计算机上依赖于框架的应用程序所需的 .NET 运行时版本。 可以从[下载 .NET](https://dotnet.microsoft.com/download/dotnet) 页重新安装 .NET 运行时。
 >- 此工具可以卸载 Visual Studio 所依赖的 .NET SDK 和运行时版本。 如果中断 Visual Studio 安装，请在 Visual Studio 安装程序中运行“修复”以返回到工作状态。
 
 默认情况下，所有命令都将保留 Visual Studio 或其他 SDK 可能需要的 .NET SDK 和运行时。 可以通过将这些 SDK 和运行时显式列出为参数或使用 `--force` 选项来卸载这些 SDK 和运行时。

@@ -3,12 +3,12 @@ title: 教程：安装和使用 .NET 本地工具
 description: 了解如何安装和使用 .NET 工具作为本地工具。
 ms.topic: tutorial
 ms.date: 12/11/2020
-ms.openlocfilehash: f32a5c4091ff63c7c50cf339dddd89b78e543c4c
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 29c561d27aad99c0383fc8e0bb5a4543ae65705a
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97512458"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104123"
 ---
 # <a name="tutorial-install-and-use-a-net-local-tool-using-the-net-cli"></a>教程：使用 .NET CLI 安装和使用 .NET 本地工具
 
@@ -21,7 +21,7 @@ ms.locfileid: "97512458"
 * 完成[本系列的第一个教程](global-tools-how-to-create.md)。
 * 安装 .NET Core 2.1 运行时。
 
-  在本教程中，安装和使用面向 .NET Core 2.1 的工具，因此需要在计算机上安装该运行时。 若要安装 2.1 运行时，请转到 [.NET Core 2.1 下载页面](https://dotnet.microsoft.com/download/dotnet-core/2.1)并在“运行应用 - 运行时”  列中查找运行时安装链接。
+  在本教程中，安装和使用面向 .NET Core 2.1 的工具，因此需要在计算机上安装该运行时。 若要安装 2.1 运行时，请转到 [.NET Core 2.1 下载页面](https://dotnet.microsoft.com/download/dotnet/2.1)并在“运行应用 - 运行时”  列中查找运行时安装链接。
 
 ## <a name="create-a-manifest-file"></a>创建清单文件
 

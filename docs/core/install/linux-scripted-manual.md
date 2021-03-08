@@ -4,12 +4,12 @@ description: 演示如何在 Linux 上无包管理器的情况下安装 .NET SDK
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 14789587a58c7b9d5ef2c9251ed599ce18a48f24
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: 414246e472c3d58a6768311bd7a4635100f3b618
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99505571"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105175"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-manually"></a>手动安装 .NET SDK 或 .NET Runtime
 
@@ -111,9 +111,9 @@ ms.locfileid: "99505571"
 如果安装 .NET SDK，则无需安装相应的运行时。 首先，从以下站点之一下载 SDK 或运行时的二进制版本：
 
 - ✔️ [.NET 5.0 下载](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [.NET Core 3.1 下载](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ✔️ [.NET Core 2.1 下载](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [所有 .NET Core 下载项](https://dotnet.microsoft.com/download/dotnet-core)
+- ✔️ [.NET Core 3.1 下载](https://dotnet.microsoft.com/download/dotnet/3.1)
+- ✔️ [.NET Core 2.1 下载](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [所有 .NET Core 下载项](https://dotnet.microsoft.com/download/dotnet)
 
 接下来，提取已下载的文件并使用 `export` 命令设置 .NET 使用的变量，然后确保 .NET 在 PATH 中。
 

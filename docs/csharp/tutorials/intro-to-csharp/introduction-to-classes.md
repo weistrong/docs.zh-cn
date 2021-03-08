@@ -3,12 +3,12 @@ title: 类和对象 - C# 简介教程
 description: 创建首个 C# 程序，并探索面向对象的概念
 ms.date: 10/11/2017
 ms.custom: mvc
-ms.openlocfilehash: a48e5790d2872ca3074bd7ce06c23412086b00f3
-ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
+ms.openlocfilehash: 3da445e6c656628fffdb9ef9384fb1a1c556a2cd
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99585359"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255413"
 ---
 # <a name="explore-object-oriented-programming-with-classes-and-objects"></a>使用类和对象探索面向对象的编程
 
@@ -16,7 +16,7 @@ ms.locfileid: "99585359"
 
 ## <a name="prerequisites"></a>先决条件
 
-本教程要求安装一台虚拟机，以用于本地开发。 在 Windows、Linux 或 macOS 上，可以使用 .NET CLI 创建、生成和运行应用程序。 在 Windows 上，可以使用 Visual Studio 2019。 有关创建说明，请参阅[创建本地环境](local-environment.md)。
+本教程要求安装一台虚拟机，以用于本地开发。 在 Windows、Linux 或 macOS 上，可以使用 .NET CLI 创建、生成和运行应用程序。 在 Windows 上，可以使用 Visual Studio 2019。 有关创建说明，请参阅[创建本地环境](../../tour-of-csharp/tutorials/local-environment.md)。
 
 ## <a name="create-your-application"></a>创建应用程序
 
@@ -214,7 +214,7 @@ Console.WriteLine(account.GetAccountHistory());
 
 ## <a name="next-steps"></a>后续步骤
 
-如果遇到问题，可以在 [GitHub 存储库](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/intro-to-csharp/snippets/introduction-to-classes)中查看本教程的源代码。
+如果遇到问题，可以在 [GitHub 存储库](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/intro-to-csharp/snippets/introduction-to-classes)中查看本教程的源代码。
 
 可继续学习[面向对象的编程](object-oriented-programming.md)教程。
 

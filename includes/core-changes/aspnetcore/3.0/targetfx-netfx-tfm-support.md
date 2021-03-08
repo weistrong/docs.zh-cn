@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ec6724ab378dd614c55a024ede18d997d27be3a3
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 73bf0ba78e2986da3e0aa66d492f1765df563b27
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96032439"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102109265"
 ---
 ### <a name="target-framework-net-framework-support-dropped"></a>目标框架：删除了 .NET Framework 支持
 
@@ -14,7 +14,7 @@ ms.locfileid: "96032439"
 
 .NET Framework 4.8 是 .NET Framework 的上一个主要版本。 新的 ASP.NET Core 应用应基于 .NET Core 构建。 从 .NET Core 3.0 版开始，可将 ASP.NET Core 3.0 视为 .NET Core 的一部分。
 
-将 .NET Framework 和 ASP.NET Core 结合使用的客户可以使用 [2.1 LTS 版本](https://dotnet.microsoft.com/download/dotnet-core/2.1)以完全受支持的方式继续。 至少在 2021 年 8 月 21 日之前，将继续提供对 2.1 的支持和服务。 根据 [.NET 支持策略](https://dotnet.microsoft.com/platform/support-policy)，此日期为声明 LTS 版本后三年。 .NET Framework 对 ASP.NET Core 2.1 包的支持  将无限延期，类似于[其他基于包的 ASP.NET 框架的服务策略](https://dotnet.microsoft.com/platform/support/policy/aspnet)。
+将 .NET Framework 和 ASP.NET Core 结合使用的客户可以使用 [2.1 LTS 版本](https://dotnet.microsoft.com/download/dotnet/2.1)以完全受支持的方式继续。 至少在 2021 年 8 月 21 日之前，将继续提供对 2.1 的支持和服务。 根据 [.NET 支持策略](https://dotnet.microsoft.com/platform/support-policy)，此日期为声明 LTS 版本后三年。 .NET Framework 对 ASP.NET Core 2.1 包的支持将无限延期，类似于[其他基于包的 ASP.NET 框架的服务策略](https://dotnet.microsoft.com/platform/support/policy/aspnet)。
 
 有关从 .NET Framework 移植到 .NET Core 的详细信息，请参阅[移植到 .NET Core](~/docs/core/porting/index.md)。
 
@@ -34,7 +34,7 @@ ASP.NET Core 应用可在 .NET Core 或 .NET Framework 上运行。
 
 ASP.NET Core 应用只能在 .NET Core 上运行。
 
-#### <a name="recommended-action"></a>建议操作
+#### <a name="recommended-action"></a>建议的操作
 
 请执行以下一项操作：
 

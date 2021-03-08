@@ -3,12 +3,12 @@ title: 如何安装 ML.NET 命令行接口 (CLI) 工具
 description: 了解如何安装、升级、降级和卸载 ML.NET 命令行接口 (CLI) 工具。
 ms.date: 06/08/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 13203246411deadf3ab13a5eba0d2c8e6e9027c5
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a99ffa30dcbacba3341125fd0e37e617e0f4cd1e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602266"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103941"
 ---
 # <a name="how-to-install-the-mlnet-command-line-interface-cli-tool"></a>如何安装 ML.NET 命令行接口 (CLI) 工具
 
@@ -21,7 +21,7 @@ ML.NET CLI 使用自动化机器学习 (AutoML) 和训练数据集生成质量�
 
 ## <a name="pre-requisites"></a>先决条件
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1)
 
 - （可选）[Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 

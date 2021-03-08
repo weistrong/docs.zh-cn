@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3d8179c5c0e84f8ff1197cce7790c80a5f5a4f6d
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 5a027054024d8429831d73525ab3748c51ae850e
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619439"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255746"
 ---
 
 使用包管理器进行安装时，将为你安装这些库。 但是，如果手动安装 .NET Core 或发布自包含的应用，则需要确保已安装以下库：
@@ -12,6 +12,7 @@ ms.locfileid: "85619439"
 - krb5-libs
 - libicu
 - openssl-libs
+- zlib
 
 如果目标运行时环境的 OpenSSL 版本为1.1 或更高版本，则需要安装 compat-openssl10。
 

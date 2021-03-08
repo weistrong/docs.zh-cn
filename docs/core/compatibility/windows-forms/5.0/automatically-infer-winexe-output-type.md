@@ -1,13 +1,13 @@
 ---
 title: 中断性变更：对于 WPF 和 WinForms 应用，OutputType 设置为 WinExe
 description: 了解 .NET SDK 5.0.100 中的以下中断性变更：对于 Windows 窗体应用，OutputType 自动设置为 WinExe。
-ms.date: 09/18/2020
-ms.openlocfilehash: 38d9b910374f9e44f7e35296808930c6a6d45f0d
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.date: 02/08/2021
+ms.openlocfilehash: 565007e9ce6be289456afc9facbd4c555a1110bd
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100431459"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102256174"
 ---
 # <a name="outputtype-set-to-winexe-for-wpf-and-winforms-apps"></a>对于 WPF 和 WinForms 应用，OutputType 设置为 WinExe
 

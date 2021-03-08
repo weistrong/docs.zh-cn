@@ -6,12 +6,12 @@ dev_langs:
 - vb
 ms.date: 07/22/2016
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
-ms.openlocfilehash: 259db1b9d33dd3b068f4d4fa18d2118db34bf0b0
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 0cd8179de929ea55212d600844e658d6946861ab
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819079"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103070"
 ---
 # <a name="language-independence-and-language-independent-components"></a>语言独立性和与语言无关的组件
 
@@ -20,13 +20,13 @@ ms.locfileid: "94819079"
 > [!NOTE]
 > 本文的第一部分讨论如何创建独立于语言的组件（即以任何语言编写的应用均可以使用的组件）。 还可以从用多种语言编写的源代码创建单个组件或应用；请参阅本文第二部分的[跨语言互操作性](#cross-language-interoperability)。
 
-若要与使用任何语言编写的其他对象完全交互，对象必须只向调用方公开那些所有语言共有的功能。 此组通用功能由公共语言规范 (CLS) 定义，后者是一组适用于生成的程序集的规则。 公共语言规范在 [ECMA-335 标准：公共语言基础结构](https://www.ecma-international.org/publications/standards/Ecma-335.htm)的第 I 部分的第 7 条至第 11 条中进行了定义。
+若要与使用任何语言编写的其他对象完全交互，对象必须只向调用方公开那些所有语言共有的功能。 此组通用功能由公共语言规范 (CLS) 定义，后者是一组适用于生成的程序集的规则。 公共语言规范在 [ECMA-335 标准：公共语言基础结构](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/)的第 I 部分的第 7 条至第 11 条中进行了定义。
 
 如果你的组件符合公共语言规范，则保证其符合 CLS 并可通过支持 CLS 的任何编程语言编写的程序集中的代码对其进行访问。 可以通过将 [CLSCompliantAttribute](xref:System.CLSCompliantAttribute) 特性应用于源代码来确定自己的组件在编译时是否符合公共语言规范。 有关详细信息，请参阅 [CLSCompliantAttribute 特性](#the-clscompliantattribute-attribute)。
 
 ## <a name="cls-compliance-rules"></a>CLS 遵从性规则
 
-本节讨论用于创建符合 CLS 的组件的规则。 有关规则的完整列表，请参阅 [ECMA-335 标准：公共语言基础结构](https://www.ecma-international.org/publications/standards/Ecma-335.htm)的第 I 部分的第 7 条至第 11 条中进行了定义。
+本节讨论用于创建符合 CLS 的组件的规则。 有关规则的完整列表，请参阅 [ECMA-335 标准：公共语言基础结构](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/)的第 I 部分的第 7 条至第 11 条中进行了定义。
 
 > [!NOTE]
 > 公共语言规范讨论 CLS 遵从性的每个规则，因为它应用于使用者（以编程方式访问符合 CLS 的组件的开发人员）、框架（使用语言编译器创建符合 CLS 的库的开发人员）和扩展人员（创建可创建符合 CLS 的组件的语言编译器或代码分析器等工具的开发人员）。 本文重点介绍适用于框架的规则。 但请注意，一些适用于扩展程序的规则也适用于使用 [Reflection.Emit](xref:System.Reflection.Emit) 创建的程序集。
@@ -111,7 +111,7 @@ End Class
 
 * 公共类中公共方法的参数和返回类型，以及派生类可以访问的方法的参数和返回类型。
 
-下表中将列出 CLS 遵从性规则。 规则的文本摘自 [ECMA-335 标准：公共语言基础结构](https://www.ecma-international.org/publications/standards/Ecma-335.htm)（版权所有 2012，Ecma International）。 有关这些规则的详细信息，请参阅以下各节。
+下表中将列出 CLS 遵从性规则。 规则的文本摘自 [ECMA-335 标准：公共语言基础结构](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/)（版权所有 2012，Ecma International）。 有关这些规则的详细信息，请参阅以下各节。
 
 类别 | 查看 | 规则 | 规则编号
 -------- | --- | ---- | -----------

@@ -2,12 +2,12 @@
 title: 字符串内插 - C# 教程
 description: 本教程介绍了如何使用 C# 字符串内插功能将格式化表达式结果添加到较大的字符串中。
 ms.date: 10/23/2018
-ms.openlocfilehash: d1b78670361e8b333499d12b68c0364ad9e40a85
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: a80f6d6b118a9dfc4e9ada2122dfc374a137fb4e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82796049"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103200"
 ---
 # <a name="use-string-interpolation-to-construct-formatted-strings"></a>使用字符串内插构造格式化字符串
 
@@ -103,7 +103,7 @@ public class Program
 Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");
 ```
 
-可通过在内插表达式后接冒号（“:”）和格式字符串来指定格式字符串。 “d”是[标准日期和时间格式字符串](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier)，表示短日期格式。 “C2”是[标准数值格式字符串](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier)，用数字表示货币值（精确到小数点后两位）。
+可通过在内插表达式后接冒号（“:”）和格式字符串来指定格式字符串。 “d”是[标准日期和时间格式字符串](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier)，表示短日期格式。 “C2”是[标准数值格式字符串](../../../standard/base-types/standard-numeric-format-strings.md#currency-format-specifier-c)，用数字表示货币值（精确到小数点后两位）。
 
 .NET 库中的许多类型支持一组预定义的格式字符串。 这些格式字符串包括所有数值类型以及日期和时间类型。 有关支持格式字符串的完整类型列表，请参阅 [.NET 中的格式化类型](../../../standard/base-types/formatting-types.md)文章中的[格式字符串和. NET 类库类型](../../../standard/base-types/formatting-types.md#format-strings-and-net-types)。
 

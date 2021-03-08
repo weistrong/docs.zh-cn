@@ -3,12 +3,12 @@ title: 使用 .NET Core 中的 EventCounters 衡量性能
 description: 本教程将介绍如何使用 EventCounters 衡量性能。
 ms.date: 08/07/2020
 ms.topic: tutorial
-ms.openlocfilehash: 2ed7f234b685dab91ab275105d26b474e3bd1a87
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: bde54ce1996b2f4e2a703c23384eadece06e66cb
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700738"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105305"
 ---
 # <a name="tutorial-measure-performance-using-eventcounters-in-net-core"></a>教程：使用 .NET Core 中的 EventCounters 衡量性能
 
@@ -27,7 +27,7 @@ ms.locfileid: "97700738"
 
 本教程使用：
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) 或更高版本。
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) 或更高版本。
 - [dotnet-counters](dotnet-counters.md) 监视事件计数器。
 - 要诊断的[示例调试目标](/samples/dotnet/samples/diagnostic-scenarios)应用。
 

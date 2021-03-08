@@ -4,12 +4,12 @@ description: 了解如何在 Windows 上生成 .NET for Apache Spark 应用程�
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: 8f197c0050d149ed03e328e72868ad4ba2f728c1
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: d9e1721fbb13d963c3a690ded3e26885f268bc72
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688106"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106847"
 ---
 # <a name="learn-how-to-build-your-net-for-apache-spark-application-on-windows"></a>了解如何在 Windows 上生成 .NET for Apache Spark 应用程序
 
@@ -19,7 +19,7 @@ ms.locfileid: "94688106"
 
 如果具备以下所有先决条件，请跳到[生成](#build)步骤。
 
-  1. 下载并安装 [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)  - 安装 SDK 会将 `dotnet` 工具链添加到路径。 支持 .NET Core 2.1、2.2 和 3.1。
+  1. 下载并安装 [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet/3.1)  - 安装 SDK 会将 `dotnet` 工具链添加到路径。 支持 .NET Core 2.1、2.2 和 3.1。
   2. 安装 [Visual Studio 2019](https://www.visualstudio.com/downloads/)  （版本 16.3 或更高版本）。 Community 版本完全免费。 配置安装时，请至少包含以下组件：
      * .NET 桌面开发
        * 所有必需的组件

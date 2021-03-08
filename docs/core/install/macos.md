@@ -4,12 +4,12 @@ description: 了解可在其上安装 .NET 的 macOS 版本。
 author: adegeo
 ms.author: adegeo
 ms.date: 11/10/2020
-ms.openlocfilehash: 871263b820aaf4cc04e573dd4aa3022caa401857
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: fe42a1593d4e8249252d2bd964dbfd52cdcd81a9
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506300"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105188"
 ---
 # <a name="install-net-on-macos"></a>在 macOS 上安装 .NET
 
@@ -24,7 +24,7 @@ ms.locfileid: "99506300"
 最新版本的 .NET 是 5.0。
 
 > [!div class="button"]
-> [下载 .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
+> [下载 .NET Core](https://dotnet.microsoft.com/download/dotnet)
 
 ## <a name="supported-releases"></a>支持的版本
 
@@ -62,7 +62,7 @@ macOS 上可以安装两种不同的运行时：
   此运行时是最简单的运行时，不包括任何其他运行时。 强烈建议安装 ASP.NET Core 运行时，以最大限度地提升与 .NET 应用的兼容性。
 
 > [!div class="button"]
-> [下载 .NET 运行时](https://dotnet.microsoft.com/download/dotnet-core)
+> [下载 .NET 运行时](https://dotnet.microsoft.com/download/dotnet)
 
 ## <a name="sdk-information"></a>SDK 信息
 
@@ -106,26 +106,26 @@ brew install mono-libgdiplus
 
 macOS 具有独立的安装程序，可用于安装 .NET 5.0 SDK：
 
-- [x64（64 位）CPU](https://dotnet.microsoft.com/download/dotnet-core/5.0)
+- [x64（64 位）CPU](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 ## <a name="download-and-manually-install"></a>下载并手动安装
 
 <!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
 
-除了使用适用于 .NET 的 macOS 安装程序，还可以下载并手动安装 SDK 和运行时。 手动安装通常作为持续集成测试的一部分执行。 对于开发人员或用户，一般使用[安装程序](https://dotnet.microsoft.com/download/dotnet-core)会更好。
+除了使用适用于 .NET 的 macOS 安装程序，还可以下载并手动安装 SDK 和运行时。 手动安装通常作为持续集成测试的一部分执行。 对于开发人员或用户，一般使用[安装程序](https://dotnet.microsoft.com/download/dotnet)会更好。
 
 如果安装 .NET SDK，则无需安装相应的运行时。 首先，从以下站点之一下载 SDK 或运行时的二进制版本：
 
 - ✔️ [.NET 5.0 下载](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [.NET Core 3.1 下载](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ✔️ [.NET Core 2.1 下载](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [所有 .NET Core 下载项](https://dotnet.microsoft.com/download/dotnet-core)
+- ✔️ [.NET Core 3.1 下载](https://dotnet.microsoft.com/download/dotnet/3.1)
+- ✔️ [.NET Core 2.1 下载](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [所有 .NET Core 下载项](https://dotnet.microsoft.com/download/dotnet)
 
 接下来，提取已下载的文件并使用 `export` 命令设置 .NET 使用的变量，然后确保 .NET 在 PATH 中。
 
 若要提取运行时并使 .NET CLI 命令可用于终端，请先下载 .NET 二进制版本。 然后，打开终端并从保存文件的目录运行以下命令。 根据下载内容，存档文件名称可能不同。
 
-使用以下命令来提取你下载的运行时或 SDK。 请务必将 `DOTNET_FILE` 值更改为你的文件名：
+使用以下命令提取已下载的运行时或 SDK。 请记得将 `DOTNET_FILE` 值更改为你的文件名：
 
 ```bash
 DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
@@ -170,7 +170,7 @@ Visual Studio Code 是一个功能强大的轻量级源代码编辑器，可在�
 虽然 Visual Studio Code 不像 Visual Studio 一样附带自动的 .NET 安装程序，但添加 .NET 支持非常简单。
 
 01. [下载并安装 Visual Studio Code](https://code.visualstudio.com/Download)。
-01. [下载并安装 .NET SDK](https://dotnet.microsoft.com/download/dotnet-core)。
+01. [下载并安装 .NET SDK](https://dotnet.microsoft.com/download/dotnet)。
 01. [从 Visual Studio Code 市场安装 C# 扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)。
 
 ## <a name="install-with-bash-automation"></a>使用 Bash 自动化安装

@@ -4,12 +4,12 @@ description: 本高级教程介绍了可为空引用类型。 你将学习在引
 ms.date: 02/19/2019
 ms.technology: csharp-null-safety
 ms.custom: mvc
-ms.openlocfilehash: bd575b226a2ff61e938719b064ff5ede0cf66013
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 9d332e5331e8c9c7c54078460ec7c31957d7e38d
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805175"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103681"
 ---
 # <a name="tutorial-express-your-design-intent-more-clearly-with-nullable-and-non-nullable-reference-types"></a>教程：使用可为空和不可为空引用类型更清晰地表达设计意图
 
@@ -26,7 +26,7 @@ C# 8.0 引入了[可为空引用类型](../nullable-references.md)，它们以�
 
 ## <a name="prerequisites"></a>先决条件
 
-需要将计算机设置为运行 .NET Core，包括 C# 8.0 编译器。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 或 [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0) 随附 C# 8.0 编译器。
+需要将计算机设置为运行 .NET Core，包括 C# 8.0 编译器。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 或 [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet/3.0) 随附 C# 8.0 编译器。
 
 本教程假设你熟悉 C# 和 .NET，包括 Visual Studio 或 .NET Core CLI。
 

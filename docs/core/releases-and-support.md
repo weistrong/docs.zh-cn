@@ -5,12 +5,12 @@ ms.date: 10/07/2020
 ms.topic: overview
 ms.author: tdykstra
 author: tdykstra
-ms.openlocfilehash: 896b88cbf1f7f31d2d26d69ec7d219da6b27ceff
-ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
+ms.openlocfilehash: 65c13239f32a0166681d7a731de84a973a627f29
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "97866383"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104179"
 ---
 # <a name="releases-and-support-for-net-core-and-net-5"></a>.NET Core 和 .NET 5 的版本和支持
 
@@ -93,7 +93,7 @@ Microsoft 提供 .NET 5.0（和 .NET Core）及更高版本的主要版本、次
 
 你需要定期安装服务更新以确保应用处于安全且受支持的状态。 例如，如果 .NET Core 3.1 的最新服务更新为 3.1.8，而我们发布了 3.1.9，则 3.1.8 不再是最新版本。 3\.1 的受支持服务级别为 3.1.9。
 
-有关每个主要和次要版本的最新服务更新信息，请参阅 [.NET 下载页面](https://dotnet.microsoft.com/download/dotnet-core)。
+有关每个主要和次要版本的最新服务更新信息，请参阅 [.NET 下载页面](https://dotnet.microsoft.com/download/dotnet)。
 
 ## <a name="end-of-support"></a>结束支持
 

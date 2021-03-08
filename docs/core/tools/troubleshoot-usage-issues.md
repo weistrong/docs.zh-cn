@@ -4,12 +4,12 @@ description: 了解运行 .NET 工具出现的常见问题以及可能的解决�
 author: kdollard
 ms.topic: troubleshooting
 ms.date: 02/14/2020
-ms.openlocfilehash: c5bac4c273cdddae609657c65448e3cc4bd3579d
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 9cf0320ec5b5d6f317a4ef7f9052c0068b3ad8e5
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94633903"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104084"
 ---
 # <a name="troubleshoot-net-tool-usage-issues"></a>排查 .NET 工具使用问题
 
@@ -94,7 +94,7 @@ dotnet --list-runtimes
 dotnet --info
 ```
 
-如果你认为此工具应支持你当前安装的运行时版本，可联系工具作者，询问他们是否可更新版本号或实现多目标。 在工具作者编译其工具包并使用更新后的版本号将其重新发布到 NuGet 之后，你可更新你的副本。 虽然这种情况不会发生，但最快捷的解决方案是安装适合你要尝试运行的工具的运行时版本。 若要下载特定的 .NET 运行时版本，请访问 [.NET 下载页](https://dotnet.microsoft.com/download/dotnet-core)。
+如果你认为此工具应支持你当前安装的运行时版本，可联系工具作者，询问他们是否可更新版本号或实现多目标。 在工具作者编译其工具包并使用更新后的版本号将其重新发布到 NuGet 之后，你可更新你的副本。 虽然这种情况不会发生，但最快捷的解决方案是安装适合你要尝试运行的工具的运行时版本。 若要下载特定的 .NET 运行时版本，请访问 [.NET 下载页](https://dotnet.microsoft.com/download/dotnet)。
 
 如果将 .NET SDK 安装到非默认位置，则需要将环境变量 `DOTNET_ROOT` 设置到包含 `dotnet` 可执行文件的目录。
 

@@ -6,12 +6,12 @@ ms.author: cesardl
 ms.date: 06/03/2020
 ms.custom: mvc,mlnet-tooling
 ms.topic: tutorial
-ms.openlocfilehash: 89fc5169eee539aa857a9be03c82bf084fe4b60d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 47c38bb0b66a6fc08dd319583847dd83baedcd1e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554431"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103694"
 ---
 # <a name="analyze-sentiment-using-the-mlnet-cli"></a>使用 ML.NET CLI 分析情绪
 
@@ -35,7 +35,7 @@ ML.NET CLI 是 ML.NET 的一部分，其主要目标是在学习 ML.NET 时为 .
 
 ## <a name="pre-requisites"></a>先决条件
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) 或更高版本
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/3.1) 或更高版本
 - （可选）[Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 - [ML.NET CLI](../how-to-guides/install-ml-net-cli.md)
 
@@ -88,8 +88,8 @@ ML.NET CLI 是 ML.NET 的一部分，其主要目标是在学习 ML.NET 时为 .
 
     此命令运行 **`mlnet classification` 命令**：
     - 对于“分类”的“ML 任务”
-    - 使用**数据集文件 `yelp_labelled.txt`** 作为训练和测试数据集（CLI 在内部将使用交叉验证或将其拆分为两个数据集，一个用于训练，另一个用于测试）
-    - 想要预测的**目的/目标列**（通常称为 **“标签”** ）是**索引为 1 的列**（这是第二列，因为索引从 0 开始）
+    - 使用 **数据集文件 `yelp_labelled.txt`** 作为训练和测试数据集（CLI 在内部将使用交叉验证或将其拆分为两个数据集，一个用于训练，另一个用于测试）
+    - 想要预测的 **目的/目标列**（通常称为 **“标签”** ）是 **索引为 1 的列**（这是第二列，因为索引从 0 开始）
     - **不使用带有列名的文件标头**，因为此特定数据集文件没有标头
     - 试验的“目标探索/训练时间”为 10 秒 
 
@@ -107,7 +107,7 @@ ML.NET CLI 是 ML.NET 的一部分，其主要目标是在学习 ML.NET 时为 .
 
     但是，存在仅使用准确性指标进行测量达不到要求的情况，特别是当测试数据集中的标签（在本例中为 0 和 1）处于非平衡状态时。
 
-    如需其他指标和更多**有关指标的详细信息**（例如准确性、AUC、AUCPR 以及用于评估不同模型的 F1 分数），请参阅[了解 ML.NET 指标](../resources/metrics.md)。
+    如需其他指标和更多 **有关指标的详细信息**（例如准确性、AUC、AUCPR 以及用于评估不同模型的 F1 分数），请参阅 [了解 ML.NET 指标](../resources/metrics.md)。
 
     > [!NOTE]
     > 可以尝试使用完全相同的数据集并为 `--max-exploration-time` 指定数分钟时间（例如三分钟，因此指定 180 秒），这将找到一个更好的“最佳模型”，其具有用于此数据集（非常小，1,000 行）的不同训练管道配置。
@@ -136,8 +136,8 @@ ML.NET CLI 是 ML.NET 的一部分，其主要目标是在学习 ML.NET 时为 .
 
     ![CLI 生成的 VS 解决方案](./media/mlnet-cli/mlnet-cli-solution-explorer.png)
 
-    - 生成的**类库**（包含序列化 ML 模型（.zip 文件）和数据类（数据模型））可以直接用于最终用户应用程序，甚至可以通过直接引用该类库（或根据需要移动代码）进行使用。
-    - 生成的**控制台应用**包含必须查看的执行代码，随后通常会重用“评分代码”（运行 ML 模型以进行预测的代码），方法是将该简单代码（仅几行）移至想要进行预测的最终用户应用程序。
+    - 生成的 **类库**（包含序列化 ML 模型（.zip 文件）和数据类（数据模型））可以直接用于最终用户应用程序，甚至可以通过直接引用该类库（或根据需要移动代码）进行使用。
+    - 生成的 **控制台应用** 包含必须查看的执行代码，随后通常会重用“评分代码”（运行 ML 模型以进行预测的代码），方法是将该简单代码（仅几行）移至想要进行预测的最终用户应用程序。
 
 1. 打开类库项目中的 ModelInput.cs  和 ModelOutput.cs  类文件。 可发现这些类是用于保存数据的“数据类”或 POCO 类。 它是“样板代码”，但如果数据集有数十甚至数百列，则生成它很有用。
     - 从数据集中读取数据时使用 `ModelInput` 类。
