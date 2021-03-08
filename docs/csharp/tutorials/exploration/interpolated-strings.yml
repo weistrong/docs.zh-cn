@@ -10,12 +10,12 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
-  ms.openlocfilehash: 072c232613073c10caf6f8927154ce8f24c19af5
-  ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+  ms.openlocfilehash: 76af703567c7f6aecc409becfeb4bb0f580092e1
+  ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "88268005"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102103161"
 items:
 - durationInMinutes: 2
   content: >
@@ -81,7 +81,7 @@ items:
 - title: 控制内插表达式的格式
   durationInMinutes: 5
   content: >
-    上一步将两个格式不正确的字符串插入到了结果字符串中。 一个是日期和时间值，只有日期是合适的。 第二个是没有标明货币单位的价格。 这两个问题都很容易解决。 通过字符串内插，可以指定用于控制特定类型格式的格式字符串。 将前面示例中的调用修改为 `Console.WriteLine`，从而包含日期和价格表达式的格式字符串，如以下行所示：
+    上一步将两个格式不正确的字符串插入到了结果字符串中。 一个是日期和时间值，只有日期是合适的。 第二个是没有标明货币单位的价格。 这两个问题都很容易解决。 通过字符串内插，可以指定用于控制特定类型格式的格式字符串  。 将前面示例中的调用修改为 `Console.WriteLine`，从而包含日期和价格表达式的格式字符串，如以下行所示：
 
 
     ```csharp
@@ -91,7 +91,7 @@ items:
     ```
 
 
-    可通过在内插表达式后接冒号（“:”）和格式字符串来指定格式字符串。 “d”是[标准日期和时间格式字符串](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier)，表示短日期格式。 “C2”是[标准数值格式字符串](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier)，用数字表示货币值（精确到小数点后两位）。
+    可通过在内插表达式后接冒号（“:”）和格式字符串来指定格式字符串。 “d”是[标准日期和时间格式字符串](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier)，表示短日期格式。 “C2”是[标准数值格式字符串](../../../standard/base-types/standard-numeric-format-strings.md#currency-format-specifier-c)，用数字表示货币值（精确到小数点后两位）。
 
 
     .NET 库中的许多类型支持一组预定义的格式字符串。 这些格式字符串包括所有数值类型以及日期和时间类型。 有关支持格式字符串的完整类型列表，请参阅 [.NET 中的格式化类型](../../../standard/base-types/formatting-types.md)文章中的[格式字符串和. NET 类库类型](../../../standard/base-types/formatting-types.md#format-strings-and-net-types)。
