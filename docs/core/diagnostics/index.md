@@ -3,12 +3,12 @@ title: 诊断工具概述 - .NET Core
 description: 概述用于 .NET Core 应用程序的工具和技术。
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: ee79057e45700e17fdd37cc36288b790d64d7a09
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 9836ea11e7f17d6ed6e04bcba8bc0ed851bb368f
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188473"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105279"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>.NET Core 中提供哪些诊断工具？
 
@@ -38,7 +38,7 @@ ms.locfileid: "98188473"
 
 ## <a name="symbols"></a>符号
 
-符号是调试和其他诊断工具的基本需求。 符号文件的内容在语言、编译器和平台之间各有不同。 以非常概要的角度来看，符号是源代码和编译器生成的二进制文件之间的映射。 这些映射用于在 [Visual Studio](/visualstudio/debugger/what-is-debugging) 和 [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) 等诊断工具中提供行号信息和局部变量名称之类的内容。  以下链接包含适用于 Windows 的[符号](/windows/win32/dxtecharts/debugging-with-symbols)的详细说明，但许多概念也适用于其他平台。 [.NET 可移植符号](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)具有类似于 Windows PDB 的“PDB”文件扩展名，但并不与 Windows PDB 格式兼容。
+[符号](./symbols.md)是源代码和编译器生成的二进制代码之间的映射。 这些通常被 .NET 调试器用来解析源行号、局部变量名称以及其他类型的诊断信息。
 
 ## <a name="collect-diagnostics-in-containers"></a>收集容器中的诊断
 
