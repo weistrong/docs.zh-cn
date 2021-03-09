@@ -4,12 +4,12 @@ description: 了解可在其上安装 .NET 的 Windows 版本。
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 55746b29b579a6d3aacb7d11c5604dc601440ab5
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: 7909a94c6384e53569db3ba17047cbcc93e80fe1
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506287"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105097"
 ---
 # <a name="install-net-on-windows"></a>在 Windows 上安装 .NET
 
@@ -24,7 +24,7 @@ ms.locfileid: "99506287"
 最新版本的 .NET 是 5.0。
 
 > [!div class="button"]
-> [下载 .NET](https://dotnet.microsoft.com/download/dotnet-core)
+> [下载 .NET](https://dotnet.microsoft.com/download/dotnet)
 
 ## <a name="supported-releases"></a>支持的版本
 
@@ -76,7 +76,7 @@ Windows 10 版本终止服务日期按版本分段。 下表中仅考虑家庭�
   此运行时是最简单的运行时，不包括任何其他运行时。 强烈建议同时安装 ASP.NET Core 运行时和桌面运行时，以最大限度地提升与 .NET 应用的兼容性 。
 
 > [!div class="button"]
-> [下载 .NET 运行时](https://dotnet.microsoft.com/download/dotnet-core)
+> [下载 .NET 运行时](https://dotnet.microsoft.com/download/dotnet)
 
 ## <a name="sdk-information"></a>SDK 信息
 
@@ -263,12 +263,12 @@ Visual Studio Code 是一个功能强大的轻量级源代码编辑器，可在�
 虽然 Visual Studio Code 不像 Visual Studio 一样附带自动的 .NET Core 安装程序，但添加 .NET Core 支持非常简单。
 
 01. [下载并安装 Visual Studio Code](https://code.visualstudio.com/Download)。
-01. [下载并安装 .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core)。
+01. [下载并安装 .NET Core SDK](https://dotnet.microsoft.com/download/dotnet)。
 01. [从 Visual Studio Code 市场安装 C# 扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)。
 
 ## <a name="windows-installer"></a>Windows Installer
 
-适用于 .NET 的[下载页面](https://dotnet.microsoft.com/download/dotnet-core)提供了 Windows Installer 可执行文件。
+适用于 .NET 的[下载页面](https://dotnet.microsoft.com/download/dotnet)提供了 Windows Installer 可执行文件。
 
 使用 Windows 安装程序安装 .NET 时，可以通过设置 `DOTNETHOME_X64` 和 `DOTNETHOME_X86` 参数来自定义安装路径：
 
@@ -298,14 +298,14 @@ dotnet-sdk-3.1.301-win-x64.exe /install /quiet /norestart
 
 ## <a name="download-and-manually-install"></a>下载并手动安装
 
-除了使用适用于 .NET 的 Windows 安装程序，还可以下载并手动安装 SDK 或运行时。 手动安装通常作为持续集成测试的一部分执行。 对于开发人员或用户，一般使用[安装程序](https://dotnet.microsoft.com/download/dotnet-core)会更好。
+除了使用适用于 .NET 的 Windows 安装程序，还可以下载并手动安装 SDK 或运行时。 手动安装通常作为持续集成测试的一部分执行。 对于开发人员或用户，一般使用[安装程序](https://dotnet.microsoft.com/download/dotnet)会更好。
 
 在下载 .NET SDK 和 .NET 运行时后，可以手动安装它们。 如果安装 .NET SDK，则无需安装相应的运行时。 首先，从以下站点之一下载 SDK 或运行时的二进制版本：
 
 - [.NET 5.0 下载](https://dotnet.microsoft.com/download/dotnet/5.0)
-- [.NET Core 3.1 下载](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- [.NET Core 2.1 下载](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [所有 .NET Core 下载项](https://dotnet.microsoft.com/download/dotnet-core)
+- [.NET Core 3.1 下载](https://dotnet.microsoft.com/download/dotnet/3.1)
+- [.NET Core 2.1 下载](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [所有 .NET Core 下载项](https://dotnet.microsoft.com/download/dotnet)
 
 创建要将 .NET 提取到的目录，例如 `%USERPROFILE%\dotnet`。 然后，将下载的 zip 文件提取到该目录中。
 

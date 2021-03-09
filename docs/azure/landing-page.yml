@@ -10,12 +10,12 @@ metadata:
   ms.technology: azure
   ms.service: multiple
   ms.prod: azure-dotnet
-  ms.openlocfilehash: 3f84758863561be809078b888f18308d5cbcfb82
-  ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+  ms.openlocfilehash: 121499bc7f26ba6b07851696ae20b9ebf730de2a
+  ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/30/2021
-  ms.locfileid: "99216059"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "102105712"
 landingContent:
 - title: Azure 上的 .NET 入门
   linkLists:
@@ -26,7 +26,7 @@ landingContent:
   - linkListType: get-started
     links:
     - text: .NET 开发人员工具
-      url: tools.md
+      url: ./dotnet-dev-env-checklist.md
     - text: 对应用进行身份验证
       url: authentication.md
     - text: Logging
@@ -220,4 +220,4 @@ landingContent:
     - text: 使用 Microsoft 平台和工具对 Docker 应用程序生命周期进行容器化
       url: ../architecture/containerized-lifecycle/index.md
     - text: 通过 Azure 云和 Windows 容器实现现有 .NET 应用程序的现代化
-      url: /dotnet/architecture/modernize-with-azure-containers/
+      url: ../architecture/modernize-with-azure-containers/index.md

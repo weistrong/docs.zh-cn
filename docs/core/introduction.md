@@ -4,12 +4,12 @@ description: 了解用于构建多种应用的免费开源开发平台 .NET。
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: d08e00ee9702c71cacc8a6588c1f4290b4ab3ae9
-ms.sourcegitcommit: b924ade6426cf61a4604c4e2ee54cb3592c29317
+ms.openlocfilehash: 7997346c9b248962b36688592d357247ec0ce6aa
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101096798"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105084"
 ---
 # <a name="introduction-to-net"></a>.NET 简介
 
@@ -132,7 +132,7 @@ Microsoft 的 .NET 二进制发行版在 Azure 中的 Microsoft 维护服务器�
 
 [.NET SDK](sdk.md) 是一组用于开发和运行 .NET 应用程序的库和工具。
 
-[下载 .NET](https://dotnet.microsoft.com/download/dotnet-core/) 时，可以选择 SDK 或 *运行时*，例如 .NET 运行时或 ASP.NET Core 运行时。 在要准备运行 .NET 应用的计算机上安装运行时。 在要用于开发的计算机上安装 SDK。 下载 SDK 时，将自动获取运行时。
+[下载 .NET](https://dotnet.microsoft.com/download/dotnet) 时，可以选择 SDK 或 *运行时*，例如 .NET 运行时或 ASP.NET Core 运行时。 在要准备运行 .NET 应用的计算机上安装运行时。 在要用于开发的计算机上安装 SDK。 下载 SDK 时，将自动获取运行时。
 
 SDK 下载包括以下组件：
 
@@ -340,7 +340,7 @@ Entity Framework (EF) Core 是一种可用作 ORM 的[开源](https://github.com
   |上下文  |“运行时”含义 |
   |---------|---------|
   | [公共语言运行时 (CLR)](#clr)| 用于托管程序的执行环境。 OS 属于运行时环境，但不属于 .NET 运行时。 |
-  | [.Net 下载页上的 .NET 运行时](https://dotnet.microsoft.com/download/dotnet-core) | [CLR](#clr) 和[运行时库](#runtime-libraries)，它们一起提供了对运行[依赖于框架](#deployment-models)的应用的支持。 此页还提供 ASP.NET Core 服务器应用和 Windows 桌面应用的运行时选项。 |
+  | [.Net 下载页上的 .NET 运行时](https://dotnet.microsoft.com/download/dotnet) | [CLR](#clr) 和[运行时库](#runtime-libraries)，它们一起提供了对运行[依赖于框架](#deployment-models)的应用的支持。 此页还提供 ASP.NET Core 服务器应用和 Windows 桌面应用的运行时选项。 |
   | [运行时标识符 (RID)](rid-catalog.md) | 运行 .NET 应用的 OS 平台和 CPU 体系结构。 例如：Windows x64、Linux x64。 |
 
 * **框架**
@@ -350,7 +350,7 @@ Entity Framework (EF) Core 是一种可用作 ORM 的[开源](https://github.com
   | .NET framework | .NET 的原始、仅限 Windows 的实现。 “框架”首字母大写。 |
   | Target Framework — 目标 Framework | .NET 应用或库依赖的 API 集合。 示例：.NET Core 3.1、.NET Standard 2.0 |
   | 目标框架名字对象 (TFM)  | TFM 是一种标准化令牌格式，用于指定 .NET 应用或库的目标框架。 示例：`net462`（对于 .NET Framework 4.6.2）。 |
-  | 依赖于框架的应用 | 只能在从 [.NET 下载页](https://dotnet.microsoft.com/download/dotnet-core)安装了运行时的计算机上运行的应用。 此用法中的“框架”与你从 .NET 下载页下载的“运行时”是相同的。 |
+  | 依赖于框架的应用 | 只能在从 [.NET 下载页](https://dotnet.microsoft.com/download/dotnet)安装了运行时的计算机上运行的应用。 此用法中的“框架”与你从 .NET 下载页下载的“运行时”是相同的。 |
   | 框架库 | 有时用作[运行时库](#runtime-libraries)的同义词。 |
 
 * **SDK**

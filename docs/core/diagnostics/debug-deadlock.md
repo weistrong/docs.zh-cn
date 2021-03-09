@@ -3,12 +3,12 @@ title: 调试死锁 - .NET Core
 description: 本教程演示如何调试 .NET Core 中的锁定问题。
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: d9a9328b376de5886d22ca7315f6d7d9d73fd2c2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0f5862c9acc4c1ae892caf29cea2ca484116cabf
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538691"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105579"
 ---
 # <a name="debug-a-deadlock-in-net-core"></a>调试 .NET Core 中的死锁
 
@@ -30,7 +30,7 @@ ms.locfileid: "90538691"
 
 本教程使用：
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) 或更高版本
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) 或更高版本
 - 用于触发场景的[示例调试目标 - Web 应用](/samples/dotnet/samples/diagnostic-scenarios)
 - 用于列出进程的 [dotnet-trace](dotnet-trace.md)
 - 收集和分析转储文件的 [dotnet-dump](dotnet-dump.md)

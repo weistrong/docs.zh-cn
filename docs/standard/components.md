@@ -3,12 +3,12 @@ title: .NET 体系结构组件
 description: 描述 .NET 体系结构组件，例如 .NET Standard、.NET 实现、.NET 运行时和工具。
 author: cartermp
 ms.date: 10/05/2020
-ms.openlocfilehash: c5f174034ce0cd0e1cf0b799c7b3f4bff99447a2
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 884deb61ab5cda5054fb54134c3338b4d05599ca
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100423130"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106392"
 ---
 # <a name="net-architectural-components"></a>.NET 体系结构组件
 
@@ -99,21 +99,21 @@ UWP 是用于为物联网 (IoT) 生成新式触控 Windows 应用程序和软件
 
 C# 语言和公共语言基础结构 (CLI) 规范通过 [Ecma International&reg;](https://www.ecma-international.org/) 进行标准化。 这些标准的第一版已于 2001 年 12 月由 Ecma 发布。
 
-这些标准的后续版本由编程委员技术委员会 ([TC49](https://www.ecma-international.org/memento/tc49.htm)) 的 TC49-TG2 (C#) 和 TC49-TG3 (CLI) 任务组编制，被 Ecma General Assembly 采纳，随后通过 ISO 快速跟踪流程被 ISO/IEC JTC 1 采纳。
+这些标准的后续版本由编程委员技术委员会 ([TC49](https://www.ecma-international.org/technical-committees/tc49/)) 的 TC49-TG2 (C#) 和 TC49-TG3 (CLI) 任务组编制，被 Ecma General Assembly 采纳，随后通过 ISO 快速跟踪流程被 ISO/IEC JTC 1 采纳。
 
 ### <a name="latest-standards"></a>最新标准
 
-以下官方 Ecma 文档可用于 [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) 和 [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm))：
+以下官方 Ecma 文档可用于 [C#](https://www.ecma-international.org/publications-and-standards/standards/ecma-334/) 和 [CLI](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) ([TR-84](https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-84/))：
 
-- **C# 语言标准（版本 5.0）** ：[ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
-- **公共语言基础结构**：[ECMA-335.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf)。
+- **C# 语言标准（版本 5.0）** ：[ECMA-334.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-334_5th_edition_december_2017.pdf)
+- **公共语言基础结构**：[ECMA-335.pdf](hhttps://www.ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf)。
 - **派生自分区 IV XML 文件的信息**：[ECMA-084.pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) 格式。
 
 官方 ISO/IEC 文档可从 ISO/IEC [公开标准](https://standards.iso.org/ittf/PubliclyAvailableStandards/)页获取。 以下链接可从该页面直接获得：
 
 - **信息技术 - 编程语言 - C#** ：[ISO/IEC 23270:2018](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)
 - **信息技术 - 公共语言基础结构 (CLI) 分区 I 到 VI**：[ISO/IEC 23271:2012](https://standards.iso.org/ittf/PubliclyAvailableStandards/c058046_ISO_IEC_23271_2012(E).zip)
-- **信息技术 - 公共语言基础结构 (CLI) - 有关派生自分区 IV XML 文件的信息的技术报告**：[ISO/IEC TR 23272:2011](https://standards.iso.org/ittf/PubliclyAvailableStandards/c057955_ISO_IEC_TR_23272_2011.zip)
+- **信息技术 - 公共语言基础结构 (CLI) - 有关派生自分区 IV XML 文件的信息的技术报告**：[ISO/IEC TR 23272:2011](https://www.ecma-international.org/wp-content/uploads/ECMA_TR-84_6th_edition_june_2012.pdf)
 
 ## <a name="see-also"></a>请参阅
 

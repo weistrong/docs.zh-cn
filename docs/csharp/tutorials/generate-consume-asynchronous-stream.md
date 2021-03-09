@@ -4,12 +4,12 @@ description: 本高级教程介绍如何生成和使用异步流。 异步流提
 ms.date: 02/10/2019
 ms.technology: csharp-async
 ms.custom: mvc
-ms.openlocfilehash: fd9fed3469d18c919102640df7bb501b116f5e0e
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 48d749af47139ca97df9c05f2ef450870b41bef5
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420365"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259614"
 ---
 # <a name="tutorial-generate-and-consume-async-streams-using-c-80-and-net-core-30"></a>教程：使用 C# 8.0 和 .NET Core 3.0 生成和使用异步流
 
@@ -42,13 +42,13 @@ C# 8.0 引入了异步流，这可针对流式处理数据源建模  。 数据�
 
 ## <a name="run-the-starter-application"></a>运行初学者应用程序
 
-可以从 [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start) 文件夹中的 [dotnet/docs](https://github.com/dotnet/docs) 存储库获得本教程中使用的初学者应用程序代码。
+可以从 [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start) 文件夹中的 [dotnet/docs](https://github.com/dotnet/docs) 存储库获得本教程中使用的初学者应用程序代码。
 
 初学者应用程序是一个控制台应用程序，它使用 [GitHub GraphQL](https://developer.github.com/v4/) 接口检索最近在 [dotnet/docs](https://github.com/dotnet/docs) 存储库中编写的问题。 首先来看一下以下初学者应用 `Main` 方法的代码：
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/start/Program.cs" id="SnippetStarterAppMain" :::
 
-可以将 `GitHubKey` 环境变量设置为个人访问令牌，也可以将对 `GenEnvVariable` 的调用中的最后一个参数替换为个人访问令牌。 如果要与其他人共享源，请不要将访问代码放在源代码中。 不要将访问代码上传到共享源存储库。
+可以将 `GitHubKey` 环境变量设置为个人访问令牌，也可以将对 `GetEnvVariable` 的调用中的最后一个参数替换为个人访问令牌。 如果要与其他人共享源，请不要将访问代码放在源代码中。 不要将访问代码上传到共享源存储库。
 
 在创建 GitHub 客户端后，`Main` 中的代码将创建一个进度报告对象和一个取消令牌。 创建这些对象之后，`Main` 调用 `runPagedQueryAsync` 来检索最近创建的 250 个问题。 任务完成后，将显示结果。
 
@@ -144,7 +144,7 @@ try
 
 :::code language="csharp" source="snippets/generate-consume-asynchronous-streams/finished/Program.cs" id="SnippetEnumerateWithCancellation" :::
 
-可以从 [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished) 文件夹中的 [dotnet/docs](https://github.com/dotnet/docs) 存储库获得完成教程的代码。
+可以从 [csharp/tutorials/AsyncStreams](https://github.com/dotnet/docs/tree/main/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished) 文件夹中的 [dotnet/docs](https://github.com/dotnet/docs) 存储库获得完成教程的代码。
 
 ## <a name="run-the-finished-application"></a>运行完成的应用程序
 
