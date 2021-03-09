@@ -8,12 +8,12 @@ helpviewer_keywords:
 - tools [.NET Framework]
 - running .NET Framework tools
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
-ms.openlocfilehash: 96df5a0c8487d3ba344b3aa13ca74b92e428d5aa
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 06311e977619418c5b3fb69be518353de51e6bd5
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556676"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258772"
 ---
 # <a name="net-framework-tools"></a>.NET Framework 工具
 
@@ -21,9 +21,9 @@ ms.locfileid: "90556676"
 
 此节中介绍的大部分 .NET Framework 工具将自动随 Visual Studio 一起安装。 Visual Studio 可从 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页面下载。
 
-你可以从命令行运行除程序集缓存查看器 (Shfusion.dll) 之外的所有工具  。 必须从文件资源管理器访问 Shfusion.dll  。
+你可以从命令行运行除程序集缓存查看器 (Shfusion.dll) 之外的所有工具。 必须从文件资源管理器访问 Shfusion.dll  。
   
-运行命令行工具的最佳方法是使用 Visual Studio 的开发人员命令提示。 您可以使用这些实用程序轻松运行工具，而不需要导航到安装文件夹。 有关详细信息，请参阅[命令提示](developer-command-prompt-for-vs.md)。
+运行命令行工具的最佳方法是使用 Visual Studio 安装的其中一个开发人员 shell。 使用这些实用程序可以轻松运行工具，而不需要导航到安装文件夹。 有关详细信息，请参阅[开发人员命令行 shell](/visualstudio/ide/reference/command-prompt-powershell)。
 
 > [!NOTE]
 > 某些工具特定于 32 位或 64 位计算机。 确保为你的计算机运行适当的工具版本。
@@ -47,9 +47,6 @@ ms.locfileid: "90556676"
 
 - [Clrver.exe（CLR 版本工具）](clrver-exe-clr-version-tool.md)  
 报告计算机上公共语言运行时 (CLR) 的所有已安装版本。
-
-- [命令提示](developer-command-prompt-for-vs.md)  
-使你能够更轻松地使用 .NET Framework 工具。 它是一个自动设置特定环境变量的命令提示符。
 
 - [CorFlags.exe（CorFlags 转换工具）](corflags-exe-corflags-conversion-tool.md)  
 可用于配置可移植可执行 (PE) 映像的标头的 CorFlags 部分。

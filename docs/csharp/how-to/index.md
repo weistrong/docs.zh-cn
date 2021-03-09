@@ -2,12 +2,12 @@
 title: 操作指南（C# 指南）
 description: 快速提示及重点短代码示例集合
 ms.date: 12/20/2017
-ms.openlocfilehash: 26d3931ff3b4ecfcc052c3ace25a09801f84c505
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: dae10bf0019c283f568c4850d3bfa0abad6df85a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90537400"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258190"
 ---
 # <a name="how-to-c"></a>操作指南 (C#)
 
@@ -24,9 +24,9 @@ ms.locfileid: "90537400"
 - 即使是 C# 程序员，也可能需要[使用 Visual Basic `My` 命名空间](../programming-guide/namespaces/how-to-use-the-my-namespace.md)。
 - [使用扩展方法创建新 `enum` 类型方法](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md)。
 
-### <a name="class-and-struct-members"></a>类和结构成员
+### <a name="class-record-and-struct-members"></a>类、记录和结构成员
 
-创建类和结构来实现程序。 编写类或结构时常会使用这些方法。
+创建类、记录和结构来实现程序。 编写类、记录或结构时常会使用这些方法。
 
 - [声明自动实现的属性](../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md)。
 - [声明和使用读/写属性](../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md)。

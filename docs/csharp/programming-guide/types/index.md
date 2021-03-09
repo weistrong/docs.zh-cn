@@ -12,12 +12,12 @@ helpviewer_keywords:
 - C# language, types
 - strong typing [C#]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.openlocfilehash: 6a1a5b230e427a4991162a702245f1a87352784d
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: a592a4236575a6dd2f782142c470ce3945e130b9
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190242"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255641"
 ---
 # <a name="types-c-programming-guide"></a>类型（C# 编程指南）
 
@@ -64,14 +64,14 @@ C# 提供了一组标准的内置类型来表示整数、浮点值、布尔表�
 
 ## <a name="custom-types"></a>自定义类型
 
-可以使用[结构](../../language-reference/builtin-types/struct.md)、[类](../../language-reference/keywords/class.md)、[接口](../../language-reference/keywords/interface.md)，和[枚举](../../language-reference/builtin-types/enum.md)构造创建你自己的自定义类型。 .NET 类库本身就是 Microsoft 提供的一组自定义类型，以供你在自己的应用程序中使用。 默认情况下，类库中最常用的类型在任何 C# 程序中均可用。 对于其他类型，只有在显式添加对定义这些类型的程序集的项目引用时才可用。 编译器引用程序集之后，你可以声明在源代码的此程序集中声明的类型的变量（和常量）。 有关详细信息，请参阅 [.NET 类库](../../../standard/class-library-overview.md)。
+可以使用[结构](../../language-reference/builtin-types/struct.md)、[类](../../language-reference/keywords/class.md)、[接口](../../language-reference/keywords/interface.md)[枚举](../../language-reference/builtin-types/enum.md)和[记录](../../language-reference/builtin-types/record.md)构造来创建你自己的自定义类型。 .NET 类库本身就是 Microsoft 提供的一组自定义类型，以供你在自己的应用程序中使用。 默认情况下，类库中最常用的类型在任何 C# 程序中均可用。 对于其他类型，只有在显式添加对定义这些类型的程序集的项目引用时才可用。 编译器引用程序集之后，你可以声明在源代码的此程序集中声明的类型的变量（和常量）。 有关详细信息，请参阅 [.NET 类库](../../../standard/class-library-overview.md)。
 
 ## <a name="the-common-type-system"></a>通用类型系统
 
 对于 .NET 中的类型系统，请务必了解以下两个基本要点：
 
 - 它支持继承原则。 类型可以派生自其他类型（称为 *基类型*）。 派生类型继承（有一些限制）基类型的方法、属性和其他成员。 基类型可以继而从某种其他类型派生，在这种情况下，派生类型继承其继承层次结构中的两种基类型的成员。 所有类型（包括 <xref:System.Int32?displayProperty=nameWithType>C# 关键字：[int](../../language-reference/builtin-types/integral-numeric-types.md)等内置数值类型）最终都派生自单个基类型，即 <xref:System.Object?displayProperty=nameWithType>（C# 关键字：[object](../../language-reference/builtin-types/reference-types.md)。 这样的统一类型层次结构称为[通用类型系统](../../../standard/base-types/common-type-system.md) (CTS)。 若要详细了解 C# 中的继承，请参阅[继承](../classes-and-structs/inheritance.md)。
-- CTS 中的每种类型被定义为值类型或引用类型。  这些类型包括 .NET 类库中的所有自定义类型以及你自己的用户定义类型。 使用 [struct](../../language-reference/builtin-types/struct.md) 关键字定义的类型是值类型；所有内置数值类型都是 `structs`。 使用 [class](../../language-reference/keywords/class.md) 关键字定义的类型是引用类型。 引用类型和值类型遵循不同的编译时规则和运行时行为。
+- CTS 中的每种类型被定义为值类型或引用类型。  这些类型包括 .NET 类库中的所有自定义类型以及你自己的用户定义类型。 使用 [struct](../../language-reference/builtin-types/struct.md) 关键字定义的类型是值类型；所有内置数值类型都是 `structs`。 使用 [class](../../language-reference/keywords/class.md) 或 [record](../../language-reference/builtin-types/record.md) 关键字定义的类型是引用类型。 引用类型和值类型遵循不同的编译时规则和运行时行为。
 
 下图展示了 CTS 中值类型和引用类型之间的关系。
 
@@ -112,7 +112,7 @@ C# 提供了一组标准的内置类型来表示整数、浮点值、布尔表�
 
 ### <a name="reference-types"></a>引用类型
 
-定义为 [类](../../language-reference/keywords/class.md)、[委托](../../language-reference/builtin-types/reference-types.md)、数组或 [接口](../../language-reference/keywords/interface.md)的类型是 *引用类型*。 在运行时，当声明引用类型的变量时，该变量会一直包含值 [null](../../language-reference/keywords/null.md)，直至使用 [new](../../language-reference/operators/new-operator.md) 运算符显式创建对象，或者为该变量分配已经在其他位置使用 `new` 创建的对象，如下所示：
+定义为[类](../../language-reference/keywords/class.md)、[记录](../../language-reference/builtin-types/record.md)、[委托](../../language-reference/builtin-types/reference-types.md)、数组或[接口](../../language-reference/keywords/interface.md)的类型是引用类型。 在运行时，当声明引用类型的变量时，该变量会一直包含值 [null](../../language-reference/keywords/null.md)，直至使用 [new](../../language-reference/operators/new-operator.md) 运算符显式创建对象，或者为该变量分配已经在其他位置使用 `new` 创建的对象，如下所示：
 
 :::code language="csharp" source="snippets/index/Program.cs" id="DeclarationAndAssignment":::
 
