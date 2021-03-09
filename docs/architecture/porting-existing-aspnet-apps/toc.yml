@@ -35,6 +35,8 @@
           href: configuration-differences.md
         - name: 路由差异
           href: routing-differences.md
+        - name: 记录差异
+          href: logging-differences.md
         - name: 将 Razor Pages 与 ASP.NET MVC 进行比较
           href: comparing-razor-pages-aspnet-mvc.md
         - name: Web API 差异

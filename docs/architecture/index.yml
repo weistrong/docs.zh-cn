@@ -6,12 +6,12 @@ metadata:
   description: 了解有关架构、构建和迁移 .NET 应用的建议做法。
   ms.topic: landing-page
   ms.date: 03/19/2020
-  ms.openlocfilehash: aab236c52bf4217567fe76e8c4f9ffcb51ad17f5
-  ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
+  ms.openlocfilehash: 68851c514723f6db7017c3000e88242f3fad2592
+  ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/17/2021
-  ms.locfileid: "100583108"
+  ms.lasthandoff: 03/05/2021
+  ms.locfileid: "102206695"
 landingContent:
 - title: 开发 ASP.NET Core 应用
   linkLists:
@@ -23,6 +23,8 @@ landingContent:
       url: blazor-for-web-forms-developers/index.md
     - text: 适用于 WCF 开发人员的 ASP.NET Core gRPC
       url: grpc-for-wcf-developers/index.md
+    - text: 将现有 ASP.NET 应用移植到 .NET Core
+      url: porting-existing-aspnet-apps/index.md
 - title: 开发适用于 Azure 的云原生 .NET 应用
   linkLists:
   - linkListType: concept

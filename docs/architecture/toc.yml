@@ -23,3 +23,5 @@
       href: serverless/
     - name: 面向 .NET 开发人员的 Dapr
       href: dapr-for-net-developers/
+    - name: 将现有 ASP.NET 应用移植到 .NET Core
+      href: porting-existing-aspnet-apps/

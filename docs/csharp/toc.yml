@@ -537,13 +537,15 @@ items:
             href: programming-guide/types/using-type-dynamic.md
           - name: 演练：创建并使用动态对象（C# 和 Visual Basic）
             href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
-      - name: 类和结构
+      - name: 类、记录或结构
         items:
           - name: 概述
-            displayName: classes
+            displayName: 'classes, records'
             href: programming-guide/classes-and-structs/index.md
           - name: 类
             href: programming-guide/classes-and-structs/classes.md
+          - name: 记录
+            href: programming-guide/classes-and-structs/records.md
           - name: 对象
             href: programming-guide/classes-and-structs/objects.md
           - name: 继承
@@ -1084,7 +1086,7 @@ items:
                 href: language-reference/keywords/out-parameter-modifier.md
           - name: 命名空间关键字
             items:
-              - name: 命名空间
+              - name: namespace
                 href: language-reference/keywords/namespace.md
               - name: using
                 items:
@@ -1116,7 +1118,7 @@ items:
                 href: language-reference/keywords/this.md
           - name: 文字关键字
             items:
-              - name: 'Null'
+              - name: 'null'
                 href: language-reference/keywords/null.md
               - name: true 和 false
                 href: language-reference/builtin-types/bool.md
