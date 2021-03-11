@@ -1,5 +1,5 @@
 ---
-title: 注册取消请求的回叫
+title: 注册取消请求的回调
 ms.date: 08/14/2020
 dev_langs:
 - csharp
@@ -14,7 +14,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/18/2020
 ms.locfileid: "94826399"
 ---
-# <a name="register-callbacks-for-cancellation-requests"></a>注册取消请求的回叫
+# <a name="register-callbacks-for-cancellation-requests"></a>注册取消请求的回调
 
 了解如何注册当 <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> 属性为 true 时调用的委托。 对创建令牌的对象调用 <xref:System.Threading.CancellationTokenSource.Cancel%2A> 时，值将从 false 更改为 true。 使用此技术可取消本地不支持统一取消框架的异步操作，也可取消阻止可能等待异步操作结束的方法。
 
